@@ -248,28 +248,7 @@ PAGES["/"] = {
     "desc": DESC_DEFAULT,
     "is_home": True,
     "body": f"""
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="kicker">Congenital limb differences · about 5 in 10,000 people</p>
-      <h1 class="hero-h1">The knowledge network for <em>limb differences</em>, built by families.</h1>
-      <p>A world where every family affected by a congenital limb difference can find the knowledge that concerns them, and where the community’s own data drives the research that shapes their care.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="/knowledge/">Explore the knowledge base</a>
-        <a class="btn btn-ghost" href="/registry/">The registry project</a>
-      </div>
-      <ul class="stats">
-        <li><strong>30+</strong> member associations</li>
-        <li><strong>14</strong> countries</li>
-        <li><strong>3</strong> European seats</li>
-        <li><strong>2009</strong> founded by families</li>
-      </ul>
-    </div>
-    <figure class="hero-photo">
-      <img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests gathered at the INAIL prosthetics centre in Vigorso di Budrio, Italy" width="1800" height="1013">
-    </figure>
-  </div>
-</section>
+__MAP_HERO__
 
 <section style="padding-top:0">
   <div class="container">
@@ -965,6 +944,66 @@ MEMBERS = [
 ]
 
 
+# ─────────────── Landing map: registry participants by country ───────────────
+# ISO 3166-1 numeric ids (as used by Natural Earth / world-atlas).
+ISO_NUM = {"Australia": "036", "Austria": "040", "Belgium": "056", "Canada": "124", "Chile": "152",
+           "France": "250", "Germany": "276", "Ireland": "372", "Italy": "380", "Netherlands": "528",
+           "Norway": "578", "Spain": "724", "Sweden": "752", "United Kingdom": "826", "United States": "840"}
+# Registry (Mission 2) participation status. Candidates are grounded in the
+# strategy: a grant application in preparation on the French side; Raggiungere
+# (Italy) promoter of the Patient Journey. Both remain to be confirmed at the AGM.
+REGISTRY_STATUS = {"250": "candidate", "380": "candidate", "124": "contact"}
+MAP_LABELS = {"member": "Member association", "candidate": "Registry pilot candidate · to confirm at the AGM",
+              "contact": "Contact opened"}
+MAP_COUNTRIES = {}
+for _country, _orgs in MEMBERS:
+    _id = ISO_NUM[_country]
+    MAP_COUNTRIES[_id] = {"name": _country, "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
+MAP_COUNTRIES["124"] = {"name": "Canada", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}
+MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labels": MAP_LABELS}, ensure_ascii=False)
+
+# Injected into the home page at build time (placeholder __MAP_HERO__), because
+# it needs MEMBERS, which is defined after the home page body.
+MAP_HERO = """
+<section class="map-hero" aria-label="The DysNet network on the world map">
+  <div id="worldmap" aria-hidden="true"></div>
+  <div class="map-panel">
+    <p class="kicker">Mission 2 · The international associative registry</p>
+    <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
+    <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
+    <ul class="map-stats">
+      <li><strong data-count="countries">–</strong>countries</li>
+      <li><strong data-count="orgs">–</strong>associations</li>
+      <li><strong data-count="candidate">–</strong>pilot candidates</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/registry/">The registry project</a>
+      <a class="btn btn-ghost" href="/about/members/">Join the network</a>
+    </div>
+  </div>
+  <div class="map-side">
+  <div class="map-views" role="group" aria-label="Map view">
+    <button type="button" data-view="world" aria-pressed="true">World</button>
+    <button type="button" data-view="europe" aria-pressed="false">Europe</button>
+    <button type="button" data-view="americas" aria-pressed="false">Americas</button>
+    <button type="button" data-view="asiapacific" aria-pressed="false">Asia-Pacific</button>
+    <button type="button" data-view="africa" aria-pressed="false">Africa &amp; Middle East</button>
+  </div>
+  <p class="map-guess" aria-live="polite"></p>
+  <div class="map-legend" aria-label="Legend">
+    <span class="l-member">Member association</span>
+    <span class="l-candidate">Registry pilot candidate</span>
+    <span class="l-contact">Contact opened</span>
+    <span class="l-office">DysNet office</span>
+  </div>
+  </div>
+  <div class="map-tip" role="tooltip"></div>
+  <script>window.DYSNET_MAP = __MAP_DATA__;</script>
+</section>
+""".replace("__MAP_DATA__", MAP_DATA)
+
+
 def member_li(entry):
     name, url = entry[0], entry[1]
     support = entry[2] if len(entry) > 2 else None
@@ -1247,6 +1286,7 @@ def build():
         if page.get("crumbs"):
             html += crumbs(*page["crumbs"])
         html += page["body"]
+        html = html.replace("__MAP_HERO__", MAP_HERO)
         html += FOOTER
         (out_dir / "index.html").write_text(rebase(html), encoding="utf-8")
         written.append(path)

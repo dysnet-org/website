@@ -462,3 +462,110 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 }
 .yt-embed:hover button { transform: scale(1.08); background: var(--dys-purple); }
 .yt-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ══ Landing map: the network on the world (Mission 2 participants) ══ */
+.map-hero {
+  position: relative; overflow: hidden;
+  height: calc(100vh - 8.75rem); min-height: 36rem;
+  background: radial-gradient(120% 90% at 50% 40%, #3b1463 0%, #2a0d47 60%, #1e0836 100%);
+  color: #f3e8fd;
+}
+#worldmap { position: absolute; inset: 0; }
+#worldmap svg { width: 100%; height: 100%; display: block; }
+#worldmap path { fill: #5a2f86; stroke: rgba(255,255,255,0.14); stroke-width: 0.5; transition: fill 0.2s ease; }
+#worldmap path.st-member    { fill: #c084fc; cursor: pointer; }
+#worldmap path.st-candidate { fill: var(--dys-green); cursor: pointer; }
+#worldmap path.st-contact   { fill: #fbbf24; cursor: pointer; }
+#worldmap path.st-member:hover, #worldmap path.st-member:focus { fill: #e9d5ff; outline: none; }
+#worldmap path.st-candidate:hover, #worldmap path.st-candidate:focus { fill: #86efac; outline: none; }
+#worldmap path.st-contact:hover, #worldmap path.st-contact:focus { fill: #fde68a; outline: none; }
+#worldmap .office circle { fill: #fff; stroke: var(--dys-green); stroke-width: 1.2; }
+#worldmap .office text { fill: #fff; font-size: 5px; font-weight: 700; paint-order: stroke; stroke: #2a0d47; stroke-width: 1.5px; }
+
+.map-panel {
+  position: absolute; left: 1.5rem; bottom: 1.5rem; z-index: 3;
+  width: min(30rem, calc(100% - 3rem));
+  background: rgba(255,255,255,0.94); color: var(--dys-ink);
+  border-radius: var(--radius-sheet); padding: var(--space-3) var(--space-4);
+  box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6); backdrop-filter: blur(8px);
+}
+.map-panel .kicker { color: var(--dys-green-text); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: var(--text-eyebrow); margin: 0 0 var(--space-1); }
+.map-panel h1 { font-size: var(--text-h2-lg); line-height: 1.1; margin-bottom: var(--space-1); }
+.map-panel h1 em { font-style: normal; color: var(--dys-purple-text); }
+.map-panel p { font-size: var(--text-small); color: var(--dys-muted); margin-bottom: var(--space-2); }
+.map-stats { display: flex; gap: var(--space-3); margin: 0 0 var(--space-2); padding: 0; list-style: none; max-width: none; }
+.map-stats li { font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.06em; color: var(--dys-muted); }
+.map-stats strong { display: block; font-size: var(--text-h3); color: var(--dys-ink); letter-spacing: 0; text-transform: none; }
+.map-panel .hero-actions { margin-top: var(--space-1); }
+
+.map-views {
+  position: absolute; right: 1.5rem; top: 1.5rem; z-index: 3;
+  display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--space-1); max-width: calc(100% - 3rem);
+}
+.map-views button {
+  border: 1.5px solid rgba(255,255,255,0.35); background: rgba(42,13,71,0.55); color: #f3e8fd;
+  font: inherit; font-size: var(--text-small); font-weight: 600; padding: 0.4rem 0.95rem;
+  border-radius: 999px; cursor: pointer; backdrop-filter: blur(6px);
+}
+.map-views button:hover { border-color: #fff; }
+.map-views button[aria-pressed="true"] { background: #fff; color: var(--dys-purple-deep); border-color: #fff; }
+.map-guess { position: absolute; right: 1.5rem; top: 4.2rem; z-index: 3; font-size: var(--text-eyebrow); color: #d9c2f5; }
+
+.map-legend {
+  position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 3;
+  display: grid; gap: 0.35rem; font-size: var(--text-eyebrow); color: #e9d8fb;
+  background: rgba(42,13,71,0.55); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); backdrop-filter: blur(6px);
+}
+.map-legend span::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 3px; margin-right: 0.5rem; vertical-align: -1px; }
+.map-legend .l-member::before { background: #c084fc; }
+.map-legend .l-candidate::before { background: var(--dys-green); }
+.map-legend .l-contact::before { background: #fbbf24; }
+.map-legend .l-office::before { background: #fff; border-radius: 50%; box-shadow: 0 0 0 2px var(--dys-green); }
+
+.map-tip {
+  position: absolute; z-index: 4; display: none;
+  background: #fff; color: var(--dys-ink); border-radius: var(--radius-card);
+  padding: var(--space-2) var(--space-3); box-shadow: 0 16px 40px -16px rgba(0,0,0,0.5);
+  max-width: 18rem; font-size: var(--text-small);
+}
+.map-tip strong { display: block; font-size: var(--text-body); }
+.map-tip .status { color: var(--dys-purple-text); font-weight: 700; font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.06em; }
+.map-tip ul { margin: 0.35rem 0 0; padding-left: 1rem; }
+.map-tip li { margin: 0; }
+
+@media (max-width: 48rem) {
+  .map-hero { height: auto; min-height: 0; }
+  #worldmap { position: relative; height: 52vw; min-height: 14rem; }
+  .map-panel, .map-views, .map-legend, .map-guess { position: static; width: auto; max-width: none; }
+  .map-views { justify-content: flex-start; padding: 1rem 1.5rem 0; }
+  .map-guess { padding: 0.4rem 1.5rem 0; }
+  .map-panel { margin: 1rem 1.5rem; }
+  .map-legend { margin: 0 1.5rem 1.5rem; grid-template-columns: 1fr 1fr; }
+}
+
+/* Landing map: view chips, guess line and legend stacked bottom-right (out of the sticky header's way) */
+.map-side { position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 3; display: grid; gap: var(--space-1); justify-items: end; max-width: calc(100% - 3rem); }
+.map-side .map-views, .map-side .map-guess, .map-side .map-legend { position: static; }
+.map-side .map-guess { margin: 0; text-align: right; }
+@media (max-width: 48rem) {
+  .map-side { position: static; display: block; padding: 0 1.5rem 1.5rem; }
+  .map-side .map-views { padding: 0; }
+  .map-side .map-guess { padding: 0.4rem 0 0.6rem; text-align: left; }
+  .map-side .map-legend { margin: 0; }
+}
+
+/* Landing map, below laptop width: controls flow under the map instead of overlaying it */
+@media (max-width: 70rem) {
+  .map-hero { height: auto; min-height: 0; display: grid; grid-template-columns: 1fr; align-items: start; }
+  #worldmap { position: relative; grid-column: 1 / -1; height: 56vw; min-height: 16rem; max-height: 62vh; }
+  .map-panel { position: static; width: auto; max-width: none; margin: var(--space-3) 1.5rem 0; box-shadow: none; backdrop-filter: none; background: #fff; }
+  .map-side { position: static; display: grid; gap: var(--space-2); justify-items: start; max-width: none; padding: var(--space-3) 1.5rem; }
+  .map-side .map-views { justify-content: flex-start; padding: 0; }
+  .map-side .map-guess { text-align: left; padding: 0; }
+  .map-side .map-legend { margin: 0; }
+}
+@media (min-width: 48rem) and (max-width: 70rem) {
+  .map-hero { grid-template-columns: 3fr 2fr; }
+  .map-panel { grid-column: 1; }
+  .map-side { grid-column: 2; padding-left: 0; }
+}

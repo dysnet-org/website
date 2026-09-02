@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/website/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/website/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/website/assets/css/site.css?v=5d5735b1">
+<link rel="stylesheet" href="/website/assets/css/site.css?v=7780c6dc">
 <script>window.SITE_BASE="/website";</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "DysNet", "legalName": "DysNet Ideell Förening", "alternateName": "EDRIC – European Dysmelia Reference Information Centre", "url": "https://dysnet-org.github.io/website", "logo": "https://dysnet-org.github.io/website/assets/img/dysnet-logo-512.png", "description": "DysNet is the global network for people affected by congenital limb differences (dysmelia): a curated research library, ongoing studies, a researcher register, a map of specialist care centres worldwide, and an international patient-owned registry.", "foundingDate": "2009-01-07", "foundingLocation": "Stockholm, Sweden", "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number", "value": "802444-3015"}, "address": [{"@type": "PostalAddress", "streetAddress": "Nybodagatan 1", "postalCode": "171 42", "addressLocality": "Solna", "addressCountry": "SE"}, {"@type": "PostalAddress", "streetAddress": "Rue du Chantier 2", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}], "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "info@dysnet.org", "availableLanguage": ["English"]}, "areaServed": "Worldwide", "memberOf": [{"@type": "Organization", "name": "EURORDIS – Rare Diseases Europe", "url": "https://www.eurordis.org/"}, {"@type": "Organization", "name": "European Disability Forum", "url": "https://www.edf-feph.org/"}], "knowsAbout": ["dysmelia", "congenital limb differences", "limb reduction deficiency", "rare diseases", "patient registries", "prosthetics", "assistive technology", "patient advocacy", "European Reference Networks"], "sameAs": ["https://www.facebook.com/DysNet", "https://www.youtube.com/user/DysmeliaNetwork"]}</script>
 </head><body>
@@ -47,28 +47,43 @@
   </div>
 </div>
 <main id="main" tabindex="-1">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="kicker">Congenital limb differences · about 5 in 10,000 people</p>
-      <h1 class="hero-h1">The knowledge network for <em>limb differences</em>, built by families.</h1>
-      <p>A world where every family affected by a congenital limb difference can find the knowledge that concerns them, and where the community’s own data drives the research that shapes their care.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="/website/knowledge/">Explore the knowledge base</a>
-        <a class="btn btn-ghost" href="/website/registry/">The registry project</a>
-      </div>
-      <ul class="stats">
-        <li><strong>30+</strong> member associations</li>
-        <li><strong>14</strong> countries</li>
-        <li><strong>3</strong> European seats</li>
-        <li><strong>2009</strong> founded by families</li>
-      </ul>
+
+<section class="map-hero" aria-label="The DysNet network on the world map">
+  <div id="worldmap" aria-hidden="true"></div>
+  <div class="map-panel">
+    <p class="kicker">Mission 2 · The international associative registry</p>
+    <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
+    <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
+    <ul class="map-stats">
+      <li><strong data-count="countries">–</strong>countries</li>
+      <li><strong data-count="orgs">–</strong>associations</li>
+      <li><strong data-count="candidate">–</strong>pilot candidates</li>
+    </ul>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/website/registry/">The registry project</a>
+      <a class="btn btn-ghost" href="/website/about/members/">Join the network</a>
     </div>
-    <figure class="hero-photo">
-      <img src="/website/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests gathered at the INAIL prosthetics centre in Vigorso di Budrio, Italy" width="1800" height="1013">
-    </figure>
   </div>
+  <div class="map-side">
+  <div class="map-views" role="group" aria-label="Map view">
+    <button type="button" data-view="world" aria-pressed="true">World</button>
+    <button type="button" data-view="europe" aria-pressed="false">Europe</button>
+    <button type="button" data-view="americas" aria-pressed="false">Americas</button>
+    <button type="button" data-view="asiapacific" aria-pressed="false">Asia-Pacific</button>
+    <button type="button" data-view="africa" aria-pressed="false">Africa &amp; Middle East</button>
+  </div>
+  <p class="map-guess" aria-live="polite"></p>
+  <div class="map-legend" aria-label="Legend">
+    <span class="l-member">Member association</span>
+    <span class="l-candidate">Registry pilot candidate</span>
+    <span class="l-contact">Contact opened</span>
+    <span class="l-office">DysNet office</span>
+  </div>
+  </div>
+  <div class="map-tip" role="tooltip"></div>
+  <script>window.DYSNET_MAP = {"countries": {"036": {"name": "Australia", "status": "member", "orgs": [["Aussiehands", null], ["Thalidomide Australia", "https://thalidomidegroupaustralia.com"], ["Limbs 4 Life", "https://www.limbs4life.org.au"]]}, "040": {"name": "Austria", "status": "member", "orgs": [["Contergan Austria", null]]}, "056": {"name": "Belgium", "status": "member", "orgs": [["A.V.S.B.", null], ["Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium"]]}, "152": {"name": "Chile", "status": "member", "orgs": [["Vitachi – Talidomida en Chile", null]]}, "250": {"name": "France", "status": "candidate", "orgs": [["Assédea", "http://www.assedea.fr"], ["Syndrome de Poland France", null]]}, "276": {"name": "Germany", "status": "member", "orgs": [["Contergan NRW", null], ["HICOHA Hamburg", null], ["Interessenverband Contergangeschädigter", null], ["Contergangeschädigte Hessen", "https://www.contergan-hessen.de"]]}, "372": {"name": "Ireland", "status": "member", "orgs": [["Irish Thalidomide Survivors Society", null]]}, "380": {"name": "Italy", "status": "candidate", "orgs": [["Raggiungere", "http://www.raggiungere.it"], ["Thalidomidici Italiani (TAI onlus)", null], ["V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"], ["AISP – Sindrome di Poland", null]]}, "528": {"name": "Netherlands", "status": "member", "orgs": [["Stichting NESOS", "https://www.softenon.nl"]]}, "578": {"name": "Norway", "status": "member", "orgs": [["Den Norske Thalidomide Forening", null]]}, "724": {"name": "Spain", "status": "member", "orgs": [["AVITE", "https://www.avite.org"]]}, "752": {"name": "Sweden", "status": "member", "orgs": [["FfdN", null], ["FfdN Stockholm", null], ["FfdN Väst", null], ["Ex-Center", "https://ex-center.org"], ["Svensk Dysmeliförening", "https://www.dysmeli.se"]]}, "826": {"name": "United Kingdom", "status": "member", "orgs": [["Thalidomide Trust", "https://thalidomidetrust.org"], ["Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"], ["In Our Hands", null], ["PiP UK", "https://www.pip-uk.org"], ["Thalidomide Society", "https://thalidomidesociety.org"]]}, "840": {"name": "United States", "status": "member", "orgs": [["STEPS", null]]}, "124": {"name": "Canada", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}}, "offices": [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}], "labels": {"member": "Member association", "candidate": "Registry pilot candidate · to confirm at the AGM", "contact": "Contact opened"}};</script>
 </section>
+
 
 <section style="padding-top:0">
   <div class="container">
@@ -212,6 +227,6 @@
     </div>
   </div>
 </footer>
-<script src="/website/assets/js/site.js?v=5d5735b1" defer></script>
+<script src="/website/assets/js/site.js?v=7780c6dc" defer></script>
 </body>
 </html>

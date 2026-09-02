@@ -952,14 +952,16 @@ ISO_NUM = {"Australia": "036", "Austria": "040", "Belgium": "056", "Canada": "12
 # Registry (Mission 2) participation status. Candidates are grounded in the
 # strategy: a grant application in preparation on the French side; Raggiungere
 # (Italy) promoter of the Patient Journey. Both remain to be confirmed at the AGM.
+ISO_A3 = {"036": "AUS", "040": "AUT", "056": "BEL", "124": "CAN", "152": "CHL", "250": "FRA", "276": "DEU",
+          "372": "IRL", "380": "ITA", "528": "NLD", "578": "NOR", "724": "ESP", "752": "SWE", "826": "GBR", "840": "USA"}
 REGISTRY_STATUS = {"250": "candidate", "380": "candidate", "124": "contact"}
 MAP_LABELS = {"member": "Member association", "candidate": "Registry pilot candidate · to confirm at the AGM",
               "contact": "Contact opened"}
 MAP_COUNTRIES = {}
 for _country, _orgs in MEMBERS:
     _id = ISO_NUM[_country]
-    MAP_COUNTRIES[_id] = {"name": _country, "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
-MAP_COUNTRIES["124"] = {"name": "Canada", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}
+    MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
+MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
 MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labels": MAP_LABELS}, ensure_ascii=False)
 
@@ -968,6 +970,7 @@ MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labe
 MAP_HERO = """
 <section class="map-hero" aria-label="The DysNet network on the world map">
   <div id="worldmap" aria-hidden="true"></div>
+  <div id="glmap" aria-hidden="true"></div>
   <div class="map-panel">
     <p class="kicker">Mission 2 · The international associative registry</p>
     <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
@@ -996,10 +999,15 @@ MAP_HERO = """
     <span class="l-candidate">Registry pilot candidate</span>
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
+    <span class="map-credit">Map data: Natural Earth (public domain) · rendered with MapLibre, self-hosted</span>
   </div>
   </div>
   <div class="map-tip" role="tooltip"></div>
   <script>window.DYSNET_MAP = __MAP_DATA__;</script>
+  <link rel="stylesheet" href="/assets/vendor/maplibre-gl.css">
+  <script src="/assets/vendor/maplibre-gl.js"></script>
+  <script src="/assets/vendor/pmtiles.js"></script>
+  <script src="/assets/js/map-gl.js"></script>
 </section>
 """.replace("__MAP_DATA__", MAP_DATA)
 

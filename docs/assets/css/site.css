@@ -569,3 +569,18 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
   .map-panel { grid-column: 1; }
   .map-side { grid-column: 2; padding-left: 0; }
 }
+
+/* ── Landing map, WebGL edition (MapLibre + self-hosted PMTiles) ─────── */
+#glmap { position: absolute; inset: 0; }
+.map-hero.gl #worldmap { display: none; }
+.map-hero .maplibregl-canvas { outline: none; }
+.map-hero .maplibregl-ctrl-top-right { top: 1.5rem; right: 1.5rem; }
+.map-hero .maplibregl-ctrl-group { background: rgba(42,13,71,0.55); backdrop-filter: blur(6px); border-radius: 999px; box-shadow: none; border: 1.5px solid rgba(255,255,255,0.35); }
+.map-hero .maplibregl-ctrl-group button { width: 2.2rem; height: 2.2rem; }
+.map-hero .maplibregl-ctrl-group button + button { border-top: 1px solid rgba(255,255,255,0.25); }
+.map-hero .maplibregl-ctrl button .maplibregl-ctrl-icon { filter: invert(1) brightness(1.6); }
+.map-hero .maplibregl-ctrl-group button:hover { background: rgba(255,255,255,0.15); }
+.map-credit { font-size: 0.65rem; color: #b79fd6; margin-top: 0.2rem; }
+@media (max-width: 70rem) {
+  #glmap { position: relative; grid-column: 1 / -1; height: 56vw; min-height: 16rem; max-height: 62vh; }
+}

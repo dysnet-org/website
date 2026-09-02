@@ -180,7 +180,7 @@
 (function () {
   var host = document.getElementById("worldmap");
   var data = window.DYSNET_MAP;
-  if (!host || !data) return;
+  if (!host || !data || window.DYSNET_GL_ACTIVE) return;  // WebGL map took over (map-gl.js)
   var base = window.SITE_BASE || "";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

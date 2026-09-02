@@ -19,3 +19,6 @@ dysnetlogos/
 
 # Local preview root mirroring the GitHub Pages /website path (symlink to docs/)
 _preview/
+
+# Natural Earth raw sources for the tileset (~50 MB, re-download via tools/build-tiles.sh header)
+tools/ne10m/

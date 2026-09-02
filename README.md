@@ -21,11 +21,29 @@ centres) replacing the blog and static pages, plus the registry flagship
 
 ```bash
 python3 build-demo.py                       # regenerate docs/
-python3 -m http.server 8732 --directory docs # then open http://localhost:8732
+python3 tools/serve.py 8732 _preview          # Range-capable; open http://localhost:8732/website/
 ```
 
-No dependencies beyond Python 3. The pages are plain static HTML, so they can be
-hosted anywhere at near-zero cost.
+No dependencies beyond Python 3 for the pages themselves. They are plain static
+HTML, so they can be hosted anywhere at near-zero cost.
+
+## The landing map
+
+The home page is a zoomable world map, entirely self-hosted (no map provider, no
+API key, no third-party request):
+
+| Path | What it is |
+|---|---|
+| `docs/assets/map/ne10m.pmtiles` | Natural Earth 10 m tileset (public domain), zoom 0-9, 30 MB, one file read by byte ranges. |
+| `tools/build-tiles.sh` | Regenerates it with [tippecanoe](https://github.com/felt/tippecanoe) from `tools/ne10m/*.geojson` (raw sources, git-ignored). |
+| `docs/assets/vendor/` | MapLibre GL JS 4.7.1 (BSD) and pmtiles 3.2.0, vendored. |
+| `docs/assets/fonts/` | Open Sans glyph ranges for map labels. |
+| `docs/assets/js/map-gl.js` | The map: country colouring from the members data, region views, tooltips, offices. |
+| `docs/assets/map/world.svg` | Fallback map for browsers without WebGL (also `tools/build-world-map.py`). |
+
+The opening view is guessed from the device time zone only. Zoom is capped at
+city level on purpose. Local preview needs a server that honours HTTP Range
+requests, hence `tools/serve.py` (GitHub Pages does natively).
 
 ## Deployment
 

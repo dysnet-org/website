@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Private source material — never publish (board correspondence, draft documents)
+*.eml
+*.pdf
+idysnetarefocusedstrategy20262029_pdf/
+260807 HDS Strategy - Indigenous Data Stewardship Canada.md
+
+# Raw photo originals (multi-MB); the web-sized copies live in demo/assets/img/
+pictures/
+
+# Strategy draft — board discussion document, not for publication
+260804 DysNet Refocused Strategy 2026-2029.html
+
+# Working documents and source assets used to BUILD the site — not part of it
+260810 DysNet New Website - Sitemap Draft.md
+dysnetlogos/

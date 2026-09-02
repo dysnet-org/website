@@ -1,0 +1,4 @@
+# Demonstration preview — do not index.
+# The production robots.txt allows all and points to /sitemap.xml.
+User-agent: *
+Disallow: /

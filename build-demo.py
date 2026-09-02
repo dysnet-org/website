@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the DysNet demo site into demo/.
+"""Build the DysNet demo site into docs/ (GitHub Pages source folder).
 
 Architecture mirrors the HDS website (Astro BaseLayout pattern):
 one layout carrying SEO head + header + footer, page bodies injected.
@@ -8,8 +8,9 @@ Run:  python3 build-demo.py
 import json
 import os
 import pathlib
+import re
 
-ROOT = pathlib.Path(__file__).parent / "demo"
+ROOT = pathlib.Path(__file__).parent / "docs"
 
 def _asset_version():
     import hashlib
@@ -21,7 +22,28 @@ def _asset_version():
     return h.hexdigest()[:8]
 
 ASSET_V = _asset_version()
-SITE = "https://www.dysnet.org"
+
+# ── Deployment target ────────────────────────────────────────────────
+# GitHub Pages serves this repo's docs/ folder. Today that is the project
+# URL https://dysnet-org.github.io/website/, so every internal link needs
+# the /website prefix. When the site moves to www.dysnet.org, set
+# DEPLOY=prod (or flip the default below) and rebuild — nothing else changes.
+DEPLOY = os.environ.get("DEPLOY", "pages")
+ORIGIN, BASE = {
+    "pages": ("https://dysnet-org.github.io", "/website"),
+    "prod": ("https://www.dysnet.org", ""),
+}[DEPLOY]
+SITE = ORIGIN + BASE
+
+# Internal links are written root-absolute ("/knowledge/"); rebase() prefixes
+# them with BASE at write time, so page bodies stay prefix-agnostic.
+_ABS_ATTR = re.compile(r'\b(href|src)="(/(?!/)[^"]*)"')
+
+def rebase(html):
+    if not BASE:
+        return html
+    return _ABS_ATTR.sub(lambda m: f'{m.group(1)}="{BASE}{m.group(2)}"', html)
+
 BRAND = "DysNet"
 DESC_DEFAULT = ("DysNet is the global network for people affected by congenital limb "
                 "differences (dysmelia): a curated research library, ongoing studies, "
@@ -106,6 +128,7 @@ def head(title, desc, path, is_home=False, og=None):
 <link rel="icon" type="image/png" href="{FAVICON}">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/css/site.css?v={ASSET_V}">
+<script>window.SITE_BASE={json.dumps(BASE)};</script>
 {ld_json}
 </head>"""
 
@@ -1225,7 +1248,7 @@ def build():
             html += crumbs(*page["crumbs"])
         html += page["body"]
         html += FOOTER
-        (out_dir / "index.html").write_text(html, encoding="utf-8")
+        (out_dir / "index.html").write_text(rebase(html), encoding="utf-8")
         written.append(path)
 
     # Root 404.html (GitHub Pages convention, as on the HDS site)
@@ -1250,6 +1273,9 @@ def build():
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n',
         encoding="utf-8")
+
+    # GitHub Pages: serve the folder verbatim, no Jekyll processing
+    (ROOT / ".nojekyll").write_text("", encoding="utf-8")
 
     # robots.txt — the DEMO must not be indexed; the live site would allow all
     (ROOT / "robots.txt").write_text(

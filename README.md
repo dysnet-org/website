@@ -13,19 +13,43 @@ centres) replacing the blog and static pages, plus the registry flagship
 | Path | What it is |
 |---|---|
 | `build-demo.py` | Generates the whole site. One layout (SEO head, header, footer) with page bodies injected. |
-| `demo/` | The generated site: 19 pages, assets, `sitemap.xml`, `search-index.json`. |
-| `demo/assets/css/site.css` | Stylesheet: golden-ratio design tokens, DysNet brand colours. |
-| `demo/assets/js/site.js` | Search, condition finder, donate widget, click-to-play video. |
+| `docs/` | The generated site, served by GitHub Pages: 19 pages, assets, `sitemap.xml`, `search-index.json`. |
+| `docs/assets/css/site.css` | Stylesheet: golden-ratio design tokens, DysNet brand colours. |
+| `docs/assets/js/site.js` | Search, condition finder, donate widget, click-to-play video. |
 
 ## Build and preview
 
 ```bash
-python3 build-demo.py                       # regenerate demo/
-python3 -m http.server 8732 --directory demo # then open http://localhost:8732
+python3 build-demo.py                       # regenerate docs/
+python3 -m http.server 8732 --directory docs # then open http://localhost:8732
 ```
 
 No dependencies beyond Python 3. The pages are plain static HTML, so they can be
-hosted anywhere (GitHub Pages included) at near-zero cost.
+hosted anywhere at near-zero cost.
+
+## Deployment
+
+GitHub Pages serves the `docs/` folder of `main` (Settings → Pages → Source:
+*Deploy from a branch*, branch `main`, folder `/docs`). Committing a rebuilt
+`docs/` publishes the site; `docs/.nojekyll` keeps Pages from running Jekyll
+over it.
+
+Internal links are root-absolute, so they need a path prefix on the project URL.
+`DEPLOY` selects the target:
+
+```bash
+python3 build-demo.py              # DEPLOY=pages (default)
+DEPLOY=prod python3 build-demo.py  # for www.dysnet.org
+```
+
+| `DEPLOY` | Served at | Link prefix |
+|---|---|---|
+| `pages` (default) | `https://dysnet-org.github.io/website/` | `/website` |
+| `prod` | `https://www.dysnet.org` | none |
+
+`prod` is the one-line switch for the move to the real domain: it also sets the
+canonical, Open Graph and `sitemap.xml` URLs. Add a `docs/CNAME` file at that
+point and flip the default in `build-demo.py`.
 
 ## Status: demonstration preview
 

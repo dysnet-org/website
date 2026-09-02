@@ -16,3 +16,6 @@ pictures/
 # Working documents and source assets used to BUILD the site — not part of it
 260810 DysNet New Website - Sitemap Draft.md
 dysnetlogos/
+
+# Local preview root mirroring the GitHub Pages /website path (symlink to docs/)
+_preview/

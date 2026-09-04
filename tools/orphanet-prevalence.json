@@ -1,0 +1,580 @@
+{
+ "source": "Orphadata product 9 (epidemiology + ages), Orphanet, CC BY 4.0",
+ "prev_date": "2026-06-23 07:57:58",
+ "ages_date": "2026-06-23 07:57:51",
+ "conditions": {
+  "3320": {
+   "name": "TAR syndrome",
+   "orphanet_name": "Thrombocytopenia-absent radius syndrome",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.5",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "EUROCAT European surveillance of congenital anomalies 2005-2012[OTHER]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "Unknown",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Not yet validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal recessive"
+   ]
+  },
+  "392": {
+   "name": "Holt-Oram syndrome",
+   "orphanet_name": "Holt-Oram syndrome",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.7",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "25344219[PMID]_EUROCAT European surveillance of congenital anomalies 1990-2011[OTHER]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.95",
+     "geo": "Hungary",
+     "status": "Validated",
+     "source": "1996196[PMID]_[EXPERT]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "Unknown",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Not yet validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant"
+   ]
+  },
+  "3103": {
+   "name": "Roberts syndrome",
+   "orphanet_name": "Roberts syndrome",
+   "prevalence": [
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "150.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "20301332[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "Unknown",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET_20301332[PMID]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal recessive"
+   ]
+  },
+  "974": {
+   "name": "Adams-Oliver syndrome",
+   "orphanet_name": "Adams-Oliver syndrome",
+   "prevalence": [
+    {
+     "type": "Point prevalence",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.44",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "35449659[PMID]_ORPHANET"
+    },
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "398.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "28160419[PMID]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant",
+    "Autosomal recessive"
+   ]
+  },
+  "2440": {
+   "name": "Ectrodactyly (SHFM)",
+   "orphanet_name": "Isolated split hand-split foot malformation",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "5.4",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "8766141[PMID]_EUROCAT European surveillance of congenital anomalies[OTHER]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-5 / 10 000",
+     "mean": "16.4",
+     "geo": "China",
+     "status": "Validated",
+     "source": "20506663[PMID]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "5.1",
+     "geo": "Canada",
+     "status": "Validated",
+     "source": "20506663[PMID]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "6.0",
+     "geo": "Hungary",
+     "status": "Validated",
+     "source": "ISBN:9630566311[OTHER]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "6.0",
+     "geo": "United States",
+     "status": "Validated",
+     "source": "11581472[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "1-9 / 100 000",
+     "mean": "0.0",
+     "geo": "Europe",
+     "status": "Not yet validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant",
+    "Autosomal recessive",
+    "X-linked recessive"
+   ]
+  },
+  "2879": {
+   "name": "Phocomelia, Schinzel type",
+   "orphanet_name": "Phocomelia, Schinzel type",
+   "prevalence": [
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "Unknown",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Not yet validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal recessive"
+   ]
+  },
+  "2935": {
+   "name": "Crossed polysyndactyly",
+   "orphanet_name": "Crossed polysyndactyly",
+   "prevalence": [
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "12.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "8042663[PMID]_20127219 [PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "<1 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET_8042663[PMID]_20127219 [PMID]"
+    }
+   ],
+   "onset": [
+    "Antenatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant"
+   ]
+  },
+  "2911": {
+   "name": "Poland syndrome",
+   "orphanet_name": "Poland syndrome",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "3.1",
+     "geo": "Canada",
+     "status": "Validated",
+     "source": "205132[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "1-9 / 100 000",
+     "mean": "0.0",
+     "geo": "Canada",
+     "status": "Not yet validated",
+     "source": "205132[PMID]"
+    },
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "1.5",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "EUROCAT European surveillance of congenital anomalies 2005-2012[OTHER]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "1-9 / 100 000",
+     "mean": "0.0",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "ORPHANET_EUROCAT European surveillance of congenital anomalies 2005-2012[OTHER]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant",
+    "Autosomal recessive",
+    "Multigenic/multifactorial",
+    "Not applicable"
+   ]
+  },
+  "3329": {
+   "name": "Tibial aplasia–ectrodactyly",
+   "orphanet_name": "Tibial aplasia-ectrodactyly syndrome",
+   "prevalence": [
+    {
+     "type": "Point prevalence",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.1",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "[EXPERT]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant"
+   ]
+  },
+  "1570": {
+   "name": "Symbrachydactyly",
+   "orphanet_name": "Symbrachydactyly of hands and feet",
+   "prevalence": [
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "2.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "9555583[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "<1 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET_9555583[PMID]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": []
+  },
+  "3258": {
+   "name": "Cenani-Lenz syndrome",
+   "orphanet_name": "Cenani-Lenz syndrome",
+   "prevalence": [
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "30.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "[EXPERT]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "<1 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal recessive"
+   ]
+  },
+  "3301": {
+   "name": "Tetra-amelia",
+   "orphanet_name": "Tetraamelia-multiple malformations syndrome",
+   "prevalence": [
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "<1 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET_20301453[PMID]"
+    },
+    {
+     "type": "Cases/families",
+     "qualification": "Family(ies)",
+     "class": "",
+     "mean": "5.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "20301453[PMID]"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal recessive",
+    "X-linked recessive"
+   ]
+  },
+  "2538": {
+   "name": "Microgastria–limb reduction",
+   "orphanet_name": "Microgastria-limb reduction defect syndrome",
+   "prevalence": [
+    {
+     "type": "Cases/families",
+     "qualification": "Case(s)",
+     "class": "",
+     "mean": "16.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "12072798[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "<1 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Not applicable"
+   ]
+  },
+  "93322": {
+   "name": "Tibial hemimelia",
+   "orphanet_name": "Isolated tibial hemimelia",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.1",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "16224672[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Value and class",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.1",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Autosomal dominant",
+    "Autosomal recessive",
+    "Not applicable"
+   ]
+  },
+  "93321": {
+   "name": "Radial aplasia",
+   "orphanet_name": "Isolated radial hemimelia",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "2.5",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "28669420[PMID]_34452798[PMID]_ORPHANET"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "1-9 / 100 000",
+     "mean": "2.5",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "28669420[PMID]_34452798[PMID]_ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": [
+    "Multigenic/multifactorial",
+    "X-linked recessive"
+   ]
+  },
+  "93320": {
+   "name": "Ulnar hemimelia",
+   "orphanet_name": "Isolated ulnar hemimelia",
+   "prevalence": [
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "1-9 / 1 000 000",
+     "mean": "0.0",
+     "geo": "Europe",
+     "status": "Not yet validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Infancy",
+    "Neonatal"
+   ],
+   "inheritance": []
+  },
+  "93323": {
+   "name": "Fibular hemimelia",
+   "orphanet_name": "Isolated fibular hemimelia",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "1.1033",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "20498623[PMID]_27909861[PMID]"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "1.1033",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "20498623[PMID]_27909861[PMID]_ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal"
+   ],
+   "inheritance": [
+    "Not applicable"
+   ]
+  }
+ }
+}

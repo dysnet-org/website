@@ -584,3 +584,24 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 @media (max-width: 70rem) {
   #glmap { position: relative; grid-column: 1 / -1; height: 56vw; min-height: 16rem; max-height: 62vh; }
 }
+
+/* ── Map card: dismissible ─────────────────────────────────────────── */
+.map-panel { padding-right: var(--space-5); }
+.map-panel-close {
+  position: absolute; top: 0.9rem; right: 0.9rem; width: 2.2rem; height: 2.2rem;
+  border: 0; border-radius: 50%; background: var(--dys-purple-soft); color: var(--dys-purple-text);
+  font: inherit; font-size: 1.35rem; line-height: 1; cursor: pointer;
+}
+.map-panel-close:hover { background: var(--dys-purple-deep); color: #fff; }
+.map-panel[hidden] { display: none; }
+.map-panel-reopen {
+  position: absolute; left: 1.5rem; bottom: 1.5rem; z-index: 3;
+  border: 1.5px solid rgba(255,255,255,0.35); background: rgba(42,13,71,0.55); color: #f3e8fd;
+  font: inherit; font-size: var(--text-small); font-weight: 600; padding: 0.5rem 1.1rem;
+  border-radius: 999px; cursor: pointer; backdrop-filter: blur(6px);
+}
+.map-panel-reopen:hover { border-color: #fff; }
+.map-panel-reopen[hidden] { display: none; }
+@media (max-width: 70rem) {
+  .map-panel-reopen { position: static; margin: var(--space-3) 1.5rem 0; }
+}

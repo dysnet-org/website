@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/website/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/website/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/website/assets/css/site.css?v=c9b92705">
+<link rel="stylesheet" href="/website/assets/css/site.css?v=08bdb8ba">
 <script>window.SITE_BASE="/website";</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "DysNet", "legalName": "DysNet Ideell Förening", "alternateName": "EDRIC – European Dysmelia Reference Information Centre", "url": "https://dysnet-org.github.io/website", "logo": "https://dysnet-org.github.io/website/assets/img/dysnet-logo-512.png", "description": "DysNet is the global network for people affected by congenital limb differences (dysmelia): a curated research library, ongoing studies, a researcher register, a map of specialist care centres worldwide, and an international patient-owned registry.", "foundingDate": "2009-01-07", "foundingLocation": "Stockholm, Sweden", "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number", "value": "802444-3015"}, "address": [{"@type": "PostalAddress", "streetAddress": "Nybodagatan 1", "postalCode": "171 42", "addressLocality": "Solna", "addressCountry": "SE"}, {"@type": "PostalAddress", "streetAddress": "Rue du Chantier 2", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}], "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "info@dysnet.org", "availableLanguage": ["English"]}, "areaServed": "Worldwide", "memberOf": [{"@type": "Organization", "name": "EURORDIS – Rare Diseases Europe", "url": "https://www.eurordis.org/"}, {"@type": "Organization", "name": "European Disability Forum", "url": "https://www.edf-feph.org/"}], "knowsAbout": ["dysmelia", "congenital limb differences", "limb reduction deficiency", "rare diseases", "patient registries", "prosthetics", "assistive technology", "patient advocacy", "European Reference Networks"], "sameAs": ["https://www.facebook.com/DysNet", "https://www.youtube.com/user/DysmeliaNetwork"]}</script>
 </head><body>
@@ -51,7 +51,8 @@
 <section class="map-hero" aria-label="The DysNet network on the world map">
   <div id="worldmap" aria-hidden="true"></div>
   <div id="glmap" aria-hidden="true"></div>
-  <div class="map-panel">
+  <div class="map-panel" id="map-panel">
+    <button type="button" class="map-panel-close" aria-label="Close this card and explore the map">×</button>
     <p class="kicker">Mission 2 · The international associative registry</p>
     <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
     <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
@@ -65,6 +66,7 @@
       <a class="btn btn-ghost" href="/website/about/members/">Join the network</a>
     </div>
   </div>
+  <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
   <div class="map-side">
   <div class="map-views" role="group" aria-label="Map view">
     <button type="button" data-view="world" aria-pressed="true">World</button>
@@ -233,6 +235,6 @@
     </div>
   </div>
 </footer>
-<script src="/website/assets/js/site.js?v=c9b92705" defer></script>
+<script src="/website/assets/js/site.js?v=08bdb8ba" defer></script>
 </body>
 </html>

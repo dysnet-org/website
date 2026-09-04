@@ -971,7 +971,8 @@ MAP_HERO = """
 <section class="map-hero" aria-label="The DysNet network on the world map">
   <div id="worldmap" aria-hidden="true"></div>
   <div id="glmap" aria-hidden="true"></div>
-  <div class="map-panel">
+  <div class="map-panel" id="map-panel">
+    <button type="button" class="map-panel-close" aria-label="Close this card and explore the map">×</button>
     <p class="kicker">Mission 2 · The international associative registry</p>
     <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
     <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
@@ -985,6 +986,7 @@ MAP_HERO = """
       <a class="btn btn-ghost" href="/about/members/">Join the network</a>
     </div>
   </div>
+  <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
   <div class="map-side">
   <div class="map-views" role="group" aria-label="Map view">
     <button type="button" data-view="world" aria-pressed="true">World</button>

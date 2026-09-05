@@ -575,6 +575,35 @@
    "inheritance": [
     "Not applicable"
    ]
+  },
+  "295000": {
+   "name": "Amniotic band syndrome",
+   "orphanet_name": "Amniotic band syndrome",
+   "prevalence": [
+    {
+     "type": "Prevalence at birth",
+     "qualification": "Value and class",
+     "class": "1-9 / 100 000",
+     "mean": "5.3",
+     "geo": "Europe",
+     "status": "Validated",
+     "source": "36584346[PMID]_ORPHANET"
+    },
+    {
+     "type": "Point prevalence",
+     "qualification": "Class only",
+     "class": "Unknown",
+     "mean": "0.0",
+     "geo": "Worldwide",
+     "status": "Validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "onset": [
+    "Antenatal",
+    "Neonatal"
+   ],
+   "inheritance": []
   }
  }
 }

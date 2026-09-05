@@ -598,6 +598,102 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
             f'<h3 class="h4">{name}</h3><p>{desc}</p>{link}</div>')
 
+
+# ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
+# Orphanet rows come from tools/orphanet-prevalence.json (Orphadata product 9, CC BY 4.0).
+# Literature rows were each verified against the primary abstract (authors + figures) on 2026-09-04.
+PREV = json.loads((pathlib.Path(__file__).parent / "tools" / "orphanet-prevalence.json").read_text(encoding="utf-8"))
+
+SOURCES = [
+    ("Bermejo-Sánchez E, Cuevas L, Amar E, et al. Amelia: a multi-center descriptive epidemiologic study in a large dataset from the International Clearinghouse for Birth Defects Surveillance and Research, and overview of the literature. <em>Am J Med Genet C Semin Med Genet</em>. 2011;157C(4):288-304.", "https://doi.org/10.1002/ajmg.c.30319"),
+    ("Pakkasjärvi N, Syvänen J, Wiro M, Koskimies-Virta E. Amelia and phocomelia in Finland: characteristics and prevalences in a nationwide population-based study. <em>Birth Defects Res</em>. 2022;114(20):1427-1433.", "https://doi.org/10.1002/bdr2.2123"),
+    ("Vasluian E, van der Sluis CK, van Essen AJ, et al. Birth prevalence for congenital limb defects in the northern Netherlands: a 30-year population-based study. <em>BMC Musculoskelet Disord</em>. 2013;14:323.", "https://doi.org/10.1186/1471-2474-14-323"),
+    ("Chen ZY, Li WY, Xu WL, et al. The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study. <em>BMC Pregnancy Childbirth</em>. 2023;23:334.", "https://doi.org/10.1186/s12884-023-05660-z"),
+    ("Temtamy SA, Aglan MS. Brachydactyly. <em>Orphanet J Rare Dis</em>. 2008;3:15.", "https://doi.org/10.1186/1750-1172-3-15"),
+    ("Koskimies E, Lindfors N, Gissler M, Peltonen J, Nietosvaara Y. Congenital upper limb deficiencies and associated malformations in Finland: a population-based study. <em>J Hand Surg Am</em>. 2011;36(6):1058-1065.", "https://doi.org/10.1016/j.jhsa.2011.03.015"),
+    ("Pakkasjärvi N, Koskimies E, Ritvanen A, Nietosvaara Y, Mäkitie O. Characteristics and associated anomalies in radial ray deficiencies in Finland: a population-based study. <em>Am J Med Genet A</em>. 2013;161A(2):261-267.", "https://doi.org/10.1002/ajmg.a.35707"),
+    ("Syvänen J, Nietosvaara Y, Ritvanen A, Koskimies E, Kauko T, Helenius I. High risk for major nonlimb anomalies associated with lower-limb deficiency: a population-based study. <em>J Bone Joint Surg Am</em>. 2014;96(22):1898-1904.", "https://doi.org/10.2106/JBJS.N.00155"),
+    ("Klungsøyr K, Nordtveit TI, Kaastad TS, et al. Epidemiology of limb reduction defects as registered in the Medical Birth Registry of Norway, 1970-2016: population based study. <em>PLoS One</em>. 2019;14(7):e0219930. Cites the EUROCAT figure for Europe 2003-2012 (Morris et al., 2018).", "https://doi.org/10.1371/journal.pone.0219930"),
+    ("Shin YH, Baek GH, Kim YJ, Kim MJ, Kim JK. Epidemiology of congenital upper limb anomalies in Korea: a nationwide population-based study. <em>PLoS One</em>. 2021;16(3):e0248105.", "https://doi.org/10.1371/journal.pone.0248105"),
+    ("Orphanet. Orphadata, epidemiological data (product 9), release of 23 June 2026. Licence CC BY 4.0.", "https://www.orphadata.com/epidemiology/"),
+    ("Gordillo M, Vega H, Jabs EW. ESCO2 Spectrum Disorder. In: GeneReviews. University of Washington, Seattle.", "https://www.ncbi.nlm.nih.gov/books/NBK1153/"),
+]
+
+def cite(*nums):
+    return " ".join(f'<sup><a href="#src-{n}">{n}</a></sup>' for n in nums)
+
+# Literature column, keyed by the card name used in CONDITIONS
+LITERATURE = {
+    "Amelia": "1.41 per 100,000 births (326 cases in 23.1 million births, 20 registries, 1968-2006)" + cite(1) + "; Finland: 2.43 per 100,000 births, 0.63 per 100,000 live births (1993-2008)" + cite(2),
+    "Amelia of the upper limb": "Upper limbs in 54% of single-limb amelia cases" + cite(1) + "; 26% of amelia cases in Finland" + cite(2),
+    "Amelia of the lower limb": "Lower limbs in 70% of amelia cases in Finland" + cite(2),
+    "Amniotic band syndrome": "Upper-limb defects from constriction bands: 51 in 753,342 births, about 0.7 per 10,000 (Finland)" + cite(6),
+    "Brachydactyly": "Isolated forms are rare, except types A3 and D, which are common" + cite(5),
+    "Ectrodactyly (SHFM)": "Central ray deficiency: 41 in 753,342 births, about 0.5 per 10,000 (Finland), consistent with Orphanet" + cite(6),
+    "Fibular hemimelia": "All lower-limb deficiencies: 2.8 per 10,000 births (Finland, 266 cases)" + cite(8),
+    "Phocomelia": "All forms of phocomelia: 0.74 per 100,000 births (Finland, 7 cases, 1993-2008)" + cite(2),
+    "Polydactyly": "8.4 per 10,000 births (northern Netherlands, 1981-2010)" + cite(3) + "; the most common upper-limb anomaly in Korea, where all upper-limb anomalies total 23.5 per 10,000 live births" + cite(10),
+    "Radial aplasia": "Radial ray deficiency, all forms: 1.83 per 10,000 births, 13% of them isolated (Finland)" + cite(7) + "; the isolated share matches Orphanet's figure",
+    "Roberts syndrome": "Prevalence unknown; part of the ESCO2 spectrum" + cite(12),
+    "Symbrachydactyly": "Undergrowth category, mainly symbrachydactyly: 91 in 753,342 births, about 1.2 per 10,000 (Finland)" + cite(6) + ". ORPHA:1570 covers only the rare hands-and-feet form.",
+    "Syndactyly": "4.7 per 10,000 births (northern Netherlands, 1981-2010; non-syndromic cases fell from 5.2 to 1.1 between 1992 and 2010)" + cite(3) + "; 5.63 per 10,000 (China, 2007-2019, 13,611 cases)" + cite(4),
+    "Tibial hemimelia": "All lower-limb deficiencies: 2.8 per 10,000 births (Finland)" + cite(8),
+    "Ulnar hemimelia": "Ulnar ray deficiency: 33 in 753,342 births, about 0.44 per 10,000, i.e. 4 per 100,000 (Finland)" + cite(6) + ", above Orphanet's not-yet-validated class",
+}
+TOTAL_ROW = ("All limb reduction defects", "Not an Orphanet entity",
+             "4.5 per 10,000 births in Europe, 2003-2012 (EUROCAT)" + cite(9) + "; Norway 4.4 (1970-2016)" + cite(9) +
+             "; northern Netherlands 6.9 (1981-2010)" + cite(3) + "; upper-limb deficiencies 5.6 per 10,000 births in Finland" + cite(6))
+
+def orphanet_cell(code):
+    if code is None:
+        return "No ORPHAcode (umbrella term)"
+    c = PREV["conditions"].get(str(code))
+    if not c:
+        return "No epidemiological data published"
+    rows = c["prevalence"]
+    parts = []
+    for want in ("Prevalence at birth", "Point prevalence", "Cases/families"):
+        for r in rows:
+            if r["type"] != want:
+                continue
+            if want == "Cases/families":
+                if r["mean"] and r["mean"] != "0.0":
+                    parts.append(f"about {int(float(r['mean']))} {'families' if 'amil' in r['qualification'] else 'cases'} described")
+                continue
+            label = "birth prevalence" if want == "Prevalence at birth" else "prevalence"
+            if r["class"] and r["class"] != "Unknown":
+                mean = f", mean {r['mean']} per 100,000" if r["mean"] and r["mean"] != "0.0" else ""
+                parts.append(f"{r['class']} {label}{mean} ({r['geo']})")
+            elif r["class"] == "Unknown" and not parts:
+                parts.append("Prevalence unknown")
+            break  # one line per type (the first listed is Orphanet's headline figure)
+    return "; ".join(parts[:2]) if parts else "Prevalence unknown"
+
+def annex_html():
+    rows = [f"<tr><th scope=\"row\">{TOTAL_ROW[0]}</th><td>{TOTAL_ROW[1]}</td><td>{TOTAL_ROW[2]}</td></tr>"]
+    for name, desc, code, orpha_name, *_ in CONDITIONS:
+        o = orphanet_cell(code)
+        if code:
+            o += f' <a href="{ORPHA_URL.format(code)}" target="_blank" rel="noopener external" title="{orpha_name} on Orphanet">ORPHA:{code}</a>' + cite(11)
+        lit = LITERATURE.get(name, "No population figure found")
+        rows.append(f"<tr><th scope=\"row\">{name}</th><td>{o}</td><td>{lit}</td></tr>")
+    sources = "".join(f'<li id="src-{i}">{t} <a href="{u}" target="_blank" rel="noopener external">{u.replace("https://", "")}</a></li>' for i, (t, u) in enumerate(SOURCES, 1))
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Annex · Prevalence</p>
+    <h2 class="h2">How frequent is each condition?</h2>
+    <p>Two columns, two kinds of source. <strong>Orphanet</strong> gives each rare disease a prevalence class and, where available, a mean estimate; it is the reference for named syndromes. <strong>Population studies</strong> fill the gaps for the conditions Orphanet does not count (the amelias, polydactyly, syndactyly, brachydactyly) and cross-check the others. Every figure was checked against its original publication in September 2026.</p>
+    <div class="annex-wrap">
+      <table class="annex">
+        <thead><tr><th scope="col">Condition</th><th scope="col">Orphanet</th><th scope="col">Population studies</th></tr></thead>
+        <tbody>{"".join(rows)}</tbody>
+      </table>
+    </div>
+    <p class="annex-note">How to read these figures: they describe <strong>births</strong>, not the number of people living with a condition; ranges are Orphanet's prevalence classes; the named conditions do <strong>not add up</strong> to the total for limb reduction defects, because most limb differences are isolated deficiencies without a syndrome name. Rates also differ between populations and registries. None of this is medical advice.</p>
+    <h3 class="h4" style="margin-top:var(--space-4)">Sources</h3>
+    <ol class="sources">{sources}</ol>
+"""
+
 PAGES["/knowledge/understanding-dysmelia/"] = {
     "title": "Understanding dysmelia",
     "desc": "What dysmelia means: a plain-language guide to congenital limb differences and the conditions behind the term, sourced from Orphanet, for families and clinicians.",
@@ -660,6 +756,8 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 
     {opener("02", "Not alone", "The associations that know your condition.")}
     <p>Whatever the diagnosis, a member association near you has walked this road: from Poland-syndrome groups in France and Italy to thalidomide organisations across the world. <a href="/about/members/">Find yours</a>.</p>
+
+    {annex_html()}
   </div>
 </section>
 """,

@@ -629,3 +629,4 @@ ol.sources a { word-break: break-all; }
 .map-dots[hidden] { display: none; }
 .map-legend .l-dot { max-width: 20rem; line-height: 1.35; color: #e9d8fb; }
 .map-legend .l-dot::before { background: #d7d0e0; border-radius: 50%; width: 0.55rem; height: 0.55rem; }
+.map-legend .l-dot::before, .dot-legend::before { background: #fbf8ff; box-shadow: 0 0 0 1.5px #2a0d47; }

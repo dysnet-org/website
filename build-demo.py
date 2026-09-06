@@ -1141,9 +1141,9 @@ MAP_HERO = """
   <link rel="stylesheet" href="/assets/vendor/maplibre-gl.css">
   <script src="/assets/vendor/maplibre-gl.js"></script>
   <script src="/assets/vendor/pmtiles.js"></script>
-  <script src="/assets/js/map-gl.js"></script>
+  <script src="/assets/js/map-gl.js?v=__MAPGL_V__"></script>
 </section>
-""".replace("__MAP_DATA__", MAP_DATA)
+""".replace("__MAP_DATA__", MAP_DATA).replace("__MAPGL_V__", __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/js/map-gl.js").read_bytes()).hexdigest()[:8])
 
 
 def member_li(entry):

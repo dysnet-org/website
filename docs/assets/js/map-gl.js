@@ -70,13 +70,13 @@
       // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
       // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps dots with u < r*100.
       { id: "dots1000", type: "circle", source: "dots", "source-layer": "dots", minzoom: 0, maxzoom: 4, filter: ["<", ["get", "u"], 4500],
-        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 1.0, 3.9, 1.7] } },
+        paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 0, 0.5, 3.9, 0.8], "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 1.5, 3.9, 2.3] } },
       { id: "dots100", type: "circle", source: "dots", "source-layer": "dots", minzoom: 4, maxzoom: 6, filter: ["<", ["get", "u"], 4500],
-        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 1.3, 5.9, 1.9] } },
+        paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 2.0, 5.9, 2.5] } },
       { id: "dots10", type: "circle", source: "dots", "source-layer": "dots", minzoom: 6, maxzoom: 9, filter: ["<", ["get", "u"], 4500],
-        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 1.4, 8.9, 2.1] } },
+        paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.1, 8.9, 2.7] } },
       { id: "dots1", type: "circle", source: "dots", "source-layer": "dots", minzoom: 9, filter: ["<", ["get", "u"], 4500],
-        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.85, "circle-radius": 2.1 } },
+        paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.9, "circle-radius": 2.8 } },
       { id: "places-major", type: "symbol", source: "ne", "source-layer": "places", minzoom: 3.5,
         filter: ["<=", ["get", "scalerank"], 1],
         layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Regular"], "text-size": 12, "text-anchor": "left", "text-offset": [0.5, 0] },

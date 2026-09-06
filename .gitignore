@@ -22,3 +22,7 @@ _preview/
 
 # Natural Earth raw sources for the tileset (~50 MB, re-download via tools/build-tiles.sh header)
 tools/ne10m/
+
+# Raw population grid + generated dot files (hundreds of MB) — only the tileset is committed
+tools/ghs/
+tools/pop/

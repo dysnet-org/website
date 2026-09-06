@@ -40,9 +40,15 @@ API key, no third-party request):
 | `docs/assets/fonts/` | Open Sans glyph ranges for map labels. |
 | `docs/assets/js/map-gl.js` | The map: country colouring from the members data, region views, tooltips, offices. |
 | `docs/assets/map/world.svg` | Fallback map for browsers without WebGL (also `tools/build-world-map.py`). |
+| `docs/assets/map/dots.pmtiles` | Estimated people living with a limb difference, as grey dots (98 MB, zoom 0-9). Built from the GHSL population grid (EU JRC, GHS-POP 2025, CC BY 4.0): one base dot per 1,000 people placed inside its 1 km cell, with coarser layers (1 dot = 10 / 100 / 1,000 people) for lower zooms. Each dot carries a random `u`; a condition of prevalence *r* per 100,000 is drawn by keeping dots with `u < r*100`. |
+| `tools/build-pop-dots.py`, `tools/build-pop-tiles.sh` | Regenerate the dots: download `GHS_POP_E2025_GLOBE_R2023A_4326_30ss_V1_0` into `tools/ghs/`, run the Python script (needs numpy, tifffile, imagecodecs; ~3 min), then the shell script (tippecanoe + tile-join; ~2 min). Raw inputs are git-ignored. Bump `?v=` in `map-gl.js` after regenerating. |
+| `tools/orphanet-prevalence.json` | Orphanet epidemiology extract behind the prevalence annex and the dot selector's rates (`DOT_RATES` in `build-demo.py`). |
 
 The opening view is guessed from the device time zone only. Zoom is capped at
-city level on purpose. Local preview needs a server that honours HTTP Range
+city level on purpose, and the dots are labelled as estimates on the map: they are
+prevalence × population, never observed cases. Keep `dots.pmtiles` under GitHub's
+100 MB file limit (it is at 98 MB); if a regeneration grows it, host it on an
+object store or lower the base density. Local preview needs a server that honours HTTP Range
 requests, hence `tools/serve.py` (GitHub Pages does natively).
 
 ## Deployment

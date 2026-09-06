@@ -618,3 +618,12 @@ table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-pu
 ol.sources { font-size: var(--text-small); color: var(--dys-muted); padding-left: 1.4rem; max-width: var(--prose-max); }
 ol.sources li { margin-bottom: 0.45rem; scroll-margin-top: 8rem; }
 ol.sources a { word-break: break-all; }
+
+/* ── Estimated-people dots: selector + legend ───────────────────────── */
+.map-dots { background: rgba(42,13,71,0.6); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); backdrop-filter: blur(6px); color: #e9d8fb; max-width: 22rem; }
+.map-dots label { display: block; font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #c4f7ae; margin-bottom: 0.3rem; }
+.map-dots select { width: 100%; font: inherit; font-size: var(--text-small); color: var(--dys-ink); background: #fff; border: 0; border-radius: 0.5rem; padding: 0.4rem 0.6rem; }
+.dot-legend { font-size: var(--text-small); margin: 0.5rem 0 0; color: #fff; }
+.dot-legend::before { content: ""; display: inline-block; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #d7d0e0; margin-right: 0.45rem; vertical-align: 1px; }
+.dot-caption { font-size: 0.68rem; color: #c9b3e6; margin: 0.4rem 0 0; }
+.map-dots[hidden] { display: none; }

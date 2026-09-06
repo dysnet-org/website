@@ -49,6 +49,7 @@
     glyphs: base + "/assets/fonts/{fontstack}/{range}.pbf",
     sources: {
       ne: { type: "vector", url: "pmtiles://" + base + "/assets/map/ne10m.pmtiles?v=2", attribution: "Natural Earth" },
+      dots: { type: "vector", url: "pmtiles://" + base + "/assets/map/dots.pmtiles?v=1" },
       offices: { type: "geojson", data: { type: "FeatureCollection", features: data.offices.map(function (o) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [o.lon, o.lat] }, properties: { name: o.name } };
       }) } }
@@ -66,6 +67,16 @@
         paint: { "line-color": "rgba(255,255,255,0.12)", "line-width": 0.6 } },
       { id: "borders", type: "line", source: "ne", "source-layer": "countries",
         paint: { "line-color": "rgba(255,255,255,0.16)", "line-width": ["interpolate", ["linear"], ["zoom"], 1, 0.4, 9, 1.2] } },
+      // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
+      // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps dots with u < r*100.
+      { id: "dots1000", type: "circle", source: "dots", "source-layer": "dots", minzoom: 0, maxzoom: 4, filter: ["<", ["get", "u"], 4500],
+        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 1.0, 3.9, 1.7] } },
+      { id: "dots100", type: "circle", source: "dots", "source-layer": "dots", minzoom: 4, maxzoom: 6, filter: ["<", ["get", "u"], 4500],
+        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 1.3, 5.9, 1.9] } },
+      { id: "dots10", type: "circle", source: "dots", "source-layer": "dots", minzoom: 6, maxzoom: 9, filter: ["<", ["get", "u"], 4500],
+        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 1.4, 8.9, 2.1] } },
+      { id: "dots1", type: "circle", source: "dots", "source-layer": "dots", minzoom: 9, filter: ["<", ["get", "u"], 4500],
+        paint: { "circle-color": "#d7d0e0", "circle-opacity": 0.85, "circle-radius": 2.1 } },
       { id: "places-major", type: "symbol", source: "ne", "source-layer": "places", minzoom: 3.5,
         filter: ["<=", ["get", "scalerank"], 1],
         layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Regular"], "text-size": 12, "text-anchor": "left", "text-offset": [0.5, 0] },
@@ -94,6 +105,26 @@
   window.DYSNET_GLMAP = map;  // handy for debugging in the console
   map.on("error", function (e) { if (e && e.error) console.error("DysNet map:", e.error.message || e.error); });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+
+  // ── estimated-people dots: condition selector + live legend ──────────
+  (function () {
+    var box = document.getElementById("map-dots"), sel = document.getElementById("dot-condition"), legend = document.getElementById("dot-legend");
+    if (!box || !sel || !data.rates) return;
+    var LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
+    data.rates.forEach(function (r, i) {
+      var o = document.createElement("option"); o.value = i; o.textContent = r[0]; sel.appendChild(o);
+    });
+    function band() { var z = map.getZoom(); return z < 4 ? 1000 : z < 6 ? 100 : z < 9 ? 10 : 1; }
+    function update() {
+      var r = data.rates[+sel.value], per = band();
+      LAYERS.forEach(function (id) { if (map.getLayer(id)) map.setFilter(id, ["<", ["get", "u"], Math.round(r[1] * 100)]); });
+      legend.textContent = "1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " · " + r[0].toLowerCase() +
+        " · about " + r[1] + " per 100,000 births (" + r[2] + ")";
+    }
+    sel.addEventListener("change", update);
+    map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
+    map.on("load", function () { box.hidden = false; update(); });
+  })();
 
   // ── tooltip (same .map-tip as the SVG map) ─────────────────────────
   var tip = document.querySelector(".map-tip");

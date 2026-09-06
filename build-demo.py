@@ -1061,7 +1061,28 @@ for _country, _orgs in MEMBERS:
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
 MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labels": MAP_LABELS}, ensure_ascii=False)
+# Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
+# so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
+DOT_RATES = [
+    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012"),
+    ("Polydactyly", 84, "northern Netherlands 1981-2010"),
+    ("Syndactyly", 47, "northern Netherlands 1981-2010"),
+    ("Radial ray deficiency, all forms", 18.3, "Finland"),
+    ("Symbrachydactyly (undergrowth)", 12, "Finland"),
+    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe"),
+    ("Amniotic band syndrome", 5.3, "Orphanet, Europe"),
+    ("Ulnar hemimelia", 4.4, "Finland"),
+    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012"),
+    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries"),
+    ("Fibular hemimelia", 1.1, "Orphanet, worldwide"),
+    ("Phocomelia, all forms", 0.74, "Finland"),
+    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe"),
+    ("TAR syndrome", 0.5, "EUROCAT, Europe"),
+    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide"),
+    ("Tibial hemimelia", 0.1, "Europe"),
+    ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
+]
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
@@ -1094,6 +1115,12 @@ MAP_HERO = """
     <button type="button" data-view="africa" aria-pressed="false">Africa &amp; Middle East</button>
   </div>
   <p class="map-guess" aria-live="polite"></p>
+  <div class="map-dots" id="map-dots" hidden>
+    <label for="dot-condition">Estimated people living with</label>
+    <select id="dot-condition"></select>
+    <p class="dot-legend" id="dot-legend" aria-live="polite"></p>
+    <p class="dot-caption">Grey dots are <strong>estimates</strong> (prevalence × population), not observed cases. DysNet holds no data on where individuals live. Population: GHSL 2025 (EU JRC).</p>
+  </div>
   <div class="map-legend" aria-label="Legend">
     <span class="l-member">Member association</span>
     <span class="l-candidate">Registry pilot candidate</span>

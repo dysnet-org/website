@@ -627,3 +627,5 @@ ol.sources a { word-break: break-all; }
 .dot-legend::before { content: ""; display: inline-block; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: #d7d0e0; margin-right: 0.45rem; vertical-align: 1px; }
 .dot-caption { font-size: 0.68rem; color: #c9b3e6; margin: 0.4rem 0 0; }
 .map-dots[hidden] { display: none; }
+.map-legend .l-dot { max-width: 20rem; line-height: 1.35; color: #e9d8fb; }
+.map-legend .l-dot::before { background: #d7d0e0; border-radius: 50%; width: 0.55rem; height: 0.55rem; }

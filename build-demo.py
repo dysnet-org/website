@@ -577,7 +577,7 @@ CONDITIONS = [
     ("Polydactyly", "more than the usual number of fingers or toes.", 2913, "Non-syndromic polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
     ("Radial aplasia", "the radius is underdeveloped or absent.", 93321, "Isolated radial hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
     ("Roberts syndrome", "symmetric limb reduction with growth delay (SC phocomelia).", 3103, "Roberts syndrome", "arms legs several", "reduction", "other", "genetic"),
-    ("Symbrachydactyly", "short, webbed or missing fingers on one hand.", 1570, "Symbrachydactyly of hands and feet", "arms", "reduction fusion", "limbsonly", "nongenetic"),
+    ("Symbrachydactyly", "short, webbed or missing fingers, usually on one hand; not inherited.", None, None, "arms", "reduction fusion", "limbsonly", "nongenetic"),
     ("Syndactyly", "webbing between two or more fingers or toes.", 93458, "Non-syndromic polydactyly, syndactyly and/or hyperphalangy", "arms legs", "fusion extra", "limbsonly", "genetic"),
     ("Tetra-amelia", "absence of all four limbs, with other malformations.", 3301, "Tetraamelia-multiple malformations syndrome", "several", "reduction", "other", "genetic"),
     ("Thrombocytopenia-absent radius (TAR)", "absent radius with low platelet counts.", 3320, "Thrombocytopenia-absent radius syndrome", "arms", "reduction", "other", "genetic"),
@@ -592,6 +592,9 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
         link = (f'<p class="src"><a href="{ORPHA_URL.format(code)}" target="_blank" '
                 f'rel="noopener external" title="{orpha_name} — Orphanet">'
                 f'Orphanet · ORPHA:{code} ↗</a></p>')
+    elif name == "Symbrachydactyly":
+        link = ('<p class="src">Not an Orphanet entity as such: Orphanet lists only the rare form affecting hands and feet, '
+                f'<a href="{ORPHA_URL.format(1570)}" target="_blank" rel="noopener external" title="Symbrachydactyly of hands and feet — Orphanet">ORPHA:1570 ↗</a>.</p>')
     else:
         link = ('<p class="src">Umbrella term; see the specific types on '
                 '<a href="https://www.orpha.net/en/disease" target="_blank" rel="noopener external">Orphanet</a>.</p>')
@@ -635,7 +638,7 @@ LITERATURE = {
     "Polydactyly": "8.4 per 10,000 births (northern Netherlands, 1981-2010)" + cite(3) + "; the most common upper-limb anomaly in Korea, where all upper-limb anomalies total 23.5 per 10,000 live births" + cite(10),
     "Radial aplasia": "Radial ray deficiency, all forms: 1.83 per 10,000 births, 13% of them isolated (Finland)" + cite(7) + "; the isolated share matches Orphanet's figure",
     "Roberts syndrome": "Prevalence unknown; part of the ESCO2 spectrum" + cite(12),
-    "Symbrachydactyly": "Undergrowth category, mainly symbrachydactyly: 91 in 753,342 births, about 1.2 per 10,000 (Finland)" + cite(6) + ". ORPHA:1570 covers only the rare hands-and-feet form.",
+    "Symbrachydactyly": "Undergrowth category, mainly symbrachydactyly: 91 in 753,342 births, about 1.2 per 10,000 (Finland)" + cite(6),
     "Syndactyly": "4.7 per 10,000 births (northern Netherlands, 1981-2010; non-syndromic cases fell from 5.2 to 1.1 between 1992 and 2010)" + cite(3) + "; 5.63 per 10,000 (China, 2007-2019, 13,611 cases)" + cite(4),
     "Tibial hemimelia": "All lower-limb deficiencies: 2.8 per 10,000 births (Finland)" + cite(8),
     "Ulnar hemimelia": "Ulnar ray deficiency: 33 in 753,342 births, about 0.44 per 10,000, i.e. 4 per 100,000 (Finland)" + cite(6) + ", above Orphanet's not-yet-validated class",
@@ -644,7 +647,10 @@ TOTAL_ROW = ("All limb reduction defects", "Not an Orphanet entity",
              "4.5 per 10,000 births in Europe, 2003-2012 (EUROCAT)" + cite(9) + "; Norway 4.4 (1970-2016)" + cite(9) +
              "; northern Netherlands 6.9 (1981-2010)" + cite(3) + "; upper-limb deficiencies 5.6 per 10,000 births in Finland" + cite(6))
 
-def orphanet_cell(code):
+def orphanet_cell(code, name=None):
+    if name == "Symbrachydactyly":
+        return (f'Not an Orphanet entity as such; <a href="{ORPHA_URL.format(1570)}" target="_blank" rel="noopener external">ORPHA:1570</a> '
+                'covers only the rare form affecting hands and feet (2 cases described)')
     if code is None:
         return "No ORPHAcode (umbrella term)"
     c = PREV["conditions"].get(str(code))
@@ -672,7 +678,7 @@ def orphanet_cell(code):
 def annex_html():
     rows = [f"<tr><th scope=\"row\">{TOTAL_ROW[0]}</th><td>{TOTAL_ROW[1]}</td><td>{TOTAL_ROW[2]}</td></tr>"]
     for name, desc, code, orpha_name, *_ in CONDITIONS:
-        o = orphanet_cell(code)
+        o = orphanet_cell(code, name)
         if code:
             o += f' <a href="{ORPHA_URL.format(code)}" target="_blank" rel="noopener external" title="{orpha_name} on Orphanet">ORPHA:{code}</a>' + cite(11)
         lit = LITERATURE.get(name, "No population figure found")
@@ -1119,13 +1125,14 @@ MAP_HERO = """
     <label for="dot-condition">Estimated people living with</label>
     <select id="dot-condition"></select>
     <p class="dot-legend" id="dot-legend" aria-live="polite"></p>
-    <p class="dot-caption">Grey dots are <strong>estimates</strong> (prevalence × population), not observed cases. DysNet holds no data on where individuals live. Population: GHSL 2025 (EU JRC).</p>
+    <p class="dot-caption">Grey dots are <strong>estimates</strong> (prevalence × population, GHSL 2025 population grid, EU JRC). The registry’s purpose is to turn these estimates into known, consented cases.</p>
   </div>
   <div class="map-legend" aria-label="Legend">
     <span class="l-member">Member association</span>
     <span class="l-candidate">Registry pilot candidate</span>
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
+    <span class="l-dot">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
     <span class="map-credit">Map data: Natural Earth (public domain) · rendered with MapLibre, self-hosted</span>
   </div>
   </div>

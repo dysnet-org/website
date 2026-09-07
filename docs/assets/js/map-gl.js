@@ -117,12 +117,26 @@
       var o = document.createElement("option"); o.value = i; o.textContent = r[0]; sel.appendChild(o);
     });
     function band() { var z = map.getZoom(); return z < 4 ? 1000 : z < 6 ? 100 : z < 9 ? 10 : 1; }
-    function update() {
-      var r = data.rates[+sel.value], per = band();
-      LAYERS.forEach(function (id) { if (map.getLayer(id)) map.setFilter(id, ["<", ["get", "u"], Math.round(r[1] * 100)]); });
-      legend.textContent = "1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " · " + r[0].toLowerCase() +
-        " · about " + r[1] + " per 100,000 births (" + r[2] + ")";
+    function dotsInView() {
+      var layers = LAYERS.filter(function (l) { return map.getLayer(l); });
+      var seen = {}, n = 0;
+      map.queryRenderedFeatures({ layers: layers }).forEach(function (f) {
+        var k = f.geometry.coordinates.join(",");   // a dot on a tile edge can appear in two tiles
+        if (!seen[k]) { seen[k] = 1; n++; }
+      });
+      return n;
     }
+    function legendText() {
+      var r = data.rates[+sel.value], per = band(), n = dotsInView(), fmt = function (x) { return x.toLocaleString("en"); };
+      var scale = per === 1 ? fmt(n) + " people in view" : "1 dot = " + fmt(per) + " people · " + fmt(n) + " dots in view ≈ " + fmt(n * per) + " people";
+      return scale + " · " + r[0].toLowerCase() + " · about " + r[1] + " per 100,000 births (" + r[2] + ")";
+    }
+    function update() {
+      var r = data.rates[+sel.value];
+      LAYERS.forEach(function (id) { if (map.getLayer(id)) map.setFilter(id, ["<", ["get", "u"], Math.round(r[1] * 100)]); });
+      legend.textContent = legendText();
+    }
+    map.on("idle", function () { legend.textContent = legendText(); });  // recount once tiles have settled after any move
     sel.addEventListener("change", update);
 
     // click a dot: what does it stand for?

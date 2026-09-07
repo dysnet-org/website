@@ -630,3 +630,13 @@ ol.sources a { word-break: break-all; }
 .map-legend .l-dot { max-width: 20rem; line-height: 1.35; color: #e9d8fb; }
 .map-legend .l-dot::before { background: #d7d0e0; border-radius: 50%; width: 0.55rem; height: 0.55rem; }
 .map-legend .l-dot::before, .dot-legend::before { background: #fbf8ff; box-shadow: 0 0 0 1.5px #2a0d47; }
+
+/* ── Dot popup (what a dot stands for) ─────────────────────────────── */
+.dot-popup .maplibregl-popup-content { background: #fff; color: var(--dys-ink); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); box-shadow: 0 16px 40px -16px rgba(0,0,0,0.5); font-family: inherit; font-size: var(--text-small); line-height: 1.45; }
+.dot-popup .maplibregl-popup-tip { border-top-color: #fff; border-bottom-color: #fff; }
+.dot-popup .maplibregl-popup-close-button { font-size: 1.2rem; color: var(--dys-muted); padding: 0.2rem 0.5rem; }
+.dot-popup .maplibregl-popup-close-button:hover { background: var(--dys-purple-soft); color: var(--dys-purple-text); border-radius: 0.4rem; }
+.dot-popup .dp-main { margin: 0 0 0.4rem; font-size: var(--text-body); max-width: none; }
+.dot-popup .dp-main strong { color: var(--dys-purple-text); }
+.dot-popup .dp-sub { margin: 0 0 0.4rem; color: var(--dys-ink); max-width: none; }
+.dot-popup .dp-foot { margin: 0; color: var(--dys-muted); font-size: var(--text-eyebrow); max-width: none; }

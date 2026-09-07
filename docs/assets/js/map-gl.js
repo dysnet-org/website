@@ -106,11 +106,13 @@
   map.on("error", function (e) { if (e && e.error) console.error("DysNet map:", e.error.message || e.error); });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
+  var DOT_LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
+
   // ── estimated-people dots: condition selector + live legend ──────────
   (function () {
     var box = document.getElementById("map-dots"), sel = document.getElementById("dot-condition"), legend = document.getElementById("dot-legend");
     if (!box || !sel || !data.rates) return;
-    var LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
+    var LAYERS = DOT_LAYERS;
     data.rates.forEach(function (r, i) {
       var o = document.createElement("option"); o.value = i; o.textContent = r[0]; sel.appendChild(o);
     });
@@ -122,6 +124,24 @@
         " · about " + r[1] + " per 100,000 births (" + r[2] + ")";
     }
     sel.addEventListener("change", update);
+
+    // click a dot: what does it stand for?
+    var popup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "20rem", className: "dot-popup" });
+    function dotInfo(e) {
+      var per = band(), r = data.rates[+sel.value];
+      var people = per === 1 ? "<strong>1 person</strong>" : "<strong>about " + per.toLocaleString("en") + " people</strong>";
+      var zoomHint = per === 1 ? "" : " Zoom in to see them one by one: at city zoom, 1 dot = 1 person.";
+      popup.setLngLat(e.lngLat).setHTML(
+        "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +
+        "<p class=\"dp-sub\">1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " at this zoom level." + zoomHint + "</p>" +
+        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025). Not an observed case; the registry exists to make the real ones visible.</p>"
+      ).addTo(map);
+    }
+    LAYERS.forEach(function (id) {
+      map.on("click", id, dotInfo);
+      map.on("mouseenter", id, function () { map.getCanvas().style.cursor = "pointer"; });
+      map.on("mouseleave", id, function () { map.getCanvas().style.cursor = ""; });
+    });
     map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
     map.on("load", function () { box.hidden = false; update(); });
   })();
@@ -150,6 +170,7 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }) }).length) return; // a dot was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
   });

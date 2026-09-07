@@ -69,7 +69,17 @@ def main():
         rings = []
         for poly in polys:
             for ring in poly:
-                rings.append([natural_earth(lon, lat) for lon, lat in ring_coords(ring, arcs)])
+                # Split a ring wherever consecutive points jump across the ±180° meridian;
+                # otherwise the projection draws a straight seam across the whole map.
+                coords = ring_coords(ring, arcs)
+                part = []
+                for i, (lon, lat) in enumerate(coords):
+                    if part and abs(lon - coords[i - 1][0]) > 180:
+                        rings.append(part)
+                        part = []
+                    part.append(natural_earth(lon, lat))
+                if part:
+                    rings.append(part)
         projected.append((cid, g["properties"]["name"], rings))
 
     xs = [x for _, _, rs in projected for r in rs for x, _ in r]

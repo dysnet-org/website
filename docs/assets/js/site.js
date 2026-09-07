@@ -181,6 +181,9 @@
   var host = document.getElementById("worldmap");
   var data = window.DYSNET_MAP;
   if (!host || !data || window.DYSNET_GL_ACTIVE) return;  // WebGL map took over (map-gl.js)
+  // SVG fallback is in use: the estimated-people dots need WebGL, so explain instead of showing an empty legend entry
+  var dotLegend = document.querySelector(".map-legend .l-dot");
+  if (dotLegend) dotLegend.innerHTML = "Grey dots (estimated people living with a limb difference) need WebGL, which this browser has turned off. Enable graphics acceleration or allow WebGL for this site to see them.";
   var base = window.SITE_BASE || "";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

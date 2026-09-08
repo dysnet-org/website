@@ -48,7 +48,7 @@
     version: 8,
     glyphs: base + "/assets/fonts/{fontstack}/{range}.pbf",
     sources: {
-      ne: { type: "vector", url: "pmtiles://" + base + "/assets/map/ne10m.pmtiles?v=2", attribution: "Natural Earth" },
+      ne: { type: "vector", url: "pmtiles://" + base + "/assets/map/ne10m.pmtiles?v=4", attribution: "Natural Earth" },
       dots: { type: "vector", url: "pmtiles://" + base + "/assets/map/dots.pmtiles?v=1" },
       offices: { type: "geojson", data: { type: "FeatureCollection", features: data.offices.map(function (o) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [o.lon, o.lat] }, properties: { name: o.name } };
@@ -77,26 +77,23 @@
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.1, 8.9, 2.7] } },
       { id: "dots1", type: "circle", source: "dots", "source-layer": "dots", minzoom: 9, filter: ["<", ["get", "u"], 4500],
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.9, "circle-radius": 2.8 } },
-      // City names: progressive density driven by Natural Earth's curated min_zoom (1.7–9), shown ~0.7 zoom
-      // levels early. Bigger cities (lower scalerank) win label collisions; labels may shift around the point to fit.
-      { id: "places", type: "symbol", source: "ne", "source-layer": "places", minzoom: 2.5,
-        filter: ["step", ["zoom"],
-          ["<=", ["get", "min_zoom"], 2.4],
-          3, ["<=", ["get", "min_zoom"], 3.7], 4, ["<=", ["get", "min_zoom"], 4.7], 5, ["<=", ["get", "min_zoom"], 5.7],
-          6, ["<=", ["get", "min_zoom"], 6.7], 7, ["<=", ["get", "min_zoom"], 7.7], 8, ["<=", ["get", "min_zoom"], 8.7], 9, ["<=", ["get", "min_zoom"], 10]],
+      // City names from GeoNames (cities of 15,000+, CC BY 4.0), tiered by population at build time
+      // (tippecanoe per-feature minzoom): megacities/capitals from z2, towns of 15-20k only at z9.
+      { id: "cities", type: "symbol", source: "ne", "source-layer": "cities", minzoom: 2.5,
         layout: {
-          "text-field": ["get", "name"], "text-font": ["Open_Sans_Regular"],
-          "text-size": ["interpolate", ["linear"], ["zoom"], 3, ["-", 12, ["*", 0.4, ["get", "scalerank"]]], 9, ["-", 15, ["*", 0.35, ["get", "scalerank"]]]],
-          "text-variable-anchor": ["left", "right", "top", "bottom"], "text-radial-offset": 0.5, "text-justify": "auto",
-          "symbol-sort-key": ["get", "scalerank"], "text-max-width": 8
+          "text-field": ["get", "name"], "text-font": ["case", ["==", ["get", "cap"], 1], ["literal", ["Open_Sans_Bold"]], ["literal", ["Open_Sans_Regular"]]],
+          "text-size": ["interpolate", ["linear"], ["zoom"],
+            3, ["step", ["get", "pop"], 10, 500000, 11.5, 2000000, 13],
+            9, ["step", ["get", "pop"], 10.5, 50000, 12, 200000, 13.5, 1000000, 15]],
+          "text-variable-anchor": ["left", "right", "top", "bottom"], "text-radial-offset": 0.55, "text-justify": "auto",
+          "symbol-sort-key": ["-", 0, ["get", "pop"]], "text-max-width": 8
         },
         paint: {
-          "text-color": ["step", ["get", "scalerank"], "#f3eefa", 2, "#e2d3f7", 5, "#cdb8ea", 8, "#b9a0dc"],
+          "text-color": ["step", ["get", "pop"], "#b9a0dc", 50000, "#cdb8ea", 200000, "#e2d3f7", 1000000, "#f7f1fd"],
           "text-halo-color": "#24093f", "text-halo-width": 1.3
         } },
-      { id: "places-dot", type: "circle", source: "ne", "source-layer": "places", minzoom: 5,
-        filter: ["step", ["zoom"], ["<=", ["get", "min_zoom"], 4.7], 6, ["<=", ["get", "min_zoom"], 6.7], 7, ["<=", ["get", "min_zoom"], 7.7], 8, ["<=", ["get", "min_zoom"], 8.7], 9, ["<=", ["get", "min_zoom"], 10]],
-        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 1.2, 9, 2.2], "circle-color": "#24093f", "circle-stroke-color": "#e2d3f7", "circle-stroke-width": 0.8 } },
+      { id: "cities-dot", type: "circle", source: "ne", "source-layer": "cities", minzoom: 5,
+        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 1.2, 9, 2.3], "circle-color": "#24093f", "circle-stroke-color": "#e2d3f7", "circle-stroke-width": 0.8 } },
       { id: "office-dot", type: "circle", source: "offices",
         paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 3.5, 9, 7], "circle-color": "#ffffff", "circle-stroke-color": "#4cc42c", "circle-stroke-width": 2 } },
       { id: "office-label", type: "symbol", source: "offices",

@@ -34,7 +34,7 @@ API key, no third-party request):
 
 | Path | What it is |
 |---|---|
-| `docs/assets/map/ne10m.pmtiles` | Natural Earth 10 m tileset (public domain), zoom 0-9, 30 MB, one file read by byte ranges. |
+| `docs/assets/map/ne10m.pmtiles` | Basemap tileset, zoom 0-9, ~35 MB, read by byte ranges: Natural Earth 10 m (public domain) plus city names from GeoNames cities15000 (CC BY 4.0). |
 | `tools/build-tiles.sh` | Regenerates it with [tippecanoe](https://github.com/felt/tippecanoe) from `tools/ne10m/*.geojson` (raw sources, git-ignored). |
 | `docs/assets/vendor/` | MapLibre GL JS 4.7.1 (BSD) and pmtiles 3.2.0, vendored. |
 | `docs/assets/fonts/` | Open Sans glyph ranges for map labels. |

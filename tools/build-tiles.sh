@@ -12,10 +12,11 @@ tippecanoe -o ../../docs/assets/map/ne10m.pmtiles --force \
   --coalesce-densest-as-needed --extend-zooms-if-still-dropping \
   -r1 \
   --include=ADM0_A3 --include=NAME --include=POP_EST --include=SCALERANK \
-  --include=adm0_a3 --include=name --include=scalerank --include=pop_max --include=min_zoom \
+  --include=adm0_a3 --include=name --include=scalerank --include=pop_max --include=min_zoom --include=pop --include=cap --include=mz \
   -L countries:ne_10m_admin_0_countries.geojson \
   -L admin1:ne_10m_admin_1_states_provinces_lines.geojson \
   -L places:ne_10m_populated_places_simple.geojson \
+  -L cities:geonames_cities.ndjson \
   -L lakes:ne_10m_lakes.geojson \
   -L rivers:ne_10m_rivers_lake_centerlines.geojson
 ls -la ../../docs/assets/map/ne10m.pmtiles

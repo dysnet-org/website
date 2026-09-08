@@ -1133,7 +1133,7 @@ MAP_HERO = """
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
     <span class="l-dot">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
-    <span class="map-credit">Map data: Natural Earth (public domain) · rendered with MapLibre, self-hosted</span>
+    <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0) · rendered with MapLibre, self-hosted</span>
   </div>
   </div>
   <div class="map-tip" role="tooltip"></div>

@@ -640,3 +640,9 @@ ol.sources a { word-break: break-all; }
 .dot-popup .dp-main strong { color: var(--dys-purple-text); }
 .dot-popup .dp-sub { margin: 0 0 0.4rem; color: var(--dys-ink); max-width: none; }
 .dot-popup .dp-foot { margin: 0; color: var(--dys-muted); font-size: var(--text-eyebrow); max-width: none; }
+
+/* ── Fixes: legend must wrap inside the map; audience cards need room below the map ── */
+.map-legend { max-width: min(24rem, 100%); }
+.map-legend span { white-space: normal; overflow-wrap: anywhere; }
+.map-credit { display: block; max-width: 100%; line-height: 1.35; }
+.aud-section { padding-top: var(--space-5); }

@@ -249,7 +249,7 @@ PAGES["/"] = {
     "body": f"""
 __MAP_HERO__
 
-<section style="padding-top:0">
+<section class="aud-section">
   <div class="container">
     <div class="grid cols-4 aud-grid">
       <div class="card acc-library"><h3 class="h4">For families</h3><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>

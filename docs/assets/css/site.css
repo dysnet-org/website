@@ -646,3 +646,10 @@ ol.sources a { word-break: break-all; }
 .map-legend span { white-space: normal; overflow-wrap: anywhere; }
 .map-credit { display: block; max-width: 100%; line-height: 1.35; }
 .aud-section { padding-top: var(--space-5); }
+
+/* ── Registry: partner card with the Health Data Safe logo ──────────── */
+.partner-card { display: grid; gap: var(--space-3); align-items: center; grid-template-columns: 1fr; background: #fff; border: 1px solid var(--dys-line); border-radius: var(--radius-sheet); padding: var(--space-3) var(--space-4); }
+@media (min-width: 48rem) { .partner-card { grid-template-columns: 14rem 1fr; } }
+.partner-logo img { width: 100%; max-width: 14rem; height: auto; }
+.partner-card p { max-width: none; }
+.partner-card p:last-child { margin-bottom: 0; }

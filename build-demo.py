@@ -794,10 +794,43 @@ PAGES["/registry/"] = {
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="/knowledge/guides/patient-owned-registry/">New to the idea? The two-minute guide</a></p>
 
     {opener("03", "The partner", "Built with Health Data Safe.")}
-    <p><a href="https://www.healthdatasafe.org">Health Data Safe</a>, a Swiss non-profit foundation specialised in patient-governed health data infrastructure, is proposed as the registry’s technical and operational partner. The mandate is submitted to the DysNet AGM of 26 August 2026.</p>
+    <div class="partner-card">
+      <a class="partner-logo" href="https://www.healthdatasafe.org" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
+      <div>
+        <p><strong>By decision of the DysNet Annual General Meeting of 26 August 2026, the registry is created with <a href="https://www.healthdatasafe.org" target="_blank" rel="noopener external">Health Data Safe</a> as its technical and operational partner.</strong></p>
+        <p>Health Data Safe is a Swiss non-profit foundation (Canton of Vaud, founded 2025) that builds open-source infrastructure for people to gather, read and share their own health data, for their care and for research. It contributes its infrastructure to the DysNet registry in kind.</p>
+      </div>
+    </div>
+
+    <div class="grid cols-3" style="margin-top:var(--space-3)">
+      <div class="card acc-research">
+        <h3 class="h4">The technology</h3>
+        <p>Every person holds their own data account; nothing is pooled without a granular, revocable consent. The data model is built for interoperability and portability, so French and Italian records become one comparable registry. The stack runs today: Health Data Safe’s patient and clinician apps are published on the Apple and Google stores.</p>
+      </div>
+      <div class="card acc-library">
+        <h3 class="h4">The regulation</h3>
+        <p>Designed for the GDPR and the Swiss Federal Act on Data Protection, with a documented compliance programme (HIPAA-aligned procedures, workforce training register). The foundation’s statutes bind it: health data can never be bought or sold, and its use is limited to care and research.</p>
+      </div>
+      <div class="card acc-studies">
+        <h3 class="h4">The trust</h3>
+        <p>A non-profit with no commercial exit, whose purpose is written into its statutes, and a partner already in DysNet’s circle. The patient community governs what the registry collects and who may use it; each association keeps control of its families’ data and can withdraw it.</p>
+      </div>
+    </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">The first pilots</p>
+    <h2 class="h2">Why Assédea and Raggiungere launch the registry with Health Data Safe.</h2>
+    <p>The two pilot associations, in France and Italy, carry the same duty towards their families: never let their data become a product. Their reasons for choosing Health Data Safe as the partner to launch the registry:</p>
+    <ul>
+      <li><strong>Ownership that is legally binding.</strong> The foundation’s statutes rule out any sale of health data and limit its use to care and research; that promise does not depend on goodwill.</li>
+      <li><strong>Consent the family controls.</strong> Each person decides what enters the registry and can withdraw at any time, in their own language, under the GDPR rules both associations already work with.</li>
+      <li><strong>No servers to run.</strong> Volunteer associations cannot operate health-data infrastructure; the technical and regulatory burden sits with a partner whose sole purpose is exactly that.</li>
+      <li><strong>One registry, not two.</strong> Interoperable by design, so the French and Italian pilots feed a single dataset that research can finally use, and other member associations can join with the same tools.</li>
+      <li><strong>A partner who knows the network.</strong> Health Data Safe already works alongside DysNet on the strategy that the AGM adopted, and brings its infrastructure in kind rather than as a commercial service.</li>
+    </ul>
 
     {opener("04", "Progress", "The log.")}
-    <div class="report"><p class="seat">Registry</p><h3 class="h4">Mandate proposal before the AGM</h3><time datetime="2026-08">August 2026</time><p>The refocused strategy, including the registry mandate, is on the AGM agenda. Every board member commits to seeking grants for the registry.</p></div>
+    <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner. Every board member commits to seeking grants for the registry; Assédea (France) and Raggiungere (Italy) prepare the first pilots.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">First grant application in preparation</h3><time datetime="2026-07">Summer 2026</time><p>A rare-disease research application is in preparation on the French side; EU rare-disease calls are being screened.</p></div>
   </div>
 </section>
@@ -1058,7 +1091,7 @@ ISO_NUM = {"Australia": "036", "Austria": "040", "Belgium": "056", "Canada": "12
 ISO_A3 = {"036": "AUS", "040": "AUT", "056": "BEL", "124": "CAN", "152": "CHL", "250": "FRA", "276": "DEU",
           "372": "IRL", "380": "ITA", "528": "NLD", "578": "NOR", "724": "ESP", "752": "SWE", "826": "GBR", "840": "USA"}
 REGISTRY_STATUS = {"250": "candidate", "380": "candidate", "124": "contact"}
-MAP_LABELS = {"member": "Member association", "candidate": "Registry pilot candidate · to confirm at the AGM",
+MAP_LABELS = {"member": "Member association", "candidate": "Registry pilot (mandated by the AGM, August 2026)",
               "contact": "Contact opened"}
 MAP_COUNTRIES = {}
 for _country, _orgs in MEMBERS:
@@ -1103,7 +1136,7 @@ MAP_HERO = """
     <ul class="map-stats">
       <li><strong data-count="countries">–</strong>countries</li>
       <li><strong data-count="orgs">–</strong>associations</li>
-      <li><strong data-count="candidate">–</strong>pilot candidates</li>
+      <li><strong data-count="candidate">–</strong>registry pilots</li>
     </ul>
     <div class="hero-actions">
       <a class="btn btn-primary" href="/registry/">The registry project</a>
@@ -1128,7 +1161,7 @@ MAP_HERO = """
   </div>
   <div class="map-legend" aria-label="Legend">
     <span class="l-member">Member association</span>
-    <span class="l-candidate">Registry pilot candidate</span>
+    <span class="l-candidate">Registry pilot</span>
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
     <span class="l-dot">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
@@ -1197,7 +1230,7 @@ PAGES["/about/transparency/"] = {
     <p>An organisation of volunteers runs on trust. The texts that govern DysNet and the accounts that trace its funds are published here.</p>
     <div style="margin-top:var(--space-4)">
       <article class="entry"><h3>Statutes of DysNet <span class="badge live">2011</span></h3><p>Adopted by the Extraordinary Meetings of 20 October 2011. Name, objectives, membership, decision-making bodies, board, accounts and audit.</p><p class="src"><a href="/about/statutes/">Read online</a> · PDF · English</p></article>
-      <article class="entry"><h3>A Refocused Strategy 2026-2029 <span class="badge live">AGM 2026</span></h3><p>Three missions, one task each, a governance built to carry them, and funding tied to each. Proposal before the AGM of 26 August 2026.</p><p class="src">PDF · English</p></article>
+      <article class="entry"><h3>A Refocused Strategy 2026-2029 <span class="badge live">AGM 2026</span></h3><p>Three missions, one task each, a governance built to carry them, and funding tied to each. Adopted by the AGM of 26 August 2026.</p><p class="src">PDF · English</p></article>
       <article class="entry"><h3>Annual accounts <span class="badge example">to publish</span></h3><p>The previous year’s operating statement, accounts and auditor’s report, as considered by each AGM.</p><p class="src">Published after each AGM</p></article>
       <article class="entry"><h3>AGM minutes and reports <span class="badge example">to publish</span></h3><p>Minutes of general meetings and the first mission reports, from the AGM 2027 onward.</p><p class="src">Published after each meeting</p></article>
     </div>
@@ -1390,7 +1423,7 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 
     <div class="tick"></div><p class="eyebrow">05 · How DysNet builds it</p>
     <h2 class="h2">Association by association, with a technical partner.</h2>
-    <p>Member associations bring their families in, country by country. <a href="https://www.healthdatasafe.org">Health Data Safe</a>, a Swiss non-profit foundation, is proposed as technical and operational partner; the mandate is before the AGM of 26 August 2026. Read more on <a href="/registry/">the registry page</a>.</p>
+    <p>Member associations bring their families in, country by country. <a href="https://www.healthdatasafe.org">Health Data Safe</a>, a Swiss non-profit foundation, is the technical and operational partner, mandated by the AGM of 26 August 2026. Read more on <a href="/registry/">the registry page</a>.</p>
   </div>
 </section>
 """,

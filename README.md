@@ -1,7 +1,7 @@
 # DysNet website
 
-Proposal for a new [dysnet.org](https://www.dysnet.org), prepared for the DysNet
-Annual General Meeting of 26 August 2026.
+The [www.dysnet.org](https://www.dysnet.org) website, first presented to the
+DysNet Annual General Meeting of 26 August 2026.
 
 The site is the working tool of Mission 1 of the *Refocused Strategy 2026-2029*:
 four maintained registers (research library, ongoing studies, researchers, care
@@ -20,8 +20,8 @@ centres) replacing the blog and static pages, plus the registry flagship
 ## Build and preview
 
 ```bash
-python3 build-demo.py                       # regenerate docs/
-python3 tools/serve.py 8732 _preview          # Range-capable; open http://localhost:8732/website/
+python3 build-demo.py                 # regenerate docs/ for www.dysnet.org
+python3 tools/serve.py 8732 docs      # Range-capable; open http://localhost:8732/
 ```
 
 No dependencies beyond Python 3 for the pages themselves. They are plain static
@@ -58,29 +58,35 @@ GitHub Pages serves the `docs/` folder of `main` (Settings → Pages → Source:
 `docs/` publishes the site; `docs/.nojekyll` keeps Pages from running Jekyll
 over it.
 
-Internal links are root-absolute, so they need a path prefix on the project URL.
-`DEPLOY` selects the target:
+The site is served at **https://www.dysnet.org**. The build writes
+`docs/CNAME` (`www.dysnet.org`), and DNS has `www` as a CNAME to
+`dysnet-org.github.io`. The bare `dysnet.org` redirects to `www` at the
+registrar.
+
+Internal links are root-absolute. `DEPLOY` selects the target; it also sets the
+canonical, Open Graph, `sitemap.xml` and `robots.txt` URLs:
 
 ```bash
-python3 build-demo.py              # DEPLOY=pages (default)
-DEPLOY=prod python3 build-demo.py  # for www.dysnet.org
+python3 build-demo.py                # DEPLOY=prod (default): www.dysnet.org
+DEPLOY=pages python3 build-demo.py   # github.io project URL, /website prefix
 ```
 
-| `DEPLOY` | Served at | Link prefix |
-|---|---|---|
-| `pages` (default) | `https://dysnet-org.github.io/website/` | `/website` |
-| `prod` | `https://www.dysnet.org` | none |
+| `DEPLOY` | Served at | Link prefix | `docs/CNAME` |
+|---|---|---|---|
+| `prod` (default) | `https://www.dysnet.org` | none | written |
+| `pages` | `https://dysnet-org.github.io/website/` | `/website` | removed |
 
-`prod` is the one-line switch for the move to the real domain: it also sets the
-canonical, Open Graph and `sitemap.xml` URLs. Add a `docs/CNAME` file at that
-point and flip the default in `build-demo.py`.
+Do not commit a `pages` build: it removes `docs/CNAME`, which takes the custom
+domain off GitHub Pages.
 
-## Status: demonstration preview
+## Status
 
-Every page carries a ribbon saying so. Register entries marked **example** are
-placeholders for the named maintainers to replace. `robots.txt` blocks search
-indexing while the site is a demo. The Health Data Safe registry partnership is
-described as *proposed*, pending the AGM vote.
+Live on www.dysnet.org and open to search indexing (`robots.txt` allows all and
+points to the sitemap). Register entries marked **example** are still
+placeholders for the named maintainers to replace. The Health Data Safe registry
+partnership is described as *proposed*, with the mandate before the AGM of
+26 August 2026; update that wording on the registry and home pages once the
+outcome is to be published.
 
 This repository holds the website only. The documents it was built from (the
 Refocused Strategy 2026-2029, the statutes, the Board-approved November 2023

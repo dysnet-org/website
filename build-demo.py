@@ -26,9 +26,9 @@ ASSET_V = _asset_version()
 # ── Deployment target ────────────────────────────────────────────────
 # GitHub Pages serves this repo's docs/ folder. Today that is the project
 # URL https://dysnet-org.github.io/website/, so every internal link needs
-# the /website prefix. When the site moves to www.dysnet.org, set
-# DEPLOY=prod (or flip the default below) and rebuild — nothing else changes.
-DEPLOY = os.environ.get("DEPLOY", "pages")
+# the /website prefix. The site now lives on www.dysnet.org (DEPLOY=prod,
+# the default); DEPLOY=pages still builds for the github.io project URL.
+DEPLOY = os.environ.get("DEPLOY", "prod")
 ORIGIN, BASE = {
     "pages": ("https://dysnet-org.github.io", "/website"),
     "prod": ("https://www.dysnet.org", ""),
@@ -139,7 +139,6 @@ def header_html(active):
         for href, label in NAV)
     return f"""<body>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="demo-ribbon"><strong>Demonstration preview</strong> · proposal for the DysNet AGM of 26 August 2026 · not the live site</div>
 <header class="site">
   <div class="container site-bar">
     <a class="logo" href="/" aria-label="DysNet home"><img src="/assets/img/dysnet-logo.png" alt="DysNet — The Online Dysmelia Community" width="269" height="176"></a>
@@ -212,7 +211,7 @@ FOOTER = f"""</main>
       </div>
     </div>
     <div class="legal">
-      © 2026 DysNet Ideell Förening · <a href="#">Privacy</a> · <a href="#">Terms of use</a> · <a href="#">Legal notices</a> · Demonstration preview built for the 2026 AGM; register entries marked “example” are placeholders for the named maintainers to replace.
+      © 2026 DysNet Ideell Förening · <a href="#">Privacy</a> · <a href="#">Terms of use</a> · <a href="#">Legal notices</a>
     </div>
   </div>
 </footer>
@@ -1459,11 +1458,16 @@ def build():
     # GitHub Pages: serve the folder verbatim, no Jekyll processing
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
 
-    # robots.txt — the DEMO must not be indexed; the live site would allow all
+    # Custom domain for GitHub Pages; absent on the project-URL build
+    cname = ROOT / "CNAME"
+    if DEPLOY == "prod":
+        cname.write_text("www.dysnet.org\n", encoding="utf-8")
+    elif cname.exists():
+        cname.unlink()
+
+    # robots.txt — live site: allow all, point crawlers to the sitemap
     (ROOT / "robots.txt").write_text(
-        "# Demonstration preview — do not index.\n"
-        "# The production robots.txt allows all and points to /sitemap.xml.\n"
-        "User-agent: *\nDisallow: /\n", encoding="utf-8")
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
 
     print(f"Built {len(written)} pages:")
     for p in written:

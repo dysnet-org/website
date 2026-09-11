@@ -784,10 +784,10 @@ PAGES["/registry/"] = {
     {opener("01", "The answer", "The first international, patient-owned registry of limb malformations.")}
     <p>DysNet carries a registry that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Once live, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
 
-    {opener("02", "How it works", "Associations contribute; the community governs.")}
+    {opener("02", "How it works", "Patients hold the data; associations and the board steer the research.")}
     <div class="grid cols-3">
       <div class="card acc-studies"><h3 class="h4">Families contribute</h3><p>Through their national association, on explicit consent, in their own language.</p></div>
-      <div class="card acc-studies"><h3 class="h4">Data stays governed</h3><p>The community decides what is collected and who may use it, for care and research only.</p></div>
+      <div class="card acc-studies"><h3 class="h4">Control stays with the patient</h3><p>Each person holds their own data and decides what enters the registry. Which research may be proposed to families is a shared responsibility of the member associations and the DysNet board.</p></div>
       <div class="card acc-studies"><h3 class="h4">Research gets fuel</h3><p>Interoperable, comparable data across countries, at last.</p></div>
     </div>
 
@@ -798,7 +798,7 @@ PAGES["/registry/"] = {
       <a class="partner-logo" href="https://www.healthdatasafe.org" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
       <div>
         <p><strong>By decision of the DysNet Annual General Meeting of 26 August 2026, the registry is created with <a href="https://www.healthdatasafe.org" target="_blank" rel="noopener external">Health Data Safe</a> as its technical and operational partner.</strong></p>
-        <p>Health Data Safe is a Swiss non-profit foundation (Canton of Vaud, founded 2025) that builds open-source infrastructure for people to gather, read and share their own health data, for their care and for research. It contributes its infrastructure to the DysNet registry in kind.</p>
+        <p>Health Data Safe is a Swiss non-profit foundation that builds open-source infrastructure for people to gather, read and share their own health data, for their care and for research. It contributes its infrastructure to the DysNet registry in kind.</p>
       </div>
     </div>
 
@@ -813,13 +813,13 @@ PAGES["/registry/"] = {
       </div>
       <div class="card acc-studies">
         <h3 class="h4">The trust</h3>
-        <p>A non-profit with no commercial exit, whose purpose is written into its statutes, and a partner already in DysNet’s circle. The patient community governs what the registry collects and who may use it; each association keeps control of its families’ data and can withdraw it.</p>
+        <p>A non-profit with no commercial exit, whose purpose is written into its statutes, and a partner already in DysNet’s circle. Control of the data stays in the patient’s hands, and which research may be proposed to families is decided jointly by the member associations and the DysNet board.</p>
       </div>
     </div>
 
     <div class="tick"></div>
     <p class="eyebrow">The first pilots</p>
-    <h2 class="h2">Why Assédea and Raggiungere launch the registry with Health Data Safe.</h2>
+    <h2 class="h2">Why Assedea and Raggiungere launch the registry with Health Data Safe.</h2>
     <p>The two pilot associations, in France and Italy, carry the same duty towards their families: never let their data become a product. Their reasons for choosing Health Data Safe as the partner to launch the registry:</p>
     <ul>
       <li><strong>Ownership that is legally binding.</strong> The foundation’s statutes rule out any sale of health data and limit its use to care and research; that promise does not depend on goodwill.</li>
@@ -830,7 +830,7 @@ PAGES["/registry/"] = {
     </ul>
 
     {opener("04", "Progress", "The log.")}
-    <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner. Every board member commits to seeking grants for the registry; Assédea (France) and Raggiungere (Italy) prepare the first pilots.</p></div>
+    <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner. Every board member commits to seeking grants for the registry; Assedea (France) and Raggiungere (Italy) prepare the first pilots.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">First grant application in preparation</h3><time datetime="2026-07">Summer 2026</time><p>A rare-disease research application is in preparation on the French side; EU rare-disease calls are being screened.</p></div>
   </div>
 </section>
@@ -1067,7 +1067,7 @@ MEMBERS = [
     ("Austria", [("Contergan Austria", None)]),
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
     ("Chile", [("Vitachi – Talidomida en Chile", None)]),
-    ("France", [("Assédea", "http://www.assedea.fr"), ("Syndrome de Poland France", None)]),
+    ("France", [("Assedea", "http://www.assedea.fr"), ("Syndrome de Poland France", None)]),
     ("Germany", [("Contergan NRW", None), ("HICOHA Hamburg", None), ("Interessenverband Contergangeschädigter", None), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de")]),
     ("Ireland", [("Irish Thalidomide Survivors Society", None)]),
     ("Italy", [("Raggiungere", "http://www.raggiungere.it"), ("Thalidomidici Italiani (TAI onlus)", None), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", None)]),
@@ -1411,7 +1411,7 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 
     <div class="tick"></div><p class="eyebrow">02 · What “patient-owned” changes</p>
     <h2 class="h2">The community holds the keys.</h2>
-    <p>In most registries, a hospital or a company decides what is collected and who may use it. In a patient-owned registry, the patient community governs those decisions. Families contribute on explicit consent, can withdraw at any time, and the data serves care and research only; it is never bought or sold.</p>
+    <p>In most registries, a hospital or a company decides what is collected and who may use it. In a patient-owned registry, each person keeps control of their own data, and the member associations and the DysNet board share the responsibility for which research may be proposed to families. Families contribute on explicit consent, can withdraw at any time, and the data serves care and research only; it is never bought or sold.</p>
 
     <div class="tick"></div><p class="eyebrow">03 · For families</p>
     <h2 class="h2">Answer questions once, help every family after you.</h2>

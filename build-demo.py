@@ -795,9 +795,9 @@ PAGES["/registry/"] = {
 
     {opener("03", "The partner", "Built with Health Data Safe.")}
     <div class="partner-card">
-      <a class="partner-logo" href="https://www.healthdatasafe.org" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
+      <a class="partner-logo" href="https://www.healthdatasafe.org/" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
       <div>
-        <p><strong>By decision of the DysNet Annual General Meeting of 26 August 2026, the registry is created with <a href="https://www.healthdatasafe.org" target="_blank" rel="noopener external">Health Data Safe</a> as its technical and operational partner.</strong></p>
+        <p><strong>By decision of the DysNet Annual General Meeting of 26 August 2026, the registry is created with <a href="https://www.healthdatasafe.org/" target="_blank" rel="noopener external">Health Data Safe</a> as its technical and operational partner.</strong></p>
         <p>Health Data Safe is a Swiss non-profit foundation that builds open-source infrastructure for people to gather, read and share their own health data, for their care and for research. It contributes its infrastructure to the DysNet registry in kind.</p>
       </div>
     </div>
@@ -1423,7 +1423,7 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 
     <div class="tick"></div><p class="eyebrow">05 · How DysNet builds it</p>
     <h2 class="h2">Association by association, with a technical partner.</h2>
-    <p>Member associations bring their families in, country by country. <a href="https://www.healthdatasafe.org">Health Data Safe</a>, a Swiss non-profit foundation, is the technical and operational partner, mandated by the AGM of 26 August 2026. Read more on <a href="/registry/">the registry page</a>.</p>
+    <p>Member associations bring their families in, country by country. <a href="https://www.healthdatasafe.org/">Health Data Safe</a>, a Swiss non-profit foundation, is the technical and operational partner, mandated by the AGM of 26 August 2026. Read more on <a href="/registry/">the registry page</a>.</p>
   </div>
 </section>
 """,

@@ -408,6 +408,11 @@ PAGES["/knowledge/research-library/"] = {
         <p class="src">EURORDIS · <a href="https://www.eurordis.org/rare-barometer/">eurordis.org/rare-barometer</a> · topic: lived experience</p>
       </article>
       <article class="entry">
+        <h3>Recommendations for improving the quality of rare disease registries <span class="badge live">peer-reviewed</span></h3>
+        <p>The European reference on what a rare-disease registry is and how to run one well: definition, governance, data quality, patient involvement and sustainability. The yardstick DysNet uses for its own initiative.</p>
+        <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. Int J Environ Res Public Health 2018;15(8):1644 · <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
+      </article>
+      <article class="entry">
         <h3>Biorobotics for limb difference: conference proceedings, Milan 2026 <span class="badge live">DysNet event</span></h3>
         <p>Findings from the conference DysNet co-organised at Regione Lombardia (Palazzo Pirelli, 26 March 2026) with university researchers, prosthetics producers and patient associations.</p>
         <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>
@@ -804,10 +809,23 @@ PAGES["/registry/"] = {
     <h1 class="display">A registry owned by the people it describes.</h1>
     <p>Research on limb agenesis is starved of data: cases are rare, scattered across countries, and recorded in incompatible systems, when they are recorded at all. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
 
-    {opener("01", "The answer", "The first international, patient-owned registry of limb malformations.")}
-    <p>DysNet carries a registry that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Once live, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
+    {opener("01", "Words matter", "What a registry is, and what this is.")}
+    <blockquote class="definition">
+      <p>“A patient registry is an organized system that uses observational study methods to collect uniform data (clinical and other) to evaluate specified outcomes for a population defined by a particular disease, condition, or exposure, and that serves one or more predetermined scientific, clinical, or policy purposes.”</p>
+      <footer>Definition of the Agency for Healthcare Research and Quality, as adopted by the European recommendations on rare-disease registries: Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. <em>Int J Environ Res Public Health</em> 2018;15(8):1644. <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a></footer>
+    </blockquote>
+    <p>Measured against that definition, what DysNet is building is not a registry yet, and we would rather say so than borrow the word’s authority. Three gaps are real:</p>
+    <ul>
+      <li><strong>It is not exhaustive.</strong> A registry aims to capture every case in a defined population. Ours gathers the families who choose to take part through their associations; it will describe a community, not count a population.</li>
+      <li><strong>No medical board, for now.</strong> Writing a research protocol and deciding which data are worth collecting are scientific acts. An association without a scientific committee is not equipped to perform them, and will not pretend to.</li>
+      <li><strong>Declared data.</strong> What families report about themselves is precious and is not the same as clinician-verified data; the two must never be confused.</li>
+    </ul>
+    <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
-    {opener("02", "How it works", "Patients hold the data; associations and the board steer the research.")}
+    {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.")}
+    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Once live, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
+
+    {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.")}
     <div class="grid cols-3">
       <div class="card acc-studies"><h3 class="h4">Families contribute</h3><p>Through their national association, on explicit consent, in their own language.</p></div>
       <div class="card acc-studies"><h3 class="h4">Control stays with the patient</h3><p>Each person holds their own data and decides what enters the registry. Which research may be proposed to families is a shared responsibility of the member associations and the DysNet board.</p></div>
@@ -816,7 +834,7 @@ PAGES["/registry/"] = {
 
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="/knowledge/guides/patient-owned-registry/">New to the idea? The two-minute guide</a></p>
 
-    {opener("03", "The partner", "Built with Health Data Safe.")}
+    {opener("04", "The partner", "Built with Health Data Safe.")}
     <div class="partner-card">
       <a class="partner-logo" href="https://www.healthdatasafe.org/en/" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
       <div>
@@ -852,7 +870,7 @@ PAGES["/registry/"] = {
       <li><strong>A partner who knows the network.</strong> Health Data Safe already works alongside DysNet on the strategy that the AGM adopted, and brings its infrastructure in kind rather than as a commercial service.</li>
     </ul>
 
-    {opener("04", "Progress", "The log.")}
+    {opener("05", "Progress", "The log.")}
     <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">Call for funding</h3><time datetime="2026-09">September 2026</time><p>EU rare-disease calls are being screened. The registry now seeks its first funders: research foundations, rare-disease prizes, and partners able to contribute hosting, development or translation in kind. <a href="mailto:info@dysnet.org?subject=Registry%20funding">Write to the board</a> or <a href="/donate/">support the registry directly</a>.</p></div>
   </div>

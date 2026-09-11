@@ -379,8 +379,7 @@ PAGES["/knowledge/"] = {
 """,
 }
 
-REGISTER_FOOT = ('<div class="register-note"><span>Maintained by: <strong>to be named at the '
-                 'AGM</strong> (Documentation lead coordinates).</span>'
+REGISTER_FOOT = ('<div class="register-note">'
                  '<span>See something missing? <a href="mailto:info@dysnet.org?subject=Register%20suggestion">'
                  'Suggest an addition</a>.</span></div>')
 
@@ -962,22 +961,18 @@ PAGES["/voice/"] = {
       <div class="card">
         <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
         <p>Member. Active in the Rare Barometer programme and the European Regional Task Force on Rare Diseases (with Rare Diseases International, supporting the WHO resolution on rare diseases).</p>
-        <p class="meta">Delegate: to be determined at the AGM</p>
       </div>
       <div class="card">
         <h3 class="h4">EDF · European Disability Forum</h3>
         <p>Member. General assemblies and workstreams on the EU Disability Card, AI, assistive technology for employment, and accessibility.</p>
-        <p class="meta">Delegate: to be determined at the AGM</p>
       </div>
       <div class="card">
         <h3 class="h4">ERN BOND · patient advocacy group</h3>
         <p>Patient representative seat in the European Reference Network for bone diseases; promoter of the Patient Journey project.</p>
-        <p class="meta">Delegate: to be determined at the AGM</p>
       </div>
       <div class="card" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
         <h3 class="h4">EESC · European Economic and Social Committee</h3>
         <p>Standing contacts. The EU’s consultative body for organised civil society advises the Parliament, Council and Commission, and carries a permanent group on disability rights: opinions on the EU Disability Card and on the rights of persons with disabilities are shaped here.</p>
-        <p class="meta">Delegate: to be determined at the AGM</p>
       </div>
     </div>
 
@@ -1141,12 +1136,6 @@ PAGES["/about/people/"] = {
     <p>Most of the board live with dysmelia or are parents of children with limb differences, as the statutes require. Under the 2026-2029 strategy, every seat owns a mission: no seat without a mission. Hover or tap a card to read the bio and write to the person directly.</p>
     <div class="grid cols-3" style="margin-top:var(--space-4)">
       {"".join(person_card(*p) for p in BOARD)}
-      <div class="card person" style="--acc:var(--dys-green)">
-        <div class="avatar" style="background:var(--dys-green)">?</div>
-        <h3 class="h4">Your name here</h3>
-        <p class="role">Documentation lead · Registry lead</p>
-        <p>The AGM of 26 August 2026 elects the bureau on the basis of missions accepted, not seats filled.</p>
-      </div>
     </div>
     <figure class="photo" style="margin-top:var(--space-4)">
       <img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests at the INAIL prosthetics centre, August 2024" loading="lazy">

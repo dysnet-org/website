@@ -46,7 +46,7 @@ def rebase(html):
 
 BRAND = "DysNet"
 DESC_DEFAULT = ("DysNet is the global network for people affected by congenital limb "
-                "differences (dysmelia): a curated research library, ongoing studies, "
+                "differences (dysmelia): a curated research library, studies and registries, "
                 "a researcher register, a map of specialist care centres worldwide, and an "
                 "international patient-owned registry.")
 
@@ -186,7 +186,7 @@ FOOTER = f"""</main>
         <h2>Knowledge</h2>
         <ul>
           <li><a href="/knowledge/research-library/">Research library</a></li>
-          <li><a href="/knowledge/ongoing-studies/">Ongoing studies</a></li>
+          <li><a href="/knowledge/ongoing-studies/">Studies and registries</a></li>
           <li><a href="/knowledge/researchers/">Researchers</a></li>
           <li><a href="/knowledge/care-centres/">Care centres</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
@@ -256,7 +256,7 @@ __MAP_HERO__
     <div class="grid cols-4 aud-grid">
       <div class="card acc-library"><h3 class="h4">For families</h3><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
       <div class="card acc-research"><h3 class="h4">For clinicians</h3><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
-      <div class="card acc-studies"><h3 class="h4">For researchers</h3><p>The registry, ongoing studies and how to be listed.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
+      <div class="card acc-studies"><h3 class="h4">For researchers</h3><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
       <div class="card acc-centres"><h3 class="h4">For associations</h3><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
     </div>
   </div>
@@ -273,7 +273,7 @@ __MAP_HERO__
         <p class="meta">Updated August 2026</p>
       </div>
       <div class="card acc-studies">
-        <h3 class="h4"><a href="/knowledge/ongoing-studies/">Ongoing studies</a></h3>
+        <h3 class="h4"><a href="/knowledge/ongoing-studies/">Studies and registries</a></h3>
         <p>A live overview of studies recruiting or in progress across Europe.</p>
         <p class="meta">Updated August 2026</p>
       </div>
@@ -339,7 +339,7 @@ __MAP_HERO__
 # ─────────────────────────── KNOWLEDGE HUB ────────────────────────
 PAGES["/knowledge/"] = {
     "title": "Knowledge",
-    "desc": "The DysNet knowledge base: four maintained registers covering limb-difference research, ongoing studies, researchers and specialist care centres, plus a plain-language guide to dysmelia conditions.",
+    "desc": "The DysNet knowledge base: four maintained registers covering limb-difference research, studies and registries, researchers and specialist care centres, plus a plain-language guide to dysmelia conditions.",
     "crumbs": [("/knowledge/", "Knowledge")],
     "body": f"""
 <section>
@@ -355,7 +355,7 @@ PAGES["/knowledge/"] = {
         <p class="meta">Register 1 · updated August 2026</p>
       </div>
       <div class="card acc-studies">
-        <h3 class="h3"><a href="/knowledge/ongoing-studies/">Ongoing studies</a></h3>
+        <h3 class="h3"><a href="/knowledge/ongoing-studies/">Studies and registries</a></h3>
         <p>Studies recruiting or in progress, with status and contact for each.</p>
         <p class="meta">Register 2 · updated August 2026</p>
       </div>
@@ -429,15 +429,72 @@ PAGES["/knowledge/research-library/"] = {
 """,
 }
 
+
+# ─────────── Registries listed on Orphanet for our ORPHAcodes (harvested 2026-09-11) ───────────
+REG_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-registries.json"
+ORPHA_REGS = json.loads(REG_PATH.read_text(encoding="utf-8")) if REG_PATH.exists() else {"registries": []}
+COUNTRY_LABEL = {"SERBIEN": "Serbia"}
+
+
+REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later in this file)
+    "974": "Adams-Oliver syndrome", "1027": "Amelia", "294967": "Amelia of the upper limb", "294969": "Amelia of the lower limb",
+    "295000": "Amniotic band syndrome", "3258": "Cenani-Lenz syndrome", "2935": "Crossed polysyndactyly", "2440": "Ectrodactyly (SHFM)",
+    "93323": "Fibular hemimelia", "392": "Holt-Oram syndrome", "2538": "Microgastria–limb reduction", "2879": "Phocomelia", "2911": "Poland syndrome",
+    "2913": "Polydactyly", "93321": "Radial aplasia", "3103": "Roberts syndrome", "1570": "Symbrachydactyly", "93458": "Syndactyly",
+    "3301": "Tetra-amelia", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
+
+
+def _code_names():
+    return REG_CODE_NAMES
+
+
+def registries_html():
+    names = _code_names()
+    regs = ORPHA_REGS.get("registries", [])
+    by_country = {}
+    for r in regs:
+        by_country.setdefault(r["country"], []).append(r)
+    total = len(regs); direct = sum(1 for r in regs if r["direct"])
+    eurocat = sum(1 for r in regs if "EUROCAT" in r["name"].upper())
+    rows = []
+    for country in sorted(by_country):
+        label = COUNTRY_LABEL.get(country, country.title())
+        for r in sorted(by_country[country], key=lambda x: (not x["direct"], x["name"])):
+            url = f"https://www.orpha.net/en/research-trials/registry/{r['id']}"
+            if r["direct"]:
+                cov = "<strong>Coded for:</strong> " + ", ".join(names.get(c, c) for c in r["direct"])
+                if r["children"]:
+                    cov += "; specific forms of " + ", ".join(names.get(c, c) for c in r["children"])
+                cls = ' class="reg-direct"'
+            else:
+                n = len(r["parent"])
+                cov = f"By classification: {n} of our {len(names)} conditions" if n < len(names) else f"By classification: all {len(names)} conditions"
+                cls = ""
+            local = f'<br><span class="reg-local">{r["local"]}</span>' if r["local"] and r["local"] != r["name"] else ""
+            rows.append(f'<tr{cls}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{local}</td><td>{cov}</td></tr>')
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Registries on Orphanet</p>
+    <h2 class="h2">{total} registries already record our conditions.</h2>
+    <p>Orphanet’s directory of patient registries, queried for each of the {len(names)} ORPHAcodes on this site (harvested {ORPHA_REGS.get("fetched", "")[:10]}). Two kinds of match: registries <strong>coded for</strong> one of our conditions, which are the {eurocat} congenital-anomaly registries of the <strong>EUROCAT</strong> network and their national equivalents, and registries that reach our conditions only <strong>by classification</strong>, as national rare-disease or rare-bone registries. None of them is dedicated to limb differences; this is the landscape the DysNet initiative sets out to complement, not to duplicate.</p>
+    <div class="annex-wrap">
+      <table class="annex reg-table">
+        <thead><tr><th scope="col">Country</th><th scope="col">Registry (link to its Orphanet record)</th><th scope="col">How it relates to our conditions</th></tr></thead>
+        <tbody>{"".join(rows)}</tbody>
+      </table>
+    </div>
+    <p class="annex-note">Source: Orphanet, Research and trials, Patient registries, per ORPHAcode. “Coded for” = the registry declares the condition itself ({direct} registries); “by classification” = Orphanet lists the registry under a broader group that includes the condition. Registry names as published by Orphanet, with the local name where given.</p>
+"""
+
 PAGES["/knowledge/ongoing-studies/"] = {
-    "title": "Ongoing studies",
+    "title": "Studies and registries",
     "desc": "A live overview of limb-difference studies recruiting or in progress around the world: the ERN BOND Patient Journey, the Rare Barometer surveys, prosthesis reimbursement comparisons and more.",
-    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/ongoing-studies/", "Ongoing studies")],
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/ongoing-studies/", "Studies and registries")],
     "body": f"""
 <section>
   <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 2 · Ongoing studies <span class="badge live">updated Aug 2026</span></p>
+    <p class="eyebrow">Register 2 · Studies and registries <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">What is being studied, right now.</h1>
     <p>Studies our community can join or follow. Each entry shows who runs it, its status, and whom to contact. Associations: tell us about studies in your country.</p>
 
@@ -473,6 +530,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
         <p class="src">DysNet workgroup · in preparation</p>
       </article>
     </div>
+    {registries_html()}
     {REGISTER_FOOT}
   </div>
 </section>

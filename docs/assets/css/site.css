@@ -675,3 +675,13 @@ table.reg-table tbody th { white-space: nowrap; font-weight: 600; color: var(--d
 table.reg-table tr.reg-direct td:first-of-type a { font-weight: 700; }
 table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .reg-local { font-size: var(--text-eyebrow); color: var(--dys-muted); }
+
+/* ── Knowledge hub: "Start here" block ─────────────────────────────── */
+.start-here { display: grid; gap: var(--space-3); grid-template-columns: 1fr; align-items: center; background: #fff; border: 1px solid var(--dys-line); border-left: 6px solid var(--dys-green); border-radius: var(--radius-sheet); padding: var(--space-3) var(--space-4); margin: var(--space-4) 0 var(--space-5); }
+@media (min-width: 56rem) { .start-here { grid-template-columns: 3fr 2fr; } }
+.start-here h2 a { text-decoration: none; color: inherit; }
+.start-here h2 a:hover { color: var(--dys-purple-text); }
+.start-here p { max-width: none; }
+.start-here-cta { text-align: center; background: var(--dys-green-soft); border-radius: var(--radius-card); padding: var(--space-3); }
+.start-here-cta .btn { white-space: normal; }
+.start-here-cta p { font-size: var(--text-small); color: var(--dys-muted); margin: var(--space-2) 0 0; }

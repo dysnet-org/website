@@ -348,7 +348,22 @@ PAGES["/knowledge/"] = {
     <p class="eyebrow">Mission 1 · The international reference point</p>
     <h1 class="display">Knowledge, kept current.</h1>
     <p>Families and clinicians come to DysNet to find what is known, what is being studied, and where expertise lives. Each register below is maintained by a named volunteer and shows its last update. Current beats polished.</p>
-    <div class="grid cols-2" style="margin-top:var(--space-4)">
+    <div class="start-here">
+      <div>
+        <p class="eyebrow" style="color:var(--dys-green-text)">Start here</p>
+        <h2 class="h2"><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></h2>
+        <p>New to limb difference? What dysmelia is, and a plain-language guide to the conditions behind the word, each linked to its Orphanet page. Four simple questions help you find the condition, and the ORPHAcode, that concerns you or your child.</p>
+      </div>
+      <div class="start-here-cta">
+        <a class="btn btn-primary" href="/knowledge/understanding-dysmelia/#cond-finder">Which ORPHAcode concerns me? →</a>
+        <p>The ORPHAcode is the reference number clinicians and registries use for a condition. Knowing yours makes every consultation easier.</p>
+      </div>
+    </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">The four registers</p>
+    <h2 class="h2">What is known, being studied, and where expertise lives.</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-3)">
       <div class="card acc-library">
         <h3 class="h3"><a href="/knowledge/research-library/">Research library</a></h3>
         <p>Curated publications, each with a plain-language summary and a link to the source.</p>
@@ -369,10 +384,6 @@ PAGES["/knowledge/"] = {
         <p>Reference and competence centres, in Europe and beyond, on a map.</p>
         <p class="meta">Register 4 · updated August 2026</p>
       </div>
-    </div>
-    <div style="margin-top:var(--space-4)" class="card">
-      <h3 class="h4"><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></h3>
-      <p>New to limb difference? Start here: what dysmelia is, and a plain-language guide to some forty conditions, sourced from Orphanet.</p>
     </div>
   </div>
 </section>

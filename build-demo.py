@@ -1409,12 +1409,73 @@ PAGES["/404/"] = {
       <a class="btn btn-primary" href="/">Go to the homepage</a>
       <a class="btn btn-ghost" href="/contact/">Contact us</a>
     </nav>
+    <script>
+      // Old Wix URLs not covered by a redirect stub: send them to the closest new section.
+      (function () {
+        var p = location.pathname.replace(/[/]+$/, "");
+        var rules = [[/^[/]post[/]/, "/voice/reports/"], [/^[/]copy-.*(aussiehands|avbs|norske|limbs4life|contergan)/, "/about/members/"],
+          [/^[/]copy-.*(pirola|moro)/, "/about/people/"], [/^[/]copy-.*(privacy|terms|meeting)/, "/about/transparency/"],
+          [/^[/]copy-of-about-1$/, "/knowledge/researchers/"], [/^[/]copy-.*about/, "/knowledge/understanding-dysmelia/"],
+          [/^[/]copy-.*bank/, "/donate/"], [/^[/](profile|forum|members|our-members)/, "/about/members/"], [/^[/]copy-/, "/"]];
+        for (var i = 0; i < rules.length; i++) if (rules[i][0].test(p)) { location.replace(rules[i][1]); return; }
+      })();
+    </script>
     <p style="margin-top:var(--space-4);font-size:var(--text-small);color:var(--dys-muted)">Or jump to:
       <a href="/knowledge/">Knowledge</a> · <a href="/registry/">The registry</a> · <a href="/voice/reports/">Reports</a> · <a href="/about/members/">Member associations</a> · <a href="/donate/">Support DysNet</a></p>
   </div>
 </section>
 """,
 }
+
+
+
+
+# ─────────────── Redirects for the old Wix site's URLs ───────────────
+# GitHub Pages has no server-side redirects, so each old path gets a stub page
+# (meta refresh + canonical + script). Inventory from the Wix sitemap, Aug 2026.
+_POSTS = ["a-week-full-of-opportunities", "artificial-intelligence-and-disability",
+    "biorobotics-francesco-clemente-in-dialogue-with-claudio-pirola", "chez-assedea-in-paris",
+    "claudio-pirola-will-be-at-civil-week-milano", "design-a-stunning-blog", "dysnets-agm-august-1st-at-3pm-cest",
+    "edf-european-disability-forum-general-assembly",
+    "ern-a-holistic-vision-of-disability-claudio-pirola-may-11th-at-3-00-pm-at-iit-istituto-italiano", "ern-presentation",
+    "eurordis-european-rare-diseases-organisation", "eurordis-meeting-in-brussels-12-13-december",
+    "follow-up-eurordis-membership-meeting", "franck-brouillard-handisport", "grow-your-blog-community",
+    "how-high-technology-can-support-persons-with-disability-01", "in-paris-for-eurordis", "interview",
+    "living-the-values-of-an-association", "manage-your-blog-from-your-live-site",
+    "meeting-at-the-dutch-ministry-of-interior-and-parliament", "more-accessibility-for-persons-with-disability",
+    "presentation-bionic-hand-thank-you-prensilia", "rare-barometer-survey-get-involed", "rare-disease-europe-agm",
+    "stockholm-eurordis-membership-meeting-2023", "thalidomide-60-we-re-still-here",
+    "webinar-by-cerebral-palsy-eu-on-advocacy-skills"]
+REDIRECTS = {
+    "/people": "/about/people/", "/our-members": "/about/members/", "/members": "/about/members/",
+    "/conditions": "/knowledge/understanding-dysmelia/", "/blog": "/voice/reports/", "/forum": "/about/members/",
+    "/whatifyourbaby": "/knowledge/understanding-dysmelia/", "/aussiehands": "/about/members/", "/raggiungere": "/about/members/",
+    "/copy-of-about": "/knowledge/understanding-dysmelia/", "/copy-of-about-1": "/knowledge/researchers/",
+    "/copy-of-bank-account": "/donate/", "/copy-of-privacy": "/about/transparency/",
+    "/copy-of-terms-of-use": "/about/transparency/", "/copy-of-terms-of-use-1": "/about/transparency/",
+    "/copy-of-annual-general-meeting-2022": "/about/transparency/", "/copy-of-board-meeting-8-22": "/about/transparency/",
+    "/copy-of-claudio-pirola": "/about/people/", "/copy-of-claudio-pirola-1": "/about/people/", "/copy-of-claudio-pirola-2": "/about/people/",
+    "/copy-of-mirko-moro": "/about/people/", "/copy-of-dysnet": "/about/",
+}
+for _s in ["copy-of-about-2", "copy-2-of-about", "copy-3-of-about", "copy-4-of-about", "copy-5-of-about"]:
+    REDIRECTS["/" + _s] = "/knowledge/understanding-dysmelia/"
+for _s in ["copy-of-support-messages", "copy-of-support-messages-1", "copy-of-support-messages-2", "copy-of-support-messages-3"]:
+    REDIRECTS["/" + _s] = "/about/"
+for _s in (["copy-of-aussiehands", "copy-of-aussiehands-1", "copy-of-aussiehands-2", "copy-of-limbs4life", "copy-of-contergan-austria",
+            "copy-of-den-norske-thalidomide-fore", "copy-2-of-den-norske-thalidomide-fo"] +
+           [f"copy-of-den-norske-thalidomide-fore-{i}" for i in range(1, 6)] + ["copy-of-avbs"] + [f"copy-of-avbs-{i}" for i in range(1, 14)]):
+    REDIRECTS["/" + _s] = "/about/members/"
+for _s in _POSTS:
+    REDIRECTS["/post/" + _s] = "/voice/reports/"
+
+
+def redirect_html(new_path):
+    url = SITE + new_path
+    return (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Page moved · DysNet</title>'
+            f'<meta name="robots" content="noindex"><link rel="canonical" href="{url}">'
+            f'<meta http-equiv="refresh" content="0; url={new_path}"><script>location.replace({json.dumps(new_path)});</script>'
+            f'<style>body{{font-family:system-ui,sans-serif;margin:3rem;color:#241a33}}a{{color:#7222c2}}</style></head>'
+            f'<body><p>This page has moved to <a href="{new_path}">{url}</a>.</p></body></html>\n')
 
 
 def build():
@@ -1431,6 +1492,13 @@ def build():
         html += FOOTER
         (out_dir / "index.html").write_text(rebase(html), encoding="utf-8")
         written.append(path)
+
+    # Redirect stubs for the old Wix URLs
+    for old_path, new_path in REDIRECTS.items():
+        d = ROOT / old_path.strip("/")
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(redirect_html(new_path), encoding="utf-8")
+    print(f"  + {len(REDIRECTS)} redirect stubs for old Wix URLs")
 
     # Root 404.html (GitHub Pages convention, as on the HDS site)
     import shutil

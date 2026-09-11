@@ -55,6 +55,17 @@
       <a class="btn btn-primary" href="/">Go to the homepage</a>
       <a class="btn btn-ghost" href="/contact/">Contact us</a>
     </nav>
+    <script>
+      // Old Wix URLs not covered by a redirect stub: send them to the closest new section.
+      (function () {
+        var p = location.pathname.replace(/[/]+$/, "");
+        var rules = [[/^[/]post[/]/, "/voice/reports/"], [/^[/]copy-.*(aussiehands|avbs|norske|limbs4life|contergan)/, "/about/members/"],
+          [/^[/]copy-.*(pirola|moro)/, "/about/people/"], [/^[/]copy-.*(privacy|terms|meeting)/, "/about/transparency/"],
+          [/^[/]copy-of-about-1$/, "/knowledge/researchers/"], [/^[/]copy-.*about/, "/knowledge/understanding-dysmelia/"],
+          [/^[/]copy-.*bank/, "/donate/"], [/^[/](profile|forum|members|our-members)/, "/about/members/"], [/^[/]copy-/, "/"]];
+        for (var i = 0; i < rules.length; i++) if (rules[i][0].test(p)) { location.replace(rules[i][1]); return; }
+      })();
+    </script>
     <p style="margin-top:var(--space-4);font-size:var(--text-small);color:var(--dys-muted)">Or jump to:
       <a href="/knowledge/">Knowledge</a> · <a href="/registry/">The registry</a> · <a href="/voice/reports/">Reports</a> · <a href="/about/members/">Member associations</a> · <a href="/donate/">Support DysNet</a></p>
   </div>

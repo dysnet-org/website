@@ -1,0 +1,21 @@
+{
+ "built": "2026-09-11",
+ "note": "Care centres shown on the landing map (register 4). Only centres named on a member association's website or visited by the board. URLs checked by curl; coordinates from OpenStreetMap Nominatim (display_name kept for audit).",
+ "centres": [
+  {
+   "name": "INAIL Centro Protesi",
+   "name_en": "INAIL Prosthetics Centre",
+   "city": "Vigorso di Budrio",
+   "country": "Italy",
+   "iso2": "IT",
+   "type": "Prosthetics & rehabilitation centre",
+   "specialism": "One of Europe’s leading prosthetics centres: fitting, rehabilitation and applied research under one roof, accredited by the Emilia-Romagna region. “I was looking for active prostheses, not passive ones: something alive. I wanted to humanise the prosthesis” (Johannes Schmidl, its first technical director). The DysNet board visited in August 2024.",
+   "url": "https://www.inail.it/portale/budrio/it.html",
+   "via": "the DysNet board (visit, 2024)",
+   "via_url": null,
+   "lat": 44.5340915,
+   "lon": 11.5085877,
+   "geocode_display_name": "Centro Protesi INAIL, Via Rabuina, Vigorso, Budrio, Bologna, Emilia-Romagna, 40054, Italia"
+  }
+ ]
+}

@@ -266,6 +266,22 @@
     });
     svg.appendChild(g);
 
+    // care centres (register 4): orange markers linking to the centre's website
+    var gc = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    gc.setAttribute("class", "centre");
+    (data.centres || []).forEach(function (c) {
+      if (!c.lat || !c.lon) return;
+      var pt = project(c.lon, c.lat);
+      var a = document.createElementNS("http://www.w3.org/2000/svg", "a");
+      if (c.url) { a.setAttribute("href", c.url); a.setAttribute("target", "_blank"); a.setAttribute("rel", "noopener external"); }
+      var ci = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      ci.setAttribute("cx", pt[0]); ci.setAttribute("cy", pt[1]); ci.setAttribute("r", "2.6");
+      var ti = document.createElementNS("http://www.w3.org/2000/svg", "title");
+      ti.textContent = c.name + " · " + c.city + ", " + c.country + " · " + c.type;
+      a.appendChild(ti); a.appendChild(ci); gc.appendChild(a);
+    });
+    svg.appendChild(gc);
+
     // tooltip
     var tip = document.querySelector(".map-tip");
     function showTip(el, x, y) {

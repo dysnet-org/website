@@ -290,6 +290,21 @@ def bibliography_html():
     <p class="annex-note">Built {BIB.get("built", "")} from Orphanet’s epidemiology references (Orphadata, CC BY 4.0) and the sources of the prevalence annex; metadata via NCBI E-utilities. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
 """
 
+# Register 4 · care centres shown on the landing map. Only centres named by a member association (or visited by the
+# board); URLs checked; coordinates from OpenStreetMap Nominatim (see tools/care-centres.json for the audit trail).
+CARE_PATH = pathlib.Path(__file__).parent / "tools" / "care-centres.json"
+CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if CARE_PATH.exists() else []
+
+
+def centres_html():
+    out = []
+    for c in sorted(CARE_CENTRES, key=lambda c: (c["country"], c["city"])):
+        link = f'<a href="{c["url"]}" target="_blank" rel="noopener external">{c["url"].split("//")[-1].split("/")[0].removeprefix("www.")}</a>' if c.get("url") else ""
+        via = f'<a href="{c["via_url"]}" target="_blank" rel="noopener external">{c["via"]}</a>' if c.get("via_url") else c.get("via", "")
+        out.append(f'<article class="entry"><h3>{c["name"]} · {c["city"]}, {c["country"]} <span class="badge live">{c["type"]}</span></h3>'
+                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]}{" · " + link if link else ""} · named by {via}</p></article>')
+    return "".join(out)
+
 PAGES = {}
 
 # ────────────────────────────── HOME ──────────────────────────────
@@ -635,14 +650,9 @@ PAGES["/knowledge/care-centres/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Where expertise lives.</h1>
-    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. The interactive map arrives with the first validated batch; the register opens as a list.</p>
+    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here also appears as an orange marker on the <a href="/">world map</a> on our home page.</p>
 
     <div style="margin-top:var(--space-4)">
-      <article class="entry">
-        <h3>INAIL Centro Protesi · Vigorso di Budrio, Italy <span class="badge live">visited by the board</span></h3>
-        <p>One of Europe’s leading prosthetics centres: fitting, rehabilitation and applied research under one roof. “I was looking for active prostheses, not passive ones: something alive. I wanted to humanise the prosthesis” (Johannes Schmidl, its first technical director).</p>
-        <p class="src">Emilia-Romagna, Italy · prosthetics &amp; rehabilitation · <a href="https://www.inail.it">inail.it</a></p>
-      </article>
       <article class="entry">
         <h3>ERN BOND network centres <span class="badge live">source</span></h3>
         <p>The European Reference Network for rare bone diseases connects expert hospitals across the EU. DysNet’s seat in its patient advocacy group is the channel for validating limb-difference centres.</p>
@@ -653,11 +663,7 @@ PAGES["/knowledge/care-centres/"] = {
         <p>Orphanet maintains the European directory of expert centres for rare diseases, searchable by condition and country. Our register cross-references it: each DysNet-validated centre links to its Orphanet record.</p>
         <p class="src">Orphanet · <a href="https://www.orpha.net/en/expert-centres" target="_blank" rel="noopener external">orpha.net/en/expert-centres</a></p>
       </article>
-      <article class="entry">
-        <h3>Example entry: a national competence centre <span class="badge example">example</span></h3>
-        <p>Each entry: centre, city and country, what it specialises in, how families are referred, and which member association validated it.</p>
-        <p class="src">City, country · specialism · validated by</p>
-      </article>
+      {centres_html()}
     </div>
 
     <figure class="photo" style="margin-top:var(--space-4)">
@@ -1260,7 +1266,7 @@ DOT_RATES = [
     ("Tibial hemimelia", 0.1, "Europe"),
     ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
 ]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
@@ -1304,6 +1310,7 @@ MAP_HERO = """
     <span class="l-candidate">Registry pilot</span>
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
+    <span class="l-centre">Care centre named by a member association (click for details)</span>
     <span class="l-dot">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0) · rendered with MapLibre, self-hosted</span>
   </div>
@@ -1342,7 +1349,7 @@ PAGES["/about/members/"] = {
     <p>DysNet is a federation: our members are national associations of people with limb differences and their families. Find yours below, or bring your association in.</p>
 
     <div style="margin-top:var(--space-4)">
-      {"".join(f'<div class="country"><h3>{c}</h3><ul>{"".join(member_li(m) for m in ms)}</ul></div>' for c, ms in MEMBERS)}
+      {"".join(f'<div class="country"><h3>{c}</h3><ul>{"".join(member_li(m) for m in sorted(ms, key=lambda m: len(m) < 3))}</ul></div>' for c, ms in MEMBERS)}
     </div>
 
     {opener("01", "Join", "Two ways in.")}

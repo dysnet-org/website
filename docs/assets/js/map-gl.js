@@ -52,6 +52,9 @@
       dots: { type: "vector", url: "pmtiles://" + base + "/assets/map/dots.pmtiles?v=1" },
       offices: { type: "geojson", data: { type: "FeatureCollection", features: data.offices.map(function (o) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [o.lon, o.lat] }, properties: { name: o.name } };
+      }) } },
+      centres: { type: "geojson", data: { type: "FeatureCollection", features: (data.centres || []).filter(function (c) { return c.lat && c.lon; }).map(function (c) {
+        return { type: "Feature", geometry: { type: "Point", coordinates: [c.lon, c.lat] }, properties: c };
       }) } }
     },
     layers: [
@@ -98,7 +101,13 @@
         paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 3.5, 9, 7], "circle-color": "#ffffff", "circle-stroke-color": "#4cc42c", "circle-stroke-width": 2 } },
       { id: "office-label", type: "symbol", source: "offices",
         layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Bold"], "text-size": 12, "text-anchor": "left", "text-offset": [0.9, 0] },
-        paint: { "text-color": "#ffffff", "text-halo-color": "#24093f", "text-halo-width": 1.4 } }
+        paint: { "text-color": "#ffffff", "text-halo-color": "#24093f", "text-halo-width": 1.4 } },
+      // Care centres named by member associations (register 4): orange markers, label from z4
+      { id: "centre-dot", type: "circle", source: "centres",
+        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 4, 5, 6.5, 9, 9], "circle-color": "#f97316", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6 } },
+      { id: "centre-label", type: "symbol", source: "centres", minzoom: 4,
+        layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Bold"], "text-size": 11.5, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12 },
+        paint: { "text-color": "#ffe1c7", "text-halo-color": "#24093f", "text-halo-width": 1.4 } }
     ]
   };
 
@@ -189,10 +198,25 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
-    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }) }).length) return; // a dot was clicked
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot"]) }).length) return; // a dot or a centre was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
   });
+
+  // ── care centres: click a marker for details ───────────────────────
+  var centrePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "22rem", className: "dot-popup centre-popup" });
+  function esc(s) { return String(s || "").replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
+  map.on("click", "centre-dot", function (e) {
+    var c = e.features[0].properties;
+    var host = c.url ? c.url.split("//").pop().split("/")[0].replace(/^www\./, "") : "";
+    centrePopup.setLngLat(e.features[0].geometry.coordinates)
+      .setHTML('<p class="dp-main"><strong>' + esc(c.name) + '</strong></p>' +
+               '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
+               '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + 'named by ' + esc(c.via) + '</p>')
+      .addTo(map);
+  });
+  map.on("mouseenter", "centre-dot", function () { map.getCanvas().style.cursor = "pointer"; });
+  map.on("mouseleave", "centre-dot", function () { map.getCanvas().style.cursor = ""; });
 
   // ── region views (guessed from the device time zone only) ──────────
   var REGIONS = {

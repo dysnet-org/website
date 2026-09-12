@@ -704,3 +704,7 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .btn-sm { padding: 0.35rem 0.9rem; font-size: 0.85rem; }
 .country li { display: inline-flex; align-items: center; gap: 0.6rem; }
 .country li:has(.btn-donate) { border-color: var(--dys-green); padding-right: 0.3rem; box-shadow: 0 0 0 3px rgba(76, 196, 44, 0.15); }
+.map-legend .l-centre::before { background: #f97316; border-radius: 50%; box-shadow: 0 0 0 2px #fff; }
+#worldmap .centre circle { fill: #f97316; stroke: #fff; stroke-width: 1; cursor: pointer; }
+#worldmap .centre a:hover circle, #worldmap .centre a:focus circle { r: 3.4; }
+.centre-popup .dp-main strong { color: var(--acc-centres-text); }

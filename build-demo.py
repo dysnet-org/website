@@ -251,7 +251,7 @@ REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
 BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
-BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "review": "Reviews", "registry methods": "Registry methods"}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "review": "Reviews"}
 
 
 def bibliography_html():
@@ -277,7 +277,7 @@ def bibliography_html():
     <div class="tick"></div>
     <p class="eyebrow">Bibliography · {len(entries)} references</p>
     <h2 class="h2">The literature, searchable.</h2>
-    <p>Peer-reviewed publications on limb differences and on how to study them, gathered only from sources we trust: the references Orphanet itself cites for our {len(REG_CODE_NAMES)} conditions, and the publications verified for this site. Titles, authors and DOIs come straight from PubMed’s records, so every line can be checked. Filter by condition or theme, or search.</p>
+    <p>Behind every condition described on this site lies a body of research: who is affected, how often, what is known and what is still missing. This bibliography gathers the peer-reviewed publications on those limb differences, so that families, associations and researchers can start from the same shelf. Each reference is checked against PubMed and links to its DOI. Filter by condition or theme, or search.</p>
     <div class="bib-controls" id="bib-controls">
       <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
       <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>

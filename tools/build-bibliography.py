@@ -38,7 +38,7 @@ for pmid, (topic, note) in SITE.items():
     add(pmid, None, topic, note)
 # DOIs to resolve to PMIDs
 DOIS = {"10.1002/bdr2.2123": ("epidemiology", "Finland, amelia and phocomelia"), "10.1186/s12884-023-05660-z": ("epidemiology", "China, syndactyly"),
-        "10.1371/journal.pone.0219930": ("epidemiology", "Norway, limb reduction defects 1970-2016"), "10.3390/ijerph15081644": ("registry methods", "Recommendations for rare disease registries")}
+        "10.1371/journal.pone.0219930": ("epidemiology", "Norway, limb reduction defects 1970-2016")}
 for doi, (topic, note) in DOIS.items():
     q = urllib.parse.quote(f"{doi}[DOI]")
     with urllib.request.urlopen(f"{E}/esearch.fcgi?db=pubmed&term={q}&retmode=json", timeout=40) as r:

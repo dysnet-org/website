@@ -1204,20 +1204,19 @@ PAGES["/about/people/"] = {
 # Unreachable sites (taionlus.org, vitachi.cl, ITSS on webs.com, aussiehands,
 # neurosedyn.se, steps-charity) deliberately stay unlinked until confirmed.
 MEMBERS = [
-    ("Australia", [("Aussiehands", None), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com"), ("Limbs 4 Life", "https://www.limbs4life.org.au")]),
+    ("Australia", [("Aussiehands", "https://aussiehands.org/"), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com"), ("Limbs 4 Life", "https://www.limbs4life.org.au")]),
     ("Austria", [("Contergan Austria", None)]),
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
-    ("Chile", [("Vitachi – Talidomida en Chile", None)]),
+    ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
     ("France", [("Assedea", "http://www.assedea.fr"), ("Syndrome de Poland France", None)]),
-    ("Germany", [("Contergan NRW", None), ("HICOHA Hamburg", None), ("Interessenverband Contergangeschädigter", None), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de")]),
-    ("Ireland", [("Irish Thalidomide Survivors Society", None)]),
-    ("Italy", [("Raggiungere", "http://www.raggiungere.it"), ("Thalidomidici Italiani (TAI onlus)", None), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", None)]),
+    ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de")]),
+    ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
+    ("Italy", [("Raggiungere", "http://www.raggiungere.it"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
     ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
     ("Norway", [("Den Norske Thalidomide Forening", None)]),
     ("Spain", [("AVITE", "https://www.avite.org")]),
-    ("Sweden", [("FfdN", None), ("FfdN Stockholm", None), ("FfdN Väst", None), ("Ex-Center", "https://ex-center.org"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
-    ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org")]),
-    ("United States", [("STEPS", None)]),
+    ("Sweden", [("FfdN", "https://www.thalidomide.org/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Västsverige/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Ex-Center", "https://ex-center.org"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
+    ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org"), ("Steps Charity", "https://steps-charity.org.uk/")]),
 ]
 
 

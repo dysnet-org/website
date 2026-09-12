@@ -1299,7 +1299,7 @@ ISO_NUM = {"Australia": "036", "Austria": "040", "Belgium": "056", "Canada": "12
 ISO_A3 = {"036": "AUS", "040": "AUT", "056": "BEL", "124": "CAN", "152": "CHL", "250": "FRA", "276": "DEU",
           "372": "IRL", "380": "ITA", "528": "NLD", "578": "NOR", "724": "ESP", "752": "SWE", "826": "GBR", "840": "USA"}
 REGISTRY_STATUS = {"250": "candidate", "380": "candidate", "124": "contact"}
-MAP_LABELS = {"member": "Member association", "candidate": "Registry pilot (mandated by the AGM, August 2026)",
+MAP_LABELS = {"member": "Member association", "candidate": "Piloting the registry (Assedea, Raggiungere; AGM mandate, August 2026)",
               "contact": "Contact opened"}
 MAP_COUNTRIES = {}
 for _country, _orgs in MEMBERS:
@@ -1344,7 +1344,7 @@ MAP_HERO = """
     <ul class="map-stats">
       <li><strong data-count="countries">–</strong>countries</li>
       <li><strong data-count="orgs">–</strong>associations</li>
-      <li><strong data-count="candidate">–</strong>registry pilots</li>
+      <li><strong data-count="candidate">–</strong>associations piloting the registry</li>
     </ul>
     <div class="hero-actions">
       <a class="btn btn-primary" href="/registry/">The registry project</a>
@@ -1369,7 +1369,7 @@ MAP_HERO = """
   </div>
   <div class="map-legend" aria-label="Legend">
     <span class="l-member">Member association</span>
-    <span class="l-candidate">Registry pilot</span>
+    <span class="l-candidate">Piloting the registry (Assedea, Raggiungere)</span>
     <span class="l-contact">Contact opened</span>
     <span class="l-office">DysNet office</span>
     <span class="l-centre">Care centre named by a member association (click for details)</span>

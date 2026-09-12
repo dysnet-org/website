@@ -1,0 +1,269 @@
+{
+ "University of Cologne|Germany": {
+  "lat": 50.9280445,
+  "lon": 6.9281305,
+  "display_name": "Universität zu Köln, 1, Zülpicher Wall, Komponistenviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland",
+  "query": "seeded"
+ },
+ "National Center for Global Health and Medicine|Japan": {
+  "lat": 35.7029293,
+  "lon": 139.7163032,
+  "display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本",
+  "query": "seeded"
+ },
+ "University of Göteborg|Sweden": {
+  "lat": 57.6897462,
+  "lon": 11.9765259,
+  "display_name": "Chalmers Tekniska Högskola, Andréegatan, Masthugget, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 27, Sverige",
+  "query": "seeded"
+ },
+ "Sahlgrenska University Hospital|Sweden": {
+  "lat": 57.6816542,
+  "lon": 11.9609871,
+  "display_name": "Sahlgrenska Universitetssjukhuset, Bruna stråket, Medicinareberget, Änggården, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 ",
+  "query": "seeded"
+ },
+ "University of Toronto|Canada": {
+  "lat": 43.6634681,
+  "lon": -79.3968165,
+  "display_name": "University of Toronto St. George, D'Arcy Street, Discovery District, Downtown, Toronto, Golden Horseshoe, Ontario, M5T 1K1, Canada",
+  "query": "seeded"
+ },
+ "Idaho State University|United States": {
+  "lat": 42.8624158,
+  "lon": -112.4322597,
+  "display_name": "Idaho State University, 921, South 8th Avenue, Pocatello, Bannock County, Idaho, 83209, United States",
+  "query": "seeded"
+ },
+ "Freie Universität Berlin|Germany": {
+  "lat": 52.4528565,
+  "lon": 13.2907249,
+  "display_name": "Freie Universität Berlin, Königin-Luise-Straße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland",
+  "query": "seeded"
+ },
+ "Royal Hospital for Children and Young People|United Kingdom": {
+  "lat": 55.920929,
+  "lon": -3.1394165,
+  "display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot",
+  "query": "seeded"
+ },
+ "Dr. Becker Rhein-Sieg-Klinik|Germany": {
+  "lat": 50.9074784,
+  "lon": 7.5497878,
+  "display_name": "Dr. Becker Rhein-Sieg-Klinik, 30, Höhenstraße, Nümbrecht, Ödinghausen, Nümbrecht, Oberbergischer Kreis, Nordrhein-Westfalen, 51588, Deutschl",
+  "query": "seeded"
+ },
+ "University of Aberdeen|United Kingdom": {
+  "lat": 57.1645542,
+  "lon": -2.1018424,
+  "display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom",
+  "query": "seeded"
+ },
+ "University of Genoa|Italy": {
+  "lat": 44.4148861,
+  "lon": 8.9266707,
+  "display_name": "Università degli Studi di Genova, Via Balbi, Ghetto, Prè, Centro Est, Genova, Liguria, 16126, Italia",
+  "query": "seeded"
+ },
+ "University of Illinois|United States": {
+  "lat": 40.0761545,
+  "lon": -88.2233134,
+  "display_name": "University of Illinois Urbana-Champaign, Champaign County, Illinois, 61801, United States",
+  "query": "seeded"
+ },
+ "Tokyo Institute of Technology|Japan": {
+  "lat": 35.6045553,
+  "lon": 139.6827849,
+  "display_name": "東京科学大学 大岡山キャンパス, 大岡山北本通り商店街, 北千束一丁目, 北千束, 目黒区, 東京都, 152-0013, 日本",
+  "query": "seeded"
+ },
+ "National Rehabilitation Center for Persons with Disabilities|Japan": {
+  "lat": 35.8066068,
+  "lon": 139.4647966,
+  "display_name": "国立身体障害者リハビリテーションセンター, はばたき通り, 並木五丁目, 並木, 所沢市, 埼玉県, 359-0006, 日本",
+  "query": "seeded"
+ },
+ "Charles University|Czechia": {
+  "lat": 50.0888947,
+  "lon": 14.4162757,
+  "display_name": "Filozofická fakulta Univerzity Karlovy, Kaprova, Josefov, obvod Praha 1, Praha, 116 93, Česko",
+  "query": "seeded"
+ },
+ "BG Unfallklinik Frankfurt am Main|Germany": {
+  "lat": 50.1447642,
+  "lon": 8.7095927,
+  "display_name": "BG Unfallklinik, 430, Friedberger Landstraße, Seckbach, Ost, Frankfurt am Main, Hessen, 60389, Deutschland",
+  "query": "seeded"
+ },
+ "All India Institute of Medical Sciences|India": {
+  "lat": 28.5645425,
+  "lon": 77.2099653,
+  "display_name": "All India Institute of Medical Sciences, Kidwai Nagar, New Delhi, Delhi, India",
+  "query": "seeded"
+ },
+ "Tokyo Medical University|Japan": {
+  "lat": 35.7015151,
+  "lon": 139.7642375,
+  "display_name": "東京科学大学 湯島キャンパス, 本郷通り, 湯島一丁目, 湯島, 文京区, 東京都, 113-0034, 日本",
+  "query": "seeded"
+ },
+ "University of York|United Kingdom": {
+  "lat": 53.9453912,
+  "lon": -1.0314589,
+  "display_name": "University of York, Hazel End, Heslington, York, York and North Yorkshire, England, YO10 5DD, United Kingdom",
+  "query": "seeded"
+ },
+ "Genoa|Italy": {
+  "lat": 44.40726,
+  "lon": 8.9338624,
+  "display_name": "Genova, Liguria, Italia",
+  "query": "seeded"
+ },
+ "Renji Hospital|China": {
+  "lat": 31.2355918,
+  "lon": 121.4795629,
+  "display_name": "仁济医院西院, 145, 山东中路, 东新桥, 外滩街道, 上海市, 黄浦区, 上海市, 200002, 中国",
+  "query": "seeded"
+ },
+ "National Center for Global Health and Medicine Hospital|Japan": {
+  "lat": 35.7029293,
+  "lon": 139.7163032,
+  "display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本",
+  "query": "seeded"
+ },
+ "Royal Prince Alfred Hospital|Australia": {
+  "lat": -33.889186,
+  "lon": 151.181472,
+  "display_name": "Royal Prince Alfred Hospital, 57-59, Brodrick Street, Camperdown, Inner West, Sydney, New South Wales, 2050, Australia",
+  "query": "seeded"
+ },
+ "University of Michigan|United States": {
+  "lat": 42.2942142,
+  "lon": -83.7100389,
+  "display_name": "University of Michigan, 500, South State Street, Ann Arbor, Washtenaw County, Michigan, 48109, United States",
+  "query": "seeded"
+ },
+ "Foundation 41|Australia": {
+  "lat": -38.1285527,
+  "lon": 145.3499476,
+  "display_name": "41, Foundation Avenue, Edgebrook, Clyde, Melbourne, Victoria, 3978, Australia",
+  "query": "seeded"
+ },
+ "University Medical Center|Germany": {
+  "lat": 48.0070218,
+  "lon": 7.837321,
+  "display_name": "Universitätsklinikum Freiburg, Hohenzollernstraße, Uni-Carré, Stühlinger-Eschholz, Stühlinger, Freiburg im Breisgau, Baden-Württemberg, 7910",
+  "query": "seeded"
+ },
+ "Children's Hospital Research Foundation|United States": null,
+ "Thalidomide Trust|United Kingdom": {
+  "lat": 51.4872913,
+  "lon": -3.1806498,
+  "display_name": "Thalidomide Memorial, Museum Avenue, Crockherbtown, Civic Centre, Castle, Cardiff, Cymru / Wales, CF10 3AX, United Kingdom",
+  "query": "Thalidomide, United Kingdom"
+ },
+ "INAGEMP-Instituto Nacional de Genética Médica Populacional|Brazil": null,
+ "University of Amsterdam|Netherlands": {
+  "lat": 52.3681334,
+  "lon": 4.8898042,
+  "display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland",
+  "query": "University of Amsterdam, Netherlands"
+ },
+ "University of Oxford|United Kingdom": {
+  "lat": 51.7525461,
+  "lon": -1.2143168,
+  "display_name": "Old Road Campus, University of Oxford, Old Road, Headington, Oxford, Oxfordshire, England, OX3 7GB, United Kingdom",
+  "query": "University of Oxford, United Kingdom"
+ },
+ "Orthopedic Hospital Speising|Austria": {
+  "lat": 48.1514562,
+  "lon": 16.3153812,
+  "display_name": "Orthopedic Alt-Erlaa, Anton-Baumgartner-Straße, Katastralgemeinde Inzersdorf, Liesing, Wien, 1230, Österreich",
+  "query": "Orthopedic, Austria"
+ },
+ "University of Groningen|Netherlands": {
+  "lat": 53.2194416,
+  "lon": 6.5629863,
+  "display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland",
+  "query": "University of Groningen, Netherlands"
+ },
+ "West China Second University Hospital|China": {
+  "lat": 34.256073,
+  "lon": 117.1777867,
+  "display_name": "玉带西街, 解放桥, 王陵街道, 泉山区, 徐州市, 江苏省, 221000, 中国",
+  "query": "West, China"
+ },
+ "Imperial College Healthcare NHS Trust|United Kingdom": {
+  "lat": 51.4989595,
+  "lon": -0.1756407,
+  "display_name": "Imperial College London, Exhibition Road, Brompton, City of Westminster, Greater London, England, SW7 2AZ, United Kingdom",
+  "query": "Imperial, United Kingdom"
+ },
+ "University of London|United Kingdom": {
+  "lat": 51.5218979,
+  "lon": -0.1288676,
+  "display_name": "SOAS University of London, Russell Square, Bloomsbury, London Borough of Camden, Greater London, England, WC1H 0XG, United Kingdom",
+  "query": "University of London, United Kingdom"
+ },
+ "University of Arkansas for Medical Science|United States": {
+  "lat": 35.2048883,
+  "lon": -92.4479108,
+  "display_name": "Arkansas, United States",
+  "query": "Arkansas, United States"
+ },
+ "University of Bonn|Germany": {
+  "lat": 50.7338124,
+  "lon": 7.1022465,
+  "display_name": "Rheinische Friedrich-Wilhelms-Universität Bonn, Arkadenhof, Bonn-Zentrum, Stadtbezirk Bonn, Bonn, Nordrhein-Westfalen, 53113, Deutschland",
+  "query": "University of Bonn, Germany"
+ },
+ "Queen Mary University of London|United Kingdom": {
+  "lat": 51.5247403,
+  "lon": -0.0393136,
+  "display_name": "Queen Mary University of London, 327, Mile End Road, Mile End, London Borough of Tower Hamlets, Greater London, England, E1 4NS, United King",
+  "query": "Queen Mary University of London, United Kingdom"
+ },
+ "University of Ulster|United Kingdom": {
+  "lat": 55.148773,
+  "lon": -6.6782594,
+  "display_name": "Riverside Theatre, Portstewart Road, Coleraine, Causeway Coast and Glens District, County Londonderry, Northern Ireland / Tuaisceart Éireann",
+  "query": "University of Ulster, United Kingdom"
+ },
+ "Kungälv Hospital|Sweden": {
+  "lat": 57.8707951,
+  "lon": 11.9799616,
+  "display_name": "Kungälv, Kungälvs kommun, Västra Götalands län, 442 18, Sverige",
+  "query": "Kungälv, Sweden"
+ },
+ "Children's Hospital Zagreb|Croatia": {
+  "lat": 45.8130967,
+  "lon": 15.9772795,
+  "display_name": "Grad Zagreb, Hrvatska",
+  "query": "Zagreb, Croatia"
+ },
+ "Drug Safety Research Laboratories|Japan": null,
+ "Instituto de Investigación de Enfermedades Raras|Spain": {
+  "lat": 40.4762578,
+  "lon": -3.6931063,
+  "display_name": "Instituto de Investigación de Enfermedades Raras (IIER), Calle de Melchor Fernández Almagro, La Paz, Fuencarral, Fuencarral-El Pardo, Madrid",
+  "query": "Instituto de Investigación de Enfermedades Raras, Spain"
+ },
+ "Gaslini Children Hospital|Italy": {
+  "lat": 44.3913231,
+  "lon": 8.9883542,
+  "display_name": "Gaslini, Via Gerolamo Gaslini, Vernazzola, Levante, Genova, Liguria, 16147, Italia",
+  "query": "Gaslini, Italy"
+ },
+ "National Center for Environmental Health|United States": {
+  "lat": 42.6524953,
+  "lon": -73.7489247,
+  "display_name": "New York State Department of Environmental Conservation, 625, Broadway, Downtown, City of Albany, Albany County, New York, 12204, United Sta",
+  "query": "Environmental, United States"
+ },
+ "Universitätsklinikum Rudolf Virchow|Germany": {
+  "lat": 49.3058353,
+  "lon": 7.3472032,
+  "display_name": "Universitätsklinikum, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland",
+  "query": "Universitätsklinikum, Germany"
+ }
+}

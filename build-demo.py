@@ -253,7 +253,7 @@ REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
 BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
-BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
 
 
 def bibliography_html():
@@ -1328,7 +1328,7 @@ DOT_RATES = [
     ("Tibial hemimelia", 0.1, "Europe"),
     ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
 ]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
@@ -1353,6 +1353,15 @@ MAP_HERO = """
   </div>
   <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
   <div class="map-side">
+  <div class="map-layers" id="map-layers" role="group" aria-label="Show on the map">
+    <span class="map-layers-label">Show</span>
+    <button type="button" data-layer="members" aria-pressed="true">Member countries</button>
+    <button type="button" data-layer="people" aria-pressed="true">Estimated people</button>
+    <button type="button" data-layer="centres" aria-pressed="true">Care centres</button>
+    <button type="button" data-layer="teams" aria-pressed="true">Research teams</button>
+    <button type="button" data-layer="offices" aria-pressed="true">DysNet offices</button>
+    <button type="button" data-layer="cities" aria-pressed="true">City names</button>
+  </div>
   <div class="map-views" role="group" aria-label="Map view">
     <button type="button" data-view="world" aria-pressed="true">World</button>
     <button type="button" data-view="europe" aria-pressed="false">Europe</button>
@@ -1368,12 +1377,13 @@ MAP_HERO = """
     <p class="dot-caption">Grey dots are <strong>estimates</strong> (prevalence × population, GHSL 2025 population grid, EU JRC). The registry’s purpose is to turn these estimates into known, consented cases.</p>
   </div>
   <div class="map-legend" aria-label="Legend">
-    <span class="l-member">Member association</span>
-    <span class="l-candidate">Piloting the registry (Assedea, Raggiungere)</span>
-    <span class="l-contact">Contact opened</span>
-    <span class="l-office">DysNet office</span>
-    <span class="l-centre">Care centre named by a member association (click for details)</span>
-    <span class="l-dot">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
+    <span class="l-member" data-layer="members">Member association</span>
+    <span class="l-candidate" data-layer="members">Piloting the registry (Assedea, Raggiungere)</span>
+    <span class="l-contact" data-layer="members">Contact opened</span>
+    <span class="l-office" data-layer="offices">DysNet office</span>
+    <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
+    <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
+    <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0) · rendered with MapLibre, self-hosted</span>
   </div>
   </div>

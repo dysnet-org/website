@@ -282,6 +282,35 @@
     });
     svg.appendChild(gc);
 
+    // research teams (register 3): blue markers, title tooltip, link to the register
+    var gt = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    gt.setAttribute("class", "team");
+    (data.teams || []).forEach(function (tm) {
+      if (!tm.lat || !tm.lon) return;
+      var pt = project(tm.lon, tm.lat);
+      var a = document.createElementNS("http://www.w3.org/2000/svg", "a");
+      a.setAttribute("href", (window.SITE_BASE || "") + "/knowledge/researchers/");
+      var ci = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      ci.setAttribute("cx", pt[0]); ci.setAttribute("cy", pt[1]); ci.setAttribute("r", String(2 + Math.min(2, tm.papers / 4)));
+      var ti = document.createElementNS("http://www.w3.org/2000/svg", "title");
+      ti.textContent = tm.name + " · " + tm.country + " · " + tm.papers + " publications";
+      a.appendChild(ti); a.appendChild(ci); gt.appendChild(a);
+    });
+    svg.appendChild(gt);
+
+    // layer filter (SVG edition): countries, centres, teams, offices; dots and city names need WebGL
+    document.querySelectorAll("#map-layers button").forEach(function (b) {
+      var key = b.getAttribute("data-layer");
+      if (key === "people" || key === "cities") { b.disabled = true; b.title = "Needs WebGL"; return; }
+      b.addEventListener("click", function () {
+        var on = b.getAttribute("aria-pressed") !== "true";
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        if (key === "members") svg.classList.toggle("nofill", !on);
+        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", offices: "office" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
+        document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
+      });
+    });
+
     // tooltip
     var tip = document.querySelector(".map-tip");
     function showTip(el, x, y) {

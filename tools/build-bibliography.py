@@ -67,7 +67,7 @@ VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build
     (r"crossed polysyndactyly", "2935"), (r"\bpolydactyly", "2913"), (r"\bsyndactyly", "93458"),
     (r"\bpoland\W{0,3}s?\s*(syndrome|anomaly|sequence)", "2911"), (r"adams[- ]oliver", "974"), (r"holt[- ]oram", "392"), (r"roberts syndrome|SC phocomelia", "3103"),
     (r"cenani[- ]lenz", "3258"), (r"thrombocytopenia[- ]absent radius|\bTAR syndrome", "3320"), (r"microgastria", "2538"), (r"tibial aplasia[- ]ectrodactyly", "3329"),
-    (r"amniotic band|constriction (ring|band)|\bABS\b", "295000"),
+    (r"amniotic band|constriction (ring|band)", "295000"),
     (r"radial (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club|hemimelia)", "93321"),
     (r"ulnar (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club|hemimelia)", "93320"),
     (r"tibial (deficien|aplasia|hemimelia|hypoplasia)", "93322"), (r"fibular? (deficien|aplasia|hemimelia|hypoplasia)", "93323"),
@@ -86,12 +86,18 @@ TOPIC_RX = [("epidemiology", re.compile(r"prevalence|incidence|epidemiolog|popul
             ("clinical", re.compile(r"surg|treatment|outcome|reconstruct|transfer|pollicization|lengthening|function|rehabilitat|therapy|management|classification|diagnos", re.I))]
 
 
-def screen(text, title=None):
-    """Return (codes, topics) if the text is about our conditions, else None."""
+CAUSES_RX = re.compile(r"aetiolog|etiolog|\bcauses? of\b|\bcaused by\b|\bcausation|teratogen|risk factors?|exposures?\b|environmental|pathogenesis|pathogenic|mechanism|vascular disruption|maternal|prenatal (drug|medication|exposure)|pesticide|pollut|\bcluster|origin of|genetic (basis|cause|aetiology|etiology)|mutations? in|\bloci\b|\blocus\b", re.I)
+
+
+def screen(text, title=None, strict=False):
+    """Return (codes, topics) if the text is about our conditions, else None.
+    strict=True (hits harvested from websites): generic limb terms count only in the title;
+    a named condition counts anywhere."""
     codes, hit = set(), False
     for rx, code in VOCAB:
         if rx.search(text):
-            hit = True
+            if code or not strict or (title and rx.search(title)):
+                hit = True
             if code: codes.add(code)
     if THAL_TITLE.search(title if title is not None else text):
         hit = True; codes.add("thal")
@@ -103,6 +109,7 @@ def screen(text, title=None):
             topics = {main} | ({"review"} & hits); break
     else:
         topics = {"review"} if "review" in hits else {"clinical"}
+    if CAUSES_RX.search(title if title is not None else text): topics.add("causes")
     return codes, topics
 
 
@@ -154,7 +161,7 @@ if MEMBER_FILES:
         if pmid:
             resolved.setdefault(pmid, set()).update(members)
         elif meta:
-            r = screen(meta["title"] + " " + meta["abstract"], meta["title"])
+            r = screen(meta["title"] + " " + meta["abstract"], meta["title"], strict=True)
             if not r:
                 review.append({"id": ident, "title": meta["title"], "members": members, "status": "rejected: not about the site's conditions (Crossref)"}); continue
             codes, topics = r
@@ -174,7 +181,7 @@ if MEMBER_FILES:
             pmid = pm.group(1); members = sorted(resolved[pmid])
             title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
             abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
-            r = screen(title + " " + abstract, title)
+            r = screen(title + " " + abstract, title, strict=True)
             if not r:
                 review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": members, "status": "rejected: not about the site's conditions"}); continue
             codes, topics = r
@@ -228,7 +235,7 @@ for i in range(0, len(meta_ids), 50):
         pmid = pm.group(1)
         title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
         abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
-        r = screen(title + " " + abstract, title)
+        r = screen(title + " " + abstract, title, strict=True)
         if not r:
             review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"], "status": "rejected: systematic review not about the site's conditions"}); continue
         codes, topics = r
@@ -255,6 +262,7 @@ for i in range(0, len(pmids), 100):
         title = d.get("title", "").rstrip(".")
         if pubtypes & {"Meta-Analysis", "Systematic Review"} or META_RX.search(title): s["topics"].add("meta")
         if "Review" in pubtypes: s["topics"].add("review")
+        if CAUSES_RX.search(title): s["topics"].add("causes")
         entries.append({"pmid": pmid, "doi": doi, "title": title, "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
                         "journal": d.get("fulljournalname") or d.get("source", ""), "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
                         "pubtypes": sorted(pubtypes - {"Journal Article"}),

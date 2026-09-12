@@ -2,30 +2,93 @@
  "built": "2026-09-12",
  "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref",
  "thalidomide_query": "thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR \"birth defects\"[Title] OR phocomelia[Title] OR survivors[Title] OR \"limb\"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])",
+ "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
  "entries": [
   {
-   "pmid": "42321045",
-   "doi": "10.1016/j.scib.2026.05.076",
-   "title": "Effect of thalidomide on sporadic central nervous system arteriovenous malformations",
+   "pmid": "42404495",
+   "doi": "10.1002/hsr2.72655",
+   "title": "Clinical and Genetic Spectrum of Filippi Syndrome: A Systematic Review of Published Case Reports and Case Series",
    "authors": [
-    "Yu J",
-    "Zhang H",
-    "Zhang S",
+    "Faheem MA",
+    "Ghanghro L",
+    "Khan A",
     "et al."
    ],
-   "journal": "Science bulletin",
+   "journal": "Health science reports",
    "year": "2026",
-   "volume": "71",
-   "pages": "3588-3592",
-   "pubtypes": [],
+   "volume": "9",
+   "pages": "e72655",
+   "pubtypes": [
+    "Review"
+   ],
    "codes": [
-    "thal"
+    "93458"
    ],
    "topics": [
-    "clinical"
+    "meta",
+    "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "42370086",
+   "doi": "10.1016/j.ero.2025.11.011",
+   "title": "Fertility and pregnancy outcomes after CAR T-cell therapy: insights from a systematic review",
+   "authors": [
+    "Kremer P",
+    "Holzer MT",
+    "Ruffer N",
+    "et al."
+   ],
+   "journal": "EULAR rheumatology open",
+   "year": "2026",
+   "volume": "2",
+   "pages": "62-68",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "40498878",
+   "doi": "10.1097/PXR.0000000000000441",
+   "title": "Functional outcome measures for pediatric upper limb deficiencies with and without prostheses: A systematic review and appraisal",
+   "authors": [
+    "Cordray H",
+    "Fiandeiro M",
+    "Banala M",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2026",
+   "volume": "50",
+   "pages": "50-67",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -63,6 +126,34 @@
    ]
   },
   {
+   "pmid": "42249584",
+   "doi": "10.1177/17531934261447693",
+   "title": "Shared decision making in the treatment of type B ulnar polydactyly: a systematic review and meta-analysis on parental satisfaction and complications",
+   "authors": [
+    "Ten Berge SH",
+    "Nieuwdorp NJ",
+    "Burger EB",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2026",
+   "volume": "",
+   "pages": "17531934261447693",
+   "pubtypes": [],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "40549513",
    "doi": "10.1097/SCS.0000000000011570",
    "title": "Single-Cell Sequencing Reveals Thalidomide-Induced Teratogenicity in Zebrafish via Endoplasmic Reticulum Stress and Dysregulated Angiogenic Signaling",
@@ -81,6 +172,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -91,32 +183,62 @@
    ]
   },
   {
-   "pmid": "42049581",
-   "doi": "10.1016/j.vasdi.2026.04.001",
-   "title": "Thalidomide for high-flow arteriovenous malformations: A case report and comprehensive literature review",
+   "pmid": "40913756",
+   "doi": "10.1002/pd.6885",
+   "title": "A Practical Prenatal Ultrasound Classification System for Lower Limb Anomalies-PRELLIM Classification",
    "authors": [
-    "Cardenas A",
-    "Foret T",
-    "Fournel A",
+    "Arduç A",
+    "van Doesburg MHM",
+    "Witbreuk MMEH",
     "et al."
    ],
-   "journal": "Vascular diseases (Paris, France)",
-   "year": "2026",
-   "volume": "51",
-   "pages": "155-158",
+   "journal": "Prenatal diagnosis",
+   "year": "2025",
+   "volume": "45",
+   "pages": "1442-1449",
    "pubtypes": [
-    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "41300579",
+   "doi": "10.3390/children12111461",
+   "title": "A Systematic Review of Digital Deformities in Pediatric Patients and Their Podiatric Treatments",
+   "authors": [
+    "Miralles MJC",
+    "Vargas RG",
+    "Vallés AJ",
+    "et al."
+   ],
+   "journal": "Children (Basel, Switzerland)",
+   "year": "2025",
+   "volume": "12",
+   "pages": "",
+   "pubtypes": [
     "Review"
    ],
    "codes": [
-    "thal"
+    "2913",
+    "93458"
    ],
    "topics": [
-    "clinical",
+    "meta",
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -152,6 +274,38 @@
    ]
   },
   {
+   "pmid": "39302026",
+   "doi": "10.1177/15589447241279456",
+   "title": "Comparison Between Surgical Techniques for Correction of Congenital Syndactyly: A Systematic Review and Meta Analysis",
+   "authors": [
+    "Schirlo JM",
+    "Saad Cleto A",
+    "Beltrame D",
+    "et al."
+   ],
+   "journal": "Hand (New York, N.Y.)",
+   "year": "2025",
+   "volume": "20",
+   "pages": "523-532",
+   "pubtypes": [
+    "Comparative Study",
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "39937006",
    "doi": "10.3390/cells14030215",
    "title": "Comprehensive Search for Genes Involved in Thalidomide Teratogenicity Using Early Differentiation Models of Human Induced Pluripotent Stem Cells: Potential Applications in Reproductive and Developmental Toxicity Testing",
@@ -172,6 +326,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -202,10 +357,41 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "39818015",
+   "doi": "10.1016/j.bjps.2024.12.008",
+   "title": "Reconstructive techniques for chest and breast deformities in Poland syndrome: An up-to-date systematic review",
+   "authors": [
+    "Grande PK",
+    "Mortell T",
+    "Chang AE",
+    "et al."
+   ],
+   "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
+   "year": "2025",
+   "volume": "101",
+   "pages": "207-215",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -237,6 +423,37 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "40206497",
+   "doi": "10.7759/cureus.81943",
+   "title": "Stuck Together: A Systematic Review of Hand Syndactyly",
+   "authors": [
+    "Gowrie S",
+    "Omosebi O",
+    "Veith P",
+    "et al."
+   ],
+   "journal": "Cureus",
+   "year": "2025",
+   "volume": "17",
+   "pages": "e81943",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -329,6 +546,37 @@
    ]
   },
   {
+   "pmid": "38547384",
+   "doi": "10.1002/uog.27649",
+   "title": "Detection of non-cardiac fetal abnormalities on ultrasound at 11-14 weeks: systematic review and meta-analysis",
+   "authors": [
+    "Karim JN",
+    "Di Mascio D",
+    "Roberts N",
+    "et al."
+   ],
+   "journal": "Ultrasound in obstetrics & gynecology : the official journal of the International Society of Ultrasound in Obstetrics and Gynecology",
+   "year": "2024",
+   "volume": "64",
+   "pages": "15-27",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "39575497",
    "doi": "10.1142/S2424835524300068",
    "title": "Developing a Congenital Upper Limb Difference Registry in Australia",
@@ -350,6 +598,65 @@
    ],
    "via": [
     "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "39080813",
+   "doi": "10.1002/pd.6636",
+   "title": "Fetoscopic Release of Amniotic Bands Based on the Evidence-A Systematic Review",
+   "authors": [
+    "Ferrer-Marquez F",
+    "Peiro JL",
+    "Tonni G",
+    "et al."
+   ],
+   "journal": "Prenatal diagnosis",
+   "year": "2024",
+   "volume": "44",
+   "pages": "1231-1241",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "38411327",
+   "doi": "10.1002/bdr2.2306",
+   "title": "Gastroschisis prevalence patterns in 27 surveillance programs from 24 countries, International Clearinghouse for Birth Defects Surveillance and Research, 1980-2017",
+   "authors": [
+    "Feldkamp ML",
+    "Canfield MA",
+    "Krikov S",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2024",
+   "volume": "116",
+   "pages": "e2306",
+   "pubtypes": [],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), EUROCAT (EU RD Platform, JRC) (Italy)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "EUROCAT (EU RD Platform, JRC) (Italy)"
    ]
   },
   {
@@ -385,6 +692,36 @@
    ]
   },
   {
+   "pmid": "38459147",
+   "doi": "10.1007/s00381-024-06346-3",
+   "title": "Neurosurgical intervention for the Meckel-Gruber Syndrome: A systematic review",
+   "authors": [
+    "Junior JHMF",
+    "Junior SP",
+    "Pustilnik HN",
+    "et al."
+   ],
+   "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+   "year": "2024",
+   "volume": "40",
+   "pages": "2161-2168",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "38702055",
    "doi": "10.1177/17531934241249014",
    "title": "Parental experience after diagnosis of a congenital upper limb difference: a national survey",
@@ -410,6 +747,37 @@
    ],
    "via": [
     "Reach (United Kingdom)"
+   ]
+  },
+  {
+   "pmid": "38340146",
+   "doi": "10.1007/s12519-023-00786-8",
+   "title": "Perinatal prevalence of birth defects in the Mainland of China, 2000-2021: a systematic review and meta-analysis",
+   "authors": [
+    "Kang LY",
+    "Guo ZR",
+    "Shang WJ",
+    "et al."
+   ],
+   "journal": "World journal of pediatrics : WJP",
+   "year": "2024",
+   "volume": "20",
+   "pages": "669-681",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ]
   },
   {
@@ -441,6 +809,36 @@
    ]
   },
   {
+   "pmid": "38336121",
+   "doi": "10.1016/j.ejmg.2024.104920",
+   "title": "TBX5 variants and cardiac phenotype: A systematic review of the literature and a novel variant",
+   "authors": [
+    "Møller Nielsen AK",
+    "Dehn AM",
+    "Hjortdal V",
+    "et al."
+   ],
+   "journal": "European journal of medical genetics",
+   "year": "2024",
+   "volume": "68",
+   "pages": "104920",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "38318695",
    "doi": "10.1080/09638288.2024.2307357",
    "title": "The impact of ageing on the health and wellbeing of people with thalidomide embryopathy: a comparison of the health impact with the general population",
@@ -465,6 +863,35 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "36728793",
+   "doi": "10.1097/PRS.0000000000010116",
+   "title": "A Systematic Review of Vascularized and Nonvascularized Toe Transfer for Reconstruction of Congenital Hand Differences",
+   "authors": [
+    "Meyers A",
+    "Bassiri Gharb B",
+    "Rampazzo A"
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2023",
+   "volume": "151",
+   "pages": "1256-1273",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "1570"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -525,10 +952,15 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)"
+    "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)",
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), EUROCAT (EU RD Platform, JRC) (Italy), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland), REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
    ],
    "via": [
-    "Orphanet"
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "EUROCAT (EU RD Platform, JRC) (Italy)",
+    "Orphanet",
+    "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)",
+    "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
    ]
   },
   {
@@ -550,6 +982,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -612,6 +1045,130 @@
    ]
   },
   {
+   "pmid": "37974291",
+   "doi": "10.1186/s13643-023-02362-7",
+   "title": "Correction of symbrachydactyly: a systematic review of surgical options",
+   "authors": [
+    "Bartsch A",
+    "Nikkhah D",
+    "Miller R",
+    "et al."
+   ],
+   "journal": "Systematic reviews",
+   "year": "2023",
+   "volume": "12",
+   "pages": "218",
+   "pubtypes": [],
+   "codes": [
+    "1570",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "37665243",
+   "doi": "10.1002/jcu.23549",
+   "title": "Ectrodactyly-ectodermal dysplasia-clefting syndrome. Prenatal prospective ultrasound diagnosis",
+   "authors": [
+    "Orlandi G",
+    "Di Girolamo R",
+    "Carbone L",
+    "et al."
+   ],
+   "journal": "Journal of clinical ultrasound : JCU",
+   "year": "2023",
+   "volume": "51",
+   "pages": "1348-1355",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "36300660",
+   "doi": "10.1111/jdv.18690",
+   "title": "Epidemiology of aplasia cutis congenita: A population-based study in Europe",
+   "authors": [
+    "Coi A",
+    "Barisic I",
+    "Garne E",
+    "et al."
+   ],
+   "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+   "year": "2023",
+   "volume": "37",
+   "pages": "581-589",
+   "pubtypes": [],
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), EUROCAT (EU RD Platform, JRC) (Italy), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland), REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "EUROCAT (EU RD Platform, JRC) (Italy)",
+    "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)",
+    "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
+   ]
+  },
+  {
+   "pmid": "37445217",
+   "doi": "10.3390/jcm12134181",
+   "title": "Maternal Cigarette Smoking and Congenital Upper and Lower Limb Differences: A Systematic Review and Meta-Analysis",
+   "authors": [
+    "Cevik J",
+    "Salehi O",
+    "Gaston J",
+    "et al."
+   ],
+   "journal": "Journal of clinical medicine",
+   "year": "2023",
+   "volume": "12",
+   "pages": "",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "topics": [
+    "causes",
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "38222129",
    "doi": "10.7759/cureus.50465",
    "title": "Review of Teratogenic Effects of Leflunomide, Accutane, Thalidomide, Warfarin, Tetracycline, and Angiotensin-Converting Enzyme Inhibitors",
@@ -632,10 +1189,40 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "review"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "38034494",
+   "doi": "10.3389/fgene.2023.1247557",
+   "title": "Review of the phenotypes and genotypes of Bardet-Biedl syndrome from China",
+   "authors": [
+    "Xin-Yi Z",
+    "Yang-Li D",
+    "Ling-Hui Z"
+   ],
+   "journal": "Frontiers in genetics",
+   "year": "2023",
+   "volume": "14",
+   "pages": "1247557",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -662,6 +1249,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -722,6 +1310,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "prosthetics"
    ],
    "notes": [
@@ -845,6 +1434,37 @@
    ]
   },
   {
+   "pmid": "35502959",
+   "doi": "10.1097/SAP.0000000000003219",
+   "title": "Bilateral Transverse Upper Gracilis Flaps for Unilateral Breast Reconstruction: A 4-Year Retrospective Study of the \"2-in-1\" Technique and a Systematic Review With Meta-analysis",
+   "authors": [
+    "Christopoulos G",
+    "Khoury A",
+    "Sergentanis TN",
+    "et al."
+   ],
+   "journal": "Annals of plastic surgery",
+   "year": "2022",
+   "volume": "89",
+   "pages": "400-407",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "39195866",
    "doi": "10.1038/s44161-022-00080-2",
    "title": "Case report study of thalidomide therapy in 18 patients with severe arteriovenous malformation﻿s",
@@ -866,10 +1486,10 @@
     "clinical"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "published on the website of ERN [VASCERN] - VASCERN Registries (France)"
    ],
    "via": [
-    "PubMed search"
+    "ERN [VASCERN] - VASCERN Registries (France)"
    ]
   },
   {
@@ -894,10 +1514,70 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "34670449",
+   "doi": "10.1080/13816810.2021.1989601",
+   "title": "Eye and ocular adnexa manifestations of MED12-related disorders",
+   "authors": [
+    "Shah A",
+    "Bapna M",
+    "Al-Saif H",
+    "et al."
+   ],
+   "journal": "Ophthalmic genetics",
+   "year": "2022",
+   "volume": "43",
+   "pages": "126-129",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "36694679",
+   "doi": "10.52547/wjps.11.3.13",
+   "title": "Functional and Aesthetic Outcomes of the Anterolateral Thigh Flap in Reconstruction of Upper Limb Defects: A Systematic Review",
+   "authors": [
+    "Hagiga A",
+    "Aly M",
+    "Kadhum M",
+    "et al."
+   ],
+   "journal": "World journal of plastic surgery",
+   "year": "2022",
+   "volume": "11",
+   "pages": "13-22",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -928,6 +1608,36 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "36523353",
+   "doi": "10.3389/fcvm.2022.1021009",
+   "title": "Geno- and phenotypic characteristics and clinical outcomes of CACNA1C gene mutation associated Timothy syndrome, \"cardiac only\" Timothy syndrome and isolated long QT syndrome 8: A systematic review",
+   "authors": [
+    "Borbás J",
+    "Vámos M",
+    "Hategan L",
+    "et al."
+   ],
+   "journal": "Frontiers in cardiovascular medicine",
+   "year": "2022",
+   "volume": "9",
+   "pages": "1021009",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -995,6 +1705,37 @@
    ]
   },
   {
+   "pmid": "35813538",
+   "doi": "10.1007/s43465-022-00651-2",
+   "title": "Management of Anterior Cruciate Ligament Aplasia for the Arthroscopy Surgeons: A Systematic Review",
+   "authors": [
+    "Kambhampati SBS",
+    "Vishwanathan K",
+    "Vasudeva N",
+    "et al."
+   ],
+   "journal": "Indian journal of orthopaedics",
+   "year": "2022",
+   "volume": "56",
+   "pages": "1123-1138",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "34343375",
    "doi": "10.1111/jpc.15673",
    "title": "Pre-natal and post-natal diagnosis of congenital upper limb differences: The first 3 years of the Australian Hand Difference Register",
@@ -1025,6 +1766,132 @@
    ],
    "via": [
     "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "36369770",
+   "doi": "10.1002/bdr2.2122",
+   "title": "Prevalence of vascular disruption anomalies and association with young maternal age: A EUROCAT study to compare the United Kingdom with other European countries",
+   "authors": [
+    "Morris JK",
+    "Wellesley D",
+    "Limb E",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2022",
+   "volume": "114",
+   "pages": "1417-1426",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
+   ]
+  },
+  {
+   "pmid": "36120500",
+   "doi": "10.1016/j.jpra.2022.05.002",
+   "title": "Primary treatment of type B post-axial ulnar polydactyly: A systematic review and meta-analysis",
+   "authors": [
+    "Samarendra H",
+    "Wade RG",
+    "Glanvill L",
+    "et al."
+   ],
+   "journal": "JPRAS open",
+   "year": "2022",
+   "volume": "34",
+   "pages": "21-33",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "36116424",
+   "doi": "10.1016/j.clinph.2022.08.020",
+   "title": "Split-hand index for amyotrophic lateral sclerosis diagnosis: A frequentist and Bayesian meta-analysis",
+   "authors": [
+    "Lu WZ",
+    "Lin HA",
+    "Hou SK",
+    "et al."
+   ],
+   "journal": "Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology",
+   "year": "2022",
+   "volume": "143",
+   "pages": "56-66",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "35907958",
+   "doi": "10.1007/s00438-022-01930-1",
+   "title": "The molecular genetics of human appendicular skeleton",
+   "authors": [
+    "Ahmad S",
+    "Ali MZ",
+    "Muzammal M",
+    "et al."
+   ],
+   "journal": "Molecular genetics and genomics : MGG",
+   "year": "2022",
+   "volume": "297",
+   "pages": "1195-1214",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "2440",
+    "2913",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ]
   },
   {
@@ -1086,6 +1953,69 @@
    ]
   },
   {
+   "pmid": "33169370",
+   "doi": "10.1111/cge.13878",
+   "title": "A BBS1 SVA F retrotransposon insertion is a frequent cause of Bardet-Biedl syndrome",
+   "authors": [
+    "Delvallée C",
+    "Nicaise S",
+    "Antin M",
+    "et al."
+   ],
+   "journal": "Clinical genetics",
+   "year": "2021",
+   "volume": "99",
+   "pages": "318-324",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ]
+  },
+  {
+   "pmid": "33442900",
+   "doi": "10.1002/ajmg.a.62068",
+   "title": "Clinical and molecular characterizations of 11 new patients with type 1 Feingold syndrome: Proposal for selecting diagnostic criteria and further genetic testing in patients with severe phenotype",
+   "authors": [
+    "Tedesco MG",
+    "Lonardo F",
+    "Ceccarini C",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2021",
+   "volume": "185",
+   "pages": "1204-1210",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ]
+  },
+  {
    "pmid": "34249098",
    "doi": "10.3389/fgene.2021.680217",
    "title": "Comparative Genomics Identifies Putative Interspecies Mechanisms Underlying Crbn-Sall4-Linked Thalidomide Embryopathy",
@@ -1104,6 +2034,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -1111,6 +2042,39 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "34067522",
+   "doi": "10.3390/genes12050748",
+   "title": "Ectodermal Dysplasia-Syndactyly Syndrome with Toe-Only Minimal Syndactyly Due to a Novel Mutation in NECTIN4: A Case Report and Literature Review",
+   "authors": [
+    "Rotunno R",
+    "Diociaiuti A",
+    "Dentici ML",
+    "et al."
+   ],
+   "journal": "Genes",
+   "year": "2021",
+   "volume": "12",
+   "pages": "",
+   "pubtypes": [
+    "Case Reports",
+    "Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1142,6 +2106,34 @@
    ]
   },
   {
+   "pmid": "33222112",
+   "doi": "10.1007/s00590-020-02831-y",
+   "title": "How should we lengthen post-traumatic limb defects? a systematic review and comparison of motorized lengthening systems, combined internal and external fixation and external fixation alone",
+   "authors": [
+    "Axelrod D",
+    "Rubinger L",
+    "Shah A",
+    "et al."
+   ],
+   "journal": "European journal of orthopaedic surgery & traumatology : orthopedie traumatologie",
+   "year": "2021",
+   "volume": "31",
+   "pages": "1015-1022",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "34331266",
    "doi": "10.1007/s43441-021-00327-3",
    "title": "Implementation of a Pregnancy Prevention Programme (PPP) with a Controlled Distribution System (CDS) for the Generic Teratogenic Phthalimides Thalidomide, Lenalidomide and Pomalidomide",
@@ -1161,11 +2153,97 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "33673226",
+   "doi": "10.3390/children8020138",
+   "title": "Maternal Risk Factors Associated with Limb Reduction Defects: Data from the Polish Registry of Congenital Malformations (PRCM)",
+   "authors": [
+    "Materna-Kiryluk A",
+    "Wisniewska K",
+    "Wieckowska B",
+    "et al."
+   ],
+   "journal": "Children (Basel, Switzerland)",
+   "year": "2021",
+   "volume": "8",
+   "pages": "",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
+   ],
+   "via": [
+    "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
+   ]
+  },
+  {
+   "pmid": "33083874",
+   "doi": "10.1007/s00381-020-04934-7",
+   "title": "Nervous system involvement in Pfeiffer syndrome",
+   "authors": [
+    "Mavridis IN",
+    "Rodrigues D"
+   ],
+   "journal": "Child's nervous system : ChNS : official journal of the International Society for Pediatric Neurosurgery",
+   "year": "2021",
+   "volume": "37",
+   "pages": "367-374",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "34275566",
+   "doi": "10.1016/j.jocn.2021.06.015",
+   "title": "Split hand in amyotrophic lateral sclerosis: A systematic review and meta-analysis",
+   "authors": [
+    "Hu N",
+    "Wang J",
+    "Liu M"
+   ],
+   "journal": "Journal of clinical neuroscience : official journal of the Neurosurgical Society of Australasia",
+   "year": "2021",
+   "volume": "90",
+   "pages": "293-301",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -1220,6 +2298,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -1248,6 +2327,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -1289,6 +2369,36 @@
    ]
   },
   {
+   "pmid": "33480066",
+   "doi": "10.1002/pd.5907",
+   "title": "The prognosis of common arterial trunk from a fetal perspective: A prenatal cohort study and systematic literature review",
+   "authors": [
+    "van Nisselrooij AEL",
+    "Herling L",
+    "Clur SA",
+    "et al."
+   ],
+   "journal": "Prenatal diagnosis",
+   "year": "2021",
+   "volume": "41",
+   "pages": "754-765",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "33121298",
    "doi": "10.1177/1753193420967527",
    "title": "The psychosocial impact of congenital hand and upper limb differences on children: a qualitative study",
@@ -1312,6 +2422,65 @@
    ],
    "via": [
     "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "32591344",
+   "doi": "10.1136/jmedgenet-2020-106948",
+   "title": "Variant type and position predict two distinct limb phenotypes in patients with GLI3-mediated polydactyly syndromes",
+   "authors": [
+    "Baas M",
+    "Burger EB",
+    "van den Ouweland AM",
+    "et al."
+   ],
+   "journal": "Journal of medical genetics",
+   "year": "2021",
+   "volume": "58",
+   "pages": "362-368",
+   "pubtypes": [],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ]
+  },
+  {
+   "pmid": "34202629",
+   "doi": "10.3390/genes12070962",
+   "title": "Whole Exome Sequencing Is the Minimal Technological Approach in Probands Born to Consanguineous Couples",
+   "authors": [
+    "Peluso F",
+    "Caraffi SG",
+    "Zuntini R",
+    "et al."
+   ],
+   "journal": "Genes",
+   "year": "2021",
+   "volume": "12",
+   "pages": "",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2440",
+    "2913"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1340,6 +2509,37 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32992402",
+   "doi": "10.1055/a-1250-8957",
+   "title": "[Prenatal Diagnostics and Postnatal Complications in a Case of Extremely Rare Tetra-Amelia]",
+   "authors": [
+    "Schwickert A",
+    "Dame C",
+    "Akanbi S",
+    "et al."
+   ],
+   "journal": "Zeitschrift fur Geburtshilfe und Neonatologie",
+   "year": "2021",
+   "volume": "225",
+   "pages": "279-282",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "1027",
+    "3301"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1389,6 +2589,95 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32444984",
+   "doi": "10.1007/s00415-020-09913-1",
+   "title": "A systematic review and meta-analyses of pregnancy and fetal outcomes in women with multiple sclerosis: a contribution from the IMI2 ConcePTION project",
+   "authors": [
+    "Lopez-Leon S",
+    "Geissbühler Y",
+    "Sabidó M",
+    "et al."
+   ],
+   "journal": "Journal of neurology",
+   "year": "2020",
+   "volume": "267",
+   "pages": "2721-2731",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "30857895",
+   "doi": "10.1016/j.jht.2018.11.001",
+   "title": "A systematic review of the use of psychological assessment tools in congenital upper limb anomaly management",
+   "authors": [
+    "Miller R",
+    "Samarendra H",
+    "Hotton M"
+   ],
+   "journal": "Journal of hand therapy : official journal of the American Society of Hand Therapists",
+   "year": "2020",
+   "volume": "33",
+   "pages": "2-12.e1",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "31972725",
+   "doi": "10.1097/BPO.0000000000001510",
+   "title": "Amputation Versus Limb Reconstruction for Fibula Hemimelia: A Meta-analysis",
+   "authors": [
+    "Elmherig A",
+    "Ahmed AF",
+    "Hegazy A",
+    "et al."
+   ],
+   "journal": "Journal of pediatric orthopedics",
+   "year": "2020",
+   "volume": "40",
+   "pages": "425-430",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -1450,12 +2739,42 @@
     "review"
    ],
    "notes": [
-    "published on the website of AISP – Sindrome di Poland (Italy)",
-    "published on the website of PiP UK (United Kingdom)"
+    "published on the website of AISP – Sindrome di Poland (Italy), PiP UK (United Kingdom)"
    ],
    "via": [
     "AISP – Sindrome di Poland (Italy)",
     "PiP UK (United Kingdom)"
+   ]
+  },
+  {
+   "pmid": "31789838",
+   "doi": "10.1097/DAD.0000000000001579",
+   "title": "Fragmented Elastic Fibers in Focal Dermal Hypoplasia (Goltz-Gorlin Syndrome) Without Focal Dermal Hypoplasia: Report of a Male Case and Review of the Literature",
+   "authors": [
+    "Rohdenburg C",
+    "Liersch J",
+    "Kutsche K",
+    "et al."
+   ],
+   "journal": "The American Journal of dermatopathology",
+   "year": "2020",
+   "volume": "42",
+   "pages": "653-661",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ]
   },
   {
@@ -1479,6 +2798,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -1486,6 +2806,36 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32880193",
+   "doi": "10.1177/1071100720943850",
+   "title": "Lateral Versus Medial Hallux Excision in Preaxial Polydactyly of the Foot",
+   "authors": [
+    "Burger EB",
+    "Bus SA",
+    "Hovius SER",
+    "et al."
+   ],
+   "journal": "Foot & ankle international",
+   "year": "2020",
+   "volume": "41",
+   "pages": "1553-1562",
+   "pubtypes": [
+    "Comparative Study"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1539,6 +2889,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -1547,6 +2898,36 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32016944",
+   "doi": "10.1055/s-0039-3402009",
+   "title": "Poland Syndrome with Atypical Malformations Associated to a de novo 1.5 Mb Xp22.31 Duplication",
+   "authors": [
+    "Massimino CR",
+    "Smilari P",
+    "Greco F",
+    "et al."
+   ],
+   "journal": "Neuropediatrics",
+   "year": "2020",
+   "volume": "51",
+   "pages": "359-363",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1630,6 +3011,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "review"
    ],
    "notes": [
@@ -1640,27 +3022,60 @@
    ]
   },
   {
-   "pmid": "32874976",
-   "doi": "10.12998/wjcc.v8.i15.3218",
-   "title": "Thalidomide for refractory gastrointestinal bleeding from vascular malformations in patients with significant comorbidities",
+   "pmid": "31965514",
+   "doi": "10.1007/s11604-020-00920-w",
+   "title": "Skeletal ciliopathies: a pattern recognition approach",
    "authors": [
-    "Bayudan AM",
-    "Chen CH"
+    "Handa A",
+    "Voss U",
+    "Hammarsjö A",
+    "et al."
    ],
-   "journal": "World journal of clinical cases",
+   "journal": "Japanese journal of radiology",
    "year": "2020",
-   "volume": "8",
-   "pages": "3218-3229",
-   "pubtypes": [],
+   "volume": "38",
+   "pages": "193-206",
+   "pubtypes": [
+    "Review"
+   ],
    "codes": [
-    "thal"
+    "2913"
    ],
    "topics": [
-    "clinical",
+    "genetics",
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ]
+  },
+  {
+   "pmid": "32000609",
+   "doi": "10.1142/S2424835520300017",
+   "title": "Surgical Treatment and Outcomes of Syndactyly: A Systematic Review",
+   "authors": [
+    "Mende K",
+    "Watson A",
+    "Stewart DA"
+   ],
+   "journal": "The journal of hand surgery Asian-Pacific volume",
+   "year": "2020",
+   "volume": "25",
+   "pages": "1-12",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -1691,6 +3106,95 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32080096",
+   "doi": "10.1097/MD.0000000000019169",
+   "title": "The splice c.1815G>A variant in KIAA0586 results in a phenotype bridging short-rib-polydactyly and oral-facial-digital syndrome: A case report and literature review",
+   "authors": [
+    "Cocciadiferro D",
+    "Agolini E",
+    "Digilio MC",
+    "et al."
+   ],
+   "journal": "Medicine",
+   "year": "2020",
+   "volume": "99",
+   "pages": "e19169",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "genetics",
+    "review"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ]
+  },
+  {
+   "pmid": "30417703",
+   "doi": "10.1177/1558944718810885",
+   "title": "To Tie or Not to Tie: A Systematic Review of Postaxial Polydactyly and Outcomes of Suture Ligation Versus Surgical Excision",
+   "authors": [
+    "Chopan M",
+    "Sayadi L",
+    "Chim H",
+    "et al."
+   ],
+   "journal": "Hand (New York, N.Y.)",
+   "year": "2020",
+   "volume": "15",
+   "pages": "303-310",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "32179704",
+   "doi": "10.1136/jmedgenet-2019-106685",
+   "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
+   "authors": [
+    "Potuijt JWP",
+    "Hoogeboom J",
+    "de Graaff E",
+    "et al."
+   ],
+   "journal": "Journal of medical genetics",
+   "year": "2020",
+   "volume": "57",
+   "pages": "660-663",
+   "pubtypes": [],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "via": [
+    "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
   {
@@ -1814,6 +3318,69 @@
    ]
   },
   {
+   "pmid": "31181251",
+   "doi": "10.1016/j.reprotox.2019.05.066",
+   "title": "Fetal methotrexate syndrome: A systematic review of case reports",
+   "authors": [
+    "Verberne EA",
+    "de Haan E",
+    "van Tintelen JP",
+    "et al."
+   ],
+   "journal": "Reproductive toxicology (Elmsford, N.Y.)",
+   "year": "2019",
+   "volume": "87",
+   "pages": "125-139",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "30887706",
+   "doi": "10.1002/bdr2.1493",
+   "title": "HSPA6: A new autosomal recessive candidate gene for the VATER/VACTERL malformation spectrum",
+   "authors": [
+    "Kause F",
+    "Zhang R",
+    "Ludwig M",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2019",
+   "volume": "111",
+   "pages": "591-597",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
    "pmid": "30943953",
    "doi": "10.1186/s12905-019-0745-y",
    "title": "Life situation of women impaired by Thalidomide embryopathy in North Rhine-Westphalia - a comparative analysis of a recent cross-sectional study with earlier data",
@@ -1925,6 +3492,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -1954,6 +3522,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "review"
    ],
    "notes": [
@@ -2012,6 +3581,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -2048,6 +3618,36 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "30419059",
+   "doi": "10.1371/journal.pone.0207067",
+   "title": "A systematic review on the impact of gestational Lyme disease in humans on the fetus and newborn",
+   "authors": [
+    "Waddell LA",
+    "Greig J",
+    "Lindsay LR",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2018",
+   "volume": "13",
+   "pages": "e0207067",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -2112,6 +3712,38 @@
    ]
   },
   {
+   "pmid": "29159873",
+   "doi": "10.1002/ajmg.a.38545",
+   "title": "Orthopaedic manifestations within the 22q11.2 Deletion syndrome: A systematic review",
+   "authors": [
+    "Homans JF",
+    "Tromp IN",
+    "Colo D",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2018",
+   "volume": "176",
+   "pages": "2104-2120",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "30078491",
    "doi": "10.1053/j.sempedsurg.2018.05.007",
    "title": "Poland syndrome: A proposed classification system and perspectives on diagnosis and treatment",
@@ -2143,6 +3775,58 @@
    ]
   },
   {
+   "pmid": "29384817",
+   "doi": "10.1097/PRS.0000000000004301",
+   "title": "Postoperative Patient- and Parent-Reported Outcomes for Children with Congenital Hand Differences: A Systematic Review",
+   "authors": [
+    "Farr S"
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2018",
+   "volume": "141",
+   "pages": "784e-785e",
+   "pubtypes": [
+    "Comment",
+    "Letter"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "29384815",
+   "doi": "10.1097/PRS.0000000000004302",
+   "title": "Reply: Postoperative Patient- and Parent-Reported Outcomes for Children with Congenital Hand Differences: A Systematic Review",
+   "authors": [
+    "Adkinson JM"
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2018",
+   "volume": "141",
+   "pages": "785e",
+   "pubtypes": [
+    "Comment",
+    "Letter"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "30190590",
    "doi": "10.1038/s41589-018-0129-x",
    "title": "SALL4 mediates teratogenicity as a thalidomide-dependent cereblon substrate",
@@ -2162,37 +3846,7 @@
     "thal"
    ],
    "topics": [
-    "genetics"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
-   ]
-  },
-  {
-   "pmid": "29593101",
-   "doi": "10.1161/STROKEAHA.117.020356",
-   "title": "Thalidomide Reduces Hemorrhage of Brain Arteriovenous Malformations in a Mouse Model",
-   "authors": [
-    "Zhu W",
-    "Chen W",
-    "Zou D",
-    "et al."
-   ],
-   "journal": "Stroke",
-   "year": "2018",
-   "volume": "49",
-   "pages": "1232-1240",
-   "pubtypes": [
-    "Research Support, N.I.H., Extramural",
-    "Research Support, Non-U.S. Gov't"
-   ],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -2218,6 +3872,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -2246,6 +3901,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics",
     "review"
    ],
@@ -2287,6 +3943,66 @@
    ]
   },
   {
+   "pmid": "29621304",
+   "doi": "10.1371/journal.pone.0194986",
+   "title": "Trends in congenital anomalies in Europe from 1980 to 2012",
+   "authors": [
+    "Morris JK",
+    "Springett AL",
+    "Greenlees R",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2018",
+   "volume": "13",
+   "pages": "e0194986",
+   "pubtypes": [
+    "Historical Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
+   "pmid": "28052826",
+   "doi": "10.1016/j.jhsa.2016.11.006",
+   "title": "A Systematic Review and Comparison of Outcomes Following Simple Syndactyly Reconstruction With Skin Grafts or a Dorsal Metacarpal Advancement Flap",
+   "authors": [
+    "Sullivan MA",
+    "Adkinson JM"
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2017",
+   "volume": "42",
+   "pages": "34-40.e6",
+   "pubtypes": [
+    "Comparative Study",
+    "Systematic Review"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "28130151",
    "doi": "10.1016/j.reprotox.2017.01.010",
    "title": "A new mammalian model system for thalidomide teratogenesis: Monodelphis domestica",
@@ -2307,6 +4023,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -2369,6 +4086,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics",
     "review"
    ],
@@ -2380,31 +4098,30 @@
    ]
   },
   {
-   "pmid": "28314250",
-   "doi": "10.1016/j.wneu.2016.10.068",
-   "title": "Could Thalidomide Be a Treatment Option for Arteriovenous Malformations?",
+   "pmid": "29053644",
+   "doi": "10.4317/medoral.21628",
+   "title": "Dental approach for Apert syndrome in children: a systematic review",
    "authors": [
-    "Bongetta D",
-    "Zoia C",
-    "Lafe E",
+    "López-Estudillo AS",
+    "Rosales-Bérber MA",
+    "Ruiz-Rodríguez S",
     "et al."
    ],
-   "journal": "World neurosurgery",
+   "journal": "Medicina oral, patologia oral y cirugia bucal",
    "year": "2017",
-   "volume": "99",
-   "pages": "802",
+   "volume": "22",
+   "pages": "e660-e668",
    "pubtypes": [
-    "Comment",
-    "Letter"
+    "Systematic Review"
    ],
    "codes": [
-    "thal"
+    "93458"
    ],
    "topics": [
-    "clinical"
+    "meta"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -2433,6 +4150,67 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "28538570",
+   "doi": "10.1097/PRS.0000000000003358",
+   "title": "Postoperative Patient- and Parent-Reported Outcomes for Children with Congenital Hand Differences: A Systematic Review",
+   "authors": [
+    "Bickham RS",
+    "Waljee JF",
+    "Chung KC",
+    "et al."
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2017",
+   "volume": "139",
+   "pages": "1422-1429",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "28736902",
+   "doi": "10.1002/jum.14295",
+   "title": "Pseudoamniotic Band Syndrome After Fetoscopic Laser Ablation of Placental Anastomoses for Twin-Twin Transfusion Syndrome: Two Case Reports and Systematic Review",
+   "authors": [
+    "Lafitte AS",
+    "Verspyck E",
+    "Jeanne Pasquier C",
+    "et al."
+   ],
+   "journal": "Journal of ultrasound in medicine : official journal of the American Institute of Ultrasound in Medicine",
+   "year": "2017",
+   "volume": "36",
+   "pages": "2373-2377",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -2491,6 +4269,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -2522,6 +4301,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -2552,6 +4332,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -2647,34 +4428,6 @@
    ]
   },
   {
-   "pmid": "27537596",
-   "doi": "10.1097/MD.0000000000004606",
-   "title": "Bleeding recurrence in patients with gastrointestinal vascular malformation after thalidomide",
-   "authors": [
-    "Chen H",
-    "Fu S",
-    "Feng N",
-    "et al."
-   ],
-   "journal": "Medicine",
-   "year": "2016",
-   "volume": "95",
-   "pages": "e4606",
-   "pubtypes": [],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
-   ]
-  },
-  {
    "pmid": "27018681",
    "doi": "10.1097/PRS.0000000000002018",
    "title": "Body Image Disorders and Surgical Timing in Patients Affected by Poland Syndrome: Data Analysis of 58 Case Studies",
@@ -2732,6 +4485,37 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27028286",
+   "doi": "10.1111/bcp.12947",
+   "title": "EUROmediCAT signal detection: an evaluation of selected congenital anomaly-medication associations",
+   "authors": [
+    "Given JE",
+    "Loane M",
+    "Luteijn JM",
+    "et al."
+   ],
+   "journal": "British journal of clinical pharmacology",
+   "year": "2016",
+   "volume": "82",
+   "pages": "1094-109",
+   "pubtypes": [
+    "Evaluation Study"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Mainz registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Mainz registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ]
   },
   {
@@ -3033,6 +4817,94 @@
    ]
   },
   {
+   "pmid": "26347425",
+   "doi": "10.1002/ajmg.a.37355",
+   "title": "Congenital anomalies associated with trisomy 18 or trisomy 13: A registry-based study in 16 European countries, 2000-2011",
+   "authors": [
+    "Springett A",
+    "Wellesley D",
+    "Greenlees R",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2015",
+   "volume": "167A",
+   "pages": "3062-9",
+   "pubtypes": [
+    "Multicenter Study"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
+   "pmid": "27600068",
+   "doi": "10.3390/microarrays5010002",
+   "title": "Identification of Critical Region Responsible for Split Hand/Foot Malformation Type 3 (SHFM3) Phenotype through Systematic Review of Literature and Mapping of Breakpoints Using Microarray Data",
+   "authors": [
+    "Li CF",
+    "Angione K",
+    "Milunsky JM"
+   ],
+   "journal": "Microarrays (Basel, Switzerland)",
+   "year": "2015",
+   "volume": "5",
+   "pages": "",
+   "pubtypes": [],
+   "codes": [
+    "2440",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "25182137",
+   "doi": "10.1038/ejhg.2014.174",
+   "title": "Meckel-Gruber Syndrome: a population-based study on prevalence, prenatal diagnosis, clinical features, and survival in Europe",
+   "authors": [
+    "Barisic I",
+    "Boban L",
+    "Loane M",
+    "et al."
+   ],
+   "journal": "European journal of human genetics : EJHG",
+   "year": "2015",
+   "volume": "23",
+   "pages": "746-52",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
    "pmid": "26033770",
    "doi": "10.1002/bdra.23363",
    "title": "Multicenter investigation of lifestyle-related diseases and visceral disorders in thalidomide embryopathy at around 50 years of age",
@@ -3066,6 +4938,36 @@
    ]
   },
   {
+   "pmid": "25572679",
+   "doi": "10.1245/s10434-014-4328-8",
+   "title": "Omentum for Mammary Disorders: A 30-Year Systematic Review",
+   "authors": [
+    "Claro F Jr",
+    "Sarian LO",
+    "Pinto-Neto AM"
+   ],
+   "journal": "Annals of surgical oncology",
+   "year": "2015",
+   "volume": "22",
+   "pages": "2540-50",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "25828060",
    "doi": "10.1016/j.reprotox.2015.03.007",
    "title": "Pharmacoepidemiology and thalidomide embryopathy surveillance in Brazil",
@@ -3095,6 +4997,37 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "26159096",
+   "doi": "10.1159/000433603",
+   "title": "Placento-Cranial Adhesions in Amniotic Band Syndrome and the Role of Surgery in Their Management: An Unusual Case Presentation and Systematic Literature Review",
+   "authors": [
+    "Menekse G",
+    "Mert MK",
+    "Olmaz B",
+    "et al."
+   ],
+   "journal": "Pediatric neurosurgery",
+   "year": "2015",
+   "volume": "50",
+   "pages": "204-9",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ]
   },
   {
@@ -3178,6 +5111,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "review"
    ],
    "notes": [
@@ -3211,6 +5145,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -3239,6 +5174,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -3308,6 +5244,35 @@
    ]
   },
   {
+   "pmid": "25131394",
+   "doi": "10.1002/bdra.23278",
+   "title": "Heterozygous FGF8 mutations in patients presenting cryptorchidism and multiple VATER/VACTERL features without limb anomalies",
+   "authors": [
+    "Zeidler C",
+    "Woelfle J",
+    "Draaken M",
+    "et al."
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2014",
+   "volume": "100",
+   "pages": "750-9",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
    "pmid": "25410508",
    "doi": "10.2106/JBJS.N.00155",
    "title": "High risk for major nonlimb anomalies associated with lower-limb deficiency: a population-based study",
@@ -3353,15 +5318,19 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "392"
+    "2879",
+    "392",
+    "93320"
    ],
    "topics": [
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Europe)"
+    "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Europe)",
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
     "Orphanet"
    ]
   },
@@ -3424,6 +5393,38 @@
    ]
   },
   {
+   "pmid": "23593966",
+   "doi": "10.1111/bcp.12138",
+   "title": "Methylphenidate use in pregnancy and lactation: a systematic review of evidence",
+   "authors": [
+    "Bolea-Alamanac BM",
+    "Green A",
+    "Verma G",
+    "et al."
+   ],
+   "journal": "British journal of clinical pharmacology",
+   "year": "2014",
+   "volume": "77",
+   "pages": "96-101",
+   "pubtypes": [
+    "Case Reports",
+    "Systematic Review"
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "24548169",
    "doi": "10.1111/pcn.12152",
    "title": "Psychological and mental health problems in patients with thalidomide embryopathy in Japan",
@@ -3456,30 +5457,31 @@
    ]
   },
   {
-   "pmid": "24219762",
-   "doi": "10.1111/1751-2980.12114",
-   "title": "Thalidomide-induced angiopoietin 2, Notch1 and Dll4 downregulation under hypoxic condition in tissues with gastrointestinal vascular malformation and human umbilical vein endothelial cells",
+   "pmid": "24032294",
+   "doi": "",
+   "title": "Associated malformations among infants with radial ray deficiency",
    "authors": [
-    "Feng Q",
-    "Tan HH",
-    "Ge ZZ",
+    "Stoll C",
+    "Dott B",
+    "Alembik Y",
     "et al."
    ],
-   "journal": "Journal of digestive diseases",
-   "year": "2014",
-   "volume": "15",
-   "pages": "85-95",
+   "journal": "Genetic counseling (Geneva, Switzerland)",
+   "year": "2013",
+   "volume": "24",
+   "pages": "223-34",
    "pubtypes": [
-    "Research Support, Non-U.S. Gov't"
+    "Meta-Analysis"
    ],
    "codes": [
-    "thal"
+    "392",
+    "93321"
    ],
    "topics": [
-    "clinical"
+    "meta"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -3538,6 +5540,36 @@
    ]
   },
   {
+   "pmid": "23532946",
+   "doi": "10.1002/ajmg.a.35839",
+   "title": "Fraser syndrome: epidemiological study in a European population",
+   "authors": [
+    "Barisic I",
+    "Odak L",
+    "Loane M",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2013",
+   "volume": "161A",
+   "pages": "1012-8",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "93458"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ]
+  },
+  {
    "pmid": "23419139",
    "doi": "10.1021/tx400008g",
    "title": "In vivo drug interactions of the teratogen thalidomide with midazolam: heterotropic cooperativity of human cytochrome P450 in humanized TK-NOG mice",
@@ -3559,6 +5591,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -3710,34 +5743,6 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
-   ]
-  },
-  {
-   "pmid": "23452644",
-   "doi": "10.1016/j.mehy.2013.01.031",
-   "title": "Pulmonary arteriovenous malformations etiologies in HHT patients and potential utility of thalidomide",
-   "authors": [
-    "Lacout A",
-    "Marcy PY",
-    "El Hajjam M",
-    "et al."
-   ],
-   "journal": "Medical hypotheses",
-   "year": "2013",
-   "volume": "80",
-   "pages": "587-8",
-   "pubtypes": [],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
    ]
   },
   {
@@ -3938,6 +5943,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -4025,6 +6031,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -4062,36 +6069,6 @@
    ]
   },
   {
-   "pmid": "22089255",
-   "doi": "10.1007/s10620-011-1971-9",
-   "title": "Thalidomide treatment in cirrhotic patients with severe anemia secondary to vascular malformations",
-   "authors": [
-    "Garrido Serrano A",
-    "León R",
-    "Sayago M",
-    "et al."
-   ],
-   "journal": "Digestive diseases and sciences",
-   "year": "2012",
-   "volume": "57",
-   "pages": "1112-3",
-   "pubtypes": [
-    "Letter"
-   ],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
-   ]
-  },
-  {
    "pmid": "22650376",
    "doi": "10.2174/156802612801784407",
    "title": "Thalidomide: chemistry, therapeutic potential and oxidative stress induced teratogenicity",
@@ -4112,6 +6089,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -4142,15 +6120,20 @@
     "Research Support, U.S. Gov't, P.H.S.",
     "Review"
    ],
-   "codes": [],
+   "codes": [
+    "1027",
+    "295000"
+   ],
    "topics": [
     "epidemiology",
     "review"
    ],
    "notes": [
-    "Amelia: ICBDSR multi-centre study"
+    "Amelia: ICBDSR multi-centre study",
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
     "DysNet"
    ]
   },
@@ -4174,6 +6157,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics",
     "review"
    ],
@@ -4239,36 +6223,6 @@
    ]
   },
   {
-   "pmid": "21784047",
-   "doi": "10.1053/j.gastro.2011.07.018",
-   "title": "Efficacy of thalidomide for refractory gastrointestinal bleeding from vascular malformation",
-   "authors": [
-    "Ge ZZ",
-    "Chen HM",
-    "Gao YJ",
-    "et al."
-   ],
-   "journal": "Gastroenterology",
-   "year": "2011",
-   "volume": "141",
-   "pages": "1629-37.e1-4",
-   "pubtypes": [
-    "Randomized Controlled Trial"
-   ],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
-   ]
-  },
-  {
    "pmid": "21502285",
    "doi": "10.1096/fj.10-178814",
    "title": "Embryopathic effects of thalidomide and its hydrolysis products in rabbit embryo culture: evidence for a prostaglandin H synthase (PHS)-dependent, reactive oxygen species (ROS)-mediated mechanism",
@@ -4288,6 +6242,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -4348,6 +6303,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -4356,6 +6312,41 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "22002800",
+   "doi": "10.1002/ajmg.c.30320",
+   "title": "Phocomelia: a worldwide descriptive epidemiologic study in a large series of cases from the International Clearinghouse for Birth Defects Surveillance and Research, and overview of the literature",
+   "authors": [
+    "Bermejo-Sánchez E",
+    "Cuevas L",
+    "Amar E",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part C, Seminars in medical genetics",
+   "year": "2011",
+   "volume": "157C",
+   "pages": "305-20",
+   "pubtypes": [
+    "Multicenter Study",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ],
+   "codes": [
+    "1027",
+    "2879"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "via": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ]
   },
   {
@@ -4408,6 +6399,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -4445,36 +6437,6 @@
    ]
   },
   {
-   "pmid": "21955427",
-   "doi": "10.1111/j.1751-2980.2011.00506.x",
-   "title": "The role of HIF-1, angiopoietin-2, Dll4 and Notch1 in bleeding gastrointestinal vascular malformations and thalidomide-associated actions: a pilot in vivo study",
-   "authors": [
-    "Tan HH",
-    "Ge ZZ",
-    "Gao YJ",
-    "et al."
-   ],
-   "journal": "Journal of digestive diseases",
-   "year": "2011",
-   "volume": "12",
-   "pages": "349-56",
-   "pubtypes": [
-    "Research Support, Non-U.S. Gov't"
-   ],
-   "codes": [
-    "thal"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "PubMed title search on thalidomide embryopathy"
-   ],
-   "via": [
-    "PubMed search"
-   ]
-  },
-  {
    "pmid": "21404644",
    "doi": "",
    "title": "[Molecular mechanism of thalidomide teratogenicity]",
@@ -4493,6 +6455,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -4524,6 +6487,7 @@
     "2911"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -4557,6 +6521,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -4587,6 +6552,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -4641,6 +6607,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -4648,6 +6615,38 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "20558369",
+   "doi": "10.1056/NEJMoa0907328",
+   "title": "Valproic acid monotherapy in pregnancy and major congenital malformations",
+   "authors": [
+    "Jentink J",
+    "Loane MA",
+    "Dolk H",
+    "et al."
+   ],
+   "journal": "The New England journal of medicine",
+   "year": "2010",
+   "volume": "362",
+   "pages": "2185-93",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "published on the website of EUROCAT (EU RD Platform, JRC) (Italy)"
+   ],
+   "via": [
+    "EUROCAT (EU RD Platform, JRC) (Italy)"
    ]
   },
   {
@@ -4771,6 +6770,36 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "19183988",
+   "doi": "10.1007/s00256-008-0638-x",
+   "title": "The carpal bones in Poland syndrome",
+   "authors": [
+    "Friedman T",
+    "Reed M",
+    "Elliott AM"
+   ],
+   "journal": "Skeletal radiology",
+   "year": "2009",
+   "volume": "38",
+   "pages": "585-91",
+   "pubtypes": [
+    "Meta-Analysis"
+   ],
+   "codes": [
+    "2911",
+    "93458"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -5087,10 +7116,40 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "16990227",
+   "doi": "10.1080/03093640600731710",
+   "title": "Prescription of the first prosthesis and later use in children with congenital unilateral upper limb deficiency: A systematic review",
+   "authors": [
+    "Meurs M",
+    "Maathuis CG",
+    "Lucas C",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2006",
+   "volume": "30",
+   "pages": "165-73",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -5143,10 +7202,37 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "16059857",
+   "doi": "10.1197/j.jht.2005.04.005",
+   "title": "Upper extremity function in children with congenital hand anomalies",
+   "authors": [
+    "Ho ES",
+    "Clarke HM"
+   ],
+   "journal": "Journal of hand therapy : official journal of the American Society of Hand Therapists",
+   "year": "2005",
+   "volume": "18",
+   "pages": "352-64",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -5203,6 +7289,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -5261,6 +7348,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -5291,6 +7379,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5327,6 +7416,36 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "12437147",
+   "doi": "",
+   "title": "Bio-alcamid: a novelty for reconstructive and cosmetic surgery",
+   "authors": [
+    "Pacini S",
+    "Ruggiero M",
+    "Morucci G",
+    "et al."
+   ],
+   "journal": "Italian journal of anatomy and embryology = Archivio italiano di anatomia ed embriologia",
+   "year": "2002",
+   "volume": "107",
+   "pages": "209-14",
+   "pubtypes": [
+    "Meta-Analysis"
+   ],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "meta"
+   ],
+   "notes": [
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -5504,6 +7623,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5559,6 +7679,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "review"
    ],
    "notes": [
@@ -5672,6 +7793,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5702,6 +7824,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5757,6 +7880,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -5765,6 +7889,34 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "10855434",
+   "doi": "10.1080/03093640008726517",
+   "title": "Lower limb deficient children in The Netherlands: epidemiological aspects",
+   "authors": [
+    "Rijnders LJ",
+    "Boonstra AM",
+    "Groothoff JW",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2000",
+   "volume": "24",
+   "pages": "13-8",
+   "pubtypes": [],
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of EUROCAT (EU RD Platform, JRC) (Italy)"
+   ],
+   "via": [
+    "EUROCAT (EU RD Platform, JRC) (Italy)"
    ]
   },
   {
@@ -5787,6 +7939,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -5871,6 +8024,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5900,6 +8054,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -5954,6 +8109,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6013,6 +8169,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -6073,6 +8230,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6080,6 +8238,35 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "11012189",
+   "doi": "10.1002/stem.5530160720",
+   "title": "Defective c-Mpl signaling in the syndrome of thrombocytopenia with absent radii",
+   "authors": [
+    "Ballmaier M",
+    "Schulze H",
+    "Cremer M",
+    "et al."
+   ],
+   "journal": "Stem cells (Dayton, Ohio)",
+   "year": "1998",
+   "volume": "16 Suppl 2",
+   "pages": "177-84",
+   "pubtypes": [],
+   "codes": [
+    "3320",
+    "93321"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of German registry for congenital thrombocytopenia (Germany)"
+   ],
+   "via": [
+    "German registry for congenital thrombocytopenia (Germany)"
    ]
   },
   {
@@ -6271,6 +8458,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -6360,6 +8548,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6388,6 +8577,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "epidemiology"
    ],
    "notes": [
@@ -6416,6 +8606,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -6473,6 +8664,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6503,6 +8695,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6531,6 +8724,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6562,6 +8756,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "epidemiology"
    ],
    "notes": [
@@ -6623,6 +8818,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6655,6 +8851,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6684,6 +8881,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -6977,6 +9175,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7004,6 +9203,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7031,6 +9231,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7146,6 +9347,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7174,6 +9376,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -7230,6 +9433,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -7261,6 +9465,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7288,6 +9493,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -7318,6 +9524,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7343,6 +9550,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7398,6 +9606,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7426,6 +9635,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7455,6 +9665,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7483,6 +9694,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -7512,6 +9724,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7540,6 +9753,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7565,6 +9779,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7620,6 +9835,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7648,6 +9864,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7676,6 +9893,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7728,6 +9946,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7756,6 +9975,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7868,6 +10088,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -7894,6 +10115,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -7980,6 +10202,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8008,6 +10231,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8067,6 +10291,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8097,6 +10322,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8174,6 +10400,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8262,6 +10489,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8316,6 +10544,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8344,6 +10573,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8374,6 +10604,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8402,6 +10633,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8456,6 +10688,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8559,6 +10792,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8586,6 +10820,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8615,6 +10850,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8753,6 +10989,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8831,6 +11068,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8973,6 +11211,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -8999,6 +11238,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9210,6 +11450,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -9236,6 +11477,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9262,6 +11504,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9316,6 +11559,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9393,6 +11637,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9419,6 +11664,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9652,6 +11898,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9705,6 +11952,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9757,6 +12005,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -9859,6 +12108,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "genetics"
    ],
    "notes": [
@@ -9936,6 +12186,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -10015,6 +12266,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10090,6 +12342,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10167,6 +12420,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10319,6 +12573,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10346,6 +12601,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10371,6 +12627,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10423,6 +12680,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10601,6 +12859,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10626,6 +12885,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10753,6 +13013,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10833,6 +13094,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10860,6 +13122,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10938,6 +13201,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -10992,6 +13256,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11044,6 +13309,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11225,6 +13491,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11275,6 +13542,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11378,6 +13646,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11406,6 +13675,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11459,6 +13729,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -11745,6 +14016,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12000,6 +14272,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12025,6 +14298,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12052,6 +14326,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12181,6 +14456,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12207,6 +14483,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12309,6 +14586,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12360,6 +14638,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12385,6 +14664,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12488,6 +14768,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12541,6 +14822,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12567,6 +14849,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12593,6 +14876,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12671,6 +14955,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -12723,6 +15008,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -12805,6 +15091,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13039,6 +15326,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13345,6 +15633,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13373,6 +15662,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13400,6 +15690,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13425,6 +15716,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13452,6 +15744,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13504,6 +15797,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13555,6 +15849,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [
@@ -13764,6 +16059,7 @@
     "thal"
    ],
    "topics": [
+    "causes",
     "clinical"
    ],
    "notes": [

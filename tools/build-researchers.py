@@ -126,6 +126,43 @@ for key, t in teams.items():
                 "representative": {"pmid": papers[0]["pmid"], "doi": papers[0]["doi"], "title": papers[0]["title"], "year": papers[0]["year"]},
                 "pmids": [e["pmid"] for e in papers]})
 out.sort(key=lambda t: (-t["papers"], -t["years"][1], t["institution"]))
+
+# ── coordinates for the landing map: OpenStreetMap Nominatim, cached in tools/geocode-cache.json ──
+import urllib.parse
+CACHE_PATH = HERE / "geocode-cache.json"
+CACHE = json.loads(CACHE_PATH.read_text(encoding="utf-8")) if CACHE_PATH.exists() else {}
+NOMINATIM_UA = "DysNetResearchersBot/1.0 (info@dysnet.org)"
+
+
+def nominatim(q):
+    time.sleep(1.1)
+    u = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=" + urllib.parse.quote(q)
+    with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": NOMINATIM_UA}), timeout=30) as r:
+        res = json.load(r)
+    return res[0] if res else None
+
+
+def geocode(inst, country):
+    key = f"{inst}|{country}"
+    if key in CACHE: return CACHE[key]
+    hit = None
+    # institution + country, then institution alone, then its most distinctive word + country (city-scale fallback)
+    tries = [f"{inst}, {country}", inst]
+    words = [w for w in re.findall(r"[A-Za-zÀ-ÿ][\w'-]{3,}", inst) if w.lower() not in {"university", "hospital", "children", "children's", "research", "national", "center", "centre", "institute", "medical", "clinic", "foundation", "health", "laboratories", "drug", "safety", "genetics", "human", "department", "school", "college", "state", "general", "regional", "royal"}]
+    if words: tries.append(f"{words[0]}, {country}")
+    for q in tries:
+        try: hit = nominatim(q)
+        except Exception: hit = None
+        if hit: break
+    CACHE[key] = {"lat": float(hit["lat"]), "lon": float(hit["lon"]), "display_name": hit["display_name"][:140], "query": q} if hit else None
+    return CACHE[key]
+
+
+for t in out:
+    g = geocode(t["institution"], t["country"])
+    t["lat"], t["lon"], t["geocode_display_name"] = (g["lat"], g["lon"], g["display_name"]) if g else (None, None, None)
+CACHE_PATH.write_text(json.dumps(CACHE, ensure_ascii=False, indent=1), encoding="utf-8")
+print(f"geocoded: {sum(1 for t in out if t['lat'])} of {len(out)} teams (cache: {len(CACHE)} entries)")
 (HERE / "researchers.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from %d publications." % MIN_PAPERS,
                                                     "bibliography_size": len(ENTRIES), "records_without_affiliation": no_aff, "teams": out}, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(ENTRIES)} records, {no_aff} without affiliation data; {len(teams)} institutions seen, {len(out)} teams with >= {MIN_PAPERS} papers")

@@ -55,6 +55,9 @@
       }) } },
       centres: { type: "geojson", data: { type: "FeatureCollection", features: (data.centres || []).filter(function (c) { return c.lat && c.lon; }).map(function (c) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [c.lon, c.lat] }, properties: c };
+      }) } },
+      teams: { type: "geojson", data: { type: "FeatureCollection", features: (data.teams || []).filter(function (t) { return t.lat && t.lon; }).map(function (t) {
+        return { type: "Feature", geometry: { type: "Point", coordinates: [t.lon, t.lat] }, properties: { name: t.name, country: t.country, papers: t.papers, years: (t.years && t.years[0] === t.years[1]) ? String(t.years[0]) : (t.years || []).join("–"), codes: (t.codes || []).join(", "), authors: (t.authors || []).join(", "), repTitle: t.rep && t.rep.title, repDoi: t.rep && t.rep.doi, repPmid: t.rep && t.rep.pmid, repYear: t.rep && t.rep.year } };
       }) } }
     },
     layers: [
@@ -107,7 +110,13 @@
         paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 4, 5, 6.5, 9, 9], "circle-color": "#f97316", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6 } },
       { id: "centre-label", type: "symbol", source: "centres", minzoom: 4,
         layout: { "text-field": ["coalesce", ["get", "label"], ["get", "name"]], "text-font": ["Open_Sans_Bold"], "text-size": 11.5, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12, "text-optional": true },
-        paint: { "text-color": "#ffe1c7", "text-halo-color": "#24093f", "text-halo-width": 1.4 } }
+        paint: { "text-color": "#ffe1c7", "text-halo-color": "#24093f", "text-halo-width": 1.4 } },
+      // Research teams publishing on our conditions (register 3): blue markers sized by publication count, label from z4
+      { id: "team-dot", type: "circle", source: "teams",
+        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, ["+", 3, ["min", 3, ["/", ["get", "papers"], 3]]], 9, ["+", 7, ["min", 5, ["/", ["get", "papers"], 2]]]], "circle-color": "#60a5fa", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.4 } },
+      { id: "team-label", type: "symbol", source: "teams", minzoom: 4,
+        layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Regular"], "text-size": 11, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12, "text-optional": true },
+        paint: { "text-color": "#dbeafe", "text-halo-color": "#24093f", "text-halo-width": 1.3 } }
     ]
   };
 
@@ -198,7 +207,7 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
-    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot"]) }).length) return; // a dot or a centre was clicked
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot"]) }).length) return; // a dot, a centre or a team was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
   });
@@ -217,6 +226,38 @@
   });
   map.on("mouseenter", "centre-dot", function () { map.getCanvas().style.cursor = "pointer"; });
   map.on("mouseleave", "centre-dot", function () { map.getCanvas().style.cursor = ""; });
+
+  // ── research teams: click a marker for details ─────────────────────
+  var teamPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "22rem", className: "dot-popup team-popup" });
+  map.on("click", "team-dot", function (e) {
+    var t = e.features[0].properties;
+    var link = t.repDoi && t.repDoi !== "null" ? '<a href="https://doi.org/' + esc(t.repDoi) + '" target="_blank" rel="noopener external">doi:' + esc(t.repDoi) + '</a>' : (t.repPmid ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(t.repPmid) + '/" target="_blank" rel="noopener external">PubMed ' + esc(t.repPmid) + '</a>' : '');
+    teamPopup.setLngLat(e.features[0].geometry.coordinates)
+      .setHTML('<p class="dp-main"><strong>' + esc(t.name) + '</strong></p>' +
+               '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + '</p>' +
+               '<p class="dp-foot">Most recent: <em>' + esc(t.repTitle) + '</em> (' + esc(t.repYear) + ') ' + link + ' · <a href="' + base + '/knowledge/researchers/">Researchers register</a></p>')
+      .addTo(map);
+  });
+  map.on("mouseenter", "team-dot", function () { map.getCanvas().style.cursor = "pointer"; });
+  map.on("mouseleave", "team-dot", function () { map.getCanvas().style.cursor = ""; });
+
+  // ── layer filter: what the visitor wants to see ─────────────────────
+  var LAYER_IDS = { people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
+  function setLayer(key, on) {
+    if (key === "members") { map.setPaintProperty("countries", "fill-color", on ? fillMatch : "#5a2f86"); }
+    else (LAYER_IDS[key] || []).forEach(function (id) { if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none"); });
+    var box = document.getElementById("map-dots"); if (key === "people" && box) box.classList.toggle("is-off", !on);
+    document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
+  }
+  var layerButtons = document.querySelectorAll("#map-layers button");
+  layerButtons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") !== "true";
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      setLayer(b.getAttribute("data-layer"), on);
+    });
+  });
+  map.once("load", function () { layerButtons.forEach(function (b) { if (b.getAttribute("aria-pressed") !== "true") setLayer(b.getAttribute("data-layer"), false); }); });
 
   // ── region views (guessed from the device time zone only) ──────────
   var REGIONS = {

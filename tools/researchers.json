@@ -1,8 +1,8 @@
 {
  "built": "2026-09-12",
  "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
- "bibliography_size": 496,
- "records_without_affiliation": 263,
+ "bibliography_size": 566,
+ "records_without_affiliation": 262,
  "teams": [
   {
    "institution": "University of Cologne",
@@ -36,7 +36,10 @@
     "23917409",
     "20958261",
     "18178729"
-   ]
+   ],
+   "lat": 50.9280445,
+   "lon": 6.9281305,
+   "geocode_display_name": "Universität zu Köln, 1, Zülpicher Wall, Komponistenviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland"
   },
   {
    "institution": "National Center for Global Health and Medicine",
@@ -67,7 +70,10 @@
     "31339667",
     "27567725",
     "26033770"
-   ]
+   ],
+   "lat": 35.7029293,
+   "lon": 139.7163032,
+   "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
   },
   {
    "institution": "University of Göteborg",
@@ -96,7 +102,10 @@
     "8157157",
     "8333272",
     "1577294"
-   ]
+   ],
+   "lat": 57.6897462,
+   "lon": 11.9765259,
+   "geocode_display_name": "Chalmers Tekniska Högskola, Andréegatan, Masthugget, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 27, Sverige"
   },
   {
    "institution": "Sahlgrenska University Hospital",
@@ -125,7 +134,10 @@
     "27854003",
     "25301261",
     "21712302"
-   ]
+   ],
+   "lat": 57.6816542,
+   "lon": 11.9609871,
+   "geocode_display_name": "Sahlgrenska Universitetssjukhuset, Bruna stråket, Medicinareberget, Änggården, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 "
   },
   {
    "institution": "University of Toronto",
@@ -154,7 +166,10 @@
     "21505090",
     "10229238",
     "8667234"
-   ]
+   ],
+   "lat": 43.6634681,
+   "lon": -79.3968165,
+   "geocode_display_name": "University of Toronto St. George, D'Arcy Street, Discovery District, Downtown, Toronto, Golden Horseshoe, Ontario, M5T 1K1, Canada"
   },
   {
    "institution": "Idaho State University",
@@ -182,7 +197,10 @@
     "10799645",
     "8987155",
     "3067416"
-   ]
+   ],
+   "lat": 42.8624158,
+   "lon": -112.4322597,
+   "geocode_display_name": "Idaho State University, 921, South 8th Avenue, Pocatello, Bannock County, Idaho, 83209, United States"
   },
   {
    "institution": "Freie Universität Berlin",
@@ -210,7 +228,10 @@
     "2492686",
     "3196154",
     "3143339"
-   ]
+   ],
+   "lat": 52.4528565,
+   "lon": 13.2907249,
+   "geocode_display_name": "Freie Universität Berlin, Königin-Luise-Straße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland"
   },
   {
    "institution": "Children's Hospital Research Foundation",
@@ -239,7 +260,10 @@
     "40198353",
     "11418267",
     "3227490"
-   ]
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
   },
   {
    "institution": "Royal Hospital for Children and Young People",
@@ -267,7 +291,10 @@
     "38702055",
     "37021538",
     "37226469"
-   ]
+   ],
+   "lat": 55.920929,
+   "lon": -3.1394165,
+   "geocode_display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot"
   },
   {
    "institution": "Thalidomide Trust",
@@ -297,7 +324,10 @@
     "38318695",
     "31969401",
     "17365642"
-   ]
+   ],
+   "lat": 51.4872913,
+   "lon": -3.1806498,
+   "geocode_display_name": "Thalidomide Memorial, Museum Avenue, Crockherbtown, Civic Centre, Castle, Cardiff, Cymru / Wales, CF10 3AX, United Kingdom"
   },
   {
    "institution": "Dr. Becker Rhein-Sieg-Klinik",
@@ -323,7 +353,42 @@
     "33915582",
     "30943953",
     "30887894"
-   ]
+   ],
+   "lat": 50.9074784,
+   "lon": 7.5497878,
+   "geocode_display_name": "Dr. Becker Rhein-Sieg-Klinik, 30, Höhenstraße, Nümbrecht, Ödinghausen, Nümbrecht, Oberbergischer Kreis, Nordrhein-Westfalen, 51588, Deutschl"
+  },
+  {
+   "institution": "University Medical Center",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    1996,
+    2020
+   ],
+   "codes": [
+    "thal",
+    "2913"
+   ],
+   "authors": [
+    "Galjaard RJH",
+    "Neubert R",
+    "Nogueira AC"
+   ],
+   "representative": {
+    "pmid": "32179704",
+    "doi": "10.1136/jmedgenet-2019-106685",
+    "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
+    "year": "2020"
+   },
+   "pmids": [
+    "32179704",
+    "8538367",
+    "8538370"
+   ],
+   "lat": 48.0070218,
+   "lon": 7.837321,
+   "geocode_display_name": "Universitätsklinikum Freiburg, Hohenzollernstraße, Uni-Carré, Stühlinger-Eschholz, Stühlinger, Freiburg im Breisgau, Baden-Württemberg, 7910"
   },
   {
    "institution": "University of Aberdeen",
@@ -350,7 +415,10 @@
     "30335598",
     "26043938",
     "19921660"
-   ]
+   ],
+   "lat": 57.1645542,
+   "lon": -2.1018424,
+   "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
   },
   {
    "institution": "University of Genoa",
@@ -378,7 +446,10 @@
     "31753026",
     "27884122",
     "24885342"
-   ]
+   ],
+   "lat": 44.4148861,
+   "lon": 8.9266707,
+   "geocode_display_name": "Università degli Studi di Genova, Via Balbi, Ghetto, Prè, Centro Est, Genova, Liguria, 16126, Italia"
   },
   {
    "institution": "INAGEMP-Instituto Nacional de Genética Médica Populacional",
@@ -406,7 +477,10 @@
     "28161597",
     "27751757",
     "25828060"
-   ]
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
   },
   {
    "institution": "University of Illinois",
@@ -434,7 +508,10 @@
     "28130151",
     "2019959",
     "1808819"
-   ]
+   ],
+   "lat": 40.0761545,
+   "lon": -88.2233134,
+   "geocode_display_name": "University of Illinois Urbana-Champaign, Champaign County, Illinois, 61801, United States"
   },
   {
    "institution": "Tokyo Institute of Technology",
@@ -462,7 +539,10 @@
     "22348778",
     "21207098",
     "21404644"
-   ]
+   ],
+   "lat": 35.6045553,
+   "lon": 139.6827849,
+   "geocode_display_name": "東京科学大学 大岡山キャンパス, 大岡山北本通り商店街, 北千束一丁目, 北千束, 目黒区, 東京都, 152-0013, 日本"
   },
   {
    "institution": "National Rehabilitation Center for Persons with Disabilities",
@@ -487,7 +567,41 @@
    "pmids": [
     "40904645",
     "39220272"
-   ]
+   ],
+   "lat": 35.8066068,
+   "lon": 139.4647966,
+   "geocode_display_name": "国立身体障害者リハビリテーションセンター, はばたき通り, 並木五丁目, 並木, 所沢市, 埼玉県, 359-0006, 日本"
+  },
+  {
+   "institution": "University of Amsterdam",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2019,
+    2025
+   ],
+   "codes": [
+    "295000",
+    "93458"
+   ],
+   "authors": [
+    "Verberne EA",
+    "van Haelst MM",
+    "Arduç A"
+   ],
+   "representative": {
+    "pmid": "40913756",
+    "doi": "10.1002/pd.6885",
+    "title": "A Practical Prenatal Ultrasound Classification System for Lower Limb Anomalies-PRELLIM Classification",
+    "year": "2025"
+   },
+   "pmids": [
+    "40913756",
+    "31181251"
+   ],
+   "lat": 52.3681334,
+   "lon": 4.8898042,
+   "geocode_display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland"
   },
   {
    "institution": "Charles University",
@@ -516,7 +630,10 @@
    "pmids": [
     "37285827",
     "7851614"
-   ]
+   ],
+   "lat": 50.0888947,
+   "lon": 14.4162757,
+   "geocode_display_name": "Filozofická fakulta Univerzity Karlovy, Kaprova, Josefov, obvod Praha 1, Praha, 116 93, Česko"
   },
   {
    "institution": "BG Unfallklinik Frankfurt am Main",
@@ -542,7 +659,69 @@
    "pmids": [
     "36603815",
     "36513326"
-   ]
+   ],
+   "lat": 50.1447642,
+   "lon": 8.7095927,
+   "geocode_display_name": "BG Unfallklinik, 430, Friedberger Landstraße, Seckbach, Ost, Frankfurt am Main, Hessen, 60389, Deutschland"
+  },
+  {
+   "institution": "Orthopedic Hospital Speising",
+   "country": "Austria",
+   "papers": 2,
+   "years": [
+    2018,
+    2023
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Farr S"
+   ],
+   "representative": {
+    "pmid": "37211796",
+    "doi": "10.1177/17531934231175304",
+    "title": "Commentary on Markiewicz et al. Age-related changes in patients with upper limb thalidomide embryopathy in the United Kingdom",
+    "year": "2023"
+   },
+   "pmids": [
+    "37211796",
+    "29384817"
+   ],
+   "lat": 48.1514562,
+   "lon": 16.3153812,
+   "geocode_display_name": "Orthopedic Alt-Erlaa, Anton-Baumgartner-Straße, Katastralgemeinde Inzersdorf, Liesing, Wien, 1230, Österreich"
+  },
+  {
+   "institution": "University of Groningen",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2010,
+    2023
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "Jentink J",
+    "Bergman JEH",
+    "de Walle HEK"
+   ],
+   "representative": {
+    "pmid": "36584346",
+    "doi": "10.1002/ajmg.a.63107",
+    "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
+    "year": "2023"
+   },
+   "pmids": [
+    "36584346",
+    "20558369"
+   ],
+   "lat": 53.2194416,
+   "lon": 6.5629863,
+   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
   },
   {
    "institution": "All India Institute of Medical Sciences",
@@ -569,7 +748,71 @@
    "pmids": [
     "34452798",
     "14758882"
-   ]
+   ],
+   "lat": 28.5645425,
+   "lon": 77.2099653,
+   "geocode_display_name": "All India Institute of Medical Sciences, Kidwai Nagar, New Delhi, Delhi, India"
+  },
+  {
+   "institution": "Imperial College Healthcare NHS Trust",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2016,
+    2022
+   ],
+   "codes": [
+    "2913",
+    "2879",
+    "thal"
+   ],
+   "authors": [
+    "Nicotra A",
+    "Nicholas R",
+    "Samarendra H"
+   ],
+   "representative": {
+    "pmid": "36120500",
+    "doi": "10.1016/j.jpra.2022.05.002",
+    "title": "Primary treatment of type B post-axial ulnar polydactyly: A systematic review and meta-analysis",
+    "year": "2022"
+   },
+   "pmids": [
+    "36120500",
+    "27100829"
+   ],
+   "lat": 51.4989595,
+   "lon": -0.1756407,
+   "geocode_display_name": "Imperial College London, Exhibition Road, Brompton, City of Westminster, Greater London, England, SW7 2AZ, United Kingdom"
+  },
+  {
+   "institution": "University of London",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2020,
+    2022
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "Morris JK"
+   ],
+   "representative": {
+    "pmid": "36369770",
+    "doi": "10.1002/bdr2.2122",
+    "title": "Prevalence of vascular disruption anomalies and association with young maternal age: A EUROCAT study to compare the United Kingdom with other European countries",
+    "year": "2022"
+   },
+   "pmids": [
+    "36369770",
+    "32444984"
+   ],
+   "lat": 51.5218979,
+   "lon": -0.1288676,
+   "geocode_display_name": "SOAS University of London, Russell Square, Bloomsbury, London Borough of Camden, Greater London, England, WC1H 0XG, United Kingdom"
   },
   {
    "institution": "Tokyo Medical University",
@@ -595,7 +838,40 @@
    "pmids": [
     "32414180",
     "31591562"
-   ]
+   ],
+   "lat": 35.7015151,
+   "lon": 139.7642375,
+   "geocode_display_name": "東京科学大学 湯島キャンパス, 本郷通り, 湯島一丁目, 湯島, 文京区, 東京都, 113-0034, 日本"
+  },
+  {
+   "institution": "University of Bonn",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2014,
+    2019
+   ],
+   "codes": [
+    "93321"
+   ],
+   "authors": [
+    "Zeidler C",
+    "Kause F",
+    "Reutter H"
+   ],
+   "representative": {
+    "pmid": "30887706",
+    "doi": "10.1002/bdr2.1493",
+    "title": "HSPA6: A new autosomal recessive candidate gene for the VATER/VACTERL malformation spectrum",
+    "year": "2019"
+   },
+   "pmids": [
+    "30887706",
+    "25131394"
+   ],
+   "lat": 50.7338124,
+   "lon": 7.1022465,
+   "geocode_display_name": "Rheinische Friedrich-Wilhelms-Universität Bonn, Arkadenhof, Bonn-Zentrum, Stadtbezirk Bonn, Bonn, Nordrhein-Westfalen, 53113, Deutschland"
   },
   {
    "institution": "University of York",
@@ -622,7 +898,40 @@
    "pmids": [
     "30650111",
     "29109034"
-   ]
+   ],
+   "lat": 53.9453912,
+   "lon": -1.0314589,
+   "geocode_display_name": "University of York, Hazel End, Heslington, York, York and North Yorkshire, England, YO10 5DD, United Kingdom"
+  },
+  {
+   "institution": "Queen Mary University of London",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2015,
+    2018
+   ],
+   "codes": [
+    "93458",
+    "2913"
+   ],
+   "authors": [
+    "Morris JK",
+    "Springett A"
+   ],
+   "representative": {
+    "pmid": "29621304",
+    "doi": "10.1371/journal.pone.0194986",
+    "title": "Trends in congenital anomalies in Europe from 1980 to 2012",
+    "year": "2018"
+   },
+   "pmids": [
+    "29621304",
+    "26347425"
+   ],
+   "lat": 51.5247403,
+   "lon": -0.0393136,
+   "geocode_display_name": "Queen Mary University of London, 327, Mile End Road, Mile End, London Borough of Tower Hamlets, Greater London, England, E1 4NS, United King"
   },
   {
    "institution": "Kungälv Hospital",
@@ -647,7 +956,10 @@
    "pmids": [
     "29053750",
     "27175919"
-   ]
+   ],
+   "lat": 57.8707951,
+   "lon": 11.9799616,
+   "geocode_display_name": "Kungälv, Kungälvs kommun, Västra Götalands län, 442 18, Sverige"
   },
   {
    "institution": "Genoa",
@@ -673,33 +985,39 @@
    "pmids": [
     "27018681",
     "27348639"
-   ]
+   ],
+   "lat": 44.40726,
+   "lon": 8.9338624,
+   "geocode_display_name": "Genova, Liguria, Italia"
   },
   {
-   "institution": "Renji Hospital",
-   "country": "China",
+   "institution": "Children's Hospital Zagreb",
+   "country": "Croatia",
    "papers": 2,
    "years": [
-    2011,
-    2016
+    2013,
+    2015
    ],
    "codes": [
-    "thal"
+    "2913",
+    "93458"
    ],
    "authors": [
-    "Tan HH",
-    "Chen H"
+    "Barisic I"
    ],
    "representative": {
-    "pmid": "27537596",
-    "doi": "10.1097/MD.0000000000004606",
-    "title": "Bleeding recurrence in patients with gastrointestinal vascular malformation after thalidomide",
-    "year": "2016"
+    "pmid": "25182137",
+    "doi": "10.1038/ejhg.2014.174",
+    "title": "Meckel-Gruber Syndrome: a population-based study on prevalence, prenatal diagnosis, clinical features, and survival in Europe",
+    "year": "2015"
    },
    "pmids": [
-    "27537596",
-    "21955427"
-   ]
+    "25182137",
+    "23532946"
+   ],
+   "lat": 45.8130967,
+   "lon": 15.9772795,
+   "geocode_display_name": "Grad Zagreb, Hrvatska"
   },
   {
    "institution": "Drug Safety Research Laboratories",
@@ -724,7 +1042,10 @@
    "pmids": [
     "24344727",
     "23181494"
-   ]
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
   },
   {
    "institution": "National Center for Global Health and Medicine Hospital",
@@ -751,7 +1072,10 @@
    "pmids": [
     "24907542",
     "24548169"
-   ]
+   ],
+   "lat": 35.7029293,
+   "lon": 139.7163032,
+   "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
   },
   {
    "institution": "Royal Prince Alfred Hospital",
@@ -778,7 +1102,40 @@
    "pmids": [
     "23078293",
     "10067994"
-   ]
+   ],
+   "lat": -33.889186,
+   "lon": 151.181472,
+   "geocode_display_name": "Royal Prince Alfred Hospital, 57-59, Brodrick Street, Camperdown, Inner West, Sydney, New South Wales, 2050, Australia"
+  },
+  {
+   "institution": "Instituto de Investigación de Enfermedades Raras",
+   "country": "Spain",
+   "papers": 2,
+   "years": [
+    2011,
+    2011
+   ],
+   "codes": [
+    "1027",
+    "295000",
+    "2879"
+   ],
+   "authors": [
+    "Bermejo-Sánchez E"
+   ],
+   "representative": {
+    "pmid": "22002956",
+    "doi": "10.1002/ajmg.c.30319",
+    "title": "Amelia: a multi-center descriptive epidemiologic study in a large dataset from the International Clearinghouse for Birth Defects Surveillance and Research, and overview of the literature",
+    "year": "2011"
+   },
+   "pmids": [
+    "22002956",
+    "22002800"
+   ],
+   "lat": 40.4762578,
+   "lon": -3.6931063,
+   "geocode_display_name": "Instituto de Investigación de Enfermedades Raras (IIER), Calle de Melchor Fernández Almagro, La Paz, Fuencarral, Fuencarral-El Pardo, Madrid"
   },
   {
    "institution": "Gaslini Children Hospital",
@@ -805,7 +1162,10 @@
    "pmids": [
     "19909992",
     "19533787"
-   ]
+   ],
+   "lat": 44.3913231,
+   "lon": 8.9883542,
+   "geocode_display_name": "Gaslini, Via Gerolamo Gaslini, Vernazzola, Levante, Genova, Liguria, 16147, Italia"
   },
   {
    "institution": "University of Michigan",
@@ -831,7 +1191,10 @@
    "pmids": [
     "12242718",
     "11861780"
-   ]
+   ],
+   "lat": 42.2942142,
+   "lon": -83.7100389,
+   "geocode_display_name": "University of Michigan, 500, South State Street, Ann Arbor, Washtenaw County, Michigan, 48109, United States"
   },
   {
    "institution": "Foundation 41",
@@ -858,7 +1221,10 @@
    "pmids": [
     "10488693",
     "37281348"
-   ]
+   ],
+   "lat": -38.1285527,
+   "lon": 145.3499476,
+   "geocode_display_name": "41, Foundation Avenue, Edgebrook, Clyde, Melbourne, Victoria, 3978, Australia"
   },
   {
    "institution": "National Center for Environmental Health",
@@ -884,33 +1250,10 @@
    "pmids": [
     "10487395",
     "9415679"
-   ]
-  },
-  {
-   "institution": "University Medical Center",
-   "country": "Germany",
-   "papers": 2,
-   "years": [
-    1996,
-    1996
    ],
-   "codes": [
-    "thal"
-   ],
-   "authors": [
-    "Neubert R",
-    "Nogueira AC"
-   ],
-   "representative": {
-    "pmid": "8538367",
-    "doi": "10.1016/0024-3205(95)02290-2",
-    "title": "Down-regulation of adhesion receptors on cells of primate embryos as a probable mechanism of the teratogenic action of thalidomide",
-    "year": "1996"
-   },
-   "pmids": [
-    "8538367",
-    "8538370"
-   ]
+   "lat": 42.6524953,
+   "lon": -73.7489247,
+   "geocode_display_name": "New York State Department of Environmental Conservation, 625, Broadway, Downtown, City of Albany, Albany County, New York, 12204, United Sta"
   },
   {
    "institution": "Universitätsklinikum Rudolf Virchow",
@@ -938,7 +1281,10 @@
    "pmids": [
     "8024468",
     "7940403"
-   ]
+   ],
+   "lat": 49.3058353,
+   "lon": 7.3472032,
+   "geocode_display_name": "Universitätsklinikum, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland"
   }
  ]
 }

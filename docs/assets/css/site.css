@@ -544,8 +544,11 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 }
 
 /* Landing map: view chips, guess line and legend stacked bottom-right (out of the sticky header's way) */
-.map-side { position: absolute; right: 1.5rem; bottom: 1.5rem; z-index: 3; display: grid; gap: var(--space-1); justify-items: end; max-width: calc(100% - 3rem); }
-.map-side .map-views, .map-side .map-guess, .map-side .map-legend { position: static; }
+.map-side { position: absolute; right: 1.5rem; top: 1.25rem; bottom: 1.5rem; z-index: 3; display: grid; grid-template-rows: auto auto auto auto 1fr; gap: var(--space-1); justify-items: end; align-items: start; max-width: min(46rem, calc(100% - 3rem)); pointer-events: none; }
+.map-side > * { pointer-events: auto; }
+.map-side .map-layers { justify-content: flex-end; margin: 0; }
+.map-side .map-legend { position: static; align-self: end; max-height: 42vh; overflow: auto; }
+.map-side .map-views, .map-side .map-guess { position: static; }
 .map-side .map-guess { margin: 0; text-align: right; }
 @media (max-width: 48rem) {
   .map-side { position: static; display: block; padding: 0 1.5rem 1.5rem; }
@@ -732,3 +735,13 @@ ol.objectives strong { color: var(--dys-green-text); }
 .map-layers button[disabled] { opacity: 0.4; cursor: not-allowed; }
 .map-dots.is-off { opacity: 0.45; }
 .team-popup .dp-main strong { color: #1d4ed8; }
+/* legend collapsed to a button on wide screens; always open when the controls flow under the map */
+.map-legend-toggle { font: inherit; font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #f3e8fd; background: transparent; border: 1px solid rgba(255,255,255,0.35); border-radius: 999px; padding: 0.3rem 0.8rem; cursor: pointer; justify-self: start; }
+.map-legend:not(.open) > span, .map-legend:not(.open) > .map-credit { display: none; }
+.map-legend.open .map-legend-toggle { margin-bottom: 0.2rem; }
+@media (max-width: 70rem) {
+  .map-legend-toggle { display: none; }
+  .map-legend:not(.open) > span, .map-legend:not(.open) > .map-credit { display: block; }
+  .map-side { grid-template-rows: none; pointer-events: auto; }
+  .map-side .map-legend { position: static; max-height: none; overflow: visible; align-self: auto; }
+}

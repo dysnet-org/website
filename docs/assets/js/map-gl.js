@@ -127,7 +127,7 @@
   map.touchZoomRotate.disableRotation();
   window.DYSNET_GLMAP = map;  // handy for debugging in the console
   map.on("error", function (e) { if (e && e.error) console.error("DysNet map:", e.error.message || e.error); });
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
 
   var DOT_LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
 

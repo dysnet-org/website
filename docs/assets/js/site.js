@@ -183,7 +183,7 @@
   if (!host || !data || window.DYSNET_GL_ACTIVE) return;  // WebGL map took over (map-gl.js)
   // SVG fallback is in use: the estimated-people dots need WebGL, so explain instead of showing an empty legend entry
   var dotLegend = document.querySelector(".map-legend .l-dot");
-  if (dotLegend) dotLegend.innerHTML = "Grey dots (estimated people living with a limb difference) need WebGL, which this browser has turned off. Enable graphics acceleration or allow WebGL for this site to see them.";
+  if (dotLegend) dotLegend.innerHTML = "Grey dots (estimated people living with a limb difference) need WebGL, which this browser has turned off.";
   var base = window.SITE_BASE || "";
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -305,7 +305,7 @@
       b.addEventListener("click", function () {
         var on = b.getAttribute("aria-pressed") !== "true";
         b.setAttribute("aria-pressed", on ? "true" : "false");
-        if (key === "members") svg.classList.toggle("nofill", !on);
+        if (key === "members") host.classList.toggle("nofill", !on);
         else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", offices: "office" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
         document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
       });
@@ -383,6 +383,15 @@
   close.addEventListener("click", function () { setOpen(false); reopen.focus(); });
   reopen.addEventListener("click", function () { setOpen(true); close.focus(); });
   try { if (sessionStorage.getItem("dysnet-map-card") === "closed") setOpen(false); } catch (e) {}
+})();
+
+/* ── Landing map legend: collapsed to a button on wide screens ─────── */
+(function () {
+  var legend = document.getElementById("map-legend"), btn = document.getElementById("map-legend-toggle");
+  if (!legend || !btn) return;
+  function set(open) { legend.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); btn.textContent = open ? "Hide legend" : "Legend"; }
+  btn.addEventListener("click", function () { set(!legend.classList.contains("open")); });
+  set(false);
 })();
 
 /* ── Bibliography: search + filters ────────────────────────────────── */

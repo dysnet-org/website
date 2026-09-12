@@ -1376,7 +1376,8 @@ MAP_HERO = """
     <p class="dot-legend" id="dot-legend" aria-live="polite"></p>
     <p class="dot-caption">Grey dots are <strong>estimates</strong> (prevalence × population, GHSL 2025 population grid, EU JRC). The registry’s purpose is to turn these estimates into known, consented cases.</p>
   </div>
-  <div class="map-legend" aria-label="Legend">
+  <div class="map-legend" id="map-legend" aria-label="Legend">
+    <button type="button" class="map-legend-toggle" id="map-legend-toggle" aria-expanded="false" aria-controls="map-legend">Legend</button>
     <span class="l-member" data-layer="members">Member association</span>
     <span class="l-candidate" data-layer="members">Piloting the registry (Assedea, Raggiungere)</span>
     <span class="l-contact" data-layer="members">Contact opened</span>

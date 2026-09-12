@@ -266,6 +266,23 @@
     });
     svg.appendChild(g);
 
+    // registry coverage zones (register 2): drawn from the same GeoJSON as the WebGL map, behind the markers
+    var gz = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    gz.setAttribute("class", "zones");
+    svg.appendChild(gz);
+    fetch(base + data.zonesUrl).then(function (r) { return r.json(); }).then(function (gj) {
+      gj.features.forEach(function (f) {
+        var d = "";
+        (f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates]).forEach(function (poly) {
+          poly.forEach(function (ring) { d += "M" + ring.map(function (c) { var q = project(c[0], c[1]); return q[0].toFixed(2) + "," + q[1].toFixed(2); }).join("L") + "Z"; });
+        });
+        var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", d); path.setAttribute("class", "zone zone-" + f.properties.status);
+        path.setAttribute("data-label", f.properties.label + " · " + f.properties.dep_name + (f.properties.status === "in_progress" ? " · starting to cover" : " · covered"));
+        gz.appendChild(path);
+      });
+    }).catch(function () {});
+
     // care centres (register 4): orange markers linking to the centre's website
     var gc = document.createElementNS("http://www.w3.org/2000/svg", "g");
     gc.setAttribute("class", "centre");
@@ -306,7 +323,7 @@
         var on = b.getAttribute("aria-pressed") !== "true";
         b.setAttribute("aria-pressed", on ? "true" : "false");
         if (key === "members") host.classList.toggle("nofill", !on);
-        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", offices: "office" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
+        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", offices: "office", zones: "zones" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
         document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
       });
     });
@@ -340,6 +357,8 @@
       if (pinned) return;
       var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
       if (a) { clearTimeout(hideTimer); markerTip(a, e.clientX, e.clientY); return; }
+      var zone = e.target.closest ? e.target.closest("path.zone") : null;
+      if (zone) { clearTimeout(hideTimer); tip.innerHTML = "<strong>" + zone.getAttribute("data-label").split(" · ")[0] + "</strong><span class=\"status\">Registry coverage</span><p style=\"margin:0.3rem 0 0\">" + zone.getAttribute("data-label").split(" · ").slice(1).join(" · ") + "</p>"; tip.style.display = "block"; var rz = host.getBoundingClientRect(); tip.style.left = Math.max(12, Math.min(e.clientX - rz.left + 14, rz.width - tip.offsetWidth - 12)) + "px"; tip.style.top = Math.max(12, Math.min(e.clientY - rz.top + 14, rz.height - tip.offsetHeight - 12)) + "px"; return; }
       var el = e.target.closest ? e.target.closest("path[class*='st-']") : null;
       if (el) { clearTimeout(hideTimer); showTip(el, e.clientX, e.clientY); } else hideSoon();
     });

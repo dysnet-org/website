@@ -26,3 +26,4 @@ tools/ne10m/
 # Raw population grid + generated dot files (hundreds of MB) — only the tileset is committed
 tools/ghs/
 tools/pop/
+tools/geo/

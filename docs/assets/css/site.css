@@ -484,7 +484,7 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 
 .map-panel {
   position: absolute; left: 1.5rem; bottom: 1.5rem; z-index: 3;
-  width: min(30rem, calc(100% - 3rem));
+  width: min(30rem, calc(100% - 3rem)); max-height: calc(100% - 3rem); overflow: auto;
   background: rgba(255,255,255,0.94); color: var(--dys-ink);
   border-radius: var(--radius-sheet); padding: var(--space-3) var(--space-4);
   box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6); backdrop-filter: blur(8px);
@@ -747,3 +747,15 @@ ol.objectives strong { color: var(--dys-green-text); }
 }
 .hover-popup .maplibregl-popup-content { pointer-events: none; }
 .people-popup .dp-main strong { color: var(--dys-purple-text); }
+.map-legend .l-zone::before { background: #7dd3fc; opacity: 0.85; }
+.map-legend .l-zone-progress::before { background: repeating-linear-gradient(135deg, #fdba74 0 2px, transparent 2px 4px); border: 1px solid #fdba74; }
+#worldmap .zone { stroke-width: 0.4; cursor: pointer; }
+#worldmap .zone-covered { fill: rgba(125, 211, 252, 0.6); stroke: #bae6fd; }
+#worldmap .zone-in_progress { fill: rgba(253, 186, 116, 0.45); stroke: #fed7aa; stroke-dasharray: 1.2 0.8; }
+.zone-popup .dp-main strong { color: #0369a1; }
+/* short or zoomed-in windows: keep the whole card visible */
+@media (min-width: 70rem) and (max-height: 60rem) {
+  .map-panel h1 { font-size: var(--text-h2); }
+  .map-panel { padding: var(--space-3); }
+  .map-panel .map-stats { margin: var(--space-2) 0 var(--space-1); }
+}

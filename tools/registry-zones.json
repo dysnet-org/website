@@ -1,0 +1,12 @@
+{"source": "Santé publique France, Surveillance épidémiologique des anomalies congénitales en France, période 2019-2021 (July 2026), Figure 1: territorial coverage of the 7 French registries, situation 2025; footnote: Auvergne = Allier, Cantal, Haute-Loire, Puy-de-Dôme; Rhône-Alpes = Rhône and Loire.",
+ "source_url": "https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf",
+ "geometry": "IGN Admin Express COG (Licence Ouverte / Etalab 2.0) as converted by france-geojson (gregoiredavid, simplified), départements subset and further simplified at build time",
+ "zones": [
+  {"registry": "REMAPAR", "label": "Paris registry of congenital anomalies (REMAPAR)", "country": "France", "status": "covered", "departements": ["75"], "orphanet_id": "28268", "website": "https://cress-umr1153.fr/fr/project/registre-des-malformations-congenitales-de-paris-remapar/"},
+  {"registry": "REMABREIZH", "label": "Brittany registry of congenital anomalies (REMABREIZH)", "country": "France", "status": "covered", "departements": ["22", "29", "35", "56"], "orphanet_id": "642580", "website": "https://www.chu-rennes.fr/remabreizh.html"},
+  {"registry": "REMALAN", "label": "Antilles registry of congenital anomalies (REMALAN)", "country": "France", "status": "covered", "departements": ["971", "972"], "orphanet_id": "447029", "website": "https://remalan.com/"},
+  {"registry": "REMACOR", "label": "La Réunion registry of congenital anomalies (REMACOR)", "country": "France", "status": "covered", "departements": ["974"], "orphanet_id": "414749", "website": "https://remacor.re/"},
+  {"registry": "CEMC", "label": "Auvergne registry of congenital malformations (CEMC)", "country": "France", "status": "covered", "departements": ["03", "15", "43", "63"], "orphanet_id": "33346", "website": "https://www.chu-clermontferrand.fr/liste-services/genetique-medicale/registre-cemc"},
+  {"registry": "REMERA", "label": "Rhône-Alpes registry of congenital anomalies (REMERA)", "country": "France", "status": "covered", "departements": ["69", "42"], "orphanet_id": "165837", "website": "https://www.remera.fr/"},
+  {"registry": "ATENA", "label": "Nouvelle-Aquitaine registry of congenital anomalies (ATENA)", "country": "France", "status": "in_progress", "departements": ["16", "17", "19", "23", "24", "33", "40", "47", "64", "79", "86", "87"], "orphanet_id": null, "website": "https://registre-atena.fr/"}
+ ]}

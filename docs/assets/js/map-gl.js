@@ -56,6 +56,7 @@
       centres: { type: "geojson", data: { type: "FeatureCollection", features: (data.centres || []).filter(function (c) { return c.lat && c.lon; }).map(function (c) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [c.lon, c.lat] }, properties: c };
       }) } },
+      zones: { type: "geojson", data: base + data.zonesUrl },
       teams: { type: "geojson", data: { type: "FeatureCollection", features: (data.teams || []).filter(function (t) { return t.lat && t.lon; }).map(function (t) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [t.lon, t.lat] }, properties: { name: t.name, country: t.country, papers: t.papers, years: (t.years && t.years[0] === t.years[1]) ? String(t.years[0]) : (t.years || []).join("–"), codes: (t.codes || []).join(", "), authors: (t.authors || []).join(", "), repTitle: t.rep && t.rep.title, repDoi: t.rep && t.rep.doi, repPmid: t.rep && t.rep.pmid, repYear: t.rep && t.rep.year } };
       }) } }
@@ -73,6 +74,13 @@
         paint: { "line-color": "rgba(255,255,255,0.12)", "line-width": 0.6 } },
       { id: "borders", type: "line", source: "ne", "source-layer": "countries",
         paint: { "line-color": "rgba(255,255,255,0.16)", "line-width": ["interpolate", ["linear"], ["zoom"], 1, 0.4, 9, 1.2] } },
+      // Areas covered by a population-based registry of congenital anomalies (register 2): solid = covered, dashed = starting
+      { id: "zones-fill", type: "fill", source: "zones",
+        paint: { "fill-color": ["match", ["get", "status"], "in_progress", "#fdba74", "#7dd3fc"], "fill-opacity": ["match", ["get", "status"], "in_progress", 0.38, 0.5] } },
+      { id: "zones-line-covered", type: "line", source: "zones", filter: ["==", ["get", "status"], "covered"],
+        paint: { "line-color": "#bae6fd", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8] } },
+      { id: "zones-line-progress", type: "line", source: "zones", filter: ["==", ["get", "status"], "in_progress"],
+        paint: { "line-color": "#fed7aa", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8], "line-dasharray": [2, 1.5] } },
       // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
       // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps dots with u < r*100.
       { id: "dots1000", type: "circle", source: "dots", "source-layer": "dots", minzoom: 0, maxzoom: 4, filter: ["<", ["get", "u"], 4500],
@@ -122,7 +130,7 @@
 
   var map = new maplibregl.Map({
     container: host, style: style, center: [10, 25], zoom: 1.3, minZoom: 1, maxZoom: 9,
-    attributionControl: false, renderWorldCopies: false, dragRotate: false, pitchWithRotate: false
+    attributionControl: false, renderWorldCopies: true, dragRotate: false, pitchWithRotate: false  // copies on: at low zoom a wide viewport could not otherwise centre on the Americas or the Pacific
   });
   map.touchZoomRotate.disableRotation();
   window.DYSNET_GLMAP = map;  // handy for debugging in the console
@@ -214,6 +222,7 @@
     tip.style.left = Math.max(12, left) + "px"; tip.style.top = Math.max(12, top) + "px";
   }
   map.on("mousemove", "countries", function (e) {
+    if (map.getLayer("zones-fill") && map.queryRenderedFeatures(e.point, { layers: ["zones-fill"] }).length) { map.setFilter("hover", ["==", ["get", "ADM0_A3"], ""]); hideSoon(); return; }
     var a3 = e.features[0].properties.ADM0_A3, c = byA3[a3];
     map.setFilter("hover", ["==", ["get", "ADM0_A3"], c ? a3 : ""]);
     map.getCanvas().style.cursor = c ? "pointer" : "";
@@ -224,7 +233,7 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
-    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot"]) }).length) return; // a dot, a centre or a team was clicked
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "zones-fill"]) }).length) return; // a dot, a centre, a team or a registry zone was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
   });
@@ -250,12 +259,22 @@
   }
   attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup");
 
+  // ── registry coverage zones: hover for the registry, click to pin ───
+  function zoneHtml(e) {
+    var z = e.features[0].properties;
+    var status = z.status === "in_progress" ? "Registry starting to cover this area" : "Covered by a population-based registry of congenital anomalies";
+    return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
+           '<p class="dp-sub">' + esc(z.dep_name) + ', ' + esc(z.country) + '<br>' + status + '</p>' +
+           '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: Santé publique France, 2026 · <a href="' + base + '/knowledge/ongoing-studies/">Studies and registries</a></p>';
+  }
+  attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup");
+
   // ── layer filter: what the visitor wants to see ─────────────────────
-  var LAYER_IDS = { people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
+  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
   function setLayer(key, on) {
     if (key === "members") { map.setPaintProperty("countries", "fill-color", on ? fillMatch : "#5a2f86"); }
     else (LAYER_IDS[key] || []).forEach(function (id) { if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none"); });
-    var box = document.getElementById("map-dots"); if (key === "people" && box) box.classList.toggle("is-off", !on);
+    var box = document.getElementById("map-dots"); if (key === "people" && box) box.hidden = !on;
     document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
   }
   var layerButtons = document.querySelectorAll("#map-layers button");

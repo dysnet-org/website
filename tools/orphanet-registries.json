@@ -1608,7 +1608,7 @@
  "france_population_registries": {
   "source": "Santé publique France, Surveillance épidémiologique des anomalies congénitales en France à partir des registres populationnels : période 2019-2021 (July 2026), Table 1 and directory of registries",
   "source_url": "https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf",
-  "coverage": "16.4% of French births in 2019-2021, about 23.6% by 2026 with the Nouvelle-Aquitaine registry",
+  "coverage": "16.4% of French births in 2019-2021; the report projects about 23.6% once the Nouvelle-Aquitaine registry is fully deployed (an objective, not a measured figure)",
   "eurocat": "EUROCAT network: 43 population-based registries in 21 European countries, about 1.5 million births a year (report, box 1)",
   "registries": [
    {

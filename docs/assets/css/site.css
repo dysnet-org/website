@@ -836,3 +836,5 @@ ol.demands details[open] summary::after { content: "–"; }
 .tera-details ul { margin: 0.4rem 0 0; padding-left: 1.1rem; color: var(--dys-muted); max-width: none; }
 .tera-details li { margin: 0.25rem 0; }
 .tera-legend { font-size: var(--text-small); color: var(--dys-muted); display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin: var(--space-2) 0; max-width: none; }
+
+#board { scroll-margin-top: 8rem; }

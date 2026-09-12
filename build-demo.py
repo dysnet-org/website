@@ -114,7 +114,6 @@ SEO_TITLES = {
     "/voice/": "Our voice: five demands for people with dysmelia · DysNet",
     "/voice/reports/": "Reports from our seats in rare-disease bodies · DysNet",
     "/about/": "About DysNet, the dysmelia network since 2009",
-    "/about/people/": "Board and volunteers of the dysmelia network · DysNet",
     "/about/members/": "Member associations for limb difference · DysNet",
     "/about/transparency/": "Transparency: documents and accounts · DysNet",
     "/about/statutes/": "Statutes of DysNet, the dysmelia network",
@@ -132,7 +131,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
     is_article = "/guides/" in path
     page_ld = {"@context": "https://schema.org", "@type": "Article" if is_article else "WebPage", "name": full.split(" · ")[0], "headline": full.split(" · ")[0],
                "url": canonical, "description": desc, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
-               "publisher": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": SITE + "/about/people/"}}
+               "publisher": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": SITE + "/about/#board"}}
     if dates.get("published"): page_ld["datePublished"] = dates["published"]
     if dates.get("modified"): page_ld["dateModified"] = dates["modified"]
     ld = [ORG_SCHEMA] if is_home else [{
@@ -473,6 +472,34 @@ def teratogens_html():
     <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
     <p class="annex-note">Built {TERA.get("built", "")}. Sources: {c.get("clp", 0)} EU harmonised entries with a hazard statement for the unborn child (CLP Annex VI, ATP23), {c.get("p65", 0)} developmental toxicants on California's Proposition 65 list, {c.get("ema", 0)} medicines under EMA pregnancy prevention programmes or contraindications, plus alcohol (WHO) and tobacco smoking (peer-reviewed literature). {c.get("both_clp_and_p65", 0)} substances appear on both the EU and the Californian lists. <a href="/data/teratogens.json">Download the data (JSON, CC BY 4.0)</a>. Report an error or a missing substance: <a href="mailto:info@dysnet.org?subject=Teratogens%20register">info@dysnet.org</a>.</p>
 """
+
+BOARD = [
+    ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
+    ("Dr Loïc Rigal", "Deputy chair", "Elected deputy chair at the general assembly of 26 August 2026. Carries the registry mission: an international, patient-owned registry of limb malformations, and the network’s knowledge tools, this website among them.", "LR", "", "Mission 2 · Registry"),
+    ("Michaela Moik", "Vice-president · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
+    ("Monika Eisenberg-Geginat", "Secretary · Germany", "Thalidomide survivor, former head teacher, family therapist specialised in the protection of disabled children.", "ME", "moni.eisenberg@dysnet.org", "Statutes · AGM"),
+    ("Salvatore Giambruno", "Treasurer · Italy", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
+    ("Tobias Arndt", "Chief Operating Officer · Belgium", "IT expert and researcher, author on electronic commerce; supporting thalidomide projects across Europe since 2007.", "TA", "tobias.arndt@dysnet.org", "Operations"),
+]
+
+
+def person_card(name, role, bio, init, email, chip):
+    PEOPLE_LD.append({"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "email": email or None})
+    return f"""<div class="card person person-flip" tabindex="0">
+      <div class="faces">
+        <div class="face front">
+          <div class="avatar">{init}</div>
+          <h3 class="h4">{name}</h3>
+          <p class="role">{role}</p>
+          <p><span class="chip">{chip}</span></p>
+        </div>
+        <div class="face back">
+          <h3 class="h4">{name}</h3>
+          <p>{bio}</p>
+          {f'<p><a href="mailto:{email}">{email}</a></p>' if email else '<p><a href="/contact/">Write via the contact page</a></p>'}
+        </div>
+      </div>
+    </div>"""
 
 PAGES = {}
 
@@ -1434,10 +1461,21 @@ PAGES["/about/"] = {
       </div>
     </div>
 
-    {opener("04", "Documents", "The texts that govern us.")}
+    <div id="board"></div>
+    {opener("04", "The board", "Volunteers who carry a mission each.")}
+    <p>Most of the board live with dysmelia or are parents of children with limb differences, as the statutes require. Under the 2026-2029 strategy every seat owns a mission: no seat without a mission. Hover or tap a card to read the bio and write to its holder.</p>
+    <div class="grid cols-3" style="margin-top:var(--space-3)">
+      {"".join(person_card(*p) for p in BOARD)}
+    </div>
+    <figure class="photo" style="margin-top:var(--space-4)">
+      <img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests at the INAIL prosthetics centre, August 2024" loading="lazy">
+      <figcaption>The board and member-association guests at INAIL Centro Protesi, Vigorso di Budrio, August 2024. Photo: DysNet.</figcaption>
+    </figure>
+
+    {opener("05", "Documents", "The texts that govern us.")}
     <ul>
       <li><a href="/about/transparency/">Statutes, accounts and AGM documents</a></li>
-      <li><a href="/about/people/">The board</a> and <a href="/about/members/">the member associations</a></li>
+      <li><a href="#board">The board</a> and <a href="/about/members/">the member associations</a></li>
     </ul>
   </div>
 </section>
@@ -1445,55 +1483,9 @@ PAGES["/about/"] = {
 }
 
 # (name, role, bio, initials, email, mission chip)
-BOARD = [
-    ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
-    ("Michaela Moik", "Vice-president · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
-    ("Monika Eisenberg-Geginat", "Secretary · Germany", "Thalidomide survivor, former head teacher, family therapist specialised in the protection of disabled children.", "ME", "moni.eisenberg@dysnet.org", "Statutes · AGM"),
-    ("Salvatore Giambruno", "Treasurer · Italy", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
-    ("Tobias Arndt", "Chief Operating Officer · Belgium", "IT expert and researcher, author on electronic commerce; supporting thalidomide projects across Europe since 2007.", "TA", "tobias.arndt@dysnet.org", "Operations"),
-]
 
 
-def person_card(name, role, bio, init, email, chip):
-    PEOPLE_LD.append({"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "email": email or None})
-    return f"""<div class="card person person-flip" tabindex="0">
-      <div class="faces">
-        <div class="face front">
-          <div class="avatar">{init}</div>
-          <h3 class="h4">{name}</h3>
-          <p class="role">{role}</p>
-          <p><span class="chip">{chip}</span></p>
-        </div>
-        <div class="face back">
-          <h3 class="h4">{name}</h3>
-          <p>{bio}</p>
-          <p><a href="mailto:{email}">{email}</a></p>
-        </div>
-      </div>
-    </div>"""
 
-PAGES["/about/people/"] = {
-    "title": "People",
-    "desc": "The DysNet board: volunteers from the limb-difference community, each carrying one of DysNet's three missions.",
-    "crumbs": [("/about/", "About"), ("/about/people/", "People")],
-    "body": f"""
-<section>
-  <div class="container">
-    <div class="tick"></div>
-    <p class="eyebrow">About · People</p>
-    <h1 class="display">The people of DysNet: volunteers who carry a mission each.</h1>
-    <p>Most of the board live with dysmelia or are parents of children with limb differences, as the statutes require. Under the 2026-2029 strategy, every seat owns a mission: no seat without a mission. Hover or tap a card to read the bio and write to the person directly.</p>
-    <div class="grid cols-3" style="margin-top:var(--space-4)">
-      {"".join(person_card(*p) for p in BOARD)}
-    </div>
-    <figure class="photo" style="margin-top:var(--space-4)">
-      <img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests at the INAIL prosthetics centre, August 2024" loading="lazy">
-      <figcaption>The board and member-association guests at INAIL Centro Protesi, Vigorso di Budrio, August 2024. Photo: DysNet.</figcaption>
-    </figure>
-  </div>
-</section>
-""",
-}
 
 # (country, [(name, url or None), ...]) — URLs from the previous dysnet.org
 # member pages plus known member sites, each verified reachable on 2026-08-18.
@@ -1900,7 +1892,7 @@ PAGES["/404/"] = {
       (function () {
         var p = location.pathname.replace(/[/]+$/, "");
         var rules = [[/^[/]post[/]/, "/voice/reports/"], [/^[/]copy-.*(aussiehands|avbs|norske|limbs4life|contergan)/, "/about/members/"],
-          [/^[/]copy-.*(pirola|moro)/, "/about/people/"], [/^[/]copy-.*(privacy|terms|meeting)/, "/about/transparency/"],
+          [/^[/]copy-.*(pirola|moro)/, "/about/#board"], [/^[/]copy-.*(privacy|terms|meeting)/, "/about/transparency/"],
           [/^[/]copy-of-about-1$/, "/knowledge/researchers/"], [/^[/]copy-.*about/, "/knowledge/understanding-dysmelia/"],
           [/^[/]copy-.*bank/, "/donate/"], [/^[/](profile|forum|members|our-members)/, "/about/members/"], [/^[/]copy-/, "/"]];
         for (var i = 0; i < rules.length; i++) if (rules[i][0].test(p)) { location.replace(rules[i][1]); return; }
@@ -1933,15 +1925,16 @@ _POSTS = ["a-week-full-of-opportunities", "artificial-intelligence-and-disabilit
     "stockholm-eurordis-membership-meeting-2023", "thalidomide-60-we-re-still-here",
     "webinar-by-cerebral-palsy-eu-on-advocacy-skills"]
 REDIRECTS = {
-    "/people": "/about/people/", "/our-members": "/about/members/", "/members": "/about/members/",
+    "/about/people": "/about/#board",
+    "/people": "/about/#board", "/our-members": "/about/members/", "/members": "/about/members/",
     "/conditions": "/knowledge/understanding-dysmelia/", "/blog": "/voice/reports/", "/forum": "/about/members/",
     "/whatifyourbaby": "/knowledge/understanding-dysmelia/", "/aussiehands": "/about/members/", "/raggiungere": "/about/members/",
     "/copy-of-about": "/knowledge/understanding-dysmelia/", "/copy-of-about-1": "/knowledge/researchers/",
     "/copy-of-bank-account": "/donate/", "/copy-of-privacy": "/about/transparency/",
     "/copy-of-terms-of-use": "/about/transparency/", "/copy-of-terms-of-use-1": "/about/transparency/",
     "/copy-of-annual-general-meeting-2022": "/about/transparency/", "/copy-of-board-meeting-8-22": "/about/transparency/",
-    "/copy-of-claudio-pirola": "/about/people/", "/copy-of-claudio-pirola-1": "/about/people/", "/copy-of-claudio-pirola-2": "/about/people/",
-    "/copy-of-mirko-moro": "/about/people/", "/copy-of-dysnet": "/about/",
+    "/copy-of-claudio-pirola": "/about/#board", "/copy-of-claudio-pirola-1": "/about/#board", "/copy-of-claudio-pirola-2": "/about/#board",
+    "/copy-of-mirko-moro": "/about/#board", "/copy-of-dysnet": "/about/",
 }
 for _s in ["copy-of-about-2", "copy-2-of-about", "copy-3-of-about", "copy-4-of-about", "copy-5-of-about"]:
     REDIRECTS["/" + _s] = "/knowledge/understanding-dysmelia/"
@@ -1986,7 +1979,7 @@ EXTRA_LD = {
     "/knowledge/ongoing-studies/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/ongoing-studies/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
     "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
-    "/about/people/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
+    "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence and regulatory status per jurisdiction.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }
 DATA_FILES = {"teratogens.json": "teratogens.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}

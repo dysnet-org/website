@@ -476,7 +476,7 @@ def teratogens_html():
 BOARD = [
     ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
     ("Dr Loïc Rigal", "Deputy chair", "Elected deputy chair at the general assembly of 26 August 2026. Carries the registry mission: an international, patient-owned registry of limb malformations, and the network’s knowledge tools, this website among them.", "LR", "", "Mission 2 · Registry"),
-    ("Michaela Moik", "Vice-president · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
+    ("Michaela Moik", "Thalidomide patient expert · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
     ("Monika Eisenberg-Geginat", "Secretary · Germany", "Thalidomide survivor, former head teacher, family therapist specialised in the protection of disabled children.", "ME", "moni.eisenberg@dysnet.org", "Statutes · AGM"),
     ("Salvatore Giambruno", "Treasurer · Italy", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
     ("Tobias Arndt", "Chief Operating Officer · Belgium", "IT expert and researcher, author on electronic commerce; supporting thalidomide projects across Europe since 2007.", "TA", "tobias.arndt@dysnet.org", "Operations"),

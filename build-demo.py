@@ -1078,6 +1078,38 @@ PAGES["/voice/"] = {
     <h1 class="display">Where it counts, with a mandate.</h1>
     <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
 
+    {opener("01", "Our voice", "Five demands, carried into every room we sit in.")}
+    <p>What DysNet asks for on behalf of families, in the order we argue them. Open each demand to read why it matters and what would count as progress.</p>
+    <ol class="demands">
+      <li><details><summary><span class="demand-n">1</span><span>Recognition of dysmelia as a public health priority, and access to quality healthcare for every family affected</span></summary>
+        <div class="demand-body">
+          <p>The World Health Organization counts congenital disorders among the leading causes of newborn death and lifelong disability, and the 2010 World Health Assembly resolution on birth defects asks every state to build registration and surveillance systems, to develop expertise in prevention and care, and to support affected families (<a href="https://www.who.int/news-room/fact-sheets/detail/birth-defects" target="_blank" rel="noopener external">WHO fact sheet on congenital disorders</a>). Limb differences are among the most visible of these disorders and among the least studied.</p>
+          <p>We ask health authorities to name dysmelia in their rare-disease and disability plans, and to guarantee every child and adult a pathway to a competent team: diagnosis, surgery when useful, prosthetics, rehabilitation and psychological support, wherever the family lives. Progress looks like national pathways published, reference centres named, and waiting times measured.</p>
+        </div></details></li>
+      <li><details><summary><span class="demand-n">2</span><span>Universal coverage of prosthetics, and enough research and development for progress in robotics to reach people living with dysmelia</span></summary>
+        <div class="demand-body">
+          <p>A prosthesis is not a comfort item. It is the difference between taking part and watching. Yet coverage varies from full reimbursement to nothing at all, children outgrow devices that insurers replace too slowly, and the most advanced hands and arms are priced for a handful of users.</p>
+          <p>We ask for coverage of a functional prosthesis for everyone who wants one, renewed at the pace of a growing child, and for public research funding that turns advances in robotics into devices people with congenital differences can actually be fitted with, since their anatomy differs from that of amputees. Progress looks like comparable reimbursement rules across countries and research calls that name congenital limb difference.</p>
+        </div></details></li>
+      <li><details><summary><span class="demand-n">3</span><span>An orphan medical devices framework that creates incentives to improve prosthetics, and equipment that families can afford</span></summary>
+        <div class="demand-body">
+          <p>Medicines for rare diseases enjoy orphan status: fee reductions, protocol assistance and market exclusivity that make small markets worth serving. Devices for small populations have no equivalent. A prosthetic component designed for a few thousand people with a congenital difference must clear the same regulatory cost as a device for millions, so it is often never built.</p>
+          <p>Europe took a first step in June 2024: guidance <a href="https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf" target="_blank" rel="noopener external">MDCG 2024-10</a> defines an orphan device as one intended for a condition affecting no more than 12,000 people a year in the EU, and eases the clinical evidence expected before marketing. It is guidance, not law, and it brings no fee relief, no priority assessment and no exclusivity.</p>
+          <p>We ask regulators in Europe and beyond to give orphan medical devices a status of their own in law, with the lighter evidence pathways now sketched, fee relief and priority assessment. Incentives must also reach the family: a designated device that no one can pay for changes nothing, so orphan status should come with transparent pricing and coverage of the out-of-pocket cost of the equipment a child or adult actually needs, from a first passive hand to an adapted bicycle or car controls. Progress looks like a legal definition, a public register of designated devices, the first prosthetic components designated under it, and families' remaining costs measured and falling.</p>
+        </div></details></li>
+      <li><details><summary><span class="demand-n">4</span><span>Wide, international and independent coverage by registries, to gather enough evidence to address the root causes of dysmelia</span></summary>
+        <div class="demand-body">
+          <p>Population registries of congenital anomalies cover a fraction of births, even in countries that run them well: in France about one birth in six. Clusters of limb agenesis have been found and then lost for want of comparable data across borders, and the causes, environmental or otherwise, remain unproven either way.</p>
+          <p>We ask for registries that cover whole populations, that are funded to last, that are independent of any single interest, and that talk to each other across countries. Our own <a href="/registry/">associative registry</a> exists to add the families' knowledge to this picture, not to replace it. Progress looks like coverage figures rising, and cluster investigations that can compare notes internationally.</p>
+        </div></details></li>
+      <li><details><summary><span class="demand-n">5</span><span>Interoperability and portability of all registry data, so that researchers get access more easily, under the strict consent of families for any identifiable data</span></summary>
+        <div class="demand-body">
+          <p>Data locked in one registry answers one region's questions. Research on causes needs data that can be pooled, compared and re-used, in formats that machines and researchers can read across systems. Portability also protects families: it means a registry can move its data if its host disappears or its funding ends.</p>
+          <p>We ask that every registry recording our conditions adopt shared standards, so that aggregated data flow to researchers without friction, and that any sharing of identifiable data rest on the explicit, revocable consent of the person or family concerned. Progress looks like common data models adopted, published access procedures, and consent that families can see and change.</p>
+        </div></details></li>
+    </ol>
+
+    {opener("02", "Where we sit", "The seats, with a mandate.")}
     <div class="grid cols-2" style="margin-top:var(--space-4)">
       <div class="card">
         <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
@@ -1097,7 +1129,7 @@ PAGES["/voice/"] = {
       </div>
     </div>
 
-    {opener("01", "Also active in", "Projects we joined by invitation.")}
+    {opener("03", "Also active in", "Projects we joined by invitation.")}
     <ul>
       <li><strong>VOTE4ALL / VOICE4ALL</strong> (Cerebral Palsy Europe, EU-supported): autonomous voting rights for persons with disabilities; study visits to The Hague and the Portuguese Parliament.</li>
       <li><strong>Local lectures</strong>: Milan Civil Week, and an event planned around the Milano-Cortina 2026 Winter Paralympics.</li>

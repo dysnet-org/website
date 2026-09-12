@@ -18,6 +18,7 @@ PMID_RE = re.compile(r'pubmed\.ncbi\.nlm\.nih\.gov/(\d{5,9})|ncbi\.nlm\.nih\.gov
 PMC_RE = re.compile(r'ncbi\.nlm\.nih\.gov/pmc/articles/(PMC\d+)|pmc\.ncbi\.nlm\.nih\.gov/articles/(PMC\d+)')
 SKIP_EXT = re.compile(r'\.(jpe?g|png|gif|svg|webp|ico|css|js|mp4|mp3|zip|docx?|xlsx?|pptx?|woff2?|ttf)(\?|$)', re.I)
 PDFTOTEXT = shutil.which("pdftotext")
+PRIORITY = re.compile(r"public|research|biblio|literat|paper|article|scienti|report|doi|pubmed|veröffentlich|pubblicaz|publicacion|forsk", re.I)
 
 
 class Links(HTMLParser):
@@ -89,7 +90,9 @@ def crawl(start, max_pages, robots_cache, delay=1.0):
                 pu = urllib.parse.urlparse(u)
                 if pu.scheme not in ("http", "https"): continue
                 same = pu.netloc.lower().removeprefix("www.") == host.removeprefix("www.")
-                if same and not SKIP_EXT.search(pu.path) and u not in seen: queue.append(u)
+                if same and not SKIP_EXT.search(pu.path) and u not in seen:
+                    # pages likely to list publications go to the front of the queue
+                    (queue.insert(0, u) if PRIORITY.search(u) else queue.append(u))
                 # external DOI / PubMed links count even though we don't follow them
                 for m in DOI_RE.finditer(urllib.parse.unquote(u)):
                     found.append({"doi": clean_doi(m.group(1)), "page": key})

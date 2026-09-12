@@ -710,3 +710,8 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .centre-popup .dp-main strong { color: var(--acc-centres-text); }
 .centre-popup .dp-local { font-weight: 400; font-size: var(--text-small); color: var(--dys-muted); }
 .bib-tag.bib-via { background: #fff7ed; color: #9a3412; border: 1px solid #fdba74; }
+.bib-focus { align-items: center; }
+.bib-focus button { border-color: #fdba74; color: #9a3412; background: #fff7ed; font-weight: 700; }
+.bib-focus button[aria-pressed="true"] { background: #ea580c; border-color: #ea580c; color: #fff; }
+.bib-focus-help { font-size: var(--text-small); color: var(--dys-muted); }
+.bib-more-row { text-align: center; margin: var(--space-3) 0 0; }

@@ -267,8 +267,9 @@ def bibliography_html():
         link = (f'<a href="https://doi.org/{e["doi"]}" target="_blank" rel="noopener external">doi:{e["doi"]}</a>' if e["doi"]
                 else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/" target="_blank" rel="noopener external">PubMed {e["pmid"]}</a>')
         tags = "".join(f'<span class="bib-tag">{names.get(c, c)}</span>' for c in e["codes"]) + "".join(f'<span class="bib-tag bib-topic">{BIB_TOPIC_LABEL.get(t, t)}</span>' for t in e["topics"])
-        via = [v for v in e.get("via", []) if v not in ("Orphanet", "DysNet")]
+        via = [v for v in e.get("via", []) if v not in ("Orphanet", "DysNet", "PubMed search")]
         if via: tags += f'<span class="bib-tag bib-via">found on {", ".join(v.split(" (")[0] for v in via)}</span>'
+        elif "PubMed search" in e.get("via", []): tags += '<span class="bib-tag bib-via">PubMed search</span>'
         why = e["notes"][0] if e["notes"] else ""
         text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
         items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-text="{text}">'
@@ -281,15 +282,17 @@ def bibliography_html():
     <div class="tick"></div>
     <p class="eyebrow">Bibliography · {len(entries)} references</p>
     <h2 class="h2">The literature, searchable.</h2>
-    <p>Behind every condition described on this site lies a body of research: who is affected, how often, what is known and what is still missing. This bibliography gathers the peer-reviewed publications on those limb differences, so that families, associations and researchers can start from the same shelf. Each reference is checked against PubMed and links to its DOI. Filter by condition or theme, or search.</p>
+    <p>Behind every condition described on this site lies a body of research: who is affected, how often, what is known and what is still missing. This bibliography gathers the peer-reviewed publications on those limb differences, and on thalidomide, the drug behind the largest cluster of them, so that families, associations and researchers can start from the same shelf. Each reference is checked against PubMed and links to its DOI. Filter by condition or theme, or search.</p>
     <div class="bib-controls" id="bib-controls">
       <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
       <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
+      <div class="finder-chips bib-focus" id="bib-focus"><button type="button" data-code="thal" aria-pressed="false">Thalidomide</button><span class="bib-focus-help">papers on the drug, its embryopathy and its survivors</span></div>
       <div class="finder-chips" id="bib-topics">{topic_chips}</div>
       <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button> · {years[0]}–{years[-1]}</p>
     </div>
     <ol class="bib-list" id="bib-list">{"".join(items)}</ol>
-    <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
+    <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="bib-more" hidden>Show all matching references</button></p>
+    <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. The thalidomide literature comes from a fixed PubMed title query (thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), re-run at each build. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
 """
 
 # Register 4 · care centres shown on the landing map. Only centres named by a member association (or visited by the

@@ -361,23 +361,31 @@
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");
   if (!list || !q) return;
   var items = Array.prototype.slice.call(list.querySelectorAll(".bib-item")), topic = "";
+  var LIMIT = 60, expanded = false, more = document.getElementById("bib-more"), focus = document.getElementById("bib-focus");
   function apply() {
     var text = q.value.trim().toLowerCase(), code = sel.value, k = 0;
     items.forEach(function (it) {
       var ok = (!text || it.getAttribute("data-text").indexOf(text) !== -1) &&
                (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&
                (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1);
-      it.hidden = !ok; if (ok) k++;
+      if (ok) k++;
+      it.hidden = !ok || (!expanded && k > LIMIT);
     });
     n.textContent = k;
+    if (more) { more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching references"; }
+    if (focus) focus.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-code") === code ? "true" : "false"); });
   }
-  q.addEventListener("input", apply); sel.addEventListener("change", apply); apply();
+  if (more) more.addEventListener("click", function () { expanded = true; apply(); });
+  if (focus) focus.querySelectorAll("button").forEach(function (b) {
+    b.addEventListener("click", function () { sel.value = sel.value === b.getAttribute("data-code") ? "" : b.getAttribute("data-code"); expanded = false; apply(); });
+  });
+  q.addEventListener("input", function () { expanded = false; apply(); }); sel.addEventListener("change", function () { expanded = false; apply(); }); apply();
   chips.querySelectorAll("button").forEach(function (b) {
     b.addEventListener("click", function () {
       var on = b.getAttribute("aria-pressed") === "true";
       chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
-      topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); apply();
+      topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); expanded = false; apply();
     });
   });
-  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; expanded = false; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
 })();

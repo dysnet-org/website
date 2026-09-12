@@ -1,0 +1,176 @@
+[
+ {
+  "name": "Brittany registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "France",
+  "url": "https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/les-registres-des-malformations-congenitales",
+  "registry_ids": [
+   "589005"
+  ]
+ },
+ {
+  "name": "CRANE: The Cleft Registry and Audit Network",
+  "country": "United Kingdom",
+  "url": "https://www.crane-database.org.uk/about/",
+  "registry_ids": [
+   "174925"
+  ]
+ },
+ {
+  "name": "ERN [BOND] & ERN [Endo-ERN] - EuRREB: European Registries for Rare Endocrine and Bone conditions",
+  "country": "Netherlands",
+  "url": "https://eurreb.eu/",
+  "registry_ids": [
+   "700763"
+  ]
+ },
+ {
+  "name": "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development",
+  "country": "France",
+  "url": "https://ern-ithaca.eu/our-research-activities/iliad/",
+  "registry_ids": [
+   "643616"
+  ]
+ },
+ {
+  "name": "EUROCAT (EU RD Platform, JRC)",
+  "country": "Italy",
+  "url": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/",
+  "registry_ids": [
+   "53567",
+   "59428",
+   "59706",
+   "60053",
+   "165837",
+   "175121",
+   "175123",
+   "175519",
+   "179973",
+   "179975",
+   "183949",
+   "447029",
+   "589005"
+  ]
+ },
+ {
+  "name": "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities",
+  "country": "Italy",
+  "url": "https://www.ior.it/ricerca-e-innovazione/studi-clinici/eurr-bone-registro-europeo-le-malattie-rare-scheletriche-e-le",
+  "registry_ids": [
+   "218290"
+  ]
+ },
+ {
+  "name": "HemoNED: Dutch Hemophilia Registry",
+  "country": "Netherlands",
+  "url": "https://hemoned.nl/",
+  "registry_ids": [
+   "613233",
+   "613233"
+  ]
+ },
+ {
+  "name": "MARIANNE: National cohort dedicated to research on the biological and environmental determinants of autism and neurodevelopmental disorders",
+  "country": "France",
+  "url": "https://cohorte-marianne.org/",
+  "registry_ids": [
+   "725764"
+  ]
+ },
+ {
+  "name": "National Cleft Database",
+  "country": "Ireland",
+  "url": "http://www.cleft.ie/?page_id=69",
+  "registry_ids": [
+   "444860"
+  ]
+ },
+ {
+  "name": "National Registry of congenital bleeding disorders (RNCC)",
+  "country": "Italy",
+  "url": "https://www.iss.it/oncologia/-/asset_publisher/Pr6ASUxZJvGg/content/registro-nazionale-coagulopatie-congenite-4",
+  "registry_ids": [
+   "500964"
+  ]
+ },
+ {
+  "name": "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network",
+  "country": "Poland",
+  "url": "http://www.rejestrwad.pl/",
+  "registry_ids": [
+   "181308"
+  ]
+ },
+ {
+  "name": "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "France",
+  "url": "https://remacor.re/",
+  "registry_ids": [
+   "414749"
+  ]
+ },
+ {
+  "name": "RERNA: Population-based Rare Disease Registry of Navarre (Spain)",
+  "country": "Spain",
+  "url": "https://portalsalud.navarra.es/es/observatorio/temas-de-salud/enfermedades-raras",
+  "registry_ids": [
+   "358190"
+  ]
+ },
+ {
+  "name": "RNMR: Italian National Rare Diseases Registry",
+  "country": "Italy",
+  "url": "https://www.registrare.org/schede-6-il_registro_nazionale_malattie_rare",
+  "registry_ids": [
+   "306510",
+   "500972"
+  ]
+ },
+ {
+  "name": "Rare Diseases Registry - Veneto Region",
+  "country": "Italy",
+  "url": "http://malattierare.regione.veneto.it/",
+  "registry_ids": [
+   "74396"
+  ]
+ },
+ {
+  "name": "RePER: Rare Diseases Patient Registry",
+  "country": "Spain",
+  "url": "https://registroraras.isciii.es/Comun/Inicio.aspx",
+  "registry_ids": [
+   "237547"
+  ]
+ },
+ {
+  "name": "Registry for rare diseases in Andalusia (Spain)",
+  "country": "Spain",
+  "url": "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/operaciones/consulta/anual/71223?CodOper=b3_2194&codConsulta=71223",
+  "registry_ids": [
+   "357636"
+  ]
+ },
+ {
+  "name": "Rhône-Alpes registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "France",
+  "url": "https://www.remera.fr/",
+  "registry_ids": [
+   "165837"
+  ]
+ },
+ {
+  "name": "Swiss Cleft Lip and Palate Registry",
+  "country": "Switzerland",
+  "url": "http://swisscleftregistry.org/English/EN_main.html",
+  "registry_ids": [
+   "399507"
+  ]
+ },
+ {
+  "name": "Tuscan Registry of Rare Diseases",
+  "country": "Italy",
+  "url": "https://malattierare.toscana.it/rtmr-dati-statistici/registro-toscano-malattie-rare/",
+  "registry_ids": [
+   "434383"
+  ]
+ }
+]

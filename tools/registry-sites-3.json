@@ -1,0 +1,157 @@
+[
+ {
+  "name": "CEMC-Auvergne - Center for the Study of Congenital Malformations in Auvergne - contributes to the EUROCAT network",
+  "country": "France",
+  "url": "https://portail-fresh.fr/",
+  "registry_ids": [
+   "33346",
+   "589005"
+  ]
+ },
+ {
+  "name": "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "Germany",
+  "url": "http://www.angeborene-fehlbildungen.com/",
+  "registry_ids": [
+   "59478"
+  ]
+ },
+ {
+  "name": "ERN [CRANIO] - ERN CRANIO registry",
+  "country": "Netherlands",
+  "url": "https://www.ern-cranio.eu/ern-cranio-registry",
+  "registry_ids": [
+   "643588"
+  ]
+ },
+ {
+  "name": "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders",
+  "country": "France",
+  "url": "https://ern-skin.eu/erras-registry/",
+  "registry_ids": [
+   "643630"
+  ]
+ },
+ {
+  "name": "EUROCAT Northern Netherlands - contributes to the international EUROCAT network",
+  "country": "Netherlands",
+  "url": "https://www.umcg.nl/-/eurocat",
+  "registry_ids": [
+   "183949"
+  ]
+ },
+ {
+  "name": "French National Registry for Rare Diseases (BNDMR)",
+  "country": "France",
+  "url": "http://www.bndmr.fr/",
+  "registry_ids": [
+   "542523"
+  ]
+ },
+ {
+  "name": "ISMAC: Sicilian registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "Italy",
+  "url": "https://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_AreeTematiche/PIR_Epidemiologia/PIR_Registridipatologia/PIR_RegistroMalformazioni",
+  "registry_ids": [
+   "52840"
+  ]
+ },
+ {
+  "name": "Mainz registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "Germany",
+  "url": "https://www.unimedizin-mainz.de/mainzer_modell/startseite/ueber-uns.html",
+  "registry_ids": [
+   "59492"
+  ]
+ },
+ {
+  "name": "National Congenital Anomaly and Rare Disease Registration Service (NCARDRS)",
+  "country": "United Kingdom",
+  "url": "https://digital.nhs.uk/services/national-disease-registration-service",
+  "registry_ids": [
+   "437789"
+  ]
+ },
+ {
+  "name": "Norwegian Rare Bone Disorder Registry",
+  "country": "Norway",
+  "url": "https://www.oslo-universitetssykehus.no/avdelinger/ortopedisk-klinikk/ortopedisk-avdeling-rikshospitalet/seksjon-for-barneortopedi-og-rekonstruktiv-kirurgi/norsk-register-for-sjeldne-medfodte-bensykdommer/",
+  "registry_ids": [
+   "716193"
+  ]
+ },
+ {
+  "name": "RACAV: Registry of congenital anomalies of the Basque Country (Spain) - contributes to the EUROCAT network",
+  "country": "Spain",
+  "url": "https://www.euskadi.eus/informacion/registro-de-anomalias-congenitas/web01-a3regepi/es/",
+  "registry_ids": [
+   "59706",
+   "593776"
+  ]
+ },
+ {
+  "name": "REMAPAR- Paris registry of congenital anomalies - contributes to the EUROCAT network",
+  "country": "France",
+  "url": "https://cress-umr1153.fr/fr/project/registre-des-malformations-congenitales-de-paris-remapar/",
+  "registry_ids": [
+   "28268"
+  ]
+ },
+ {
+  "name": "RESCUED registry (REgistry for Sudden Cardiac and UnExpected Death)",
+  "country": "Germany",
+  "url": "https://www.unimedizin-ffm.de/einrichtungen/institute/rechtsmedizin/forensische-molekularpathologie-zentrum-ploetzlicher-herztod-u-familiaere-arrhythmiesyndrome/register-ploetzlicher-herztod",
+  "registry_ids": [
+   "700788"
+  ]
+ },
+ {
+  "name": "RaDiCo-GenIDA: International social network for data collection on the natural history of rare monogenic forms of intellectual disabilities",
+  "country": "France",
+  "url": "https://genida.eu/home",
+  "registry_ids": [
+   "477140"
+  ]
+ },
+ {
+  "name": "Rare disease registry of Aragon (Spain)",
+  "country": "Spain",
+  "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VERDOC&BASE=BZHT&PIECE=BOLE&DOCR=6&SEC=FIRMA&RNG=10&SEPARADOR=&&PUBL-C=20130315",
+  "registry_ids": [
+   "358186"
+  ]
+ },
+ {
+  "name": "Register of Congenital Malformations",
+  "country": "Finland",
+  "url": "https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/rekisterien-tietosuojailmoitukset/epamuodostumat",
+  "registry_ids": [
+   "181319"
+  ]
+ },
+ {
+  "name": "Registry for rare diseases in Extremadura (Spain)",
+  "country": "Spain",
+  "url": "https://saludextremadura.ses.es/web/enfermedades-raras",
+  "registry_ids": [
+   "74403",
+   "74403"
+  ]
+ },
+ {
+  "name": "SIER-CV: Information System on rare diseases in Valencian Community (Spain)",
+  "country": "Spain",
+  "url": "https://www.san.gva.es/es/web/salut-publica/enfermedades-no-transmisibles/enfermedades-raras",
+  "registry_ids": [
+   "358366"
+  ]
+ },
+ {
+  "name": "Swiss Rare Disease Registry (SRSK)",
+  "country": "Switzerland",
+  "url": "https://www.raredisease.ch/",
+  "registry_ids": [
+   "572233"
+  ]
+ }
+]

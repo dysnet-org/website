@@ -60,15 +60,18 @@ for doi, (topic, note) in DOIS.items():
 
 # ─── 3. Member association websites ─────────────────────────────────────────
 # Vocabulary of the conditions described on the site (keyword → ORPHAcode or None for the family).
-VOCAB = [
-    (r"\bamelia\b", "294975"), (r"\bphocomelia\b", "2879"), (r"\bmeromelia\b", None), (r"\bhemimelia\b", None),
-    (r"\bectrodactyly|split[- ]hand|split[- ]foot|cleft hand", "2440"), (r"\bsymbrachydactyly", None), (r"\bbrachydactyly", "1570"),
-    (r"\bpolydactyly", "2917"), (r"\bsyndactyly", "1727"), (r"\bpoland\W{0,3}s?\s*syndrome|poland anomaly|poland sequence", "2911"),
-    (r"adams[- ]oliver", "974"), (r"amniotic band|constriction (ring|band)", "1034"), (r"radial (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club)", "93321"),
-    (r"ulnar (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club)|ulnar hemimelia", "93320"), (r"tibial (deficien|aplasia|hemimelia|hypoplasia)", "93322"),
-    (r"fibular? (deficien|aplasia|hemimelia|hypoplasia)", "93323"), (r"femoral (deficien|hypoplasia|focal)|proximal femoral", "295000"),
+VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build-demo.py); None = the dysmelia family in general
+    (r"\btetra-?amelia\b", "3301"), (r"\bamelia\b", "1027"), (r"\bphocomelia\b", "2879"), (r"\bmeromelia\b", None), (r"\bhemimelia\b", None),
+    (r"\bectrodactyly|split[- ]hand|split[- ]foot|cleft hand|\bSHFM\b", "2440"), (r"\bsymbrachydactyly", "1570"), (r"\bbrachydactyly", None),
+    (r"crossed polysyndactyly", "2935"), (r"\bpolydactyly", "2913"), (r"\bsyndactyly", "93458"),
+    (r"\bpoland\W{0,3}s?\s*(syndrome|anomaly|sequence)", "2911"), (r"adams[- ]oliver", "974"), (r"holt[- ]oram", "392"), (r"roberts syndrome|SC phocomelia", "3103"),
+    (r"cenani[- ]lenz", "3258"), (r"thrombocytopenia[- ]absent radius|\bTAR syndrome", "3320"), (r"microgastria", "2538"), (r"tibial aplasia[- ]ectrodactyly", "3329"),
+    (r"amniotic band|constriction (ring|band)|\bABS\b", "295000"),
+    (r"radial (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club|hemimelia)", "93321"),
+    (r"ulnar (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club|hemimelia)", "93320"),
+    (r"tibial (deficien|aplasia|hemimelia|hypoplasia)", "93322"), (r"fibular? (deficien|aplasia|hemimelia|hypoplasia)", "93323"),
+    (r"femoral (deficien|hypoplasia|focal)|proximal femoral", None),
     (r"limb[- ](reduction|deficienc|difference|anomal|malformation|defect|loss|absence)|reduction defect|transverse (deficienc|defect)|(below|above)[- ](elbow|knee) deficien|congenital (upper|lower)[- ]limb|congenital hand|hand difference|dysmelia|dysmelic", None),
-    # thalidomide only when the paper is about embryopathy / survivors, not about the drug's other uses
 ]
 VOCAB = [(re.compile(rx, re.I), code) for rx, code in VOCAB]
 # thalidomide embryopathy: accepted only when the title itself is about the embryopathy or its survivors,
@@ -167,8 +170,33 @@ if MEMBER_FILES:
             extra.append(meta)
         else:
             review.append({"id": ident, "members": members, "status": "unresolved: no PubMed or Crossref record"})
-    (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"member hits accepted: {sum(1 for v in seed.values() if v['via'] - {'Orphanet', 'DysNet'})} via PubMed + {len(extra)} via Crossref | set aside: {len(review)}")
+
+# ─── 4. Thalidomide literature (PubMed, title-level query) ──────────────────
+# Thalidomide caused the largest cluster of limb differences of the 20th century; many DysNet members
+# are survivor associations. The query is fixed and title-restricted so the set is reproducible.
+THAL_QUERY = ('thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR "birth defects"[Title] OR phocomelia[Title] '
+              'OR survivors[Title] OR "limb"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])')
+THAL_EXCL = re.compile(r"anticancer|immunomodulat|angiogenesis|myeloma|lupus|leprosy reaction|erythema nodosum|treatment (with|of)|analog|non-teratogenic|inhibit|therapy for|chemotherap", re.I)
+THAL_KEEP = re.compile(r"embryopath|survivor|phocomelia|birth defect|teratogenic (effect|action|mechanism|activity|potential)|teratogenesis|teratogenicity|limb (malformation|defect|reduction)|victim|Contergan|disaster|tragedy", re.I)
+thal_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(THAL_QUERY)}&retmode=json&retmax=2000"))["esearchresult"]["idlist"]
+print(f"thalidomide query: {len(thal_ids)} PubMed records")
+for i in range(0, len(thal_ids), 50):
+    batch = thal_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+        abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+        if THAL_EXCL.search(title) and not (THAL_KEEP.search(title) and not re.search(r"non-teratogenic", title, re.I)):
+            review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"], "status": "rejected: thalidomide as a drug, not the embryopathy"}); continue
+        r = screen(title + " " + abstract, title)
+        codes, topics = (r if r else (set(), {"clinical"}))
+        codes.add("thal")
+        for t in topics: add(pmid, None, t, "PubMed title search on thalidomide embryopathy", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
 
 # metadata for all PMIDs (batched esummary)
 pmids = sorted(seed)
@@ -189,6 +217,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, and DOIs published on member associations' websites; metadata from NCBI E-utilities / Crossref", "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
+(HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

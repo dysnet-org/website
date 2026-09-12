@@ -452,6 +452,7 @@ PAGES["/knowledge/research-library/"] = {
     <p class="eyebrow">Register 1 · Research library <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">The research, readable.</h1>
     <p>Every entry: a citation, a one-paragraph plain-language summary, and a link to the source. Tagged by condition and topic so families and clinicians find what concerns them.</p>
+    <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="#bibliography">Go straight to the bibliography ↓</a></p>
 
     <div style="margin-top:var(--space-4)">
       <article class="entry">
@@ -475,7 +476,9 @@ PAGES["/knowledge/research-library/"] = {
         <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>
       </article>
     </div>
+    <div id="bibliography">
     {bibliography_html()}
+    </div>
     {REGISTER_FOOT}
   </div>
 </section>

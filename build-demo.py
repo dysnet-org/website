@@ -1209,9 +1209,9 @@ MEMBERS = [
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
     ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
     ("France", [("Assedea", "http://www.assedea.fr")]),
-    ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de")]),
+    ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de", "https://contergan-hessen.de/helfen/")]),
     ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
-    ("Italy", [("Raggiungere", "http://www.raggiungere.it"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
+    ("Italy", [("Raggiungere", "https://www.raggiungere.it", "https://www.raggiungere.it/index.php/come-aiutarci-2020/331-donazioni"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
     ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
     ("Norway", [("Den Norske Thalidomide Forening", None)]),
     ("Spain", [("AVITE", "https://www.avite.org")]),
@@ -1326,7 +1326,7 @@ def member_li(entry):
     else:
         h = name
     if support:
-        h += f' · <a href="{support}" target="_blank" rel="noopener external">support them</a>'
+        h = f'<span>{h}</span><a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>'
     return f"<li>{h}</li>"
 
 PAGES["/about/members/"] = {

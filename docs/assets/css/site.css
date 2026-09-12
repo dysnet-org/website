@@ -701,3 +701,6 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .bib-tag { font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.04em; background: var(--dys-purple-soft); color: var(--dys-purple-text); border-radius: 999px; padding: 0.1rem 0.6rem; }
 .bib-tag.bib-topic { background: var(--dys-green-soft); color: var(--dys-green-text); }
 #bibliography { scroll-margin-top: 8rem; }
+.btn-sm { padding: 0.35rem 0.9rem; font-size: 0.85rem; }
+.country li { display: inline-flex; align-items: center; gap: 0.6rem; }
+.country li:has(.btn-donate) { border-color: var(--dys-green); padding-right: 0.3rem; box-shadow: 0 0 0 3px rgba(76, 196, 44, 0.15); }

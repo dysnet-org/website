@@ -339,3 +339,29 @@
   reopen.addEventListener("click", function () { setOpen(true); close.focus(); });
   try { if (sessionStorage.getItem("dysnet-map-card") === "closed") setOpen(false); } catch (e) {}
 })();
+
+/* ── Bibliography: search + filters ────────────────────────────────── */
+(function () {
+  var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");
+  if (!list || !q) return;
+  var items = Array.prototype.slice.call(list.querySelectorAll(".bib-item")), topic = "";
+  function apply() {
+    var text = q.value.trim().toLowerCase(), code = sel.value, k = 0;
+    items.forEach(function (it) {
+      var ok = (!text || it.getAttribute("data-text").indexOf(text) !== -1) &&
+               (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&
+               (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1);
+      it.hidden = !ok; if (ok) k++;
+    });
+    n.textContent = k;
+  }
+  q.addEventListener("input", apply); sel.addEventListener("change", apply);
+  chips.querySelectorAll("button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") === "true";
+      chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+      topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); apply();
+    });
+  });
+  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+})();

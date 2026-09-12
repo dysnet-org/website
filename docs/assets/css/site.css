@@ -685,3 +685,18 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .start-here-cta { text-align: center; background: var(--dys-green-soft); border-radius: var(--radius-card); padding: var(--space-3); }
 .start-here-cta .btn { white-space: normal; }
 .start-here-cta p { font-size: var(--text-small); color: var(--dys-muted); margin: var(--space-2) 0 0; }
+
+/* ── Bibliography ───────────────────────────────────────────────────── */
+.bib-controls { background: #fff; border: 1px solid var(--dys-line); border-radius: var(--radius-card); padding: var(--space-3); margin: var(--space-3) 0; display: grid; gap: var(--space-2); grid-template-columns: 1fr; }
+@media (min-width: 48rem) { .bib-controls { grid-template-columns: 2fr 1fr; } .bib-controls .finder-chips, .bib-controls .bib-count { grid-column: 1 / -1; } }
+.bib-controls input, .bib-controls select { font: inherit; font-size: var(--text-small); padding: 0.55rem 0.8rem; border: 1.5px solid var(--dys-line); border-radius: 0.6rem; background: var(--dys-bg); color: var(--dys-ink); width: 100%; }
+.bib-count { font-size: var(--text-small); color: var(--dys-muted); margin: 0; }
+.bib-count button { border: 0; background: none; color: var(--dys-purple-text); font: inherit; font-size: var(--text-small); text-decoration: underline; cursor: pointer; padding: 0; }
+.bib-list { list-style: none; padding: 0; margin: 0; max-width: none; }
+.bib-item { background: #fff; border: 1px solid var(--dys-line); border-left: 4px solid var(--acc-library); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); margin-bottom: var(--space-1); }
+.bib-item[hidden] { display: none; }
+.bib-title { font-weight: 700; margin: 0 0 0.25rem; max-width: none; }
+.bib-meta { font-size: var(--text-small); color: var(--dys-muted); margin: 0 0 0.35rem; max-width: none; }
+.bib-tags { margin: 0; max-width: none; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.bib-tag { font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.04em; background: var(--dys-purple-soft); color: var(--dys-purple-text); border-radius: 999px; padding: 0.1rem 0.6rem; }
+.bib-tag.bib-topic { background: var(--dys-green-soft); color: var(--dys-green-text); }

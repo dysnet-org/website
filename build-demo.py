@@ -241,6 +241,53 @@ def opener(num, label, heading, acc=None, big=False):
     </div>"""
 
 
+REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later in this file)
+    "974": "Adams-Oliver syndrome", "1027": "Amelia", "294967": "Amelia of the upper limb", "294969": "Amelia of the lower limb",
+    "295000": "Amniotic band syndrome", "3258": "Cenani-Lenz syndrome", "2935": "Crossed polysyndactyly", "2440": "Ectrodactyly (SHFM)",
+    "93323": "Fibular hemimelia", "392": "Holt-Oram syndrome", "2538": "Microgastria–limb reduction", "2879": "Phocomelia", "2911": "Poland syndrome",
+    "2913": "Polydactyly", "93321": "Radial aplasia", "3103": "Roberts syndrome", "1570": "Symbrachydactyly", "93458": "Syndactyly",
+    "3301": "Tetra-amelia", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
+
+# ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
+BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
+BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "review": "Reviews", "registry methods": "Registry methods"}
+
+
+def bibliography_html():
+    entries = BIB.get("entries", [])
+    names = REG_CODE_NAMES
+    codes_present = sorted({c for e in entries for c in e["codes"]}, key=lambda c: names.get(c, c))
+    topics = sorted({t for e in entries for t in e["topics"]})
+    items = []
+    for e in entries:
+        authors = ", ".join(e["authors"])
+        link = (f'<a href="https://doi.org/{e["doi"]}" target="_blank" rel="noopener external">doi:{e["doi"]}</a>' if e["doi"]
+                else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/" target="_blank" rel="noopener external">PubMed {e["pmid"]}</a>')
+        tags = "".join(f'<span class="bib-tag">{names.get(c, c)}</span>' for c in e["codes"]) + "".join(f'<span class="bib-tag bib-topic">{BIB_TOPIC_LABEL.get(t, t)}</span>' for t in e["topics"])
+        why = e["notes"][0] if e["notes"] else ""
+        text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
+        items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-text="{text}">'
+                     f'<p class="bib-title">{e["title"]}</p><p class="bib-meta">{authors} · <em>{e["journal"]}</em> · {e["year"]}{(" · " + e["volume"]) if e["volume"] else ""}{(":" + e["pages"]) if e["pages"] else ""} · {link}</p>'
+                     f'<p class="bib-tags">{tags}</p></li>')
+    code_opts = "".join(f'<option value="{c}">{names.get(c, c)}</option>' for c in codes_present)
+    topic_chips = "".join(f'<button type="button" data-topic="{t.replace(" ", "_")}" aria-pressed="false">{BIB_TOPIC_LABEL.get(t, t)}</button>' for t in topics)
+    years = sorted({e["year"] for e in entries if e["year"]})
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Bibliography · {len(entries)} references</p>
+    <h2 class="h2">The literature, searchable.</h2>
+    <p>Peer-reviewed publications on limb differences and on how to study them, gathered only from sources we trust: the references Orphanet itself cites for our {len(REG_CODE_NAMES)} conditions, and the publications verified for this site. Titles, authors and DOIs come straight from PubMed’s records, so every line can be checked. Filter by condition or theme, or search.</p>
+    <div class="bib-controls" id="bib-controls">
+      <input type="search" id="bib-q" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
+      <select id="bib-code" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
+      <div class="finder-chips" id="bib-topics">{topic_chips}</div>
+      <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button> · {years[0]}–{years[-1]}</p>
+    </div>
+    <ol class="bib-list" id="bib-list">{"".join(items)}</ol>
+    <p class="annex-note">Built {BIB.get("built", "")} from Orphanet’s epidemiology references (Orphadata, CC BY 4.0) and the sources of the prevalence annex; metadata via NCBI E-utilities. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
+"""
+
 PAGES = {}
 
 # ────────────────────────────── HOME ──────────────────────────────
@@ -433,6 +480,7 @@ PAGES["/knowledge/research-library/"] = {
         <p class="src">Journal · DOI link · topic tags</p>
       </article>
     </div>
+    {bibliography_html()}
     {REGISTER_FOOT}
   </div>
 </section>
@@ -446,12 +494,6 @@ ORPHA_REGS = json.loads(REG_PATH.read_text(encoding="utf-8")) if REG_PATH.exists
 COUNTRY_LABEL = {"SERBIEN": "Serbia"}
 
 
-REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later in this file)
-    "974": "Adams-Oliver syndrome", "1027": "Amelia", "294967": "Amelia of the upper limb", "294969": "Amelia of the lower limb",
-    "295000": "Amniotic band syndrome", "3258": "Cenani-Lenz syndrome", "2935": "Crossed polysyndactyly", "2440": "Ectrodactyly (SHFM)",
-    "93323": "Fibular hemimelia", "392": "Holt-Oram syndrome", "2538": "Microgastria–limb reduction", "2879": "Phocomelia", "2911": "Poland syndrome",
-    "2913": "Polydactyly", "93321": "Radial aplasia", "3103": "Roberts syndrome", "1570": "Symbrachydactyly", "93458": "Syndactyly",
-    "3301": "Tetra-amelia", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
 
 
 def _code_names():

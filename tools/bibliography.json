@@ -1,0 +1,721 @@
+{
+ "built": "2026-09-11",
+ "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, plus publications verified on the site; metadata from NCBI E-utilities",
+ "entries": [
+  {
+   "pmid": "36584346",
+   "doi": "10.1002/ajmg.a.63107",
+   "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
+   "authors": [
+    "Bergman JEH",
+    "Barišić I",
+    "Addor MC",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2023",
+   "volume": "191",
+   "pages": "995-1006",
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)"
+   ]
+  },
+  {
+   "pmid": "37165329",
+   "doi": "10.1186/s12884-023-05660-z",
+   "title": "The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study",
+   "authors": [
+    "Chen ZY",
+    "Li WY",
+    "Xu WL",
+    "et al."
+   ],
+   "journal": "BMC pregnancy and childbirth",
+   "year": "2023",
+   "volume": "23",
+   "pages": "334",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "China, syndactyly"
+   ]
+  },
+  {
+   "pmid": "35449659",
+   "doi": "10.7759/cureus.23297",
+   "title": "Adams-Oliver Syndrome: A Rare Congenital Disorder",
+   "authors": [
+    "Rashid S",
+    "Azeem S",
+    "Riaz S"
+   ],
+   "journal": "Cureus",
+   "year": "2022",
+   "volume": "14",
+   "pages": "e23297",
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Adams-Oliver syndrome (point prevalence, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "36353751",
+   "doi": "10.1002/bdr2.2123",
+   "title": "Amelia and phocomelia in Finland: Characteristics and prevalences in a nationwide population-based study",
+   "authors": [
+    "Pakkasjärvi N",
+    "Syvänen J",
+    "Wiro M",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2022",
+   "volume": "114",
+   "pages": "1427-1433",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Finland, amelia and phocomelia"
+   ]
+  },
+  {
+   "pmid": "34452798",
+   "doi": "10.1016/j.jhsa.2021.07.004",
+   "title": "Histopathological, Ultrastructural, and Immunohistochemical Findings in Radial Longitudinal Deficiency: A Prospective, Observational Study",
+   "authors": [
+    "Mittal S",
+    "Garg B",
+    "Mehta N",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2022",
+   "volume": "47",
+   "pages": "789.e1-789.e8",
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "33690710",
+   "doi": "10.1371/journal.pone.0248105",
+   "title": "Epidemiology of congenital upper limb anomalies in Korea: A nationwide population-based study",
+   "authors": [
+    "Shin YH",
+    "Baek GH",
+    "Kim YJ",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2021",
+   "volume": "16",
+   "pages": "e0248105",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Korea, congenital upper limb anomalies"
+   ]
+  },
+  {
+   "pmid": "31314783",
+   "doi": "10.1371/journal.pone.0219930",
+   "title": "Epidemiology of limb reduction defects as registered in the Medical Birth Registry of Norway, 1970-2016: Population based study",
+   "authors": [
+    "Klungsøyr K",
+    "Nordtveit TI",
+    "Kaastad TS",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2019",
+   "volume": "14",
+   "pages": "e0219930",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Norway, limb reduction defects 1970-2016"
+   ]
+  },
+  {
+   "pmid": "30081484",
+   "doi": "10.3390/ijerph15081644",
+   "title": "Recommendations for Improving the Quality of Rare Disease Registries",
+   "authors": [
+    "Kodra Y",
+    "Weinbach J",
+    "Posada-de-la-Paz M",
+    "et al."
+   ],
+   "journal": "International journal of environmental research and public health",
+   "year": "2018",
+   "volume": "15",
+   "pages": "",
+   "codes": [],
+   "topics": [
+    "registry methods"
+   ],
+   "notes": [
+    "Recommendations for rare disease registries"
+   ]
+  },
+  {
+   "pmid": "28160419",
+   "doi": "10.1002/ajmg.a.37889",
+   "title": "Adams-Oliver syndrome review of the literature: Refining the diagnostic phenotype",
+   "authors": [
+    "Hassed S",
+    "Li S",
+    "Mulvihill J",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2017",
+   "volume": "173",
+   "pages": "790-800",
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Adams-Oliver syndrome (cases/families, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "28669420",
+   "doi": "10.1016/j.jhsa.2017.04.012",
+   "title": "Radial Longitudinal Deficiency: Recent Developments, Controversies, and an Evidence-Based Guide to Treatment",
+   "authors": [
+    "Colen DL",
+    "Lin IC",
+    "Levin LS",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2017",
+   "volume": "42",
+   "pages": "546-563",
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "27909861",
+   "doi": "10.1007/s11832-016-0790-0",
+   "title": "Surgical reconstruction for fibular hemimelia",
+   "authors": [
+    "Paley D"
+   ],
+   "journal": "Journal of children's orthopaedics",
+   "year": "2016",
+   "volume": "10",
+   "pages": "557-583",
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "26254946",
+   "doi": "10.1016/j.jhsa.2015.06.114",
+   "title": "Symbrachydactyly - Diagnosis, Function, and Treatment",
+   "authors": [
+    "Woodside JC",
+    "Light TR"
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2016",
+   "volume": "41",
+   "pages": "135-43; quiz 143",
+   "codes": [],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "Symbrachydactyly: diagnosis, function, treatment"
+   ]
+  },
+  {
+   "pmid": "25410508",
+   "doi": "10.2106/JBJS.N.00155",
+   "title": "High risk for major nonlimb anomalies associated with lower-limb deficiency: a population-based study",
+   "authors": [
+    "Syvänen J",
+    "Nietosvaara Y",
+    "Ritvanen A",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "2014",
+   "volume": "96",
+   "pages": "1898-904",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Finland, lower limb deficiencies"
+   ]
+  },
+  {
+   "pmid": "25344219",
+   "doi": "10.1186/s13023-014-0156-y",
+   "title": "Holt Oram syndrome: a registry-based study in Europe",
+   "authors": [
+    "Barisic I",
+    "Boban L",
+    "Greenlees R",
+    "et al."
+   ],
+   "journal": "Orphanet journal of rare diseases",
+   "year": "2014",
+   "volume": "9",
+   "pages": "156",
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Europe)"
+   ]
+  },
+  {
+   "pmid": "24237863",
+   "doi": "10.1186/1471-2474-14-323",
+   "title": "Birth prevalence for congenital limb defects in the northern Netherlands: a 30-year population-based study",
+   "authors": [
+    "Vasluian E",
+    "van der Sluis CK",
+    "van Essen AJ",
+    "et al."
+   ],
+   "journal": "BMC musculoskeletal disorders",
+   "year": "2013",
+   "volume": "14",
+   "pages": "323",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Northern Netherlands, 30-year birth prevalence of limb defects"
+   ]
+  },
+  {
+   "pmid": "23322606",
+   "doi": "10.1002/ajmg.a.35707",
+   "title": "Characteristics and associated anomalies in radial ray deficiencies in Finland--a population-based study",
+   "authors": [
+    "Pakkasjärvi N",
+    "Koskimies E",
+    "Ritvanen A",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2013",
+   "volume": "161A",
+   "pages": "261-7",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Finland, radial ray deficiencies"
+   ]
+  },
+  {
+   "pmid": "22002956",
+   "doi": "10.1002/ajmg.c.30319",
+   "title": "Amelia: a multi-center descriptive epidemiologic study in a large dataset from the International Clearinghouse for Birth Defects Surveillance and Research, and overview of the literature",
+   "authors": [
+    "Bermejo-Sánchez E",
+    "Cuevas L",
+    "Amar E",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part C, Seminars in medical genetics",
+   "year": "2011",
+   "volume": "157C",
+   "pages": "288-304",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Amelia: ICBDSR multi-centre study"
+   ]
+  },
+  {
+   "pmid": "21601997",
+   "doi": "10.1016/j.jhsa.2011.03.015",
+   "title": "Congenital upper limb deficiencies and associated malformations in Finland: a population-based study",
+   "authors": [
+    "Koskimies E",
+    "Lindfors N",
+    "Gissler M",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2011",
+   "volume": "36",
+   "pages": "1058-65",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Finland, upper limb deficiencies"
+   ]
+  },
+  {
+   "pmid": "20498623",
+   "doi": "10.1097/BPB.0b013e32832d5d7d",
+   "title": "Limb length discrepancy and congenital limb anomalies in fibular hemimelia",
+   "authors": [
+    "Rodriguez-Ramirez A",
+    "Thacker MM",
+    "Becerra LC",
+    "et al."
+   ],
+   "journal": "Journal of pediatric orthopedics. Part B",
+   "year": "2010",
+   "volume": "19",
+   "pages": "436-40",
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "20506663",
+   "doi": "",
+   "title": "[Prevalence of congenital split hand/split foot malformation in Chinese population]",
+   "authors": [
+    "Dai L",
+    "Li YH",
+    "Deng Y",
+    "et al."
+   ],
+   "journal": "Sichuan da xue xue bao. Yi xue ban = Journal of Sichuan University. Medical science edition",
+   "year": "2010",
+   "volume": "41",
+   "pages": "320-3",
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Canada)",
+    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, China)"
+   ]
+  },
+  {
+   "pmid": "18554391",
+   "doi": "10.1186/1750-1172-3-15",
+   "title": "Brachydactyly",
+   "authors": [
+    "Temtamy SA",
+    "Aglan MS"
+   ],
+   "journal": "Orphanet journal of rare diseases",
+   "year": "2008",
+   "volume": "3",
+   "pages": "15",
+   "codes": [],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "Brachydactyly review (Orphanet J Rare Dis)"
+   ]
+  },
+  {
+   "pmid": "16224672",
+   "doi": "10.1055/s-2005-872467",
+   "title": "[Nation-wide registration of limb deficiencies in Germany]",
+   "authors": [
+    "Weber M",
+    "Schröder S",
+    "Berdel P",
+    "et al."
+   ],
+   "journal": "Zeitschrift fur Orthopadie und ihre Grenzgebiete",
+   "year": "2005",
+   "volume": "143",
+   "pages": "534-8",
+   "codes": [
+    "93322"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated tibial hemimelia (prevalence at birth, Europe)"
+   ]
+  },
+  {
+   "pmid": "12072798",
+   "doi": "10.1097/00019605-200207000-00007",
+   "title": "Microgastria-limb reduction anomaly with total amelia",
+   "authors": [
+    "Stewart C",
+    "Stewart M",
+    "Stewart F"
+   ],
+   "journal": "Clinical dysmorphology",
+   "year": "2002",
+   "volume": "11",
+   "pages": "187-90",
+   "codes": [
+    "2538"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Microgastria-limb reduction defect syndrome (cases/families, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "11581472",
+   "doi": "10.1542/peds.108.4.e64",
+   "title": "Limb deficiencies in newborn infants",
+   "authors": [
+    "McGuirk CK",
+    "Westgate MN",
+    "Holmes LB"
+   ],
+   "journal": "Pediatrics",
+   "year": "2001",
+   "volume": "108",
+   "pages": "E64",
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, United States)"
+   ]
+  },
+  {
+   "pmid": "9555583",
+   "doi": "",
+   "title": "Symbrachydactyly involving hands and feet",
+   "authors": [
+    "De Smet L",
+    "Fabry G",
+    "Fryns JP"
+   ],
+   "journal": "Genetic counseling (Geneva, Switzerland)",
+   "year": "1998",
+   "volume": "9",
+   "pages": "23-7",
+   "codes": [
+    "1570"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Symbrachydactyly of hands and feet (cases/families, Worldwide)",
+    "cited by Orphanet for Symbrachydactyly of hands and feet (point prevalence, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "8766141",
+   "doi": "",
+   "title": "A study on limb reduction defects in six European regions",
+   "authors": [
+    "Stoll C",
+    "Calzolari E",
+    "Cornel M",
+    "et al."
+   ],
+   "journal": "Annales de genetique",
+   "year": "1996",
+   "volume": "39",
+   "pages": "99-104",
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Europe)"
+   ]
+  },
+  {
+   "pmid": "8042663",
+   "doi": "10.1002/ajmg.1320500302",
+   "title": "Familial crossed polysyndactyly",
+   "authors": [
+    "Goldstein DJ",
+    "Kambouris M",
+    "Ward RE"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1994",
+   "volume": "50",
+   "pages": "215-23",
+   "codes": [
+    "2935"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Crossed polysyndactyly (cases/families, Worldwide)",
+    "cited by Orphanet for Crossed polysyndactyly (point prevalence, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "20301332",
+   "doi": "",
+   "title": "ESCO2 Spectrum Disorder",
+   "authors": [
+    "Adam MP",
+    "Bick S",
+    "Mirzaa GM",
+    "et al."
+   ],
+   "journal": "",
+   "year": "1993",
+   "volume": "",
+   "pages": "",
+   "codes": [
+    "3103"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Roberts syndrome (cases/families, Worldwide)",
+    "cited by Orphanet for Roberts syndrome (point prevalence, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "20301453",
+   "doi": "",
+   "title": "Tetra-Amelia Syndrome – RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY",
+   "authors": [
+    "Adam MP",
+    "Bick S",
+    "Mirzaa GM",
+    "et al."
+   ],
+   "journal": "",
+   "year": "1993",
+   "volume": "",
+   "pages": "",
+   "codes": [
+    "3301"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Tetraamelia-multiple malformations syndrome (cases/families, Worldwide)",
+    "cited by Orphanet for Tetraamelia-multiple malformations syndrome (point prevalence, Worldwide)"
+   ]
+  },
+  {
+   "pmid": "1996196",
+   "doi": "",
+   "title": "[Holt-Oram syndrome]",
+   "authors": [
+    "Elek C",
+    "Vitéz M",
+    "Czeizel E"
+   ],
+   "journal": "Orvosi hetilap",
+   "year": "1991",
+   "volume": "132",
+   "pages": "73-4, 77-8",
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Hungary)"
+   ]
+  },
+  {
+   "pmid": "205132",
+   "doi": "10.1002/ajmg.1320010108",
+   "title": "Poland syndrome in British Columbia: incidence and reproductive experience of affected persons",
+   "authors": [
+    "McGillivray BC",
+    "Lowry RB"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1977",
+   "volume": "1",
+   "pages": "65-74",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Poland syndrome (point prevalence, Canada)",
+    "cited by Orphanet for Poland syndrome (prevalence at birth, Canada)"
+   ]
+  }
+ ]
+}

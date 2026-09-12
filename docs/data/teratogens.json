@@ -60,6 +60,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dichlorodiphenyldichloroethylene",
    "level": "known",
    "source_codes": [
     "p65"
@@ -97,6 +98,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethylene_glycol_diethyl_ether",
    "level": "known",
    "source_codes": [
     "clp"
@@ -127,6 +129,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Butadiene",
    "level": "known",
    "source_codes": [
     "p65"
@@ -157,6 +160,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Busulfan",
    "level": "known",
    "source_codes": [
     "p65"
@@ -187,6 +191,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lomustine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -238,6 +243,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1-Bromopropane",
    "level": "known",
    "source_codes": [
     "clp",
@@ -269,6 +275,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2,3,7,8-Tetrachlorodibenzodioxin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -299,6 +306,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2,4-DB",
    "level": "known",
    "source_codes": [
     "p65"
@@ -329,6 +337,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -359,6 +368,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dichlorprop",
    "level": "known",
    "source_codes": [
     "p65"
@@ -410,6 +420,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Ethoxyethanol",
    "level": "known",
    "source_codes": [
     "clp",
@@ -462,6 +473,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Ethoxyethyl_acetate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -493,6 +505,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Ethylhexanoic_acid",
    "level": "known",
    "source_codes": [
     "p65"
@@ -544,6 +557,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Methoxyethanol",
    "level": "known",
    "source_codes": [
     "clp",
@@ -596,6 +610,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp",
@@ -646,6 +661,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bromoxynil",
    "level": "known",
    "source_codes": [
     "clp",
@@ -698,6 +714,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bisphenol_S",
    "level": "known",
    "source_codes": [
     "clp",
@@ -729,6 +746,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Abiraterone_acetate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -759,6 +777,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Acetazolamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -789,6 +808,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Acetohydroxamic_acid",
    "level": "known",
    "source_codes": [
     "p65"
@@ -819,6 +839,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Acrylamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -849,6 +870,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dactinomycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -874,6 +896,7 @@
     "EU / EEA": "Legal; no EU-wide pregnancy warning is mandatory on labels (Regulation 1169/2011 exempts alcoholic beverages from ingredient and nutrition labelling).",
     "France": "Legal; a pregnancy warning message or pictogram is mandatory on every alcoholic beverage (arrêté of 2 October 2006)."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethanol",
    "level": "known",
    "source_codes": [
     "who"
@@ -904,6 +927,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tretinoin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -934,6 +958,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Alprazolam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -964,6 +989,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Altretamine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -994,6 +1020,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Amantadine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1024,6 +1051,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Amikacin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1054,6 +1082,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Aminoglutethimide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1084,6 +1113,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Aminoglycoside",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1114,6 +1144,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Aminopterin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1144,6 +1175,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Amiodarone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1174,6 +1206,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Amitraz",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1204,6 +1237,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Amoxapine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1234,6 +1268,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Angiotensin-converting_enzyme",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1264,6 +1299,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Anisindione",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1294,6 +1330,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Arsenic",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1324,6 +1361,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Aspirin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1354,6 +1392,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Atenolol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1384,6 +1423,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Atrazine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1414,6 +1454,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Auranofin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1444,6 +1485,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Abamectin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1474,6 +1516,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Azathioprine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1504,6 +1547,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Barbiturate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1555,6 +1599,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benzyl_butyl_phthalate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -1586,6 +1631,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Beclometasone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1637,6 +1683,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benomyl",
    "level": "known",
    "source_codes": [
     "clp",
@@ -1668,6 +1715,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benzene",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1698,6 +1746,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benzodiazepine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1728,6 +1777,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benzphetamine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1758,6 +1808,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bevacizumab",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1809,6 +1860,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bis(2-ethylhexyl)_phthalate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -1840,6 +1892,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carmustine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1870,6 +1923,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bisphenol_A",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1907,6 +1961,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Brodifacoum",
    "level": "known",
    "source_codes": [
     "clp"
@@ -1937,6 +1992,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bromacil",
    "level": "known",
    "source_codes": [
     "p65"
@@ -1986,6 +2042,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bromoxynil_octanoate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -2017,6 +2074,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Butabarbital_sodium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2047,6 +2105,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2077,6 +2136,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cannabis",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2107,6 +2167,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carbamazepine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2137,6 +2198,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carbaryl",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2186,6 +2248,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carbon_disulfide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -2238,6 +2301,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carbon_monoxide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -2269,6 +2333,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carboplatin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2299,6 +2364,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chenodeoxycholic_acid",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2329,6 +2395,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlorambucil",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2359,6 +2426,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlorcyclizine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2389,6 +2457,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlordecone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2419,6 +2488,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlordiazepoxide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2449,6 +2519,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlordiazepoxide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2498,6 +2569,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chloroform",
    "level": "known",
    "source_codes": [
     "clp",
@@ -2529,6 +2601,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlorpyrifos",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2559,6 +2632,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlorsulfuron",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2589,6 +2663,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chromium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2619,6 +2694,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cidofovir",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2649,6 +2725,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cladribine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2679,6 +2756,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Clarithromycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2709,6 +2787,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Clobetasol_propionate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2739,6 +2818,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Clomiphene_citrate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2769,6 +2849,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Clorazepate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2799,6 +2880,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cocaine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2829,6 +2911,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Codeine_phosphate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2859,6 +2942,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Colchicine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2889,6 +2973,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Conjugated_estrogens",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2919,6 +3004,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyanazine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -2949,6 +3035,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -3000,6 +3087,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cycloheximide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -3031,6 +3119,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyclophosphamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3061,6 +3150,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyclophosphamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3091,6 +3181,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyhexatin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3121,6 +3212,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cytarabine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3151,6 +3243,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dacarbazine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3181,6 +3274,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Danazol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3211,6 +3305,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Daunorubicin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3241,6 +3336,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Demeclocycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3271,6 +3367,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -3301,6 +3398,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -3331,6 +3429,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diisodecyl_phthalate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3361,6 +3460,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3391,6 +3491,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diazoxide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3442,6 +3543,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dibutyl_phthalate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -3473,6 +3575,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dichloroacetic_acid",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3503,6 +3606,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dichlorophen",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3533,6 +3637,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diclofenamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3563,6 +3668,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -3593,6 +3699,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dicoumarol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3623,6 +3730,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diethylstilbestrol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3653,6 +3761,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diflunisal",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3683,6 +3792,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dihydroergotamine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3713,6 +3823,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diltiazem_hydrochloride",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3764,6 +3875,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nitrous_oxide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -3816,6 +3928,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp",
@@ -3868,6 +3981,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dinoseb",
    "level": "known",
    "source_codes": [
     "clp",
@@ -3899,6 +4013,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phenytoin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3929,6 +4044,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -3959,6 +4075,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Doxorubicin_hydrochloride",
    "level": "known",
    "source_codes": [
     "p65"
@@ -3989,6 +4106,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Doxycycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4019,6 +4137,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Doxycycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4049,6 +4168,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Doxycycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4079,6 +4199,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Doxycycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4109,6 +4230,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Endrin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4139,6 +4261,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Passive_smoking",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4169,6 +4292,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ergotamine_tartrate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4199,6 +4323,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Estropipate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4229,6 +4354,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethionamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4259,6 +4385,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -4289,6 +4416,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/EPTC_(herbicide)",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4319,6 +4447,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1,2-Dibromoethane",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4349,6 +4478,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethylene_glycol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4400,6 +4530,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethylene_oxide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -4452,6 +4583,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethylene_thiourea",
    "level": "known",
    "source_codes": [
     "clp",
@@ -4483,6 +4615,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Etodolac",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4513,6 +4646,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Etoposide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4543,6 +4677,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Etretinate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4573,6 +4708,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fenoxaprop_ethyl",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4622,6 +4758,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Triphenyltin_hydroxide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -4653,6 +4790,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Filgrastim",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4678,6 +4816,7 @@
    "jurisdictions": {
     "EU / EEA": "Authorised; contraindicated in pregnancy and in women of childbearing potential not using effective contraception."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fingolimod",
    "level": "known",
    "source_codes": [
     "ema"
@@ -4729,6 +4868,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp",
@@ -4760,6 +4900,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flunisolide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4790,6 +4931,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluorouracil",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4820,6 +4962,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluoxymesterone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4850,6 +4993,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flurazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4880,6 +5024,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flurbiprofen",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4910,6 +5055,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flutamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4940,6 +5086,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluticasone_propionate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -4970,6 +5117,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluvalinate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5000,6 +5148,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ganciclovir",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5030,6 +5179,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ganciclovir_sodium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5060,6 +5210,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Goserelin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5090,6 +5241,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Halazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5120,6 +5272,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ulobetasol_propionate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5150,6 +5303,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Haloperidol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5180,6 +5334,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Halothane",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5210,6 +5365,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Heptachlor",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5240,6 +5396,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Hexachlorobenzene",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5270,6 +5427,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Hexafluoroacetone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5300,6 +5458,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Histrelin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5330,6 +5489,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Hydramethylnon",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5360,6 +5520,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Hydroxycarbamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5390,6 +5551,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Idarubicin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5420,6 +5582,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ifosfamide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5450,6 +5613,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Iodine-131",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5490,6 +5654,7 @@
     "EU / EEA": "Authorised with a pregnancy prevention programme; contraindicated in pregnancy.",
     "USA": "Isotretinoin authorised under the iPLEDGE REMS programme."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Isotretinoin",
    "level": "known",
    "source_codes": [
     "ema",
@@ -5541,6 +5706,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead_styphnate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5571,6 +5737,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead_[Basis_for_listing_changed_effective_November_22,_2013]",
    "level": "known",
    "source_codes": [
     "p65"
@@ -5608,6 +5775,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Basic_lead_acetate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5645,6 +5813,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -5682,6 +5851,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead(II)_chromate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5719,6 +5889,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -5756,6 +5927,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -5793,6 +5965,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead(II)_acetate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5843,6 +6016,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead(II)_azide",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5880,6 +6054,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -5917,6 +6092,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead_hydrogen_arsenate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -5967,6 +6143,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead",
    "level": "known",
    "source_codes": [
     "clp"
@@ -6004,6 +6181,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -6041,6 +6219,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -6071,6 +6250,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Leuprorelin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6101,6 +6281,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/L-DOPA",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6152,6 +6333,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Linuron",
    "level": "known",
    "source_codes": [
     "clp",
@@ -6183,6 +6365,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lithium_carbonate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6213,6 +6396,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lithium_citrate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6243,6 +6427,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lorazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6273,6 +6458,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lovastatin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6303,6 +6489,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mebendazole",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6333,6 +6520,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Medroxyprogesterone_acetate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6363,6 +6551,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Megestrol_acetate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6393,6 +6582,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Melphalan",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6423,6 +6613,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Follicle-stimulating_hormone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6453,6 +6644,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Meprobamate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6483,6 +6675,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mercaptopurine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6513,6 +6706,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -6543,6 +6737,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Metacycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6573,6 +6768,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Metam_sodium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6603,6 +6799,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methanol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6633,6 +6830,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methazole",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6663,6 +6861,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Thiamazole",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6702,6 +6901,7 @@
     },
     "EU / EEA": "Authorised; contraindicated in pregnancy for non-oncology indications, with contraception requirements."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methotrexate",
    "level": "known",
    "source_codes": [
     "ema",
@@ -6733,6 +6933,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methotrexate_sodium",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6763,6 +6964,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bromomethane",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6793,6 +6995,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chloromethane",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6823,6 +7026,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methyl_isobutyl_ketone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6872,6 +7076,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methyl_isocyanate",
    "level": "known",
    "source_codes": [
     "clp",
@@ -6903,6 +7108,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methyl_isopropyl_ketone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6933,6 +7139,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methylmercury",
    "level": "known",
    "source_codes": [
     "p65"
@@ -6963,6 +7170,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Hexanone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7000,6 +7208,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -7030,6 +7239,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methyltestosterone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7060,6 +7270,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -7090,6 +7301,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Midazolam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7120,6 +7332,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Minocycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7150,6 +7363,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Misoprostol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7180,6 +7394,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mitoxantrone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7210,6 +7425,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -7259,6 +7475,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Myclobutanil",
    "level": "known",
    "source_codes": [
     "clp",
@@ -7286,6 +7503,7 @@
     "EU / EEA": "Authorised with pregnancy prevention measures; contraindicated in pregnancy unless no suitable alternative.",
     "USA": "Authorised under an FDA REMS programme."
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "ema"
@@ -7337,6 +7555,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dimethylacetamide",
    "level": "known",
    "source_codes": [
     "clp",
@@ -7389,6 +7608,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/N-Methyl-2-pyrrolidone",
    "level": "known",
    "source_codes": [
     "clp",
@@ -7420,6 +7640,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -7450,6 +7671,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nafarelin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7480,6 +7702,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Neomycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7510,6 +7733,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Netilmicin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7540,6 +7764,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7570,6 +7795,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nicotine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7600,6 +7826,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nifedipine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7630,6 +7857,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nimodipine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7660,6 +7888,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nitrapyrin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7690,6 +7919,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlormethine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7720,6 +7950,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nitrogen_mustard",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7750,6 +7981,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Norethisterone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7780,6 +8012,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Norethisterone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7810,6 +8043,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Norethisterone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7840,6 +8074,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Norethisterone_acetate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7870,6 +8105,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Norgestrel",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7900,6 +8136,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/O,p%27-DDT",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7930,6 +8167,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -7960,6 +8198,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Oxazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -7990,6 +8229,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Oxymetholone",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8020,6 +8260,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Oxytetracycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8050,6 +8291,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Oxytetracycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8080,6 +8322,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -8110,6 +8353,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/DDT",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8140,6 +8384,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/p,p'-Oxybis(benzenesulfonyl_hydrazide)__Delisted_December_13,_2013_[Click_here_for_the_basis_for_delisting]",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8170,6 +8415,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Paclitaxel",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8200,6 +8446,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Paramethadione",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8230,6 +8477,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Penicillamine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8260,6 +8508,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pentobarbital",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8290,6 +8539,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pentostatin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8320,6 +8570,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Perfluorooctanesulfonic_acid",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8371,6 +8622,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Perfluorooctanoic_acid",
    "level": "known",
    "source_codes": [
     "clp",
@@ -8402,6 +8654,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pertuzumab",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8432,6 +8685,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phenacemide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8462,6 +8716,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phenprocoumon",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8492,6 +8747,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phenylphosphine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8522,6 +8778,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pimozide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8552,6 +8809,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pipobroman",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8582,6 +8840,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Plicamycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8612,6 +8871,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Polybrominated_biphenyl",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8642,6 +8902,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Polychlorinated_biphenyl",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8672,6 +8933,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sodium_dimethyldithiocarbamate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8702,6 +8964,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pravastatin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8732,6 +8995,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Prednisolone_sodium_phosphate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8762,6 +9026,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Procarbazine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8792,6 +9057,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Propargite",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8822,6 +9088,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -8852,6 +9119,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Propylthiouracil",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8882,6 +9150,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pyrimethamine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8912,6 +9181,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Quazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8942,6 +9212,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Resmethrin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -8972,6 +9243,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -9002,6 +9274,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ribavirin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9032,6 +9305,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Rifampicin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9062,6 +9336,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Secobarbital",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9092,6 +9367,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sermorelin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9129,6 +9405,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -9159,6 +9436,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Simazine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9196,6 +9474,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "clp"
@@ -9226,6 +9505,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sodium_dimethyldithiocarbamate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9256,6 +9536,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Streptomycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9286,6 +9567,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Streptozotocin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9316,6 +9598,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sulfur_dioxide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9346,6 +9629,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sulindac",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9376,6 +9660,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tamoxifen",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9406,6 +9691,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Temazepam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9436,6 +9722,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Teniposide",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9466,6 +9753,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -9496,6 +9784,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tert-Amyl_methyl_ether",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9526,6 +9815,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Testosterone_cypionate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9556,6 +9846,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Testosterone_enanthate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9607,6 +9898,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel_tetracarbonyl",
    "level": "known",
    "source_codes": [
     "clp",
@@ -9638,6 +9930,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetracycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9668,6 +9961,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetracycline",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9698,6 +9992,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetracycline_antibiotics",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9738,6 +10033,7 @@
     "EU / EEA": "Authorised (multiple myeloma) only within a pregnancy prevention programme; contraindicated in pregnancy and in women of childbearing potential without the programme.",
     "USA": "Authorised under the FDA THALOMID REMS programme."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Thalidomide",
    "level": "known",
    "source_codes": [
     "ema",
@@ -9769,6 +10065,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tioguanine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9799,6 +10096,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tobacco_smoking",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9829,6 +10127,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tobramycin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9878,6 +10177,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Toluene",
    "level": "known",
    "source_codes": [
     "clp",
@@ -9918,6 +10218,7 @@
     },
     "EU / EEA": "Authorised with a pregnancy prevention programme; contraindicated in pregnancy for migraine prevention and in epilepsy unless no alternative."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Topiramate",
    "level": "known",
    "source_codes": [
     "ema",
@@ -9949,6 +10250,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Triadimefon",
    "level": "known",
    "source_codes": [
     "p65"
@@ -9979,6 +10281,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Triazolam",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10009,6 +10312,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -10039,6 +10343,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trichloroethylene",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10069,6 +10374,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Triethylenetetramine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10099,6 +10405,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": null,
    "level": "known",
    "source_codes": [
     "p65"
@@ -10136,6 +10443,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lead(II)_phosphate",
    "level": "known",
    "source_codes": [
     "clp"
@@ -10166,6 +10474,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trilostane",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10196,6 +10505,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trimethadione",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10226,6 +10536,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trimetrexate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10256,6 +10567,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Uramustine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10286,6 +10598,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ethyl_carbamate",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10316,6 +10629,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Urofollitropin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10356,6 +10670,7 @@
     "EU / EEA": "Authorised with a pregnancy prevention programme; contraindicated in pregnancy for epilepsy unless no alternative, and for bipolar disorder.",
     "USA": "Authorised with a boxed warning on foetal risk."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Valproate",
    "level": "known",
    "source_codes": [
     "ema",
@@ -10387,6 +10702,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vinblastine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10438,6 +10754,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vinclozolin",
    "level": "known",
    "source_codes": [
     "clp",
@@ -10469,6 +10786,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vincristine",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10499,6 +10817,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vismodegib",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10529,6 +10848,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Warfarin",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10566,6 +10886,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Warfarin",
    "level": "known",
    "source_codes": [
     "clp"
@@ -10596,6 +10917,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Zileuton",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10626,6 +10948,7 @@
      "enforcement": "Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetrahydrocannabinol",
    "level": "known",
    "source_codes": [
     "p65"
@@ -10663,6 +10986,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1,2,4-Triazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10700,6 +11024,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10737,6 +11062,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1,2-benzenedicarboxylic_acid,_dipentylester,_branched_and_linear_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10774,6 +11100,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phthalic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10811,6 +11138,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Phthalic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10848,6 +11176,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Triethylene_glycol_dimethyl_ether",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10885,6 +11214,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dimethoxyethane",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10922,6 +11252,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10959,6 +11290,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1-Vinylimidazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -10996,6 +11328,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2,4,6-Tri-tert-butylphenol",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11033,6 +11366,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Aminoethylethanolamine",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11070,6 +11404,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-(2-Methoxyethoxy)ethanol",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11107,6 +11442,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lilial",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11144,6 +11480,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-(dimethylamino)-2-[(4-methylphenyl)methyl]-1-[4-(morpholin-4-yl)phenyl]butan-1-one",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11181,6 +11518,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-[2-hydroxy-3-(2-chlorophenyl)carbamoyl-1-naphthylazo]-7-[2-hydroxy-3-(3-methylphenyl)carbamoyl-1-naphthylazo]fluoren-9-one",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11218,6 +11556,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11255,6 +11594,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11292,6 +11632,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11329,6 +11670,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11366,6 +11708,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11403,6 +11746,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-ethylhexyl[[[3,5-bis(1,1-dimethylethyl)-4-hydroxyphenyl]methyl]thio]acetate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11440,6 +11784,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11477,6 +11822,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11514,6 +11860,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11551,6 +11898,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11588,6 +11936,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-Methylimidazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11625,6 +11974,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11662,6 +12012,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/4-Methylimidazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11699,6 +12050,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/6-[(C10-C13)-alkyl-(branched,_unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11736,6 +12088,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/6-[C12-18-alkyl-(branched,_unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11773,6 +12126,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/6-[C12-18-alkyl-(branched,_unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic_acid,_sodium_and_tris(2-hydroxyethyl)ammonium_salts",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11810,6 +12164,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11847,6 +12202,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11872,6 +12228,7 @@
    "jurisdictions": {
     "EU / EEA": "Authorised; contraindicated in pregnancy."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ambrisentan",
    "level": "presumed",
    "source_codes": [
     "ema"
@@ -11909,6 +12266,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ammonium_bromide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11946,6 +12304,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ammonium_dichromate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -11983,6 +12342,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12020,6 +12380,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12057,6 +12418,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Barium_borate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12094,6 +12456,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benzo(a)pyrene",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12131,6 +12494,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Binapacryl",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12168,6 +12532,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetraethylene_glycol_dimethyl_ether",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12205,6 +12570,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diglyme",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12242,6 +12608,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bis(2-methoxyethyl)_phthalate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12279,6 +12646,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dicumyl_peroxide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12316,6 +12684,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/boric_acid_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12341,6 +12710,7 @@
    "jurisdictions": {
     "EU / EEA": "Authorised; contraindicated in pregnancy and in women of childbearing potential not using reliable contraception."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bosentan",
    "level": "presumed",
    "source_codes": [
     "ema"
@@ -12378,6 +12748,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bromadiolone",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12415,6 +12786,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium_chloride",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12452,6 +12824,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium_fluoride",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12489,6 +12862,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium_sulfate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12526,6 +12900,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Carbendazim",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12563,6 +12938,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12600,6 +12976,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vilsmeier_reagent",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12637,6 +13014,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlorophacinone",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12674,6 +13052,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Coumatetralyl",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12711,6 +13090,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyproconazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12748,6 +13128,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Boron_trioxide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12785,6 +13166,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12822,6 +13204,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12859,6 +13242,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12896,6 +13280,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12933,6 +13318,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dibutyltin_dilaurate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -12970,6 +13356,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13007,6 +13394,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13044,6 +13432,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dibutyltin_oxide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13081,6 +13470,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13118,6 +13508,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13155,6 +13546,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Difenacoum",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13192,6 +13584,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Difethialone",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13229,6 +13622,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13266,6 +13660,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Diisobutyl_phthalate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13303,6 +13698,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13340,6 +13736,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13377,6 +13774,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13414,6 +13812,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dinoterb",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13451,6 +13850,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/dioctyltin_dilaurate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13488,6 +13888,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13525,6 +13926,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Octabromodiphenyl_ether",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13562,6 +13964,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/disodium_octaborate_anhydrous_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13599,6 +14002,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Epoxiconazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13636,6 +14040,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13673,6 +14078,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13710,6 +14116,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flocoumafen",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13747,6 +14154,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13784,6 +14192,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flusilazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13821,6 +14230,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Formamide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13858,6 +14268,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Glufosinate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13895,6 +14306,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Halosulfuron-methyl",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13932,6 +14344,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Imidazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13969,6 +14382,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -13995,6 +14409,7 @@
     "EU / EEA": "Authorised within a pregnancy prevention programme; contraindicated in pregnancy.",
     "USA": "Authorised under an FDA REMS programme."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Lenalidomide",
    "level": "presumed",
    "source_codes": [
     "ema"
@@ -14020,6 +14435,7 @@
    "jurisdictions": {
     "EU / EEA": "Authorised; contraindicated in pregnancy."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Macitentan",
    "level": "presumed",
    "source_codes": [
     "ema"
@@ -14057,6 +14473,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mancozeb",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14094,6 +14511,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mercury_(element)",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14131,6 +14549,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methoxyacetic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14168,6 +14587,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methylazoxymethanol_acetate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14205,6 +14625,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14242,6 +14663,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dimethylformamide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14279,6 +14701,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14316,6 +14739,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/N-[6,9-dihydro-9-[[2-hydroxy-1-(hydroxymethyl)ethoxy]methyl]-6-oxo-1H-purin-2-yl]acetamide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14353,6 +14777,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pentetic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14390,6 +14815,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14427,6 +14853,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/N-Methylacetamide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14464,6 +14891,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/N-Methylformamide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14501,6 +14929,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14538,6 +14967,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14575,6 +15005,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14612,6 +15043,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_carbonate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14649,6 +15081,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_di(acetate)_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14686,6 +15119,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14723,6 +15157,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_dichlorate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14760,6 +15195,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_chloride",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14797,6 +15233,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14834,6 +15271,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_difluoride_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14871,6 +15309,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_diformate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14908,6 +15347,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_dihydroxide_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14945,6 +15385,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -14982,6 +15423,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_dinitrate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15019,6 +15461,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_perchlorate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15056,6 +15499,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel_dipotassium_bis(sulfate)_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15093,6 +15537,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_thiocyanate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15130,6 +15575,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15167,6 +15613,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_selenate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15204,6 +15651,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_sulfate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15241,6 +15689,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15278,6 +15727,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nickel(II)_stearate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15315,6 +15765,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nickel(II)_trifluoroacetate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15352,6 +15803,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Nitrofen",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15389,6 +15841,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nonadecafluorodecanoic_acid_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15426,6 +15879,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15463,6 +15917,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15500,6 +15955,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15537,6 +15993,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/perboric_acid,_sodium_salt_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15574,6 +16031,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15611,6 +16069,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/perfluorononan-1-oic_acid_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15648,6 +16107,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Perfluorooctanesulfonic_acid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15685,6 +16145,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15711,6 +16172,7 @@
     "EU / EEA": "Authorised within a pregnancy prevention programme; contraindicated in pregnancy.",
     "USA": "Authorised under an FDA REMS programme."
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pomalidomide",
    "level": "presumed",
    "source_codes": [
     "ema"
@@ -15748,6 +16210,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/potassium_1-methyl-3-morpholinocarbonyl-4-[3-(1-methyl-3-morpholinocarbonyl-5-oxo-2-pyrazolin-4-ylidene)-1-propenyl]pyrazole-5-olate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15785,6 +16248,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Potassium_dichromate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15822,6 +16286,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Propiconazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15859,6 +16324,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Zinc_pyrithione",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15896,6 +16362,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/8-Hydroxyquinoline",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15933,6 +16400,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -15970,6 +16438,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Reaction_mass_of_3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9RS)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide_and_3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9SR)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide_[≥_78_%_syn_isomers_≤_15_%_anti_isomers_relative_content]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16007,6 +16476,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16044,6 +16514,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/reaction_mass_of:_4-[[bis-(4-fluorophenyl)methylsilyl]methyl]-4H-1,2,4-triazole",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16081,6 +16552,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16118,6 +16590,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16155,6 +16628,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16192,6 +16666,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16229,6 +16704,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sodium_chromate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16266,6 +16742,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Sodium_dichromate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16303,6 +16780,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16340,6 +16818,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tellurium",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16377,6 +16856,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tellurium_dioxide",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16414,6 +16894,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16451,6 +16932,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/tetraboron_disodium_heptaoxide,_hydrate_[1]",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16488,6 +16970,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tetrahydrofurfuryl_alcohol",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16525,6 +17008,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16562,6 +17046,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16599,6 +17084,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Theophylline",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16636,6 +17122,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Thiacloprid",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16673,6 +17160,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16710,6 +17198,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16747,6 +17236,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tridemorph",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16784,6 +17274,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16821,6 +17312,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trimethyl_borate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16858,6 +17350,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Trimethyl_phosphate",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16895,6 +17388,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": null,
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16932,6 +17426,7 @@
      "work": "Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Salpn_ligand",
    "level": "presumed",
    "source_codes": [
     "clp"
@@ -16967,6 +17462,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/(RS)-1-{1-ethyl-4-[4-mesyl-3-(2-methoxyethoxy)-o-toluoyl]pyrazol-5-yloxy}ethyl_methyl_carbonate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17002,6 +17498,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/1,3,5-Trioxane",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17037,6 +17534,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17072,6 +17570,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/2-ethylhexyl_10-ethyl-4-[[2-[(2-ethylhexyl)oxy]-2-oxoethyl]thio]-4-methyl-7-oxo-8-oxa-3,5-dithia-4-stannatetradecanoate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17107,6 +17606,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17142,6 +17642,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17177,6 +17678,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Abamectin",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17212,6 +17714,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Acetamiprid",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17247,6 +17750,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/3-Amino-1,2,4-triazole",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17282,6 +17786,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Benfluralin",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17317,6 +17822,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Bentazon",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17352,6 +17858,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17387,6 +17894,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17422,6 +17930,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Butroxydim",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17457,6 +17966,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17492,6 +18002,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17527,6 +18038,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cadmium_sulfide",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17562,6 +18074,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Chlortoluron",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17597,6 +18110,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Quaternium-15",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17632,6 +18146,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Cyanamide",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17667,6 +18182,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17702,6 +18218,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17737,6 +18254,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17772,6 +18290,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Dimethyltin_dichloride",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17807,6 +18326,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17842,6 +18362,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Congo_red",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17877,6 +18398,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/disodium_4-amino-3-[[4'-[(2,4-diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo]-5-hydroxy-6-(phenylazo)naphtalene-2,7-disulphonate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17912,6 +18434,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Vanadium(V)_oxide",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17947,6 +18470,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mirex",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -17982,6 +18506,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18017,6 +18542,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18052,6 +18578,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fenarimol",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18087,6 +18614,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18122,6 +18650,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fenpropimorph",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18157,6 +18686,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fentin_acetate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18192,6 +18722,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluazifop",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18227,6 +18758,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluazinam",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18262,6 +18794,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Flumioxazin",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18297,6 +18830,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Fluopicolide",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18332,6 +18866,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Hexabromocyclododecane_[1]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18367,6 +18902,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18402,6 +18938,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18437,6 +18974,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18472,6 +19010,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ioxynil",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18507,6 +19046,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Ioxynil_octanoate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18542,6 +19082,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Isoxaflutole",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18577,6 +19118,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/malachite_green_hydrochloride_[1]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18612,6 +19154,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Maneb",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18647,6 +19190,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Margosa,_ext._[from_the_kernels_of_Azadirachta_indica_extracted_with_water_and_further_processed_with_organic_solvents]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18682,6 +19226,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Mesotrione",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18717,6 +19262,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Metaflumizone",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18752,6 +19298,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18787,6 +19334,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Methyl_salicylate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18822,6 +19370,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/nonylphenol_[1]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18857,6 +19406,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18892,6 +19442,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Paclobutrazol",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18927,6 +19478,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18962,6 +19514,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pendimethalin",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -18997,6 +19550,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pinoxaden",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19032,6 +19586,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/piperazine_hydrochloride_[1]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19080,6 +19635,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Piperazine",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19115,6 +19671,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Potassium_permanganate",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19150,6 +19707,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19185,6 +19743,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19220,6 +19779,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pymetrozine",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19255,6 +19815,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Pyraclostrobin",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19290,6 +19851,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19325,6 +19887,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19360,6 +19923,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Salicylic_acid",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19395,6 +19959,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19430,6 +19995,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19465,6 +20031,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19500,6 +20067,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Spirotetramat",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19535,6 +20103,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19570,6 +20139,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Styrene",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19605,6 +20175,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19640,6 +20211,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Tebuconazole",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19675,6 +20247,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19710,6 +20283,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19745,6 +20319,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/tetrasodium_3,3'-[[1,1'-biphenyl]-4,4'-diylbis(azo)]bis[5-amino-4-hydroxynaphthalene-2,7-disulphonate]",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19780,6 +20355,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Thiamethoxam",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19815,6 +20391,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": "https://en.wikipedia.org/wiki/Thiourea",
    "level": "suspected",
    "source_codes": [
     "clp"
@@ -19839,6 +20416,7 @@
    "jurisdictions": {
     "EU / EEA": "Legal; health warnings on packs are mandatory (Directive 2014/40/EU), including pregnancy-related warnings among the rotating texts."
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "bib"
@@ -19874,6 +20452,7 @@
      "cosmetics": "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
     }
    },
+   "wiki": null,
    "level": "suspected",
    "source_codes": [
     "clp"

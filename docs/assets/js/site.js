@@ -561,7 +561,7 @@
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
     var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
-    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + esc(r.n) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
+    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
            '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }

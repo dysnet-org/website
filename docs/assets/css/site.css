@@ -840,3 +840,6 @@ ol.demands details[open] summary::after { content: "–"; }
 .tera-legend { font-size: var(--text-small); color: var(--dys-muted); display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin: var(--space-2) 0; max-width: none; }
 
 #board { scroll-margin-top: 8rem; }
+
+.tera-name a { color: inherit; text-decoration: underline; text-decoration-color: var(--dys-line); text-underline-offset: 3px; }
+.tera-name a:hover { text-decoration-color: var(--dys-purple); color: var(--dys-purple-text); }

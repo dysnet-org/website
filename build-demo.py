@@ -441,7 +441,7 @@ def tera_item_html(e):
     if e.get("cas"):
         details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "") if x)
-    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
+    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
             f'<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
@@ -457,7 +457,7 @@ def teratogens_html():
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
-        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "l": e["level"], "s": e["source_codes"], "src": srcs, "jur": jur}
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "l": e["level"], "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or ""}
     records = [compact(e) for e in E]
     html_first = [tera_item_html(e) for e in E[:40]]
     c = TERA.get("counts", {})
@@ -472,7 +472,7 @@ def teratogens_html():
         <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
       <p class="bib-count"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
     </div>
-    <p class="tera-legend"><span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
+    <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
     <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>

@@ -159,6 +159,85 @@ add("smoking", name="Tobacco smoking in pregnancy", cas="", kind="product",
     status={"bib": "suspected"},
     jurisdictions={"EU / EEA": "Legal; health warnings on packs are mandatory (Directive 2014/40/EU), including pregnancy-related warnings among the rotating texts."})
 
+# ── Wikipedia links: CAS → Wikidata (P231) → English Wikipedia sitelink; exact-title fallback for entries without a CAS ──
+import urllib.parse
+WCACHE_PATH = HERE / "wikidata-cache.json"
+WCACHE = json.loads(WCACHE_PATH.read_text(encoding="utf-8")) if WCACHE_PATH.exists() else {}
+UAH = {"User-Agent": "DysNetTeratogensBot/1.0 (https://www.dysnet.org; info@dysnet.org)"}
+
+
+def sparql(query):
+    req = urllib.request.Request("https://query.wikidata.org/sparql?format=json&query=" + urllib.parse.quote(query), headers=dict(UAH, Accept="application/sparql-results+json"))
+    with urllib.request.urlopen(req, timeout=120) as r: return json.load(r)["results"]["bindings"]
+
+
+cas_all = sorted({e["cas"] for e in entries.values() if e.get("cas") and ("cas:" + e["cas"]) not in WCACHE})
+for i in range(0, len(cas_all), 150):
+    chunk = cas_all[i:i + 150]
+    values = " ".join(f'"{c}"' for c in chunk)
+    try:
+        rows = sparql(f"""SELECT ?cas ?article WHERE {{ VALUES ?cas {{ {values} }} ?item wdt:P231 ?cas . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . }}""")
+    except Exception as ex:
+        print("  wikidata chunk failed:", ex); rows = []
+    found = {}
+    for r in rows: found.setdefault(r["cas"]["value"], r["article"]["value"])
+    for c in chunk: WCACHE["cas:" + c] = found.get(c)
+    import time; time.sleep(1)
+
+
+def wiki_exact(title):
+    key = "title:" + title
+    if key in WCACHE: return WCACHE[key]
+    try:
+        req = urllib.request.Request("https://en.wikipedia.org/w/api.php?action=query&redirects=1&format=json&titles=" + urllib.parse.quote(title), headers=UAH)
+        with urllib.request.urlopen(req, timeout=30) as r: pages = json.load(r)["query"]["pages"]
+        page = next(iter(pages.values()))
+        WCACHE[key] = None if "missing" in page else "https://en.wikipedia.org/wiki/" + page["title"].replace(" ", "_")
+    except Exception:
+        WCACHE[key] = None
+    import time; time.sleep(0.3)
+    return WCACHE[key]
+
+
+def wikidata_by_name(name, cas):
+    """Search Wikidata by label; accept an item only if its CAS (P231) equals ours; return its English Wikipedia link."""
+    key = f"search:{name}|{cas}"
+    if key in WCACHE: return WCACHE[key]
+    url = None
+    try:
+        req = urllib.request.Request("https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&limit=5&search=" + urllib.parse.quote(name), headers=UAH)
+        with urllib.request.urlopen(req, timeout=30) as r: hits = json.load(r).get("search", [])
+        ids = [h["id"] for h in hits]
+        if ids:
+            req = urllib.request.Request("https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims|sitelinks&sitefilter=enwiki&ids=" + "|".join(ids), headers=UAH)
+            with urllib.request.urlopen(req, timeout=30) as r: ents = json.load(r).get("entities", {})
+            for qid in ids:
+                ent = ents.get(qid, {})
+                cas_vals = [c["mainsnak"]["datavalue"]["value"] for c in ent.get("claims", {}).get("P231", []) if "datavalue" in c.get("mainsnak", {})]
+                title = ent.get("sitelinks", {}).get("enwiki", {}).get("title")
+                if title and (cas in cas_vals if cas else False):
+                    url = "https://en.wikipedia.org/wiki/" + title.replace(" ", "_"); break
+    except Exception:
+        url = None
+    WCACHE[key] = url
+    import time; time.sleep(0.4)
+    return url
+
+
+n_wiki = 0
+for e in entries.values():
+    url = WCACHE.get("cas:" + e["cas"]) if e.get("cas") else None
+    if not url:
+        base = e["name"].split(";")[0].split(" (")[0].strip()
+        url = wiki_exact(base) or wiki_exact(base.capitalize())
+    if not url and e.get("cas"):
+        base = e["name"].split(";")[0].split(" (")[0].strip()
+        url = wikidata_by_name(base, e["cas"])
+    e["wiki"] = url
+    n_wiki += bool(url)
+WCACHE_PATH.write_text(json.dumps(WCACHE, ensure_ascii=False, indent=0), encoding="utf-8")
+print(f"Wikipedia links: {n_wiki} of {len(entries)} entries")
+
 # ── merge, classify, write ────────────────────────────────────────────────────
 LEVEL_ORDER = {"known": 0, "presumed": 1, "suspected": 2}
 out = []

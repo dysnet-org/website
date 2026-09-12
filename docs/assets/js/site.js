@@ -548,6 +548,7 @@
     var chips = [];
     if (clp) { chips.push('<span class="st st-label">EU: hazard label required</span>'); if (clp.cat === "2") chips.push('<span class="st st-ok">EU: sale to the public allowed</span><span class="st st-warn">EU: cosmetics case by case</span>'); else chips.push('<span class="st st-ban">EU: no sale to the public</span><span class="st st-ban">EU: banned in cosmetics</span><span class="st st-ban">EU: no pesticide approval</span><span class="st st-work">EU: workplace limits</span>'); }
     if (r.s.indexOf("p65") !== -1) chips.push('<span class="st st-warn">California: warning required</span>');
+    if (clp && clp.cat !== "2") chips.push('<span class="st st-ban">ChemFORWARD: band F by list screening</span>');
     Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
     var details = r.src.map(function (s) {
       var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
@@ -557,6 +558,8 @@
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
+    if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
+    if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
     var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
     return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + esc(r.n) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
            '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' +

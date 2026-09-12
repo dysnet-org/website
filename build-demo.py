@@ -406,6 +406,7 @@ def tera_status_chips(e):
         else:
             chips += [("EU: sale to the public allowed", "st-ok"), ("EU: cosmetics case by case", "st-warn")]
     if any(x["code"] == "p65" for x in e["sources"]): chips.append(("California: warning required", "st-warn"))
+    if clp and cat in ("1A", "1B"): chips.append(("ChemFORWARD: band F by list screening", "st-ban"))
     codes = {x["code"] for x in e["sources"]}
     for place, val in e["jurisdictions"].items():
         if (place == "California (USA)" and "p65" in codes) or (place == "EU / EEA" and "clp" in codes): continue
@@ -434,6 +435,11 @@ def tera_item_html(e):
         details.append(f"<li>{line}</li>")
     for place, val in e["jurisdictions"].items():
         details.append(f"<li><strong>{place}:</strong> {' '.join(val.values()) if isinstance(val, dict) else val}</li>")
+    clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
+    if clp and clp["category"].replace("Repr. ", "") in ("1A", "1B"):
+        details.append('<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>')
+    if e.get("cas"):
+        details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
             f'<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>'
@@ -924,6 +930,7 @@ PAGES["/knowledge/teratogens/"] = {
       <li><strong>Presumed</strong>: strong animal evidence, category 1B in the EU, or a medicine contraindicated in pregnancy on animal data.</li>
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
     </ul>
+    <p><strong>Independent hazard frameworks.</strong> Manufacturers and certifiers increasingly rate chemicals with two non-profit frameworks that score developmental and reproductive toxicity among their endpoints. <a href="https://www.greenscreenchemicals.org/learn/full-greenscreen-method" target="_blank" rel="noopener external">GreenScreen for Safer Chemicals</a> (Clean Production Action) assigns Benchmarks 1 to 4, Benchmark 1 being a chemical of high concern, through assessments by licensed profilers such as ToxServices; its free List Translator flags as LT-1 any chemical that an authoritative list already classes as a high-hazard reproductive or developmental toxicant, and its <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">public registry</a> tells you, by CAS number, whether a full assessment exists. <a href="https://www.chemforward.org/" target="_blank" rel="noopener external">ChemFORWARD</a> rates chemicals used in consumer products and building materials in hazard bands A to F across 24 endpoints; its published <a href="https://static1.squarespace.com/static/60611efa464a766c6a812834/t/6657f7d9c7241a2e6ba86b55/1717041115329/Chemical+Rating+Guidance+v2.2_Abbreviated.pdf" target="_blank" rel="noopener external">rating guidance</a> places in band F, by list screening alone, every substance with an EU harmonised Repr. 1 classification or on the REACH candidate and authorisation lists as a reproductive toxicant. The two organisations <a href="https://www.chemforward.org/news/chemforward-and-greenscreen-offer-aligned-outputs-for-hazard-data-toxservices" target="_blank" rel="noopener external">reported in 2021</a> that their outputs are aligned. Full assessments sit behind subscriptions, so this register cannot import their scores; where an entry meets ChemFORWARD's published F-band criterion, it says so.</p>
     <p>The <strong>EU harmonised classification</strong> is binding law: once a substance carries a hazard statement for the unborn child (H360D, H361d and their variants), every container of it, and of mixtures containing it, must be labelled across the EU and EEA; categories 1A and 1B may not be sold to the general public, cannot be approved as pesticides and are banned from cosmetics. It says nothing about finished articles, food or medicines, which are outside its scope. <strong>Proposition 65</strong> is binding in California only and requires a warning before exposure, not a ban; it is enforced through litigation. <strong>EMA</strong> decisions bind marketing authorisations across the EU: the medicine stays available, under a pregnancy prevention programme. <strong>WHO</strong> guidance binds no one. Our <strong>bibliography</strong> reports evidence, not law.</p>
 
     {opener("02", "The register", f"{len(TERA.get('entries', []))} substances and products.")}

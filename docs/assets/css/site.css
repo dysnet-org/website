@@ -334,7 +334,7 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 .person-flip { perspective: 1200px; }
 .person-flip .faces { position: relative; transition: transform 0.5s; transform-style: preserve-3d; min-height: 15rem; }
 .person-flip:hover .faces, .person-flip:focus-within .faces { transform: rotateY(180deg); }
-.person-flip .face { position: absolute; inset: 0; backface-visibility: hidden; display: flex; flex-direction: column; gap: var(--space-1); }
+.person-flip .face { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; display: flex; flex-direction: column; gap: var(--space-1); }
 .person-flip .face.back { transform: rotateY(180deg); overflow-y: auto; }
 .person-flip .face.back p { font-size: var(--text-small); color: var(--dys-muted); }
 .person-flip .chip {
@@ -345,8 +345,10 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 @media (prefers-reduced-motion: reduce) {
   .person-flip .faces { transition: none; }
   .person-flip:hover .faces, .person-flip:focus-within .faces { transform: none; }
+  .person-flip .face { position: static; }
   .person-flip .face.back { display: none; }
-  .person-flip:hover .face.back, .person-flip:focus-within .face.back { display: flex; position: static; transform: none; }
+  .person-flip:hover .face.front, .person-flip:focus-within .face.front { display: none; }
+  .person-flip:hover .face.back, .person-flip:focus-within .face.back { display: flex; transform: none; }
 }
 
 /* ── Donate / bank transfer ────────────────────────────────────── */

@@ -1,0 +1,1680 @@
+{
+ "fetched": "2026-09-11T23:24:32.951Z",
+ "source": "Orphanet, Research & trials > Patient registries, per ORPHAcode (direct / children / parent relation)",
+ "registries": [
+  {
+   "id": "59428",
+   "name": "Styrian Malformation Registry - EUROCAT Member #39",
+   "local": "",
+   "country": "AUSTRIA",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "179973",
+   "name": "Antwerp registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Antwerpen register van aangeboren afwijkingen - bijdrage aan het EUROCAT-netwerk",
+   "country": "BELGIUM",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "186319",
+   "name": "BRBDR- Belgian Rare Bleeding Disorders Registry",
+   "local": "Belgisch register zeldzame bloedingsstoornissen/Registre belge des troubles hémorragiques rares",
+   "country": "BELGIUM",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "376737",
+   "name": "CRRD: Central Registry Rare Diseases",
+   "local": "Registre Central des Maladies Rares / Centraal Register Zeldzame Ziekten",
+   "country": "BELGIUM",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "179975",
+   "name": "Hainaut and Namur registry of congenital anomalies - contribution to the EUROCAT network",
+   "local": "Registre des anomalies congénitales du Hainaut et de Namur - contribution au réseau EUROCAT",
+   "country": "BELGIUM",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "181319",
+   "name": "Register of Congenital Malformations",
+   "local": "",
+   "country": "FINLAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "589005",
+   "name": "Brittany registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Registre des anomalies congénitales de la région Bretagne - contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "33346",
+   "name": "CEMC-Auvergne - Center for the Study of Congenital Malformations in Auvergne - contributes to the EUROCAT network",
+   "local": "CEMC-Auvergne - Centre d'Etude des Malformations Congénitales en Auvergne - contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "643616",
+   "name": "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development",
+   "local": "",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "3103",
+    "3301"
+   ]
+  },
+  {
+   "id": "643630",
+   "name": "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders",
+   "local": "",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "295000"
+   ]
+  },
+  {
+   "id": "643628",
+   "name": "ERN [VASCERN] - VASCERN Registries",
+   "local": "",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "295000"
+   ]
+  },
+  {
+   "id": "542523",
+   "name": "French National Registry for Rare Diseases (BNDMR)",
+   "local": "Banque Nationale de Données Maladies Rares (BNDMR)",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "447029",
+   "name": "French West Indies registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Registre des anomalies congénitales des Antilles françaises -  contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "725764",
+   "name": "MARIANNE: National cohort dedicated to research on the biological and environmental determinants of autism and neurodevelopmental disorders",
+   "local": "MARIANNE : Cohorte nationale dédiéé à la recherche sur les déterminants biologiques et environnementaux de l'autisme et des troubles neuro-développementaux",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "974",
+    "3103"
+   ]
+  },
+  {
+   "id": "477140",
+   "name": "RaDiCo-GenIDA: International social network for data collection on the natural history of rare monogenic forms of intellectual disabilities",
+   "local": "RaDiCo-GenIDA: Réseau Social international pour le recueil d'informations sur l'histoire naturelle de formes monogéniques rares de déficience intellectuelle (DI)",
+   "country": "FRANCE",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "974",
+    "3103"
+   ]
+  },
+  {
+   "id": "642580",
+   "name": "ReMaBreizh: Registry of congenital malformations in Brittany",
+   "local": "ReMaBreizh: Registre des malformations congénitales de Bretagne",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "414749",
+   "name": "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "REMACOR : Registre des anomalies congénitales de l'île de La Réunion -  contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "28268",
+   "name": "REMAPAR- Paris registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "REMAPAR - Registre des anomalies congénitales de Paris - contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "165837",
+   "name": "Rhône-Alpes registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Registre des anomalies congénitales de la région Rhône-Alpes (REMERA) -  contribuant au réseau EUROCAT",
+   "country": "FRANCE",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "59478",
+   "name": "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Fehlbildungsmonitoring Sachsen-Anhalt - Erfassung von angeborenen Fehlbildungen und Anomalien - Eingebunden in das EUROCAT Netzwerk",
+   "country": "GERMANY",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "73320",
+   "name": "German registry for congenital thrombocytopenia",
+   "local": "Deutsches Register für kongenitale Thrombozytopenien",
+   "country": "GERMANY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "59492",
+   "name": "Mainz registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Mainzer Geburtenregister zur Erfassung angeborener Fehlbildungen bei Neugeborenen  - Eingebunden in das EUROCAT Netzwerk",
+   "country": "GERMANY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "735256",
+   "name": "NARSE: National Register of Rare Diseases",
+   "local": "NARSE: Nationales Register für Seltene Erkrankungen",
+   "country": "GERMANY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "662152",
+   "name": "Registry for Patients with Vascular Malformations and Tumors (VasMuT)  - contributing to the european VASCERN registry",
+   "local": "VasMuT-Register: Register für Patienten mit Vaskulären Malformationen und Tumoren (VasMuT) eingebunden in das Europäische VASCERN Register",
+   "country": "GERMANY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "295000"
+   ]
+  },
+  {
+   "id": "700788",
+   "name": "RESCUED registry (REgistry for Sudden Cardiac and UnExpected Death)",
+   "local": "RESCUED Register (REgister für Sudden Cardiac/UnExpected Death)",
+   "country": "GERMANY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392"
+   ]
+  },
+  {
+   "id": "175519",
+   "name": "Cork and Kerry South of Ireland registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "",
+   "country": "IRELAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "175123",
+   "name": "Dublin registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "",
+   "country": "IRELAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "444860",
+   "name": "National Cleft Database",
+   "local": "",
+   "country": "IRELAND",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3103",
+    "3329"
+   ]
+  },
+  {
+   "id": "445645",
+   "name": "National Haemophilia Registry - Ireland",
+   "local": "",
+   "country": "IRELAND",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "175121",
+   "name": "South East of Ireland registry of congenital anomalies - part of BINOCAR and EUROCAT network",
+   "local": "",
+   "country": "IRELAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "53567",
+   "name": "Campania registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "Registro Campano difetti congenit i- afferisce al network EUROCAT",
+   "country": "ITALY",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "218290",
+   "name": "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities",
+   "local": "EuRR-Bone: Registro Europeo per le malattie rare scheletriche e per le anomalie della mineralizzazione",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "93876",
+   "name": "International Registry of Rare Bleeding Disorders (RBDD) - IT",
+   "local": "Registro internazionale delle patologie rare della coagulazione del sangue - IT",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "52840",
+   "name": "ISMAC: Sicilian registry of congenital anomalies - contributes to the EUROCAT network",
+   "local": "ISMAC: Registro siciliano di anomalie congenite - afferisce al network EUROCAT",
+   "country": "ITALY",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "500964",
+   "name": "National Registry of congenital bleeding disorders (RNCC)",
+   "local": "Registro Nazionale delle Coagulopatie Congenite (RNCC)",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "500972",
+   "name": "National Registry of Congenital Malformations (RNMC)",
+   "local": "Registro Nazionale Malformazioni Congenite (RNMC)",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "74396",
+   "name": "Rare Diseases Registry - Veneto Region",
+   "local": "Registro Malattie Rare della Regione Veneto",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "97015",
+   "name": "Registry of inherited bleeding disorders in Emilia Romagna region",
+   "local": "Registro malattie emorragiche congenite Regione Emilia Romagna",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "306510",
+   "name": "RNMR: Italian National Rare Diseases Registry",
+   "local": "RNMR: Registro Nazionale Malattie Rare",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "498995",
+   "name": "Tuscan Registry of Congenital Anomalies",
+   "local": "Registro Toscano Difetti Congeniti",
+   "country": "ITALY",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "434383",
+   "name": "Tuscan Registry of Rare Diseases",
+   "local": "Registro Toscano Malattie Rare",
+   "country": "ITALY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "700763",
+   "name": "ERN [BOND] & ERN [Endo-ERN] - EuRREB: European Registries for Rare Endocrine and Bone conditions",
+   "local": "",
+   "country": "NETHERLANDS",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "643588",
+   "name": "ERN [CRANIO] - ERN CRANIO registry",
+   "local": "",
+   "country": "NETHERLANDS",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "974"
+   ]
+  },
+  {
+   "id": "183949",
+   "name": "EUROCAT Northern Netherlands - contributes to the international EUROCAT network",
+   "local": "EUROCAT Noord-Nederland - onderdeel van het internationale EUROCAT netwerk",
+   "country": "NETHERLANDS",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "613233",
+   "name": "HemoNED: Dutch Hemophilia Registry",
+   "local": "HemoNED: Nederlands Hemofilie Register",
+   "country": "NETHERLANDS",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "716193",
+   "name": "Norwegian Rare Bone Disorder Registry",
+   "local": "Norsk register for sjeldne, medfødte bensykdommer",
+   "country": "NORWAY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "584971",
+   "name": "Norwegian registry on rare disorders",
+   "local": "Norsk register for sjeldne diagnoser",
+   "country": "NORWAY",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "181308",
+   "name": "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network",
+   "local": "Polski Rejestr Wrodzonych Wad Rozwojowych zrzeszony w EUROCAT",
+   "country": "POLAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "59379",
+   "name": "RENAC - Portuguese registry of congenital anomalies (contributes to the EUROCAT network)",
+   "local": "RENAC - Registo Nacional de Anomalias Congénitas (registo integrado na rede EUROCAT)",
+   "country": "PORTUGAL",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "223603",
+   "name": "Serbian registry of patients with rare bleeding disorders - contributes to the RBDD international registry",
+   "local": "Registar osoba sa retkim urodjenim koagulopatijama",
+   "country": "SERBIEN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "330384",
+   "name": "ECEMC: Registry of the Spanish Collaborative Study of Congenital Malformations",
+   "local": "ECEMC: Registro del Estudio Colaborativo Español de Malformaciones Congénitas",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "643594",
+   "name": "ERN [EuroBloodNet] - ENROL: European Rare Blood Disorders Platform",
+   "local": "ERN [EuroBloodNet] - ENROL: Plataforma europea de enfermedades hematológicas raras",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "357687",
+   "name": "Population registry of rare diseases and congenital anomalies of Cantabria (Spain)",
+   "local": "Registro poblacional de enfermedades raras y anomalias congenitas de Cantabria",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "59706",
+   "name": "RACAV: Registry of congenital anomalies of the Basque Country (Spain) - contributes to the EUROCAT network",
+   "local": "RACAV: Registro de anomalías congénitas del País Vasco - contribuye a la red EUROCAT",
+   "country": "SPAIN",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "358186",
+   "name": "Rare disease registry of Aragon (Spain)",
+   "local": "Registro de enfermedades raras de la Comunidad Autónoma de Aragón",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "593776",
+   "name": "Rare Diseases Registry of the Basque Country",
+   "local": "Registro de Enfermedades Raras de la Comunidad Autónoma de Euskadi",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "357636",
+   "name": "Registry for rare diseases in Andalusia (Spain)",
+   "local": "Registro de enfermedades raras de Andalucía",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "74403",
+   "name": "Registry for rare diseases in Extremadura (Spain)",
+   "local": "Registro de enfermedades raras de Extremadura",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "237547",
+   "name": "RePER: Rare Diseases Patient Registry",
+   "local": "RePER: Registro de Pacientes de Enfermedades Raras",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "360578",
+   "name": "RERGA: Registry for rare diseases in Galicia (Spain)",
+   "local": "RERGA: Registro de enfermedades raras de Galicia",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "358190",
+   "name": "RERNA: Population-based Rare Disease Registry of Navarre (Spain)",
+   "local": "RERNA: Registro poblacional de enfermedades raras de Navarra",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "657794",
+   "name": "RETPLAC: Spanish Registry of Inherited Platelet Disorders",
+   "local": "RETPLAC: Registro Español de Trastornos Plaquetarios Congénitos",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "358366",
+   "name": "SIER-CV: Information System on rare diseases in Valencian Community (Spain)",
+   "local": "SIER-CV: Sistema de Información de Enfermedades Raras de la Comunitat Valenciana",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "358298",
+   "name": "SIERrm: Information System on rare diseases in the Region of Murcia (Spain)",
+   "local": "SIERrm: Sistema de Información sobre enfermedades raras de la Región de Murcia",
+   "country": "SPAIN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "691316",
+   "name": "RaraSwed - National registry Rare diseases",
+   "local": "RaraSwed - Sällsynta diagnoser Nationellt kvalitetsregister",
+   "country": "SWEDEN",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "60053",
+   "name": "EUROCAT VAUD Switzerland - Registry of congenital malformations of canton Vaud",
+   "local": "EUROCAT VAUD Switzerland - Registre des malformations congénitales du canton de Vaud",
+   "country": "SWITZERLAND",
+   "direct": [
+    "2440",
+    "2911",
+    "93321"
+   ],
+   "children": [
+    "2913",
+    "93458"
+   ],
+   "parent": [
+    "93320",
+    "93322",
+    "93321",
+    "93323"
+   ]
+  },
+  {
+   "id": "399507",
+   "name": "Swiss Cleft Lip and Palate Registry",
+   "local": "Registre Suisse des Fentes Labio-Maxillo-Palatines",
+   "country": "SWITZERLAND",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3103",
+    "3329"
+   ]
+  },
+  {
+   "id": "571637",
+   "name": "Swiss Hemophilia Registry",
+   "local": "",
+   "country": "SWITZERLAND",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3320"
+   ]
+  },
+  {
+   "id": "572233",
+   "name": "Swiss Rare Disease Registry (SRSK)",
+   "local": "Schweizer Register für seltene Krankheiten (SRSK)",
+   "country": "SWITZERLAND",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "174925",
+   "name": "CRANE: The Cleft Registry and Audit Network",
+   "local": "",
+   "country": "UNITED KINGDOM",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "3103",
+    "3329"
+   ]
+  },
+  {
+   "id": "437789",
+   "name": "National Congenital Anomaly and Rare Disease Registration Service (NCARDRS)",
+   "local": "",
+   "country": "UNITED KINGDOM",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  },
+  {
+   "id": "325728",
+   "name": "CORDS Registry: Coordination of Rare Diseases at Sanford Registry",
+   "local": "",
+   "country": "UNITED STATES",
+   "direct": [],
+   "children": [],
+   "parent": [
+    "392",
+    "974",
+    "2538",
+    "1570",
+    "2440",
+    "2935",
+    "3258",
+    "3103",
+    "2879",
+    "2911",
+    "2913",
+    "3320",
+    "3301",
+    "93320",
+    "3329",
+    "93322",
+    "93321",
+    "294969",
+    "295000",
+    "294967",
+    "93323",
+    "93458"
+   ]
+  }
+ ],
+ "france_population_registries": {
+  "source": "Santé publique France, Surveillance épidémiologique des anomalies congénitales en France à partir des registres populationnels : période 2019-2021 (July 2026), Table 1 and directory of registries",
+  "source_url": "https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf",
+  "coverage": "16.4% of French births in 2019-2021; the report projects about 23.6% once the Nouvelle-Aquitaine registry is fully deployed (an objective, not a measured figure)",
+  "eurocat": "EUROCAT network: 43 population-based registries in 21 European countries, about 1.5 million births a year (report, box 1)",
+  "registries": [
+   {
+    "region": "Antilles (Guadeloupe, Martinique)",
+    "name": "REMALAN",
+    "host": "CHU de Martinique",
+    "created": 2009,
+    "births": 8264,
+    "website": "https://remalan.com/",
+    "orphanet_id": "447029"
+   },
+   {
+    "region": "Auvergne",
+    "name": "CEMC",
+    "host": "CHU de Clermont-Ferrand",
+    "created": 1983,
+    "births": 12099,
+    "website": "https://www.chu-clermontferrand.fr/liste-services/genetique-medicale/registre-cemc",
+    "orphanet_id": "33346"
+   },
+   {
+    "region": "Bretagne",
+    "name": "REMABREIZH",
+    "host": "CHU de Rennes",
+    "created": 2011,
+    "births": 31740,
+    "website": "https://www.chu-rennes.fr/remabreizh.html",
+    "orphanet_id": "642580"
+   },
+   {
+    "region": "Nouvelle-Aquitaine",
+    "name": "ATENA",
+    "host": "CHU de Bordeaux",
+    "created": 2022,
+    "births": 53392,
+    "website": "https://registre-atena.fr/",
+    "orphanet_id": null,
+    "note": "not yet listed on Orphanet; births figure is the report's estimate of annual coverage"
+   },
+   {
+    "region": "Paris",
+    "name": "REMAPAR",
+    "host": "Inserm, équipe OPPaLE",
+    "created": 1981,
+    "births": 23700,
+    "website": "https://cress-umr1153.fr/fr/project/registre-des-malformations-congenitales-de-paris-remapar/",
+    "orphanet_id": "28268"
+   },
+   {
+    "region": "La Réunion",
+    "name": "REMACOR",
+    "host": "CHU de La Réunion",
+    "created": 2001,
+    "births": 13360,
+    "website": "https://remacor.re/",
+    "orphanet_id": "414749"
+   },
+   {
+    "region": "Rhône-Alpes (Rhône and Loire since 2023)",
+    "name": "REMERA",
+    "host": "Hospices civils de Lyon",
+    "created": 1973,
+    "births": 54621,
+    "website": "https://www.remera.fr/",
+    "orphanet_id": "165837"
+   }
+  ]
+ }
+}

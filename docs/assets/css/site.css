@@ -805,3 +805,5 @@ ol.demands details[open] summary::after { content: "–"; }
   .map-layers button, .map-views button, .finder-chips button { padding: 0.55rem 0.95rem; min-height: 44px; }
   .country li { min-height: 44px; }
 }
+.page-date { font-size: var(--text-eyebrow); color: #e9d8fb; padding: var(--space-2) 0 0; margin: 0; max-width: none; }
+.page-date a { color: #fff; }

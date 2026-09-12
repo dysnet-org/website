@@ -99,15 +99,51 @@ NAV = [
 ]
 
 
-def head(title, desc, path, is_home=False, og=None, extra_ld=None):
-    full = title if BRAND in title else f"{title} · {BRAND}"
+# Subject-first <title> per page (under 60 characters); page["title"] stays the short label for breadcrumbs and search.
+SEO_TITLES = {
+    "/": "DysNet · the international dysmelia network",
+    "/knowledge/": "Knowledge on congenital limb difference · DysNet",
+    "/knowledge/research-library/": "Research library on dysmelia and limb difference · DysNet",
+    "/knowledge/ongoing-studies/": "Studies and registries on limb difference · DysNet",
+    "/knowledge/researchers/": "Researchers working on limb difference · DysNet",
+    "/knowledge/care-centres/": "Care centres for congenital limb difference · DysNet",
+    "/knowledge/understanding-dysmelia/": "Understanding dysmelia: conditions and ORPHAcodes · DysNet",
+    "/knowledge/guides/patient-owned-registry/": "What is a patient-owned registry? · DysNet",
+    "/registry/": "Patient-owned registry of limb malformations · DysNet",
+    "/voice/": "Our voice: five demands for people with dysmelia · DysNet",
+    "/voice/reports/": "Reports from our seats in rare-disease bodies · DysNet",
+    "/about/": "About DysNet, the dysmelia network since 2009",
+    "/about/people/": "Board and volunteers of the dysmelia network · DysNet",
+    "/about/members/": "Member associations for limb difference · DysNet",
+    "/about/transparency/": "Transparency: documents and accounts · DysNet",
+    "/about/statutes/": "Statutes of DysNet, the dysmelia network",
+    "/contact/": "Contact the dysmelia network · DysNet",
+    "/donate/": "Support DysNet, the dysmelia network",
+    "/404/": "Page not found · DysNet",
+}
+PEOPLE_LD = []  # filled by person_card() as the People page is defined
+
+
+def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
+    full = SEO_TITLES.get(path) or (title if BRAND in title else f"{title} · {BRAND}")
     canonical = SITE + path
+    dates = dates or {}
+    is_article = "/guides/" in path
+    page_ld = {"@context": "https://schema.org", "@type": "Article" if is_article else "WebPage", "name": full.split(" · ")[0], "headline": full.split(" · ")[0],
+               "url": canonical, "description": desc, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
+               "publisher": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": SITE + "/about/people/"}}
+    if dates.get("published"): page_ld["datePublished"] = dates["published"]
+    if dates.get("modified"): page_ld["dateModified"] = dates["modified"]
     ld = [ORG_SCHEMA] if is_home else [{
         "@context": "https://schema.org", "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"},
             {"@type": "ListItem", "position": 2, "name": title, "item": canonical},
         ]}]
+    if is_home:
+        ld.append({"@context": "https://schema.org", "@type": "WebSite", "name": BRAND, "url": SITE + "/", "inLanguage": "en",
+                   "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": SITE + "/?q={search_term_string}"}, "query-input": "required name=search_term_string"}})
+    ld.append(page_ld)
     if extra_ld:
         ld.extend(extra_ld)
     ld_json = "\n".join(
@@ -121,7 +157,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None):
 <title>{full}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{"article" if is_article else "website"}">{f'<meta property="article:published_time" content="{dates["published"]}"><meta property="article:modified_time" content="{dates["modified"]}">' if is_article and dates.get("published") else ""}
 <meta property="og:site_name" content="DysNet">
 <meta property="og:title" content="{full}">
 <meta property="og:description" content="{desc}">
@@ -219,7 +255,7 @@ FOOTER = f"""</main>
       © 2026 DysNet Ideell Förening · <a href="#">Privacy</a> · <a href="#">Terms of use</a> · <a href="#">Legal notices</a>
     </div>
   </div>
-</footer>
+  <p class="page-date container">Page updated __PAGE_DATE__ · Written by the DysNet documentation team, reviewed by the board.</p>\n</footer>
 <script src="/assets/js/site.js?v={ASSET_V}" defer></script>
 </body>
 </html>"""
@@ -297,7 +333,7 @@ def bibliography_html():
     <ol class="bib-list" id="bib-list">{"".join(items[:60])}</ol>
     <script type="application/json" id="bib-data">{json.dumps({"codes": {c: names.get(c, c) for c in codes_present}, "topics": {t.replace(" ", "_"): BIB_TOPIC_LABEL.get(t, t) for t in topics}, "items": records}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="bib-more" hidden>Show all matching references</button></p>
-    <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Three fixed PubMed queries, re-run at each build, add the thalidomide literature (title query: thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), the systematic reviews and meta-analyses on our conditions (publication type or title, combined with the condition names), and the literature on causes and risk factors (title terms such as aetiology, risk factors, teratogen, maternal, exposure, environmental, pesticides, clusters or vascular disruption, combined with the condition names). The registries listed on Orphanet for our conditions were crawled the same way as member websites. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
+    <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Three fixed PubMed queries, re-run at each build, add the thalidomide literature (title query: thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), the systematic reviews and meta-analyses on our conditions (publication type or title, combined with the condition names), and the literature on causes and risk factors (title terms such as aetiology, risk factors, teratogen, maternal, exposure, environmental, pesticides, clusters or vascular disruption, combined with the condition names). The registries listed on Orphanet for our conditions were crawled the same way as member websites. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>. <a href="/data/bibliography.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 """
 
 # Register 4 · care centres shown on the landing map. Only centres named by a member association (or visited by the
@@ -450,7 +486,7 @@ PAGES["/knowledge/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Mission 1 · The international reference point</p>
-    <h1 class="display">Knowledge, kept current.</h1>
+    <h1 class="display">Knowledge on limb difference, kept current.</h1>
     <p>Families and clinicians come to DysNet to find what is known, what is being studied, and where expertise lives. Each register below is maintained by a named volunteer and shows its last update. Current beats polished.</p>
     <div class="start-here">
       <div>
@@ -507,7 +543,7 @@ PAGES["/knowledge/research-library/"] = {
   <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
     <div class="tick"></div>
     <p class="eyebrow">Register 1 · Research library <span class="badge live">updated Aug 2026</span></p>
-    <h1 class="display">The research, readable.</h1>
+    <h1 class="display">Research library on limb difference: the research, readable.</h1>
     <p>Every entry: a citation, a one-paragraph plain-language summary, and a link to the source. Tagged by condition and topic so families and clinicians find what concerns them.</p>
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="#bibliography">Go straight to the bibliography ↓</a></p>
 
@@ -594,7 +630,7 @@ def registries_html():
         <tbody>{fr_rows}</tbody>
       </table>
     </div>
-    <p class="annex-note">Source: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths.</p>
+    <p class="annex-note">Source: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths. <a href="/data/registries.json">Download the registries data (JSON, CC BY 4.0)</a>.</p>
 """ if fr else ""
     return f"""
     <div class="tick"></div>
@@ -620,7 +656,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
   <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
     <div class="tick"></div>
     <p class="eyebrow">Register 2 · Studies and registries <span class="badge live">updated Aug 2026</span></p>
-    <h1 class="display">What is being studied, right now.</h1>
+    <h1 class="display">Studies and registries on limb difference, right now.</h1>
     <p>Studies our community can join or follow. Each entry shows who runs it, its status, and whom to contact. Associations: tell us about studies in your country.</p>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Studies you can join or follow</h2>
@@ -694,7 +730,7 @@ PAGES["/knowledge/researchers/"] = {
     <h2 class="h2">Who publishes on our conditions.</h2>
     <p>Orphanet’s directory of research projects lists nothing specific to our ORPHAcodes, so this register is built from the evidence itself: the institutions of the first and senior authors of every publication in our <a href="/knowledge/research-library/#bibliography">bibliography</a>, read from PubMed’s own affiliation records. An institution appears once it signs at least two of those publications. The count and the years say how active a team has been; the tags say on which conditions. Teams that want to be listed or corrected: <a href="mailto:info@dysnet.org?subject=Researchers%20register">info@dysnet.org</a>.</p>
     {researchers_html()}
-    <p class="annex-note">Built {RESEARCHERS.get("built", "")} from {RESEARCHERS.get("bibliography_size", "")} PubMed records; {RESEARCHERS.get("records_without_affiliation", "")} older records carry no affiliation in PubMed and could not be attributed.</p>
+    <p class="annex-note">Built {RESEARCHERS.get("built", "")} from {RESEARCHERS.get("bibliography_size", "")} PubMed records; {RESEARCHERS.get("records_without_affiliation", "")} older records carry no affiliation in PubMed and could not be attributed. <a href="/data/researchers.json">Download the data (JSON, CC BY 4.0)</a>.</p>
     {REGISTER_FOOT}
   </div>
 </section>
@@ -711,8 +747,8 @@ PAGES["/knowledge/care-centres/"] = {
   <div class="container" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
     <div class="tick"></div>
     <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
-    <h1 class="display">Where expertise lives.</h1>
-    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website (or visited by the board), and appears as an orange marker on the <a href="/">world map</a> on our home page. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>.</p>
+    <h1 class="display">Care centres for limb difference: where expertise lives.</h1>
+    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website (or visited by the board), and appears as an orange marker on the <a href="/">world map</a> on our home page. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Where the list comes from</h2>
     <div style="margin-top:var(--space-2)">
@@ -770,6 +806,25 @@ CONDITIONS = [
     ("Tibial hemimelia", "deficiency of the tibia with an intact fibula.", 93322, "Isolated tibial hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
     ("Ulnar hemimelia", "partial or complete absence of the ulna.", 93320, "Isolated ulnar hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
 ]
+
+
+def conditions_ld():
+    items = []
+    for name, desc, code, orpha_name, *_ in CONDITIONS:
+        item = {"@type": "MedicalCondition", "name": name, "description": desc[0].upper() + desc[1:]}
+        if code:
+            item["alternateName"] = orpha_name
+            item["code"] = {"@type": "MedicalCode", "code": f"ORPHA:{code}", "codingSystem": "Orphanet"}
+            item["sameAs"] = ORPHA_URL.format(code)
+        items.append(item)
+    return {"@context": "https://schema.org", "@graph": items}
+
+
+def dataset_ld(name, desc, path, file, keywords, size):
+    return {"@context": "https://schema.org", "@type": "Dataset", "name": name, "description": desc, "url": SITE + path,
+            "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": True, "inLanguage": "en", "keywords": keywords,
+            "creator": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "variableMeasured": size,
+            "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE + "/data/" + file}]}
 
 
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
@@ -897,7 +952,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <h1 class="display">Understanding dysmelia.</h1>
     <p>Dysmelia is the generic term for all types of congenital limb differences: limbs that formed differently, incompletely or not at all before birth. It concerns about 5 in 10,000 people. Behind the word are many distinct conditions; the guide below introduces the main ones in plain language, with links to Orphanet, the European reference database for rare diseases.</p>
 
-    {opener("01", "The conditions", "Many conditions, one community.")}
+    {opener("01", "The conditions", "What is dysmelia, and which conditions does it cover?")}
 
     <div class="finder" id="cond-finder">
       <p class="finder-title">Find the pages that concern you</p>
@@ -945,7 +1000,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
 
-    {opener("02", "Not alone", "The associations that know your condition.")}
+    {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: from Poland-syndrome groups in France and Italy to thalidomide organisations across the world. <a href="/about/members/">Find yours</a>.</p>
 
     {annex_html()}
@@ -985,7 +1040,7 @@ PAGES["/registry/"] = {
   <div class="container">
     <div class="tick" style="background:var(--dys-green)"></div>
     <p class="eyebrow" style="color:var(--dys-green-text)">Mission 2 · Flagship project</p>
-    <h1 class="display">A registry owned by the people it describes.</h1>
+    <h1 class="display">The limb-malformation registry owned by the people it describes.</h1>
     <p>Congenital anomalies remain a major cause of perinatal illness and death, accounting for up to 27% of infant deaths in developed countries, as <a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">Santé publique France</a> recalls in its 2026 surveillance report, citing Syngelaki et al. (<em>Prenat Diagn</em> 2011, <a href="https://doi.org/10.1002/pd.2642" target="_blank" rel="noopener external">doi:10.1002/pd.2642</a>). Yet we still do not understand what causes most of these anomalies, and understanding begins with counting and describing cases. Research on limb agenesis is starved of exactly that. Cases are not rare, but they are scattered across countries and recorded in incompatible systems, when they are recorded at all, so too few are described well enough to investigate the possible causes thoroughly. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
     <p>Patient groups strongly suspect environmental causes and teratogenic effects, of the kind thalidomide made undeniable, behind agenesis and other forms of dysmelia. Far too little research is carried out to confirm or rule them out. Between 2007 and 2014, three clusters of transverse upper-limb agenesis came to light in France, in Loire-Atlantique, Ain and Morbihan. The investigations led by <a href="https://www.santepubliquefrance.fr/les-actualites/agenesies-transverses-des-membres-superieurs-sante-publique-france-revient-sur-les-principaux-faits" target="_blank" rel="noopener external">Santé publique France</a> with the regional registries found no common exposure. The episode did move surveillance forward: the regional registries were federated around a common database, a seventh registry followed in Nouvelle-Aquitaine, and Santé publique France plans to reach national coverage for some anomalies through the national health data system. Yet the French registries covered about one birth in six over 2019-2021 (<a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">16.4%</a>), with a stated aim of about 23.6% once the Nouvelle-Aquitaine registry is fully deployed, the ministry’s 2016 request for a national registry of malformations was answered in <a href="https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/rapportsynthese/anomalies-congenitales-liees-aux-expositions-medicamenteuses-et-environnementales-proposition-de" target="_blank" rel="noopener external">2018</a> by building on the existing registries rather than creating one, and no registry at national or European level is dedicated to limb anomalies. Those investigations also met the limits of any case investigation: families were questioned years after the birth, from memory. Families who take part actively and from pregnancy onwards, recording circumstances and exposures as they happen, can correct that weakness and give the next investigation the data the last one lacked.</p>
     <p>Our registry therefore sets itself three objectives, in this order.</p>
@@ -1083,7 +1138,7 @@ PAGES["/voice/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Mission 3 · The voice of families</p>
-    <h1 class="display">Where it counts, with a mandate.</h1>
+    <h1 class="display">Our voice for people with dysmelia: where it counts, with a mandate.</h1>
     <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
 
     {opener("01", "Our voice", "Five demands, carried into every room we sit in.")}
@@ -1094,25 +1149,25 @@ PAGES["/voice/"] = {
           <p>The World Health Organization counts congenital disorders among the leading causes of newborn death and lifelong disability, and the 2010 World Health Assembly resolution on birth defects asks every state to build registration and surveillance systems, to develop expertise in prevention and care, and to support affected families (<a href="https://www.who.int/news-room/fact-sheets/detail/birth-defects" target="_blank" rel="noopener external">WHO fact sheet on congenital disorders</a>). Limb differences are among the most visible of these disorders and among the least studied.</p>
           <p>We ask health authorities to name dysmelia in their rare-disease and disability plans, and to guarantee every child and adult a pathway to a competent team: diagnosis, surgery when useful, prosthetics, rehabilitation and psychological support, wherever the family lives. Progress looks like national pathways published, reference centres named, and waiting times measured.</p>
         </div></details></li>
-      <li><details><summary><span class="demand-n">2</span><span>Universal coverage of prosthetics, and enough research and development for progress in robotics to reach people living with dysmelia</span></summary>
+      <li><details><summary><span class="demand-n">2</span><span>Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects</span></summary>
         <div class="demand-body">
-          <p>For many people with a limb difference, a prosthesis is what makes school, work, sport and everyday tasks possible. Coverage varies from full reimbursement to nothing at all, children outgrow devices that insurers replace too slowly, and the most advanced hands and arms are priced for a handful of users.</p>
-          <p>We ask for coverage of a functional prosthesis for everyone who wants one, renewed at the pace of a growing child, and for public research funding that turns advances in robotics into devices people with congenital differences can actually be fitted with, since their anatomy differs from that of amputees. Progress looks like comparable reimbursement rules across countries and research calls that name congenital limb difference.</p>
+          <p>Thalidomide taught the lesson once: a product reached pregnant women before its effect on the unborn child was known, and thousands of children were born with limb differences. Families still learn about suspected teratogens after the fact, from a news report or a cluster investigation, rather than from a label or from the authority in charge.</p>
+          <p>We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards. Progress looks like a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences.</p>
         </div></details></li>
-      <li><details><summary><span class="demand-n">3</span><span>An orphan medical devices framework that creates incentives to improve prosthetics, and equipment that families can afford</span></summary>
+      <li><details><summary><span class="demand-n">3</span><span>Universal coverage of prosthetics, research that reaches people with dysmelia, and an orphan medical devices framework that makes equipment affordable</span></summary>
         <div class="demand-body">
-          <p>Medicines for rare diseases enjoy orphan status: fee reductions, protocol assistance and market exclusivity that make small markets worth serving. Devices for small populations have no equivalent. A prosthetic component designed for a few thousand people with a congenital difference must clear the same regulatory cost as a device for millions, so it is often never built.</p>
-          <p>Europe took a first step in June 2024: guidance <a href="https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf" target="_blank" rel="noopener external">MDCG 2024-10</a> defines an orphan device as one intended for a condition affecting no more than 12,000 people a year in the EU, and eases the clinical evidence expected before marketing. It is guidance, not law, and it brings no fee relief, no priority assessment and no exclusivity.</p>
-          <p>We ask regulators in Europe and beyond to give orphan medical devices a status of their own in law, with the lighter evidence pathways now sketched, fee relief and priority assessment. Incentives must also reach the family: a designated device that no one can pay for changes nothing, so orphan status should come with transparent pricing and coverage of the out-of-pocket cost of the equipment a child or adult actually needs, from a first passive hand to an adapted bicycle or car controls. Progress looks like a legal definition, a public register of designated devices, the first prosthetic components designated under it, and families' remaining costs measured and falling.</p>
+          <p>For many people with a limb difference, a prosthesis is what makes school, work, sport and everyday tasks possible. Coverage varies from full reimbursement to nothing at all, children outgrow devices that insurers replace too slowly, and the most advanced hands and arms are priced for a handful of users. Progress in robotics rarely reaches people with congenital differences, whose anatomy differs from that of amputees.</p>
+          <p>Medicines for rare diseases enjoy orphan status: fee reductions, protocol assistance and market exclusivity that make small markets worth serving. Devices for small populations have no equivalent, so a prosthetic component designed for a few thousand people is often never built. Europe took a first step in June 2024: guidance <a href="https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf" target="_blank" rel="noopener external">MDCG 2024-10</a> defines an orphan device as one intended for a condition affecting no more than 12,000 people a year in the EU and eases the clinical evidence expected. It is guidance, not law, and it brings no fee relief, no priority assessment and no exclusivity.</p>
+          <p>We ask for coverage of a functional prosthesis for everyone who wants one, renewed at the pace of a growing child; for public research funding that names congenital limb difference; and for an orphan medical devices status in law, with fee relief and priority assessment, tied to transparent pricing and coverage of families’ out-of-pocket costs for the equipment they actually need, from a first passive hand to adapted bicycle or car controls. Progress looks like comparable reimbursement rules across countries, research calls that name our conditions, a legal definition and public register of orphan devices, and families’ remaining costs measured and falling.</p>
         </div></details></li>
       <li><details><summary><span class="demand-n">4</span><span>Wide, international and independent coverage by registries, to gather enough evidence to address the root causes of dysmelia</span></summary>
         <div class="demand-body">
           <p>Population registries of congenital anomalies cover a fraction of births, even in countries that run them well: in France about one birth in six. Clusters of limb agenesis have been found and then lost for want of comparable data across borders, and the causes, environmental or otherwise, remain unproven either way.</p>
-          <p>We ask for registries that cover whole populations, that are funded to last, that are independent of any single interest, and that talk to each other across countries. Our own <a href="/registry/">associative registry</a> exists to add the families' knowledge to this picture, not to replace it. Progress looks like coverage figures rising, and cluster investigations that can compare notes internationally.</p>
+          <p>We ask for registries that cover whole populations, that are funded to last, that are independent of any single interest, and that talk to each other across countries. Our own <a href="/registry/">associative registry</a> exists to add the families’ knowledge to this picture, not to replace it. Progress looks like coverage figures rising, and cluster investigations that can compare notes internationally.</p>
         </div></details></li>
       <li><details><summary><span class="demand-n">5</span><span>Interoperability and portability of all registry data, researchers’ access made easier under the strict consent of families, and personal data returned to the people concerned</span></summary>
         <div class="demand-body">
-          <p>Data locked in one registry answers one region's questions. Research on causes needs data that can be pooled, compared and re-used, in formats that machines and researchers can read across systems. Portability also protects families: it means a registry can move its data if its host disappears or its funding ends.</p>
+          <p>Data held in one registry can only answer that region’s questions. Research on causes needs data that can be pooled, compared and re-used, in formats that machines and researchers can read across systems. Portability also protects families: it means a registry can move its data if its host disappears or its funding ends.</p>
           <p>We ask that every registry recording our conditions adopt shared standards, so that aggregated data flow to researchers without friction, and that any sharing of identifiable data rest on the explicit, revocable consent of the person or family concerned. We also ask that personal data be returned to the people it describes: each person living with dysmelia, or their guardian, should hold a copy of their own record, see who has used it, and decide what happens to it next. Progress looks like common data models adopted, published access procedures, consent that families can see and change, and records that families can download and carry with them.</p>
         </div></details></li>
     </ol>
@@ -1158,7 +1213,7 @@ PAGES["/voice/reports/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Mission 3 · Delegate reports</p>
-    <h1 class="display">After every meeting, a report.</h1>
+    <h1 class="display">Reports from our seats: after every meeting, a report.</h1>
     <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog.</p>
 
     <div style="margin-top:var(--space-4)">
@@ -1214,7 +1269,7 @@ PAGES["/about/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">About · Built by families</p>
-    <h1 class="display">DysNet exists because families built it.</h1>
+    <h1 class="display">About DysNet: a network families built.</h1>
     <p>In 2009, the Swedish thalidomide organisations FfdN and Ex-Center and the UK Thalidomide Trust registered EDRIC, the European Dysmelia Reference Information Centre, in Sweden. The portal opened in 2012 and the network became DysNet: the only global network dedicated to congenital limb differences.</p>
 
     {opener("01", "Vision", "What we work towards.")}
@@ -1268,6 +1323,7 @@ BOARD = [
 
 
 def person_card(name, role, bio, init, email, chip):
+    PEOPLE_LD.append({"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "email": email or None})
     return f"""<div class="card person person-flip" tabindex="0">
       <div class="faces">
         <div class="face front">
@@ -1293,7 +1349,7 @@ PAGES["/about/people/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">About · People</p>
-    <h1 class="display">Volunteers who carry a mission each.</h1>
+    <h1 class="display">The people of DysNet: volunteers who carry a mission each.</h1>
     <p>Most of the board live with dysmelia or are parents of children with limb differences, as the statutes require. Under the 2026-2029 strategy, every seat owns a mission: no seat without a mission. Hover or tap a card to read the bio and write to the person directly.</p>
     <div class="grid cols-3" style="margin-top:var(--space-4)">
       {"".join(person_card(*p) for p in BOARD)}
@@ -1463,7 +1519,7 @@ PAGES["/about/members/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">About · The network</p>
-    <h1 class="display">The associations families belong to.</h1>
+    <h1 class="display">Member associations: the groups families belong to.</h1>
     <p>DysNet is a federation: our members are national associations of people with limb differences and their families. Find yours below, or bring your association in.</p>
 
     <div style="margin-top:var(--space-4)">
@@ -1491,7 +1547,7 @@ PAGES["/about/transparency/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">About · Transparency</p>
-    <h1 class="display">Our documents, in the open.</h1>
+    <h1 class="display">Transparency: our documents, in the open.</h1>
     <p>An organisation of volunteers runs on trust. The texts that govern DysNet and the accounts that trace its funds are published here.</p>
     <div style="margin-top:var(--space-4)">
       <article class="entry"><h3>Statutes of DysNet <span class="badge live">2011</span></h3><p>Adopted by the Extraordinary Meetings of 20 October 2011. Name, objectives, membership, decision-making bodies, board, accounts and audit.</p><p class="src"><a href="/about/statutes/">Read online</a> · PDF · English</p></article>
@@ -1514,7 +1570,7 @@ PAGES["/contact/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Contact</p>
-    <h1 class="display">Talk to us.</h1>
+    <h1 class="display">Contact the dysmelia network: talk to us.</h1>
     <p>One address reaches the whole network: <a href="mailto:info@dysnet.org"><strong>info@dysnet.org</strong></a>.</p>
     <div class="grid cols-3" style="margin-top:var(--space-4)">
       <div class="card"><h3 class="h4">Families</h3><p>Looking for information or an association near you? Start with <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> and <a href="/about/members/">the member directory</a>.</p></div>
@@ -1545,7 +1601,7 @@ PAGES["/donate/"] = {
     <div>
       <div class="tick" style="background:var(--dys-green)"></div>
       <p class="eyebrow" style="color:var(--dys-green-text)">Support · Every gift carries a mission</p>
-      <h1 class="display">Power the network families rely on.</h1>
+      <h1 class="display">Support DysNet: power the network families rely on.</h1>
       <p>DysNet runs entirely on volunteers, so a small gift goes remarkably far: it keeps the registers current, the registry moving, and a delegate in the room when European decisions are made.</p>
       <ul class="don-carry">
         <li><strong>Knowledge</strong> · hosting &amp; translation of the four registers</li>
@@ -1650,7 +1706,7 @@ PAGES["/about/statutes/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">About · Governing text</p>
-    <h1 class="display">The statutes, readable online.</h1>
+    <h1 class="display">The DysNet statutes, readable online.</h1>
     <p>Adopted by the two Extraordinary Meetings of 20 October 2011, replacing the founding regulations of 13 October 2008. This page is an abridged, plain-language rendering for orientation; the signed PDF remains the authoritative text and is available from the secretary.</p>
     {statute_html()}
   </div>
@@ -1776,18 +1832,54 @@ def redirect_html(new_path):
             f'<body><p>This page has moved to <a href="{new_path}">{url}</a>.</p></body></html>\n')
 
 
+def page_dates(path, new_html):
+    """datePublished = first commit of the page; dateModified = last commit, or today when this build changes the page."""
+    import subprocess, datetime
+    rel = "docs" + path + "index.html"
+    today = datetime.date.today().isoformat()
+    def git(*args):
+        try: return subprocess.run(["git", *args], capture_output=True, text=True, cwd=ROOT.parent, timeout=20).stdout.strip()
+        except Exception: return ""
+    strip = lambda t: re.sub(r"\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}", "", t)
+    committed = git("show", f"HEAD:{rel}")
+    first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
+    if not committed: return {"published": today, "modified": today}
+    last = git("log", "-1", "--format=%cs", "--", rel) or today
+    return {"published": first, "modified": today if strip(committed) != strip(new_html) else last}
+
+
+EXTRA_LD = {
+    "/knowledge/understanding-dysmelia/": lambda: [conditions_ld()],
+    "/knowledge/research-library/": lambda: [dataset_ld("DysNet bibliography on congenital limb difference and dysmelia", "Peer-reviewed references on limb differences, thalidomide embryopathy and their causes, verified against PubMed and Crossref; sources: Orphanet epidemiology, member associations' and registries' websites, fixed PubMed queries.", "/knowledge/research-library/", "bibliography.json", ["dysmelia", "limb reduction defects", "thalidomide embryopathy", "bibliography", "PubMed"], f"{len(BIB.get('entries', []))} references")],
+    "/knowledge/ongoing-studies/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/ongoing-studies/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
+    "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
+    "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
+    "/about/people/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
+}
+DATA_FILES = {"bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
+
+
 def build():
     written = []
+    import shutil
+    (ROOT / "data").mkdir(exist_ok=True)
+    for out_name, src_name in DATA_FILES.items():
+        src = ROOT.parent / "tools" / src_name
+        if src.exists(): shutil.copyfile(src, ROOT / "data" / out_name)
+    page_mod = {}
     for path, page in PAGES.items():
         out_dir = ROOT / path.strip("/")
         out_dir.mkdir(parents=True, exist_ok=True)
-        html = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), page.get("jsonld"))
+        extra = list(page.get("jsonld") or []) + (EXTRA_LD[path]() if path in EXTRA_LD else [])
+        probe = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra) + header_html(path if path != "/" else "-") + (crumbs(*page["crumbs"]) if page.get("crumbs") else "") + page["body"].replace("__MAP_HERO__", MAP_HERO) + FOOTER
+        dates = page_dates(path, rebase(probe)); page_mod[path] = dates["modified"]
+        html = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra, dates)
         html += header_html(path if path != "/" else "-")
         if page.get("crumbs"):
             html += crumbs(*page["crumbs"])
         html += page["body"]
         html = html.replace("__MAP_HERO__", MAP_HERO)
-        html += FOOTER
+        html += FOOTER.replace("__PAGE_DATE__", __import__("datetime").date.fromisoformat(dates["modified"]).strftime("%-d %B %Y"))
         (out_dir / "index.html").write_text(rebase(html), encoding="utf-8")
         written.append(path)
 
@@ -1815,7 +1907,7 @@ def build():
 
     # sitemap.xml — demonstrates the SEO deliverable for the real launch
     urls = "\n".join(
-        f"  <url><loc>{SITE}{p}</loc><changefreq>weekly</changefreq></url>" for p in PAGES if p != "/404/")
+        f"  <url><loc>{SITE}{p}</loc><lastmod>{page_mod[p]}</lastmod><changefreq>weekly</changefreq></url>" for p in PAGES if p != "/404/")
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n',

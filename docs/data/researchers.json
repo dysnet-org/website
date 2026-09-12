@@ -1,0 +1,2680 @@
+{
+ "built": "2026-09-12",
+ "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
+ "bibliography_size": 950,
+ "records_without_affiliation": 331,
+ "teams": [
+  {
+   "institution": "University of Cologne",
+   "country": "Germany",
+   "papers": 8,
+   "years": [
+    2008,
+    2022
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Samel C",
+    "Knobloch J",
+    "Niecke A"
+   ],
+   "representative": {
+    "pmid": "35666030",
+    "doi": "10.1002/bdr2.2051",
+    "title": "Health-related quality of life after 50 years in individuals with thalidomide embryopathy: Evidence from a German cross-sectional survey",
+    "year": "2022"
+   },
+   "pmids": [
+    "35666030",
+    "36126927",
+    "33915582",
+    "30943953",
+    "30887894",
+    "23917409",
+    "20958261",
+    "18178729"
+   ],
+   "lat": 50.9280445,
+   "lon": 6.9281305,
+   "geocode_display_name": "Universität zu Köln, 1, Zülpicher Wall, Komponistenviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland"
+  },
+  {
+   "institution": "Children's Hospital Research Foundation",
+   "country": "United States",
+   "papers": 7,
+   "years": [
+    1987,
+    2025
+   ],
+   "codes": [
+    "thal",
+    "2440",
+    "2879"
+   ],
+   "authors": [
+    "Scott WJ",
+    "Vorhees CV",
+    "Collins MD"
+   ],
+   "representative": {
+    "pmid": "40198353",
+    "doi": "10.1007/s00204-024-03930-z",
+    "title": "Thalidomide-induced limb malformations: an update and reevaluation",
+    "year": "2025"
+   },
+   "pmids": [
+    "40198353",
+    "16463421",
+    "11418267",
+    "9407593",
+    "8026630",
+    "3227490",
+    "3672373"
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
+  },
+  {
+   "institution": "MacKay Memorial Hospital",
+   "country": "Taiwan",
+   "papers": 7,
+   "years": [
+    2008,
+    2022
+   ],
+   "codes": [
+    "2913",
+    "295000",
+    "2879"
+   ],
+   "authors": [
+    "Chen CP",
+    "Wang W"
+   ],
+   "representative": {
+    "pmid": "35181024",
+    "doi": "10.1016/j.tjog.2021.11.022",
+    "title": "Application of quantitative fluorescent polymerase chain reaction analysis for the rapid confirmation of trisomy 13 of maternal origin in a pregnancy with fetal holoprosencephaly, cyclopia, polydactyly, omphalocele and cell culture failure",
+    "year": "2022"
+   },
+   "pmids": [
+    "35181024",
+    "36427972",
+    "34507670",
+    "24075380",
+    "18400576",
+    "18603496",
+    "18935989"
+   ],
+   "lat": 25.0585727,
+   "lon": 121.5222088,
+   "geocode_display_name": "馬偕紀念醫院, 92, 中山北路二段, 中山北路婚紗街, 集英里, 中山區, 南西商圈, 臺北市, 10449, 臺灣"
+  },
+  {
+   "institution": "Brigham and Women's Hospital",
+   "country": "United States",
+   "papers": 6,
+   "years": [
+    1988,
+    2026
+   ],
+   "codes": [
+    "295000",
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Holmes LB",
+    "Toufaily MH",
+    "Genest DR"
+   ],
+   "representative": {
+    "pmid": "41951339",
+    "doi": "10.1136/bmjment-2025-302270",
+    "title": "Congenital malformation risk following prenatal antipsychotic exposure: a systematic safety surveillance approach",
+    "year": "2026"
+   },
+   "pmids": [
+    "41951339",
+    "29377643",
+    "29377641",
+    "18386809",
+    "10327252",
+    "3351810"
+   ],
+   "lat": 42.3356457,
+   "lon": -71.1060376,
+   "geocode_display_name": "Brigham and Women's Hospital, 75, Francis Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
+  },
+  {
+   "institution": "National Center for Global Health and Medicine",
+   "country": "Japan",
+   "papers": 5,
+   "years": [
+    2015,
+    2025
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Shiga T",
+    "Yoshizawa A",
+    "Tajima T"
+   ],
+   "representative": {
+    "pmid": "40904645",
+    "doi": "10.5582/irdr.2025.01032",
+    "title": "Secondary musculoskeletal disability and rehabilitation aspects in adults with thalidomide embryopathy: A narrative review",
+    "year": "2025"
+   },
+   "pmids": [
+    "40904645",
+    "39220272",
+    "31339667",
+    "27567725",
+    "26033770"
+   ],
+   "lat": 35.7029293,
+   "lon": 139.7163032,
+   "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
+  },
+  {
+   "institution": "Charles University",
+   "country": "Czechia",
+   "papers": 5,
+   "years": [
+    1992,
+    2024
+   ],
+   "codes": [
+    "2913",
+    "thal",
+    "2879",
+    "93322"
+   ],
+   "authors": [
+    "Bílá V",
+    "Kodytková A",
+    "Lebl J"
+   ],
+   "representative": {
+    "pmid": "37285827",
+    "doi": "10.1159/000531452",
+    "title": "Integrative Role of the SALL4 Gene: From Thalidomide Embryopathy to Genetic Defects of the Upper Limb, Internal Organs, Cerebral Midline, and Pituitary",
+    "year": "2024"
+   },
+   "pmids": [
+    "37285827",
+    "8997637",
+    "7851614",
+    "8157136",
+    "1597253"
+   ],
+   "lat": 50.0888947,
+   "lon": 14.4162757,
+   "geocode_display_name": "Filozofická fakulta Univerzity Karlovy, Kaprova, Josefov, obvod Praha 1, Praha, 116 93, Česko"
+  },
+  {
+   "institution": "University of California",
+   "country": "United States",
+   "papers": 5,
+   "years": [
+    1999,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "thal",
+    "2440",
+    "93458"
+   ],
+   "authors": [
+    "Del Campo M",
+    "Chen H",
+    "Dowdle WE"
+   ],
+   "representative": {
+    "pmid": "34522548",
+    "doi": "10.7759/cureus.17070",
+    "title": "Thalidomide-Then and Now: Case Report of a Woman With Thalidomide Embryopathy and Review of Current Thalidomide Uses",
+    "year": "2021"
+   },
+   "pmids": [
+    "34522548",
+    "21763481",
+    "22180729",
+    "18302266",
+    "10364522"
+   ],
+   "lat": 37.8707751,
+   "lon": -122.2656754,
+   "geocode_display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States"
+  },
+  {
+   "institution": "University of Göteborg",
+   "country": "Sweden",
+   "papers": 5,
+   "years": [
+    1992,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Strömland K",
+    "Brisby H"
+   ],
+   "representative": {
+    "pmid": "29053750",
+    "doi": "10.1371/journal.pone.0186388",
+    "title": "Middle-aged individuals with thalidomide embryopathy have undergone few surgical limb procedures and demonstrate a high degree of physical independence",
+    "year": "2017"
+   },
+   "pmids": [
+    "29053750",
+    "12210472",
+    "8157157",
+    "8333272",
+    "1577294"
+   ],
+   "lat": 57.6897462,
+   "lon": 11.9765259,
+   "geocode_display_name": "Chalmers Tekniska Högskola, Andréegatan, Masthugget, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 27, Sverige"
+  },
+  {
+   "institution": "University of Toronto",
+   "country": "Canada",
+   "papers": 5,
+   "years": [
+    1996,
+    2016
+   ],
+   "codes": [
+    "thal",
+    "295000"
+   ],
+   "authors": [
+    "Lee CJ",
+    "Parman T",
+    "Ordal L"
+   ],
+   "representative": {
+    "pmid": "27530094",
+    "doi": "10.1002/ajmg.a.37890",
+    "title": "Congenital limb deficiencies with vascular etiology: Possible association with maternal thrombophilia",
+    "year": "2016"
+   },
+   "pmids": [
+    "27530094",
+    "21502285",
+    "21505090",
+    "10229238",
+    "8667234"
+   ],
+   "lat": 43.6634681,
+   "lon": -79.3968165,
+   "geocode_display_name": "University of Toronto St. George, D'Arcy Street, Discovery District, Downtown, Toronto, Golden Horseshoe, Ontario, M5T 1K1, Canada"
+  },
+  {
+   "institution": "Freie Universität Berlin",
+   "country": "Germany",
+   "papers": 5,
+   "years": [
+    1988,
+    1996
+   ],
+   "codes": [
+    "thal",
+    "2440"
+   ],
+   "authors": [
+    "Schmahl HJ",
+    "Heger W",
+    "Platzek T"
+   ],
+   "representative": {
+    "pmid": "8896721",
+    "doi": "10.1007/s002040050336",
+    "title": "Stereoselective distribution of the teratogenic thalidomide analogue EM12 in the early embryo of marmoset monkey, Wistar rat and NMRI mouse",
+    "year": "1996"
+   },
+   "pmids": [
+    "8896721",
+    "2492686",
+    "3196154",
+    "3250372",
+    "3143339"
+   ],
+   "lat": 52.4528565,
+   "lon": 13.2907249,
+   "geocode_display_name": "Freie Universität Berlin, Königin-Luise-Straße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland"
+  },
+  {
+   "institution": "University of Aberdeen",
+   "country": "United Kingdom",
+   "papers": 4,
+   "years": [
+    2009,
+    2022
+   ],
+   "codes": [
+    "thal",
+    "2879",
+    "295000"
+   ],
+   "authors": [
+    "Vargesson N",
+    "Zafeiri A",
+    "Fowler PA"
+   ],
+   "representative": {
+    "pmid": "35504638",
+    "doi": "10.1136/bmjopen-2020-048092",
+    "title": "Maternal over-the-counter analgesics use during pregnancy and adverse perinatal outcomes: cohort study of 151 141 singleton pregnancies",
+    "year": "2022"
+   },
+   "pmids": [
+    "35504638",
+    "30335598",
+    "26043938",
+    "19921660"
+   ],
+   "lat": 57.1645542,
+   "lon": -2.1018424,
+   "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
+  },
+  {
+   "institution": "University of North Carolina",
+   "country": "United States",
+   "papers": 4,
+   "years": [
+    2007,
+    2019
+   ],
+   "codes": [
+    "2913",
+    "2440"
+   ],
+   "authors": [
+    "Fish EW",
+    "Johnson CS",
+    "Parnell SE"
+   ],
+   "representative": {
+    "pmid": "31546130",
+    "doi": "10.1016/j.envres.2019.108716",
+    "title": "Maternal exposure to outdoor air pollution and congenital limb deficiencies in the National Birth Defects Prevention Study",
+    "year": "2019"
+   },
+   "pmids": [
+    "31546130",
+    "28504423",
+    "27801979",
+    "17676605"
+   ],
+   "lat": 35.9050354,
+   "lon": -79.0477533,
+   "geocode_display_name": "University of North Carolina at Chapel Hill, US 15;US 501, High Park, Chapel Hill, Orange County, North Carolina, 27599, United States"
+  },
+  {
+   "institution": "Sahlgrenska University Hospital",
+   "country": "Sweden",
+   "papers": 4,
+   "years": [
+    2011,
+    2016
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Andersson GB",
+    "Ghassemi Jahani SA",
+    "Brisby H"
+   ],
+   "representative": {
+    "pmid": "27175919",
+    "doi": "10.1371/journal.pone.0155493",
+    "title": "Degenerative Changes in the Cervical Spine Are More Common in Middle-Aged Individuals with Thalidomide Embryopathy than in Healthy Controls",
+    "year": "2016"
+   },
+   "pmids": [
+    "27175919",
+    "27854003",
+    "25301261",
+    "21712302"
+   ],
+   "lat": 57.6816542,
+   "lon": 11.9609871,
+   "geocode_display_name": "Sahlgrenska Universitetssjukhuset, Bruna stråket, Medicinareberget, Änggården, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 "
+  },
+  {
+   "institution": "Massachusetts General Hospital",
+   "country": "United States",
+   "papers": 4,
+   "years": [
+    1988,
+    2002
+   ],
+   "codes": [
+    "2913",
+    "392",
+    "2440"
+   ],
+   "authors": [
+    "Holmes LB",
+    "McGuirk CK",
+    "Garrity DM"
+   ],
+   "representative": {
+    "pmid": "12357474",
+    "doi": "10.1002/ajmg.10781",
+    "title": "Teratogen-induced limb defects",
+    "year": "2002"
+   },
+   "pmids": [
+    "12357474",
+    "12223419",
+    "11581472",
+    "3394109"
+   ],
+   "lat": 42.3628605,
+   "lon": -71.068753,
+   "geocode_display_name": "Massachusetts General Hospital, 55, Fruit Street, West End, Boston, Suffolk County, Massachusetts, 02114, United States"
+  },
+  {
+   "institution": "Idaho State University",
+   "country": "United States",
+   "papers": 4,
+   "years": [
+    1988,
+    2000
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Stephens TD",
+    "Smith DM"
+   ],
+   "representative": {
+    "pmid": "10661908",
+    "doi": "10.1002/(SICI)1096-9926(200003)61:3<189::AID-TERA6>3.0.CO;2-W",
+    "title": "Hypothesis: thalidomide embryopathy-proposed mechanism of action",
+    "year": "2000"
+   },
+   "pmids": [
+    "10661908",
+    "10799645",
+    "8987155",
+    "3067416"
+   ],
+   "lat": 42.8624158,
+   "lon": -112.4322597,
+   "geocode_display_name": "Idaho State University, 921, South 8th Avenue, Pocatello, Bannock County, Idaho, 83209, United States"
+  },
+  {
+   "institution": "Royal Hospital for Children and Young People",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2023,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "93321"
+   ],
+   "authors": [
+    "Lam W",
+    "Lam WL"
+   ],
+   "representative": {
+    "pmid": "38702055",
+    "doi": "10.1177/17531934241249014",
+    "title": "Parental experience after diagnosis of a congenital upper limb difference: a national survey",
+    "year": "2024"
+   },
+   "pmids": [
+    "38702055",
+    "37021538",
+    "37226469"
+   ],
+   "lat": 55.920929,
+   "lon": -3.1394165,
+   "geocode_display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot"
+  },
+  {
+   "institution": "Thalidomide Trust",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2007,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "2879",
+    "93321"
+   ],
+   "authors": [
+    "Johnson M",
+    "Morrison D",
+    "Sagoe K"
+   ],
+   "representative": {
+    "pmid": "38318695",
+    "doi": "10.1080/09638288.2024.2307357",
+    "title": "The impact of ageing on the health and wellbeing of people with thalidomide embryopathy: a comparison of the health impact with the general population",
+    "year": "2024"
+   },
+   "pmids": [
+    "38318695",
+    "31969401",
+    "17365642"
+   ],
+   "lat": 51.4872913,
+   "lon": -3.1806498,
+   "geocode_display_name": "Thalidomide Memorial, Museum Avenue, Crockherbtown, Civic Centre, Castle, Cardiff, Cymru / Wales, CF10 3AX, United Kingdom"
+  },
+  {
+   "institution": "University of Utah School of Medicine",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    1993,
+    2024
+   ],
+   "codes": [
+    "295000"
+   ],
+   "authors": [
+    "Feldkamp ML",
+    "Perez-Aytes A"
+   ],
+   "representative": {
+    "pmid": "38411327",
+    "doi": "10.1002/bdr2.2306",
+    "title": "Gastroschisis prevalence patterns in 27 surveillance programs from 24 countries, International Clearinghouse for Birth Defects Surveillance and Research, 1980-2017",
+    "year": "2024"
+   },
+   "pmids": [
+    "38411327",
+    "27443814",
+    "8355115"
+   ],
+   "lat": 39.4225192,
+   "lon": -111.714358,
+   "geocode_display_name": "Utah, United States"
+  },
+  {
+   "institution": "Charité - Universitätsmedizin Berlin",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    2016,
+    2023
+   ],
+   "codes": [
+    "2913",
+    "1027",
+    "3301",
+    "93458"
+   ],
+   "authors": [
+    "Ibrahim DM",
+    "Spielmann M",
+    "Schwickert A"
+   ],
+   "representative": {
+    "pmid": "36708132",
+    "doi": "10.1002/ajmg.a.63122",
+    "title": "Novel noncanonical splice site variant causes mild CHD7-related disorder with variable intrafamilial expressivity",
+    "year": "2023"
+   },
+   "pmids": [
+    "36708132",
+    "32992402",
+    "26581570"
+   ],
+   "lat": 52.5299885,
+   "lon": 13.3486639,
+   "geocode_display_name": "Institut für Rechtsmedizin der Charité Universitätsmedizin Berlin, 21, Turmstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Deutschland"
+  },
+  {
+   "institution": "Dr. Becker Rhein-Sieg-Klinik",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    2019,
+    2021
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Peters KM"
+   ],
+   "representative": {
+    "pmid": "33915582",
+    "doi": "10.1055/a-1457-2846",
+    "title": "[Chronic Pain in People Impaired by Thalidomide Embryopathy: An Explorative Analysis of Prevalence, Pain Parameters and Biopsychosocial Factors]",
+    "year": "2021"
+   },
+   "pmids": [
+    "33915582",
+    "30943953",
+    "30887894"
+   ],
+   "lat": 50.9074784,
+   "lon": 7.5497878,
+   "geocode_display_name": "Dr. Becker Rhein-Sieg-Klinik, 30, Höhenstraße, Nümbrecht, Ödinghausen, Nümbrecht, Oberbergischer Kreis, Nordrhein-Westfalen, 51588, Deutschl"
+  },
+  {
+   "institution": "MassGeneral Hospital for Children",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2003,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "295000"
+   ],
+   "authors": [
+    "Golden CM",
+    "Nasri HZ",
+    "Holmes LB"
+   ],
+   "representative": {
+    "pmid": "33779067",
+    "doi": "10.1002/bdr2.1887",
+    "title": "Limited surface examination to evaluate potential teratogens in a resource-limited setting",
+    "year": "2021"
+   },
+   "pmids": [
+    "33779067",
+    "25181518",
+    "14632304"
+   ],
+   "lat": 42.3606277,
+   "lon": -71.1004106,
+   "geocode_display_name": "MassGeneral Brigham Research Office, 65, Landsdowne Street, University Park, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 0213"
+  },
+  {
+   "institution": "Quaid-i-Azam University",
+   "country": "Pakistan",
+   "papers": 3,
+   "years": [
+    2015,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "3258",
+    "93458",
+    "295000"
+   ],
+   "authors": [
+    "Malik S",
+    "Haque S",
+    "Afzal M"
+   ],
+   "representative": {
+    "pmid": "33776623",
+    "doi": "10.1159/000512062",
+    "title": "A Frameshift Variant in KIAA0825 Causes Postaxial Polydactyly",
+    "year": "2021"
+   },
+   "pmids": [
+    "33776623",
+    "28559208",
+    "26008671"
+   ],
+   "lat": 33.7476438,
+   "lon": 73.1430184,
+   "geocode_display_name": "Quaid-i-Azam School of Management Sciences, Nurpur Road, Phulwari, مل پور, زون ۳, وفاقی دارالحکومت اسلام آباد, 46500, پاکستان"
+  },
+  {
+   "institution": "University of Washington",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    1992,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "93458",
+    "2440"
+   ],
+   "authors": [
+    "Engel LS",
+    "Fantel AG",
+    "Van De Weghe JC"
+   ],
+   "representative": {
+    "pmid": "33791682",
+    "doi": "10.1016/j.xhgg.2020.100016",
+    "title": "TMEM218 dysfunction causes ciliopathies, including Joubert and Meckel syndromes",
+    "year": "2021"
+   },
+   "pmids": [
+    "33791682",
+    "10901110",
+    "1326133"
+   ],
+   "lat": 47.6554303,
+   "lon": -122.3001692,
+   "geocode_display_name": "University of Washington, 1410, Northeast Campus Parkway, West Campus, University District, Seattle, King County, Washington, 98195, United "
+  },
+  {
+   "institution": "University Medical Center",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    1996,
+    2020
+   ],
+   "codes": [
+    "thal",
+    "2913"
+   ],
+   "authors": [
+    "Galjaard RJH",
+    "Neubert R",
+    "Nogueira AC"
+   ],
+   "representative": {
+    "pmid": "32179704",
+    "doi": "10.1136/jmedgenet-2019-106685",
+    "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
+    "year": "2020"
+   },
+   "pmids": [
+    "32179704",
+    "8538367",
+    "8538370"
+   ],
+   "lat": 48.0070218,
+   "lon": 7.837321,
+   "geocode_display_name": "Universitätsklinikum Freiburg, Hohenzollernstraße, Uni-Carré, Stühlinger-Eschholz, Stühlinger, Freiburg im Breisgau, Baden-Württemberg, 7910"
+  },
+  {
+   "institution": "University of Genoa",
+   "country": "Italy",
+   "papers": 3,
+   "years": [
+    2014,
+    2019
+   ],
+   "codes": [
+    "2911"
+   ],
+   "authors": [
+    "Puliti A",
+    "Vaccari CM",
+    "Baldelli I"
+   ],
+   "representative": {
+    "pmid": "31753026",
+    "doi": "10.1186/s13023-019-1253-8",
+    "title": "Experiences of patients with Poland syndrome of diagnosis and care in Italy: a pilot survey",
+    "year": "2019"
+   },
+   "pmids": [
+    "31753026",
+    "27884122",
+    "24885342"
+   ],
+   "lat": 44.4148861,
+   "lon": 8.9266707,
+   "geocode_display_name": "Università degli Studi di Genova, Via Balbi, Ghetto, Prè, Centro Est, Genova, Liguria, 16126, Italia"
+  },
+  {
+   "institution": "INAGEMP-Instituto Nacional de Genética Médica Populacional",
+   "country": "Brazil",
+   "papers": 3,
+   "years": [
+    2015,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Schuler-Faccini L",
+    "Sales Luiz Vianna F",
+    "Vianna FS"
+   ],
+   "representative": {
+    "pmid": "28161597",
+    "doi": "10.1016/j.reprotox.2017.01.012",
+    "title": "Angiogenesis-related genes and thalidomide teratogenesis in humans: an approach on genetic variation and review of past in vitro studies",
+    "year": "2017"
+   },
+   "pmids": [
+    "28161597",
+    "27751757",
+    "25828060"
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
+  },
+  {
+   "institution": "University of Illinois",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    1991,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Miller MT",
+    "Sorensen D",
+    "Sears KE"
+   ],
+   "representative": {
+    "pmid": "28130151",
+    "doi": "10.1016/j.reprotox.2017.01.010",
+    "title": "A new mammalian model system for thalidomide teratogenesis: Monodelphis domestica",
+    "year": "2017"
+   },
+   "pmids": [
+    "28130151",
+    "2019959",
+    "1808819"
+   ],
+   "lat": 40.0761545,
+   "lon": -88.2233134,
+   "geocode_display_name": "University of Illinois Urbana-Champaign, Champaign County, Illinois, 61801, United States"
+  },
+  {
+   "institution": "Cincinnati Children's Hospital Medical Center",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2005,
+    2014
+   ],
+   "codes": [
+    "2440",
+    "2913"
+   ],
+   "authors": [
+    "Bell SM",
+    "Schreiner CM",
+    "Chang CF"
+   ],
+   "representative": {
+    "pmid": "25053433",
+    "doi": "10.1242/dev.105924",
+    "title": "The cellular and molecular etiology of the craniofacial defects in the avian ciliopathic mutant talpid2",
+    "year": "2014"
+   },
+   "pmids": [
+    "25053433",
+    "19274763",
+    "15858818"
+   ],
+   "lat": 39.1408304,
+   "lon": -84.5023891,
+   "geocode_display_name": "Cincinnati Children’s Hospital Medical Center, 3333, Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, 45229, United States"
+  },
+  {
+   "institution": "University of Iowa",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2001,
+    2014
+   ],
+   "codes": [
+    "2913"
+   ],
+   "authors": [
+    "Mykytyn K",
+    "Caspers KM",
+    "Caspers Conway KM"
+   ],
+   "representative": {
+    "pmid": "25132072",
+    "doi": "10.1002/bdra.23292",
+    "title": "Maternal periconceptional alcohol consumption and congenital limb deficiencies",
+    "year": "2014"
+   },
+   "pmids": [
+    "25132072",
+    "24134526",
+    "11381270"
+   ],
+   "lat": 41.6311024,
+   "lon": -91.540752,
+   "geocode_display_name": "University of Iowa, McCollister Boulevard, Iowa City, Johnson County, Iowa, 52246, United States"
+  },
+  {
+   "institution": "University of Edinburgh",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2010,
+    2013
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Magnani D",
+    "Dunn IC",
+    "Rainger J"
+   ],
+   "representative": {
+    "pmid": "24348270",
+    "doi": "10.1371/journal.pgen.1003998",
+    "title": "A trans-acting protein effect causes severe eye malformation in the Mp mouse",
+    "year": "2013"
+   },
+   "pmids": [
+    "24348270",
+    "21465618",
+    "20943929"
+   ],
+   "lat": 55.9440765,
+   "lon": -3.1883736,
+   "geocode_display_name": "University of Edinburgh, St Patrick Square, Pleasance, Southside, City of Edinburgh, Alba / Scotland, EH8 9ET, United Kingdom"
+  },
+  {
+   "institution": "National Center on Birth Defects and Developmental Disabilities",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2001,
+    2012
+   ],
+   "codes": [
+    "295000",
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Honein MA",
+    "Robitaille J",
+    "Gill SK"
+   ],
+   "representative": {
+    "pmid": "22821755",
+    "doi": "10.1002/bdra.23049",
+    "title": "Association between maternal age and birth defects of unknown etiology: United States, 1997-2007",
+    "year": "2012"
+   },
+   "pmids": [
+    "22821755",
+    "19350655",
+    "12037261"
+   ],
+   "lat": 30.8267197,
+   "lon": -83.2751616,
+   "geocode_display_name": "Birth, East Martin Luther King Drive, Valdosta, Lowndes County, Georgia, 31698, United States"
+  },
+  {
+   "institution": "Tokyo Institute of Technology",
+   "country": "Japan",
+   "papers": 3,
+   "years": [
+    2011,
+    2012
+   ],
+   "codes": [
+    "thal",
+    "1027",
+    "2879"
+   ],
+   "authors": [
+    "Ito T"
+   ],
+   "representative": {
+    "pmid": "22348778",
+    "doi": "10.1111/j.1741-4520.2011.00351.x",
+    "title": "Deciphering the mystery of thalidomide teratogenicity",
+    "year": "2012"
+   },
+   "pmids": [
+    "22348778",
+    "21207098",
+    "21404644"
+   ],
+   "lat": 35.6045553,
+   "lon": 139.6827849,
+   "geocode_display_name": "東京科学大学 大岡山キャンパス, 大岡山北本通り商店街, 北千束一丁目, 北千束, 目黒区, 東京都, 152-0013, 日本"
+  },
+  {
+   "institution": "Heinrich-Heine-Universität",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    2002,
+    2008
+   ],
+   "codes": [
+    "2913",
+    "thal",
+    "93458"
+   ],
+   "authors": [
+    "Peters T",
+    "Grotewold L",
+    "Knobloch J"
+   ],
+   "representative": {
+    "pmid": "18418038",
+    "doi": "10.4161/cc.7.9.5793",
+    "title": "Shedding light on an old mystery: thalidomide suppresses survival pathways to induce limb defects",
+    "year": "2008"
+   },
+   "pmids": [
+    "18418038",
+    "12413903",
+    "11956760"
+   ],
+   "lat": 51.1907733,
+   "lon": 6.7935167,
+   "geocode_display_name": "Heinrich-Heine-Universität Düsseldorf, 1, Universitätsstraße, Bilk, Stadtbezirk 3, Düsseldorf, Nordrhein-Westfalen, 40225, Deutschland"
+  },
+  {
+   "institution": "Yamagata University School of Medicine",
+   "country": "Japan",
+   "papers": 3,
+   "years": [
+    1994,
+    2007
+   ],
+   "codes": [
+    "2913",
+    "2440",
+    "93458",
+    "1570"
+   ],
+   "authors": [
+    "Ogino T",
+    "Rahman ME"
+   ],
+   "representative": {
+    "pmid": "17555519",
+    "doi": "10.1111/j.1440-169X.2007.00939.x",
+    "title": "Clinical features and teratogenic mechanisms of congenital absence of digits",
+    "year": "2007"
+   },
+   "pmids": [
+    "17555519",
+    "15162308",
+    "8186622"
+   ],
+   "lat": 38.4746705,
+   "lon": 140.083237,
+   "geocode_display_name": "山形県, 日本"
+  },
+  {
+   "institution": "Edward Via Virginia College of Osteopathic Medicine",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2004,
+    2006
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Prater MR",
+    "Renee Prater M"
+   ],
+   "representative": {
+    "pmid": "16433834",
+    "doi": "10.1111/j.1600-0897.2005.00345.x",
+    "title": "Prebreeding maternal immunostimulation with Freund's complete adjuvant reduces placental damage and distal limb defects caused by methylnitrosourea",
+    "year": "2006"
+   },
+   "pmids": [
+    "16433834",
+    "15990165",
+    "15526292"
+   ],
+   "lat": 35.3250107,
+   "lon": -76.8802812,
+   "geocode_display_name": "Edward, Beaufort County, North Carolina, United States"
+  },
+  {
+   "institution": "Boston University School of Public Health",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2003,
+    2026
+   ],
+   "codes": [
+    "295000"
+   ],
+   "authors": [
+    "Werler MM",
+    "Adrien N"
+   ],
+   "representative": {
+    "pmid": "39679807",
+    "doi": "10.1111/ppe.13161",
+    "title": "Assessing the Impact of Exposure Misclassification in Case-Control Studies of Self-Reported Medication Use",
+    "year": "2026"
+   },
+   "pmids": [
+    "39679807",
+    "12749386"
+   ],
+   "lat": 42.3355268,
+   "lon": -71.1026984,
+   "geocode_display_name": "Harvard School of Public Health, Huntington Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02120, United States"
+  },
+  {
+   "institution": "Perelman School of Medicine at the University of Pennsylvania",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2024,
+    2026
+   ],
+   "codes": [
+    "93458"
+   ],
+   "authors": [
+    "Cordray H",
+    "Mendenhall SD"
+   ],
+   "representative": {
+    "pmid": "40498878",
+    "doi": "10.1097/PXR.0000000000000441",
+    "title": "Functional outcome measures for pediatric upper limb deficiencies with and without prostheses: A systematic review and appraisal",
+    "year": "2026"
+   },
+   "pmids": [
+    "40498878",
+    "37987676"
+   ],
+   "lat": 40.7126698,
+   "lon": -74.0122763,
+   "geocode_display_name": "Perelman Performing Arts Center, 251, Fulton Street, Battery Park City, Lower Manhattan, Manhattan, New York County, New York, 10007, United"
+  },
+  {
+   "institution": "University of Sargodha",
+   "country": "Pakistan",
+   "papers": 2,
+   "years": [
+    2024,
+    2026
+   ],
+   "codes": [
+    "1027",
+    "2879"
+   ],
+   "authors": [
+    "Ahmad W",
+    "Ahmad KR",
+    "Idrees R"
+   ],
+   "representative": {
+    "pmid": "42255658",
+    "doi": "10.1016/j.toxrep.2026.102280",
+    "title": "Protective role of methylcobalamin (Vit B12) and pyridoxine (Vit B6) combination against teratogenic effects induced by lead in chick embryo",
+    "year": "2026"
+   },
+   "pmids": [
+    "42255658",
+    "39589106"
+   ],
+   "lat": 32.0728373,
+   "lon": 72.6841928,
+   "geocode_display_name": "University of Sargodha, یونیورسٹی روڈ, سرگودھا, تحصیل سرگودھا, ضلع سرگودھا, سرگودھا ڈویژن, پنجاب, 40162, پاکستان"
+  },
+  {
+   "institution": "Helios Hospital Berlin-Buch",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2023,
+    2025
+   ],
+   "codes": [
+    "thal",
+    "2913"
+   ],
+   "authors": [
+    "Lyutenski S",
+    "Klein-Weigel PF"
+   ],
+   "representative": {
+    "pmid": "40599048",
+    "doi": "10.1024/0301-1526/a001208",
+    "title": "Cardiovascular manifestations of thalidomide embryopathy",
+    "year": "2025"
+   },
+   "pmids": [
+    "40599048",
+    "36708132"
+   ],
+   "lat": 52.63108,
+   "lon": 13.5077151,
+   "geocode_display_name": "HELIOS Klinikum Berlin Buch, 50, Schwanebecker Chaussee, Buch, Pankow, Berlin, 13125, Deutschland"
+  },
+  {
+   "institution": "National Rehabilitation Center for Persons with Disabilities",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2024,
+    2025
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Haga N"
+   ],
+   "representative": {
+    "pmid": "40904645",
+    "doi": "10.5582/irdr.2025.01032",
+    "title": "Secondary musculoskeletal disability and rehabilitation aspects in adults with thalidomide embryopathy: A narrative review",
+    "year": "2025"
+   },
+   "pmids": [
+    "40904645",
+    "39220272"
+   ],
+   "lat": 35.8066068,
+   "lon": 139.4647966,
+   "geocode_display_name": "国立身体障害者リハビリテーションセンター, はばたき通り, 並木五丁目, 並木, 所沢市, 埼玉県, 359-0006, 日本"
+  },
+  {
+   "institution": "Stanford University",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2021,
+    2025
+   ],
+   "codes": [
+    "2911",
+    "2913"
+   ],
+   "authors": [
+    "Meador KJ",
+    "Cheesborough J"
+   ],
+   "representative": {
+    "pmid": "39818015",
+    "doi": "10.1016/j.bjps.2024.12.008",
+    "title": "Reconstructive techniques for chest and breast deformities in Poland syndrome: An up-to-date systematic review",
+    "year": "2025"
+   },
+   "pmids": [
+    "39818015",
+    "33847750"
+   ],
+   "lat": 37.4313138,
+   "lon": -122.1693654,
+   "geocode_display_name": "Stanford University, 450, Jane Stanford Way, Stanford, Santa Clara County, California, 94305, United States"
+  },
+  {
+   "institution": "University of Amsterdam",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2019,
+    2025
+   ],
+   "codes": [
+    "295000",
+    "93458"
+   ],
+   "authors": [
+    "Verberne EA",
+    "van Haelst MM",
+    "Arduç A"
+   ],
+   "representative": {
+    "pmid": "40913756",
+    "doi": "10.1002/pd.6885",
+    "title": "A Practical Prenatal Ultrasound Classification System for Lower Limb Anomalies-PRELLIM Classification",
+    "year": "2025"
+   },
+   "pmids": [
+    "40913756",
+    "31181251"
+   ],
+   "lat": 52.3681334,
+   "lon": 4.8898042,
+   "geocode_display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland"
+  },
+  {
+   "institution": "Hokkaido University",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    1990,
+    2024
+   ],
+   "codes": [
+    "2913",
+    "93458",
+    "2440"
+   ],
+   "authors": [
+    "Ogino T",
+    "Ikeda A"
+   ],
+   "representative": {
+    "pmid": "39048352",
+    "doi": "10.1265/ehpm.23-00366",
+    "title": "Heavy metals and trace elements in maternal blood and prevalence of congenital limb abnormalities among newborns: the Japan Environment and Children's Study",
+    "year": "2024"
+   },
+   "pmids": [
+    "39048352",
+    "2164076"
+   ],
+   "lat": 43.0795634,
+   "lon": 141.3373222,
+   "geocode_display_name": "北海道大学, 北8条西5, 北区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0808, 日本"
+  },
+  {
+   "institution": "Ankara University",
+   "country": "Turkey",
+   "papers": 2,
+   "years": [
+    2019,
+    2023
+   ],
+   "codes": [
+    "93321",
+    "2440",
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Buyukdogan H",
+    "Bilgen N",
+    "Kutlu F"
+   ],
+   "representative": {
+    "pmid": "37791865",
+    "doi": "10.1177/1098612X231193557",
+    "title": "Cardiomyopathy associated 5 (CMYA5) implicated as a genetic risk factor for radial hemimelia in Siamese cats",
+    "year": "2023"
+   },
+   "pmids": [
+    "37791865",
+    "31814667"
+   ],
+   "lat": 40.1311453,
+   "lon": 32.9512024,
+   "geocode_display_name": "Ankara Yıldırım Beyazıt Üniversitesi Esenboğa Yerleşkesi, Melikşah Çağrıbey Kümeevleri Sokağı, Melikşah Mahallesi, Çubuk, Ankara, İç Anadolu"
+  },
+  {
+   "institution": "BG Unfallklinik Frankfurt am Main",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2023,
+    2023
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Steinhauer F",
+    "Hirche C"
+   ],
+   "representative": {
+    "pmid": "36603815",
+    "doi": "10.1055/a-2002-7954",
+    "title": "[Correction: Replantation of the Functionally Dominant Little Finger in Dysmelia with Thumb Aplasia (Blauth type IV) after Fetal Damage from Thalidomide (Contergan) (Blauth Typ IV) and Wrist Deformity]",
+    "year": "2023"
+   },
+   "pmids": [
+    "36603815",
+    "36513326"
+   ],
+   "lat": 50.1447642,
+   "lon": 8.7095927,
+   "geocode_display_name": "BG Unfallklinik, 430, Friedberger Landstraße, Seckbach, Ost, Frankfurt am Main, Hessen, 60389, Deutschland"
+  },
+  {
+   "institution": "Orthopedic Hospital Speising",
+   "country": "Austria",
+   "papers": 2,
+   "years": [
+    2018,
+    2023
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Farr S"
+   ],
+   "representative": {
+    "pmid": "37211796",
+    "doi": "10.1177/17531934231175304",
+    "title": "Commentary on Markiewicz et al. Age-related changes in patients with upper limb thalidomide embryopathy in the United Kingdom",
+    "year": "2023"
+   },
+   "pmids": [
+    "37211796",
+    "29384817"
+   ],
+   "lat": 48.1514562,
+   "lon": 16.3153812,
+   "geocode_display_name": "Orthopedic Alt-Erlaa, Anton-Baumgartner-Straße, Katastralgemeinde Inzersdorf, Liesing, Wien, 1230, Österreich"
+  },
+  {
+   "institution": "University of Groningen",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2010,
+    2023
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "Jentink J",
+    "Bergman JEH",
+    "de Walle HEK"
+   ],
+   "representative": {
+    "pmid": "36584346",
+    "doi": "10.1002/ajmg.a.63107",
+    "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
+    "year": "2023"
+   },
+   "pmids": [
+    "36584346",
+    "20558369"
+   ],
+   "lat": 53.2194416,
+   "lon": 6.5629863,
+   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
+  },
+  {
+   "institution": "All India Institute of Medical Sciences",
+   "country": "India",
+   "papers": 2,
+   "years": [
+    2001,
+    2022
+   ],
+   "codes": [
+    "93321",
+    "thal"
+   ],
+   "authors": [
+    "Grover JK",
+    "Kotwal P"
+   ],
+   "representative": {
+    "pmid": "34452798",
+    "doi": "10.1016/j.jhsa.2021.07.004",
+    "title": "Histopathological, Ultrastructural, and Immunohistochemical Findings in Radial Longitudinal Deficiency: A Prospective, Observational Study",
+    "year": "2022"
+   },
+   "pmids": [
+    "34452798",
+    "14758882"
+   ],
+   "lat": 28.5645425,
+   "lon": 77.2099653,
+   "geocode_display_name": "All India Institute of Medical Sciences, Kidwai Nagar, New Delhi, Delhi, India"
+  },
+  {
+   "institution": "Imperial College Healthcare NHS Trust",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2016,
+    2022
+   ],
+   "codes": [
+    "2913",
+    "2879",
+    "thal"
+   ],
+   "authors": [
+    "Nicotra A",
+    "Nicholas R",
+    "Samarendra H"
+   ],
+   "representative": {
+    "pmid": "36120500",
+    "doi": "10.1016/j.jpra.2022.05.002",
+    "title": "Primary treatment of type B post-axial ulnar polydactyly: A systematic review and meta-analysis",
+    "year": "2022"
+   },
+   "pmids": [
+    "36120500",
+    "27100829"
+   ],
+   "lat": 51.4989595,
+   "lon": -0.1756407,
+   "geocode_display_name": "Imperial College London, Exhibition Road, Brompton, City of Westminster, Greater London, England, SW7 2AZ, United Kingdom"
+  },
+  {
+   "institution": "Karolinska Institutet",
+   "country": "Sweden",
+   "papers": 2,
+   "years": [
+    2012,
+    2022
+   ],
+   "codes": [
+    "2913"
+   ],
+   "authors": [
+    "Laurell T",
+    "Koskimies-Virta E"
+   ],
+   "representative": {
+    "pmid": "36353751",
+    "doi": "10.1002/bdr2.2123",
+    "title": "Amelia and phocomelia in Finland: Characteristics and prevalences in a nationwide population-based study",
+    "year": "2022"
+   },
+   "pmids": [
+    "36353751",
+    "22495965"
+   ],
+   "lat": 59.3515453,
+   "lon": 18.0310658,
+   "geocode_display_name": "Karolinska Institutet, Visionsgatan, Solna Kyrkby, Haga, Solna, Solna kommun, Stockholms län, 171 76, Sverige"
+  },
+  {
+   "institution": "University of London",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2020,
+    2022
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "Morris JK"
+   ],
+   "representative": {
+    "pmid": "36369770",
+    "doi": "10.1002/bdr2.2122",
+    "title": "Prevalence of vascular disruption anomalies and association with young maternal age: A EUROCAT study to compare the United Kingdom with other European countries",
+    "year": "2022"
+   },
+   "pmids": [
+    "36369770",
+    "32444984"
+   ],
+   "lat": 51.5218979,
+   "lon": -0.1288676,
+   "geocode_display_name": "SOAS University of London, Russell Square, Bloomsbury, London Borough of Camden, Greater London, England, WC1H 0XG, United Kingdom"
+  },
+  {
+   "institution": "Universitätsklinikum Essen",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2010,
+    2022
+   ],
+   "codes": [
+    "thal",
+    "2913",
+    "93322"
+   ],
+   "authors": [
+    "Wieczorek D",
+    "Passarge E"
+   ],
+   "representative": {
+    "pmid": "36470274",
+    "doi": "10.1055/a-1951-0792",
+    "title": "[Thalidomide embryopathy 60 years]",
+    "year": "2022"
+   },
+   "pmids": [
+    "36470274",
+    "19847792"
+   ],
+   "lat": 51.4349301,
+   "lon": 6.9886998,
+   "geocode_display_name": "Universitätsklinikum Essen, Gebhardtstraße, Holsterhausen, Stadtbezirk III, Essen, Nordrhein-Westfalen, 45147, Deutschland"
+  },
+  {
+   "institution": "Leiden University Medical Center",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2020,
+    2021
+   ],
+   "codes": [
+    "974",
+    "295000"
+   ],
+   "authors": [
+    "Knijnenburg PJC",
+    "Lopriore E",
+    "van Nisselrooij AEL"
+   ],
+   "representative": {
+    "pmid": "33480066",
+    "doi": "10.1002/pd.5907",
+    "title": "The prognosis of common arterial trunk from a fetal perspective: A prenatal cohort study and systematic literature review",
+    "year": "2021"
+   },
+   "pmids": [
+    "33480066",
+    "32335054"
+   ],
+   "lat": 52.1594747,
+   "lon": 4.4908843,
+   "geocode_display_name": "Leiden, Zuid-Holland, Nederland"
+  },
+  {
+   "institution": "Shengjing Hospital of China Medical University",
+   "country": "China",
+   "papers": 2,
+   "years": [
+    2020,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Wu QJ",
+    "Zhang JY",
+    "Jiang YT"
+   ],
+   "representative": {
+    "pmid": "33118065",
+    "doi": "10.1007/s11356-020-11351-5",
+    "title": "Maternal exposure to ambient SO(2) and risk of polydactyly and syndactyly: a population-based case-control study in Liaoning Province, China",
+    "year": "2021"
+   },
+   "pmids": [
+    "33118065",
+    "32416360"
+   ],
+   "lat": 41.7716892,
+   "lon": 123.4215018,
+   "geocode_display_name": "医大盛京医院, 36, 三好街, 南湖街道, 和平区, 沈阳市, 辽宁省, 110004, 中国"
+  },
+  {
+   "institution": "Tokyo Medical University",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2019,
+    2020
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Asatsuma-Okumura T",
+    "Handa H"
+   ],
+   "representative": {
+    "pmid": "32414180",
+    "doi": "10.3390/ph13050095",
+    "title": "Molecular Mechanisms of the Teratogenic Effects of Thalidomide",
+    "year": "2020"
+   },
+   "pmids": [
+    "32414180",
+    "31591562"
+   ],
+   "lat": 35.7015151,
+   "lon": 139.7642375,
+   "geocode_display_name": "東京科学大学 湯島キャンパス, 本郷通り, 湯島一丁目, 湯島, 文京区, 東京都, 113-0034, 日本"
+  },
+  {
+   "institution": "Tongji Hospital",
+   "country": "China",
+   "papers": 2,
+   "years": [
+    2018,
+    2020
+   ],
+   "codes": [
+    "2913"
+   ],
+   "authors": [
+    "Shi J",
+    "Kang H"
+   ],
+   "representative": {
+    "pmid": "30856359",
+    "doi": "10.1080/14767058.2019.1593358",
+    "title": "Maternal occupational exposure to chemicals in the textile factory during pregnancy is associated with a higher risk of polydactyly in the offspring",
+    "year": "2020"
+   },
+   "pmids": [
+    "30856359",
+    "30462958"
+   ],
+   "lat": 30.5821568,
+   "lon": 114.2544019,
+   "geocode_display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国"
+  },
+  {
+   "institution": "University of Bonn",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2014,
+    2019
+   ],
+   "codes": [
+    "93321"
+   ],
+   "authors": [
+    "Zeidler C",
+    "Kause F",
+    "Reutter H"
+   ],
+   "representative": {
+    "pmid": "30887706",
+    "doi": "10.1002/bdr2.1493",
+    "title": "HSPA6: A new autosomal recessive candidate gene for the VATER/VACTERL malformation spectrum",
+    "year": "2019"
+   },
+   "pmids": [
+    "30887706",
+    "25131394"
+   ],
+   "lat": 50.7338124,
+   "lon": 7.1022465,
+   "geocode_display_name": "Rheinische Friedrich-Wilhelms-Universität Bonn, Arkadenhof, Bonn-Zentrum, Stadtbezirk Bonn, Bonn, Nordrhein-Westfalen, 53113, Deutschland"
+  },
+  {
+   "institution": "University of York",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2018,
+    2019
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Newbronner E",
+    "Atkin K",
+    "Wadman R"
+   ],
+   "representative": {
+    "pmid": "30650111",
+    "doi": "10.1371/journal.pone.0210222",
+    "title": "The health and quality of life of Thalidomide survivors as they age - Evidence from a UK survey",
+    "year": "2019"
+   },
+   "pmids": [
+    "30650111",
+    "29109034"
+   ],
+   "lat": 53.9453912,
+   "lon": -1.0314589,
+   "geocode_display_name": "University of York, Hazel End, Heslington, York, York and North Yorkshire, England, YO10 5DD, United Kingdom"
+  },
+  {
+   "institution": "Queen Mary University of London",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2015,
+    2018
+   ],
+   "codes": [
+    "93458",
+    "2913"
+   ],
+   "authors": [
+    "Morris JK",
+    "Springett A"
+   ],
+   "representative": {
+    "pmid": "29621304",
+    "doi": "10.1371/journal.pone.0194986",
+    "title": "Trends in congenital anomalies in Europe from 1980 to 2012",
+    "year": "2018"
+   },
+   "pmids": [
+    "29621304",
+    "26347425"
+   ],
+   "lat": 51.5247403,
+   "lon": -0.0393136,
+   "geocode_display_name": "Queen Mary University of London, 327, Mile End Road, Mile End, London Borough of Tower Hamlets, Greater London, England, E1 4NS, United King"
+  },
+  {
+   "institution": "University Medical Center Utrecht",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    2016,
+    2018
+   ],
+   "codes": [
+    "93458",
+    "2913"
+   ],
+   "authors": [
+    "de Vries TI",
+    "van Haelst MM",
+    "Homans JF"
+   ],
+   "representative": {
+    "pmid": "29159873",
+    "doi": "10.1002/ajmg.a.38545",
+    "title": "Orthopaedic manifestations within the 22q11.2 Deletion syndrome: A systematic review",
+    "year": "2018"
+   },
+   "pmids": [
+    "29159873",
+    "26956253"
+   ],
+   "lat": 52.0907006,
+   "lon": 5.1215634,
+   "geocode_display_name": "Utrecht, Nederland"
+  },
+  {
+   "institution": "Kungälv Hospital",
+   "country": "Sweden",
+   "papers": 2,
+   "years": [
+    2016,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Ghassemi Jahani SA"
+   ],
+   "representative": {
+    "pmid": "29053750",
+    "doi": "10.1371/journal.pone.0186388",
+    "title": "Middle-aged individuals with thalidomide embryopathy have undergone few surgical limb procedures and demonstrate a high degree of physical independence",
+    "year": "2017"
+   },
+   "pmids": [
+    "29053750",
+    "27175919"
+   ],
+   "lat": 57.8707951,
+   "lon": 11.9799616,
+   "geocode_display_name": "Kungälv, Kungälvs kommun, Västra Götalands län, 442 18, Sverige"
+  },
+  {
+   "institution": "Max Planck Institute for Molecular Genetics",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2006,
+    2017
+   ],
+   "codes": [
+    "93458"
+   ],
+   "authors": [
+    "Dlugaszewska B",
+    "Will AJ",
+    "Mundlos S"
+   ],
+   "representative": {
+    "pmid": "28846100",
+    "doi": "10.1038/ng.3939",
+    "title": "Composition and dosage of a multipartite enhancer cluster control developmental expression of Ihh (Indian hedgehog)",
+    "year": "2017"
+   },
+   "pmids": [
+    "28846100",
+    "15980115"
+   ],
+   "lat": 52.4446554,
+   "lon": 13.2729039,
+   "geocode_display_name": "Max-Planck-Institut für molekulare Genetik, 63-73, Ihnestraße, Thielecksiedlung, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland"
+  },
+  {
+   "institution": "University of Oklahoma Health Sciences Center",
+   "country": "",
+   "papers": 2,
+   "years": [
+    1994,
+    2017
+   ],
+   "codes": [
+    "974",
+    "2440",
+    "2879",
+    "93321"
+   ],
+   "authors": [
+    "Hassed S",
+    "Palmer S",
+    "Aulthouse AL"
+   ],
+   "representative": {
+    "pmid": "28160419",
+    "doi": "10.1002/ajmg.a.37889",
+    "title": "Adams-Oliver syndrome review of the literature: Refining the diagnostic phenotype",
+    "year": "2017"
+   },
+   "pmids": [
+    "28160419",
+    "8059428"
+   ],
+   "lat": 35.4842868,
+   "lon": -97.498633,
+   "geocode_display_name": "University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma County, Oklahoma, United States"
+  },
+  {
+   "institution": "Genoa",
+   "country": "Italy",
+   "papers": 2,
+   "years": [
+    2016,
+    2016
+   ],
+   "codes": [
+    "2911"
+   ],
+   "authors": [
+    "Baldelli I",
+    "Romanini MV"
+   ],
+   "representative": {
+    "pmid": "27018681",
+    "doi": "10.1097/PRS.0000000000002018",
+    "title": "Body Image Disorders and Surgical Timing in Patients Affected by Poland Syndrome: Data Analysis of 58 Case Studies",
+    "year": "2016"
+   },
+   "pmids": [
+    "27018681",
+    "27348639"
+   ],
+   "lat": 44.40726,
+   "lon": 8.9338624,
+   "geocode_display_name": "Genova, Liguria, Italia"
+  },
+  {
+   "institution": "University of Lausanne",
+   "country": "Switzerland",
+   "papers": 2,
+   "years": [
+    1998,
+    2016
+   ],
+   "codes": [
+    "2913",
+    "thal"
+   ],
+   "authors": [
+    "Reymond A",
+    "Reist M"
+   ],
+   "representative": {
+    "pmid": "26860062",
+    "doi": "10.1038/ejhg.2016.7",
+    "title": "De novo PIK3R2 variant causes polymicrogyria, corpus callosum hyperplasia and focal cortical dysplasia",
+    "year": "2016"
+   },
+   "pmids": [
+    "26860062",
+    "9860497"
+   ],
+   "lat": 46.5225695,
+   "lon": 6.5809499,
+   "geocode_display_name": "Université de Lausanne, A1a, Maison Olympique, Lausanne, District de l'Ouest lausannois, Vaud, 1020, Schweiz/Suisse/Svizzera/Svizra"
+  },
+  {
+   "institution": "Children's Hospital Zagreb",
+   "country": "Croatia",
+   "papers": 2,
+   "years": [
+    2013,
+    2015
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Barisic I"
+   ],
+   "representative": {
+    "pmid": "25182137",
+    "doi": "10.1038/ejhg.2014.174",
+    "title": "Meckel-Gruber Syndrome: a population-based study on prevalence, prenatal diagnosis, clinical features, and survival in Europe",
+    "year": "2015"
+   },
+   "pmids": [
+    "25182137",
+    "23532946"
+   ],
+   "lat": 45.8130967,
+   "lon": 15.9772795,
+   "geocode_display_name": "Grad Zagreb, Hrvatska"
+  },
+  {
+   "institution": "Drug Safety Research Laboratories",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2012,
+    2014
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Kawamura Y"
+   ],
+   "representative": {
+    "pmid": "24344727",
+    "doi": "10.1111/cga.12046",
+    "title": "Effects of thalidomide on Fgf8, Bmp4 and Hoxa11 expression in the limb bud in Kbl:JW rabbit embryos",
+    "year": "2014"
+   },
+   "pmids": [
+    "24344727",
+    "23181494"
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
+  },
+  {
+   "institution": "McGill University",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    2006,
+    2014
+   ],
+   "codes": [
+    "93458",
+    "2913"
+   ],
+   "authors": [
+    "Sahambi SK",
+    "Berger RG",
+    "Hales BF"
+   ],
+   "representative": {
+    "pmid": "24670387",
+    "doi": "10.1016/j.tox.2014.03.005",
+    "title": "Exposure to an environmentally relevant mixture of brominated flame retardants affects fetal development in Sprague-Dawley rats",
+    "year": "2014"
+   },
+   "pmids": [
+    "24670387",
+    "16955493"
+   ],
+   "lat": 45.4318428,
+   "lon": -73.9452864,
+   "geocode_display_name": "Université McGill, 21111, Rue Lakeshore, Sainte-Anne-de-Bellevue, Agglomération de Montréal, Montréal (région administrative), Québec, H9X 3"
+  },
+  {
+   "institution": "National Center for Global Health and Medicine Hospital",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2014,
+    2014
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Imai K",
+    "Shiga Y",
+    "Kawachi S"
+   ],
+   "representative": {
+    "pmid": "24907542",
+    "doi": "10.1016/j.ijscr.2014.05.002",
+    "title": "Measurement of blood pressure in a thalidomide-impaired patient who required ovarian cystectomy: A case report",
+    "year": "2014"
+   },
+   "pmids": [
+    "24907542",
+    "24548169"
+   ],
+   "lat": 35.7029293,
+   "lon": 139.7163032,
+   "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
+  },
+  {
+   "institution": "Children's Hospital",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2003,
+    2013
+   ],
+   "codes": [
+    "93458"
+   ],
+   "authors": [
+    "Lyon HM",
+    "Pakkasjärvi N"
+   ],
+   "representative": {
+    "pmid": "23322606",
+    "doi": "10.1002/ajmg.a.35707",
+    "title": "Characteristics and associated anomalies in radial ray deficiencies in Finland--a population-based study",
+    "year": "2013"
+   },
+   "pmids": [
+    "23322606",
+    "14745921"
+   ],
+   "lat": 42.3371715,
+   "lon": -71.1056791,
+   "geocode_display_name": "Boston Children's Hospital, 300, Longwood Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
+  },
+  {
+   "institution": "Royal Prince Alfred Hospital",
+   "country": "Australia",
+   "papers": 2,
+   "years": [
+    1999,
+    2013
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "McCredie J",
+    "Jankelowitz SK",
+    "Burke D"
+   ],
+   "representative": {
+    "pmid": "23078293",
+    "doi": "10.1111/ene.12005",
+    "title": "Late-onset neurological symptoms in thalidomide-exposed subjects: a study of an Australasian cohort",
+    "year": "2013"
+   },
+   "pmids": [
+    "23078293",
+    "10067994"
+   ],
+   "lat": -33.889186,
+   "lon": 151.181472,
+   "geocode_display_name": "Royal Prince Alfred Hospital, 57-59, Brodrick Street, Camperdown, Inner West, Sydney, New South Wales, 2050, Australia"
+  },
+  {
+   "institution": "Instituto de Investigación de Enfermedades Raras",
+   "country": "Spain",
+   "papers": 2,
+   "years": [
+    2011,
+    2011
+   ],
+   "codes": [
+    "1027",
+    "295000",
+    "2879"
+   ],
+   "authors": [
+    "Bermejo-Sánchez E"
+   ],
+   "representative": {
+    "pmid": "22002956",
+    "doi": "10.1002/ajmg.c.30319",
+    "title": "Amelia: a multi-center descriptive epidemiologic study in a large dataset from the International Clearinghouse for Birth Defects Surveillance and Research, and overview of the literature",
+    "year": "2011"
+   },
+   "pmids": [
+    "22002956",
+    "22002800"
+   ],
+   "lat": 40.4762578,
+   "lon": -3.6931063,
+   "geocode_display_name": "Instituto de Investigación de Enfermedades Raras (IIER), Calle de Melchor Fernández Almagro, La Paz, Fuencarral, Fuencarral-El Pardo, Madrid"
+  },
+  {
+   "institution": "Slone Epidemiology Center at Boston University",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2009,
+    2011
+   ],
+   "codes": [
+    "295000"
+   ],
+   "authors": [
+    "Werler MM",
+    "Yazdy MM"
+   ],
+   "representative": {
+    "pmid": "21649676",
+    "doi": "10.1111/j.1365-3016.2011.01198.x",
+    "title": "Maternal dietary glycaemic intake during pregnancy and the risk of birth defects",
+    "year": "2011"
+   },
+   "pmids": [
+    "21649676",
+    "19067400"
+   ],
+   "lat": 32.1223832,
+   "lon": -93.6604575,
+   "geocode_display_name": "Slone, DeSoto Parish, Louisiana, United States"
+  },
+  {
+   "institution": "Federal University of Rio de Janeiro",
+   "country": "Brazil",
+   "papers": 2,
+   "years": [
+    2000,
+    2010
+   ],
+   "codes": [
+    "2913",
+    "295000"
+   ],
+   "authors": [
+    "Orioli IM"
+   ],
+   "representative": {
+    "pmid": "20104599",
+    "doi": "10.1002/ajmg.c.30233",
+    "title": "Epidemiology of holoprosencephaly: Prevalence and risk factors",
+    "year": "2010"
+   },
+   "pmids": [
+    "20104599",
+    "10759272"
+   ],
+   "lat": -22.8626953,
+   "lon": -43.2229771,
+   "geocode_display_name": "Federal University of Rio de Janeiro, Avenida Pedro Calmon, Cidade Universitária, Rio de Janeiro, Região Sudeste, 21941-908, Brasil"
+  },
+  {
+   "institution": "Gaslini Children Hospital",
+   "country": "Italy",
+   "papers": 2,
+   "years": [
+    2009,
+    2010
+   ],
+   "codes": [
+    "2911",
+    "1570"
+   ],
+   "authors": [
+    "Baban A",
+    "Torre M"
+   ],
+   "representative": {
+    "pmid": "19909992",
+    "doi": "10.1016/j.jtcvs.2009.08.024",
+    "title": "Dextrocardia in patients with Poland syndrome: phenotypic characterization provides insight into the pathogenesis",
+    "year": "2010"
+   },
+   "pmids": [
+    "19909992",
+    "19533787"
+   ],
+   "lat": 44.3913231,
+   "lon": 8.9883542,
+   "geocode_display_name": "Gaslini, Via Gerolamo Gaslini, Vernazzola, Levante, Genova, Liguria, 16147, Italia"
+  },
+  {
+   "institution": "Central South University",
+   "country": "China",
+   "papers": 2,
+   "years": [
+    2009,
+    2009
+   ],
+   "codes": [
+    "93458",
+    "93322",
+    "2913"
+   ],
+   "authors": [
+    "Wu L",
+    "Luo JY"
+   ],
+   "representative": {
+    "pmid": "19291772",
+    "doi": "10.1002/ajmg.a.32740",
+    "title": "A ZRS duplication causes syndactyly type IV with tibial hypoplasia",
+    "year": "2009"
+   },
+   "pmids": [
+    "19291772",
+    "20193224"
+   ],
+   "lat": 28.1578368,
+   "lon": 112.9322974,
+   "geocode_display_name": "中南大学, 后湖路, 后湖新村, 桔子洲街道, 岳麓区, 湘江新区, 岳麓区, 长沙市, 湖南省, 410002, 中国"
+  },
+  {
+   "institution": "University of Manitoba",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    2003,
+    2009
+   ],
+   "codes": [
+    "2911",
+    "93458",
+    "1027",
+    "93320"
+   ],
+   "authors": [
+    "Marles SL",
+    "Friedman T"
+   ],
+   "representative": {
+    "pmid": "19183988",
+    "doi": "10.1007/s00256-008-0638-x",
+    "title": "The carpal bones in Poland syndrome",
+    "year": "2009"
+   },
+   "pmids": [
+    "19183988",
+    "12476458"
+   ],
+   "lat": 49.9042395,
+   "lon": -97.1617229,
+   "geocode_display_name": "University of Manitoba, Pacific Avenue, West Alexander, Winnipeg, Manitoba, R3E 2E5, Canada"
+  },
+  {
+   "institution": "March of Dimes Birth Defect Foundation/California Department of Health Services",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2004,
+    2006
+   ],
+   "codes": [],
+   "authors": [
+    "Carmichael SL"
+   ],
+   "representative": {
+    "pmid": "16906563",
+    "doi": "10.1002/ajmg.a.31402",
+    "title": "Risk of limb deficiency defects associated with NAT1, NAT2, GSTT1, GSTM1, and NOS3 genetic variants, maternal smoking, and vitamin supplement intake",
+    "year": "2006"
+   },
+   "pmids": [
+    "16906563",
+    "14994238"
+   ],
+   "lat": 37.5225423,
+   "lon": -93.0893516,
+   "geocode_display_name": "March, Dallas County, Missouri, United States"
+  },
+  {
+   "institution": "Hospital For Sick Children",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    2000,
+    2005
+   ],
+   "codes": [
+    "974"
+   ],
+   "authors": [
+    "Al-Sanna'a N",
+    "Ho ES"
+   ],
+   "representative": {
+    "pmid": "16059857",
+    "doi": "10.1197/j.jht.2005.04.005",
+    "title": "Upper extremity function in children with congenital hand anomalies",
+    "year": "2005"
+   },
+   "pmids": [
+    "16059857",
+    "11050626"
+   ],
+   "lat": 43.6572672,
+   "lon": -79.3875622,
+   "geocode_display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada"
+  },
+  {
+   "institution": "University of Michigan",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2002,
+    2002
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Hansen JM"
+   ],
+   "representative": {
+    "pmid": "12242718",
+    "doi": "10.1002/dvdy.10150",
+    "title": "Misregulation of gene expression in the redox-sensitive NF-kappab-dependent limb outgrowth pathway by thalidomide",
+    "year": "2002"
+   },
+   "pmids": [
+    "12242718",
+    "11861780"
+   ],
+   "lat": 42.2942142,
+   "lon": -83.7100389,
+   "geocode_display_name": "University of Michigan, 500, South State Street, Ann Arbor, Washtenaw County, Michigan, 48109, United States"
+  },
+  {
+   "institution": "Foundation 41",
+   "country": "Australia",
+   "papers": 2,
+   "years": [
+    1983,
+    1999
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Huang PH",
+    "McBRIDE WG",
+    "Vardy PH"
+   ],
+   "representative": {
+    "pmid": "10488693",
+    "doi": "10.1111/j.1600-0773.1999.tb00074.x",
+    "title": "Interaction of thalidomide with DNA of rabbit embryos: a possible explanation for its immunosuppressant and teratogenic effects",
+    "year": "1999"
+   },
+   "pmids": [
+    "10488693",
+    "37281348"
+   ],
+   "lat": -38.1285527,
+   "lon": 145.3499476,
+   "geocode_display_name": "41, Foundation Avenue, Edgebrook, Clyde, Melbourne, Victoria, 3978, Australia"
+  },
+  {
+   "institution": "National Center for Environmental Health",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    1997,
+    1999
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Lary JM",
+    "Yang Q"
+   ],
+   "representative": {
+    "pmid": "10487395",
+    "doi": "10.2165/00002018-199921030-00002",
+    "title": "The return of thalidomide: can birth defects be prevented?",
+    "year": "1999"
+   },
+   "pmids": [
+    "10487395",
+    "9415679"
+   ],
+   "lat": 42.6524953,
+   "lon": -73.7489247,
+   "geocode_display_name": "New York State Department of Environmental Conservation, 625, Broadway, Downtown, City of Albany, Albany County, New York, 12204, United Sta"
+  },
+  {
+   "institution": "Universitätsklinikum Rudolf Virchow",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    1994,
+    1994
+   ],
+   "codes": [
+    "thal",
+    "1027",
+    "2879"
+   ],
+   "authors": [
+    "Heger W",
+    "Klug S"
+   ],
+   "representative": {
+    "pmid": "8024468",
+    "doi": "10.1007/s002040050055",
+    "title": "Embryotoxic effects of thalidomide derivatives in the non-human primate Callithrix jacchus. 5. Lack of teratogenic effects of phthalimidophthalmide",
+    "year": "1994"
+   },
+   "pmids": [
+    "8024468",
+    "7940403"
+   ],
+   "lat": 49.3058353,
+   "lon": 7.3472032,
+   "geocode_display_name": "Universitätsklinikum, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland"
+  },
+  {
+   "institution": "University of Calgary",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    1990,
+    1993
+   ],
+   "codes": [
+    "2440"
+   ],
+   "authors": [
+    "Biddle FG"
+   ],
+   "representative": {
+    "pmid": "8367833",
+    "doi": "10.1002/tera.1420470612",
+    "title": "Penetrance and expressivity of acetazolamide-ectrodactyly provide a method to define a right-left teratogenic gradient that differs between the C57BL/6J and WB/ReJ mouse strains",
+    "year": "1993"
+   },
+   "pmids": [
+    "8367833",
+    "2087687"
+   ],
+   "lat": 51.075054,
+   "lon": -114.138805,
+   "geocode_display_name": "University of Calgary, 2500, University Drive NW, University of Calgary, Calgary, Alberta, T2N 1N4, Canada"
+  },
+  {
+   "institution": "DePaul University",
+   "country": "",
+   "papers": 2,
+   "years": [
+    1991,
+    1992
+   ],
+   "codes": [
+    "2440"
+   ],
+   "authors": [
+    "Beck SL"
+   ],
+   "representative": {
+    "pmid": "1562800",
+    "doi": "10.1016/0890-6238(92)90022-l",
+    "title": "Dependence of acetazolamide teratogenesis on fetal and not maternal genotypes",
+    "year": "1992"
+   },
+   "pmids": [
+    "1562800",
+    "1948762"
+   ],
+   "lat": 41.9245803,
+   "lon": -87.6507223,
+   "geocode_display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,"
+  },
+  {
+   "institution": "Kyoto University",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    1989,
+    1990
+   ],
+   "codes": [
+    "thal",
+    "2913"
+   ],
+   "authors": [
+    "Shiota K"
+   ],
+   "representative": {
+    "pmid": "2309248",
+    "doi": "10.1016/0378-4274(90)90024-g",
+    "title": "Susceptibility to cyclophosphamide and thalidomide of fetal rat limb buds grafted in athymic (nude) mice",
+    "year": "1990"
+   },
+   "pmids": [
+    "2309248",
+    "2607306"
+   ],
+   "lat": 35.0270467,
+   "lon": 135.7814382,
+   "geocode_display_name": "京都大学, 東一条通り, 吉田二本松町, 吉田上大路町, 左京区, 京都市, 京都府, 606-8501, 日本"
+  }
+ ]
+}

@@ -9,16 +9,19 @@
   /* ── Site search (HDS Search.astro pattern, simplified) ─────────── */
   var overlay = document.getElementById("search-overlay");
   var trigger = document.getElementById("search-btn");
+  var qParam = new URLSearchParams(location.search).get("q");
+  if (qParam) setTimeout(function () { openSearch(qParam); }, 300);
   var index = null;
 
-  function openSearch() {
+  function openSearch(preset) {
     if (!overlay) return;
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     var input = overlay.querySelector("input");
-    input.value = "";
+    input.value = preset || "";
     render([]);
     input.focus();
+    if (preset) setTimeout(function () { input.dispatchEvent(new Event("input", { bubbles: true })); }, 50);
     if (!index) {
       fetch(BASE + "/search-index.json")
         .then(function (r) { return r.json(); })

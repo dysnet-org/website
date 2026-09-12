@@ -574,7 +574,23 @@ def registries_html():
                 cov = f"By classification: {n} of our {len(names)} conditions" if n < len(names) else f"By classification: all {len(names)} conditions"
                 cls = ""
             local = f'<br><span class="reg-local">{r["local"]}</span>' if r["local"] and r["local"] != r["name"] else ""
-            rows.append(f'<tr{cls}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{local}</td><td>{cov}</td></tr>')
+            site = next((f["website"] for f in ORPHA_REGS.get("france_population_registries", {}).get("registries", []) if f.get("orphanet_id") == r["id"]), None)
+            if r["id"] == "589005": site = "https://www.chu-rennes.fr/remabreizh.html"
+            web = f' · <a href="{site}" target="_blank" rel="noopener external">website ↗</a>' if site else ""
+            rows.append(f'<tr{cls}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
+    fr = ORPHA_REGS.get("france_population_registries", {})
+    fr_rows = "".join(f'<tr{" class=reg-direct" if not f.get("orphanet_id") else ""}><th scope="row">{f["region"]}</th><td><a href="{f["website"]}" target="_blank" rel="noopener external">{f["name"]}</a> · {f["host"]}{" · <strong>not yet on Orphanet</strong>" if not f.get("orphanet_id") else ""}</td><td>{f["created"]}</td><td>{f["births"]:,}{"*" if f.get("note") else ""}</td></tr>' for f in fr.get("registries", []))
+    fr_block = f"""
+    <h3 class="h3" style="margin-top:var(--space-4)">The French population registries, checked against Santé publique France</h3>
+    <p>Santé publique France’s surveillance report for 2019-2021 (published July 2026) lists seven population-based registries of congenital anomalies. Together they covered {fr.get("coverage", "")}. Six are on Orphanet; the seventh, ATENA in Nouvelle-Aquitaine, is not yet listed there and is added here from the report. The same report describes the European network these registries feed: {fr.get("eurocat", "")}.</p>
+    <div class="annex-wrap">
+      <table class="annex reg-table">
+        <thead><tr><th scope="col">Region</th><th scope="col">Registry</th><th scope="col">Created</th><th scope="col">Births covered per year (2019-2021)</th></tr></thead>
+        <tbody>{fr_rows}</tbody>
+      </table>
+    </div>
+    <p class="annex-note">Source: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths.</p>
+""" if fr else ""
     return f"""
     <div class="tick"></div>
     <p class="eyebrow">Registries on Orphanet</p>
@@ -587,6 +603,7 @@ def registries_html():
       </table>
     </div>
     <p class="annex-note">Source: Orphanet, Research and trials, Patient registries, per ORPHAcode. “Coded for” = the registry declares the condition itself ({direct} registries); “by classification” = Orphanet lists the registry under a broader group that includes the condition. Registry names as published by Orphanet, with the local name where given.</p>
+{fr_block}
 """
 
 PAGES["/knowledge/ongoing-studies/"] = {

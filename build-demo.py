@@ -104,7 +104,9 @@ SEO_TITLES = {
     "/": "DysNet · the international dysmelia network",
     "/knowledge/": "Knowledge on congenital limb difference · DysNet",
     "/knowledge/research-library/": "Research library on dysmelia and limb difference · DysNet",
-    "/knowledge/ongoing-studies/": "Studies and registries on limb difference · DysNet",
+    "/knowledge/ongoing-studies/": "Studies on limb difference you can join · DysNet",
+    "/knowledge/registries/": "Registries recording congenital limb difference · DysNet",
+    "/knowledge/resources/": "Resources on dysmelia: guides, surveys, reports · DysNet",
     "/knowledge/researchers/": "Researchers working on limb difference · DysNet",
     "/knowledge/care-centres/": "Care centres for congenital limb difference · DysNet",
     "/knowledge/teratogens/": "Teratogens register: substances of concern · DysNet",
@@ -224,10 +226,12 @@ FOOTER = f"""</main>
         <h2>Knowledge</h2>
         <ul>
           <li><a href="/knowledge/research-library/">Research library</a></li>
-          <li><a href="/knowledge/ongoing-studies/">Studies and registries</a></li>
+          <li><a href="/knowledge/registries/">Registries</a></li>
           <li><a href="/knowledge/researchers/">Researchers</a></li>
           <li><a href="/knowledge/care-centres/">Care centres</a></li>
           <li><a href="/knowledge/teratogens/">Teratogens register</a></li>
+          <li><a href="/knowledge/ongoing-studies/">Studies</a></li>
+          <li><a href="/knowledge/resources/">Resources</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
         </ul>
       </div>
@@ -530,8 +534,8 @@ __MAP_HERO__
 
 <section>
   <div class="container">
-    {opener("01", "Four registers", "What is known, being studied, and where expertise lives.")}
-    <p>Four living registers, each maintained by a named volunteer and dated, so families and clinicians always know how current the information is.</p>
+    {opener("01", "Five registers", "What is known, being studied, and where expertise lives.")}
+    <p>Five living registers, each maintained by a named volunteer and dated, so families and clinicians always know how current the information is.</p>
     <div class="grid cols-4" style="margin-top:var(--space-4)">
       <div class="card acc-library">
         <h3 class="h4"><a href="/knowledge/research-library/">Research library</a></h3>
@@ -539,8 +543,8 @@ __MAP_HERO__
         <p class="meta">Updated August 2026</p>
       </div>
       <div class="card acc-studies">
-        <h3 class="h4"><a href="/knowledge/ongoing-studies/">Studies and registries</a></h3>
-        <p>A live overview of studies recruiting or in progress across Europe.</p>
+        <h3 class="h4"><a href="/knowledge/registries/">Registries</a></h3>
+        <p>The registries that already record our conditions, from EUROCAT to the French population registries.</p>
         <p class="meta">Updated August 2026</p>
       </div>
       <div class="card acc-research">
@@ -610,7 +614,7 @@ __MAP_HERO__
 # ─────────────────────────── KNOWLEDGE HUB ────────────────────────
 PAGES["/knowledge/"] = {
     "title": "Knowledge",
-    "desc": "The DysNet knowledge base: four maintained registers covering limb-difference research, studies and registries, researchers and specialist care centres, plus a plain-language guide to dysmelia conditions.",
+    "desc": "The DysNet knowledge base: five maintained registers covering the bibliography, registries, researchers, care centres and teratogens, plus studies to join, resources and a guide to dysmelia.",
     "crumbs": [("/knowledge/", "Knowledge")],
     "body": f"""
 <section>
@@ -632,7 +636,7 @@ PAGES["/knowledge/"] = {
     </div>
 
     <div class="tick"></div>
-    <p class="eyebrow">The four registers</p>
+    <p class="eyebrow">The five registers</p>
     <h2 class="h2">What is known, being studied, and where expertise lives.</h2>
     <div class="grid cols-2" style="margin-top:var(--space-3)">
       <div class="card acc-library">
@@ -641,9 +645,9 @@ PAGES["/knowledge/"] = {
         <p class="meta">Register 1 · updated August 2026</p>
       </div>
       <div class="card acc-studies">
-        <h3 class="h3"><a href="/knowledge/ongoing-studies/">Studies and registries</a></h3>
-        <p>Studies recruiting or in progress, with status and contact for each.</p>
-        <p class="meta">Register 2 · updated August 2026</p>
+        <h3 class="h3"><a href="/knowledge/registries/">Registries</a></h3>
+        <p>The registries that already record our conditions: EUROCAT members, national rare-disease registries and the French population registries.</p>
+        <p class="meta">Register 2 · updated September 2026</p>
       </div>
       <div class="card acc-research">
         <h3 class="h3"><a href="/knowledge/researchers/">Researchers</a></h3>
@@ -661,6 +665,20 @@ PAGES["/knowledge/"] = {
         <p class="meta">Register 5 · new</p>
       </div>
     </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">Also in Knowledge</p>
+    <h2 class="h2">Studies to join, and resources to start with.</h2>
+    <div class="grid cols-2" style="margin-top:var(--space-3)">
+      <div class="card acc-studies">
+        <h3 class="h3"><a href="/knowledge/ongoing-studies/">Studies</a></h3>
+        <p>Studies our community can join or follow, with who runs them, their status and whom to contact.</p>
+      </div>
+      <div class="card acc-library">
+        <h3 class="h3"><a href="/knowledge/resources/">Resources</a></h3>
+        <p>Guides, surveys and reports that are not research papers: Orphanet, the Rare Barometer, the European registry recommendations, our conference proceedings.</p>
+      </div>
+    </div>
   </div>
 </section>
 """,
@@ -672,7 +690,7 @@ REGISTER_FOOT = ('<div class="register-note">'
 
 PAGES["/knowledge/research-library/"] = {
     "title": "Research library",
-    "desc": "Curated publications on congenital limb difference research, each summarised in plain language by DysNet volunteers, with links to the original sources.",
+    "desc": "The DysNet bibliography: peer-reviewed publications on congenital limb difference, thalidomide and their causes, searchable by condition, theme and year.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/research-library/", "Research library")],
     "body": f"""
 <section>
@@ -680,32 +698,8 @@ PAGES["/knowledge/research-library/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 1 · Research library <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Research library on limb difference: the research, readable.</h1>
-    <p>Every entry: a citation, a one-paragraph plain-language summary, and a link to the source. Tagged by condition and topic so families and clinicians find what concerns them.</p>
-    <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="#bibliography">Go straight to the bibliography ↓</a></p>
-
-    <h2 class="h3" style="margin-top:var(--space-4)">Starting points</h2>
-    <div style="margin-top:var(--space-2)">
-      <article class="entry">
-        <h3>Orphanet condition sheets on limb reduction defects <span class="badge live">source</span></h3>
-        <p>The European reference database for rare diseases documents the conditions grouped under dysmelia, from amelia to ulnar hemimelia. Our <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> guide is built on it.</p>
-        <p class="src">Orphanet · <a href="https://www.orpha.net/en/disease/encyclopedia" target="_blank" rel="noopener external">orpha.net · encyclopedia for patients</a> · topic: conditions</p>
-      </article>
-      <article class="entry">
-        <h3>Rare Barometer: how rare-disease patients experience care <span class="badge live">source</span></h3>
-        <p>EURORDIS’s large-scale survey programme, to which DysNet contributed content and translations, gives an updated picture of life with rare conditions including bone and limb diseases.</p>
-        <p class="src">EURORDIS · <a href="https://www.eurordis.org/rare-barometer/">eurordis.org/rare-barometer</a> · topic: lived experience</p>
-      </article>
-      <article class="entry">
-        <h3>Recommendations for improving the quality of rare disease registries <span class="badge live">peer-reviewed</span></h3>
-        <p>The European reference on what a rare-disease registry is and how to run one well: definition, governance, data quality, patient involvement and sustainability. The yardstick DysNet uses for its own initiative.</p>
-        <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. Int J Environ Res Public Health 2018;15(8):1644 · <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
-      </article>
-      <article class="entry">
-        <h3>Biorobotics for limb difference: conference proceedings, Milan 2026 <span class="badge live">DysNet event</span></h3>
-        <p>Findings from the conference DysNet co-organised at Regione Lombardia (Palazzo Pirelli, 26 March 2026) with university researchers, prosthetics producers and patient associations.</p>
-        <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>
-      </article>
-    </div>
+    <p>Every entry: a citation and a link to the source, tagged by condition and theme so families and clinicians find what concerns them. Search, then filter by condition, theme and year.</p>
+    <p style="margin-top:var(--space-3)">Looking for guides, surveys and reports rather than papers? They have moved to <a href="/knowledge/resources/">Resources</a>.</p>
     <div id="bibliography">
     {bibliography_html()}
     </div>
@@ -784,15 +778,15 @@ def registries_html():
 """
 
 PAGES["/knowledge/ongoing-studies/"] = {
-    "title": "Studies and registries",
-    "desc": "A live overview of limb-difference studies recruiting or in progress around the world: the ERN BOND Patient Journey, the Rare Barometer surveys, prosthesis reimbursement comparisons and more.",
-    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/ongoing-studies/", "Studies and registries")],
+    "title": "Studies",
+    "desc": "Limb-difference studies recruiting or in progress around the world: the ERN BOND Patient Journey, the Rare Barometer surveys, prosthesis reimbursement comparisons and more.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/ongoing-studies/", "Studies")],
     "body": f"""
 <section>
   <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 2 · Studies and registries <span class="badge live">updated Aug 2026</span></p>
-    <h1 class="display">Studies and registries on limb difference, right now.</h1>
+    <p class="eyebrow">Knowledge · Studies <span class="badge live">updated Aug 2026</span></p>
+    <h1 class="display">Studies on limb difference you can join or follow.</h1>
     <p>Studies our community can join or follow. Each entry shows who runs it, its status, and whom to contact. Associations: tell us about studies in your country.</p>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Studies you can join or follow</h2>
@@ -828,7 +822,65 @@ PAGES["/knowledge/ongoing-studies/"] = {
         <p class="src">DysNet workgroup · in preparation</p>
       </article>
     </div>
+    <p style="margin-top:var(--space-4)">The registries that already record our conditions have their own register: <a href="/knowledge/registries/">Registries</a>.</p>
+    {REGISTER_FOOT}
+  </div>
+</section>
+""",
+}
+
+PAGES["/knowledge/registries/"] = {
+    "title": "Registries",
+    "desc": "Registries recording congenital limb differences: the registries listed on Orphanet for our conditions, the EUROCAT network and the seven French population registries checked against Santé publique France.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/registries/", "Registries")],
+    "body": f"""
+<section>
+  <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
+    <div class="tick"></div>
+    <p class="eyebrow">Register 2 · Registries <span class="badge live">updated Sep 2026</span></p>
+    <h1 class="display">Registries recording limb difference: what already exists.</h1>
+    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The coverage of each French registry is drawn on the <a href="/#map">landing-page map</a>. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
+    {REGISTER_FOOT}
+  </div>
+</section>
+""",
+}
+
+PAGES["/knowledge/resources/"] = {
+    "title": "Resources",
+    "desc": "Resources on dysmelia that are not research papers: Orphanet condition sheets, the Rare Barometer surveys, the European recommendations on rare-disease registries and DysNet conference proceedings.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/resources/", "Resources")],
+    "body": f"""
+<section>
+  <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
+    <div class="tick"></div>
+    <p class="eyebrow">Knowledge · Resources</p>
+    <h1 class="display">Resources on limb difference: guides, surveys and reports.</h1>
+    <p>Reference works, surveys and reports that families, clinicians and associations return to, each with a short description and a link to the source. Peer-reviewed papers on our conditions live in the <a href="/knowledge/research-library/">research library</a>.</p>
+    <h2 class="h3" style="margin-top:var(--space-4)">Starting points</h2>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>Orphanet condition sheets on limb reduction defects <span class="badge live">source</span></h3>
+        <p>The European reference database for rare diseases documents the conditions grouped under dysmelia, from amelia to ulnar hemimelia. Our <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> guide is built on it.</p>
+        <p class="src">Orphanet · <a href="https://www.orpha.net/en/disease/encyclopedia" target="_blank" rel="noopener external">orpha.net · encyclopedia for patients</a> · topic: conditions</p>
+      </article>
+      <article class="entry">
+        <h3>Rare Barometer: how rare-disease patients experience care <span class="badge live">source</span></h3>
+        <p>EURORDIS’s large-scale survey programme, to which DysNet contributed content and translations, gives an updated picture of life with rare conditions including bone and limb diseases.</p>
+        <p class="src">EURORDIS · <a href="https://www.eurordis.org/rare-barometer/">eurordis.org/rare-barometer</a> · topic: lived experience</p>
+      </article>
+      <article class="entry">
+        <h3>Recommendations for improving the quality of rare disease registries <span class="badge live">peer-reviewed</span></h3>
+        <p>The European reference on what a rare-disease registry is and how to run one well: definition, governance, data quality, patient involvement and sustainability. The yardstick DysNet uses for its own initiative.</p>
+        <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. Int J Environ Res Public Health 2018;15(8):1644 · <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
+      </article>
+      <article class="entry">
+        <h3>Biorobotics for limb difference: conference proceedings, Milan 2026 <span class="badge live">DysNet event</span></h3>
+        <p>Findings from the conference DysNet co-organised at Regione Lombardia (Palazzo Pirelli, 26 March 2026) with university researchers, prosthetics producers and patient associations.</p>
+        <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>
+      </article>
+    </div>
     {REGISTER_FOOT}
   </div>
 </section>
@@ -1616,7 +1668,7 @@ MAP_HERO = """
     <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
-    <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/ongoing-studies/">registries</a> pages.</span>
+    <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/registries/">registries</a> pages.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0), French départements from IGN Admin Express (Licence Ouverte) via france-geojson; registry coverage after Santé publique France 2026 · rendered with MapLibre, self-hosted</span>
   </div>
   </div>
@@ -1705,7 +1757,7 @@ PAGES["/contact/"] = {
     <p>One address reaches the whole network: <a href="mailto:info@dysnet.org"><strong>info@dysnet.org</strong></a>.</p>
     <div class="grid cols-3" style="margin-top:var(--space-4)">
       <div class="card"><h3 class="h4">Families</h3><p>Looking for information or an association near you? Start with <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> and <a href="/about/members/">the member directory</a>.</p></div>
-      <div class="card acc-research"><h3 class="h4">Researchers &amp; clinicians</h3><p>Ask to be listed in the <a href="/knowledge/researchers/">researcher register</a> or propose a study for <a href="/knowledge/ongoing-studies/">the overview</a>.</p></div>
+      <div class="card acc-research"><h3 class="h4">Researchers &amp; clinicians</h3><p>Ask to be listed in the <a href="/knowledge/researchers/">researcher register</a> or propose a study for <a href="/knowledge/ongoing-studies/">the studies page</a>.</p></div>
       <div class="card acc-studies"><h3 class="h4">Associations</h3><p>Join as a <a href="/about/members/">full or associate member</a>, or bring your national data into <a href="/registry/">the registry</a>.</p></div>
     </div>
     {opener("01", "Offices", "Solna and Brussels.")}
@@ -1983,7 +2035,7 @@ def page_dates(path, new_html):
 EXTRA_LD = {
     "/knowledge/understanding-dysmelia/": lambda: [conditions_ld()],
     "/knowledge/research-library/": lambda: [dataset_ld("DysNet bibliography on congenital limb difference and dysmelia", "Peer-reviewed references on limb differences, thalidomide embryopathy and their causes, verified against PubMed and Crossref; sources: Orphanet epidemiology, member associations' and registries' websites, fixed PubMed queries.", "/knowledge/research-library/", "bibliography.json", ["dysmelia", "limb reduction defects", "thalidomide embryopathy", "bibliography", "PubMed"], f"{len(BIB.get('entries', []))} references")],
-    "/knowledge/ongoing-studies/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/ongoing-studies/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
+    "/knowledge/registries/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/registries/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
     "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],

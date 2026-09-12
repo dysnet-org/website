@@ -71,7 +71,7 @@
   /* ── "On this page" contents (HDS TableOfContents pattern) ──────── */
   var main = document.getElementById("main");
   if (main) {
-    var heads = Array.prototype.slice.call(main.querySelectorAll("h2"));
+    var heads = Array.prototype.slice.call(main.querySelectorAll("h2")).filter(function (h) { return !h.closest(".card, .aud-grid, .hub-grid, .person"); });
     if (heads.length >= 3) {
       var box = document.createElement("nav");
       box.className = "onpage";

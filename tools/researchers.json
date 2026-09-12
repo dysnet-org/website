@@ -1,0 +1,944 @@
+{
+ "built": "2026-09-12",
+ "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
+ "bibliography_size": 496,
+ "records_without_affiliation": 263,
+ "teams": [
+  {
+   "institution": "University of Cologne",
+   "country": "Germany",
+   "papers": 8,
+   "years": [
+    2008,
+    2022
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Samel C",
+    "Knobloch J",
+    "Niecke A"
+   ],
+   "representative": {
+    "pmid": "35666030",
+    "doi": "10.1002/bdr2.2051",
+    "title": "Health-related quality of life after 50 years in individuals with thalidomide embryopathy: Evidence from a German cross-sectional survey",
+    "year": "2022"
+   },
+   "pmids": [
+    "35666030",
+    "36126927",
+    "33915582",
+    "30943953",
+    "30887894",
+    "23917409",
+    "20958261",
+    "18178729"
+   ]
+  },
+  {
+   "institution": "National Center for Global Health and Medicine",
+   "country": "Japan",
+   "papers": 5,
+   "years": [
+    2015,
+    2025
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Shiga T",
+    "Yoshizawa A",
+    "Tajima T"
+   ],
+   "representative": {
+    "pmid": "40904645",
+    "doi": "10.5582/irdr.2025.01032",
+    "title": "Secondary musculoskeletal disability and rehabilitation aspects in adults with thalidomide embryopathy: A narrative review",
+    "year": "2025"
+   },
+   "pmids": [
+    "40904645",
+    "39220272",
+    "31339667",
+    "27567725",
+    "26033770"
+   ]
+  },
+  {
+   "institution": "University of Göteborg",
+   "country": "Sweden",
+   "papers": 5,
+   "years": [
+    1992,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Strömland K",
+    "Brisby H"
+   ],
+   "representative": {
+    "pmid": "29053750",
+    "doi": "10.1371/journal.pone.0186388",
+    "title": "Middle-aged individuals with thalidomide embryopathy have undergone few surgical limb procedures and demonstrate a high degree of physical independence",
+    "year": "2017"
+   },
+   "pmids": [
+    "29053750",
+    "12210472",
+    "8157157",
+    "8333272",
+    "1577294"
+   ]
+  },
+  {
+   "institution": "Sahlgrenska University Hospital",
+   "country": "Sweden",
+   "papers": 4,
+   "years": [
+    2011,
+    2016
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Andersson GB",
+    "Ghassemi Jahani SA",
+    "Brisby H"
+   ],
+   "representative": {
+    "pmid": "27175919",
+    "doi": "10.1371/journal.pone.0155493",
+    "title": "Degenerative Changes in the Cervical Spine Are More Common in Middle-Aged Individuals with Thalidomide Embryopathy than in Healthy Controls",
+    "year": "2016"
+   },
+   "pmids": [
+    "27175919",
+    "27854003",
+    "25301261",
+    "21712302"
+   ]
+  },
+  {
+   "institution": "University of Toronto",
+   "country": "Canada",
+   "papers": 4,
+   "years": [
+    1996,
+    2011
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Lee CJ",
+    "Parman T",
+    "Arlen RR"
+   ],
+   "representative": {
+    "pmid": "21502285",
+    "doi": "10.1096/fj.10-178814",
+    "title": "Embryopathic effects of thalidomide and its hydrolysis products in rabbit embryo culture: evidence for a prostaglandin H synthase (PHS)-dependent, reactive oxygen species (ROS)-mediated mechanism",
+    "year": "2011"
+   },
+   "pmids": [
+    "21502285",
+    "21505090",
+    "10229238",
+    "8667234"
+   ]
+  },
+  {
+   "institution": "Idaho State University",
+   "country": "United States",
+   "papers": 4,
+   "years": [
+    1988,
+    2000
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Stephens TD",
+    "Smith DM"
+   ],
+   "representative": {
+    "pmid": "10661908",
+    "doi": "10.1002/(SICI)1096-9926(200003)61:3<189::AID-TERA6>3.0.CO;2-W",
+    "title": "Hypothesis: thalidomide embryopathy-proposed mechanism of action",
+    "year": "2000"
+   },
+   "pmids": [
+    "10661908",
+    "10799645",
+    "8987155",
+    "3067416"
+   ]
+  },
+  {
+   "institution": "Freie Universität Berlin",
+   "country": "Germany",
+   "papers": 4,
+   "years": [
+    1988,
+    1996
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Schmahl HJ",
+    "Heger W"
+   ],
+   "representative": {
+    "pmid": "8896721",
+    "doi": "10.1007/s002040050336",
+    "title": "Stereoselective distribution of the teratogenic thalidomide analogue EM12 in the early embryo of marmoset monkey, Wistar rat and NMRI mouse",
+    "year": "1996"
+   },
+   "pmids": [
+    "8896721",
+    "2492686",
+    "3196154",
+    "3143339"
+   ]
+  },
+  {
+   "institution": "Children's Hospital Research Foundation",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    1988,
+    2025
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Vorhees CV",
+    "Warkany J",
+    "Scott WJ"
+   ],
+   "representative": {
+    "pmid": "40198353",
+    "doi": "10.1007/s00204-024-03930-z",
+    "title": "Thalidomide-induced limb malformations: an update and reevaluation",
+    "year": "2025"
+   },
+   "pmids": [
+    "40198353",
+    "11418267",
+    "3227490"
+   ]
+  },
+  {
+   "institution": "Royal Hospital for Children and Young People",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2023,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "93321"
+   ],
+   "authors": [
+    "Lam W",
+    "Lam WL"
+   ],
+   "representative": {
+    "pmid": "38702055",
+    "doi": "10.1177/17531934241249014",
+    "title": "Parental experience after diagnosis of a congenital upper limb difference: a national survey",
+    "year": "2024"
+   },
+   "pmids": [
+    "38702055",
+    "37021538",
+    "37226469"
+   ]
+  },
+  {
+   "institution": "Thalidomide Trust",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2007,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "2879",
+    "93321"
+   ],
+   "authors": [
+    "Johnson M",
+    "Morrison D",
+    "Sagoe K"
+   ],
+   "representative": {
+    "pmid": "38318695",
+    "doi": "10.1080/09638288.2024.2307357",
+    "title": "The impact of ageing on the health and wellbeing of people with thalidomide embryopathy: a comparison of the health impact with the general population",
+    "year": "2024"
+   },
+   "pmids": [
+    "38318695",
+    "31969401",
+    "17365642"
+   ]
+  },
+  {
+   "institution": "Dr. Becker Rhein-Sieg-Klinik",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    2019,
+    2021
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Peters KM"
+   ],
+   "representative": {
+    "pmid": "33915582",
+    "doi": "10.1055/a-1457-2846",
+    "title": "[Chronic Pain in People Impaired by Thalidomide Embryopathy: An Explorative Analysis of Prevalence, Pain Parameters and Biopsychosocial Factors]",
+    "year": "2021"
+   },
+   "pmids": [
+    "33915582",
+    "30943953",
+    "30887894"
+   ]
+  },
+  {
+   "institution": "University of Aberdeen",
+   "country": "United Kingdom",
+   "papers": 3,
+   "years": [
+    2009,
+    2019
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Vargesson N"
+   ],
+   "representative": {
+    "pmid": "30335598",
+    "doi": "10.1177/1753193418805249",
+    "title": "The teratogenic effects of thalidomide on limbs",
+    "year": "2019"
+   },
+   "pmids": [
+    "30335598",
+    "26043938",
+    "19921660"
+   ]
+  },
+  {
+   "institution": "University of Genoa",
+   "country": "Italy",
+   "papers": 3,
+   "years": [
+    2014,
+    2019
+   ],
+   "codes": [
+    "2911"
+   ],
+   "authors": [
+    "Puliti A",
+    "Vaccari CM",
+    "Baldelli I"
+   ],
+   "representative": {
+    "pmid": "31753026",
+    "doi": "10.1186/s13023-019-1253-8",
+    "title": "Experiences of patients with Poland syndrome of diagnosis and care in Italy: a pilot survey",
+    "year": "2019"
+   },
+   "pmids": [
+    "31753026",
+    "27884122",
+    "24885342"
+   ]
+  },
+  {
+   "institution": "INAGEMP-Instituto Nacional de Genética Médica Populacional",
+   "country": "Brazil",
+   "papers": 3,
+   "years": [
+    2015,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Schuler-Faccini L",
+    "Sales Luiz Vianna F",
+    "Vianna FS"
+   ],
+   "representative": {
+    "pmid": "28161597",
+    "doi": "10.1016/j.reprotox.2017.01.012",
+    "title": "Angiogenesis-related genes and thalidomide teratogenesis in humans: an approach on genetic variation and review of past in vitro studies",
+    "year": "2017"
+   },
+   "pmids": [
+    "28161597",
+    "27751757",
+    "25828060"
+   ]
+  },
+  {
+   "institution": "University of Illinois",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    1991,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Miller MT",
+    "Sorensen D",
+    "Sears KE"
+   ],
+   "representative": {
+    "pmid": "28130151",
+    "doi": "10.1016/j.reprotox.2017.01.010",
+    "title": "A new mammalian model system for thalidomide teratogenesis: Monodelphis domestica",
+    "year": "2017"
+   },
+   "pmids": [
+    "28130151",
+    "2019959",
+    "1808819"
+   ]
+  },
+  {
+   "institution": "Tokyo Institute of Technology",
+   "country": "Japan",
+   "papers": 3,
+   "years": [
+    2011,
+    2012
+   ],
+   "codes": [
+    "thal",
+    "1027",
+    "2879"
+   ],
+   "authors": [
+    "Ito T"
+   ],
+   "representative": {
+    "pmid": "22348778",
+    "doi": "10.1111/j.1741-4520.2011.00351.x",
+    "title": "Deciphering the mystery of thalidomide teratogenicity",
+    "year": "2012"
+   },
+   "pmids": [
+    "22348778",
+    "21207098",
+    "21404644"
+   ]
+  },
+  {
+   "institution": "National Rehabilitation Center for Persons with Disabilities",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2024,
+    2025
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Haga N"
+   ],
+   "representative": {
+    "pmid": "40904645",
+    "doi": "10.5582/irdr.2025.01032",
+    "title": "Secondary musculoskeletal disability and rehabilitation aspects in adults with thalidomide embryopathy: A narrative review",
+    "year": "2025"
+   },
+   "pmids": [
+    "40904645",
+    "39220272"
+   ]
+  },
+  {
+   "institution": "Charles University",
+   "country": "Czechia",
+   "papers": 2,
+   "years": [
+    1994,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "2879",
+    "2913"
+   ],
+   "authors": [
+    "Kodytková A",
+    "Lebl J",
+    "Bílá V"
+   ],
+   "representative": {
+    "pmid": "37285827",
+    "doi": "10.1159/000531452",
+    "title": "Integrative Role of the SALL4 Gene: From Thalidomide Embryopathy to Genetic Defects of the Upper Limb, Internal Organs, Cerebral Midline, and Pituitary",
+    "year": "2024"
+   },
+   "pmids": [
+    "37285827",
+    "7851614"
+   ]
+  },
+  {
+   "institution": "BG Unfallklinik Frankfurt am Main",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    2023,
+    2023
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Steinhauer F",
+    "Hirche C"
+   ],
+   "representative": {
+    "pmid": "36603815",
+    "doi": "10.1055/a-2002-7954",
+    "title": "[Correction: Replantation of the Functionally Dominant Little Finger in Dysmelia with Thumb Aplasia (Blauth type IV) after Fetal Damage from Thalidomide (Contergan) (Blauth Typ IV) and Wrist Deformity]",
+    "year": "2023"
+   },
+   "pmids": [
+    "36603815",
+    "36513326"
+   ]
+  },
+  {
+   "institution": "All India Institute of Medical Sciences",
+   "country": "India",
+   "papers": 2,
+   "years": [
+    2001,
+    2022
+   ],
+   "codes": [
+    "93321",
+    "thal"
+   ],
+   "authors": [
+    "Grover JK",
+    "Kotwal P"
+   ],
+   "representative": {
+    "pmid": "34452798",
+    "doi": "10.1016/j.jhsa.2021.07.004",
+    "title": "Histopathological, Ultrastructural, and Immunohistochemical Findings in Radial Longitudinal Deficiency: A Prospective, Observational Study",
+    "year": "2022"
+   },
+   "pmids": [
+    "34452798",
+    "14758882"
+   ]
+  },
+  {
+   "institution": "Tokyo Medical University",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2019,
+    2020
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Asatsuma-Okumura T",
+    "Handa H"
+   ],
+   "representative": {
+    "pmid": "32414180",
+    "doi": "10.3390/ph13050095",
+    "title": "Molecular Mechanisms of the Teratogenic Effects of Thalidomide",
+    "year": "2020"
+   },
+   "pmids": [
+    "32414180",
+    "31591562"
+   ]
+  },
+  {
+   "institution": "University of York",
+   "country": "United Kingdom",
+   "papers": 2,
+   "years": [
+    2018,
+    2019
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Newbronner E",
+    "Atkin K",
+    "Wadman R"
+   ],
+   "representative": {
+    "pmid": "30650111",
+    "doi": "10.1371/journal.pone.0210222",
+    "title": "The health and quality of life of Thalidomide survivors as they age - Evidence from a UK survey",
+    "year": "2019"
+   },
+   "pmids": [
+    "30650111",
+    "29109034"
+   ]
+  },
+  {
+   "institution": "Kungälv Hospital",
+   "country": "Sweden",
+   "papers": 2,
+   "years": [
+    2016,
+    2017
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Ghassemi Jahani SA"
+   ],
+   "representative": {
+    "pmid": "29053750",
+    "doi": "10.1371/journal.pone.0186388",
+    "title": "Middle-aged individuals with thalidomide embryopathy have undergone few surgical limb procedures and demonstrate a high degree of physical independence",
+    "year": "2017"
+   },
+   "pmids": [
+    "29053750",
+    "27175919"
+   ]
+  },
+  {
+   "institution": "Genoa",
+   "country": "Italy",
+   "papers": 2,
+   "years": [
+    2016,
+    2016
+   ],
+   "codes": [
+    "2911"
+   ],
+   "authors": [
+    "Baldelli I",
+    "Romanini MV"
+   ],
+   "representative": {
+    "pmid": "27018681",
+    "doi": "10.1097/PRS.0000000000002018",
+    "title": "Body Image Disorders and Surgical Timing in Patients Affected by Poland Syndrome: Data Analysis of 58 Case Studies",
+    "year": "2016"
+   },
+   "pmids": [
+    "27018681",
+    "27348639"
+   ]
+  },
+  {
+   "institution": "Renji Hospital",
+   "country": "China",
+   "papers": 2,
+   "years": [
+    2011,
+    2016
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Tan HH",
+    "Chen H"
+   ],
+   "representative": {
+    "pmid": "27537596",
+    "doi": "10.1097/MD.0000000000004606",
+    "title": "Bleeding recurrence in patients with gastrointestinal vascular malformation after thalidomide",
+    "year": "2016"
+   },
+   "pmids": [
+    "27537596",
+    "21955427"
+   ]
+  },
+  {
+   "institution": "Drug Safety Research Laboratories",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2012,
+    2014
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Kawamura Y"
+   ],
+   "representative": {
+    "pmid": "24344727",
+    "doi": "10.1111/cga.12046",
+    "title": "Effects of thalidomide on Fgf8, Bmp4 and Hoxa11 expression in the limb bud in Kbl:JW rabbit embryos",
+    "year": "2014"
+   },
+   "pmids": [
+    "24344727",
+    "23181494"
+   ]
+  },
+  {
+   "institution": "National Center for Global Health and Medicine Hospital",
+   "country": "Japan",
+   "papers": 2,
+   "years": [
+    2014,
+    2014
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Imai K",
+    "Shiga Y",
+    "Kawachi S"
+   ],
+   "representative": {
+    "pmid": "24907542",
+    "doi": "10.1016/j.ijscr.2014.05.002",
+    "title": "Measurement of blood pressure in a thalidomide-impaired patient who required ovarian cystectomy: A case report",
+    "year": "2014"
+   },
+   "pmids": [
+    "24907542",
+    "24548169"
+   ]
+  },
+  {
+   "institution": "Royal Prince Alfred Hospital",
+   "country": "Australia",
+   "papers": 2,
+   "years": [
+    1999,
+    2013
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "McCredie J",
+    "Jankelowitz SK",
+    "Burke D"
+   ],
+   "representative": {
+    "pmid": "23078293",
+    "doi": "10.1111/ene.12005",
+    "title": "Late-onset neurological symptoms in thalidomide-exposed subjects: a study of an Australasian cohort",
+    "year": "2013"
+   },
+   "pmids": [
+    "23078293",
+    "10067994"
+   ]
+  },
+  {
+   "institution": "Gaslini Children Hospital",
+   "country": "Italy",
+   "papers": 2,
+   "years": [
+    2009,
+    2010
+   ],
+   "codes": [
+    "2911",
+    "1570"
+   ],
+   "authors": [
+    "Baban A",
+    "Torre M"
+   ],
+   "representative": {
+    "pmid": "19909992",
+    "doi": "10.1016/j.jtcvs.2009.08.024",
+    "title": "Dextrocardia in patients with Poland syndrome: phenotypic characterization provides insight into the pathogenesis",
+    "year": "2010"
+   },
+   "pmids": [
+    "19909992",
+    "19533787"
+   ]
+  },
+  {
+   "institution": "University of Michigan",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2002,
+    2002
+   ],
+   "codes": [
+    "thal",
+    "2879"
+   ],
+   "authors": [
+    "Hansen JM"
+   ],
+   "representative": {
+    "pmid": "12242718",
+    "doi": "10.1002/dvdy.10150",
+    "title": "Misregulation of gene expression in the redox-sensitive NF-kappab-dependent limb outgrowth pathway by thalidomide",
+    "year": "2002"
+   },
+   "pmids": [
+    "12242718",
+    "11861780"
+   ]
+  },
+  {
+   "institution": "Foundation 41",
+   "country": "Australia",
+   "papers": 2,
+   "years": [
+    1983,
+    1999
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Huang PH",
+    "McBRIDE WG",
+    "Vardy PH"
+   ],
+   "representative": {
+    "pmid": "10488693",
+    "doi": "10.1111/j.1600-0773.1999.tb00074.x",
+    "title": "Interaction of thalidomide with DNA of rabbit embryos: a possible explanation for its immunosuppressant and teratogenic effects",
+    "year": "1999"
+   },
+   "pmids": [
+    "10488693",
+    "37281348"
+   ]
+  },
+  {
+   "institution": "National Center for Environmental Health",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    1997,
+    1999
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Lary JM",
+    "Yang Q"
+   ],
+   "representative": {
+    "pmid": "10487395",
+    "doi": "10.2165/00002018-199921030-00002",
+    "title": "The return of thalidomide: can birth defects be prevented?",
+    "year": "1999"
+   },
+   "pmids": [
+    "10487395",
+    "9415679"
+   ]
+  },
+  {
+   "institution": "University Medical Center",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    1996,
+    1996
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Neubert R",
+    "Nogueira AC"
+   ],
+   "representative": {
+    "pmid": "8538367",
+    "doi": "10.1016/0024-3205(95)02290-2",
+    "title": "Down-regulation of adhesion receptors on cells of primate embryos as a probable mechanism of the teratogenic action of thalidomide",
+    "year": "1996"
+   },
+   "pmids": [
+    "8538367",
+    "8538370"
+   ]
+  },
+  {
+   "institution": "Universitätsklinikum Rudolf Virchow",
+   "country": "Germany",
+   "papers": 2,
+   "years": [
+    1994,
+    1994
+   ],
+   "codes": [
+    "thal",
+    "1027",
+    "2879"
+   ],
+   "authors": [
+    "Heger W",
+    "Klug S"
+   ],
+   "representative": {
+    "pmid": "8024468",
+    "doi": "10.1007/s002040050055",
+    "title": "Embryotoxic effects of thalidomide derivatives in the non-human primate Callithrix jacchus. 5. Lack of teratogenic effects of phthalimidophthalmide",
+    "year": "1994"
+   },
+   "pmids": [
+    "8024468",
+    "7940403"
+   ]
+  }
+ ]
+}

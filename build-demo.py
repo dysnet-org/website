@@ -317,6 +317,30 @@ def centres_html():
                    f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]} · {link} · named by {via}</p></article>')
     return "".join(out)
 
+
+# Register 3 · research teams derived from the bibliography (tools/build-researchers.py; PubMed affiliations of first and last authors).
+RES_PATH = pathlib.Path(__file__).parent / "tools" / "researchers.json"
+RESEARCHERS = json.loads(RES_PATH.read_text(encoding="utf-8")) if RES_PATH.exists() else {"teams": []}
+
+
+def researchers_html():
+    teams = RESEARCHERS.get("teams", [])
+    names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
+    out, last = [], None
+    for t in sorted(teams, key=lambda t: (t["country"] or "zz", -t["papers"], t["institution"])):
+        c = t["country"] or "Country not stated"
+        if c != last:
+            n = sum(1 for x in teams if (x["country"] or "Country not stated") == c)
+            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{c} <span class="badge live">{n}</span></h2>'); last = c
+        rep = t["representative"]
+        link = f'<a href="https://doi.org/{rep["doi"]}" target="_blank" rel="noopener external">doi:{rep["doi"]}</a>' if rep.get("doi") else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{rep["pmid"]}/" target="_blank" rel="noopener external">PubMed {rep["pmid"]}</a>'
+        tags = "".join(f'<span class="bib-tag">{names.get(c2, c2)}</span>' for c2 in t["codes"] if c2 in names)
+        yrs = f'{t["years"][0]}–{t["years"][1]}' if t["years"][0] != t["years"][1] else str(t["years"][0])
+        out.append(f'<article class="entry"><h3>{t["institution"]} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
+                   f'<p>Authors on our bibliography: {", ".join(t["authors"])}. Most recent: <em>{rep["title"]}</em> ({rep["year"]}), {link}.</p>'
+                   f'<p class="bib-tags">{tags}</p></article>')
+    return "".join(out)
+
 PAGES = {}
 
 # ────────────────────────────── HOME ──────────────────────────────
@@ -626,7 +650,7 @@ PAGES["/knowledge/researchers/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 3 · Researchers <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Who works on limb difference.</h1>
-    <p>A factual register: teams that publish or run studies on congenital limb difference. Listing is by activity, not endorsement, so no one is preferred and no one is left out.</p>
+    <p>A factual register: teams that publish or run studies on congenital limb difference. Listing is by activity, not endorsement, so no one is preferred and no one is left out. Two partners DysNet has met in person open the list; the teams that publish on our conditions follow, drawn from the bibliography.</p>
 
     <div style="margin-top:var(--space-4)">
       <article class="entry">
@@ -640,6 +664,13 @@ PAGES["/knowledge/researchers/"] = {
         <p class="src">Vigorso di Budrio, Italy · prosthetics, rehabilitation · <a href="https://www.inail.it">inail.it</a></p>
       </article>
     </div>
+
+    <div class="tick" style="margin-top:var(--space-5)"></div>
+    <p class="eyebrow">Teams that publish · {len(RESEARCHERS.get("teams", []))} institutions</p>
+    <h2 class="h2">Who publishes on our conditions.</h2>
+    <p>Orphanet’s directory of research projects lists nothing specific to our ORPHAcodes, so this register is built from the evidence itself: the institutions of the first and senior authors of every publication in our <a href="/knowledge/research-library/#bibliography">bibliography</a>, read from PubMed’s own affiliation records. An institution appears once it signs at least two of those publications. The count and the years say how active a team has been; the tags say on which conditions. Teams that want to be listed or corrected: <a href="mailto:info@dysnet.org?subject=Researchers%20register">info@dysnet.org</a>.</p>
+    {researchers_html()}
+    <p class="annex-note">Built {RESEARCHERS.get("built", "")} from {RESEARCHERS.get("bibliography_size", "")} PubMed records; {RESEARCHERS.get("records_without_affiliation", "")} older records carry no affiliation in PubMed and could not be attributed.</p>
     {REGISTER_FOOT}
   </div>
 </section>
@@ -931,6 +962,13 @@ PAGES["/registry/"] = {
     <p class="eyebrow" style="color:var(--dys-green-text)">Mission 2 · Flagship project</p>
     <h1 class="display">A registry owned by the people it describes.</h1>
     <p>Research on limb agenesis is starved of data: cases are rare, scattered across countries, and recorded in incompatible systems, when they are recorded at all. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
+    <p>Patient groups strongly suspect environmental causes and teratogenic effects, of the kind thalidomide made undeniable, behind agenesis and other forms of dysmelia. Far too little research is carried out to confirm or rule them out. Between 2007 and 2014, three clusters of transverse upper-limb agenesis came to light in France, in Loire-Atlantique, Ain and Morbihan. The investigations led by <a href="https://www.santepubliquefrance.fr/les-actualites/agenesies-transverses-des-membres-superieurs-sante-publique-france-revient-sur-les-principaux-faits" target="_blank" rel="noopener external">Santé publique France</a> with the regional registries found no common exposure, and the episode led to no national or European registry dedicated to limb anomalies. Those investigations also met the limits of any case investigation: families were questioned years after the birth, from memory. Families who take part actively and from pregnancy onwards, recording circumstances and exposures as they happen, can correct that weakness and give the next investigation the data the last one lacked.</p>
+    <p>Our registry therefore sets itself three objectives, in this order.</p>
+    <ol class="objectives">
+      <li><strong>Find the next clusters.</strong> Bring families’ declared cases together across countries so that further clusters like those in France can be spotted, documented and handed to researchers, and research on causes can start again.</li>
+      <li><strong>Keep existing registries alive.</strong> Offer the population-based registries that already record our conditions a place to preserve their limb-difference data and continuity should their funding fail.</li>
+      <li><strong>Make registries talk to each other.</strong> Create the conditions for interoperability and portability of data between existing registries, and complete them where needed, so that new lines of research open.</li>
+    </ol>
 
     {opener("01", "Words matter", "What a registry is, and what this is.")}
     <blockquote class="definition">

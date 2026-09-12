@@ -1,0 +1,975 @@
+{
+ "harvested": "2026-09-12",
+ "source": "orpha.net research-projects listings per ORPHAcode (direct / children / parent relation)",
+ "stats": {
+  "974": {
+   "children": 0,
+   "direct": 0,
+   "parent": 28
+  },
+  "1027": {
+   "children": 0,
+   "direct": 0,
+   "parent": 0
+  },
+  "3258": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "294967": {
+   "children": 0,
+   "direct": 1,
+   "parent": 20
+  },
+  "294969": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "295000": {
+   "children": 0,
+   "direct": 0,
+   "parent": 21
+  },
+  "392": {
+   "children": 0,
+   "direct": 0,
+   "parent": 29
+  },
+  "2440": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "2538": {
+   "children": 0,
+   "direct": 0,
+   "parent": 12
+  },
+  "2879": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "2935": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "93323": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "1570": {
+   "children": 0,
+   "direct": 0,
+   "parent": 21
+  },
+  "2911": {
+   "children": 0,
+   "direct": 0,
+   "parent": 21
+  },
+  "2913": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "3103": {
+   "children": 0,
+   "direct": 0,
+   "parent": 27
+  },
+  "93321": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "93458": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "3301": {
+   "children": 0,
+   "direct": 0,
+   "parent": 22
+  },
+  "3320": {
+   "children": 0,
+   "direct": 0,
+   "parent": 22
+  },
+  "3329": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "93320": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  },
+  "93322": {
+   "children": 0,
+   "direct": 0,
+   "parent": 20
+  }
+ },
+ "projects": {
+  "528254": {
+   "id": "528254",
+   "titles": [
+    "Giving voice to the children and their families with Rare Diseases (Sand Therapy, Arts, Music, PhotoVoice, and Interviews: SAMPI Project)"
+   ],
+   "country": "IRELAND",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "537004": {
+   "id": "537004",
+   "titles": [
+    "FAIRification of rare disease data"
+   ],
+   "country": "ITALY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "559201": {
+   "id": "559201",
+   "titles": [
+    "Traiter les anomalies vasculaires",
+    "Treat vascular anomalies"
+   ],
+   "country": "BELGIUM",
+   "rel": {
+    "295000": "parent"
+   }
+  },
+  "585187": {
+   "id": "585187",
+   "titles": [
+    "GENOME +: Identifizierung der genetischen Ursachen seltener Krankheiten mit negativem Exombefund",
+    "GENOME +: Identification of the Genetic Causes of Rare Diseases With Negative Exome Findings"
+   ],
+   "country": "GERMANY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "586030": {
+   "id": "586030",
+   "titles": [
+    "Laboratorio di medicina narrativa",
+    "Laboratory of narrative medicine"
+   ],
+   "country": "ITALY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "597980": {
+   "id": "597980",
+   "titles": [
+    "INTERVENE: International consortium for integrative genomics prediction - AT"
+   ],
+   "country": "AUSTRIA",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "597989": {
+   "id": "597989",
+   "titles": [
+    "ERICA: European Rare dIsease research Coordination and support Action"
+   ],
+   "country": "NETHERLANDS",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "604041": {
+   "id": "604041",
+   "titles": [
+    "GE-MED: Genombasiertes Management von Patienten in der Präzisionsmedizin (Ge-Med) - Auf dem Weg zu einem Genomic Health Programm",
+    "GE-MED: Genome-based Management of Patients in Precision Medicine (Ge-Med) Towards a Genomic Health Program"
+   ],
+   "country": "GERMANY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "626119": {
+   "id": "626119",
+   "titles": [
+    "Decoding gene & genome-regulatory functions of the RNA gene CISTR-ACT"
+   ],
+   "country": "CANADA",
+   "rel": {
+    "974": "parent",
+    "1570": "parent",
+    "2911": "parent"
+   }
+  },
+  "658702": {
+   "id": "658702",
+   "titles": [
+    "Functional, Structural, and Metabolic Central Nervous System Changes Following Damage of the Central Nervous System"
+   ],
+   "country": "SWITZERLAND",
+   "rel": {
+    "294967": "direct"
+   }
+  },
+  "674057": {
+   "id": "674057",
+   "titles": [
+    "NARRATIVE: storia naturale, qualità della vita ed esiti riferiti dai pazienti nelle anomalie vascolari - IT",
+    "NARRATIVE: Natural history, quality of life and patient-reported outcomes in vascular abnormalities - IT"
+   ],
+   "country": "ITALY",
+   "rel": {
+    "295000": "parent"
+   }
+  },
+  "682673": {
+   "id": "682673",
+   "titles": [
+    "En studie av utfordringer og muligheter i arbeidslivet for personer med sjeldne diagnoser",
+    "Work participation in adults with rare diseases: Challenges and possibilities"
+   ],
+   "country": "NORWAY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "685173": {
+   "id": "685173",
+   "titles": [
+    "Hvilken effekt har kurs for personer med sjeldne diagnoser når det gjelder livskvalitet, stigma og psykososial fungering?",
+    "Benefits of conferences for individuals with rare diseases with regard to quality of life, stigma and psychosocial functioning?"
+   ],
+   "country": "NORWAY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "687841": {
+   "id": "687841",
+   "titles": [
+    "Identificación de mecanismos implicados en la etiología y presentación clínica de trastornos del neurodesarrollo con aproximaciones genómicas, epigenómicas y transcriptómicas",
+    "Exploring the mechanisms involved in the etiology and clinical presentation of neurodevelopmental disorders using genomic, epigenomic and transcriptomic approaches"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "974": "parent",
+    "3103": "parent"
+   }
+  },
+  "694339": {
+   "id": "694339",
+   "titles": [
+    "DISCOVERY: Identification of the Molecular and/or Pathophysiological Bases of Developmental Diseases"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "694342": {
+   "id": "694342",
+   "titles": [
+    "The Diagnostic Observatory: Combating Diagnostic Wandering and Impasse Within the AnDDI-Rares Network"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "694345": {
+   "id": "694345",
+   "titles": [
+    "PERIGENOMED CLINICS 1: Une étude pilote pour évaluer la faisabilité et l'acceptabilité du dépistage néonatal utilisant le séquençage du génome solo basé sur un panel in silico en France.",
+    "PERIGENOMED CLINICS 1: A pilot study to assess the feasibility and acceptability of newborn screening using in silico panel-based solo genome sequencing in France."
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "694346": {
+   "id": "694346",
+   "titles": [
+    "S4C France: Genetic Newborn Screening for Rare Diseases Within the Screen4Care Project: the French Participation"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "696140": {
+   "id": "696140",
+   "titles": [
+    "Avkodning av det genetiska landskapet för skelettsjukdomar",
+    "Decoding the Genetic Landscape of Skeletal Diseases"
+   ],
+   "country": "SWEDEN",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "701750": {
+   "id": "701750",
+   "titles": [
+    "Rask identifisering av alvorlig medfødte behandlbare tilstander hos barn ved bruk av ny teknologi i nyfødtscreening",
+    "Rapid identification of serious congenital treatable conditions in children using new technology in newborn screening"
+   ],
+   "country": "NORWAY",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "710356": {
+   "id": "710356",
+   "titles": [
+    "FORM: Fetal Phenomics to unravel the correlation between phenotype and genotype in prenatal malformations"
+   ],
+   "country": "SWITZERLAND",
+   "rel": {
+    "974": "parent",
+    "392": "parent",
+    "2538": "parent",
+    "3103": "parent",
+    "3301": "parent"
+   }
+  },
+  "710363": {
+   "id": "710363",
+   "titles": [
+    "Caracterización clínica de los resultados ómicos: reanálisis, nuevos fenotipos alélicos y nuevos genes patológicos",
+    "Clinical characterization of omics results: reanalysis, novel allelic phenotypes and new pathological genes"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "974": "parent",
+    "3103": "parent"
+   }
+  },
+  "714792": {
+   "id": "714792",
+   "titles": [
+    "Desarrollo y Aplicación de saRNAs para el Tratamiento de Enfermedades Raras Monogénicas",
+    "Development and Application of saRNAs for the Treatment of Rare Monogenic Diseases"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "720883": {
+   "id": "720883",
+   "titles": [
+    "HEARTIST : Les lignages cardio-faciaux au cours du développement et des syndromes congénitaux.",
+    "HEARTIST: Head and heart lineages in syndromes and development."
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "392": "parent",
+    "2538": "parent",
+    "3103": "parent",
+    "3301": "parent"
+   }
+  },
+  "721386": {
+   "id": "721386",
+   "titles": [
+    "Gyn & Gen : Une expertise gynécologique et génétique pour les maladies rares au moment d'un projet parental, d'une grossesse et jusqu'aux 1000 premiers jours de vie d'un enfant",
+    "Gyn & Gen: gynecological and genetic expertise for rare diseases at the time of a parental project, pregnancy and up to the first 1000 days of a child's life."
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "722288": {
+   "id": "722288",
+   "titles": [
+    "NRGEN-NGS3 : Amélioration du diagnostic des maladies neurogénétiques par séquençage haut-débit de longs fragments",
+    "NRGEN-NGS3: Improving the diagnosis of neurogenetic diseases by high-throughput sequencing of long fragments"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3103": "parent"
+   }
+  },
+  "722310": {
+   "id": "722310",
+   "titles": [
+    "Besoins non couverts des patients atteints de syndromes hypertrophiques : regards croisés des patients, des proches-aidants et des professionnels de santé et médico-sociaux",
+    "Unmet needs of patients with hypertrophic syndromes: crossed views of patients, family caregivers and health and medico-social professionals."
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "2538": "parent",
+    "3103": "parent"
+   }
+  },
+  "725048": {
+   "id": "725048",
+   "titles": [
+    "PHRCI NEXTOMIX : Intégration d'analyses multiomiques de nouvelle génération pour le diagnostic des troubles du neurodéveloppement d'origine génétique",
+    "PHRCI NEXTOMIX: Integration of next-generation multi-omic analyses for the diagnosis of genetic neurodevelopmental disorders"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "974": "parent",
+    "3103": "parent"
+   }
+  },
+  "725099": {
+   "id": "725099",
+   "titles": [
+    "EpiSign: Health System Impact Assessment and Expanding Clinical Utilization of Epi/Genomic Testing in Rare Diseases and Beyond"
+   ],
+   "country": "CANADA",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "725112": {
+   "id": "725112",
+   "titles": [
+    "RapidOmics 2.0: Long-read Genome Sequencing for Urgent Genetic Disease Diagnosis"
+   ],
+   "country": "CANADA",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "730105": {
+   "id": "730105",
+   "titles": [
+    "INFORM-RD: Een patiënt-geïnformeerd klinisch platform voor de informering van patiëntgerichte besluitvorming voor zeldzame ziekten",
+    "INFORM-RD: A patient-informed clinical platform to inform patient-centered decision-making for rare diseases"
+   ],
+   "country": "BELGIUM",
+   "rel": {
+    "974": "parent",
+    "3258": "parent",
+    "294967": "parent",
+    "294969": "parent",
+    "295000": "parent",
+    "392": "parent",
+    "2440": "parent",
+    "2538": "parent",
+    "2879": "parent",
+    "2935": "parent",
+    "93323": "parent",
+    "1570": "parent",
+    "2911": "parent",
+    "2913": "parent",
+    "3103": "parent",
+    "93321": "parent",
+    "93458": "parent",
+    "3301": "parent",
+    "3320": "parent",
+    "3329": "parent",
+    "93320": "parent",
+    "93322": "parent"
+   }
+  },
+  "623028": {
+   "id": "623028",
+   "titles": [
+    "Modélisation et approches thérapeutiques pour les maladies rares",
+    "Modelisation and Therapeutic Approaches for Rare Diseases"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "627307": {
+   "id": "627307",
+   "titles": [
+    "Charakterisierung der Arrhythmie-Substrate bei hereditärer im Vergleich zu nicht-hereditärer arrhythmogener Kardiomyopathie mittels kardialer Magnetresonanztomographie",
+    "Characterization of the arrhythmia substrates in hereditary in comparison to non-hereditary arrhythmogenic cardiomyopathy by cardiac magnetic resonance imaging"
+   ],
+   "country": "GERMANY",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "655574": {
+   "id": "655574",
+   "titles": [
+    "Inhibiteurs du SGLT2 chez les patients adultes atteints d'insuffisance cardiaque liée à une cardiopathie congénitale",
+    "SGLT2 Inhibitors in Adult Patients With Heart Failure Related to Congenital Heart Disease"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "697592": {
+   "id": "697592",
+   "titles": [
+    "Molecular basis for the diagnosis and aetiology of genetic cardiovascular diseases as triggers of sudden cardiac death",
+    "Molekulare Grundlagen zur Diagnostik und Ätiologie genetisch bedingter kardiovaskulärer Erkrankungen als Auslöser des plötzlichen Herztodes"
+   ],
+   "country": "GERMANY",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "709009": {
+   "id": "709009",
+   "titles": [
+    "OSCAR : Outil de Suivi CARdiopediatrique domicile",
+    "OSCAR: Home Cardiopediatric Monitoring Tool"
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "725044": {
+   "id": "725044",
+   "titles": [
+    "Etude rétrospective multicentrique sur données de soin courant visant à étudier l'impact du rendu des données additionnelles cardiogénétiques sur la prise en charge des individus à risque et de leur famille.",
+    "Multicentre retrospective study of routine care data aimed at investigating the impact of additional cardiogenetic data on the management of at-risk individuals and their families."
+   ],
+   "country": "FRANCE",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "729720": {
+   "id": "729720",
+   "titles": [
+    "Medicina de precisión en cardiopatías hereditarias: estudio de genomas completos para optimizar el diagnóstico y avanzar en el pronóstico",
+    "Precision medicine in inherited heart disease: whole genome studies to optimize diagnosis and advance prognosis"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "392": "parent"
+   }
+  },
+  "658701": {
+   "id": "658701",
+   "titles": [
+    "Nuevos enfoques funcionales y multiómicos en el diagnóstico, la caracterización molecular, el modelado de enfermedades y el rescate in vitro de trastornos plaquetarios congénitos",
+    "New functional and multiomic approaches in the diagnosis, molecular characterization, in vitro disease modeling and rescue of congenital platelet disorders"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "3320": "parent"
+   }
+  },
+  "697559": {
+   "id": "697559",
+   "titles": [
+    "Investigación de la etiología molecular no resuelta de los trastornos hemorrágicos hereditarios mediante herramientas moleculares avanzadas y sistemas de integración de datos",
+    "Investigation of the unresolved molecular etiology of hereditary bleeding disorders through advanced molecular tools and data integration systems"
+   ],
+   "country": "SPAIN",
+   "rel": {
+    "3320": "parent"
+   }
+  }
+ }
+}

@@ -265,5 +265,269 @@
   "lon": 7.3472032,
   "display_name": "Universitätsklinikum, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland",
   "query": "Universitätsklinikum, Germany"
+ },
+ "MacKay Memorial Hospital|Taiwan": {
+  "lat": 25.0585727,
+  "lon": 121.5222088,
+  "display_name": "馬偕紀念醫院, 92, 中山北路二段, 中山北路婚紗街, 集英里, 中山區, 南西商圈, 臺北市, 10449, 臺灣",
+  "query": "MacKay Memorial Hospital, Taiwan"
+ },
+ "Brigham and Women's Hospital|United States": {
+  "lat": 42.3356457,
+  "lon": -71.1060376,
+  "display_name": "Brigham and Women's Hospital, 75, Francis Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States",
+  "query": "Brigham and Women's Hospital, United States"
+ },
+ "University of California|United States": {
+  "lat": 37.8707751,
+  "lon": -122.2656754,
+  "display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States",
+  "query": "University of California, United States"
+ },
+ "University of North Carolina|United States": {
+  "lat": 35.9050354,
+  "lon": -79.0477533,
+  "display_name": "University of North Carolina at Chapel Hill, US 15;US 501, High Park, Chapel Hill, Orange County, North Carolina, 27599, United States",
+  "query": "University of North Carolina, United States"
+ },
+ "Massachusetts General Hospital|United States": {
+  "lat": 42.3628605,
+  "lon": -71.068753,
+  "display_name": "Massachusetts General Hospital, 55, Fruit Street, West End, Boston, Suffolk County, Massachusetts, 02114, United States",
+  "query": "Massachusetts General Hospital, United States"
+ },
+ "University of Utah School of Medicine|United States": {
+  "lat": 39.4225192,
+  "lon": -111.714358,
+  "display_name": "Utah, United States",
+  "query": "Utah, United States"
+ },
+ "Charité - Universitätsmedizin Berlin|Germany": {
+  "lat": 52.5299885,
+  "lon": 13.3486639,
+  "display_name": "Institut für Rechtsmedizin der Charité Universitätsmedizin Berlin, 21, Turmstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Deutschland",
+  "query": "Charité - Universitätsmedizin Berlin, Germany"
+ },
+ "MassGeneral Hospital for Children|United States": {
+  "lat": 42.3606277,
+  "lon": -71.1004106,
+  "display_name": "MassGeneral Brigham Research Office, 65, Landsdowne Street, University Park, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 0213",
+  "query": "MassGeneral, United States"
+ },
+ "Quaid-i-Azam University|Pakistan": {
+  "lat": 33.7476438,
+  "lon": 73.1430184,
+  "display_name": "Quaid-i-Azam School of Management Sciences, Nurpur Road, Phulwari, مل پور, زون ۳, وفاقی دارالحکومت اسلام آباد, 46500, پاکستان",
+  "query": "Quaid-i-Azam, Pakistan"
+ },
+ "University of Washington|United States": {
+  "lat": 47.6554303,
+  "lon": -122.3001692,
+  "display_name": "University of Washington, 1410, Northeast Campus Parkway, West Campus, University District, Seattle, King County, Washington, 98195, United ",
+  "query": "University of Washington, United States"
+ },
+ "Cincinnati Children's Hospital Medical Center|United States": {
+  "lat": 39.1408304,
+  "lon": -84.5023891,
+  "display_name": "Cincinnati Children’s Hospital Medical Center, 3333, Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, 45229, United States",
+  "query": "Cincinnati Children's Hospital Medical Center, United States"
+ },
+ "University of Iowa|United States": {
+  "lat": 41.6311024,
+  "lon": -91.540752,
+  "display_name": "University of Iowa, McCollister Boulevard, Iowa City, Johnson County, Iowa, 52246, United States",
+  "query": "University of Iowa, United States"
+ },
+ "University of Edinburgh|United Kingdom": {
+  "lat": 55.9440765,
+  "lon": -3.1883736,
+  "display_name": "University of Edinburgh, St Patrick Square, Pleasance, Southside, City of Edinburgh, Alba / Scotland, EH8 9ET, United Kingdom",
+  "query": "University of Edinburgh, United Kingdom"
+ },
+ "National Center on Birth Defects and Developmental Disabilities|United States": {
+  "lat": 30.8267197,
+  "lon": -83.2751616,
+  "display_name": "Birth, East Martin Luther King Drive, Valdosta, Lowndes County, Georgia, 31698, United States",
+  "query": "Birth, United States"
+ },
+ "Heinrich-Heine-Universität|Germany": {
+  "lat": 51.1907733,
+  "lon": 6.7935167,
+  "display_name": "Heinrich-Heine-Universität Düsseldorf, 1, Universitätsstraße, Bilk, Stadtbezirk 3, Düsseldorf, Nordrhein-Westfalen, 40225, Deutschland",
+  "query": "Heinrich-Heine-Universität, Germany"
+ },
+ "Yamagata University School of Medicine|Japan": {
+  "lat": 38.4746705,
+  "lon": 140.083237,
+  "display_name": "山形県, 日本",
+  "query": "Yamagata, Japan"
+ },
+ "Edward Via Virginia College of Osteopathic Medicine|United States": {
+  "lat": 35.3250107,
+  "lon": -76.8802812,
+  "display_name": "Edward, Beaufort County, North Carolina, United States",
+  "query": "Edward, United States"
+ },
+ "Boston University School of Public Health|United States": {
+  "lat": 42.3355268,
+  "lon": -71.1026984,
+  "display_name": "Harvard School of Public Health, Huntington Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02120, United States",
+  "query": "Boston University School of Public Health"
+ },
+ "Perelman School of Medicine at the University of Pennsylvania|United States": {
+  "lat": 40.7126698,
+  "lon": -74.0122763,
+  "display_name": "Perelman Performing Arts Center, 251, Fulton Street, Battery Park City, Lower Manhattan, Manhattan, New York County, New York, 10007, United",
+  "query": "Perelman, United States"
+ },
+ "University of Sargodha|Pakistan": {
+  "lat": 32.0728373,
+  "lon": 72.6841928,
+  "display_name": "University of Sargodha, یونیورسٹی روڈ, سرگودھا, تحصیل سرگودھا, ضلع سرگودھا, سرگودھا ڈویژن, پنجاب, 40162, پاکستان",
+  "query": "University of Sargodha, Pakistan"
+ },
+ "Helios Hospital Berlin-Buch|Germany": {
+  "lat": 52.63108,
+  "lon": 13.5077151,
+  "display_name": "HELIOS Klinikum Berlin Buch, 50, Schwanebecker Chaussee, Buch, Pankow, Berlin, 13125, Deutschland",
+  "query": "Helios Hospital Berlin-Buch, Germany"
+ },
+ "Stanford University|United States": {
+  "lat": 37.4313138,
+  "lon": -122.1693654,
+  "display_name": "Stanford University, 450, Jane Stanford Way, Stanford, Santa Clara County, California, 94305, United States",
+  "query": "Stanford University, United States"
+ },
+ "Hokkaido University|Japan": {
+  "lat": 43.0795634,
+  "lon": 141.3373222,
+  "display_name": "北海道大学, 北8条西5, 北区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0808, 日本",
+  "query": "Hokkaido University, Japan"
+ },
+ "Ankara University|Turkey": {
+  "lat": 40.1311453,
+  "lon": 32.9512024,
+  "display_name": "Ankara Yıldırım Beyazıt Üniversitesi Esenboğa Yerleşkesi, Melikşah Çağrıbey Kümeevleri Sokağı, Melikşah Mahallesi, Çubuk, Ankara, İç Anadolu",
+  "query": "Ankara University, Turkey"
+ },
+ "Karolinska Institutet|Sweden": {
+  "lat": 59.3515453,
+  "lon": 18.0310658,
+  "display_name": "Karolinska Institutet, Visionsgatan, Solna Kyrkby, Haga, Solna, Solna kommun, Stockholms län, 171 76, Sverige",
+  "query": "Karolinska Institutet, Sweden"
+ },
+ "Universitätsklinikum Essen|Germany": {
+  "lat": 51.4349301,
+  "lon": 6.9886998,
+  "display_name": "Universitätsklinikum Essen, Gebhardtstraße, Holsterhausen, Stadtbezirk III, Essen, Nordrhein-Westfalen, 45147, Deutschland",
+  "query": "Universitätsklinikum Essen, Germany"
+ },
+ "Leiden University Medical Center|Netherlands": {
+  "lat": 52.1594747,
+  "lon": 4.4908843,
+  "display_name": "Leiden, Zuid-Holland, Nederland",
+  "query": "Leiden, Netherlands"
+ },
+ "Shengjing Hospital of China Medical University|China": {
+  "lat": 41.7716892,
+  "lon": 123.4215018,
+  "display_name": "医大盛京医院, 36, 三好街, 南湖街道, 和平区, 沈阳市, 辽宁省, 110004, 中国",
+  "query": "Shengjing Hospital of China Medical University, China"
+ },
+ "Tongji Hospital|China": {
+  "lat": 30.5821568,
+  "lon": 114.2544019,
+  "display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国",
+  "query": "Tongji Hospital, China"
+ },
+ "University Medical Center Utrecht|Netherlands": {
+  "lat": 52.0907006,
+  "lon": 5.1215634,
+  "display_name": "Utrecht, Nederland",
+  "query": "Utrecht, Netherlands"
+ },
+ "Max Planck Institute for Molecular Genetics|Germany": {
+  "lat": 52.4446554,
+  "lon": 13.2729039,
+  "display_name": "Max-Planck-Institut für molekulare Genetik, 63-73, Ihnestraße, Thielecksiedlung, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland",
+  "query": "Max Planck Institute for Molecular Genetics, Germany"
+ },
+ "University of Oklahoma Health Sciences Center|": {
+  "lat": 35.4842868,
+  "lon": -97.498633,
+  "display_name": "University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma County, Oklahoma, United States",
+  "query": "University of Oklahoma Health Sciences Center, "
+ },
+ "University of Lausanne|Switzerland": {
+  "lat": 46.5225695,
+  "lon": 6.5809499,
+  "display_name": "Université de Lausanne, A1a, Maison Olympique, Lausanne, District de l'Ouest lausannois, Vaud, 1020, Schweiz/Suisse/Svizzera/Svizra",
+  "query": "University of Lausanne, Switzerland"
+ },
+ "McGill University|Canada": {
+  "lat": 45.4318428,
+  "lon": -73.9452864,
+  "display_name": "Université McGill, 21111, Rue Lakeshore, Sainte-Anne-de-Bellevue, Agglomération de Montréal, Montréal (région administrative), Québec, H9X 3",
+  "query": "McGill University, Canada"
+ },
+ "Children's Hospital|United States": {
+  "lat": 42.3371715,
+  "lon": -71.1056791,
+  "display_name": "Boston Children's Hospital, 300, Longwood Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States",
+  "query": "Children's Hospital, United States"
+ },
+ "Slone Epidemiology Center at Boston University|United States": {
+  "lat": 32.1223832,
+  "lon": -93.6604575,
+  "display_name": "Slone, DeSoto Parish, Louisiana, United States",
+  "query": "Slone, United States"
+ },
+ "Federal University of Rio de Janeiro|Brazil": {
+  "lat": -22.8626953,
+  "lon": -43.2229771,
+  "display_name": "Federal University of Rio de Janeiro, Avenida Pedro Calmon, Cidade Universitária, Rio de Janeiro, Região Sudeste, 21941-908, Brasil",
+  "query": "Federal University of Rio de Janeiro, Brazil"
+ },
+ "Central South University|China": {
+  "lat": 28.1578368,
+  "lon": 112.9322974,
+  "display_name": "中南大学, 后湖路, 后湖新村, 桔子洲街道, 岳麓区, 湘江新区, 岳麓区, 长沙市, 湖南省, 410002, 中国",
+  "query": "Central South University, China"
+ },
+ "University of Manitoba|Canada": {
+  "lat": 49.9042395,
+  "lon": -97.1617229,
+  "display_name": "University of Manitoba, Pacific Avenue, West Alexander, Winnipeg, Manitoba, R3E 2E5, Canada",
+  "query": "University of Manitoba, Canada"
+ },
+ "March of Dimes Birth Defect Foundation/California Department of Health Services|United States": {
+  "lat": 37.5225423,
+  "lon": -93.0893516,
+  "display_name": "March, Dallas County, Missouri, United States",
+  "query": "March, United States"
+ },
+ "Hospital For Sick Children|Canada": {
+  "lat": 43.6572672,
+  "lon": -79.3875622,
+  "display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada",
+  "query": "Hospital For Sick Children, Canada"
+ },
+ "University of Calgary|Canada": {
+  "lat": 51.075054,
+  "lon": -114.138805,
+  "display_name": "University of Calgary, 2500, University Drive NW, University of Calgary, Calgary, Alberta, T2N 1N4, Canada",
+  "query": "University of Calgary, Canada"
+ },
+ "DePaul University|": {
+  "lat": 41.9245803,
+  "lon": -87.6507223,
+  "display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,",
+  "query": "DePaul University, "
+ },
+ "Kyoto University|Japan": {
+  "lat": 35.0270467,
+  "lon": 135.7814382,
+  "display_name": "京都大学, 東一条通り, 吉田二本松町, 吉田上大路町, 左京区, 京都市, 京都府, 606-8501, 日本",
+  "query": "Kyoto University, Japan"
  }
 }

@@ -474,11 +474,6 @@ PAGES["/knowledge/research-library/"] = {
         <p>Findings from the conference DysNet co-organised at Regione Lombardia (Palazzo Pirelli, 26 March 2026) with university researchers, prosthetics producers and patient associations.</p>
         <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>
       </article>
-      <article class="entry">
-        <h3>Example entry: a peer-reviewed paper summarised for families <span class="badge example">example</span></h3>
-        <p>This is what a library entry looks like. The named maintainer replaces it with real curated publications: citation, plain-language summary, source link, and condition tags.</p>
-        <p class="src">Journal · DOI link · topic tags</p>
-      </article>
     </div>
     {bibliography_html()}
     {REGISTER_FOOT}

@@ -253,20 +253,22 @@ REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
 BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
-BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "review": "Reviews"}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
 
 
 def bibliography_html():
     entries = BIB.get("entries", [])
-    names = REG_CODE_NAMES
+    names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
     codes_present = sorted({c for e in entries for c in e["codes"]}, key=lambda c: names.get(c, c))
-    topics = sorted({t for e in entries for t in e["topics"]})
+    topics = sorted({t for e in entries for t in e["topics"]}, key=lambda t: list(BIB_TOPIC_LABEL).index(t) if t in BIB_TOPIC_LABEL else 99)
     items = []
     for e in entries:
         authors = ", ".join(e["authors"])
         link = (f'<a href="https://doi.org/{e["doi"]}" target="_blank" rel="noopener external">doi:{e["doi"]}</a>' if e["doi"]
                 else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/" target="_blank" rel="noopener external">PubMed {e["pmid"]}</a>')
         tags = "".join(f'<span class="bib-tag">{names.get(c, c)}</span>' for c in e["codes"]) + "".join(f'<span class="bib-tag bib-topic">{BIB_TOPIC_LABEL.get(t, t)}</span>' for t in e["topics"])
+        via = [v for v in e.get("via", []) if v not in ("Orphanet", "DysNet")]
+        if via: tags += f'<span class="bib-tag bib-via">found on {", ".join(v.split(" (")[0] for v in via)}</span>'
         why = e["notes"][0] if e["notes"] else ""
         text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
         items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-text="{text}">'
@@ -287,7 +289,7 @@ def bibliography_html():
       <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button> · {years[0]}–{years[-1]}</p>
     </div>
     <ol class="bib-list" id="bib-list">{"".join(items)}</ol>
-    <p class="annex-note">Built {BIB.get("built", "")} from Orphanet’s epidemiology references (Orphadata, CC BY 4.0) and the sources of the prevalence annex; metadata via NCBI E-utilities. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
+    <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
 """
 
 # Register 4 · care centres shown on the landing map. Only centres named by a member association (or visited by the

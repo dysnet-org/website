@@ -51,6 +51,8 @@ def crawl(start, max_pages, robots_cache, delay=1.0):
         rp = urllib.robotparser.RobotFileParser()
         try:
             rp.set_url(f"{urllib.parse.urlparse(start).scheme}://{host}/robots.txt"); rp.read()
+            if rp.disallow_all:  # robots.txt answered 401/403 to a script: treat as absent, not as a ban
+                print(f"    robots.txt unreadable for {host}; crawling politely without it", file=sys.stderr); rp = None
         except Exception:
             rp = None
         robots_cache[host] = rp

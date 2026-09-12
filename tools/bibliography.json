@@ -1,7 +1,136 @@
 {
  "built": "2026-09-11",
- "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, plus publications verified on the site; metadata from NCBI E-utilities",
+ "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, and DOIs published on member associations' websites; metadata from NCBI E-utilities / Crossref",
  "entries": [
+  {
+   "pmid": "40983097",
+   "doi": "10.1055/a-2685-5018",
+   "title": "Risk of Falls and Fractures in People with Thalidomide Embryopathy",
+   "authors": [
+    "Beyer R",
+    "Höller A",
+    "Schön G"
+   ],
+   "journal": "Zeitschrift fur Orthopadie und Unfallchirurgie",
+   "year": "2026",
+   "volume": "164",
+   "pages": "143-150",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "39937006",
+   "doi": "10.3390/cells14030215",
+   "title": "Comprehensive Search for Genes Involved in Thalidomide Teratogenicity Using Early Differentiation Models of Human Induced Pluripotent Stem Cells: Potential Applications in Reproductive and Developmental Toxicity Testing",
+   "authors": [
+    "Kato Y",
+    "Inaba T",
+    "Shinke K",
+    "et al."
+   ],
+   "journal": "Cells",
+   "year": "2025",
+   "volume": "14",
+   "pages": "",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "39575497",
+   "doi": "10.1142/S2424835524300068",
+   "title": "Developing a Congenital Upper Limb Difference Registry in Australia",
+   "authors": [
+    "Wilks DJ",
+    "McCombe DB"
+   ],
+   "journal": "The journal of hand surgery Asian-Pacific volume",
+   "year": "2024",
+   "volume": "29",
+   "pages": "486-491",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "38702055",
+   "doi": "10.1177/17531934241249014",
+   "title": "Parental experience after diagnosis of a congenital upper limb difference: a national survey",
+   "authors": [
+    "Clelland AD",
+    "Lester R",
+    "Duncan Ó",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2024",
+   "volume": "49",
+   "pages": "1327-1333",
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Reach (United Kingdom)"
+   ],
+   "via": [
+    "Reach (United Kingdom)"
+   ]
+  },
+  {
+   "pmid": "37021538",
+   "doi": "10.1177/17531934231164093",
+   "title": "Age-related changes in patients with upper limb thalidomide embryopathy in the United Kingdom",
+   "authors": [
+    "Markiewicz M",
+    "Stirling P",
+    "Brennan S",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2023",
+   "volume": "48",
+   "pages": "773-780",
+   "codes": [
+    "93321",
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
   {
    "pmid": "36584346",
    "doi": "10.1002/ajmg.a.63107",
@@ -24,6 +153,37 @@
    ],
    "notes": [
     "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "37226469",
+   "doi": "10.1177/17531934231177425",
+   "title": "Thalidomide upper limb embryopathy - pathogenesis, past and present management and future considerations",
+   "authors": [
+    "Vargesson N",
+    "Hooper G",
+    "Giddins G",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2023",
+   "volume": "48",
+   "pages": "699-709",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
    ]
   },
   {
@@ -46,6 +206,9 @@
    ],
    "notes": [
     "China, syndactyly"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -69,6 +232,9 @@
    ],
    "notes": [
     "cited by Orphanet for Adams-Oliver syndrome (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -91,6 +257,9 @@
    ],
    "notes": [
     "Finland, amelia and phocomelia"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -116,6 +285,39 @@
    "notes": [
     "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
     "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "34343375",
+   "doi": "10.1111/jpc.15673",
+   "title": "Pre-natal and post-natal diagnosis of congenital upper limb differences: The first 3 years of the Australian Hand Difference Register",
+   "authors": [
+    "O'Keefe D",
+    "Kennedy J",
+    "McCombe D",
+    "et al."
+   ],
+   "journal": "Journal of paediatrics and child health",
+   "year": "2022",
+   "volume": "58",
+   "pages": "122-128",
+   "codes": [
+    "2440",
+    "2911",
+    "2917",
+    "93321"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
    ]
   },
   {
@@ -138,6 +340,144 @@
    ],
    "notes": [
     "Korea, congenital upper limb anomalies"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "34522548",
+   "doi": "10.7759/cureus.17070",
+   "title": "Thalidomide-Then and Now: Case Report of a Woman With Thalidomide Embryopathy and Review of Current Thalidomide Uses",
+   "authors": [
+    "Malik S",
+    "Cohen PR"
+   ],
+   "journal": "Cureus",
+   "year": "2021",
+   "volume": "13",
+   "pages": "e17070",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "33121298",
+   "doi": "10.1177/1753193420967527",
+   "title": "The psychosocial impact of congenital hand and upper limb differences on children: a qualitative study",
+   "authors": [
+    "McDougall L",
+    "Kennedy J",
+    "Coombs C",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2021",
+   "volume": "46",
+   "pages": "391-397",
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "32758259",
+   "doi": "10.1186/s13023-020-01481-x",
+   "title": "Consensus based recommendations for diagnosis and medical management of Poland syndrome (sequence)",
+   "authors": [
+    "Baldelli I",
+    "Baccarani A",
+    "Barone C",
+    "et al."
+   ],
+   "journal": "Orphanet journal of rare diseases",
+   "year": "2020",
+   "volume": "15",
+   "pages": "201",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "living",
+    "review"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)",
+    "published on the website of PiP UK (United Kingdom)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)",
+    "PiP UK (United Kingdom)"
+   ]
+  },
+  {
+   "pmid": "31913886",
+   "doi": "10.1097/SAP.0000000000002202",
+   "title": "Letter to the Editor: Response to Manzano Surroca et al. \"Poland Sequence: Retrospective Analysis of 66 Cases.\" Annals of Plastic Surgery, May 2019",
+   "authors": [
+    "Baldelli I",
+    "Vappiani M",
+    "Santori G",
+    "et al."
+   ],
+   "journal": "Annals of plastic surgery",
+   "year": "2020",
+   "volume": "84",
+   "pages": "341-342",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "31339667",
+   "doi": "10.1002/bdr2.1558",
+   "title": "A nationwide survey regarding the life situations of patients with thalidomide embryopathy in Japan, 2018: First report",
+   "authors": [
+    "Hinoshita F",
+    "Beppu H",
+    "Shioji S",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2019",
+   "volume": "111",
+   "pages": "1633-1642",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
    ]
   },
   {
@@ -160,6 +500,144 @@
    ],
    "notes": [
     "Norway, limb reduction defects 1970-2016"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "31753026",
+   "doi": "10.1186/s13023-019-1253-8",
+   "title": "Experiences of patients with Poland syndrome of diagnosis and care in Italy: a pilot survey",
+   "authors": [
+    "Baldelli I",
+    "Gallo F",
+    "Crimi M",
+    "et al."
+   ],
+   "journal": "Orphanet journal of rare diseases",
+   "year": "2019",
+   "volume": "14",
+   "pages": "269",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "30650111",
+   "doi": "10.1371/journal.pone.0210222",
+   "title": "The health and quality of life of Thalidomide survivors as they age - Evidence from a UK survey",
+   "authors": [
+    "Newbronner E",
+    "Glendinning C",
+    "Atkin K",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2019",
+   "volume": "14",
+   "pages": "e0210222",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "30887894",
+   "doi": "10.1024/1012-5302/a000670",
+   "title": "[Upcoming challenges in providing care for thalidomide impaired individuals]",
+   "authors": [
+    "Samel C",
+    "Albus C",
+    "Tebest R",
+    "et al."
+   ],
+   "journal": "Pflege",
+   "year": "2019",
+   "volume": "32",
+   "pages": "137-145",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "31591562",
+   "doi": "10.1038/s41589-019-0366-7",
+   "title": "p63 is a cereblon substrate involved in thalidomide teratogenicity",
+   "authors": [
+    "Asatsuma-Okumura T",
+    "Ando H",
+    "De Simone M",
+    "et al."
+   ],
+   "journal": "Nature chemical biology",
+   "year": "2019",
+   "volume": "15",
+   "pages": "1077-1084",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of V.I.TA – Vittime Talidomide Italia (Italy)"
+   ],
+   "via": [
+    "V.I.TA – Vittime Talidomide Italia (Italy)"
+   ]
+  },
+  {
+   "pmid": "30078491",
+   "doi": "10.1053/j.sempedsurg.2018.05.007",
+   "title": "Poland syndrome: A proposed classification system and perspectives on diagnosis and treatment",
+   "authors": [
+    "Romanini MV",
+    "Calevo MG",
+    "Puliti A",
+    "et al."
+   ],
+   "journal": "Seminars in pediatric surgery",
+   "year": "2018",
+   "volume": "27",
+   "pages": "189-199",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
    ]
   },
   {
@@ -184,6 +662,9 @@
    ],
    "notes": [
     "cited by Orphanet for Adams-Oliver syndrome (cases/families, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -209,6 +690,254 @@
    "notes": [
     "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
     "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "27638330",
+   "doi": "10.1016/j.ejmg.2016.09.015",
+   "title": "The impact of thalidomide use in birth defects in Brazil",
+   "authors": [
+    "Sales Luiz Vianna F",
+    "Kowalski TW",
+    "Fraga LR",
+    "et al."
+   ],
+   "journal": "European journal of medical genetics",
+   "year": "2017",
+   "volume": "60",
+   "pages": "12-15",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27884122",
+   "doi": "10.1186/s12881-016-0351-x",
+   "title": "Assessment of copy number variations in 120 patients with Poland syndrome",
+   "authors": [
+    "Vaccari CM",
+    "Tassano E",
+    "Torre M",
+    "et al."
+   ],
+   "journal": "BMC medical genetics",
+   "year": "2016",
+   "volume": "17",
+   "pages": "89",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "27018681",
+   "doi": "10.1097/PRS.0000000000002018",
+   "title": "Body Image Disorders and Surgical Timing in Patients Affected by Poland Syndrome: Data Analysis of 58 Case Studies",
+   "authors": [
+    "Baldelli I",
+    "Santi P",
+    "Dova L",
+    "et al."
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2016",
+   "volume": "137",
+   "pages": "1273-1282",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "27175919",
+   "doi": "10.1371/journal.pone.0155493",
+   "title": "Degenerative Changes in the Cervical Spine Are More Common in Middle-Aged Individuals with Thalidomide Embryopathy than in Healthy Controls",
+   "authors": [
+    "Ghassemi Jahani SA",
+    "Danielsson A",
+    "Ab-Fawaz R",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2016",
+   "volume": "11",
+   "pages": "e0155493",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27567725",
+   "doi": "10.1016/j.crad.2016.07.015",
+   "title": "Internal anomalies in thalidomide embryopathy: results of imaging screening by CT and MRI",
+   "authors": [
+    "Tajima T",
+    "Wada T",
+    "Yoshizawa A",
+    "et al."
+   ],
+   "journal": "Clinical radiology",
+   "year": "2016",
+   "volume": "71",
+   "pages": "1199.e1-7",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27004986",
+   "doi": "10.1038/srep23404",
+   "title": "New Findings in eNOS gene and Thalidomide Embryopathy Suggest pre-transcriptional effect variants as susceptibility factors",
+   "authors": [
+    "Kowalski TW",
+    "Fraga LR",
+    "Tovo-Rodrigues L",
+    "et al."
+   ],
+   "journal": "Scientific reports",
+   "year": "2016",
+   "volume": "6",
+   "pages": "23404",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27100829",
+   "doi": "10.1371/journal.pone.0152902",
+   "title": "Peripheral Nerve Dysfunction in Middle-Aged Subjects Born with Thalidomide Embryopathy",
+   "authors": [
+    "Nicotra A",
+    "Newman C",
+    "Johnson M",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2016",
+   "volume": "11",
+   "pages": "e0152902",
+   "codes": [
+    "2879",
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "27348639",
+   "doi": "10.1097/PRS.0000000000002256",
+   "title": "Proposal of the TBN Classification of Thoracic Anomalies and Treatment Algorithm for Poland Syndrome",
+   "authors": [
+    "Romanini MV",
+    "Torre M",
+    "Santi P",
+    "et al."
+   ],
+   "journal": "Plastic and reconstructive surgery",
+   "year": "2016",
+   "volume": "138",
+   "pages": "50-58",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "27687383",
+   "doi": "10.1016/j.jclinane.2016.04.035",
+   "title": "Real-time measurement of blood pressure with Nexfin in a patient with thalidomide-related phocomelia",
+   "authors": [
+    "Earle R",
+    "Vaghadia H",
+    "Shanahan E",
+    "et al."
+   ],
+   "journal": "Journal of clinical anesthesia",
+   "year": "2016",
+   "volume": "34",
+   "pages": "244-6",
+   "codes": [
+    "2879",
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
    ]
   },
   {
@@ -231,6 +960,9 @@
    "notes": [
     "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
     "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -251,6 +983,141 @@
    ],
    "notes": [
     "Symbrachydactyly: diagnosis, function, treatment"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "26033770",
+   "doi": "10.1002/bdra.23363",
+   "title": "Multicenter investigation of lifestyle-related diseases and visceral disorders in thalidomide embryopathy at around 50 years of age",
+   "authors": [
+    "Shiga T",
+    "Shimbo T",
+    "Yoshizawa A"
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2015",
+   "volume": "103",
+   "pages": "787-93",
+   "codes": [
+    "2879",
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "25828060",
+   "doi": "10.1016/j.reprotox.2015.03.007",
+   "title": "Pharmacoepidemiology and thalidomide embryopathy surveillance in Brazil",
+   "authors": [
+    "Sales Luiz Vianna F",
+    "de Oliveira MZ",
+    "Sanseverino MT",
+    "et al."
+   ],
+   "journal": "Reproductive toxicology (Elmsford, N.Y.)",
+   "year": "2015",
+   "volume": "53",
+   "pages": "63-7",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "26043318",
+   "doi": "10.1002/bdra.23376",
+   "title": "Thalidomide embryopathy: Follow-up of cases born between 1959 and 2010",
+   "authors": [
+    "Kowalski TW",
+    "Sanseverino MT",
+    "Schuler-Faccini L",
+    "et al."
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2015",
+   "volume": "103",
+   "pages": "794-803",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "26043938",
+   "doi": "10.1002/bdrc.21096",
+   "title": "Thalidomide-induced teratogenesis: history and mechanisms",
+   "authors": [
+    "Vargesson N"
+   ],
+   "journal": "Birth defects research. Part C, Embryo today : reviews",
+   "year": "2015",
+   "volume": "105",
+   "pages": "140-56",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "24885342",
+   "doi": "10.1186/1471-2350-15-63",
+   "title": "De novo deletion of chromosome 11q12.3 in monozygotic twins affected by Poland Syndrome",
+   "authors": [
+    "Vaccari CM",
+    "Romanini MV",
+    "Musante I",
+    "et al."
+   ],
+   "journal": "BMC medical genetics",
+   "year": "2014",
+   "volume": "15",
+   "pages": "63",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
    ]
   },
   {
@@ -273,6 +1140,9 @@
    ],
    "notes": [
     "Finland, lower limb deficiencies"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -297,6 +1167,91 @@
    ],
    "notes": [
     "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Europe)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "25301261",
+   "doi": "10.1007/s11832-014-0609-9",
+   "title": "Long-term follow-up of thalidomide embryopathy: malformations and development of osteoarthritis in the lower extremities and evaluation of upper extremity function",
+   "authors": [
+    "Ghassemi Jahani SA",
+    "Danielson B",
+    "Karlsson J",
+    "et al."
+   ],
+   "journal": "Journal of children's orthopaedics",
+   "year": "2014",
+   "volume": "8",
+   "pages": "423-33",
+   "codes": [
+    "295000",
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "24907542",
+   "doi": "10.1016/j.ijscr.2014.05.002",
+   "title": "Measurement of blood pressure in a thalidomide-impaired patient who required ovarian cystectomy: A case report",
+   "authors": [
+    "Shiga Y",
+    "Nojiri F",
+    "Yoshizawa A",
+    "et al."
+   ],
+   "journal": "International journal of surgery case reports",
+   "year": "2014",
+   "volume": "5",
+   "pages": "428-30",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "24548169",
+   "doi": "10.1111/pcn.12152",
+   "title": "Psychological and mental health problems in patients with thalidomide embryopathy in Japan",
+   "authors": [
+    "Imai K",
+    "Iida T",
+    "Yamamoto M",
+    "et al."
+   ],
+   "journal": "Psychiatry and clinical neurosciences",
+   "year": "2014",
+   "volume": "68",
+   "pages": "479-86",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
    ]
   },
   {
@@ -319,6 +1274,9 @@
    ],
    "notes": [
     "Northern Netherlands, 30-year birth prevalence of limb defects"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -341,6 +1299,220 @@
    ],
    "notes": [
     "Finland, radial ray deficiencies"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "23972535",
+   "doi": "10.1016/j.bjps.2013.08.003",
+   "title": "Laparoscopically harvested omental flap for breast reconstruction in Poland syndrome",
+   "authors": [
+    "Romanini MV",
+    "Vidal C",
+    "Godoy J",
+    "et al."
+   ],
+   "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
+   "year": "2013",
+   "volume": "66",
+   "pages": "e303-9",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "23078293",
+   "doi": "10.1111/ene.12005",
+   "title": "Late-onset neurological symptoms in thalidomide-exposed subjects: a study of an Australasian cohort",
+   "authors": [
+    "Jankelowitz SK",
+    "Spies JM",
+    "Burke D"
+   ],
+   "journal": "European journal of neurology",
+   "year": "2013",
+   "volume": "20",
+   "pages": "509-514",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "23826203",
+   "doi": "10.1371/journal.pone.0067101",
+   "title": "Opinions of youngsters with congenital below-elbow deficiency, and those of their parents and professionals concerning prosthetic use and rehabilitation treatment",
+   "authors": [
+    "Vasluian E",
+    "de Jong IG",
+    "Janssen WG",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2013",
+   "volume": "8",
+   "pages": "e67101",
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
+   ]
+  },
+  {
+   "pmid": "24055736",
+   "doi": "10.1016/j.niox.2013.09.002",
+   "title": "Polymorphisms in the endothelial nitric oxide synthase gene in thalidomide embryopathy",
+   "authors": [
+    "Vianna FS",
+    "Fraga LR",
+    "Tovo-Rodrigues L",
+    "et al."
+   ],
+   "journal": "Nitric oxide : biology and chemistry",
+   "year": "2013",
+   "volume": "35",
+   "pages": "89-92",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "23448904",
+   "doi": "10.1097/MCD.0b013e32835ffc58",
+   "title": "Recognition of the phenotype of thalidomide embryopathy in countries endemic for leprosy: new cases and review of the main dysmorphological findings",
+   "authors": [
+    "Vianna FSL",
+    "Schüler-Faccini L",
+    "Leite JCL",
+    "et al."
+   ],
+   "journal": "Clinical dysmorphology",
+   "year": "2013",
+   "volume": "22",
+   "pages": "59-63",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "",
+   "doi": "10.1155/2013/241016",
+   "title": "Thalidomide Embryopathy: An Enigmatic Challenge",
+   "authors": [
+    "Vargesson N"
+   ],
+   "journal": "ISRN Developmental Biology",
+   "year": "2013",
+   "volume": "2013",
+   "pages": "1-18",
+   "codes": [
+    "2879",
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "22892220",
+   "doi": "10.1017/S0022215112001429",
+   "title": "Facial palsy in individuals with thalidomide embryopathy: frequency and characteristics",
+   "authors": [
+    "Sjögreen L",
+    "Kiliaridis S"
+   ],
+   "journal": "The Journal of laryngology and otology",
+   "year": "2012",
+   "volume": "126",
+   "pages": "902-6",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "22955538",
+   "doi": "10.1097/BPO.0b013e318269c898",
+   "title": "Hand and upper limb anomalies in Poland syndrome: a new proposal of classification",
+   "authors": [
+    "Catena N",
+    "Divizia MT",
+    "Calevo MG",
+    "et al."
+   ],
+   "journal": "Journal of pediatric orthopedics",
+   "year": "2012",
+   "volume": "32",
+   "pages": "727-31",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
    ]
   },
   {
@@ -363,6 +1535,34 @@
    ],
    "notes": [
     "Amelia: ICBDSR multi-centre study"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "21712302",
+   "doi": "10.1177/1753193411412869",
+   "title": "Children with surgically corrected hand deformities and upper limb deficiencies: self-concept and psychological well-being",
+   "authors": [
+    "Andersson GB",
+    "Gillberg C",
+    "Fernell E",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2011",
+   "volume": "36",
+   "pages": "795-801",
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
    ]
   },
   {
@@ -385,6 +1585,36 @@
    ],
    "notes": [
     "Finland, upper limb deficiencies"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "19909992",
+   "doi": "10.1016/j.jtcvs.2009.08.024",
+   "title": "Dextrocardia in patients with Poland syndrome: phenotypic characterization provides insight into the pathogenesis",
+   "authors": [
+    "Torre M",
+    "Baban A",
+    "Buluggiu A",
+    "et al."
+   ],
+   "journal": "The Journal of thoracic and cardiovascular surgery",
+   "year": "2010",
+   "volume": "139",
+   "pages": "1177-82",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
    ]
   },
   {
@@ -410,6 +1640,9 @@
    "notes": [
     "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
     "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -435,6 +1668,36 @@
    "notes": [
     "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Canada)",
     "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, China)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "19533787",
+   "doi": "10.1002/ajmg.a.32922",
+   "title": "Poland syndrome with bilateral features: case description with review of the literature",
+   "authors": [
+    "Baban A",
+    "Torre M",
+    "Bianca S",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2009",
+   "volume": "149A",
+   "pages": "1597-602",
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "published on the website of AISP – Sindrome di Poland (Italy)"
+   ],
+   "via": [
+    "AISP – Sindrome di Poland (Italy)"
    ]
   },
   {
@@ -455,6 +1718,61 @@
    ],
    "notes": [
     "Brachydactyly review (Orphanet J Rare Dis)"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
+   "pmid": "18720052",
+   "doi": "10.1080/00016350802307638",
+   "title": "Dental status and oral function in an adult group of subjects with thalidomide embryopathy - a clinical and questionnaire study",
+   "authors": [
+    "Ekfeldt A",
+    "Carlsson GE"
+   ],
+   "journal": "Acta odontologica Scandinavica",
+   "year": "2008",
+   "volume": "66",
+   "pages": "300-6",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "17676592",
+   "doi": "10.1002/bdra.20384",
+   "title": "New cases of thalidomide embryopathy in Brazil",
+   "authors": [
+    "Schuler-Faccini L",
+    "Soares RC",
+    "de Sousa AC",
+    "et al."
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2007",
+   "volume": "79",
+   "pages": "671-2",
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Stichting NESOS (Netherlands)"
+   ],
+   "via": [
+    "Stichting NESOS (Netherlands)"
    ]
   },
   {
@@ -479,6 +1797,9 @@
    ],
    "notes": [
     "cited by Orphanet for Isolated tibial hemimelia (prevalence at birth, Europe)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -502,6 +1823,9 @@
    ],
    "notes": [
     "cited by Orphanet for Microgastria-limb reduction defect syndrome (cases/families, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -525,6 +1849,34 @@
    ],
    "notes": [
     "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, United States)"
+   ],
+   "via": [
+    "Orphanet"
+   ]
+  },
+  {
+   "pmid": "11466636",
+   "doi": "10.1053/jhsu.2001.26121",
+   "title": "The incidence and epidemiology of congenital upper limb anomalies: a total population study",
+   "authors": [
+    "Giele H",
+    "Giele C",
+    "Bower C",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2001",
+   "volume": "26",
+   "pages": "628-34",
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "published on the website of Aussiehands (Australia)"
+   ],
+   "via": [
+    "Aussiehands (Australia)"
    ]
   },
   {
@@ -549,6 +1901,9 @@
    "notes": [
     "cited by Orphanet for Symbrachydactyly of hands and feet (cases/families, Worldwide)",
     "cited by Orphanet for Symbrachydactyly of hands and feet (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -573,6 +1928,9 @@
    ],
    "notes": [
     "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Europe)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -597,6 +1955,9 @@
    "notes": [
     "cited by Orphanet for Crossed polysyndactyly (cases/families, Worldwide)",
     "cited by Orphanet for Crossed polysyndactyly (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -622,6 +1983,9 @@
    "notes": [
     "cited by Orphanet for Roberts syndrome (cases/families, Worldwide)",
     "cited by Orphanet for Roberts syndrome (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -647,6 +2011,9 @@
    "notes": [
     "cited by Orphanet for Tetraamelia-multiple malformations syndrome (cases/families, Worldwide)",
     "cited by Orphanet for Tetraamelia-multiple malformations syndrome (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -670,6 +2037,9 @@
    ],
    "notes": [
     "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Hungary)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   },
   {
@@ -693,6 +2063,9 @@
    "notes": [
     "cited by Orphanet for Poland syndrome (point prevalence, Canada)",
     "cited by Orphanet for Poland syndrome (prevalence at birth, Canada)"
+   ],
+   "via": [
+    "Orphanet"
    ]
   }
  ]

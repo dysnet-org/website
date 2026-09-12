@@ -67,27 +67,38 @@ VOCAB = [
     (r"adams[- ]oliver", "974"), (r"amniotic band|constriction (ring|band)", "1034"), (r"radial (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club)", "93321"),
     (r"ulnar (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club)|ulnar hemimelia", "93320"), (r"tibial (deficien|aplasia|hemimelia|hypoplasia)", "93322"),
     (r"fibular? (deficien|aplasia|hemimelia|hypoplasia)", "93323"), (r"femoral (deficien|hypoplasia|focal)|proximal femoral", "295000"),
-    (r"limb[- ](reduction|deficienc|difference|anomal|malformation|defect|loss|absence)|reduction defect|transverse (deficienc|defect)|congenital (upper|lower)[- ]limb|congenital hand|dysmelia|dysmelic", None),
-    (r"thalidomide", None),
+    (r"limb[- ](reduction|deficienc|difference|anomal|malformation|defect|loss|absence)|reduction defect|transverse (deficienc|defect)|(below|above)[- ](elbow|knee) deficien|congenital (upper|lower)[- ]limb|congenital hand|hand difference|dysmelia|dysmelic", None),
+    # thalidomide only when the paper is about embryopathy / survivors, not about the drug's other uses
 ]
 VOCAB = [(re.compile(rx, re.I), code) for rx, code in VOCAB]
-TOPIC_RX = [("epidemiology", re.compile(r"prevalence|incidence|epidemiolog|population[- ]based|birth defects? (registry|surveillance)|surveillance", re.I)),
-            ("review", re.compile(r"\breview\b|overview|state of the art|guideline", re.I)),
-            ("living", re.compile(r"quality of life|psycholog|psychosocial|participation|daily (life|living)|parents?|famil|school|employment|body image|self[- ]esteem|coping", re.I)),
-            ("prosthetics", re.compile(r"prosthe|orthos|orthotic|bionic|myoelectric|3d[- ]print|assistive", re.I)),
-            ("clinical", re.compile(r"surg|treatment|outcome|reconstruct|transfer|pollicization|lengthening|function|rehabilitat|therapy|management|classification", re.I))]
+# thalidomide embryopathy: accepted only when the title itself is about the embryopathy or its survivors,
+# so that papers on thalidomide as a drug (myeloma, lupus, bowel disease) stay out
+THAL_TITLE = re.compile(r"thalidomide[- ](embryopathy|survivor|victim|damage|affected|syndrome|induced|impaired|exposed|related|teratogen)|thalidomide.{0,60}(embryopath|malformation|limb|phocomelia|birth defects?|teratogen|survivor|impaired)|contergan|softenon|neurosedyn", re.I)
+TOPIC_RX = [("epidemiology", re.compile(r"prevalence|incidence|epidemiolog|population[- ]based|birth defects? (registry|surveillance)|surveillance|registry", re.I)),
+            ("review", re.compile(r"\breview\b|overview|state of the art|guideline|consensus|recommendations", re.I)),
+            ("genetics", re.compile(r"\bgene\b|genetic|mutation|deletion|copy number|chromosom|variant|inherit|heredit", re.I)),
+            ("living", re.compile(r"quality of life|psycholog|psychosocial|body image|self[- ]esteem|self[- ]concept|coping|lived experience|experiences? of|daily (life|living)|participation|school|employment|opinions of", re.I)),
+            ("prosthetics", re.compile(r"prosthe|orthos[ie]s|orthotic|bionic|myoelectric|3d[- ]print|assistive", re.I)),
+            ("clinical", re.compile(r"surg|treatment|outcome|reconstruct|transfer|pollicization|lengthening|function|rehabilitat|therapy|management|classification|diagnos", re.I))]
 
 
-def screen(text):
+def screen(text, title=None):
     """Return (codes, topics) if the text is about our conditions, else None."""
     codes, hit = set(), False
     for rx, code in VOCAB:
         if rx.search(text):
             hit = True
             if code: codes.add(code)
+    if THAL_TITLE.search(title if title is not None else text):
+        hit = True; codes.add("thal")
     if not hit: return None
-    topics = {t for t, rx in TOPIC_RX if rx.search(text)} or {"clinical"}
-    if "epidemiology" in topics: topics = {"epidemiology"} | ({"review"} & topics)
+    hits = {t for t, rx in TOPIC_RX if rx.search(text)}
+    # one main theme per paper, in priority order, plus "review" when it applies
+    for main in ("epidemiology", "genetics", "living", "prosthetics", "clinical"):
+        if main in hits:
+            topics = {main} | ({"review"} & hits); break
+    else:
+        topics = {"review"} if "review" in hits else {"clinical"}
     return codes, topics
 
 
@@ -105,13 +116,23 @@ def crossref(doi):
             "abstract": re.sub(r"<[^>]+>", " ", w.get("abstract", ""))}
 
 
-MEMBER_HITS = HERE / "member-dois.json"
+MEMBER_FILES = sorted(HERE.glob("member-dois*.json"))
 review, extra = [], []  # rejected/unresolved hits; Crossref-only accepted entries
-if MEMBER_HITS.exists():
-    hits = json.loads(MEMBER_HITS.read_text(encoding="utf-8"))["hits"]
+if MEMBER_FILES:
+    hits = [h for f in MEMBER_FILES for h in json.loads(f.read_text(encoding="utf-8"))["hits"]]
+    print(f"member crawl files: {', '.join(f.name for f in MEMBER_FILES)} → {len(hits)} raw hits")
+    def norm_doi(d):
+        d = d.split("?")[0].rstrip(".,;:/")
+        d = re.sub(r"\.(t|g|s)\d{3}$", "", d)  # PLOS table / figure / supplement DOIs → parent article
+        return d.lower() if re.fullmatch(r"10\.\d{4,9}/[^\s(]{4,}", d) and not d.endswith(("/journal", "/journal.pone")) else None
     by_id = {}
     for h in hits:
-        k = ("doi", h["doi"].lower()) if h.get("doi") else ("pmid", h["pmid"]) if h.get("pmid") else ("pmcid", h["pmcid"])
+        if h.get("doi"):
+            d = norm_doi(h["doi"])
+            if not d: continue
+            k = ("doi", d)
+        else:
+            k = ("pmid", h["pmid"]) if h.get("pmid") else ("pmcid", h["pmcid"])
         by_id.setdefault(k, {"hit": h, "members": set()})["members"].add(f"{h['member']} ({h['country']})")
     print(f"member sites: {len(by_id)} distinct identifiers")
     for (kind, ident), v in by_id.items():
@@ -130,7 +151,7 @@ if MEMBER_HITS.exists():
             title = " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", xml, re.S))
             abstract = " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", xml, re.S))
             text = re.sub(r"<[^>]+>", " ", title + " " + abstract)
-            r = screen(text)
+            r = screen(text, re.sub(r"<[^>]+>", " ", title))
             if not r:
                 review.append({"id": ident, "pmid": pmid, "title": re.sub(r"<[^>]+>", "", title), "members": members, "status": "rejected: not about the site's conditions"}); continue
             codes, topics = r
@@ -138,7 +159,7 @@ if MEMBER_HITS.exists():
             for c in codes: seed[pmid]["codes"].add(c)
             seed[pmid]["via"].update(members)
         elif meta:
-            r = screen(meta["title"] + " " + meta["abstract"])
+            r = screen(meta["title"] + " " + meta["abstract"], meta["title"])
             if not r:
                 review.append({"id": ident, "title": meta["title"], "members": members, "status": "rejected: not about the site's conditions (Crossref)"}); continue
             codes, topics = r

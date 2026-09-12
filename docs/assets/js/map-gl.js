@@ -134,6 +134,7 @@
   });
   map.touchZoomRotate.disableRotation();
   window.DYSNET_GLMAP = map;  // handy for debugging in the console
+  map.getCanvas().setAttribute("tabindex", "-1");  // the map is mouse and touch only; every marker is listed on the register pages
   map.on("error", function (e) { if (e && e.error) console.error("DysNet map:", e.error.message || e.error); });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
 

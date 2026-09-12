@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css?v=4ca742ff">
+<link rel="stylesheet" href="/assets/css/site.css?v=0cd54f2e">
 <script>window.SITE_BASE="";</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "DysNet", "legalName": "DysNet Ideell Förening", "alternateName": "EDRIC – European Dysmelia Reference Information Centre", "url": "https://www.dysnet.org", "logo": "https://www.dysnet.org/assets/img/dysnet-logo-512.png", "description": "DysNet is the global network for people affected by congenital limb differences (dysmelia): a curated research library, studies and registries, a researcher register, a map of specialist care centres worldwide, and an international patient-owned registry.", "foundingDate": "2009-01-07", "foundingLocation": "Stockholm, Sweden", "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number", "value": "802444-3015"}, "address": [{"@type": "PostalAddress", "streetAddress": "Nybodagatan 1", "postalCode": "171 42", "addressLocality": "Solna", "addressCountry": "SE"}, {"@type": "PostalAddress", "streetAddress": "Rue du Chantier 2", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}], "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "info@dysnet.org", "availableLanguage": ["English"]}, "areaServed": "Worldwide", "memberOf": [{"@type": "Organization", "name": "EURORDIS – Rare Diseases Europe", "url": "https://www.eurordis.org/"}, {"@type": "Organization", "name": "European Disability Forum", "url": "https://www.edf-feph.org/"}], "knowsAbout": ["dysmelia", "congenital limb differences", "limb reduction deficiency", "rare diseases", "patient registries", "prosthetics", "assistive technology", "patient advocacy", "European Reference Networks"], "sameAs": ["https://www.facebook.com/DysNet", "https://www.linkedin.com/company/dysnet/", "https://www.youtube.com/user/DysmeliaNetwork"]}</script>
 </head><body>
@@ -23,11 +23,12 @@
 <header class="site">
   <div class="container site-bar">
     <a class="logo" href="/" aria-label="DysNet home"><img src="/assets/img/dysnet-logo.png" alt="DysNet — The Online Dysmelia Community" width="269" height="176"></a>
-    <nav class="main" aria-label="Main">
-      <a href="/about/">About</a><a href="/knowledge/">Knowledge</a><a href="/registry/">Registry</a><a href="/voice/">Voice</a><a href="/contact/">Contact</a>
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main" id="main-nav" aria-label="Main">
+      <span class="nav-links"><a href="/about/">About</a><a href="/knowledge/">Knowledge</a><a href="/registry/">Registry</a><a href="/voice/">Voice</a><a href="/contact/">Contact</a><a class="nav-join" href="/about/members/">Join us</a></span>
       <button id="search-btn" type="button" class="search-trigger" aria-label="Search the site">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="14" height="14" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Search <kbd>⌘K</kbd>
+        <span class="search-label">Search</span> <kbd>⌘K</kbd>
       </button>
       <span class="nav-ctas">
         <a class="btn btn-donate" href="/donate/">Donate</a>
@@ -48,8 +49,8 @@
 <main id="main" tabindex="-1">
 
 <section class="map-hero" aria-label="The DysNet network on the world map">
-  <div id="worldmap" aria-hidden="true"></div>
-  <div id="glmap" aria-hidden="true"></div>
+  <div id="worldmap"></div>
+  <div id="glmap"></div>
   <div class="map-panel" id="map-panel">
     <button type="button" class="map-panel-close" aria-label="Close this card and explore the map">×</button>
     <p class="kicker">Mission 2 · The international associative registry</p>
@@ -66,7 +67,8 @@
     </div>
   </div>
   <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
-  <div class="map-side">
+  <div class="map-side" id="map-side">
+  <button type="button" class="map-options-toggle" id="map-options-toggle" aria-expanded="false" aria-controls="map-side">Map options</button>
   <div class="map-layers" id="map-layers" role="group" aria-label="Show on the map">
     <span class="map-layers-label">Show</span>
     <button type="button" data-layer="members" aria-pressed="true">Member countries</button>
@@ -102,6 +104,7 @@
     <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
+    <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/ongoing-studies/">registries</a> pages.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0), French départements from IGN Admin Express (Licence Ouverte) via france-geojson; registry coverage after Santé publique France 2026 · rendered with MapLibre, self-hosted</span>
   </div>
   </div>
@@ -110,17 +113,17 @@
   <link rel="stylesheet" href="/assets/vendor/maplibre-gl.css">
   <script src="/assets/vendor/maplibre-gl.js"></script>
   <script src="/assets/vendor/pmtiles.js"></script>
-  <script src="/assets/js/map-gl.js?v=ef9500b7"></script>
+  <script src="/assets/js/map-gl.js?v=82c474a6"></script>
 </section>
 
 
 <section class="aud-section">
   <div class="container">
     <div class="grid cols-4 aud-grid">
-      <div class="card acc-library"><h3 class="h4">For families</h3><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
-      <div class="card acc-research"><h3 class="h4">For clinicians</h3><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
-      <div class="card acc-studies"><h3 class="h4">For researchers</h3><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
-      <div class="card acc-centres"><h3 class="h4">For associations</h3><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
+      <div class="card acc-library"><h2 class="h4">For families</h2><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
+      <div class="card acc-research"><h2 class="h4">For clinicians</h2><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
+      <div class="card acc-studies"><h2 class="h4">For researchers</h2><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
+      <div class="card acc-centres"><h2 class="h4">For associations</h2><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
     </div>
   </div>
 </section>
@@ -257,6 +260,6 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/site.js?v=4ca742ff" defer></script>
+<script src="/assets/js/site.js?v=0cd54f2e" defer></script>
 </body>
 </html>

@@ -423,6 +423,20 @@
   try { if (sessionStorage.getItem("dysnet-map-card") === "closed") setOpen(false); } catch (e) {}
 })();
 
+/* ── Phone menu and map options ────────────────────────────────────── */
+(function () {
+  var tog = document.getElementById("nav-toggle"), header = document.querySelector("header.site");
+  if (tog && header) tog.addEventListener("click", function () {
+    var open = !header.classList.contains("nav-open");
+    header.classList.toggle("nav-open", open); tog.setAttribute("aria-expanded", open ? "true" : "false"); tog.textContent = open ? "Close" : "Menu";
+  });
+  var mo = document.getElementById("map-options-toggle"), side = document.getElementById("map-side");
+  if (mo && side) mo.addEventListener("click", function () {
+    var open = !side.classList.contains("open");
+    side.classList.toggle("open", open); mo.setAttribute("aria-expanded", open ? "true" : "false"); mo.textContent = open ? "Hide map options" : "Map options";
+  });
+})();
+
 /* ── Landing map legend: collapsed to a button on wide screens ─────── */
 (function () {
   var legend = document.getElementById("map-legend"), btn = document.getElementById("map-legend-toggle");
@@ -436,13 +450,37 @@
 (function () {
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");
   if (!list || !q) return;
-  var items = Array.prototype.slice.call(list.querySelectorAll(".bib-item")), topic = "";
+  var topic = "";
   var LIMIT = 60, expanded = false, more = document.getElementById("bib-more"), focus = document.getElementById("bib-focus");
   var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to"), exclude = "";
+  // the page ships the first 60 entries as HTML; the full set travels as JSON and is rendered here on demand
+  var dataEl = document.getElementById("bib-data"), DATA = null, LABELS = { codes: {}, topics: {} };
+  try { var parsed = dataEl ? JSON.parse(dataEl.textContent) : null; if (parsed) { DATA = parsed.items; LABELS = parsed; } } catch (e) { DATA = null; }
+  if (DATA) DATA.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "")).toLowerCase().replace(/"/g, ""); });
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
+  function itemHtml(r) {
+    var link = r.d ? '<a href="https://doi.org/' + esc(r.d) + '" target="_blank" rel="noopener external">doi:' + esc(r.d) + '</a>'
+                   : '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(r.m) + '/" target="_blank" rel="noopener external">PubMed ' + esc(r.m) + '</a>';
+    var tags = r.c.map(function (c) { return '<span class="bib-tag">' + esc(LABELS.codes[c] || c) + '</span>'; }).join("") +
+               r.k.map(function (k) { return '<span class="bib-tag bib-topic">' + esc(LABELS.topics[k] || k) + '</span>'; }).join("") +
+               (r.w ? '<span class="bib-tag bib-via">' + (r.w === "PubMed search" ? "PubMed search" : "found on " + esc(r.w)) + '</span>' : "");
+    return '<li class="bib-item"><p class="bib-title">' + esc(r.t) + '</p><p class="bib-meta">' + esc(r.a) + ' · <em>' + esc(r.j) + '</em> · ' + esc(r.y) +
+           (r.v ? ' · ' + esc(r.v) : '') + (r.p ? ':' + esc(r.p) : '') + ' · ' + link + '</p><p class="bib-tags">' + tags + '</p></li>';
+  }
+  var items = DATA ? null : Array.prototype.slice.call(list.querySelectorAll(".bib-item"));
   function apply() {
     var text = q.value.trim().toLowerCase(), code = sel.value, k = 0;
     var from = yFrom && parseInt(yFrom.value, 10) || 0, to = yTo && parseInt(yTo.value, 10) || 9999;
-    items.forEach(function (it) {
+    if (DATA) {
+      var out = [];
+      DATA.forEach(function (r) {
+        var y = parseInt(r.y, 10) || 0;
+        var ok = (!text || r.s.indexOf(text) !== -1) && (!code || r.c.indexOf(code) !== -1) && (!topic || r.k.indexOf(topic) !== -1) &&
+                 (!exclude || r.c.indexOf(exclude) === -1) && (y >= from && y <= to);
+        if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
+      });
+      list.innerHTML = out.join("");
+    } else items.forEach(function (it) {
       var y = parseInt(it.getAttribute("data-year"), 10) || 0;
       var ok = (!text || it.getAttribute("data-text").indexOf(text) !== -1) &&
                (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&

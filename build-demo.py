@@ -145,11 +145,12 @@ def header_html(active):
 <header class="site">
   <div class="container site-bar">
     <a class="logo" href="/" aria-label="DysNet home"><img src="/assets/img/dysnet-logo.png" alt="DysNet — The Online Dysmelia Community" width="269" height="176"></a>
-    <nav class="main" aria-label="Main">
-      {links}
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main" id="main-nav" aria-label="Main">
+      <span class="nav-links">{links}<a class="nav-join" href="/about/members/">Join us</a></span>
       <button id="search-btn" type="button" class="search-trigger" aria-label="Search the site">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="14" height="14" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Search <kbd>⌘K</kbd>
+        <span class="search-label">Search</span> <kbd>⌘K</kbd>
       </button>
       <span class="nav-ctas">
         <a class="btn btn-donate" href="/donate/">Donate</a>
@@ -261,7 +262,7 @@ def bibliography_html():
     names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
     codes_present = sorted({c for e in entries for c in e["codes"]}, key=lambda c: names.get(c, c))
     topics = sorted({t for e in entries for t in e["topics"]}, key=lambda t: list(BIB_TOPIC_LABEL).index(t) if t in BIB_TOPIC_LABEL else 99)
-    items = []
+    items, records = [], []
     for e in entries:
         authors = ", ".join(e["authors"])
         link = (f'<a href="https://doi.org/{e["doi"]}" target="_blank" rel="noopener external">doi:{e["doi"]}</a>' if e["doi"]
@@ -275,6 +276,8 @@ def bibliography_html():
         items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-text="{text}">'
                      f'<p class="bib-title">{e["title"]}</p><p class="bib-meta">{authors} · <em>{e["journal"]}</em> · {e["year"]}{(" · " + e["volume"]) if e["volume"] else ""}{(":" + e["pages"]) if e["pages"] else ""} · {link}</p>'
                      f'<p class="bib-tags">{tags}</p></li>')
+        records.append({"t": e["title"], "a": authors, "j": e["journal"], "y": e["year"], "v": e["volume"], "p": e["pages"], "d": e["doi"], "m": e["pmid"],
+                        "c": e["codes"], "k": [t.replace(" ", "_") for t in e["topics"]], "w": ", ".join(v.split(" (")[0] for v in via) if via else ("PubMed search" if "PubMed search" in e.get("via", []) else ""), "n": why})
     code_opts = "".join(f'<option value="{c}">{names.get(c, c)}</option>' for c in codes_present)
     topic_chips = "".join(f'<button type="button" data-topic="{t.replace(" ", "_")}" aria-pressed="false">{BIB_TOPIC_LABEL.get(t, t)}</button>' for t in topics)
     years = sorted({e["year"] for e in entries if e["year"]})
@@ -291,7 +294,8 @@ def bibliography_html():
       <div class="bib-years"><label for="bib-from">Published from</label> <input type="number" id="bib-from" min="{years[0]}" max="{years[-1]}" placeholder="{years[0]}" inputmode="numeric" autocomplete="off" aria-label="From year"> <label for="bib-to">to</label> <input type="number" id="bib-to" min="{years[0]}" max="{years[-1]}" placeholder="{years[-1]}" inputmode="numeric" autocomplete="off" aria-label="To year"> <span class="bib-focus-help">{years[0]}–{years[-1]}</span></div>
       <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button></p>
     </div>
-    <ol class="bib-list" id="bib-list">{"".join(items)}</ol>
+    <ol class="bib-list" id="bib-list">{"".join(items[:60])}</ol>
+    <script type="application/json" id="bib-data">{json.dumps({"codes": {c: names.get(c, c) for c in codes_present}, "topics": {t.replace(" ", "_"): BIB_TOPIC_LABEL.get(t, t) for t in topics}, "items": records}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="bib-more" hidden>Show all matching references</button></p>
     <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Three fixed PubMed queries, re-run at each build, add the thalidomide literature (title query: thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), the systematic reviews and meta-analyses on our conditions (publication type or title, combined with the condition names), and the literature on causes and risk factors (title terms such as aetiology, risk factors, teratogen, maternal, exposure, environmental, pesticides, clusters or vascular disruption, combined with the condition names). The registries listed on Orphanet for our conditions were crawled the same way as member websites. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>.</p>
 """
@@ -354,10 +358,10 @@ __MAP_HERO__
 <section class="aud-section">
   <div class="container">
     <div class="grid cols-4 aud-grid">
-      <div class="card acc-library"><h3 class="h4">For families</h3><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
-      <div class="card acc-research"><h3 class="h4">For clinicians</h3><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
-      <div class="card acc-studies"><h3 class="h4">For researchers</h3><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
-      <div class="card acc-centres"><h3 class="h4">For associations</h3><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
+      <div class="card acc-library"><h2 class="h4">For families</h2><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
+      <div class="card acc-research"><h2 class="h4">For clinicians</h2><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
+      <div class="card acc-studies"><h2 class="h4">For researchers</h2><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
+      <div class="card acc-centres"><h2 class="h4">For associations</h2><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
     </div>
   </div>
 </section>
@@ -507,7 +511,8 @@ PAGES["/knowledge/research-library/"] = {
     <p>Every entry: a citation, a one-paragraph plain-language summary, and a link to the source. Tagged by condition and topic so families and clinicians find what concerns them.</p>
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="#bibliography">Go straight to the bibliography ↓</a></p>
 
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Starting points</h2>
+    <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>Orphanet condition sheets on limb reduction defects <span class="badge live">source</span></h3>
         <p>The European reference database for rare diseases documents the conditions grouped under dysmelia, from amelia to ulnar hemimelia. Our <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> guide is built on it.</p>
@@ -618,7 +623,8 @@ PAGES["/knowledge/ongoing-studies/"] = {
     <h1 class="display">What is being studied, right now.</h1>
     <p>Studies our community can join or follow. Each entry shows who runs it, its status, and whom to contact. Associations: tell us about studies in your country.</p>
 
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Studies you can join or follow</h2>
+    <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>Patient Journey · ERN BOND / EURORDIS <span class="badge live">in progress</span></h3>
         <p>A five-step research project promoted by DysNet on behalf of Raggiungere, tracking the experiences of patients, families, doctors and researchers through a shared questionnaire, to give families updated medical and scientific knowledge.</p>
@@ -669,7 +675,8 @@ PAGES["/knowledge/researchers/"] = {
     <h1 class="display">Who works on limb difference.</h1>
     <p>A factual register: teams that publish or run studies on congenital limb difference. Listing is by activity, not endorsement, so no one is preferred and no one is left out. Two partners DysNet has met in person open the list; the teams that publish on our conditions follow, drawn from the bibliography.</p>
 
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Partners DysNet has met in person</h2>
+    <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>The BioRobotics Institute · Scuola Superiore Sant’Anna, Pisa <span class="badge live">active</span></h3>
         <p>Research on advanced upper-limb prosthetics, including the bionic hand presented to DysNet associations by Prensilia’s managing director, engineer Francesco Clemente.</p>
@@ -707,7 +714,8 @@ PAGES["/knowledge/care-centres/"] = {
     <h1 class="display">Where expertise lives.</h1>
     <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website (or visited by the board), and appears as an orange marker on the <a href="/">world map</a> on our home page. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>.</p>
 
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Where the list comes from</h2>
+    <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>ERN BOND network centres <span class="badge live">source</span></h3>
         <p>The European Reference Network for rare bone diseases connects expert hospitals across the EU. DysNet’s seat in its patient advocacy group is the channel for validating limb-difference centres.</p>
@@ -1366,8 +1374,8 @@ MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "cent
 # it needs MEMBERS, which is defined after the home page body.
 MAP_HERO = """
 <section class="map-hero" aria-label="The DysNet network on the world map">
-  <div id="worldmap" aria-hidden="true"></div>
-  <div id="glmap" aria-hidden="true"></div>
+  <div id="worldmap"></div>
+  <div id="glmap"></div>
   <div class="map-panel" id="map-panel">
     <button type="button" class="map-panel-close" aria-label="Close this card and explore the map">×</button>
     <p class="kicker">Mission 2 · The international associative registry</p>
@@ -1384,7 +1392,8 @@ MAP_HERO = """
     </div>
   </div>
   <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
-  <div class="map-side">
+  <div class="map-side" id="map-side">
+  <button type="button" class="map-options-toggle" id="map-options-toggle" aria-expanded="false" aria-controls="map-side">Map options</button>
   <div class="map-layers" id="map-layers" role="group" aria-label="Show on the map">
     <span class="map-layers-label">Show</span>
     <button type="button" data-layer="members" aria-pressed="true">Member countries</button>
@@ -1420,6 +1429,7 @@ MAP_HERO = """
     <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
+    <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/ongoing-studies/">registries</a> pages.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0), French départements from IGN Admin Express (Licence Ouverte) via france-geojson; registry coverage after Santé publique France 2026 · rendered with MapLibre, self-hosted</span>
   </div>
   </div>

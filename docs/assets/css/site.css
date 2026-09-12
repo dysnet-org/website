@@ -740,8 +740,6 @@ ol.objectives strong { color: var(--dys-green-text); }
 .map-legend:not(.open) > span, .map-legend:not(.open) > .map-credit { display: none; }
 .map-legend.open .map-legend-toggle { margin-bottom: 0.2rem; }
 @media (max-width: 70rem) {
-  .map-legend-toggle { display: none; }
-  .map-legend:not(.open) > span, .map-legend:not(.open) > .map-credit { display: block; }
   .map-side { grid-template-rows: none; pointer-events: auto; }
   .map-side .map-legend { position: static; max-height: none; overflow: visible; align-self: auto; }
 }
@@ -771,3 +769,39 @@ ol.demands details[open] summary::after { content: "–"; }
 .demand-body { padding: 0 var(--space-3) var(--space-3) calc(var(--space-3) + 2rem + var(--space-2)); }
 .demand-body p { margin-bottom: var(--space-2); }
 .demand-body p:last-child { margin-bottom: 0; }
+
+/* ── Phones: menu button, card before the map, folded map options ── */
+.nav-toggle { display: none; font: inherit; font-weight: 700; font-size: 0.95rem; padding: 0.55rem 1rem; border-radius: 999px; border: 2px solid var(--dys-purple); background: #fff; color: var(--dys-purple-text); cursor: pointer; margin-left: auto; }
+.nav-links { display: contents; }
+.map-options-toggle { display: none; font: inherit; font-weight: 700; font-size: var(--text-small); padding: 0.55rem 1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.4); background: rgba(255,255,255,0.08); color: #f3e8fd; cursor: pointer; }
+.map-legend .l-note { display: block; color: #d9c2f5; }
+.map-legend .l-note::before { display: none; }
+.map-legend .l-note a { color: #fff; }
+@media (pointer: coarse) { .search-trigger kbd { display: none; } }
+.nav-join { display: none; }
+@media (max-width: 48rem) {
+  .site-bar { flex-wrap: nowrap; gap: var(--space-1); padding-block: var(--space-1); }
+  .logo img { height: 2.6rem; width: auto; }
+  .nav-toggle { display: inline-flex; margin-left: 0; padding: 0.5rem 0.85rem; }
+  nav.main { width: auto; flex-wrap: nowrap; gap: var(--space-1); }
+  nav.main .search-trigger .search-label { display: none; }
+  nav.main .search-trigger { padding: 0.5rem 0.6rem; }
+  nav.main .nav-ctas .btn-primary { display: none; }
+  nav.main .nav-links { display: none; }
+  header.site.nav-open nav.main .nav-links { display: flex; flex-direction: column; position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-bottom: 1px solid var(--dys-line); box-shadow: 0 20px 40px -24px rgba(0,0,0,0.35); padding: var(--space-1) var(--space-3) var(--space-2); gap: 0; }
+  header.site.nav-open nav.main .nav-links a { padding: 0.75rem 0.15rem; font-size: 1.05rem; display: block; }
+  header.site.nav-open nav.main .nav-links .nav-join { display: block; color: var(--dys-purple-text); font-weight: 700; }
+  .map-hero { display: grid; }
+  .map-panel { order: -1; margin: var(--space-2) 1rem 0; }
+  #glmap, #worldmap { order: 0; height: 60vw; max-height: 42vh; }
+  .map-side { order: 1; }
+  .map-options-toggle { display: inline-flex; }
+  .map-side > *:not(.map-options-toggle) { display: none; }
+  .map-side.open > *:not(.map-options-toggle):not([hidden]) { display: flex; }
+  .map-side.open > .map-guess, .map-side.open > .map-dots, .map-side.open > .map-legend { display: block; }
+  .map-side.open > .map-legend { display: grid; }
+}
+@media (pointer: coarse) {
+  .map-layers button, .map-views button, .finder-chips button { padding: 0.55rem 0.95rem; min-height: 44px; }
+  .country li { min-height: 44px; }
+}

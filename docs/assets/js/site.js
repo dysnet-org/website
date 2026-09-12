@@ -355,7 +355,7 @@
     });
     n.textContent = k;
   }
-  q.addEventListener("input", apply); sel.addEventListener("change", apply);
+  q.addEventListener("input", apply); sel.addEventListener("change", apply); apply();
   chips.querySelectorAll("button").forEach(function (b) {
     b.addEventListener("click", function () {
       var on = b.getAttribute("aria-pressed") === "true";

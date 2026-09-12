@@ -279,8 +279,8 @@ def bibliography_html():
     <h2 class="h2">The literature, searchable.</h2>
     <p>Peer-reviewed publications on limb differences and on how to study them, gathered only from sources we trust: the references Orphanet itself cites for our {len(REG_CODE_NAMES)} conditions, and the publications verified for this site. Titles, authors and DOIs come straight from PubMed’s records, so every line can be checked. Filter by condition or theme, or search.</p>
     <div class="bib-controls" id="bib-controls">
-      <input type="search" id="bib-q" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
-      <select id="bib-code" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
+      <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
+      <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
       <div class="finder-chips" id="bib-topics">{topic_chips}</div>
       <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button> · {years[0]}–{years[-1]}</p>
     </div>

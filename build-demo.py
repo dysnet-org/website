@@ -86,6 +86,7 @@ ORG_SCHEMA = {
         "patient advocacy", "European Reference Networks",
     ],
     "sameAs": ["https://www.facebook.com/DysNet",
+               "https://www.linkedin.com/company/dysnet/",
                "https://www.youtube.com/user/DysmeliaNetwork"],
 }
 
@@ -207,6 +208,7 @@ FOOTER = f"""</main>
         <h2>Follow</h2>
         <ul>
           <li><a href="https://www.facebook.com/DysNet">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/company/dysnet/">LinkedIn</a></li>
           <li><a href="https://www.youtube.com/user/DysmeliaNetwork">YouTube</a></li>
           <li><a href="https://www.youtube.com/watch?v=P8M2n7Gr3V0">The chair’s address</a></li>
         </ul>

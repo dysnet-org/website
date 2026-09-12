@@ -715,3 +715,6 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .bib-focus button[aria-pressed="true"] { background: #ea580c; border-color: #ea580c; color: #fff; }
 .bib-focus-help { font-size: var(--text-small); color: var(--dys-muted); }
 .bib-more-row { text-align: center; margin: var(--space-3) 0 0; }
+.bib-years { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-size: var(--text-small); color: var(--dys-muted); }
+.bib-years input { width: 5.5rem; padding: 0.4rem 0.6rem; border: 1px solid var(--dys-line); border-radius: 0.6rem; font: inherit; color: var(--dys-ink); background: #fff; }
+.bib-years input:focus { outline: 2px solid var(--dys-purple); outline-offset: 1px; }

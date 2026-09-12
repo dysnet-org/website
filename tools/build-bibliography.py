@@ -5,8 +5,9 @@ Sources of references (trusted, machine-readable):
   1. Every PubMed ID cited by Orphanet in its epidemiology data for our ORPHAcodes
      (tools/orphanet-prevalence.json, Orphadata product 9) — tagged with the condition(s).
   2. The publications already verified for the site (prevalence annex, registry page).
-  3. DOIs / PubMed links published on DysNet member associations' own websites
-     (tools/member-dois.json, harvested by tools/harvest-member-dois.py), kept only when
+  3. DOIs / PubMed links published on DysNet member associations' own websites and on the
+     official websites of the registries listed on Orphanet for our ORPHAcodes
+     (tools/member-dois*.json, tools/registry-dois*.json, harvested by tools/harvest-member-dois.py), kept only when
      the article is about the conditions the site describes (keyword screen on
      title + abstract; rejected items are written to tools/bibliography-review.json).
 Metadata (title, authors, journal, year, DOI) comes from NCBI E-utilities, never from memory.
@@ -119,7 +120,7 @@ def crossref(doi):
             "abstract": re.sub(r"<[^>]+>", " ", w.get("abstract", ""))}
 
 
-MEMBER_FILES = sorted(HERE.glob("member-dois*.json"))
+MEMBER_FILES = sorted(HERE.glob("member-dois*.json")) + sorted(HERE.glob("registry-dois*.json"))  # member associations + registries' official websites
 review, extra = [], []  # rejected/unresolved hits; Crossref-only accepted entries
 if MEMBER_FILES:
     hits = [h for f in MEMBER_FILES for h in json.loads(f.read_text(encoding="utf-8"))["hits"]]
@@ -138,6 +139,7 @@ if MEMBER_FILES:
             k = ("pmid", h["pmid"]) if h.get("pmid") else ("pmcid", h["pmcid"])
         by_id.setdefault(k, {"hit": h, "members": set()})["members"].add(f"{h['member']} ({h['country']})")
     print(f"member sites: {len(by_id)} distinct identifiers")
+    resolved = {}  # pmid -> members ; Crossref-only handled inline
     for (kind, ident), v in by_id.items():
         members = sorted(v["members"])
         pmid, meta = None, None
@@ -150,26 +152,35 @@ if MEMBER_FILES:
         except Exception as e:
             review.append({"id": ident, "members": members, "status": f"lookup failed: {type(e).__name__}"}); continue
         if pmid:
-            xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={pmid}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
-            title = " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", xml, re.S))
-            abstract = " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", xml, re.S))
-            text = re.sub(r"<[^>]+>", " ", title + " " + abstract)
-            r = screen(text, re.sub(r"<[^>]+>", " ", title))
-            if not r:
-                review.append({"id": ident, "pmid": pmid, "title": re.sub(r"<[^>]+>", "", title), "members": members, "status": "rejected: not about the site's conditions"}); continue
-            codes, topics = r
-            for t in topics: add(pmid, None, t, f"published on the website of {', '.join(members)}", via=None)
-            for c in codes: seed[pmid]["codes"].add(c)
-            seed[pmid]["via"].update(members)
+            resolved.setdefault(pmid, set()).update(members)
         elif meta:
             r = screen(meta["title"] + " " + meta["abstract"], meta["title"])
             if not r:
                 review.append({"id": ident, "title": meta["title"], "members": members, "status": "rejected: not about the site's conditions (Crossref)"}); continue
             codes, topics = r
+            if re.search(r"meta-?analys|systematic review|pooled analysis|umbrella review|scoping review", meta["title"], re.I): topics.add("meta")
             meta.pop("abstract"); meta.update({"codes": sorted(codes), "topics": sorted(topics), "notes": [f"published on the website of {', '.join(members)}"], "via": members})
             extra.append(meta)
         else:
             review.append({"id": ident, "members": members, "status": "unresolved: no PubMed or Crossref record"})
+    print(f"resolved to PubMed: {len(resolved)} records; screening titles and abstracts in batches")
+    pm_list = sorted(resolved)
+    for i in range(0, len(pm_list), 50):
+        batch = pm_list[i:i + 50]
+        xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+        for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+            pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+            if not pm or pm.group(1) not in resolved: continue
+            pmid = pm.group(1); members = sorted(resolved[pmid])
+            title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+            abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+            r = screen(title + " " + abstract, title)
+            if not r:
+                review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": members, "status": "rejected: not about the site's conditions"}); continue
+            codes, topics = r
+            for t in topics: add(pmid, None, t, f"published on the website of {', '.join(members)}", via=None)
+            for c in codes: seed[pmid]["codes"].add(c)
+            seed[pmid]["via"].update(members)
     print(f"member hits accepted: {sum(1 for v in seed.values() if v['via'] - {'Orphanet', 'DysNet'})} via PubMed + {len(extra)} via Crossref | set aside: {len(review)}")
 
 # ─── 4. Thalidomide literature (PubMed, title-level query) ──────────────────
@@ -177,8 +188,8 @@ if MEMBER_FILES:
 # are survivor associations. The query is fixed and title-restricted so the set is reproducible.
 THAL_QUERY = ('thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR "birth defects"[Title] OR phocomelia[Title] '
               'OR survivors[Title] OR "limb"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])')
-THAL_EXCL = re.compile(r"anticancer|immunomodulat|angiogenesis|myeloma|lupus|leprosy reaction|erythema nodosum|treatment (with|of)|analog|non-teratogenic|inhibit|therapy for|chemotherap", re.I)
-THAL_KEEP = re.compile(r"embryopath|survivor|phocomelia|birth defect|teratogenic (effect|action|mechanism|activity|potential)|teratogenesis|teratogenicity|limb (malformation|defect|reduction)|victim|Contergan|disaster|tragedy", re.I)
+THAL_EXCL = re.compile(r"anticancer|immunomodulat|angiogenesis|myeloma|lupus|leprosy reaction|erythema nodosum|treatment (with|of)|analog|non-teratogenic|inhibit|therapy for|chemotherap|arteriovenous|vascular malformation|angiodysplasia|telangiectasia|bleeding|hemorrhag|haemorrhag|effect of thalidomide on", re.I)
+THAL_KEEP = re.compile(r"embryopath|survivor|phocomelia|birth defect|teratogen|limb (malformation|defect|reduction|bud|defic|formation)|thalidomide[- ](children|damaged|affected|impaired)|embryo|victim|Contergan|disaster|tragedy", re.I)
 thal_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(THAL_QUERY)}&retmode=json&retmax=2000"))["esearchresult"]["idlist"]
 print(f"thalidomide query: {len(thal_ids)} PubMed records")
 for i in range(0, len(thal_ids), 50):
@@ -198,6 +209,34 @@ for i in range(0, len(thal_ids), 50):
         for t in topics: add(pmid, None, t, "PubMed title search on thalidomide embryopathy", via="PubMed search")
         for c in codes: seed[pmid]["codes"].add(c)
 
+# ─── 5. Systematic reviews and meta-analyses on our conditions (PubMed, fixed query) ──────────
+META_QUERY = ('(meta-analysis[pt] OR systematic review[pt] OR "systematic review"[ti] OR "meta-analysis"[ti]) AND '
+              '("limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb difference"[tiab] OR "limb differences"[tiab] '
+              'OR "limb defects"[tiab] OR "upper limb anomalies"[tiab] OR "congenital hand"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] '
+              'OR "Poland syndrome"[tiab] OR "Poland sequence"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR "split hand"[tiab] '
+              'OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR "radial longitudinal deficiency"[tiab] OR "radial club hand"[tiab] '
+              'OR "fibular deficiency"[tiab] OR "tibial deficiency"[tiab] OR "amniotic band"[tiab] OR "Adams-Oliver"[tiab] OR "Holt-Oram"[tiab] '
+              'OR "thrombocytopenia-absent radius"[tiab] OR "thalidomide embryopathy"[tiab] OR dysmelia[tiab])')
+meta_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(META_QUERY)}&retmode=json&retmax=1000"))["esearchresult"]["idlist"]
+print(f"systematic-review query: {len(meta_ids)} PubMed records")
+for i in range(0, len(meta_ids), 50):
+    batch = meta_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+        abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+        r = screen(title + " " + abstract, title)
+        if not r:
+            review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"], "status": "rejected: systematic review not about the site's conditions"}); continue
+        codes, topics = r
+        add(pmid, None, "meta", "PubMed search for systematic reviews and meta-analyses on the site's conditions", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
+
+META_RX = re.compile(r"meta-?analys|systematic review|pooled analysis|umbrella review|scoping review", re.I)
+
 # metadata for all PMIDs (batched esummary)
 pmids = sorted(seed)
 entries = []
@@ -211,13 +250,19 @@ for i in range(0, len(pmids), 100):
         authors = [a["name"] for a in d.get("authors", [])]
         year = (d.get("pubdate") or "")[:4]
         s = seed[pmid]
-        entries.append({"pmid": pmid, "doi": doi, "title": d.get("title", "").rstrip("."), "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
+        # publication type from the PubMed record itself: meta-analyses / systematic reviews and reviews
+        pubtypes = set(d.get("pubtype", []))
+        title = d.get("title", "").rstrip(".")
+        if pubtypes & {"Meta-Analysis", "Systematic Review"} or META_RX.search(title): s["topics"].add("meta")
+        if "Review" in pubtypes: s["topics"].add("review")
+        entries.append({"pmid": pmid, "doi": doi, "title": title, "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
                         "journal": d.get("fulljournalname") or d.get("source", ""), "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
+                        "pubtypes": sorted(pubtypes - {"Journal Article"}),
                         "codes": sorted(s["codes"]), "topics": sorted(s["topics"]), "notes": sorted(s["notes"]), "via": sorted(s["via"])})
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
 (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

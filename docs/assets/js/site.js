@@ -362,12 +362,16 @@
   if (!list || !q) return;
   var items = Array.prototype.slice.call(list.querySelectorAll(".bib-item")), topic = "";
   var LIMIT = 60, expanded = false, more = document.getElementById("bib-more"), focus = document.getElementById("bib-focus");
+  var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to");
   function apply() {
     var text = q.value.trim().toLowerCase(), code = sel.value, k = 0;
+    var from = yFrom && parseInt(yFrom.value, 10) || 0, to = yTo && parseInt(yTo.value, 10) || 9999;
     items.forEach(function (it) {
+      var y = parseInt(it.getAttribute("data-year"), 10) || 0;
       var ok = (!text || it.getAttribute("data-text").indexOf(text) !== -1) &&
                (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&
-               (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1);
+               (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1) &&
+               (y >= from && y <= to);
       if (ok) k++;
       it.hidden = !ok || (!expanded && k > LIMIT);
     });
@@ -379,7 +383,9 @@
   if (focus) focus.querySelectorAll("button").forEach(function (b) {
     b.addEventListener("click", function () { sel.value = sel.value === b.getAttribute("data-code") ? "" : b.getAttribute("data-code"); expanded = false; apply(); });
   });
-  q.addEventListener("input", function () { expanded = false; apply(); }); sel.addEventListener("change", function () { expanded = false; apply(); }); apply();
+  q.addEventListener("input", function () { expanded = false; apply(); }); sel.addEventListener("change", function () { expanded = false; apply(); });
+  [yFrom, yTo].forEach(function (el) { if (el) el.addEventListener("input", function () { expanded = false; apply(); }); });
+  apply();
   chips.querySelectorAll("button").forEach(function (b) {
     b.addEventListener("click", function () {
       var on = b.getAttribute("aria-pressed") === "true";
@@ -387,5 +393,5 @@
       topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); expanded = false; apply();
     });
   });
-  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; expanded = false; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
 })();

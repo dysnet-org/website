@@ -297,12 +297,18 @@ CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if C
 
 
 def centres_html():
-    out = []
-    for c in sorted(CARE_CENTRES, key=lambda c: (c["country"], c["city"])):
-        link = f'<a href="{c["url"]}" target="_blank" rel="noopener external">{c["url"].split("//")[-1].split("/")[0].removeprefix("www.")}</a>' if c.get("url") else ""
+    out, last = [], None
+    for c in sorted(CARE_CENTRES, key=lambda c: (c["country"], c["city"], c["name"])):
+        if c["country"] != last:
+            n = sum(1 for x in CARE_CENTRES if x["country"] == c["country"])
+            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{c["country"]} <span class="badge live">{n}</span></h2>')
+            last = c["country"]
+        host = c["url"].split("//")[-1].split("/")[0].removeprefix("www.") if c.get("url") else ""
+        link = f'<a href="{c["url"]}" target="_blank" rel="noopener external">{host}</a>' if c.get("url") else "no public website"
         via = f'<a href="{c["via_url"]}" target="_blank" rel="noopener external">{c["via"]}</a>' if c.get("via_url") else c.get("via", "")
-        out.append(f'<article class="entry"><h3>{c["name"]} · {c["city"]}, {c["country"]} <span class="badge live">{c["type"]}</span></h3>'
-                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]}{" · " + link if link else ""} · named by {via}</p></article>')
+        local = f'<p class="src">{c["name_local"]}</p>' if c.get("name_local") else ""
+        out.append(f'<article class="entry"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
+                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]} · {link} · named by {via}</p></article>')
     return "".join(out)
 
 PAGES = {}
@@ -650,7 +656,7 @@ PAGES["/knowledge/care-centres/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Where expertise lives.</h1>
-    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here also appears as an orange marker on the <a href="/">world map</a> on our home page.</p>
+    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website (or visited by the board), and appears as an orange marker on the <a href="/">world map</a> on our home page. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>.</p>
 
     <div style="margin-top:var(--space-4)">
       <article class="entry">
@@ -1266,7 +1272,7 @@ DOT_RATES = [
     ("Tibial hemimelia", 0.1, "Europe"),
     ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
 ]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "labels": MAP_LABELS, "rates": DOT_RATES}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.

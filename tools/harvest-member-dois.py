@@ -44,7 +44,7 @@ def clean_doi(d):
     return d
 
 
-def crawl(start, max_pages, robots_cache):
+def crawl(start, max_pages, robots_cache, delay=1.0):
     host = urllib.parse.urlparse(start).netloc.lower()
     rp = robots_cache.get(host)
     if rp is None:
@@ -64,8 +64,11 @@ def crawl(start, max_pages, robots_cache):
         try:
             final, ctype, data = fetch(key)
         except Exception as e:
-            print(f"    ! {key}: {type(e).__name__}", file=sys.stderr); continue
-        time.sleep(1.0)
+            code = getattr(e, "code", "")
+            print(f"    ! {key}: {type(e).__name__} {code}", file=sys.stderr)
+            if code == 429: time.sleep(max(delay * 5, 10)); queue.insert(0, key); seen.discard(key)  # back off and retry once
+            continue
+        time.sleep(delay)
         text = ""
         if "pdf" in ctype or key.lower().endswith(".pdf"):
             if PDFTOTEXT and len(data) < 6_000_000:
@@ -106,6 +109,7 @@ def crawl(start, max_pages, robots_cache):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-pages", type=int, default=150)
+    ap.add_argument("--delay", type=float, default=1.0, help="seconds between requests to one host")
     ap.add_argument("--out", default=str(HERE / "member-dois.json"))
     ap.add_argument("--sites", default=str(HERE / "member-sites.json"), help="JSON list of {name, country, url}")
     a = ap.parse_args()
@@ -114,7 +118,7 @@ def main():
     for s in sites:
         if not s.get("url") or "facebook.com" in s["url"]: continue
         print(f"→ {s['name']} ({s['country']}): {s['url']}", file=sys.stderr)
-        n, hits = crawl(s["url"], a.max_pages, robots)
+        n, hits = crawl(s["url"], a.max_pages, robots, a.delay)
         print(f"   {n} pages, {len(hits)} identifiers", file=sys.stderr)
         for h in hits: h.update({"member": s["name"], "country": s["country"]})
         out.extend(hits)

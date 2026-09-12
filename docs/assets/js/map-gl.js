@@ -106,7 +106,7 @@
       { id: "centre-dot", type: "circle", source: "centres",
         paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, 4, 5, 6.5, 9, 9], "circle-color": "#f97316", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6 } },
       { id: "centre-label", type: "symbol", source: "centres", minzoom: 4,
-        layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Bold"], "text-size": 11.5, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12 },
+        layout: { "text-field": ["coalesce", ["get", "label"], ["get", "name"]], "text-font": ["Open_Sans_Bold"], "text-size": 11.5, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12, "text-optional": true },
         paint: { "text-color": "#ffe1c7", "text-halo-color": "#24093f", "text-halo-width": 1.4 } }
     ]
   };
@@ -210,7 +210,7 @@
     var c = e.features[0].properties;
     var host = c.url ? c.url.split("//").pop().split("/")[0].replace(/^www\./, "") : "";
     centrePopup.setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<p class="dp-main"><strong>' + esc(c.name) + '</strong></p>' +
+      .setHTML('<p class="dp-main"><strong>' + esc(c.name) + '</strong>' + (c.name_local && c.name_local !== "null" ? '<br><span class="dp-local">' + esc(c.name_local) + '</span>' : '') + '</p>' +
                '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
                '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + 'named by ' + esc(c.via) + '</p>')
       .addTo(map);

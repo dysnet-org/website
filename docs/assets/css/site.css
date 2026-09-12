@@ -708,3 +708,4 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 #worldmap .centre circle { fill: #f97316; stroke: #fff; stroke-width: 1; cursor: pointer; }
 #worldmap .centre a:hover circle, #worldmap .centre a:focus circle { r: 3.4; }
 .centre-popup .dp-main strong { color: var(--acc-centres-text); }
+.centre-popup .dp-local { font-weight: 400; font-size: var(--text-small); color: var(--dys-muted); }

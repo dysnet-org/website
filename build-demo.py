@@ -396,27 +396,53 @@ def tera_display_name(e):
     return n if len(n) <= 90 else n.split(";")[0].strip()
 
 
+def tera_status_chips(e):
+    chips = []
+    clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
+    if clp:
+        cat = clp["category"].replace("Repr. ", "")
+        chips.append(("EU: hazard label required", "st-label"))
+        if cat in ("1A", "1B"):
+            chips += [("EU: no sale to the public", "st-ban"), ("EU: banned in cosmetics", "st-ban"), ("EU: no pesticide approval", "st-ban"), ("EU: workplace limits", "st-work")]
+        else:
+            chips += [("EU: sale to the public allowed", "st-ok"), ("EU: cosmetics case by case", "st-warn")]
+    if any(x["code"] == "p65" for x in e["sources"]): chips.append(("California: warning required", "st-warn"))
+    codes = {x["code"] for x in e["sources"]}
+    for place, val in e["jurisdictions"].items():
+        if (place == "California (USA)" and "p65" in codes) or (place == "EU / EEA" and "clp" in codes): continue
+        text = " ".join(val.values()) if isinstance(val, dict) else val
+        short = ("authorised with a pregnancy prevention programme" if "programme" in text else "contraindicated in pregnancy" if "ontraindicated" in text else "REMS programme" if "REMS" in text else "boxed warning" if "boxed warning" in text else "pregnancy warning mandatory" if "mandatory" in text else "legal, no pregnancy warning" if "no EU-wide" in text else "legal, pack warnings" if "pack" in text else text.split(";")[0][:50])
+        cls = "st-ban" if "contraindicated" in short else "st-warn" if ("warning" in short or "REMS" in short or "programme" in short) else "st-ok"
+        chips.append((f"{place.replace(' / EEA', '').replace(' (USA)', '')}: {short}", cls))
+    return chips
+
+
 def tera_item_html(e):
     srcs = []
     for src in e["sources"]:
-        if src["code"] == "clp":
-            det = f'{src["category"]} · {", ".join(src["statements"])}' + (f' · applies from {src["applies_from"]}' if src.get("applies_from") else "")
-        elif src["code"] == "p65":
-            det = f'{src["toxicity"]}' + (f' · listed {src["listed"]}' if src.get("listed") else "") + (f' · via {src["mechanism"]}' if src.get("mechanism") else "")
-        else:
-            det = src.get("note", "")
-        srcs.append(f'<li><span class="bib-tag bib-via">{src["label"]}</span> {det}' + (f' · <a href="{src["url"]}" target="_blank" rel="noopener external">source ↗</a>' if src.get("url") and src["url"].startswith("http") else (f' · <a href="{src["url"]}">source</a>' if src.get("url") else "")) + "</li>")
-    jur = []
+        if src["code"] == "clp": lab, det = "EU CLP", f'{src["category"]} · {", ".join(src["statements"])}'
+        elif src["code"] == "p65": lab, det = "California Prop 65", src.get("toxicity", "") + (f' · listed {src["listed"][:4]}' if src.get("listed") else "")
+        elif src["code"] == "ema": lab, det = "EMA", "pregnancy prevention programme or contraindication"
+        elif src["code"] == "who": lab, det = "WHO", "fact sheet on congenital disorders"
+        else: lab, det = "DysNet bibliography", "peer-reviewed evidence"
+        srcs.append(f'<span class="tera-src src-{src["code"]}">{lab}<small> · {det}</small></span>')
+    chips = "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
+    details = []
+    for src in e["sources"]:
+        line = src["label"] + ": " + (f'{src["category"]}, {", ".join(src["statements"])}' + (f', applies from {src["applies_from"]}' if src.get("applies_from") else "") if src["code"] == "clp" else
+                                    f'{src.get("toxicity", "")}' + (f', listed {src["listed"]}' if src.get("listed") else "") + (f', via {src["mechanism"]}' if src.get("mechanism") else "") if src["code"] == "p65" else src.get("note", ""))
+        if src.get("url"): line += f' <a href="{src["url"]}"{" target=_blank rel=\"noopener external\"" if src["url"].startswith("http") else ""}>source ↗</a>'
+        details.append(f"<li>{line}</li>")
     for place, val in e["jurisdictions"].items():
-        text = " ".join(val.values()) if isinstance(val, dict) else val
-        jur.append(f"<li><strong>{place}:</strong> {text}</li>")
+        details.append(f"<li><strong>{place}:</strong> {' '.join(val.values()) if isinstance(val, dict) else val}</li>")
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "") if x)
-    return (f'<li class="tera-item"><p class="bib-title"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span> {tera_display_name(e)} <span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span></p>'
-            f'{f"<p class=\"bib-meta\">{ids}</p>" if ids else ""}<ul class="tera-src">{"".join(srcs)}</ul><ul class="tera-jur">{"".join(jur)}</ul></li>')
+    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
+            f'<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>'
+            f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
 def teratogens_html():
-    E = TERA.get("entries", [])
+    E = sorted(TERA.get("entries", []), key=lambda e: ({"known": 0, "presumed": 1, "suspected": 2}[e["level"]], re.sub(r"^[^a-z]+", "", tera_display_name(e).lower())))
     def compact(e):
         srcs = []
         for src in e["sources"]:
@@ -424,7 +450,8 @@ def teratogens_html():
             elif src["code"] == "p65": srcs.append({"c": "p65", "tox": src.get("toxicity", ""), "on": src.get("listed", ""), "via": src.get("mechanism", "")})
             else: srcs.append({"c": src["code"], "note": src.get("note", ""), "u": src.get("url", "")})
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
-        jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if k not in ("EU / EEA", "California (USA)") or e["kind"] != "chemical"}
+        codes = set(e["source_codes"])
+        jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
         return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "l": e["level"], "s": e["source_codes"], "src": srcs, "jur": jur}
     records = [compact(e) for e in E]
     html_first = [tera_item_html(e) for e in E[:40]]
@@ -440,6 +467,7 @@ def teratogens_html():
         <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
       <p class="bib-count"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
     </div>
+    <p class="tera-legend"><span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
     <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>

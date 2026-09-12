@@ -533,25 +533,38 @@
   var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
   var CA = "A clear and reasonable warning is required before knowingly exposing anyone in California (Health and Safety Code 25249.6); listing does not ban the substance. Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day.";
-  function itemHtml(r) {
-    var srcs = r.src.map(function (s) {
-      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") + (s.from ? " · applies from " + s.from : "")
-              : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on : "") + (s.via ? " · via " + s.via : "") : (s.note || "");
-      var link = s.u ? (/^http/.test(s.u) ? ' · <a href="' + esc(s.u) + '" target="_blank" rel="noopener external">source ↗</a>' : ' · <a href="' + esc(s.u) + '">source</a>') : (s.c === "p65" ? ' · <a href="https://oehha.ca.gov/proposition-65/proposition-65-list" target="_blank" rel="noopener external">source ↗</a>' : "");
-      return '<li><span class="bib-tag bib-via">' + LABEL[s.c] + '</span> ' + esc(det) + link + '</li>';
-    }).join("");
-    var jur = [];
-    if (r.k === "chemical") {
-      var clp = r.src.filter(function (s) { return s.c === "clp"; })[0];
-      if (clp) jur.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
-      if (r.s.indexOf("p65") !== -1) jur.push("<li><strong>California (USA):</strong> " + CA + "</li>");
-    }
-    Object.keys(r.jur || {}).forEach(function (k) { jur.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
-    var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
-    return '<li class="tera-item"><p class="bib-title"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span> ' + esc(r.n) + ' <span class="badge">' + (KIND[r.k] || r.k) + '</span></p>' +
-           (ids ? '<p class="bib-meta">' + ids + '</p>' : '') + '<ul class="tera-src">' + srcs + '</ul><ul class="tera-jur">' + jur.join("") + '</ul></li>';
+  var SRC_SHORT = { clp: "EU CLP", p65: "California Prop 65", ema: "EMA", who: "WHO", bib: "DysNet bibliography" };
+  function shortJur(place, text) {
+    var s = /programme/.test(text) ? "authorised with a pregnancy prevention programme" : /ontraindicated/.test(text) ? "contraindicated in pregnancy" : /REMS/.test(text) ? "REMS programme" : /boxed warning/.test(text) ? "boxed warning" : /mandatory/.test(text) ? "pregnancy warning mandatory" : /no EU-wide/.test(text) ? "legal, no pregnancy warning" : /pack/.test(text) ? "legal, pack warnings" : text.split(";")[0].slice(0, 50);
+    var cls = /contraindicated/.test(s) ? "st-ban" : /(warning|REMS|programme)/.test(s) ? "st-warn" : "st-ok";
+    return '<span class="st ' + cls + '">' + esc(place.replace(" / EEA", "").replace(" (USA)", "")) + ": " + esc(s) + '</span>';
   }
-  DATA.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); r.h = null; });
+  function itemHtml(r) {
+    var clp = r.src.filter(function (s) { return s.c === "clp"; })[0];
+    var srcs = r.src.map(function (s) {
+      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on.slice(0, 4) : "") : s.c === "ema" ? "pregnancy prevention programme or contraindication" : s.c === "who" ? "fact sheet on congenital disorders" : "peer-reviewed evidence";
+      return '<span class="tera-src src-' + s.c + '">' + SRC_SHORT[s.c] + '<small> · ' + esc(det) + '</small></span>';
+    }).join("");
+    var chips = [];
+    if (clp) { chips.push('<span class="st st-label">EU: hazard label required</span>'); if (clp.cat === "2") chips.push('<span class="st st-ok">EU: sale to the public allowed</span><span class="st st-warn">EU: cosmetics case by case</span>'); else chips.push('<span class="st st-ban">EU: no sale to the public</span><span class="st st-ban">EU: banned in cosmetics</span><span class="st st-ban">EU: no pesticide approval</span><span class="st st-work">EU: workplace limits</span>'); }
+    if (r.s.indexOf("p65") !== -1) chips.push('<span class="st st-warn">California: warning required</span>');
+    Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
+    var details = r.src.map(function (s) {
+      var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
+      var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
+      return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
+    });
+    if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
+    if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + CA + "</li>");
+    Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
+    var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
+    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + esc(r.n) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
+           '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' +
+           '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
+  }
+  DATA.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); });
+  var ORDER = { known: 0, presumed: 1, suspected: 2 };
+  DATA.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); });
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
   var state = { sources: [], levels: [], kinds: [] };
   function apply() {

@@ -107,6 +107,7 @@ SEO_TITLES = {
     "/knowledge/ongoing-studies/": "Studies and registries on limb difference · DysNet",
     "/knowledge/researchers/": "Researchers working on limb difference · DysNet",
     "/knowledge/care-centres/": "Care centres for congenital limb difference · DysNet",
+    "/knowledge/teratogens/": "Teratogens register: substances of concern · DysNet",
     "/knowledge/understanding-dysmelia/": "Understanding dysmelia: conditions and ORPHAcodes · DysNet",
     "/knowledge/guides/patient-owned-registry/": "What is a patient-owned registry? · DysNet",
     "/registry/": "Patient-owned registry of limb malformations · DysNet",
@@ -227,6 +228,7 @@ FOOTER = f"""</main>
           <li><a href="/knowledge/ongoing-studies/">Studies and registries</a></li>
           <li><a href="/knowledge/researchers/">Researchers</a></li>
           <li><a href="/knowledge/care-centres/">Care centres</a></li>
+          <li><a href="/knowledge/teratogens/">Teratogens register</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
         </ul>
       </div>
@@ -381,6 +383,69 @@ def researchers_html():
                    f'<p class="bib-tags">{tags}</p></article>')
     return "".join(out)
 
+
+# Register 5 · substances and products with effects on the unborn child (tools/build-teratogens.py → tools/teratogens.json)
+TERA_PATH = pathlib.Path(__file__).parent / "tools" / "teratogens.json"
+TERA = json.loads(TERA_PATH.read_text(encoding="utf-8")) if TERA_PATH.exists() else {"entries": [], "sources": {}, "counts": {}}
+TERA_LEVEL = {"known": "Known", "presumed": "Presumed", "suspected": "Suspected"}
+TERA_KIND = {"chemical": "Chemical", "medicine": "Medicine", "product": "Consumer product"}
+
+
+def tera_display_name(e):
+    n = e["name"]
+    return n if len(n) <= 90 else n.split(";")[0].strip()
+
+
+def tera_item_html(e):
+    srcs = []
+    for src in e["sources"]:
+        if src["code"] == "clp":
+            det = f'{src["category"]} · {", ".join(src["statements"])}' + (f' · applies from {src["applies_from"]}' if src.get("applies_from") else "")
+        elif src["code"] == "p65":
+            det = f'{src["toxicity"]}' + (f' · listed {src["listed"]}' if src.get("listed") else "") + (f' · via {src["mechanism"]}' if src.get("mechanism") else "")
+        else:
+            det = src.get("note", "")
+        srcs.append(f'<li><span class="bib-tag bib-via">{src["label"]}</span> {det}' + (f' · <a href="{src["url"]}" target="_blank" rel="noopener external">source ↗</a>' if src.get("url") and src["url"].startswith("http") else (f' · <a href="{src["url"]}">source</a>' if src.get("url") else "")) + "</li>")
+    jur = []
+    for place, val in e["jurisdictions"].items():
+        text = " ".join(val.values()) if isinstance(val, dict) else val
+        jur.append(f"<li><strong>{place}:</strong> {text}</li>")
+    ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "") if x)
+    return (f'<li class="tera-item"><p class="bib-title"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span> {tera_display_name(e)} <span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span></p>'
+            f'{f"<p class=\"bib-meta\">{ids}</p>" if ids else ""}<ul class="tera-src">{"".join(srcs)}</ul><ul class="tera-jur">{"".join(jur)}</ul></li>')
+
+
+def teratogens_html():
+    E = TERA.get("entries", [])
+    def compact(e):
+        srcs = []
+        for src in e["sources"]:
+            if src["code"] == "clp": srcs.append({"c": "clp", "cat": src["category"].replace("Repr. ", ""), "st": src["statements"], "from": src.get("applies_from", ""), "u": src.get("url", "")})
+            elif src["code"] == "p65": srcs.append({"c": "p65", "tox": src.get("toxicity", ""), "on": src.get("listed", ""), "via": src.get("mechanism", "")})
+            else: srcs.append({"c": src["code"], "note": src.get("note", ""), "u": src.get("url", "")})
+        # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
+        jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if k not in ("EU / EEA", "California (USA)") or e["kind"] != "chemical"}
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "l": e["level"], "s": e["source_codes"], "src": srcs, "jur": jur}
+    records = [compact(e) for e in E]
+    html_first = [tera_item_html(e) for e in E[:40]]
+    c = TERA.get("counts", {})
+    src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "p65": "California Proposition 65", "ema": "EMA medicines", "who": "WHO", "bib": "DysNet bibliography"}.get(code, code) }</button>' for code in ("clp", "p65", "ema", "who", "bib"))
+    return f"""
+    <div class="bib-controls" id="tera-controls">
+      <input type="search" id="tera-q" autocomplete="off" placeholder="Search a substance, CAS number or medicine…" aria-label="Search the register">
+      <p class="bib-focus-help" style="margin:0.2rem 0 0.4rem">Listed by</p>
+      <div class="finder-chips" id="tera-sources">{src_chips}</div>
+      <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Level of evidence · Type</p>
+      <div class="finder-chips" id="tera-levels"><button type="button" data-level="known" aria-pressed="false">Known</button><button type="button" data-level="presumed" aria-pressed="false">Presumed</button><button type="button" data-level="suspected" aria-pressed="false">Suspected</button>
+        <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
+      <p class="bib-count"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
+    </div>
+    <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
+    <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
+    <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
+    <p class="annex-note">Built {TERA.get("built", "")}. Sources: {c.get("clp", 0)} EU harmonised entries with a hazard statement for the unborn child (CLP Annex VI, ATP23), {c.get("p65", 0)} developmental toxicants on California's Proposition 65 list, {c.get("ema", 0)} medicines under EMA pregnancy prevention programmes or contraindications, plus alcohol (WHO) and tobacco smoking (peer-reviewed literature). {c.get("both_clp_and_p65", 0)} substances appear on both the EU and the Californian lists. <a href="/data/teratogens.json">Download the data (JSON, CC BY 4.0)</a>. Report an error or a missing substance: <a href="mailto:info@dysnet.org?subject=Teratogens%20register">info@dysnet.org</a>.</p>
+"""
+
 PAGES = {}
 
 # ────────────────────────────── HOME ──────────────────────────────
@@ -426,6 +491,11 @@ __MAP_HERO__
         <h3 class="h4"><a href="/knowledge/care-centres/">Care centres</a></h3>
         <p>Reference and competence centres, in Europe and beyond.</p>
         <p class="meta">Updated August 2026</p>
+      </div>
+      <div class="card acc-centres">
+        <h3 class="h4"><a href="/knowledge/teratogens/">Teratogens register</a></h3>
+        <p>Substances of concern for the unborn child, by source and by jurisdiction.</p>
+        <p class="meta">New</p>
       </div>
     </div>
   </div>
@@ -523,6 +593,11 @@ PAGES["/knowledge/"] = {
         <h3 class="h3"><a href="/knowledge/care-centres/">Care centres</a></h3>
         <p>Reference and competence centres, in Europe and beyond, on a map.</p>
         <p class="meta">Register 4 · updated August 2026</p>
+      </div>
+      <div class="card acc-centres">
+        <h3 class="h3"><a href="/knowledge/teratogens/">Teratogens register</a></h3>
+        <p>Substances and products with known, presumed or suspected effects on the unborn child, with their source and their legal status.</p>
+        <p class="meta">Register 5 · new</p>
       </div>
     </div>
   </div>
@@ -769,6 +844,35 @@ PAGES["/knowledge/care-centres/"] = {
       <img src="/assets/img/inail-lab-tour.jpg" alt="The DysNet board touring a prosthetics workshop at the INAIL centre, with casts and tools on the benches" loading="lazy">
       <figcaption>The DysNet board visiting the INAIL prosthetics workshops, Vigorso di Budrio, August 2024. Photo: DysNet.</figcaption>
     </figure>
+    {REGISTER_FOOT}
+  </div>
+</section>
+""",
+}
+
+PAGES["/knowledge/teratogens/"] = {
+    "title": "Teratogens register",
+    "desc": "Substances and products with known, presumed or suspected effects on the unborn child, with the source that lists each one and its regulatory status per jurisdiction.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/teratogens/", "Teratogens register")],
+    "body": f"""
+<section>
+  <div class="container" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
+    <div class="tick"></div>
+    <p class="eyebrow">Register 5 · Substances of concern <span class="badge live">new</span></p>
+    <h1 class="display">Teratogens register: which products can harm the unborn child, and who says so.</h1>
+    <p>Families ask a simple question after a diagnosis: could something have caused this? No public authority answers it with one list. The World Health Organization keeps none. What exists is scattered across chemical law, medicines regulation and one American state. This register brings those lists together, names the source for every entry, states how strong the evidence is, and says where each substance is banned, restricted, labelled or simply allowed.</p>
+    <p>It is not medical advice. For a question about a medicine or an exposure during a pregnancy, ask a teratology information service: <a href="https://www.lecrat.fr/" target="_blank" rel="noopener external">CRAT</a> in France, <a href="https://www.medicinesinpregnancy.org/" target="_blank" rel="noopener external">bumps</a> in the United Kingdom, <a href="https://mothertobaby.org/" target="_blank" rel="noopener external">MotherToBaby</a> in North America, or the <a href="https://www.entis-org.eu/centers" target="_blank" rel="noopener external">ENTIS member</a> in your country.</p>
+
+    {opener("01", "How to read it", "Three levels of evidence, five sources, one status per jurisdiction.")}
+    <ul>
+      <li><strong>Known</strong>: human evidence. In the EU this is category 1A of the harmonised classification; in California it is any developmental toxicant on the Proposition 65 list, which by law contains chemicals "known to the State" to cause reproductive harm; for medicines, a documented human teratogen.</li>
+      <li><strong>Presumed</strong>: strong animal evidence, category 1B in the EU, or a medicine contraindicated in pregnancy on animal data.</li>
+      <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
+    </ul>
+    <p>The <strong>EU harmonised classification</strong> is binding law: once a substance carries a hazard statement for the unborn child (H360D, H361d and their variants), every container of it, and of mixtures containing it, must be labelled across the EU and EEA; categories 1A and 1B may not be sold to the general public, cannot be approved as pesticides and are banned from cosmetics. It says nothing about finished articles, food or medicines, which are outside its scope. <strong>Proposition 65</strong> is binding in California only and requires a warning before exposure, not a ban; it is enforced through litigation. <strong>EMA</strong> decisions bind marketing authorisations across the EU: the medicine stays available, under a pregnancy prevention programme. <strong>WHO</strong> guidance binds no one. Our <strong>bibliography</strong> reports evidence, not law.</p>
+
+    {opener("02", "The register", f"{len(TERA.get('entries', []))} substances and products.")}
+    {teratogens_html()}
     {REGISTER_FOOT}
   </div>
 </section>
@@ -1152,7 +1256,7 @@ PAGES["/voice/"] = {
       <li><details><summary><span class="demand-n">2</span><span>Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects</span></summary>
         <div class="demand-body">
           <p>Thalidomide taught the lesson once: a product reached pregnant women before its effect on the unborn child was known, and thousands of children were born with limb differences. Families still learn about suspected teratogens after the fact, from a news report or a cluster investigation, rather than from a label or from the authority in charge.</p>
-          <p>We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards. Progress looks like a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences.</p>
+          <p>We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards. Progress looks like a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences. No authority publishes such a list today; our <a href="/knowledge/teratogens/">teratogens register</a> gathers what the EU, California and the medicines agencies each list separately, with the legal status of every substance.</p>
         </div></details></li>
       <li><details><summary><span class="demand-n">3</span><span>Universal coverage of prosthetics, research that reaches people with dysmelia, and an orphan medical devices framework that makes equipment affordable</span></summary>
         <div class="demand-body">
@@ -1855,8 +1959,9 @@ EXTRA_LD = {
     "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
     "/about/people/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
+    "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence and regulatory status per jurisdiction.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }
-DATA_FILES = {"bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
+DATA_FILES = {"teratogens.json": "teratogens.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
 
 
 def build():

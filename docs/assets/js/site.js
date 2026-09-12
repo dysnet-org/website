@@ -520,3 +520,69 @@
   });
   document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; exclude = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
 })();
+
+/* ── Teratogens register: search + filters, rendered from embedded data ── */
+(function () {
+  var list = document.getElementById("tera-list"), q = document.getElementById("tera-q"), n = document.getElementById("tera-n"), dataEl = document.getElementById("tera-data");
+  if (!list || !q || !dataEl) return;
+  var DATA; try { DATA = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
+  var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
+  var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" }, KIND = { chemical: "Chemical", medicine: "Medicine", product: "Consumer product" };
+  var EU_ALL = "Mandatory hazard classification and labelling of the substance and of mixtures containing it (CLP Annex VI, harmonised).";
+  var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
+  var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
+  var CA = "A clear and reasonable warning is required before knowingly exposing anyone in California (Health and Safety Code 25249.6); listing does not ban the substance. Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day.";
+  function itemHtml(r) {
+    var srcs = r.src.map(function (s) {
+      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") + (s.from ? " · applies from " + s.from : "")
+              : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on : "") + (s.via ? " · via " + s.via : "") : (s.note || "");
+      var link = s.u ? (/^http/.test(s.u) ? ' · <a href="' + esc(s.u) + '" target="_blank" rel="noopener external">source ↗</a>' : ' · <a href="' + esc(s.u) + '">source</a>') : (s.c === "p65" ? ' · <a href="https://oehha.ca.gov/proposition-65/proposition-65-list" target="_blank" rel="noopener external">source ↗</a>' : "");
+      return '<li><span class="bib-tag bib-via">' + LABEL[s.c] + '</span> ' + esc(det) + link + '</li>';
+    }).join("");
+    var jur = [];
+    if (r.k === "chemical") {
+      var clp = r.src.filter(function (s) { return s.c === "clp"; })[0];
+      if (clp) jur.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
+      if (r.s.indexOf("p65") !== -1) jur.push("<li><strong>California (USA):</strong> " + CA + "</li>");
+    }
+    Object.keys(r.jur || {}).forEach(function (k) { jur.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
+    var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
+    return '<li class="tera-item"><p class="bib-title"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span> ' + esc(r.n) + ' <span class="badge">' + (KIND[r.k] || r.k) + '</span></p>' +
+           (ids ? '<p class="bib-meta">' + ids + '</p>' : '') + '<ul class="tera-src">' + srcs + '</ul><ul class="tera-jur">' + jur.join("") + '</ul></li>';
+  }
+  DATA.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); r.h = null; });
+  var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
+  var state = { sources: [], levels: [], kinds: [] };
+  function apply() {
+    var text = q.value.trim().toLowerCase(), k = 0, out = [];
+    DATA.forEach(function (r) {
+      var ok = (!text || r.t.indexOf(text) !== -1) &&
+               (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
+               (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
+               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1);
+      if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
+    });
+    list.innerHTML = out.join("");
+    n.textContent = k;
+    more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
+  }
+  function bind(groupId, attr, key) {
+    document.querySelectorAll("#" + groupId + " button[" + attr + "]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var v = b.getAttribute(attr), i = state[key].indexOf(v);
+        if (i === -1) state[key].push(v); else state[key].splice(i, 1);
+        b.setAttribute("aria-pressed", i === -1 ? "true" : "false"); expanded = false; apply();
+      });
+    });
+  }
+  bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels"); bind("tera-levels", "data-kind", "kinds");
+  q.addEventListener("input", function () { expanded = false; apply(); });
+  more.addEventListener("click", function () { expanded = true; apply(); });
+  document.getElementById("tera-reset").addEventListener("click", function () {
+    q.value = ""; state = { sources: [], levels: [], kinds: [] }; expanded = false;
+    document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
+  });
+  var pre = new URLSearchParams(location.search).get("q"); if (pre) { q.value = pre; }
+  apply();
+})();

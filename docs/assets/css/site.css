@@ -807,3 +807,12 @@ ol.demands details[open] summary::after { content: "–"; }
 }
 .page-date { font-size: var(--text-eyebrow); color: #e9d8fb; padding: var(--space-2) 0 0; margin: 0; max-width: none; }
 .page-date a { color: #fff; }
+/* Teratogens register */
+.tera-level { display: inline-block; font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.55rem; border-radius: 999px; margin-right: 0.4rem; vertical-align: middle; }
+.tera-known { background: #7f1d1d; color: #fff; }
+.tera-presumed { background: #c2410c; color: #fff; }
+.tera-suspected { background: #fde68a; color: #713f12; }
+.tera-src, .tera-jur { list-style: none; padding: 0; margin: 0.4rem 0 0; font-size: var(--text-small); max-width: none; }
+.tera-src li, .tera-jur li { margin: 0.2rem 0; }
+.tera-jur li { color: var(--dys-muted); }
+.tera-jur strong { color: var(--dys-ink); }

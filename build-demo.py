@@ -1208,7 +1208,7 @@ MEMBERS = [
     ("Austria", [("Contergan Austria", None)]),
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
     ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
-    ("France", [("Assedea", "http://www.assedea.fr"), ("Syndrome de Poland France", None)]),
+    ("France", [("Assedea", "http://www.assedea.fr")]),
     ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de")]),
     ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
     ("Italy", [("Raggiungere", "http://www.raggiungere.it"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),

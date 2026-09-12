@@ -745,3 +745,5 @@ ol.objectives strong { color: var(--dys-green-text); }
   .map-side { grid-template-rows: none; pointer-events: auto; }
   .map-side .map-legend { position: static; max-height: none; overflow: visible; align-self: auto; }
 }
+.hover-popup .maplibregl-popup-content { pointer-events: none; }
+.people-popup .dp-main strong { color: var(--dys-purple-text); }

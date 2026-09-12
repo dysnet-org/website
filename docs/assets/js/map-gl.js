@@ -129,6 +129,30 @@
   map.on("error", function (e) { if (e && e.error) console.error("DysNet map:", e.error.message || e.error); });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
 
+  // ── popups: hover shows, click pins (until closed or another click) ─
+  var hoverPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, maxWidth: "22rem", className: "dot-popup hover-popup" });
+  var pinnedPopup = null, hoverClass = "";
+  function attachHover(layerId, htmlFn, lngLatFn, cls) {
+    map.on("mousemove", layerId, function (e) {
+      map.getCanvas().style.cursor = "pointer";
+      if (pinnedPopup) return;
+      if (hoverClass !== cls) { if (hoverClass) hoverPopup.removeClassName(hoverClass); hoverPopup.addClassName(cls); hoverClass = cls; }
+      hoverPopup.setLngLat(lngLatFn(e)).setHTML(htmlFn(e)).addTo(map);
+    });
+    map.on("mouseleave", layerId, function () { map.getCanvas().style.cursor = ""; if (!pinnedPopup) hoverPopup.remove(); });
+    map.on("click", layerId, function (e) {
+      var lngLat = lngLatFn(e), html = htmlFn(e);
+      hoverPopup.remove();
+      if (pinnedPopup) pinnedPopup.remove();
+      // create after this click has finished propagating, otherwise the popup's own close-on-click removes it at once
+      setTimeout(function () {
+        pinnedPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "22rem", className: "dot-popup " + cls })
+          .setLngLat(lngLat).setHTML(html).addTo(map);
+        pinnedPopup.on("close", function () { pinnedPopup = null; });
+      }, 0);
+    });
+  }
+
   var DOT_LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
 
   // ── estimated-people dots: condition selector + live legend ──────────
@@ -162,23 +186,16 @@
     map.on("idle", function () { legend.textContent = legendText(); });  // recount once tiles have settled after any move
     sel.addEventListener("change", update);
 
-    // click a dot: what does it stand for?
-    var popup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "20rem", className: "dot-popup" });
-    function dotInfo(e) {
+    // hover a dot to see what it stands for; click to pin the explanation
+    function dotHtml() {
       var per = band(), r = data.rates[+sel.value];
       var people = per === 1 ? "<strong>1 person</strong>" : "<strong>about " + per.toLocaleString("en") + " people</strong>";
       var zoomHint = per === 1 ? "" : " Zoom in to see them one by one: at city zoom, 1 dot = 1 person.";
-      popup.setLngLat(e.lngLat).setHTML(
-        "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +
+      return "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +
         "<p class=\"dp-sub\">1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " at this zoom level." + zoomHint + "</p>" +
-        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025). Not an observed case; the registry exists to make the real ones visible.</p>"
-      ).addTo(map);
+        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025). Not an observed case; the registry exists to make the real ones visible.</p>";
     }
-    LAYERS.forEach(function (id) {
-      map.on("click", id, dotInfo);
-      map.on("mouseenter", id, function () { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", id, function () { map.getCanvas().style.cursor = ""; });
-    });
+    LAYERS.forEach(function (id) { attachHover(id, dotHtml, function (e) { return e.lngLat; }, "people-popup"); });
     map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
     map.on("load", function () { box.hidden = false; update(); });
   })();
@@ -212,34 +229,26 @@
     if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
   });
 
-  // ── care centres: click a marker for details ───────────────────────
-  var centrePopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "22rem", className: "dot-popup centre-popup" });
+  // ── care centres: hover for details, click to pin ──────────────────
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
-  map.on("click", "centre-dot", function (e) {
+  function centreHtml(e) {
     var c = e.features[0].properties;
     var host = c.url ? c.url.split("//").pop().split("/")[0].replace(/^www\./, "") : "";
-    centrePopup.setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<p class="dp-main"><strong>' + esc(c.name) + '</strong>' + (c.name_local && c.name_local !== "null" ? '<br><span class="dp-local">' + esc(c.name_local) + '</span>' : '') + '</p>' +
-               '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
-               '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + 'named by ' + esc(c.via) + '</p>')
-      .addTo(map);
-  });
-  map.on("mouseenter", "centre-dot", function () { map.getCanvas().style.cursor = "pointer"; });
-  map.on("mouseleave", "centre-dot", function () { map.getCanvas().style.cursor = ""; });
+    return '<p class="dp-main"><strong>' + esc(c.name) + '</strong>' + (c.name_local && c.name_local !== "null" ? '<br><span class="dp-local">' + esc(c.name_local) + '</span>' : '') + '</p>' +
+           '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
+           '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + 'named by ' + esc(c.via) + '</p>';
+  }
+  attachHover("centre-dot", centreHtml, function (e) { return e.features[0].geometry.coordinates; }, "centre-popup");
 
-  // ── research teams: click a marker for details ─────────────────────
-  var teamPopup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: "22rem", className: "dot-popup team-popup" });
-  map.on("click", "team-dot", function (e) {
+  // ── research teams: hover for details, click to pin ────────────────
+  function teamHtml(e) {
     var t = e.features[0].properties;
     var link = t.repDoi && t.repDoi !== "null" ? '<a href="https://doi.org/' + esc(t.repDoi) + '" target="_blank" rel="noopener external">doi:' + esc(t.repDoi) + '</a>' : (t.repPmid ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(t.repPmid) + '/" target="_blank" rel="noopener external">PubMed ' + esc(t.repPmid) + '</a>' : '');
-    teamPopup.setLngLat(e.features[0].geometry.coordinates)
-      .setHTML('<p class="dp-main"><strong>' + esc(t.name) + '</strong></p>' +
-               '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + '</p>' +
-               '<p class="dp-foot">Most recent: <em>' + esc(t.repTitle) + '</em> (' + esc(t.repYear) + ') ' + link + ' · <a href="' + base + '/knowledge/researchers/">Researchers register</a></p>')
-      .addTo(map);
-  });
-  map.on("mouseenter", "team-dot", function () { map.getCanvas().style.cursor = "pointer"; });
-  map.on("mouseleave", "team-dot", function () { map.getCanvas().style.cursor = ""; });
+    return '<p class="dp-main"><strong>' + esc(t.name) + '</strong></p>' +
+           '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + '</p>' +
+           '<p class="dp-foot">Most recent: <em>' + esc(t.repTitle) + '</em> (' + esc(t.repYear) + ') ' + link + ' · <a href="' + base + '/knowledge/researchers/">Researchers register</a></p>';
+  }
+  attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup");
 
   // ── layer filter: what the visitor wants to see ─────────────────────
   var LAYER_IDS = { people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };

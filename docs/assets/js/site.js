@@ -323,11 +323,30 @@
       var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);
       tip.style.left = Math.max(12, left) + "px"; tip.style.top = Math.max(12, top) + "px";
     }
-    var hideTimer = null;
-    function hideSoon() { clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; }, 350); }
+    var hideTimer = null, pinned = null;
+    function hideSoon() { if (pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; }, 350); }
+    // markers (care centres, research teams): hover shows the card, click pins it
+    function markerTip(a, x, y) {
+      var title = a.querySelector("title") ? a.querySelector("title").textContent : "";
+      var parts = title.split(" · "), href = a.getAttribute("href");
+      tip.innerHTML = "<strong>" + parts[0] + "</strong><span class=\"status\">" + (a.parentNode.classList.contains("team") ? "Research team" : "Care centre") + "</span><p style=\"margin:0.3rem 0 0\">" + parts.slice(1).join(" · ") + "</p>" +
+        (href ? "<p style=\"margin:0.3rem 0 0\"><a href=\"" + href + "\"" + (/^https?:/.test(href) ? " target=\"_blank\" rel=\"noopener external\"" : "") + ">" + (a.parentNode.classList.contains("team") ? "Researchers register" : "Website ↗") + "</a></p>" : "");
+      tip.style.display = "block";
+      var r = host.getBoundingClientRect();
+      var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);
+      tip.style.left = Math.max(12, left) + "px"; tip.style.top = Math.max(12, top) + "px";
+    }
     svg.addEventListener("mousemove", function (e) {
+      if (pinned) return;
+      var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
+      if (a) { clearTimeout(hideTimer); markerTip(a, e.clientX, e.clientY); return; }
       var el = e.target.closest ? e.target.closest("path[class*='st-']") : null;
       if (el) { clearTimeout(hideTimer); showTip(el, e.clientX, e.clientY); } else hideSoon();
+    });
+    svg.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
+      if (a) { e.preventDefault(); clearTimeout(hideTimer); pinned = a; markerTip(a, e.clientX, e.clientY); return; }
+      if (pinned) { pinned = null; tip.style.display = "none"; }
     });
     svg.addEventListener("mouseleave", hideSoon);
     tip.addEventListener("mouseenter", function () { clearTimeout(hideTimer); });

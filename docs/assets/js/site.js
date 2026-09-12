@@ -71,7 +71,7 @@
   /* ── "On this page" contents (HDS TableOfContents pattern) ──────── */
   var main = document.getElementById("main");
   if (main) {
-    var heads = Array.prototype.slice.call(main.querySelectorAll("h2")).filter(function (h) { return !h.closest(".card, .aud-grid, .hub-grid, .person"); });
+    var heads = Array.prototype.slice.call(main.querySelectorAll("h2")).filter(function (h) { return !h.closest(".card, .aud-grid, .hub-grid, .person, .start-here, .entry, .annex"); });
     if (heads.length >= 3) {
       var box = document.createElement("nav");
       box.className = "onpage";
@@ -81,7 +81,16 @@
         return '<li><a href="#' + h.id + '">' + h.textContent + "</a></li>";
       }).join("");
       box.innerHTML = "<p>On this page</p><ul>" + items + "</ul>";
-      heads[0].parentNode.insertBefore(box, heads[0].closest("div") === heads[0].parentNode ? heads[0].previousElementSibling || heads[0] : heads[0]);
+      // Anchor the box at section level: climb to the child of the section container, then step back
+      // over the opener marks (tick, eyebrow) so it sits between the intro and the first section.
+      var anchor = heads[0];
+      while (anchor.parentNode && anchor.parentNode !== main &&
+             !(anchor.parentNode.classList && anchor.parentNode.classList.contains("container"))) anchor = anchor.parentNode;
+      var prev = anchor.previousElementSibling;
+      while (prev && prev.classList && (prev.classList.contains("tick") || prev.classList.contains("eyebrow"))) {
+        anchor = prev; prev = anchor.previousElementSibling;
+      }
+      anchor.parentNode.insertBefore(box, anchor);
     }
   }
 

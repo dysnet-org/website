@@ -46,7 +46,7 @@ def rebase(html):
 
 BRAND = "DysNet"
 DESC_DEFAULT = ("DysNet is the global network for people affected by congenital limb "
-                "differences (dysmelia): a curated research library, studies and registries, "
+                "differences (dysmelia): a curated bibliography, registries and studies, "
                 "a researcher register, a map of specialist care centres worldwide, and an "
                 "international patient-owned registry.")
 
@@ -103,7 +103,7 @@ NAV = [
 SEO_TITLES = {
     "/": "DysNet · the international dysmelia network",
     "/knowledge/": "Knowledge on congenital limb difference · DysNet",
-    "/knowledge/research-library/": "Research library on dysmelia and limb difference · DysNet",
+    "/knowledge/bibliography/": "Bibliography on dysmelia and limb difference · DysNet",
     "/knowledge/ongoing-studies/": "Studies on limb difference you can join · DysNet",
     "/knowledge/registries/": "Registries recording congenital limb difference · DysNet",
     "/knowledge/resources/": "Resources on dysmelia: guides, surveys, reports · DysNet",
@@ -225,7 +225,7 @@ FOOTER = f"""</main>
       <div>
         <h2>Knowledge</h2>
         <ul>
-          <li><a href="/knowledge/research-library/">Research library</a></li>
+          <li><a href="/knowledge/bibliography/">Bibliography</a></li>
           <li><a href="/knowledge/registries/">Registries</a></li>
           <li><a href="/knowledge/researchers/">Researchers</a></li>
           <li><a href="/knowledge/care-centres/">Care centres</a></li>
@@ -525,7 +525,7 @@ __MAP_HERO__
   <div class="container">
     <div class="grid cols-4 aud-grid">
       <div class="card acc-library"><h2 class="h4">For families</h2><p>Understand the diagnosis and find the association near you.</p><p class="go">Start here →</p><a class="cover" href="/knowledge/understanding-dysmelia/" aria-label="For families: understanding dysmelia"></a></div>
-      <div class="card acc-research"><h2 class="h4">For clinicians</h2><p>Reference centres, expert registers and the research library.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
+      <div class="card acc-research"><h2 class="h4">For clinicians</h2><p>Reference centres, expert registers and the bibliography.</p><p class="go">Care centres →</p><a class="cover" href="/knowledge/care-centres/" aria-label="For clinicians: care centres"></a></div>
       <div class="card acc-studies"><h2 class="h4">For researchers</h2><p>Studies, registries and how to be listed as a researcher.</p><p class="go">The registry →</p><a class="cover" href="/registry/" aria-label="For researchers: the registry"></a></div>
       <div class="card acc-centres"><h2 class="h4">For associations</h2><p>Join the network, feed the registers, share your studies.</p><p class="go">Membership →</p><a class="cover" href="/about/members/" aria-label="For associations: membership"></a></div>
     </div>
@@ -538,8 +538,8 @@ __MAP_HERO__
     <p>Five living registers, each maintained by a named volunteer and dated, so families and clinicians always know how current the information is.</p>
     <div class="grid cols-4" style="margin-top:var(--space-4)">
       <div class="card acc-library">
-        <h3 class="h4"><a href="/knowledge/research-library/">Research library</a></h3>
-        <p>Curated publications on limb-difference research, summarised in plain language.</p>
+        <h3 class="h4"><a href="/knowledge/bibliography/">Bibliography</a></h3>
+        <p>Peer-reviewed publications on our conditions, searchable by condition, theme and year.</p>
         <p class="meta">Updated August 2026</p>
       </div>
       <div class="card acc-studies">
@@ -640,8 +640,8 @@ PAGES["/knowledge/"] = {
     <h2 class="h2">What is known, being studied, and where expertise lives.</h2>
     <div class="grid cols-2" style="margin-top:var(--space-3)">
       <div class="card acc-library">
-        <h3 class="h3"><a href="/knowledge/research-library/">Research library</a></h3>
-        <p>Curated publications, each with a plain-language summary and a link to the source.</p>
+        <h3 class="h3"><a href="/knowledge/bibliography/">Bibliography</a></h3>
+        <p>Peer-reviewed publications on our conditions, searchable by condition, theme and year.</p>
         <p class="meta">Register 1 · updated August 2026</p>
       </div>
       <div class="card acc-studies">
@@ -688,16 +688,16 @@ REGISTER_FOOT = ('<div class="register-note">'
                  '<span>See something missing? <a href="mailto:info@dysnet.org?subject=Register%20suggestion">'
                  'Suggest an addition</a>.</span></div>')
 
-PAGES["/knowledge/research-library/"] = {
-    "title": "Research library",
+PAGES["/knowledge/bibliography/"] = {
+    "title": "Bibliography",
     "desc": "The DysNet bibliography: peer-reviewed publications on congenital limb difference, thalidomide and their causes, searchable by condition, theme and year.",
-    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/research-library/", "Research library")],
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/bibliography/", "Bibliography")],
     "body": f"""
 <section>
   <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 1 · Research library <span class="badge live">updated Aug 2026</span></p>
-    <h1 class="display">Research library on limb difference: the research, readable.</h1>
+    <p class="eyebrow">Register 1 · Bibliography <span class="badge live">updated Sep 2026</span></p>
+    <h1 class="display">Bibliography on limb difference: the research, readable.</h1>
     <p>Every entry: a citation and a link to the source, tagged by condition and theme so families and clinicians find what concerns them. Search, then filter by condition, theme and year.</p>
     <p style="margin-top:var(--space-3)">Looking for guides, surveys and reports rather than papers? They have moved to <a href="/knowledge/resources/">Resources</a>.</p>
     <div id="bibliography">
@@ -857,7 +857,7 @@ PAGES["/knowledge/resources/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Knowledge · Resources</p>
     <h1 class="display">Resources on limb difference: guides, surveys and reports.</h1>
-    <p>Reference works, surveys and reports that families, clinicians and associations return to, each with a short description and a link to the source. Peer-reviewed papers on our conditions live in the <a href="/knowledge/research-library/">research library</a>.</p>
+    <p>Reference works, surveys and reports that families, clinicians and associations return to, each with a short description and a link to the source. Peer-reviewed papers on our conditions live in the <a href="/knowledge/bibliography/">bibliography</a>.</p>
     <h2 class="h3" style="margin-top:var(--space-4)">Starting points</h2>
     <div style="margin-top:var(--space-2)">
       <article class="entry">
@@ -916,7 +916,7 @@ PAGES["/knowledge/researchers/"] = {
     <div class="tick" style="margin-top:var(--space-5)"></div>
     <p class="eyebrow">Teams that publish · {len(RESEARCHERS.get("teams", []))} institutions</p>
     <h2 class="h2">Who publishes on our conditions.</h2>
-    <p>Orphanet’s directory of research projects lists nothing specific to our ORPHAcodes, so this register is built from the evidence itself: the institutions of the first and senior authors of every publication in our <a href="/knowledge/research-library/#bibliography">bibliography</a>, read from PubMed’s own affiliation records. An institution appears once it signs at least two of those publications. The count and the years say how active a team has been; the tags say on which conditions. Teams that want to be listed or corrected: <a href="mailto:info@dysnet.org?subject=Researchers%20register">info@dysnet.org</a>.</p>
+    <p>Orphanet’s directory of research projects lists nothing specific to our ORPHAcodes, so this register is built from the evidence itself: the institutions of the first and senior authors of every publication in our <a href="/knowledge/bibliography/#bibliography">bibliography</a>, read from PubMed’s own affiliation records. An institution appears once it signs at least two of those publications. The count and the years say how active a team has been; the tags say on which conditions. Teams that want to be listed or corrected: <a href="mailto:info@dysnet.org?subject=Researchers%20register">info@dysnet.org</a>.</p>
     {researchers_html()}
     <p class="annex-note">Built {RESEARCHERS.get("built", "")} from {RESEARCHERS.get("bibliography_size", "")} PubMed records; {RESEARCHERS.get("records_without_affiliation", "")} older records carry no affiliation in PubMed and could not be attributed. <a href="/data/researchers.json">Download the data (JSON, CC BY 4.0)</a>.</p>
     {REGISTER_FOOT}
@@ -1985,7 +1985,8 @@ _POSTS = ["a-week-full-of-opportunities", "artificial-intelligence-and-disabilit
     "webinar-by-cerebral-palsy-eu-on-advocacy-skills"]
 REDIRECTS = {
     "/about/people": "/about/#board",
-    "/people": "/about/#board", "/our-members": "/about/members/", "/members": "/about/members/",
+    "/knowledge/research-library": "/knowledge/bibliography/",
+        "/people": "/about/#board", "/our-members": "/about/members/", "/members": "/about/members/",
     "/conditions": "/knowledge/understanding-dysmelia/", "/blog": "/voice/reports/", "/forum": "/about/members/",
     "/whatifyourbaby": "/knowledge/understanding-dysmelia/", "/aussiehands": "/about/members/", "/raggiungere": "/about/members/",
     "/copy-of-about": "/knowledge/understanding-dysmelia/", "/copy-of-about-1": "/knowledge/researchers/",
@@ -2034,7 +2035,7 @@ def page_dates(path, new_html):
 
 EXTRA_LD = {
     "/knowledge/understanding-dysmelia/": lambda: [conditions_ld()],
-    "/knowledge/research-library/": lambda: [dataset_ld("DysNet bibliography on congenital limb difference and dysmelia", "Peer-reviewed references on limb differences, thalidomide embryopathy and their causes, verified against PubMed and Crossref; sources: Orphanet epidemiology, member associations' and registries' websites, fixed PubMed queries.", "/knowledge/research-library/", "bibliography.json", ["dysmelia", "limb reduction defects", "thalidomide embryopathy", "bibliography", "PubMed"], f"{len(BIB.get('entries', []))} references")],
+    "/knowledge/bibliography/": lambda: [dataset_ld("DysNet bibliography on congenital limb difference and dysmelia", "Peer-reviewed references on limb differences, thalidomide embryopathy and their causes, verified against PubMed and Crossref; sources: Orphanet epidemiology, member associations' and registries' websites, fixed PubMed queries.", "/knowledge/bibliography/", "bibliography.json", ["dysmelia", "limb reduction defects", "thalidomide embryopathy", "bibliography", "PubMed"], f"{len(BIB.get('entries', []))} references")],
     "/knowledge/registries/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/registries/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
     "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],

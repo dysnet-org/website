@@ -569,8 +569,8 @@
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
-    var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : ""].filter(Boolean).join(" · ");
-    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
+    var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.join(", ") : "")].filter(Boolean).join(" · ");
+    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (r.med && r.k !== 'medicine' ? '<span class="badge badge-med">Also a medicine</span>' : '') + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
            '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
@@ -585,7 +585,7 @@
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
                (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
-               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1);
+               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1));
       if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
     });
     list.innerHTML = out.join("");

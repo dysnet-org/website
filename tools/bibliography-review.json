@@ -45648,6 +45648,69 @@
     "Holland Bloorview"
    ],
    "status": "rejected: found on hollandbloorview.ca, not about the site's conditions"
+  },
+  {
+   "id": "19032301",
+   "pmid": "19032301",
+   "title": "Comparison of blood pressure measured at the arm, ankle and calf.",
+   "members": [
+    "Stichting NESOS"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "17520492",
+   "pmid": "17520492",
+   "title": "Living with thalidomide: health status and quality of life at 40 years.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "23248710",
+   "pmid": "23248710",
+   "title": "Non-specific, functional, and somatoform bodily complaints.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "28398668",
+   "pmid": "28398668",
+   "title": "\"The legacy of thalidomide\" - A multidisciplinary meeting held at the University of York, United Kingdom, on September 30, 2016.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "27888069",
+   "pmid": "27888069",
+   "title": "Vertebrate embryos as tools for anti-angiogenic drug screening and function.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "1433232",
+   "pmid": "1433232",
+   "title": "Recognition of thalidomide defects.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
+  },
+  {
+   "id": "14004945",
+   "pmid": "14004945",
+   "title": "Thalidomide and congenital abnormalities.",
+   "members": [
+    "Thalidomide Trust"
+   ],
+   "status": "rejected: found on a member association's website, not about the site's conditions"
   }
  ]
 }

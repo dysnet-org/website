@@ -32,7 +32,8 @@
   "clp": 306,
   "p65": 300,
   "ema": 12,
-  "both_clp_and_p65": 32
+  "both_clp_and_p65": 32,
+  "medicinal": 124
  },
  "entries": [
   {
@@ -164,7 +165,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
@@ -195,7 +200,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AD02"
+   ],
+   "medicinal": true
   },
   {
    "name": "1-bromopropane; n-propyl bromide",
@@ -781,7 +790,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "S01EC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Acetohydroxamic acid",
@@ -812,7 +825,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G04BX03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Acrylamide",
@@ -874,7 +891,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01DA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Alcohol (ethanol) in beverages",
@@ -900,7 +921,13 @@
    "level": "known",
    "source_codes": [
     "who"
-   ]
+   ],
+   "atc": [
+    "D08AX08",
+    "V03AB16",
+    "V03AZ01"
+   ],
+   "medicinal": true
   },
   {
    "name": "All-trans retinoic acid",
@@ -931,7 +958,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "D10AD01",
+    "L01XX14"
+   ],
+   "medicinal": true
   },
   {
    "name": "Alprazolam",
@@ -962,7 +994,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA12"
+   ],
+   "medicinal": true
   },
   {
    "name": "Altretamine",
@@ -993,7 +1029,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XX03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Amantadine hydrochloride",
@@ -1086,7 +1126,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L02BG01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Aminoglycosides",
@@ -1241,7 +1285,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N06AA17"
+   ],
+   "medicinal": true
   },
   {
    "name": "Angiotensin converting enzyme  (ACE) inhibitors",
@@ -1365,7 +1413,13 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A01AD05",
+    "B01AC06",
+    "N02BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Atenolol",
@@ -1396,7 +1450,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "C07AB03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Atrazine",
@@ -1458,7 +1516,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M01CB03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Avermectin B1 (Abamectin)",
@@ -1520,7 +1582,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L04AX01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Barbiturates",
@@ -1635,7 +1701,14 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A07EA07",
+    "D07AC15",
+    "R01AD01",
+    "R03BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "benomyl (ISO); methyl 1-(butylcarbamoyl)benzimidazol-2-ylcarbamate",
@@ -1812,7 +1885,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XC07"
+   ],
+   "medicinal": true
   },
   {
    "name": "bis(2-ethylhexyl) phthalate; di-(2-ethylhexyl) phthalate; DEHP",
@@ -1896,7 +1973,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AD01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Bisphenol A (BPA)",
@@ -2171,7 +2252,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AF01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Carbaryl [Basis for listing changed effective December 27, 2013]",
@@ -2337,7 +2422,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Chenodiol",
@@ -2368,7 +2457,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A05AA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Chlorambucil",
@@ -2399,7 +2492,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Chlorcyclizine hydrochloride",
@@ -2492,7 +2589,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Chlordiazepoxide hydrochloride",
@@ -2574,7 +2675,11 @@
    "source_codes": [
     "clp",
     "p65"
-   ]
+   ],
+   "atc": [
+    "N01AB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Chlorpyrifos",
@@ -2698,7 +2803,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J05AB12"
+   ],
+   "medicinal": true
   },
   {
    "name": "Cladribine",
@@ -2729,7 +2838,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01BB04",
+    "L04AA40"
+   ],
+   "medicinal": true
   },
   {
    "name": "Clarithromycin",
@@ -2760,7 +2874,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J01FA09"
+   ],
+   "medicinal": true
   },
   {
    "name": "Clobetasol propionate",
@@ -2884,7 +3002,14 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N01BC01",
+    "R02AD03",
+    "S01HA01",
+    "S02DA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Codeine phosphate",
@@ -2946,7 +3071,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M04AC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Conjugated estrogens",
@@ -3123,7 +3252,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Cyclophosphamide (hydrated)",
@@ -3216,7 +3349,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01BC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Dacarbazine",
@@ -3278,7 +3415,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03XA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Daunorubicin hydrochloride",
@@ -3464,7 +3605,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Diazoxide",
@@ -3495,7 +3640,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "C02DA01",
+    "V03AH01"
+   ],
+   "medicinal": true
   },
   {
    "name": "dibutyl phthalate; DBP",
@@ -3548,7 +3698,11 @@
    "source_codes": [
     "clp",
     "p65"
-   ]
+   ],
+   "atc": [
+    "P03BX03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Dichloroacetic acid",
@@ -3610,7 +3764,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "P02DX02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Dichlorphenamide",
@@ -3641,7 +3799,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "S01EC02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Diclofop methyl",
@@ -3703,7 +3865,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "B01AA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Diethylstilbestrol (DES)",
@@ -3734,7 +3900,13 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03CB02",
+    "G03CC05",
+    "L02AA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Diflunisal",
@@ -3765,7 +3937,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N02BA11"
+   ],
+   "medicinal": true
   },
   {
    "name": "Dihydroergotamine mesylate",
@@ -3880,7 +4056,11 @@
    "source_codes": [
     "clp",
     "p65"
-   ]
+   ],
+   "atc": [
+    "N01AX13"
+   ],
+   "medicinal": true
   },
   {
    "name": "dinocap (ISO); (RS)-2,6-dinitro-4-octylphenyl crotonates and (RS)-2,4-dinitro-6-octylphenyl crotonates in which ‘octyl’ is a reaction mass of 1-methylheptyl, 1-ethylhexyl and 1-propylpentyl groups",
@@ -4017,7 +4197,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Disodium cyanodithioimidocarbonate",
@@ -4110,7 +4294,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A01AB22",
+    "J01AA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Doxycycline calcium (internal use)",
@@ -4358,7 +4547,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J04AD03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Ethyl alcohol in alcoholic beverages",
@@ -4619,7 +4812,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M01AB08"
+   ],
+   "medicinal": true
   },
   {
    "name": "Etoposide",
@@ -4650,7 +4847,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01CB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Etretinate",
@@ -4681,7 +4882,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "D05BB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Fenoxaprop ethyl",
@@ -4794,7 +4999,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L03AA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Fingolimod",
@@ -4820,7 +5029,11 @@
    "level": "known",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "L04AA27"
+   ],
+   "medicinal": true
   },
   {
    "name": "fluazifop-butyl (ISO); butyl (RS)-2-[4-(5-trifluoromethyl-2-pyridyloxy)phenoxy]propionate",
@@ -4904,7 +5117,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "R01AD04",
+    "R03BA03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Fluorouracil",
@@ -4935,7 +5153,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01BC02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Fluoxymesterone",
@@ -4966,7 +5188,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Flurazepam hydrochloride",
@@ -5028,7 +5254,14 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M01AE09",
+    "M02AA19",
+    "R02AX01",
+    "S01BC04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Flutamide",
@@ -5059,7 +5292,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L02BB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Fluticasone propionate",
@@ -5152,7 +5389,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J05AB06",
+    "S01AD09"
+   ],
+   "medicinal": true
   },
   {
    "name": "Ganciclovir sodium",
@@ -5214,7 +5456,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L02AE03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Halazepam",
@@ -5245,7 +5491,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA13"
+   ],
+   "medicinal": true
   },
   {
    "name": "Halobetasol propionate",
@@ -5276,7 +5526,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "D07AC21"
+   ],
+   "medicinal": true
   },
   {
    "name": "Haloperidol",
@@ -5307,7 +5561,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05AD01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Halothane",
@@ -5338,7 +5596,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N01AB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Heptachlor",
@@ -5524,7 +5786,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XX05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Idarubicin hydrochloride",
@@ -5586,7 +5852,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AA06"
+   ],
+   "medicinal": true
   },
   {
    "name": "Iodine-131",
@@ -5659,7 +5929,12 @@
    "source_codes": [
     "ema",
     "p65"
-   ]
+   ],
+   "atc": [
+    "D10AD04",
+    "D10BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "lead 2,4,6-trinitro-m-phenylene dioxide; lead 2,4,6-trinitroresorcinoxide; lead styphnate",
@@ -6285,7 +6560,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N04BA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "linuron (ISO); 3-(3,4-dichlorophenyl)-1-methoxy-1-methylurea",
@@ -6431,7 +6710,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA06"
+   ],
+   "medicinal": true
   },
   {
    "name": "Lovastatin",
@@ -6462,7 +6745,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "C10AA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Mebendazole",
@@ -6493,7 +6780,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "P02CA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Medroxyprogesterone acetate",
@@ -6555,7 +6846,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03AC05",
+    "G03DB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Melphalan",
@@ -6586,7 +6882,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AA03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Menotropins",
@@ -6648,7 +6948,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Mercaptopurine",
@@ -6865,7 +7169,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "H03BB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Methotrexate",
@@ -6906,7 +7214,12 @@
    "source_codes": [
     "ema",
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01BA01",
+    "L04AX03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Methotrexate sodium",
@@ -7243,7 +7556,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03BA02",
+    "G03EK01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Metiram",
@@ -7367,7 +7685,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A02BB01",
+    "G02AD06"
+   ],
+   "medicinal": true
   },
   {
    "name": "Mitoxantrone hydrochloride",
@@ -7507,7 +7830,8 @@
    "level": "known",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "medicinal": true
   },
   {
    "name": "N,N-dimethylacetamide",
@@ -7830,7 +8154,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "C08CA05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Nimodipine",
@@ -7861,7 +8189,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "C08CA06"
+   ],
+   "medicinal": true
   },
   {
    "name": "Nitrapyrin",
@@ -7923,7 +8255,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AA05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -7985,7 +8321,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03AC01",
+    "G03DC02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Norethisterone (Norethindrone) /Ethinyl estradiol",
@@ -8202,7 +8543,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05BA04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Oxymetholone",
@@ -8233,7 +8578,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A14AA05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Oxytetracycline (internal use)",
@@ -8264,7 +8613,14 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "D06AA03",
+    "G01AA07",
+    "J01AA06",
+    "S01AA04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Oxytetracycline hydrochloride (internal use)",
@@ -8357,7 +8713,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "P03AB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "p,p'-Oxybis(benzenesulfonyl hydrazide)  Delisted December 13, 2013 [Click here for the basis for delisting]",
@@ -8419,7 +8779,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01CD01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Paramethadione",
@@ -8450,7 +8814,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Penicillamine",
@@ -8481,7 +8849,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M01CC01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Pentobarbital sodium",
@@ -8543,7 +8915,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XX08"
+   ],
+   "medicinal": true
   },
   {
    "name": "Perfluorooctane sulfonate (PFOS)",
@@ -8658,7 +9034,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XC13"
+   ],
+   "medicinal": true
   },
   {
    "name": "Phenacemide",
@@ -8689,7 +9069,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AX07"
+   ],
+   "medicinal": true
   },
   {
    "name": "Phenprocoumon",
@@ -8720,7 +9104,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "B01AA04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Phenylphosphine [Basis for listing changed effective June 6, 2014]",
@@ -8782,7 +9170,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05AG02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Pipobroman",
@@ -8813,7 +9205,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AX02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Plicamycin",
@@ -8844,7 +9240,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01DC02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Polybrominated biphenyls",
@@ -9123,7 +9523,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "H03BA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Pyrimethamine",
@@ -9154,7 +9558,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "P01BD01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Quazepam",
@@ -9185,7 +9593,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05CD10"
+   ],
+   "medicinal": true
   },
   {
    "name": "Resmethrin",
@@ -9278,7 +9690,12 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J05AB04",
+    "J05AP01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Rifampin",
@@ -9309,7 +9726,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "J04AB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Secobarbital sodium",
@@ -9633,7 +10054,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "M01AB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Tamoxifen citrate",
@@ -9695,7 +10120,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05CD07"
+   ],
+   "medicinal": true
   },
   {
    "name": "Teniposide",
@@ -9726,7 +10155,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01CB02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Terbacil",
@@ -9934,7 +10367,17 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "A01AB13",
+    "D06AA04",
+    "J01AA",
+    "J01AA07",
+    "S01AA09",
+    "S02AA08",
+    "S03AA02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Tetracycline hydrochloride (internal use)",
@@ -10038,7 +10481,11 @@
    "source_codes": [
     "ema",
     "p65"
-   ]
+   ],
+   "atc": [
+    "L04AX02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Thioguanine",
@@ -10069,7 +10516,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01BB03"
+   ],
+   "medicinal": true
   },
   {
    "name": "Tobacco smoke (primary)",
@@ -10223,7 +10674,11 @@
    "source_codes": [
     "ema",
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AX11"
+   ],
+   "medicinal": true
   },
   {
    "name": "Triadimefon",
@@ -10285,7 +10740,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N05CD05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Tributyltin methacrylate",
@@ -10347,7 +10806,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N01AB05"
+   ],
+   "medicinal": true
   },
   {
    "name": "Trientine hydrochloride",
@@ -10478,7 +10941,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "H02CA01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Trimethadione",
@@ -10509,7 +10976,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AC02"
+   ],
+   "medicinal": true
   },
   {
    "name": "Trimetrexate glucuronate",
@@ -10571,7 +11042,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01AD08"
+   ],
+   "medicinal": true
   },
   {
    "name": "Urethane (Ethyl carbamate)",
@@ -10633,7 +11108,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "G03GA04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Valproate (Valproic acid)",
@@ -10675,7 +11154,11 @@
    "source_codes": [
     "ema",
     "p65"
-   ]
+   ],
+   "atc": [
+    "N03AG01"
+   ],
+   "medicinal": true
   },
   {
    "name": "Vinblastine sulfate",
@@ -10821,7 +11304,11 @@
    "level": "known",
    "source_codes": [
     "p65"
-   ]
+   ],
+   "atc": [
+    "L01XX43"
+   ],
+   "medicinal": true
   },
   {
    "name": "Warfarin",
@@ -12232,7 +12719,11 @@
    "level": "presumed",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "C02KX02"
+   ],
+   "medicinal": true
   },
   {
    "name": "ammonium bromide",
@@ -12714,7 +13205,11 @@
    "level": "presumed",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "C02KX01"
+   ],
+   "medicinal": true
   },
   {
    "name": "bromadiolone (ISO); 3-[3-(4′-bromobiphenyl-4-yl)-3-hydroxy-1-phenylpropyl]-4-hydroxy-2H-chromen-2-one",
@@ -14413,7 +14908,11 @@
    "level": "presumed",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "L04AX04"
+   ],
+   "medicinal": true
   },
   {
    "name": "Macitentan (endothelin receptor antagonist)",
@@ -14439,7 +14938,11 @@
    "level": "presumed",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "C02KX04"
+   ],
+   "medicinal": true
   },
   {
    "name": "mancozeb (ISO); manganese ethylenebis(dithiocarbamate) (polymeric) complex with zinc salt",
@@ -16176,7 +16679,11 @@
    "level": "presumed",
    "source_codes": [
     "ema"
-   ]
+   ],
+   "atc": [
+    "L04AX06"
+   ],
+   "medicinal": true
   },
   {
    "name": "potassium 1-methyl-3-morpholinocarbonyl-4-[3-(1-methyl-3-morpholinocarbonyl-5-oxo-2-pyrazolin-4-ylidene)-1-propenyl]pyrazole-5-olate; [containing ≥ 0,5 % N,N-dimethylformamide (EC No 200-679-5)]",
@@ -16328,7 +16835,11 @@
    "level": "presumed",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "D11AX12"
+   ],
+   "medicinal": true
   },
   {
    "name": "quinolin-8-ol; 8-hydroxyquinoline",
@@ -16366,7 +16877,14 @@
    "level": "presumed",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "A01AB07",
+    "D08AH03",
+    "G01AC30",
+    "R02AA14"
+   ],
+   "medicinal": true
   },
   {
    "name": "reaction mass of 1,3-dioxan-5-ol and 1,3-dioxolan-4-ylmethanol",
@@ -17088,7 +17606,11 @@
    "level": "presumed",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "R03DA04"
+   ],
+   "medicinal": true
   },
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",
@@ -19639,7 +20161,11 @@
    "level": "suspected",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "P02CB01"
+   ],
+   "medicinal": true
   },
   {
    "name": "potassium permanganate",
@@ -19675,7 +20201,12 @@
    "level": "suspected",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "D08AX06",
+    "V03AB18"
+   ],
+   "medicinal": true
   },
   {
    "name": "profoxydim (ISO); 2-{](EZ)-1-[}(2RS)-2-(4-chlorophenoxy)propoxyimino{]butyl[}-3-hydroxy-5-(thian-3-yl)cyclohex-2-en-1-one",
@@ -19927,7 +20458,12 @@
    "level": "suspected",
    "source_codes": [
     "clp"
-   ]
+   ],
+   "atc": [
+    "D01AE12",
+    "S01BC08"
+   ],
+   "medicinal": true
   },
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",

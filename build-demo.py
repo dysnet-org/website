@@ -347,6 +347,8 @@ def bibliography_html():
 """
 
 # Register 4 · care centres shown on the landing map. Centres named by a member association or visited by the board,
+# and, where DysNet has no member association, centres whose own institutional page states congenital limb difference
+# in its scope (those carry via_verb "verified from"),
 # plus the children's hand clinics of the BSSH directory that Reach points families to; URLs checked; coordinates from OpenStreetMap Nominatim (see tools/care-centres.json for the audit trail).
 CARE_PATH = pathlib.Path(__file__).parent / "tools" / "care-centres.json"
 CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if CARE_PATH.exists() else []
@@ -362,9 +364,10 @@ def centres_html():
         host = c["url"].split("//")[-1].split("/")[0].removeprefix("www.") if c.get("url") else ""
         link = f'<a href="{c["url"]}" target="_blank" rel="noopener external">{host}</a>' if c.get("url") else "no public website"
         via = f'<a href="{c["via_url"]}" target="_blank" rel="noopener external">{c["via"]}</a>' if c.get("via_url") else c.get("via", "")
+        verb = c.get("via_verb") or "named by"
         local = f'<p class="src">{c["name_local"]}</p>' if c.get("name_local") else ""
         out.append(f'<article class="entry"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
-                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]} · {link} · named by {via}</p></article>')
+                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
     return "".join(out)
 
 
@@ -1042,7 +1045,7 @@ PAGES["/knowledge/care-centres/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Care centres for limb difference: where expertise lives.</h1>
-    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website or visited by the board, and appears as an orange marker on the <a href="/">world map</a> on our home page. The dedicated children’s hand clinics of the United Kingdom and Ireland come from the directory that the British Society for Surgery of the Hand publishes for families, which our member association Reach points parents to when they ask for a referral. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
+    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website or visited by the board, and appears as an orange marker on the <a href="/">world map</a> on our home page. Where DysNet has no member association yet, a centre earns its place differently: its own institutional page must state congenital limb difference, limb reconstruction or prosthetic fitting in its scope, and those entries say <em>verified from</em> rather than <em>named by</em>, so you can see at a glance which are community-validated and which are not. The dedicated children’s hand clinics of the United Kingdom and Ireland come from the directory that the British Society for Surgery of the Hand publishes for families, which our member association Reach points parents to when they ask for a referral. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Where the list comes from</h2>
     <div style="margin-top:var(--space-2)">
@@ -1998,6 +2001,236 @@ PAGES["/registry/"] = {
 }
 
 # ─────────────────────────────── VOICE ────────────────────────────
+# The five demands are held as data, not as markup: the accordion on /voice/ and
+# the one-page briefing PDF are rendered from this one list, so they cannot drift.
+# "progress" is the criterion a policy maker should leave with; "brief" is the ask
+# in one sentence, for the PDF.
+BRIEF_PDF = "/assets/dysnet-five-demands.pdf"
+
+DEMANDS = [
+    {
+        "title": "Recognition of dysmelia as a public health priority, and access to quality healthcare for every family affected",
+        "body": [
+            "A child is born with a hand or an arm that stopped growing, and the parents ask one question first: where do we go now? The answer still depends on where they live — some families reach a team that has seen the condition before, others spend years moving between services that have not, explaining the condition to each new professional they meet.",
+            'The World Health Organization counts congenital disorders among the leading causes of newborn death and lifelong disability, and the 2010 World Health Assembly resolution on birth defects asks every state to build registration and surveillance systems, to develop expertise in prevention and care, and to support affected families (<a href="https://www.who.int/news-room/fact-sheets/detail/birth-defects" target="_blank" rel="noopener external">WHO fact sheet on congenital disorders</a>). Limb differences are among the most visible of these disorders and among the least studied.',
+            "We ask health authorities to name dysmelia in their rare-disease and disability plans, and to guarantee every child and adult a pathway to a competent team: diagnosis, surgery when useful, prosthetics, rehabilitation and psychological support, wherever the family lives.",
+        ],
+        "progress": "national pathways published, reference centres named, and waiting times measured.",
+        "brief": "Name dysmelia in national rare-disease and disability plans, and guarantee every child and adult a pathway to a competent team: diagnosis, surgery when useful, prosthetics, rehabilitation and psychological support, wherever the family lives.",
+        "cta": [],
+    },
+    {
+        "title": "Universal coverage of prosthetics, research that reaches people with dysmelia, and an orphan medical devices framework that makes equipment affordable",
+        "body": [
+            "For many people with a limb difference, a prosthesis is what makes school, work, sport and everyday tasks possible. Coverage varies from full reimbursement to nothing at all, children outgrow devices that insurers replace too slowly, and the most advanced hands and arms are priced for a handful of users. Progress in robotics rarely reaches people with congenital differences, whose anatomy differs from that of amputees.",
+            'Medicines for rare diseases enjoy orphan status: fee reductions, protocol assistance and market exclusivity that make small markets worth serving. Devices for small populations have no equivalent, so a prosthetic component designed for a few thousand people is often never built. Europe took a first step in June 2024: guidance <a href="https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf" target="_blank" rel="noopener external">MDCG 2024-10</a> defines an orphan device as one intended for a condition affecting no more than 12,000 people a year in the EU and eases the clinical evidence expected. It is guidance, not law, and it brings no fee relief, no priority assessment and no exclusivity.',
+            "We ask for coverage of a functional prosthesis for everyone who wants one, renewed at the pace of a growing child; for public research funding that names congenital limb difference; and for an orphan medical devices status in law, with fee relief and priority assessment, tied to transparent pricing and coverage of families’ out-of-pocket costs for the equipment they actually need, from a first passive hand to adapted bicycle or car controls.",
+        ],
+        "progress": "comparable reimbursement rules across countries, research calls that name our conditions, a legal definition and public register of orphan devices, and families’ remaining costs measured and falling.",
+        "brief": "Cover a functional prosthesis for everyone who wants one, renewed at the pace of a growing child; fund research that names congenital limb difference; and write an orphan medical devices status into law, with fee relief and priority assessment.",
+        "cta": [(BRIEF_PDF, "Take this to a regulator (PDF)"),
+                ("mailto:info@dysnet.org?subject=Orphan%20medical%20devices", "Work with us on orphan devices")],
+    },
+    {
+        "title": "Registries that cover whole populations, interoperability and portability of their data, and personal data returned to the people concerned",
+        "body": [
+            "Population registries of congenital anomalies cover a fraction of births, even in countries that run them well: in France about one birth in six. Clusters of limb agenesis have been found and then lost for want of comparable data across borders, and the causes, environmental or otherwise, remain unproven either way. Data held in one registry can only answer that region’s questions.",
+            "We ask for registries that cover whole populations, that are funded to last, that are independent of any single interest, and that talk to each other across countries. We ask for interoperability: shared data models and common definitions, so that what one registry records can be read, compared and pooled by another, and so that aggregated data reach researchers without friction. We ask for portability: a registry must be able to move its data if its host disappears or its funding ends, and a family must be able to take its own record elsewhere. Any sharing of identifiable data must rest on the explicit, revocable consent of the person or family concerned.",
+            'We ask, finally, that personal data be returned to the people it describes. Each person living with dysmelia, or their guardian, should hold a copy of their own record, see who has used it, and decide what happens to it next. Our own <a href="/registry/">associative registry</a> exists to add the families’ knowledge to this picture, not to replace it.',
+        ],
+        "progress": "coverage figures rising, cluster investigations that can compare notes internationally, common data models adopted, published access procedures, consent that families can see and change, and records that families can download and carry with them.",
+        "brief": "Fund registries that cover whole populations, make them interoperable and portable across borders, and return to each person a copy of their own record, with consent they can see and change.",
+        "cta": [],
+    },
+    {
+        "title": "Research that looks for the causes of dysmelia, not only for how often it happens",
+        "body": [
+            f'Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its {BIBSTAT["total"]:,} references, {BIBSTAT["thalidomide"]} concern thalidomide, the one cause that was identified, sixty years ago. Another {BIBSTAT["epidemiology"]} measure how often the conditions occur. Outside thalidomide, {BIBSTAT["gene"]} titles name a gene, {BIBSTAT["medicine"]} name a medicine taken during pregnancy, and {BIBSTAT["environment"]} name an environmental exposure.',
+            f'{spell(BIBSTAT["environment"]).capitalize()} papers, for every environmental hypothesis, across {BIBSTAT["env_span"]} years. The two oldest are the Cardiff clustering studies of {BIBSTAT["env_first"]}. Among the most recent are studies of air pollution, of heavy metals in maternal blood, and of the French clusters of transverse upper-limb agenesis. That is one paper every {BIBSTAT["env_years_per_paper"]:.1f} years, worldwide, for the question that comes first in every family’s mind.',
+            "Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly.",
+            'What that literature currently supports, and where it stops, is set out in our review <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>: across large birth-defect cohorts a cause is identified in roughly one case in five, and for an isolated difference of a single limb it is usually none. That figure is the demand, in one number.',
+        ],
+        "progress": "calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.",
+        "brief": "Fund research whose object is causation, not only frequency: exposure histories linked to registry records, standing protocols for investigating clusters, toxicology on the substances already suspected, and the publication of negative results.",
+        "cta": [],
+    },
+    {
+        "title": "Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects",
+        "body": [
+            "Thalidomide taught the lesson once: a product reached pregnant women before its effect on the unborn child was known, and thousands of children were born with limb differences. Families still learn about suspected teratogens after the fact, from a news report or a cluster investigation, rather than from a label or from the authority in charge.",
+            "We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards.",
+            'No authority publishes such a list today; our <a href="/knowledge/teratogens/">teratogens register</a> gathers what the EU, California and the medicines agencies each list separately, with the legal status of every substance.',
+        ],
+        "progress": "a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences.",
+        "brief": "Apply the precautionary principle to substances with suspected, potential or proven teratogenic effects: clear information to families and professionals, and enforceable obligations on food suppliers, the construction sector and product manufacturers.",
+        "cta": [("/knowledge/teratogens/", "Open the teratogens register"),
+                (BRIEF_PDF, "Take this to a regulator (PDF)")],
+    },
+]
+
+
+def demands_html():
+    items = []
+    for i, d in enumerate(DEMANDS, 1):
+        paras = "".join(f"<p>{p}</p>" for p in d["body"])
+        cta = ("".join(f'<a class="btn btn-sm btn-ghost" href="{href}">{label}</a>' for href, label in d["cta"]))
+        cta = f'<p class="demand-cta">{cta}</p>' if cta else ""
+        items.append(
+            f'<li><details><summary><span class="demand-n">{i}</span><span>{d["title"]}</span></summary>\n'
+            f'        <div class="demand-body">{paras}'
+            f'<p class="progress"><span>Progress looks like</span>{d["progress"]}</p>{cta}'
+            f"</div></details></li>")
+    return '<ol class="demands">\n      ' + "\n      ".join(items) + "\n    </ol>"
+
+
+# ── The one-page briefing, for delegates to hand over in a meeting ──
+# Rendered from DEMANDS with ReportLab at build time, so the PDF and the page
+# on /voice/ always carry the same five demands and the same progress criteria.
+BRIEF_LEDE = ("Dysmelia is a congenital limb difference. DysNet is the network of the associations that "
+              "represent the families concerned, and it carries these five demands into every body where "
+              "it holds a seat: EURORDIS, the European Disability Forum, ERN BOND and the European "
+              "Economic and Social Committee. Each demand states what we ask of public authorities, and "
+              "what would count as progress.")
+
+
+def build_brief_pdf():
+    """Write docs/assets/dysnet-five-demands.pdf — the five demands as a one-page policy brief."""
+    import hashlib
+    from reportlab.lib import colors
+    from reportlab.lib.enums import TA_JUSTIFY
+    from reportlab.lib.pagesizes import A4
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import mm
+    from reportlab.platypus import (BaseDocTemplate, Flowable, Frame, Image, KeepTogether,
+                                    PageTemplate, Paragraph, Spacer, Table, TableStyle)
+
+    out = ROOT / "assets" / "dysnet-five-demands.pdf"
+    logo = ROOT / "assets" / "img" / "dysnet-logo.png"
+    digest = hashlib.sha1(repr([(d["title"], d["brief"], d["progress"]) for d in DEMANDS]
+                               + [BRIEF_LEDE, SITE]).encode("utf-8")).hexdigest()
+    # The digest rides in the PDF's own metadata, so no stamp file is published.
+    if out.exists() and digest.encode() in out.read_bytes():
+        return "briefing PDF unchanged"
+
+    INK, MUTED = colors.HexColor("#241a33"), colors.HexColor("#5d5470")
+    PURPLE, PTEXT, PDEEP, PSOFT = (colors.HexColor("#9333ea"), colors.HexColor("#7222c2"),
+                                   colors.HexColor("#47156e"), colors.HexColor("#f3e8fd"))
+    F, FB = "Helvetica", "Helvetica-Bold"
+
+    def st(name, **kw):
+        base = dict(fontName=F, fontSize=8.6, leading=11.6, textColor=INK, spaceAfter=0)
+        base.update(kw)
+        return ParagraphStyle(name, **base)
+
+    s_kicker = st("kicker", fontName=FB, fontSize=7.4, leading=10, textColor=PTEXT)
+    s_title = st("title", fontName=FB, fontSize=18.5, leading=20, textColor=PDEEP, spaceAfter=2)
+    s_lede = st("lede", fontSize=8.4, leading=11.2, textColor=MUTED, alignment=TA_JUSTIFY)
+    s_h2 = st("h2", fontName=FB, fontSize=9.8, leading=12, spaceAfter=2.4)
+    s_body = st("body", alignment=TA_JUSTIFY)
+    s_prog = st("prog", fontSize=8.4, leading=11.2)
+    s_act = st("act", fontSize=8.4, leading=11.2, textColor=colors.white)
+    s_foot = st("foot", fontSize=7.6, leading=9.8, textColor=MUTED)
+
+    class Dot(Flowable):
+        """The numbered purple disc, as on the web page."""
+        def __init__(self, n, d=8.4 * mm):
+            super().__init__()
+            self.n, self.d = n, d
+        def wrap(self, *_):
+            return self.d, self.d
+        def draw(self):
+            c = self.canv
+            c.setFillColor(PDEEP)
+            c.circle(self.d / 2, self.d / 2, self.d / 2, fill=1, stroke=0)
+            c.setFillColor(colors.white)
+            c.setFont(FB, 11)
+            c.drawCentredString(self.d / 2, self.d / 2 - 3.9, str(self.n))
+
+    doc = BaseDocTemplate(str(out), pagesize=A4,
+                          leftMargin=14 * mm, rightMargin=14 * mm, topMargin=12 * mm, bottomMargin=15 * mm,
+                          title="DysNet — five demands for people with dysmelia",
+                          author="DysNet", subject="Policy briefing", keywords=[digest])
+    width = doc.width
+
+    def furniture(canv, _doc):
+        canv.saveState()
+        y = 11 * mm
+        canv.setStrokeColor(PDEEP)
+        canv.setLineWidth(2.2)
+        canv.line(doc.leftMargin, y, doc.leftMargin + width, y)
+        canv.setFont(F, 7.2)
+        canv.setFillColor(MUTED)
+        canv.drawString(doc.leftMargin, y - 4.6 * mm, "The full reasoning, with sources: " + SITE.split("//")[-1] + "/voice/")
+        canv.drawRightString(doc.leftMargin + width, y - 4.6 * mm, "DysNet Ideell Förening · info@dysnet.org")
+        canv.restoreState()
+
+    doc.addPageTemplates([PageTemplate(id="brief", frames=[
+        Frame(doc.leftMargin, doc.bottomMargin, width, doc.height, leftPadding=0, rightPadding=0,
+              topPadding=0, bottomPadding=0)], onPage=furniture)])
+
+    lede_cell = [Paragraph("Policy briefing · Mission 3 · The voice of families", s_kicker),
+                 Spacer(1, 1.6 * mm),
+                 Paragraph("Five demands for people with dysmelia", s_title),
+                 Spacer(1, 1.2 * mm),
+                 Paragraph(BRIEF_LEDE, s_lede)]
+    logo_w = 29 * mm
+    head_left = Image(str(logo), width=logo_w, height=logo_w * 176 / 269) if logo.exists() else Spacer(1, 1)
+    story = [Spacer(1, 1 * mm), Table([[head_left, lede_cell]], colWidths=[logo_w + 8 * mm, width - logo_w - 8 * mm],
+                   style=TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                     ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                     ("RIGHTPADDING", (0, 0), (0, 0), 8 * mm),
+                                     ("RIGHTPADDING", (1, 0), (1, 0), 0),
+                                     ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                     ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5 * mm),
+                                     ("LINEBELOW", (0, 0), (-1, -1), 2.2, PDEEP)])),
+             Spacer(1, 4.2 * mm)]
+
+    body_w = width - 12.6 * mm
+    for i, d in enumerate(DEMANDS, 1):
+        prog = Table([[Paragraph(f'<font name="{FB}" size="7.4" color="#7222c2">PROGRESS LOOKS LIKE</font>  '
+                                 + d["progress"], s_prog)]], colWidths=[body_w],
+                     style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), PSOFT),
+                                       ("LINEBEFORE", (0, 0), (0, -1), 2.4, PURPLE),
+                                       ("LEFTPADDING", (0, 0), (-1, -1), 2.6 * mm),
+                                       ("RIGHTPADDING", (0, 0), (-1, -1), 2.6 * mm),
+                                       ("TOPPADDING", (0, 0), (-1, -1), 1.5 * mm),
+                                       ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5 * mm)]))
+        row = Table([[Dot(i), [Paragraph(d["title"], s_h2), Paragraph(d["brief"], s_body),
+                               Spacer(1, 1.9 * mm), prog]]],
+                    colWidths=[12.6 * mm, body_w],
+                    style=TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                      ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                      ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                                      ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                      ("BOTTOMPADDING", (0, 0), (-1, -1), 0)]))
+        story.append(KeepTogether(row))
+        if i < len(DEMANDS):
+            story += [Spacer(1, 2.4 * mm),
+                      Table([[""]], colWidths=[width], rowHeights=[0.4],
+                            style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#e6dcf2"))])),
+                      Spacer(1, 2.4 * mm)]
+
+    act = [Paragraph('<font name="%s" size="9.6" color="#ffffff">What you can do</font>' % FB, s_act),
+           Spacer(1, 1.4 * mm),
+           Paragraph("Name one of these five demands in your next meeting, consultation response or "
+                     "national plan, and tell us which: we will send the evidence behind it.", s_act),
+           Spacer(1, 1 * mm),
+           Paragraph("The registers that support these demands are public and free to cite — teratogens, "
+                     "care centres, population registries and our bibliography, at "
+                     + SITE.split("//")[-1] + "/knowledge/. Write to info@dysnet.org.", s_act)]
+    story += [Spacer(1, 3.6 * mm),
+              Table([[act]], colWidths=[width],
+                    style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), PDEEP),
+                                      ("LEFTPADDING", (0, 0), (-1, -1), 5 * mm),
+                                      ("RIGHTPADDING", (0, 0), (-1, -1), 5 * mm),
+                                      ("TOPPADDING", (0, 0), (-1, -1), 3.6 * mm),
+                                      ("BOTTOMPADDING", (0, 0), (-1, -1), 3.8 * mm)]))]
+
+    doc.build(story)
+    pages = out.read_bytes().count(b"/Type /Page\n") or out.read_bytes().count(b"/Type /Page")
+    return f"briefing PDF rebuilt ({out.stat().st_size // 1024} kB, {pages} page{'s' if pages != 1 else ''})"
+
+
 PAGES["/voice/"] = {
     "title": "Where DysNet sits",
     "desc": "DysNet's chosen seats in European rare-disease and disability bodies: EURORDIS, the European Disability Forum and ERN BOND, each with a named delegate, a written mandate and public reports.",
@@ -2009,39 +2242,11 @@ PAGES["/voice/"] = {
     <p class="eyebrow">Mission 3 · The voice of families</p>
     <h1 class="display">Our voice for people with dysmelia: where it counts, with a mandate.</h1>
     <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
+    <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a> <span>The briefing our delegates leave on the table: the five demands, what we ask of public authorities, and what would count as progress.</span></p>
 
     {opener("01", "Our voice", "Five demands, carried into every room we sit in.")}
     <p>What DysNet asks for on behalf of families, in the order we argue them. Open each demand to read why it matters and what would count as progress.</p>
-    <ol class="demands">
-      <li><details><summary><span class="demand-n">1</span><span>Recognition of dysmelia as a public health priority, and access to quality healthcare for every family affected</span></summary>
-        <div class="demand-body">
-          <p>The World Health Organization counts congenital disorders among the leading causes of newborn death and lifelong disability, and the 2010 World Health Assembly resolution on birth defects asks every state to build registration and surveillance systems, to develop expertise in prevention and care, and to support affected families (<a href="https://www.who.int/news-room/fact-sheets/detail/birth-defects" target="_blank" rel="noopener external">WHO fact sheet on congenital disorders</a>). Limb differences are among the most visible of these disorders and among the least studied.</p>
-          <p>We ask health authorities to name dysmelia in their rare-disease and disability plans, and to guarantee every child and adult a pathway to a competent team: diagnosis, surgery when useful, prosthetics, rehabilitation and psychological support, wherever the family lives. Progress looks like national pathways published, reference centres named, and waiting times measured.</p>
-        </div></details></li>
-      <li><details><summary><span class="demand-n">2</span><span>Universal coverage of prosthetics, research that reaches people with dysmelia, and an orphan medical devices framework that makes equipment affordable</span></summary>
-        <div class="demand-body">
-          <p>For many people with a limb difference, a prosthesis is what makes school, work, sport and everyday tasks possible. Coverage varies from full reimbursement to nothing at all, children outgrow devices that insurers replace too slowly, and the most advanced hands and arms are priced for a handful of users. Progress in robotics rarely reaches people with congenital differences, whose anatomy differs from that of amputees.</p>
-          <p>Medicines for rare diseases enjoy orphan status: fee reductions, protocol assistance and market exclusivity that make small markets worth serving. Devices for small populations have no equivalent, so a prosthetic component designed for a few thousand people is often never built. Europe took a first step in June 2024: guidance <a href="https://health.ec.europa.eu/document/download/daa1fc59-9d2c-4e82-878e-d6fdf12ecd1a_en?filename=mdcg_2024-10_en.pdf" target="_blank" rel="noopener external">MDCG 2024-10</a> defines an orphan device as one intended for a condition affecting no more than 12,000 people a year in the EU and eases the clinical evidence expected. It is guidance, not law, and it brings no fee relief, no priority assessment and no exclusivity.</p>
-          <p>We ask for coverage of a functional prosthesis for everyone who wants one, renewed at the pace of a growing child; for public research funding that names congenital limb difference; and for an orphan medical devices status in law, with fee relief and priority assessment, tied to transparent pricing and coverage of families’ out-of-pocket costs for the equipment they actually need, from a first passive hand to adapted bicycle or car controls. Progress looks like comparable reimbursement rules across countries, research calls that name our conditions, a legal definition and public register of orphan devices, and families’ remaining costs measured and falling.</p>
-        </div></details></li>
-      <li><details><summary><span class="demand-n">3</span><span>Registries that cover whole populations, interoperability and portability of their data, and personal data returned to the people concerned</span></summary>
-        <div class="demand-body">
-          <p>Population registries of congenital anomalies cover a fraction of births, even in countries that run them well: in France about one birth in six. Clusters of limb agenesis have been found and then lost for want of comparable data across borders, and the causes, environmental or otherwise, remain unproven either way. Data held in one registry can only answer that region’s questions.</p>
-          <p>We ask for registries that cover whole populations, that are funded to last, that are independent of any single interest, and that talk to each other across countries. We ask for interoperability: shared data models and common definitions, so that what one registry records can be read, compared and pooled by another, and so that aggregated data reach researchers without friction. We ask for portability: a registry must be able to move its data if its host disappears or its funding ends, and a family must be able to take its own record elsewhere. Any sharing of identifiable data must rest on the explicit, revocable consent of the person or family concerned.</p>
-          <p>We ask, finally, that personal data be returned to the people it describes. Each person living with dysmelia, or their guardian, should hold a copy of their own record, see who has used it, and decide what happens to it next. Our own <a href="/registry/">associative registry</a> exists to add the families’ knowledge to this picture, not to replace it. Progress looks like coverage figures rising, cluster investigations that can compare notes internationally, common data models adopted, published access procedures, consent that families can see and change, and records that families can download and carry with them.</p>
-        </div></details></li>
-      <li><details><summary><span class="demand-n">4</span><span>Research that looks for the causes of dysmelia, not only for how often it happens</span></summary>
-        <div class="demand-body">
-          <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its {BIBSTAT["total"]:,} references, {BIBSTAT["thalidomide"]} concern thalidomide, the one cause that was identified, sixty years ago. Another {BIBSTAT["epidemiology"]} measure how often the conditions occur. Outside thalidomide, {BIBSTAT["gene"]} titles name a gene, {BIBSTAT["medicine"]} name a medicine taken during pregnancy, and {BIBSTAT["environment"]} name an environmental exposure.</p>
-          <p>{spell(BIBSTAT["environment"]).capitalize()} papers, for every environmental hypothesis, across {BIBSTAT["env_span"]} years. The two oldest are the Cardiff clustering studies of {BIBSTAT["env_first"]}. Among the most recent are studies of air pollution, of heavy metals in maternal blood, and of the French clusters of transverse upper-limb agenesis. That is one paper every {BIBSTAT["env_years_per_paper"]:.1f} years, worldwide, for the question that comes first in every family’s mind.</p>          <p>Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly. Progress looks like calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.</p>
-          <p>What that literature currently supports, and where it stops, is set out in our review <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>: across large birth-defect cohorts a cause is identified in roughly one case in five, and for an isolated difference of a single limb it is usually none. That figure is the demand, in one number.</p>
-        </div></details></li>
-      <li><details><summary><span class="demand-n">5</span><span>Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects</span></summary>
-        <div class="demand-body">
-          <p>Thalidomide taught the lesson once: a product reached pregnant women before its effect on the unborn child was known, and thousands of children were born with limb differences. Families still learn about suspected teratogens after the fact, from a news report or a cluster investigation, rather than from a label or from the authority in charge.</p>
-          <p>We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards. Progress looks like a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences. No authority publishes such a list today; our <a href="/knowledge/teratogens/">teratogens register</a> gathers what the EU, California and the medicines agencies each list separately, with the legal status of every substance.</p>
-        </div></details></li>
-    </ol>
+    {demands_html()}
 
     {opener("02", "Where we sit", "The seats, with a mandate.")}
     <div class="grid cols-2" style="margin-top:var(--space-4)">
@@ -2260,7 +2465,7 @@ DOT_RATES = [
     ("Tibial hemimelia", 0.1, "Europe"),
     ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
 ]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
@@ -2318,7 +2523,7 @@ MAP_HERO = """
     <span class="l-office" data-layer="offices">DysNet office</span>
     <span class="l-zone" data-layer="zones">Area covered by a registry that records our conditions</span>
     <span class="l-zone-progress" data-layer="zones">Area a registry is starting to cover</span>
-    <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
+    <span class="l-centre" data-layer="centres">Care centre named by a member association or verified from its own institutional page (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
     <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/registries/">registries</a> pages.</span>
@@ -2690,7 +2895,7 @@ EXTRA_LD = {
     "/knowledge/understanding-dysmelia/": lambda: [conditions_ld()],
     "/knowledge/bibliography/": lambda: [dataset_ld("DysNet bibliography on congenital limb difference and dysmelia", "Peer-reviewed references on limb differences, thalidomide embryopathy and their causes, verified against PubMed and Crossref; sources: Orphanet epidemiology, member associations' and registries' websites, fixed PubMed queries.", "/knowledge/bibliography/", "bibliography.json", ["dysmelia", "limb reduction defects", "thalidomide embryopathy", "bibliography", "PubMed"], f"{len(BIB.get('entries', []))} references")],
     "/knowledge/registries/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/registries/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
-    "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference named by DysNet member associations", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the association that names them.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
+    "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference in the DysNet register", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the source that names or verifies each one.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence and regulatory status per jurisdiction.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
@@ -2761,6 +2966,9 @@ def build():
         cname.write_text("www.dysnet.org\n", encoding="utf-8")
     elif cname.exists():
         cname.unlink()
+
+    # One-page briefing PDF of the five demands, rendered from the same data
+    print("  " + build_brief_pdf())
 
     # robots.txt — live site: allow all, point crawlers to the sitemap
     (ROOT / "robots.txt").write_text(

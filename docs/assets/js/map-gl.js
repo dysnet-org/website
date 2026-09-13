@@ -246,7 +246,7 @@
     var host = c.url ? c.url.split("//").pop().split("/")[0].replace(/^www\./, "") : "";
     return '<p class="dp-main"><strong>' + esc(c.name) + '</strong>' + (c.name_local && c.name_local !== "null" ? '<br><span class="dp-local">' + esc(c.name_local) + '</span>' : '') + '</p>' +
            '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
-           '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + 'named by ' + esc(c.via) + '</p>';
+           '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + esc(c.via_verb || 'named by') + ' ' + esc(c.via) + '</p>';
   }
   attachHover("centre-dot", centreHtml, function (e) { return e.features[0].geometry.coordinates; }, "centre-popup");
 

@@ -865,7 +865,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
 
 PAGES["/knowledge/registries/"] = {
     "title": "Registries",
-    "desc": "Registries recording congenital limb differences: the registries listed on Orphanet for our conditions, the EUROCAT network and the seven French population registries checked against Santé publique France.",
+    "desc": "Registries recording congenital limb differences: the registries listed on Orphanet for our conditions, the EUROCAT network, the seven French population registries checked against Santé publique France, and what North America and India record.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/registries/", "Registries")],
     "body": f"""
 <section>
@@ -873,7 +873,7 @@ PAGES["/knowledge/registries/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 2 · Registries <span class="badge live">updated Sep 2026</span></p>
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
-    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-four areas are drawn, for the registries that are coded for our conditions, plus the two North American ones below. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
+    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-five areas are drawn, for the registries that are coded for our conditions, plus the two North American ones and India below. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
 
     <div class="tick"></div>
@@ -930,6 +930,34 @@ PAGES["/knowledge/registries/"] = {
         <p class="src">Bedard T, Lowry RB, Sibbald B, et al. <em>Am J Med Genet A</em> 2015;167A(11):2599-2609 · <a href="https://doi.org/10.1002/ajmg.a.37240" target="_blank" rel="noopener external">doi:10.1002/ajmg.a.37240</a></p>
       </article>
     </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">India</p>
+    <h2 class="h2">India counts births by the million, and limb differences hardly at all.</h2>
+    <p>About 600,000 children a year are born in India with a birth anomaly. There is no national birth-defects surveillance system and no registry dedicated to limb difference. What exists is a hospital-based reporting network, a sentinel surveillance scheme, a national child-screening programme that does not look for limb reduction defects, and, since March 2026, a national registry being designed. None of them is governed by the families concerned. DysNet has no member association in India, so each entry below is verified from the source named with it, the same rule the <a href="/knowledge/care-centres/">care centres</a> register follows.</p>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>What India records today <span class="badge live">2025 review</span></h3>
+        <p>A narrative review of birth-defect reporting in India finds three systems and no national surveillance. The WHO South-East Asia Region newborn and birth-defects surveillance, running since 2014, is passive and hospital-based: 70 non-randomly selected hospitals in 2020, 1,545,258 births reported and 18,006 birth defects detected, a prevalence of 1.16 per cent. Limb reduction defects are among the conditions it records. The national child-screening programme, Rashtriya Bal Swasthya Karyakram, has screened 157.36 million children since 2013 through mobile health teams, and the nine birth defects it looks for at birth include talipes and developmental dysplasia of the hip, but not limb reduction defects. A child born without a hand is not sought by the programme built to find children who need care.</p>
+        <p class="src">Kar A. Birth defects reporting and surveillance in India: a narrative review. <em>J Community Genet</em> 2025;16(1):5-14 &middot; <a href="https://doi.org/10.1007/s12687-024-00760-5" target="_blank" rel="noopener external">doi:10.1007/s12687-024-00760-5</a></p>
+      </article>
+      <article class="entry">
+        <h3>The Birth Defects Registry of India <span class="badge live">since 2001</span></h3>
+        <p>Set up in 2001 by the Fetal Care Research Foundation in Chennai, the BDRI is passive and hospital-based: member hospitals report the anomalies they see, nodal hospitals coordinating the participating ones in each region. It reached 750 reporting hospitals in 2016, the widest birth-defects network the country has had. The 2025 review notes that no updated record of the surveillance could be found. That is the fragility any registry has to reckon with, ours included: a registry without sustained funding stops being a registry.</p>
+        <p class="src">Fetal Care Research Foundation &middot; <a href="https://fcrf.org.in/bdri_acvs.asp" target="_blank" rel="noopener external">fcrf.org.in &middot; the registry&rsquo;s activities</a> &middot; read 13 September 2026, with Kar 2025 above for the figures</p>
+      </article>
+      <article class="entry">
+        <h3>A national registry is being designed right now <span class="badge live">March 2026</span></h3>
+        <p>On 2 March 2026, at the India Habitat Centre in New Delhi, Smile Train India and the Birth Defects Research Foundation launched the Birth Anomalies Network of India. A proposed National Birth Anomalies Registry is at its centre, meant to produce prevalence data, identify preventable risk factors and guide where resources go, and a whitepaper setting out a roadmap for a national task force was released the same day. The network states that it brings clinicians, researchers, caregivers, policymakers and civil society onto one platform. That is the moment at which families can still shape how a country decides to count them, and the reason India appears on this register before it appears in our network.</p>
+        <p class="src">Smile Train India and the Birth Defects Research Foundation, Pune (Dr Anita Kar, founder-director) &middot; <a href="https://www.tribuneindia.com/news/business/smile-train-india-and-birth-defects-research-foundation-launch-birth-anomalies-network-of-india-2-2/" target="_blank" rel="noopener external">announcement, 5 March 2026</a> &middot; <a href="https://www.birthdefectsindia.com/" target="_blank" rel="noopener external">birthdefectsindia.com</a> &middot; read 13 September 2026</p>
+      </article>
+      <article class="entry">
+        <h3>Rare diseases: the ICMR registry <span class="badge live">since 2019</span></h3>
+        <p>The ICMR National Registry for Rare and other Inherited Disorders, begun in November 2019 with AIIMS New Delhi, collects demography, phenotype, natural history and outcomes across six groups of conditions, skeletal dysplasias among them. Nineteen centres contribute and more than 4,000 cases have been recorded. A limb malformation reaches it only when it belongs to a syndrome one of those groups covers, the same &ldquo;by classification&rdquo; route as the European rare-disease registries in the table above.</p>
+        <p class="src">Indian Council of Medical Research &middot; <a href="https://rdrdb.icmr.org.in/registry/" target="_blank" rel="noopener external">rdrdb.icmr.org.in</a> &middot; read 13 September 2026</p>
+      </article>
+    </div>
+
     {REGISTER_FOOT}
   </div>
 </section>
@@ -1043,7 +1071,7 @@ PAGES["/knowledge/care-centres/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
+    <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Sep 2026</span></p>
     <h1 class="display">Care centres for limb difference: where expertise lives.</h1>
     <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website or visited by the board, and appears as an orange marker on the <a href="/">world map</a> on our home page. Where DysNet has no member association yet, a centre earns its place differently: its own institutional page must state congenital limb difference, limb reconstruction or prosthetic fitting in its scope, and those entries say <em>verified from</em> rather than <em>named by</em>, so you can see at a glance which are community-validated and which are not. The dedicated children’s hand clinics of the United Kingdom and Ireland come from the directory that the British Society for Surgery of the Hand publishes for families, which our member association Reach points parents to when they ask for a referral. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 

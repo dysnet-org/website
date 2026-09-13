@@ -95,6 +95,28 @@ for pmid, (topics, note) in REVIEW_SEED.items():
     for topic in topics:
         add(pmid, None, topic, note, via="DysNet")
 
+# Every paper cited by the "Causes of dysmelia" review, pinned. The standing PubMed queries are live,
+# so their result sets shift a little between runs: on 13 September 2026 a rebuild silently dropped two
+# papers the review cites, and the site build failed rather than publishing a dangling citation. Pinning
+# the cited set here means a rebuild can add references but can never remove one the review depends on.
+# Provenance is not overwritten: add() unions via/notes, so a paper found by a query keeps that origin
+# and gains this note. Regenerate with: grep -o 'cref(...)' in build-demo.py (see causes_sources_html).
+REVIEW_CITED = (
+    "1481865", "1805430", "3533366", "4025389", "7245088", "7856645", "7973488", "9637807", "10826630", "12620993",
+    "12843316", "14632304", "14745921", "14872406", "15980115", "16463421", "16750609", "16906563", "17555519",
+    "17676605", "18000913", "19067400", "19433787", "19672683", "21344627", "22434686", "22495965", "22821755",
+    "22965740", "24134526", "24478176", "24480684", "24885342", "25131394", "25132072", "25344219", "26043938",
+    "26347425", "26581570", "27751757", "27773741", "27801979", "27865944", "27884122", "28161597", "28504423",
+    "28736902", "28846100", "29263794", "29377641", "30078491", "30190590", "30589520", "30856359", "31181251",
+    "31218730", "31388035", "31395945", "31546130", "31591562", "32304852", "32335054", "32414180", "32591344",
+    "32758259", "32877749", "32954639", "32991492", "33043642", "33470442", "33509875", "33565281", "33847750",
+    "34060120", "34202629", "35104296", "35414337", "36369770", "36584346", "36804539", "37226469", "37285827",
+    "37445217", "37647086", "38336121", "38497990", "38671254", "39168984", "39679807", "39937006", "40198353",
+    "40233106", "41274663", "41554827", "41557582", "41951339",
+)
+for pmid in REVIEW_CITED:
+    add(pmid, None, None, "cited by the Causes of dysmelia review", via="DysNet")
+
 # ─── 3. Member association websites ─────────────────────────────────────────
 # Vocabulary of the conditions described on the site (keyword → ORPHAcode or None for the family).
 VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build-demo.py); None = the dysmelia family in general

@@ -84,9 +84,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -175,9 +177,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -436,9 +440,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -551,9 +557,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -842,11 +850,10 @@
    "codes": [],
    "topics": [
     "causes",
-    "prosthetics",
-    "review"
+    "epidemiology"
    ],
    "notes": [
-    "research signed from Holland Bloorview Kids Rehabilitation Hospital, Toronto"
+    "Environmental scan of limb loss rehabilitation centres across Canada"
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
@@ -966,9 +973,11 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review",
     "published on the website of Stichting NESOS (Netherlands)"
    ],
    "via": [
+    "DysNet",
     "PubMed search",
     "Stichting NESOS (Netherlands)"
    ]
@@ -1058,9 +1067,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -1407,9 +1418,11 @@
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -1489,9 +1502,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -1632,9 +1647,11 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -1868,9 +1885,11 @@
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -1933,9 +1952,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -2285,7 +2306,8 @@
     "epidemiology"
    ],
    "notes": [
-    "EURAP: major malformations after antiseizure medication monotherapy"
+    "EURAP: major malformations after antiseizure medication monotherapy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -2343,9 +2365,11 @@
     "meta"
    ],
    "notes": [
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -2520,9 +2544,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -2614,10 +2640,12 @@
    "notes": [
     "PubMed search on studies from the countries of our member associations",
     "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)",
+    "cited by the Causes of dysmelia review",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), EUROCAT (EU RD Platform, JRC) (Italy), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland), REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
    ],
    "via": [
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "DysNet",
     "EUROCAT (EU RD Platform, JRC) (Italy)",
     "Orphanet",
     "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)",
@@ -2982,9 +3010,11 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -3013,7 +3043,8 @@
     "review"
    ],
    "notes": [
-    "Cochrane: malformation outcomes after antiepileptic monotherapy in pregnancy"
+    "Cochrane: malformation outcomes after antiepileptic monotherapy in pregnancy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -3192,9 +3223,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -3225,9 +3258,11 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review",
     "published on the website of Stichting NESOS (Netherlands)"
    ],
    "via": [
+    "DysNet",
     "PubMed search",
     "Stichting NESOS (Netherlands)"
    ]
@@ -3367,10 +3402,10 @@
    ],
    "codes": [],
    "topics": [
-    "prosthetics"
+    "living"
    ],
    "notes": [
-    "research signed from Holland Bloorview Kids Rehabilitation Hospital, Toronto"
+    "Running-specific prosthesis use, qualitative study"
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
@@ -4119,10 +4154,12 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
    ],
    "via": [
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "DysNet",
     "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)",
     "PubMed search"
    ]
@@ -4214,7 +4251,8 @@
     "meta"
    ],
    "notes": [
-    "Maternal diabetes and specific congenital anomalies, over 80 million births"
+    "Maternal diabetes and specific congenital anomalies, over 80 million births",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -4548,9 +4586,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -4657,10 +4697,10 @@
    "pubtypes": [],
    "codes": [],
    "topics": [
-    "living"
+    "clinical"
    ],
    "notes": [
-    "research signed from Holland Bloorview Kids Rehabilitation Hospital, Toronto"
+    "GOAL-LD questionnaire for lower-limb differences"
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
@@ -4750,9 +4790,11 @@
     "epidemiology"
    ],
    "notes": [
-    "REMERA's own analysis of the Ain cluster of unilateral isolated transverse upper limb reduction defects"
+    "REMERA's own analysis of the Ain cluster of transverse upper-limb agenesis",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "REMERA (remera.fr)"
    ]
   },
@@ -5020,9 +5062,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -5263,9 +5307,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -5292,9 +5338,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -5440,9 +5488,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -5615,9 +5665,11 @@
     "genetics"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ],
    "via": [
+    "DysNet",
     "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
@@ -5646,9 +5698,11 @@
     "genetics"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ],
    "via": [
+    "DysNet",
     "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ]
   },
@@ -5789,9 +5843,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -5995,7 +6051,8 @@
     "review"
    ],
    "notes": [
-    "Limb development: the apical ectodermal ridge and the three axes"
+    "Limb development: the apical ectodermal ridge and the three axes",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -6089,10 +6146,12 @@
     "review"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of AISP – Sindrome di Poland (Italy), PiP UK (United Kingdom)"
    ],
    "via": [
     "AISP – Sindrome di Poland (Italy)",
+    "DysNet",
     "PiP UK (United Kingdom)"
    ]
   },
@@ -6119,9 +6178,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -6211,9 +6272,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -6333,9 +6396,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -6364,9 +6429,11 @@
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -6453,9 +6520,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -6514,9 +6583,11 @@
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -7234,7 +7305,8 @@
     "review"
    ],
    "notes": [
-    "Fetal akinesia deformation sequence: aetiology, diagnosis and management"
+    "Fetal akinesia deformation sequence: aetiology, diagnosis and management",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -7265,9 +7337,11 @@
     "meta"
    ],
    "notes": [
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -7360,9 +7434,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -7422,9 +7498,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -7604,9 +7682,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -7694,9 +7774,11 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review",
     "published on the website of V.I.TA – Vittime Talidomide Italia (Italy)"
    ],
    "via": [
+    "DysNet",
     "PubMed search",
     "V.I.TA – Vittime Talidomide Italia (Italy)"
    ]
@@ -7988,7 +8070,7 @@
     "living"
    ],
    "notes": [
-    "research signed from Holland Bloorview Kids Rehabilitation Hospital, Toronto"
+    "Participation in sports for children with limb absence"
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
@@ -8050,9 +8132,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8113,10 +8197,12 @@
     "review"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of AISP – Sindrome di Poland (Italy)"
    ],
    "via": [
-    "AISP – Sindrome di Poland (Italy)"
+    "AISP – Sindrome di Poland (Italy)",
+    "DysNet"
    ]
   },
   {
@@ -8229,9 +8315,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8494,9 +8582,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8558,9 +8648,11 @@
     "review"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8585,6 +8677,7 @@
     "review"
    ],
    "notes": [
+    "Cited by the Causes of dysmelia review",
     "cited by the Causes of dysmelia review"
    ],
    "via": [
@@ -8614,9 +8707,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8729,9 +8824,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8874,9 +8971,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -8905,9 +9004,11 @@
     "meta"
    ],
    "notes": [
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -9213,9 +9314,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -9358,10 +9461,12 @@
     "epidemiology"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of AISP – Sindrome di Poland (Italy)"
    ],
    "via": [
-    "AISP – Sindrome di Poland (Italy)"
+    "AISP – Sindrome di Poland (Italy)",
+    "DysNet"
    ]
   },
   {
@@ -9626,9 +9731,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -9776,9 +9883,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -10195,10 +10304,12 @@
     "epidemiology"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
-    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "DysNet"
    ]
   },
   {
@@ -10647,9 +10758,11 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review",
     "published on the website of Stichting NESOS (Netherlands)"
    ],
    "via": [
+    "DysNet",
     "PubMed search",
     "Stichting NESOS (Netherlands)"
    ]
@@ -10799,9 +10912,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -10861,10 +10976,12 @@
     "genetics"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of AISP – Sindrome di Poland (Italy)"
    ],
    "via": [
-    "AISP – Sindrome di Poland (Italy)"
+    "AISP – Sindrome di Poland (Italy)",
+    "DysNet"
    ]
   },
   {
@@ -10916,9 +11033,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -11007,10 +11126,12 @@
     "genetics"
    ],
    "notes": [
+    "cited by the Causes of dysmelia review",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
-    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "DysNet"
    ]
   },
   {
@@ -11068,10 +11189,12 @@
    ],
    "notes": [
     "cited by Orphanet for Holt-Oram syndrome (prevalence at birth, Europe)",
+    "cited by the Causes of dysmelia review",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "DysNet",
     "Orphanet"
    ]
   },
@@ -11185,9 +11308,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -11839,9 +11964,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -12139,9 +12266,11 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -12170,9 +12299,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -12440,9 +12571,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -12737,9 +12870,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -12892,9 +13027,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -13225,10 +13362,10 @@
    ],
    "codes": [],
    "topics": [
-    "living"
+    "prosthetics"
    ],
    "notes": [
-    "research signed from Holland Bloorview Kids Rehabilitation Hospital, Toronto"
+    "Prosthesis funding structures and their effect on use"
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
@@ -13653,7 +13790,7 @@
     "review"
    ],
    "notes": [
-    "ocular findings of thalidomide embryopathy, listed by Ex-Center"
+    "Ocular findings of thalidomide embryopathy, listed by Ex-Center"
    ],
    "via": [
     "Ex-Center (ex-center.org)"
@@ -14230,9 +14367,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -14323,9 +14462,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -14417,7 +14558,7 @@
     "review"
    ],
    "notes": [
-    "ophthalmological manifestations of thalidomide and misoprostol, listed by Ex-Center"
+    "Ophthalmological manifestations of thalidomide and misoprostol, listed by Ex-Center"
    ],
    "via": [
     "Ex-Center (ex-center.org)"
@@ -14449,9 +14590,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15168,9 +15311,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15197,9 +15342,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15285,9 +15432,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15497,9 +15646,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15587,9 +15738,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -15764,7 +15917,8 @@
     "meta"
    ],
    "notes": [
-    "Misoprostol and congenital anomalies: systematic review and meta-analysis"
+    "Misoprostol and congenital anomalies: systematic review and meta-analysis",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -15885,9 +16039,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -16452,9 +16608,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -16691,9 +16849,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -16722,9 +16882,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -16848,9 +17010,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -16914,9 +17078,11 @@
     "genetics"
    ],
    "notes": [
-    "PubMed title search on thalidomide embryopathy"
+    "PubMed title search on thalidomide embryopathy",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -18363,9 +18529,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -19283,7 +19451,8 @@
     "clinical"
    ],
    "notes": [
-    "Misoprostol in pregnancy and Möbius sequence"
+    "Misoprostol in pregnancy and Möbius sequence",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
     "DysNet"
@@ -20427,9 +20596,11 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -20634,9 +20805,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -21350,9 +21523,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search on studies from the countries of our member associations"
+    "PubMed search on studies from the countries of our member associations",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -21610,9 +21785,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -23136,9 +23313,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -23595,9 +23774,11 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },
@@ -24708,9 +24889,11 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ]
   },

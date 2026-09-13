@@ -224,6 +224,17 @@
    "status": "covered",
    "source": "Kaufman KR, Bernhardt K, Murphy S, et al. Arch Rehabil Res Clin Transl 2024;6(4):100356, doi:10.1016/j.arrct.2024.100356",
    "website": "https://www.llpr.org/"
+  },
+  {
+   "registry": "BDRI / BIND",
+   "label": "India: hospital-based birth-defects reporting, and a national registry proposed",
+   "country": "India",
+   "iso3": "IND",
+   "admin1": [],
+   "area": "India, national",
+   "status": "in_progress",
+   "website": "https://fcrf.org.in/bdri_acvs.asp",
+   "source": "Kar A. Birth defects reporting and surveillance in India: a narrative review. J Community Genet 2025;16(1):5-14, doi:10.1007/s12687-024-00760-5; Birth Anomalies Network of India, launched 2 March 2026"
   }
  ]
 }

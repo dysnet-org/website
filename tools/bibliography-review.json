@@ -245,6 +245,13 @@
    "status": "unresolved: no PubMed or Crossref record"
   },
   {
+   "id": "10.1016/j.jcms.2023.02.003",
+   "members": [
+    "German registry for congenital thrombocytopenia (Germany)"
+   ],
+   "status": "lookup failed: KeyError"
+  },
+  {
    "id": "10.1080/21678707.2023.2241347",
    "title": "Real world data for rare diseases research: The beginner’s guide to registries",
    "members": [

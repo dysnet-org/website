@@ -243,6 +243,15 @@ for e in entries.values():
 WCACHE_PATH.write_text(json.dumps(WCACHE, ensure_ascii=False, indent=0), encoding="utf-8")
 print(f"Wikipedia links: {n_wiki} of {len(entries)} entries")
 
+# ── Proposition 65 delistings: the substance was listed once and the listing was removed ──────
+DELISTED = re.compile(r"\s*\[?\s*Delisted\s+([A-Z][a-z]+ \d{1,2}, \d{4})\b.*$", re.I)
+for e in entries.values():
+    m = DELISTED.search(e["name"])
+    if not m: continue
+    e["delisted"] = m.group(1)
+    e["name"] = DELISTED.sub("", e["name"]).strip(" ,;[")
+    e["status"].pop("p65", None)   # a withdrawn listing no longer supports an evidence level
+
 # ── merge, classify, write ────────────────────────────────────────────────────
 LEVEL_ORDER = {"known": 0, "presumed": 1, "suspected": 2}
 out = []

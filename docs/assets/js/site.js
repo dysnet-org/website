@@ -556,8 +556,8 @@
       return '<span class="tera-src src-' + s.c + '">' + SRC_SHORT[s.c] + '<small> · ' + esc(det) + '</small></span>';
     }).join("");
     var chips = [];
-    if (clp) { chips.push('<span class="st st-label">EU: hazard label required</span>'); if (clp.cat === "2") chips.push('<span class="st st-ok">EU: sale to the public allowed</span><span class="st st-warn">EU: cosmetics case by case</span>'); else chips.push('<span class="st st-ban">EU: no sale to the public</span><span class="st st-ban">EU: banned in cosmetics</span><span class="st st-ban">EU: no pesticide approval</span><span class="st st-work">EU: workplace limits</span>'); }
-    if (r.s.indexOf("p65") !== -1) chips.push('<span class="st st-warn">California: warning required</span>');
+    if (clp) { chips.push('<span class="st st-label">EU: hazard label required</span>'); if (clp.cat === "2") chips.push('<span class="st st-ok">EU: sale to the public allowed</span><span class="st st-warn">EU: cosmetics case by case</span>'); else chips.push('<span class="st st-ban">EU: not supplied to the public above limits</span><span class="st st-ban">EU: prohibited in cosmetics</span><span class="st st-ban">EU: not approvable as a pesticide</span><span class="st st-work">EU: workplace controls</span>'); }
+    if (r.s.indexOf("p65") !== -1) chips.push(r.del ? '<span class="st st-ok">California: delisted ' + esc(r.del) + ', no warning required</span>' : '<span class="st st-warn">California: warning required</span>');
     if (clp && clp.cat !== "2") chips.push('<span class="st st-ban">ChemFORWARD: band F by list screening</span>');
     Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
     var details = r.src.map(function (s) {
@@ -566,7 +566,7 @@
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
-    if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + CA + "</li>");
+    if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
     if (r.med && r.atc && r.atc.length) details.push('<li><strong>Medicine:</strong> ' + (r.mev ? '\u201c' + esc(r.mev) + '\u201d ' : "") + 'ATC ' + esc(r.atc.join(", ")) + ', the WHO classification of medicines.</li>');

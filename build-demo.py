@@ -414,10 +414,13 @@ def tera_status_chips(e):
         cat = clp["category"].replace("Repr. ", "")
         chips.append(("EU: hazard label required", "st-label"))
         if cat in ("1A", "1B"):
-            chips += [("EU: no sale to the public", "st-ban"), ("EU: banned in cosmetics", "st-ban"), ("EU: no pesticide approval", "st-ban"), ("EU: workplace limits", "st-work")]
+            chips += [("EU: not supplied to the public above limits", "st-ban"), ("EU: prohibited in cosmetics", "st-ban"),
+                      ("EU: not approvable as a pesticide", "st-ban"), ("EU: workplace controls", "st-work")]
         else:
             chips += [("EU: sale to the public allowed", "st-ok"), ("EU: cosmetics case by case", "st-warn")]
-    if any(x["code"] == "p65" for x in e["sources"]): chips.append(("California: warning required", "st-warn"))
+    if any(x["code"] == "p65" for x in e["sources"]):
+        chips.append((f"California: delisted {e['delisted']}, no warning required", "st-ok") if e.get("delisted")
+                     else ("California: warning required", "st-warn"))
     if clp and cat in ("1A", "1B"): chips.append(("ChemFORWARD: band F by list screening", "st-ban"))
     codes = {x["code"] for x in e["sources"]}
     for place, val in e["jurisdictions"].items():
@@ -447,7 +450,10 @@ def tera_item_html(e):
         if src.get("url"): line += f' <a href="{src["url"]}"{" target=_blank rel=\"noopener external\"" if src["url"].startswith("http") else ""}>source ↗</a>'
         details.append(f"<li>{line}</li>")
     for place, val in e["jurisdictions"].items():
-        details.append(f"<li><strong>{place}:</strong> {' '.join(val.values()) if isinstance(val, dict) else val}</li>")
+        txt = " ".join(val.values()) if isinstance(val, dict) else val
+        if place == "California (USA)" and e.get("delisted"):
+            txt = f"Listed as a developmental toxicant and delisted on {e['delisted']}; no warning is required today. " + txt
+        details.append(f"<li><strong>{place}:</strong> {txt}</li>")
     clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
     if clp and clp["category"].replace("Repr. ", "") in ("1A", "1B"):
         details.append('<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>')
@@ -475,7 +481,7 @@ def teratogens_html():
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
-        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "mev": e.get("medicine_evidence", ""), "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or ""}
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "del": e.get("delisted", ""), "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "mev": e.get("medicine_evidence", ""), "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or ""}
     records = [compact(e) for e in E]
     html_first = [tera_item_html(e) for e in E[:40]]
     c = TERA.get("counts", {})
@@ -1986,6 +1992,7 @@ PAGES["/voice/"] = {
           <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its 1,068 references, 439 concern thalidomide, the one cause that was identified, sixty years ago. Another 209 measure how often the conditions occur. Outside thalidomide, 105 titles name a gene, 49 name a medicine taken during pregnancy, and 36 name an environmental exposure.</p>
           <p>Thirty-six papers, for every environmental hypothesis, across fifty years. Two of them are the Cardiff clustering studies of 1973. The most recent are on air pollution, on heavy metals in maternal blood, on smoking, and on the French clusters of transverse upper-limb agenesis. That is roughly one study a year, worldwide, for the question that comes first in every family’s mind.</p>
           <p>Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly. Progress looks like calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.</p>
+          <p>What that literature currently supports, and where it stops, is set out in our review <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>: across large birth-defect cohorts a cause is identified in roughly one case in five, and for an isolated difference of a single limb it is usually none. That figure is the demand, in one number.</p>
         </div></details></li>
       <li><details><summary><span class="demand-n">5</span><span>Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects</span></summary>
         <div class="demand-body">

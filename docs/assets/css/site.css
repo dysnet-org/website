@@ -623,6 +623,9 @@ table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-pu
 ol.sources { font-size: var(--text-small); color: var(--dys-muted); padding-left: 1.4rem; max-width: var(--prose-max); }
 ol.sources li { margin-bottom: 0.45rem; scroll-margin-top: 8rem; }
 ol.sources a { word-break: break-all; }
+sup.ref { line-height: 0; white-space: nowrap; }
+sup.ref a { text-decoration: none; font-weight: 700; color: var(--dys-purple-text); padding: 0 0.05rem; }
+sup.ref a:hover, sup.ref a:focus-visible { text-decoration: underline; }
 
 /* ── Estimated-people dots: selector + legend ───────────────────────── */
 .map-dots { background: rgba(42,13,71,0.6); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); backdrop-filter: blur(6px); color: #e9d8fb; max-width: 22rem; }

@@ -111,6 +111,7 @@ SEO_TITLES = {
     "/knowledge/care-centres/": "Care centres for congenital limb difference · DysNet",
     "/knowledge/teratogens/": "Teratogens register: substances of concern · DysNet",
     "/knowledge/understanding-dysmelia/": "Understanding dysmelia: conditions and ORPHAcodes · DysNet",
+    "/knowledge/causes-of-dysmelia/": "Causes of dysmelia: what the evidence shows · DysNet",
     "/knowledge/guides/patient-owned-registry/": "What is a patient-owned registry? · DysNet",
     "/registry/": "Patient-owned registry of limb malformations · DysNet",
     "/voice/": "Our voice: five demands for people with dysmelia · DysNet",
@@ -125,12 +126,15 @@ SEO_TITLES = {
 }
 PEOPLE_LD = []  # filled by person_card() as the People page is defined
 
+# Referenced, dated long-form pieces: Article schema and published/modified dates, like the /guides/ series.
+ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/"}
+
 
 def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
     full = SEO_TITLES.get(path) or (title if BRAND in title else f"{title} · {BRAND}")
     canonical = SITE + path
     dates = dates or {}
-    is_article = "/guides/" in path
+    is_article = "/guides/" in path or path in ARTICLE_PATHS
     page_ld = {"@context": "https://schema.org", "@type": "Article" if is_article else "WebPage", "name": full.split(" · ")[0], "headline": full.split(" · ")[0],
                "url": canonical, "description": desc, "inLanguage": "en", "isPartOf": {"@type": "WebSite", "url": SITE + "/", "name": BRAND},
                "publisher": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": SITE + "/about/#board"}}
@@ -233,6 +237,7 @@ FOOTER = f"""</main>
           <li><a href="/knowledge/ongoing-studies/">Studies</a></li>
           <li><a href="/knowledge/resources/">Resources</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
+          <li><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></li>
         </ul>
       </div>
       <div>
@@ -689,6 +694,10 @@ PAGES["/knowledge/"] = {
       <div class="card acc-library">
         <h3 class="h3"><a href="/knowledge/resources/">Resources</a></h3>
         <p>Guides, surveys and reports that are not research papers: Orphanet, the Rare Barometer, the European registry recommendations, our conference proceedings.</p>
+      </div>
+      <div class="card acc-research">
+        <h3 class="h3"><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></h3>
+        <p>A fully referenced review of what causes a limb to form differently: genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces, and how often a cause is actually found.</p>
       </div>
     </div>
   </div>
@@ -1311,6 +1320,337 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening and EX-Center in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 
     {annex_html()}
+  </div>
+</section>
+""",
+}
+
+# ───────────────── Causes of dysmelia · referenced review ─────────────────
+# References are resolved against the bibliography register (tools/bibliography.json) by DOI,
+# or by "pmid:NNNN" for the few entries PubMed carries without one, so citations can never
+# drift from the register. The handful of papers not yet in the register are listed in
+# CAUSES_EXTRA and marked with a dagger on the page. Numbering follows first appearance:
+# cref() is called while the body f-string is evaluated, left to right.
+
+BIB_BY_DOI = {(e.get("doi") or "").lower(): e for e in BIB.get("entries", []) if e.get("doi")}
+BIB_BY_PMID = {str(e.get("pmid")): e for e in BIB.get("entries", []) if e.get("pmid")}
+
+CAUSES_EXTRA = {  # verified against PubMed, September 2026; candidates for the register
+    "10.1631/jzus.b2000285": ("Lin GH, Zhang L", "Apical ectodermal ridge regulates three principal axes of the developing limb", "Journal of Zhejiang University. Science B", "2020", "21(10)", "757-766"),
+    "10.1001/jamaneurol.2024.0258": ("Battino D, Tomson T, Bonizzoni E, et al.", "Risk of major congenital malformations and exposure to antiseizure medication monotherapy", "JAMA Neurology", "2024", "81(5)", "481-489"),
+    "10.1002/14651858.cd010224.pub3": ("Bromley R, Adab N, Bluett-Duncan M, et al.", "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child", "Cochrane Database of Systematic Reviews", "2023", "8", "CD010224"),
+    "10.1371/journal.pmed.1003900": ("Zhang TN, Huang XM, Zhao XY, et al.", "Risks of specific congenital anomalies in offspring of women with diabetes: a systematic review and meta-analysis of population-based studies including over 80 million births", "PLoS Medicine", "2022", "19(2)", "e1003900"),
+    "10.1016/s0029-7844(02)02059-8": ("Harger JH, Ernest JM, Thurnau GR, et al.", "Frequency of congenital varicella syndrome in a prospective cohort of 347 pregnant women", "Obstetrics and Gynecology", "2002", "100(2)", "260-265"),
+    "10.1056/nejm199806253382604": ("Pastuszak AL, Schüler L, Speck-Martins CE, et al.", "Use of misoprostol during pregnancy and Möbius’ syndrome in infants", "New England Journal of Medicine", "1998", "338(26)", "1881-1885"),
+    "10.1016/j.reprotox.2006.03.015": ("da Silva Dal Pizzol T, Knop FP, Mengue SS", "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis", "Reproductive Toxicology", "2006", "22(4)", "666-671"),
+    "10.1002/pd.5505": ("Niles KM, Blaser S, Shannon P, Chitayat D", "Fetal arthrogryposis multiplex congenita / fetal akinesia deformation sequence (FADS): aetiology, diagnosis, and management", "Prenatal Diagnosis", "2019", "39(9)", "720-731"),
+}
+
+CAUSES_REF_ORDER = []
+
+
+def _causes_ref(key):
+    """Resolve a citation key to (authors, title, journal, year, volume, pages, link, in_register)."""
+    k = key.lower()
+    e = BIB_BY_PMID.get(key[5:]) if key.startswith("pmid:") else BIB_BY_DOI.get(k)
+    if e:
+        link = (f'https://doi.org/{e["doi"]}' if e.get("doi") else f'https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/')
+        return (", ".join(e["authors"]), e["title"], e["journal"], str(e["year"]), e.get("volume") or "", e.get("pages") or "", link, True)
+    if k in CAUSES_EXTRA:
+        a, t, j, y, v, p = CAUSES_EXTRA[k]
+        return (a, t, j, y, v, p, f"https://doi.org/{key}", False)
+    raise SystemExit(f"causes-of-dysmelia: citation {key!r} is in neither the bibliography register nor CAUSES_EXTRA")
+
+
+def cref(*keys):
+    ns = []
+    for key in keys:
+        _causes_ref(key)  # fail the build on an unresolvable citation
+        if key not in CAUSES_REF_ORDER:
+            CAUSES_REF_ORDER.append(key)
+        ns.append(CAUSES_REF_ORDER.index(key) + 1)
+    return '<sup class="ref">' + ",".join(f'<a href="#ref-{n}">{n}</a>' for n in ns) + "</sup>"
+
+
+def causes_sources_html():
+    rows = []
+    for i, key in enumerate(CAUSES_REF_ORDER, 1):
+        a, t, j, y, v, p, link, in_reg = _causes_ref(key)
+        vol = f" {v}" if v else ""
+        pag = f":{p}" if p else ""
+        dag = "" if in_reg else " †"
+        shown = link.replace("https://doi.org/", "doi:").replace("https://", "")
+        rows.append(f'<li id="ref-{i}">{a}. {t}. <em>{j}</em>. {y};{vol.strip()}{pag}.{dag} '
+                    f'<a href="{link}" target="_blank" rel="noopener external">{shown}</a></li>')
+    n_extra = sum(1 for k in CAUSES_REF_ORDER if not _causes_ref(k)[7])
+    return f"""
+    <h2 class="h4" style="margin-top:var(--space-4)" id="sources">Sources</h2>
+    <p class="annex-note">{len(CAUSES_REF_ORDER)} references, of which {len(CAUSES_REF_ORDER) - n_extra} are entries of the
+    <a href="/knowledge/bibliography/">DysNet bibliography</a> and are reproduced from it verbatim, so that this page and the
+    register can never disagree. The {n_extra} marked † are not in the register yet; they were verified against PubMed in
+    September 2026 and are queued for the next build of the bibliography.</p>
+    <ol class="sources">{"".join(rows)}</ol>
+"""
+
+
+_CAUSES_BODY = f"""
+<section>
+  <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
+    <div class="tick"></div>
+    <p class="eyebrow">Review · Fully referenced · September 2026</p>
+    <h1 class="display">What causes dysmelia?</h1>
+    <p>It is the first question families ask, and the one research still cannot answer for most of them. A limb that formed
+    differently is the visible end of a process that ran for about four weeks, early in pregnancy, and left almost no other trace.
+    This review sets out what is established, what is probable and what is still only a hypothesis, in the order the evidence
+    supports rather than the order the ideas are usually told in. It is written for families who want more than a leaflet and for
+    clinicians who want the references. Nothing here is medical advice, and nothing here can diagnose a particular child.</p>
+
+    <blockquote class="definition">
+      <p>Across large birth-defect cohorts, a cause is identified in roughly one case in five; for an isolated limb difference
+      affecting a single limb, it is usually none.</p>
+      <footer>China Birth Cohort Study, 2,123 reviewed cases{cref("10.1136/bmjpo-2025-003451")}; EUROCAT Northern Netherlands,
+      391 limb reduction defects{cref("10.1002/ajmg.a.61875")}.</footer>
+    </blockquote>
+
+    {opener("01", "The window", "Four weeks in which a limb is decided.")}
+    <p>Human limbs are built between roughly the fourth and the eighth week after conception. A bud of undifferentiated
+    mesenchyme grows out of the body wall under the control of three signalling centres, each governing one axis. The apical
+    ectodermal ridge, a thickened rim of ectoderm at the tip, drives outgrowth from shoulder to fingertip through fibroblast
+    growth factors. The zone of polarising activity, at the posterior margin, sets the thumb-to-little-finger axis through
+    sonic hedgehog. The dorsal ectoderm, through WNT7A, separates the back of the hand from the palm. The three are locked in
+    feedback loops: remove one and the others fail in turn{cref("10.1631/jzus.b2000285")}.</p>
+    <p>Two consequences follow, and they shape everything below. First, <strong>timing decides the shape of the defect more than
+    the cause does</strong>: the same insult a few days earlier or later produces a different limb, and very different insults
+    striking at the same hour produce limbs that look alike{cref("10.1111/j.1440-169X.2007.00939.x", "10.1007/s00204-024-03930-z")}.
+    Second, by the time a pregnancy is confirmed, most of this window has already passed. A limb difference is therefore almost
+    never the result of anything that happened after the mother knew she was pregnant.</p>
+
+    {opener("02", "How often a cause is found", "Most of the time, honestly, we do not know.")}
+    <p>The China Birth Cohort Study reviewed 2,123 birth defect cases and found an identifiable cause in 22.4% of them: 415
+    chromosomal anomalies, 31 monogenic disorders, 23 environmental exposures and 6 attributable to twinning. Among live births
+    the proportion fell to 13.4%{cref("10.1136/bmjpo-2025-003451")}. This is not a Chinese peculiarity; it is what every
+    well-run cohort finds.</p>
+    <p>For limb differences specifically, the most useful study is a population-based series of 391 fetuses and children with
+    limb reduction defects registered in the northern Netherlands between 1981 and 2017. An aetiological diagnosis was made
+    almost three times as often when several limbs were affected as when one was (relative risk 2.9, 95% CI 2.2 to 3.8). No
+    genetic disorder at all was identified among isolated defects of a single limb, whereas a genetic disorder was found in 16%
+    of cases that had one affected limb alongside other anomalies{cref("10.1002/ajmg.a.61875")}. The practical reading is
+    consistent with what geneticists advise: an isolated one-limb difference is usually sporadic, with a low recurrence risk;
+    several limbs, or other organs involved, make genetic testing worthwhile.</p>
+    <p>Counting also depends on classification. Under the Oberg-Manske-Tonkin system, the 577 congenital upper-limb anomalies
+    recorded in Stockholm over eleven years split into 429 malformations, 124 deformations, 10 dysplasias and 14
+    syndromes{cref("10.1016/j.jhsa.2013.11.014")}. Malformations and deformations have entirely different causes, and mixing
+    them is the commonest way to get the aetiology wrong.</p>
+
+    {opener("03", "Genes", "From a single letter to a whole chromosome.")}
+    <p><strong>Patterning genes.</strong> The HOX genes act as the selectors of the body plan, and <em>HOXD13</em> is the one most
+    often implicated in the hand. Changes inside and outside its homeodomain produce synpolydactyly, in which digits are both
+    extra and fused{cref("10.1242/dev.00396", "10.1002/ajmg.a.37464", "10.1038/s41419-023-05681-8")}. Chromosomal breakpoints
+    around the HOXD cluster, which do not touch the coding sequence at all, produce a whole range of limb
+    malformations{cref("10.1136/jmg.2005.033555")}, and the same is true of rearrangements affecting the distant control
+    region of the HOXA cluster{cref("10.1007/s10577-009-9059-5")}.</p>
+    <p><strong>GLI3</strong>, which transduces hedgehog signalling, illustrates how precisely genotype can predict phenotype. In
+    297 patients carrying 127 different variants, two distinct groups emerged: variants causing simple loss of one working copy
+    give anterior anomalies, while truncating variants inside the activator domain give posterior ones (postaxial polydactyly of
+    the hand, odds ratio 12.7; of the foot, 33.9) together with a raised risk of corpus callosum anomalies (odds ratio
+    8.8){cref("10.1136/jmedgenet-2020-106948")}.</p>
+    <p><strong>The switches, not the genes.</strong> Some of the clearest lessons of the last two decades concern DNA that codes
+    for nothing. The ZRS is an enhancer sitting about a megabase away from <em>SHH</em>, inside an intron of a neighbouring gene;
+    single-letter changes and small insertions in it switch <em>SHH</em> on at the front of the limb bud, where it does not
+    belong, creating a second polarising zone and a duplicated thumb or great toe{cref("10.1002/humu.22097", "10.1038/s41436-019-0626-7", "10.1002/ajmg.a.36367")}.
+    The number of enhancer copies can matter as much as their sequence{cref("10.1038/ng.3939")}. A family can therefore carry a
+    limb malformation with a completely normal coding genome, which is why standard gene panels miss some of them.</p>
+    <p><strong>Signalling ligands and the severe end.</strong> Homozygous loss of <em>WNT3</em> causes tetra-amelia, the absence
+    of all four limbs{cref("10.1086/382196")}; homozygous <em>WNT7A</em> variants do the same{cref("10.1002/ajmg.a.33717")}.
+    Heterozygous <em>FGF8</em> variants are found in patients with VATER/VACTERL features{cref("10.1002/bdra.23278")}.</p>
+    <p><strong>Where the genetic and the vascular meet.</strong> Roberts syndrome is caused by variants in <em>ESCO2</em>, a
+    cohesion gene with no obvious link to limb patterning. In a mouse model, the limb reduction turns out to be produced by
+    p53-dependent apoptosis together with disrupted blood-vessel formation{cref("10.1038/s41467-024-51328-3")}. A genetic cause
+    and a vascular mechanism are not alternatives; here they are the same story told at two levels.</p>
+    <p><strong>Syndromes.</strong> <em>TBX5</em> causes Holt-Oram syndrome, the heart-hand condition, described across European
+    registries{cref("10.1186/s13023-014-0156-y")} and reviewed systematically for its cardiac
+    spectrum{cref("10.1016/j.ejmg.2024.104920")}. <em>SALL4</em> causes Duane-radial ray, IVIC and acro-renal-ocular syndromes,
+    a group whose limb findings overlap closely with thalidomide embryopathy{cref("10.1136/jmg.40.7.473", "10.1159/000531452")};
+    that overlap turns out not to be a coincidence, as section 04 explains.</p>
+    <p><strong>Chromosomes.</strong> Trisomy 18 and trisomy 13 have birth prevalences of 4.8 and 1.9 per 10,000 in Europe. Among
+    live-born babies with trisomy 13, 44% had polydactyly{cref("10.1002/ajmg.a.37355")}; limb deficiencies also occur, though
+    less often{cref("10.1002/1096-8628(20000814)93:4<339::aid-ajmg15>3.0.co;2-r")}. Smaller copy-number changes are found in a
+    minority of patients with conditions usually called non-genetic, such as Poland
+    syndrome{cref("10.1186/s12881-016-0351-x")}. In consanguineous families, exome sequencing is the reasonable first
+    test{cref("10.3390/genes12070962")}, and recessive variants in genes such as <em>BHLHA9</em> account for syndactyly forms
+    that would otherwise look sporadic{cref("10.1038/hgv.2017.54")}.</p>
+
+    {opener("04", "Medicines and chemicals", "One certainty, several strong signals, and a long tail of weak ones.")}
+    <p><strong>Thalidomide</strong> remains the reference case, and its mechanism has changed since most textbooks were written.
+    The drug binds cereblon, the substrate receptor of a CRL4 ubiquitin ligase, and reprograms what that ligase destroys. The
+    proteins degraded include SALL4{cref("10.1038/s41589-018-0129-x")}, PLZF/ZBTB16, degraded by thalidomide and by its
+    metabolite 5-hydroxythalidomide{cref("10.15252/embj.2020105375")}, and p63{cref("10.1038/s41589-019-0366-7")}. The SALL4
+    result is the most persuasive, because people with inherited <em>SALL4</em> mutations are born with limbs that resemble
+    thalidomide embryopathy{cref("10.1136/jmg.40.7.473")}.</p>
+    <p>It is not the whole account. Antiangiogenic metabolites of thalidomide destroy the immature blood vessels of the early
+    limb bud, upstream of any change in patterning gene expression{cref("10.1073/pnas.0901505106")}, and current reviews treat
+    loss of vasculature, targeted protein degradation and oxidative stress as mechanisms that act
+    together{cref("10.1002/bdrc.21096", "10.3390/ph13050095", "10.1016/j.biopha.2020.110114", "10.1177/17531934231177425")}. A
+    2025 re-evaluation goes further and argues that the usual human phenotype is a longitudinal, preaxial defect that becomes
+    transverse only in its most severe form, with the arms affected before the legs and the left side before the
+    right{cref("10.1007/s00204-024-03930-z")}. Saying simply that thalidomide "causes phocomelia by stopping blood vessels
+    growing" is the short version of a question that is still open.</p>
+    <p>Why some exposed pregnancies produced an affected child and others did not is equally unresolved. Variation in
+    <em>CRBN</em>{cref("10.1016/j.reprotox.2016.10.003")}, in <em>ESCO2</em>, <em>SALL4</em> and
+    <em>TBX5</em>{cref("10.1038/s41598-019-47739-8")} and in angiogenesis genes{cref("10.1016/j.reprotox.2017.01.012")} has been
+    examined in survivors, and screens continue in differentiating stem cells{cref("10.3390/cells14030215")}, without a
+    settled answer.</p>
+    <p><strong>Misoprostol</strong> is the strongest post-thalidomide signal. First reported from Brazil, where it was used in
+    unsuccessful attempts to end a pregnancy{cref("10.1056/nejm199806253382604")}, it was confirmed by a meta-analysis of four
+    case-control studies covering 4,899 cases: odds ratio 25.31 (95% CI 11.11 to 57.66) for Möbius sequence and 11.86 (4.86 to
+    28.90) for terminal transverse limb defects{cref("10.1016/j.reprotox.2006.03.015")}. The presumed mechanism is uterine
+    contraction and a fall in blood flow to the embryo, which is why the defects are transverse rather than
+    patterned{cref("10.1016/j.ejogrb.2016.11.007", "10.1002/bdr2.1160")}.</p>
+    <p><strong>Retinoids.</strong> Prenatal isotretinoin exposure has been associated with limb reduction
+    defects{cref("10.1002/tera.1420440602")}, and retinoic acid produces limb malformations experimentally in a strictly
+    stage-dependent way{cref("10.1002/tera.1420230106", "10.1002/bdra.20232", "10.1002/bdra.20385")}.</p>
+    <p><strong>Antiseizure medicines</strong> need to be stated carefully, because the risk is real but is mostly not a limb
+    risk. In EURAP, 10,121 prospectively followed monotherapy pregnancies gave major malformation rates of 9.9% for valproate,
+    6.3% for phenytoin, 6.2% for phenobarbital, 5.4% for carbamazepine, 4.9% for topiramate, 3.1% for lamotrigine, 2.9% for
+    oxcarbazepine and 2.5% for levetiracetam, dose-dependent for the first three; as prescribing shifted away from valproate and
+    carbamazepine, the overall malformation rate fell by 39%{cref("10.1001/jamaneurol.2024.0258")}, a ranking the Cochrane
+    review reproduces{cref("10.1002/14651858.cd010224.pub3")}. The limb findings in this group are typically hypoplastic distal
+    phalanges and nails rather than dysmelia; postaxial defects after valproate{cref("10.1097/00019605-200009020-00015")} and a
+    hypoxic-ischaemic pattern after phenytoin{cref("10.1002/bdra.10100")} are described at the level of case reports. Nobody
+    should stop an antiseizure medicine on the strength of this page; uncontrolled seizures carry their own risks.</p>
+    <p><strong>Methotrexate</strong> produces a recognised embryopathy including limb anomalies when given in the sensitive
+    window at sufficient dose{cref("10.1002/bdra.23003", "10.1016/j.reprotox.2019.05.066")}.</p>
+    <p><strong>Tobacco, alcohol and opioids.</strong> A meta-analysis of 37 studies puts maternal smoking at a pooled odds ratio
+    of 1.27 (95% CI 1.18 to 1.38) for limb reduction defects; the same analysis found an association for polydactyly, syndactyly
+    and adactyly taken as one group (1.32) that disappeared when polydactyly (1.06) and syndactyly (0.91) were analysed
+    separately{cref("10.3390/jcm12134181")}, which is a useful reminder of how fragile these signals
+    are{cref("10.1111/ppe.12075")}. Periconceptional alcohol has been examined in the National Birth Defects Prevention Study
+    without a consistent association{cref("10.1002/bdra.23292")}. For prescription opioids, a population cohort found no excess
+    of major malformations after first-trimester exposure (adjusted relative risk 1.40, 95% CI 0.84 to
+    2.34){cref("10.1001/jamanetworkopen.2021.5708")}. Recent surveillance of antipsychotics{cref("10.1136/bmjment-2025-302270")}
+    and macrolides{cref("10.1371/journal.pmed.1004576")} has likewise not produced a limb signal.</p>
+    <p><strong>Air and workplace.</strong> The environmental literature is the weakest part of the field. In the National Birth
+    Defects Prevention Study, adjusted odds ratios for limb deficiencies were near-null for particulates and ozone, and modestly
+    raised for carbon monoxide (1.02 to 1.30){cref("10.1016/j.envres.2019.108716")}. A 2026 cohort in Wuhan found a small
+    association for sulphur dioxide in the first three months (1.033 to 1.043) and none for PM2.5, PM10, nitrogen dioxide,
+    carbon monoxide or ozone{cref("10.1038/s41598-026-36527-w")}. Occupational exposures in textile
+    manufacturing{cref("10.1080/14767058.2019.1593358")} and parental pesticide exposure{cref("10.5271/sjweh.1412")} have been
+    reported, on small numbers. All of this rests on self-reported or modelled exposure, and the misclassification that follows
+    can move an odds ratio in either direction{cref("10.1111/ppe.13161")}.</p>
+
+    {opener("05", "The mother’s health", "Diabetes is the one that matters most.")}
+    <p>A meta-analysis covering more than 80 million births found that pre-gestational diabetes raises the risk of congenital
+    anomaly overall (relative risk 1.99) far more than gestational diabetes does (1.18); for limb reduction defects specifically,
+    gestational diabetes carried a relative risk of 1.14 (95% CI 1.06 to 1.23){cref("10.1371/journal.pmed.1003900")}. Caudal
+    regression and femoral hypoplasia remain the signature patterns of diabetic embryopathy{cref("10.1002/ajmg.a.32071")}, and
+    raised glucose alone is enough to produce limb defects in experimental
+    embryos{cref("10.1016/j.bbadis.2020.165955")}. Because the damage is done before most pregnancies are confirmed, glycaemic
+    control before conception is where it is prevented, which is one of the few genuinely actionable findings in this whole
+    article.</p>
+    <p>Maternal fever and hyperthermia have long been suspected, on an evidence base that is old and
+    thin{cref("10.1002/ajmg.1320210319")}. Periconceptional supplements show a clearer effect for clubfoot than for limb
+    deficiencies: in 63,969 singleton deliveries in Beijing, folic acid or multiple micronutrients were associated with a
+    relative risk of 0.40 for clubfoot, while the reduction for limb defects overall did not reach significance (0.80, 95% CI
+    0.56 to 1.12){cref("10.1111/ppe.12775")}. Younger maternal age is associated with vascular disruption anomalies as a
+    group{cref("10.1002/bdr2.2122")}, and maternal age also tracks with defects of unknown
+    cause{cref("10.1002/bdra.23049")}.</p>
+    <p><strong>Infection</strong> deserves a proportionate statement. Congenital varicella syndrome, whose features include limb
+    hypoplasia and scarring in a dermatomal pattern, is genuinely rare: in a prospective cohort of 347 pregnancies complicated by
+    varicella, one definite case was identified (0.4%), and no case of limb hypoplasia was
+    observed{cref("10.1016/s0029-7844(02)02059-8")}. The damage is attributed to viral injury to developing nerves rather than
+    to the limb bud itself. Newer claims should be read cautiously: the report of Adams-Oliver syndrome after maternal COVID-19
+    is a single case, which is a hypothesis and not evidence of causation{cref("10.1080/15513815.2022.2064018")}.</p>
+
+    {opener("06", "Vascular disruption", "A limb that formed, then was lost.")}
+    <p>Vascular disruption is a different kind of cause. The limb is built correctly, and blood flow to it then fails, producing
+    hypoxia, endothelial damage, haemorrhage, tissue loss and repair. Of 7,020 infants with malformations at one American
+    hospital over forty years, 105 had defects attributed to this process, including terminal transverse limb defects at three
+    consistent levels{cref("10.1002/bdr2.1160")}; abnormal arterial anatomy is documented in limb deficiencies both clinically
+    and experimentally{cref("10.1016/j.reprotox.2016.10.005")}. Across 26 EUROCAT registries, 5,220 vascular disruption
+    anomalies were recorded, with a prevalence of 8.85 per 10,000 births in the United Kingdom against 5.44
+    elsewhere, though transverse limb reduction defects were equally common in both (2.16 and 2.14), which suggests they may not
+    share the aetiology of the rest of the group{cref("10.1002/bdr2.2122")}.</p>
+    <p><strong>Poland syndrome</strong> is where this reasoning is most often applied and least often proved. The subclavian
+    artery supply disruption sequence has been the leading hypothesis for decades and is supported by case-level
+    evidence{cref("10.1136/bcr-2020-238392")}, but the European consensus recommendations describe the condition as a sequence
+    of uncertain origin rather than a settled vascular diagnosis{cref("10.1186/s13023-020-01481-x")}. Copy-number variants are
+    found in a minority{cref("10.1186/s12881-016-0351-x")}, monozygotic twins can be discordant or share a de novo
+    deletion{cref("10.1186/1471-2350-15-63")}, and classification remains under
+    discussion{cref("10.1053/j.sempedsurg.2018.05.007")}. Honest practice is to present the vascular hypothesis as a hypothesis.</p>
+
+    {opener("07", "The amnion and mechanical forces", "Bands, crowding, and a widespread misconception.")}
+    <p><strong>Amniotic band syndrome.</strong> Across 30 EUROCAT registries over forty years, 866 cases of amniotic band
+    syndrome and 451 of limb body wall complex were recorded, a mean prevalence of 0.53 and 0.34 per 10,000 births, with twinning
+    confirmed as a risk factor{cref("10.1002/ajmg.a.63107")}. A Finnish case-control study of 106 limb deficiencies associated
+    with bands found primiparity (adjusted odds ratio 2.42) and young maternal age (1.72) to raise the risk, together with
+    first-trimester use of progestogens (3.79) and of beta-blockers, the latter on a very wide confidence interval that should
+    be read with caution (24.2, 95% CI 2.57 to 228){cref("10.1097/BPO.0000000000001686")}. Maternal vasoactive exposures have
+    been linked to bands and terminal transverse defects together{cref("10.1002/bdra.20524")}, and whether limb body wall
+    complex and amniotic bands are one entity or two is still
+    argued{cref("10.1002/bdr2.1442")}.</p>
+    <p><strong>Crowding, and what it does not explain.</strong> Reduced amniotic fluid, uterine anomalies and twin pregnancies do
+    restrict fetal movement and can deform a normally formed limb{cref("pmid:3533366")}. But the common assumption that
+    clubfoot and joint contractures are therefore mechanical is, in most cases, wrong. Arthrogryposis and the fetal akinesia
+    deformation sequence are usually intrinsic: more than 320 genes have been implicated, and neuromuscular or connective-tissue
+    disease is a far more frequent explanation than crowding{cref("10.1002/pd.5505")}. The lack of movement produces the
+    contractures; something else produces the lack of movement. This is exactly why the malformation-deformation distinction in
+    the OMT classification matters{cref("10.1016/j.jhsa.2013.11.014")}.</p>
+
+    {opener("08", "Procedures", "Two causes that medicine created and then reduced.")}
+    <p>Chorionic villus sampling performed before 70 days of gestation was shown, in a registry-based case-control study, to
+    raise the risk of transverse limb defects and oromandibular-limb hypogenesis{cref("10.1002/ajmg.1320440639")}; maternal age
+    was excluded as a confounder{cref("10.1002/ajmg.1320530212")} and a distinctive effect on the fingers was
+    described{cref("10.1002/bdra.10078")}. Practice changed, and the procedure is now performed later. Fetoscopic laser
+    treatment for twin-twin transfusion syndrome can produce a pseudoamniotic band
+    sequence{cref("10.1002/jum.14295")}, with prevalence, risk factors and outcomes now quantified in dedicated
+    series{cref("10.1016/j.ajog.2020.04.016", "10.1159/000550538")}. Both are worth knowing precisely because they show what
+    identifying a cause makes possible.</p>
+
+    {opener("09", "Genes and environment together", "The wrong question, asked for fifty years.")}
+    <p>The division of this article into genetic and environmental sections is a convenience, not a claim about nature. Mice
+    carrying one working copy of <em>Shh</em> or <em>Gli2</em> develop limb defects after prenatal alcohol exposure that
+    wild-type littermates do not{cref("10.1002/bdr2.1026")}, and a hedgehog pathway agonist given at the right hour produces
+    preaxial polydactyly{cref("10.1002/bdra.23571")}. Human candidate-gene studies have looked for the same interactions across
+    limb development, angiogenesis and coagulation genes{cref("10.1002/ajmg.a.35565", "10.1002/ajmg.a.31402")}. For most
+    children, the honest formulation is that susceptibility and exposure met, and that neither alone would have been enough.</p>
+
+    {opener("10", "Clusters", "What happens when a community asks the question properly.")}
+    <p>In the Ain department of France, a regional registry reported an excess of isolated transverse upper-limb reduction
+    defects and argued the cluster was real{cref("10.1002/bdr2.1876")}. A national, multidisciplinary investigation of three
+    suspected clusters followed, examining exposures systematically, and concluded that no common cause could be
+    identified{cref("10.1007/s10654-024-01125-5")}. The episode is worth recording without taking a side: with defects this
+    rare, small numbers make clusters both easy to see and hard to prove, and a registry designed for counting is not
+    automatically a registry designed for causal investigation.</p>
+
+    {opener("11", "What is missing", "Why DysNet is building a registry.")}
+    <p>Three things keep this field where it is. Cases are rare and scattered across countries, so no single centre accumulates
+    enough of them. Coding differs between registries, so the same limb is counted differently on either side of a border.
+    And the phenotype is recorded far more often than the exposures, the family history and the genome that would make a cause
+    findable. The result is the 22.4% with which this article opened.</p>
+    <p>That is the argument for an interoperable, consent-based registry owned by the community it describes, which families
+    contribute to once and researchers can query across borders. It is what DysNet is building; see
+    <a href="/registry/">the registry</a> and the plain-language <a href="/knowledge/guides/patient-owned-registry/">two-minute
+    guide</a>. The evidence assembled here comes from the <a href="/knowledge/bibliography/">bibliography</a>, and the substances
+    named in section 04 are tracked, with their regulatory status, in the <a href="/knowledge/teratogens/">teratogens
+    register</a>. For what the individual conditions are called and how frequent they are, start with
+    <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a>.</p>
+
+    <div class="tick"></div>
+    <p class="eyebrow">Method</p>
+    <h2 class="h2">How this article was written.</h2>
+    <p>Every factual statement carries a reference, and every reference is either an entry of the DysNet bibliography,
+    reproduced verbatim from the register, or a paper verified against PubMed and marked †. Where the evidence is a single case
+    report, an animal model or a hypothesis, the text says so rather than rounding it up to a cause. Figures quoted from a study
+    are the figures that study reports, with its confidence intervals where it gives them. Written by the DysNet documentation
+    team, September 2026; corrections and missing references to
+    <a href="mailto:info@dysnet.org?subject=Causes%20of%20dysmelia">info@dysnet.org</a>.</p>
+"""
+
+PAGES["/knowledge/causes-of-dysmelia/"] = {
+    "title": "Causes of dysmelia",
+    "desc": "A fully referenced review of what causes congenital limb differences: genes and regulatory DNA, medicines and chemicals, maternal health, vascular disruption, amniotic bands and mechanical forces, and how often a cause is actually found.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/causes-of-dysmelia/", "Causes of dysmelia")],
+    "body": _CAUSES_BODY + causes_sources_html() + """
   </div>
 </section>
 """,

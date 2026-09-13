@@ -24,16 +24,16 @@ USE_CONTEXT = re.compile(r"\b(is|are|was|were|been|being)\s+(widely\s+|commonly\
                          r"|\buse[ds]?\s+(as|in|for|to)\b|\bapplications?\s+(include|are|of)\b|\bingredient\b|\bis a (solvent|plasticizer|plasticiser|preservative|additive|pigment|dye|propellant|refrigerant|fumigant|herbicide|insecticide|fungicide|pesticide|flame retardant)\b"
                          r"|\b(manufactur\w+|production) of\b", re.I)
 # regulatory, exposure and contamination sentences are not statements of use
-NOT_USE = re.compile(r"tolerable (daily|monthly|weekly) intake|exposure limit|occupational exposure|contaminant|contamination|residues?\b|banned|prohibited|phased out|withdrawn|recall|poisoning|accident|spill|emission|waste|landfill|carcinog|toxicity study|animal studies|no longer (used|permitted)|committee|regulation|directive|safety data|produced from|made from|derived from|feedstock|raw material for|by-?product of|occurs naturally|dietary supplement|insufficient evidence", re.I)
+NOT_USE = re.compile(r"tolerable (daily|monthly|weekly) intake|exposure limit|occupational exposure|contaminant|contamination|residues?\b|banned|prohibited|phased out|withdrawn|recall|poisoning|accident|spill|emission|waste|landfill|carcinog|toxicity study|animal studies|no longer (used|permitted)|committee|regulation|directive|safety data|produced from|made from|derived from|feedstock|raw material for|by-?product of|occurs naturally|dietary supplement|insufficient evidence|precursor (to|for)|intermediate (in|for)|used to (make|produce|synthesi|manufactur)|starting material|monomer for|production of many|model compound|reaction medium|laboratory|reagent for|mistaken|erroneous|incorrectly|misidentif|\bmyth\b|never (been )?used|rumou?r", re.I)
 
 CATEGORIES = {
     "food": (r"food additive|food packaging|food contact|in the food industry|flavou?ring (agent|substance)|sweetener|preservative in food|chewing gum|confectioner|baking|cooking oil|dietary supplement|infant formula|beverage", "Food and drink"),
-    "construction": (r"\bpaints?\b|coatings?\b|varnish|lacquer|adhesives?\b|sealants?\b|insulation|cement|concrete|mortar|wood preservative|flooring|\bPVC\b|roofing|plaster|wallpaper|caulk|timber treatment|building material|construction material", "Building and construction"),
-    "goods": (r"plastic|polymer|resin|rubber|\btoys?\b|electronic|battery|batteries|textile|fabric|\bdye\b|dyes|packaging|furniture|consumer product|household product|paper (industry|manufactur)|ink\b|printing|leather|photographic|flame retardant", "Manufactured goods"),
-    "cosmetics": (r"cosmetic|shampoo|nail polish|hair dye|hair colour|fragrance|perfume|sunscreen|deodorant|skin care|skincare|toothpaste|soap\b|lipstick|personal care", "Cosmetics and personal care"),
+    "construction": (r"\bpaints?\b|\bcoatings?\b|\bvarnish\w*|\blacquers?\b|\badhesives?\b|\bsealants?\b|\binsulation\b|\bcement\b|\bconcrete\b|\bmortar\b|wood preservative|\bflooring\b|\bPVC\b|\broofing\b|\bplaster\b|\bwallpaper\b|\bcaulk\w*|timber treatment|building material|construction material", "Building and construction"),
+    "goods": (r"\bplastics?\b|\bpolymers?\b|\bresins?\b|\brubber\b|\btoys?\b|\belectronics?\b|\bbatter(y|ies)\b|\btextiles?\b|\bfabrics?\b|\bdyes?\b|\bpackaging\b|\bfurniture\b|consumer product|household product|\binks?\b|\bprinting\b|\bleather\b|\bphotographic\b|flame retardant", "Manufactured goods"),
+    "cosmetics": (r"\bcosmetics?\b|\bshampoo\b|nail polish|hair dye|hair colour|\bfragrances?\b|\bperfumes?\b|\bsunscreen\b|\bdeodorant\b|skin care|skincare|\btoothpaste\b|\bsoaps?\b|\blipstick\b|personal care", "Cosmetics and personal care"),
     "cleaning": (r"detergent|cleaning (product|agent)|household cleaner|bleach|disinfectant|laundry|degreas|stain remover|dry cleaning", "Cleaning and household"),
     "agriculture": (r"pesticide|herbicide|insecticide|fungicide|rodenticide|fumigant|fertili[sz]er|crop protection|weed killer|\bcrops?\b", "Agriculture and pest control"),
-    "fuel": (r"gasoline|petrol\b|diesel|jet fuel|fuel additive|lubricants?\b|motor oil|antifreeze|brake fluid|coolant|refrigerant", "Fuel and vehicles"),
+    "fuel": (r"\bgasoline\b|\bpetrol\b|\bdiesel\b|jet fuel|fuel additive|motor oil|engine oil|\bantifreeze\b|brake fluid|engine coolant|\brefrigerant\b|automotive|\bvehicles?\b", "Fuel and vehicles"),
 }
 CATEGORIES = {k: (re.compile(rx, re.I), label) for k, (rx, label) in CATEGORIES.items()}
 
@@ -56,10 +56,15 @@ def article(title):
 
 
 SECTION = re.compile(r"^==+ *(.+?) *==+$", re.M)
+# the sentence must be about the substance itself, not about a derivative or a neighbouring compound
+SUBJECT = re.compile(r"^(it|its|this (compound|substance|chemical|material|product|acid|salt|gas|liquid|solvent)|the compound|the substance|the chemical|the material)\b", re.I)
+# a household or consumer signal, required before a cleaning tag: industrial degreasing is not household use
+HOUSEHOLD = re.compile(r"household|domestic|home|consumer|laundry|dishwash|dry cleaning|cleaning product|detergent|bleach|soap|cleaner", re.I)
+INDUSTRIAL_ONLY = re.compile(r"industrial|in industry|hospitals?|medical equipment|manufacturing plant", re.I)
 USE_SECTION = re.compile(r"^(uses?|applications?|production and uses?|occurrence and uses?|consumer|industrial uses?|in (food|cosmetics|medicine))\b", re.I)
 MAX_TAGS = 3
 # entries whose exposure route is the product itself, whatever else the molecule is used for
-OVERRIDES = {"cas:64-17-5": ["food"], "smoking": []}
+OVERRIDES = {"cas:64-17-5": {"food": "Ethanol is the active ingredient in alcoholic beverages; that is the exposure this register is about."}, "smoking": {}}
 
 
 def use_text(text):
@@ -71,12 +76,24 @@ def use_text(text):
     return " ".join(keep)
 
 
-def classify(text):
+def about_subject(sent, title):
+    """True when the SUBJECT of the sentence is the substance, not another compound."""
+    sent = sent.strip()
+    if SUBJECT.match(sent): return True
+    head = re.split(r"\b(is|are|was|were|has|have|can|may|serves?|acts?)\b", sent, 1)[0][:120]
+    words = [w for w in re.split(r"[^A-Za-z0-9-]+", title) if len(w) > 3]
+    if any(re.search(r"\b" + re.escape(w) + r"\w{0,3}\b", head, re.I) for w in words): return True
+    return bool(re.match(r"^[A-Z]{2,5}\b", sent))
+
+
+def classify(text, title=""):
     out, score = {}, {}
     for sent in re.split(r"(?<=[.!?])\s+", use_text(text).replace("\n", " ")):
         if len(sent) < 25 or len(sent) > 400: continue
         if not USE_CONTEXT.search(sent) or NOT_USE.search(sent): continue
+        if not about_subject(sent, title): continue
         for key, (rx, _) in CATEGORIES.items():
+            if key == "cleaning" and (not HOUSEHOLD.search(sent) or (INDUSTRIAL_ONLY.search(sent) and not re.search(r"household|domestic|home use|consumer|laundry|dishwash", sent, re.I))): continue
             if rx.search(sent):
                 score[key] = score.get(key, 0) + 1
                 out.setdefault(key, " ".join(sent.split())[:220])
@@ -96,7 +113,7 @@ def main():
     print(f"{len(todo)} entries with a Wikipedia article, {len(titles)} to read")
     for i, t in enumerate(sorted(set(titles))):
         try:
-            cache[t] = classify(article(t))
+            cache[t] = classify(article(t), t)
         except Exception as ex:
             print("  !", t, ex); cache[t] = {}
         if (i + 1) % 50 == 0:
@@ -110,10 +127,8 @@ def main():
         key = ("cas:" + e["cas"]) if e.get("cas") else e.get("name", "")
         uses = cache.get(t or "", {})
         if key in OVERRIDES or e.get("kind") == "product":
-            allowed = OVERRIDES.get(key, OVERRIDES.get("smoking", []))
-            uses = {k: v for k, v in uses.items() if k in allowed}
-            for k in allowed:
-                uses.setdefault(k, "")
+            allowed = OVERRIDES.get(key, OVERRIDES.get("smoking", {}))
+            uses = {k: (allowed[k] or uses.get(k, "")) for k in allowed}
         if uses:
             e["uses"] = sorted(uses)
             e["use_evidence"] = uses

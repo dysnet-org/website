@@ -47,7 +47,7 @@
    "suspected": 90
   },
   "delisted": 6,
-  "efsa": 81
+  "efsa": 83
  },
  "entries": [
   {
@@ -4725,6 +4725,12 @@
      "listed": "1987-02-27",
      "madl_ug_day": "0.5",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Lead: No tolerable intake set; reference point 0.5 µg per kg of body weight per day for developmental neurotoxicity. EFSA concluded in its 2010 opinion on lead in food that the provisional tolerable weekly intake of 25 µg per kg of body weight was no longer appropriate, because no threshold could be identified for the critical effects. It works instead from reference points and compares dietary exposure with them: the lower confidence limit of the benchmark dose at 1% extra risk is 0.50 µg per kg of body weight per day for the neurodevelopmental effects seen in children aged one to seven, 1.5 µg for effects on systolic blood pressure in adults, and 0.63 µg for effects on the kidney. EFSA states that current dietary exposure poses a low to negligible risk for most adults, and that there is potential concern for neurodevelopmental effects in foetuses, infants and children (Scientific Opinion on Lead in Food, EFSA CONTAM Panel, 2010, doi:10.2903/j.efsa.2010.1570).",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
    ],
    "status": {
@@ -4739,8 +4745,15 @@
    "wiki": "https://en.wikipedia.org/wiki/Lead_[Basis_for_listing_changed_effective_November_22,_2013]",
    "level": "known",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Lead",
+    "value": "No tolerable intake set; reference point 0.5 µg per kg of body weight per day for developmental neurotoxicity",
+    "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "lead acetate, basic",
@@ -5144,6 +5157,12 @@
      "applies_from": "2025-09-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0197",
      "index": "082-014-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Lead: No tolerable intake set; reference point 0.5 µg per kg of body weight per day for developmental neurotoxicity. EFSA concluded in its 2010 opinion on lead in food that the provisional tolerable weekly intake of 25 µg per kg of body weight was no longer appropriate, because no threshold could be identified for the critical effects. It works instead from reference points and compares dietary exposure with them: the lower confidence limit of the benchmark dose at 1% extra risk is 0.50 µg per kg of body weight per day for the neurodevelopmental effects seen in children aged one to seven, 1.5 µg for effects on systolic blood pressure in adults, and 0.63 µg for effects on the kidney. EFSA states that current dietary exposure poses a low to negligible risk for most adults, and that there is potential concern for neurodevelopmental effects in foetuses, infants and children (Scientific Opinion on Lead in Food, EFSA CONTAM Panel, 2010, doi:10.2903/j.efsa.2010.1570).",
+     "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food"
     }
    ],
    "status": {
@@ -5161,8 +5180,15 @@
    "wiki": "https://en.wikipedia.org/wiki/Lead",
    "level": "known",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Lead",
+    "value": "No tolerable intake set; reference point 0.5 µg per kg of body weight per day for developmental neurotoxicity",
+    "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "lead sulfochromate yellow; C.I. Pigment Yellow 34; [This substance is identified in the Colour Index by Colour Index Constitution Number, C.I. 77603.]",

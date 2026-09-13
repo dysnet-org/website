@@ -16,10 +16,11 @@ RAW = HERE / "terato" / "wiki"    # article text cached by enrich-teratogens-use
 
 # An ATC code alone over-tags: ethanol, DDT and dibutyl phthalate all carry one for a marginal or
 # historical medical use. The article's own opening must also present the substance as a medicine.
-MEDICINE = re.compile(r"\b(medication|medicine|medically|pharmaceutical|prescription drug|used to treat|used in the treatment|therapeutic|clinical use|used in surgery|used in dentistry|chemotherap\w+|antineoplastic|antibiotic|antiviral|antifungal|antimalarial|anthelmintic|analgesic|an(a)?esthetic|anticonvulsant|anti-?seizure|antidepressant|antipsychotic|anxiolytic|benzodiazepine|barbiturate|opioid|corticosteroid|glucocorticoid|steroid hormone|estrogen|oestrogen|progest\w+|androgen|anticoagulant|antihypertensive|beta blocker|calcium channel blocker|diuretic|immunosuppress\w+|immunomodulat\w+|monoclonal antibody|vaccine|NSAID|nonsteroidal anti-inflammatory|contrast agent|antiretroviral|antiemetic|antihistamine|stimulant|sedative|hormone|anthelmintic|antiseptic used|drug used|administered to patients|indicated for)\b", re.I)
+MEDICINE = re.compile(r"\b(medication|medicine|medically|pharmaceutical|prescription drug|is a drug\b|sold under the brand|brand names?\b|trade names?\b|approved for|antirheumatic|antiandrogen|tranquili[sz]er|anti-?cancer drug|used to treat|used in the treatment|therapeutic|clinical use|used in surgery|used in dentistry|chemotherap\w+|antineoplastic|antibiotic|antiviral|antifungal|antimalarial|anthelmintic|analgesic|an(a)?esthetic|anticonvulsant|anti-?seizure|antidepressant|antipsychotic|anxiolytic|benzodiazepine|barbiturate|opioid|corticosteroid|glucocorticoid|steroid hormone|estrogen|oestrogen|progest\w+|androgen|anticoagulant|antihypertensive|beta blocker|calcium channel blocker|diuretic|immunosuppress\w+|immunomodulat\w+|monoclonal antibody|vaccine|NSAID|nonsteroidal anti-inflammatory|contrast agent|antiretroviral|antiemetic|antihistamine|stimulant|sedative|hormone|anthelmintic|antiseptic used|drug used|administered to patients|indicated for)\b", re.I)
 # ATC classes that are technical rather than therapeutic: an antiseptic or an ectoparasiticide code
 # does not make an industrial chemical a medicine (ethanol, DDT, dibutyl phthalate all carry one).
 TECHNICAL_ATC = re.compile(r"^(D08|V03|V07|A01AB|P03)")
+PAST_USE = re.compile(r"no longer (used|marketed|available|prescribed)|was once used|formerly used|withdrawn from (the )?market|obsolete|has been replaced|largely replaced", re.I)
 INDUSTRIAL = re.compile(r"\b(plasticizer|plasticiser|industrial solvent|industrial chemical|insecticide|pesticide|herbicide|fungicide used|refrigerant|degreaser|flame retardant|fuel additive|dry cleaning)\b", re.I)
 UA = {"User-Agent": "DysNet teratogens register (info@dysnet.org)", "Accept": "application/sparql-results+json"}
 ENDPOINT = "https://query.wikidata.org/sparql"
@@ -49,7 +50,14 @@ def medicinal(entry, atc):
     if not atc: return False, ""
     therapeutic = [c for c in atc if not TECHNICAL_ATC.match(c)]
     text = lead(entry)
-    if therapeutic and not INDUSTRIAL.search(" ".join(re.split(r"(?<=[.!?])\s+", text)[:1])):
+    first = re.split(r"(?<=[.!?])\s+", text)[0] if text else ""
+    # historical medical use, and the article does not present it as a medicine: an industrial chemical today
+    if text and PAST_USE.search(text) and not MEDICINE.search(first):
+        return False, ""
+    if therapeutic and not INDUSTRIAL.search(first):
+        for sent in re.split(r"(?<=[.!?])\s+", text[:1600]):
+            if MEDICINE.search(sent):
+                return True, " ".join(sent.split())[:220]
         return True, ""
     if not text: return False, ""
     # only a technical ATC code: the article must open by presenting the substance as a medicine

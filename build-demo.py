@@ -1380,7 +1380,7 @@ def causes_sources_html():
         pag = f":{p}" if p else ""
         dag = "" if in_reg else " †"
         shown = link.replace("https://doi.org/", "doi:").replace("https://", "")
-        rows.append(f'<li id="ref-{i}">{a}. {t}. <em>{j}</em>. {y};{vol.strip()}{pag}.{dag} '
+        rows.append(f'<li id="ref-{i}">{a.rstrip(".")}. {t.rstrip(".")}. <em>{j}</em>. {y};{vol.strip()}{pag}.{dag} '
                     f'<a href="{link}" target="_blank" rel="noopener external">{shown}</a></li>')
     n_extra = sum(1 for k in CAUSES_REF_ORDER if not _causes_ref(k)[7])
     return f"""

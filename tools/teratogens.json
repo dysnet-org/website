@@ -33,9 +33,9 @@
   "p65": 300,
   "ema": 12,
   "both_clp_and_p65": 32,
-  "medicinal": 119,
+  "medicinal": 118,
   "with_uses": 105,
-  "atc_not_medicine": 5
+  "atc_not_medicine": 6
  },
  "entries": [
   {
@@ -892,7 +892,8 @@
    "atc": [
     "G04BX03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Acetohydroxamic acid (also known as AHA or by the trade name Lithostat) is a drug that is a potent and irreversible enzyme inhibitor of the urease enzyme in various bacteria and plants; it is usually used for urinary tra"
   },
   {
    "name": "Acrylamide",
@@ -1064,7 +1065,7 @@
     "N05BA12"
    ],
    "medicinal": true,
-   "medicine_evidence": "Other uses include the treatment of chemotherapy-induced nausea, together with other treatments."
+   "medicine_evidence": "Alprazolam, sold under the brand name Xanax among others, is a fast-acting, potent tranquilizer of moderate duration within the triazolobenzodiazepine group of chemicals called benzodiazepines."
   },
   {
    "name": "Altretamine",
@@ -1610,7 +1611,7 @@
     "M01CB03"
    ],
    "medicinal": true,
-   "medicine_evidence": "Along with sodium aurothiomalate, it is one of only two gold compounds currently employed in modern medicine."
+   "medicine_evidence": "Auranofin is an orally administered gold salt classified by the World Health Organization as an antirheumatic agent."
   },
   {
    "name": "Avermectin B1 (Abamectin)",
@@ -2815,12 +2816,7 @@
    "source_codes": [
     "clp",
     "p65"
-   ],
-   "atc": [
-    "N01AB02"
-   ],
-   "medicinal": true,
-   "medicine_evidence": "Chloroform was once used as an inhalational anesthetic between the 19th century and the first half of the 20th century."
+   ]
   },
   {
    "name": "Chlorpyrifos",
@@ -5536,7 +5532,7 @@
     "L02BB01"
    ],
    "medicinal": true,
-   "medicine_evidence": "It is also used in the treatment of androgen-dependent conditions like acne, excessive hair growth, and high androgen levels in women."
+   "medicine_evidence": "Flutamide, sold under the brand name Eulexin among others, is a nonsteroidal antiandrogen (NSAA) which is used primarily to treat prostate cancer."
   },
   {
    "name": "Fluticasone propionate",
@@ -5846,7 +5842,7 @@
     "N01AB01"
    ],
    "medicinal": true,
-   "medicine_evidence": "It is used as a general anaesthetic given by inhalation."
+   "medicine_evidence": "Halothane (bromochlorotrifluoroethane), sold under the brand name Fluothane among others, is a halocarbon with the chemical formula CF3CHBrCl."
   },
   {
    "name": "Heptachlor",
@@ -8613,7 +8609,7 @@
     "L01AA05"
    ],
    "medicinal": true,
-   "medicine_evidence": "It is the prototype of alkylating agents, a group of anticancer chemotherapeutic drugs."
+   "medicine_evidence": "Chlormethine (INN, BAN), also known as mechlorethamine (USAN, USP), mustine, HN2, and (in post-Soviet states) embikhin (эмбихин), is a nitrogen mustard sold under the brand name Mustargen among others."
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -9597,7 +9593,8 @@
    "atc": [
     "L01AX02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pipobroman (trade names Vercite, Vercyte) is an anti-cancer drug that probably acts as an alkylating agent, and is marketed in France and Italy."
   },
   {
    "name": "Plicamycin",
@@ -18215,7 +18212,7 @@
     "R03DA04"
    ],
    "medicinal": true,
-   "medicine_evidence": "It is used to treat chronic obstructive pulmonary disease (COPD) and asthma."
+   "medicine_evidence": "Theophylline, also known as 1,3-dimethylxanthine, is a drug that inhibits phosphodiesterase and blocks adenosine receptors."
   },
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",

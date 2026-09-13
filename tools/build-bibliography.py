@@ -267,6 +267,37 @@ for i in range(0, len(causes_ids), 50):
         for t in topics: add(pmid, None, t, "PubMed search for causes and risk factors of the site's conditions", via="PubMed search")
         for c in codes: seed[pmid]["codes"].add(c)
 
+# ─── 7. Canada and the United States: national limb-loss and limb-difference data ─────────────
+# Registry work outside Europe, where Orphanet's directory stops: the Canadian national strategy,
+# the American registry already running, and the provincial surveillance that publishes on our conditions.
+NORTH_AMERICA = {
+    "41918893": ("epidemiology", "Delphi strategy for a Canadian limb loss and limb difference registry"),
+}
+for pmid, (topic, note) in NORTH_AMERICA.items():
+    add(pmid, None, topic, note, via="PubMed search")
+CANADA_QUERY = ('("Child Amputee Program"[All Fields] OR "Child Amputee Prosthetics Project"[All Fields] '
+                'OR ("limb loss"[tiab] AND "limb difference"[tiab])) '
+                'OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR "British Columbia"[tiab] OR Toronto[tiab] OR Montreal[tiab]) '
+                'AND ("limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb difference"[tiab] OR "limb differences"[tiab] OR "limb reduction"[tiab] '
+                'OR "child amputee"[tiab] OR "child amputees"[tiab] OR "paediatric amputee"[tiab] OR "pediatric amputee"[tiab] OR dysmelia[tiab]))')
+canada_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(CANADA_QUERY)}&retmode=json&retmax=1000"))["esearchresult"]["idlist"]
+print(f"North America query: {len(canada_ids)} PubMed records")
+for i in range(0, len(canada_ids), 50):
+    batch = canada_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+        abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+        r = screen(title + " " + abstract, title, strict=True)
+        if not r:
+            review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"], "status": "rejected: Canada query, not about the site's conditions"}); continue
+        codes, topics = r
+        for t in topics: add(pmid, None, t, "PubMed search on Canadian limb difference and child amputee care", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
+
 META_RX = re.compile(r"meta-?analys|systematic review|pooled analysis|umbrella review|scoping review", re.I)
 
 # metadata for all PMIDs (batched esummary)
@@ -295,7 +326,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "canada_query": CANADA_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
 (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

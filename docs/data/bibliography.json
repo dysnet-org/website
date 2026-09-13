@@ -1,9 +1,36 @@
 {
- "built": "2026-09-12",
- "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref",
+ "built": "2026-09-13",
+ "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, fixed title-level PubMed queries on thalidomide embryopathy, systematic reviews, causes, and Canadian limb-difference and child-amputee care; metadata from NCBI E-utilities / Crossref",
  "thalidomide_query": "thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR \"birth defects\"[Title] OR phocomelia[Title] OR survivors[Title] OR \"limb\"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])",
  "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
  "entries": [
+  {
+   "pmid": "41918893",
+   "doi": "10.33137/cpoj.v9i1.46909",
+   "title": "A national strategy for a canadian limb loss and limb difference registry",
+   "authors": [
+    "Mayo AL",
+    "Hitzig SL",
+    "Zidarov D",
+    "et al."
+   ],
+   "journal": "Canadian prosthetics & orthotics journal",
+   "year": "2026",
+   "volume": "9",
+   "pages": "46909",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Delphi strategy for a Canadian limb loss and limb difference registry",
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
   {
    "pmid": "41932552",
    "doi": "10.1016/j.taap.2026.117811",
@@ -289,10 +316,13 @@
    ],
    "codes": [],
    "topics": [
-    "meta"
+    "living",
+    "meta",
+    "review"
    ],
    "notes": [
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -443,6 +473,32 @@
    ]
   },
   {
+   "pmid": "42602040",
+   "doi": "10.3389/fspor.2026.1798505",
+   "title": "Rewriting the narrative: a perspective on youth limb difference, community access and the power of amputee soccer",
+   "authors": [
+    "Pierre-Glaude JK",
+    "Saab A",
+    "White T",
+    "et al."
+   ],
+   "journal": "Frontiers in sports and active living",
+   "year": "2026",
+   "volume": "8",
+   "pages": "1798505",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "40983097",
    "doi": "10.1055/a-2685-5018",
    "title": "Risk of Falls and Fractures in People with Thalidomide Embryopathy",
@@ -525,6 +581,31 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "42698323",
+   "doi": "10.1177/19437676261464069",
+   "title": "The Suitcase Packing Activity: A Novel Outcome Measure for Individuals With Upper Limb Loss",
+   "authors": [
+    "Paulus P",
+    "Childers WL",
+    "Pontillo M"
+   ],
+   "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
+   "year": "2026",
+   "volume": "80",
+   "pages": "795-803",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -1310,6 +1391,33 @@
    ]
   },
   {
+   "pmid": "39372245",
+   "doi": "10.1016/j.arrct.2024.100356",
+   "title": "Creation of a Limb Loss and Preservation Registry for Improving the Quality of Patient Care in the United States",
+   "authors": [
+    "Kaufman KR",
+    "Bernhardt K",
+    "Murphy S",
+    "et al."
+   ],
+   "journal": "Archives of rehabilitation research and clinical translation",
+   "year": "2024",
+   "volume": "6",
+   "pages": "100356",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "38547384",
    "doi": "10.1002/uog.27649",
    "title": "Detection of non-cardiac fetal abnormalities on ultrasound at 11-14 weeks: systematic review and meta-analysis",
@@ -1727,6 +1835,35 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "39389632",
+   "doi": "10.1016/j.pmr.2024.05.005",
+   "title": "Prostheses and Rehabilitation Principles in Pediatric Limb Deficiency",
+   "authors": [
+    "Sinskey YL",
+    "Spires MC"
+   ],
+   "journal": "Physical medicine and rehabilitation clinics of North America",
+   "year": "2024",
+   "volume": "35",
+   "pages": "707-724",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "prosthetics",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -6261,6 +6398,32 @@
    ]
   },
   {
+   "pmid": "31528111",
+   "doi": "10.1093/pch/pxz001",
+   "title": "Support, information, and integration of genetics for children with congenital lower limb deficiencies in British Columbia, Canada",
+   "authors": [
+    "Campbell T",
+    "Chen CJ",
+    "Chhina H",
+    "et al."
+   ],
+   "journal": "Paediatrics & child health",
+   "year": "2019",
+   "volume": "24",
+   "pages": "395-401",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "30650111",
    "doi": "10.1371/journal.pone.0210222",
    "title": "The health and quality of life of Thalidomide survivors as they age - Evidence from a UK survey",
@@ -6561,6 +6724,35 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "29168277",
+   "doi": "10.1002/ajmg.a.38513",
+   "title": "Congenital limb deficiencies and major associated anomalies in Alberta for the years 1980-2012",
+   "authors": [
+    "Bedard T",
+    "Lowry RB",
+    "Sibbald B",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2018",
+   "volume": "176",
+   "pages": "19-28",
+   "pubtypes": [
+    "Historical Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -7706,7 +7898,8 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -7971,7 +8164,8 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -8556,6 +8750,32 @@
    ]
   },
   {
+   "pmid": "25678192",
+   "doi": "10.2340/16501977-1922",
+   "title": "Adaptive devices in young people with upper limb reduction deficiencies: Use and satisfaction",
+   "authors": [
+    "Vasluian E",
+    "van Wijk I",
+    "Dijkstra PU",
+    "et al."
+   ],
+   "journal": "Journal of rehabilitation medicine",
+   "year": "2015",
+   "volume": "47",
+   "pages": "346-55",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "26347425",
    "doi": "10.1002/ajmg.a.37355",
    "title": "Congenital anomalies associated with trisomy 18 or trisomy 13: A registry-based study in 16 European countries, 2000-2011",
@@ -8609,6 +8829,40 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "26171959",
+   "doi": "10.1002/ajmg.a.37240",
+   "title": "Congenital limb deficiencies in Alberta-a review of 33 years (1980-2012) from the Alberta Congenital Anomalies Surveillance System (ACASS)",
+   "authors": [
+    "Bedard T",
+    "Lowry RB",
+    "Sibbald B",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2015",
+   "volume": "167A",
+   "pages": "2599-609",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "1027",
+    "2440",
+    "295000"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -8761,6 +9015,33 @@
    ],
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "25479783",
+   "doi": "10.1016/j.pmr.2014.09.006",
+   "title": "Pediatric limb differences and amputations",
+   "authors": [
+    "Le JT",
+    "Scott-Wyard PR"
+   ],
+   "journal": "Physical medicine and rehabilitation clinics of North America",
+   "year": "2015",
+   "volume": "26",
+   "pages": "95-108",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -9553,6 +9834,32 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ]
+  },
+  {
+   "pmid": "24036887",
+   "doi": "10.2340/16501977-1220",
+   "title": "Stump sensibility in children with upper limb reduction deficiency",
+   "authors": [
+    "Reinkingh M",
+    "Reinders-Messelink HA",
+    "Dijkstra PU",
+    "et al."
+   ],
+   "journal": "Journal of rehabilitation medicine",
+   "year": "2014",
+   "volume": "46",
+   "pages": "51-8",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "prosthetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
    ]
   },
   {
@@ -11697,6 +12004,34 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "20298129",
+   "doi": "10.3109/03093640903584993",
+   "title": "Age at first prosthetic fitting and later functional outcome in children and young adults with unilateral congenital below-elbow deficiency: a cross-sectional study",
+   "authors": [
+    "Huizing K",
+    "Reinders-Messelink H",
+    "Maathuis C",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2010",
+   "volume": "34",
+   "pages": "166-74",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "prosthetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -14402,7 +14737,8 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -15933,6 +16269,32 @@
    ]
   },
   {
+   "pmid": "10493140",
+   "doi": "10.3109/03093649909071624",
+   "title": "Effectiveness of prosthetic rehabilitation of children with limb deficiencies present at birth",
+   "authors": [
+    "Sener G",
+    "Yiğiter K",
+    "Bayar K",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "1999",
+   "volume": "23",
+   "pages": "130-4",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "10229238",
    "doi": "10.1038/8466",
    "title": "Free radical-mediated oxidative DNA damage in the mechanism of thalidomide teratogenicity",
@@ -16269,6 +16631,34 @@
    ]
   },
   {
+   "pmid": "10414768",
+   "doi": "10.1016/s0003-9993(99)90233-2",
+   "title": "Toddlers with limb deficiency: conceptual basis and initial application of a functional status outcome measure",
+   "authors": [
+    "Pruitt SD",
+    "Seid M",
+    "Varni JW",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "1999",
+   "volume": "80",
+   "pages": "819-24",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "prosthetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "9860497",
    "doi": "10.1021/tx9801817",
    "title": "Chiral inversion and hydrolysis of thalidomide: mechanisms and catalysis by bases and serum albumin, and chiral stability of teratogenic metabolites",
@@ -16346,6 +16736,35 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "9552106",
+   "doi": "10.1016/s0003-9993(98)90141-1",
+   "title": "Functional status in limb deficiency: development of an outcome measure for preschool children",
+   "authors": [
+    "Pruitt SD",
+    "Varni JW",
+    "Seid M",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "1998",
+   "volume": "79",
+   "pages": "405-11",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "living",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -16637,6 +17056,34 @@
    ]
   },
   {
+   "pmid": "9228879",
+   "doi": "10.1016/s0003-9993(97)90084-8",
+   "title": "Prosthesis satisfaction outcome measurement in pediatric limb deficiency",
+   "authors": [
+    "Pruitt SD",
+    "Varni JW",
+    "Seid M",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "1997",
+   "volume": "78",
+   "pages": "750-4",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "prosthetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "9415679",
    "doi": "10.1002/(sici)1096-8628(19971219)73:3<251::aid-ajmg4>3.0.co;2-v",
    "title": "The return of thalidomide: are birth defects surveillance systems ready?",
@@ -16751,6 +17198,33 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "8976304",
+   "doi": "10.1016/s0003-9993(96)90185-9",
+   "title": "Functional status in children with limb deficiency: development and initial validation of an outcome measure",
+   "authors": [
+    "Pruitt SD",
+    "Varni JW",
+    "Setoguchi Y"
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "1996",
+   "volume": "77",
+   "pages": "1233-8",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "prosthetics"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -17701,7 +18175,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -18200,6 +18675,32 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "1481845",
+   "doi": "10.1002/ajmg.1320440611",
+   "title": "Upper limb deficiencies and associated malformations: a population-based study",
+   "authors": [
+    "Froster UG",
+    "Baird PA"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1992",
+   "volume": "44",
+   "pages": "767-81",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -18726,6 +19227,32 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "2784595",
+   "doi": "10.1002/tera.1420390205",
+   "title": "Limb reduction defects in over one million consecutive livebirths",
+   "authors": [
+    "Froster-Iskenius UG",
+    "Baird PA"
+   ],
+   "journal": "Teratology",
+   "year": "1989",
+   "volume": "39",
+   "pages": "127-35",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -19713,6 +20240,29 @@
    ]
   },
   {
+   "pmid": "23941450",
+   "doi": "10.1080/J003v03n01_04",
+   "title": "Outcomes of a problem-solving approach to independence in children with multiple limb deficiencies",
+   "authors": [
+    "Clarke SD"
+   ],
+   "journal": "Occupational therapy in health care",
+   "year": "1986",
+   "volume": "3",
+   "pages": "27-40",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "3738825",
    "doi": "10.1002/tera.1420330310",
    "title": "Prevention of caffeine-induced limb malformations by maternal adrenalectomy",
@@ -20516,6 +21066,33 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "6841409",
+   "doi": "10.1302/0301-620X.65B3.6841409",
+   "title": "A long-term review of children with congenital and acquired upper limb deficiency",
+   "authors": [
+    "Scotland TR",
+    "Galway HR"
+   ],
+   "journal": "The Journal of bone and joint surgery. British volume",
+   "year": "1983",
+   "volume": "65",
+   "pages": "346-9",
+   "pubtypes": [
+    "Comparative Study"
+   ],
+   "codes": [],
+   "topics": [
+    "prosthetics",
+    "review"
+   ],
+   "notes": [
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -27621,5 +28198,6 @@
    ]
   }
  ],
- "causes_query": "(\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]"
+ "causes_query": "(\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]",
+ "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))"
 }

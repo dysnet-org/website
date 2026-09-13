@@ -529,5 +529,35 @@
   "lon": 135.7814382,
   "display_name": "京都大学, 東一条通り, 吉田二本松町, 吉田上大路町, 左京区, 京都市, 京都府, 606-8501, 日本",
   "query": "Kyoto University, Japan"
+ },
+ "Alberta Children's Hospital|Canada": {
+  "lat": 51.0746658,
+  "lon": -114.1480515,
+  "display_name": "Alberta Children's Hospital, 28, Oki Drive NW, University District, Calgary, Alberta, T3B 6A8, Canada",
+  "query": "Alberta Children's Hospital, Canada"
+ },
+ "University Medical Center Groningen|Netherlands": {
+  "lat": 53.2190652,
+  "lon": 6.5680077,
+  "display_name": "Groningen, Nederland",
+  "query": "Groningen, Netherlands"
+ },
+ "Medizinische Universität zu Lübeck|Germany": {
+  "lat": 52.3834796,
+  "lon": 9.8044306,
+  "display_name": "Medizinische Hochschule Hannover, 1, Carl-Neuberg-Straße, Groß-Buchholz, Buchholz-Kleefeld, Hannover, Region Hannover, Niedersachsen, 30625,",
+  "query": "Medizinische, Germany"
+ },
+ "Mayo Clinic|United States": {
+  "lat": 44.0225389,
+  "lon": -92.4666075,
+  "display_name": "Mayo Clinic, 2nd Avenue Southwest, Rochester, Olmsted County, Minnesota, 55903, United States",
+  "query": "Mayo Clinic, United States"
+ },
+ "University of British Columbia|Canada": {
+  "lat": 49.2578915,
+  "lon": -123.2429755,
+  "display_name": "University of British Columbia, Electoral Area A, Metro Vancouver Regional District, British Columbia, Canada",
+  "query": "University of British Columbia, Canada"
  }
 }

@@ -841,6 +841,28 @@ PAGES["/knowledge/registries/"] = {
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
     <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The coverage of each French registry is drawn on the <a href="/#map">landing-page map</a>. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
+
+    <div class="tick"></div>
+    <p class="eyebrow">Outside Europe</p>
+    <h2 class="h2">North America is building registries of its own.</h2>
+    <p>Orphanet lists the registries that declare themselves to it, which leaves out initiatives that are being designed or that sit outside the rare-disease framing. Three of them concern our conditions directly, and two are led by the amputee community itself.</p>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>Canada: a national strategy, and no registry yet <span class="badge live">2026</span></h3>
+        <p>Canada has no national data source on limb loss and limb difference, so incidence, prevalence, risk factors and care outcomes remain unknown, and services vary from province to province. A survey of 96 invited representatives, answered by 53, was followed by a virtual workshop on 14 February 2024 attended by 64 people. Participants agreed on five domains for a future registry: representation, standardization, practice-based evidence, research and innovation, and policy and funding. Amputee advocacy organisations took part alongside clinicians, researchers and decision-makers, and the workshop looked to them to champion the registry. The authors also describe patient-powered registries, which patients and advocacy groups manage themselves, which is the model DysNet is building.</p>
+        <p class="src">Mayo AL, Hitzig SL, Zidarov D, et al. <em>Can Prosthet Orthot J</em> 2026;9(1):46909 · <a href="https://doi.org/10.33137/cpoj.v9i1.46909" target="_blank" rel="noopener external">doi:10.33137/cpoj.v9i1.46909</a></p>
+      </article>
+      <article class="entry">
+        <h3>United States: the Limb Loss and Preservation Registry <span class="badge live">running</span></h3>
+        <p>The registry standardises outcome data on limb loss and limb difference across all 50 states. More than 1,100 trigger codes identify a patient, and every later episode of care is then collected for that person’s lifetime. It has gathered data on more than 435,000 patients and more than 11.5 million episodes of care.</p>
+        <p class="src">Kaufman KR, Bernhardt K, Murphy S, et al. <em>Arch Rehabil Res Clin Transl</em> 2024;6(4):100356 · <a href="https://doi.org/10.1016/j.arrct.2024.100356" target="_blank" rel="noopener external">doi:10.1016/j.arrct.2024.100356</a></p>
+      </article>
+      <article class="entry">
+        <h3>Alberta: 33 years of congenital limb deficiencies <span class="badge live">population-based</span></h3>
+        <p>The Alberta Congenital Anomalies Surveillance System records live births, stillbirths and terminations. Between 1980 and 2012 it ascertained 795 cases of congenital limb deficiency among 1,411,652 births, a prevalence of 5.6 per 10,000. It is the kind of population registry that Europe knows through EUROCAT, and it shows what continuity over three decades makes visible.</p>
+        <p class="src">Bedard T, Lowry RB, Sibbald B, et al. <em>Am J Med Genet A</em> 2015;167A(11):2599-2609 · <a href="https://doi.org/10.1002/ajmg.a.37240" target="_blank" rel="noopener external">doi:10.1002/ajmg.a.37240</a></p>
+      </article>
+    </div>
     {REGISTER_FOOT}
   </div>
 </section>
@@ -1268,6 +1290,8 @@ PAGES["/registry/"] = {
       <li><strong>Make registries talk to each other.</strong> Create the conditions for interoperability and portability of data between existing registries, and complete them where needed, so that new lines of research open.</li>
     </ol>
 
+    <p>The same conclusion was reached on the other side of the Atlantic. A Canadian workshop held in February 2024 found that the country has no national data source on limb loss and limb difference, agreed on five domains for building one, and looked to the amputee organisations themselves to carry it. Its authors describe what they call patient-powered registries, managed by patients and advocacy groups themselves. Our <a href="/knowledge/registries/">registries register</a> summarises that work and the American registry already running.</p>
+
     {opener("01", "Words matter", "What a registry is, and what this is.")}
     <blockquote class="definition">
       <p>“A patient registry is an organized system that uses observational study methods to collect uniform data (clinical and other) to evaluate specified outcomes for a population defined by a particular disease, condition, or exposure, and that serves one or more predetermined scientific, clinical, or policy purposes.”</p>
@@ -1584,7 +1608,7 @@ MAP_COUNTRIES = {}
 for _country, _orgs in MEMBERS:
     _id = ISO_NUM[_country]
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
-MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["The War Amps (contact opened, 2026)"]}
+MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["A national amputee organisation (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
 # Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
 # so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.

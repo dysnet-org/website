@@ -1,9 +1,49 @@
 {
- "built": "2026-09-12",
+ "built": "2026-09-13",
  "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
- "bibliography_size": 950,
- "records_without_affiliation": 331,
+ "bibliography_size": 972,
+ "records_without_affiliation": 332,
  "teams": [
+  {
+   "institution": "University of California",
+   "country": "United States",
+   "papers": 9,
+   "years": [
+    1996,
+    2021
+   ],
+   "codes": [
+    "2913",
+    "thal",
+    "2440",
+    "93458"
+   ],
+   "authors": [
+    "Pruitt SD",
+    "Del Campo M",
+    "Chen H"
+   ],
+   "representative": {
+    "pmid": "34522548",
+    "doi": "10.7759/cureus.17070",
+    "title": "Thalidomide-Then and Now: Case Report of a Woman With Thalidomide Embryopathy and Review of Current Thalidomide Uses",
+    "year": "2021"
+   },
+   "pmids": [
+    "34522548",
+    "21763481",
+    "22180729",
+    "18302266",
+    "10364522",
+    "10414768",
+    "9552106",
+    "9228879",
+    "8976304"
+   ],
+   "lat": 37.8707751,
+   "lon": -122.2656754,
+   "geocode_display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States"
+  },
   {
    "institution": "University of Cologne",
    "country": "Germany",
@@ -219,42 +259,6 @@
    "lat": 50.0888947,
    "lon": 14.4162757,
    "geocode_display_name": "Filozofická fakulta Univerzity Karlovy, Kaprova, Josefov, obvod Praha 1, Praha, 116 93, Česko"
-  },
-  {
-   "institution": "University of California",
-   "country": "United States",
-   "papers": 5,
-   "years": [
-    1999,
-    2021
-   ],
-   "codes": [
-    "2913",
-    "thal",
-    "2440",
-    "93458"
-   ],
-   "authors": [
-    "Del Campo M",
-    "Chen H",
-    "Dowdle WE"
-   ],
-   "representative": {
-    "pmid": "34522548",
-    "doi": "10.7759/cureus.17070",
-    "title": "Thalidomide-Then and Now: Case Report of a Woman With Thalidomide Embryopathy and Review of Current Thalidomide Uses",
-    "year": "2021"
-   },
-   "pmids": [
-    "34522548",
-    "21763481",
-    "22180729",
-    "18302266",
-    "10364522"
-   ],
-   "lat": 37.8707751,
-   "lon": -122.2656754,
-   "geocode_display_name": "University of California, The Crescent, Downtown Berkeley, Berkeley, Alameda County, California, 94704, United States"
   },
   {
    "institution": "University of Göteborg",
@@ -585,6 +589,38 @@
    "geocode_display_name": "Thalidomide Memorial, Museum Avenue, Crockherbtown, Civic Centre, Castle, Cardiff, Cymru / Wales, CF10 3AX, United Kingdom"
   },
   {
+   "institution": "University of Michigan",
+   "country": "United States",
+   "papers": 3,
+   "years": [
+    2002,
+    2024
+   ],
+   "codes": [
+    "thal",
+    "295000",
+    "2879"
+   ],
+   "authors": [
+    "Hansen JM",
+    "Spires MC"
+   ],
+   "representative": {
+    "pmid": "39389632",
+    "doi": "10.1016/j.pmr.2024.05.005",
+    "title": "Prostheses and Rehabilitation Principles in Pediatric Limb Deficiency",
+    "year": "2024"
+   },
+   "pmids": [
+    "39389632",
+    "12242718",
+    "11861780"
+   ],
+   "lat": 42.2942142,
+   "lon": -83.7100389,
+   "geocode_display_name": "University of Michigan, 500, South State Street, Ann Arbor, Washtenaw County, Michigan, 48109, United States"
+  },
+  {
    "institution": "University of Utah School of Medicine",
    "country": "United States",
    "papers": 3,
@@ -647,6 +683,38 @@
    "lat": 52.5299885,
    "lon": 13.3486639,
    "geocode_display_name": "Institut für Rechtsmedizin der Charité Universitätsmedizin Berlin, 21, Turmstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Deutschland"
+  },
+  {
+   "institution": "University of Groningen",
+   "country": "Netherlands",
+   "papers": 3,
+   "years": [
+    2010,
+    2023
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "Jentink J",
+    "Vasluian E",
+    "Bergman JEH"
+   ],
+   "representative": {
+    "pmid": "36584346",
+    "doi": "10.1002/ajmg.a.63107",
+    "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
+    "year": "2023"
+   },
+   "pmids": [
+    "36584346",
+    "25678192",
+    "20558369"
+   ],
+   "lat": 53.2194416,
+   "lon": 6.5629863,
+   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
   },
   {
    "institution": "Dr. Becker Rhein-Sieg-Klinik",
@@ -840,6 +908,39 @@
    "geocode_display_name": "Università degli Studi di Genova, Via Balbi, Ghetto, Prè, Centro Est, Genova, Liguria, 16126, Italia"
   },
   {
+   "institution": "Alberta Children's Hospital",
+   "country": "Canada",
+   "papers": 3,
+   "years": [
+    2015,
+    2018
+   ],
+   "codes": [
+    "295000",
+    "1027",
+    "2440"
+   ],
+   "authors": [
+    "Bedard T",
+    "Metcalfe A",
+    "Lowry RB"
+   ],
+   "representative": {
+    "pmid": "29168277",
+    "doi": "10.1002/ajmg.a.38513",
+    "title": "Congenital limb deficiencies and major associated anomalies in Alberta for the years 1980-2012",
+    "year": "2018"
+   },
+   "pmids": [
+    "29168277",
+    "27739257",
+    "26171959"
+   ],
+   "lat": 51.0746658,
+   "lon": -114.1480515,
+   "geocode_display_name": "Alberta Children's Hospital, 28, Oki Drive NW, University District, Calgary, Alberta, T3B 6A8, Canada"
+  },
+  {
    "institution": "INAGEMP-Instituto Nacional de Genética Médica Populacional",
    "country": "Brazil",
    "papers": 3,
@@ -932,6 +1033,35 @@
    "lat": 39.1408304,
    "lon": -84.5023891,
    "geocode_display_name": "Cincinnati Children’s Hospital Medical Center, 3333, Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, 45229, United States"
+  },
+  {
+   "institution": "University Medical Center Groningen",
+   "country": "Netherlands",
+   "papers": 3,
+   "years": [
+    2010,
+    2014
+   ],
+   "codes": [],
+   "authors": [
+    "Huizing K",
+    "Vasluian E",
+    "Reinkingh M"
+   ],
+   "representative": {
+    "pmid": "24036887",
+    "doi": "10.2340/16501977-1220",
+    "title": "Stump sensibility in children with upper limb reduction deficiency",
+    "year": "2014"
+   },
+   "pmids": [
+    "24036887",
+    "23826203",
+    "20298129"
+   ],
+   "lat": 53.2190652,
+   "lon": 6.5680077,
+   "geocode_display_name": "Groningen, Nederland"
   },
   {
    "institution": "University of Iowa",
@@ -1156,6 +1286,34 @@
    "lat": 35.3250107,
    "lon": -76.8802812,
    "geocode_display_name": "Edward, Beaufort County, North Carolina, United States"
+  },
+  {
+   "institution": "Medizinische Universität zu Lübeck",
+   "country": "Germany",
+   "papers": 3,
+   "years": [
+    1989,
+    1993
+   ],
+   "codes": [],
+   "authors": [
+    "Froster UG",
+    "Froster-Iskenius UG"
+   ],
+   "representative": {
+    "pmid": "8143629",
+    "doi": "10.1289/ehp.93101s3269",
+    "title": "Maternal factors, medications, and drug exposure in congenital limb reduction defects",
+    "year": "1993"
+   },
+   "pmids": [
+    "8143629",
+    "1481845",
+    "2784595"
+   ],
+   "lat": 52.3834796,
+   "lon": 9.8044306,
+   "geocode_display_name": "Medizinische Hochschule Hannover, 1, Carl-Neuberg-Straße, Groß-Buchholz, Buchholz-Kleefeld, Hannover, Region Hannover, Niedersachsen, 30625,"
   },
   {
    "institution": "Boston University School of Public Health",
@@ -1397,6 +1555,35 @@
    "geocode_display_name": "北海道大学, 北8条西5, 北区, 札幌市, 石狩振興局, 北海道, 北海道地方, 060-0808, 日本"
   },
   {
+   "institution": "Mayo Clinic",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2013,
+    2024
+   ],
+   "codes": [
+    "93458"
+   ],
+   "authors": [
+    "Dufendach KA",
+    "Kaufman KR"
+   ],
+   "representative": {
+    "pmid": "39372245",
+    "doi": "10.1016/j.arrct.2024.100356",
+    "title": "Creation of a Limb Loss and Preservation Registry for Improving the Quality of Patient Care in the United States",
+    "year": "2024"
+   },
+   "pmids": [
+    "39372245",
+    "23690510"
+   ],
+   "lat": 44.0225389,
+   "lon": -92.4666075,
+   "geocode_display_name": "Mayo Clinic, 2nd Avenue Southwest, Rochester, Olmsted County, Minnesota, 55903, United States"
+  },
+  {
    "institution": "Ankara University",
    "country": "Turkey",
    "papers": 2,
@@ -1485,37 +1672,6 @@
    "lat": 48.1514562,
    "lon": 16.3153812,
    "geocode_display_name": "Orthopedic Alt-Erlaa, Anton-Baumgartner-Straße, Katastralgemeinde Inzersdorf, Liesing, Wien, 1230, Österreich"
-  },
-  {
-   "institution": "University of Groningen",
-   "country": "Netherlands",
-   "papers": 2,
-   "years": [
-    2010,
-    2023
-   ],
-   "codes": [
-    "295000",
-    "2913"
-   ],
-   "authors": [
-    "Jentink J",
-    "Bergman JEH",
-    "de Walle HEK"
-   ],
-   "representative": {
-    "pmid": "36584346",
-    "doi": "10.1002/ajmg.a.63107",
-    "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
-    "year": "2023"
-   },
-   "pmids": [
-    "36584346",
-    "20558369"
-   ],
-   "lat": 53.2194416,
-   "lon": 6.5629863,
-   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
   },
   {
    "institution": "All India Institute of Medical Sciences",
@@ -1817,6 +1973,36 @@
    "lat": 50.7338124,
    "lon": 7.1022465,
    "geocode_display_name": "Rheinische Friedrich-Wilhelms-Universität Bonn, Arkadenhof, Bonn-Zentrum, Stadtbezirk Bonn, Bonn, Nordrhein-Westfalen, 53113, Deutschland"
+  },
+  {
+   "institution": "University of British Columbia",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    1992,
+    2019
+   ],
+   "codes": [
+    "295000"
+   ],
+   "authors": [
+    "Van Allen MI",
+    "Campbell T",
+    "Elliott AM"
+   ],
+   "representative": {
+    "pmid": "31528111",
+    "doi": "10.1093/pch/pxz001",
+    "title": "Support, information, and integration of genetics for children with congenital lower limb deficiencies in British Columbia, Canada",
+    "year": "2019"
+   },
+   "pmids": [
+    "31528111",
+    "1481816"
+   ],
+   "lat": 49.2578915,
+   "lon": -123.2429755,
+   "geocode_display_name": "University of British Columbia, Electoral Area A, Metro Vancouver Regional District, British Columbia, Canada"
   },
   {
    "institution": "University of York",
@@ -2471,35 +2657,6 @@
    "lat": 43.6572672,
    "lon": -79.3875622,
    "geocode_display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada"
-  },
-  {
-   "institution": "University of Michigan",
-   "country": "United States",
-   "papers": 2,
-   "years": [
-    2002,
-    2002
-   ],
-   "codes": [
-    "thal",
-    "2879"
-   ],
-   "authors": [
-    "Hansen JM"
-   ],
-   "representative": {
-    "pmid": "12242718",
-    "doi": "10.1002/dvdy.10150",
-    "title": "Misregulation of gene expression in the redox-sensitive NF-kappab-dependent limb outgrowth pathway by thalidomide",
-    "year": "2002"
-   },
-   "pmids": [
-    "12242718",
-    "11861780"
-   ],
-   "lat": 42.2942142,
-   "lon": -83.7100389,
-   "geocode_display_name": "University of Michigan, 500, South State Street, Ann Arbor, Washtenaw County, Michigan, 48109, United States"
   },
   {
    "institution": "Foundation 41",

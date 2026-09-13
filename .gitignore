@@ -4,6 +4,8 @@
 # Private source material — never publish (board correspondence, draft documents)
 *.eml
 *.pdf
+# ...except the PDFs the site itself publishes, which GitHub Pages must serve
+!docs/assets/*.pdf
 idysnetarefocusedstrategy20262029_pdf/
 260807 HDS Strategy - Indigenous Data Stewardship Canada.md
 

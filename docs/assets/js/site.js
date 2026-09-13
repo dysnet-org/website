@@ -403,16 +403,16 @@
       requestAnimationFrame(step);
     }
     var chips = document.querySelectorAll(".map-views button");
-    function choose(key, guessed) {
+    function choose(key) {
       chips.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-view") === key ? "true" : "false"); });
       setView(regionBox(REGIONS[key]));
       var g = document.querySelector(".map-guess");
-      if (g) g.textContent = guessed ? "Showing " + LABELS[key] + ", guessed from your device’s time zone. Nothing is sent." : "Showing " + LABELS[key] + ".";
+      if (g) g.textContent = "Showing " + LABELS[key] + ".";
     }
-    chips.forEach(function (b) { b.addEventListener("click", function () { choose(b.getAttribute("data-view"), false); }); });
+    chips.forEach(function (b) { b.addEventListener("click", function () { choose(b.getAttribute("data-view")); }); });
     var first = guessRegion();
     svg.setAttribute("viewBox", full.join(" "));
-    setTimeout(function () { choose(first, first !== "world"); }, 350);
+    setTimeout(function () { choose(first); }, 350);
     window.addEventListener("resize", function () {
       var k = document.querySelector('.map-views button[aria-pressed="true"]');
       if (k) { current = regionBox(REGIONS[k.getAttribute("data-view")]); svg.setAttribute("viewBox", current.join(" ")); }

@@ -1,9 +1,7 @@
 {
  "(RS)-1-{1-ethyl-4-[4-mesyl-3-(2-methoxyethoxy)-o-toluoyl]pyrazol-5-yloxy}ethyl methyl carbonate": {},
  "1,2,4-Triazole": {},
- "1,2-Dibromoethane": {
-  "agriculture": "=== Pesticide === It has been used as a pesticide in soil and on various crops."
- },
+ "1,2-Dibromoethane": {},
  "1,2-benzenedicarboxylic acid, dipentylester, branched and linear [1]": {},
  "1,3,5-Trioxane": {
   "goods": "It is a precursor for the production of polyoxymethylene plastics, of which about one million tons per year are produced."
@@ -13,8 +11,7 @@
   "construction": "It is a solvent for adhesives in aerosol glues that glue foam cushions together."
  },
  "1-Vinylimidazole": {
-  "cleaning": "Water-soluble copolymers with vinylpyrrolidone are used as color transfer inhibitors in detergent preparations, with vinyl acetate as a coating of lithographic printing plates, with acrylic acid esters or methacrylic aci",
-  "construction": "== Applications == 1-Vinylimidazole is used because of its high reactivity for free-radical (UV) polymerization as reactive diluent in UV lacquers, inks and adhesives for coatings and lacquers.",
+  "construction": "1-Vinylimidazole is used because of its high reactivity for free-radical (UV) polymerization as reactive diluent in UV lacquers, inks and adhesives for coatings and lacquers.",
   "cosmetics": "The products are functional copolymers, which are used as oil field chemicals and as cosmetic auxiliaries.",
   "goods": "The products are functional copolymers, which are used as oil field chemicals and as cosmetic auxiliaries."
  },
@@ -36,8 +33,7 @@
  "2-Ethoxyethyl acetate": {
   "agriculture": "It has also been used in coatings, dyes, insecticides, soaps and cosmetics.",
   "construction": "It has also been used in coatings, dyes, insecticides, soaps and cosmetics.",
-  "cosmetics": "It has also been used in coatings, dyes, insecticides, soaps and cosmetics.",
-  "goods": "== Uses == 2-Ethoxyethyl acetate has been used to dissolve polyester and short oil alkyd resins."
+  "goods": "2-Ethoxyethyl acetate has been used to dissolve polyester and short oil alkyd resins."
  },
  "2-Ethylhexanoic acid": {},
  "2-Hexanone": {
@@ -63,13 +59,11 @@
   "agriculture": "The benzoate salt emamectin benzoate is also used as an insecticide."
  },
  "Abiraterone acetate": {},
- "Acetamiprid": {
-  "agriculture": "== Efficacy and side effects == === Efficacy === Acetamiprid is used to protect a variety of crops, plants and flowers."
- },
+ "Acetamiprid": {},
  "Acetazolamide": {},
  "Acetohydroxamic acid": {},
  "Acrylamide": {
-  "goods": "== Uses == The majority of acrylamide is used to manufacture various polymers, especially polyacrylamide."
+  "goods": "The majority of acrylamide is used to manufacture various polymers, especially polyacrylamide."
  },
  "Alprazolam": {},
  "Altretamine": {},
@@ -85,37 +79,29 @@
  },
  "Amiodarone": {},
  "Amitraz": {
-  "agriculture": "Amitraz has been found to have an insect repellent effect, works as an insecticide and also as a pesticide synergist.",
-  "construction": "In addition the replacement of the dialkylformamide with an N-alkylpyrrolidone can be used to obtain products of the clenpyrin group from this reaction."
+  "agriculture": "Amitraz has been found to have an insect repellent effect, works as an insecticide and also as a pesticide synergist."
  },
- "Ammonium bromide": {},
- "Ammonium dichromate": {
-  "construction": "== Uses == === Pyrotechnics === It has been used in pyrotechnics as part of a conversion coating method for magnesium powder.",
-  "goods": "It is also used as a mordant for dyeing pigments, in manufacturing of alizarin, chrome alum, leather tanning and oil purification."
+ "Ammonium bromide": {
+  "construction": "Ammonium bromide is used for photography in films, plates and papers; in fireproofing of wood; in lithography and process engraving; in corrosion inhibitors; and in pharmaceutical preparations."
  },
+ "Ammonium dichromate": {},
  "Amoxapine": {},
  "Angiotensin-converting enzyme": {},
  "Anisindione": {},
  "Arsenic": {
-  "agriculture": "Arsenic and its compounds, especially the trioxide, are used in the production of pesticides, treated wood products, herbicides, and insecticides.",
-  "construction": "== Applications == === Agricultural === The toxicity of arsenic to insects, bacteria, and fungi led to its use as a wood preservative.",
-  "goods": "However, CCA remains in heavy use in other countries (such as on Malaysian rubber plantations)."
+  "agriculture": "Arsenic and its compounds, especially the trioxide, are used in the production of pesticides, treated wood products, herbicides, and insecticides."
  },
- "Aspirin": {
-  "construction": "Enteric coating on aspirin may be used in manufacturing to prevent release of aspirin into the stomach to reduce gastric harm, but enteric coating does not reduce gastrointestinal bleeding risk."
- },
+ "Aspirin": {},
  "Atenolol": {},
  "Atrazine": {
   "agriculture": "It is used to prevent pre-emergence broadleaf weeds in crops such as maize (corn), soybean and sugarcane, and also in turf landscaping, such as golf courses and residential lawns."
  },
- "Auranofin": {
-  "goods": "Its anticancer mechanism may be related to its ability to inhibit tubulin polymerization, thereby classifying it as a microtubule-targeting agent (MTA) widely used in cancer therapy."
- },
+ "Auranofin": {},
  "Azathioprine": {},
  "Barbiturate": {},
  "Barium borate": {
-  "construction": "It is used as a flame retardant for paints, textiles, and paper.",
-  "goods": "It is used as a flame retardant for paints, textiles, and paper."
+  "construction": "It is added to paints, coatings, adhesives, plastics, and paper products.",
+  "goods": "It is added to paints, coatings, adhesives, plastics, and paper products."
  },
  "Basic lead acetate": {},
  "Beclometasone": {},
@@ -130,14 +116,10 @@
  },
  "Benzene": {
   "agriculture": "Smaller amounts of benzene are used to make some types of rubbers, lubricants, dyes, detergents, drugs, explosives, and pesticides.",
-  "cleaning": "Smaller amounts of benzene are used to make some types of rubbers, lubricants, dyes, detergents, drugs, explosives, and pesticides.",
-  "construction": "Benzene was historically used as a significant component in many consumer products such as liquid wrench, several paint strippers, rubber cements, spot removers, and other products.",
   "fuel": "Smaller amounts of benzene are used to make some types of rubbers, lubricants, dyes, detergents, drugs, explosives, and pesticides.",
-  "goods": "Benzene was historically used as a significant component in many consumer products such as liquid wrench, several paint strippers, rubber cements, spot removers, and other products."
+  "goods": "More than half of the entire benzene production is processed into ethylbenzene, a precursor to styrene, which is used to make polymers and plastics like polystyrene."
  },
- "Benzo(a)pyrene": {
-  "fuel": "It is also found in coal tar, in automobile exhaust fumes (especially from diesel engines), in all smoke resulting from the combustion of organic material (including cigarette smoke), and in charbroiled food."
- },
+ "Benzo(a)pyrene": {},
  "Benzodiazepine": {},
  "Benzphetamine": {},
  "Benzyl butyl phthalate": {
@@ -149,14 +131,12 @@
   "agriculture": "Binapacryl was used as a miticide and fungicide."
  },
  "Bis(2-ethylhexyl) phthalate": {
-  "construction": "== Use == Due to its suitable properties and the low cost, DEHP is widely used as a plasticizer in manufacturing of articles made of PVC.",
-  "food": "In May 2011, the illegal use of the plasticizer DEHP in clouding agents for use in food and beverages has been reported in Taiwan.",
+  "construction": "Due to its suitable properties and the low cost, DEHP is widely used as a plasticizer in manufacturing of articles made of PVC.",
   "goods": "DEHP is the most common member of the class of phthalates, which are used as plasticizers."
  },
  "Bis(2-methoxyethyl) phthalate": {},
  "Bisphenol A": {
   "construction": "The remaining 5% is used as a major component of several high-performance plastics, and as a minor additive in polyvinyl chloride (PVC), polyurethane, thermal paper, and several other materials.",
-  "fuel": "==== Other applications ==== BPA is used as an antioxidant in several fields, particularly in brake fluids.",
   "goods": "Bisphenol A (BPA) is a chemical compound primarily used in the manufacturing of various plastics."
  },
  "Bisphenol S": {
@@ -182,38 +162,29 @@
  "Busulfan": {},
  "Butabarbital sodium": {},
  "Butadiene": {
-  "goods": "In 1929, Eduard Tschunker and Walter Bock, working for IG Farben in Germany, made a copolymer of styrene and butadiene that could be used in automobile tires."
+  "goods": "Most butadiene (75% of the manufactured 1,3-butadiene) is used to make synthetic rubbers for the manufacture of tires and components of many consumer items."
  },
  "Butroxydim": {
   "agriculture": "Butroxydim is a chemical used as a herbicide."
  },
  "Cadmium": {
-  "construction": "After the industrial scale production of cadmium started in the 1930s and 1940s, the major application of cadmium was the coating of iron and steel to prevent corrosion; in 1944, 62% and in 1956, 59% of the cadmium in th",
   "goods": "It was used for a long time in the 1900s as a corrosion-resistant plating on steel, and cadmium compounds are used as red, orange, and yellow pigments, to color glass, and to stabilize plastic."
  },
  "Cadmium chloride": {},
  "Cadmium fluoride": {},
- "Cadmium sulfate": {},
- "Cadmium sulfide": {
-  "construction": "The presence of cadmium in paints has been used to detect forgeries in paintings alleged to have been produced prior to the 19th century.",
-  "goods": "== Applications == === Pigment === CdS is used as pigment in plastics, showing good thermal stability, light and weather fastness, chemical resistance and high opacity."
+ "Cadmium sulfate": {
+  "goods": "Cadmium sulfate is used widely for the electroplating of cadmium in electronic circuits."
  },
- "Cannabis": {
-  "agriculture": "It has been suggested that the presence of monoecy can be used to differentiate licit crops of monoecious hemp from illicit drug crops, but sativa strains often produce monoecious individuals, which is possibly as a resu"
- },
+ "Cadmium sulfide": {},
+ "Cannabis": {},
  "Carbamazepine": {},
  "Carbaryl": {
   "agriculture": "Classified as a carbamate, it is used chiefly as an insecticide."
  },
  "Carbendazim": {},
- "Carbon disulfide": {
-  "agriculture": "Carbon disulfide is also used as an insecticide for the fumigation of grains, nursery stock, in fresh fruit conservation, and as a soil disinfectant against insects and nematodes.",
-  "cleaning": "Carbon disulfide is also used as an insecticide for the fumigation of grains, nursery stock, in fresh fruit conservation, and as a soil disinfectant against insects and nematodes.",
-  "goods": "Around 1900, carbon disulfide came to be widely used in the production of vulcanized rubber."
- },
+ "Carbon disulfide": {},
  "Carbon monoxide": {
-  "cosmetics": "In industry, carbon monoxide is important in the production of many compounds, including drugs, fragrances, and fuels.",
-  "goods": "==== Food science ==== Carbon monoxide is used in modified atmosphere packaging systems in the US, mainly with fresh meat products such as beef, pork, and fish to keep them looking fresh."
+  "cosmetics": "In industry, carbon monoxide is important in the production of many compounds, including drugs, fragrances, and fuels."
  },
  "Carboplatin": {},
  "Carmustine": {},
@@ -221,36 +192,25 @@
  "Chlorambucil": {},
  "Chlorcyclizine": {},
  "Chlordecone": {},
- "Chlordiazepoxide": {
-  "goods": "It was this battery of tests that picked out RO 5-0690 (Librium, chlordiazepoxide) as being similar but more potent than meprobamate.\" Three years later chlordiazepoxide was marketed as a therapeutic benzodiazepine medic"
- },
+ "Chlordiazepoxide": {},
  "Chlormethine": {},
  "Chloroform": {
-  "agriculture": "Worldwide, chloroform is also used in pesticide formulations, as a solvent for lipids, rubber, alkaloids, waxes, gutta-percha, and resins, as a cleaning agent, as a grain fumigant, and in fire extinguishers.",
-  "cleaning": "Worldwide, chloroform is also used in pesticide formulations, as a solvent for lipids, rubber, alkaloids, waxes, gutta-percha, and resins, as a cleaning agent, as a grain fumigant, and in fire extinguishers.",
-  "fuel": "=== Refrigerant === Chloroform is used as a precursor to make R-22 (chlorodifluoromethane).",
-  "goods": "== Uses == In terms of scale, the most important reaction of chloroform is with hydrogen fluoride to give monochlorodifluoromethane (HCFC-22), a precursor in the production of polytetrafluoroethylene (Teflon) and other f"
+  "goods": "In terms of scale, the most important reaction of chloroform is with hydrogen fluoride to give monochlorodifluoromethane (HCFC-22), a precursor in the production of polytetrafluoroethylene (Teflon) and other fluoropolyme"
  },
  "Chloromethane": {
   "agriculture": "It is also used in a variety of other fields: as an extractant for greases, oils, and resins, as a propellant and blowing agent in polystyrene foam production, as a local anesthetic, as an intermediate in drug manufactur",
-  "fuel": "=== Obsolete applications === Chloromethane was widely used as a refrigerant during the 1920s and 1930s, before being replaced by safer alternatives such as chlorofluorocarbons and hydrofluorocarbons.",
   "goods": "Smaller quantities are used as a solvent in the manufacture of butyl rubber and in petroleum refining."
  },
- "Chlorophacinone": {
-  "agriculture": "The rodenticide was found to metabolized in the liver."
- },
+ "Chlorophacinone": {},
  "Chlorpyrifos": {
-  "agriculture": "Chlorpyrifos (CPS), also known as chlorpyrifos ethyl, is an organophosphate pesticide that has been used on crops, animals, in buildings, and in other settings, to kill several pests, including insects and worms.",
-  "construction": "==== New Zealand ==== Chlorpyrifos was previously approved in New Zealand for commercial use in crops, as a veterinary medicine, and as a timber treatment chemical."
+  "agriculture": "Chlorpyrifos (CPS), also known as chlorpyrifos ethyl, is an organophosphate pesticide that has been used on crops, animals, in buildings, and in other settings, to kill several pests, including insects and worms."
  },
  "Chlorsulfuron": {},
  "Chlortoluron": {
   "agriculture": "Chlortoluron, chlorotoluron and CTU are the common names for an organic compound of the phenylurea class of herbicides used to control broadleaf and annual grass weeds in cereal crops."
  },
  "Chromium": {
-  "construction": "During the nineteenth century, chromium was primarily used not only as a component of paints, but in tanning salts as well.",
-  "food": "Trivalent chromium (Cr(III)) occurs naturally in many foods and is sold as a dietary supplement, although there is insufficient evidence that dietary chromium provides nutritional benefit to people.",
-  "goods": "It is used as a protective and decorative coating on car parts, plumbing fixtures, furniture parts and many other items, usually applied by electroplating."
+  "goods": "Chrome alum is Chromium(III) potassium sulfate and is used as a mordant (i.e., a fixing agent) for dyes in fabric and in tanning."
  },
  "Cidofovir": {},
  "Cladribine": {},
@@ -258,26 +218,17 @@
  "Clobetasol propionate": {
   "cosmetics": "It is applied to the skin as a cream, foam, gel, liquid, solution, ointment, or shampoo."
  },
- "Clomiphene citrate": {
-  "construction": "==== Testosterone replacement therapy ==== Clomifene is sometimes used in the treatment of male hypogonadism as an alternative to testosterone replacement therapy."
- },
+ "Clomiphene citrate": {},
  "Clorazepate": {},
- "Cocaine": {
-  "construction": "The US Drug Enforcement Administration (DEA) classifies cocaine as a Schedule II drug, recognizing its high potential for abuse but still permitting its limited use for medical purposes.",
-  "goods": "The free and legal commercialization of dried coca leaves under the form of filtration bags to be used as \"coca tea\" has been actively promoted by the governments of Peru and Bolivia for many years as a drink having medi"
- },
+ "Cocaine": {},
  "Codeine phosphate": {},
  "Colchicine": {},
- "Congo red": {
-  "goods": "In the following years, for the same reason, other dyes were marketed using the \"Congo\" name: Congo rubine, Congo corinth, brilliant Congo, Congo orange, Congo brown, and Congo blue."
- },
+ "Congo red": {},
  "Conjugated estrogens": {},
  "Coumatetralyl": {
   "agriculture": "Coumatetralyl is an anticoagulant of the 4-hydroxycoumarin vitamin K antagonist type used as a rodenticide."
  },
- "Cyanamide": {
-  "cleaning": "A 50% aqueous solution of cyanamide is also used as a biocide (disinfectant) particularly in pig farming, because it effectively kills salmonella and shigella and fights flies in all stages of development."
- },
+ "Cyanamide": {},
  "Cyanazine": {
   "agriculture": "Cyanazine is a herbicide that belongs to the group of triazines."
  },
@@ -287,10 +238,10 @@
  "Cyclophosphamide": {},
  "Cyhexatin": {
   "agriculture": "In agriculture, cyhexatin is used as a pesticide against insects, as well as parasitic mites that attack plants, like vegetables (e.g.",
-  "construction": "2 (C6H11)3SnOH → ((C6H11)3Sn)2O + H2O == Uses == Cyhexatin is used in paints."
+  "construction": "Cyhexatin is used in paints."
  },
  "Cyproconazole": {
-  "agriculture": "It is the active ingredient in two foliar fungicides for soybeans in the U.S.: Alto X, and mixed with azoxystrobin in Quadris Xtra, both by Syngenta."
+  "agriculture": "Cyproconazole is used against powdery mildew, rust on cereals and apple scab, and applied by air or on the ground to cereal crops, coffee, sugar beet, fruit trees and grapes."
  },
  "Cytarabine": {},
  "DDT": {
@@ -301,17 +252,14 @@
  "Danazol": {},
  "Daunorubicin": {},
  "Demeclocycline": {},
- "Diazepam": {
-  "goods": "As such, it can leach into the plastic bags and tubing used for intravenous infusions."
- },
+ "Diazepam": {},
  "Diazoxide": {},
  "Dibutyl phthalate": {
   "construction": "Such modified PVC is widely used in plumbing for carrying sewage and other corrosive materials.",
-  "cosmetics": "It was used in many consumer products, e.g., nail polish, but such usages has declined since around 2006.",
   "goods": "Dibutyl phthalate (DBP) is an organic compound of phthalate which is commonly used as a plasticizer because of its low toxicity and wide liquid range."
  },
  "Dibutyltin dilaurate": {
-  "construction": "== Uses == Dibutyltin dilaurate is used as a paint additive.",
+  "construction": "Dibutyltin dilaurate is used as a paint additive.",
   "goods": "It is also used as a stabilizer in polyvinyl chloride, vinyl ester resins, lacquers, and elastomers."
  },
  "Dibutyltin oxide": {},
@@ -319,8 +267,7 @@
  "Dichlorodiphenyldichloroethylene": {},
  "Dichlorophen": {},
  "Dichlorprop": {
-  "agriculture": "Dichlorprop is a chlorophenoxy herbicide similar in structure to 2,4-D that is used to kill annual and perennial broadleaf weeds.",
-  "goods": "== Mechanism of action in plants == According to the United States Environmental Protection Agency (EPA), \"2,4-DP-p is thought to increase cell wall plasticity, biosynthesis of proteins, and the production of ethylene."
+  "agriculture": "Dichlorprop is a chlorophenoxy herbicide similar in structure to 2,4-D that is used to kill annual and perennial broadleaf weeds."
  },
  "Diclofenamide": {},
  "Dicoumarol": {},
@@ -340,7 +287,6 @@
  "Diisobutyl phthalate": {
   "construction": "They are found in many industrial and personal products, such as lacquers, nail polish and cosmetics.",
   "cosmetics": "They are found in many industrial and personal products, such as lacquers, nail polish and cosmetics.",
-  "fuel": "It may be used as a component in formulations of several products including adhesives, paints, coatings and lubricants.",
   "goods": "This and other phthalates are used as plasticizers due to their flexibility and durability."
  },
  "Diisodecyl phthalate": {
@@ -351,20 +297,17 @@
  "Dimethoxyethane": {
   "goods": "Dimethoxyethane, also known as glyme, monoglyme, dimethyl glycol, ethylene glycol dimethyl ether, dimethyl cellosolve, and DME, is a colorless, aprotic, and liquid ether that is used as a solvent, especially in batteries"
  },
- "Dimethylacetamide": {
-  "construction": "Dimethylacetamide is commonly used as a solvent for fibers (e.g., polyacrylonitrile, spandex) or in the adhesive industry.",
-  "goods": "It is also employed in the production of pharmaceuticals and plasticizers as a reaction medium."
- },
+ "Dimethylacetamide": {},
  "Dimethylformamide": {
   "agriculture": "It is also used as a solvent in peptide coupling for pharmaceuticals, in the development and production of pesticides, and in the manufacture of adhesives, synthetic leathers, fibers, films, and surface coatings.",
   "construction": "It is also used as a solvent in peptide coupling for pharmaceuticals, in the development and production of pesticides, and in the manufacture of adhesives, synthetic leathers, fibers, films, and surface coatings.",
   "goods": "DMF is used in the production of acrylic fibers and plastics."
  },
  "Dimethyltin dichloride": {
-  "construction": "== Uses == Dimethyltin dichloride is used as a heat stabilizer in PVC."
+  "construction": "Dimethyltin dichloride is used as a heat stabilizer in PVC."
  },
  "Dinoseb": {
-  "agriculture": "== History == In 1892, dinitro-ortho-cresol (2,4-dinitro-6-methylphenol), a chemical compound closely related to dinoseb, was discovered in Germany and first used as an insecticide.",
+  "agriculture": "Dinoseb was also used as an insecticide to protect grapes.",
   "goods": "It also finds use as a polymerisation inhibitor, where it is often referred to as DNBP."
  },
  "Dinoterb": {
@@ -384,33 +327,19 @@
  "Ergotamine tartrate": {},
  "Estropipate": {},
  "Ethanol": {
-  "cleaning": "Ethanol can also be used as a disinfectant and antiseptic by inducing cell dehydration through disruption of the osmotic balance across the cell membrane, causing water to leave the cell, leading to cell death.",
-  "construction": "Ethanol is found in paints, tinctures, markers, personal care products such as mouthwashes, perfumes and deodorants, and wet specimen preservatives.",
-  "cosmetics": "Ethanol is found in paints, tinctures, markers, personal care products such as mouthwashes, perfumes and deodorants, and wet specimen preservatives.",
-  "food": "As a central nervous system (CNS) depressant, it is the active ingredient in alcoholic beverages, and the second most consumed drug globally behind caffeine.",
-  "fuel": "Hydrous ethanol (about 95% ethanol and 5% water) can be used as fuel in more than 90% of new gasoline-fueled cars sold in the country.",
-  "goods": "To relieve the tax burden on these uses, most jurisdictions waive the tax when an agent has been added to the ethanol to render it unfit to drink."
+  "food": "As a central nervous system (CNS) depressant, it is the active ingredient in alcoholic beverages, and the second most consumed drug globally behind caffeine."
  },
  "Ethionamide": {},
- "Ethyl carbamate": {
-  "agriculture": "Other uses included as solvent or intermediates in the manufacture of pesticides, cosmetics and pharmaceuticals.",
-  "cosmetics": "Other uses included as solvent or intermediates in the manufacture of pesticides, cosmetics and pharmaceuticals.",
-  "food": "Amounts of both ethyl carbamate and methyl carbamate have also been found in wines, sake, beer, brandy, whiskey and other fermented alcoholic beverages.",
-  "goods": "== Uses == === Biomedical applications === Ethyl carbamate was originally used as an antineoplastic agent, hypnotic, sclerosing agent, adjunct to sulfonamide therapy, and topical bactericide."
- },
+ "Ethyl carbamate": {},
  "Ethylene glycol": {
-  "fuel": "It is mainly used for two purposes: as a raw material in the manufacture of polyester fibers and for antifreeze formulations.",
-  "goods": "The ethylene glycol either gains energy from the source (lake, ocean, water well) or dissipates heat to the sink, depending on whether the system is being used for heating or cooling."
+  "fuel": "It is mainly used for two purposes: as a raw material in the manufacture of polyester fibers and for antifreeze formulations."
  },
  "Ethylene glycol diethyl ether": {
-  "cleaning": "== Uses == It is used as a solvent in chemical manufacturing and for detergents and cleaning products."
+  "cleaning": "It is used as a solvent in chemical manufacturing and for detergents and cleaning products."
  },
  "Ethylene oxide": {
-  "agriculture": "Ethylene oxide is used as a sterilizing agent, disinfecting agent and fumigant as a mixture with carbon dioxide (8.5–80% of ethylene oxide), nitrogen, or dichlorodifluoromethane (12% ethylene oxide).",
   "cleaning": "Ethylene oxide is a surface disinfectant that is widely used in hospitals and the medical equipment industry to replace steam in the sterilization of heat-sensitive tools and equipment, such as disposable plastic syringe",
-  "construction": "Polyethyleneglycols are used in perfumes, cosmetics, pharmaceuticals, lubricants, paint thinners, and plasticizers.",
   "cosmetics": "Polyethyleneglycols are used in perfumes, cosmetics, pharmaceuticals, lubricants, paint thinners, and plasticizers.",
-  "fuel": "Polyethyleneglycols are used in perfumes, cosmetics, pharmaceuticals, lubricants, paint thinners, and plasticizers.",
   "goods": "Although too dangerous for direct household use and generally unfamiliar to consumers, ethylene oxide is used for making many consumer products as well as non-consumer chemicals and intermediates."
  },
  "Ethylene thiourea": {
@@ -464,7 +393,7 @@
  "Ganciclovir": {},
  "Ganciclovir sodium": {},
  "Glufosinate": {
-  "agriculture": "== Use == Glufosinate is a broad-spectrum herbicide that is used to control important weeds such as morning glories, hemp sesbania (Sesbania bispinosa), Pennsylvania smartweed (Polygonum pensylvanicum), and yellow nutsed"
+  "agriculture": "Glufosinate is a broad-spectrum herbicide that is used to control important weeds such as morning glories, hemp sesbania (Sesbania bispinosa), Pennsylvania smartweed (Polygonum pensylvanicum), and yellow nutsedge (Cyperu"
  },
  "Goserelin": {},
  "Halazepam": {},
@@ -481,33 +410,24 @@
   "agriculture": "It is a fungicide formerly used as a seed treatment, especially on wheat to control the fungal disease bunt."
  },
  "Hexafluoroacetone": {
-  "goods": "== Uses == Hexafluoroacetone is used in the production of hexafluoroisopropanol: (CF3)2CO + H2 → (CF3)2CHOH It is also used as a precursor to hexafluoroisobutylene, a monomer used in polymer chemistry, and as a building "
+  "goods": "Hexafluoroacetone is used in the production of hexafluoroisopropanol: (CF3)2CO + H2 → (CF3)2CHOH It is also used as a precursor to hexafluoroisobutylene, a monomer used in polymer chemistry, and as a building block in th"
  },
  "Histrelin": {},
  "Hydramethylnon": {},
- "Hydroxycarbamide": {
-  "goods": "Additionally, hydroxycarbamide causes production of reactive oxygen species in cells, leading to disassembly of replicative DNA polymerase enzymes and arresting DNA replication."
- },
+ "Hydroxycarbamide": {},
  "Idarubicin": {},
  "Ifosfamide": {},
  "Imidazole": {
   "goods": "Imidazole is often used in protein purification, where recombinant proteins with polyhistidine tags are immobilized onto nickel resins and eluted with a high imidazole concentration."
  },
- "Iodine-131": {
-  "goods": "== In popular culture == The use of iodine-131 as a poison – used in small doses over a period of time to disrupt a person's ability to think and tell right from wrong – played a central role in the episode \"The Case of "
- },
+ "Iodine-131": {},
  "Ioxynil": {
   "agriculture": "It is used notably on onion crops, among others, normally at 300–900 g/Ha."
  },
  "Ioxynil octanoate": {},
  "Isotretinoin": {},
- "Isoxaflutole": {
-  "agriculture": "The brand names in use for herbicides containing isoxaflutole include Balance, Cadu Star, Merlin and Spade."
- },
- "L-DOPA": {
-  "construction": "For example, DOPA-containing self-assembling peptides were found to form functional nanostructures, adhesives and gels.",
-  "goods": "l-DOPA may also be used to prevent surfaces from fouling by bonding antifouling polymers to a susceptible substrate."
- },
+ "Isoxaflutole": {},
+ "L-DOPA": {},
  "Lead": {
   "construction": "These properties, combined with its relative abundance and low cost, resulted in its extensive use in construction, plumbing, batteries, bullets, shots (pellets), weights, solders, pewter, fusible alloys, lead paints, le",
   "fuel": "These properties, combined with its relative abundance and low cost, resulted in its extensive use in construction, plumbing, batteries, bullets, shots (pellets), weights, solders, pewter, fusible alloys, lead paints, le",
@@ -521,20 +441,17 @@
  "Lead(II) acetate": {
   "construction": "Lead(II) acetate is also used as a mordant in textile printing and dyeing, and as a drier in paints and varnishes.",
   "cosmetics": "In low concentrations, it formerly served as the principal active ingredient in progressive types of hair colouring dyes.",
-  "food": "It was historically used as a sweetener and preservative in wines and in other foods and for cosmetics.",
   "goods": "The substance is used as a reagent to make other lead compounds and as a fixative for some dyes."
  },
  "Lead(II) azide": {},
  "Lead(II) chromate": {
-  "construction": "Monoclinic lead chromate is used in paints under the name chrome yellow, and many other names."
+  "construction": "The main applications are as a pigment in paints, under the name chrome yellow."
  },
  "Lead(II) phosphate": {},
  "Lenalidomide": {
   "goods": "Lenalidomide, sold under the brand name Revlimid among others, is a medication used to treat multiple myeloma, smoldering myeloma, various indolent lymphomas, and myelodysplastic syndromes (MDS)."
  },
- "Leuprorelin": {
-  "construction": "Along with triptorelin and goserelin, it has been used to delay puberty in transgender youth until they are old enough to begin hormone replacement therapy."
- },
+ "Leuprorelin": {},
  "Lilial": {
   "cleaning": "Lilial (a trade name for lily aldehyde, also known as lysmeral or lilestralis) is a chemical compound commonly used as a perfume in cosmetic preparations and laundry powders, often under the name butylphenyl methylpropio",
   "cosmetics": "Lilial (a trade name for lily aldehyde, also known as lysmeral or lilestralis) is a chemical compound commonly used as a perfume in cosmetic preparations and laundry powders, often under the name butylphenyl methylpropio"
@@ -548,13 +465,9 @@
  "Lithium citrate": {},
  "Lomustine": {},
  "Lorazepam": {},
- "Lovastatin": {
-  "food": "Kimball of the United States District Court for the District of Utah, granted a motion by Cholestin's manufacturer, Pharmanex, that the agency's ban was illegal under the 1994 Dietary Supplement Health and Education Act "
- },
+ "Lovastatin": {},
  "Macitentan": {},
- "Mancozeb": {
-  "agriculture": "== See also == Fungicide use in the United States == References == == External links == Mancozeb in the Pesticide Properties DataBase (PPDB)"
- },
+ "Mancozeb": {},
  "Maneb": {
   "agriculture": "Maneb (manganese ethylene-bis-dithiocarbamate) is a fungicide and a polymeric complex of manganese with the ethylene bis (dithiocarbamate) anionic ligand.",
   "goods": "Maneb (manganese ethylene-bis-dithiocarbamate) is a fungicide and a polymeric complex of manganese with the ethylene bis (dithiocarbamate) anionic ligand."
@@ -562,37 +475,22 @@
  "Margosa, ext. [from the kernels of Azadirachta indica extracted with water and further processed with organic solvents]": {},
  "Mebendazole": {},
  "Medroxyprogesterone acetate": {},
- "Megestrol acetate": {
-  "goods": "Megestrol acetate is also used as an antineoplastic agent in the treatment of breast cancer and endometrial cancer."
- },
+ "Megestrol acetate": {},
  "Melphalan": {},
  "Meprobamate": {},
  "Mercaptopurine": {},
- "Mercury (element)": {
-  "cleaning": "Mercury(I) chloride (also known as calomel or mercurous chloride) has been used in traditional medicine as a diuretic, topical disinfectant, and laxative.",
-  "construction": "Mercuric compounds such as mercury(II) chloride or potassium tetraiodomercurate(II) can be added to protein crystals in an effort to create heavy atom derivatives that can be used to solve the phase problem in X-ray crys",
-  "cosmetics": "New York City residents have been found to be exposed to significant levels of inorganic mercury compounds through the use of skin care products.",
-  "fuel": "Similarly, liquid mercury was used as a coolant for some nuclear reactors; however, sodium is proposed for liquid metal cooled reactor, because the high density of mercury requires much more energy to circulate as coolan",
-  "goods": "== Industrial, technological, and scientific uses == Mercury is used primarily for the manufacture of industrial chemicals or for electrical and electronic applications."
- },
- "Mesotrione": {
-  "agriculture": "Extensive work on analogues led to the discovery and development of sulcotrione and mesotrione.[25][26}[12] The triketone herbicides were found to be effective on a wide range of commercially-important weed species and t"
- },
+ "Mercury (element)": {},
+ "Mesotrione": {},
  "Metacycline": {},
  "Metaflumizone": {},
  "Metam sodium": {
   "agriculture": "It is used as a soil fumigant, pesticide, herbicide, and fungicide."
  },
- "Methanol": {
-  "fuel": "Methanol is used as a solvent and as an antifreeze in pipelines and windshield washer fluid.",
-  "goods": "== Applications == === Production of formaldehyde, acetic acid, methyl tert-butyl ether === Methanol is primarily converted to formaldehyde, which is widely used in many areas, especially polymers."
- },
+ "Methanol": {},
  "Methazole": {},
  "Methotrexate": {},
  "Methotrexate sodium": {},
- "Methoxyacetic acid": {
-  "cleaning": "=== Former applications === Due to its reprotoxic properties, earlier consumer and industrial applications of methoxyacetic acid as a disinfectant, biocide, or as a cleaner for the decalcification of surfaces are now obs"
- },
+ "Methoxyacetic acid": {},
  "Methyl isobutyl ketone": {
   "construction": "This ketone is a colourless liquid that is used as a solvent for gums, resins, paints, varnishes, lacquers, and nitrocellulose.",
   "goods": "This ketone is a colourless liquid that is used as a solvent for gums, resins, paints, varnishes, lacquers, and nitrocellulose."
@@ -612,9 +510,7 @@
  "Methyltestosterone": {},
  "Midazolam": {},
  "Minocycline": {},
- "Mirex": {
-  "agriculture": "== Production and applications == Mirex was first synthesized in 1946, but was not used in pesticide formulations until 1955."
- },
+ "Mirex": {},
  "Misoprostol": {},
  "Mitoxantrone": {},
  "Myclobutanil": {
@@ -634,22 +530,19 @@
   "construction": "Nickel is used as a binder in the cemented tungsten carbide or hardmetal industry and used in proportions of 6% to 12% by weight.",
   "goods": "A further 10% is used for nickel-based and copper-based alloys, 9% for plating, 7% for alloy steels, 3% in foundries, and 4% in other applications such as in rechargeable batteries, including those in electric vehicles ("
  },
- "Nickel tetracarbonyl": {
-  "goods": "The monosubstitution of nickel tetracarbonyl with other ligands can be used to determine the Tolman electronic parameter, a measure of the electron donating or withdrawing ability of a given ligand."
- },
+ "Nickel tetracarbonyl": {},
  "Nickel(II) carbonate": {},
  "Nickel(II) chloride": {},
  "Nickel(II) perchlorate": {},
  "Nickel(II) selenate": {},
  "Nickel(II) stearate": {
-  "fuel": "== Uses == The compound is used as a lubricant and in various industrial applications."
+  "fuel": "The compound is used as a lubricant and in various industrial applications."
  },
  "Nickel(II) sulfate": {},
  "Nickel(II) thiocyanate": {},
  "Nicotine": {
   "agriculture": "Historically, it was widely used as an insecticide, and its structure provided the basis for synthetic neonicotinoid pesticides.",
-  "construction": "Nicotine replacement therapy (NRT) products, including gums, patches, and lozenges, deliver the compound in slower, lower doses that are less addictive and are used medically to help people quit smoking.",
-  "goods": "=== Recreational === Nicotine is widely used recreationally through tobacco products, electronic cigarettes, and nicotine pouches, and, as of 2024, 1.2 billion people worldwide use tobacco products."
+  "construction": "Nicotine replacement therapy (NRT) products, including gums, patches, and lozenges, deliver the compound in slower, lower doses that are less addictive and are used medically to help people quit smoking."
  },
  "Nifedipine": {},
  "Nimodipine": {},
@@ -658,26 +551,18 @@
  },
  "Nitrofen": {},
  "Nitrogen mustard": {},
- "Nitrous oxide": {
-  "agriculture": "It is also emitted through the manufacture of nitric acid, which is used in the synthesis of nitrogen fertilizers.",
-  "food": "=== Aerosol propellant for food === The gas is approved for use as a food additive (E number: E942), specifically as an aerosol spray propellant.",
-  "goods": "It also is notably used in amateur and high power rocketry with various plastics as the fuel."
- },
+ "Nitrous oxide": {},
  "Norethisterone": {},
  "Norethisterone acetate": {},
  "Norgestrel": {},
  "O,p'-DDT": {
   "agriculture": "Although it was promoted by government and industry for use as an agricultural and household pesticide, there were also concerns about its use from the beginning."
  },
- "Octabromodiphenyl ether": {
-  "goods": "OctaBDE is used in conjunction with antimony trioxide as a flame retardant in the housings of electrical and electronic equipment, mainly in the plastic acrylonitrile butadiene styrene, but also in high impact polystyren"
- },
+ "Octabromodiphenyl ether": {},
  "Oxazepam": {},
  "Oxymetholone": {},
  "Oxytetracycline": {},
- "Paclitaxel": {
-  "construction": "=== Restenosis === Paclitaxel is used as an antiproliferative agent for the prevention of restenosis (recurrent narrowing) of coronary and peripheral stents; locally delivered to the wall of the artery, a paclitaxel coat"
- },
+ "Paclitaxel": {},
  "Paclobutrazol": {
   "agriculture": "Paclobutrazol (PBZ) is the ISO common name for an organic compound that is used as a plant growth retardant and triazole fungicide."
  },
@@ -685,32 +570,24 @@
  "Passive smoking": {},
  "Pendimethalin": {},
  "Penicillamine": {},
- "Pentetic acid": {
-  "agriculture": "%) is also used as aquarium plants fertilizer.",
-  "cleaning": "This helps preserving the oxidation capacity of the hydrogen peroxide stock which is used as oxidizing agent to bleach pulp in the chlorine-free process of paper making.",
-  "cosmetics": "DTPA is used in over 150 cosmetic products."
- },
+ "Pentetic acid": {},
  "Pentobarbital": {},
  "Pentostatin": {},
  "Perfluorooctanesulfonic acid": {
   "construction": "In the semiconductor industry, PFOS is used in multiple photolithographic chemicals including: photoacid generators (PAGs) and anti-reflective coatings (ARCs).",
-  "cosmetics": "In 2020, a California bill was passed banning PFOS and the following salts as an intentionally added ingredient from cosmetics: ammonium perfluorooctane sulfonate, diethanolamine perfluorooctane sulfonate, lithium perflu",
   "goods": "PFOS was the key ingredient in Scotchgard, a fabric protector made by 3M, and related stain repellents."
  },
  "Perfluorooctanoic acid": {
   "construction": "PFOA is used in several industrial applications, including carpeting, upholstery, apparel, floor wax, textiles, fire fighting foam and sealants.",
-  "food": "==== Food contact surfaces ==== PFOA is also formed as an unintended byproduct in the production of fluorotelomers and is present in finished goods treated with fluorotelomers, including those intended for food contact.",
   "goods": "PFOA is used in several industrial applications, including carpeting, upholstery, apparel, floor wax, textiles, fire fighting foam and sealants."
  },
  "Pertuzumab": {},
  "Phenacemide": {},
  "Phenprocoumon": {},
- "Phenylphosphine": {
-  "goods": "2 (C6H5)2MCl + C6H5PH2 + 3 (C2H5)3N → ((C6H5)2M)2PC6H5 + 3 (C2H5)3N•HCl Phenylphosphine also have uses in polymer synthesis."
- },
+ "Phenylphosphine": {},
  "Phenytoin": {},
  "Phthalic acid": {
-  "goods": "== Uses == Phthalic acid in the form of phthalic anhydride is an important industrial chemical, used for making phthalates (esters of phthalic acid) that are used as plasticizers."
+  "goods": "Phthalic acid in the form of phthalic anhydride is an important industrial chemical, used for making phthalates (esters of phthalic acid) that are used as plasticizers."
  },
  "Pimozide": {},
  "Pinoxaden": {
@@ -720,31 +597,23 @@
  "Pipobroman": {},
  "Plicamycin": {},
  "Polybrominated biphenyl": {
-  "goods": "== Application == PBBs are used as flame retardants of the brominated flame retardant group."
+  "goods": "PBBs are used as flame retardants of the brominated flame retardant group."
  },
  "Polychlorinated biphenyl": {
   "construction": "It was also used as a plasticizer in paints and especially \"coal tars\" that were used widely to coat water tanks, bridges and other infrastructure pieces.",
-  "food": "When used for frying, it is reported that transformer oil lasts much longer than regular cooking oil.",
   "fuel": "They were once widely used in a range of industrial and consumer electronic products including the manufacture of carbonless copy paper, as heat transfer fluids, and as dielectric and coolant fluids for electrical equipm",
   "goods": "They were once widely used in a range of industrial and consumer electronic products including the manufacture of carbonless copy paper, as heat transfer fluids, and as dielectric and coolant fluids for electrical equipm"
  },
  "Pomalidomide": {},
- "Potassium dichromate": {
-  "goods": "The main use is as a precursor to potassium chrome alum, used in leather tanning."
- },
- "Potassium permanganate": {
-  "cleaning": "Historically it was used to disinfect drinking water, though the EPA considers it a poor disinfectant.",
-  "goods": "=== Fire service === Potassium permanganate is added to \"plastic sphere dispensers\" to create backfires, burnouts, and controlled burns."
- },
+ "Potassium dichromate": {},
+ "Potassium permanganate": {},
  "Pravastatin": {},
  "Prednisolone sodium phosphate": {},
  "Procarbazine": {},
  "Propargite": {
   "agriculture": "Propargite (IUPAC name 2-(4-tert-butylphenoxy)cyclohexyl prop-2-yne-1-sulfonate, trade names Mitex, Omite and Comite) is a pesticide used to kill mites (an acaricide)."
  },
- "Propiconazole": {
-  "agriculture": "== Agriculture == Propiconazole is used agriculturally as a systemic fungicide on turfgrasses grown for seed and aesthetic or athletic value, wheat, mushrooms, corn, wild rice, peanuts, almonds, sorghum, oats, pecans, ap"
- },
+ "Propiconazole": {},
  "Propylthiouracil": {},
  "Pymetrozine": {},
  "Pyraclostrobin": {
@@ -753,7 +622,7 @@
  "Pyrimethamine": {},
  "Quaternium-15": {
   "construction": "The mixed product (cis- and trans-) is used in a wider range of formulations such as: emulsifiable metal-cutting fluids, latex and emulsion paints, liquid floor polishes and floor waxes, and glues and adhesives.",
-  "cosmetics": "== Applications == The isolated cis-compound is used primarily in cosmetic applications, with a maximum permitted concentration in the EU of 0.2%."
+  "cosmetics": "The isolated cis-compound is used primarily in cosmetic applications, with a maximum permitted concentration in the EU of 0.2%."
  },
  "Quazepam": {},
  "Reaction mass of 3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9RS)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide and 3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9SR)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide [≥ 78 % syn isomers ≤ 15 % anti isomers relative content]": {},
@@ -762,7 +631,7 @@
  },
  "Ribavirin": {},
  "Rifampicin": {
-  "goods": "== Use in biotechnology == Rifampicin inhibits bacterial RNA polymerase, and is commonly used to inhibit the synthesis of host bacterial proteins during recombinant protein expression in bacteria."
+  "goods": "Rifampicin inhibits bacterial RNA polymerase, and is commonly used to inhibit the synthesis of host bacterial proteins during recombinant protein expression in bacteria."
  },
  "Salicylic acid": {
   "cosmetics": "It is used as an ingredient in dermatologic cosmetics (e.g."
@@ -775,69 +644,46 @@
  "Simazine": {},
  "Sodium chromate": {},
  "Sodium dichromate": {},
- "Sodium dimethyldithiocarbamate": {
-  "agriculture": "They are used as chelating agents for transition metal ions and as precursors to herbicides and vulcanization reagents."
- },
+ "Sodium dimethyldithiocarbamate": {},
  "Spirotetramat": {},
- "Streptomycin": {
-  "agriculture": "=== Pesticide === Streptomycin is also used as a pesticide, to combat the growth of bacteria."
- },
+ "Streptomycin": {},
  "Streptozotocin": {},
- "Styrene": {
-  "construction": "These materials are used in rubber, plastic, insulation, fiberglass, pipes, automobile and boat parts, food containers, and carpet backing.",
-  "goods": "Commercially significant products include polystyrene, acrylonitrile butadiene styrene (ABS), styrene-butadiene rubber (SBR), styrene-butadiene latex, SIS (styrene-isoprene-styrene), S-EB-S (styrene-ethylene/butylene-sty"
- },
- "Sulfur dioxide": {
-  "agriculture": "However, such solutions do show spectra of the hydrogen sulfite ion, HSO3−, by reaction with water, and it is in fact the actual reducing agent present: SO2 + H2O ⇌ HSO3− + H+ === As a fumigant === In the beginning of th",
-  "cleaning": "Wineries and equipment must be kept clean, and because bleach cannot be used in a winery due to the risk of cork taint, a mixture of SO2, water, and citric acid is commonly used to clean and sanitize equipment.",
-  "construction": "=== Reduction of higher oxides === Sulfur dioxide can also be a byproduct in the manufacture of calcium silicate cement; CaSO4 is heated with coke and sand in this process: 2 CaSO4 + 2 SiO2 + C → 2 CaSiO3 + 2 SO2 + CO2 U"
- },
+ "Styrene": {},
+ "Sulfur dioxide": {},
  "Sulindac": {},
  "Tamoxifen": {},
  "Tebuconazole": {},
  "Tellurium": {
-  "goods": "== Applications == In 2022, the major applications of tellurium were thin-film solar cells (40%), thermoelectrics (30%), metallurgy (15%), and rubber (5%), with the first two applications experiencing a rapid increase ow"
+  "goods": "In 2022, the major applications of tellurium were thin-film solar cells (40%), thermoelectrics (30%), metallurgy (15%), and rubber (5%), with the first two applications experiencing a rapid increase owing to the worldwid"
  },
  "Tellurium dioxide": {},
  "Temazepam": {},
  "Teniposide": {},
  "Tert-Amyl methyl ether": {
-  "fuel": "== Uses == TAME is mostly used as an oxygenate to gasoline."
+  "fuel": "TAME is mostly used as an oxygenate to gasoline."
  },
- "Testosterone cypionate": {
-  "construction": "== Medical uses == Testosterone cypionate is used primarily in androgen replacement therapy."
- },
- "Testosterone enanthate": {
-  "construction": "== Medical uses == Testosterone enanthate is used primarily in androgen replacement therapy."
- },
+ "Testosterone cypionate": {},
+ "Testosterone enanthate": {},
  "Tetracycline": {},
  "Tetracycline antibiotics": {},
  "Tetraethylene glycol dimethyl ether": {
   "goods": "TEGDME is also used in lithium-ion battery technology and combined with trifluoroethanol as a working pair for organic absorption heat pumps."
  },
  "Tetrahydrocannabinol": {},
- "Tetrahydrofurfuryl alcohol": {
-  "goods": "== Other uses == THFA is often used in epoxy resin formulations in either the epoxy component or amine hardener as well as other general resin applications."
- },
+ "Tetrahydrofurfuryl alcohol": {},
  "Thalidomide": {},
- "Theophylline": {
-  "construction": "== Performance enhancement in sports == Theophylline and other methylxanthines are often used for their performance-enhancing effects in sports, as these drugs increase alertness, bronchodilation, and increase the rate a"
- },
+ "Theophylline": {},
  "Thiacloprid": {},
  "Thiamazole": {},
  "Thiamethoxam": {
   "agriculture": "Thiamethoxam is the ISO common name for a mixture of cis-trans isomers used as a systemic insecticide of the neonicotinoid class."
  },
- "Thiourea": {
-  "goods": "=== Other uses === Other industrial uses of thiourea include production of flame retardant resins, and vulcanization accelerators."
- },
+ "Thiourea": {},
  "Tioguanine": {},
  "Tobacco smoking": {},
  "Tobramycin": {},
  "Toluene": {
-  "construction": "As the solvent in some types of paint thinner, permanent markers, contact cement and certain types of glue, toluene is sometimes used as a recreational inhalant and has the potential of causing severe neurological harm.",
-  "fuel": "== Production == Toluene occurs naturally at low levels in crude oil and is a byproduct in the production of gasoline by a catalytic reformer or ethylene cracker.",
-  "goods": "=== Solvent === Toluene is widely used in the paint, dye, rubber, chemical, glue, printing, and pharmaceutical industries as a solvent."
+  "construction": "As the solvent in some types of paint thinner, permanent markers, contact cement and certain types of glue, toluene is sometimes used as a recreational inhalant and has the potential of causing severe neurological harm."
  },
  "Topiramate": {},
  "Tretinoin": {},
@@ -848,9 +694,7 @@
  "Trichloroethylene": {
   "cleaning": "Trichloroethylene (TCE, IUPAC name: trichloroethene) is an organochloride with the formula C2HCl3, commonly used as an industrial degreaser.",
   "construction": "Trichloroethylene is an active ingredient (solvent) in various printing ink, varnish and industrial paint formulations.",
-  "food": "Other uses in the food industry included coffee decaffeination (removal of caffeine) and the preparation of flavoring extracts from hops and spices.",
-  "fuel": "=== Refrigerants === TCE is also used in the manufacture of a range of fluorocarbon refrigerants such as 1,1,1,2-tetrafluoroethane more commonly known as HFC-134a.",
-  "goods": "Trichloroethylene is an active ingredient (solvent) in various printing ink, varnish and industrial paint formulations."
+  "food": "Other uses in the food industry included coffee decaffeination (removal of caffeine) and the preparation of flavoring extracts from hops and spices."
  },
  "Tridemorph": {
   "agriculture": "Tridemorph is a fungicide used to control Erysiphe graminis."
@@ -874,9 +718,7 @@
  "Uramustine": {},
  "Urofollitropin": {},
  "Valproate": {},
- "Vanadium(V) oxide": {
-  "goods": "=== Other oxidations === Maleic anhydride is produced by the V2O5-catalysed oxidation of butane with air: C4H10 + 4 O2 → C2H2(CO)2O + 8 H2O Maleic anhydride is used for the production of polyester resins and alkyd resins"
- },
+ "Vanadium(V) oxide": {},
  "Vilsmeier reagent": {},
  "Vinblastine": {},
  "Vinclozolin": {
@@ -884,15 +726,9 @@
  },
  "Vincristine": {},
  "Vismodegib": {},
- "Warfarin": {
-  "agriculture": "Warfarin was first registered for use as a rodenticide in the U.S.",
-  "goods": "Karl Link continued working on developing more potent coumarin-based anticoagulants for use as rodent poisons, resulting in warfarin in 1948."
- },
+ "Warfarin": {},
  "Zileuton": {},
- "Zinc pyrithione": {
-  "construction": "=== Paint === Because of its low solubility in water (8 ppm at neutral pH), zinc pyrithione is suitable for use in outdoor paints and other products that protect against mildew and algae.",
-  "cosmetics": "== Health effects == Zinc pyrithione is approved for over-the-counter topical use in the United States as a treatment for dandruff and is the active ingredient in several anti-dandruff shampoos and body wash gels."
- },
+ "Zinc pyrithione": {},
  "boric acid [1]": {},
  "dioctyltin dilaurate [1]": {},
  "disodium 4-amino-3-[[4'-[(2,4-diaminophenyl)azo][1,1'-biphenyl]-4-yl]azo]-5-hydroxy-6-(phenylazo)naphtalene-2,7-disulphonate": {},

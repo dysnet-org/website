@@ -24,7 +24,7 @@ USE_CONTEXT = re.compile(r"\b(is|are|was|were|been|being)\s+(widely\s+|commonly\
                          r"|\buse[ds]?\s+(as|in|for|to)\b|\bapplications?\s+(include|are|of)\b|\bingredient\b|\bis a (solvent|plasticizer|plasticiser|preservative|additive|pigment|dye|propellant|refrigerant|fumigant|herbicide|insecticide|fungicide|pesticide|flame retardant)\b"
                          r"|\b(manufactur\w+|production) of\b", re.I)
 # regulatory, exposure and contamination sentences are not statements of use
-NOT_USE = re.compile(r"tolerable (daily|monthly|weekly) intake|exposure limit|occupational exposure|contaminant|contamination|residues?\b|banned|prohibited|phased out|withdrawn|recall|poisoning|accident|spill|emission|waste|landfill|carcinog|toxicity study|animal studies|no longer (used|permitted)|committee|regulation|directive|safety data|produced from|made from|derived from|feedstock|raw material for|by-?product of", re.I)
+NOT_USE = re.compile(r"tolerable (daily|monthly|weekly) intake|exposure limit|occupational exposure|contaminant|contamination|residues?\b|banned|prohibited|phased out|withdrawn|recall|poisoning|accident|spill|emission|waste|landfill|carcinog|toxicity study|animal studies|no longer (used|permitted)|committee|regulation|directive|safety data|produced from|made from|derived from|feedstock|raw material for|by-?product of|occurs naturally|dietary supplement|insufficient evidence", re.I)
 
 CATEGORIES = {
     "food": (r"food additive|food packaging|food contact|in the food industry|flavou?ring (agent|substance)|sweetener|preservative in food|chewing gum|confectioner|baking|cooking oil|dietary supplement|infant formula|beverage", "Food and drink"),
@@ -55,16 +55,33 @@ def article(title):
     return text
 
 
+SECTION = re.compile(r"^==+ *(.+?) *==+$", re.M)
+USE_SECTION = re.compile(r"^(uses?|applications?|production and uses?|occurrence and uses?|consumer|industrial uses?|in (food|cosmetics|medicine))\b", re.I)
+MAX_TAGS = 3
+# entries whose exposure route is the product itself, whatever else the molecule is used for
+OVERRIDES = {"cas:64-17-5": ["food"], "smoking": []}
+
+
+def use_text(text):
+    """The lead section plus any section about uses: where an article states what a substance is for."""
+    parts = SECTION.split(text)
+    keep = [parts[0]]                       # lead
+    for i in range(1, len(parts) - 1, 2):
+        if USE_SECTION.match(parts[i].strip()): keep.append(parts[i + 1])
+    return " ".join(keep)
+
+
 def classify(text):
-    out = {}
-    for sent in re.split(r"(?<=[.!?])\s+", text.replace("\n", " ")):
+    out, score = {}, {}
+    for sent in re.split(r"(?<=[.!?])\s+", use_text(text).replace("\n", " ")):
         if len(sent) < 25 or len(sent) > 400: continue
         if not USE_CONTEXT.search(sent) or NOT_USE.search(sent): continue
         for key, (rx, _) in CATEGORIES.items():
-            if key in out: continue
             if rx.search(sent):
-                out[key] = " ".join(sent.split())[:220]
-    return out
+                score[key] = score.get(key, 0) + 1
+                out.setdefault(key, " ".join(sent.split())[:220])
+    top = sorted(out, key=lambda k: (-score[k], k))[:MAX_TAGS]
+    return {k: out[k] for k in top}
 
 
 def main():
@@ -90,7 +107,13 @@ def main():
     tagged = 0
     for e in data["entries"]:
         t = e.pop("_title", None)
+        key = ("cas:" + e["cas"]) if e.get("cas") else e.get("name", "")
         uses = cache.get(t or "", {})
+        if key in OVERRIDES or e.get("kind") == "product":
+            allowed = OVERRIDES.get(key, OVERRIDES.get("smoking", []))
+            uses = {k: v for k, v in uses.items() if k in allowed}
+            for k in allowed:
+                uses.setdefault(k, "")
         if uses:
             e["uses"] = sorted(uses)
             e["use_evidence"] = uses

@@ -538,6 +538,7 @@
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
   var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
   var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" }, KIND = { chemical: "Chemical", medicine: "Medicine", product: "Consumer product" };
+  var USE = { food: "Food and drink", construction: "Building and construction", goods: "Manufactured goods", cosmetics: "Cosmetics and personal care", cleaning: "Cleaning and household", agriculture: "Agriculture and pest control", fuel: "Fuel and vehicles" };
   var EU_ALL = "Mandatory hazard classification and labelling of the substance and of mixtures containing it (CLP Annex VI, harmonised).";
   var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
@@ -568,24 +569,26 @@
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
+    Object.keys(r.ue || {}).sort().forEach(function (u) { details.push('<li><strong>' + (USE[u] || u) + ':</strong> \u201c' + esc(r.ue[u]) + '\u201d' + (r.w ? ' <a href="' + esc(r.w) + '" target="_blank" rel="noopener external">Wikipedia \u2197</a>' : "") + '</li>'); });
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
     var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.join(", ") : "")].filter(Boolean).join(" · ");
     return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (r.med && r.k !== 'medicine' ? '<span class="badge badge-med">Medicine</span>' : '') + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
-           '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' +
+           '<div class="tera-srcs">' + srcs + '</div>' + ((r.u && r.u.length) ? '<div class="tera-uses">' + r.u.map(function (u) { return '<span class="use use-' + u + '">' + (USE[u] || u) + '</span>'; }).join("") + '</div>' : "") + '<div class="tera-status">' + chips.join("") + '</div>' +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
   DATA.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); });
   var ORDER = { known: 0, presumed: 1, suspected: 2 };
   DATA.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); });
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
-  var state = { sources: [], levels: [], kinds: [] };
+  var state = { sources: [], levels: [], kinds: [], uses: [] };
   function apply() {
     var text = q.value.trim().toLowerCase(), k = 0, out = [];
     DATA.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
                (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
-               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1));
+               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1)) &&
+               (!state.uses.length || (r.u || []).some(function (u) { return state.uses.indexOf(u) !== -1; }));
       if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
     });
     list.innerHTML = out.join("");
@@ -602,10 +605,11 @@
     });
   }
   bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels"); bind("tera-levels", "data-kind", "kinds");
+  bind("tera-uses", "data-use", "uses");
   q.addEventListener("input", function () { expanded = false; apply(); });
   more.addEventListener("click", function () { expanded = true; apply(); });
   document.getElementById("tera-reset").addEventListener("click", function () {
-    q.value = ""; state = { sources: [], levels: [], kinds: [] }; expanded = false;
+    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [] }; expanded = false;
     document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
   });
   var pre = new URLSearchParams(location.search).get("q"); if (pre) { q.value = pre; }

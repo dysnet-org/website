@@ -392,6 +392,9 @@ TERA_PATH = pathlib.Path(__file__).parent / "tools" / "teratogens.json"
 TERA = json.loads(TERA_PATH.read_text(encoding="utf-8")) if TERA_PATH.exists() else {"entries": [], "sources": {}, "counts": {}}
 TERA_LEVEL = {"known": "Known", "presumed": "Presumed", "suspected": "Suspected"}
 TERA_KIND = {"chemical": "Chemical", "medicine": "Medicine", "product": "Consumer product"}
+TERA_USE = {"food": "Food and drink", "construction": "Building and construction", "goods": "Manufactured goods",
+            "cosmetics": "Cosmetics and personal care", "cleaning": "Cleaning and household",
+            "agriculture": "Agriculture and pest control", "fuel": "Fuel and vehicles"}
 
 
 def tera_display_name(e):
@@ -431,6 +434,7 @@ def tera_item_html(e):
         else: lab, det = "DysNet bibliography", "peer-reviewed evidence"
         srcs.append(f'<span class="tera-src src-{src["code"]}">{lab}<small> · {det}</small></span>')
     chips = "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
+    uses = "".join(f'<span class="use use-{u}">{TERA_USE.get(u, u)}</span>' for u in e.get("uses", []))
     details = []
     for src in e["sources"]:
         line = src["label"] + ": " + (f'{src["category"]}, {", ".join(src["statements"])}' + (f', applies from {src["applies_from"]}' if src.get("applies_from") else "") if src["code"] == "clp" else
@@ -442,12 +446,14 @@ def tera_item_html(e):
     clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
     if clp and clp["category"].replace("Repr. ", "") in ("1A", "1B"):
         details.append('<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>')
+    for u, sent in sorted((e.get("use_evidence") or {}).items()):
+        details.append(f'<li><strong>{TERA_USE.get(u, u)}:</strong> “{sent}” <a href="{e["wiki"]}" target="_blank" rel="noopener external">Wikipedia ↗</a></li>')
     if e.get("cas"):
         details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{'<span class="badge badge-med">Medicine</span>' if e.get("medicinal") and e["kind"] != "medicine" else ""}{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
-            f'<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>'
+            f'<div class="tera-srcs">{"".join(srcs)}</div>{f"<div class=tera-uses>{uses}</div>" if uses else ""}<div class="tera-status">{chips}</div>'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
@@ -462,10 +468,11 @@ def teratogens_html():
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
-        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "l": e["level"], "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or ""}
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or ""}
     records = [compact(e) for e in E]
     html_first = [tera_item_html(e) for e in E[:40]]
     c = TERA.get("counts", {})
+    use_chips = "".join(f'<button type="button" class="use use-{k}" data-use="{k}" aria-pressed="false">{lab} <small>{sum(1 for e in E if k in (e.get("uses") or []))}</small></button>' for k, lab in TERA_USE.items())
     src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "p65": "California Proposition 65", "ema": "EMA medicines", "who": "WHO", "bib": "DysNet bibliography"}.get(code, code) }</button>' for code in ("clp", "p65", "ema", "who", "bib"))
     return f"""
     <div class="bib-controls" id="tera-controls">
@@ -475,9 +482,11 @@ def teratogens_html():
       <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Level of evidence · Type</p>
       <div class="finder-chips" id="tera-levels"><button type="button" data-level="known" aria-pressed="false">Known</button><button type="button" data-level="presumed" aria-pressed="false">Presumed</button><button type="button" data-level="suspected" aria-pressed="false">Suspected</button>
         <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
+            <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Where the substance is used, according to its Wikipedia article</p>
+      <div class="finder-chips tera-use-chips" id="tera-uses">{use_chips}</div>
       <p class="bib-count"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
     </div>
-    <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="badge badge-med">Medicine</span> marks a substance with an ATC code, the WHO classification of medicines ({sum(1 for e in E if e.get("medicinal"))} of {len(E)}). <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
+    <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="badge badge-med">Medicine</span> marks a substance with an ATC code, the WHO classification of medicines ({sum(1 for e in E if e.get("medicinal"))} of {len(E)}). Coloured tags say where the substance is used in everyday products, read from its Wikipedia article ({sum(1 for e in E if e.get("uses"))} of {len(E)}); open <em>Details</em> for the sentence each tag comes from. <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
     <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>

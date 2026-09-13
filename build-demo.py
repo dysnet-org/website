@@ -760,7 +760,9 @@ def registries_html():
         <tbody>{fr_rows}</tbody>
       </table>
     </div>
-    <p class="annex-note">Source: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths. <a href="/data/registries.json">Download the registries data (JSON, CC BY 4.0)</a>.</p>
+    <p>Three of the seven publish a declaration form for families as well as for clinicians: REMERA in Rhône-Alpes, REMACOR in La Réunion and ReMaBreizh in Brittany each open their reporting page with the words “parent or practitioner”. Families are not only counted by these registries, they can address them directly.</p>
+    <p>REMERA is also the only one that publishes figures for limbs. It puts the prevalence of limb reduction anomalies in the départements it watches at 8.7 per 10,000 births in 2020, and isolated unilateral transverse agenesis of the upper limb at 0.53 per 10,000 in 2017. Its own analysis of the Ain cluster, published in 2021, found 8 such cases among the 8,204 births between 2009 and 2014 inside a circle of 16.24 km, where 0.82 were expected.</p>
+    <p class="annex-note">Sources: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>; the registries&rsquo; own websites, read 13 September 2026; Gnansia E, Michon L, Amar E, et al. <em>Birth Defects Res</em> 2021;113(13):1015-1025, <a href="https://doi.org/10.1002/bdr2.1876" target="_blank" rel="noopener external">doi:10.1002/bdr2.1876</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths. <a href="/data/registries.json">Download the registries data (JSON, CC BY 4.0)</a>.</p>
 """ if fr else ""
     return f"""
     <div class="tick"></div>
@@ -861,6 +863,11 @@ PAGES["/knowledge/registries/"] = {
         <h3>CoULD, and what a registry sees that a survey does not <span class="badge live">United States</span></h3>
         <p>The multicentre Congenital Upper Limb Differences registry analysed its first four years at the two founding centres, a cohort of 1,381 patients. Compared with a one-year cross-sectional cohort from the American Midwest and with a Swedish birth registry, about a third of the diagnosis categories differed in frequency. The registry picked up more conditions that present late and more that rarely lead to surgery, which is precisely what a registry built on hospital episodes tends to miss.</p>
         <p class="src">Vuillermin C, Canizares MF, Bauer AS, Miller PE. <em>J Hand Surg Am</em> 2021;46(6):515.e1-515.e11 · <a href="https://doi.org/10.1016/j.jhsa.2020.11.006" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2020.11.006</a></p>
+      </article>
+      <article class="entry">
+        <h3>The Italian Poland syndrome register, and its biobank <span class="badge live">Italy</span></h3>
+        <p>AISP, our member association in Genoa, runs the Registro Sindrome di Poland, overseen by a scientific committee of clinicians and patient representatives, and records the personal and clinical data of people with the syndrome. The register is interoperable with the association’s biobank, held at the Istituto Giannina Gaslini under an agreement signed in December 2014 with the Telethon Network of Genetic Biobanks. The biobank keeps blood samples and skin fibroblasts, releases them coded for research and diagnosis anywhere in the world once the committee approves, and the association pays the costs.</p>
+        <p class="src">AISP · <a href="https://www.sindromedipoland.org/registro/" target="_blank" rel="noopener external">sindromedipoland.org · the register</a> · <a href="https://www.sindromedipoland.org/biobanking/" target="_blank" rel="noopener external">the biobank</a> · read 13 September 2026</p>
       </article>
       <article class="entry">
         <h3>A register run by a member association <span class="badge live">Poland syndrome</span></h3>
@@ -1316,6 +1323,8 @@ PAGES["/registry/"] = {
       <li><strong>Keep existing registries alive.</strong> Offer the population-based registries that already record our conditions a place to preserve their limb-difference data and continuity should their funding fail.</li>
       <li><strong>Make registries talk to each other.</strong> Create the conditions for interoperability and portability of data between existing registries, and complete them where needed, so that new lines of research open.</li>
     </ol>
+
+    <p>Three of the seven French registries already accept a declaration from the family itself, alongside the clinician’s. That is the door DysNet wants to widen: a family that declares from pregnancy onwards, in its own words, corrects what a retrospective enquiry years later can no longer reconstruct.</p>
 
     <p>The same conclusion was reached on the other side of the Atlantic. A Canadian workshop held in February 2024 found that the country has no national data source on limb loss and limb difference, agreed on five domains for building one, and looked to the amputee organisations themselves to carry it. Its authors describe what they call patient-powered registries, managed by patients and advocacy groups themselves. Our <a href="/knowledge/registries/">registries register</a> summarises that work and the American registry already running.</p>
 

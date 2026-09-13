@@ -47,7 +47,7 @@
    "suspected": 90
   },
   "delisted": 6,
-  "efsa": 22
+  "efsa": 81
  },
  "entries": [
   {
@@ -307,6 +307,12 @@
      "listed": "1990-10-01",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Bromoxynil: Acute reference dose 0.013 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -328,8 +334,16 @@
    "level": "known",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Bromoxynil",
+    "value": "Acute reference dose 0.013 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "4,4'-sulphonyldiphenol; bisphenol S",
@@ -2041,6 +2055,12 @@
      "listed": "2017-12-15",
      "madl_ug_day": "0.58 (oral and inhalation) 7.2 (dermal)",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Chlorpyrifos: Acceptable daily intake 0.001 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -2055,6 +2075,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Chlorpyrifos",
    "level": "known",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -2062,6 +2083,13 @@
    ],
    "use_evidence": {
     "agriculture": "Chlorpyrifos (CPS), also known as chlorpyrifos ethyl, is an organophosphate pesticide that has been used on crops, animals, in buildings, and in other settings, to kill several pests, including insects and worms."
+   },
+   "efsa": {
+    "label": "Chlorpyrifos",
+    "value": "Acceptable daily intake 0.001 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -3636,6 +3664,12 @@
      "listed": "1993-01-01",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Ethylenethiourea: Acceptable daily intake 0.002 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -3659,6 +3693,7 @@
    "level": "known",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -3666,6 +3701,13 @@
    ],
    "use_evidence": {
     "agriculture": "Ethylene thiourea can be used as a biomarker of exposure to ethylenebisdithiocarbamates (EBDTCs), which are frequently employed as fungicides in agriculture, mainly on fruits, vegetables and ornamental plants."
+   },
+   "efsa": {
+    "label": "Ethylenethiourea",
+    "value": "Acceptable daily intake 0.002 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -5796,6 +5838,12 @@
      "listed": "1993-01-01",
      "madl_ug_day": "810 (inhalation)",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Methyl bromide: Acceptable daily intake 0.001 mg/kg of body weight. The value rests on chronic toxicity: oral. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -5810,6 +5858,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Bromomethane",
    "level": "known",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -5817,6 +5866,13 @@
    ],
    "use_evidence": {
     "agriculture": "It is widely applied as a soil sterilant, mainly for production of seed but also for some crops such as strawberries and almonds."
+   },
+   "efsa": {
+    "label": "Methyl bromide",
+    "value": "Acceptable daily intake 0.001 mg/kg of body weight",
+    "endpoint": "chronic toxicity: oral",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -5962,6 +6018,12 @@
      "applies_from": "2021-09-09",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0217",
      "index": "080-012-00-0"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Methylmercuric chloride: TWI 1.3 µg/kg of body weight per week. The value rests on additional toxicological information. Opinion: EFSA CONTAM, Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food., 2012. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -5979,8 +6041,16 @@
    "wiki": null,
    "level": "known",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Methylmercuric chloride",
+    "value": "TWI 1.3 µg/kg of body weight per week",
+    "endpoint": "additional toxicological information",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "Methylmercury",
@@ -6427,6 +6497,12 @@
      "listed": "1990-04-01",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Nicotine: Acceptable daily intake 0.0008 mg/kg of body weight per day. The value rests on additional toxicological information. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -6441,8 +6517,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Nicotine",
    "level": "known",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Nicotine",
+    "value": "Acceptable daily intake 0.0008 mg/kg of body weight per day",
+    "endpoint": "additional toxicological information",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "Nifedipine",
@@ -9052,6 +9136,12 @@
      "applies_from": "2022-12-17",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0849",
      "index": "613-111-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Triazole, 1,2,4-: Acceptable daily intake 0.02 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -9069,8 +9159,16 @@
    "wiki": "https://en.wikipedia.org/wiki/1,2,4-Triazole",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Triazole, 1,2,4-",
+    "value": "Acceptable daily intake 0.02 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "1,2-benzenedicarboxylic acid, dihexyl ester, branched and linear",
@@ -10906,6 +11004,12 @@
      "listed": "2010-12-03",
      "madl_ug_day": "4.4000000000000004",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Abamectin: Acceptable daily intake 0.0012 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -10920,8 +11024,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Abamectin",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Abamectin",
+    "value": "Acceptable daily intake 0.0012 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "azafenidin (ISO); 2-(2,4-dichloro-5-prop-2-ynyloxyphenyl)-5,6,7,8-tetrahydro-1,2,4-triazolo[4,3-a]pyridin-3(2H)-one",
@@ -11600,6 +11712,12 @@
      "listed": "1999-05-18",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Bromoxynil octanoate: Acute reference dose 0.013 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -11621,6 +11739,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -11628,6 +11747,13 @@
    ],
    "use_evidence": {
     "agriculture": "Bromoxynil octanoate is a herbicide active ingredient, closely related to bromoxynil, ioxynil, and ioxynil octanoate."
+   },
+   "efsa": {
+    "label": "Bromoxynil octanoate",
+    "value": "Acute reference dose 0.013 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -11803,6 +11929,12 @@
      "listed": "2009-08-07",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Carbaryl: Acceptable daily intake 0.0075 mg/kg of body weight per day. The value rests on chronic toxicity: oral. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -11817,8 +11949,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Carbaryl",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Carbaryl",
+    "value": "Acceptable daily intake 0.0075 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: oral",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "carbendazim (ISO); methyl benzimidazol-2-ylcarbamate",
@@ -11838,6 +11978,12 @@
      "applies_from": "2022-12-17",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0849",
      "index": "613-048-00-8"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Carbendazim: Acceptable daily intake 0.02 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -11855,8 +12001,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Carbendazim",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Carbendazim",
+    "value": "Acceptable daily intake 0.02 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "carbetamide (ISO); (R)-1-(ethylcarbamoyl)ethyl carbanilate; (2R)-1-(ethylamino)-1-oxopropan-2-yl phenylcarbamate",
@@ -11876,6 +12030,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "616-223-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Carbetamide: Acceptable daily intake 0.06 mg/kg of body weight per day. The value rests on chronic toxicity: oral. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -11893,8 +12053,16 @@
    "wiki": null,
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Carbetamide",
+    "value": "Acceptable daily intake 0.06 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: oral",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "chloro-N,N-dimethylformiminium chloride",
@@ -12065,6 +12233,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "650-032-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Cyproconazole: Acute reference dose 0.02 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -12082,13 +12256,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Cyproconazole",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Cyproconazole is used against powdery mildew, rust on cereals and apple scab, and applied by air or on the ground to cereal crops, coffee, sugar beet, fruit trees and grapes."
+   },
+   "efsa": {
+    "label": "Cyproconazole",
+    "value": "Acute reference dose 0.02 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -12739,6 +12921,12 @@
      "listed": "1999-03-05",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Diclofop-Methyl: Acute reference dose 0.03 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -12753,8 +12941,16 @@
    "wiki": null,
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Diclofop-Methyl",
+    "value": "Acute reference dose 0.03 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "dicyclohexyl phthalate",
@@ -13412,6 +13608,12 @@
      "applies_from": "2015-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0944",
      "index": "613-175-00-9"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Epoxiconazole: Acute reference dose 0.023 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -13429,13 +13631,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Epoxiconazole",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Epoxiconazole is a fungicide active ingredient from the class of azoles developed to protect crops."
+   },
+   "efsa": {
+    "label": "Epoxiconazole",
+    "value": "Acute reference dose 0.023 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -13633,6 +13843,12 @@
      "listed": "1999-03-26",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Fenoxaprop-ethyl: Acceptable daily intake 0.01 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -13647,8 +13863,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Fenoxaprop_ethyl",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Fenoxaprop-ethyl",
+    "value": "Acceptable daily intake 0.01 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "fentin hydroxide (ISO); triphenyltin hydroxide",
@@ -13816,6 +14040,12 @@
      "applies_from": "2022-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1182",
      "index": "613-334-00-2"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Flurochloridone: Acute reference dose 0.04 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -13833,8 +14063,16 @@
    "wiki": null,
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Flurochloridone",
+    "value": "Acute reference dose 0.04 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "flusilazole (ISO); bis(4-fluorophenyl)(methyl)(1H-1,2,4-triazol-1-ylmethyl)silane",
@@ -13854,6 +14092,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
      "index": "014-017-00-6"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Flusilazole: Acute reference dose 0.005 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -13871,13 +14115,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Flusilazole",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Flusilazole (DPX-H6573) is an organosilicon fungicide invented by DuPont, which is used to control fungal infections on a variety of fruit and vegetable crops."
+   },
+   "efsa": {
+    "label": "Flusilazole",
+    "value": "Acute reference dose 0.005 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -13973,6 +14225,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R0790",
      "index": "015-155-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Glufosinate-ammonium: Acceptable daily intake 0.021 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -13990,13 +14248,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Glufosinate",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Glufosinate is a broad-spectrum herbicide that is used to control important weeds such as morning glories, hemp sesbania (Sesbania bispinosa), Pennsylvania smartweed (Polygonum pensylvanicum), and yellow nutsedge (Cyperu"
+   },
+   "efsa": {
+    "label": "Glufosinate-ammonium",
+    "value": "Acceptable daily intake 0.021 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -14057,6 +14323,12 @@
      "listed": "1999-08-20",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Heptachlor: TDI 0.0001 mg/kg of body weight per day. Opinion: EFSA CONTAM, Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the European Commission related to heptachlor as an undesirable substance in animal feed, 2007. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -14071,6 +14343,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Heptachlor",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -14078,6 +14351,13 @@
    ],
    "use_evidence": {
     "agriculture": "Heptachlor is an organochlorine compound that was used as an insecticide."
+   },
+   "efsa": {
+    "label": "Heptachlor",
+    "value": "TDI 0.0001 mg/kg of body weight per day",
+    "endpoint": "",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -14252,6 +14532,12 @@
      "listed": "1999-03-19",
      "madl_ug_day": "460",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Linuron: Acceptable daily intake 0.003 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Opinion: EFSA, Peer review of the pesticide risk assessment of the active substance linuron, 2016. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -14275,6 +14561,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -14282,6 +14569,13 @@
    ],
    "use_evidence": {
     "agriculture": "Linuron is a phenylurea herbicide that is used to control the growth of grass and weeds for the purpose of supporting the growth of crops like soybeans."
+   },
+   "efsa": {
+    "label": "Linuron",
+    "value": "Acceptable daily intake 0.003 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -14333,6 +14627,12 @@
      "applies_from": "2022-12-17",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0849",
      "index": "006-076-00-1"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Mancozeb: Acceptable daily intake 0.023 mg/kg of body weight per day. The value rests on short-term repeated dose toxicity: oral. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -14350,8 +14650,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Mancozeb",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Mancozeb",
+    "value": "Acceptable daily intake 0.023 mg/kg of body weight per day",
+    "endpoint": "short-term repeated dose toxicity: oral",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "mercury",
@@ -14462,6 +14770,12 @@
      "listed": "1998-05-15",
      "madl_ug_day": "290",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Metam-sodium: Acute reference dose 0.1 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -14476,6 +14790,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Metam_sodium",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -14483,6 +14798,13 @@
    ],
    "use_evidence": {
     "agriculture": "It is used as a soil fumigant, pesticide, herbicide, and fungicide."
+   },
+   "efsa": {
+    "label": "Metam-sodium",
+    "value": "Acute reference dose 0.1 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -14782,6 +15104,12 @@
      "listed": "1999-04-16",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Myclobutanil: Acute reference dose 0.31 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -14803,6 +15131,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -14810,6 +15139,13 @@
    ],
    "use_evidence": {
     "agriculture": "Myclobutanil is a triazole chemical used as a fungicide."
+   },
+   "efsa": {
+    "label": "Myclobutanil",
+    "value": "Acute reference dose 0.31 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -15077,6 +15413,12 @@
      "listed": "2001-06-15",
      "madl_ug_day": "3200 (inhalation)\n17000 (dermal)",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "1-methylpyrrolidin-2-one: TDI 1 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Opinion: EFSA AFC, Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) on a request from the Commission related to a 7th list of substances for food contact materials, 2005. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -15100,6 +15442,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -15107,6 +15450,13 @@
    ],
    "use_evidence": {
     "goods": "It is used in the petrochemical, polymer and battery industries as a solvent, exploiting its nonvolatility and ability to dissolve diverse materials (including polyvinylidene difluoride, PVDF)."
+   },
+   "efsa": {
+    "label": "1-methylpyrrolidin-2-one",
+    "value": "TDI 1 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -16254,6 +16604,12 @@
      "listed": "1998-05-15",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Oxadiazon: Acute reference dose 0.12 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -16268,8 +16624,16 @@
    "wiki": null,
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "Oxadiazon",
+    "value": "Acute reference dose 0.12 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "Oxythioquinox (Chinomethionat)",
@@ -17136,6 +17500,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "613-324-00-8"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "8-hydroxyquinoline: Acceptable daily intake 0.05 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -17153,7 +17523,8 @@
    "wiki": "https://en.wikipedia.org/wiki/8-Hydroxyquinoline",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "atc": [
     "A01AB07",
@@ -17161,7 +17532,14 @@
     "G01AC30",
     "R02AA14"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "efsa": {
+    "label": "8-hydroxyquinoline",
+    "value": "Acceptable daily intake 0.05 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "reaction mass of 1,3-dioxan-5-ol and 1,3-dioxolan-4-ylmethanol",
@@ -17219,6 +17597,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "616-240-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Isopyrazam: Acute reference dose 0.2 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -17236,8 +17620,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Reaction_mass_of_3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9RS)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide_and_3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9SR)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide_[≥_78_%_syn_isomers_≤_15_%_anti_isomers_relative_content]",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Isopyrazam",
+    "value": "Acute reference dose 0.2 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "reaction mass of: 1,3,5-tris(3-aminomethylphenyl)-1,3,5-(1H,3H,5H)-triazine-2,4,6-trione; reaction mass of oligomers of 3,5-bis(3-aminomethylphenyl)-1-poly[3,5-bis(3-aminomethylphenyl)-2,4,6-trioxo-1,3,5-(1H,3H,5H)-triazin-1-yl]-1,3,5-(1H,3H,5H)-triazine-2,4,6-trione",
@@ -18091,6 +18483,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "613-325-00-3"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Thiacloprid: Acute reference dose 0.02 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -18108,8 +18506,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Thiacloprid",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Thiacloprid",
+    "value": "Acute reference dose 0.02 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "Triadimefon",
@@ -18125,6 +18531,12 @@
      "listed": "1999-03-30",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Triadimefon: Acceptable daily intake 0.03 mg/kg of body weight per day. The value rests on sub-chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -18139,6 +18551,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Triadimefon",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -18146,6 +18559,13 @@
    ],
    "use_evidence": {
     "agriculture": "Triadimefon is a fungicide used in agriculture to control various fungal diseases."
+   },
+   "efsa": {
+    "label": "Triadimefon",
+    "value": "Acceptable daily intake 0.03 mg/kg of body weight per day",
+    "endpoint": "sub-chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -18166,6 +18586,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "613-322-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Triadimenol: Acceptable daily intake 0.01 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -18183,8 +18609,16 @@
    "wiki": null,
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Triadimenol",
+    "value": "Acceptable daily intake 0.01 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "tributyltin compounds, with the exception of those specified elsewhere in this annex",
@@ -19037,6 +19471,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
      "index": "613-011-00-6"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Amitrole: Acceptable daily intake 0.001 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19052,13 +19492,21 @@
    "wiki": "https://en.wikipedia.org/wiki/3-Amino-1,2,4-triazole",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "3-Amino-1,2,4-triazole (3-AT, or amitrol) is a heterocyclic organic compound used as a herbicide, that consists of 1,2,4-triazole with an amino group as a substituent."
+   },
+   "efsa": {
+    "label": "Amitrole",
+    "value": "Acceptable daily intake 0.001 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -19079,6 +19527,12 @@
      "applies_from": "2025-09-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0197",
      "index": "612-295-00-9"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Benfluralin: Acute reference dose 0.5 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19094,13 +19548,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Benfluralin",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Benfluralin (or Benefin) is a herbicide of the dinitroaniline class."
+   },
+   "efsa": {
+    "label": "Benfluralin",
+    "value": "Acute reference dose 0.5 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -19121,6 +19583,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "613-012-00-1"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Bentazone: Acute reference dose 1 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19136,13 +19604,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Bentazon",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Bentazon, or Bentazone, is a herbicide active ingredient."
+   },
+   "efsa": {
+    "label": "Bentazone",
+    "value": "Acute reference dose 1 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -19163,6 +19639,12 @@
      "applies_from": "2026-05-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2564",
      "index": "607-771-00-8"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Benthiavalicarb isopropyl: Acceptable daily intake 0.1 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19178,8 +19660,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Benthiavalicarb isopropyl",
+    "value": "Acceptable daily intake 0.1 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "bromoxynil heptanoate (ISO); 2,6-dibromo-4-cyanophenyl heptanoate",
@@ -19199,6 +19689,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
      "index": "607-427-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Bromoxynil heptanoate: Acute reference dose 0.013 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19214,8 +19710,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Bromoxynil heptanoate",
+    "value": "Acute reference dose 0.013 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "butroxydim (ISO); 5-(3-butyryl-2,4,6-trimethylphenyl)-2-[1-(ethoxyimino)propyl]-3-hydroxycyclohex-2-en-1-one",
@@ -19474,6 +19978,12 @@
      "listed": "1999-05-14",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Chlorsulfuron: Acceptable daily intake 0.2 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19488,9 +19998,17 @@
    "wiki": "https://en.wikipedia.org/wiki/Chlorsulfuron",
    "level": "suspected",
    "source_codes": [
+    "efsa",
     "p65"
    ],
-   "delisted": "June 6, 2014"
+   "delisted": "June 6, 2014",
+   "efsa": {
+    "label": "Chlorsulfuron",
+    "value": "Acceptable daily intake 0.2 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "cis-1-(3-chloroallyl)-3,5,7-triaza-1-azoniaadamantane chloride",
@@ -19546,6 +20064,12 @@
      "applies_from": "2018-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0776",
      "index": "615-013-00-2"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Cyanamide including salts expressed as cyanamide: Acute reference dose 0.05 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19561,8 +20085,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Cyanamide",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Cyanamide including salts expressed as cyanamide",
+    "value": "Acute reference dose 0.05 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "cycloxydim (ISO); 2-(N-ethoxybutanimidoyl)-3-hydroxy-5-(tetrahydro-2H-thiopyran-3-yl)cyclohex-2-en-1-one",
@@ -19582,6 +20114,12 @@
      "applies_from": "2015-04-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0605",
      "index": "606-147-00-2"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Cycloxydim: Acute reference dose 2 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19597,8 +20135,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Cycloxydim",
+    "value": "Acute reference dose 2 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "cymoxanil (ISO); 2-cyano-N-[(ethylamino)carbonyl]-2-(methoxyimino)acetamide [1]",
@@ -19654,6 +20200,12 @@
      "applies_from": "2022-12-17",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0849",
      "index": "616-113-00-9"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Desmedipham: Acceptable daily intake 0.016 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19669,8 +20221,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Desmedipham",
+    "value": "Acceptable daily intake 0.016 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "dimethyltin dichloride",
@@ -19732,6 +20292,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "616-164-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Dimoxystrobin: Acceptable daily intake 0.004 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19747,8 +20313,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Dimoxystrobin",
+    "value": "Acceptable daily intake 0.004 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "disodium 3,3'-[[1,1'-biphenyl]-4,4'-diylbis(azo)]bis(4-aminonaphthalene-1-sulphonate); C.I. Direct Red 28",
@@ -19948,6 +20522,12 @@
      "applies_from": "2017-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1221",
      "index": "607-712-00-6"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Dodemorph acetate: Acute reference dose 0.4 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -19963,8 +20543,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Dodemorph acetate",
+    "value": "Acute reference dose 0.4 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "fenarimol (ISO); 2,4'-dichloro-α-(pyrimidin-5-yl)benzhydryl alcohol",
@@ -20146,6 +20734,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
      "index": "607-305-00-3"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Fluazifop-P-butyl: Acceptable daily intake 0.01 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20161,13 +20755,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Fluazifop",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Fluazifop is the common name used by the ISO for an organic compound that is used as a selective herbicide."
+   },
+   "efsa": {
+    "label": "Fluazifop-P-butyl",
+    "value": "Acceptable daily intake 0.01 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -20188,6 +20790,12 @@
      "applies_from": "2015-04-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0605",
      "index": "612-287-00-5"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Fluazinam: Acute reference dose 0.07 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20203,13 +20811,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Fluazinam",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Fluazinam is a broad-spectrum fungicide used in agriculture."
+   },
+   "efsa": {
+    "label": "Fluazinam",
+    "value": "Acute reference dose 0.07 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -20230,6 +20846,12 @@
      "applies_from": "2022-12-17",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R0849",
      "index": "613-166-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Flumioxazin: Acute reference dose 0.1 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20245,13 +20867,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Flumioxazin",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Flumioxazin is a synthetic herbicide used for control of broadleaf weeds in agricultural areas."
+   },
+   "efsa": {
+    "label": "Flumioxazin",
+    "value": "Acute reference dose 0.1 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -20272,6 +20902,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "616-237-00-3"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Fluopicolide: Acute reference dose 0.18 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20287,13 +20923,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Fluopicolide",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Fluopicolide is a fungicide used in agriculture to control diseases caused by oomycetes such as late blight of potato."
+   },
+   "efsa": {
+    "label": "Fluopicolide",
+    "value": "Acute reference dose 0.18 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -20386,6 +21030,12 @@
      "applies_from": "2022-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1182",
      "index": "613-115-00-1"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Hymexazol: Acute reference dose 0.5 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20401,8 +21051,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Hymexazol",
+    "value": "Acute reference dose 0.5 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "imazamox (ISO); (RS)-2-(4-isopropyl-4-methyl-5-oxo-2-imidazolin-2-yl)-5-methoxymethylnicotinic acid",
@@ -20536,6 +21194,12 @@
      "applies_from": "2017-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1221",
      "index": "606-054-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Isoxaflutole: Acceptable daily intake 0.02 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20551,8 +21215,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Isoxaflutole",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Isoxaflutole",
+    "value": "Acceptable daily intake 0.02 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "malachite green hydrochloride [1]",
@@ -20686,6 +21358,12 @@
      "applies_from": "2022-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1182",
      "index": "609-064-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Mesotrione: Acceptable daily intake 0.01 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20701,8 +21379,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Mesotrione",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Mesotrione",
+    "value": "Acceptable daily intake 0.01 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "metaflumizone (ISO); (EZ)-2-[2-(4-cyanophenyl)-1-(α,α,α -trifluoro-m-tolyl)ethylidene]-[4-(trifluoromethoxy)phenyl]carbanilohydrazide [E-isomer ≥ 90 %, Z-isomer ≤ 10 % relative content] [1]",
@@ -20974,6 +21660,12 @@
      "applies_from": "2022-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1182",
      "index": "603-239-00-4"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Paclobutrazol: Acute reference dose 0.1 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -20989,13 +21681,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Paclobutrazol",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Paclobutrazol (PBZ) is the ISO common name for an organic compound that is used as a plant growth retardant and triazole fungicide."
+   },
+   "efsa": {
+    "label": "Paclobutrazol",
+    "value": "Acute reference dose 0.1 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -21052,6 +21752,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "609-042-00-X"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Pendimethalin: Acute reference dose 0.3 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21067,8 +21773,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Pendimethalin",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Pendimethalin",
+    "value": "Acute reference dose 0.3 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "pinoxaden (ISO); 8-(2,6-diethyl-4-methylphenyl)-7-oxo-1,2,4,5-tetrahydro-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl 2,2-dimethylpropanoate",
@@ -21088,6 +21802,12 @@
      "applies_from": "2020-05-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R1480",
      "index": "607-726-00-2"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Pinoxaden: Acceptable daily intake 0.1 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21103,13 +21823,21 @@
    "wiki": "https://en.wikipedia.org/wiki/Pinoxaden",
    "level": "suspected",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "agriculture"
    ],
    "use_evidence": {
     "agriculture": "Pinoxaden is a post-emergent phenylpyrazoline herbicide used to control grass weeds in wheat and barley."
+   },
+   "efsa": {
+    "label": "Pinoxaden",
+    "value": "Acceptable daily intake 0.1 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
    }
   },
   {
@@ -21291,6 +22019,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
      "index": "613-070-00-8"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Propylenethiourea: Acute reference dose 0.012 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21306,8 +22040,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Propylenethiourea",
+    "value": "Acute reference dose 0.012 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "pymetrozine (ISO); (E)-4,5-dihydro-6-methyl-4-(3-pyridylmethyleneamino)-1,2,4-triazin-3(2H)-one",
@@ -21327,6 +22069,12 @@
      "applies_from": "2022-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1182",
      "index": "613-202-00-4"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Pymetrozine: Acute reference dose 0.1 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21342,8 +22090,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Pymetrozine",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Pymetrozine",
+    "value": "Acute reference dose 0.1 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "pyraclostrobin (ISO); methyl N-(2-{[1-(4-chlorophenyl)-1H-pyrazol-3-yl]oxymethyl}phenyl) N-methoxy carbamate",
@@ -21405,6 +22161,12 @@
      "applies_from": "2023-11-23",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0692",
      "index": "606-154-00-0"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Quinoclamine: Acute reference dose 0.05 mg/kg of body weight. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21420,8 +22182,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Quinoclamine",
+    "value": "Acute reference dose 0.05 mg/kg of body weight",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "quizalofop-P-tefuryl (ISO); (+/–) tetrahydrofurfuryl (R)-2-[4-(6-chloroquinoxalin-2-yloxy)phenyloxy]propionate",
@@ -21633,6 +22403,12 @@
      "applies_from": "2017-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1221",
      "index": "607-711-00-0"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Spirotetramat: Acceptable daily intake 0.05 mg/kg of body weight per day. The value rests on chronic toxicity: oral. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21648,8 +22424,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Spirotetramat",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Spirotetramat",
+    "value": "Acceptable daily intake 0.05 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: oral",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "spiroxamine (ISO); 8-tert-butyl-1,4-dioxaspiro[4.5]decan-2-ylmethyl(ethyl)(propyl)amine",
@@ -21741,6 +22525,12 @@
      "applies_from": "2015-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0944",
      "index": "606-145-00-1"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Sulcotrione: Acceptable daily intake 0.0004 mg/kg of body weight per day. The value rests on chronic toxicity: other route. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21756,8 +22546,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Sulcotrione",
+    "value": "Acceptable daily intake 0.0004 mg/kg of body weight per day",
+    "endpoint": "chronic toxicity: other route",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "tebuconazole (ISO); 1-(4-chlorophenyl)-4,4-dimethyl-3-(1,2,4-triazol-1-ylmethyl)pentan-3-ol",
@@ -21777,6 +22575,12 @@
      "applies_from": "2017-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1221",
      "index": "603-197-00-7"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Tebuconazole: Acceptable daily intake 0.03 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21792,8 +22596,16 @@
    "wiki": "https://en.wikipedia.org/wiki/Tebuconazole",
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Tebuconazole",
+    "value": "Acceptable daily intake 0.03 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "tembotrione (ISO); 2-{2-chloro-4-(methylsulfonyl)-3-[(2,2,2-trifluoroethoxy)methyl]benzoyl}cyclohexane-1,3-dione",
@@ -21813,6 +22625,12 @@
      "applies_from": "2017-01-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R1221",
      "index": "606-149-00-3"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "Tembotrione: Acute reference dose 0.1 mg/kg of body weight per day. The value rests on toxicity to reproduction: other studies. Source: EFSA OpenFoodTox 3.0.",
+     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox"
     }
    ],
    "status": {
@@ -21828,8 +22646,16 @@
    "wiki": null,
    "level": "suspected",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "Tembotrione",
+    "value": "Acute reference dose 0.1 mg/kg of body weight per day",
+    "endpoint": "toxicity to reproduction: other studies",
+    "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "tepraloxydim (ISO); (RS)-(EZ)-2-{]1-[}(2E)-3-chloroallyloxyimino{]propyl[}-3-hydroxy-5-perhydropyran-4-ylcyclohex-2-en-1-one",

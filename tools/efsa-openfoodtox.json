@@ -1,0 +1,670 @@
+{
+ "source": "EFSA OpenFoodTox 3.0, doi:10.5281/zenodo.19388272, CC BY-ND 4.0, read 13 September 2026",
+ "note": "Reference values for the substances of the DysNet teratogens register only; the database itself is not redistributed.",
+ "values": {
+  "61213-25-0": {
+   "kind": "Acute reference dose",
+   "value": 0.04,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Flurochloridone",
+   "alternatives": 1
+  },
+  "420-04-2": {
+   "kind": "Acute reference dose",
+   "value": 0.05,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Cyanamide including salts expressed as cyanamide",
+   "alternatives": 1
+  },
+  "16118-49-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.06,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: oral",
+   "opinion": {},
+   "name": "Carbetamide",
+   "alternatives": 1
+  },
+  "115-09-3": {
+   "kind": "TWI",
+   "value": 1.3,
+   "unit": "µg/kg bw/week",
+   "endpoint": "additional toxicological information",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+    "year": "2012"
+   },
+   "name": "Methylmercuric chloride",
+   "alternatives": 0
+  },
+  "99105-77-8": {
+   "kind": "Acceptable daily intake",
+   "value": 0.0004,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Sulcotrione",
+   "alternatives": 0
+  },
+  "84-74-2": {
+   "kind": "TDI",
+   "value": 0.01,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA AFC",
+    "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Material in Contact with Food (AFC) on a request from the Commission related to Di-Butylphthalate (DBP) for use in food contact materials",
+    "year": "2005"
+   },
+   "name": "Dibutyl phthalate",
+   "alternatives": 0
+  },
+  "55219-65-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.01,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Triadimenol",
+   "alternatives": 2
+  },
+  "288-88-0": {
+   "kind": "Acceptable daily intake",
+   "value": 0.02,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Triazole, 1,2,4-",
+   "alternatives": 9
+  },
+  "107534-96-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.03,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Tebuconazole",
+   "alternatives": 4
+  },
+  "133855-98-8": {
+   "kind": "Acute reference dose",
+   "value": 0.023,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Epoxiconazole",
+   "alternatives": 1
+  },
+  "71751-41-2": {
+   "kind": "Acceptable daily intake",
+   "value": 0.0012,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Abamectin",
+   "alternatives": 7
+  },
+  "88671-89-0": {
+   "kind": "Acute reference dose",
+   "value": 0.31,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Myclobutanil",
+   "alternatives": 4
+  },
+  "117-81-7": {
+   "kind": "TDI",
+   "value": 0.05,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA AFC",
+    "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food (AFC) on a request from the Commission related to Bis(2-ethylhexyl)phthalate (DEHP) for use in food contact materials",
+    "year": "2005"
+   },
+   "name": "Di-(2-ethylhexyl)phthalate",
+   "alternatives": 0
+  },
+  "137-42-8": {
+   "kind": "Acute reference dose",
+   "value": 0.1,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Metam-sodium",
+   "alternatives": 3
+  },
+  "7440-43-9": {
+   "kind": "TWI",
+   "value": 2.5,
+   "unit": "µg/kg bw/week",
+   "endpoint": "additional toxicological information",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Cadmium in food",
+    "year": "2009"
+   },
+   "name": "Cadmium (Cd)",
+   "alternatives": 1
+  },
+  "123312-89-0": {
+   "kind": "Acute reference dose",
+   "value": 0.1,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Pymetrozine",
+   "alternatives": 3
+  },
+  "1689-84-5": {
+   "kind": "Acute reference dose",
+   "value": 0.013,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Bromoxynil",
+   "alternatives": 3
+  },
+  "80-05-7": {
+   "kind": "TDI",
+   "value": 0.05,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA AFC",
+    "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food on a request from the Commission related to 2,2-BIS(4-HYDROXYPHENYL)PROPANE (Bisphenol A)",
+    "year": "2007"
+   },
+   "name": "Bisphenol-A (Total)",
+   "alternatives": 3
+  },
+  "177406-68-7": {
+   "kind": "Acceptable daily intake",
+   "value": 0.1,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Benthiavalicarb isopropyl",
+   "alternatives": 2
+  },
+  "19666-30-9": {
+   "kind": "Acute reference dose",
+   "value": 0.12,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Oxadiazon",
+   "alternatives": 1
+  },
+  "103361-09-7": {
+   "kind": "Acute reference dose",
+   "value": 0.1,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Flumioxazin",
+   "alternatives": 3
+  },
+  "13684-56-5": {
+   "kind": "Acceptable daily intake",
+   "value": 0.016,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Desmedipham",
+   "alternatives": 1
+  },
+  "141112-29-0": {
+   "kind": "Acceptable daily intake",
+   "value": 0.02,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Isoxaflutole",
+   "alternatives": 3
+  },
+  "1689-99-2": {
+   "kind": "Acute reference dose",
+   "value": 0.013,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Bromoxynil octanoate",
+   "alternatives": 1
+  },
+  "2122-19-2": {
+   "kind": "Acute reference dose",
+   "value": 0.012,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Propylenethiourea",
+   "alternatives": 1
+  },
+  "85-68-7": {
+   "kind": "TDI",
+   "value": 0.5,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA AFC",
+    "title": "Opinion of the Scientific Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food (AFC) on a request from the Commission related to Butylbenzylphthalate (BBP) for use in food contact materials",
+    "year": "2005"
+   },
+   "name": "Butylbenzylphthalate",
+   "alternatives": 0
+  },
+  "335104-84-2": {
+   "kind": "Acute reference dose",
+   "value": 0.1,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Tembotrione",
+   "alternatives": 1
+  },
+  "66441-23-4": {
+   "kind": "Acceptable daily intake",
+   "value": 0.01,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Fenoxaprop-ethyl",
+   "alternatives": 1
+  },
+  "104206-82-8": {
+   "kind": "Acceptable daily intake",
+   "value": 0.01,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Mesotrione",
+   "alternatives": 1
+  },
+  "77182-82-2": {
+   "kind": "Acceptable daily intake",
+   "value": 0.021,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Glufosinate-ammonium",
+   "alternatives": 2
+  },
+  "96-45-7": {
+   "kind": "Acceptable daily intake",
+   "value": 0.002,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Ethylenethiourea",
+   "alternatives": 1
+  },
+  "61-82-5": {
+   "kind": "Acceptable daily intake",
+   "value": 0.001,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Amitrole",
+   "alternatives": 1
+  },
+  "22967-92-6": {
+   "kind": "TWI",
+   "value": 1.3,
+   "unit": "µg/kg bw/week",
+   "endpoint": "additional toxicological information",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Scientific Opinion on the risk for public health related to the presence of mercury and methylmercury in food.",
+    "year": "2012"
+   },
+   "name": "Methylmercury",
+   "alternatives": 0
+  },
+  "43121-43-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.03,
+   "unit": "mg/kg bw/day",
+   "endpoint": "sub-chronic toxicity: other route",
+   "opinion": {},
+   "name": "Triadimefon",
+   "alternatives": 1
+  },
+  "94361-06-5": {
+   "kind": "Acute reference dose",
+   "value": 0.02,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Cyproconazole",
+   "alternatives": 3
+  },
+  "872-50-4": {
+   "kind": "TDI",
+   "value": 1,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {
+    "author": "EFSA AFC",
+    "title": "Opinion of the Scientific Panel on food additives, flavourings, processing aids and materials in contact with food (AFC) on a request from the Commission related to a 7th list of substances for food contact materials",
+    "year": "2005"
+   },
+   "name": "1-methylpyrrolidin-2-one",
+   "alternatives": 0
+  },
+  "335-67-1": {
+   "kind": "TDI",
+   "value": 1.5,
+   "unit": "µg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Perfluorooctane sulfonate (PFOS), perfluorooctanoic acid (PFOA) and their salts",
+    "year": "2008"
+   },
+   "name": "Perfluorooctanoic acid",
+   "alternatives": 1
+  },
+  "31717-87-0": {
+   "kind": "Acute reference dose",
+   "value": 0.4,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Dodemorph acetate",
+   "alternatives": 1
+  },
+  "239110-15-7": {
+   "kind": "Acute reference dose",
+   "value": 0.18,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Fluopicolide",
+   "alternatives": 1
+  },
+  "1746-01-6": {
+   "kind": "TWI",
+   "value": 14,
+   "unit": "pg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Scientific Opinion on the risk to public health related to the presence of high levels of dioxins and dioxin-like PCBs in liver from sheep and deer",
+    "year": "2011"
+   },
+   "name": "2,3,7,8-TCDD",
+   "alternatives": 2
+  },
+  "85509-19-9": {
+   "kind": "Acute reference dose",
+   "value": 0.005,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Flusilazole",
+   "alternatives": 1
+  },
+  "64902-72-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.2,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Chlorsulfuron",
+   "alternatives": 0
+  },
+  "1861-40-1": {
+   "kind": "Acute reference dose",
+   "value": 0.5,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Benfluralin",
+   "alternatives": 4
+  },
+  "10605-21-7": {
+   "kind": "Acceptable daily intake",
+   "value": 0.02,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Carbendazim",
+   "alternatives": 1
+  },
+  "148-24-3": {
+   "kind": "Acceptable daily intake",
+   "value": 0.05,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "8-hydroxyquinoline",
+   "alternatives": 3
+  },
+  "79241-46-6": {
+   "kind": "Acceptable daily intake",
+   "value": 0.01,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Fluazifop-P-butyl",
+   "alternatives": 3
+  },
+  "63-25-2": {
+   "kind": "Acceptable daily intake",
+   "value": 0.0075,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: oral",
+   "opinion": {},
+   "name": "Carbaryl",
+   "alternatives": 1
+  },
+  "111988-49-9": {
+   "kind": "Acute reference dose",
+   "value": 0.02,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Thiacloprid",
+   "alternatives": 1
+  },
+  "74-83-9": {
+   "kind": "Acceptable daily intake",
+   "value": 0.001,
+   "unit": "mg/kg bw",
+   "endpoint": "chronic toxicity: oral",
+   "opinion": {},
+   "name": "Methyl bromide",
+   "alternatives": 1
+  },
+  "149961-52-4": {
+   "kind": "Acceptable daily intake",
+   "value": 0.004,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Dimoxystrobin",
+   "alternatives": 1
+  },
+  "1763-23-1": {
+   "kind": "TDI",
+   "value": 150,
+   "unit": "ng/kg bw/day",
+   "endpoint": "chronic toxicity: oral",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Perfluorooctane sulfonate (PFOS), perfluorooctanoic acid (PFOA) and their salts",
+    "year": "2008"
+   },
+   "name": "Perfluorooctane sulfonate",
+   "alternatives": 1
+  },
+  "40487-42-1": {
+   "kind": "Acute reference dose",
+   "value": 0.3,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Pendimethalin",
+   "alternatives": 1
+  },
+  "101205-02-1": {
+   "kind": "Acute reference dose",
+   "value": 2,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Cycloxydim",
+   "alternatives": 1
+  },
+  "79622-59-6": {
+   "kind": "Acute reference dose",
+   "value": 0.07,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Fluazinam",
+   "alternatives": 1
+  },
+  "2797-51-5": {
+   "kind": "Acute reference dose",
+   "value": 0.05,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Quinoclamine",
+   "alternatives": 1
+  },
+  "2921-88-2": {
+   "kind": "Acceptable daily intake",
+   "value": 0.001,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {},
+   "name": "Chlorpyrifos",
+   "alternatives": 3
+  },
+  "54-11-5": {
+   "kind": "Acceptable daily intake",
+   "value": 0.0008,
+   "unit": "mg/kg bw/day",
+   "endpoint": "additional toxicological information",
+   "opinion": {},
+   "name": "Nicotine",
+   "alternatives": 2
+  },
+  "76738-62-0": {
+   "kind": "Acute reference dose",
+   "value": 0.1,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Paclobutrazol",
+   "alternatives": 1
+  },
+  "203313-25-1": {
+   "kind": "Acceptable daily intake",
+   "value": 0.05,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: oral",
+   "opinion": {},
+   "name": "Spirotetramat",
+   "alternatives": 1
+  },
+  "8018-01-7": {
+   "kind": "Acceptable daily intake",
+   "value": 0.023,
+   "unit": "mg/kg bw/day",
+   "endpoint": "short-term repeated dose toxicity: oral",
+   "opinion": {},
+   "name": "Mancozeb",
+   "alternatives": 1
+  },
+  "25057-89-0": {
+   "kind": "Acute reference dose",
+   "value": 1,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Bentazone",
+   "alternatives": 1
+  },
+  "330-55-2": {
+   "kind": "Acceptable daily intake",
+   "value": 0.003,
+   "unit": "mg/kg bw/day",
+   "endpoint": "chronic toxicity: other route",
+   "opinion": {
+    "author": "EFSA",
+    "title": "Peer review of the pesticide risk assessment of the active substance linuron",
+    "year": "2016"
+   },
+   "name": "Linuron",
+   "alternatives": 0
+  },
+  "243973-20-8": {
+   "kind": "Acceptable daily intake",
+   "value": 0.1,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Pinoxaden",
+   "alternatives": 1
+  },
+  "10004-44-1": {
+   "kind": "Acute reference dose",
+   "value": 0.5,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Hymexazol",
+   "alternatives": 1
+  },
+  "51338-27-3": {
+   "kind": "Acute reference dose",
+   "value": 0.03,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Diclofop-Methyl",
+   "alternatives": 1
+  },
+  "76-44-8": {
+   "kind": "TDI",
+   "value": 0.0001,
+   "unit": "mg/kg bw/day",
+   "endpoint": "",
+   "opinion": {
+    "author": "EFSA CONTAM",
+    "title": "Opinion of the Scientific Panel on Contaminants in the Food Chain on a request from the European Commission related to heptachlor as an undesirable substance in animal feed",
+    "year": "2007"
+   },
+   "name": "Heptachlor",
+   "alternatives": 0
+  },
+  "56634-95-8": {
+   "kind": "Acute reference dose",
+   "value": 0.013,
+   "unit": "mg/kg bw/day",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Bromoxynil heptanoate",
+   "alternatives": 1
+  },
+  "881685-58-1": {
+   "kind": "Acute reference dose",
+   "value": 0.2,
+   "unit": "mg/kg bw",
+   "endpoint": "toxicity to reproduction: other studies",
+   "opinion": {},
+   "name": "Isopyrazam",
+   "alternatives": 1
+  }
+ }
+}

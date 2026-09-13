@@ -1087,7 +1087,7 @@ PAGES["/knowledge/teratogens/"] = {
       <li><strong>Known</strong>: human evidence. In the EU this is category 1A of the harmonised classification; for medicines, a documented human teratogen; in California, a substance the State lists after its own experts review it, or because another law already requires the warning.</li>
       <li><strong>Presumed</strong>: strong animal evidence. Category 1B in the EU, a medicine contraindicated in pregnancy on animal data, or a substance California lists on an authoritative body&rsquo;s review, which is usually a review of animal studies. California&rsquo;s own wording is &ldquo;known to the State&rdquo;, a legal status rather than a statement about human evidence, so we read the basis of each listing rather than the phrase.</li>
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
-      <li><strong>How much is tolerable</strong>: for substances in the food chain, the European Food Safety Authority derives the intake it considers tolerable and names the effect that figure rests on. It does not classify teratogens and its remit stops at food and feed, so its values sit beside the evidence level, never instead of it.</li>
+      <li><strong>How much is tolerable</strong>: for substances in the food chain, the European Food Safety Authority derives the intake it considers tolerable and names the effect that figure rests on. {TERA.get("counts", {}).get("efsa", 0)} entries carry such a value, read from EFSA&rsquo;s pages and from its chemical hazards database, OpenFoodTox 3.0 (CC BY-ND 4.0). EFSA does not classify teratogens and its remit stops at food and feed, so its values sit beside the evidence level, never instead of it.</li>
     </ul>
     <p><strong>Independent hazard frameworks.</strong> Manufacturers and certifiers increasingly rate chemicals with two non-profit frameworks that score developmental and reproductive toxicity among their endpoints. <a href="https://www.greenscreenchemicals.org/learn/full-greenscreen-method" target="_blank" rel="noopener external">GreenScreen for Safer Chemicals</a> (Clean Production Action) assigns Benchmarks 1 to 4, Benchmark 1 being a chemical of high concern, through assessments by licensed profilers such as ToxServices; its free List Translator flags as LT-1 any chemical that an authoritative list already classes as a high-hazard reproductive or developmental toxicant, and its <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">public registry</a> tells you, by CAS number, whether a full assessment exists. <a href="https://www.chemforward.org/" target="_blank" rel="noopener external">ChemFORWARD</a> rates chemicals used in consumer products and building materials in hazard bands A to F across 24 endpoints; its published <a href="https://static1.squarespace.com/static/60611efa464a766c6a812834/t/6657f7d9c7241a2e6ba86b55/1717041115329/Chemical+Rating+Guidance+v2.2_Abbreviated.pdf" target="_blank" rel="noopener external">rating guidance</a> places in band F, by list screening alone, every substance with an EU harmonised Repr. 1 classification or on the REACH candidate and authorisation lists as a reproductive toxicant. The two organisations <a href="https://www.chemforward.org/news/chemforward-and-greenscreen-offer-aligned-outputs-for-hazard-data-toxservices" target="_blank" rel="noopener external">reported in 2021</a> that their outputs are aligned. Full assessments sit behind subscriptions, so this register cannot import their scores; where an entry meets ChemFORWARD's published F-band criterion, it says so.</p>
     <p>The <strong>EU harmonised classification</strong> is binding law: once a substance carries a hazard statement for the unborn child (H360D, H361d and their variants), every container of it, and of mixtures containing it, must be labelled across the EU and EEA; categories 1A and 1B may not be sold to the general public, cannot be approved as pesticides and are banned from cosmetics. It says nothing about finished articles, food or medicines, which are outside its scope. <strong>Proposition 65</strong> is binding in California only and requires a warning before exposure, not a ban; it is enforced through litigation. <strong>EMA</strong> decisions bind marketing authorisations across the EU: the medicine stays available, under a pregnancy prevention programme. <strong>WHO</strong> guidance binds no one. Our <strong>bibliography</strong> reports evidence, not law.</p>
@@ -1343,6 +1343,66 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 
 BIB_BY_DOI = {(e.get("doi") or "").lower(): e for e in BIB.get("entries", []) if e.get("doi")}
 BIB_BY_PMID = {str(e.get("pmid")): e for e in BIB.get("entries", []) if e.get("pmid")}
+
+
+# ── How unevenly the causes of dysmelia have been studied (quoted in Voice, demand 4) ──
+# Counted from the register at every build, so the figures in the prose cannot go stale.
+# Thalidomide and epidemiology come from the register's own tags; the three remaining
+# buckets are read off the title, because the register has no field for "names a gene".
+# NOT_A_GENE lists the all-caps tokens that look like gene symbols but are not: study
+# acronyms, classifications, and the chemicals that appear in titles in the same shape.
+NOT_A_GENE = {
+    "DNA", "RNA", "USA", "UK", "EU", "US", "WHO", "MRI", "CT", "PCR", "QF", "CNV", "IVF", "ART", "COVID", "SARS",
+    "ICBDSR", "EUROCAT", "OMT", "IFSSH", "TAR", "EEC", "VACTERL", "VATER", "ADAM", "LBWC", "ABS", "ICD", "NBDPS",
+    "CHD", "CDS", "FADS", "AMC", "BMI", "CVS", "TTTS", "GWAS", "NGS", "WES", "WGS", "SNP", "OMIM", "HIV", "AND",
+    "THE", "FOR", "WITH", "NOT", "NEW", "III", "CARE", "CASE", "RARE", "TYPE", "PART", "ONE", "TWO", "PRELLIM",
+    "NSQIP", "GOAL", "PRCM", "SVA", "IMI2", "TBN", "ACASS", "CDG", "IFT", "GPT",
+    "CAR", "DHA", "B12", "ENU", "DEHP", "SAG",  # compounds and vitamins, not genes
+}
+GENE_SYMBOL = re.compile(r"\b([A-Z][A-Z0-9]{2,8})\b")
+MEDICINE_RX = re.compile(
+    r"\b(drugs?|medications?|medicines?|prescription|pharmaceutical|analgesics?|misoprostol|mifepristone|valproat\w*"
+    r"|phenytoin|phenobarbital|carbamazepin\w*|oxcarbazepine|topiramate|lamotrigine|levetiracetam|antiepileptic"
+    r"|antiseizure|anticonvulsant|retinoic|retinoid|isotretinoin|methotrexate|mycophenolate|warfarin|leflunomide"
+    r"|cabergoline|macrolides?|amoxicillin|antibiotics?|antidepressants?|SSRIs?|antipsychotics?|opioids?|fentanyl"
+    r"|cytarabine|cyclophosphamide|ondansetron|fluconazole|paracetamol|acetaminophen|ibuprofen|NSAIDs?|progestogens?"
+    r"|progesterone|beta-blockers?|antihypertensives?|corticosteroids?|vaccin\w*|CAR T-cell)\b", re.I)
+ENVIRONMENT_RX = re.compile(
+    r"\b(pollut\w*|pesticid\w*|herbicid\w*|solvents?|occupational|heavy metals?|trace elements?|cadmium|mercury"
+    r"|arsenic|dioxins?|PFAS|phthalates?|endocrine disrupt\w*|drinking water|air quality|radiation|hyperthermia"
+    r"|environmental (exposure|factor|pollut|contamina|chemical|risk|mixture|toxic)\w*)\b"
+    r"|(?<!familial )(?<!family )\bcluster\w*", re.I)
+_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+_UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+          "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+
+
+def spell(n):
+    """Numbers under 100 in words, so a sentence can open on one; digits above that."""
+    if n >= 100: return f"{n:,}"
+    if n < 20: return _UNITS[n]
+    return _TENS[n // 10] + (f"-{_UNITS[n % 10]}" if n % 10 else "")
+
+
+def bib_causes_stats():
+    entries = BIB.get("entries", [])
+    thal = [e for e in entries if "thal" in (e.get("codes") or [])]
+    rest = [e for e in entries if "thal" not in (e.get("codes") or [])]
+    named_gene = [e for e in rest
+                  if any(s not in NOT_A_GENE and not s.isdigit() for s in GENE_SYMBOL.findall(e["title"]))]
+    env = [e for e in rest if ENVIRONMENT_RX.search(e["title"])]
+    years = sorted(int(e["year"]) for e in env if str(e.get("year", "")).isdigit())
+    span = (years[-1] - years[0] + 1) if years else 0
+    return {
+        "total": len(entries), "thalidomide": len(thal),
+        "epidemiology": sum(1 for e in entries if "epidemiology" in e["topics"]),
+        "gene": len(named_gene), "medicine": sum(1 for e in rest if MEDICINE_RX.search(e["title"])),
+        "environment": len(env), "env_span": span, "env_first": years[0] if years else 0,
+        "env_years_per_paper": (span / len(env)) if env else 0,
+    }
+
+
+BIBSTAT = bib_causes_stats()
 
 CAUSES_REF_ORDER = []
 
@@ -1972,9 +2032,8 @@ PAGES["/voice/"] = {
         </div></details></li>
       <li><details><summary><span class="demand-n">4</span><span>Research that looks for the causes of dysmelia, not only for how often it happens</span></summary>
         <div class="demand-body">
-          <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its 1,077 references, 439 concern thalidomide, the one cause that was identified, sixty years ago. Another 212 measure how often the conditions occur. Outside thalidomide, 105 titles name a gene, 49 name a medicine taken during pregnancy, and 36 name an environmental exposure.</p>
-          <p>Thirty-six papers, for every environmental hypothesis, across fifty years. Two of them are the Cardiff clustering studies of 1973. The most recent are on air pollution, on heavy metals in maternal blood, on smoking, and on the French clusters of transverse upper-limb agenesis. That is roughly one study a year, worldwide, for the question that comes first in every family’s mind.</p>
-          <p>Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly. Progress looks like calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.</p>
+          <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its {BIBSTAT["total"]:,} references, {BIBSTAT["thalidomide"]} concern thalidomide, the one cause that was identified, sixty years ago. Another {BIBSTAT["epidemiology"]} measure how often the conditions occur. Outside thalidomide, {BIBSTAT["gene"]} titles name a gene, {BIBSTAT["medicine"]} name a medicine taken during pregnancy, and {BIBSTAT["environment"]} name an environmental exposure.</p>
+          <p>{spell(BIBSTAT["environment"]).capitalize()} papers, for every environmental hypothesis, across {BIBSTAT["env_span"]} years. The two oldest are the Cardiff clustering studies of {BIBSTAT["env_first"]}. Among the most recent are studies of air pollution, of heavy metals in maternal blood, and of the French clusters of transverse upper-limb agenesis. That is one paper every {BIBSTAT["env_years_per_paper"]:.1f} years, worldwide, for the question that comes first in every family’s mind.</p>          <p>Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly. Progress looks like calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.</p>
           <p>What that literature currently supports, and where it stops, is set out in our review <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>: across large birth-defect cohorts a cause is identified in roughly one case in five, and for an isolated difference of a single limb it is usually none. That figure is the demand, in one number.</p>
         </div></details></li>
       <li><details><summary><span class="demand-n">5</span><span>Precaution first: science-based information and enforceable rules on products with suspected, potential or proven teratogenic effects</span></summary>

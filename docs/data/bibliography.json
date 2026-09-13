@@ -1,8 +1,11 @@
 {
  "built": "2026-09-13",
- "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, fixed title-level PubMed queries on thalidomide embryopathy, systematic reviews, causes, and Canadian limb-difference and child-amputee care; metadata from NCBI E-utilities / Crossref",
+ "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref",
  "thalidomide_query": "thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR \"birth defects\"[Title] OR phocomelia[Title] OR survivors[Title] OR \"limb\"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])",
  "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
+ "causes_query": "(\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]",
+ "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))",
+ "member_country_query": "(Australia[tiab] OR Austria[tiab] OR Austrian[tiab] OR Belgium[tiab] OR Belgian[tiab] OR Chile[tiab] OR Chilean[tiab] OR France[tiab] OR French[tiab] OR Germany[tiab] OR German[tiab] OR Ireland[tiab] OR Irish[tiab] OR Italy[tiab] OR Italian[tiab] OR Netherlands[tiab] OR Dutch[tiab] OR Norway[tiab] OR Norwegian[tiab] OR Spain[tiab] OR Spanish[tiab] OR Sweden[tiab] OR Swedish[tiab] OR \"United Kingdom\"[tiab] OR Britain[tiab] OR British[tiab] OR England[tiab] OR Scotland[tiab] OR Wales[tiab]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab])",
  "entries": [
   {
    "pmid": "41918893",
@@ -229,6 +232,63 @@
    "topics": [
     "causes",
     "epidemiology"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "42371174",
+   "doi": "10.1007/s00590-026-04856-1",
+   "title": "Distal bipedicled \"supra cross leg\" flap: a salvage option for complex lower limb defects",
+   "authors": [
+    "Chanzy P",
+    "Siegel C",
+    "Deloncle M",
+    "et al."
+   ],
+   "journal": "European journal of orthopaedic surgery & traumatology : orthopedie traumatologie",
+   "year": "2026",
+   "volume": "36",
+   "pages": "",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search on studies from the countries of our member associations"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "41678211",
+   "doi": "10.1093/jas/skag040",
+   "title": "Effects of wildfire smoke exposure on health parameters and inflammatory responses of beef-on-dairy calves",
+   "authors": [
+    "Ranches J",
+    "Dos Santos ACR",
+    "Puerto-Hernandez GM",
+    "et al."
+   ],
+   "journal": "Journal of animal science",
+   "year": "2026",
+   "volume": "104",
+   "pages": "",
+   "pubtypes": [],
+   "codes": [
+    "1027"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -1571,7 +1631,8 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -1684,10 +1745,12 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of Aussiehands (Australia)"
    ],
    "via": [
-    "Aussiehands (Australia)"
+    "Aussiehands (Australia)",
+    "PubMed search"
    ]
   },
   {
@@ -2019,9 +2082,11 @@
     "living"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of Reach (United Kingdom)"
    ],
    "via": [
+    "PubMed search",
     "Reach (United Kingdom)"
    ]
   },
@@ -2547,6 +2612,7 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "cited by Orphanet for Amniotic band syndrome (prevalence at birth, Europe)",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), EUROCAT (EU RD Platform, JRC) (Italy), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland), REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
    ],
@@ -2555,6 +2621,7 @@
     "EUROCAT (EU RD Platform, JRC) (Italy)",
     "Orphanet",
     "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)",
+    "PubMed search",
     "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network (France)"
    ]
   },
@@ -2726,7 +2793,8 @@
     "review"
    ],
    "notes": [
-    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -2913,6 +2981,7 @@
     "review"
    ],
    "notes": [
+    "PubMed search for causes and risk factors of the site's conditions",
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
@@ -4049,6 +4118,7 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search for causes and risk factors of the site's conditions",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany), PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
    ],
    "via": [
@@ -4886,6 +4956,7 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search for causes and risk factors of the site's conditions",
     "published on the website of PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network (Poland)"
    ],
    "via": [
@@ -5659,6 +5730,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -7100,10 +7172,12 @@
     "epidemiology"
    ],
    "notes": [
-    "Norway, limb reduction defects 1970-2016"
+    "Norway, limb reduction defects 1970-2016",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
-    "DysNet"
+    "DysNet",
+    "PubMed search"
    ]
   },
   {
@@ -7128,10 +7202,12 @@
     "living"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of AISP – Sindrome di Poland (Italy)"
    ],
    "via": [
-    "AISP – Sindrome di Poland (Italy)"
+    "AISP – Sindrome di Poland (Italy)",
+    "PubMed search"
    ]
   },
   {
@@ -7153,6 +7229,7 @@
    ],
    "codes": [],
    "topics": [
+    "causes",
     "clinical",
     "review"
    ],
@@ -7250,6 +7327,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -7435,6 +7513,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -7461,7 +7540,8 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search on Canadian limb difference and child amputee care"
+    "PubMed search on Canadian limb difference and child amputee care",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -8501,14 +8581,14 @@
    ],
    "codes": [],
    "topics": [
-    "genetics",
+    "causes",
     "review"
    ],
    "notes": [
-    "published on the website of Thalidomide Trust"
+    "cited by the Causes of dysmelia review"
    ],
    "via": [
-    "Thalidomide Trust (website)"
+    "DysNet"
    ]
   },
   {
@@ -9575,6 +9655,7 @@
     "living"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -9877,10 +9958,12 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of AISP – Sindrome di Poland (Italy)"
    ],
    "via": [
-    "AISP – Sindrome di Poland (Italy)"
+    "AISP – Sindrome di Poland (Italy)",
+    "PubMed search"
    ]
   },
   {
@@ -11039,6 +11122,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy",
     "published on the website of Stichting NESOS (Netherlands)"
    ],
@@ -11487,10 +11571,12 @@
     "epidemiology"
    ],
    "notes": [
-    "Northern Netherlands, 30-year birth prevalence of limb defects"
+    "Northern Netherlands, 30-year birth prevalence of limb defects",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
-    "DysNet"
+    "DysNet",
+    "PubMed search"
    ]
   },
   {
@@ -12052,7 +12138,8 @@
     "genetics"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -13357,10 +13444,12 @@
     "review"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
-    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "PubMed search"
    ]
   },
   {
@@ -13413,7 +13502,8 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -14513,6 +14603,7 @@
     "genetics"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -16183,10 +16274,12 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "cited by Orphanet for Isolated tibial hemimelia (prevalence at birth, Europe)"
    ],
    "via": [
-    "Orphanet"
+    "Orphanet",
+    "PubMed search"
    ]
   },
   {
@@ -17799,10 +17892,12 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "published on the website of Aussiehands (Australia)"
    ],
    "via": [
-    "Aussiehands (Australia)"
+    "Aussiehands (Australia)",
+    "PubMed search"
    ]
   },
   {
@@ -18334,7 +18429,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -19307,7 +19403,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -19417,7 +19514,8 @@
     "clinical"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -20328,7 +20426,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -20835,7 +20934,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -20864,7 +20964,8 @@
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
-    "PubMed search on Canadian limb difference and child amputee care"
+    "PubMed search on Canadian limb difference and child amputee care",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -21448,7 +21549,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search on Canadian limb difference and child amputee care"
+    "PubMed search on Canadian limb difference and child amputee care",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -22140,7 +22242,8 @@
     "epidemiology"
    ],
    "notes": [
-    "PubMed search on Canadian limb difference and child amputee care"
+    "PubMed search on Canadian limb difference and child amputee care",
+    "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
     "PubMed search"
@@ -22193,6 +22296,34 @@
    ],
    "codes": [
     "93458"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "2815516",
+   "doi": "10.1136/vr.125.14.375",
+   "title": "Teratogenic polydactyly in a halfbred foal",
+   "authors": [
+    "Dore MA"
+   ],
+   "journal": "The Veterinary record",
+   "year": "1989",
+   "volume": "125",
+   "pages": "375-6",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "2913"
    ],
    "topics": [
     "causes",
@@ -22316,6 +22447,7 @@
     "genetics"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -24800,6 +24932,7 @@
     "review"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -25418,11 +25551,13 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "cited by Orphanet for Poland syndrome (point prevalence, Canada)",
     "cited by Orphanet for Poland syndrome (prevalence at birth, Canada)"
    ],
    "via": [
-    "Orphanet"
+    "Orphanet",
+    "PubMed search"
    ]
   },
   {
@@ -29474,6 +29609,7 @@
     "epidemiology"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -30105,6 +30241,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -30185,6 +30322,7 @@
     "clinical"
    ],
    "notes": [
+    "PubMed search on studies from the countries of our member associations",
     "PubMed title search on thalidomide embryopathy"
    ],
    "via": [
@@ -31158,8 +31296,5 @@
     "PubMed search"
    ]
   }
- ],
- "causes_query": "(\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]",
- "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))",
- "member_country_query": "(Australia[tiab] OR Austria[tiab] OR Austrian[tiab] OR Belgium[tiab] OR Belgian[tiab] OR Chile[tiab] OR Chilean[tiab] OR France[tiab] OR French[tiab] OR Germany[tiab] OR German[tiab] OR Ireland[tiab] OR Irish[tiab] OR Italy[tiab] OR Italian[tiab] OR Netherlands[tiab] OR Dutch[tiab] OR Norway[tiab] OR Norwegian[tiab] OR Spain[tiab] OR Spanish[tiab] OR Sweden[tiab] OR Swedish[tiab] OR \"United Kingdom\"[tiab] OR Britain[tiab] OR British[tiab] OR England[tiab] OR Scotland[tiab] OR Wales[tiab]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab])"
+ ]
 }

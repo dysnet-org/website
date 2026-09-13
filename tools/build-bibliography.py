@@ -72,7 +72,25 @@ REVIEW_SEED = {
     "9637807": (("causes", "clinical"), "Misoprostol in pregnancy and Möbius sequence"),
     "16750609": (("causes", "meta"), "Misoprostol and congenital anomalies: systematic review and meta-analysis"),
     "31218730": (("review", "clinical"), "Fetal akinesia deformation sequence: aetiology, diagnosis and management"),
+    "27773741": (("causes",), "Cited by the Causes of dysmelia review"),
 }
+# Papers found on the websites of organisations the site names, or listed by them as their own
+# research, that the standing queries do not reach. Seeded so that a full rebuild keeps them.
+WEBSITE_SEED = {
+    "39503467": (("epidemiology",), "Environmental scan of limb loss rehabilitation centres across Canada", "Holland Bloorview (hollandbloorview.ca)"),
+    "34665069": (("living",), "Running-specific prosthesis use, qualitative study", "Holland Bloorview (hollandbloorview.ca)"),
+    "33952260": (("clinical",), "GOAL-LD questionnaire for lower-limb differences", "Holland Bloorview (hollandbloorview.ca)"),
+    "28286964": (("living",), "Participation in sports for children with limb absence", "Holland Bloorview (hollandbloorview.ca)"),
+    "21515898": (("prosthetics",), "Prosthesis funding structures and their effect on use", "Holland Bloorview (hollandbloorview.ca)"),
+    "33565281": (("causes", "epidemiology"), "REMERA's own analysis of the Ain cluster of transverse upper-limb agenesis", "REMERA (remera.fr)"),
+    "21825994": (("clinical", "review"), "Ocular findings of thalidomide embryopathy, listed by Ex-Center", "Ex-Center (ex-center.org)"),
+    "19639653": (("clinical", "review"), "Ophthalmological manifestations of thalidomide and misoprostol, listed by Ex-Center", "Ex-Center (ex-center.org)"),
+}
+for pmid, (topics, note, via) in WEBSITE_SEED.items():
+    for topic in topics:
+        add(pmid, None, topic, note, via=via)
+    if pmid in ("21825994", "19639653"): seed[pmid]["codes"].add("thal")
+
 for pmid, (topics, note) in REVIEW_SEED.items():
     for topic in topics:
         add(pmid, None, topic, note, via="DysNet")

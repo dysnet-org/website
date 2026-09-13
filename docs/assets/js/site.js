@@ -461,8 +461,8 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   if (!legend || !btn) return;
   function set(open) { legend.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); btn.textContent = open ? "Hide legend" : "Legend"; }
   btn.addEventListener("click", function () { set(!legend.classList.contains("open")); });
-  // on a phone the legend sits under the map and opens with it, where there is room to read it
-  set(isPhone());
+  // the legend sits under the map on a phone, collapsed to its button until the reader opens it
+  set(false);
 })();
 
 /* ── Bibliography: search + filters ────────────────────────────────── */

@@ -917,6 +917,26 @@ PAGES["/knowledge/resources/"] = {
     <h2 class="h3" style="margin-top:var(--space-4)">Starting points</h2>
     <div style="margin-top:var(--space-2)">
       <article class="entry">
+        <h3>Emergency card and factsheet for thalidomide survivors, Stichting NESOS <span class="badge live">free</span></h3>
+        <p>A card for the wallet and a two-page factsheet, written so that an unknown doctor, an out-of-hours service or an emergency department knows in seconds what to take into account. Our Dutch member association developed them with the emergency department of the Radboud university hospital in Nijmegen, and publishes an English version of the folder as well. The medical pages carry the reasoning behind them: intubation complicated by airway and cervical anomalies, blood pressure that cannot be relied on at arm or leg, pulses that may not be palpable, and the instruction never to pull on arms or legs when moving an unconscious patient.</p>
+        <p class="src">Stichting NESOS · <a href="https://softenon.nl/medische-informatie/emergency-card/" target="_blank" rel="noopener external">softenon.nl · emergency card</a> · <a href="https://softenon.nl/medische-informatie/factsheet/" target="_blank" rel="noopener external">the factsheet</a> · topic: emergency care</p>
+      </article>
+      <article class="entry">
+        <h3>Thalidomide research bibliography, The Thalidomide Trust <span class="badge live">source</span></h3>
+        <p>The Trust keeps its own list of published thalidomide research from around the world, sorted into anomalies, physical health, mental health and quality of life, as a single point of access. The Trust states that the list does not claim to be exhaustive. Our own <a href="/knowledge/bibliography/">bibliography</a> covers the same literature with verified citations.</p>
+        <p class="src">The Thalidomide Trust · <a href="https://thalidomidetrust.org/professional-resources-research/thalidomide-research-bibliography/" target="_blank" rel="noopener external">thalidomidetrust.org · research bibliography</a> · topic: thalidomide</p>
+      </article>
+      <article class="entry">
+        <h3>Condition factsheets for families, Steps <span class="badge live">free</span></h3>
+        <p>Our member association for lower-limb conditions publishes free factsheets and booklets, several of them on the conditions this site describes: proximal femoral focal deficiency, tibial hemimelia, fibular hemimelia, leg length difference, planned amputation, and a leaflet for a diagnosis received during pregnancy.</p>
+        <p class="src">Steps Charity Worldwide · <a href="https://steps-charity.org.uk/resources/" target="_blank" rel="noopener external">steps-charity.org.uk · resources</a> · topic: lower limb, daily life</p>
+      </article>
+      <article class="entry">
+        <h3>Language guide and family booklet, Reach <span class="badge live">free</span></h3>
+        <p>Reach publishes a guide to the words used about upper limb difference, a booklet for families and new parents, and topic guides on appointments, surgery decisions, school and driving. Its page for professionals also points to the directory of dedicated children’s hand clinics that our <a href="/knowledge/care-centres/">care centres</a> map now lists.</p>
+        <p class="src">Reach · <a href="https://www.reach.org.uk/resources/language-guide" target="_blank" rel="noopener external">reach.org.uk · language guide</a> · <a href="https://www.reach.org.uk/professionals" target="_blank" rel="noopener external">for professionals</a> · topic: upper limb, daily life</p>
+      </article>
+      <article class="entry">
         <h3>Orphanet condition sheets on limb reduction defects <span class="badge live">source</span></h3>
         <p>The European reference database for rare diseases documents the conditions grouped under dysmelia, from amelia to ulnar hemimelia. Our <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> guide is built on it.</p>
         <p class="src">Orphanet · <a href="https://www.orpha.net/en/disease/encyclopedia" target="_blank" rel="noopener external">orpha.net · encyclopedia for patients</a> · topic: conditions</p>

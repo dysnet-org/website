@@ -559,5 +559,109 @@
   "lon": -123.2429755,
   "display_name": "University of British Columbia, Electoral Area A, Metro Vancouver Regional District, British Columbia, Canada",
   "query": "University of British Columbia, Canada"
- }
+ },
+ "University Medical Center|Netherlands": {
+  "lat": 52.334632,
+  "lon": 4.8599107,
+  "display_name": "Amsterdam UMC, 1117, De Boelelaan, VU-kwartier, Zuidas, Zuid, Amsterdam, Noord-Holland, Nederland, 1081 HV, Nederland",
+  "query": "University Medical Center, Netherlands"
+ },
+ "Sunnaas Rehabilitation Hospital|Norway": {
+  "lat": 59.835278,
+  "lon": 10.643679,
+  "display_name": "Sunnaas, Vardenbakken, Varden, Bjørnemyrdalen, Nesoddtangen, Nesodden, Akershus, 1453, Norge",
+  "query": "Sunnaas, Norway"
+ },
+ "Holland Bloorview Kids Rehabilitation Hospital|Canada": {
+  "lat": 43.7186594,
+  "lon": -79.373579,
+  "display_name": "Holland Bloorview Kids Rehabilitation Hospital, 150, Kilgour Road, Bridle Path-Sunnybrook-York Mills, Don Valley West, North York, Toronto, ",
+  "query": "Holland Bloorview Kids Rehabilitation Hospital, Canada"
+ },
+ "Hospital for Sick Children|Canada": {
+  "lat": 43.6572672,
+  "lon": -79.3875622,
+  "display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada",
+  "query": "Hospital for Sick Children, Canada"
+ },
+ "Catholic University|Italy": {
+  "lat": 41.9120205,
+  "lon": 12.3974908,
+  "display_name": "Università cattolica ucraina di San Clemente papa, 478, Via di Boccea, Bastogi, Municipio Roma XIII, Roma, Roma Capitale, Lazio, 00166, Ital",
+  "query": "Catholic University, Italy"
+ },
+ "Murdoch Children's Research Institute|Australia": {
+  "lat": -37.7934273,
+  "lon": 144.9489205,
+  "display_name": "Murdoch Children's Research Institute, 48-50, Flemington Road, Parkville, Melbourne, Victoria, 3052, Australia",
+  "query": "Murdoch Children's Research Institute, Australia"
+ },
+ "University of Melbourne|Australia": {
+  "lat": -37.8241371,
+  "lon": 144.9170886,
+  "display_name": "University of Melbourne (Future Fishermans Bend Campus), Port Melbourne, Melbourne, Victoria, 3207, Australia",
+  "query": "University of Melbourne, Australia"
+ },
+ "University of Utah|United States": {
+  "lat": 40.7628137,
+  "lon": -111.8368719,
+  "display_name": "University of Utah, 201, Presidents Circle, Salt Lake City, Salt Lake County, Utah, 84112, United States",
+  "query": "University of Utah, United States"
+ },
+ "McMaster University|Canada": {
+  "lat": 43.2639397,
+  "lon": -79.9178252,
+  "display_name": "McMaster University, 1280, Main Street West, Ainslie Wood East, Hamilton, Golden Horseshoe, Ontario, L8S 3L8, Canada",
+  "query": "McMaster University, Canada"
+ },
+ "Oslo University Hospital|Norway": {
+  "lat": 59.9133301,
+  "lon": 10.7389701,
+  "display_name": "Oslo, Norge",
+  "query": "Oslo, Norway"
+ },
+ "Innlandet Hospital Trust|Norway": {
+  "lat": 60.1945718,
+  "lon": 11.9940666,
+  "display_name": "Akershus universitetssykehus Kongsvinger, Parkvegen, Galgebakken, Midtbyen, Kongsvinger, Innlandet, 2214, Norge",
+  "query": "Innlandet Hospital Trust, Norway"
+ },
+ "CHRU de Lille|France": {
+  "lat": 50.6082902,
+  "lon": 3.0346244,
+  "display_name": "Centre Hospitalier Régional Universitaire de Lille, Avenue Eugène Avinée, Loos, Lille, Nord, Hauts-de-France, France métropolitaine, 59120, ",
+  "query": "CHRU de Lille, France"
+ },
+ "Örebro University Hospital|Sweden": {
+  "lat": 59.2747287,
+  "lon": 15.2151181,
+  "display_name": "Örebro, Örebro kommun, Örebro län, 703 61, Sverige",
+  "query": "Örebro, Sweden"
+ },
+ "University of Illinois at Chicago|United States": {
+  "lat": 41.8675665,
+  "lon": -87.6524237,
+  "display_name": "University of Illinois Cogen Facility, Little Italy, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, United States",
+  "query": "University of Illinois at Chicago, United States"
+ },
+ "Centre Hospitalo-Universitaire|France": {
+  "lat": 48.5753264,
+  "lon": 7.7430128,
+  "display_name": "Institut Hospitalo-Universitaire de Strasbourg, Quai Menachem Taffel, Centre, Strasbourg, Bas-Rhin, Collectivité européenne d'Alsace, Grand ",
+  "query": "Centre Hospitalo-Universitaire"
+ },
+ "University Hospital Nijmegen|Netherlands": {
+  "lat": 51.8474946,
+  "lon": 5.8637771,
+  "display_name": "Nijmegen, Gelderland, Nederland",
+  "query": "Nijmegen, Netherlands"
+ },
+ "ECEMC and Departamento de Farmacología|Spain": null,
+ "University of Lund|Sweden": {
+  "lat": 55.7126504,
+  "lon": 13.2107587,
+  "display_name": "Lunds Tekniska Högskola, Box 118, Tornavägen, Norra universitetsområdet, Norr, Lund, Lunds kommun, Skåne län, 221 00, Sverige",
+  "query": "University of Lund, Sweden"
+ },
+ "ECEMC|Spain": null
 }

@@ -1,8 +1,8 @@
 {
  "built": "2026-09-13",
  "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
- "bibliography_size": 972,
- "records_without_affiliation": 332,
+ "bibliography_size": 1067,
+ "records_without_affiliation": 338,
  "teams": [
   {
    "institution": "University of California",
@@ -119,6 +119,42 @@
    "geocode_display_name": null
   },
   {
+   "institution": "University of Groningen",
+   "country": "Netherlands",
+   "papers": 7,
+   "years": [
+    2010,
+    2024
+   ],
+   "codes": [
+    "295000",
+    "2913"
+   ],
+   "authors": [
+    "van der Sluis CK",
+    "Bergman JEH",
+    "de Walle HEK"
+   ],
+   "representative": {
+    "pmid": "37947091",
+    "doi": "10.1080/09638288.2023.2278165",
+    "title": "Musculoskeletal complaints and disability in a group of young adults with major congenital upper limb differences in The Netherlands",
+    "year": "2024"
+   },
+   "pmids": [
+    "37947091",
+    "36584346",
+    "32954639",
+    "26906238",
+    "25678192",
+    "23956335",
+    "20558369"
+   ],
+   "lat": 53.2194416,
+   "lon": 6.5629863,
+   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
+  },
+  {
    "institution": "MacKay Memorial Hospital",
    "country": "Taiwan",
    "papers": 7,
@@ -189,6 +225,41 @@
    "lat": 42.3356457,
    "lon": -71.1060376,
    "geocode_display_name": "Brigham and Women's Hospital, 75, Francis Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
+  },
+  {
+   "institution": "University of Toronto",
+   "country": "Canada",
+   "papers": 6,
+   "years": [
+    1996,
+    2018
+   ],
+   "codes": [
+    "thal",
+    "295000"
+   ],
+   "authors": [
+    "Lee CJ",
+    "Parman T",
+    "Ordal L"
+   ],
+   "representative": {
+    "pmid": "28286964",
+    "doi": "10.1080/09638288.2017.1297496",
+    "title": "Factors impacting participation in sports for children with limb absence: a qualitative study",
+    "year": "2018"
+   },
+   "pmids": [
+    "28286964",
+    "27530094",
+    "21502285",
+    "21505090",
+    "10229238",
+    "8667234"
+   ],
+   "lat": 43.6634681,
+   "lon": -79.3968165,
+   "geocode_display_name": "University of Toronto St. George, D'Arcy Street, Discovery District, Downtown, Toronto, Golden Horseshoe, Ontario, M5T 1K1, Canada"
   },
   {
    "institution": "National Center for Global Health and Medicine",
@@ -293,40 +364,6 @@
    "geocode_display_name": "Chalmers Tekniska Högskola, Andréegatan, Masthugget, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 27, Sverige"
   },
   {
-   "institution": "University of Toronto",
-   "country": "Canada",
-   "papers": 5,
-   "years": [
-    1996,
-    2016
-   ],
-   "codes": [
-    "thal",
-    "295000"
-   ],
-   "authors": [
-    "Lee CJ",
-    "Parman T",
-    "Ordal L"
-   ],
-   "representative": {
-    "pmid": "27530094",
-    "doi": "10.1002/ajmg.a.37890",
-    "title": "Congenital limb deficiencies with vascular etiology: Possible association with maternal thrombophilia",
-    "year": "2016"
-   },
-   "pmids": [
-    "27530094",
-    "21502285",
-    "21505090",
-    "10229238",
-    "8667234"
-   ],
-   "lat": 43.6634681,
-   "lon": -79.3968165,
-   "geocode_display_name": "University of Toronto St. George, D'Arcy Street, Discovery District, Downtown, Toronto, Golden Horseshoe, Ontario, M5T 1K1, Canada"
-  },
-  {
    "institution": "Freie Universität Berlin",
    "country": "Germany",
    "papers": 5,
@@ -359,6 +396,38 @@
    "lat": 52.4528565,
    "lon": 13.2907249,
    "geocode_display_name": "Freie Universität Berlin, Königin-Luise-Straße, Dahlem, Steglitz-Zehlendorf, Berlin, 14195, Deutschland"
+  },
+  {
+   "institution": "Royal Hospital for Children and Young People",
+   "country": "United Kingdom",
+   "papers": 4,
+   "years": [
+    2023,
+    2026
+   ],
+   "codes": [
+    "thal",
+    "93321"
+   ],
+   "authors": [
+    "Lam W",
+    "Lam WL"
+   ],
+   "representative": {
+    "pmid": "40503754",
+    "doi": "10.1177/17531934251348360",
+    "title": "Congenital upper limb difference patient registries: characteristics, comparisons and recommendations",
+    "year": "2026"
+   },
+   "pmids": [
+    "40503754",
+    "38702055",
+    "37021538",
+    "37226469"
+   ],
+   "lat": 55.920929,
+   "lon": -3.1394165,
+   "geocode_display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot"
   },
   {
    "institution": "University of Aberdeen",
@@ -395,6 +464,39 @@
    "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
   },
   {
+   "institution": "University Medical Center",
+   "country": "Netherlands",
+   "papers": 4,
+   "years": [
+    1996,
+    2020
+   ],
+   "codes": [
+    "thal",
+    "2913"
+   ],
+   "authors": [
+    "Kroes HY",
+    "Galjaard RJH",
+    "Neubert R"
+   ],
+   "representative": {
+    "pmid": "32179704",
+    "doi": "10.1136/jmedgenet-2019-106685",
+    "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
+    "year": "2020"
+   },
+   "pmids": [
+    "32179704",
+    "15316969",
+    "8538367",
+    "8538370"
+   ],
+   "lat": 52.334632,
+   "lon": 4.8599107,
+   "geocode_display_name": "Amsterdam UMC, 1117, De Boelelaan, VU-kwartier, Zuidas, Zuid, Amsterdam, Noord-Holland, Nederland, 1081 HV, Nederland"
+  },
+  {
    "institution": "University of North Carolina",
    "country": "United States",
    "papers": 4,
@@ -426,6 +528,35 @@
    "lat": 35.9050354,
    "lon": -79.0477533,
    "geocode_display_name": "University of North Carolina at Chapel Hill, US 15;US 501, High Park, Chapel Hill, Orange County, North Carolina, 27599, United States"
+  },
+  {
+   "institution": "Sunnaas Rehabilitation Hospital",
+   "country": "Norway",
+   "papers": 4,
+   "years": [
+    2015,
+    2018
+   ],
+   "codes": [],
+   "authors": [
+    "Johansen H",
+    "Rand-Hendriksen S"
+   ],
+   "representative": {
+    "pmid": "29298321",
+    "doi": "10.1371/journal.pone.0190567",
+    "title": "Chronic pain and fatigue in adults with congenital unilateral upper limb deficiency in Norway. A cross-sectional study",
+    "year": "2018"
+   },
+   "pmids": [
+    "29298321",
+    "30540806",
+    "26778109",
+    "25583386"
+   ],
+   "lat": 59.835278,
+   "lon": 10.643679,
+   "geocode_display_name": "Sunnaas, Vardenbakken, Varden, Bjørnemyrdalen, Nesoddtangen, Nesodden, Akershus, 1453, Norge"
   },
   {
    "institution": "Sahlgrenska University Hospital",
@@ -525,35 +656,67 @@
    "geocode_display_name": "Idaho State University, 921, South 8th Avenue, Pocatello, Bannock County, Idaho, 83209, United States"
   },
   {
-   "institution": "Royal Hospital for Children and Young People",
-   "country": "United Kingdom",
-   "papers": 3,
+   "institution": "Medizinische Universität zu Lübeck",
+   "country": "Germany",
+   "papers": 4,
    "years": [
-    2023,
-    2024
+    1989,
+    1993
    ],
    "codes": [
-    "thal",
-    "93321"
+    "295000"
    ],
    "authors": [
-    "Lam W",
-    "Lam WL"
+    "Froster UG",
+    "Froster-Iskenius UG"
    ],
    "representative": {
-    "pmid": "38702055",
-    "doi": "10.1177/17531934241249014",
-    "title": "Parental experience after diagnosis of a congenital upper limb difference: a national survey",
-    "year": "2024"
+    "pmid": "8322808",
+    "doi": "10.1002/ajmg.1320460507",
+    "title": "Amniotic band sequence and limb defects: data from a population-based study",
+    "year": "1993"
    },
    "pmids": [
-    "38702055",
-    "37021538",
-    "37226469"
+    "8322808",
+    "8143629",
+    "1481845",
+    "2784595"
    ],
-   "lat": 55.920929,
-   "lon": -3.1394165,
-   "geocode_display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot"
+   "lat": 52.3834796,
+   "lon": 9.8044306,
+   "geocode_display_name": "Medizinische Hochschule Hannover, 1, Carl-Neuberg-Straße, Groß-Buchholz, Buchholz-Kleefeld, Hannover, Region Hannover, Niedersachsen, 30625,"
+  },
+  {
+   "institution": "University of Amsterdam",
+   "country": "Netherlands",
+   "papers": 3,
+   "years": [
+    2019,
+    2025
+   ],
+   "codes": [
+    "295000",
+    "93458"
+   ],
+   "authors": [
+    "Arduç A",
+    "Verberne EA",
+    "van Haelst MM"
+   ],
+   "representative": {
+    "pmid": "40913756",
+    "doi": "10.1002/pd.6885",
+    "title": "A Practical Prenatal Ultrasound Classification System for Lower Limb Anomalies-PRELLIM Classification",
+    "year": "2025"
+   },
+   "pmids": [
+    "40913756",
+    "40890904",
+    "31181251"
+   ],
+   "lat": 52.3681334,
+   "lon": 4.8898042,
+   "geocode_display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland"
   },
   {
    "institution": "Thalidomide Trust",
@@ -685,36 +848,33 @@
    "geocode_display_name": "Institut für Rechtsmedizin der Charité Universitätsmedizin Berlin, 21, Turmstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Deutschland"
   },
   {
-   "institution": "University of Groningen",
-   "country": "Netherlands",
+   "institution": "Holland Bloorview Kids Rehabilitation Hospital",
+   "country": "Canada",
    "papers": 3,
    "years": [
-    2010,
-    2023
+    2011,
+    2022
    ],
-   "codes": [
-    "295000",
-    "2913"
-   ],
+   "codes": [],
    "authors": [
-    "Jentink J",
-    "Vasluian E",
-    "Bergman JEH"
+    "Andrysek J",
+    "Biddiss E",
+    "Hadj-Moussa F"
    ],
    "representative": {
-    "pmid": "36584346",
-    "doi": "10.1002/ajmg.a.63107",
-    "title": "Amniotic band syndrome and limb body wall complex in Europe 1980-2019",
-    "year": "2023"
+    "pmid": "34665069",
+    "doi": "10.1080/09638288.2021.1986748",
+    "title": "'It's more than just a running leg': a qualitative study of running-specific prosthesis use by children and youth with lower limb absence",
+    "year": "2022"
    },
    "pmids": [
-    "36584346",
-    "25678192",
-    "20558369"
+    "34665069",
+    "28286964",
+    "21515898"
    ],
-   "lat": 53.2194416,
-   "lon": 6.5629863,
-   "geocode_display_name": "Rijksuniversiteit Groningen, Pausgang, Bisschopskwartier, Binnenstad, Centrum, Groningen, Nederland, 9712 EZ, Nederland"
+   "lat": 43.7186594,
+   "lon": -79.373579,
+   "geocode_display_name": "Holland Bloorview Kids Rehabilitation Hospital, 150, Kilgour Road, Bridle Path-Sunnybrook-York Mills, Don Valley West, North York, Toronto, "
   },
   {
    "institution": "Dr. Becker Rhein-Sieg-Klinik",
@@ -744,6 +904,37 @@
    "lat": 50.9074784,
    "lon": 7.5497878,
    "geocode_display_name": "Dr. Becker Rhein-Sieg-Klinik, 30, Höhenstraße, Nümbrecht, Ödinghausen, Nümbrecht, Oberbergischer Kreis, Nordrhein-Westfalen, 51588, Deutschl"
+  },
+  {
+   "institution": "Hospital for Sick Children",
+   "country": "Canada",
+   "papers": 3,
+   "years": [
+    2000,
+    2021
+   ],
+   "codes": [
+    "974"
+   ],
+   "authors": [
+    "Al-Sanna'a N",
+    "Ho ES",
+    "Dermott JA"
+   ],
+   "representative": {
+    "pmid": "33952260",
+    "doi": "10.1186/s12955-021-01775-z",
+    "title": "Development of the gait outcomes assessment list for lower-limb differences (GOAL-LD) questionnaire: a child and parent reported outcome measure",
+    "year": "2021"
+   },
+   "pmids": [
+    "33952260",
+    "16059857",
+    "11050626"
+   ],
+   "lat": 43.6572672,
+   "lon": -79.3875622,
+   "geocode_display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada"
   },
   {
    "institution": "MassGeneral Hospital for Children",
@@ -843,38 +1034,6 @@
    "lat": 47.6554303,
    "lon": -122.3001692,
    "geocode_display_name": "University of Washington, 1410, Northeast Campus Parkway, West Campus, University District, Seattle, King County, Washington, 98195, United "
-  },
-  {
-   "institution": "University Medical Center",
-   "country": "Germany",
-   "papers": 3,
-   "years": [
-    1996,
-    2020
-   ],
-   "codes": [
-    "thal",
-    "2913"
-   ],
-   "authors": [
-    "Galjaard RJH",
-    "Neubert R",
-    "Nogueira AC"
-   ],
-   "representative": {
-    "pmid": "32179704",
-    "doi": "10.1136/jmedgenet-2019-106685",
-    "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
-    "year": "2020"
-   },
-   "pmids": [
-    "32179704",
-    "8538367",
-    "8538370"
-   ],
-   "lat": 48.0070218,
-   "lon": 7.837321,
-   "geocode_display_name": "Universitätsklinikum Freiburg, Hohenzollernstraße, Uni-Carré, Stühlinger-Eschholz, Stühlinger, Freiburg im Breisgau, Baden-Württemberg, 7910"
   },
   {
    "institution": "University of Genoa",
@@ -1288,32 +1447,31 @@
    "geocode_display_name": "Edward, Beaufort County, North Carolina, United States"
   },
   {
-   "institution": "Medizinische Universität zu Lübeck",
-   "country": "Germany",
+   "institution": "Catholic University",
+   "country": "Italy",
    "papers": 3,
    "years": [
-    1989,
-    1993
+    1992,
+    1994
    ],
    "codes": [],
    "authors": [
-    "Froster UG",
-    "Froster-Iskenius UG"
+    "Mastroiacovo P"
    ],
    "representative": {
-    "pmid": "8143629",
-    "doi": "10.1289/ehp.93101s3269",
-    "title": "Maternal factors, medications, and drug exposure in congenital limb reduction defects",
-    "year": "1993"
+    "pmid": "7856645",
+    "doi": "10.1002/ajmg.1320530212",
+    "title": "Chorionic villus sampling and transverse limb deficiencies: maternal age is not a confounder",
+    "year": "1994"
    },
    "pmids": [
-    "8143629",
-    "1481845",
-    "2784595"
+    "7856645",
+    "8140068",
+    "1481865"
    ],
-   "lat": 52.3834796,
-   "lon": 9.8044306,
-   "geocode_display_name": "Medizinische Hochschule Hannover, 1, Carl-Neuberg-Straße, Groß-Buchholz, Buchholz-Kleefeld, Hannover, Region Hannover, Niedersachsen, 30625,"
+   "lat": 41.9120205,
+   "lon": 12.3974908,
+   "geocode_display_name": "Università cattolica ucraina di San Clemente papa, 478, Via di Boccea, Bastogi, Municipio Roma XIII, Roma, Roma Capitale, Lazio, 00166, Ital"
   },
   {
    "institution": "Boston University School of Public Health",
@@ -1343,6 +1501,38 @@
    "lat": 42.3355268,
    "lon": -71.1026984,
    "geocode_display_name": "Harvard School of Public Health, Huntington Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02120, United States"
+  },
+  {
+   "institution": "Murdoch Children's Research Institute",
+   "country": "Australia",
+   "papers": 2,
+   "years": [
+    2022,
+    2026
+   ],
+   "codes": [
+    "1570",
+    "2440",
+    "2911",
+    "2913"
+   ],
+   "authors": [
+    "Halliday J",
+    "McCombe D"
+   ],
+   "representative": {
+    "pmid": "40503754",
+    "doi": "10.1177/17531934251348360",
+    "title": "Congenital upper limb difference patient registries: characteristics, comparisons and recommendations",
+    "year": "2026"
+   },
+   "pmids": [
+    "40503754",
+    "34343375"
+   ],
+   "lat": -37.7934273,
+   "lon": 144.9489205,
+   "geocode_display_name": "Murdoch Children's Research Institute, 48-50, Flemington Road, Parkville, Melbourne, Victoria, 3052, Australia"
   },
   {
    "institution": "Perelman School of Medicine at the University of Pennsylvania",
@@ -1493,35 +1683,32 @@
    "geocode_display_name": "Stanford University, 450, Jane Stanford Way, Stanford, Santa Clara County, California, 94305, United States"
   },
   {
-   "institution": "University of Amsterdam",
-   "country": "Netherlands",
+   "institution": "University of Melbourne",
+   "country": "Australia",
    "papers": 2,
    "years": [
-    2019,
+    2021,
     2025
    ],
-   "codes": [
-    "295000",
-    "93458"
-   ],
+   "codes": [],
    "authors": [
-    "Verberne EA",
-    "van Haelst MM",
-    "Arduç A"
+    "McDougall L",
+    "Penington A",
+    "Toovey R"
    ],
    "representative": {
-    "pmid": "40913756",
-    "doi": "10.1002/pd.6885",
-    "title": "A Practical Prenatal Ultrasound Classification System for Lower Limb Anomalies-PRELLIM Classification",
+    "pmid": "39417329",
+    "doi": "10.1080/09638288.2024.2413180",
+    "title": "Participation experiences of young people with limb difference in sports and recreation in Australia: a qualitative study",
     "year": "2025"
    },
    "pmids": [
-    "40913756",
-    "31181251"
+    "39417329",
+    "33121298"
    ],
-   "lat": 52.3681334,
-   "lon": 4.8898042,
-   "geocode_display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland"
+   "lat": -37.8241371,
+   "lon": 144.9170886,
+   "geocode_display_name": "University of Melbourne (Future Fishermans Bend Campus), Port Melbourne, Melbourne, Victoria, 3207, Australia"
   },
   {
    "institution": "Hokkaido University",
@@ -1582,6 +1769,36 @@
    "lat": 44.0225389,
    "lon": -92.4666075,
    "geocode_display_name": "Mayo Clinic, 2nd Avenue Southwest, Rochester, Olmsted County, Minnesota, 55903, United States"
+  },
+  {
+   "institution": "University of Utah",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    1998,
+    2024
+   ],
+   "codes": [
+    "295000",
+    "2440"
+   ],
+   "authors": [
+    "Botto LD",
+    "O'Quinn JR"
+   ],
+   "representative": {
+    "pmid": "38411327",
+    "doi": "10.1002/bdr2.2306",
+    "title": "Gastroschisis prevalence patterns in 27 surveillance programs from 24 countries, International Clearinghouse for Birth Defects Surveillance and Research, 1980-2017",
+    "year": "2024"
+   },
+   "pmids": [
+    "38411327",
+    "9443880"
+   ],
+   "lat": 40.7628137,
+   "lon": -111.8368719,
+   "geocode_display_name": "University of Utah, 201, Presidents Circle, Salt Lake City, Salt Lake County, Utah, 84112, United States"
   },
   {
    "institution": "Ankara University",
@@ -1856,6 +2073,36 @@
    "geocode_display_name": "Leiden, Zuid-Holland, Nederland"
   },
   {
+   "institution": "McMaster University",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    1989,
+    2021
+   ],
+   "codes": [
+    "3103"
+   ],
+   "authors": [
+    "Burns MA",
+    "Axelrod D",
+    "Johal H"
+   ],
+   "representative": {
+    "pmid": "33222112",
+    "doi": "10.1007/s00590-020-02831-y",
+    "title": "How should we lengthen post-traumatic limb defects? a systematic review and comparison of motorized lengthening systems, combined internal and external fixation and external fixation alone",
+    "year": "2021"
+   },
+   "pmids": [
+    "33222112",
+    "2507910"
+   ],
+   "lat": 43.2639397,
+   "lon": -79.9178252,
+   "geocode_display_name": "McMaster University, 1280, Main Street West, Ainslie Wood East, Hamilton, Golden Horseshoe, Ontario, L8S 3L8, Canada"
+  },
+  {
    "institution": "Shengjing Hospital of China Medical University",
    "country": "China",
    "papers": 2,
@@ -1943,6 +2190,34 @@
    "lat": 30.5821568,
    "lon": 114.2544019,
    "geocode_display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国"
+  },
+  {
+   "institution": "Oslo University Hospital",
+   "country": "Norway",
+   "papers": 2,
+   "years": [
+    2017,
+    2019
+   ],
+   "codes": [],
+   "authors": [
+    "Kaastad TS",
+    "Holm I",
+    "Vik AK"
+   ],
+   "representative": {
+    "pmid": "31314783",
+    "doi": "10.1371/journal.pone.0219930",
+    "title": "Epidemiology of limb reduction defects as registered in the Medical Birth Registry of Norway, 1970-2016: Population based study",
+    "year": "2019"
+   },
+   "pmids": [
+    "31314783",
+    "29081849"
+   ],
+   "lat": 59.9133301,
+   "lon": 10.7389701,
+   "geocode_display_name": "Oslo, Norge"
   },
   {
    "institution": "University of Bonn",
@@ -2033,6 +2308,32 @@
    "lat": 53.9453912,
    "lon": -1.0314589,
    "geocode_display_name": "University of York, Hazel End, Heslington, York, York and North Yorkshire, England, YO10 5DD, United Kingdom"
+  },
+  {
+   "institution": "Innlandet Hospital Trust",
+   "country": "Norway",
+   "papers": 2,
+   "years": [
+    2018,
+    2018
+   ],
+   "codes": [],
+   "authors": [
+    "Østlie K"
+   ],
+   "representative": {
+    "pmid": "29298321",
+    "doi": "10.1371/journal.pone.0190567",
+    "title": "Chronic pain and fatigue in adults with congenital unilateral upper limb deficiency in Norway. A cross-sectional study",
+    "year": "2018"
+   },
+   "pmids": [
+    "29298321",
+    "30540806"
+   ],
+   "lat": 60.1945718,
+   "lon": 11.9940666,
+   "geocode_display_name": "Akershus universitetssykehus Kongsvinger, Parkvegen, Galgebakken, Midtbyen, Kongsvinger, Innlandet, 2214, Norge"
   },
   {
    "institution": "Queen Mary University of London",
@@ -2185,6 +2486,37 @@
    "lat": 35.4842868,
    "lon": -97.498633,
    "geocode_display_name": "University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma County, Oklahoma, United States"
+  },
+  {
+   "institution": "CHRU de Lille",
+   "country": "France",
+   "papers": 2,
+   "years": [
+    2011,
+    2016
+   ],
+   "codes": [
+    "93458",
+    "3320"
+   ],
+   "authors": [
+    "Houeijeh A",
+    "Auffret M",
+    "Gautier S"
+   ],
+   "representative": {
+    "pmid": "27865944",
+    "doi": "10.1016/j.ejogrb.2016.11.007",
+    "title": "Misoprostol exposure during the first trimester of pregnancy: Is the malformation risk varying depending on the indication?",
+    "year": "2016"
+   },
+   "pmids": [
+    "27865944",
+    "21635976"
+   ],
+   "lat": 50.6082902,
+   "lon": 3.0346244,
+   "geocode_display_name": "Centre Hospitalier Régional Universitaire de Lille, Avenue Eugène Avinée, Loos, Lille, Nord, Hauts-de-France, France métropolitaine, 59120, "
   },
   {
    "institution": "Genoa",
@@ -2364,6 +2696,33 @@
    "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
   },
   {
+   "institution": "Örebro University Hospital",
+   "country": "Sweden",
+   "papers": 2,
+   "years": [
+    2010,
+    2014
+   ],
+   "codes": [],
+   "authors": [
+    "Ylimäinen K",
+    "Sjöberg L"
+   ],
+   "representative": {
+    "pmid": "24236497",
+    "doi": "10.3109/09638288.2013.854839",
+    "title": "Life situation of adults with congenital limb reduction deficiency in Sweden",
+    "year": "2014"
+   },
+   "pmids": [
+    "24236497",
+    "20456269"
+   ],
+   "lat": 59.2747287,
+   "lon": 15.2151181,
+   "geocode_display_name": "Örebro, Örebro kommun, Örebro län, 703 61, Sverige"
+  },
+  {
    "institution": "Children's Hospital",
    "country": "United States",
    "papers": 2,
@@ -2480,6 +2839,34 @@
    "lat": 32.1223832,
    "lon": -93.6604575,
    "geocode_display_name": "Slone, DeSoto Parish, Louisiana, United States"
+  },
+  {
+   "institution": "University of Illinois at Chicago",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2009,
+    2011
+   ],
+   "codes": [
+    "thal"
+   ],
+   "authors": [
+    "Miller MT"
+   ],
+   "representative": {
+    "pmid": "21825994",
+    "doi": "10.1097/ICU.0b013e3283499f24",
+    "title": "What can we learn from the thalidomide experience: an ophthalmologic perspective",
+    "year": "2011"
+   },
+   "pmids": [
+    "21825994",
+    "19639653"
+   ],
+   "lat": 41.8675665,
+   "lon": -87.6524237,
+   "geocode_display_name": "University of Illinois Cogen Facility, Little Italy, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, United States"
   },
   {
    "institution": "Federal University of Rio de Janeiro",
@@ -2630,33 +3017,32 @@
    "geocode_display_name": "March, Dallas County, Missouri, United States"
   },
   {
-   "institution": "Hospital For Sick Children",
-   "country": "Canada",
+   "institution": "Centre Hospitalo-Universitaire",
+   "country": "France",
    "papers": 2,
    "years": [
-    2000,
-    2005
+    1996,
+    2000
    ],
    "codes": [
-    "974"
+    "2440"
    ],
    "authors": [
-    "Al-Sanna'a N",
-    "Ho ES"
+    "Stoll C"
    ],
    "representative": {
-    "pmid": "16059857",
-    "doi": "10.1197/j.jht.2005.04.005",
-    "title": "Upper extremity function in children with congenital hand anomalies",
-    "year": "2005"
+    "pmid": "11038459",
+    "doi": "10.1002/1097-0223(200010)20:10<811::aid-pd927>3.0.co;2-j",
+    "title": "Evaluation of the prenatal diagnosis of limb reduction deficiencies. EUROSCAN Study Group",
+    "year": "2000"
    },
    "pmids": [
-    "16059857",
-    "11050626"
+    "11038459",
+    "8766141"
    ],
-   "lat": 43.6572672,
-   "lon": -79.3875622,
-   "geocode_display_name": "Hospital for Sick Children, 555, University Avenue, Yonge-Bay Corridor, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada"
+   "lat": 48.5753264,
+   "lon": 7.7430128,
+   "geocode_display_name": "Institut Hospitalo-Universitaire de Strasbourg, Quai Menachem Taffel, Centre, Strasbourg, Bas-Rhin, Collectivité européenne d'Alsace, Grand "
   },
   {
    "institution": "Foundation 41",
@@ -2716,6 +3102,119 @@
    "lat": 42.6524953,
    "lon": -73.7489247,
    "geocode_display_name": "New York State Department of Environmental Conservation, 625, Broadway, Downtown, City of Albany, Albany County, New York, 12204, United Sta"
+  },
+  {
+   "institution": "University Hospital Nijmegen",
+   "country": "Netherlands",
+   "papers": 2,
+   "years": [
+    1996,
+    1999
+   ],
+   "codes": [
+    "2440"
+   ],
+   "authors": [
+    "Van Den Ende JJ",
+    "van Bokhoven H"
+   ],
+   "representative": {
+    "pmid": "9973291",
+    "doi": "10.1086/302246",
+    "title": "Limb mammary syndrome: a new genetic disorder with mammary hypoplasia, ectrodactyly, and other Hand/Foot anomalies maps to human chromosome 3q27",
+    "year": "1999"
+   },
+   "pmids": [
+    "9973291",
+    "8867653"
+   ],
+   "lat": 51.8474946,
+   "lon": 5.8637771,
+   "geocode_display_name": "Nijmegen, Gelderland, Nederland"
+  },
+  {
+   "institution": "ECEMC and Departamento de Farmacología",
+   "country": "Spain",
+   "papers": 2,
+   "years": [
+    1997,
+    1997
+   ],
+   "codes": [
+    "1027",
+    "2913"
+   ],
+   "authors": [
+    "Martínez-Frías ML"
+   ],
+   "representative": {
+    "pmid": "9409871",
+    "doi": "",
+    "title": "Amelia: analysis of its epidemiological and clinical characteristics",
+    "year": "1997"
+   },
+   "pmids": [
+    "9409871",
+    "9409874"
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
+  },
+  {
+   "institution": "University of Lund",
+   "country": "Sweden",
+   "papers": 2,
+   "years": [
+    1989,
+    1997
+   ],
+   "codes": [],
+   "authors": [
+    "Källén B",
+    "Källén K"
+   ],
+   "representative": {
+    "pmid": "9065222",
+    "doi": "10.2105/ajph.87.1.29",
+    "title": "Maternal smoking during pregnancy and limb reduction malformations in Sweden",
+    "year": "1997"
+   },
+   "pmids": [
+    "9065222",
+    "2592897"
+   ],
+   "lat": 55.7126504,
+   "lon": 13.2107587,
+   "geocode_display_name": "Lunds Tekniska Högskola, Box 118, Tornavägen, Norra universitetsområdet, Norr, Lund, Lunds kommun, Skåne län, 221 00, Sverige"
+  },
+  {
+   "institution": "ECEMC",
+   "country": "Spain",
+   "papers": 2,
+   "years": [
+    1996,
+    1996
+   ],
+   "codes": [
+    "974"
+   ],
+   "authors": [
+    "Martínez-Frías ML"
+   ],
+   "representative": {
+    "pmid": "8779329",
+    "doi": "10.1002/(SICI)1096-8628(19960301)62:1<68::AID-AJMG14>3.0.CO;2-T",
+    "title": "Epidemiological analysis of the association of congenital diaphragmatic hernia with upper-limb deficiencies: a primary polytopic developmental field defect",
+    "year": "1996"
+   },
+   "pmids": [
+    "8779329",
+    "8849132"
+   ],
+   "lat": null,
+   "lon": null,
+   "geocode_display_name": null
   },
   {
    "institution": "Universitätsklinikum Rudolf Virchow",

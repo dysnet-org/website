@@ -44226,6 +44226,24 @@
     "PubMed search"
    ],
    "status": "rejected on review: Amelia as a personal name, not the condition"
+  },
+  {
+   "id": "41678211",
+   "pmid": "41678211",
+   "title": "",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected on review: veterinary: cattle, no relation to our conditions"
+  },
+  {
+   "id": "2815516",
+   "pmid": "2815516",
+   "title": "",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected on review: veterinary: a foal"
   }
  ]
 }

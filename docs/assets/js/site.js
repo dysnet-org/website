@@ -569,6 +569,7 @@
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
+    if (r.med && r.atc && r.atc.length) details.push('<li><strong>Medicine:</strong> ' + (r.mev ? '\u201c' + esc(r.mev) + '\u201d ' : "") + 'ATC ' + esc(r.atc.join(", ")) + ', the WHO classification of medicines.</li>');
     Object.keys(r.ue || {}).sort().forEach(function (u) { details.push('<li><strong>' + (USE[u] || u) + ':</strong> \u201c' + esc(r.ue[u]) + '\u201d' + (r.w ? ' <a href="' + esc(r.w) + '" target="_blank" rel="noopener external">Wikipedia \u2197</a>' : "") + '</li>'); });
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
     var ids = [r.cas ? "CAS " + r.cas : "", r.ec ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.join(", ") : "")].filter(Boolean).join(" · ");

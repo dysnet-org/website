@@ -33,8 +33,9 @@
   "p65": 300,
   "ema": 12,
   "both_clp_and_p65": 32,
-  "medicinal": 124,
-  "with_uses": 139
+  "medicinal": 119,
+  "with_uses": 139,
+  "atc_not_medicine": 5
  },
  "entries": [
   {
@@ -182,7 +183,8 @@
    "atc": [
     "L01AB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Busulfan (Myleran, GlaxoSmithKline, Busulfex IV, Otsuka America Pharmaceutical, Inc.) is a chemotherapy drug in use since 1959."
   },
   {
    "name": "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
@@ -217,7 +219,8 @@
    "atc": [
     "L01AD02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Lomustine (INN; abbreviated as CCNU; original brand name CeeNU, now marketed as Gleostine) is an alkylating nitrosourea compound used in chemotherapy."
   },
   {
    "name": "1-bromopropane; n-propyl bromide",
@@ -861,7 +864,8 @@
    "atc": [
     "S01EC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Acetazolamide, sold under the trade name Diamox among others, is a medication used to treat glaucoma, epilepsy, acute mountain sickness, periodic paralysis, idiopathic intracranial hypertension (raised brain pressure of "
   },
   {
    "name": "Acetohydroxamic acid",
@@ -968,7 +972,8 @@
    "atc": [
     "L01DA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Dactinomycin, also known as actinomycin D, is a chemotherapy medication used to treat a number of types of cancer."
   },
   {
    "name": "Alcohol (ethanol) in beverages",
@@ -995,12 +1000,6 @@
    "source_codes": [
     "who"
    ],
-   "atc": [
-    "D08AX08",
-    "V03AB16",
-    "V03AZ01"
-   ],
-   "medicinal": true,
    "uses": [
     "food"
    ],
@@ -1042,7 +1041,8 @@
     "D10AD01",
     "L01XX14"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Tretinoin, also known as all-trans retinoic acid (ATRA), is a medication used for the treatment of acne and acute promyelocytic leukemia."
   },
   {
    "name": "Alprazolam",
@@ -1077,7 +1077,8 @@
    "atc": [
     "N05BA12"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Other uses include the treatment of chemotherapy-induced nausea, together with other treatments."
   },
   {
    "name": "Altretamine",
@@ -1112,7 +1113,8 @@
    "atc": [
     "L01XX03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Altretamine (trade name Hexalen), also called hexamethylmelamine, is an antineoplastic agent."
   },
   {
    "name": "Amantadine hydrochloride",
@@ -1209,7 +1211,8 @@
    "atc": [
     "L02BG01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Aminoglutethimide (AG), sold under the brand names Elipten, Cytadren, and Orimeten among others, is a medication which has been used in the treatment of seizures, Cushing's syndrome, breast cancer, and prostate cancer, a"
   },
   {
    "name": "Aminoglycosides",
@@ -1382,7 +1385,8 @@
    "atc": [
     "N06AA17"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Amoxapine, sold under the brand name Asendin among others, is a tricyclic antidepressant (TCA)."
   },
   {
    "name": "Angiotensin converting enzyme  (ACE) inhibitors",
@@ -1518,7 +1522,8 @@
     "B01AC06",
     "N02BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Aspirin () is the genericized trademark for acetylsalicylic acid (ASA), a nonsteroidal anti-inflammatory drug (NSAID) used to reduce pain, fever, and inflammation, and as an antithrombotic."
   },
   {
    "name": "Atenolol",
@@ -1553,7 +1558,8 @@
    "atc": [
     "C07AB03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Atenolol is a beta blocker medication primarily used to treat high blood pressure and heart-associated chest pain."
   },
   {
    "name": "Atrazine",
@@ -1625,7 +1631,8 @@
    "atc": [
     "M01CB03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Along with sodium aurothiomalate, it is one of only two gold compounds currently employed in modern medicine."
   },
   {
    "name": "Avermectin B1 (Abamectin)",
@@ -1697,7 +1704,8 @@
    "atc": [
     "L04AX01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Azathioprine, sold under the brand name Imuran, among others, is an immunosuppressive medication."
   },
   {
    "name": "Barbiturates",
@@ -1827,7 +1835,8 @@
     "R01AD01",
     "R03BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Beclometasone or beclomethasone, sold under the brand name Vanceril among others, is a steroid medication."
   },
   {
    "name": "benomyl (ISO); methyl 1-(butylcarbamoyl)benzimidazol-2-ylcarbamate",
@@ -2024,7 +2033,8 @@
    "atc": [
     "L01XC07"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Bevacizumab, sold under the brand name Avastin among others, is a monoclonal antibody medication used to treat a number of types of cancers and a specific eye disease."
   },
   {
    "name": "bis(2-ethylhexyl) phthalate; di-(2-ethylhexyl) phthalate; DEHP",
@@ -2120,7 +2130,8 @@
    "atc": [
     "L01AD01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Carmustine, sold under the brand name BiCNU among others, is a medication used mainly for chemotherapy."
   },
   {
    "name": "Bisphenol A (BPA)",
@@ -2431,7 +2442,8 @@
    "atc": [
     "N03AF01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Carbamazepine, sold under the brand name Tegretol among others, is an anticonvulsant medication used in the treatment of epilepsy and neuropathic pain."
   },
   {
    "name": "Carbaryl [Basis for listing changed effective December 27, 2013]",
@@ -2613,7 +2625,8 @@
    "atc": [
     "L01XA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Carboplatin, sold under the brand name Paraplatin among others, is a chemotherapy medication used to treat a number of forms of cancer."
   },
   {
    "name": "Chenodiol",
@@ -2683,7 +2696,8 @@
    "atc": [
     "L01AA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Chlorambucil, sold under the brand name Leukeran among others, is a chemotherapy medication used to treat chronic lymphocytic leukemia (CLL), Hodgkin lymphoma, and non-Hodgkin lymphoma."
   },
   {
    "name": "Chlorcyclizine hydrochloride",
@@ -2780,7 +2794,8 @@
    "atc": [
     "N05BA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Chlordiazepoxide hydrochloride, sold under the brand name Librium, is a sedative and hypnotic medication of the benzodiazepine class."
   },
   {
    "name": "Chlordiazepoxide hydrochloride",
@@ -2872,7 +2887,8 @@
    ],
    "use_evidence": {
     "goods": "In terms of scale, the most important reaction of chloroform is with hydrogen fluoride to give monochlorodifluoromethane (HCFC-22), a precursor in the production of polytetrafluoroethylene (Teflon) and other fluoropolyme"
-   }
+   },
+   "medicine_evidence": "Chloroform was once used as an inhalational anesthetic between the 19th century and the first half of the 20th century."
   },
   {
    "name": "Chlorpyrifos",
@@ -3012,7 +3028,8 @@
    "atc": [
     "J05AB12"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Cidofovir, brand name Vistide, is a topical or injectable antiviral medication primarily used as a treatment for cytomegalovirus (CMV) retinitis (an infection of the retina of the eye) in people with AIDS."
   },
   {
    "name": "Cladribine",
@@ -3048,7 +3065,8 @@
     "L01BB04",
     "L04AA40"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Cladribine, sold under the brand name Leustatin, among others, is a medication used to treat hairy cell leukemia (formally named leukemic reticuloendotheliosis) and B-cell chronic lymphocytic leukemia."
   },
   {
    "name": "Clarithromycin",
@@ -3083,7 +3101,8 @@
    "atc": [
     "J01FA09"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Clarithromycin, sold under the brand name Biaxin among others, is an antibiotic used to treat various bacterial infections."
   },
   {
    "name": "Clobetasol propionate",
@@ -3220,7 +3239,8 @@
     "S01HA01",
     "S02DA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Cocaine is a central nervous system (CNS) stimulant and tropane alkaloid, derived primarily from the leaves of two coca species native to South America: Erythroxylum coca and E."
   },
   {
    "name": "Codeine phosphate",
@@ -3286,7 +3306,8 @@
    "atc": [
     "M04AC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Colchicine, sold under the brand name Colbenemid among others, is a medication used to prevent and treat gout, to treat familial Mediterranean fever and Behçet's disease, and to reduce the risk of myocardial infarction."
   },
   {
    "name": "Conjugated estrogens",
@@ -3479,7 +3500,8 @@
    "atc": [
     "L01AA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Cyclophosphamide (CP), also known as cytophosphane among other names, is a medication used as chemotherapy and to suppress the immune system."
   },
   {
    "name": "Cyclophosphamide (hydrated)",
@@ -3584,7 +3606,8 @@
    "atc": [
     "L01BC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Cytarabine, also known as cytosine arabinoside (ara-C), is a chemotherapy medication used to treat acute myeloid leukemia (AML), acute lymphocytic leukemia (ALL), chronic myelogenous leukemia (CML), and non-Hodgkin's lym"
   },
   {
    "name": "Dacarbazine",
@@ -3650,7 +3673,8 @@
    "atc": [
     "G03XA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Danazol, sold as Danocrine and other brand names, is an oral medication used in the treatment of endometriosis, fibrocystic breast disease, hereditary angioedema and other conditions."
   },
   {
    "name": "Daunorubicin hydrochloride",
@@ -3848,7 +3872,8 @@
    "atc": [
     "N05BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Diazepam, sold under the brand name Valium among others, is a medication of the benzodiazepine family that acts as an anxiolytic."
   },
   {
    "name": "Diazoxide",
@@ -3884,7 +3909,8 @@
     "C02DA01",
     "V03AH01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Diazoxide, sold under the brand name Proglycem among others, is a medication used to treat low blood sugar due to a number of specific causes."
   },
   {
    "name": "dibutyl phthalate; DBP",
@@ -3938,10 +3964,6 @@
     "clp",
     "p65"
    ],
-   "atc": [
-    "P03BX03"
-   ],
-   "medicinal": true,
    "uses": [
     "construction",
     "goods"
@@ -4116,7 +4138,8 @@
    "atc": [
     "B01AA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Dicoumarol (INN) or dicumarol (USAN) is a naturally occurring anticoagulant drug that depletes stores of vitamin K (similar to warfarin, a drug that dicoumarol inspired)."
   },
   {
    "name": "Diethylstilbestrol (DES)",
@@ -4153,7 +4176,8 @@
     "G03CC05",
     "L02AA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Diethylstilbestrol (DES), also known as stilbestrol or stilboestrol, is a nonsteroidal estrogen medication."
   },
   {
    "name": "Diflunisal",
@@ -4188,7 +4212,8 @@
    "atc": [
     "N02BA11"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Diflunisal is a salicylic acid derivative with analgesic and anti-inflammatory activity."
   },
   {
    "name": "Dihydroergotamine mesylate",
@@ -4307,7 +4332,8 @@
    "atc": [
     "N01AX13"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Nitrous oxide has significant medical uses, especially in surgery and dentistry, for its anaesthetic and pain-reducing effects, and it is on the World Health Organization's List of Essential Medicines."
   },
   {
    "name": "dinocap (ISO); (RS)-2,6-dinitro-4-octylphenyl crotonates and (RS)-2,4-dinitro-6-octylphenyl crotonates in which ‘octyl’ is a reaction mass of 1-methylheptyl, 1-ethylhexyl and 1-propylpentyl groups",
@@ -4456,7 +4482,8 @@
    "atc": [
     "N03AB02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Phenytoin, sold under the brand name Dilantin among others, is an anti-seizure medication."
   },
   {
    "name": "Disodium cyanodithioimidocarbonate",
@@ -4554,7 +4581,8 @@
     "A01AB22",
     "J01AA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Doxycycline, sold under the brand names Vibramycin and Doryx, among others, is a broad-spectrum antibiotic of the tetracycline class used in the treatment of infections caused by bacteria and certain parasites."
   },
   {
    "name": "Doxycycline calcium (internal use)",
@@ -4812,7 +4840,8 @@
    "atc": [
     "J04AD03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ethionamide (ETA or ETH) is an antibiotic used to treat tuberculosis."
   },
   {
    "name": "Ethyl alcohol in alcoholic beverages",
@@ -5105,7 +5134,8 @@
    "atc": [
     "M01AB08"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Etodolac is a nonsteroidal anti-inflammatory drug (NSAID)."
   },
   {
    "name": "Etoposide",
@@ -5140,7 +5170,8 @@
    "atc": [
     "L01CB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Etoposide, sold under the brand name Vepesid among others, is a chemotherapy medication used for the treatments of a number of types of cancer including testicular cancer, lung cancer, lymphoma, leukemia, neuroblastoma, "
   },
   {
    "name": "Etretinate",
@@ -5175,7 +5206,8 @@
    "atc": [
     "D05BB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Etretinate (trade name Tegison) is a medication developed by Hoffmann–La Roche that was approved by the FDA in 1986 to treat severe psoriasis."
   },
   {
    "name": "Fenoxaprop ethyl",
@@ -5304,7 +5336,8 @@
    "atc": [
     "L03AA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Filgrastim, sold under the brand name Neupogen among others, is a medication used to treat low neutrophil count."
   },
   {
    "name": "Fingolimod",
@@ -5334,7 +5367,8 @@
    "atc": [
     "L04AA27"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Fingolimod"
   },
   {
    "name": "fluazifop-butyl (ISO); butyl (RS)-2-[4-(5-trifluoromethyl-2-pyridyloxy)phenoxy]propionate",
@@ -5423,7 +5457,8 @@
     "R01AD04",
     "R03BA03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Flunisolide (marketed as AeroBid among others) is a corticosteroid often prescribed as a treatment for allergic rhinitis."
   },
   {
    "name": "Fluorouracil",
@@ -5458,7 +5493,8 @@
    "atc": [
     "L01BC02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Fluorouracil (5-FU, 5-fluorouracil), sold under the brand name Adrucil among others, is a cytotoxic chemotherapy medication used to treat cancer."
   },
   {
    "name": "Fluoxymesterone",
@@ -5493,7 +5529,8 @@
    "atc": [
     "G03BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Fluoxymesterone, sold under the brand names Halotestin and Ultandren among others, is an androgen and anabolic steroid (AAS) medication which is used in the treatment of low testosterone levels in men, delayed puberty in"
   },
   {
    "name": "Flurazepam hydrochloride",
@@ -5562,7 +5599,8 @@
     "R02AX01",
     "S01BC04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Flurbiprofen is a member of the phenylalkanoic acid derivative family of nonsteroidal anti-inflammatory drugs (NSAIDs)."
   },
   {
    "name": "Flutamide",
@@ -5597,7 +5635,8 @@
    "atc": [
     "L02BB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "It is also used in the treatment of androgen-dependent conditions like acne, excessive hair growth, and high androgen levels in women."
   },
   {
    "name": "Fluticasone propionate",
@@ -5695,7 +5734,8 @@
     "J05AB06",
     "S01AD09"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ganciclovir, sold under the brand name Cytovene among others, is an antiviral medication used to treat cytomegalovirus (CMV) infections."
   },
   {
    "name": "Ganciclovir sodium",
@@ -5761,7 +5801,8 @@
    "atc": [
     "L02AE03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Goserelin, sold under the brand name Zoladex among others, is a medication which is used to suppress production of the sex hormones (testosterone and estrogen), particularly in the treatment of breast cancer and prostate"
   },
   {
    "name": "Halazepam",
@@ -5796,7 +5837,8 @@
    "atc": [
     "N05BA13"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Halazepam is a benzodiazepine derivative that was marketed under the brand names Paxipam in the United States, Alapryl in Spain, and Pacinone in Portugal."
   },
   {
    "name": "Halobetasol propionate",
@@ -5831,7 +5873,8 @@
    "atc": [
     "D07AC21"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ulobetasol propionate, also known as halobetasol propionate and sold under the brand name Ultravate among others, is a synthetic glucocorticoid corticosteroid and a corticosteroid ester."
   },
   {
    "name": "Haloperidol",
@@ -5866,7 +5909,8 @@
    "atc": [
     "N05AD01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Haloperidol, sold under the brand name Haldol among others, is a typical antipsychotic medication."
   },
   {
    "name": "Halothane",
@@ -5901,7 +5945,8 @@
    "atc": [
     "N01AB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "It is used as a general anaesthetic given by inhalation."
   },
   {
    "name": "Heptachlor",
@@ -6109,7 +6154,8 @@
    "atc": [
     "L01XX05"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Hydroxycarbamide, also known as hydroxyurea, is an antimetabolite medication used in sickle-cell disease, essential thrombocythemia, chronic myelogenous leukemia, polycythemia vera, and cervical cancer."
   },
   {
    "name": "Idarubicin hydrochloride",
@@ -6175,7 +6221,8 @@
    "atc": [
     "L01AA06"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ifosfamide, sold under the brand name Ifex among others, is a chemotherapy medication used to treat a number of types of cancer."
   },
   {
    "name": "Iodine-131",
@@ -6253,7 +6300,8 @@
     "D10AD04",
     "D10BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Isotretinoin"
   },
   {
    "name": "lead 2,4,6-trinitro-m-phenylene dioxide; lead 2,4,6-trinitroresorcinoxide; lead styphnate",
@@ -6915,7 +6963,8 @@
    "atc": [
     "N04BA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "l-DOPA, also known as l-3,4-dihydroxyphenylalanine and used medically as levodopa, is made and used as part of the normal biology of some plants and animals, including humans."
   },
   {
    "name": "linuron (ISO); 3-(3,4-dichlorophenyl)-1-methoxy-1-methylurea",
@@ -7077,7 +7126,8 @@
    "atc": [
     "N05BA06"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Lorazepam, sold under the brand name Ativan among others, is a medication of the benzodiazepine and depressant category."
   },
   {
    "name": "Lovastatin",
@@ -7112,7 +7162,8 @@
    "atc": [
     "C10AA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Lovastatin (also known as Monacolin K) is a statin medication which is used to treat high blood cholesterol and reduce the risk of cardiovascular disease."
   },
   {
    "name": "Mebendazole",
@@ -7147,7 +7198,8 @@
    "atc": [
     "P02CA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Mebendazole (MBZ), sold under the brand name Vermox among others, is a medication used to treat a number of parasitic worm infestations."
   },
   {
    "name": "Medroxyprogesterone acetate",
@@ -7214,7 +7266,8 @@
     "G03AC05",
     "G03DB02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Megestrol acetate (MGA), sold under the brand name Megace among others, is a progestin medication which is used mainly as an appetite stimulant to treat wasting syndromes such as cachexia."
   },
   {
    "name": "Melphalan",
@@ -7249,7 +7302,8 @@
    "atc": [
     "L01AA03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Melphalan, sold under the brand name Alkeran among others, is a chemotherapy medication used to treat multiple myeloma; malignant lymphoma; lymphoblastic and myeloblastic leukemia; childhood neuroblastoma; ovarian cancer"
   },
   {
    "name": "Menotropins",
@@ -7315,7 +7369,8 @@
    "atc": [
     "N05BC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Meprobamate, sold under the brand names Miltown and Equanil, among others, is a carbamate derivative used as an anxiolytic drug."
   },
   {
    "name": "Mercaptopurine",
@@ -7542,7 +7597,8 @@
    "atc": [
     "H03BB02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Thiamazole, also known as methimazole, is a medication used to treat hyperthyroidism."
   },
   {
    "name": "Methotrexate",
@@ -7588,7 +7644,8 @@
     "L01BA01",
     "L04AX03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Methotrexate"
   },
   {
    "name": "Methotrexate sodium",
@@ -7968,7 +8025,8 @@
     "G03BA02",
     "G03EK01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Methyltestosterone, sold under the brand names Android, Metandren, and Testred among others, is an androgen and anabolic steroid (AAS) medication which is used in the treatment of low testosterone levels in men, delayed "
   },
   {
    "name": "Metiram",
@@ -8097,7 +8155,8 @@
     "A02BB01",
     "G02AD06"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Misoprostol is a synthetic prostaglandin medication used to prevent and treat stomach and duodenal ulcers, induce labor, cause an abortion, and treat postpartum bleeding due to poor contraction of the uterus."
   },
   {
    "name": "Mitoxantrone hydrochloride",
@@ -8244,7 +8303,8 @@
    "source_codes": [
     "ema"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Mycophenolate mofetil and mycophenolic acid"
   },
   {
    "name": "N,N-dimethylacetamide",
@@ -8595,7 +8655,8 @@
    "atc": [
     "C08CA05"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Nifedipine ( nə-FEH-də-peen), sold under the brand name Procardia among others, is a calcium channel blocker medication used to manage angina, high blood pressure, Raynaud's phenomenon, and premature labor."
   },
   {
    "name": "Nimodipine",
@@ -8630,7 +8691,8 @@
    "atc": [
     "C08CA06"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Nimodipine, sold under the brand name Nimotop among others, is a calcium channel blocker used in preventing vasospasm secondary to subarachnoid hemorrhage (a form of cerebral hemorrhage)."
   },
   {
    "name": "Nitrapyrin",
@@ -8702,7 +8764,8 @@
    "atc": [
     "L01AA05"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "It is the prototype of alkylating agents, a group of anticancer chemotherapeutic drugs."
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -8769,7 +8832,8 @@
     "G03AC01",
     "G03DC02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Norethisterone, also known as norethindrone and sold under the brand name Norlutin among others, is a progestin medication used in birth control pills, menopausal hormone therapy, and for the treatment of gynecological d"
   },
   {
    "name": "Norethisterone (Norethindrone) /Ethinyl estradiol",
@@ -8996,7 +9060,8 @@
    "atc": [
     "N05BA04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Oxazepam is a short-to-intermediate-acting benzodiazepine."
   },
   {
    "name": "Oxymetholone",
@@ -9031,7 +9096,8 @@
    "atc": [
     "A14AA05"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Oxymetholone, sold under the brand names Anadrol and Anapolon among others, is an androgen and anabolic steroid (AAS) medication which is used primarily in the treatment of anemia."
   },
   {
    "name": "Oxytetracycline (internal use)",
@@ -9069,7 +9135,8 @@
     "J01AA06",
     "S01AA04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Oxytetracycline is a broad-spectrum tetracycline antibiotic, the second of the group to be discovered."
   },
   {
    "name": "Oxytetracycline hydrochloride (internal use)",
@@ -9163,10 +9230,6 @@
    "source_codes": [
     "p65"
    ],
-   "atc": [
-    "P03AB01"
-   ],
-   "medicinal": true,
    "uses": [
     "agriculture"
    ],
@@ -9238,7 +9301,8 @@
    "atc": [
     "L01CD01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Paclitaxel, an alkaloid derived from the Pacific yew, and sold under the brand name Taxol among others, is a chemotherapy medication used to treat ovarian cancer, esophageal cancer, breast cancer, lung cancer, Kaposi's s"
   },
   {
    "name": "Paramethadione",
@@ -9273,7 +9337,8 @@
    "atc": [
     "N03AC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Paramethadione (brand name Paradione) is an anticonvulsant drug of the chemical class called oxazolidinediones developed by the Illinois-based pharmaceutical company Abbott Laboratories (known as AbbVie since January 1, "
   },
   {
    "name": "Penicillamine",
@@ -9308,7 +9373,8 @@
    "atc": [
     "M01CC01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Penicillamine, sold under the brand name of Cuprimine among others, is a medication primarily used for the treatment of Wilson's disease."
   },
   {
    "name": "Pentobarbital sodium",
@@ -9374,7 +9440,8 @@
    "atc": [
     "L01XX08"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pentostatin (or 2′-deoxycoformycin, trade name Nipent, manufactured by SuperGen) is an anticancer chemotherapeutic drug."
   },
   {
    "name": "Perfluorooctane sulfonate (PFOS)",
@@ -9509,7 +9576,8 @@
    "atc": [
     "L01XC13"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pertuzumab, sold under the brand name Perjeta among others, is a monoclonal antibody used in combination with trastuzumab and docetaxel for the treatment of metastatic HER2-positive breast cancer; it also used in the sam"
   },
   {
    "name": "Phenacemide",
@@ -9544,7 +9612,8 @@
    "atc": [
     "N03AX07"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Phenacemide (INN, BAN) (brand name Phenurone), also known as phenylacetylurea, is an anticonvulsant of the ureide (acetylurea) class."
   },
   {
    "name": "Phenprocoumon",
@@ -9579,7 +9648,8 @@
    "atc": [
     "B01AA04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Phenprocoumon (marketed under the brand names Marcoumar, Marcumar and Falithrom) is a long-acting anticoagulant to be taken by mouth, and a coumarin derivative."
   },
   {
    "name": "Phenylphosphine [Basis for listing changed effective June 6, 2014]",
@@ -9645,7 +9715,8 @@
    "atc": [
     "N05AG02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pimozide, sold under the brand name Orap, is a typical antipsychotic medication of the diphenylbutylpiperidine class."
   },
   {
    "name": "Pipobroman",
@@ -9715,7 +9786,8 @@
    "atc": [
     "L01DC02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Plicamycin (INN, also known as mithramycin; trade name Mithracin) is an antineoplastic antibiotic produced by Streptomyces plicatus."
   },
   {
    "name": "Polybrominated biphenyls",
@@ -10020,7 +10092,8 @@
    "atc": [
     "H03BA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Propylthiouracil (PTU) is a medication used to treat hyperthyroidism."
   },
   {
    "name": "Pyrimethamine",
@@ -10055,7 +10128,8 @@
    "atc": [
     "P01BD01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pyrimethamine, sold under the brand name Daraprim among others, is a medication used with leucovorin (leucovorin is used to decrease side effects of pyrimethamine; it does not have intrinsic anti-parasitic activity) to t"
   },
   {
    "name": "Quazepam",
@@ -10090,7 +10164,8 @@
    "atc": [
     "N05CD10"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Quazepam, sold under the brand name Doral among others, is a relatively long-acting benzodiazepine derivative drug developed by the Schering Corporation in the 1970s."
   },
   {
    "name": "Resmethrin",
@@ -10194,7 +10269,8 @@
     "J05AB04",
     "J05AP01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ribavirin, also known as tribavirin, is an antiviral medication used to treat illness caused by respiratory syncytial virus (RSV) and hepatitis C virus (HCV) infections, as well as some viral hemorrhagic fevers."
   },
   {
    "name": "Rifampin",
@@ -10235,7 +10311,8 @@
    ],
    "use_evidence": {
     "goods": "Rifampicin inhibits bacterial RNA polymerase, and is commonly used to inhibit the synthesis of host bacterial proteins during recombinant protein expression in bacteria."
-   }
+   },
+   "medicine_evidence": "Rifampicin, also known as rifampin, is an ansamycin antibiotic used to treat several types of bacterial infections, including tuberculosis (TB), Mycobacterium avium complex, leprosy, and Legionnaires' disease."
   },
   {
    "name": "Secobarbital sodium",
@@ -10563,7 +10640,8 @@
    "atc": [
     "M01AB02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Sulindac is a nonsteroidal anti-inflammatory drug (NSAID) of the arylalkanoic acid class that is marketed as Clinoril."
   },
   {
    "name": "Tamoxifen citrate",
@@ -10629,7 +10707,8 @@
    "atc": [
     "N05CD07"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Temazepam, sold under the brand name Restoril among others, is a medication of the benzodiazepine class which is generally used to treat severe or debilitating insomnia."
   },
   {
    "name": "Teniposide",
@@ -10664,7 +10743,8 @@
    "atc": [
     "L01CB02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Teniposide (trade name Vumon) is a chemotherapeutic medication used in the treatment of childhood acute lymphocytic leukemia (ALL), Hodgkin's lymphoma, certain brain tumours, and other types of cancer."
   },
   {
    "name": "Terbacil",
@@ -10888,7 +10968,8 @@
     "S02AA08",
     "S03AA02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Tetracycline, sold under various brand names, is an antibiotic in the tetracyclines family of medications, used to treat a number of infections, including acne, cholera, brucellosis, plague, malaria, and syphilis."
   },
   {
    "name": "Tetracycline hydrochloride (internal use)",
@@ -10996,7 +11077,8 @@
    "atc": [
     "L04AX02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Thalidomide"
   },
   {
    "name": "Thioguanine",
@@ -11031,7 +11113,8 @@
    "atc": [
     "L01BB03"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Tioguanine, also known as thioguanine or 6-thioguanine (6-TG) , sold under the brand name Tabloid among others, is a medication used to treat acute myeloid leukemia (AML), acute lymphocytic leukemia (ALL), and chronic my"
   },
   {
    "name": "Tobacco smoke (primary)",
@@ -11195,7 +11278,8 @@
    "atc": [
     "N03AX11"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Topiramate"
   },
   {
    "name": "Triadimefon",
@@ -11267,7 +11351,8 @@
    "atc": [
     "N05CD05"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Triazolam, sold under the brand name Halcion among others, is a central nervous system (CNS) depressant tranquilizer of the triazolobenzodiazepine (TBZD) class, which are benzodiazepine (BZD) derivatives."
   },
   {
    "name": "Tributyltin methacrylate",
@@ -11330,10 +11415,6 @@
    "source_codes": [
     "p65"
    ],
-   "atc": [
-    "N01AB05"
-   ],
-   "medicinal": true,
    "uses": [
     "cleaning",
     "construction",
@@ -11478,7 +11559,8 @@
    "atc": [
     "H02CA01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Trilostane, sold under the brand name Vetoryl among others, is a medication which has been used in the treatment of Cushing's syndrome, Conn's syndrome, and postmenopausal breast cancer in humans."
   },
   {
    "name": "Trimethadione",
@@ -11513,7 +11595,8 @@
    "atc": [
     "N03AC02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Trimethadione (Tridione) is an oxazolidinedione anticonvulsant."
   },
   {
    "name": "Trimetrexate glucuronate",
@@ -11579,7 +11662,8 @@
    "atc": [
     "L01AD08"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Uramustine (INN) or uracil mustard is a chemotherapy drug which belongs to the class of alkylating agents."
   },
   {
    "name": "Urethane (Ethyl carbamate)",
@@ -11645,7 +11729,8 @@
    "atc": [
     "G03GA04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Urofollitropin is a purified form of follicle-stimulating hormone (FSH) that is manufactured by extraction from human urine and then purified to remove various proteins and other substances."
   },
   {
    "name": "Valproate (Valproic acid)",
@@ -11691,7 +11776,8 @@
    "atc": [
     "N03AG01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Valproate (Valproic acid)"
   },
   {
    "name": "Vinblastine sulfate",
@@ -11847,7 +11933,8 @@
    "atc": [
     "L01XX43"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Vismodegib, sold under the brand name Erivedge, is a medication used for the treatment of basal-cell carcinoma (BCC)."
   },
   {
    "name": "Warfarin",
@@ -13318,7 +13405,8 @@
    "atc": [
     "C02KX02"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Ambrisentan (endothelin receptor antagonist)"
   },
   {
    "name": "ammonium bromide",
@@ -13836,7 +13924,8 @@
    "atc": [
     "C02KX01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Bosentan (endothelin receptor antagonist)"
   },
   {
    "name": "bromadiolone (ISO); 3-[3-(4′-bromobiphenyl-4-yl)-3-hydroxy-1-phenylpropyl]-4-hydroxy-2H-chromen-2-one",
@@ -15635,7 +15724,8 @@
    ],
    "use_evidence": {
     "goods": "Lenalidomide, sold under the brand name Revlimid among others, is a medication used to treat multiple myeloma, smoldering myeloma, various indolent lymphomas, and myelodysplastic syndromes (MDS)."
-   }
+   },
+   "medicine_evidence": "Lenalidomide"
   },
   {
    "name": "Macitentan (endothelin receptor antagonist)",
@@ -15665,7 +15755,8 @@
    "atc": [
     "C02KX04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Macitentan (endothelin receptor antagonist)"
   },
   {
    "name": "mancozeb (ISO); manganese ethylenebis(dithiocarbamate) (polymeric) complex with zinc salt",
@@ -17430,7 +17521,8 @@
    "atc": [
     "L04AX06"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "Pomalidomide"
   },
   {
    "name": "potassium 1-methyl-3-morpholinocarbonyl-4-[3-(1-methyl-3-morpholinocarbonyl-5-oxo-2-pyrazolin-4-ylidene)-1-propenyl]pyrazole-5-olate; [containing ≥ 0,5 % N,N-dimethylformamide (EC No 200-679-5)]",
@@ -17586,7 +17678,8 @@
    "atc": [
     "D11AX12"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "It has fungistatic (inhibiting the division of fungal cells) and bacteriostatic (inhibiting bacterial cell division) properties and is used in the treatment of seborrhoeic dermatitis and dandruff."
   },
   {
    "name": "quinolin-8-ol; 8-hydroxyquinoline",
@@ -18363,7 +18456,8 @@
    "atc": [
     "R03DA04"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "medicine_evidence": "It is used to treat chronic obstructive pulmonary disease (COPD) and asthma."
   },
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",
@@ -21116,12 +21210,7 @@
    "level": "suspected",
    "source_codes": [
     "clp"
-   ],
-   "atc": [
-    "D08AX06",
-    "V03AB18"
-   ],
-   "medicinal": true
+   ]
   },
   {
    "name": "profoxydim (ISO); 2-{](EZ)-1-[}(2RS)-2-(4-chlorophenoxy)propoxyimino{]butyl[}-3-hydroxy-5-(thian-3-yl)cyclohex-2-en-1-one",
@@ -21380,17 +21469,18 @@
    "source_codes": [
     "clp"
    ],
-   "atc": [
-    "D01AE12",
-    "S01BC08"
-   ],
-   "medicinal": true,
    "uses": [
     "cosmetics"
    ],
    "use_evidence": {
     "cosmetics": "It is used as an ingredient in dermatologic cosmetics (e.g."
-   }
+   },
+   "atc": [
+    "D01AE12",
+    "S01BC08"
+   ],
+   "medicinal": true,
+   "medicine_evidence": "It is a plant hormone, and the name is from Latin salix for willow tree, from which it was initially identified and derived."
   },
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",

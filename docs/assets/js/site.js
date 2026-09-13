@@ -420,19 +420,25 @@
   });
 })();
 
+/* ── Phone test, shared by the landing map blocks below ──────────────── */
+function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 48rem)").matches : window.innerWidth <= 768; }
+
 /* ── Landing map card: close after reading, reopen on demand ────────── */
 (function () {
   var panel = document.getElementById("map-panel");
   var reopen = document.getElementById("map-panel-reopen");
   if (!panel || !reopen) return;
   var close = panel.querySelector(".map-panel-close");
-  function setOpen(open) {
-    panel.hidden = !open; reopen.hidden = open;
-    try { sessionStorage.setItem("dysnet-map-card", open ? "open" : "closed"); } catch (e) {}
+  function setOpen(open, remember) {
+    panel.classList.toggle("is-closed", !open); reopen.hidden = open;
+    if (remember !== false) try { sessionStorage.setItem("dysnet-map-card", open ? "open" : "closed"); } catch (e) {}
   }
   close.addEventListener("click", function () { setOpen(false); reopen.focus(); });
   reopen.addEventListener("click", function () { setOpen(true); close.focus(); });
-  try { if (sessionStorage.getItem("dysnet-map-card") === "closed") setOpen(false); } catch (e) {}
+  // on a phone the map comes first and the card waits, collapsed to its title, until the reader asks for it
+  var stored = null;
+  try { stored = sessionStorage.getItem("dysnet-map-card"); } catch (e) {}
+  if (stored === "closed" || (stored !== "open" && isPhone())) setOpen(false, false);
 })();
 
 /* ── Phone menu and map options ────────────────────────────────────── */
@@ -455,7 +461,8 @@
   if (!legend || !btn) return;
   function set(open) { legend.classList.toggle("open", open); btn.setAttribute("aria-expanded", open ? "true" : "false"); btn.textContent = open ? "Hide legend" : "Legend"; }
   btn.addEventListener("click", function () { set(!legend.classList.contains("open")); });
-  set(false);
+  // on a phone the legend sits under the map and opens with it, where there is room to read it
+  set(isPhone());
 })();
 
 /* ── Bibliography: search + filters ────────────────────────────────── */

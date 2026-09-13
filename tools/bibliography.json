@@ -13255,6 +13255,37 @@
    ]
   },
   {
+   "pmid": "21825994",
+   "doi": "10.1097/ICU.0b013e3283499f24",
+   "title": "What can we learn from the thalidomide experience: an ophthalmologic perspective",
+   "authors": [
+    "Miller MT",
+    "Strömland KK"
+   ],
+   "journal": "Current opinion in ophthalmology",
+   "year": "2011",
+   "volume": "22",
+   "pages": "356-64",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "ocular findings of thalidomide embryopathy, listed by Ex-Center"
+   ],
+   "via": [
+    "Ex-Center (ex-center.org)"
+   ]
+  },
+  {
    "pmid": "21404644",
    "doi": "",
    "title": "[Molecular mechanism of thalidomide teratogenicity]",
@@ -13984,6 +14015,38 @@
    ],
    "via": [
     "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "19639653",
+   "doi": "10.1002/bdra.20609",
+   "title": "Thalidomide and misoprostol: Ophthalmologic manifestations and associations both expected and unexpected",
+   "authors": [
+    "Miller MT",
+    "Ventura L",
+    "Strömland K"
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2009",
+   "volume": "85",
+   "pages": "667-76",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "thal"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "ophthalmological manifestations of thalidomide and misoprostol, listed by Ex-Center"
+   ],
+   "via": [
+    "Ex-Center (ex-center.org)"
    ]
   },
   {

@@ -264,9 +264,10 @@
   function zoneHtml(e) {
     var z = e.features[0].properties;
     var status = z.status === "in_progress" ? "Registry starting to cover this area" : "Covered by a population-based registry of congenital anomalies";
+    var where = z.area || z.dep_name || "";
     return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
-           '<p class="dp-sub">' + esc(z.dep_name) + ', ' + esc(z.country) + '<br>' + status + '</p>' +
-           '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: Santé publique France, 2026 · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
+           '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + '</p>' +
+           '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }
   attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup");
 

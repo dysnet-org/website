@@ -1,0 +1,229 @@
+{
+ "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report.",
+ "areas": [
+  {
+   "registry": "Antwerp",
+   "label": "Antwerp registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "179973",
+   "country": "Belgium",
+   "iso3": "BEL",
+   "admin1": [
+    "Antwerp"
+   ],
+   "area": "Province of Antwerp",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179973"
+  },
+  {
+   "registry": "Hainaut-Namur",
+   "label": "Hainaut and Namur registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "179975",
+   "country": "Belgium",
+   "iso3": "BEL",
+   "admin1": [
+    "Hainaut",
+    "Namur"
+   ],
+   "area": "Provinces of Hainaut and Namur",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179975"
+  },
+  {
+   "registry": "Finnish Register of Congenital Malformations",
+   "label": "Finnish Register of Congenital Malformations",
+   "orphanet_id": "181319",
+   "country": "Finland",
+   "iso3": "FIN",
+   "admin1": [],
+   "area": "Finland, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181319"
+  },
+  {
+   "registry": "Saxony-Anhalt",
+   "label": "Saxony-Anhalt registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "59478",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [
+    "Sachsen-Anhalt"
+   ],
+   "area": "Saxony-Anhalt",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59478"
+  },
+  {
+   "registry": "Cork and Kerry",
+   "label": "Cork and Kerry registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "175519",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Cork",
+    "Kerry"
+   ],
+   "area": "Counties Cork and Kerry",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175519"
+  },
+  {
+   "registry": "Dublin",
+   "label": "Dublin registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "175123",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Dublin",
+    "South Dublin",
+    "Fingal",
+    "Dún Laoghaire–Rathdown"
+   ],
+   "area": "County Dublin",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175123"
+  },
+  {
+   "registry": "South East of Ireland",
+   "label": "South East of Ireland registry of congenital anomalies (BINOCAR, EUROCAT)",
+   "orphanet_id": "175121",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Carlow",
+    "Kilkenny",
+    "South Tipperary",
+    "Waterford",
+    "Wexford"
+   ],
+   "area": "South-East region",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175121"
+  },
+  {
+   "registry": "Campania",
+   "label": "Campania registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "53567",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Campania"
+   ],
+   "area": "Campania",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/53567"
+  },
+  {
+   "registry": "ISMAC",
+   "label": "ISMAC, Sicilian registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "52840",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Sicily"
+   ],
+   "area": "Sicily",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/52840"
+  },
+  {
+   "registry": "Tuscan Registry",
+   "label": "Tuscan registry of congenital anomalies",
+   "orphanet_id": "498995",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Toscana"
+   ],
+   "area": "Tuscany",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/498995"
+  },
+  {
+   "registry": "EUROCAT Northern Netherlands",
+   "label": "EUROCAT Northern Netherlands",
+   "orphanet_id": "183949",
+   "country": "Netherlands",
+   "iso3": "NLD",
+   "admin1": [
+    "Groningen",
+    "Friesland",
+    "Drenthe"
+   ],
+   "area": "Groningen, Friesland and Drenthe",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/183949"
+  },
+  {
+   "registry": "PRCM",
+   "label": "Polish Registry of Congenital Malformations (EUROCAT)",
+   "orphanet_id": "181308",
+   "country": "Poland",
+   "iso3": "POL",
+   "admin1": [],
+   "area": "Poland, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181308"
+  },
+  {
+   "registry": "RENAC",
+   "label": "RENAC, Portuguese registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "59379",
+   "country": "Portugal",
+   "iso3": "PRT",
+   "admin1": [],
+   "area": "Portugal, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59379"
+  },
+  {
+   "registry": "RACAV",
+   "label": "RACAV, registry of congenital anomalies of the Basque Country (EUROCAT)",
+   "orphanet_id": "59706",
+   "country": "Spain",
+   "iso3": "ESP",
+   "region": [
+    "País Vasco"
+   ],
+   "area": "Basque Country",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59706"
+  },
+  {
+   "registry": "EUROCAT Vaud",
+   "label": "EUROCAT Vaud, registry of congenital malformations of the canton of Vaud",
+   "orphanet_id": "60053",
+   "country": "Switzerland",
+   "iso3": "CHE",
+   "admin1": [
+    "Vaud"
+   ],
+   "area": "Canton of Vaud",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/60053"
+  },
+  {
+   "registry": "ACASS",
+   "label": "Alberta Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Alberta"
+   ],
+   "area": "Alberta",
+   "status": "covered",
+   "source": "Bedard T, Lowry RB, Sibbald B, et al. Am J Med Genet A 2015;167A(11):2599-2609, doi:10.1002/ajmg.a.37240"
+  },
+  {
+   "registry": "LLPR",
+   "label": "Limb Loss and Preservation Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "area": "United States, all 50 states",
+   "status": "covered",
+   "source": "Kaufman KR, Bernhardt K, Murphy S, et al. Arch Rehabil Res Clin Transl 2024;6(4):100356, doi:10.1016/j.arrct.2024.100356",
+   "website": "https://www.llpr.org/"
+  }
+ ]
+}

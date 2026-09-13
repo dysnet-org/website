@@ -341,8 +341,8 @@ def bibliography_html():
     <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Three fixed PubMed queries, re-run at each build, add the thalidomide literature (title query: thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), the systematic reviews and meta-analyses on our conditions (publication type or title, combined with the condition names), and the literature on causes and risk factors (title terms such as aetiology, risk factors, teratogen, maternal, exposure, environmental, pesticides, clusters or vascular disruption, combined with the condition names). The registries listed on Orphanet for our conditions were crawled the same way as member websites. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>. <a href="/data/bibliography.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 """
 
-# Register 4 · care centres shown on the landing map. Only centres named by a member association (or visited by the
-# board); URLs checked; coordinates from OpenStreetMap Nominatim (see tools/care-centres.json for the audit trail).
+# Register 4 · care centres shown on the landing map. Centres named by a member association or visited by the board,
+# plus the children's hand clinics of the BSSH directory that Reach points families to; URLs checked; coordinates from OpenStreetMap Nominatim (see tools/care-centres.json for the audit trail).
 CARE_PATH = pathlib.Path(__file__).parent / "tools" / "care-centres.json"
 CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if CARE_PATH.exists() else []
 
@@ -839,7 +839,7 @@ PAGES["/knowledge/registries/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 2 · Registries <span class="badge live">updated Sep 2026</span></p>
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
-    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The coverage of each French registry is drawn on the <a href="/#map">landing-page map</a>. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
+    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-four areas are drawn, for the registries that are coded for our conditions, plus the two North American ones below. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
 
     <div class="tick"></div>
@@ -985,7 +985,7 @@ PAGES["/knowledge/care-centres/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Aug 2026</span></p>
     <h1 class="display">Care centres for limb difference: where expertise lives.</h1>
-    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website (or visited by the board), and appears as an orange marker on the <a href="/">world map</a> on our home page. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
+    <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website or visited by the board, and appears as an orange marker on the <a href="/">world map</a> on our home page. The dedicated children’s hand clinics of the United Kingdom and Ireland come from the directory that the British Society for Surgery of the Hand publishes for families, which our member association Reach points parents to when they ask for a referral. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Where the list comes from</h2>
     <div style="margin-top:var(--space-2)">
@@ -1714,7 +1714,7 @@ MAP_HERO = """
     <span class="l-candidate" data-layer="members">Piloting the registry (Assedea, Raggiungere)</span>
     <span class="l-contact" data-layer="members">Contact opened</span>
     <span class="l-office" data-layer="offices">DysNet office</span>
-    <span class="l-zone" data-layer="zones">Area covered by a population registry of congenital anomalies</span>
+    <span class="l-zone" data-layer="zones">Area covered by a registry that records our conditions</span>
     <span class="l-zone-progress" data-layer="zones">Area a registry is starting to cover</span>
     <span class="l-centre" data-layer="centres">Care centre named by a member association (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>

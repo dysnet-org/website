@@ -1187,6 +1187,22 @@
    "lon": 18.0333186,
    "geocode_display_name": "Karolinska universitetssjukhuset, Visionsgatan, Solna Kyrkby, Haga, Solna, Solna kommun, Stockholms län, 171 64, Sverige",
    "label": "Stockholm"
+  },
+  {
+   "name": "Holland Bloorview Kids Rehabilitation Hospital, orthotics and prosthetics",
+   "name_local": "Holland Bloorview Kids Rehabilitation Hospital",
+   "city": "Toronto",
+   "country": "Canada",
+   "iso2": "CA",
+   "type": "Prosthetics & rehabilitation centre",
+   "specialism": "Orthotic and prosthetic department of Canada's largest children's rehabilitation hospital, covering prosthetic limbs, orthotic devices, myoelectrics and digital technology. The team combines certified orthotists and prosthetists, registered technicians, a physiotherapist and an occupational therapist, and treats children, youth and adults. The hospital also hosts the Bloorview Research Institute.",
+   "url": "https://hollandbloorview.ca/services/programs-services/orthotics-and-prosthetics-incl-myoelectrics",
+   "via": "DysNet",
+   "via_url": "https://hollandbloorview.ca/",
+   "lat": 43.7186594,
+   "lon": -79.373579,
+   "geocode_display_name": "Holland Bloorview Kids Rehabilitation Hospital, 150, Kilgour Road, Bridle Path-Sunnybrook-York Mills, Don Valley West, North York, Toronto, Golden Horseshoe, Ontario, M4G 1R8, Canada",
+   "label": "Holland Bloorview"
   }
  ]
 }

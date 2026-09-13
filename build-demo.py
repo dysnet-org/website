@@ -697,7 +697,7 @@ PAGES["/knowledge/"] = {
       </div>
       <div class="card acc-research">
         <h3 class="h3"><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></h3>
-        <p>A fully referenced review of what causes a limb to form differently: genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces, and how often a cause is actually found.</p>
+        <p>What causes a limb to form differently: genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces, and how often a cause is actually found.</p>
       </div>
     </div>
   </div>
@@ -1076,8 +1076,8 @@ PAGES["/knowledge/teratogens/"] = {
 
     {opener("01", "How to read it", "Three levels of evidence, five sources, one status per jurisdiction.")}
     <ul>
-      <li><strong>Known</strong>: human evidence. In the EU this is category 1A of the harmonised classification; in California it is any developmental toxicant on the Proposition 65 list, which by law contains chemicals "known to the State" to cause reproductive harm; for medicines, a documented human teratogen.</li>
-      <li><strong>Presumed</strong>: strong animal evidence, category 1B in the EU, or a medicine contraindicated in pregnancy on animal data.</li>
+      <li><strong>Known</strong>: human evidence. In the EU this is category 1A of the harmonised classification; for medicines, a documented human teratogen; in California, a substance the State lists after its own experts review it, or because another law already requires the warning.</li>
+      <li><strong>Presumed</strong>: strong animal evidence. Category 1B in the EU, a medicine contraindicated in pregnancy on animal data, or a substance California lists on an authoritative body&rsquo;s review, which is usually a review of animal studies. California&rsquo;s own wording is &ldquo;known to the State&rdquo;, a legal status rather than a statement about human evidence, so we read the basis of each listing rather than the phrase.</li>
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
     </ul>
     <p><strong>Independent hazard frameworks.</strong> Manufacturers and certifiers increasingly rate chemicals with two non-profit frameworks that score developmental and reproductive toxicity among their endpoints. <a href="https://www.greenscreenchemicals.org/learn/full-greenscreen-method" target="_blank" rel="noopener external">GreenScreen for Safer Chemicals</a> (Clean Production Action) assigns Benchmarks 1 to 4, Benchmark 1 being a chemical of high concern, through assessments by licensed profilers such as ToxServices; its free List Translator flags as LT-1 any chemical that an authoritative list already classes as a high-hazard reproductive or developmental toxicant, and its <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">public registry</a> tells you, by CAS number, whether a full assessment exists. <a href="https://www.chemforward.org/" target="_blank" rel="noopener external">ChemFORWARD</a> rates chemicals used in consumer products and building materials in hazard bands A to F across 24 endpoints; its published <a href="https://static1.squarespace.com/static/60611efa464a766c6a812834/t/6657f7d9c7241a2e6ba86b55/1717041115329/Chemical+Rating+Guidance+v2.2_Abbreviated.pdf" target="_blank" rel="noopener external">rating guidance</a> places in band F, by list screening alone, every substance with an EU harmonised Repr. 1 classification or on the REACH candidate and authorisation lists as a reproductive toxicant. The two organisations <a href="https://www.chemforward.org/news/chemforward-and-greenscreen-offer-aligned-outputs-for-hazard-data-toxservices" target="_blank" rel="noopener external">reported in 2021</a> that their outputs are aligned. Full assessments sit behind subscriptions, so this register cannot import their scores; where an entry meets ChemFORWARD's published F-band criterion, it says so.</p>
@@ -1348,6 +1348,145 @@ CAUSES_EXTRA = {  # verified against PubMed, September 2026; candidates for the 
 
 CAUSES_REF_ORDER = []
 
+# ── Glossary: plain-language definitions shown on hover, tap or keyboard focus ──
+# key -> (regex fragment matched in the prose, definition, source label, source URL).
+# Definitions are written for families by the DysNet documentation team; the link points to the
+# reliable reference page where the reader can go further. Every URL was fetched and its page
+# title checked in September 2026; a term with no suitable public lay page carries no link.
+NCI_G = "https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/"
+NCI_C = "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/"
+MPG = "https://medlineplus.gov/genetics/"
+ORPHA_D = "https://www.orpha.net/en/disease/detail/"
+
+GLOSSARY = [
+    # (pattern, definition, source label, url)
+    (r"mesenchyme", "The soft, unspecialised tissue of the early embryo. It is the raw material from which bone, cartilage, muscle and blood vessels are later built.", "", ""),
+    (r"apical ectodermal ridge", "A thin ridge of skin-forming tissue running along the tip of the growing limb bud. It tells the limb how far to grow, from shoulder to fingertip. Remove it in an animal embryo and the limb stops short.", "", ""),
+    (r"zone of polarising activity", "A small patch of cells at the back edge of the limb bud that tells the hand which side is the thumb and which the little finger.", "", ""),
+    (r"fibroblast growth factors", "A family of signalling proteins that tell cells to divide and keep growing. The ridge at the tip of the limb bud uses them to drive the limb outwards.", "", ""),
+    (r"sonic hedgehog", "A signalling protein, named after the video-game character, produced at the back edge of the limb bud. The amount of it a cell receives decides which finger that cell will help build.", "MedlinePlus Genetics", MPG + "gene/shh/"),
+    (r"dorsal ectoderm", "The outer layer of cells covering the back of the developing limb. It is what makes the back of the hand different from the palm.", "", ""),
+    (r"enhancer", "A stretch of DNA that works as a switch: it does not describe a protein, it decides where and when a nearby gene is switched on. An enhancer can sit a long way from the gene it controls.", "NCI Dictionary of Genetics Terms", NCI_G + "enhancer"),
+    (r"homeodomain", "The part of a HOX protein that grips DNA. A change here alters which genes the protein can switch on.", "NCI Dictionary of Genetics Terms", NCI_G + "homeobox"),
+    (r"HOX genes", "A set of master genes that tell each part of the embryo what it should become, in the right order from head to tail and from shoulder to fingertip.", "NCI Dictionary of Genetics Terms", NCI_G + "homeobox"),
+    (r"transcription factors", "Proteins whose job is to switch other genes on or off.", "NCI Dictionary of Genetics Terms", NCI_G + "transcription-factor"),
+    (r"transduces", "Passes a signal on: a message arriving at the cell is relayed inwards and changes what the cell does.", "NCI Dictionary of Genetics Terms", NCI_G + "signal-transduction"),
+    (r"phenotype", "What can actually be observed in a person: the shape of the hand, the height, the results of a scan. The visible outcome, as opposed to the underlying genetic instructions.", "NCI Dictionary of Genetics Terms", NCI_G + "phenotype"),
+    (r"genotype", "The genetic instructions a person carries, whether or not they show.", "NCI Dictionary of Genetics Terms", NCI_G + "genotype"),
+    (r"homozygous", "Carrying the same version of a gene on both copies, one inherited from each parent. Some conditions only appear when both copies are affected.", "NCI Dictionary of Genetics Terms", NCI_G + "homozygous"),
+    (r"[Hh]eterozygous", "Carrying two different versions of a gene, one from each parent. For many conditions one affected copy is enough to cause them.", "NCI Dictionary of Genetics Terms", NCI_G + "heterozygous"),
+    (r"de novo", "New in the child: a genetic change that neither parent carries. It happened in the egg, the sperm or the earliest cell divisions, and it is nobody's fault.", "NCI Dictionary of Genetics Terms", NCI_G + "de-novo-mutation"),
+    (r"monogenic", "Caused by a change in a single gene.", "", ""),
+    (r"trisomy 13", "Also called Patau syndrome: three copies of chromosome 13 instead of two, causing severe malformations of the brain, heart, face and limbs.", "MedlinePlus Genetics", MPG + "condition/trisomy-13/"),
+    (r"[Tt]risomy 18", "Also called Edwards syndrome: three copies of chromosome 18 instead of two, causing severe malformations including clenched hands with overlapping fingers.", "MedlinePlus Genetics", MPG + "condition/trisomy-18/"),
+    (r"[Tt]risomy", "Having three copies of a chromosome instead of the usual two.", "NCI Dictionary of Genetics Terms", NCI_G + "trisomy"),
+    (r"[Cc]hromosomal breakpoints", "The points at which a chromosome has broken and been rejoined in the wrong place. Genes near the break can end up cut off from the switches that control them.", "MedlinePlus Genetics", MPG + "understanding/mutationsanddisorders/structuralchanges/"),
+    (r"[Cc]hromosomes", "The packages in which our DNA is stored. Humans normally have 46, in 23 pairs.", "MedlinePlus", "https://medlineplus.gov/ency/article/002327.htm"),
+    (r"[Cc]opy-number variants", "Stretches of DNA that are present in too many or too few copies. They can affect several genes at once, and are found by a different test from ordinary gene sequencing.", "NCI Dictionary of Genetics Terms", NCI_G + "copy-number-variation"),
+    (r"[Ee]xome sequencing", "Reading all the parts of a person's DNA that describe proteins, about 1-2% of the genome, in one test. It finds many causes, but not changes in switches outside those parts.", "NCI Dictionary of Genetics Terms", NCI_G + "exome-sequencing"),
+    (r"coding genome", "The parts of DNA that describe proteins. The rest, once called junk, contains the switches that control when and where genes work.", "MedlinePlus Genetics", MPG + "understanding/basics/noncodingdna/"),
+    (r"simple loss of one working copy", "Called haploinsufficiency: the person has one normal copy of the gene and one that does not work, and the half dose is not enough.", "NCI Dictionary of Genetics Terms", NCI_G + "haploinsufficiency"),
+    (r"consanguineous", "Describing parents who are blood relatives, most often first cousins. Their children are more likely to inherit the same rare gene change from both sides.", "NCI Dictionary of Genetics Terms", NCI_G + "consanguineous"),
+    (r"[Mm]onozygotic twins", "Identical twins, formed when one fertilised egg splits. They share the same DNA, so a difference between them points to something other than inherited genes.", "NCI Dictionary of Genetics Terms", NCI_G + "monozygotic-twins"),
+    (r"apoptosis", "Programmed cell death: the orderly self-destruction a cell undergoes when it is damaged or no longer needed. Too much of it in a limb bud removes tissue that should have been built.", "NCI Dictionary of Genetics Terms", NCI_G + "apoptosis"),
+    (r"[Aa]ntiangiogenic", "Blocking the growth of new blood vessels.", "NCI Dictionary of Genetics Terms", NCI_G + "angiogenesis"),
+    (r"blood-vessel formation", "The growth of new blood vessels, called angiogenesis. A limb bud grows so fast that it needs new vessels continuously; losing them starves it.", "NCI Dictionary of Genetics Terms", NCI_G + "angiogenesis"),
+    (r"hypoxia", "A shortage of oxygen in a tissue.", "NCI Dictionary of Genetics Terms", NCI_G + "hypoxia"),
+    (r"ubiquitin ligase", "A cellular machine that tags unwanted proteins for destruction. Which proteins it tags depends on a receptor part that thalidomide is able to hijack.", "NCI Dictionary of Cancer Terms", NCI_C + "ubiquitin-ligase"),
+    (r"cereblon", "A protein inside our cells that selects which other proteins should be destroyed. Thalidomide sticks to it and changes that selection, which is how the drug is now thought to act on the embryo.", "", ""),
+    (r"p53-dependent", "Depending on p53, a protein that halts or destroys damaged cells. It protects us from cancer, but in an embryo it can also remove cells a limb still needed.", "NCI Dictionary of Genetics Terms", NCI_G + "p53-gene"),
+    (r"cohesion gene", "A gene involved in holding the two copies of each chromosome together while a cell divides. When it fails, cells divide badly and die.", "", ""),
+    (r"teratogen", "Any substance, infection or physical agent that can disturb the development of an unborn child.", "NCI Dictionary of Cancer Terms", NCI_C + "teratogen"),
+    (r"embryopathy", "The pattern of damage caused to an embryo by a particular agent. Thalidomide embryopathy is the pattern left by that drug.", "", ""),
+    (r"aetiological diagnosis", "A diagnosis that names the cause, not just the condition. Saying a hand is affected describes it; saying which gene change produced it explains it.", "", ""),
+    (r"prevalence", "How common something is in a population at a given time, here usually expressed as cases per 10,000 births.", "NCI Dictionary of Cancer Terms", NCI_C + "prevalence"),
+    (r"odds ratio", "A way of comparing two groups. An odds ratio of 1 means no difference; 1.3 means roughly 30% higher odds in the exposed group; 12 means twelve times the odds. It is a comparison, not a personal risk.", "NCI Dictionary of Cancer Terms", NCI_C + "odds-ratio"),
+    (r"[Rr]elative risk", "How many times more likely an outcome is in one group than another. A relative risk of 1.14 means 14% more likely, which on a very rare condition still means very few extra cases.", "NCI Dictionary of Cancer Terms", NCI_C + "relative-risk"),
+    (r"95% CI", "The confidence interval: the range within which the true figure most probably lies. A wide range, or one that includes 1, means the study cannot tell us much.", "NCI Dictionary of Cancer Terms", NCI_C + "confidence-interval"),
+    (r"meta-analysis", "A study of studies: results from several separate studies are pooled statistically to get a single, more reliable figure.", "NCI Dictionary of Cancer Terms", NCI_C + "meta-analysis"),
+    (r"case-control stud", "A study that starts from children who have the condition and compares their history with that of similar children who do not. Quick for rare conditions, but it relies on remembering past exposures correctly.", "NCI Dictionary of Cancer Terms", NCI_C + "case-control-study"),
+    (r"cohort", "A group followed forward in time, recording what happens to them. Slower and costlier than a case-control study, but less prone to error.", "NCI Dictionary of Cancer Terms", NCI_C + "cohort-study"),
+    (r"[Pp]ericonceptional", "In the weeks just before and just after conception, the period when the limbs are formed.", "", ""),
+    (r"gestation", "The length of the pregnancy so far, counted in days or weeks.", "NCI Dictionary of Cancer Terms", NCI_C + "gestation"),
+    (r"[Hh]ypoplastic", "Underdeveloped: present, but smaller or less complete than it should be.", "NCI Dictionary of Cancer Terms", NCI_C + "hypoplasia"),
+    (r"synpolydactyly", "A hand or foot with both extra digits and digits joined together.", "", ""),
+    (r"polydactyly", "Being born with one or more extra fingers or toes. Preaxial means on the thumb or big-toe side, postaxial on the little-finger or little-toe side.", "Orphanet", ORPHA_D + "2913"),
+    (r"syndactyly", "Fingers or toes joined together, by skin alone or by bone.", "Orphanet", ORPHA_D + "93458"),
+    (r"phocomelia", "A limb in which the hand or foot is attached close to the body because the segments in between are absent or very short.", "Orphanet", ORPHA_D + "2879"),
+    (r"tetra-amelia", "The absence of all four limbs. Amelia means the complete absence of a limb.", "Orphanet", ORPHA_D + "1027"),
+    (r"limb reduction defects", "The general term registries use for a limb in which part is missing. Transverse means the limb stops at a level, as an amputation would; longitudinal means a bone is missing along one side while the rest is present.", "", ""),
+    (r"amniotic band", "A strand of the inner membrane of the amniotic sac, floating free after the membrane tears, which can wrap around a limb or a finger and constrict it.", "Orphanet", ORPHA_D + "295000"),
+    (r"limb body wall complex", "A severe pattern of malformation involving the limbs together with the wall of the abdomen or chest. Whether it shares a cause with amniotic bands is disputed.", "", ""),
+    (r"[Rr]educed amniotic fluid", "Too little of the fluid surrounding the baby, called oligohydramnios. The baby has less room to move, and pressure on the limbs can deform them.", "MedlinePlus", "https://medlineplus.gov/ency/article/002220.htm"),
+    (r"[Aa]rthrogryposis", "Being born with several joints fixed in one position. It is a description, not a cause: many different problems can produce it.", "", ""),
+    (r"fetal akinesia", "The unborn baby moving too little. Movement is what shapes joints, so when it is reduced the joints stiffen, whatever the underlying reason.", "", ""),
+    (r"[Dd]eformations", "A limb that formed normally and was then bent or squashed by outside forces. Distinct from a malformation, where the limb was built differently from the start.", "", ""),
+    (r"[Cc]horionic villus sampling", "A prenatal test in which a sample of the developing placenta is taken for genetic analysis. It is now performed after 11 weeks, which is why the limb risk seen in early studies has receded.", "NHS", "https://www.nhs.uk/conditions/chorionic-villus-sampling-cvs/"),
+    (r"[Ff]etoscopic laser", "Keyhole surgery inside the womb, using a camera and a laser to seal the shared blood vessels when identical twins share a placenta unequally.", "", ""),
+    (r"twin-twin transfusion syndrome", "A complication of identical twins sharing one placenta, in which blood passes unevenly from one twin to the other.", "", ""),
+    (r"Möbius sequence", "A condition in which the nerves controlling the face and the eyes did not develop, so the face cannot show expression. It is often accompanied by limb differences.", "MedlinePlus Genetics", MPG + "condition/moebius-syndrome/"),
+    (r"VATER/VACTERL", "A combination of malformations that occur together more often than chance allows: vertebrae, anus, heart, windpipe, oesophagus, kidneys and limbs.", "MedlinePlus Genetics", MPG + "condition/vacterl-association/"),
+    (r"Holt-Oram syndrome", "An inherited condition combining a difference of the thumb or forearm with a heart defect.", "MedlinePlus Genetics", MPG + "condition/holt-oram-syndrome/"),
+    (r"Roberts syndrome", "A rare inherited condition with severely shortened limbs and facial clefts.", "MedlinePlus Genetics", MPG + "condition/roberts-syndrome/"),
+    (r"Poland syndrome", "The absence or underdevelopment of the chest muscle on one side, usually with a smaller hand and shorter fingers on the same side.", "MedlinePlus Genetics", MPG + "condition/poland-syndrome/"),
+    (r"[Cc]audal regression", "A failure of the lower end of the spine and the pelvis to form properly, strongly associated with diabetes in the mother.", "", ""),
+    (r"corpus callosum", "The thick bundle of fibres joining the two halves of the brain.", "", ""),
+    (r"dermatomal", "Following the strip of skin served by a single nerve root, which is why the scarring of congenital varicella appears in bands.", "", ""),
+    (r"endothelial", "Belonging to the single layer of cells lining the inside of every blood vessel.", "", ""),
+    (r"[Ee]mbryo", "The developing child during the first eight weeks after conception, the period in which the limbs are built.", "NCI Dictionary of Cancer Terms", NCI_C + "embryo"),
+]
+_GLOSS_N = [0]
+
+
+def glossify(html):
+    """Wrap the first occurrence of each glossary term in a hoverable, focusable definition.
+    Only text nodes are touched, and never inside links, headings or citation markers."""
+    parts = re.split(r"(<[^>]+>)", html)
+    skip, remaining = 0, list(GLOSSARY)
+    out = []
+    for tok in parts:
+        if tok.startswith("<"):
+            tag = re.match(r"</?\s*([a-zA-Z0-9]+)", tok)
+            name = tag.group(1).lower() if tag else ""
+            if name in ("a", "h1", "h2", "h3", "h4", "sup", "button", "script", "style"):
+                skip += 1 if not tok.startswith("</") else -1
+            out.append(tok)
+            continue
+        if skip > 0 or not tok.strip():
+            out.append(tok)
+            continue
+        # Collect non-overlapping first matches against the ORIGINAL text, then splice once,
+        # so a definition inserted here can never be scanned for further terms.
+        hits = []
+        for item in list(remaining):
+            pat, definition, label, url = item
+            # the prose is hard-wrapped, so a term may be split across a line break
+            for m in re.finditer(r"\b" + pat.replace(" ", r"\s+"), tok):
+                if any(m.start() < e and s < m.end() for s, e, *_ in hits):
+                    continue
+                hits.append((m.start(), m.end(), m.group(0), definition, label, url))
+                remaining.remove(item)
+                break
+        if hits:
+            hits.sort()
+            buf, cursor = [], 0
+            for s, e, word, definition, label, url in hits:
+                _GLOSS_N[0] += 1
+                gid = f"gloss-{_GLOSS_N[0]}"
+                more = (f' <a href="{url}" target="_blank" rel="noopener external">{label} &rarr;</a>' if url else "")
+                buf.append(tok[cursor:s])
+                buf.append(f'<span class="gloss"><button type="button" class="gloss-t" aria-describedby="{gid}">'
+                           f'{word}</button><span class="gloss-pop" role="tooltip" id="{gid}">'
+                           f'<strong>{" ".join(word.split())}</strong>{definition}{more}</span></span>')
+                cursor = e
+            buf.append(tok[cursor:])
+            tok = "".join(buf)
+        out.append(tok)
+    missed = [p for p, *_ in remaining]
+    if missed:
+        print(f"  ! glossary terms never matched in the prose: {', '.join(missed)}")
+    return "".join(out)
+
 
 def _causes_ref(key):
     """Resolve a citation key to (authors, title, journal, year, volume, pages, link, in_register)."""
@@ -1397,8 +1536,12 @@ _CAUSES_BODY = f"""
 <section>
   <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Review · Fully referenced · September 2026</p>
+    <p class="eyebrow">Review · September 2026</p>
     <h1 class="display">What causes dysmelia?</h1>
+    <p class="byline"><strong>Dr Loïc Rigal</strong>, for the DysNet documentation team · first published September 2026 ·
+    <a href="#method">how this article was written</a> · <a href="#sources">sources</a></p>
+    <p class="gloss-hint">Underlined words carry a plain-language definition: hover over one, tap it, or reach it with the
+    keyboard.</p>
     <p>It is the first question families ask, and the one research still cannot answer for most of them. A limb that formed
     differently is the visible end of a process that ran for about four weeks, early in pregnancy, and left almost no other trace.
     This review sets out what is established, what is probable and what is still only a hypothesis, in the order the evidence
@@ -1443,7 +1586,8 @@ _CAUSES_BODY = f"""
     them is the commonest way to get the aetiology wrong.</p>
 
     {opener("03", "Genes", "From a single letter to a whole chromosome.")}
-    <p><strong>Patterning genes.</strong> The HOX genes act as the selectors of the body plan, and <em>HOXD13</em> is the one most
+    <p><strong>Patterning genes.</strong> The HOX genes encode transcription factors and act as the selectors of the body plan;
+    <em>HOXD13</em> is the one most
     often implicated in the hand. Changes inside and outside its homeodomain produce synpolydactyly, in which digits are both
     extra and fused{cref("10.1242/dev.00396", "10.1002/ajmg.a.37464", "10.1038/s41419-023-05681-8")}. Chromosomal breakpoints
     around the HOXD cluster, which do not touch the coding sequence at all, produce a whole range of limb
@@ -1481,6 +1625,10 @@ _CAUSES_BODY = f"""
     that would otherwise look sporadic{cref("10.1038/hgv.2017.54")}.</p>
 
     {opener("04", "Medicines and chemicals", "One certainty, several strong signals, and a long tail of weak ones.")}
+    <p>A teratogen is any agent that can disturb the development of an unborn child. The list of those actually proved to cause
+    limb differences in humans is far shorter than the internet suggests, and the strength of the evidence varies enormously from
+    one entry to the next; the substances below are ordered accordingly, and those with a regulatory status are tracked in the
+    <a href="/knowledge/teratogens/">teratogens register</a>.</p>
     <p><strong>Thalidomide</strong> remains the reference case, and its mechanism has changed since most textbooks were written.
     The drug binds cereblon, the substrate receptor of a CRL4 ubiquitin ligase, and reprograms what that ligase destroys. The
     proteins degraded include SALL4{cref("10.1038/s41589-018-0129-x")}, PLZF/ZBTB16, degraded by thalidomide and by its
@@ -1572,10 +1720,10 @@ _CAUSES_BODY = f"""
     share the aetiology of the rest of the group{cref("10.1002/bdr2.2122")}.</p>
     <p><strong>Poland syndrome</strong> is where this reasoning is most often applied and least often proved. The subclavian
     artery supply disruption sequence has been the leading hypothesis for decades and is supported by case-level
-    evidence{cref("10.1136/bcr-2020-238392")}, but the European consensus recommendations describe the condition as a sequence
+    evidence{cref("10.1136/bcr-2020-238392")}, but the published consensus recommendations describe the condition as a sequence
     of uncertain origin rather than a settled vascular diagnosis{cref("10.1186/s13023-020-01481-x")}. Copy-number variants are
-    found in a minority{cref("10.1186/s12881-016-0351-x")}, monozygotic twins can be discordant or share a de novo
-    deletion{cref("10.1186/1471-2350-15-63")}, and classification remains under
+    found in a minority{cref("10.1186/s12881-016-0351-x")}, a pair of affected monozygotic twins was found to share a de novo
+    chromosomal deletion{cref("10.1186/1471-2350-15-63")}, and classification remains under
     discussion{cref("10.1053/j.sempedsurg.2018.05.007")}. Honest practice is to present the vascular hypothesis as a hypothesis.</p>
 
     {opener("07", "The amnion and mechanical forces", "Bands, crowding, and a widespread misconception.")}
@@ -1635,22 +1783,43 @@ _CAUSES_BODY = f"""
     register</a>. For what the individual conditions are called and how frequent they are, start with
     <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a>.</p>
 
-    <div class="tick"></div>
+    <div class="tick" id="method"></div>
     <p class="eyebrow">Method</p>
     <h2 class="h2">How this article was written.</h2>
-    <p>Every factual statement carries a reference, and every reference is either an entry of the DysNet bibliography,
-    reproduced verbatim from the register, or a paper verified against PubMed and marked †. Where the evidence is a single case
-    report, an animal model or a hypothesis, the text says so rather than rounding it up to a cause. Figures quoted from a study
-    are the figures that study reports, with its confidence intervals where it gives them. Written by the DysNet documentation
-    team, September 2026; corrections and missing references to
-    <a href="mailto:info@dysnet.org?subject=Causes%20of%20dysmelia">info@dysnet.org</a>.</p>
+    <p><strong>Author.</strong> Dr Loïc Rigal, for the DysNet documentation team, September 2026.</p>
+    <p><strong>Sources.</strong> The starting point was the DysNet <a href="/knowledge/bibliography/">bibliography</a>, the
+    register of peer-reviewed publications on our conditions, searched by theme for causes, genetics and epidemiology. Where the
+    register had no coverage of a question that families ask (maternal diabetes, varicella, antiseizure medicines, misoprostol,
+    fetal akinesia), the gap was filled from PubMed and the papers marked † for addition at the next build of the register.
+    Every figure quoted is the figure the study itself reports, with its confidence interval where it gives one, checked against
+    the published abstract or article rather than against a secondary source.</p>
+    <p><strong>Drafting.</strong> The article was researched, drafted and fact-checked with the assistance of Claude Opus 5
+    (Anthropic), working directly against the bibliography register and the PubMed record. Every reference was resolved
+    programmatically at build time, so that a citation on this page cannot drift from its entry in the register; the build fails
+    if a citation cannot be resolved. Every glossary link was fetched and its page title verified. The judgements about what the
+    evidence supports, and the responsibility for any error, are the author's.</p>
+    <p><strong>Editorial stance.</strong> Where the evidence is a single case report, an animal model or a hypothesis, the text
+    says so rather than rounding it up to a cause. Where a widely repeated claim is weaker than its reputation, such as the
+    mechanism of thalidomide or the mechanical explanation of clubfoot, the text says that too.</p>
+
+    <div class="tick" style="background:var(--dys-green)"></div>
+    <p class="eyebrow" style="color:var(--dys-green-text)">Call for corrections</p>
+    <h2 class="h2">Researchers: tell us where we are wrong.</h2>
+    <p>This page is a living document, and it is written by a patient network rather than by a specialist department of
+    teratology or clinical genetics. If you work in this field and you find a statement that overstates the evidence, a figure
+    that has been superseded, a reference that should be here and is not, or a mechanism described in terms the literature has
+    moved beyond, we want to hear it and we will correct the page and credit the correction. Write to
+    <a href="mailto:info@dysnet.org?subject=Causes%20of%20dysmelia%20-%20correction">info@dysnet.org</a>. Researchers are also
+    welcome to add their team to the <a href="/knowledge/researchers/">researchers register</a> and their work to the
+    <a href="/knowledge/bibliography/">bibliography</a>. Families who spot something that reads as jargon, or a definition that
+    does not help, should tell us as well: that is a correction too.</p>
 """
 
 PAGES["/knowledge/causes-of-dysmelia/"] = {
     "title": "Causes of dysmelia",
-    "desc": "A fully referenced review of what causes congenital limb differences: genes and regulatory DNA, medicines and chemicals, maternal health, vascular disruption, amniotic bands and mechanical forces, and how often a cause is actually found.",
+    "desc": "What causes congenital limb differences: genes and regulatory DNA, medicines and chemicals, maternal health, vascular disruption, amniotic bands and mechanical forces, and how often a cause is actually found.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/causes-of-dysmelia/", "Causes of dysmelia")],
-    "body": _CAUSES_BODY + causes_sources_html() + """
+    "body": glossify(_CAUSES_BODY) + causes_sources_html() + """
   </div>
 </section>
 """,

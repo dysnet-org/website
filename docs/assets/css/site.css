@@ -623,6 +623,31 @@ table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-pu
 ol.sources { font-size: var(--text-small); color: var(--dys-muted); padding-left: 1.4rem; max-width: var(--prose-max); }
 ol.sources li { margin-bottom: 0.45rem; scroll-margin-top: 8rem; }
 ol.sources a { word-break: break-all; }
+/* ── Glossary: plain-language definition on hover, tap or keyboard focus ──── */
+.byline { font-size: var(--text-small); color: var(--dys-muted); margin-top: calc(-1 * var(--space-2)); }
+.gloss-hint { font-size: var(--text-small); color: var(--dys-muted); }
+.gloss { position: relative; display: inline; }
+.gloss-t {
+  font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: help;
+  border-bottom: 1px dashed var(--dys-purple-text); text-align: left;
+}
+.gloss-t:focus-visible { outline: 2px solid var(--dys-purple-text); outline-offset: 2px; }
+.gloss-pop {
+  display: none; position: absolute; left: 0; top: calc(100% + 0.45rem); z-index: 60;
+  width: min(24rem, 78vw); background: #fff; color: var(--dys-ink);
+  border: 1px solid rgba(36, 26, 51, 0.14); border-radius: var(--radius-card);
+  box-shadow: 0 12px 34px rgba(36, 26, 51, 0.18);
+  padding: 0.8rem 0.95rem; font-size: var(--text-small); line-height: 1.5; font-weight: 400;
+  font-style: normal; text-align: left; white-space: normal;
+}
+.gloss:hover > .gloss-pop, .gloss:focus-within > .gloss-pop { display: block; }
+.gloss-pop strong { display: block; margin-bottom: 0.2rem; color: var(--dys-purple-text); }
+.gloss-pop a { display: inline-block; margin-top: 0.45rem; word-break: normal; }
+@media (max-width: 640px) {
+  .gloss-pop { position: fixed; left: 1rem; right: 1rem; top: auto; bottom: 1rem; width: auto; }
+}
+@media print { .gloss-t { border-bottom: 0; } .gloss-pop { display: none !important; } }
+
 sup.ref { line-height: 0; white-space: nowrap; }
 sup.ref a { text-decoration: none; font-weight: 700; color: var(--dys-purple-text); padding: 0 0.05rem; }
 sup.ref a:hover, sup.ref a:focus-visible { text-decoration: underline; }

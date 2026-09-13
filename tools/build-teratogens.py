@@ -154,6 +154,11 @@ add("cas:64-17-5", name="Alcohol (ethanol) in beverages", cas="64-17-5", kind="p
     status={"who": "known"},
     jurisdictions={"EU / EEA": "Legal; no EU-wide pregnancy warning is mandatory on labels (Regulation 1169/2011 exempts alcoholic beverages from ingredient and nutrition labelling).",
                    "France": "Legal; a pregnancy warning message or pictogram is mandatory on every alcoholic beverage (arrêté of 2 October 2006)."})
+add("cas:22967-92-6", name="Methylmercury", cas="22967-92-6", kind="chemical",
+    source={"label": "WHO fact sheet on mercury and health", "code": "who", "note": "WHO states that exposure of the fetus to methylmercury poses danger to the unborn child, and that mercury threatens the development of the child in utero and early in life.", "url": "https://www.who.int/news-room/fact-sheets/detail/mercury-and-health"},
+    status={"who": "known"},
+    jurisdictions={"Worldwide": "The Minamata Convention on Mercury (in force 2017) obliges its parties to phase out mercury mining, products and processes.",
+                   "EU / EEA": "Regulation (EU) 2017/852 restricts mercury use, trade and emissions; limits for mercury in fish are set by Regulation (EU) 2023/915."})
 add("smoking", name="Tobacco smoking in pregnancy", cas="", kind="product",
     source={"label": "DysNet bibliography (peer-reviewed meta-analysis)", "code": "bib", "note": "Maternal smoking is associated with a higher risk of limb reduction defects in the pooled analysis of Hackshaw, Rodeck and Boniface (2011), among the references of the DysNet bibliography.", "url": "/knowledge/research-library/?q=smoking"},
     status={"bib": "suspected"},
@@ -243,7 +248,12 @@ LEVEL_ORDER = {"known": 0, "presumed": 1, "suspected": 2}
 out = []
 for key, e in entries.items():
     levels = [v for v in e["status"].values() if v in LEVEL_ORDER]
-    if "p65" in e["status"]: levels.append("known")
+    if "p65" in e["status"]:
+        # California's wording is "known to the State", a legal status, not a statement about human
+        # evidence. Where the listing came through an authoritative body's review, that review is
+        # usually of animal studies, so the evidence is presumed rather than known.
+        mech = next((x.get("mechanism", "") for x in e["sources"] if x["code"] == "p65"), "")
+        levels.append("presumed" if "authoritative body" in mech.lower() else "known")
     e["level"] = min(levels, key=lambda l: LEVEL_ORDER[l]) if levels else "suspected"
     e["source_codes"] = sorted({s["code"] for s in e["sources"]})
     out.append(e)

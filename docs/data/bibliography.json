@@ -2197,6 +2197,36 @@
    ]
   },
   {
+   "pmid": "38497990",
+   "doi": "10.1001/jamaneurol.2024.0258",
+   "title": "Risk of Major Congenital Malformations and Exposure to Antiseizure Medication Monotherapy",
+   "authors": [
+    "Battino D",
+    "Tomson T",
+    "Bonizzoni E",
+    "et al."
+   ],
+   "journal": "JAMA neurology",
+   "year": "2024",
+   "volume": "81",
+   "pages": "481-489",
+   "pubtypes": [
+    "Observational Study",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "EURAP: major malformations after antiseizure medication monotherapy"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "39220272",
    "doi": "10.5582/irdr.2024.01035",
    "title": "Skeletal computed tomography findings of upper extremities in middle-aged persons with thalidomide embryopathy",
@@ -2887,6 +2917,37 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "37647086",
+   "doi": "10.1002/14651858.CD010224.pub3",
+   "title": "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child",
+   "authors": [
+    "Bromley R",
+    "Adab N",
+    "Bluett-Duncan M",
+    "et al."
+   ],
+   "journal": "The Cochrane database of systematic reviews",
+   "year": "2023",
+   "volume": "8",
+   "pages": "CD010224",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "meta",
+    "review"
+   ],
+   "notes": [
+    "Cochrane: malformation outcomes after antiepileptic monotherapy in pregnancy"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -4056,6 +4117,37 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "35104296",
+   "doi": "10.1371/journal.pmed.1003900",
+   "title": "Risks of specific congenital anomalies in offspring of women with diabetes: A systematic review and meta-analysis of population-based studies including over 80 million births",
+   "authors": [
+    "Zhang TN",
+    "Huang XM",
+    "Zhao XY",
+    "et al."
+   ],
+   "journal": "PLoS medicine",
+   "year": "2022",
+   "volume": "19",
+   "pages": "e1003900",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "meta"
+   ],
+   "notes": [
+    "Maternal diabetes and specific congenital anomalies, over 80 million births"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -5812,6 +5904,32 @@
    ]
   },
   {
+   "pmid": "33043642",
+   "doi": "10.1631/jzus.B2000285",
+   "title": "Apical ectodermal ridge regulates three principal axes of the developing limb",
+   "authors": [
+    "Lin GH",
+    "Zhang L"
+   ],
+   "journal": "Journal of Zhejiang University. Science. B",
+   "year": "2020",
+   "volume": "21",
+   "pages": "757-766",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "Limb development: the apical ectodermal ridge and the three axes"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "32416360",
    "doi": "10.1016/j.envres.2020.109643",
    "title": "Association between maternal exposure to PM(10) and polydactyly and syndactyly: A population-based case-control study in Liaoning province, China",
@@ -7014,6 +7132,35 @@
    ],
    "via": [
     "AISP – Sindrome di Poland (Italy)"
+   ]
+  },
+  {
+   "pmid": "31218730",
+   "doi": "10.1002/pd.5505",
+   "title": "Fetal arthrogryposis multiplex congenita/fetal akinesia deformation sequence (FADS)-Aetiology, diagnosis, and management",
+   "authors": [
+    "Niles KM",
+    "Blaser S",
+    "Shannon P",
+    "et al."
+   ],
+   "journal": "Prenatal diagnosis",
+   "year": "2019",
+   "volume": "39",
+   "pages": "720-731",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "Fetal akinesia deformation sequence: aetiology, diagnosis and management"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -15504,6 +15651,35 @@
    ]
   },
   {
+   "pmid": "16750609",
+   "doi": "10.1016/j.reprotox.2006.03.015",
+   "title": "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis",
+   "authors": [
+    "da Silva Dal Pizzol T",
+    "Knop FP",
+    "Mengue SS"
+   ],
+   "journal": "Reproductive toxicology (Elmsford, N.Y.)",
+   "year": "2006",
+   "volume": "22",
+   "pages": "666-71",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "meta"
+   ],
+   "notes": [
+    "Misoprostol and congenital anomalies: systematic review and meta-analysis"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "16859833",
    "doi": "10.1016/j.neuroscience.2006.06.017",
    "title": "Prenatal exposure to thalidomide, altered vasculogenesis, and CNS malformations",
@@ -16921,6 +17097,36 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "12151147",
+   "doi": "10.1016/s0029-7844(02)02059-8",
+   "title": "Frequency of congenital varicella syndrome in a prospective cohort of 347 pregnant women",
+   "authors": [
+    "Harger JH",
+    "Ernest JM",
+    "Thurnau GR",
+    "et al."
+   ],
+   "journal": "Obstetrics and gynecology",
+   "year": "2002",
+   "volume": "100",
+   "pages": "260-5",
+   "pubtypes": [
+    "Comparative Study",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "Congenital varicella syndrome: frequency in a prospective cohort"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -18956,6 +19162,35 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "9637807",
+   "doi": "10.1056/NEJM199806253382604",
+   "title": "Use of misoprostol during pregnancy and Möbius' syndrome in infants",
+   "authors": [
+    "Pastuszak AL",
+    "Schüler L",
+    "Speck-Martins CE",
+    "et al."
+   ],
+   "journal": "The New England journal of medicine",
+   "year": "1998",
+   "volume": "338",
+   "pages": "1881-5",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "Misoprostol in pregnancy and Möbius sequence"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {

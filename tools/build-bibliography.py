@@ -59,6 +59,24 @@ for doi, (topic, note) in DOIS.items():
     for pmid in esearch_ids(f"{doi}[DOI]")[:1]:
         add(pmid, None, topic, note, via="DysNet")
 
+# Papers cited by the "Causes of dysmelia" review (/knowledge/causes-of-dysmelia/) that none of the
+# standing queries reaches: they answer questions families ask but do not name a limb condition in
+# their title, so the causes query cannot see them. Seeded here so the review's citations resolve
+# against the register. PMID -> (topics, note).
+REVIEW_SEED = {
+    "33043642": (("review",), "Limb development: the apical ectodermal ridge and the three axes"),
+    "38497990": (("causes", "epidemiology"), "EURAP: major malformations after antiseizure medication monotherapy"),
+    "37647086": (("causes", "meta", "review"), "Cochrane: malformation outcomes after antiepileptic monotherapy in pregnancy"),
+    "35104296": (("causes", "meta", "epidemiology"), "Maternal diabetes and specific congenital anomalies, over 80 million births"),
+    "12151147": (("causes", "epidemiology"), "Congenital varicella syndrome: frequency in a prospective cohort"),
+    "9637807": (("causes", "clinical"), "Misoprostol in pregnancy and Möbius sequence"),
+    "16750609": (("causes", "meta"), "Misoprostol and congenital anomalies: systematic review and meta-analysis"),
+    "31218730": (("review", "clinical"), "Fetal akinesia deformation sequence: aetiology, diagnosis and management"),
+}
+for pmid, (topics, note) in REVIEW_SEED.items():
+    for topic in topics:
+        add(pmid, None, topic, note, via="DysNet")
+
 # ─── 3. Member association websites ─────────────────────────────────────────
 # Vocabulary of the conditions described on the site (keyword → ORPHAcode or None for the family).
 VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build-demo.py); None = the dysmelia family in general

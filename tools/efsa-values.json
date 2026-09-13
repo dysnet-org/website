@@ -2,29 +2,111 @@
  "source": "European Food Safety Authority (EFSA), topic pages read 13 September 2026. EFSA does not classify teratogens; it derives health-based guidance values for substances in the food chain. The values below are quoted as EFSA states them.",
  "note": "OpenFoodTox 3.0, EFSA's structured hazard database (7,880 substances, 19,452 reference values, April 2026), is the machine-readable route to the rest. Its host was unreachable on 13 September 2026, so this file carries the values read from EFSA's own pages; tools/enrich-teratogens-efsa.py attaches them and will take the database when it answers again.",
  "values": [
-  {"match_cas": ["22967-92-6"], "label": "Methylmercury",
+  {
+   "match_cas": [
+    "22967-92-6"
+   ],
+   "label": "Methylmercury",
    "value": "Tolerable weekly intake 1.3 µg per kg of body weight, expressed as mercury",
    "note": "EFSA states that its tolerable weekly intake of 1.3 μg/kg body weight for methylmercury remains valid, while noting that an updated assessment may be appropriate.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food", "read": "2026-09-13"},
-  {"match_name": ["Mercury and mercury compounds", "mercury"], "label": "Inorganic mercury",
+   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+   "read": "2026-09-13"
+  },
+  {
+   "match_name": [
+    "Mercury and mercury compounds",
+    "mercury"
+   ],
+   "label": "Inorganic mercury",
    "value": "Tolerable weekly intake 4 µg per kg of body weight, expressed as mercury",
    "note": "Established by EFSA in 2012; in June 2026 EFSA reviewed the United States toxicological profile of 2024 and concluded that the value remains valid.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food", "read": "2026-09-13"},
-  {"match_cas": ["7440-43-9", "10124-36-4"], "match_name": ["Cadmium", "cadmium"], "label": "Cadmium",
+   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+   "read": "2026-09-13"
+  },
+  {
+   "match_cas": [
+    "7440-43-9",
+    "10124-36-4"
+   ],
+   "match_name": [
+    "Cadmium",
+    "cadmium"
+   ],
+   "label": "Cadmium",
    "value": "Tolerable weekly intake 2.5 µg per kg of body weight",
    "note": "Established in 2009; EFSA reassessed it in February 2011 after the Joint FAO/WHO Expert Committee on Food Additives reviewed cadmium, and concluded it is still appropriate.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food", "read": "2026-09-13"},
-  {"match_cas": ["1746-01-6"], "match_name": ["Polychlorinated biphenyls"], "label": "Dioxins and dioxin-like PCBs",
+   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+   "read": "2026-09-13"
+  },
+  {
+   "match_cas": [
+    "1746-01-6"
+   ],
+   "match_name": [
+    "Polychlorinated biphenyls"
+   ],
+   "label": "Dioxins and dioxin-like PCBs",
    "value": "Tolerable weekly intake 0.6 pg per kg of body weight, for the group",
    "note": "Set by EFSA in its 2018 risk assessment for combined exposure to dioxins and dioxin-like polychlorinated biphenyls, using toxic equivalency factors.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/dioxins-and-pcbs", "read": "2026-09-13"},
-  {"match_name": ["Nickel (soluble compounds)"], "label": "Nickel",
+   "url": "https://www.efsa.europa.eu/en/topics/topic/dioxins-and-pcbs",
+   "read": "2026-09-13"
+  },
+  {
+   "match_name": [
+    "Nickel (soluble compounds)"
+   ],
+   "label": "Nickel",
    "value": "Tolerable daily intake 13 µg per kg of body weight",
    "note": "EFSA updated its advice on nickel in food and drinking water in October 2020 and raised the tolerable daily intake from 2.8 to 13 µg/kg of body weight.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food", "read": "2026-09-13"},
-  {"match_cas": ["80-05-7"], "label": "Bisphenol A",
+   "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
+   "read": "2026-09-13"
+  },
+  {
+   "match_cas": [
+    "80-05-7"
+   ],
+   "label": "Bisphenol A",
    "value": "Tolerable daily intake cut in April 2023; banned in food contact materials since December 2024",
    "note": "EFSA re-evaluated bisphenol A in April 2023 and significantly reduced the tolerable daily intake it had set in 2015, which was 4 µg per kg of body weight per day. Taking that assessment into account, the European Commission adopted a ban on bisphenol A in food contact materials on 19 December 2024.",
-   "url": "https://www.efsa.europa.eu/en/topics/topic/bisphenol", "read": "2026-09-13"}
+   "url": "https://www.efsa.europa.eu/en/topics/topic/bisphenol",
+   "read": "2026-09-13"
+  },
+  {
+   "match_cas": [
+    "1763-23-1",
+    "335-67-1"
+   ],
+   "match_name": [
+    "perfluorooctane sulfonic acid",
+    "perfluorononan-1-oic acid"
+   ],
+   "label": "PFOA, PFOS, PFNA and PFHxS",
+   "value": "Group tolerable weekly intake 4.4 ng per kg of body weight",
+   "note": "EFSA set the group value for these four per- and polyfluoroalkyl substances in 2020. The critical effect is the decreased response of the immune system to vaccination; EFSA notes that exposure during pregnancy and breastfeeding is the main contributor to the levels found in infants.",
+   "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+   "read": "2026-09-13"
+  },
+  {
+   "match_cas": [
+    "117-81-7",
+    "84-74-2",
+    "85-68-7"
+   ],
+   "label": "DEHP, DBP, BBP and DINP",
+   "value": "Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents",
+   "note": "EFSA set the group value in December 2019 for the phthalates that share a common mechanism, the reduction of fetal testosterone. The individual values are 0.01 mg/kg of body weight per day for DBP, 0.5 for BBP, 0.05 for DEHP and 0.15 for DINP and DIDP; DIDP sits outside the group because its critical effect is on the liver.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+   "read": "2026-09-13"
+  },
+  {
+   "match_name": [
+    "Di-isodecyl phthalate"
+   ],
+   "label": "DIDP",
+   "value": "Tolerable daily intake 0.15 mg per kg of body weight",
+   "note": "EFSA kept a separate value for di-isodecyl phthalate in December 2019: its critical effect is on the liver, so it sits outside the group value set for the phthalates that reduce fetal testosterone.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+   "read": "2026-09-13"
+  }
  ]
 }

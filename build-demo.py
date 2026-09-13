@@ -1335,25 +1335,14 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 }
 
 # ───────────────── Causes of dysmelia · referenced review ─────────────────
-# References are resolved against the bibliography register (tools/bibliography.json) by DOI,
-# or by "pmid:NNNN" for the few entries PubMed carries without one, so citations can never
-# drift from the register. The handful of papers not yet in the register are listed in
-# CAUSES_EXTRA and marked with a dagger on the page. Numbering follows first appearance:
-# cref() is called while the body f-string is evaluated, left to right.
+# Every reference is an entry of the bibliography register (tools/bibliography.json), resolved by DOI
+# or by "pmid:NNNN" for the few entries PubMed carries without one, so a citation here cannot drift
+# from the register and the build fails if one goes missing. A paper the standing PubMed queries do
+# not reach belongs in REVIEW_SEED in tools/build-bibliography.py, not in a list on this page.
+# Numbering follows first appearance: cref() runs while the body f-string is evaluated, left to right.
 
 BIB_BY_DOI = {(e.get("doi") or "").lower(): e for e in BIB.get("entries", []) if e.get("doi")}
 BIB_BY_PMID = {str(e.get("pmid")): e for e in BIB.get("entries", []) if e.get("pmid")}
-
-CAUSES_EXTRA = {  # verified against PubMed, September 2026; candidates for the register
-    "10.1631/jzus.b2000285": ("Lin GH, Zhang L", "Apical ectodermal ridge regulates three principal axes of the developing limb", "Journal of Zhejiang University. Science B", "2020", "21(10)", "757-766"),
-    "10.1001/jamaneurol.2024.0258": ("Battino D, Tomson T, Bonizzoni E, et al.", "Risk of major congenital malformations and exposure to antiseizure medication monotherapy", "JAMA Neurology", "2024", "81(5)", "481-489"),
-    "10.1002/14651858.cd010224.pub3": ("Bromley R, Adab N, Bluett-Duncan M, et al.", "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child", "Cochrane Database of Systematic Reviews", "2023", "8", "CD010224"),
-    "10.1371/journal.pmed.1003900": ("Zhang TN, Huang XM, Zhao XY, et al.", "Risks of specific congenital anomalies in offspring of women with diabetes: a systematic review and meta-analysis of population-based studies including over 80 million births", "PLoS Medicine", "2022", "19(2)", "e1003900"),
-    "10.1016/s0029-7844(02)02059-8": ("Harger JH, Ernest JM, Thurnau GR, et al.", "Frequency of congenital varicella syndrome in a prospective cohort of 347 pregnant women", "Obstetrics and Gynecology", "2002", "100(2)", "260-265"),
-    "10.1056/nejm199806253382604": ("Pastuszak AL, Schüler L, Speck-Martins CE, et al.", "Use of misoprostol during pregnancy and Möbius’ syndrome in infants", "New England Journal of Medicine", "1998", "338(26)", "1881-1885"),
-    "10.1016/j.reprotox.2006.03.015": ("da Silva Dal Pizzol T, Knop FP, Mengue SS", "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis", "Reproductive Toxicology", "2006", "22(4)", "666-671"),
-    "10.1002/pd.5505": ("Niles KM, Blaser S, Shannon P, Chitayat D", "Fetal arthrogryposis multiplex congenita / fetal akinesia deformation sequence (FADS): aetiology, diagnosis, and management", "Prenatal Diagnosis", "2019", "39(9)", "720-731"),
-}
 
 CAUSES_REF_ORDER = []
 
@@ -1498,16 +1487,13 @@ def glossify(html):
 
 
 def _causes_ref(key):
-    """Resolve a citation key to (authors, title, journal, year, volume, pages, link, in_register)."""
-    k = key.lower()
-    e = BIB_BY_PMID.get(key[5:]) if key.startswith("pmid:") else BIB_BY_DOI.get(k)
-    if e:
-        link = (f'https://doi.org/{e["doi"]}' if e.get("doi") else f'https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/')
-        return (", ".join(e["authors"]), e["title"], e["journal"], str(e["year"]), e.get("volume") or "", e.get("pages") or "", link, True)
-    if k in CAUSES_EXTRA:
-        a, t, j, y, v, p = CAUSES_EXTRA[k]
-        return (a, t, j, y, v, p, f"https://doi.org/{key}", False)
-    raise SystemExit(f"causes-of-dysmelia: citation {key!r} is in neither the bibliography register nor CAUSES_EXTRA")
+    """Resolve a citation key to (authors, title, journal, year, volume, pages, link)."""
+    e = BIB_BY_PMID.get(key[5:]) if key.startswith("pmid:") else BIB_BY_DOI.get(key.lower())
+    if not e:
+        raise SystemExit(f"causes-of-dysmelia: citation {key!r} is not in the bibliography register. Add it to "
+                         "REVIEW_SEED in tools/build-bibliography.py and rebuild the register.")
+    link = (f'https://doi.org/{e["doi"]}' if e.get("doi") else f'https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/')
+    return (", ".join(e["authors"]), e["title"], e["journal"], str(e["year"]), e.get("volume") or "", e.get("pages") or "", link)
 
 
 def cref(*keys):
@@ -1523,17 +1509,12 @@ def cref(*keys):
 def causes_sources_html():
     rows = []
     for i, key in enumerate(CAUSES_REF_ORDER, 1):
-        a, t, j, y, v, p, link, in_reg = _causes_ref(key)
+        a, t, j, y, v, p, link = _causes_ref(key)
         vol = f" {v}" if v else ""
         pag = f":{p}" if p else ""
-        dag = "" if in_reg else " †"
         shown = link.replace("https://doi.org/", "doi:").replace("https://", "")
-        rows.append(f'<li id="ref-{i}">{a.rstrip(".")}. {t.rstrip(".")}. <em>{j}</em>. {y};{vol.strip()}{pag}.{dag} '
+        rows.append(f'<li id="ref-{i}">{a.rstrip(".")}. {t.rstrip(".")}. <em>{j}</em>. {y};{vol.strip()}{pag}. '
                     f'<a href="{link}" target="_blank" rel="noopener external">{shown}</a></li>')
-    missing = [k for k in CAUSES_REF_ORDER if not _causes_ref(k)[7]]
-    if missing:
-        raise SystemExit("causes-of-dysmelia: citations missing from the bibliography register, add them to "
-                         f"REVIEW_SEED in tools/build-bibliography.py and rebuild it: {', '.join(missing)}")
     return f"""
     <h2 class="h4" style="margin-top:var(--space-4)" id="sources">Sources</h2>
     <ol class="sources">{"".join(rows)}</ol>
@@ -1798,9 +1779,9 @@ _CAUSES_BODY = f"""
     <p><strong>Sources.</strong> The starting point was the DysNet <a href="/knowledge/bibliography/">bibliography</a>, the
     register of peer-reviewed publications on our conditions, searched by theme for causes, genetics and epidemiology. Where the
     register had no coverage of a question that families ask (maternal diabetes, varicella, antiseizure medicines, misoprostol,
-    fetal akinesia), the gap was filled from PubMed and the papers marked † for addition at the next build of the register.
-    Every figure quoted is the figure the study itself reports, with its confidence interval where it gives one, checked against
-    the published abstract or article rather than against a secondary source.</p>
+    fetal akinesia), the missing papers were found on PubMed and added to the register itself, so that every reference below is
+    an entry of it. Every figure quoted is the figure the study itself reports, with its confidence interval where it gives one,
+    checked against the published abstract or article rather than against a secondary source.</p>
     <p><strong>Drafting.</strong> The article was researched, drafted and fact-checked with the assistance of Claude Opus 5
     (Anthropic), working directly against the bibliography register and the PubMed record. Every reference was resolved
     programmatically at build time, so that a citation on this page cannot drift from its entry in the register; the build fails
@@ -1991,7 +1972,7 @@ PAGES["/voice/"] = {
         </div></details></li>
       <li><details><summary><span class="demand-n">4</span><span>Research that looks for the causes of dysmelia, not only for how often it happens</span></summary>
         <div class="demand-body">
-          <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its 1,068 references, 439 concern thalidomide, the one cause that was identified, sixty years ago. Another 209 measure how often the conditions occur. Outside thalidomide, 105 titles name a gene, 49 name a medicine taken during pregnancy, and 36 name an environmental exposure.</p>
+          <p>Counting tells us how many children are born with a limb difference. It does not tell us why, and families are asking why. Our own <a href="/knowledge/bibliography/">bibliography</a> shows how unevenly the question has been studied. Of its 1,077 references, 439 concern thalidomide, the one cause that was identified, sixty years ago. Another 212 measure how often the conditions occur. Outside thalidomide, 105 titles name a gene, 49 name a medicine taken during pregnancy, and 36 name an environmental exposure.</p>
           <p>Thirty-six papers, for every environmental hypothesis, across fifty years. Two of them are the Cardiff clustering studies of 1973. The most recent are on air pollution, on heavy metals in maternal blood, on smoking, and on the French clusters of transverse upper-limb agenesis. That is roughly one study a year, worldwide, for the question that comes first in every family’s mind.</p>
           <p>Epidemiology is necessary and we defend it. It is not sufficient. We ask for funded research programmes whose object is causation: exposure histories collected from pregnancy onwards and linked to registry records, standing protocols for investigating clusters rather than committees improvised after each alert, toxicological work on the substances already suspected, and the publication of negative results so that hypotheses can be closed honestly. Progress looks like calls for proposals that name the causes of congenital limb anomalies as their subject, and a causal literature that grows faster than the count of cases.</p>
           <p>What that literature currently supports, and where it stops, is set out in our review <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>: across large birth-defect cohorts a cause is identified in roughly one case in five, and for an isolated difference of a single limb it is usually none. That figure is the demand, in one number.</p>
@@ -2446,7 +2427,7 @@ PAGES["/donate/"] = {
     <div class="grid cols-3" style="margin-top:var(--space-4)">
       <div class="card"><h3 class="h4">Association membership</h3><p>€50 a year gives your association a vote and a voice, and your families the registers. An associate status without fees exists for associations with limited capacity.</p><p class="meta"><a href="/about/members/">How to join</a></p></div>
       <div class="card" style="--acc:var(--dys-green);--acc-text:var(--dys-green-text)"><h3 class="h4">In-kind contributions</h3><p>Design, hosting, translation or research hours: the most valuable gifts for the registers come from partners of member associations.</p><p class="meta"><a href="mailto:info@dysnet.org?subject=In-kind%20contribution">Offer a skill</a></p></div>
-      <div class="card acc-centres"><h3 class="h4">Follow the money</h3><p>Funding is tied to missions, and the accounts are public. See exactly what your support carried.</p><p class="meta"><a href="/about/transparency/">Transparency</a></p></div>
+      <div class="card acc-centres"><h3 class="h4">Give your time</h3><p>A few hours a month move the work forward: helping us raise funds, reading the evidence that feeds the registers, welcoming and supporting member associations, or carrying our position to national and European bodies.</p><p class="meta"><a href="mailto:info@dysnet.org?subject=Volunteering%20with%20DysNet">Volunteer with us</a></p></div>
     </div>
   </div>
 </section>

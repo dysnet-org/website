@@ -47,7 +47,7 @@
    "suspected": 90
   },
   "delisted": 6,
-  "efsa": 14
+  "efsa": 22
  },
  "entries": [
   {
@@ -11034,6 +11034,12 @@
      "listed": "2005-12-02",
      "madl_ug_day": "1200 (oral)",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "DEHP, DBP, BBP and DINP: Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents. EFSA set the group value in December 2019 for the phthalates that share a common mechanism, the reduction of fetal testosterone. The individual values are 0.01 mg/kg of body weight per day for DBP, 0.5 for BBP, 0.05 for DEHP and 0.15 for DINP and DIDP; DIDP sits outside the group because its critical effect is on the liver.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/"
     }
    ],
    "status": {
@@ -11057,6 +11063,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -11064,6 +11071,12 @@
    ],
    "use_evidence": {
     "construction": "It was mostly used as a plasticizer for PVC, but was also a common plasticizer for PVCA and PVB."
+   },
+   "efsa": {
+    "label": "DEHP, DBP, BBP and DINP",
+    "value": "Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+    "read": "2026-09-13"
    }
   },
   {
@@ -11213,6 +11226,12 @@
      "listed": "2003-10-24",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "DEHP, DBP, BBP and DINP: Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents. EFSA set the group value in December 2019 for the phthalates that share a common mechanism, the reduction of fetal testosterone. The individual values are 0.01 mg/kg of body weight per day for DBP, 0.5 for BBP, 0.05 for DEHP and 0.15 for DINP and DIDP; DIDP sits outside the group because its critical effect is on the liver.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/"
     }
    ],
    "status": {
@@ -11236,8 +11255,15 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "DEHP, DBP, BBP and DINP",
+    "value": "Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "bis(2-methoxyethyl) ether",
@@ -12141,6 +12167,12 @@
      "listed": "2007-04-20",
      "madl_ug_day": "2200",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "DIDP: Tolerable daily intake 0.15 mg per kg of body weight. EFSA kept a separate value for di-isodecyl phthalate in December 2019: its critical effect is on the liver, so it sits outside the group value set for the phthalates that reduce fetal testosterone.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/"
     }
    ],
    "status": {
@@ -12155,6 +12187,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Diisodecyl_phthalate",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -12164,6 +12197,12 @@
    "use_evidence": {
     "construction": "Diisodecyl phthalate (DIDP) is a commonly used plasticizer used in the production of plastic and plastic coating to increase flexibility.",
     "goods": "Diisodecyl phthalate (DIDP) is a commonly used plasticizer used in the production of plastic and plastic coating to increase flexibility."
+   },
+   "efsa": {
+    "label": "DIDP",
+    "value": "Tolerable daily intake 0.15 mg per kg of body weight",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+    "read": "2026-09-13"
    }
   },
   {
@@ -12231,6 +12270,12 @@
      "listed": "2005-12-02",
      "madl_ug_day": "8.6999999999999993",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "DEHP, DBP, BBP and DINP: Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents. EFSA set the group value in December 2019 for the phthalates that share a common mechanism, the reduction of fetal testosterone. The individual values are 0.01 mg/kg of body weight per day for DBP, 0.5 for BBP, 0.05 for DEHP and 0.15 for DINP and DIDP; DIDP sits outside the group because its critical effect is on the liver.",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/"
     }
    ],
    "status": {
@@ -12254,8 +12299,15 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
-   ]
+   ],
+   "efsa": {
+    "label": "DEHP, DBP, BBP and DINP",
+    "value": "Group tolerable daily intake 50 µg per kg of body weight, expressed as DEHP equivalents",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7008866/",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "dibutylbis(pentane-2,4-dionato-O,O)tin",
@@ -16495,6 +16547,12 @@
      "applies_from": "2018-03-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R1179",
      "index": "607-718-00-9"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "PFOA, PFOS, PFNA and PFHxS: Group tolerable weekly intake 4.4 ng per kg of body weight. EFSA set the group value for these four per- and polyfluoroalkyl substances in 2020. The critical effect is the decreased response of the immune system to vaccination; EFSA notes that exposure during pregnancy and breastfeeding is the main contributor to the levels found in infants.",
+     "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas"
     }
    ],
    "status": {
@@ -16512,8 +16570,15 @@
    "wiki": "https://en.wikipedia.org/wiki/perfluorononan-1-oic_acid_[1]",
    "level": "presumed",
    "source_codes": [
-    "clp"
-   ]
+    "clp",
+    "efsa"
+   ],
+   "efsa": {
+    "label": "PFOA, PFOS, PFNA and PFHxS",
+    "value": "Group tolerable weekly intake 4.4 ng per kg of body weight",
+    "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+    "read": "2026-09-13"
+   }
   },
   {
    "name": "Perfluorooctane sulfonate (PFOS)",
@@ -16529,6 +16594,12 @@
      "listed": "2017-11-10",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "PFOA, PFOS, PFNA and PFHxS: Group tolerable weekly intake 4.4 ng per kg of body weight. EFSA set the group value for these four per- and polyfluoroalkyl substances in 2020. The critical effect is the decreased response of the immune system to vaccination; EFSA notes that exposure during pregnancy and breastfeeding is the main contributor to the levels found in infants.",
+     "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas"
     }
    ],
    "status": {
@@ -16543,6 +16614,7 @@
    "wiki": "https://en.wikipedia.org/wiki/Perfluorooctanesulfonic_acid",
    "level": "presumed",
    "source_codes": [
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -16550,6 +16622,12 @@
    ],
    "use_evidence": {
     "goods": "PFOS was the key ingredient in Scotchgard, a fabric protector made by 3M, and related stain repellents."
+   },
+   "efsa": {
+    "label": "PFOA, PFOS, PFNA and PFHxS",
+    "value": "Group tolerable weekly intake 4.4 ng per kg of body weight",
+    "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+    "read": "2026-09-13"
    }
   },
   {
@@ -16570,6 +16648,12 @@
      "applies_from": "2010-12-01",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R0790",
      "index": "607-624-00-8"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "PFOA, PFOS, PFNA and PFHxS: Group tolerable weekly intake 4.4 ng per kg of body weight. EFSA set the group value for these four per- and polyfluoroalkyl substances in 2020. The critical effect is the decreased response of the immune system to vaccination; EFSA notes that exposure during pregnancy and breastfeeding is the main contributor to the levels found in infants.",
+     "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas"
     }
    ],
    "status": {
@@ -16587,13 +16671,20 @@
    "wiki": "https://en.wikipedia.org/wiki/Perfluorooctanesulfonic_acid",
    "level": "presumed",
    "source_codes": [
-    "clp"
+    "clp",
+    "efsa"
    ],
    "uses": [
     "goods"
    ],
    "use_evidence": {
     "goods": "PFOS was the key ingredient in Scotchgard, a fabric protector made by 3M, and related stain repellents."
+   },
+   "efsa": {
+    "label": "PFOA, PFOS, PFNA and PFHxS",
+    "value": "Group tolerable weekly intake 4.4 ng per kg of body weight",
+    "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+    "read": "2026-09-13"
    }
   },
   {
@@ -16623,6 +16714,12 @@
      "listed": "2017-11-10",
      "madl_ug_day": "",
      "url": "https://oehha.ca.gov/proposition-65/proposition-65-list"
+    },
+    {
+     "label": "EFSA health-based guidance value",
+     "code": "efsa",
+     "note": "PFOA, PFOS, PFNA and PFHxS: Group tolerable weekly intake 4.4 ng per kg of body weight. EFSA set the group value for these four per- and polyfluoroalkyl substances in 2020. The critical effect is the decreased response of the immune system to vaccination; EFSA notes that exposure during pregnancy and breastfeeding is the main contributor to the levels found in infants.",
+     "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas"
     }
    ],
    "status": {
@@ -16646,6 +16743,7 @@
    "level": "presumed",
    "source_codes": [
     "clp",
+    "efsa",
     "p65"
    ],
    "uses": [
@@ -16655,6 +16753,12 @@
    "use_evidence": {
     "goods": "PFOA is used in several industrial applications, including carpeting, upholstery, apparel, floor wax, textiles, fire fighting foam and sealants.",
     "construction": "PFOA is used in several industrial applications, including carpeting, upholstery, apparel, floor wax, textiles, fire fighting foam and sealants."
+   },
+   "efsa": {
+    "label": "PFOA, PFOS, PFNA and PFHxS",
+    "value": "Group tolerable weekly intake 4.4 ng per kg of body weight",
+    "url": "https://www.efsa.europa.eu/en/topics/per-and-polyfluoroalkyl-substances-pfas",
+    "read": "2026-09-13"
    }
   },
   {

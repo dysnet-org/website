@@ -298,6 +298,39 @@ for i in range(0, len(canada_ids), 50):
         for t in topics: add(pmid, None, t, "PubMed search on Canadian limb difference and child amputee care", via="PubMed search")
         for c in codes: seed[pmid]["codes"].add(c)
 
+# ─── 8. The countries of our member associations: national studies on our conditions ──────────
+# Broad country × condition query, screened on the TITLE only: the condition must be the subject of the
+# paper, not a passing mention. Veterinary work and the given name "Amelia" are filtered out explicitly.
+COUNTRY_TERMS = ('Australia[tiab] OR Austria[tiab] OR Austrian[tiab] OR Belgium[tiab] OR Belgian[tiab] OR Chile[tiab] OR Chilean[tiab] '
+                 'OR France[tiab] OR French[tiab] OR Germany[tiab] OR German[tiab] OR Ireland[tiab] OR Irish[tiab] OR Italy[tiab] OR Italian[tiab] '
+                 'OR Netherlands[tiab] OR Dutch[tiab] OR Norway[tiab] OR Norwegian[tiab] OR Spain[tiab] OR Spanish[tiab] OR Sweden[tiab] OR Swedish[tiab] '
+                 'OR "United Kingdom"[tiab] OR Britain[tiab] OR British[tiab] OR England[tiab] OR Scotland[tiab] OR Wales[tiab]')
+LIMB_TERMS = ('"limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb difference"[tiab] OR "limb differences"[tiab] '
+              'OR "limb defects"[tiab] OR "limb anomalies"[tiab] OR "limb malformations"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] '
+              'OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR "split hand"[tiab] OR "Poland syndrome"[tiab] OR "amniotic band"[tiab] '
+              'OR "congenital hand"[tiab] OR "transverse limb"[tiab] OR "child amputee"[tiab] OR "child amputees"[tiab]')
+COUNTRY_QUERY = f"({COUNTRY_TERMS}) AND ({LIMB_TERMS})"
+VET_RX = re.compile(r"\b(calf|calves|cattle|bovine|buffalo|buffaloes|chicken|chickens|poultry|avian|canine|feline|equine|porcine|piglet|lamb|ovine|foal|puppy)\b", re.I)
+NAME_RX = re.compile(r"Amelia\s*[\(,]|Amelia\s+[A-Z][a-z]+")
+country_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(COUNTRY_QUERY)}&retmode=json&retmax=2000"))["esearchresult"]["idlist"]
+print(f"member-country query: {len(country_ids)} PubMed records")
+for i in range(0, len(country_ids), 50):
+    batch = country_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = " ".join(re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S))).split())
+        if VET_RX.search(title) or NAME_RX.search(title):
+            review.append({"id": pmid, "pmid": pmid, "title": title, "members": ["PubMed search"], "status": "rejected: member-country query, veterinary or a personal name"}); continue
+        r = screen(title, title, strict=True)
+        if not r:
+            review.append({"id": pmid, "pmid": pmid, "title": title, "members": ["PubMed search"], "status": "rejected: member-country query, the conditions are not the subject of the paper"}); continue
+        codes, topics = r
+        for t in topics: add(pmid, None, t, "PubMed search on studies from the countries of our member associations", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
+
 META_RX = re.compile(r"meta-?analys|systematic review|pooled analysis|umbrella review|scoping review", re.I)
 
 # metadata for all PMIDs (batched esummary)
@@ -326,7 +359,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "canada_query": CANADA_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
 (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

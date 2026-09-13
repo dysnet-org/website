@@ -843,6 +843,33 @@ PAGES["/knowledge/registries/"] = {
     {registries_html()}
 
     <div class="tick"></div>
+    <p class="eyebrow">Clinical and patient-led registries</p>
+    <h2 class="h2">Hand surgeons and families already run registries of their own.</h2>
+    <p>Beside the population registries that count births, a second family of registries follows the children themselves. Four of them record congenital upper limb differences, and a fifth is run by a DysNet member association for one condition. They are smaller than EUROCAT, and they hold exactly what a population registry does not: diagnosis by a standard classification, treatment, and outcomes over years.</p>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>Four clinical registries, built to talk to each other <span class="badge live">2026</span></h3>
+        <p>A comparison of the registries for congenital upper limb difference names the Congenital Upper Limb Difference registry in the United States, Congenital Upper Limb Anomalies North in northern Europe, the Australian Hand Difference Register, and the British Society for Surgery of the Hand registry in the United Kingdom. The authors find that these registries collect similar data, which allows effective interoperability while each keeps its own features, and they set out recommendations for the registries that follow.</p>
+        <p class="src">McCombe D, Wall L, Goldfarb C, Hülsemann W. <em>J Hand Surg Eur Vol</em> 2026;51(1):111-118 · <a href="https://doi.org/10.1177/17531934251348360" target="_blank" rel="noopener external">doi:10.1177/17531934251348360</a></p>
+      </article>
+      <article class="entry">
+        <h3>What it takes to keep one alive <span class="badge live">2026</span></h3>
+        <p>Eight hand surgeons, two from each of those four registries, were interviewed about founding and sustaining them. They describe the early experience, the logistical obstacles, the research each registry produced, and whether an international congenital hand registry is feasible. That last question is the one DysNet asks from the families’ side.</p>
+        <p class="src">Mosa A, Romans S, Goldfarb CA, Wall LB. <em>J Hand Surg Am</em> 2026;51(9):883.e1-883.e8 · <a href="https://doi.org/10.1016/j.jhsa.2026.02.017" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2026.02.017</a></p>
+      </article>
+      <article class="entry">
+        <h3>CoULD, and what a registry sees that a survey does not <span class="badge live">United States</span></h3>
+        <p>The multicentre Congenital Upper Limb Differences registry analysed its first four years at the two founding centres, a cohort of 1,381 patients. Compared with a one-year cross-sectional cohort from the American Midwest and with a Swedish birth registry, about a third of the diagnosis categories differed in frequency. The registry picked up more conditions that present late and more that rarely lead to surgery, which is precisely what a registry built on hospital episodes tends to miss.</p>
+        <p class="src">Vuillermin C, Canizares MF, Bauer AS, Miller PE. <em>J Hand Surg Am</em> 2021;46(6):515.e1-515.e11 · <a href="https://doi.org/10.1016/j.jhsa.2020.11.006" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2020.11.006</a></p>
+      </article>
+      <article class="entry">
+        <h3>A register run by a member association <span class="badge live">Poland syndrome</span></h3>
+        <p>PIP UK, our member association for Poland syndrome, runs the Poland Syndrome Community Register, open worldwide to anyone with a diagnosis confirmed by a physician, or to their parents and carers. The association states that it was ten years in the making and follows a model used by the Italian Poland syndrome association. Participants answer a medical survey, a demographic survey and a contact survey once, then a quality-of-life survey every six months. It is the closest thing in our network to what DysNet is building, one condition at a time.</p>
+        <p class="src">PIP UK · <a href="https://www.pip-uk.org/poland-syndrome-community-register" target="_blank" rel="noopener external">pip-uk.org · the community register</a> · read 13 September 2026</p>
+      </article>
+    </div>
+
+    <div class="tick"></div>
     <p class="eyebrow">Outside Europe</p>
     <h2 class="h2">North America is building registries of its own.</h2>
     <p>Orphanet lists the registries that declare themselves to it, which leaves out initiatives that are being designed or that sit outside the rare-disease framing. Three of them concern our conditions directly, and two are led by the amputee community itself.</p>

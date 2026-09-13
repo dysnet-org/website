@@ -1296,7 +1296,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
-    <p>Whatever the diagnosis, a member association near you has walked this road: from Poland-syndrome groups in France and Italy to thalidomide organisations across the world. <a href="/about/members/">Find yours</a>.</p>
+    <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening and EX-Center in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 
     {annex_html()}
   </div>

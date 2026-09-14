@@ -45,10 +45,12 @@ def rebase(html):
     return _ABS_ATTR.sub(lambda m: f'{m.group(1)}="{BASE}{m.group(2)}"', html)
 
 BRAND = "DysNet"
-DESC_DEFAULT = ("DysNet is the global network for people affected by congenital limb "
-                "differences (dysmelia): a curated bibliography, registries and studies, "
-                "a researcher register, a map of specialist care centres worldwide, and an "
-                "international patient-owned registry.")
+# the meta description is cut by search engines at about 155 characters; the schema one is not
+DESC_DEFAULT = ("The global network for people with congenital limb differences: five maintained "
+                "registers, a map of specialist care, and a patient-owned registry.")
+ORG_DESC = ("DysNet is the global network for people affected by congenital limb differences (dysmelia): "
+            "a curated bibliography, registries and studies, a researcher register, a map of specialist "
+            "care centres worldwide, and an international patient-owned registry.")
 
 FAVICON = "/assets/img/favicon-64.png"
 
@@ -60,7 +62,7 @@ ORG_SCHEMA = {
     "alternateName": "EDRIC – European Dysmelia Reference Information Centre",
     "url": SITE,
     "logo": f"{SITE}/assets/img/dysnet-logo-512.png",
-    "description": DESC_DEFAULT,
+    "description": ORG_DESC,
     "foundingDate": "2009-01-07",
     "foundingLocation": "Stockholm, Sweden",
     "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number",
@@ -87,7 +89,8 @@ ORG_SCHEMA = {
     ],
     "sameAs": ["https://www.facebook.com/DysNet",
                "https://www.linkedin.com/company/dysnet/",
-               "https://www.youtube.com/user/DysmeliaNetwork"],
+               "https://www.youtube.com/user/DysmeliaNetwork",
+               "https://www.orpha.net/en/patient-organisations/federations-alliances/646248"],
 }
 
 NAV = [
@@ -548,7 +551,9 @@ BOARD = [
 
 
 def person_card(name, role, bio, init, email, chip):
-    PEOPLE_LD.append({"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "email": email or None})
+    _person = {"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}}
+    if email: _person["email"] = email          # omitted rather than null when a member publishes no address
+    PEOPLE_LD.append(_person)
     return f"""<div class="card person person-flip" tabindex="0">
       <div class="faces">
         <div class="face front">
@@ -670,7 +675,7 @@ __MAP_HERO__
 # ─────────────────────────── KNOWLEDGE HUB ────────────────────────
 PAGES["/knowledge/"] = {
     "title": "Knowledge",
-    "desc": "The DysNet knowledge base: five maintained registers covering the bibliography, registries, researchers, care centres and teratogens, plus studies to join, resources and a guide to dysmelia.",
+    "desc": "Five maintained registers on limb difference: bibliography, registries, researchers, care centres and teratogens, plus studies you can join.",
     "crumbs": [("/knowledge/", "Knowledge")],
     "body": f"""
 <section>
@@ -845,7 +850,7 @@ def registries_html():
 
 PAGES["/knowledge/ongoing-studies/"] = {
     "title": "Studies",
-    "desc": "Limb-difference studies recruiting or in progress around the world: the ERN BOND Patient Journey, the Rare Barometer surveys, prosthesis reimbursement comparisons and more.",
+    "desc": "Limb-difference studies recruiting or under way: the ERN BOND Patient Journey, the Rare Barometer, prosthesis reimbursement, and who to contact.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/ongoing-studies/", "Studies")],
     "body": f"""
 <section>
@@ -897,7 +902,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
 
 PAGES["/knowledge/registries/"] = {
     "title": "Registries",
-    "desc": "Registries recording congenital limb differences: the registries listed on Orphanet for our conditions, the EUROCAT network, the seven French population registries checked against Santé publique France, and what North America and India record.",
+    "desc": "Every registry that records congenital limb differences: those listed on Orphanet, the EUROCAT network and the seven French population registries.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/registries/", "Registries")],
     "body": f"""
 <section>
@@ -998,7 +1003,7 @@ PAGES["/knowledge/registries/"] = {
 
 PAGES["/knowledge/resources/"] = {
     "title": "Resources",
-    "desc": "Resources on dysmelia that are not research papers: Orphanet condition sheets, the Rare Barometer surveys, the European recommendations on rare-disease registries and DysNet conference proceedings.",
+    "desc": "Guides, surveys and reports on dysmelia that are not research papers: Orphanet sheets, the Rare Barometer, European registry recommendations.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/resources/", "Resources")],
     "body": f"""
 <section>
@@ -1097,7 +1102,7 @@ PAGES["/knowledge/researchers/"] = {
 PAGES["/knowledge/care-centres/"] = {
     "og": "/assets/img/inail-lab-tour.jpg",
     "title": "Care centres",
-    "desc": "The DysNet map of reference and competence centres for congenital limb difference, in Europe and beyond: specialist prosthetics centres, expert clinics and ERN BOND network hospitals.",
+    "desc": "Reference centres, prosthetics units and expert clinics for congenital limb difference in Europe and beyond, so a family can find the nearest one.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/care-centres/", "Care centres")],
     "body": f"""
 <section>
@@ -1134,7 +1139,7 @@ PAGES["/knowledge/care-centres/"] = {
 
 PAGES["/knowledge/teratogens/"] = {
     "title": "Teratogens register",
-    "desc": "Substances and products with known, presumed or suspected effects on the unborn child, with the source that lists each one and its regulatory status per jurisdiction.",
+    "desc": "Substances with known, presumed or suspected effects on the unborn child, each with its source, its level of evidence and its status where you live.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/teratogens/", "Teratogens register")],
     "body": f"""
 <section>
@@ -1330,7 +1335,7 @@ def prevalence_html():
 
 PAGES["/knowledge/understanding-dysmelia/"] = {
     "title": "Understanding dysmelia",
-    "desc": "What dysmelia means: a plain-language guide to congenital limb differences and the conditions behind the term, sourced from Orphanet, for families and clinicians.",
+    "desc": "What dysmelia means, in plain language: the conditions behind the term with their ORPHAcodes, for families and clinicians who need a clear start.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/understanding-dysmelia/", "Understanding dysmelia")],
     "body": f"""
 <section>
@@ -1516,7 +1521,7 @@ def incidence_html():
 
 PAGES["/knowledge/epidemiology/"] = {
     "title": "Epidemiology",
-    "desc": "How common limb differences are at birth and how many children that means each year, by country and by condition, from registry rates and World Bank births.",
+    "desc": "How common limb differences are at birth, and how many children a year that means in each country, from registry rates and World Bank births.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/epidemiology/", "Epidemiology")],
     "body": f"""
 <section>
@@ -2068,7 +2073,7 @@ _CAUSES_BODY = f"""
 
 PAGES["/knowledge/causes-of-dysmelia/"] = {
     "title": "Causes of dysmelia",
-    "desc": "What causes congenital limb differences: genes and regulatory DNA, medicines and chemicals, maternal health, vascular disruption, amniotic bands and mechanical forces, and how often a cause is actually found.",
+    "desc": "What causes congenital limb differences: genes, medicines and chemicals, maternal health, vascular disruption and bands, and how often a cause is found.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/causes-of-dysmelia/", "Causes of dysmelia")],
     "body": glossify(_CAUSES_BODY) + causes_sources_html() + """
   </div>
@@ -2100,7 +2105,7 @@ REGISTRY_LD = {
 PAGES["/registry/"] = {
     "jsonld": [REGISTRY_LD],
     "title": "The registry",
-    "desc": "DysNet's flagship: the first international, interoperable registry of limb malformations owned by the patient community itself, developed with member associations and Health Data Safe.",
+    "desc": "The first international registry of limb malformations owned by the patient community itself, built with member associations and Health Data Safe.",
     "crumbs": [("/registry/", "The registry")],
     "body": f"""
 <section>
@@ -2432,7 +2437,7 @@ def build_brief_pdf():
 
 PAGES["/voice/"] = {
     "title": "Where DysNet sits",
-    "desc": "DysNet's chosen seats in European rare-disease and disability bodies: EURORDIS, the European Disability Forum and ERN BOND, each with a named delegate, a written mandate and public reports.",
+    "desc": "DysNet's seats at EURORDIS, the European Disability Forum and ERN BOND: a named delegate, a written mandate and a public report for each.",
     "crumbs": [("/voice/", "Voice")],
     "body": f"""
 <section>
@@ -2537,7 +2542,7 @@ PAGES["/voice/reports/"] = {
 PAGES["/about/"] = {
     "og": "/assets/img/dysnet-banner-2012.jpg",
     "title": "About DysNet",
-    "desc": "DysNet, formerly EDRIC, is the global network for people affected by congenital limb differences, founded by thalidomide family organisations and registered in Sweden in 2009.",
+    "desc": "DysNet, formerly EDRIC: the network for people with congenital limb differences, founded by thalidomide families and registered in Sweden in 2009.",
     "crumbs": [("/about/", "About")],
     "body": f"""
 <section>
@@ -2812,7 +2817,7 @@ def member_li(entry):
 
 PAGES["/about/members/"] = {
     "title": "Member associations",
-    "desc": "DysNet's members are the national associations families actually belong to: more than thirty limb-difference and thalidomide organisations across fourteen countries, on four continents.",
+    "desc": "The national associations families belong to: thirty limb-difference and thalidomide organisations across fourteen countries, on four continents.",
     "crumbs": [("/about/", "About"), ("/about/members/", "Member associations")],
     "body": f"""
 <section>
@@ -2822,7 +2827,8 @@ PAGES["/about/members/"] = {
     <h1 class="display">Member associations: the groups families belong to.</h1>
     <p>DysNet is a federation: our members are national associations of people with limb differences and their families. Find yours below, or bring your association in.</p>
 
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Our members, country by country</h2>
+    <div style="margin-top:var(--space-2)">
       {"".join(f'<div class="country"><h3>{c}</h3><ul>{"".join(member_li(m) for m in sorted(ms, key=lambda m: len(m) < 3))}</ul>{f"<p class=\'country-note\'>{MEMBER_NOTES[c]}</p>" if c in MEMBER_NOTES else ""}</div>' for c, ms in MEMBERS)}
     </div>
 
@@ -2832,7 +2838,7 @@ PAGES["/about/members/"] = {
       <div class="card" style="--acc:var(--dys-green);--acc-text:var(--dys-green-text)"><h3 class="h4">Associate (observer)</h3><p>For associations that want to support one mission, typically the registry, without governance duties, returning to full membership when capacity allows.</p></div>
     </div>
     <p style="margin-top:var(--space-3)"><a class="btn btn-primary" href="mailto:info@dysnet.org?subject=Membership">Write to us about membership</a></p>
-    <p style="font-size:var(--text-small);color:var(--dys-muted)">Member associations are also encouraged to register in <a href="https://www.orpha.net/en/patient-organisations" target="_blank" rel="noopener external">Orphanet’s directory of patient organisations</a>, where families and clinicians across Europe and beyond search for support groups.</p>
+    <p style="font-size:var(--text-small);color:var(--dys-muted)">Member associations are also encouraged to register in <a href="https://www.orpha.net/en/patient-organisations" target="_blank" rel="noopener external">Orphanet’s directory of patient organisations</a>, where families and clinicians across Europe and beyond search for support groups. DysNet is listed there as a federation: <a href="https://www.orpha.net/en/patient-organisations/federations-alliances/646248" target="_blank" rel="noopener external">see our entry</a>.</p>
   </div>
 </section>
 """,
@@ -2849,7 +2855,8 @@ PAGES["/about/transparency/"] = {
     <p class="eyebrow">About · Transparency</p>
     <h1 class="display">Transparency: our documents, in the open.</h1>
     <p>An organisation of volunteers runs on trust. The texts that govern DysNet and the accounts that trace its funds are published here.</p>
-    <div style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">The documents we publish</h2>
+    <div style="margin-top:var(--space-2)">
       <article class="entry"><h3>Statutes of DysNet <span class="badge live">2011</span></h3><p>Adopted by the Extraordinary Meetings of 20 October 2011. Name, objectives, membership, decision-making bodies, board, accounts and audit.</p><p class="src"><a href="/about/statutes/">Read online</a> · PDF · English</p></article>
       <article class="entry"><h3>A Refocused Strategy 2026-2029 <span class="badge live">AGM 2026</span></h3><p>Three missions, one task each, a governance built to carry them, and funding tied to each. Adopted by the AGM of 26 August 2026.</p><p class="src">PDF · English</p></article>
       <article class="entry"><h3>Annual accounts <span class="badge example">to publish</span></h3><p>The previous year’s operating statement, accounts and auditor’s report, as considered by each AGM.</p><p class="src">Published after each AGM</p></article>
@@ -2872,7 +2879,8 @@ PAGES["/contact/"] = {
     <p class="eyebrow">Contact</p>
     <h1 class="display">Contact the dysmelia network: talk to us.</h1>
     <p>One address reaches the whole network: <a href="mailto:info@dysnet.org"><strong>info@dysnet.org</strong></a>.</p>
-    <div class="grid cols-3" style="margin-top:var(--space-4)">
+    <h2 class="h3" style="margin-top:var(--space-4)">Who is writing?</h2>
+    <div class="grid cols-3" style="margin-top:var(--space-2)">
       <div class="card"><h3 class="h4">Families</h3><p>Looking for information or an association near you? Start with <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> and <a href="/about/members/">the member directory</a>.</p></div>
       <div class="card acc-research"><h3 class="h4">Researchers &amp; clinicians</h3><p>Ask to be listed in the <a href="/knowledge/researchers/">researcher register</a> or propose a study for <a href="/knowledge/ongoing-studies/">the studies page</a>.</p></div>
       <div class="card acc-studies"><h3 class="h4">Associations</h3><p>Join as a <a href="/about/members/">full or associate member</a>, or bring your national data into <a href="/registry/">the registry</a>.</p></div>
@@ -2893,7 +2901,7 @@ PAGES["/contact/"] = {
 PAGES["/donate/"] = {
     "og": "/assets/img/inail-lab-2.jpg",
     "title": "Support DysNet",
-    "desc": "Support the dysmelia network: a one-off or monthly gift, association membership or in-kind help carries DysNet's three missions — knowledge, registry and voice.",
+    "desc": "A one-off or monthly gift, membership or help in kind carries the three missions families rely on: knowledge, the registry and our voice.",
     "crumbs": [("/donate/", "Support DysNet")],
     "body": """
 <section>
@@ -2999,7 +3007,7 @@ def statute_html():
 
 PAGES["/about/statutes/"] = {
     "title": "Statutes",
-    "desc": "The statutes of DYSNET (EDRIC), adopted 20 October 2011: objective, membership, general meetings, board, accounts, audit and amendment rules, readable online.",
+    "desc": "The statutes of DYSNET (EDRIC), adopted 20 October 2011: objective, membership, meetings, board, accounts and amendment rules, readable online.",
     "crumbs": [("/about/", "About"), ("/about/statutes/", "Statutes")],
     "body": f"""
 <section>
@@ -3016,7 +3024,7 @@ PAGES["/about/statutes/"] = {
 
 PAGES["/knowledge/guides/patient-owned-registry/"] = {
     "title": "What is a patient-owned registry?",
-    "desc": "A two-minute, plain-language guide: what a patient-owned registry of limb malformations is, who owns the data, and what it changes for families and researchers.",
+    "desc": "A two-minute guide: what a patient-owned registry of limb malformations is, who owns the data, and what it changes for families and researchers.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/guides/patient-owned-registry/", "Guide: patient-owned registry")],
     "body": """
 <section>
@@ -3143,7 +3151,9 @@ def page_dates(path, new_html):
     def git(*args):
         try: return subprocess.run(["git", *args], capture_output=True, text=True, cwd=ROOT.parent, timeout=20).stdout.strip()
         except Exception: return ""
-    strip = lambda t: re.sub(r"\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}", "", t)
+    # the cache-busting query changes on every asset build; a page that only carries a new hash
+    # has not changed, and counting it as changed made all 22 pages claim the same date every day
+    strip = lambda t: re.sub(r"\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}", "", t)
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
@@ -3157,6 +3167,11 @@ EXTRA_LD = {
     "/knowledge/registries/": lambda: [dataset_ld("Registries recording congenital limb differences", "Population and disease registries listed on Orphanet for the site's ORPHAcodes, plus the French population registries per Santé publique France, with coverage and websites.", "/knowledge/registries/", "registries.json", ["registry", "congenital anomalies", "EUROCAT", "Orphanet"], f"{len(ORPHA_REGS.get('registries', []))} registries")],
     "/knowledge/care-centres/": lambda: [dataset_ld("Care centres for congenital limb difference in the DysNet register", "Reference and competence centres, prosthetics and rehabilitation centres and expert clinics, with coordinates, type, specialism and the source that names or verifies each one.", "/knowledge/care-centres/", "care-centres.json", ["care centres", "limb difference", "prosthetics", "reference centres"], f"{len(CARE_CENTRES)} centres")],
     "/knowledge/researchers/": lambda: [dataset_ld("Research teams publishing on congenital limb difference", "Institutions of first and senior authors of the DysNet bibliography, aggregated from PubMed affiliations, with publication counts, years, conditions and coordinates.", "/knowledge/researchers/", "researchers.json", ["researchers", "limb difference", "dysmelia", "PubMed"], f"{len(RESEARCHERS.get('teams', []))} teams")],
+    "/knowledge/epidemiology/": lambda: [dataset_ld(
+        "Live births a year by country, for the DysNet incidence table",
+        "Annual live births for every country, computed from the World Bank's population and crude birth rate series, used with registry prevalence rates to estimate how many children a year are conceived with each limb difference.",
+        "/knowledge/epidemiology/", "births.json", ["births", "incidence", "prevalence", "limb difference", "World Bank"],
+        f"{len(BIRTHS['countries'])} countries")],
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence and regulatory status per jurisdiction.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }

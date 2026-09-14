@@ -112,7 +112,7 @@ SEO_TITLES = {
     "/knowledge/teratogens/": "Teratogens register: substances of concern · DysNet",
     "/knowledge/understanding-dysmelia/": "Understanding dysmelia: conditions and ORPHAcodes · DysNet",
     "/knowledge/causes-of-dysmelia/": "Causes of dysmelia: what the evidence shows · DysNet",
-    "/knowledge/prevalence-of-dysmelia/": "How common is dysmelia? Prevalence by condition · DysNet",
+    "/knowledge/epidemiology/": "Epidemiology of dysmelia: prevalence and incidence · DysNet",
     "/knowledge/guides/patient-owned-registry/": "What is a patient-owned registry? · DysNet",
     "/registry/": "Patient-owned registry of limb malformations · DysNet",
     "/voice/": "Our voice: five demands for people with dysmelia · DysNet",
@@ -128,7 +128,7 @@ SEO_TITLES = {
 PEOPLE_LD = []  # filled by person_card() as the People page is defined
 
 # Referenced, dated long-form pieces: Article schema and published/modified dates, like the /guides/ series.
-ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/", "/knowledge/prevalence-of-dysmelia/"}
+ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/", "/knowledge/epidemiology/"}
 
 
 def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
@@ -239,7 +239,7 @@ FOOTER = f"""</main>
           <li><a href="/knowledge/resources/">Resources</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
           <li><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></li>
-          <li><a href="/knowledge/prevalence-of-dysmelia/">Prevalence</a></li>
+          <li><a href="/knowledge/epidemiology/">Epidemiology</a></li>
         </ul>
       </div>
       <div>
@@ -724,7 +724,7 @@ PAGES["/knowledge/"] = {
 
     <div class="tick"></div>
     <p class="eyebrow">Also in Knowledge</p>
-    <h2 class="h2">Studies to join, and resources to start with.</h2>
+    <h2 class="h2">Studies to join, resources to read, and what the research shows.</h2>
     <div class="grid cols-2" style="margin-top:var(--space-3)">
       <div class="card acc-studies">
         <h3 class="h3"><a href="/knowledge/ongoing-studies/">Studies</a></h3>
@@ -739,8 +739,8 @@ PAGES["/knowledge/"] = {
         <p>What causes a limb to form differently: genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces, and how often a cause is actually found.</p>
       </div>
       <div class="card acc-research">
-        <h3 class="h3"><a href="/knowledge/prevalence-of-dysmelia/">Prevalence</a></h3>
-        <p>How common each condition is at birth, from Orphanet&rsquo;s prevalence classes and from population studies, with every figure checked against its publication.</p>
+        <h3 class="h3"><a href="/knowledge/epidemiology/">Epidemiology</a></h3>
+        <p>How common each condition is at birth, and how many children a year that means in every country: registry rates beside World Bank births, filterable.</p>
       </div>
     </div>
   </div>
@@ -1314,8 +1314,8 @@ def prevalence_html():
     sources = "".join(f'<li id="src-{i}">{t} <a href="{u}" target="_blank" rel="noopener external">{u.replace("https://", "")}</a></li>' for i, (t, u) in enumerate(SOURCES, 1))
     return f"""
     <div class="tick"></div>
-    <p class="eyebrow">Knowledge · Prevalence</p>
-    <h1 class="display">How common is each condition?</h1>
+    <p class="eyebrow">Part 1 · Prevalence at birth</p>
+    <h2 class="h2">How common is each condition?</h2>
     <p>Two columns, two kinds of source. <strong>Orphanet</strong> gives each rare disease a prevalence class and, where available, a mean estimate; it is the reference for named syndromes. <strong>Population studies</strong> fill the gaps for the conditions Orphanet does not count (the amelias, polydactyly, syndactyly, brachydactyly) and cross-check the others. Every figure was checked against its original publication in September 2026.</p>
     <div class="annex-wrap">
       <table class="annex">
@@ -1324,9 +1324,8 @@ def prevalence_html():
       </table>
     </div>
     <p class="annex-note">How to read these figures: they describe <strong>births</strong>, not the number of people living with a condition; ranges are Orphanet's prevalence classes; the named conditions do <strong>not add up</strong> to the total for limb reduction defects, because most limb differences are isolated deficiencies without a syndrome name. Rates also differ between populations and registries. None of this is medical advice.</p>
-    <h2 class="h4" style="margin-top:var(--space-4)">Sources</h2>
+    <h3 class="h4" style="margin-top:var(--space-4)">Sources of the prevalence figures</h3>
     <ol class="sources">{sources}</ol>
-    <p style="margin-top:var(--space-4)">These figures say how often each condition occurs. What is known about why it occurs is set out in <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>, and what each condition is in <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a>.</p>
 """
 
 PAGES["/knowledge/understanding-dysmelia/"] = {
@@ -1396,9 +1395,9 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p>Two pages carry those questions further. Each is sourced and dated, and each says where the evidence stops.</p>
     <div class="grid cols-2" style="margin-top:var(--space-3)">
       <div class="card acc-research">
-        <h3 class="h3"><a href="/knowledge/prevalence-of-dysmelia/">How common is each condition?</a></h3>
+        <h3 class="h3"><a href="/knowledge/epidemiology/">How common is each condition?</a></h3>
         <p>European registries recorded limb reduction defects in about 4.5 of every 10,000 births between 2003 and 2012; Norway recorded 4.4 over 1970 to 2016 and the northern Netherlands 6.9 over 1981 to 2010. The figures differ widely from one condition to the next: amelia appears at 1.41 per 100,000 births across 20 registries, while polydactyly reaches 8.4 and syndactyly 4.7 per 10,000. The page sets out Orphanet&rsquo;s prevalence class and the population studies condition by condition, with the publication each figure was checked against.</p>
-        <p><a href="/knowledge/prevalence-of-dysmelia/">See how common each condition is &rarr;</a></p>
+        <p><a href="/knowledge/epidemiology/">See how common each condition is &rarr;</a></p>
       </div>
       <div class="card acc-research">
         <h3 class="h3"><a href="/knowledge/causes-of-dysmelia/">Why did it happen?</a></h3>
@@ -1411,14 +1410,126 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 """,
 }
 
-PAGES["/knowledge/prevalence-of-dysmelia/"] = {
-    "title": "Prevalence of dysmelia",
-    "desc": "How common each limb difference is at birth: Orphanet prevalence classes and population studies, every figure checked against its publication.",
-    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/prevalence-of-dysmelia/", "Prevalence")],
+# Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
+# so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
+DOT_RATES = [
+    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012"),
+    ("Polydactyly", 84, "northern Netherlands 1981-2010"),
+    ("Syndactyly", 47, "northern Netherlands 1981-2010"),
+    ("Radial ray deficiency, all forms", 18.3, "Finland"),
+    ("Symbrachydactyly (undergrowth)", 12, "Finland"),
+    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe"),
+    ("Amniotic band syndrome", 5.3, "Orphanet, Europe"),
+    ("Ulnar hemimelia", 4.4, "Finland"),
+    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012"),
+    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries"),
+    ("Fibular hemimelia", 1.1, "Orphanet, worldwide"),
+    ("Phocomelia, all forms", 0.74, "Finland"),
+    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe"),
+    ("TAR syndrome", 0.5, "EUROCAT, Europe"),
+    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide"),
+    ("Tibial hemimelia", 0.1, "Europe"),
+    ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
+]
+
+
+# ── Incidence: what a birth prevalence means in children a year, country by country ──
+# Births come from the World Bank (tools/build-births.py); the rates are those of the prevalence
+# table above, per 100,000 births. Multiplying one by the other gives an expectation, not a count:
+# it assumes the rate a European or Finnish registry measured holds in every country, which no one
+# has shown. The registry exists to replace these expectations with consented, counted cases.
+BIRTHS = json.loads((pathlib.Path(__file__).parent / "tools" / "births.json").read_text(encoding="utf-8"))
+WORLD_BIRTHS = sum(c["births"] for c in BIRTHS["countries"])
+
+
+def _rate_txt(rate):  # the unit that reads best: per 10,000 births, or per 100,000 for the rare ones
+    return f"{rate / 10:g} per 10,000 births" if rate >= 10 else f"{rate:g} per 100,000 births"
+
+
+def _cases(births, rate):  # rate per 100,000 births
+    n = births * rate / 100000
+    return f"{n:,.0f}" if n >= 10 else (f"{n:.1f}" if n >= 0.1 else "&lt;0.1")
+
+
+def incidence_html():
+    rates = DOT_RATES
+    rows = "".join(
+        f'<tr data-name="{c["name"].lower()}" data-region="{c["region"]}" data-births="{c["births"]}">'
+        f'<th scope="row">{c["name"]}</th><td>{c["region"]}</td><td class="num">{c["births"]:,}</td>'
+        f'<td class="num cases">{_cases(c["births"], rates[0][1])}</td></tr>'
+        for c in BIRTHS["countries"])
+    options = "".join(f'<option value="{i}">{lab} · {_rate_txt(r)}</option>' for i, (lab, r, _src) in enumerate(rates))
+    regions = "".join(f'<option value="{r}">{r}</option>' for r in sorted({c["region"] for c in BIRTHS["countries"]}))
+    world = {lab: _cases(WORLD_BIRTHS, r) for lab, r, _ in rates}
+    data = json.dumps({"rates": [[lab, r, src] for lab, r, src in rates],
+                       "births": [[c["name"], c["region"], c["births"]] for c in BIRTHS["countries"]]},
+                      ensure_ascii=False, separators=(",", ":"))
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Part 2 · Incidence, year by year</p>
+    <h2 class="h2">How many children are born with it each year?</h2>
+    <p>A prevalence is a rate; families and health services need a number. The world records about
+    {WORLD_BIRTHS / 1e6:.0f} million births a year across the {len(BIRTHS["countries"])} countries the World Bank counts, so the
+    rate of {rates[0][1] / 10:g} per 10,000 births that European registries measure for limb reduction defects works out at roughly
+    <strong>{world[rates[0][0]]} children a year</strong> worldwide. On the same arithmetic, polydactyly reaches about
+    {world["Polydactyly"]} a year and syndactyly {world["Syndactyly"]}, while amelia, the absence of a whole limb, comes to about
+    {world["Amelia, all forms"]}. In a country the size of France, with {next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"):,} births a year,
+    the same rates give {_cases(next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"), rates[0][1])} limb reduction defects
+    and {_cases(next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"), 1.41)} children born with amelia.</p>
+    <p>These are expectations, not counts, and the distinction matters. Every rate in the table above was measured by a registry
+    in Europe, Finland or the northern Netherlands, and applying it to births in Nigeria, India or Brazil assumes the rate is the
+    same there, which no one has shown; where other registries have measured, the figures differ. Read the numbers below as the
+    order of magnitude a health service should plan for, and as the reason a patient-owned registry is worth building: it turns
+    an estimate into a consented, counted child who can be offered care.</p>
+
+    <div class="inc-controls" id="inc-controls">
+      <label for="inc-condition">Condition</label>
+      <select id="inc-condition">{options}</select>
+      <label for="inc-region">Region</label>
+      <select id="inc-region"><option value="">Every region</option>{regions}</select>
+      <label for="inc-q">Country</label>
+      <input type="search" id="inc-q" placeholder="Search a country…" autocomplete="off">
+      <button type="button" id="inc-reset">Reset</button>
+      <p class="inc-count" aria-live="polite"><strong id="inc-n">{len(BIRTHS["countries"])}</strong> countries ·
+        <strong id="inc-total">{world[rates[0][0]]}</strong> children a year expected, for
+        <span id="inc-label">{rates[0][0].lower()} ({_rate_txt(rates[0][1])}, {rates[0][2]})</span></p>
+    </div>
+    <div class="annex-wrap">
+      <table class="annex inc-table" id="inc-table">
+        <thead><tr><th scope="col">Country</th><th scope="col">Region</th><th scope="col">Births a year</th>
+          <th scope="col" id="inc-head">Expected a year: {rates[0][0]}</th></tr></thead>
+        <tbody>{rows}</tbody>
+      </table>
+    </div>
+    <script type="application/json" id="inc-data">{data.replace("</", "<\\/")}</script>
+    <p class="annex-note">Births: {BIRTHS["source"]} Read {BIRTHS["built"]}, covering {min(c["year"] for c in BIRTHS["countries"])}.
+    <a href="{BIRTHS["source_url"]}" target="_blank" rel="noopener external">data.worldbank.org</a> ·
+    <a href="/data/births.json">Download the births data (JSON)</a>. Rates: the prevalence table above, with its sources; each is
+    stated per 10,000 births in the selector. Expected cases = births &times; rate. A country whose expectation falls below one
+    child a year is shown to one decimal: it means the condition is expected there less often than once a year, not never.</p>
+    <p style="margin-top:var(--space-4)">These figures say how often each condition occurs and how many children that means.
+    What is known about why it occurs is set out in <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>, and what each
+    condition is in <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a>.</p>
+"""
+
+
+PAGES["/knowledge/epidemiology/"] = {
+    "title": "Epidemiology",
+    "desc": "How common limb differences are at birth and how many children that means each year, by country and by condition, from registry rates and World Bank births.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/epidemiology/", "Epidemiology")],
     "body": f"""
 <section>
   <div class="container">
+    <div class="tick"></div>
+    <p class="eyebrow">Knowledge · Epidemiology</p>
+    <h1 class="display">How common is dysmelia, and how many children a year?</h1>
+    <p>Two questions, two kinds of answer. <strong>Prevalence</strong> is a rate: how many children in 10,000 births are born
+    with a condition, as measured by the registries that count them. <strong>Incidence</strong> is what that rate becomes when it
+    meets a population: how many children a year a country can expect. The first part below gives the rates, condition by
+    condition, each checked against its publication; the second turns them into numbers for every country, which you can filter.</p>
+
     {prevalence_html()}
+    {incidence_html()}
   </div>
 </section>
 """,
@@ -2531,27 +2642,6 @@ for _country, _orgs in MEMBERS:
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
 MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["A national amputee organisation (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
-# Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
-# so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
-DOT_RATES = [
-    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012"),
-    ("Polydactyly", 84, "northern Netherlands 1981-2010"),
-    ("Syndactyly", 47, "northern Netherlands 1981-2010"),
-    ("Radial ray deficiency, all forms", 18.3, "Finland"),
-    ("Symbrachydactyly (undergrowth)", 12, "Finland"),
-    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe"),
-    ("Amniotic band syndrome", 5.3, "Orphanet, Europe"),
-    ("Ulnar hemimelia", 4.4, "Finland"),
-    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012"),
-    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries"),
-    ("Fibular hemimelia", 1.1, "Orphanet, worldwide"),
-    ("Phocomelia, all forms", 0.74, "Finland"),
-    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe"),
-    ("TAR syndrome", 0.5, "EUROCAT, Europe"),
-    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide"),
-    ("Tibial hemimelia", 0.1, "Europe"),
-    ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
-]
 MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
@@ -3010,6 +3100,7 @@ _POSTS = ["a-week-full-of-opportunities", "artificial-intelligence-and-disabilit
     "stockholm-eurordis-membership-meeting-2023", "thalidomide-60-we-re-still-here",
     "webinar-by-cerebral-palsy-eu-on-advocacy-skills"]
 REDIRECTS = {
+    "/knowledge/prevalence-of-dysmelia": "/knowledge/epidemiology/",
     "/about/people": "/about/#board",
     "/knowledge/research-library": "/knowledge/bibliography/",
         "/people": "/about/#board", "/our-members": "/about/members/", "/members": "/about/members/",
@@ -3068,7 +3159,7 @@ EXTRA_LD = {
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence and regulatory status per jurisdiction.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }
-DATA_FILES = {"teratogens.json": "teratogens.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
+DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
 
 
 def build():

@@ -465,6 +465,48 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   set(false);
 })();
 
+/* ── Epidemiology: expected cases a year, by country and condition ──── */
+(function () {
+  var table = document.getElementById("inc-table"), sel = document.getElementById("inc-condition");
+  if (!table || !sel) return;
+  var dataEl = document.getElementById("inc-data"), DATA = null;
+  try { DATA = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+  var region = document.getElementById("inc-region"), q = document.getElementById("inc-q");
+  var nEl = document.getElementById("inc-n"), totalEl = document.getElementById("inc-total");
+  var labelEl = document.getElementById("inc-label"), headEl = document.getElementById("inc-head");
+  var reset = document.getElementById("inc-reset");
+
+  // same rounding as the build: a country expecting less than one child a year keeps a decimal
+  function cases(births, rate) {
+    var n = births * rate / 100000;
+    return n >= 10 ? Math.round(n).toLocaleString("en") : (n >= 0.1 ? n.toFixed(1) : "<0.1");
+  }
+  function apply() {
+    var r = DATA.rates[sel.value | 0], rate = r[1];
+    var reg = region.value, needle = (q.value || "").trim().toLowerCase();
+    var shown = 0, sum = 0;
+    rows.forEach(function (tr) {
+      var births = +tr.getAttribute("data-births");
+      tr.cells[3].innerHTML = cases(births, rate);
+      var ok = (!reg || tr.getAttribute("data-region") === reg) &&
+               (!needle || tr.getAttribute("data-name").indexOf(needle) !== -1);
+      tr.hidden = !ok;
+      if (ok) { shown++; sum += births * rate / 100000; }
+    });
+    nEl.textContent = shown.toLocaleString("en");
+    totalEl.textContent = sum >= 10 ? Math.round(sum).toLocaleString("en") : sum.toFixed(1);
+    var unit = rate >= 10 ? (rate / 10) + " per 10,000 births" : rate + " per 100,000 births";
+    labelEl.textContent = r[0].toLowerCase() + " (" + unit + ", " + r[2] + ")";
+    headEl.textContent = "Expected a year: " + r[0];
+  }
+  sel.addEventListener("change", apply);
+  region.addEventListener("change", apply);
+  q.addEventListener("input", apply);
+  reset.addEventListener("click", function () { sel.value = "0"; region.value = ""; q.value = ""; apply(); });
+  apply();
+})();
+
 /* ── Bibliography: search + filters ────────────────────────────────── */
 (function () {
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");

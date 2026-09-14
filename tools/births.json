@@ -1,0 +1,2177 @@
+{
+ "built": "2026-09-14",
+ "source": "World Bank open data (CC BY 4.0): population SP.POP.TOTL and crude birth rate SP.DYN.CBRT.IN, most recent year with both.",
+ "source_url": "https://data.worldbank.org/indicator/SP.DYN.CBRT.IN",
+ "countries": [
+  {
+   "name": "India",
+   "iso3": "IND",
+   "iso2": "IN",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 1450935791,
+   "birth_rate": 15.98,
+   "births": 23187405
+  },
+  {
+   "name": "China",
+   "iso3": "CHN",
+   "iso2": "CN",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 1408975000,
+   "birth_rate": 6.77,
+   "births": 9538761
+  },
+  {
+   "name": "Nigeria",
+   "iso3": "NGA",
+   "iso2": "NG",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 232679478,
+   "birth_rate": 32.49,
+   "births": 7560454
+  },
+  {
+   "name": "Pakistan",
+   "iso3": "PAK",
+   "iso2": "PK",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 251269164,
+   "birth_rate": 27.41,
+   "births": 6887790
+  },
+  {
+   "name": "Indonesia",
+   "iso3": "IDN",
+   "iso2": "ID",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 283487931,
+   "birth_rate": 15.76,
+   "births": 4468337
+  },
+  {
+   "name": "Congo, Dem. Rep.",
+   "iso3": "COD",
+   "iso2": "CD",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 109276265,
+   "birth_rate": 40.88,
+   "births": 4467760
+  },
+  {
+   "name": "Ethiopia",
+   "iso3": "ETH",
+   "iso2": "ET",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 132059767,
+   "birth_rate": 31.47,
+   "births": 4155789
+  },
+  {
+   "name": "United States",
+   "iso3": "USA",
+   "iso2": "US",
+   "region": "North America",
+   "year": 2024,
+   "population": 340003797,
+   "birth_rate": 10.6,
+   "births": 3604040
+  },
+  {
+   "name": "Bangladesh",
+   "iso3": "BGD",
+   "iso2": "BD",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 173562364,
+   "birth_rate": 19.99,
+   "births": 3469165
+  },
+  {
+   "name": "Brazil",
+   "iso3": "BRA",
+   "iso2": "BR",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 211998573,
+   "birth_rate": 12.13,
+   "births": 2572179
+  },
+  {
+   "name": "Egypt, Arab Rep.",
+   "iso3": "EGY",
+   "iso2": "EG",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 116538258,
+   "birth_rate": 20.91,
+   "births": 2437398
+  },
+  {
+   "name": "Tanzania",
+   "iso3": "TZA",
+   "iso2": "TZ",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 68560157,
+   "birth_rate": 34.8,
+   "births": 2385962
+  },
+  {
+   "name": "Mexico",
+   "iso3": "MEX",
+   "iso2": "MX",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 130861007,
+   "birth_rate": 15.46,
+   "births": 2023635
+  },
+  {
+   "name": "Philippines",
+   "iso3": "PHL",
+   "iso2": "PH",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 115843670,
+   "birth_rate": 15.89,
+   "births": 1841219
+  },
+  {
+   "name": "Uganda",
+   "iso3": "UGA",
+   "iso2": "UG",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 50015092,
+   "birth_rate": 34.44,
+   "births": 1722320
+  },
+  {
+   "name": "Sudan",
+   "iso3": "SDN",
+   "iso2": "SD",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 50448963,
+   "birth_rate": 33.0,
+   "births": 1664614
+  },
+  {
+   "name": "Kenya",
+   "iso3": "KEN",
+   "iso2": "KE",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 56432944,
+   "birth_rate": 26.97,
+   "births": 1521884
+  },
+  {
+   "name": "Afghanistan",
+   "iso3": "AFG",
+   "iso2": "AF",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 42647492,
+   "birth_rate": 35.01,
+   "births": 1492961
+  },
+  {
+   "name": "Angola",
+   "iso3": "AGO",
+   "iso2": "AO",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 37885849,
+   "birth_rate": 37.16,
+   "births": 1407762
+  },
+  {
+   "name": "Yemen, Rep.",
+   "iso3": "YEM",
+   "iso2": "YE",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 40583164,
+   "birth_rate": 34.36,
+   "births": 1394397
+  },
+  {
+   "name": "Viet Nam",
+   "iso3": "VNM",
+   "iso2": "VN",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 100987686,
+   "birth_rate": 13.42,
+   "births": 1355558
+  },
+  {
+   "name": "Mozambique",
+   "iso3": "MOZ",
+   "iso2": "MZ",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 34631766,
+   "birth_rate": 37.03,
+   "births": 1282345
+  },
+  {
+   "name": "Russian Federation",
+   "iso3": "RUS",
+   "iso2": "RU",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 143669648,
+   "birth_rate": 8.4,
+   "births": 1206825
+  },
+  {
+   "name": "South Africa",
+   "iso3": "ZAF",
+   "iso2": "ZA",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 64007187,
+   "birth_rate": 18.48,
+   "births": 1182853
+  },
+  {
+   "name": "Iraq",
+   "iso3": "IRQ",
+   "iso2": "IQ",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 46042015,
+   "birth_rate": 25.58,
+   "births": 1177755
+  },
+  {
+   "name": "Iran, Islamic Rep.",
+   "iso3": "IRN",
+   "iso2": "IR",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 91567738,
+   "birth_rate": 12.57,
+   "births": 1151098
+  },
+  {
+   "name": "Niger",
+   "iso3": "NER",
+   "iso2": "NE",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 27032412,
+   "birth_rate": 41.42,
+   "births": 1119683
+  },
+  {
+   "name": "Madagascar",
+   "iso3": "MDG",
+   "iso2": "MG",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 31964956,
+   "birth_rate": 31.71,
+   "births": 1013737
+  },
+  {
+   "name": "Cote d'Ivoire",
+   "iso3": "CIV",
+   "iso2": "CI",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 31934230,
+   "birth_rate": 31.56,
+   "births": 1007972
+  },
+  {
+   "name": "Cameroon",
+   "iso3": "CMR",
+   "iso2": "CM",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 29123744,
+   "birth_rate": 33.34,
+   "births": 971102
+  },
+  {
+   "name": "Mali",
+   "iso3": "MLI",
+   "iso2": "ML",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 24478595,
+   "birth_rate": 39.53,
+   "births": 967688
+  },
+  {
+   "name": "Turkiye",
+   "iso3": "TUR",
+   "iso2": "TR",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 85518661,
+   "birth_rate": 11,
+   "births": 940705
+  },
+  {
+   "name": "Uzbekistan",
+   "iso3": "UZB",
+   "iso2": "UZ",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 36361859,
+   "birth_rate": 25.56,
+   "births": 929300
+  },
+  {
+   "name": "Myanmar",
+   "iso3": "MMR",
+   "iso2": "MM",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 54500091,
+   "birth_rate": 16.46,
+   "births": 897289
+  },
+  {
+   "name": "Ghana",
+   "iso3": "GHA",
+   "iso2": "GH",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 34427414,
+   "birth_rate": 25.92,
+   "births": 892359
+  },
+  {
+   "name": "Algeria",
+   "iso3": "DZA",
+   "iso2": "DZ",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 46814308,
+   "birth_rate": 18.84,
+   "births": 881841
+  },
+  {
+   "name": "Chad",
+   "iso3": "TCD",
+   "iso2": "TD",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 20299123,
+   "birth_rate": 43.26,
+   "births": 878221
+  },
+  {
+   "name": "Somalia, Fed. Rep.",
+   "iso3": "SOM",
+   "iso2": "SO",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 19009151,
+   "birth_rate": 42.35,
+   "births": 804962
+  },
+  {
+   "name": "Burkina Faso",
+   "iso3": "BFA",
+   "iso2": "BF",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 23548781,
+   "birth_rate": 31.34,
+   "births": 737925
+  },
+  {
+   "name": "Japan",
+   "iso3": "JPN",
+   "iso2": "JP",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 123975371,
+   "birth_rate": 5.7,
+   "births": 706660
+  },
+  {
+   "name": "Colombia",
+   "iso3": "COL",
+   "iso2": "CO",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 52886363,
+   "birth_rate": 13.25,
+   "births": 700797
+  },
+  {
+   "name": "Zambia",
+   "iso3": "ZMB",
+   "iso2": "ZM",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 21314956,
+   "birth_rate": 32.72,
+   "births": 697511
+  },
+  {
+   "name": "United Kingdom",
+   "iso3": "GBR",
+   "iso2": "GB",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 69281000,
+   "birth_rate": 9.89,
+   "births": 685328
+  },
+  {
+   "name": "Germany",
+   "iso3": "DEU",
+   "iso2": "DE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 83516593,
+   "birth_rate": 8.1,
+   "births": 676484
+  },
+  {
+   "name": "Malawi",
+   "iso3": "MWI",
+   "iso2": "MW",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 21655286,
+   "birth_rate": 31.14,
+   "births": 674411
+  },
+  {
+   "name": "France",
+   "iso3": "FRA",
+   "iso2": "FR",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 68551653,
+   "birth_rate": 9.7,
+   "births": 664951
+  },
+  {
+   "name": "Morocco",
+   "iso3": "MAR",
+   "iso2": "MA",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 38081173,
+   "birth_rate": 16.4,
+   "births": 624607
+  },
+  {
+   "name": "Saudi Arabia",
+   "iso3": "SAU",
+   "iso2": "SA",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 35300280,
+   "birth_rate": 16.5,
+   "births": 582278
+  },
+  {
+   "name": "Thailand",
+   "iso3": "THA",
+   "iso2": "TH",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 71668011,
+   "birth_rate": 8.12,
+   "births": 581658
+  },
+  {
+   "name": "Syrian Arab Republic",
+   "iso3": "SYR",
+   "iso2": "SY",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 24672760,
+   "birth_rate": 23.16,
+   "births": 571470
+  },
+  {
+   "name": "Nepal",
+   "iso3": "NPL",
+   "iso2": "NP",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 29651054,
+   "birth_rate": 18.96,
+   "births": 562243
+  },
+  {
+   "name": "Senegal",
+   "iso3": "SEN",
+   "iso2": "SN",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 18501984,
+   "birth_rate": 29.18,
+   "births": 539962
+  },
+  {
+   "name": "Peru",
+   "iso3": "PER",
+   "iso2": "PE",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 34217848,
+   "birth_rate": 15.75,
+   "births": 538965
+  },
+  {
+   "name": "Argentina",
+   "iso3": "ARG",
+   "iso2": "AR",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 45696159,
+   "birth_rate": 11.09,
+   "births": 506588
+  },
+  {
+   "name": "Zimbabwe",
+   "iso3": "ZWE",
+   "iso2": "ZW",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 16634373,
+   "birth_rate": 29.89,
+   "births": 497218
+  },
+  {
+   "name": "Guinea",
+   "iso3": "GIN",
+   "iso2": "GN",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 14754785,
+   "birth_rate": 33.33,
+   "births": 491703
+  },
+  {
+   "name": "Benin",
+   "iso3": "BEN",
+   "iso2": "BJ",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 14462724,
+   "birth_rate": 33.42,
+   "births": 483330
+  },
+  {
+   "name": "Burundi",
+   "iso3": "BDI",
+   "iso2": "BI",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 14047786,
+   "birth_rate": 33.21,
+   "births": 466541
+  },
+  {
+   "name": "Malaysia",
+   "iso3": "MYS",
+   "iso2": "MY",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 35557673,
+   "birth_rate": 12.36,
+   "births": 439564
+  },
+  {
+   "name": "Venezuela, RB",
+   "iso3": "VEN",
+   "iso2": "VE",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 28405543,
+   "birth_rate": 15.23,
+   "births": 432645
+  },
+  {
+   "name": "Kazakhstan",
+   "iso3": "KAZ",
+   "iso2": "KZ",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 20592571,
+   "birth_rate": 19.52,
+   "births": 401988
+  },
+  {
+   "name": "Rwanda",
+   "iso3": "RWA",
+   "iso2": "RW",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 14256567,
+   "birth_rate": 28.06,
+   "births": 400068
+  },
+  {
+   "name": "Guatemala",
+   "iso3": "GTM",
+   "iso2": "GT",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 18406359,
+   "birth_rate": 20.62,
+   "births": 379521
+  },
+  {
+   "name": "Italy",
+   "iso3": "ITA",
+   "iso2": "IT",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 58952704,
+   "birth_rate": 6.3,
+   "births": 371402
+  },
+  {
+   "name": "Canada",
+   "iso3": "CAN",
+   "iso2": "CA",
+   "region": "North America",
+   "year": 2024,
+   "population": 41262329,
+   "birth_rate": 8.9,
+   "births": 367235
+  },
+  {
+   "name": "Cambodia",
+   "iso3": "KHM",
+   "iso2": "KH",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 17638801,
+   "birth_rate": 20.31,
+   "births": 358226
+  },
+  {
+   "name": "South Sudan",
+   "iso3": "SSD",
+   "iso2": "SS",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 11943408,
+   "birth_rate": 29.22,
+   "births": 349010
+  },
+  {
+   "name": "Korea, Dem. People's Rep.",
+   "iso3": "PRK",
+   "iso2": "KP",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 26498823,
+   "birth_rate": 12.86,
+   "births": 340722
+  },
+  {
+   "name": "Spain",
+   "iso3": "ESP",
+   "iso2": "ES",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 48848840,
+   "birth_rate": 6.5,
+   "births": 317517
+  },
+  {
+   "name": "Australia",
+   "iso3": "AUS",
+   "iso2": "AU",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 27194286,
+   "birth_rate": 10.7,
+   "births": 290979
+  },
+  {
+   "name": "Togo",
+   "iso3": "TGO",
+   "iso2": "TG",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 8406558,
+   "birth_rate": 32.06,
+   "births": 269523
+  },
+  {
+   "name": "Ecuador",
+   "iso3": "ECU",
+   "iso2": "EC",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 18135478,
+   "birth_rate": 14.82,
+   "births": 268768
+  },
+  {
+   "name": "Tajikistan",
+   "iso3": "TJK",
+   "iso2": "TJ",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10590927,
+   "birth_rate": 25.33,
+   "births": 268300
+  },
+  {
+   "name": "Bolivia",
+   "iso3": "BOL",
+   "iso2": "BO",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 12413315,
+   "birth_rate": 21.03,
+   "births": 261002
+  },
+  {
+   "name": "Sierra Leone",
+   "iso3": "SLE",
+   "iso2": "SL",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 8642022,
+   "birth_rate": 30.11,
+   "births": 260194
+  },
+  {
+   "name": "Haiti",
+   "iso3": "HTI",
+   "iso2": "HT",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 11772557,
+   "birth_rate": 21.94,
+   "births": 258337
+  },
+  {
+   "name": "Papua New Guinea",
+   "iso3": "PNG",
+   "iso2": "PG",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 10576502,
+   "birth_rate": 24.29,
+   "births": 256914
+  },
+  {
+   "name": "Poland",
+   "iso3": "POL",
+   "iso2": "PL",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 36559233,
+   "birth_rate": 6.9,
+   "births": 252259
+  },
+  {
+   "name": "Central African Republic",
+   "iso3": "CAF",
+   "iso2": "CF",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 5330690,
+   "birth_rate": 46.19,
+   "births": 246241
+  },
+  {
+   "name": "Korea, Rep.",
+   "iso3": "KOR",
+   "iso2": "KR",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 51751065,
+   "birth_rate": 4.7,
+   "births": 243230
+  },
+  {
+   "name": "Jordan",
+   "iso3": "JOR",
+   "iso2": "JO",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 11552876,
+   "birth_rate": 20.45,
+   "births": 236279
+  },
+  {
+   "name": "Honduras",
+   "iso3": "HND",
+   "iso2": "HN",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 10825703,
+   "birth_rate": 21.65,
+   "births": 234366
+  },
+  {
+   "name": "Sri Lanka",
+   "iso3": "LKA",
+   "iso2": "LK",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 21916000,
+   "birth_rate": 10.1,
+   "births": 221352
+  },
+  {
+   "name": "Ukraine",
+   "iso3": "UKR",
+   "iso2": "UA",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 37860221,
+   "birth_rate": 5.47,
+   "births": 206944
+  },
+  {
+   "name": "Dominican Republic",
+   "iso3": "DOM",
+   "iso2": "DO",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 11427557,
+   "birth_rate": 17.62,
+   "births": 201354
+  },
+  {
+   "name": "Congo, Rep.",
+   "iso3": "COG",
+   "iso2": "CG",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 6332961,
+   "birth_rate": 30.42,
+   "births": 192674
+  },
+  {
+   "name": "Israel",
+   "iso3": "ISR",
+   "iso2": "IL",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 10002200,
+   "birth_rate": 18.6,
+   "births": 186041
+  },
+  {
+   "name": "Mauritania",
+   "iso3": "MRT",
+   "iso2": "MR",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 5169395,
+   "birth_rate": 34.03,
+   "births": 175915
+  },
+  {
+   "name": "Chile",
+   "iso3": "CHL",
+   "iso2": "CL",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 19764771,
+   "birth_rate": 8.72,
+   "births": 172408
+  },
+  {
+   "name": "Liberia",
+   "iso3": "LBR",
+   "iso2": "LR",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 5612817,
+   "birth_rate": 30.58,
+   "births": 171623
+  },
+  {
+   "name": "Netherlands",
+   "iso3": "NLD",
+   "iso2": "NL",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 17993485,
+   "birth_rate": 9.2,
+   "births": 165540
+  },
+  {
+   "name": "Tunisia",
+   "iso3": "TUN",
+   "iso2": "TN",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 12277109,
+   "birth_rate": 13.37,
+   "births": 164145
+  },
+  {
+   "name": "Lao PDR",
+   "iso3": "LAO",
+   "iso2": "LA",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 7769819,
+   "birth_rate": 20.93,
+   "births": 162646
+  },
+  {
+   "name": "Turkmenistan",
+   "iso3": "TKM",
+   "iso2": "TM",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 7494498,
+   "birth_rate": 20.91,
+   "births": 156680
+  },
+  {
+   "name": "Romania",
+   "iso3": "ROU",
+   "iso2": "RO",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 19051804,
+   "birth_rate": 7.5,
+   "births": 142889
+  },
+  {
+   "name": "Kyrgyz Republic",
+   "iso3": "KGZ",
+   "iso2": "KG",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 7221868,
+   "birth_rate": 19.4,
+   "births": 140104
+  },
+  {
+   "name": "West Bank and Gaza",
+   "iso3": "PSE",
+   "iso2": "PS",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 5289152,
+   "birth_rate": 26.46,
+   "births": 139977
+  },
+  {
+   "name": "Paraguay",
+   "iso3": "PRY",
+   "iso2": "PY",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 6929153,
+   "birth_rate": 19.73,
+   "births": 136698
+  },
+  {
+   "name": "Nicaragua",
+   "iso3": "NIC",
+   "iso2": "NI",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 6916140,
+   "birth_rate": 19.14,
+   "births": 132382
+  },
+  {
+   "name": "Libya",
+   "iso3": "LBY",
+   "iso2": "LY",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 7381023,
+   "birth_rate": 16.5,
+   "births": 121750
+  },
+  {
+   "name": "Belgium",
+   "iso3": "BEL",
+   "iso2": "BE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 11858610,
+   "birth_rate": 9.2,
+   "births": 109099
+  },
+  {
+   "name": "United Arab Emirates",
+   "iso3": "ARE",
+   "iso2": "AE",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 10986400,
+   "birth_rate": 9.82,
+   "births": 107875
+  },
+  {
+   "name": "Azerbaijan",
+   "iso3": "AZE",
+   "iso2": "AZ",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10202830,
+   "birth_rate": 10,
+   "births": 102028
+  },
+  {
+   "name": "Eritrea",
+   "iso3": "ERI",
+   "iso2": "ER",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 3535603,
+   "birth_rate": 28.72,
+   "births": 101539
+  },
+  {
+   "name": "El Salvador",
+   "iso3": "SLV",
+   "iso2": "SV",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 6338193,
+   "birth_rate": 15.6,
+   "births": 98857
+  },
+  {
+   "name": "Sweden",
+   "iso3": "SWE",
+   "iso2": "SE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10569709,
+   "birth_rate": 9.3,
+   "births": 98298
+  },
+  {
+   "name": "Cuba",
+   "iso3": "CUB",
+   "iso2": "CU",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 10979783,
+   "birth_rate": 8.62,
+   "births": 94646
+  },
+  {
+   "name": "Lebanon",
+   "iso3": "LBN",
+   "iso2": "LB",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 5805962,
+   "birth_rate": 15.96,
+   "births": 92652
+  },
+  {
+   "name": "Oman",
+   "iso3": "OMN",
+   "iso2": "OM",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 5281538,
+   "birth_rate": 16.78,
+   "births": 88614
+  },
+  {
+   "name": "Portugal",
+   "iso3": "PRT",
+   "iso2": "PT",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10694681,
+   "birth_rate": 7.9,
+   "births": 84488
+  },
+  {
+   "name": "Czechia",
+   "iso3": "CZE",
+   "iso2": "CZ",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10905028,
+   "birth_rate": 7.7,
+   "births": 83969
+  },
+  {
+   "name": "Gambia, The",
+   "iso3": "GMB",
+   "iso2": "GM",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 2759988,
+   "birth_rate": 29.86,
+   "births": 82405
+  },
+  {
+   "name": "Namibia",
+   "iso3": "NAM",
+   "iso2": "NA",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 3030131,
+   "birth_rate": 25.89,
+   "births": 78453
+  },
+  {
+   "name": "Hungary",
+   "iso3": "HUN",
+   "iso2": "HU",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 9562065,
+   "birth_rate": 8.2,
+   "births": 78409
+  },
+  {
+   "name": "Switzerland",
+   "iso3": "CHE",
+   "iso2": "CH",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 9005582,
+   "birth_rate": 8.7,
+   "births": 78349
+  },
+  {
+   "name": "Austria",
+   "iso3": "AUT",
+   "iso2": "AT",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 9177982,
+   "birth_rate": 8.4,
+   "births": 77095
+  },
+  {
+   "name": "Panama",
+   "iso3": "PAN",
+   "iso2": "PA",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 4515577,
+   "birth_rate": 15.87,
+   "births": 71649
+  },
+  {
+   "name": "Gabon",
+   "iso3": "GAB",
+   "iso2": "GA",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 2538952,
+   "birth_rate": 27.13,
+   "births": 68874
+  },
+  {
+   "name": "Greece",
+   "iso3": "GRC",
+   "iso2": "GR",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 10405134,
+   "birth_rate": 6.6,
+   "births": 68674
+  },
+  {
+   "name": "Guinea-Bissau",
+   "iso3": "GNB",
+   "iso2": "GW",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 2201352,
+   "birth_rate": 29.56,
+   "births": 65072
+  },
+  {
+   "name": "Belarus",
+   "iso3": "BLR",
+   "iso2": "BY",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 9132629,
+   "birth_rate": 7.03,
+   "births": 64212
+  },
+  {
+   "name": "Botswana",
+   "iso3": "BWA",
+   "iso2": "BW",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 2521139,
+   "birth_rate": 24.36,
+   "births": 61417
+  },
+  {
+   "name": "Serbia",
+   "iso3": "SRB",
+   "iso2": "RS",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 6586476,
+   "birth_rate": 9.2,
+   "births": 60596
+  },
+  {
+   "name": "Mongolia",
+   "iso3": "MNG",
+   "iso2": "MN",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 3524788,
+   "birth_rate": 16.9,
+   "births": 59569
+  },
+  {
+   "name": "New Zealand",
+   "iso3": "NZL",
+   "iso2": "NZ",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 5290000,
+   "birth_rate": 11.03,
+   "births": 58349
+  },
+  {
+   "name": "Denmark",
+   "iso3": "DNK",
+   "iso2": "DK",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 5976992,
+   "birth_rate": 9.5,
+   "births": 56781
+  },
+  {
+   "name": "Equatorial Guinea",
+   "iso3": "GNQ",
+   "iso2": "GQ",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 1892516,
+   "birth_rate": 29.99,
+   "births": 56764
+  },
+  {
+   "name": "Lesotho",
+   "iso3": "LSO",
+   "iso2": "LS",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 2337423,
+   "birth_rate": 23.76,
+   "births": 55542
+  },
+  {
+   "name": "Norway",
+   "iso3": "NOR",
+   "iso2": "NO",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 5572279,
+   "birth_rate": 9.7,
+   "births": 54051
+  },
+  {
+   "name": "Ireland",
+   "iso3": "IRL",
+   "iso2": "IE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 5395790,
+   "birth_rate": 10,
+   "births": 53958
+  },
+  {
+   "name": "Bulgaria",
+   "iso3": "BGR",
+   "iso2": "BG",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 6441421,
+   "birth_rate": 8.3,
+   "births": 53464
+  },
+  {
+   "name": "Costa Rica",
+   "iso3": "CRI",
+   "iso2": "CR",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 5129910,
+   "birth_rate": 9.99,
+   "births": 51253
+  },
+  {
+   "name": "Kuwait",
+   "iso3": "KWT",
+   "iso2": "KW",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 4897263,
+   "birth_rate": 10.02,
+   "births": 49071
+  },
+  {
+   "name": "Slovak Republic",
+   "iso3": "SVK",
+   "iso2": "SK",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 5422069,
+   "birth_rate": 8.5,
+   "births": 46088
+  },
+  {
+   "name": "Singapore",
+   "iso3": "SGP",
+   "iso2": "SG",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 6036860,
+   "birth_rate": 7.4,
+   "births": 44673
+  },
+  {
+   "name": "Finland",
+   "iso3": "FIN",
+   "iso2": "FI",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 5619911,
+   "birth_rate": 7.8,
+   "births": 43835
+  },
+  {
+   "name": "Georgia",
+   "iso3": "GEO",
+   "iso2": "GE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 3812518,
+   "birth_rate": 11.29,
+   "births": 43040
+  },
+  {
+   "name": "Hong Kong SAR, China",
+   "iso3": "HKG",
+   "iso2": "HK",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 7524100,
+   "birth_rate": 4.9,
+   "births": 36868
+  },
+  {
+   "name": "Armenia",
+   "iso3": "ARM",
+   "iso2": "AM",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 3033500,
+   "birth_rate": 11.1,
+   "births": 33672
+  },
+  {
+   "name": "Uruguay",
+   "iso3": "URY",
+   "iso2": "UY",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 3386588,
+   "birth_rate": 9.8,
+   "births": 33195
+  },
+  {
+   "name": "Jamaica",
+   "iso3": "JAM",
+   "iso2": "JM",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 2839175,
+   "birth_rate": 11.45,
+   "births": 32509
+  },
+  {
+   "name": "Croatia",
+   "iso3": "HRV",
+   "iso2": "HR",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 3866200,
+   "birth_rate": 8.3,
+   "births": 32089
+  },
+  {
+   "name": "Timor-Leste",
+   "iso3": "TLS",
+   "iso2": "TL",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 1400638,
+   "birth_rate": 21.77,
+   "births": 30489
+  },
+  {
+   "name": "Eswatini",
+   "iso3": "SWZ",
+   "iso2": "SZ",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 1242822,
+   "birth_rate": 23.65,
+   "births": 29390
+  },
+  {
+   "name": "Qatar",
+   "iso3": "QAT",
+   "iso2": "QA",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 2857822,
+   "birth_rate": 9.52,
+   "births": 27218
+  },
+  {
+   "name": "Moldova",
+   "iso3": "MDA",
+   "iso2": "MD",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 2402306,
+   "birth_rate": 10.59,
+   "births": 25440
+  },
+  {
+   "name": "Comoros",
+   "iso3": "COM",
+   "iso2": "KM",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 866628,
+   "birth_rate": 28.23,
+   "births": 24467
+  },
+  {
+   "name": "Djibouti",
+   "iso3": "DJI",
+   "iso2": "DJ",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 1168722,
+   "birth_rate": 20.93,
+   "births": 24463
+  },
+  {
+   "name": "Bosnia and Herzegovina",
+   "iso3": "BIH",
+   "iso2": "BA",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 3164253,
+   "birth_rate": 7.72,
+   "births": 24428
+  },
+  {
+   "name": "Albania",
+   "iso3": "ALB",
+   "iso2": "AL",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 2377128,
+   "birth_rate": 10.13,
+   "births": 24083
+  },
+  {
+   "name": "Solomon Islands",
+   "iso3": "SLB",
+   "iso2": "SB",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 819198,
+   "birth_rate": 26.71,
+   "births": 21878
+  },
+  {
+   "name": "Bahrain",
+   "iso3": "BHR",
+   "iso2": "BH",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 1588670,
+   "birth_rate": 12.03,
+   "births": 19116
+  },
+  {
+   "name": "Lithuania",
+   "iso3": "LTU",
+   "iso2": "LT",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 2888278,
+   "birth_rate": 6.6,
+   "births": 19063
+  },
+  {
+   "name": "Kosovo",
+   "iso3": "XKX",
+   "iso2": "XK",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 1594353,
+   "birth_rate": 11.85,
+   "births": 18896
+  },
+  {
+   "name": "Puerto Rico (US)",
+   "iso3": "PRI",
+   "iso2": "PR",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 3202521,
+   "birth_rate": 5.7,
+   "births": 18254
+  },
+  {
+   "name": "Slovenia",
+   "iso3": "SVN",
+   "iso2": "SI",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 2127400,
+   "birth_rate": 7.9,
+   "births": 16806
+  },
+  {
+   "name": "Fiji",
+   "iso3": "FJI",
+   "iso2": "FJ",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 928784,
+   "birth_rate": 17.86,
+   "births": 16592
+  },
+  {
+   "name": "Guyana",
+   "iso3": "GUY",
+   "iso2": "GY",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 831087,
+   "birth_rate": 19.88,
+   "births": 16525
+  },
+  {
+   "name": "North Macedonia",
+   "iso3": "MKD",
+   "iso2": "MK",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 1824359,
+   "birth_rate": 8.8,
+   "births": 16054
+  },
+  {
+   "name": "Trinidad and Tobago",
+   "iso3": "TTO",
+   "iso2": "TT",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 1368333,
+   "birth_rate": 10.54,
+   "births": 14426
+  },
+  {
+   "name": "Cyprus",
+   "iso3": "CYP",
+   "iso2": "CY",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 1358282,
+   "birth_rate": 10.52,
+   "births": 14285
+  },
+  {
+   "name": "Latvia",
+   "iso3": "LVA",
+   "iso2": "LV",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 1866124,
+   "birth_rate": 6.9,
+   "births": 12876
+  },
+  {
+   "name": "Mauritius",
+   "iso3": "MUS",
+   "iso2": "MU",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 1245779,
+   "birth_rate": 10.3,
+   "births": 12832
+  },
+  {
+   "name": "Suriname",
+   "iso3": "SUR",
+   "iso2": "SR",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 634431,
+   "birth_rate": 17.15,
+   "births": 10882
+  },
+  {
+   "name": "Bhutan",
+   "iso3": "BTN",
+   "iso2": "BT",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 791524,
+   "birth_rate": 12.53,
+   "births": 9914
+  },
+  {
+   "name": "Estonia",
+   "iso3": "EST",
+   "iso2": "EE",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 1372341,
+   "birth_rate": 7.1,
+   "births": 9744
+  },
+  {
+   "name": "Vanuatu",
+   "iso3": "VUT",
+   "iso2": "VU",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 327777,
+   "birth_rate": 27.65,
+   "births": 9063
+  },
+  {
+   "name": "Belize",
+   "iso3": "BLZ",
+   "iso2": "BZ",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 417072,
+   "birth_rate": 18.05,
+   "births": 7529
+  },
+  {
+   "name": "Montenegro",
+   "iso3": "MNE",
+   "iso2": "ME",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 623525,
+   "birth_rate": 11.2,
+   "births": 6983
+  },
+  {
+   "name": "Sao Tome and Principe",
+   "iso3": "STP",
+   "iso2": "ST",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 235536,
+   "birth_rate": 28.09,
+   "births": 6617
+  },
+  {
+   "name": "Luxembourg",
+   "iso3": "LUX",
+   "iso2": "LU",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 677012,
+   "birth_rate": 9.5,
+   "births": 6432
+  },
+  {
+   "name": "Cabo Verde",
+   "iso3": "CPV",
+   "iso2": "CV",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 524877,
+   "birth_rate": 12.22,
+   "births": 6415
+  },
+  {
+   "name": "Brunei Darussalam",
+   "iso3": "BRN",
+   "iso2": "BN",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 462721,
+   "birth_rate": 13.33,
+   "births": 6167
+  },
+  {
+   "name": "Maldives",
+   "iso3": "MDV",
+   "iso2": "MV",
+   "region": "South Asia",
+   "year": 2024,
+   "population": 527799,
+   "birth_rate": 10.59,
+   "births": 5588
+  },
+  {
+   "name": "Samoa",
+   "iso3": "WSM",
+   "iso2": "WS",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 218019,
+   "birth_rate": 24.97,
+   "births": 5444
+  },
+  {
+   "name": "Malta",
+   "iso3": "MLT",
+   "iso2": "MT",
+   "region": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "population": 568847,
+   "birth_rate": 7.7,
+   "births": 4380
+  },
+  {
+   "name": "Bahamas, The",
+   "iso3": "BHS",
+   "iso2": "BS",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 401283,
+   "birth_rate": 10.82,
+   "births": 4341
+  },
+  {
+   "name": "Iceland",
+   "iso3": "ISL",
+   "iso2": "IS",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 386506,
+   "birth_rate": 11.2,
+   "births": 4329
+  },
+  {
+   "name": "New Caledonia",
+   "iso3": "NCL",
+   "iso2": "NC",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 292639,
+   "birth_rate": 14.03,
+   "births": 4106
+  },
+  {
+   "name": "Macao SAR, China",
+   "iso3": "MAC",
+   "iso2": "MO",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 687000,
+   "birth_rate": 5.3,
+   "births": 3641
+  },
+  {
+   "name": "Kiribati",
+   "iso3": "KIR",
+   "iso2": "KI",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 134518,
+   "birth_rate": 25.31,
+   "births": 3405
+  },
+  {
+   "name": "Barbados",
+   "iso3": "BRB",
+   "iso2": "BB",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 282467,
+   "birth_rate": 11.12,
+   "births": 3140
+  },
+  {
+   "name": "French Polynesia",
+   "iso3": "PYF",
+   "iso2": "PF",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 281807,
+   "birth_rate": 10.69,
+   "births": 3012
+  },
+  {
+   "name": "Guam",
+   "iso3": "GUM",
+   "iso2": "GU",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 167777,
+   "birth_rate": 17.34,
+   "births": 2910
+  },
+  {
+   "name": "Micronesia, Fed. Sts.",
+   "iso3": "FSM",
+   "iso2": "FM",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 113160,
+   "birth_rate": 22.32,
+   "births": 2526
+  },
+  {
+   "name": "Tonga",
+   "iso3": "TON",
+   "iso2": "TO",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 104175,
+   "birth_rate": 23.04,
+   "births": 2400
+  },
+  {
+   "name": "St. Lucia",
+   "iso3": "LCA",
+   "iso2": "LC",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 179744,
+   "birth_rate": 11.21,
+   "births": 2015
+  },
+  {
+   "name": "Channel Islands",
+   "iso3": "CHI",
+   "iso2": "JG",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 168126,
+   "birth_rate": 8.2,
+   "births": 1379
+  },
+  {
+   "name": "Grenada",
+   "iso3": "GRD",
+   "iso2": "GD",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 117207,
+   "birth_rate": 11.48,
+   "births": 1345
+  },
+  {
+   "name": "Seychelles",
+   "iso3": "SYC",
+   "iso2": "SC",
+   "region": "Sub-Saharan Africa ",
+   "year": 2024,
+   "population": 121354,
+   "birth_rate": 11,
+   "births": 1335
+  },
+  {
+   "name": "St. Vincent and the Grenadines",
+   "iso3": "VCT",
+   "iso2": "VC",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 100616,
+   "birth_rate": 11.96,
+   "births": 1203
+  },
+  {
+   "name": "Virgin Islands (U.S.)",
+   "iso3": "VIR",
+   "iso2": "VI",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 104377,
+   "birth_rate": 11.1,
+   "births": 1159
+  },
+  {
+   "name": "Curacao",
+   "iso3": "CUW",
+   "iso2": "CW",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 155967,
+   "birth_rate": 7.2,
+   "births": 1123
+  },
+  {
+   "name": "Antigua and Barbuda",
+   "iso3": "ATG",
+   "iso2": "AG",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 93772,
+   "birth_rate": 11.75,
+   "births": 1102
+  },
+  {
+   "name": "Cayman Islands",
+   "iso3": "CYM",
+   "iso2": "KY",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 74457,
+   "birth_rate": 11.56,
+   "births": 861
+  },
+  {
+   "name": "Aruba",
+   "iso3": "ABW",
+   "iso2": "AW",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 107995,
+   "birth_rate": 7.59,
+   "births": 820
+  },
+  {
+   "name": "Marshall Islands",
+   "iso3": "MHL",
+   "iso2": "MH",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 37548,
+   "birth_rate": 20.09,
+   "births": 754
+  },
+  {
+   "name": "Dominica",
+   "iso3": "DMA",
+   "iso2": "DM",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 66205,
+   "birth_rate": 10.98,
+   "births": 727
+  },
+  {
+   "name": "American Samoa",
+   "iso3": "ASM",
+   "iso2": "AS",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 46765,
+   "birth_rate": 14.99,
+   "births": 701
+  },
+  {
+   "name": "Isle of Man",
+   "iso3": "IMN",
+   "iso2": "IM",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 84160,
+   "birth_rate": 8.28,
+   "births": 697
+  },
+  {
+   "name": "Greenland",
+   "iso3": "GRL",
+   "iso2": "GL",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 56836,
+   "birth_rate": 12,
+   "births": 682
+  },
+  {
+   "name": "Faroe Islands",
+   "iso3": "FRO",
+   "iso2": "FO",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 54640,
+   "birth_rate": 10.8,
+   "births": 590
+  },
+  {
+   "name": "Andorra",
+   "iso3": "AND",
+   "iso2": "AD",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 81938,
+   "birth_rate": 6.85,
+   "births": 561
+  },
+  {
+   "name": "St. Kitts and Nevis",
+   "iso3": "KNA",
+   "iso2": "KN",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 46843,
+   "birth_rate": 11.74,
+   "births": 550
+  },
+  {
+   "name": "Northern Mariana Islands",
+   "iso3": "MNP",
+   "iso2": "MP",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 44278,
+   "birth_rate": 12.11,
+   "births": 536
+  },
+  {
+   "name": "Bermuda",
+   "iso3": "BMU",
+   "iso2": "BM",
+   "region": "North America",
+   "year": 2024,
+   "population": 64636,
+   "birth_rate": 7.92,
+   "births": 512
+  },
+  {
+   "name": "Turks and Caicos Islands",
+   "iso3": "TCA",
+   "iso2": "TC",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 46535,
+   "birth_rate": 10.54,
+   "births": 490
+  },
+  {
+   "name": "Gibraltar",
+   "iso3": "GIB",
+   "iso2": "GI",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 39329,
+   "birth_rate": 12.21,
+   "births": 480
+  },
+  {
+   "name": "Sint Maarten (Dutch part)",
+   "iso3": "SXM",
+   "iso2": "SX",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 43350,
+   "birth_rate": 9.09,
+   "births": 394
+  },
+  {
+   "name": "St. Martin (French part)",
+   "iso3": "MAF",
+   "iso2": "MF",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 26129,
+   "birth_rate": 15.04,
+   "births": 393
+  },
+  {
+   "name": "Monaco",
+   "iso3": "MCO",
+   "iso2": "MC",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 38631,
+   "birth_rate": 9.56,
+   "births": 369
+  },
+  {
+   "name": "Liechtenstein",
+   "iso3": "LIE",
+   "iso2": "LI",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 40450,
+   "birth_rate": 8.4,
+   "births": 340
+  },
+  {
+   "name": "British Virgin Islands",
+   "iso3": "VGB",
+   "iso2": "VG",
+   "region": "Latin America & Caribbean ",
+   "year": 2024,
+   "population": 39471,
+   "birth_rate": 8.22,
+   "births": 324
+  },
+  {
+   "name": "Naoero",
+   "iso3": "NRU",
+   "iso2": "NR",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 11947,
+   "birth_rate": 24.56,
+   "births": 293
+  },
+  {
+   "name": "Tuvalu",
+   "iso3": "TUV",
+   "iso2": "TV",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 9646,
+   "birth_rate": 21.97,
+   "births": 212
+  },
+  {
+   "name": "Palau",
+   "iso3": "PLW",
+   "iso2": "PW",
+   "region": "East Asia & Pacific",
+   "year": 2024,
+   "population": 17695,
+   "birth_rate": 10.69,
+   "births": 189
+  },
+  {
+   "name": "San Marino",
+   "iso3": "SMR",
+   "iso2": "SM",
+   "region": "Europe & Central Asia",
+   "year": 2024,
+   "population": 33977,
+   "birth_rate": 4.2,
+   "births": 143
+  }
+ ]
+}

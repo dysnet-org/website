@@ -1366,8 +1366,20 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening and EX-Center in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 
-    {opener("03", "How often", "How common is each condition?")}
-    <p>The figures come from two kinds of source: Orphanet&rsquo;s prevalence classes for the named syndromes, and population studies for the conditions Orphanet does not count. Where a figure exists, it sits on its own page with the publication it was checked against: <a href="/knowledge/prevalence-of-dysmelia/">how common is each condition?</a></p>
+    {opener("03", "Going further", "How common is it, and why did it happen?")}
+    <p>Two pages carry those questions further. Each is sourced and dated, and each says where the evidence stops.</p>
+    <div class="grid cols-2" style="margin-top:var(--space-3)">
+      <div class="card acc-research">
+        <h3 class="h3"><a href="/knowledge/prevalence-of-dysmelia/">How common is each condition?</a></h3>
+        <p>European registries recorded limb reduction defects in about 4.5 of every 10,000 births between 2003 and 2012; Norway recorded 4.4 over 1970 to 2016 and the northern Netherlands 6.9 over 1981 to 2010. The figures differ widely from one condition to the next: amelia appears at 1.41 per 100,000 births across 20 registries, while polydactyly reaches 8.4 and syndactyly 4.7 per 10,000. The page sets out Orphanet&rsquo;s prevalence class and the population studies condition by condition, with the publication each figure was checked against.</p>
+        <p><a href="/knowledge/prevalence-of-dysmelia/">See how common each condition is &rarr;</a></p>
+      </div>
+      <div class="card acc-research">
+        <h3 class="h3"><a href="/knowledge/causes-of-dysmelia/">Why did it happen?</a></h3>
+        <p>A cause is named in roughly one case in five: the China Birth Cohort Study identified one in 22.4% of 2,123 birth defect cases, and in 13.4% of those born alive. For limb differences the pattern is sharper still. In a population series of 391 fetuses and children with limb reduction defects in the northern Netherlands, a diagnosis naming the cause was reached nearly three times as often when several limbs were affected as when only one was, and no genetic disorder at all was found among isolated defects of a single limb. The review works through genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces.</p>
+        <p><a href="/knowledge/causes-of-dysmelia/">Read what is known about the causes &rarr;</a></p>
+      </div>
+    </div>
   </div>
 </section>
 """,

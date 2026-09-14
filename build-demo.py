@@ -1467,7 +1467,7 @@ def incidence_html():
     return f"""
     <div class="tick"></div>
     <p class="eyebrow">Part 2 · Incidence, year by year</p>
-    <h2 class="h2">How many children are born with it each year?</h2>
+    <h2 class="h2">How many children are conceived with it each year?</h2>
     <p>A prevalence is a rate; families and health services need a number. The world records about
     {WORLD_BIRTHS / 1e6:.0f} million births a year across the {len(BIRTHS["countries"])} countries the World Bank counts, so the
     rate of {rates[0][1] / 10:g} per 10,000 births that European registries measure for limb reduction defects works out at roughly

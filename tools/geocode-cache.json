@@ -663,5 +663,35 @@
   "display_name": "Lunds Tekniska Högskola, Box 118, Tornavägen, Norra universitetsområdet, Norr, Lund, Lunds kommun, Skåne län, 221 00, Sverige",
   "query": "University of Lund, Sweden"
  },
- "ECEMC|Spain": null
+ "ECEMC|Spain": null,
+ "University of Pennsylvania|United States": {
+  "lat": 39.9522148,
+  "lon": -75.1955729,
+  "display_name": "University of Pennsylvania, 1, South 27th Street, Fitler Square, Center City, Philadelphia, Philadelphia County, Pennsylvania, 19104, United",
+  "query": "University of Pennsylvania, United States"
+ },
+ "Department of Orthopaedics, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology|China": {
+  "lat": 30.6542319,
+  "lon": 104.0386158,
+  "display_name": "省骨科医院, 一环路西一段, 和谐苑, 芳邻路社区, 草堂街道, 青羊区, 成都市, 四川省, 610072, 中国",
+  "query": "Orthopaedics, China"
+ },
+ "Mount Sinai Hospital|Canada": {
+  "lat": 43.6574502,
+  "lon": -79.3903211,
+  "display_name": "Mount Sinai Hospital, 600, University Avenue, Kensington-Chinatown, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada",
+  "query": "Mount Sinai Hospital, Canada"
+ },
+ "University of Pittsburgh School of Medicine|United States": {
+  "lat": 40.4406968,
+  "lon": -80.0025666,
+  "display_name": "Pittsburgh, Allegheny County, Pennsylvania, United States",
+  "query": "Pittsburgh, United States"
+ },
+ "Department of Biological Sciences, DePaul University|United States": {
+  "lat": 37.4036823,
+  "lon": -122.227403,
+  "display_name": "Jasper Ridge Biological Preserve, Woodside, San Mateo County, California, United States",
+  "query": "Biological, United States"
+ }
 }

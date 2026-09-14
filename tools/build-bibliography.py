@@ -92,6 +92,9 @@ WEBSITE_SEED = {
     "18295618": (("epidemiology",), "Prevalence of limb loss in the United States, 2005 to 2050", "DysNet"),
     "39822203": (("epidemiology",), "US limb-loss prevalence re-estimated, with updated projections", "DysNet"),
     "34843420": (("living",), "Research agenda on exercise and physical activity for people with limb loss in Canada", "DysNet"),
+    "42348211": (('prosthetics', 'living'), "What children and adolescents with upper-limb difference want from a prosthesis, asked in Nigeria", "DysNet"),
+    "38623353": (('clinical',), "Pollicization for bilateral hypoplastic thumbs, twin case series at a children's hospital in Ethiopia", "DysNet"),
+    "35650628": (('clinical', 'epidemiology'), "Bilateral symmetrical congenital transverse limb deficiencies in siblings", "DysNet"),
 }
 for pmid, (topics, note, via) in WEBSITE_SEED.items():
     for topic in topics:
@@ -137,6 +140,10 @@ VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build
     (r"ulnar (ray |longitudinal )?(deficien|aplasia|hypoplasia|dysplasia|club|hemimelia)", "93320"),
     (r"tibial (deficien|aplasia|hemimelia|hypoplasia)", "93322"), (r"fibular? (deficien|aplasia|hemimelia|hypoplasia)", "93323"),
     (r"femoral (deficien|hypoplasia|focal)|proximal femoral", None),
+    # the thumb belongs to the radial ray: hypoplasia of the thumb and its treatment are upper-limb
+    # difference under another name, and the register was missing them
+    (r"(hypoplastic|absent|floating|triphalangeal) thumbs?|thumbs? (hypoplasia|aplasia|deficien)|pollici[sz]ation|thumb reconstruction", None),
+    (r"macrodactyly|megadactyly|oligodactyly|ectromelia|\bdimelia\b|mirror hand|ulnar dimelia", None),
     (r"limb[- ](reduction|deficienc|difference|anomal|malformation|defect|loss|absence)|reduction defect|transverse (deficienc|defect)|(below|above)[- ](elbow|knee) deficien|congenital (upper|lower)[- ]limb|congenital hand|hand difference|dysmelia|dysmelic", None),
 ]
 VOCAB = [(re.compile(rx, re.I), code) for rx, code in VOCAB]

@@ -1,7 +1,7 @@
 {
- "built": "2026-09-13",
+ "built": "2026-09-14",
  "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
- "bibliography_size": 1067,
+ "bibliography_size": 1089,
  "records_without_affiliation": 338,
  "teams": [
   {
@@ -82,6 +82,43 @@
    "geocode_display_name": "Universität zu Köln, 1, Zülpicher Wall, Komponistenviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland"
   },
   {
+   "institution": "Brigham and Women's Hospital",
+   "country": "United States",
+   "papers": 7,
+   "years": [
+    1988,
+    2026
+   ],
+   "codes": [
+    "295000",
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Holmes LB",
+    "Toufaily MH",
+    "Genest DR"
+   ],
+   "representative": {
+    "pmid": "41951339",
+    "doi": "10.1136/bmjment-2025-302270",
+    "title": "Congenital malformation risk following prenatal antipsychotic exposure: a systematic safety surveillance approach",
+    "year": "2026"
+   },
+   "pmids": [
+    "41951339",
+    "29377643",
+    "29377641",
+    "21557466",
+    "18386809",
+    "10327252",
+    "3351810"
+   ],
+   "lat": 42.3356457,
+   "lon": -71.1060376,
+   "geocode_display_name": "Brigham and Women's Hospital, 75, Francis Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
+  },
+  {
    "institution": "Division of Developmental Biology, Children's Hospital Research Foundation, University of Cincinnati",
    "country": "United States",
    "papers": 7,
@@ -114,10 +151,10 @@
     "3227490",
     "3672373"
    ],
+   "address": "3333 Burnet Avenue, Cincinnati, OH 45229, United States",
    "lat": 39.141952,
    "lon": -84.503223,
-   "geocode_display_name": "3333 Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, United States",
-   "address": "3333 Burnet Avenue, Cincinnati, OH 45229, United States"
+   "geocode_display_name": "3333 Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, United States"
   },
   {
    "institution": "University of Groningen",
@@ -192,48 +229,12 @@
    "geocode_display_name": "馬偕紀念醫院, 92, 中山北路二段, 中山北路婚紗街, 集英里, 中山區, 南西商圈, 臺北市, 10449, 臺灣"
   },
   {
-   "institution": "Brigham and Women's Hospital",
-   "country": "United States",
-   "papers": 6,
-   "years": [
-    1988,
-    2026
-   ],
-   "codes": [
-    "295000",
-    "2913",
-    "93458"
-   ],
-   "authors": [
-    "Holmes LB",
-    "Toufaily MH",
-    "Genest DR"
-   ],
-   "representative": {
-    "pmid": "41951339",
-    "doi": "10.1136/bmjment-2025-302270",
-    "title": "Congenital malformation risk following prenatal antipsychotic exposure: a systematic safety surveillance approach",
-    "year": "2026"
-   },
-   "pmids": [
-    "41951339",
-    "29377643",
-    "29377641",
-    "18386809",
-    "10327252",
-    "3351810"
-   ],
-   "lat": 42.3356457,
-   "lon": -71.1060376,
-   "geocode_display_name": "Brigham and Women's Hospital, 75, Francis Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
-  },
-  {
    "institution": "University of Toronto",
    "country": "Canada",
-   "papers": 6,
+   "papers": 7,
    "years": [
     1996,
-    2018
+    2022
    ],
    "codes": [
     "thal",
@@ -245,12 +246,13 @@
     "Ordal L"
    ],
    "representative": {
-    "pmid": "28286964",
-    "doi": "10.1080/09638288.2017.1297496",
-    "title": "Factors impacting participation in sports for children with limb absence: a qualitative study",
-    "year": "2018"
+    "pmid": "34843420",
+    "doi": "10.1080/09638288.2021.2003877",
+    "title": "Developing a research agenda on exercise and physical activity for people with limb loss in Canada",
+    "year": "2022"
    },
    "pmids": [
+    "34843420",
     "28286964",
     "27530094",
     "21502285",
@@ -328,10 +330,45 @@
     "8157136",
     "1597253"
    ],
+   "address": "Prague, Czechia",
    "lat": 50.068454,
    "lon": 14.42307,
-   "geocode_display_name": "Albertov, Praha 2, Czechia",
-   "address": "Prague, Czechia"
+   "geocode_display_name": "Albertov, Praha 2, Czechia"
+  },
+  {
+   "institution": "University of Aberdeen",
+   "country": "United Kingdom",
+   "papers": 5,
+   "years": [
+    2009,
+    2022
+   ],
+   "codes": [
+    "thal",
+    "2879",
+    "295000"
+   ],
+   "authors": [
+    "Vargesson N",
+    "Zafeiri A",
+    "Fowler PA"
+   ],
+   "representative": {
+    "pmid": "35504638",
+    "doi": "10.1136/bmjopen-2020-048092",
+    "title": "Maternal over-the-counter analgesics use during pregnancy and adverse perinatal outcomes: cohort study of 151 141 singleton pregnancies",
+    "year": "2022"
+   },
+   "pmids": [
+    "35504638",
+    "30335598",
+    "27773741",
+    "26043938",
+    "19921660"
+   ],
+   "lat": 57.1645542,
+   "lon": -2.1018424,
+   "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
   },
   {
    "institution": "University of Göteborg",
@@ -430,40 +467,6 @@
    "lat": 55.920929,
    "lon": -3.1394165,
    "geocode_display_name": "Royal Hospital for Children and Young People, 50, Robin Mitchell Way, Little France, Moredun, Gilmerton/Inch, City of Edinburgh, Alba / Scot"
-  },
-  {
-   "institution": "University of Aberdeen",
-   "country": "United Kingdom",
-   "papers": 4,
-   "years": [
-    2009,
-    2022
-   ],
-   "codes": [
-    "thal",
-    "2879",
-    "295000"
-   ],
-   "authors": [
-    "Vargesson N",
-    "Zafeiri A",
-    "Fowler PA"
-   ],
-   "representative": {
-    "pmid": "35504638",
-    "doi": "10.1136/bmjopen-2020-048092",
-    "title": "Maternal over-the-counter analgesics use during pregnancy and adverse perinatal outcomes: cohort study of 151 141 singleton pregnancies",
-    "year": "2022"
-   },
-   "pmids": [
-    "35504638",
-    "30335598",
-    "26043938",
-    "19921660"
-   ],
-   "lat": 57.1645542,
-   "lon": -2.1018424,
-   "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
   },
   {
    "institution": "University of North Carolina",
@@ -716,11 +719,11 @@
     "31969401",
     "17365642"
    ],
+   "address": "1 Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire PE19 8ER, United Kingdom",
+   "contact": "dee.morrison@thalidomidetrust.org",
    "lat": 52.208283,
    "lon": -0.28873,
-   "geocode_display_name": "Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire, United Kingdom",
-   "address": "1 Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire PE19 8ER, United Kingdom",
-   "contact": "dee.morrison@thalidomidetrust.org"
+   "geocode_display_name": "Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire, United Kingdom"
   },
   {
    "institution": "University of Michigan",
@@ -848,6 +851,38 @@
    "geocode_display_name": "Holland Bloorview Kids Rehabilitation Hospital, 150, Kilgour Road, Bridle Path-Sunnybrook-York Mills, Don Valley West, North York, Toronto, "
   },
   {
+   "institution": "Shengjing Hospital of China Medical University",
+   "country": "China",
+   "papers": 3,
+   "years": [
+    2020,
+    2022
+   ],
+   "codes": [
+    "2913",
+    "93458"
+   ],
+   "authors": [
+    "Wu QJ",
+    "Zhang JY",
+    "Jiang YT"
+   ],
+   "representative": {
+    "pmid": "35104296",
+    "doi": "10.1371/journal.pmed.1003900",
+    "title": "Risks of specific congenital anomalies in offspring of women with diabetes: A systematic review and meta-analysis of population-based studies including over 80 million births",
+    "year": "2022"
+   },
+   "pmids": [
+    "35104296",
+    "33118065",
+    "32416360"
+   ],
+   "lat": 41.7716892,
+   "lon": 123.4215018,
+   "geocode_display_name": "医大盛京医院, 36, 三好街, 南湖街道, 和平区, 沈阳市, 辽宁省, 110004, 中国"
+  },
+  {
    "institution": "Dr. Becker Rhein-Sieg-Klinik",
    "country": "Germany",
    "papers": 3,
@@ -969,11 +1004,11 @@
     "28559208",
     "26008671"
    ],
+   "address": "45320 Islamabad, Pakistan",
+   "contact": "malik@qau.edu.pk",
    "lat": 33.743736,
    "lon": 73.158582,
-   "geocode_display_name": "Quaid-i-Azam University, Nurpur Road, Islamabad, Pakistan",
-   "address": "45320 Islamabad, Pakistan",
-   "contact": "malik@qau.edu.pk"
+   "geocode_display_name": "Quaid-i-Azam University, Nurpur Road, Islamabad, Pakistan"
   },
   {
    "institution": "University of Washington",
@@ -1099,10 +1134,10 @@
     "27751757",
     "25828060"
    ],
+   "address": "Rua Ramiro Barcelos 2350, Porto Alegre, Rio Grande do Sul, Brazil",
    "lat": -30.038678,
    "lon": -51.206625,
-   "geocode_display_name": "Hospital de Clínicas, Rua Ramiro Barcelos, Porto Alegre, Rio Grande do Sul, Brasil",
-   "address": "Rua Ramiro Barcelos 2350, Porto Alegre, Rio Grande do Sul, Brazil"
+   "geocode_display_name": "Hospital de Clínicas, Rua Ramiro Barcelos, Porto Alegre, Rio Grande do Sul, Brasil"
   },
   {
    "institution": "University of Illinois",
@@ -1443,10 +1478,10 @@
     "8140068",
     "1481865"
    ],
+   "address": "Rome, Italy",
    "lat": 41.931534,
    "lon": 12.429439,
-   "geocode_display_name": "Policlinico Universitario Agostino Gemelli, Largo Agostino Gemelli, Roma, Italia",
-   "address": "Rome, Italy"
+   "geocode_display_name": "Policlinico Universitario Agostino Gemelli, Largo Agostino Gemelli, Roma, Italia"
   },
   {
    "institution": "Boston University School of Public Health",
@@ -1804,10 +1839,10 @@
     "37791865",
     "31814667"
    ],
+   "address": "Ankara, Türkiye",
    "lat": 39.920776,
    "lon": 32.85405,
-   "geocode_display_name": "Ankara, Türkiye",
-   "address": "Ankara, Türkiye"
+   "geocode_display_name": "Ankara, Türkiye"
   },
   {
    "institution": "BG Unfallklinik Frankfurt am Main",
@@ -2079,11 +2114,11 @@
    "geocode_display_name": "McMaster University, 1280, Main Street West, Ainslie Wood East, Hamilton, Golden Horseshoe, Ontario, L8S 3L8, Canada"
   },
   {
-   "institution": "Shengjing Hospital of China Medical University",
-   "country": "China",
+   "institution": "University of Pennsylvania",
+   "country": "United States",
    "papers": 2,
    "years": [
-    2020,
+    2006,
     2021
    ],
    "codes": [
@@ -2091,23 +2126,23 @@
     "93458"
    ],
    "authors": [
-    "Wu QJ",
-    "Zhang JY",
-    "Jiang YT"
+    "Man LX",
+    "McLarney M",
+    "Dillingham TR"
    ],
    "representative": {
-    "pmid": "33118065",
-    "doi": "10.1007/s11356-020-11351-5",
-    "title": "Maternal exposure to ambient SO(2) and risk of polydactyly and syndactyly: a population-based case-control study in Liaoning Province, China",
+    "pmid": "33158398",
+    "doi": "10.1177/0309364620968645",
+    "title": "The prevalence of lower limb loss in children and associated costs of prosthetic devices: A national study of commercial insurance claims",
     "year": "2021"
    },
    "pmids": [
-    "33118065",
-    "32416360"
+    "33158398",
+    "16404282"
    ],
-   "lat": 41.7716892,
-   "lon": 123.4215018,
-   "geocode_display_name": "医大盛京医院, 36, 三好街, 南湖街道, 和平区, 沈阳市, 辽宁省, 110004, 中国"
+   "lat": 39.9522148,
+   "lon": -75.1955729,
+   "geocode_display_name": "University of Pennsylvania, 1, South 27th Street, Fitler Square, Center City, Philadelphia, Philadelphia County, Pennsylvania, 19104, United"
   },
   {
    "institution": "Tokyo Medical University",
@@ -2163,10 +2198,40 @@
     "30856359",
     "30462958"
    ],
-   "lat": 30.5821568,
-   "lon": 114.2544019,
-   "geocode_display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国",
-   "address": "Wuhan 430030, China"
+   "address": "Wuhan 430030, China",
+   "lat": 30.6542319,
+   "lon": 104.0386158,
+   "geocode_display_name": "省骨科医院, 一环路西一段, 和谐苑, 芳邻路社区, 草堂街道, 青羊区, 成都市, 四川省, 610072, 中国"
+  },
+  {
+   "institution": "Mount Sinai Hospital",
+   "country": "Canada",
+   "papers": 2,
+   "years": [
+    1994,
+    2019
+   ],
+   "codes": [
+    "93322"
+   ],
+   "authors": [
+    "Niles KM",
+    "Chitayat D",
+    "Pandit PB"
+   ],
+   "representative": {
+    "pmid": "31218730",
+    "doi": "10.1002/pd.5505",
+    "title": "Fetal arthrogryposis multiplex congenita/fetal akinesia deformation sequence (FADS)-Aetiology, diagnosis, and management",
+    "year": "2019"
+   },
+   "pmids": [
+    "31218730",
+    "8186630"
+   ],
+   "lat": 43.6574502,
+   "lon": -79.3903211,
+   "geocode_display_name": "Mount Sinai Hospital, 600, University Avenue, Kensington-Chinatown, Downtown, Toronto, Golden Horseshoe, Ontario, M5G 1X5, Canada"
   },
   {
    "institution": "Oslo University Hospital",
@@ -2397,10 +2462,10 @@
     "29053750",
     "27175919"
    ],
+   "address": "442 41 Kungälv, Sweden",
    "lat": 57.878189,
    "lon": 11.968607,
-   "geocode_display_name": "Kungälvs sjukhus, Lasarettsgatan, Kungälv, Västra Götalands län, Sverige",
-   "address": "442 41 Kungälv, Sweden"
+   "geocode_display_name": "Kungälvs sjukhus, Lasarettsgatan, Kungälv, Västra Götalands län, Sverige"
   },
   {
    "institution": "Max Planck Institute for Molecular Genetics",
@@ -2521,10 +2586,10 @@
     "27018681",
     "27348639"
    ],
+   "address": "Genoa, Italy",
    "lat": 44.409469,
    "lon": 8.973088,
-   "geocode_display_name": "Ospedale San Martino, San Martino, Genova, Liguria, Italia",
-   "address": "Genoa, Italy"
+   "geocode_display_name": "Ospedale San Martino, San Martino, Genova, Liguria, Italia"
   },
   {
    "institution": "University of Lausanne",
@@ -2555,6 +2620,34 @@
    "lat": 46.5225695,
    "lon": 6.5809499,
    "geocode_display_name": "Université de Lausanne, A1a, Maison Olympique, Lausanne, District de l'Ouest lausannois, Vaud, 1020, Schweiz/Suisse/Svizzera/Svizra"
+  },
+  {
+   "institution": "University of Pittsburgh School of Medicine",
+   "country": "United States",
+   "papers": 2,
+   "years": [
+    2002,
+    2016
+   ],
+   "codes": [],
+   "authors": [
+    "Harger JH",
+    "Alexander PG",
+    "Tuan RS"
+   ],
+   "representative": {
+    "pmid": "27768243",
+    "doi": "10.1002/bdrc.21140",
+    "title": "Prenatal exposure to environmental factors and congenital limb defects",
+    "year": "2016"
+   },
+   "pmids": [
+    "27768243",
+    "12151147"
+   ],
+   "lat": 40.4406968,
+   "lon": -80.0025666,
+   "geocode_display_name": "Pittsburgh, Allegheny County, Pennsylvania, United States"
   },
   {
    "institution": "Children's Hospital Zagreb",
@@ -2609,10 +2702,10 @@
     "24344727",
     "23181494"
    ],
+   "address": "Fujisawa, Kanagawa, Japan",
    "lat": 35.338862,
    "lon": 139.490934,
-   "geocode_display_name": "Fujisawa, Kanagawa, Japan",
-   "address": "Fujisawa, Kanagawa, Japan"
+   "geocode_display_name": "Fujisawa, Kanagawa, Japan"
   },
   {
    "institution": "McGill University",
@@ -2991,11 +3084,11 @@
     "11038459",
     "8766141"
    ],
+   "address": "Avenue Molière, 67098 Strasbourg Cedex, France",
+   "contact": "Claude.Stoll@chru-strasbourg.fr",
    "lat": 48.593293,
    "lon": 7.7070095,
-   "geocode_display_name": "Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France",
-   "address": "Avenue Molière, 67098 Strasbourg Cedex, France",
-   "contact": "Claude.Stoll@chru-strasbourg.fr"
+   "geocode_display_name": "Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France"
   },
   {
    "institution": "Foundation 41, Molecular Biology Unit",
@@ -3023,10 +3116,10 @@
     "10488693",
     "37281348"
    ],
+   "address": "365 Crown Street, Surry Hills, NSW 2010, Australia",
    "lat": -33.883666,
    "lon": 151.214326,
-   "geocode_display_name": "Crown Street, Surry Hills, Sydney, New South Wales, Australia",
-   "address": "365 Crown Street, Surry Hills, NSW 2010, Australia"
+   "geocode_display_name": "Crown Street, Surry Hills, Sydney, New South Wales, Australia"
   },
   {
    "institution": "National Center for Environmental Health",
@@ -3111,10 +3204,10 @@
     "9409871",
     "9409874"
    ],
+   "address": "Madrid, Spain",
    "lat": 40.443914,
    "lon": -3.724181,
-   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España",
-   "address": "Madrid, Spain"
+   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España"
   },
   {
    "institution": "University of Lund",
@@ -3167,10 +3260,10 @@
     "8779329",
     "8849132"
    ],
+   "address": "Madrid, Spain",
    "lat": 40.443914,
    "lon": -3.724181,
-   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España",
-   "address": "Madrid, Spain"
+   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España"
   },
   {
    "institution": "Universitätsklinikum Rudolf Virchow",
@@ -3255,10 +3348,10 @@
     "1562800",
     "1948762"
    ],
-   "lat": 41.9245803,
-   "lon": -87.6507223,
-   "geocode_display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,",
-   "address": "Chicago, Illinois, United States"
+   "address": "Chicago, Illinois, United States",
+   "lat": 37.4036823,
+   "lon": -122.227403,
+   "geocode_display_name": "Jasper Ridge Biological Preserve, Woodside, San Mateo County, California, United States"
   },
   {
    "institution": "Kyoto University",

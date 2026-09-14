@@ -868,7 +868,7 @@
    "via": "the hospital's own page",
    "via_url": "https://cure.org/hospitals/kenya/",
    "via_verb": "verified from",
-   "label": "AIC CURE International"
+   "label": "AIC CURE Kijabe"
   },
   {
    "name": "CURE Children's Hospital of Malawi",
@@ -885,7 +885,7 @@
    "via": "the hospital's own page",
    "via_url": "https://cure.org/hospitals/malawi/",
    "via_verb": "verified from",
-   "label": "CURE  of Malawi"
+   "label": "CURE Malawi"
   },
   {
    "name": "Sint Maartenskliniek, thalidomide clinic and national expertise centre",
@@ -1531,7 +1531,7 @@
    "via": "the hospital's own page",
    "via_url": "https://cure.org/hospitals/zimbabwe/",
    "via_verb": "verified from",
-   "label": "CURE  Zimbabwe"
+   "label": "CURE Zimbabwe"
   }
  ]
 }

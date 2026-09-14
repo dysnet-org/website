@@ -1475,7 +1475,7 @@ def incidence_html():
     {world["Polydactyly"]} a year and syndactyly {world["Syndactyly"]}, while amelia, the absence of a whole limb, comes to about
     {world["Amelia, all forms"]}. In a country the size of France, with {next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"):,} births a year,
     the same rates give {_cases(next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"), rates[0][1])} limb reduction defects
-    and {_cases(next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"), 1.41)} children born with amelia.</p>
+    and {_cases(next(c["births"] for c in BIRTHS["countries"] if c["name"] == "France"), 1.41)} children conceived with amelia.</p>
     <p>These are expectations, not counts, and the distinction matters. Every rate in the table above was measured by a registry
     in Europe, Finland or the northern Netherlands, and applying it to births in Nigeria, India or Brazil assumes the rate is the
     same there, which no one has shown; where other registries have measured, the figures differ. Read the numbers below as the
@@ -1523,7 +1523,7 @@ PAGES["/knowledge/epidemiology/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Knowledge · Epidemiology</p>
     <h1 class="display">How common is dysmelia, and how many children a year?</h1>
-    <p>Two questions, two kinds of answer. <strong>Prevalence</strong> is a rate: how many children in 10,000 births are born
+    <p>Two questions, two kinds of answer. <strong>Prevalence</strong> is a rate: how many children in 10,000 births are conceived
     with a condition, as measured by the registries that count them. <strong>Incidence</strong> is what that rate becomes when it
     meets a population: how many children a year a country can expect. The first part below gives the rates, condition by
     condition, each checked against its publication; the second turns them into numbers for every country, which you can filter.</p>

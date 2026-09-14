@@ -361,7 +361,7 @@ CENTRE_NOTES = {
     "EX-Center, national knowledge and rehabilitation centre for multiple limb deficiencies":
         ('EX-Center is the Swedish knowledge and rehabilitation centre for children and adults with multiple limb loss, whether '
          'congenital limb deficiency or amputation, in operation since 1993 and run as a cooperation between FfdN, the Swedish '
-         'Thalidomide Society, and the Amputation and Dysmelia Center at Ottobock Care. It is not a member association. '
+         'Thalidomide Society, and the Amputation and Dysmelia Center at Ottobock Care. '
          '<a href="/assets/ex-center-brochure-2025-en.pdf" download>Download the EX-Center brochure</a> (PDF, English, 1.7 MB).'),
 }
 

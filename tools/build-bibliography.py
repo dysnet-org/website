@@ -85,6 +85,13 @@ WEBSITE_SEED = {
     "33565281": (("causes", "epidemiology"), "REMERA's own analysis of the Ain cluster of transverse upper-limb agenesis", "REMERA (remera.fr)"),
     "21825994": (("clinical", "review"), "Ocular findings of thalidomide embryopathy, listed by Ex-Center", "Ex-Center (ex-center.org)"),
     "19639653": (("clinical", "review"), "Ophthalmological manifestations of thalidomide and misoprostol, listed by Ex-Center", "Ex-Center (ex-center.org)"),
+    "39147010": (("living", "review"), "Terminology people with limb difference, clinicians and researchers prefer", "DysNet"),
+    "21557466": (("clinical", "review"), "Anatomic and aetiological classification of congenital limb deficiencies", "DysNet"),
+    "29241842": (("living", "clinical"), "Functional impact of congenital hand differences, first results of the CoULD registry", "DysNet"),
+    "33158398": (("epidemiology", "prosthetics"), "Prevalence of lower-limb loss in children and the cost of their prostheses", "DysNet"),
+    "18295618": (("epidemiology",), "Prevalence of limb loss in the United States, 2005 to 2050", "DysNet"),
+    "39822203": (("epidemiology",), "US limb-loss prevalence re-estimated, with updated projections", "DysNet"),
+    "34843420": (("living",), "Research agenda on exercise and physical activity for people with limb loss in Canada", "DysNet"),
 }
 for pmid, (topics, note, via) in WEBSITE_SEED.items():
     for topic in topics:

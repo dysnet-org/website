@@ -6,7 +6,7 @@ Everything on this site may be quoted and reused with attribution to DysNet. Fig
 
 ## Registers (HTML, with the data behind each)
 
-- [Bibliography](https://www.dysnet.org/knowledge/bibliography/): 1080 peer-reviewed references on limb difference, thalidomide embryopathy and their causes. Data: [bibliography.json](https://www.dysnet.org/data/bibliography.json)
+- [Bibliography](https://www.dysnet.org/knowledge/bibliography/): 1087 peer-reviewed references on limb difference, thalidomide embryopathy and their causes. Data: [bibliography.json](https://www.dysnet.org/data/bibliography.json)
 - [Registries](https://www.dysnet.org/knowledge/registries/): 72 registries that record congenital limb differences, with their coverage. Data: [registries.json](https://www.dysnet.org/data/registries.json)
 - [Researchers](https://www.dysnet.org/knowledge/researchers/): 106 research teams, from the affiliations of the bibliography's authors. Data: [researchers.json](https://www.dysnet.org/data/researchers.json)
 - [Care centres](https://www.dysnet.org/knowledge/care-centres/): 88 centres of care, each named by a member association or verified on its own institutional page. Data: [care-centres.json](https://www.dysnet.org/data/care-centres.json)

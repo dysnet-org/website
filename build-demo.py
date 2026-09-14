@@ -922,6 +922,26 @@ PAGES["/knowledge/ongoing-studies/"] = {
         <p class="src">University of Zurich, Switzerland · recruiting until 2027 · <a href="https://clinicaltrials.gov/study/NCT06043518" target="_blank" rel="noopener external">ClinicalTrials.gov · NCT06043518 ↗</a></p>
       </article>
       <article class="entry">
+        <h3>Bioethics of bionic and robotic prostheses · Texas Christian University <span class="badge live">recruiting</span></h3>
+        <p>Interviews on the ethical questions that bionic and robotic prostheses raise, gathered from three groups: people with
+        limb loss or limb difference, the clinicians who treat them, and the policymakers who decide what is funded. Adults who
+        have lived mostly in the United States can take part, whether or not they use a prosthesis, and whatever the level or the
+        cause of the limb difference. An intake survey of about fifteen minutes is followed by one interview of up to an hour over
+        video, and participants receive a 50-dollar voucher.</p>
+        <p class="src">Texas Christian University · recruiting until 29 January 2027 · contact Kristin Perrin,
+        <a href="mailto:k.perrin@tcu.edu">k.perrin@tcu.edu</a> ·
+        <a href="https://build.redcapcloud.com/survey.jsp?code=HYNOe9im72d7tz4X" target="_blank" rel="noopener external">intake survey ↗</a></p>
+      </article>
+      <article class="entry">
+        <h3>Preventing chronic pain after amputation surgery · UTHealth Houston <span class="badge live">recruiting</span></h3>
+        <p>A survey designed to shape a future trial on how best to prevent chronic pain after an amputation. It asks people who
+        have had amputation surgery about their experience of pain afterwards, and takes ten to fifteen minutes. It concerns
+        acquired limb loss rather than a limb difference present at birth, which matters for members who have had an amputation,
+        whatever the cause.</p>
+        <p class="src">University of Texas Health Science Center at Houston · recruiting until 30 May 2026 · contact Philipp Lirk ·
+        <a href="https://uthtmc.az1.qualtrics.com/jfe/form/SV_blxQKdj5j0J8QJg" target="_blank" rel="noopener external">the survey ↗</a></p>
+      </article>
+      <article class="entry">
         <h3>Prosthesis reimbursement across the EU <span class="badge live">workgroup</span></h3>
         <p>A DysNet workgroup compares the subsidies each EU country grants for prostheses: amounts due, and which prosthesis technologies qualify. A regional initiative at Regione Lombardia (2026) is the working example other countries can replicate.</p>
         <p class="src">DysNet workgroup · data collection open to all member associations</p>

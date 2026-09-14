@@ -1012,6 +1012,32 @@
    ]
   },
   {
+   "pmid": "39147010",
+   "doi": "10.1016/j.apmr.2024.07.019",
+   "title": "Does Terminology Matter? Perspectives From People With Limb Difference, Clinicians, and Researchers",
+   "authors": [
+    "Finco MG",
+    "McDonald CL",
+    "Moudy SC"
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "2025",
+   "volume": "106",
+   "pages": "26-36",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "living",
+    "review"
+   ],
+   "notes": [
+    "Terminology people with limb difference, clinicians and researchers prefer"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "41555917",
    "doi": "10.3389/fgene.2025.1570754",
    "title": "Familial multiple fetal cerebral arteriovenous malformations: a case report of maternal genetic susceptibility and fetal manifestation",
@@ -1768,6 +1794,32 @@
    "via": [
     "Aussiehands (Australia)",
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "39822203",
+   "doi": "10.1016/j.arrct.2024.100376",
+   "title": "Estimating Recent US Limb Loss Prevalence and Updating Future Projections",
+   "authors": [
+    "Rivera JA",
+    "Churovich K",
+    "Anderson AB",
+    "et al."
+   ],
+   "journal": "Archives of rehabilitation research and clinical translation",
+   "year": "2024",
+   "volume": "6",
+   "pages": "100376",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "US limb-loss prevalence re-estimated, with updated projections"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -3679,6 +3731,34 @@
    ]
   },
   {
+   "pmid": "34843420",
+   "doi": "10.1080/09638288.2021.2003877",
+   "title": "Developing a research agenda on exercise and physical activity for people with limb loss in Canada",
+   "authors": [
+    "MacKay C",
+    "Lee L",
+    "Best K",
+    "et al."
+   ],
+   "journal": "Disability and rehabilitation",
+   "year": "2022",
+   "volume": "44",
+   "pages": "8130-8138",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "living"
+   ],
+   "notes": [
+    "Research agenda on exercise and physical activity for people with limb loss in Canada"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "35691647",
    "doi": "10.1016/j.sste.2022.100480",
    "title": "Epidemiological association of cannabinoid- and drug- exposures and sociodemographic factors with limb reduction defects across USA 1989-2016: A geotemporospatial study",
@@ -5585,6 +5665,35 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "33158398",
+   "doi": "10.1177/0309364620968645",
+   "title": "The prevalence of lower limb loss in children and associated costs of prosthetic devices: A national study of commercial insurance claims",
+   "authors": [
+    "McLarney M",
+    "Pezzin LE",
+    "McGinley EL",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2021",
+   "volume": "45",
+   "pages": "115-122",
+   "pubtypes": [
+    "Observational Study"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "prosthetics"
+   ],
+   "notes": [
+    "Prevalence of lower-limb loss in children and the cost of their prostheses"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -8074,6 +8183,36 @@
    ],
    "via": [
     "Holland Bloorview (hollandbloorview.ca)"
+   ]
+  },
+  {
+   "pmid": "29241842",
+   "doi": "10.1016/j.jhsa.2017.10.006",
+   "title": "Functional Impact of Congenital Hand Differences: Early Results From the Congenital Upper Limb Differences (CoULD) Registry",
+   "authors": [
+    "Bae DS",
+    "Canizares MF",
+    "Miller PE",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery",
+   "year": "2018",
+   "volume": "43",
+   "pages": "321-330",
+   "pubtypes": [
+    "Multicenter Study",
+    "Research Support, N.I.H., Extramural"
+   ],
+   "codes": [],
+   "topics": [
+    "living",
+    "clinical"
+   ],
+   "notes": [
+    "Functional impact of congenital hand differences, first results of the CoULD registry"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {
@@ -13073,6 +13212,34 @@
    ]
   },
   {
+   "pmid": "21557466",
+   "doi": "10.1002/ajmg.a.33999",
+   "title": "Anatomic and etiological classification of congenital limb deficiencies",
+   "authors": [
+    "Gold NB",
+    "Westgate M",
+    "Holmes LB"
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2011",
+   "volume": "155A",
+   "pages": "1225-35",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "Anatomic and aetiological classification of congenital limb deficiencies"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "20958261",
    "doi": "10.2174/1874467211104010026",
    "title": "Apoptosis induction by thalidomide: critical for limb teratogenicity but therapeutic potential in idiopathic pulmonary fibrosis?",
@@ -14959,6 +15126,34 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "18295618",
+   "doi": "10.1016/j.apmr.2007.11.005",
+   "title": "Estimating the prevalence of limb loss in the United States: 2005 to 2050",
+   "authors": [
+    "Ziegler-Graham K",
+    "MacKenzie EJ",
+    "Ephraim PL",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "2008",
+   "volume": "89",
+   "pages": "422-9",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Prevalence of limb loss in the United States, 2005 to 2050"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {

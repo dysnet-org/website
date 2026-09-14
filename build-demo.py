@@ -2622,9 +2622,10 @@ MEMBER_NOTES = {
 }
 
 
-# Who leads each association and how to reach it. Every name and address below is the one the
-# association itself publishes on its own website, read on 14 September 2026; nothing here comes
-# from a private list. An association that publishes no name keeps only its contact address.
+# Who leads each association and how to reach it. Every name and address below was read on the
+# association's own website on 14 September 2026, except where "src" says otherwise; an association
+# that publishes no name keeps only its contact address. "src" records where each entry came from,
+# so a correction can be traced; it is not printed on the page.
 MEMBER_INFO = {
     "Aussiehands": {"role": "President and chairperson", "person": "Elizabeth Borg", "email": "info@aussiehands.org",
                     "src": "the association's site, 2026 board"},
@@ -2683,9 +2684,8 @@ def member_li(entry):
         rows.append(f'<a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>')
     if not rows:
         return f'<li class="assoc-plain">{name}</li>'
-    src = f'<p class="assoc-src">Source: {i["src"]}.</p>' if i.get("src") else ""
     return (f'<li><details class="assoc"><summary>{name}</summary>'
-            f'<div class="assoc-body">{"".join(rows)}{src}</div></details></li>')
+            f'<div class="assoc-body">{"".join(rows)}</div></details></li>')
 
 PAGES["/about/members/"] = {
     "title": "Member associations",

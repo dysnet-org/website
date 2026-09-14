@@ -921,5 +921,4 @@ details.assoc[open] > summary::after { content: "▴"; }
 details.assoc[open] { border-color: var(--dys-purple); }
 .assoc-body { padding: 0 0.9rem 0.7rem; font-size: var(--text-small); display: grid; gap: 0.3rem; justify-items: start; }
 .assoc-body p { margin: 0; }
-.assoc-src { color: var(--dys-muted); font-size: var(--text-eyebrow); }
 .entry-note { background: var(--dys-purple-soft); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); font-size: var(--text-small); }

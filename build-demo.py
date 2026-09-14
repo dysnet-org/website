@@ -1101,8 +1101,8 @@ PAGES["/knowledge/resources/"] = {
       </article>
       <article class="entry">
         <h3>EDRIC explained: the slides from Nijmegen <span class="badge live">October 2017</span></h3>
-        <p>Twenty-five slides that state what this network was built to do, presented by Michi Moik in Nijmegen on 13 October 2017
-        and published by our Dutch member association. They record the founding: an NGO registered in Sweden in January 2009 by
+        <p>Twenty-five slides that state what this network was built to do, presented by Michi Moik in Nijmegen on 13 October 2017.
+        They record the founding: an NGO registered in Sweden in January 2009 by
         FfdN and the Thalidomide Trust, with three aims, to preserve the knowledge of the thalidomide survivors, to build an
         international European community, and to launch and maintain an information website. They then show the federation as it
         stood, 32 member organisations across 18 countries, and what dysnet.org then carried: articles, a catalogue of
@@ -1114,7 +1114,6 @@ PAGES["/knowledge/resources/"] = {
         that year, the structure in which DysNet now holds a seat.</p>
         <p class="src">Michi Moik, EDRIC · presented at Nijmegen, 13 October 2017 ·
         <a href="/assets/edric-nijmegen-2017.pdf" download>Download the slides</a> (PDF, 25 slides, 1.6 MB) ·
-        also published by <a href="https://softenon.nl/wp-content/uploads/2025/08/7_EDRIC.pdf" target="_blank" rel="noopener external">Stichting NESOS</a> ·
         see also <a href="/about/">how the network is organised today</a> · topic: our history</p>
       </article>
       <article class="entry">

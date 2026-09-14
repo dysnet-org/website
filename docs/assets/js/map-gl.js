@@ -58,7 +58,7 @@
       }) } },
       zones: { type: "geojson", data: base + data.zonesUrl },
       teams: { type: "geojson", data: { type: "FeatureCollection", features: (data.teams || []).filter(function (t) { return t.lat && t.lon; }).map(function (t) {
-        return { type: "Feature", geometry: { type: "Point", coordinates: [t.lon, t.lat] }, properties: { name: t.name, country: t.country, papers: t.papers, years: (t.years && t.years[0] === t.years[1]) ? String(t.years[0]) : (t.years || []).join("–"), codes: (t.codes || []).join(", "), authors: (t.authors || []).join(", "), repTitle: t.rep && t.rep.title, repDoi: t.rep && t.rep.doi, repPmid: t.rep && t.rep.pmid, repYear: t.rep && t.rep.year } };
+        return { type: "Feature", geometry: { type: "Point", coordinates: [t.lon, t.lat] }, properties: { name: t.name, country: t.country, papers: t.papers, years: (t.years && t.years[0] === t.years[1]) ? String(t.years[0]) : (t.years || []).join("–"), codes: (t.codes || []).join(", "), authors: (t.authors || []).join(", "), repTitle: t.rep && t.rep.title, repDoi: t.rep && t.rep.doi, repPmid: t.rep && t.rep.pmid, repYear: t.rep && t.rep.year, address: t.address || "", contact: t.contact || "" } };
       }) } }
     },
     layers: [
@@ -254,8 +254,11 @@
   function teamHtml(e) {
     var t = e.features[0].properties;
     var link = t.repDoi && t.repDoi !== "null" ? '<a href="https://doi.org/' + esc(t.repDoi) + '" target="_blank" rel="noopener external">doi:' + esc(t.repDoi) + '</a>' : (t.repPmid ? '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(t.repPmid) + '/" target="_blank" rel="noopener external">PubMed ' + esc(t.repPmid) + '</a>' : '');
+    var where = [];
+    if (t.address) where.push(esc(t.address));
+    if (t.contact) where.push('<a href="mailto:' + esc(t.contact) + '">' + esc(t.contact) + '</a>');
     return '<p class="dp-main"><strong>' + esc(t.name) + '</strong></p>' +
-           '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + '</p>' +
+           '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + (where.length ? '<br>' + where.join(' · ') : '') + '</p>' +
            '<p class="dp-foot">Most recent: <em>' + esc(t.repTitle) + '</em> (' + esc(t.repYear) + ') ' + link + ' · <a href="' + base + '/knowledge/researchers/">Researchers register</a></p>';
   }
   attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup");

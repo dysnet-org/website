@@ -305,6 +305,15 @@ BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else
 BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
 
 
+def doi_html(doi):
+    """A DOI link that survives the angle brackets of the old SICI form, such as
+    10.1002/1097-0223(200010)20:10<811::aid-pd927>3.0.co;2-j: percent-encoded in the address,
+    escaped in the text, so the link resolves and the markup stays closed."""
+    import html as _h
+    href = "https://doi.org/" + doi.replace("<", "%3C").replace(">", "%3E").replace('"', "%22")
+    return f'<a href="{_h.escape(href, quote=True)}" target="_blank" rel="noopener external">doi:{_h.escape(doi)}</a>'
+
+
 def bibliography_html():
     entries = BIB.get("entries", [])
     names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
@@ -313,7 +322,7 @@ def bibliography_html():
     items, records = [], []
     for e in entries:
         authors = ", ".join(e["authors"])
-        link = (f'<a href="https://doi.org/{e["doi"]}" target="_blank" rel="noopener external">doi:{e["doi"]}</a>' if e["doi"]
+        link = (doi_html(e["doi"]) if e["doi"]
                 else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{e["pmid"]}/" target="_blank" rel="noopener external">PubMed {e["pmid"]}</a>')
         tags = "".join(f'<span class="bib-tag">{names.get(c, c)}</span>' for c in e["codes"]) + "".join(f'<span class="bib-tag bib-topic">{BIB_TOPIC_LABEL.get(t, t)}</span>' for t in e["topics"])
         via = [v for v in e.get("via", []) if v not in ("Orphanet", "DysNet", "PubMed search")]
@@ -399,12 +408,16 @@ def researchers_html():
             n = sum(1 for x in teams if (x["country"] or "Country not stated") == c)
             out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{c} <span class="badge live">{n}</span></h2>'); last = c
         rep = t["representative"]
-        link = f'<a href="https://doi.org/{rep["doi"]}" target="_blank" rel="noopener external">doi:{rep["doi"]}</a>' if rep.get("doi") else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{rep["pmid"]}/" target="_blank" rel="noopener external">PubMed {rep["pmid"]}</a>'
+        link = doi_html(rep["doi"]) if rep.get("doi") else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{rep["pmid"]}/" target="_blank" rel="noopener external">PubMed {rep["pmid"]}</a>'
         tags = "".join(f'<span class="bib-tag">{names.get(c2, c2)}</span>' for c2 in t["codes"] if c2 in names)
         yrs = f'{t["years"][0]}–{t["years"][1]}' if t["years"][0] != t["years"][1] else str(t["years"][0])
+        where = []
+        if t.get("address"): where.append(t["address"])
+        if t.get("contact"): where.append(f'<a href="mailto:{t["contact"]}">{t["contact"]}</a>')
+        where = f'<p class="src">{" · ".join(where)}</p>' if where else ""
         out.append(f'<article class="entry"><h3>{t["institution"]} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
                    f'<p>Authors on our bibliography: {", ".join(t["authors"])}. Most recent: <em>{rep["title"]}</em> ({rep["year"]}), {link}.</p>'
-                   f'<p class="bib-tags">{tags}</p></article>')
+                   f'{where}<p class="bib-tags">{tags}</p></article>')
     return "".join(out)
 
 
@@ -2539,7 +2552,7 @@ DOT_RATES = [
     ("Tibial hemimelia", 0.1, "Europe"),
     ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
 ]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.

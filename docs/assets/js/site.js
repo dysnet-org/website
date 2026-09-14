@@ -478,7 +478,8 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   if (DATA) DATA.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "")).toLowerCase().replace(/"/g, ""); });
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
   function itemHtml(r) {
-    var link = r.d ? '<a href="https://doi.org/' + esc(r.d) + '" target="_blank" rel="noopener external">doi:' + esc(r.d) + '</a>'
+    // the old SICI DOIs carry < and >: percent-encoded in the address, escaped in the text
+    var link = r.d ? '<a href="https://doi.org/' + esc(r.d.replace(/</g, "%3C").replace(/>/g, "%3E")) + '" target="_blank" rel="noopener external">doi:' + esc(r.d) + '</a>'
                    : '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(r.m) + '/" target="_blank" rel="noopener external">PubMed ' + esc(r.m) + '</a>';
     var tags = r.c.map(function (c) { return '<span class="bib-tag">' + esc(LABELS.codes[c] || c) + '</span>'; }).join("") +
                r.k.map(function (k) { return '<span class="bib-tag bib-topic">' + esc(LABELS.topics[k] || k) + '</span>'; }).join("") +

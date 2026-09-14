@@ -3017,7 +3017,7 @@
    "geocode_display_name": "March, Dallas County, Missouri, United States"
   },
   {
-   "institution": "Centre Hospitalo-Universitaire",
+   "institution": "Service de Génétique Médicale, Hôpital de Hautepierre, CHU de Strasbourg",
    "country": "France",
    "papers": 2,
    "years": [
@@ -3040,9 +3040,11 @@
     "11038459",
     "8766141"
    ],
-   "lat": 48.5753264,
-   "lon": 7.7430128,
-   "geocode_display_name": "Institut Hospitalo-Universitaire de Strasbourg, Quai Menachem Taffel, Centre, Strasbourg, Bas-Rhin, Collectivité européenne d'Alsace, Grand "
+   "lat": 48.593293,
+   "lon": 7.7070095,
+   "geocode_display_name": "Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France",
+   "address": "Avenue Molière, 67098 Strasbourg Cedex, France",
+   "contact": "Claude.Stoll@chru-strasbourg.fr"
   },
   {
    "institution": "Foundation 41",

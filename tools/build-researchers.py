@@ -126,6 +126,22 @@ for key, t in teams.items():
                 "representative": {"pmid": papers[0]["pmid"], "doi": papers[0]["doi"], "title": papers[0]["title"], "year": papers[0]["year"]},
                 "pmids": [e["pmid"] for e in papers]})
 out.sort(key=lambda t: (-t["papers"], -t["years"][1], t["institution"]))
+# Corrections from the teams themselves. A PubMed affiliation is often abbreviated to the point of
+# naming neither the service nor the site, and the geocoder then lands on the wrong building; where
+# a team tells us its department, address and contact, they replace what the affiliation says.
+# Keyed by the institution string the affiliations produce, with its country.
+TEAM_FIX = {
+    ("Centre Hospitalo-Universitaire", "France"): {
+        "institution": "Service de Génétique Médicale, Hôpital de Hautepierre, CHU de Strasbourg",
+        "address": "Avenue Molière, 67098 Strasbourg Cedex, France",
+        "contact": "Claude.Stoll@chru-strasbourg.fr",
+        "lat": 48.593293, "lon": 7.7070095,
+        "geocode_display_name": "Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France",
+    },
+}
+for t in out:
+    f = TEAM_FIX.get((t["institution"], t["country"]))
+    if f: t.update(f)
 
 # ── coordinates for the landing map: OpenStreetMap Nominatim, cached in tools/geocode-cache.json ──
 import urllib.parse
@@ -159,6 +175,7 @@ def geocode(inst, country):
 
 
 for t in out:
+    if t.get("lat"): continue  # a correction in TEAM_FIX already placed it
     g = geocode(t["institution"], t["country"])
     t["lat"], t["lon"], t["geocode_display_name"] = (g["lat"], g["lon"], g["display_name"]) if g else (None, None, None)
 CACHE_PATH.write_text(json.dumps(CACHE, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -2656,7 +2656,8 @@ MEMBER_INFO = {
     "Svensk Dysmeliförening": {"role": "Chair", "person": "Jelena Blingros", "person_email": "jelena@dysmeli.se",
                                "email": "info@dysmeli.se", "src": "the association's board page"},
     "Thalidomide Trust": {"role": "Chair of trustees", "person": "David Body", "src": "the Trust's trustees page; it takes enquiries through its website"},
-    "Reach": {"role": "President", "person": "Gary Phillips", "email": "reach@reach.org.uk", "src": "the DysNet board"},
+    "Reach": {"role": "Chairman", "person": "Chris Creamer", "deputy_role": "Vice chairman", "deputy": "Gary Phillips",
+              "email": "reach@reach.org.uk", "src": "the DysNet board"},
     "Thalidomide Society": {"role": "Chair of trustees", "person": "Mandy De La Mare", "email": "info@thalidomidesociety.org",
                             "src": "the association's board of trustees page"},
     "Steps Charity": {"role": "Chief executive", "person": "Amanda Goulding", "email": "info@steps-charity.org.uk",
@@ -2671,6 +2672,8 @@ def member_li(entry):
     rows = []
     if i.get("person"):
         rows.append(f'<p class="assoc-lead"><strong>{i.get("role", "President")}</strong>{i["person"]}</p>')
+    if i.get("deputy"):
+        rows.append(f'<p class="assoc-lead"><strong>{i.get("deputy_role", "Vice chair")}</strong>{i["deputy"]}</p>')
     contact = []
     if i.get("person_email"): contact.append(f'<a href="mailto:{i["person_email"]}">{i["person_email"]}</a>')
     if i.get("email"): contact.append(f'<a href="mailto:{i["email"]}">{i["email"]}</a>')

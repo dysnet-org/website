@@ -3049,7 +3049,7 @@ PAGES["/about/transparency/"] = {
       <article class="entry"><h3>Statutes of DysNet <span class="badge live">2011</span></h3><p>Adopted by the Extraordinary Meetings of 20 October 2011. Name, objectives, membership, decision-making bodies, board, accounts and audit.</p><p class="src"><a href="/about/statutes/">Read online</a> · PDF · English</p></article>
       <article class="entry"><h3>A Refocused Strategy 2026-2029 <span class="badge live">AGM 2026</span></h3><p>Three missions, one task each, a governance built to carry them, and funding tied to each. Adopted by the AGM of 26 August 2026.</p><p class="src">PDF · English</p></article>
       <article class="entry"><h3>Annual accounts <span class="badge example">to publish</span></h3><p>The previous year’s operating statement, accounts and auditor’s report, as considered by each AGM.</p><p class="src">Published after each AGM</p></article>
-      <article class="entry"><h3>AGM minutes and reports <span class="badge example">to publish</span></h3><p>Minutes of general meetings and the first mission reports, from the AGM 2027 onward.</p><p class="src">Published after each meeting</p></article>
+      <article class="entry"><h3>AGM minutes and reports <span class="badge example">to publish</span></h3><p>Minutes of the general meetings, and the mission reports the refocused strategy asks each mission to produce. The minutes of the AGM of 26 August 2026 are not drafted yet.</p><p class="src">Each set goes online once the meeting has adopted it</p></article>
     </div>
   </div>
 </section>

@@ -356,6 +356,16 @@ CARE_PATH = pathlib.Path(__file__).parent / "tools" / "care-centres.json"
 CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if CARE_PATH.exists() else []
 
 
+# A note printed under a centre's entry, where the register alone would leave a question open.
+CENTRE_NOTES = {
+    "EX-Center, national knowledge and rehabilitation centre for multiple limb deficiencies":
+        ('EX-Center is the Swedish knowledge and rehabilitation centre for children and adults with multiple limb loss, whether '
+         'congenital limb deficiency or amputation, in operation since 1993 and run as a cooperation between FfdN, the Swedish '
+         'Thalidomide Society, and the Amputation and Dysmelia Center at Ottobock Care. It is not a member association. '
+         '<a href="/assets/ex-center-brochure-2025-en.pdf" download>Download the EX-Center brochure</a> (PDF, English, 1.7 MB).'),
+}
+
+
 def centres_html():
     out, last = [], None
     for c in sorted(CARE_CENTRES, key=lambda c: (c["country"], c["city"], c["name"])):
@@ -368,8 +378,9 @@ def centres_html():
         via = f'<a href="{c["via_url"]}" target="_blank" rel="noopener external">{c["via"]}</a>' if c.get("via_url") else c.get("via", "")
         verb = c.get("via_verb") or "named by"
         local = f'<p class="src">{c["name_local"]}</p>' if c.get("name_local") else ""
+        note = f'<p class="entry-note">{CENTRE_NOTES[c["name"]]}</p>' if c["name"] in CENTRE_NOTES else ""
         out.append(f'<article class="entry"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
-                   f'<p>{c["specialism"]}</p><p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
+                   f'<p>{c["specialism"]}</p>{note}<p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
     return "".join(out)
 
 
@@ -2481,7 +2492,7 @@ MEMBERS = [
     ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
     ("Norway", [("Den Norske Thalidomide Forening", None)]),
     ("Spain", [("AVITE", "https://www.avite.org")]),
-    ("Sweden", [("FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)", "https://www.thalidomide.org/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Väst/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
+    ("Sweden", [("FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)", "https://www.thalidomide.org/", "https://www.thalidomide.org/web/kontakt/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Väst/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
     ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org"), ("Steps Charity", "https://steps-charity.org.uk/")]),
 ]
 
@@ -2606,25 +2617,75 @@ MEMBER_NOTES = {
     "Sweden": ('FfdN, Föreningen för de Neurosedynskadade, is the Swedish Thalidomide Society: a national association in Solna '
                '(<a href="https://www.thalidomide.org/" target="_blank" rel="noopener external">thalidomide.org</a>, also reachable at '
                '<a href="https://www.ffdn.se" target="_blank" rel="noopener external">ffdn.se</a>) with two regional associations, '
-               'Stockholm and Väst/Skåne. Its president is Bengt-Lennart Widell; Carina Essberg is the contact for Stockholm '
-               'and Tina Henriksson for Väst/Skåne. <strong>EX-Center is not a member association.</strong> It is the Swedish knowledge and '
-               'rehabilitation centre for children and adults with multiple limb loss, whether congenital limb deficiency or '
-               'amputation, in operation since 1993 and run as a cooperation between FfdN and the Amputation and Dysmelia Center '
-               'at Ottobock Care. It appears in our <a href="/knowledge/care-centres/">care centres register</a>. '
-               '<a href="/assets/ex-center-brochure-2025-en.pdf" download>Download the EX-Center brochure</a> (PDF, English, 1.7 MB).'),
+               'Stockholm and Väst/Skåne. EX-Center, which FfdN runs with Ottobock Care, is a rehabilitation centre rather than an '
+               'association, and has its place in our <a href="/knowledge/care-centres/">care centres register</a>.'),
+}
+
+
+# Who leads each association and how to reach it. Every name and address below is the one the
+# association itself publishes on its own website, read on 14 September 2026; nothing here comes
+# from a private list. An association that publishes no name keeps only its contact address.
+MEMBER_INFO = {
+    "Aussiehands": {"role": "President and chairperson", "person": "Elizabeth Borg", "email": "info@aussiehands.org",
+                    "src": "2026 board, published on the association's site"},
+    "Thalidomide Australia": {"email": "lisa@thalidomidegroupaustralia.com", "src": "contact page"},
+    "Limbs 4 Life": {"email": "info@limbs4life.org.au", "src": "contact page"},
+    "Assedea": {"role": "President", "person": "Carine Faucher Lombardo", "email": "contact@assedea.fr", "src": "team page"},
+    "Contergan NRW": {"email": "info@contergan-nrw.eu", "src": "site footer"},
+    "HICOHA Hamburg": {"role": "Chair", "person": "Gernot Stracke", "phone": "+49 40 41092110", "src": "Impressum"},
+    "Interessenverband Contergangeschädigter, Köln": {"role": "Chair", "person": "Udo Herterich",
+                                                      "person_email": "udo.herterich@conterganverband-koeln.de", "src": "board page"},
+    "Contergangeschädigte Hessen": {"role": "Chair", "person": "Alfonso J. Fernandez Garcia", "email": "info@contergan-hessen.de",
+                                    "src": "Impressum"},
+    "Raggiungere": {"role": "President", "person": "Carlo Antonini", "email": "info@raggiungere.it",
+                    "src": "board 2026-2028, published on the association's site"},
+    "Thalidomidici Italiani (TAI onlus)": {"role": "President", "person": "Vincenzo Tomasso", "email": "segreteria@taionlus.it",
+                                           "src": "about page"},
+    "V.I.TA – Vittime Talidomide Italia": {"email": "segreteria@vittimetalidomideitalia.it",
+                                           "person_email": "presidente@vittimetalidomideitalia.it", "src": "contact page"},
+    "AISP – Sindrome di Poland": {"role": "President", "person": "Ilaria Baldelli", "email": "segreteria@sindromedipoland.org",
+                                  "src": "board elected 7 November 2024"},
+    "Stichting NESOS": {"email": "informatievraag@stichtingnesos.nl", "src": "contact page"},
+    "AVITE": {"role": "Founding president", "person": "José Riquelme López", "email": "info@avite.org", "src": "board page"},
+    "FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)":
+        {"role": "President", "person": "Bengt-Lennart Widell", "person_email": "bengt-lennart.w@ffdn.se",
+         "email": "info@ffdn.se", "src": "board 2026"},
+    "FfdN Stockholm": {"role": "Chair", "person": "Carina Essberg", "email": "ffdn-stockholm@ffdn.se", "src": "regional board page"},
+    "FfdN Väst/Skåne": {"role": "Chair", "person": "Tina Henriksson", "person_email": "tina.h@ffdn.se", "src": "regional board page"},
+    "Svensk Dysmeliförening": {"role": "Chair", "person": "Jelena Blingros", "person_email": "jelena@dysmeli.se",
+                               "email": "info@dysmeli.se", "src": "board page"},
+    "Thalidomide Trust": {"role": "Chair of trustees", "person": "David Body", "src": "trustees page; the Trust takes enquiries through its website"},
+    "Reach": {"email": "reach@reach.org.uk", "src": "contact page"},
+    "Thalidomide Society": {"role": "Chair of trustees", "person": "Mandy De La Mare", "email": "info@thalidomidesociety.org",
+                            "src": "board of trustees page"},
+    "Steps Charity": {"role": "Chief executive", "person": "Amanda Goulding", "email": "info@steps-charity.org.uk",
+                      "src": "team page"},
 }
 
 
 def member_li(entry):
     name, url = entry[0], entry[1]
     support = entry[2] if len(entry) > 2 else None
+    i = MEMBER_INFO.get(name, {})
+    rows = []
+    if i.get("person"):
+        rows.append(f'<p class="assoc-lead"><strong>{i.get("role", "President")}:</strong> {i["person"]}'
+                    + (f' · <a href="mailto:{i["person_email"]}">{i["person_email"]}</a>' if i.get("person_email") else "") + "</p>")
+    contact = []
+    if i.get("email"): contact.append(f'<a href="mailto:{i["email"]}">{i["email"]}</a>')
+    if i.get("person_email") and not i.get("person"): contact.append(f'<a href="mailto:{i["person_email"]}">{i["person_email"]}</a>')
+    if i.get("phone"): contact.append(i["phone"])
+    if contact: rows.append(f'<p class="assoc-contact">Contact: {" · ".join(contact)}</p>')
     if url:
-        h = f'<a href="{url}" target="_blank" rel="noopener external">{name} ↗</a>'
-    else:
-        h = name
+        host = url.split("//")[-1].split("/")[0].removeprefix("www.")
+        rows.append(f'<p class="assoc-site"><a href="{url}" target="_blank" rel="noopener external">{host} ↗</a></p>')
     if support:
-        h = f'<span>{h}</span><a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>'
-    return f"<li>{h}</li>"
+        rows.append(f'<a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>')
+    if not rows:
+        return f'<li class="assoc-plain">{name}</li>'
+    src = f'<p class="assoc-src">Published by the association itself: {i["src"]}.</p>' if i.get("src") else ""
+    return (f'<li><details class="assoc"><summary>{name}</summary>'
+            f'<div class="assoc-body">{"".join(rows)}{src}</div></details></li>')
 
 PAGES["/about/members/"] = {
     "title": "Member associations",
@@ -2644,8 +2705,8 @@ PAGES["/about/members/"] = {
 
     {opener("01", "Join", "Two ways in.")}
     <div class="grid cols-2">
-      <div class="card"><h3 class="h4">Full member</h3><p>For associations ready to take part in governance: voting rights, a voice at the AGM, and a duty to feed the registers. Annual fee €50.</p></div>
-      <div class="card" style="--acc:var(--dys-green);--acc-text:var(--dys-green-text)"><h3 class="h4">Associate (observer)</h3><p>For associations that want to support one mission, typically the registry, without governance duties or fees, returning to full membership when capacity allows.</p></div>
+      <div class="card"><h3 class="h4">Full member</h3><p>For associations ready to take part in governance: voting rights, a voice at the AGM, and a duty to feed the registers. Write to the board for the terms of membership.</p></div>
+      <div class="card" style="--acc:var(--dys-green);--acc-text:var(--dys-green-text)"><h3 class="h4">Associate (observer)</h3><p>For associations that want to support one mission, typically the registry, without governance duties, returning to full membership when capacity allows.</p></div>
     </div>
     <p style="margin-top:var(--space-3)"><a class="btn btn-primary" href="mailto:info@dysnet.org?subject=Membership">Write to us about membership</a></p>
     <p style="font-size:var(--text-small);color:var(--dys-muted)">Member associations are also encouraged to register in <a href="https://www.orpha.net/en/patient-organisations" target="_blank" rel="noopener external">Orphanet’s directory of patient organisations</a>, where families and clinicians across Europe and beyond search for support groups.</p>
@@ -2739,7 +2800,7 @@ PAGES["/donate/"] = {
       </div>
       <div class="amounts" role="group" aria-label="Amount">
         <button type="button" aria-pressed="false">€25<small>friend</small></button>
-        <button type="button" aria-pressed="true">€50<small>member level</small></button>
+        <button type="button" aria-pressed="true">€50<small>regular</small></button>
         <button type="button" aria-pressed="false">€100<small>supporter</small></button>
         <button type="button" aria-pressed="false">€250<small>patron</small></button>
         <button type="button" aria-pressed="false">€500<small>benefactor</small></button>
@@ -2764,7 +2825,7 @@ PAGES["/donate/"] = {
     <p class="eyebrow">01 · Other ways to help</p>
     <h2 class="h2">Not all gifts are money.</h2>
     <div class="grid cols-3" style="margin-top:var(--space-4)">
-      <div class="card"><h3 class="h4">Association membership</h3><p>€50 a year gives your association a vote and a voice, and your families the registers. An associate status without fees exists for associations with limited capacity.</p><p class="meta"><a href="/about/members/">How to join</a></p></div>
+      <div class="card"><h3 class="h4">Association membership</h3><p>Membership gives your association a vote and a voice, and your families the registers. An associate status exists for associations with limited capacity. Write to the board for the terms.</p><p class="meta"><a href="/about/members/">How to join</a></p></div>
       <div class="card" style="--acc:var(--dys-green);--acc-text:var(--dys-green-text)"><h3 class="h4">In-kind contributions</h3><p>Design, hosting, translation or research hours: the most valuable gifts for the registers come from partners of member associations.</p><p class="meta"><a href="mailto:info@dysnet.org?subject=In-kind%20contribution">Offer a skill</a></p></div>
       <div class="card acc-centres"><h3 class="h4">Give your time</h3><p>A few hours a month move the work forward: helping us raise funds, reading the evidence that feeds the registers, welcoming and supporting member associations, or carrying our position to national and European bodies.</p><p class="meta"><a href="mailto:info@dysnet.org?subject=Volunteering%20with%20DysNet">Volunteer with us</a></p></div>
     </div>

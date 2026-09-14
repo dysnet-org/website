@@ -908,3 +908,18 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .use-agriculture { background: #ecfccb; color: #365314; border-color: #bef264; }
 .use-fuel { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+/* Member associations: one dropdown per association, opened for who leads it and how to reach it */
+.country ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: var(--space-1); }
+.country li { padding: 0; display: block; }
+.country li.assoc-plain { padding: 0.45rem 0.9rem; color: var(--dys-muted); }
+details.assoc { background: #fff; }
+details.assoc > summary { cursor: pointer; list-style: none; padding: 0.45rem 0.9rem; font-size: var(--text-small); font-weight: 600; display: flex; gap: 0.5rem; align-items: baseline; }
+details.assoc > summary::-webkit-details-marker { display: none; }
+details.assoc > summary::after { content: "▾"; margin-left: auto; color: var(--dys-purple-text); }
+details.assoc[open] > summary::after { content: "▴"; }
+details.assoc[open] { border-color: var(--dys-purple); }
+.assoc-body { padding: 0 0.9rem 0.7rem; font-size: var(--text-small); display: grid; gap: 0.3rem; justify-items: start; }
+.assoc-body p { margin: 0; }
+.assoc-src { color: var(--dys-muted); font-size: var(--text-eyebrow); }
+.entry-note { background: var(--dys-purple-soft); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); font-size: var(--text-small); }

@@ -109,13 +109,29 @@
 (function () {
   var box = document.getElementById("donate");
   if (!box) return;
+  var chosen = document.getElementById("bank-chosen"), ask = document.getElementById("bank-ask");
+  function pressed(sel) { var b = box.querySelector(sel + ' button[aria-pressed="true"]'); return b ? b.childNodes[0].textContent.trim() : ""; }
+  // a chosen amount must survive the click: it is restated in the panel and carried into the request
+  function sync() {
+    if (!chosen || !ask) return;
+    var freq = pressed(".freq").toLowerCase(), amount = pressed(".amounts");
+    var sum = amount === "Other" ? "an amount of my choosing" : amount.replace("€", "EUR ");
+    chosen.innerHTML = "Your gift: <strong>" + freq + ", " + (amount === "Other" ? "amount of your choosing" : amount) + "</strong>.";
+    var body = "Hello,\n\nI would like to make a " + freq + " gift of " + sum +
+               " by bank transfer. Please send me the account details.\n\nThank you,\n";
+    ask.setAttribute("href", "mailto:sal.giambruno@dysnet.org?cc=info@dysnet.org&subject=" +
+      encodeURIComponent("Donation to DysNet: " + freq + ", " + (amount === "Other" ? "amount to agree" : amount)) +
+      "&body=" + encodeURIComponent(body));
+  }
   box.querySelectorAll(".freq button, .amounts button").forEach(function (b) {
     b.addEventListener("click", function () {
       var group = b.closest(".freq, .amounts");
       group.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
       b.setAttribute("aria-pressed", "true");
+      sync();
     });
   });
+  sync();
   var toggle = document.getElementById("bank-toggle");
   var details = document.getElementById("bank-details");
   toggle.addEventListener("click", function () {

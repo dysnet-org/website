@@ -3077,13 +3077,14 @@ PAGES["/donate/"] = {
       </div>
       <button type="button" class="btn-go" id="bank-toggle">Give by bank transfer</button>
       <div class="bank-reveal" id="bank-details">
+        <p id="bank-chosen">Your gift: <strong>one-off, €50</strong>.</p>
         <strong>Beneficiary:</strong> DysNet Ideell Förening, Solna, Sweden<br>
         <strong>Reference:</strong> your name + “donation”<br>
-        <strong>Account details:</strong> confirmed by the treasurer before publication; request them at
-        <a href="mailto:sal.giambruno@dysnet.org">sal.giambruno@dysnet.org</a> or
-        <a href="mailto:info@dysnet.org">info@dysnet.org</a>.
+        <strong>Account details:</strong> the treasurer sends them on request, usually within two working days.<br>
+        <a class="btn btn-primary" id="bank-ask" href="mailto:sal.giambruno@dysnet.org?cc=info@dysnet.org&amp;subject=Donation%20to%20DysNet&amp;body=Hello%2C%0A%0AI%20would%20like%20to%20make%20a%20one-off%20gift%20of%20EUR%2050%20by%20bank%20transfer.%20Please%20send%20me%20the%20account%20details.%0A%0AThank%20you%2C%0A">Ask for the account details</a>
+        <span class="fine">or write to <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</span>
       </div>
-      <p class="fine">Online card payment arrives with the live site. Accounts are published after each AGM on the <a href="/about/transparency/" style="color:#d8fcc8">transparency page</a>.</p>
+
     </div>
   </div>
 </section>

@@ -974,3 +974,26 @@ table.annex.inc-table tbody tr:first-child th, table.annex.inc-table tbody tr:fi
   table.annex.inc-table th, table.annex.inc-table td { padding: var(--space-1) 0.4rem; }
   table.annex.inc-table tbody th { white-space: normal; }
 }
+
+/* ── Print: the registers and the tables are what people print ────────── */
+@media print {
+  :root { --dys-ink: #000; --dys-muted: #333; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  header.site, footer, .map-hero, .search-modal, .to-top, .btn, .inc-controls, #bib-controls, #tera-controls,
+  .finder, .register-note, .nav-toggle, .assoc-foot, details.assoc > summary::after { display: none !important; }
+  main, .container { max-width: none; margin: 0; padding: 0; }
+  a { color: #000; text-decoration: underline; }
+  /* a printed link is useless without its address */
+  main a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
+  main a[href^="/"]::after { content: " (www.dysnet.org" attr(href) ")"; font-size: 9pt; }
+  main a[href^="mailto"]::after, main a[href^="#"]::after, .bib-item a::after, .annex a::after { content: ""; }
+  .card, .entry, .country li, article { break-inside: avoid; page-break-inside: avoid; border-color: #999; box-shadow: none; }
+  h1, h2, h3 { break-after: avoid; page-break-after: avoid; }
+  .annex-wrap { overflow: visible; border: 0; }
+  table.annex { min-width: 0; width: 100%; font-size: 9pt; }
+  table.annex thead { display: table-header-group; }          /* repeat the header on every page */
+  table.annex th, table.annex td { border-bottom: 1px solid #bbb; padding: 2pt 4pt; }
+  details, details[open] > * { display: block !important; }   /* print what a reader would have to open */
+  .tera-item, .bib-item { break-inside: avoid; }
+  img, picture { max-width: 100%; }
+}

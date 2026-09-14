@@ -187,6 +187,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2a0d47">
 <title>{full}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
@@ -308,6 +309,23 @@ def crumbs(*pairs):
     return f'<nav class="crumbs container" aria-label="Breadcrumb">{sep.join(items)}</nav>'
 
 
+def updated_text(iso):
+    """`updated Sep 2026` as plain text, for the cards that carry no badge."""
+    if not iso: return ""
+    import datetime
+    try: return "updated " + datetime.date.fromisoformat(iso[:10]).strftime("%b %Y")
+    except ValueError: return ""
+
+
+def updated_badge(iso):
+    """`updated Sep 2026`, from the date the register itself was built, so the badge cannot go stale."""
+    if not iso: return ""
+    import datetime
+    try: d = datetime.date.fromisoformat(iso[:10])
+    except ValueError: return ""
+    return f'<span class="badge live">updated {d.strftime("%b %Y")}</span>'
+
+
 def opener(num, label, heading, acc=None, big=False):
     style = f' style="--acc:var(--acc-{acc});--acc-text:var(--acc-{acc}-text)"' if acc else ""
     h = "h2-lg" if big else "h2"
@@ -394,7 +412,9 @@ def bibliography_html():
 # in its scope (those carry via_verb "verified from"),
 # plus the children's hand clinics of the BSSH directory that Reach points families to; URLs checked; coordinates from OpenStreetMap Nominatim (see tools/care-centres.json for the audit trail).
 CARE_PATH = pathlib.Path(__file__).parent / "tools" / "care-centres.json"
-CARE_CENTRES = json.loads(CARE_PATH.read_text(encoding="utf-8"))["centres"] if CARE_PATH.exists() else []
+_CARE_RAW = json.loads(CARE_PATH.read_text(encoding="utf-8")) if CARE_PATH.exists() else {}
+CARE_CENTRES = _CARE_RAW.get("centres", [])
+CARE_CENTRES_BUILT = _CARE_RAW.get("built", "")
 
 
 # A note printed under a centre's entry, where the register alone would leave a question open.
@@ -428,6 +448,8 @@ def centres_html():
 # Register 3 · research teams derived from the bibliography (tools/build-researchers.py; PubMed affiliations of first and last authors).
 RES_PATH = pathlib.Path(__file__).parent / "tools" / "researchers.json"
 RESEARCHERS = json.loads(RES_PATH.read_text(encoding="utf-8")) if RES_PATH.exists() else {"teams": []}
+REG_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-registries.json"
+ORPHA_REGS = json.loads(REG_PATH.read_text(encoding="utf-8")) if REG_PATH.exists() else {"registries": []}
 
 
 def researchers_html():
@@ -732,27 +754,27 @@ PAGES["/knowledge/"] = {
       <div class="card acc-library">
         <h3 class="h3"><a href="/knowledge/bibliography/">Bibliography</a></h3>
         <p>Peer-reviewed publications on our conditions, searchable by condition, theme and year.</p>
-        <p class="meta">Register 1 · updated August 2026</p>
+        <p class="meta">Register 1 · {updated_text(BIB.get("built"))}</p>
       </div>
       <div class="card acc-studies">
         <h3 class="h3"><a href="/knowledge/registries/">Registries</a></h3>
         <p>The registries that already record our conditions: EUROCAT members, national rare-disease registries and the French population registries.</p>
-        <p class="meta">Register 2 · updated September 2026</p>
+        <p class="meta">Register 2 · {updated_text(ORPHA_REGS.get("fetched"))}</p>
       </div>
       <div class="card acc-research">
         <h3 class="h3"><a href="/knowledge/researchers/">Researchers</a></h3>
         <p>Research teams working on limb difference around the world.</p>
-        <p class="meta">Register 3 · updated August 2026</p>
+        <p class="meta">Register 3 · {updated_text(RESEARCHERS.get("built"))}</p>
       </div>
       <div class="card acc-centres">
         <h3 class="h3"><a href="/knowledge/care-centres/">Care centres</a></h3>
         <p>Reference and competence centres, in Europe and beyond, on a map.</p>
-        <p class="meta">Register 4 · updated August 2026</p>
+        <p class="meta">Register 4 · {updated_text(CARE_CENTRES_BUILT)}</p>
       </div>
       <div class="card acc-centres">
         <h3 class="h3"><a href="/knowledge/teratogens/">Teratogens register</a></h3>
         <p>Substances and products with known, presumed or suspected effects on the unborn child, with their source and their legal status.</p>
-        <p class="meta">Register 5 · new</p>
+        <p class="meta">Register 5 · {updated_text(TERA.get("built"))}</p>
       </div>
     </div>
 
@@ -794,7 +816,7 @@ PAGES["/knowledge/bibliography/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 1 · Bibliography <span class="badge live">updated Sep 2026</span></p>
+    <p class="eyebrow">Register 1 · Bibliography {updated_badge(BIB.get("built"))}</p>
     <h1 class="display">Bibliography on limb difference: the research, readable.</h1>
     <p>Every entry: a citation and a link to the source, tagged by condition and theme so families and clinicians find what concerns them. Search, then filter by condition, theme and year.</p>
     <p style="margin-top:var(--space-3)">Looking for guides, surveys and reports rather than papers? They have moved to <a href="/knowledge/resources/">Resources</a>.</p>
@@ -809,8 +831,6 @@ PAGES["/knowledge/bibliography/"] = {
 
 
 # ─────────── Registries listed on Orphanet for our ORPHAcodes (harvested 2026-09-11) ───────────
-REG_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-registries.json"
-ORPHA_REGS = json.loads(REG_PATH.read_text(encoding="utf-8")) if REG_PATH.exists() else {"registries": []}
 COUNTRY_LABEL = {"SERBIEN": "Serbia"}
 
 
@@ -885,7 +905,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Knowledge · Studies <span class="badge live">updated Aug 2026</span></p>
+    <p class="eyebrow">Knowledge · Studies</p>
     <h1 class="display">Studies on limb difference you can join or follow.</h1>
     <p>Studies our community can join or follow. Each entry shows who runs it, its status, and whom to contact. Associations: tell us about studies in your country.</p>
 
@@ -937,7 +957,7 @@ PAGES["/knowledge/registries/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-studies);--acc-text:var(--acc-studies-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 2 · Registries <span class="badge live">updated Sep 2026</span></p>
+    <p class="eyebrow">Register 2 · Registries {updated_badge(ORPHA_REGS.get("fetched"))}</p>
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
     <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-five areas are drawn, for the registries that are coded for our conditions, plus the two North American ones and India below. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
@@ -1147,7 +1167,7 @@ PAGES["/knowledge/researchers/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-research);--acc-text:var(--acc-research-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 3 · Researchers <span class="badge live">updated Aug 2026</span></p>
+    <p class="eyebrow">Register 3 · Researchers {updated_badge(RESEARCHERS.get("built"))}</p>
     <h1 class="display">Who works on limb difference.</h1>
     <p>A factual register: teams that publish or run studies on congenital limb difference. Listing is by activity, not endorsement, so no one is preferred and no one is left out. Two partners DysNet has met in person open the list; the teams that publish on our conditions follow, drawn from the bibliography.</p>
 
@@ -1186,7 +1206,7 @@ PAGES["/knowledge/care-centres/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 4 · Care centres <span class="badge live">updated Sep 2026</span></p>
+    <p class="eyebrow">Register 4 · Care centres {updated_badge(CARE_CENTRES_BUILT)}</p>
     <h1 class="display">Care centres for limb difference: where expertise lives.</h1>
     <p>The map of reference and competence centres for limb difference, in Europe and beyond, validated with our member associations so a family anywhere knows where the nearest expertise is. Every centre listed here was named by one of our member associations on its own website or visited by the board, and appears as an orange marker on the <a href="/">world map</a> on our home page. Where DysNet has no member association yet, a centre earns its place differently: its own institutional page must state congenital limb difference, limb reconstruction or prosthetic fitting in its scope, and those entries say <em>verified from</em> rather than <em>named by</em>, so you can see at a glance which are community-validated and which are not. The dedicated children’s hand clinics of the United Kingdom and Ireland come from the directory that the British Society for Surgery of the Hand publishes for families, which our member association Reach points parents to when they ask for a referral. {len(CARE_CENTRES)} centres in {len({c["country"] for c in CARE_CENTRES})} countries so far; associations add theirs by writing to <a href="mailto:info@dysnet.org?subject=Care%20centre">info@dysnet.org</a>. <a href="/data/care-centres.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 
@@ -1206,7 +1226,7 @@ PAGES["/knowledge/care-centres/"] = {
     </div>
 
     <figure class="photo" style="margin-top:var(--space-4)">
-      <img src="/assets/img/inail-lab-tour.jpg" alt="The DysNet board touring a prosthetics workshop at the INAIL centre, with casts and tools on the benches" loading="lazy">
+      <picture><source srcset="/assets/img/inail-lab-tour.webp" type="image/webp"><img src="/assets/img/inail-lab-tour.jpg" alt="The DysNet board touring a prosthetics workshop at the INAIL centre, with casts and tools on the benches" width="1400" height="787" loading="lazy" decoding="async"></picture>
       <figcaption>The DysNet board visiting the INAIL prosthetics workshops, Vigorso di Budrio, August 2024. Photo: DysNet.</figcaption>
     </figure>
     {REGISTER_FOOT}
@@ -1223,7 +1243,7 @@ PAGES["/knowledge/teratogens/"] = {
 <section>
   <div class="container" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
     <div class="tick"></div>
-    <p class="eyebrow">Register 5 · Substances of concern <span class="badge live">new</span></p>
+    <p class="eyebrow">Register 5 · Substances of concern {updated_badge(TERA.get("built"))}</p>
     <h1 class="display">Teratogens register: which products can harm the unborn child, and who says so.</h1>
     <p>Families ask a simple question after a diagnosis: could something have caused this? No public authority answers it with one list. The World Health Organization keeps none. What exists is scattered across chemical law, medicines regulation and one American state. This register brings those lists together, names the source for every entry, states how strong the evidence is, and says where each substance is banned, restricted, labelled or simply allowed.</p>
     <p>It is not medical advice. For a question about a medicine or an exposure during a pregnancy, ask a teratology information service: <a href="https://www.lecrat.fr/" target="_blank" rel="noopener external">CRAT</a> in France, <a href="https://www.medicinesinpregnancy.org/" target="_blank" rel="noopener external">bumps</a> in the United Kingdom, <a href="https://mothertobaby.org/" target="_blank" rel="noopener external">MotherToBaby</a> in North America, or the <a href="https://www.entis-org.eu/centers" target="_blank" rel="noopener external">ENTIS member</a> in your country.</p>
@@ -2616,7 +2636,7 @@ PAGES["/voice/reports/"] = {
     </div>
 
     <figure class="photo" style="margin-top:var(--space-4)">
-      <img src="/assets/img/limbloss-day-2012.jpg" alt="A speaker presents DysNet and EDRIC at European LimbLoss Day 2012" loading="lazy">
+      <picture><source srcset="/assets/img/limbloss-day-2012.webp" type="image/webp"><img src="/assets/img/limbloss-day-2012.jpg" alt="A speaker presents DysNet and EDRIC at European LimbLoss Day 2012" width="1400" height="1050" loading="lazy" decoding="async"></picture>
       <figcaption>Representation is in DysNet’s DNA: European LimbLoss Day, 2012. Photo: DysNet.</figcaption>
     </figure>
   </div>
@@ -2651,7 +2671,7 @@ PAGES["/about/"] = {
     {opener("03", "History", "From Malmö 2012 to today.")}
     <div class="grid cols-2">
       <figure class="photo">
-        <img src="/assets/img/dysnet-banner-2012.jpg" alt="The original DysNet launch banner: Let the conversation begin" loading="lazy">
+        <picture><source srcset="/assets/img/dysnet-banner-2012.webp" type="image/webp"><img src="/assets/img/dysnet-banner-2012.jpg" alt="The original DysNet launch banner: Let the conversation begin" width="750" height="1000" loading="lazy" decoding="async"></picture>
         <figcaption>The launch banner, 2012: “Let the conversation begin.” Photo: DysNet.</figcaption>
       </figure>
       <div>
@@ -2661,7 +2681,7 @@ PAGES["/about/"] = {
         <p><strong>2025</strong> · Co-organiser of a biorobotics conference with Regione Lombardia.</p>
         <p><strong>2026</strong> · The refocused strategy: three missions, five registers, one registry.</p>
         <div class="yt-embed" data-yt="P8M2n7Gr3V0" data-title="The chair’s address to members">
-          <img src="/assets/img/chair-address-thumb.jpg" alt="Video: Claudio Pirola, DysNet’s chair, addresses the members" loading="lazy" width="640" height="480">
+          <picture><source srcset="/assets/img/chair-address-thumb.webp" type="image/webp"><img src="/assets/img/chair-address-thumb.jpg" alt="Video: Claudio Pirola, DysNet’s chair, addresses the members" width="640" height="480" loading="lazy" decoding="async"></picture>
           <button type="button" aria-label="Play: the chair’s address to members"><span></span></button>
         </div>
         <p style="font-size:var(--text-small);color:var(--dys-muted)">The chair’s address to members · <a href="https://www.youtube.com/watch?v=P8M2n7Gr3V0" target="_blank" rel="noopener external">open on YouTube ↗</a></p>
@@ -2675,7 +2695,7 @@ PAGES["/about/"] = {
       {"".join(person_card(*p) for p in BOARD)}
     </div>
     <figure class="photo" style="margin-top:var(--space-4)">
-      <img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests at the INAIL prosthetics centre, August 2024" loading="lazy">
+      <picture><source srcset="/assets/img/board-inail-2024.webp" type="image/webp"><img src="/assets/img/board-inail-2024.jpg" alt="DysNet board members and guests at the INAIL prosthetics centre, August 2024" width="1800" height="1012" loading="lazy" decoding="async"></picture>
       <figcaption>The board and member-association guests at INAIL Centro Protesi, Vigorso di Budrio, August 2024. Photo: DysNet.</figcaption>
     </figure>
 
@@ -3003,7 +3023,7 @@ PAGES["/donate/"] = {
         <li><strong>Voice</strong> · delegates where decisions are made</li>
       </ul>
       <figure class="don-photo">
-        <img src="/assets/img/inail-lab-2.jpg" alt="Prosthetics being crafted in the INAIL workshop visited by the DysNet board" loading="lazy">
+        <picture><source srcset="/assets/img/inail-lab-2.webp" type="image/webp"><img src="/assets/img/inail-lab-2.jpg" alt="Prosthetics being crafted in the INAIL workshop visited by the DysNet board" width="1400" height="787" loading="lazy" decoding="async"></picture>
       </figure>
       <p style="font-size:var(--text-small);color:var(--dys-muted);margin-top:var(--space-1)">The INAIL prosthetics workshop, Vigorso di Budrio. Photo: DysNet.</p>
     </div>

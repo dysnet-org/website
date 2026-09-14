@@ -539,7 +539,7 @@ def teratogens_html():
 
 BOARD = [
     ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
-    ("Dr Loïc Rigal", "Deputy chair · France", "Doctor in pharmaceutical law and patient advocate. Elected board member of the French association Assedea. Deputy chair since the general assembly of 26 August 2026, carrying the registry mission.", "LR", "", "Mission 2 · Registry"),
+    ("Dr Loïc Rigal", "Deputy Chair · France", "Doctor in pharmaceutical law and patient advocate. Elected board member of the French association Assedea. Deputy Chair since the general assembly of 26 August 2026, carrying the registry mission.", "LR", "", "Mission 2 · Registry"),
     ("Michaela Moik", "Thalidomide patient expert · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
     ("Monika Eisenberg-Geginat", "Secretary · Germany", "Thalidomide survivor, former head teacher, family therapist specialised in the protection of disabled children.", "ME", "moni.eisenberg@dysnet.org", "Statutes · AGM"),
     ("Salvatore Giambruno", "Treasurer · Italy", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
@@ -2456,7 +2456,7 @@ PAGES["/about/"] = {
         <p><strong>2012</strong> · The web portal opens; first network meeting in Malmö.</p>
         <p><strong>2015</strong> · Stockholm meeting; the network grows across Europe.</p>
         <p><strong>2025</strong> · Co-organiser of a biorobotics conference with Regione Lombardia.</p>
-        <p><strong>2026</strong> · The refocused strategy: three missions, four registers, one registry.</p>
+        <p><strong>2026</strong> · The refocused strategy: three missions, five registers, one registry.</p>
         <div class="yt-embed" data-yt="P8M2n7Gr3V0" data-title="The chair’s address to members">
           <img src="/assets/img/chair-address-thumb.jpg" alt="Video: Claudio Pirola, DysNet’s chair, addresses the members" loading="lazy" width="640" height="480">
           <button type="button" aria-label="Play: the chair’s address to members"><span></span></button>
@@ -2813,7 +2813,7 @@ PAGES["/donate/"] = {
       <h1 class="display">Support DysNet: power the network families rely on.</h1>
       <p>DysNet runs entirely on volunteers, so a small gift goes remarkably far: it keeps the registers current, the registry moving, and a delegate in the room when European decisions are made.</p>
       <ul class="don-carry">
-        <li><strong>Knowledge</strong> · hosting &amp; translation of the four registers</li>
+        <li><strong>Knowledge</strong> · hosting &amp; translation of the five registers</li>
         <li><strong>Registry</strong> · the patient-owned data flagship</li>
         <li><strong>Voice</strong> · delegates where decisions are made</li>
       </ul>

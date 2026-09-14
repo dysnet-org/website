@@ -1364,7 +1364,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
-    <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening and EX-Center in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
+    <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 
     {opener("03", "Going further", "How common is it, and why did it happen?")}
     <p>Two pages carry those questions further. Each is sourced and dated, and each says where the evidence stops.</p>
@@ -2407,7 +2407,7 @@ PAGES["/about/"] = {
     <div class="tick"></div>
     <p class="eyebrow">About · Built by families</p>
     <h1 class="display">About DysNet: a network families built.</h1>
-    <p>In 2009, the Swedish thalidomide organisations FfdN and Ex-Center and the UK Thalidomide Trust registered EDRIC, the European Dysmelia Reference Information Centre, in Sweden. The portal opened in 2012 and the network became DysNet: the only global network dedicated to congenital limb differences.</p>
+    <p>In 2009, the Swedish Thalidomide Society (FfdN), the EX-Center knowledge and rehabilitation centre and the UK Thalidomide Trust registered EDRIC, the European Dysmelia Reference Information Centre, in Sweden. The portal opened in 2012 and the network became DysNet: the only global network dedicated to congenital limb differences.</p>
 
     {opener("01", "Vision", "What we work towards.")}
     <p>A world where every family affected by a congenital limb difference can find the knowledge that concerns them, and where the community’s own data drives the research that shapes their care. DysNet pools what member associations know at national level into a shared international resource: documented research, a registry owned by patients themselves, and one voice in the institutions where decisions are made.</p>
@@ -2481,7 +2481,7 @@ MEMBERS = [
     ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
     ("Norway", [("Den Norske Thalidomide Forening", None)]),
     ("Spain", [("AVITE", "https://www.avite.org")]),
-    ("Sweden", [("FfdN", "https://www.thalidomide.org/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Västsverige/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Ex-Center", "https://ex-center.org"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
+    ("Sweden", [("FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)", "https://www.thalidomide.org/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Väst/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
     ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org"), ("Steps Charity", "https://steps-charity.org.uk/")]),
 ]
 
@@ -2601,6 +2601,19 @@ MAP_HERO = """
 """.replace("__MAP_DATA__", MAP_DATA).replace("__MAPGL_V__", __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/js/map-gl.js").read_bytes()).hexdigest()[:8])
 
 
+# Notes printed under a country's list, where the list alone would mislead.
+MEMBER_NOTES = {
+    "Sweden": ('FfdN, Föreningen för de Neurosedynskadade, is the Swedish Thalidomide Society: a national association in Solna '
+               '(<a href="https://www.thalidomide.org/" target="_blank" rel="noopener external">thalidomide.org</a>, also reachable at '
+               '<a href="https://www.ffdn.se" target="_blank" rel="noopener external">ffdn.se</a>) with two regional associations, '
+               'Stockholm and Väst/Skåne. <strong>EX-Center is not a member association.</strong> It is the Swedish knowledge and '
+               'rehabilitation centre for children and adults with multiple limb loss, whether congenital limb deficiency or '
+               'amputation, in operation since 1993 and run as a cooperation between FfdN and the Amputation and Dysmelia Center '
+               'at Ottobock Care. It appears in our <a href="/knowledge/care-centres/">care centres register</a>. '
+               '<a href="/assets/ex-center-brochure-2025-en.pdf" download>Download the EX-Center brochure</a> (PDF, English, 1.7 MB).'),
+}
+
+
 def member_li(entry):
     name, url = entry[0], entry[1]
     support = entry[2] if len(entry) > 2 else None
@@ -2625,7 +2638,7 @@ PAGES["/about/members/"] = {
     <p>DysNet is a federation: our members are national associations of people with limb differences and their families. Find yours below, or bring your association in.</p>
 
     <div style="margin-top:var(--space-4)">
-      {"".join(f'<div class="country"><h3>{c}</h3><ul>{"".join(member_li(m) for m in sorted(ms, key=lambda m: len(m) < 3))}</ul></div>' for c, ms in MEMBERS)}
+      {"".join(f'<div class="country"><h3>{c}</h3><ul>{"".join(member_li(m) for m in sorted(ms, key=lambda m: len(m) < 3))}</ul>{f"<p class=\'country-note\'>{MEMBER_NOTES[c]}</p>" if c in MEMBER_NOTES else ""}</div>' for c, ms in MEMBERS)}
     </div>
 
     {opener("01", "Join", "Two ways in.")}

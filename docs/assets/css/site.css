@@ -228,6 +228,7 @@ nav.main a[aria-current="true"] { border-bottom-color: var(--dys-green); color: 
 
 /* ── Country directory ─────────────────────────────────────────── */
 .country { margin-bottom: var(--space-3); }
+.country-note { font-size: var(--text-small); color: var(--dys-muted); margin: var(--space-1) 0 0; max-width: 46rem; }
 .country h3 { font-size: var(--text-h4); margin-bottom: var(--space-1); }
 .country ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-1); max-width: none; }
 .country li { background: #fff; border: 1px solid var(--dys-line); border-radius: 999px; padding: 0.25rem 0.9rem; font-size: var(--text-small); }

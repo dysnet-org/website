@@ -20,8 +20,12 @@
 set -euo pipefail
 
 # The shared .git lives in the main checkout, whether we were called from there
-# or from inside a worktree.
-GIT_COMMON=$(git rev-parse --path-format=absolute --git-common-dir)
+# or from inside a worktree. Resolve it from where this script sits, not from the
+# caller's directory, so it also works when invoked by absolute path from
+# anywhere, including from a worktree that is about to be removed.
+HERE=$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")/.." && pwd)
+GIT_COMMON=$(git -C "$HERE" rev-parse --path-format=absolute --git-common-dir 2>/dev/null) ||
+  { printf '\nerror: %s is not inside a git checkout\n\n' "$HERE" >&2; exit 1; }
 MAIN_CHECKOUT=$(dirname "$GIT_COMMON")
 WORKTREE_ROOT="$(dirname "$MAIN_CHECKOUT")/dysnet-worktrees"
 

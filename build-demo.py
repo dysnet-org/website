@@ -1079,6 +1079,19 @@ PAGES["/knowledge/resources/"] = {
         <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. Int J Environ Res Public Health 2018;15(8):1644 · <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
       </article>
       <article class="entry">
+        <h3>Portrait of a European militant: Björn Håkansson, EURORDIS <span class="badge live">August 2009</span></h3>
+        <p>The story of the network, told the year it was registered. Björn Håkansson, then president of the Swedish Thalidomide
+        Society (FfdN), was born in 1960 with dysmelia after his mother was prescribed thalidomide to help her sleep. EURORDIS
+        records what that community built: the EX-Center, set up in 1993 at the Red Cross Hospital in Stockholm and, in his words,
+        one of the first centres of expertise a disability organisation ran on the same platform as a hospital; and the
+        compensation the Swedish government agreed in 2001, 55,000 euros per person, on top of the payments the distributor has
+        made twice a year since 1970. It also gives the Swedish count: 170 children born with thalidomide damage between 1957 and
+        1963, of whom 118 survived. The last project he describes is the one he had just started with the British Thalidomide
+        Trust, because the people who knew thalidomide were growing old and a newborn with dysmelia might never meet a doctor who
+        had seen it before: the European Dysmelia Reference Information Centre, EDRIC, which became DysNet.</p>
+        <p class="src">EURORDIS, Living with a Rare Disease, August 2009 · <a href="https://www.eurordis.org/stories/dysmelia-swedish-thalidomide-victim/" target="_blank" rel="noopener external">eurordis.org · Dysmelia: Swedish thalidomide victim</a> · topic: thalidomide, our history</p>
+      </article>
+      <article class="entry">
         <h3>Biorobotics for limb difference: conference proceedings, Milan 2026 <span class="badge live">DysNet event</span></h3>
         <p>Findings from the conference DysNet co-organised at Regione Lombardia (Palazzo Pirelli, 26 March 2026) with university researchers, prosthetics producers and patient associations.</p>
         <p class="src">DysNet &amp; Regione Lombardia · report available to members · topic: prosthetics, biorobotics</p>

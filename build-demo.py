@@ -112,6 +112,7 @@ SEO_TITLES = {
     "/knowledge/teratogens/": "Teratogens register: substances of concern · DysNet",
     "/knowledge/understanding-dysmelia/": "Understanding dysmelia: conditions and ORPHAcodes · DysNet",
     "/knowledge/causes-of-dysmelia/": "Causes of dysmelia: what the evidence shows · DysNet",
+    "/knowledge/prevalence-of-dysmelia/": "How common is dysmelia? Prevalence by condition · DysNet",
     "/knowledge/guides/patient-owned-registry/": "What is a patient-owned registry? · DysNet",
     "/registry/": "Patient-owned registry of limb malformations · DysNet",
     "/voice/": "Our voice: five demands for people with dysmelia · DysNet",
@@ -127,7 +128,7 @@ SEO_TITLES = {
 PEOPLE_LD = []  # filled by person_card() as the People page is defined
 
 # Referenced, dated long-form pieces: Article schema and published/modified dates, like the /guides/ series.
-ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/"}
+ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/", "/knowledge/prevalence-of-dysmelia/"}
 
 
 def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
@@ -238,6 +239,7 @@ FOOTER = f"""</main>
           <li><a href="/knowledge/resources/">Resources</a></li>
           <li><a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a></li>
           <li><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></li>
+          <li><a href="/knowledge/prevalence-of-dysmelia/">Prevalence</a></li>
         </ul>
       </div>
       <div>
@@ -709,6 +711,10 @@ PAGES["/knowledge/"] = {
       <div class="card acc-research">
         <h3 class="h3"><a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a></h3>
         <p>What causes a limb to form differently: genes, medicines and chemicals, maternal health, vascular disruption and mechanical forces, and how often a cause is actually found.</p>
+      </div>
+      <div class="card acc-research">
+        <h3 class="h3"><a href="/knowledge/prevalence-of-dysmelia/">Prevalence</a></h3>
+        <p>How common each condition is at birth, from Orphanet&rsquo;s prevalence classes and from population studies, with every figure checked against its publication.</p>
       </div>
     </div>
   </div>
@@ -1271,7 +1277,7 @@ def orphanet_cell(code, name=None):
             break  # one line per type (the first listed is Orphanet's headline figure)
     return "; ".join(parts[:2]) if parts else "Prevalence unknown"
 
-def annex_html():
+def prevalence_html():
     rows = [f"<tr><th scope=\"row\">{TOTAL_ROW[0]}</th><td>{TOTAL_ROW[1]}</td><td>{TOTAL_ROW[2]}</td></tr>"]
     for name, desc, code, orpha_name, *_ in CONDITIONS:
         o = orphanet_cell(code, name)
@@ -1282,8 +1288,8 @@ def annex_html():
     sources = "".join(f'<li id="src-{i}">{t} <a href="{u}" target="_blank" rel="noopener external">{u.replace("https://", "")}</a></li>' for i, (t, u) in enumerate(SOURCES, 1))
     return f"""
     <div class="tick"></div>
-    <p class="eyebrow">Annex · Prevalence</p>
-    <h2 class="h2">How frequent is each condition?</h2>
+    <p class="eyebrow">Knowledge · Prevalence</p>
+    <h1 class="display">How common is each condition?</h1>
     <p>Two columns, two kinds of source. <strong>Orphanet</strong> gives each rare disease a prevalence class and, where available, a mean estimate; it is the reference for named syndromes. <strong>Population studies</strong> fill the gaps for the conditions Orphanet does not count (the amelias, polydactyly, syndactyly, brachydactyly) and cross-check the others. Every figure was checked against its original publication in September 2026.</p>
     <div class="annex-wrap">
       <table class="annex">
@@ -1292,8 +1298,9 @@ def annex_html():
       </table>
     </div>
     <p class="annex-note">How to read these figures: they describe <strong>births</strong>, not the number of people living with a condition; ranges are Orphanet's prevalence classes; the named conditions do <strong>not add up</strong> to the total for limb reduction defects, because most limb differences are isolated deficiencies without a syndrome name. Rates also differ between populations and registries. None of this is medical advice.</p>
-    <h3 class="h4" style="margin-top:var(--space-4)">Sources</h3>
+    <h2 class="h4" style="margin-top:var(--space-4)">Sources</h2>
     <ol class="sources">{sources}</ol>
+    <p style="margin-top:var(--space-4)">These figures say how often each condition occurs. What is known about why it occurs is set out in <a href="/knowledge/causes-of-dysmelia/">Causes of dysmelia</a>, and what each condition is in <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a>.</p>
 """
 
 PAGES["/knowledge/understanding-dysmelia/"] = {
@@ -1359,7 +1366,21 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening and EX-Center in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 
-    {annex_html()}
+    {opener("03", "How often", "How common is each condition?")}
+    <p>The figures come from two kinds of source: Orphanet&rsquo;s prevalence classes for the named syndromes, and population studies for the conditions Orphanet does not count. Where a figure exists, it sits on its own page with the publication it was checked against: <a href="/knowledge/prevalence-of-dysmelia/">how common is each condition?</a></p>
+  </div>
+</section>
+""",
+}
+
+PAGES["/knowledge/prevalence-of-dysmelia/"] = {
+    "title": "Prevalence of dysmelia",
+    "desc": "How common each limb difference is at birth: Orphanet prevalence classes and population studies, every figure checked against its publication.",
+    "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/prevalence-of-dysmelia/", "Prevalence")],
+    "body": f"""
+<section>
+  <div class="container">
+    {prevalence_html()}
   </div>
 </section>
 """,

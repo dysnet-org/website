@@ -958,7 +958,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
     <h2 class="h3" style="margin-top:var(--space-4)">Projects and directories</h2>
     <p>Work under way in the network, and the catalogues where other studies are listed.</p>
     <div style="margin-top:var(--space-2)">
-      <article class="entry">
+      <article class="entry" id="patient-journey">
         <h3>Patient Journey · ERN BOND / EURORDIS <span class="badge live">in progress</span></h3>
         <p>A five-step research project promoted by DysNet on behalf of Raggiungere, tracking the experiences of patients, families, doctors and researchers through a shared questionnaire, to give families updated medical and scientific knowledge.</p>
         <p class="src">ERN BOND ePAG · approved, in progress · contact via <a href="mailto:info@dysnet.org">info@dysnet.org</a></p>
@@ -1111,7 +1111,7 @@ PAGES["/knowledge/resources/"] = {
         <p>The European reference database for rare diseases documents the conditions grouped under dysmelia, from amelia to ulnar hemimelia. Our <a href="/knowledge/understanding-dysmelia/">Understanding dysmelia</a> guide is built on it.</p>
         <p class="src">Orphanet · <a href="https://www.orpha.net/en/disease/encyclopedia" target="_blank" rel="noopener external">orpha.net · encyclopedia for patients</a> · topic: conditions</p>
       </article>
-      <article class="entry">
+      <article class="entry" id="rare-barometer">
         <h3>Rare Barometer: take part in the surveys <span class="badge live">open to patients and families</span></h3>
         <p>EURORDIS runs the survey programme that turns what patients live into evidence, and it is patients who fill it in. Anyone living with a rare condition, anywhere in the world, can register, as can their family members and carers; responses are anonymous, invitations arrive by email, and participants receive the results of the surveys they answered. DysNet contributes content and translations, and relays each wave to its member associations.</p>
         <p class="src">EURORDIS · <a href="https://www.eurordis.org/rare-barometer/english/" target="_blank" rel="noopener external">register to take part</a> · what the surveys found is published for everyone, below · see also our <a href="/knowledge/ongoing-studies/">studies to join</a> · topic: lived experience, participation</p>
@@ -2632,7 +2632,8 @@ PAGES["/voice/reports/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Mission 3 · Delegate reports</p>
     <h1 class="display">Reports from our seats: after every meeting, a report.</h1>
-    <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog.</p>
+    <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog. Entries dated
+    February 2026 come from the chairman&rsquo;s activity report of that month.</p>
 
     <div style="margin-top:var(--space-4)">
       <article class="report">
@@ -2645,13 +2646,63 @@ PAGES["/voice/reports/"] = {
         <p class="seat">VOICE4ALL</p>
         <h2 class="h3">New EU project on autonomous voting starts</h2>
         <time datetime="2026-05">May 2026 · Claudio Pirola</time>
-        <p>Following VOTE4ALL (study visits to The Hague’s Parliament and the Ministry of the Interior, meetings with the mayors of Lisbon and Porto), DysNet joins the successor project: webinars and in-person workshops across the EU.</p>
+        <p>Following VOTE4ALL (study visits to the Parliaments of The Hague and Lisbon, dialogue with the Dutch Ministry of the Interior, the Municipality of Milan, the Portuguese Parliament and the mayors of Lisbon and Porto), DysNet joins the successor project: webinars and in-person workshops across the EU.</p>
       </article>
       <article class="report">
         <p class="seat">DysNet event · Regione Lombardia</p>
         <h2 class="h3">Biorobotics conference at Palazzo Pirelli</h2>
         <time datetime="2026-03-26">26 March 2026 · Claudio Pirola</time>
         <p>DysNet organised a conference on biorobotics for persons with disability at the seat of Regione Lombardia in Milan: university professors and researchers, prosthetics producers and association representatives. Follow-up: an audition before the region’s competent commission.</p>
+      </article>
+      <article class="report">
+        <p class="seat">EURORDIS · Social Policy Action Group</p>
+        <h2 class="h3">Independent living: what one country already does, another can copy</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>DysNet contributed to the group&rsquo;s work on independent living by submitting the laws already in force in several
+        countries, so that a provision that works in one place can be argued for in another. The comparison is long work, and it
+        continues with the full support of EURORDIS.</p>
+      </article>
+      <article class="report">
+        <p class="seat">ERN BOND · patient advocacy group</p>
+        <h2 class="h3">Comparing what each country provides, and carrying the Patient Journey</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>In the European Reference Network for rare bone diseases, DysNet is comparing what different European countries
+        actually provide, and takes that comparison to the next meeting in Leiden. DysNet promotes the Patient Journey inside the
+        network: <a href="/knowledge/ongoing-studies/#patient-journey">a study in five steps</a> that follows patients, their
+        families, their doctors and researchers through one shared questionnaire, so that a family receives updated medical and
+        scientific knowledge rather than having to hunt for it.</p>
+      </article>
+      <article class="report">
+        <p class="seat">European Disability Forum · General Assembly, Ljubljana</p>
+        <h2 class="h3">What the assembly taught us, Milan asked us to come and say</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>At the Forum&rsquo;s general assembly in Ljubljana, as at Vilnius, DysNet followed the European Disability Card and its
+        perspective to 2027, artificial intelligence, accessibility and transport, and above all assistive technology for
+        employment. That knowledge makes the network an active partner in the same discussions at national level: the Municipality
+        of Milan invited DysNet to lecture at Milan Civil Week, and has asked it to come back with a focus on jobs for disabled
+        people.</p>
+      </article>
+      <article class="report">
+        <p class="seat">European Economic and Social Committee</p>
+        <h2 class="h3">Contacts opened with the EESC</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>Contacts with the Committee give the network a reading of where European policy is heading at a moment when much is
+        changing worldwide, which is what a small organisation needs before it decides where to spend its voice.</p>
+      </article>
+      <article class="report">
+        <p class="seat">EURORDIS · Rare Barometer</p>
+        <h2 class="h3">Writing the questions, and translating them</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>DysNet took part in the Rare Barometer programme with contributions to the content of the surveys and with translations,
+        so that families who do not read English can answer in their own language. You can
+        <a href="/knowledge/resources/#rare-barometer">take part in the current surveys</a> from our resources page.</p>
+      </article>
+      <article class="report">
+        <p class="seat">Sport · Milano-Cortina 2026</p>
+        <h2 class="h3">Disability and sport around the Winter Games</h2>
+        <time datetime="2026-02">February 2026 · Claudio Pirola</time>
+        <p>The chairman reported a growing involvement in the Paralympic Games of Milano-Cortina 2026 and structured contacts with
+        the Municipality of Milan on disability and sport, and an event on the subject planned for January.</p>
       </article>
       <article class="report">
         <p class="seat">EURORDIS</p>

@@ -1323,7 +1323,7 @@ def prevalence_html():
         <tbody>{"".join(rows)}</tbody>
       </table>
     </div>
-    <p class="annex-note">How to read these figures: they describe <strong>births</strong>, not the number of people living with a condition; ranges are Orphanet's prevalence classes; the named conditions do <strong>not add up</strong> to the total for limb reduction defects, because most limb differences are isolated deficiencies without a syndrome name. Rates also differ between populations and registries. None of this is medical advice.</p>
+    <p class="annex-note">How to read these figures: they describe <strong>births</strong>, not the number of persons living with a condition; ranges are Orphanet's prevalence classes; the named conditions do <strong>not add up</strong> to the total for limb reduction defects, because most limb differences are isolated deficiencies without a syndrome name. Rates also differ between populations and registries. None of this is medical advice.</p>
     <h3 class="h4" style="margin-top:var(--space-4)">Sources of the prevalence figures</h3>
     <ol class="sources">{sources}</ol>
 """

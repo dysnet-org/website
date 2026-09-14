@@ -15,6 +15,17 @@
     if (!(probe.getContext("webgl2") || probe.getContext("webgl"))) return;
   } catch (e) { return; }
 
+  // Dots carry b = the rank of the lowest prevalence threshold that admits them, not the raw
+  // u they were drawn with (see tools/build-pop-dots.py). Rebuilding the same ladder here from
+  // data.rates turns a selected condition into the rank to compare against.
+  var DOT_THRESHOLDS = (data.rates || []).map(function (r) { return Math.round(r[1] * 100); })
+    .filter(function (v, i, a) { return a.indexOf(v) === i; })
+    .sort(function (x, y) { return x - y; });
+  function dotFilter(rateIndex) {
+    var t = Math.round(data.rates[rateIndex][1] * 100);
+    return ["<=", ["get", "b"], DOT_THRESHOLDS.indexOf(t)];
+  }
+
   window.DYSNET_GL_ACTIVE = true;
   document.querySelector(".map-hero").classList.add("gl");
 
@@ -49,7 +60,7 @@
     glyphs: base + "/assets/fonts/{fontstack}/{range}.pbf",
     sources: {
       ne: { type: "vector", url: "pmtiles://" + base + "/assets/map/ne10m.pmtiles?v=4", attribution: "Natural Earth" },
-      dots: { type: "vector", url: "pmtiles://" + base + "/assets/map/dots.pmtiles?v=1" },
+      dots: { type: "vector", url: "pmtiles://" + base + "/assets/map/dots.pmtiles?v=2" },
       offices: { type: "geojson", data: { type: "FeatureCollection", features: data.offices.map(function (o) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [o.lon, o.lat] }, properties: { name: o.name } };
       }) } },
@@ -82,14 +93,15 @@
       { id: "zones-line-progress", type: "line", source: "zones", filter: ["==", ["get", "status"], "in_progress"],
         paint: { "line-color": "#fed7aa", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8], "line-dasharray": [2, 1.5] } },
       // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
-      // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps dots with u < r*100.
-      { id: "dots1000", type: "circle", source: "dots", "source-layer": "dots", minzoom: 0, maxzoom: 4, filter: ["<", ["get", "u"], 4500],
+      // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps the dots
+      // whose bucket rank is at or below that condition's rank in DOT_THRESHOLDS.
+      { id: "dots1000", type: "circle", source: "dots", "source-layer": "dots", minzoom: 0, maxzoom: 4, filter: dotFilter(0),
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 0, 0.5, 3.9, 0.8], "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 1.5, 3.9, 2.3] } },
-      { id: "dots100", type: "circle", source: "dots", "source-layer": "dots", minzoom: 4, maxzoom: 6, filter: ["<", ["get", "u"], 4500],
+      { id: "dots100", type: "circle", source: "dots", "source-layer": "dots", minzoom: 4, maxzoom: 6, filter: dotFilter(0),
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 4, 2.0, 5.9, 2.5] } },
-      { id: "dots10", type: "circle", source: "dots", "source-layer": "dots", minzoom: 6, maxzoom: 9, filter: ["<", ["get", "u"], 4500],
+      { id: "dots10", type: "circle", source: "dots", "source-layer": "dots", minzoom: 6, maxzoom: 9, filter: dotFilter(0),
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.8, "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.1, 8.9, 2.7] } },
-      { id: "dots1", type: "circle", source: "dots", "source-layer": "dots", minzoom: 9, filter: ["<", ["get", "u"], 4500],
+      { id: "dots1", type: "circle", source: "dots", "source-layer": "dots", minzoom: 9, filter: dotFilter(0),
         paint: { "circle-color": "#fbf8ff", "circle-opacity": 0.95, "circle-stroke-color": "#2a0d47", "circle-stroke-width": 0.9, "circle-radius": 2.8 } },
       // City names from GeoNames (cities of 15,000+, CC BY 4.0), tiered by population at build time
       // (tippecanoe per-feature minzoom): megacities/capitals from z2, towns of 15-20k only at z9.
@@ -189,7 +201,7 @@
     }
     function update() {
       var r = data.rates[+sel.value];
-      LAYERS.forEach(function (id) { if (map.getLayer(id)) map.setFilter(id, ["<", ["get", "u"], Math.round(r[1] * 100)]); });
+      LAYERS.forEach(function (id) { if (map.getLayer(id)) map.setFilter(id, dotFilter(+sel.value)); });
       legend.textContent = legendText();
     }
     map.on("idle", function () { legend.textContent = legendText(); });  // recount once tiles have settled after any move

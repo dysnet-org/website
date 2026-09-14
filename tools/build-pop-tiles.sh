@@ -5,12 +5,15 @@
 #   dots100   z4–5   1 dot = 100 people
 #   dots10    z6–8   1 dot = 10 people
 #   dots1     z9     1 dot = 1 person (site draws the condition's share of base dots)
+# -d 10 halves the coordinate grid to 1024 units per tile. The map is capped at maxZoom 9,
+# so z9 is never overzoomed: 1024 units over a 512 px tile is half-pixel precision, well
+# under the 2.8 px radius a dot is drawn at. Costs nothing visible, saves ~4 MB.
 # Requires tippecanoe ≥ 2.17 (pmtiles output) — brew install tippecanoe
 set -euo pipefail
 cd "$(dirname "$0")"
 OUT=../docs/assets/map/dots.pmtiles
 TMP=$(mktemp -d)
-COMMON=(-P --no-feature-limit --no-tile-size-limit -l dots --force)
+COMMON=(-P --no-feature-limit --no-tile-size-limit -l dots --force -d 10)
 
 tippecanoe -o "$TMP/a.pmtiles" -Z0 -z3 "${COMMON[@]}" pop/dots1000.ndjson
 tippecanoe -o "$TMP/b.pmtiles" -Z4 -z5 "${COMMON[@]}" pop/dots100.ndjson

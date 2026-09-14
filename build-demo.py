@@ -93,7 +93,8 @@ ORG_SCHEMA = {
                "https://www.orpha.net/en/patient-organisations/federations-alliances/646248",
                "https://www.edf-feph.org/our-members/european-dysmelia-reference-information-centre/",
                "https://www.lobbyfacts.eu/datacard/dysnet?rid=047603512537-13&sid=183440",
-               "https://www.eurordis.org/eurordis_member/volup-speculum-carpo/"],
+               "https://www.eurordis.org/eurordis_member/volup-speculum-carpo/",
+               "https://www.wikidata.org/wiki/Q131894541"],
 }
 
 NAV = [

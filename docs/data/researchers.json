@@ -82,7 +82,7 @@
    "geocode_display_name": "Universität zu Köln, 1, Zülpicher Wall, Komponistenviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland"
   },
   {
-   "institution": "Children's Hospital Research Foundation",
+   "institution": "Division of Developmental Biology, Children's Hospital Research Foundation, University of Cincinnati",
    "country": "United States",
    "papers": 7,
    "years": [
@@ -114,9 +114,10 @@
     "3227490",
     "3672373"
    ],
-   "lat": null,
-   "lon": null,
-   "geocode_display_name": null
+   "lat": 39.141952,
+   "lon": -84.503223,
+   "geocode_display_name": "3333 Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, United States",
+   "address": "3333 Burnet Avenue, Cincinnati, OH 45229, United States"
   },
   {
    "institution": "University of Groningen",
@@ -296,7 +297,7 @@
    "geocode_display_name": "国立国際医療センター, 箱根山通り, 戸山一丁目, 戸山, 新宿区, 東京都, 162-0052, 日本"
   },
   {
-   "institution": "Charles University",
+   "institution": "Institute of Biology, First Faculty of Medicine, Charles University",
    "country": "Czechia",
    "papers": 5,
    "years": [
@@ -327,9 +328,10 @@
     "8157136",
     "1597253"
    ],
-   "lat": 50.0888947,
-   "lon": 14.4162757,
-   "geocode_display_name": "Filozofická fakulta Univerzity Karlovy, Kaprova, Josefov, obvod Praha 1, Praha, 116 93, Česko"
+   "lat": 50.068454,
+   "lon": 14.42307,
+   "geocode_display_name": "Albertov, Praha 2, Czechia",
+   "address": "Prague, Czechia"
   },
   {
    "institution": "University of Göteborg",
@@ -462,39 +464,6 @@
    "lat": 57.1645542,
    "lon": -2.1018424,
    "geocode_display_name": "University of Aberdeen, High Street, Old Aberdeen, Aberdeen City, Alba / Scotland, AB24 3EN, United Kingdom"
-  },
-  {
-   "institution": "University Medical Center",
-   "country": "Netherlands",
-   "papers": 4,
-   "years": [
-    1996,
-    2020
-   ],
-   "codes": [
-    "thal",
-    "2913"
-   ],
-   "authors": [
-    "Kroes HY",
-    "Galjaard RJH",
-    "Neubert R"
-   ],
-   "representative": {
-    "pmid": "32179704",
-    "doi": "10.1136/jmedgenet-2019-106685",
-    "title": "Variable expression of subclinical phenotypes instead of reduced penetrance in families with mild triphalangeal thumb phenotypes",
-    "year": "2020"
-   },
-   "pmids": [
-    "32179704",
-    "15316969",
-    "8538367",
-    "8538370"
-   ],
-   "lat": 52.334632,
-   "lon": 4.8599107,
-   "geocode_display_name": "Amsterdam UMC, 1117, De Boelelaan, VU-kwartier, Zuidas, Zuid, Amsterdam, Noord-Holland, Nederland, 1081 HV, Nederland"
   },
   {
    "institution": "University of North Carolina",
@@ -719,7 +688,7 @@
    "geocode_display_name": "Universiteit van Amsterdam, Spui, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XA, Nederland"
   },
   {
-   "institution": "Thalidomide Trust",
+   "institution": "The Thalidomide Trust",
    "country": "United Kingdom",
    "papers": 3,
    "years": [
@@ -747,9 +716,11 @@
     "31969401",
     "17365642"
    ],
-   "lat": 51.4872913,
-   "lon": -3.1806498,
-   "geocode_display_name": "Thalidomide Memorial, Museum Avenue, Crockherbtown, Civic Centre, Castle, Cardiff, Cymru / Wales, CF10 3AX, United Kingdom"
+   "lat": 52.208283,
+   "lon": -0.28873,
+   "geocode_display_name": "Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire, United Kingdom",
+   "address": "1 Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire PE19 8ER, United Kingdom",
+   "contact": "dee.morrison@thalidomidetrust.org"
   },
   {
    "institution": "University of Michigan",
@@ -969,7 +940,7 @@
    "geocode_display_name": "MassGeneral Brigham Research Office, 65, Landsdowne Street, University Park, Cambridgeport, Cambridge, Middlesex County, Massachusetts, 0213"
   },
   {
-   "institution": "Quaid-i-Azam University",
+   "institution": "Human Genetics Program, Department of Animal Sciences, Faculty of Biological Sciences, Quaid-i-Azam University",
    "country": "Pakistan",
    "papers": 3,
    "years": [
@@ -998,9 +969,11 @@
     "28559208",
     "26008671"
    ],
-   "lat": 33.7476438,
-   "lon": 73.1430184,
-   "geocode_display_name": "Quaid-i-Azam School of Management Sciences, Nurpur Road, Phulwari, مل پور, زون ۳, وفاقی دارالحکومت اسلام آباد, 46500, پاکستان"
+   "lat": 33.743736,
+   "lon": 73.158582,
+   "geocode_display_name": "Quaid-i-Azam University, Nurpur Road, Islamabad, Pakistan",
+   "address": "45320 Islamabad, Pakistan",
+   "contact": "malik@qau.edu.pk"
   },
   {
    "institution": "University of Washington",
@@ -1100,7 +1073,7 @@
    "geocode_display_name": "Alberta Children's Hospital, 28, Oki Drive NW, University District, Calgary, Alberta, T3B 6A8, Canada"
   },
   {
-   "institution": "INAGEMP-Instituto Nacional de Genética Médica Populacional",
+   "institution": "INAGEMP and Teratogen Information Service, Medical Genetics Service, Hospital de Clínicas de Porto Alegre",
    "country": "Brazil",
    "papers": 3,
    "years": [
@@ -1126,9 +1099,10 @@
     "27751757",
     "25828060"
    ],
-   "lat": null,
-   "lon": null,
-   "geocode_display_name": null
+   "lat": -30.038678,
+   "lon": -51.206625,
+   "geocode_display_name": "Hospital de Clínicas, Rua Ramiro Barcelos, Porto Alegre, Rio Grande do Sul, Brasil",
+   "address": "Rua Ramiro Barcelos 2350, Porto Alegre, Rio Grande do Sul, Brazil"
   },
   {
    "institution": "University of Illinois",
@@ -1447,7 +1421,7 @@
    "geocode_display_name": "Edward, Beaufort County, North Carolina, United States"
   },
   {
-   "institution": "Catholic University",
+   "institution": "Birth Defects Unit, Università Cattolica del Sacro Cuore",
    "country": "Italy",
    "papers": 3,
    "years": [
@@ -1469,9 +1443,10 @@
     "8140068",
     "1481865"
    ],
-   "lat": 41.9120205,
-   "lon": 12.3974908,
-   "geocode_display_name": "Università cattolica ucraina di San Clemente papa, 478, Via di Boccea, Bastogi, Municipio Roma XIII, Roma, Roma Capitale, Lazio, 00166, Ital"
+   "lat": 41.931534,
+   "lon": 12.429439,
+   "geocode_display_name": "Policlinico Universitario Agostino Gemelli, Largo Agostino Gemelli, Roma, Italia",
+   "address": "Rome, Italy"
   },
   {
    "institution": "Boston University School of Public Health",
@@ -1829,9 +1804,10 @@
     "37791865",
     "31814667"
    ],
-   "lat": 40.1311453,
-   "lon": 32.9512024,
-   "geocode_display_name": "Ankara Yıldırım Beyazıt Üniversitesi Esenboğa Yerleşkesi, Melikşah Çağrıbey Kümeevleri Sokağı, Melikşah Mahallesi, Çubuk, Ankara, İç Anadolu"
+   "lat": 39.920776,
+   "lon": 32.85405,
+   "geocode_display_name": "Ankara, Türkiye",
+   "address": "Ankara, Türkiye"
   },
   {
    "institution": "BG Unfallklinik Frankfurt am Main",
@@ -2163,7 +2139,7 @@
    "geocode_display_name": "東京科学大学 湯島キャンパス, 本郷通り, 湯島一丁目, 湯島, 文京区, 東京都, 113-0034, 日本"
   },
   {
-   "institution": "Tongji Hospital",
+   "institution": "Department of Orthopaedics, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology",
    "country": "China",
    "papers": 2,
    "years": [
@@ -2189,7 +2165,8 @@
    ],
    "lat": 30.5821568,
    "lon": 114.2544019,
-   "geocode_display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国"
+   "geocode_display_name": "武汉同济医院, 1095号, 解放大道, 宝丰街道, 硚口区, 武汉市, 湖北省, 430030, 中国",
+   "address": "Wuhan 430030, China"
   },
   {
    "institution": "Oslo University Hospital",
@@ -2397,7 +2374,7 @@
    "geocode_display_name": "Utrecht, Nederland"
   },
   {
-   "institution": "Kungälv Hospital",
+   "institution": "Department of Orthopaedics, Kungälv Hospital",
    "country": "Sweden",
    "papers": 2,
    "years": [
@@ -2420,9 +2397,10 @@
     "29053750",
     "27175919"
    ],
-   "lat": 57.8707951,
-   "lon": 11.9799616,
-   "geocode_display_name": "Kungälv, Kungälvs kommun, Västra Götalands län, 442 18, Sverige"
+   "lat": 57.878189,
+   "lon": 11.968607,
+   "geocode_display_name": "Kungälvs sjukhus, Lasarettsgatan, Kungälv, Västra Götalands län, Sverige",
+   "address": "442 41 Kungälv, Sweden"
   },
   {
    "institution": "Max Planck Institute for Molecular Genetics",
@@ -2519,7 +2497,7 @@
    "geocode_display_name": "Centre Hospitalier Régional Universitaire de Lille, Avenue Eugène Avinée, Loos, Lille, Nord, Hauts-de-France, France métropolitaine, 59120, "
   },
   {
-   "institution": "Genoa",
+   "institution": "Plastic and Reconstructive Surgery, IRCCS Ospedale Policlinico San Martino and University of Genoa",
    "country": "Italy",
    "papers": 2,
    "years": [
@@ -2543,9 +2521,10 @@
     "27018681",
     "27348639"
    ],
-   "lat": 44.40726,
-   "lon": 8.9338624,
-   "geocode_display_name": "Genova, Liguria, Italia"
+   "lat": 44.409469,
+   "lon": 8.973088,
+   "geocode_display_name": "Ospedale San Martino, San Martino, Genova, Liguria, Italia",
+   "address": "Genoa, Italy"
   },
   {
    "institution": "University of Lausanne",
@@ -2607,7 +2586,7 @@
    "geocode_display_name": "Grad Zagreb, Hrvatska"
   },
   {
-   "institution": "Drug Safety Research Laboratories",
+   "institution": "Drug Safety Research Laboratories, Pharmaceutical Research Division, Takeda Pharmaceutical Company",
    "country": "Japan",
    "papers": 2,
    "years": [
@@ -2630,9 +2609,10 @@
     "24344727",
     "23181494"
    ],
-   "lat": null,
-   "lon": null,
-   "geocode_display_name": null
+   "lat": 35.338862,
+   "lon": 139.490934,
+   "geocode_display_name": "Fujisawa, Kanagawa, Japan",
+   "address": "Fujisawa, Kanagawa, Japan"
   },
   {
    "institution": "McGill University",
@@ -2721,35 +2701,6 @@
    "lat": 59.2747287,
    "lon": 15.2151181,
    "geocode_display_name": "Örebro, Örebro kommun, Örebro län, 703 61, Sverige"
-  },
-  {
-   "institution": "Children's Hospital",
-   "country": "United States",
-   "papers": 2,
-   "years": [
-    2003,
-    2013
-   ],
-   "codes": [
-    "93458"
-   ],
-   "authors": [
-    "Lyon HM",
-    "Pakkasjärvi N"
-   ],
-   "representative": {
-    "pmid": "23322606",
-    "doi": "10.1002/ajmg.a.35707",
-    "title": "Characteristics and associated anomalies in radial ray deficiencies in Finland--a population-based study",
-    "year": "2013"
-   },
-   "pmids": [
-    "23322606",
-    "14745921"
-   ],
-   "lat": 42.3371715,
-   "lon": -71.1056791,
-   "geocode_display_name": "Boston Children's Hospital, 300, Longwood Avenue, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States"
   },
   {
    "institution": "Royal Prince Alfred Hospital",
@@ -3047,7 +2998,7 @@
    "contact": "Claude.Stoll@chru-strasbourg.fr"
   },
   {
-   "institution": "Foundation 41",
+   "institution": "Foundation 41, Molecular Biology Unit",
    "country": "Australia",
    "papers": 2,
    "years": [
@@ -3072,9 +3023,10 @@
     "10488693",
     "37281348"
    ],
-   "lat": -38.1285527,
-   "lon": 145.3499476,
-   "geocode_display_name": "41, Foundation Avenue, Edgebrook, Clyde, Melbourne, Victoria, 3978, Australia"
+   "lat": -33.883666,
+   "lon": 151.214326,
+   "geocode_display_name": "Crown Street, Surry Hills, Sydney, New South Wales, Australia",
+   "address": "365 Crown Street, Surry Hills, NSW 2010, Australia"
   },
   {
    "institution": "National Center for Environmental Health",
@@ -3135,7 +3087,7 @@
    "geocode_display_name": "Nijmegen, Gelderland, Nederland"
   },
   {
-   "institution": "ECEMC and Departamento de Farmacología",
+   "institution": "ECEMC and Departamento de Farmacología, Facultad de Medicina, Universidad Complutense de Madrid",
    "country": "Spain",
    "papers": 2,
    "years": [
@@ -3159,9 +3111,10 @@
     "9409871",
     "9409874"
    ],
-   "lat": null,
-   "lon": null,
-   "geocode_display_name": null
+   "lat": 40.443914,
+   "lon": -3.724181,
+   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España",
+   "address": "Madrid, Spain"
   },
   {
    "institution": "University of Lund",
@@ -3191,7 +3144,7 @@
    "geocode_display_name": "Lunds Tekniska Högskola, Box 118, Tornavägen, Norra universitetsområdet, Norr, Lund, Lunds kommun, Skåne län, 221 00, Sverige"
   },
   {
-   "institution": "ECEMC",
+   "institution": "ECEMC, Spanish Collaborative Study of Congenital Malformations, Facultad de Medicina, Universidad Complutense de Madrid",
    "country": "Spain",
    "papers": 2,
    "years": [
@@ -3214,9 +3167,10 @@
     "8779329",
     "8849132"
    ],
-   "lat": null,
-   "lon": null,
-   "geocode_display_name": null
+   "lat": 40.443914,
+   "lon": -3.724181,
+   "geocode_display_name": "Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España",
+   "address": "Madrid, Spain"
   },
   {
    "institution": "Universitätsklinikum Rudolf Virchow",
@@ -3278,8 +3232,8 @@
    "geocode_display_name": "University of Calgary, 2500, University Drive NW, University of Calgary, Calgary, Alberta, T2N 1N4, Canada"
   },
   {
-   "institution": "DePaul University",
-   "country": "",
+   "institution": "Department of Biological Sciences, DePaul University",
+   "country": "United States",
    "papers": 2,
    "years": [
     1991,
@@ -3303,7 +3257,8 @@
    ],
    "lat": 41.9245803,
    "lon": -87.6507223,
-   "geocode_display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,"
+   "geocode_display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,",
+   "address": "Chicago, Illinois, United States"
   },
   {
    "institution": "Kyoto University",

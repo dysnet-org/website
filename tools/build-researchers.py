@@ -131,17 +131,128 @@ out.sort(key=lambda t: (-t["papers"], -t["years"][1], t["institution"]))
 # a team tells us its department, address and contact, they replace what the affiliation says.
 # Keyed by the institution string the affiliations produce, with its country.
 TEAM_FIX = {
-    ("Centre Hospitalo-Universitaire", "France"): {
-        "institution": "Service de Génétique Médicale, Hôpital de Hautepierre, CHU de Strasbourg",
-        "address": "Avenue Molière, 67098 Strasbourg Cedex, France",
-        "contact": "Claude.Stoll@chru-strasbourg.fr",
-        "lat": 48.593293, "lon": 7.7070095,
-        "geocode_display_name": "Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France",
+    ('Centre Hospitalo-Universitaire', 'France'): {
+        'institution': 'Service de Génétique Médicale, Hôpital de Hautepierre, CHU de Strasbourg',
+        'address': 'Avenue Molière, 67098 Strasbourg Cedex, France',
+        'contact': 'Claude.Stoll@chru-strasbourg.fr',
+        'lat': 48.593293,
+        'lon': 7.7070095,
+        'geocode_display_name': 'Hôpital de Hautepierre, Avenue Molière, Hautepierre, Strasbourg, Bas-Rhin, France',
+    },
+    ('Charles University', 'Czechia'): {
+        'institution': 'Institute of Biology, First Faculty of Medicine, Charles University',
+        'address': 'Prague, Czechia',
+        'lat': 50.068454,
+        'lon': 14.42307,
+        'geocode_display_name': 'Albertov, Praha 2, Czechia',
+    },
+    ('Thalidomide Trust', 'United Kingdom'): {
+        'institution': 'The Thalidomide Trust',
+        'address': '1 Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire PE19 8ER, United Kingdom',
+        'contact': 'dee.morrison@thalidomidetrust.org',
+        'lat': 52.208283,
+        'lon': -0.28873,
+        'geocode_display_name': 'Eaton Court Road, Eaton Socon, St Neots, Cambridgeshire, United Kingdom',
+    },
+    ('Quaid-i-Azam University', 'Pakistan'): {
+        'institution': 'Human Genetics Program, Department of Animal Sciences, Faculty of Biological Sciences, Quaid-i-Azam University',
+        'address': '45320 Islamabad, Pakistan',
+        'contact': 'malik@qau.edu.pk',
+        'lat': 33.743736,
+        'lon': 73.158582,
+        'geocode_display_name': 'Quaid-i-Azam University, Nurpur Road, Islamabad, Pakistan',
+    },
+    ('Catholic University', 'Italy'): {
+        'institution': 'Birth Defects Unit, Università Cattolica del Sacro Cuore',
+        'address': 'Rome, Italy',
+        'lat': 41.931534,
+        'lon': 12.429439,
+        'geocode_display_name': 'Policlinico Universitario Agostino Gemelli, Largo Agostino Gemelli, Roma, Italia',
+    },
+    ('Ankara University', 'Turkey'): {
+        'institution': 'Ankara University',
+        'address': 'Ankara, Türkiye',
+        'lat': 39.920776,
+        'lon': 32.85405,
+        'geocode_display_name': 'Ankara, Türkiye',
+    },
+    ('Tongji Hospital', 'China'): {
+        'institution': 'Department of Orthopaedics, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology',
+        'address': 'Wuhan 430030, China',
+    },
+    ('Kungälv Hospital', 'Sweden'): {
+        'institution': 'Department of Orthopaedics, Kungälv Hospital',
+        'address': '442 41 Kungälv, Sweden',
+        'lat': 57.878189,
+        'lon': 11.968607,
+        'geocode_display_name': 'Kungälvs sjukhus, Lasarettsgatan, Kungälv, Västra Götalands län, Sverige',
+    },
+    ('Genoa', 'Italy'): {
+        'institution': 'Plastic and Reconstructive Surgery, IRCCS Ospedale Policlinico San Martino and University of Genoa',
+        'address': 'Genoa, Italy',
+        'lat': 44.409469,
+        'lon': 8.973088,
+        'geocode_display_name': 'Ospedale San Martino, San Martino, Genova, Liguria, Italia',
+    },
+    ('Foundation 41', 'Australia'): {
+        'institution': 'Foundation 41, Molecular Biology Unit',
+        'address': '365 Crown Street, Surry Hills, NSW 2010, Australia',
+        'lat': -33.883666,
+        'lon': 151.214326,
+        'geocode_display_name': 'Crown Street, Surry Hills, Sydney, New South Wales, Australia',
+    },
+    ('ECEMC', 'Spain'): {
+        'institution': 'ECEMC, Spanish Collaborative Study of Congenital Malformations, Facultad de Medicina, Universidad Complutense de Madrid',
+        'address': 'Madrid, Spain',
+        'lat': 40.443914,
+        'lon': -3.724181,
+        'geocode_display_name': 'Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España',
+    },
+    ('DePaul University', ''): {
+        'country': 'United States',
+        'institution': 'Department of Biological Sciences, DePaul University',
+        'address': 'Chicago, Illinois, United States',
+    },
+    ("Children's Hospital Research Foundation", 'United States'): {
+        'institution': "Division of Developmental Biology, Children's Hospital Research Foundation, University of Cincinnati",
+        'address': '3333 Burnet Avenue, Cincinnati, OH 45229, United States',
+        'lat': 39.141952,
+        'lon': -84.503223,
+        'geocode_display_name': '3333 Burnet Avenue, Avondale, Cincinnati, Hamilton County, Ohio, United States',
+    },
+    ('INAGEMP-Instituto Nacional de Genética Médica Populacional', 'Brazil'): {
+        'institution': 'INAGEMP and Teratogen Information Service, Medical Genetics Service, Hospital de Clínicas de Porto Alegre',
+        'address': 'Rua Ramiro Barcelos 2350, Porto Alegre, Rio Grande do Sul, Brazil',
+        'lat': -30.038678,
+        'lon': -51.206625,
+        'geocode_display_name': 'Hospital de Clínicas, Rua Ramiro Barcelos, Porto Alegre, Rio Grande do Sul, Brasil',
+    },
+    ('Drug Safety Research Laboratories', 'Japan'): {
+        'institution': 'Drug Safety Research Laboratories, Pharmaceutical Research Division, Takeda Pharmaceutical Company',
+        'address': 'Fujisawa, Kanagawa, Japan',
+        'lat': 35.338862,
+        'lon': 139.490934,
+        'geocode_display_name': 'Fujisawa, Kanagawa, Japan',
+    },
+    ('ECEMC and Departamento de Farmacología', 'Spain'): {
+        'institution': 'ECEMC and Departamento de Farmacología, Facultad de Medicina, Universidad Complutense de Madrid',
+        'address': 'Madrid, Spain',
+        'lat': 40.443914,
+        'lon': -3.724181,
+        'geocode_display_name': 'Facultad de Medicina, Plaza de Ramón y Cajal, Ciudad Universitaria, Madrid, España',
+    },
+    # merges of unrelated institutions behind one generic name: not a team
+    ('University Medical Center', 'Netherlands'): {
+        'drop': True,
+    },
+    ("Children's Hospital", 'United States'): {
+        'drop': True,
     },
 }
 for t in out:
     f = TEAM_FIX.get((t["institution"], t["country"]))
     if f: t.update(f)
+out = [t for t in out if not t.pop("drop", False)]
 
 # ── coordinates for the landing map: OpenStreetMap Nominatim, cached in tools/geocode-cache.json ──
 import urllib.parse

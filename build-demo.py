@@ -2670,22 +2670,22 @@ def member_li(entry):
     i = MEMBER_INFO.get(name, {})
     rows = []
     if i.get("person"):
-        rows.append(f'<p class="assoc-lead"><strong>{i.get("role", "President")}:</strong> {i["person"]}'
-                    + (f' · <a href="mailto:{i["person_email"]}">{i["person_email"]}</a>' if i.get("person_email") else "") + "</p>")
+        rows.append(f'<p class="assoc-lead"><strong>{i.get("role", "President")}</strong>{i["person"]}</p>')
     contact = []
+    if i.get("person_email"): contact.append(f'<a href="mailto:{i["person_email"]}">{i["person_email"]}</a>')
     if i.get("email"): contact.append(f'<a href="mailto:{i["email"]}">{i["email"]}</a>')
-    if i.get("person_email") and not i.get("person"): contact.append(f'<a href="mailto:{i["person_email"]}">{i["person_email"]}</a>')
     if i.get("phone"): contact.append(i["phone"])
     if contact: rows.append(f'<p class="assoc-contact">Contact: {" · ".join(contact)}</p>')
     if url:
         host = url.split("//")[-1].split("/")[0].removeprefix("www.")
         rows.append(f'<p class="assoc-site"><a href="{url}" target="_blank" rel="noopener external">{host} ↗</a></p>')
-    if support:
-        rows.append(f'<a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>')
+    # the donation button stays outside the dropdown, visible without opening the card
+    give = (f'<div class="assoc-foot"><a class="btn btn-donate btn-sm" href="{support}" target="_blank" '
+            f'rel="noopener external" aria-label="Support {name}">♥ Support them</a></div>') if support else ""
     if not rows:
-        return f'<li class="assoc-plain">{name}</li>'
+        return f'<li class="assoc-plain"><span>{name}</span>{give}</li>'
     return (f'<li><details class="assoc"><summary>{name}</summary>'
-            f'<div class="assoc-body">{"".join(rows)}</div></details></li>')
+            f'<div class="assoc-body">{"".join(rows)}</div></details>{give}</li>')
 
 PAGES["/about/members/"] = {
     "title": "Member associations",

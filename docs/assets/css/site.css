@@ -909,16 +909,43 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .use-fuel { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 
-/* Member associations: one dropdown per association, opened for who leads it and how to reach it */
-.country ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: var(--space-1); }
-.country li { padding: 0; display: block; }
-.country li.assoc-plain { padding: 0.45rem 0.9rem; color: var(--dys-muted); }
-details.assoc { background: #fff; }
-details.assoc > summary { cursor: pointer; list-style: none; padding: 0.45rem 0.9rem; font-size: var(--text-small); font-weight: 600; display: flex; gap: 0.5rem; align-items: baseline; }
+/* Member associations: one card per association, opening on who leads it and how to reach it */
+.country { margin-bottom: var(--space-4); }
+.country h3 { display: flex; align-items: baseline; gap: 0.5rem; }
+.country ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: var(--space-2); align-items: start; }
+.country li {
+  display: block; padding: 0; background: #fff; border: 1px solid var(--dys-line);
+  border-radius: var(--radius-card); box-shadow: 0 1px 2px rgba(42, 13, 71, 0.04); overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.country li:hover { border-color: var(--dys-purple); box-shadow: 0 10px 24px -18px rgba(42, 13, 71, 0.5); }
+.country li.assoc-plain { padding: 0.85rem 1rem; color: var(--dys-muted); font-size: var(--text-small); }
+.country li:has(.btn-donate) { border-color: var(--dys-line); padding-right: 0; box-shadow: 0 1px 2px rgba(42, 13, 71, 0.04); }
+details.assoc { background: transparent; }
+details.assoc > summary {
+  cursor: pointer; list-style: none; padding: 0.85rem 1rem; font-size: var(--text-small); font-weight: 700;
+  line-height: 1.3; color: var(--dys-ink); display: flex; gap: 0.75rem; align-items: center;
+}
 details.assoc > summary::-webkit-details-marker { display: none; }
-details.assoc > summary::after { content: "▾"; margin-left: auto; color: var(--dys-purple-text); }
-details.assoc[open] > summary::after { content: "▴"; }
-details.assoc[open] { border-color: var(--dys-purple); }
-.assoc-body { padding: 0 0.9rem 0.7rem; font-size: var(--text-small); display: grid; gap: 0.3rem; justify-items: start; }
-.assoc-body p { margin: 0; }
+details.assoc > summary:focus-visible { outline: 3px solid var(--dys-purple); outline-offset: -3px; }
+details.assoc > summary::after {
+  content: ""; margin-left: auto; flex: none; width: 1.4rem; height: 1.4rem; border-radius: 50%;
+  background: var(--dys-purple-soft) no-repeat center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' fill='none' stroke='%237222c2' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transition: transform 0.2s ease;
+}
+details.assoc[open] > summary::after { transform: rotate(180deg); }
+details.assoc[open] > summary { border-bottom: 1px solid var(--dys-line); }
+.assoc-body { padding: 0.75rem 1rem 0.9rem; font-size: var(--text-small); display: grid; gap: 0.45rem; justify-items: start; }
+.assoc-body p { margin: 0; overflow-wrap: anywhere; }
+.assoc-lead strong { display: block; font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.07em; color: var(--dys-muted); font-weight: 700; margin-bottom: 0.1rem; }
+.assoc-lead { font-weight: 600; }
+.assoc-contact, .assoc-site { color: var(--dys-muted); line-height: 1.5; }
+.assoc-contact a { overflow-wrap: anywhere; }
+.assoc-foot { padding: 0 1rem 0.9rem; }
+details.assoc:not([open]) + .assoc-foot { padding-top: 0; margin-top: -0.2rem; }
+.country li.assoc-plain { display: grid; gap: 0.5rem; justify-items: start; }
+.country li.assoc-plain .assoc-foot { padding: 0; }
+@media (prefers-reduced-motion: reduce) { .country li, details.assoc > summary::after { transition: none; } }
+
 .entry-note { background: var(--dys-purple-soft); border-radius: var(--radius-card); padding: var(--space-2) var(--space-3); font-size: var(--text-small); }

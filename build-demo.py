@@ -2627,39 +2627,39 @@ MEMBER_NOTES = {
 # from a private list. An association that publishes no name keeps only its contact address.
 MEMBER_INFO = {
     "Aussiehands": {"role": "President and chairperson", "person": "Elizabeth Borg", "email": "info@aussiehands.org",
-                    "src": "2026 board, published on the association's site"},
-    "Thalidomide Australia": {"email": "lisa@thalidomidegroupaustralia.com", "src": "contact page"},
-    "Limbs 4 Life": {"email": "info@limbs4life.org.au", "src": "contact page"},
-    "Assedea": {"role": "President", "person": "Carine Faucher Lombardo", "email": "contact@assedea.fr", "src": "team page"},
-    "Contergan NRW": {"email": "info@contergan-nrw.eu", "src": "site footer"},
-    "HICOHA Hamburg": {"role": "Chair", "person": "Gernot Stracke", "phone": "+49 40 41092110", "src": "Impressum"},
+                    "src": "the association's site, 2026 board"},
+    "Thalidomide Australia": {"email": "lisa@thalidomidegroupaustralia.com", "src": "the association's contact page"},
+    "Limbs 4 Life": {"email": "info@limbs4life.org.au", "src": "the association's contact page"},
+    "Assedea": {"role": "President", "person": "Carine Faucher Lombardo", "email": "contact@assedea.fr", "src": "the association's team page"},
+    "Contergan NRW": {"email": "info@contergan-nrw.eu", "src": "the association's site"},
+    "HICOHA Hamburg": {"role": "Chair", "person": "Gernot Stracke", "phone": "+49 40 41092110", "src": "the association's Impressum"},
     "Interessenverband Contergangeschädigter, Köln": {"role": "Chair", "person": "Udo Herterich",
-                                                      "person_email": "udo.herterich@conterganverband-koeln.de", "src": "board page"},
+                                                      "person_email": "udo.herterich@conterganverband-koeln.de", "src": "the association's board page"},
     "Contergangeschädigte Hessen": {"role": "Chair", "person": "Alfonso J. Fernandez Garcia", "email": "info@contergan-hessen.de",
-                                    "src": "Impressum"},
+                                    "src": "the association's Impressum"},
     "Raggiungere": {"role": "President", "person": "Carlo Antonini", "email": "info@raggiungere.it",
-                    "src": "board 2026-2028, published on the association's site"},
+                    "src": "the association's site, board 2026-2028"},
     "Thalidomidici Italiani (TAI onlus)": {"role": "President", "person": "Vincenzo Tomasso", "email": "segreteria@taionlus.it",
-                                           "src": "about page"},
+                                           "src": "the association's about page"},
     "V.I.TA – Vittime Talidomide Italia": {"email": "segreteria@vittimetalidomideitalia.it",
-                                           "person_email": "presidente@vittimetalidomideitalia.it", "src": "contact page"},
+                                           "person_email": "presidente@vittimetalidomideitalia.it", "src": "the association's contact page"},
     "AISP – Sindrome di Poland": {"role": "President", "person": "Ilaria Baldelli", "email": "segreteria@sindromedipoland.org",
-                                  "src": "board elected 7 November 2024"},
-    "Stichting NESOS": {"email": "informatievraag@stichtingnesos.nl", "src": "contact page"},
-    "AVITE": {"role": "Founding president", "person": "José Riquelme López", "email": "info@avite.org", "src": "board page"},
+                                  "src": "the association's site, board elected 7 November 2024"},
+    "Stichting NESOS": {"email": "informatievraag@stichtingnesos.nl", "src": "the foundation's contact page"},
+    "AVITE": {"role": "Founding president", "person": "José Riquelme López", "email": "info@avite.org", "src": "the association's board page"},
     "FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)":
         {"role": "President", "person": "Bengt-Lennart Widell", "person_email": "bengt-lennart.w@ffdn.se",
-         "email": "info@ffdn.se", "src": "board 2026"},
-    "FfdN Stockholm": {"role": "Chair", "person": "Carina Essberg", "email": "ffdn-stockholm@ffdn.se", "src": "regional board page"},
-    "FfdN Väst/Skåne": {"role": "Chair", "person": "Tina Henriksson", "person_email": "tina.h@ffdn.se", "src": "regional board page"},
+         "email": "info@ffdn.se", "src": "the association's site, board 2026"},
+    "FfdN Stockholm": {"role": "Chair", "person": "Carina Essberg", "email": "ffdn-stockholm@ffdn.se", "src": "the association's regional board page"},
+    "FfdN Väst/Skåne": {"role": "Chair", "person": "Tina Henriksson", "person_email": "tina.h@ffdn.se", "src": "the association's regional board page"},
     "Svensk Dysmeliförening": {"role": "Chair", "person": "Jelena Blingros", "person_email": "jelena@dysmeli.se",
-                               "email": "info@dysmeli.se", "src": "board page"},
-    "Thalidomide Trust": {"role": "Chair of trustees", "person": "David Body", "src": "trustees page; the Trust takes enquiries through its website"},
-    "Reach": {"email": "reach@reach.org.uk", "src": "contact page"},
+                               "email": "info@dysmeli.se", "src": "the association's board page"},
+    "Thalidomide Trust": {"role": "Chair of trustees", "person": "David Body", "src": "the Trust's trustees page; it takes enquiries through its website"},
+    "Reach": {"role": "President", "person": "Gary Phillips", "email": "reach@reach.org.uk", "src": "the DysNet board"},
     "Thalidomide Society": {"role": "Chair of trustees", "person": "Mandy De La Mare", "email": "info@thalidomidesociety.org",
-                            "src": "board of trustees page"},
+                            "src": "the association's board of trustees page"},
     "Steps Charity": {"role": "Chief executive", "person": "Amanda Goulding", "email": "info@steps-charity.org.uk",
-                      "src": "team page"},
+                      "src": "the charity's team page"},
 }
 
 
@@ -2683,7 +2683,7 @@ def member_li(entry):
         rows.append(f'<a class="btn btn-donate btn-sm" href="{support}" target="_blank" rel="noopener external" aria-label="Support {name}">♥ Support them</a>')
     if not rows:
         return f'<li class="assoc-plain">{name}</li>'
-    src = f'<p class="assoc-src">Published by the association itself: {i["src"]}.</p>' if i.get("src") else ""
+    src = f'<p class="assoc-src">Source: {i["src"]}.</p>' if i.get("src") else ""
     return (f'<li><details class="assoc"><summary>{name}</summary>'
             f'<div class="assoc-body">{"".join(rows)}{src}</div></details></li>')
 

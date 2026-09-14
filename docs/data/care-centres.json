@@ -212,6 +212,23 @@
    "label": "HKU-Shenzhen paed ortho"
   },
   {
+   "name": "CURE Ethiopia Children's Hospital",
+   "city": "Addis Ababa",
+   "country": "Ethiopia",
+   "iso2": "ET",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. Open since 2008, 45 beds and four operating rooms, and a teaching hospital of the College of Surgeons of East, Central and Southern Africa, with residency and fellowship training in orthopaedics.",
+   "url": "https://cure.org/hospitals/ethiopia/",
+   "lat": 9.057889,
+   "lon": 38.766527,
+   "geocode_display_name": "Cure Hospital, Gulele, Addis Ababa, Ethiopia",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/ethiopia/",
+   "via_verb": "verified from",
+   "label": "CURE Ethiopia"
+  },
+  {
    "name": "Amiens-Picardie University Hospital, South site, competence centre",
    "name_local": "CHU Amiens-Picardie, site Sud, centre de compétence",
    "city": "Amiens",
@@ -837,6 +854,40 @@
    "label": "INAIL Centro Protesi"
   },
   {
+   "name": "AIC CURE International Children's Hospital",
+   "city": "Kijabe",
+   "country": "Kenya",
+   "iso2": "KE",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. Africa's first paediatric orthopaedic teaching hospital when it opened in 1998, 56 beds and three operating rooms, performing more than 3,400 reconstructive and orthopaedic operations a year and serving as a regional teaching centre for the College of Surgeons of East, Central and Southern Africa.",
+   "url": "https://cure.org/hospitals/kenya/",
+   "lat": -0.947325,
+   "lon": 36.59454,
+   "geocode_display_name": "AIC Kijabe Hospital, Kijabe Road, Kiambu, Kenya",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/kenya/",
+   "via_verb": "verified from",
+   "label": "AIC CURE International"
+  },
+  {
+   "name": "CURE Children's Hospital of Malawi",
+   "city": "Blantyre",
+   "country": "Malawi",
+   "iso2": "MW",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. Open since 2002, 50 beds and three operating rooms, more than 2,700 operations a year at no cost to the family, and recognised by the College of Surgeons of East, Central and Southern Africa.",
+   "url": "https://cure.org/hospitals/malawi/",
+   "lat": -15.803357,
+   "lon": 35.017301,
+   "geocode_display_name": "CURE International Orthopedic Private Hospital, Chipatala Avenue, Blantyre, Malawi",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/malawi/",
+   "via_verb": "verified from",
+   "label": "CURE  of Malawi"
+  },
+  {
    "name": "Sint Maartenskliniek, thalidomide clinic and national expertise centre",
    "name_local": "Sint Maartenskliniek, Expertisecentrum Softenon",
    "city": "Ubbergen",
@@ -852,6 +903,23 @@
    "lon": 5.897729,
    "geocode_display_name": "Hengstdal, Ubbergen, Berg en Dal, Gelderland, 6574 NA",
    "label": "Sint Maartenskliniek"
+  },
+  {
+   "name": "CURE Niger",
+   "city": "Niamey",
+   "country": "Niger",
+   "iso2": "NE",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. The only hospital in the country offering specialist surgery to children living with treatable physical disabilities, with 25 beds, two operating rooms and about 1,400 operations a year.",
+   "url": "https://cure.org/hospitals/niger/",
+   "lat": 13.550889,
+   "lon": 2.116388,
+   "geocode_display_name": "CURE Niger, Boulevard Ibrahim Baré Maïnassara, Niamey, Niger",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/niger/",
+   "via_verb": "verified from",
+   "label": "CURE Niger"
   },
   {
    "name": "The IREDE Foundation, Limb Empowerment Programme",
@@ -1430,6 +1498,40 @@
    "lon": -5.0931924,
    "geocode_display_name": "Royal Cornwall Hospital, College Way, Truro, Gloweth, Kenwyn, Threemilestone, Cornwall, England, TR1 3RX, United Kingdom",
    "label": "Royal Cornwall Hospital"
+  },
+  {
+   "name": "Beit CURE Hospital (CURE Zambia)",
+   "city": "Lusaka",
+   "country": "Zambia",
+   "iso2": "ZM",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. Around 3,000 reconstructive, orthopaedic and ENT operations a year for children, in a teaching hospital of six buildings with 57 beds and three operating rooms.",
+   "url": "https://cure.org/hospitals/zambia/",
+   "lat": -15.363898,
+   "lon": 28.279868,
+   "geocode_display_name": "Beit Cure Hospital, Great North Road, Lusaka, Zambia",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/zambia/",
+   "via_verb": "verified from",
+   "label": "Beit CURE Hospital"
+  },
+  {
+   "name": "CURE Children's Hospital Zimbabwe",
+   "city": "Bulawayo",
+   "country": "Zimbabwe",
+   "iso2": "ZW",
+   "specialism": "Children's teaching hospital of the CURE network. Its own pages give the conditions it operates on, among them clubfoot, bowed legs, knock knees, windswept legs, osteogenesis imperfecta and burn contractures, and the network states that after surgery children receive physical therapy and, where needed, orthoses and prosthetic limbs. The country's first and only charitable children's hospital for orthopaedic disabilities such as clubfoot, bowed legs and knock knees, with 41 beds and three operating rooms, and holder of SafeCare level 5 accreditation.",
+   "url": "https://cure.org/hospitals/zimbabwe/",
+   "lat": -20.15606,
+   "lon": 28.588706,
+   "geocode_display_name": "Bulawayo, Bulawayo Province, Zimbabwe (city centre; the hospital's street address is not published)",
+   "type": "Paediatric orthopaedic teaching hospital",
+   "url_status": "200",
+   "via": "the hospital's own page",
+   "via_url": "https://cure.org/hospitals/zimbabwe/",
+   "via_verb": "verified from",
+   "label": "CURE  Zimbabwe"
   }
  ]
 }

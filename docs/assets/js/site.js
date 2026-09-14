@@ -475,7 +475,8 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   var region = document.getElementById("inc-region"), q = document.getElementById("inc-q");
   var nEl = document.getElementById("inc-n"), totalEl = document.getElementById("inc-total");
   var labelEl = document.getElementById("inc-label"), headEl = document.getElementById("inc-head");
-  var reset = document.getElementById("inc-reset");
+  var reset = document.getElementById("inc-reset"), more = document.getElementById("inc-more");
+  var LIMIT = 25, expanded = false;
 
   // same rounding as the build: a country expecting less than one child a year keeps a decimal
   function cases(births, rate) {
@@ -491,9 +492,12 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
       tr.cells[3].innerHTML = cases(births, rate);
       var ok = (!reg || tr.getAttribute("data-region") === reg) &&
                (!needle || tr.getAttribute("data-name").indexOf(needle) !== -1);
-      tr.hidden = !ok;
       if (ok) { shown++; sum += births * rate / 100000; }
+      // the count and the total cover every match; the table shows the first LIMIT until asked for more
+      tr.hidden = !ok || (!expanded && shown > LIMIT);
     });
+    more.hidden = shown <= LIMIT;
+    more.textContent = expanded ? "Show the first " + LIMIT + " countries" : "Show all " + shown.toLocaleString("en") + " countries";
     nEl.textContent = shown.toLocaleString("en");
     totalEl.textContent = sum >= 10 ? Math.round(sum).toLocaleString("en") : sum.toFixed(1);
     var unit = rate >= 10 ? (rate / 10) + " per 10,000 births" : rate + " per 100,000 births";
@@ -503,7 +507,8 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   sel.addEventListener("change", apply);
   region.addEventListener("change", apply);
   q.addEventListener("input", apply);
-  reset.addEventListener("click", function () { sel.value = "0"; region.value = ""; q.value = ""; apply(); });
+  more.addEventListener("click", function () { expanded = !expanded; apply(); if (!expanded) more.scrollIntoView({ block: "center" }); });
+  reset.addEventListener("click", function () { sel.value = "0"; region.value = ""; q.value = ""; expanded = false; apply(); });
   apply();
 })();
 

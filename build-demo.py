@@ -1501,6 +1501,7 @@ def incidence_html():
         <tbody>{rows}</tbody>
       </table>
     </div>
+    <button type="button" class="inc-more" id="inc-more" hidden>Show all {len(BIRTHS["countries"])} countries</button>
     <script type="application/json" id="inc-data">{data.replace("</", "<\\/")}</script>
     <p class="annex-note">Births: {BIRTHS["source"]} Read {BIRTHS["built"]}, covering {min(c["year"] for c in BIRTHS["countries"])}.
     <a href="{BIRTHS["source_url"]}" target="_blank" rel="noopener external">data.worldbank.org</a> ·

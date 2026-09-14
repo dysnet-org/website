@@ -959,7 +959,18 @@ details.assoc:not([open]) + .assoc-foot { padding-top: 0; margin-top: -0.2rem; }
 .inc-controls button:hover { border-color: var(--dys-purple); }
 .inc-count { flex-basis: 100%; margin: 0; font-size: var(--text-small); color: var(--dys-muted); }
 .inc-count strong { color: var(--dys-ink); }
+table.annex.inc-table { min-width: 0; }
+table.annex.inc-table tbody tr:first-child th, table.annex.inc-table tbody tr:first-child td { background: transparent; }
 .inc-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .inc-table td.cases { font-weight: 700; color: var(--dys-purple-text); }
 .inc-table tbody tr[hidden] { display: none; }
-@media (max-width: 48rem) { .inc-controls select#inc-condition { max-width: 100%; } }
+.inc-more { font: inherit; font-size: var(--text-small); font-weight: 600; margin-top: var(--space-2); padding: 0.5rem 1.1rem; border-radius: 999px; border: 1px solid var(--dys-line); background: #fff; cursor: pointer; }
+.inc-more:hover { border-color: var(--dys-purple); }
+.inc-more[hidden] { display: none; }
+@media (max-width: 48rem) {
+  .inc-controls select#inc-condition { max-width: 100%; }
+  /* the region is already a filter above; on a phone the column only squeezes the numbers */
+  .inc-table th:nth-child(2), .inc-table td:nth-child(2) { display: none; }
+  table.annex.inc-table th, table.annex.inc-table td { padding: var(--space-1) 0.4rem; }
+  table.annex.inc-table tbody th { white-space: normal; }
+}

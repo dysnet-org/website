@@ -465,6 +465,21 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   set(false);
 })();
 
+/* ── Filter state in the address bar, so a filtered view can be linked ── */
+function filterParams() { return new URLSearchParams(location.search); }
+function writeFilterParams(obj) {
+  if (!window.history || !history.replaceState) return;
+  var u = new URL(location.href), p = u.searchParams;
+  Object.keys(obj).forEach(function (k) {
+    var v = obj[k];
+    if (v == null || v === "" || (Array.isArray(v) && !v.length)) p.delete(k);
+    else p.set(k, Array.isArray(v) ? v.join(",") : String(v));
+  });
+  var s = p.toString();
+  history.replaceState(null, "", u.pathname + (s ? "?" + s : "") + u.hash);
+}
+function filterList(name) { var v = filterParams().get(name); return v ? v.split(",").filter(Boolean) : []; }
+
 /* ── Epidemiology: expected cases a year, by country and condition ──── */
 (function () {
   var table = document.getElementById("inc-table"), sel = document.getElementById("inc-condition");
@@ -486,6 +501,7 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   function apply() {
     var r = DATA.rates[sel.value | 0], rate = r[1];
     var reg = region.value, needle = (q.value || "").trim().toLowerCase();
+    writeFilterParams({ condition: r[3] === DATA.rates[0][3] ? "" : r[3], region: reg, country: q.value.trim() });
     var shown = 0, sum = 0;
     rows.forEach(function (tr) {
       var births = +tr.getAttribute("data-births");
@@ -504,6 +520,13 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
     labelEl.textContent = r[0].toLowerCase() + " (" + unit + ", " + r[2] + ")";
     headEl.textContent = "Expected a year: " + r[0];
   }
+  // a link can arrive with a condition, a region or a country already chosen
+  var pre = filterParams();
+  if (pre.get("condition")) {
+    DATA.rates.forEach(function (r, i) { if (r[3] === pre.get("condition")) sel.value = String(i); });
+  }
+  if (pre.get("region")) region.value = pre.get("region");
+  if (pre.get("country")) q.value = pre.get("country");
   sel.addEventListener("change", apply);
   region.addEventListener("change", apply);
   q.addEventListener("input", apply);
@@ -521,8 +544,9 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to"), exclude = "";
   // the page ships the first 60 entries as HTML; the full set travels as JSON and is rendered here on demand
   var dataEl = document.getElementById("bib-data"), DATA = null, LABELS = { codes: {}, topics: {} };
-  try { var parsed = dataEl ? JSON.parse(dataEl.textContent) : null; if (parsed) { DATA = parsed.items; LABELS = parsed; } } catch (e) { DATA = null; }
-  if (DATA) DATA.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "")).toLowerCase().replace(/"/g, ""); });
+  try { var parsed = dataEl && dataEl.textContent.trim() ? JSON.parse(dataEl.textContent) : null; if (parsed) { DATA = parsed.items; LABELS = parsed; } } catch (e) { DATA = null; }
+  function index(rows) { rows.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "")).toLowerCase().replace(/"/g, ""); }); }
+  if (DATA) index(DATA);
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
   function itemHtml(r) {
     // the old SICI DOIs carry < and >: percent-encoded in the address, escaped in the text
@@ -558,6 +582,8 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
       it.hidden = !ok || (!expanded && k > LIMIT);
     });
     n.textContent = k;
+    writeFilterParams({ q: q.value.trim(), condition: code, topic: topic, exclude: exclude,
+                        from: yFrom && yFrom.value, to: yTo && yTo.value });
     if (more) { more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching references"; }
     if (focus) focus.querySelectorAll("button").forEach(function (b) {
       var on = b.hasAttribute("data-exclude") ? b.getAttribute("data-exclude") === exclude : b.getAttribute("data-code") === code;
@@ -574,8 +600,16 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
   });
   q.addEventListener("input", function () { expanded = false; apply(); }); sel.addEventListener("change", function () { expanded = false; apply(); });
   [yFrom, yTo].forEach(function (el) { if (el) el.addEventListener("input", function () { expanded = false; apply(); }); });
-  apply();
+  // a link can arrive with a condition, a theme, a search or a year range already chosen
+  var pre = filterParams();
+  if (pre.get("q")) q.value = pre.get("q");
+  if (pre.get("condition")) sel.value = pre.get("condition");
+  if (pre.get("topic")) topic = pre.get("topic");
+  if (pre.get("exclude")) exclude = pre.get("exclude");
+  if (pre.get("from") && yFrom) yFrom.value = pre.get("from");
+  if (pre.get("to") && yTo) yTo.value = pre.get("to");
   chips.querySelectorAll("button").forEach(function (b) {
+    if (topic && b.getAttribute("data-topic") === topic) b.setAttribute("aria-pressed", "true");
     b.addEventListener("click", function () {
       var on = b.getAttribute("aria-pressed") === "true";
       chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
@@ -583,13 +617,20 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
     });
   });
   document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; exclude = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+  apply();
+  // the full set travels as a file: until it lands, the 60 entries in the HTML are filtered in place
+  var bibSrc = dataEl && dataEl.getAttribute("data-src");
+  if (!DATA && bibSrc) fetch(bibSrc).then(function (r) { return r.json(); }).then(function (d) {
+    LABELS = d; DATA = d.items; index(DATA); items = null; apply();
+  }).catch(function () {});
 })();
 
 /* ── Teratogens register: search + filters, rendered from embedded data ── */
 (function () {
   var list = document.getElementById("tera-list"), q = document.getElementById("tera-q"), n = document.getElementById("tera-n"), dataEl = document.getElementById("tera-data");
   if (!list || !q || !dataEl) return;
-  var DATA; try { DATA = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  var DATA = null;
+  try { if (dataEl.textContent.trim()) DATA = JSON.parse(dataEl.textContent); } catch (e) { DATA = null; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
   var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
   var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" }, KIND = { chemical: "Chemical", medicine: "Medicine", product: "Consumer product" };
@@ -633,12 +674,15 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
            '<div class="tera-srcs">' + srcs + '</div>' + ((r.u && r.u.length) ? '<div class="tera-uses">' + r.u.map(function (u) { return '<span class="use use-' + u + '">' + (USE[u] || u) + '</span>'; }).join("") + '</div>' : "") + '<div class="tera-status">' + chips.join("") + '</div>' +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
-  DATA.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); });
+  function prime(rows) { rows.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); }); }
+  if (DATA) prime(DATA);
   var ORDER = { known: 0, presumed: 1, suspected: 2 };
-  DATA.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); });
+  function order(rows) { rows.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); }); }
+  if (DATA) order(DATA);
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
   var state = { sources: [], levels: [], kinds: [], uses: [] };
   function apply() {
+    if (!DATA) return;                      // the entries rendered into the page stay until the data lands
     var text = q.value.trim().toLowerCase(), k = 0, out = [];
     DATA.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
@@ -650,6 +694,7 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
     });
     list.innerHTML = out.join("");
     n.textContent = k;
+    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses });
     more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
   }
   function bind(groupId, attr, key) {
@@ -669,6 +714,17 @@ function isPhone() { return window.matchMedia ? window.matchMedia("(max-width: 4
     q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [] }; expanded = false;
     document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
   });
-  var pre = new URLSearchParams(location.search).get("q"); if (pre) { q.value = pre; }
+  // a link can arrive with a search, a source, a level, a kind or a use already chosen
+  var pre = filterParams();
+  if (pre.get("q")) q.value = pre.get("q");
+  state.sources = filterList("source"); state.levels = filterList("level");
+  state.kinds = filterList("kind"); state.uses = filterList("use");
+  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses]].forEach(function (pair) {
+    document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
+      if (pair[1].indexOf(b.getAttribute(pair[0])) !== -1) b.setAttribute("aria-pressed", "true");
+    });
+  });
   apply();
+  var teraSrc = dataEl.getAttribute("data-src");
+  if (!DATA && teraSrc) fetch(teraSrc).then(function (r) { return r.json(); }).then(function (d) { DATA = d; prime(DATA); order(DATA); apply(); }).catch(function () {});
 })();

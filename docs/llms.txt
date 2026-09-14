@@ -1,0 +1,35 @@
+# DysNet
+
+> DysNet is the international network for people with congenital limb differences (dysmelia), registered in Sweden in 2009. It maintains five public registers, publishes them as data under CC BY 4.0, and is building a registry of limb malformations owned by the patient community itself.
+
+Everything on this site may be quoted and reused with attribution to DysNet. Figures are sourced line by line; where the evidence is thin, the pages say so.
+
+## Registers (HTML, with the data behind each)
+
+- [Bibliography](https://www.dysnet.org/knowledge/bibliography/): 1080 peer-reviewed references on limb difference, thalidomide embryopathy and their causes. Data: [bibliography.json](https://www.dysnet.org/data/bibliography.json)
+- [Registries](https://www.dysnet.org/knowledge/registries/): 72 registries that record congenital limb differences, with their coverage. Data: [registries.json](https://www.dysnet.org/data/registries.json)
+- [Researchers](https://www.dysnet.org/knowledge/researchers/): 106 research teams, from the affiliations of the bibliography's authors. Data: [researchers.json](https://www.dysnet.org/data/researchers.json)
+- [Care centres](https://www.dysnet.org/knowledge/care-centres/): 88 centres of care, each named by a member association or verified on its own institutional page. Data: [care-centres.json](https://www.dysnet.org/data/care-centres.json)
+- [Teratogens](https://www.dysnet.org/knowledge/teratogens/): 580 substances with known, presumed or suspected effects on the unborn child, with evidence level and legal status. Data: [teratogens.json](https://www.dysnet.org/data/teratogens.json)
+
+## Reference pages
+
+- [Understanding dysmelia](https://www.dysnet.org/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes.
+- [Epidemiology](https://www.dysnet.org/knowledge/epidemiology/): prevalence at birth per condition, and expected cases a year for 217 countries. Data: [births.json](https://www.dysnet.org/data/births.json)
+- [Causes of dysmelia](https://www.dysnet.org/knowledge/causes-of-dysmelia/): a referenced review of what is known about causes, and how often a cause is found.
+- [What is a patient-owned registry?](https://www.dysnet.org/knowledge/guides/patient-owned-registry/): the guide in two minutes.
+- [The registry project](https://www.dysnet.org/registry/): the registry DysNet is building, and how it is governed.
+- [Our voice](https://www.dysnet.org/voice/): DysNet's seats at EURORDIS, the European Disability Forum and ERN BOND.
+- [Member associations](https://www.dysnet.org/about/members/): the associations families belong to, country by country.
+
+## Filtered views can be linked
+
+- Bibliography by condition: https://www.dysnet.org/knowledge/bibliography/?condition=2911 (ORPHAcode), by theme: ?topic=meta, by year: ?from=2015&to=2026
+- Teratogens by source, level, kind or use: https://www.dysnet.org/knowledge/teratogens/?source=clp&level=known
+- Incidence by condition and region: https://www.dysnet.org/knowledge/epidemiology/?condition=amelia-all-forms&region=Sub-Saharan%20Africa
+
+## Licence and contact
+
+- Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).
+- Corrections, additions and questions: info@dysnet.org.
+- Last built: 2026-09-14.

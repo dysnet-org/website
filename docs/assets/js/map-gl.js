@@ -326,13 +326,21 @@
   var chips = document.querySelectorAll(".map-views button");
   function choose(key) {
     chips.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-view") === key ? "true" : "false"); });
+    // the chosen region travels in the address, so a view of the map can be linked
+    if (window.history && history.replaceState) {
+      var u = new URL(location.href);
+      if (key === "world") u.searchParams.delete("view"); else u.searchParams.set("view", key);
+      var qs = u.searchParams.toString();
+      history.replaceState(null, "", u.pathname + (qs ? "?" + qs : "") + u.hash);
+    }
     map.fitBounds(REGIONS[key], { padding: 24, duration: reduce ? 0 : 900, maxZoom: 5 });
     var g = document.querySelector(".map-guess");
     if (g) g.textContent = "Showing " + LABELS[key] + ". Scroll to zoom, drag to pan.";
   }
   chips.forEach(function (b) { b.addEventListener("click", function () { choose(b.getAttribute("data-view")); }); });
   map.once("load", function () {
-    var first = guessRegion();
+    var asked = new URLSearchParams(location.search).get("view");
+    var first = (asked && REGIONS[asked]) ? asked : guessRegion();
     map.fitBounds(REGIONS.world, { padding: 24, duration: 0 });
     setTimeout(function () { choose(first); }, 400);
   });

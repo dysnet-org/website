@@ -90,7 +90,10 @@ ORG_SCHEMA = {
     "sameAs": ["https://www.facebook.com/DysNet",
                "https://www.linkedin.com/company/dysnet/",
                "https://www.youtube.com/user/DysmeliaNetwork",
-               "https://www.orpha.net/en/patient-organisations/federations-alliances/646248"],
+               "https://www.orpha.net/en/patient-organisations/federations-alliances/646248",
+               "https://www.edf-feph.org/our-members/european-dysmelia-reference-information-centre/",
+               "https://www.lobbyfacts.eu/datacard/dysnet?rid=047603512537-13&sid=183440",
+               "https://www.eurordis.org/eurordis_member/volup-speculum-carpo/"],
 }
 
 NAV = [
@@ -134,6 +137,25 @@ PEOPLE_LD = []  # filled by person_card() as the People page is defined
 ARTICLE_PATHS = {"/knowledge/causes-of-dysmelia/", "/knowledge/epidemiology/"}
 
 
+# One preview image per section rather than the board photograph on every page: a link shared into a
+# chat or a feed should look like the thing it points at. Photographs the site already owns; a page
+# that sets its own "og" keeps it.
+SECTION_OG = {
+    "/knowledge/": "/assets/img/inail-lab-tour.jpg",
+    "/registry/": "/assets/img/dysnet-banner-2012.jpg",
+    "/voice/": "/assets/img/limbloss-day-2012.jpg",
+    "/about/": "/assets/img/board-inail-2024.jpg",
+    "/contact/": "/assets/img/board-inail-2024.jpg",
+    "/donate/": "/assets/img/inail-lab-2.jpg",
+}
+
+
+def section_og(path):
+    for prefix, img in SECTION_OG.items():
+        if path.startswith(prefix): return img
+    return None
+
+
 def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
     full = SEO_TITLES.get(path) or (title if BRAND in title else f"{title} · {BRAND}")
     canonical = SITE + path
@@ -172,7 +194,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
 <meta property="og:title" content="{full}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{SITE}{og or "/assets/img/board-inail-2024.jpg"}">
+<meta property="og:image" content="{SITE}{og or section_og(path) or "/assets/img/board-inail-2024.jpg"}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="{FAVICON}">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -317,6 +339,12 @@ def doi_html(doi):
     return f'<a href="{_h.escape(href, quote=True)}" target="_blank" rel="noopener external">doi:{_h.escape(doi)}</a>'
 
 
+# The registers ship a first slice as HTML (crawlable, readable without JavaScript) and the full
+# set as JSON. Inlining that JSON made the two pages 477 KB and 400 KB; written as files and fetched
+# after first paint, the pages are 68 KB and 83 KB and the filters come alive a moment later.
+PAYLOADS = {}
+
+
 def bibliography_html():
     entries = BIB.get("entries", [])
     names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
@@ -355,7 +383,7 @@ def bibliography_html():
       <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button></p>
     </div>
     <ol class="bib-list" id="bib-list">{"".join(items[:60])}</ol>
-    <script type="application/json" id="bib-data">{json.dumps({"codes": {c: names.get(c, c) for c in codes_present}, "topics": {t.replace(" ", "_"): BIB_TOPIC_LABEL.get(t, t) for t in topics}, "items": records}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
+    <script type="application/json" id="bib-data" data-src="/data/bibliography-index.json"></script>{PAYLOADS.__setitem__("bibliography-index.json", json.dumps({"codes": {c: names.get(c, c) for c in codes_present}, "topics": {t.replace(" ", "_"): BIB_TOPIC_LABEL.get(t, t) for t in topics}, "items": records}, ensure_ascii=False, separators=(",", ":"))) or ""}
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="bib-more" hidden>Show all matching references</button></p>
     <p class="annex-note">Built {BIB.get("built", "")} from three trusted sources: the references Orphanet cites in its epidemiology data (Orphadata, CC BY 4.0), the sources of the prevalence annex, and the publications our member associations put forward on their own websites. Titles, authors and DOIs come from PubMed (NCBI E-utilities) or Crossref, never typed by hand. Every paper found on a member website was screened to keep only articles about the conditions described on this site. Three fixed PubMed queries, re-run at each build, add the thalidomide literature (title query: thalidomide with teratogenicity, embryopathy, birth defects, phocomelia, survivors, limb, malformation, Contergan, victims, disaster or tragedy), the systematic reviews and meta-analyses on our conditions (publication type or title, combined with the condition names), and the literature on causes and risk factors (title terms such as aetiology, risk factors, teratogen, maternal, exposure, environmental, pesticides, clusters or vascular disruption, combined with the condition names). The registries listed on Orphanet for our conditions were crawled the same way as member websites. Suggest a reference: <a href="mailto:info@dysnet.org?subject=Bibliography">info@dysnet.org</a>. <a href="/data/bibliography.json">Download the data (JSON, CC BY 4.0)</a>.</p>
 """
@@ -536,7 +564,7 @@ def teratogens_html():
     <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="badge badge-med">Medicine</span> marks a substance used as a medicine, checked against the WHO ATC classification and the substance’s own article ({sum(1 for e in E if e.get("medicinal"))} of {len(E)}). Coloured tags say where the substance is used in everyday products, read from its Wikipedia article ({sum(1 for e in E if e.get("uses"))} of {len(E)}); open <em>Details</em> for the sentence each tag comes from. <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
-    <script type="application/json" id="tera-data">{json.dumps(records, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")}</script>
+    <script type="application/json" id="tera-data" data-src="/data/teratogens-index.json"></script>{PAYLOADS.__setitem__("teratogens-index.json", json.dumps(records, ensure_ascii=False, separators=(",", ":"))) or ""}
     <p class="annex-note">Built {TERA.get("built", "")}. Sources: {c.get("clp", 0)} EU harmonised entries with a hazard statement for the unborn child (CLP Annex VI, ATP23), {c.get("p65", 0)} developmental toxicants on California's Proposition 65 list, {c.get("ema", 0)} medicines under EMA pregnancy prevention programmes or contraindications, plus alcohol (WHO) and tobacco smoking (peer-reviewed literature). {c.get("both_clp_and_p65", 0)} substances appear on both the EU and the Californian lists. <a href="/data/teratogens.json">Download the data (JSON, CC BY 4.0)</a>. Report an error or a missing substance: <a href="mailto:info@dysnet.org?subject=Teratogens%20register">info@dysnet.org</a>.</p>
 """
 
@@ -1231,8 +1259,12 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     else:
         link = ('<p class="src">Umbrella term; see the specific types on '
                 '<a href="https://www.orpha.net/en/disease" target="_blank" rel="noopener external">Orphanet</a>.</p>')
+    # the register's filters now travel in the address, so a card can point at its own slice of it
+    n_refs = sum(1 for e in BIB.get("entries", []) if str(code) in e.get("codes", []))
+    refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
+            if code and n_refs >= 3 else "")
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{link}</div>')
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -1447,6 +1479,10 @@ BIRTHS = json.loads((pathlib.Path(__file__).parent / "tools" / "births.json").re
 WORLD_BIRTHS = sum(c["births"] for c in BIRTHS["countries"])
 
 
+def _slug(label):  # the address of a filtered incidence view: ?condition=all-limb-reduction-defects
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", label.lower())).strip("-")
+
+
 def _rate_txt(rate):  # the unit that reads best: per 10,000 births, or per 100,000 for the rare ones
     return f"{rate / 10:g} per 10,000 births" if rate >= 10 else f"{rate:g} per 100,000 births"
 
@@ -1463,10 +1499,10 @@ def incidence_html():
         f'<th scope="row">{c["name"]}</th><td>{c["region"]}</td><td class="num">{c["births"]:,}</td>'
         f'<td class="num cases">{_cases(c["births"], rates[0][1])}</td></tr>'
         for c in BIRTHS["countries"])
-    options = "".join(f'<option value="{i}">{lab} · {_rate_txt(r)}</option>' for i, (lab, r, _src) in enumerate(rates))
+    options = "".join(f'<option value="{i}" data-slug="{_slug(lab)}">{lab} · {_rate_txt(r)}</option>' for i, (lab, r, _src) in enumerate(rates))
     regions = "".join(f'<option value="{r}">{r}</option>' for r in sorted({c["region"] for c in BIRTHS["countries"]}))
     world = {lab: _cases(WORLD_BIRTHS, r) for lab, r, _ in rates}
-    data = json.dumps({"rates": [[lab, r, src] for lab, r, src in rates],
+    data = json.dumps({"rates": [[lab, r, src, _slug(lab)] for lab, r, src in rates],
                        "births": [[c["name"], c["region"], c["births"]] for c in BIRTHS["countries"]]},
                       ensure_ascii=False, separators=(",", ":"))
     return f"""
@@ -1811,7 +1847,7 @@ _CAUSES_BODY = f"""
       391 limb reduction defects{cref("10.1002/ajmg.a.61875")}.</footer>
     </blockquote>
 
-    {opener("01", "The window", "Four weeks in which a limb is decided.")}
+    {opener("01", "The window", "When does a limb form? Four weeks in which a limb is decided.")}
     <p>Human limbs are built between roughly the fourth and the eighth week after conception. A bud of undifferentiated
     mesenchyme grows out of the body wall under the control of three signalling centres, each governing one axis. The apical
     ectodermal ridge, a thickened rim of ectoderm at the tip, drives outgrowth from shoulder to fingertip through fibroblast
@@ -1824,7 +1860,7 @@ _CAUSES_BODY = f"""
     Second, by the time a pregnancy is confirmed, most of this window has already passed. A limb difference is therefore almost
     never the result of anything that happened after the mother knew she was pregnant.</p>
 
-    {opener("02", "How often a cause is found", "Most of the time, honestly, we do not know.")}
+    {opener("02", "How often a cause is found", "How often is a cause found? Most of the time, honestly, we do not know.")}
     <p>The China Birth Cohort Study reviewed 2,123 birth defect cases and found an identifiable cause in 22.4% of them: 415
     chromosomal anomalies, 31 monogenic disorders, 23 environmental exposures and 6 attributable to twinning. Among live births
     the proportion fell to 13.4%{cref("10.1136/bmjpo-2025-003451")}. This is not a Chinese peculiarity; it is what every
@@ -1841,7 +1877,7 @@ _CAUSES_BODY = f"""
     syndromes{cref("10.1016/j.jhsa.2013.11.014")}. Malformations and deformations have entirely different causes, and mixing
     them is the commonest way to get the aetiology wrong.</p>
 
-    {opener("03", "Genes", "From a single letter to a whole chromosome.")}
+    {opener("03", "Genes", "Which genes are involved? From a single letter to a whole chromosome.")}
     <p><strong>Patterning genes.</strong> The HOX genes encode transcription factors and act as the selectors of the body plan;
     <em>HOXD13</em> is the one most
     often implicated in the hand. Changes inside and outside its homeodomain produce synpolydactyly, in which digits are both
@@ -1880,7 +1916,7 @@ _CAUSES_BODY = f"""
     test{cref("10.3390/genes12070962")}, and recessive variants in genes such as <em>BHLHA9</em> account for syndactyly forms
     that would otherwise look sporadic{cref("10.1038/hgv.2017.54")}.</p>
 
-    {opener("04", "Medicines and chemicals", "One certainty, several strong signals, and a long tail of weak ones.")}
+    {opener("04", "Medicines and chemicals", "Which medicines and chemicals are proven? One certainty, several strong signals, and a long tail of weak ones.")}
     <p>A teratogen is any agent that can disturb the development of an unborn child. The list of those actually proved to cause
     limb differences in humans is far shorter than the internet suggests, and the strength of the evidence varies enormously from
     one entry to the next; the substances below are ordered accordingly, and those with a regulatory status are tracked in the
@@ -1942,7 +1978,7 @@ _CAUSES_BODY = f"""
     reported, on small numbers. All of this rests on self-reported or modelled exposure, and the misclassification that follows
     can move an odds ratio in either direction{cref("10.1111/ppe.13161")}.</p>
 
-    {opener("05", "The mother’s health", "Diabetes is the one that matters most.")}
+    {opener("05", "The mother’s health", "Which maternal conditions matter? Diabetes is the one that matters most.")}
     <p>A meta-analysis covering more than 80 million births found that pre-gestational diabetes raises the risk of congenital
     anomaly overall (relative risk 1.99) far more than gestational diabetes does (1.18); for limb reduction defects specifically,
     gestational diabetes carried a relative risk of 1.14 (95% CI 1.06 to 1.23){cref("10.1371/journal.pmed.1003900")}. Caudal
@@ -1965,7 +2001,7 @@ _CAUSES_BODY = f"""
     to the limb bud itself. Newer claims should be read cautiously: the report of Adams-Oliver syndrome after maternal COVID-19
     is a single case, which is a hypothesis and not evidence of causation{cref("10.1080/15513815.2022.2064018")}.</p>
 
-    {opener("06", "Vascular disruption", "A limb that formed, then was lost.")}
+    {opener("06", "Vascular disruption", "Can a limb be lost after it has formed? A limb that formed, then was lost.")}
     <p>Vascular disruption is a different kind of cause. The limb is built correctly, and blood flow to it then fails, producing
     hypoxia, endothelial damage, haemorrhage, tissue loss and repair. Of 7,020 infants with malformations at one American
     hospital over forty years, 105 had defects attributed to this process, including terminal transverse limb defects at three
@@ -1982,7 +2018,7 @@ _CAUSES_BODY = f"""
     chromosomal deletion{cref("10.1186/1471-2350-15-63")}, and classification remains under
     discussion{cref("10.1053/j.sempedsurg.2018.05.007")}. Honest practice is to present the vascular hypothesis as a hypothesis.</p>
 
-    {opener("07", "The amnion and mechanical forces", "Bands, crowding, and a widespread misconception.")}
+    {opener("07", "The amnion and mechanical forces", "Do amniotic bands and crowding explain it? Bands, crowding, and a widespread misconception.")}
     <p><strong>Amniotic band syndrome.</strong> Across 30 EUROCAT registries over forty years, 866 cases of amniotic band
     syndrome and 451 of limb body wall complex were recorded, a mean prevalence of 0.53 and 0.34 per 10,000 births, with twinning
     confirmed as a risk factor{cref("10.1002/ajmg.a.63107")}. A Finnish case-control study of 106 limb deficiencies associated
@@ -2000,7 +2036,7 @@ _CAUSES_BODY = f"""
     contractures; something else produces the lack of movement. This is exactly why the malformation-deformation distinction in
     the OMT classification matters{cref("10.1016/j.jhsa.2013.11.014")}.</p>
 
-    {opener("08", "Procedures", "Two causes that medicine created and then reduced.")}
+    {opener("08", "Procedures", "Has medicine itself caused limb differences? Two causes that medicine created and then reduced.")}
     <p>Chorionic villus sampling performed before 70 days of gestation was shown, in a registry-based case-control study, to
     raise the risk of transverse limb defects and oromandibular-limb hypogenesis{cref("10.1002/ajmg.1320440639")}; maternal age
     was excluded as a confounder{cref("10.1002/ajmg.1320530212")} and a distinctive effect on the fingers was
@@ -2010,7 +2046,7 @@ _CAUSES_BODY = f"""
     series{cref("10.1016/j.ajog.2020.04.016", "10.1159/000550538")}. Both are worth knowing precisely because they show what
     identifying a cause makes possible.</p>
 
-    {opener("09", "Genes and environment together", "The wrong question, asked for fifty years.")}
+    {opener("09", "Genes and environment together", "Why has fifty years of research found so little? The wrong question, asked for fifty years.")}
     <p>The division of this article into genetic and environmental sections is a convenience, not a claim about nature. Mice
     carrying one working copy of <em>Shh</em> or <em>Gli2</em> develop limb defects after prenatal alcohol exposure that
     wild-type littermates do not{cref("10.1002/bdr2.1026")}, and a hedgehog pathway agonist given at the right hour produces
@@ -2018,7 +2054,7 @@ _CAUSES_BODY = f"""
     limb development, angiogenesis and coagulation genes{cref("10.1002/ajmg.a.35565", "10.1002/ajmg.a.31402")}. For most
     children, the honest formulation is that susceptibility and exposure met, and that neither alone would have been enough.</p>
 
-    {opener("10", "Clusters", "What happens when a community asks the question properly.")}
+    {opener("10", "Clusters", "What happens when a cluster is investigated properly?")}
     <p>In the Ain department of France, a regional registry reported an excess of isolated transverse upper-limb reduction
     defects and argued the cluster was real{cref("10.1002/bdr2.1876")}. A national, multidisciplinary investigation of three
     suspected clusters followed, examining exposures systematically, and concluded that no common cause could be
@@ -2026,7 +2062,7 @@ _CAUSES_BODY = f"""
     rare, small numbers make clusters both easy to see and hard to prove, and a registry designed for counting is not
     automatically a registry designed for causal investigation.</p>
 
-    {opener("11", "What is missing", "Why DysNet is building a registry.")}
+    {opener("11", "What is missing", "Why is DysNet building a registry?")}
     <p>Three things keep this field where it is. Cases are rare and scattered across countries, so no single centre accumulates
     enough of them. Coding differs between registries, so the same limb is counted differently on either side of a border.
     And the phenotype is recorded far more often than the exposures, the family history and the genome that would make a cause
@@ -2041,7 +2077,7 @@ _CAUSES_BODY = f"""
 
     <div class="tick" id="method"></div>
     <p class="eyebrow">Method</p>
-    <h2 class="h2">How this article was written.</h2>
+    <h2 class="h2">How was this article written?</h2>
     <p><strong>Author.</strong> Dr Loïc Rigal, for the DysNet documentation team, September 2026.</p>
     <p><strong>Sources.</strong> The starting point was the DysNet <a href="/knowledge/bibliography/">bibliography</a>, the
     register of peer-reviewed publications on our conditions, searched by theme for causes, genetics and epidemiology. Where the
@@ -2617,7 +2653,7 @@ MEMBERS = [
     ("Austria", [("Contergan Austria", None)]),
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
     ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
-    ("France", [("Assedea", "http://www.assedea.fr")]),
+    ("France", [("Assedea", "https://www.assedea.fr")]),
     ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de", "https://contergan-hessen.de/helfen/")]),
     ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
     ("Italy", [("Raggiungere", "https://www.raggiungere.it", "https://www.raggiungere.it/index.php/come-aiutarci-2020/331-donazioni"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
@@ -3185,6 +3221,8 @@ def build():
     for out_name, src_name in DATA_FILES.items():
         src = ROOT.parent / "tools" / src_name
         if src.exists(): shutil.copyfile(src, ROOT / "data" / out_name)
+    for name, payload in PAYLOADS.items():       # the registers' client data, fetched after first paint
+        (ROOT / "data" / name).write_text(payload, encoding="utf-8")
     page_mod = {}
     for path, page in PAGES.items():
         out_dir = ROOT / path.strip("/")
@@ -3226,7 +3264,7 @@ def build():
 
     # sitemap.xml — demonstrates the SEO deliverable for the real launch
     urls = "\n".join(
-        f"  <url><loc>{SITE}{p}</loc><lastmod>{page_mod[p]}</lastmod><changefreq>weekly</changefreq></url>" for p in PAGES if p != "/404/")
+        f"  <url><loc>{SITE}{p}</loc><lastmod>{page_mod[p]}</lastmod></url>" for p in PAGES if p != "/404/")
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n'
         f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n',
@@ -3245,9 +3283,55 @@ def build():
     # One-page briefing PDF of the five demands, rendered from the same data
     print("  " + build_brief_pdf())
 
-    # robots.txt — live site: allow all, point crawlers to the sitemap
+    # robots.txt — everything is open, to search engines and to AI systems alike. The AI crawlers are
+    # named one by one because silence reads as an oversight; this is a knowledge site and being quoted,
+    # with attribution, is the point.
+    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot",
+               "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot",
+               "meta-externalagent", "Bingbot", "Amazonbot", "Bytespider", "DuckAssistBot", "cohere-ai", "MistralAI-User"]
     (ROOT / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+        "# DysNet welcomes search engines and AI systems. Everything here is public, and the registers\n"
+        "# are published as data under CC BY 4.0: see /llms.txt and /data/.\n"
+        "User-agent: *\nAllow: /\n\n"
+        + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ai_bots)
+        + f"Sitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
+
+    # IndexNow: the key file Bing, Yandex and Seznam fetch to check that a submission really comes
+    # from this site. tools/ping-indexnow.sh submits the sitemap's URLs after a deploy.
+    (ROOT / "f1faf0b594023c386c5540e7b7fad1a0.txt").write_text("f1faf0b594023c386c5540e7b7fad1a0\n", encoding="utf-8")
+
+    # llms.txt — the map an AI system needs: what this is, which pages hold what, which files hold the data
+    reg = [("Bibliography", "/knowledge/bibliography/", f"{len(BIB.get('entries', []))} peer-reviewed references on limb difference, thalidomide embryopathy and their causes", "bibliography.json"),
+           ("Registries", "/knowledge/registries/", f"{len(ORPHA_REGS.get('registries', []))} registries that record congenital limb differences, with their coverage", "registries.json"),
+           ("Researchers", "/knowledge/researchers/", f"{len(RESEARCHERS.get('teams', []))} research teams, from the affiliations of the bibliography's authors", "researchers.json"),
+           ("Care centres", "/knowledge/care-centres/", f"{len(CARE_CENTRES)} centres of care, each named by a member association or verified on its own institutional page", "care-centres.json"),
+           ("Teratogens", "/knowledge/teratogens/", f"{TERA.get('counts', {}).get('total', 0)} substances with known, presumed or suspected effects on the unborn child, with evidence level and legal status", "teratogens.json")]
+    llms = ["# DysNet", "",
+            "> DysNet is the international network for people with congenital limb differences (dysmelia), "
+            "registered in Sweden in 2009. It maintains five public registers, publishes them as data under "
+            "CC BY 4.0, and is building a registry of limb malformations owned by the patient community itself.", "",
+            "Everything on this site may be quoted and reused with attribution to DysNet. Figures are sourced "
+            "line by line; where the evidence is thin, the pages say so.", "",
+            "## Registers (HTML, with the data behind each)", ""]
+    for name, path, desc, f in reg:
+        llms.append(f"- [{name}]({SITE}{path}): {desc}. Data: [{f}]({SITE}/data/{f})")
+    llms += ["", "## Reference pages", "",
+             f"- [Understanding dysmelia]({SITE}/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes.",
+             f"- [Epidemiology]({SITE}/knowledge/epidemiology/): prevalence at birth per condition, and expected cases a year for {len(BIRTHS['countries'])} countries. Data: [births.json]({SITE}/data/births.json)",
+             f"- [Causes of dysmelia]({SITE}/knowledge/causes-of-dysmelia/): a referenced review of what is known about causes, and how often a cause is found.",
+             f"- [What is a patient-owned registry?]({SITE}/knowledge/guides/patient-owned-registry/): the guide in two minutes.",
+             f"- [The registry project]({SITE}/registry/): the registry DysNet is building, and how it is governed.",
+             f"- [Our voice]({SITE}/voice/): DysNet's seats at EURORDIS, the European Disability Forum and ERN BOND.",
+             f"- [Member associations]({SITE}/about/members/): the associations families belong to, country by country.",
+             "", "## Filtered views can be linked", "",
+             f"- Bibliography by condition: {SITE}/knowledge/bibliography/?condition=2911 (ORPHAcode), by theme: ?topic=meta, by year: ?from=2015&to=2026",
+             f"- Teratogens by source, level, kind or use: {SITE}/knowledge/teratogens/?source=clp&level=known",
+             f"- Incidence by condition and region: {SITE}/knowledge/epidemiology/?condition=amelia-all-forms&region=Sub-Saharan%20Africa",
+             "", "## Licence and contact", "",
+             "- Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).",
+             "- Corrections, additions and questions: info@dysnet.org.",
+             f"- Last built: {__import__('time').strftime('%Y-%m-%d')}.", ""]
+    (ROOT / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
     print(f"Built {len(written)} pages:")
     for p in written:

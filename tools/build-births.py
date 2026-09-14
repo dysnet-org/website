@@ -43,7 +43,7 @@ for iso3, c in meta.items():
     if not years: continue
     y = years[0]
     p, b = pop[iso3][y], cbr[iso3][y]
-    rows.append({"name": c["name"], "iso3": iso3, "iso2": c["iso2Code"], "region": c["region"]["value"],
+    rows.append({"name": c["name"], "iso3": iso3, "iso2": c["iso2Code"], "region": c["region"]["value"].strip(),
                  "year": y, "population": int(round(p)), "birth_rate": round(b, 2), "births": int(round(p * b / 1000))})
 rows.sort(key=lambda r: -r["births"])
 (HERE / "births.json").write_text(json.dumps({

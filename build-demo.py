@@ -1326,7 +1326,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <h1 class="display">Understanding dysmelia.</h1>
     <p>Dysmelia is the generic term for all types of congenital limb differences: limbs that formed differently, incompletely or not at all before birth. It concerns about 5 in 10,000 people. Behind the word are many distinct conditions; the guide below introduces the main ones in plain language, with links to Orphanet, the European reference database for rare diseases.</p>
 
-    {opener("01", "The conditions", "What is dysmelia, and which conditions does it cover?")}
+    {opener("01", "The conditions", "Which conditions does it cover?")}
 
     <div class="finder" id="cond-finder">
       <p class="finder-title">Find the pages that concern you</p>

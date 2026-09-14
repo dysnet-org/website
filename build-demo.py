@@ -860,7 +860,7 @@ def registries_html():
                 cls = ' class="reg-direct"'
             else:
                 n = len(r["parent"])
-                cov = f"By classification: {n} of our {len(names)} conditions" if n < len(names) else f"By classification: all {len(names)} conditions"
+                cov = f"By classification: {n} of our {len(names)} ORPHAcodes" if n < len(names) else f"By classification: all {len(names)} ORPHAcodes"
                 cls = ""
             local = f'<br><span class="reg-local">{r["local"]}</span>' if r["local"] and r["local"] != r["name"] else ""
             site = next((f["website"] for f in ORPHA_REGS.get("france_population_registries", {}).get("registries", []) if f.get("orphanet_id") == r["id"]), None)
@@ -2702,7 +2702,7 @@ PAGES["/voice/reports/"] = {
         <h2 class="h3">Disability and sport around the Winter Games</h2>
         <time datetime="2026-02">February 2026 · Claudio Pirola</time>
         <p>The chairman reported a growing involvement in the Paralympic Games of Milano-Cortina 2026 and structured contacts with
-        the Municipality of Milan on disability and sport, and an event on the subject planned for January.</p>
+        the Municipality of Milan on disability and sport, with an event on the subject among the plans.</p>
       </article>
       <article class="report">
         <p class="seat">EURORDIS</p>
@@ -2842,7 +2842,7 @@ MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "cent
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
 MAP_HERO = """
-<section class="map-hero" aria-label="The DysNet network on the world map">
+<section class="map-hero" id="map" aria-label="The DysNet network on the world map">
   <div id="worldmap"></div>
   <div id="glmap"></div>
   <div class="map-panel" id="map-panel">

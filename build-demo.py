@@ -3078,11 +3078,16 @@ PAGES["/donate/"] = {
       <button type="button" class="btn-go" id="bank-toggle">Give by bank transfer</button>
       <div class="bank-reveal" id="bank-details">
         <p id="bank-chosen">Your gift: <strong>one-off, €50</strong>.</p>
-        <strong>Beneficiary:</strong> DysNet Ideell Förening, Solna, Sweden<br>
-        <strong>Reference:</strong> your name + “donation”<br>
-        <strong>Account details:</strong> the treasurer sends them on request, usually within two working days.<br>
-        <a class="btn btn-primary" id="bank-ask" href="mailto:sal.giambruno@dysnet.org?cc=info@dysnet.org&amp;subject=Donation%20to%20DysNet&amp;body=Hello%2C%0A%0AI%20would%20like%20to%20make%20a%20one-off%20gift%20of%20EUR%2050%20by%20bank%20transfer.%20Please%20send%20me%20the%20account%20details.%0A%0AThank%20you%2C%0A">Ask for the account details</a>
-        <span class="fine">or write to <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</span>
+        <dl class="bank-lines">
+          <dt>Account name</dt><dd>DysNet - The Dysmelia Network</dd>
+          <dt>Bank</dt><dd>Handelsbanken, Sweden</dd>
+          <dt>IBAN</dt><dd><code>SE21 6000 0000 0000 4459 5719</code></dd>
+          <dt>BIC</dt><dd><code>HANDSESS</code></dd>
+          <dt>Account number</dt><dd>44 595 719 <span class="fine">(within Sweden)</span></dd>
+          <dt>Reference</dt><dd>your name, and “donation”</dd>
+        </dl>
+        <a class="btn btn-primary" id="bank-ask" href="mailto:sal.giambruno@dysnet.org?cc=info@dysnet.org&amp;subject=Donation%20to%20DysNet&amp;body=Hello%2C%0A%0AI%20have%20made%20a%20one-off%20gift%20of%20EUR%2050%20by%20bank%20transfer.%0A%0AThank%20you%2C%0A">Tell the treasurer it is on its way</a>
+        <span class="fine">A receipt, a question or a standing order: <a href="mailto:sal.giambruno@dysnet.org">sal.giambruno@dysnet.org</a> or <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</span>
       </div>
 
     </div>

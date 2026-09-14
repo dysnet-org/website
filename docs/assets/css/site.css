@@ -997,3 +997,14 @@ table.annex.inc-table tbody tr:first-child th, table.annex.inc-table tbody tr:fi
   .tera-item, .bib-item { break-inside: avoid; }
   img, picture { max-width: 100%; }
 }
+
+/* Donate: the bank lines, legible and copyable */
+.bank-lines { display: grid; grid-template-columns: auto 1fr; gap: 0.2rem 0.9rem; margin: var(--space-2) 0; font-size: var(--text-small); }
+.bank-lines dt { font-weight: 700; opacity: 0.85; }
+.bank-lines dd { margin: 0; }
+.bank-lines code { font-size: 1em; letter-spacing: 0.02em; user-select: all; }
+.bank-reveal .fine { color: #e9d8fb; }
+.bank-reveal .fine a { color: #fff; }
+.bank-reveal a.btn.btn-primary { background: #fff; color: var(--dys-purple-deep) !important; border-color: #fff; margin: var(--space-1) 0.6rem var(--space-1) 0; }
+.bank-reveal a.btn.btn-primary:hover { background: var(--dys-green); color: var(--dys-purple-deep) !important; }
+@media (max-width: 34rem) { .bank-lines { grid-template-columns: 1fr; gap: 0 } .bank-lines dd { margin-bottom: 0.4rem; } }

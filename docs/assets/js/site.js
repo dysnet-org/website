@@ -117,8 +117,8 @@
     var freq = pressed(".freq").toLowerCase(), amount = pressed(".amounts");
     var sum = amount === "Other" ? "an amount of my choosing" : amount.replace("€", "EUR ");
     chosen.innerHTML = "Your gift: <strong>" + freq + ", " + (amount === "Other" ? "amount of your choosing" : amount) + "</strong>.";
-    var body = "Hello,\n\nI would like to make a " + freq + " gift of " + sum +
-               " by bank transfer. Please send me the account details.\n\nThank you,\n";
+    var body = "Hello,\n\nI have made a " + freq + " gift of " + sum +
+               " by bank transfer to the Handelsbanken account.\n\nThank you,\n";
     ask.setAttribute("href", "mailto:sal.giambruno@dysnet.org?cc=info@dysnet.org&subject=" +
       encodeURIComponent("Donation to DysNet: " + freq + ", " + (amount === "Other" ? "amount to agree" : amount)) +
       "&body=" + encodeURIComponent(body));

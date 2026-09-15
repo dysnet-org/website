@@ -881,10 +881,16 @@ ol.demands details[open] summary::after { content: "–"; }
 .finder-chips button.is-empty { opacity: 0.45; }
 .inc-basis { margin: 0.25rem 0 0; font-size: var(--text-small, 0.9rem); color: #475569; }
 .inc-basis strong { color: #0f172a; }
-.evidence-table { margin-top: 0.6rem; font-size: var(--text-small, 0.9rem); }
-.evidence-table th, .evidence-table td { text-align: center; }
-.evidence-table tbody th { text-align: left; font-weight: 700; }
-.evidence-table tbody th .fine { display: block; font-weight: 400; }
+/* Demand 5's evidence table: black ink only, and tight enough to read at a glance.
+   Colour would suggest a judgement the table does not make; the numbers carry it. */
+table.annex.evidence-table { margin: 0.5rem 0 0; font-size: 0.82rem; line-height: 1.25; color: #000; background: #fff; }
+table.annex.evidence-table th, table.annex.evidence-table td { padding: 0.28rem 0.4rem; text-align: center; color: #000; background: #fff; border-color: #000; }
+table.annex.evidence-table thead th { font-weight: 700; border-bottom: 1px solid #000; white-space: nowrap; }
+table.annex.evidence-table tbody tr:first-child th, table.annex.evidence-table tbody tr:first-child td { background: #fff; }
+table.annex.evidence-table tbody th { text-align: left; font-weight: 700; white-space: nowrap; }
+table.annex.evidence-table tbody tr + tr th, table.annex.evidence-table tbody tr + tr td { border-top: 1px solid #000; }
+.ev-gloss { font-weight: 400; font-size: 0.74rem; }
+.ev-key { margin: 0.35rem 0 0; font-size: 0.74rem; line-height: 1.35; color: #000; }
 .tera-registry { margin: 0.5rem 0 0; padding: 0.45rem 0.7rem; border-left: 3px solid var(--acc, #7c3aed); background: #f8fafc; font-size: var(--text-small, 0.9rem); border-radius: 0 0.3rem 0.3rem 0; }
 .tera-registry .fine { color: #64748b; }
 #tera-decisions button { text-align: left; }

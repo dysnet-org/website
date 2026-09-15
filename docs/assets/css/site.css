@@ -879,6 +879,10 @@ ol.demands details[open] summary::after { content: "–"; }
 .st.dec { font-weight: 700; }
 .st-doi { background: #f5f3ff; color: #5b21b6; border-color: #ddd6fe; }
 .finder-chips button.is-empty { opacity: 0.45; }
+.evidence-table { margin-top: 0.6rem; font-size: var(--text-small, 0.9rem); }
+.evidence-table th, .evidence-table td { text-align: center; }
+.evidence-table tbody th { text-align: left; font-weight: 700; }
+.evidence-table tbody th .fine { display: block; font-weight: 400; }
 .tera-registry { margin: 0.5rem 0 0; padding: 0.45rem 0.7rem; border-left: 3px solid var(--acc, #7c3aed); background: #f8fafc; font-size: var(--text-small, 0.9rem); border-radius: 0 0.3rem 0.3rem 0; }
 .tera-registry .fine { color: #64748b; }
 #tera-decisions button { text-align: left; }

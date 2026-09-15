@@ -2446,6 +2446,30 @@ PAGES["/registry/"] = {
 # in one sentence, for the PDF.
 BRIEF_PDF = "/assets/dysnet-five-demands.pdf"
 
+# What each level of evidence actually attracts from an authority, counted from the register
+# itself so the table on /voice/ cannot drift from the register it cites.
+def tera_evidence_table():
+    levels = [("known", "Known", "human evidence"), ("presumed", "Presumed", "strong animal evidence"),
+              ("suspected", "Suspected", "limited evidence")]
+    cols = [("approved", "Approved as an EU pesticide"), ("refused", "Refused as an EU pesticide"),
+            ("cosmetics_banned", "Banned in cosmetics"), ("banned_somewhere", "Banned by a country"),
+            ("eliminated", "Eliminated by treaty")]
+    rows = []
+    for key, label, gloss in levels:
+        E = [e for e in TERA.get("entries", []) if e.get("level") == key]
+        n = {}
+        for e in E:
+            for d in e.get("decisions", []):
+                n[d["verdict"]] = n.get(d["verdict"], 0) + 1
+        lit = sum(1 for e in E if e.get("paper_count"))
+        cells = "".join(f"<td>{n.get(c, 0)}</td>" for c, _ in cols)
+        rows.append(f'<tr><th scope="row">{label} <span class="fine">{gloss}</span></th><td>{len(E)}</td>{cells}<td>{lit}</td></tr>')
+    head = "".join(f"<th>{lab}</th>" for _, lab in cols)
+    return ('<div class="annex-wrap"><table class="annex evidence-table">'
+            f'<thead><tr><th>Level of evidence</th><th>Substances</th>{head}<th>With published literature</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div>')
+
+
 DEMANDS = [
     {
         "title": "Recognition of dysmelia as a public health priority, and access to quality healthcare for every family affected",
@@ -2498,7 +2522,11 @@ DEMANDS = [
         "body": [
             "Thalidomide taught the lesson once: a product reached pregnant women before its effect on the unborn child was known, and thousands of children were born with limb differences. Families still learn about suspected teratogens after the fact, from a news report or a cluster investigation, rather than from a label or from the authority in charge.",
             "We ask governments to apply the precautionary principle to substances with suspected, potential or proven teratogenic effects, on the basis of the science available and updated as it evolves: clear information to families and health professionals, and enforceable obligations for food suppliers, the construction and building sector and product manufacturers, so that exposure during pregnancy is prevented rather than discovered afterwards.",
-            'No authority publishes such a list today; our <a href="/knowledge/teratogens/">teratogens register</a> gathers what the EU, California and the medicines agencies each list separately, with the legal status of every substance.',
+            'No authority publishes such a list today; our <a href="/knowledge/teratogens/">teratogens register</a> gathers what the EU, California, Japan and the medicines agencies each list separately, with the legal status of every substance and the decisions authorities have taken about it.',
+            "We also ask each country to keep its own register of these substances, and to publish, for every product it approves or forbids, the evidence the decision rests on and the reasoning that connects the two. A decision that cannot be read cannot be checked. Where an authority approves a substance that its own classification calls harmful to the unborn child, families are entitled to read why, to see which interests were heard and what weight each was given, and to know what new evidence would change the answer. That is what makes a decision a judgement on the evidence rather than the outcome of whoever argued hardest.",
+            "Our own register shows how unevenly this is done today. Counting the substances it holds by the strength of the evidence against them, and by what authorities decided:",
+            "__EVIDENCE_TABLE__",
+            "Not one substance with human evidence is approved as a pesticide in the European Union, and of the substances that are approved, the great majority rest on the weakest category of evidence. That is lawful: the Union excludes a category 1A or 1B reproductive toxicant from pesticide approval unless exposure is negligible, and category 2 is not excluded at all. It is also the precise point at which the reasoning should be published rather than inferred, and the same table shows that published literature exists for most of these substances, so the evidence is there to be weighed.",
         ],
         "progress": "a public, regularly updated list of substances of concern, mandatory labelling and disclosure, and inspections with consequences.",
         "brief": "Apply the precautionary principle to substances with suspected, potential or proven teratogenic effects: clear information to families and professionals, and enforceable obligations on food suppliers, the construction sector and product manufacturers.",
@@ -2511,7 +2539,7 @@ DEMANDS = [
 def demands_html():
     items = []
     for i, d in enumerate(DEMANDS, 1):
-        paras = "".join(f"<p>{p}</p>" for p in d["body"])
+        paras = "".join(tera_evidence_table() if p == "__EVIDENCE_TABLE__" else f"<p>{p}</p>" for p in d["body"])
         cta = ("".join(f'<a class="btn btn-sm btn-ghost" href="{href}">{label}</a>' for href, label in d["cta"]))
         cta = f'<p class="demand-cta">{cta}</p>' if cta else ""
         items.append(

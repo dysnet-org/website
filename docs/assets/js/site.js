@@ -660,10 +660,12 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     "eu-ppp": ["European Commission", "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"],
     "reach-xvii": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"],
     "reach-xiv": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"],
+    "cosmetics": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"],
     "stockholm": ["Stockholm Convention", "https://www.pops.int/TheConvention/ThePOPs/ListingofPOPs/tabid/2509/Default.aspx"],
     "rotterdam": ["national authorities, notified to the Rotterdam Convention", "https://www.pic.int/Procedures/NotificationsofFinalRegulatoryActions/Database/tabid/1368/language/en-US/Default.aspx"]
   };
   var DEC_CLS = { approved: "st-warn", pending: "st-warn", refused: "st-ban", public_supply_banned: "st-ban",
+                  cosmetics_banned: "st-ban", cosmetics_restricted: "st-warn",
                   authorisation_required: "st-ban", eliminated: "st-ban", restricted: "st-ban",
                   unintentional: "st-label", banned_somewhere: "st-ban" };
   function decChips(r) {

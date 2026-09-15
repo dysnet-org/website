@@ -60,6 +60,7 @@ def main():
     ppp = legal["by_cas"]["eu-ppp"]
     xiv = legal["by_cas"]["reach-xiv"]
     xvii = legal["by_cas"]["reach-xvii"]
+    cos = legal["by_cas"].get("cosmetics", {})
     # the convention's own annex listing, captured rather than inferred: reading the annex from
     # the text nearest a name on the page put four Annex A chemicals under Annex B
     popsdoc = json.loads(POPS.read_text(encoding="utf-8"))
@@ -72,7 +73,7 @@ def main():
     pic_by_norm = {norm(k): (k, v) for k, v in pic["decisions"].items()}
 
     counts = {"eu-ppp": 0, "eu-ppp-approved": 0, "reach-xiv": 0, "reach-xvii": 0,
-              "stockholm": 0, "rotterdam": 0, "any": 0}
+              "cosmetics": 0, "cosmetics-restricted": 0, "stockholm": 0, "rotterdam": 0, "any": 0}
 
     for e in entries:
         e.pop("decisions", None)
@@ -113,6 +114,21 @@ def main():
                 "url": r.get("url", ""),
             })
             counts["reach-xvii"] += 1
+
+        if CAS_RX.match(cas) and cas in cos:
+            r = cos[cas]
+            banned = r["status"] == "banned"
+            out.append({
+                "code": "cosmetics",
+                "authority": "European Commission",
+                "where": "European Union",
+                "verdict": "cosmetics_banned" if banned else "cosmetics_restricted",
+                "tag": "Banned in cosmetics" if banned else "Restricted in cosmetics",
+                "detail": (f"Regulation 1223/2009, Annex {r['annex']}"
+                           + (f", entry {r['entry']}" if r.get("entry") else "")),
+                "url": r.get("url", ""),
+            })
+            counts["cosmetics" if banned else "cosmetics-restricted"] += 1
 
         if CAS_RX.match(cas) and cas in xiv:
             r = xiv[cas]
@@ -177,6 +193,8 @@ def main():
                        "authority": "Binding EU regulation. Appendices 5 and 6 name the category 1A and 1B reproductive toxicants that may not be placed on the market for supply to the general public."},
         "reach-xiv": {"label": "REACH Annex XIV: the authorisation list", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:" + legal.get("reach_celex", ""),
                       "authority": "Binding EU regulation. After the sunset date the substance may not be used or placed on the market at all unless the Commission grants an authorisation for a named use."},
+        "cosmetics": {"label": "Regulation 1223/2009: substances prohibited or restricted in cosmetic products", "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:" + legal.get("cosmetics_celex", ""),
+                      "authority": "Binding EU regulation. Annex II lists the substances that may not be used in a cosmetic product at all; Annex III lists those allowed only within the stated restrictions. Read from the consolidated regulation, because the Commission's CosIng database publishes no usable interface."},
         "stockholm": {"label": "Stockholm Convention on Persistent Organic Pollutants", "url": "https://www.pops.int/TheConvention/ThePOPs/AllPOPs/tabid/2509/Default.aspx",
                       "authority": "Treaty binding its parties: Annex A eliminates production and use, Annex B restricts it to accepted purposes."},
         "rotterdam": {"label": "Rotterdam Convention: national bans and severe restrictions", "url": pic["url"],
@@ -186,7 +204,7 @@ def main():
     doc["counts"]["legal_read"] = time.strftime("%Y-%m-%d")
 
     print(f"entries carrying at least one decision: {counts['any']} of {len(entries)}")
-    for k in ("eu-ppp", "eu-ppp-approved", "reach-xvii", "reach-xiv", "stockholm", "rotterdam"):
+    for k in ("eu-ppp", "eu-ppp-approved", "reach-xvii", "reach-xiv", "cosmetics", "cosmetics-restricted", "stockholm", "rotterdam"):
         print(f"  {k:18} {counts[k]}")
     if dry:
         print("dry run, nothing written")

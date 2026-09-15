@@ -21,6 +21,10 @@ Four sources, all of them a government or a treaty body:
   stockholm  Stockholm Convention: Annex A eliminates a substance worldwide, Annex B
              restricts it. Matched on name, then checked by hand, because the convention
              publishes its CAS numbers inside prose.
+  cosmetics  Regulation 1223/2009, Annex II and Annex III: the substances prohibited in
+             cosmetic products, and those allowed only under stated restrictions. CosIng,
+             the Commission's ingredient database, exposes no public API, but the annexes
+             are the law itself and Cellar serves the consolidated text. Keyed on CAS.
   rotterdam  Rotterdam Convention, notifications of final regulatory action: one row per
              country per chemical, banned or severely restricted, with the date. This is
              the only source that answers "where" rather than "whether". Matched on name.
@@ -49,6 +53,7 @@ CAS_RX = re.compile(r"\d{2,7}-\d{2}-\d")
 EU_PPP = "https://api.datalake.sante.service.ec.europa.eu/sante/pesticides/active-substances-download?format=json&api-version=v3.0"
 REACH_CELEX = "http://publications.europa.eu/resource/celex/"
 REACH_SPARQL = "http://publications.europa.eu/webapi/rdf/sparql"
+COSMETICS_CELEX_PREFIX = "02009R1223"
 POPS = "https://www.pops.int/TheConvention/ThePOPs/AllPOPs/tabid/2509/Default.aspx"
 PIC_FRA = "https://www.pic.int/Procedures/NotificationsofFinalRegulatoryActions/Database/tabid/1368/language/en-US/Default.aspx"
 
@@ -236,6 +241,57 @@ def rotterdam():
     return acts
 
 
+
+def celex_latest(prefix, cache_name):
+    """Cellar's SPARQL endpoint names the current consolidated version of a regulation."""
+    q = ("PREFIX cdm: <http://publications.europa.eu/ontology/cdm#> SELECT ?id WHERE "
+         f"{{ ?w cdm:resource_legal_id_celex ?id . FILTER(STRSTARTS(STR(?id),'{prefix}')) }} ORDER BY DESC(?id) LIMIT 1")
+    url = f"{REACH_SPARQL}?query={urllib.parse.quote(q)}&format=application%2Fsparql-results%2Bjson"
+    d = json.loads(fetch(url, cache_name, timeout=90))
+    return d["results"]["bindings"][0]["id"]["value"]
+
+
+# ── 6. Cosmetics: prohibited and restricted ingredients ───────────────────────
+def cosmetics():
+    celex = celex_latest(COSMETICS_CELEX_PREFIX, "cosmetics-celex.json")
+    html = fetch(f"{REACH_CELEX}{celex}", f"cosmetics-{celex}.html",
+                 headers={"Accept": "application/xhtml+xml", "Accept-Language": "eng"})
+    tables = re.findall(r"<table.*?</table>", html, re.S)
+    starts = [m.start() for m in re.finditer(r"<table", html)]
+    out = {}
+    for i, tb in enumerate(tables):
+        cap = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html[max(0, starts[i] - 2500):starts[i]]))[-260:].upper()
+        if "LIST OF SUBSTANCES PROHIBITED IN COSMETIC PRODUCTS" in cap:
+            annex, status = "II", "banned"
+        elif "LIST OF SUBSTANCES WHICH COSMETIC PRODUCTS MUST NOT CONTAIN" in cap:
+            annex, status = "III", "restricted"
+        else:
+            continue
+        for r in rows_of(tb)[1:]:
+            if len(r) < 3:
+                continue
+            cas = [c for c in r if CAS_RX.fullmatch(c)]
+            if not cas:
+                continue
+            name = r[1] if len(r) > 1 else ""
+            for c in cas:
+                # Annex II is the stronger statement, so it is never overwritten by Annex III
+                if out.get(c, {}).get("annex") == "II":
+                    continue
+                out[c] = {
+                    "source": "cosmetics",
+                    "authority": "European Commission",
+                    "status": status,
+                    "what": ("use in cosmetic products in the EU" if annex == "II"
+                             else "use in cosmetic products in the EU, outside the stated restrictions"),
+                    "name": name,
+                    "annex": annex,
+                    "entry": (r[0] or "").strip(),
+                    "url": f"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:{celex}",
+                }
+    return out, celex
+
+
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     print("EU pesticides…", flush=True)
@@ -247,6 +303,10 @@ def main():
     print("Stockholm…", flush=True)
     pops = stockholm()
     print(f"  {len(pops)} listed substances", flush=True)
+    print("Cosmetics…", flush=True)
+    cos, cos_celex = cosmetics()
+    banned = sum(1 for v in cos.values() if v["status"] == "banned")
+    print(f"  {banned} prohibited, {len(cos) - banned} restricted · from {cos_celex}", flush=True)
     print("Rotterdam…", flush=True)
     pic = rotterdam()
     print(f"  {len(pic)} chemicals, {sum(len(v['actions']) for v in pic.values())} national decisions", flush=True)
@@ -254,7 +314,8 @@ def main():
     OUT.write_text(json.dumps({
         "built": time.strftime("%Y-%m-%d"),
         "reach_celex": celex,
-        "by_cas": {"eu-ppp": ppp, "reach-xiv": xiv, "reach-xvii": xvii},
+        "cosmetics_celex": cos_celex,
+        "by_cas": {"eu-ppp": ppp, "reach-xiv": xiv, "reach-xvii": xvii, "cosmetics": cos},
         "by_name": {"stockholm": pops, "rotterdam": pic},
     }, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"\nwritten to {OUT.relative_to(ROOT)}")

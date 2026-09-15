@@ -61,6 +61,11 @@
    "label": "Rotterdam Convention: national bans and severe restrictions",
    "url": "https://www.pic.int/Procedures/NotificationsofFinalRegulatoryActions/Database/tabid/1368/language/en-US/Default.aspx",
    "authority": "Decisions taken by national authorities and notified to the convention. A notification records what one country decided, not a global status."
+  },
+  "cosmetics": {
+   "label": "Regulation 1223/2009: substances prohibited or restricted in cosmetic products",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518",
+   "authority": "Binding EU regulation. Annex II lists the substances that may not be used in a cosmetic product at all; Annex III lists those allowed only within the stated restrictions. Read from the consolidated regulation, because the Commission's CosIng database publishes no usable interface."
   }
  },
  "counts": {
@@ -88,8 +93,10 @@
   "legal_reach-xvii": 190,
   "legal_stockholm": 7,
   "legal_rotterdam": 27,
-  "legal_any": 277,
-  "legal_read": "2026-09-15"
+  "legal_any": 334,
+  "legal_read": "2026-09-15",
+  "legal_cosmetics": 256,
+  "legal_cosmetics-restricted": 6
  },
  "entries": [
   {
@@ -158,6 +165,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1472",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -609,6 +625,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1702",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -846,7 +871,18 @@
     "L01XX14"
    ],
    "medicinal": true,
-   "medicine_evidence": "Tretinoin, also known as all-trans retinoic acid (ATRA), is a medication used for the treatment of acne and acute promyelocytic leukemia."
+   "medicine_evidence": "Tretinoin, also known as all-trans retinoic acid (ATRA), is a medication used for the treatment of acne and acute promyelocytic leukemia.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 375",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Alprazolam",
@@ -1583,6 +1619,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1035",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -1637,6 +1682,15 @@
     "goods": "Cyclohexane consumes around 10% of the world's benzene production; it is primarily used in the manufacture of nylon fibers, which are processed into textiles and engineering plastics."
    },
    "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 47",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
     {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
@@ -1880,6 +1934,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1629",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -2107,6 +2170,15 @@
      "substitution": false,
      "as": "Carbon disulphide",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002R2076:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 73",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -2197,6 +2269,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 462",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -2410,6 +2491,15 @@
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1022",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "stockholm",
      "authority": "Stockholm Convention",
      "where": "Worldwide",
@@ -2615,6 +2705,15 @@
     "p65"
    ],
    "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 366",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
     {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
@@ -3134,7 +3233,18 @@
     "M04AC01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Colchicine, sold under the brand name Colbenemid among others, is a medication used to prevent and treat gout, to treat familial Mediterranean fever and Behçet's disease, and to reduce the risk of myocardial infarction."
+   "medicine_evidence": "Colchicine, sold under the brand name Colbenemid among others, is a medication used to prevent and treat gout, to treat familial Mediterranean fever and Behçet's disease, and to reduce the risk of myocardial infarction.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 102",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Conjugated estrogens",
@@ -3331,6 +3441,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 729",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -3382,7 +3501,18 @@
     "L01AA01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Cyclophosphamide (CP), also known as cytophosphane among other names, is a medication used as chemotherapy and to suppress the immune system."
+   "medicine_evidence": "Cyclophosphamide (CP), also known as cytophosphane among other names, is a medication used as chemotherapy and to suppress the immune system.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 88",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Cyclophosphamide (hydrated)",
@@ -3837,7 +3967,18 @@
     "B01AA01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Dicoumarol (INN) or dicumarol (USAN) is a naturally occurring anticoagulant drug that depletes stores of vitamin K (similar to warfarin, a drug that dicoumarol inspired)."
+   "medicine_evidence": "Dicoumarol (INN) or dicumarol (USAN) is a naturally occurring anticoagulant drug that depletes stores of vitamin K (similar to warfarin, a drug that dicoumarol inspired).",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 231",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Diethylstilbestrol (DES)",
@@ -4065,6 +4206,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1143",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -4149,6 +4299,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 684",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -4490,7 +4649,18 @@
     "J04AD03"
    ],
    "medicinal": true,
-   "medicine_evidence": "Ethionamide (ETA or ETH) is an antibiotic used to treat tuberculosis."
+   "medicine_evidence": "Ethionamide (ETA or ETH) is an antibiotic used to treat tuberculosis.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 319",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Ethyl alcohol in alcoholic beverages",
@@ -4616,6 +4786,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 182",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -4800,6 +4979,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 731",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -5077,7 +5265,18 @@
     "L01BC02"
    ],
    "medicinal": true,
-   "medicine_evidence": "Fluorouracil (5-FU, 5-fluorouracil), sold under the brand name Adrucil among others, is a cytotoxic chemotherapy medication used to treat cancer."
+   "medicine_evidence": "Fluorouracil (5-FU, 5-fluorouracil), sold under the brand name Adrucil among others, is a cytotoxic chemotherapy medication used to treat cancer.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 190",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Fluoxymesterone",
@@ -5490,7 +5689,18 @@
     "N05AD01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Haloperidol, sold under the brand name Haldol among others, is a typical antipsychotic medication."
+   "medicine_evidence": "Haloperidol, sold under the brand name Haldol among others, is a typical antipsychotic medication.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 185",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Halothane",
@@ -5604,6 +5814,15 @@
      "substitution": false,
      "as": "Hexachlorobenzene",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 652",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "stockholm",
@@ -6812,6 +7031,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 289",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -7370,7 +7598,18 @@
     "N05BC01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Meprobamate, sold under the brand names Miltown and Equanil, among others, is a carbamate derivative used as an anxiolytic drug."
+   "medicine_evidence": "Meprobamate, sold under the brand names Miltown and Equanil, among others, is a carbamate derivative used as an anxiolytic drug.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 236",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Mercaptopurine",
@@ -7468,7 +7707,18 @@
     "H03BB02"
    ],
    "medicinal": true,
-   "medicine_evidence": "Thiamazole, also known as methimazole, is a medication used to treat hyperthyroidism."
+   "medicine_evidence": "Thiamazole, also known as methimazole, is a medication used to treat hyperthyroidism.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 233",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Methotrexate",
@@ -7515,7 +7765,18 @@
     "L04AX03"
    ],
    "medicinal": true,
-   "medicine_evidence": "Methotrexate"
+   "medicine_evidence": "Methotrexate",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 6",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Methotrexate sodium",
@@ -7624,6 +7885,15 @@
      "substitution": false,
      "as": "Methyl bromide",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1094",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -7696,7 +7966,18 @@
    ],
    "use_evidence": {
     "construction": "It has also been used in the production of rubbers and adhesives."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1183",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Methyl mercury",
@@ -7778,7 +8059,18 @@
    ],
    "use_evidence": {
     "construction": "The compound is a colorless, water-like liquid that is used as a general solvent and in paints."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1074",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "methylmercuric chloride",
@@ -7840,6 +8132,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1647",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -8167,6 +8468,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 747",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -8407,6 +8717,15 @@
      "substitution": false,
      "as": "Nicotine",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 246",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -8516,7 +8835,18 @@
     "L01AA05"
    ],
    "medicinal": true,
-   "medicine_evidence": "Chlormethine (INN, BAN), also known as mechlorethamine (USAN, USP), mustine, HN2, and (in post-Soviet states) embikhin (эмбихин), is a nitrogen mustard sold under the brand name Mustargen among others."
+   "medicine_evidence": "Chlormethine (INN, BAN), also known as mechlorethamine (USAN, USP), mustine, HN2, and (in post-Soviet states) embikhin (эмбихин), is a nitrogen mustard sold under the brand name Mustargen among others.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 87",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -9111,7 +9441,18 @@
     "N03AX07"
    ],
    "medicinal": true,
-   "medicine_evidence": "Phenacemide (INN, BAN) (brand name Phenurone), also known as phenylacetylurea, is an anticonvulsant of the ureide (acetylurea) class."
+   "medicine_evidence": "Phenacemide (INN, BAN) (brand name Phenurone), also known as phenylacetylurea, is an anticonvulsant of the ureide (acetylurea) class.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 269",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Phenprocoumon",
@@ -9147,7 +9488,18 @@
     "B01AA04"
    ],
    "medicinal": true,
-   "medicine_evidence": "Phenprocoumon (marketed under the brand names Marcoumar, Marcumar and Falithrom) is a long-acting anticoagulant to be taken by mouth, and a coumarin derivative."
+   "medicine_evidence": "Phenprocoumon (marketed under the brand names Marcoumar, Marcumar and Falithrom) is a long-acting anticoagulant to be taken by mouth, and a coumarin derivative.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 273",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Phenylphosphine [Basis for listing changed effective June 6, 2014]",
@@ -9791,6 +10143,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1456",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -9840,6 +10201,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1423",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -10314,7 +10684,18 @@
     "L04AX02"
    ],
    "medicinal": true,
-   "medicine_evidence": "Thalidomide"
+   "medicine_evidence": "Thalidomide",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 280",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Thioguanine",
@@ -10483,7 +10864,18 @@
    ],
    "use_evidence": {
     "construction": "As the solvent in some types of paint thinner, permanent markers, contact cement and certain types of glue, toluene is sometimes used as a recreational inhalant and has the potential of causing severe neurological harm."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 185",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "Topiramate",
@@ -11096,6 +11488,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1A, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 203",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11281,6 +11682,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1056",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11330,6 +11740,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1583",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "reach-xiv",
@@ -11448,6 +11867,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1485",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -11504,6 +11932,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1153",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "reach-xiv",
@@ -11576,6 +12013,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1147",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11645,6 +12091,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1142",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11697,7 +12152,18 @@
    ],
    "use_evidence": {
     "goods": "Butadiene-based polymers, particularly polybutadiene acrylonitrile (PBAN) and hydroxyl-terminated polybutadiene (HTPB) are used as binders for ammonium perchlorate composite propellant (APCP) solid rocket motors."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 463",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "1,4-Benzenediamine, N,N-mixed Ph and tolyl derivs.",
@@ -11745,6 +12211,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1746",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11834,6 +12309,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1139",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -11898,6 +12382,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1622",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -11957,7 +12450,18 @@
     "value": "Tolerable weekly intake 0.6 pg per kg of body weight, for the group",
     "url": "https://www.efsa.europa.eu/en/topics/topic/dioxins-and-pcbs",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 367",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "2,4,6-tri-tert-butylphenol",
@@ -12019,6 +12523,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1701",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12164,6 +12677,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1471",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12233,6 +12755,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1000",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12304,6 +12835,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1666",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12357,6 +12897,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1755",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -12458,6 +13009,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1614",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12725,6 +13285,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1556",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -12781,6 +13350,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 680",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12922,6 +13500,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1668",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -12983,6 +13570,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 668",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13032,6 +13628,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 679",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13095,6 +13700,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1592",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13158,6 +13772,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1654",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13207,6 +13830,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1686",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13256,6 +13888,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1749",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13305,6 +13946,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1708",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13430,6 +14080,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1518",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13514,6 +14173,17 @@
    "source_codes": [
     "nite",
     "p65"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 681",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -13658,6 +14328,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1695",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13793,6 +14472,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1560",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -13998,6 +14686,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1157",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14069,6 +14766,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1699",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14168,6 +14874,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1152",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -14238,6 +14953,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 612",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14305,6 +15029,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 688",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14368,6 +15101,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1663",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14461,6 +15203,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 677",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -14534,6 +15285,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 676",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -14604,6 +15364,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 678",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "reach-xiv",
@@ -14682,6 +15451,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1680",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14758,6 +15536,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1176",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -14942,6 +15729,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1634",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15014,7 +15810,18 @@
     "endpoint": "toxicity to reproduction: other studies",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1032",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "cadmium chloride",
@@ -15293,6 +16100,15 @@
      "substitution": false,
      "as": "Carbaryl",
      "url": "http://data.europa.eu/eli/dec/2007/355/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1082",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15382,6 +16198,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 996",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -15481,6 +16306,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1611",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15530,6 +16364,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1517",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15605,6 +16448,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 93",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15672,6 +16524,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1627",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -15812,6 +16673,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1596",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16003,6 +16873,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1394",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16097,6 +16976,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 675",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -16153,6 +17041,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1656",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16216,6 +17113,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1696",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16279,6 +17185,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1697",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16342,6 +17257,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1466",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16413,6 +17337,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1601",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16462,6 +17395,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1400",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16525,6 +17467,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1740",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16589,6 +17540,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1741",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16698,6 +17658,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1676",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16747,6 +17716,15 @@
      "substitution": false,
      "as": "Dichlorophen",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32005D0303:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 11",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16855,6 +17833,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1637",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16922,6 +17909,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1628",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -16989,6 +17985,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1635",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17038,6 +18043,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1559",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "reach-xiv",
@@ -17110,6 +18124,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1492",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "reach-xiv",
@@ -17197,6 +18220,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1652",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17260,6 +18292,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1667",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17323,6 +18364,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1739",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17462,6 +18512,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 696",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -17616,6 +18675,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1731",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17679,6 +18747,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1146",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -17810,6 +18887,15 @@
      "substitution": false,
      "as": "Endrin",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 196",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "stockholm",
@@ -18015,6 +19101,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 663",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -18098,6 +19193,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 452",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18147,6 +19251,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1650",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18258,6 +19371,15 @@
      "substitution": false,
      "as": "1,2-Dibromoethane",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 651",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18439,6 +19561,15 @@
      "substitution": false,
      "as": "Fentin hydroxide",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002D0479:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1099",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18500,6 +19631,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1630",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18564,6 +19704,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 739",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18639,6 +19788,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1671",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18720,6 +19878,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 740",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18820,6 +19987,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 744",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18915,6 +20091,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1411",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -18996,6 +20181,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1653",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -19075,6 +20269,15 @@
      "substitution": false,
      "as": "Heptachlor",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1098",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "stockholm",
@@ -19334,6 +20537,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1589",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -19539,6 +20751,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1059",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -19699,6 +20920,15 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1402",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -19797,6 +21027,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 221",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -19997,6 +21236,17 @@
    "source_codes": [
     "nite",
     "p65"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 52",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -20104,6 +21354,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 674",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20150,6 +21409,17 @@
    "source_codes": [
     "nite",
     "p65"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1095",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -20189,7 +21459,18 @@
    "use_evidence": {
     "construction": "This ketone is a colourless liquid that is used as a solvent for gums, resins, paints, varnishes, lacquers, and nitrocellulose.",
     "goods": "This ketone is a colourless liquid that is used as a solvent for gums, resins, paints, varnishes, lacquers, and nitrocellulose."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1689",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "methyl-ONN-azoxymethyl acetate; methyl azoxy methyl acetate",
@@ -20251,6 +21532,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 728",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20355,6 +21645,15 @@
      "substitution": true,
      "as": "Molinate",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1550835595675&uri=CELEX:32015R0408"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1180",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20454,6 +21753,15 @@
      "substitution": true,
      "as": "Myclobutanil",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32011L0002:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1114",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20503,6 +21811,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1537",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20576,6 +21893,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 355",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20625,6 +21951,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1713",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20674,6 +22009,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1535",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20737,6 +22081,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1720",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20800,6 +22153,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1562",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20899,6 +22261,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1393",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -20963,6 +22334,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 745",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21026,6 +22406,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 746",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21134,6 +22523,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1431",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21197,6 +22595,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1426",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21246,6 +22653,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1401",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21295,6 +22711,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1060",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21393,6 +22818,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1430",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21506,6 +22940,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1419",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21555,6 +22998,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1453",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21702,6 +23154,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1006",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21751,6 +23212,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1433",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21849,6 +23319,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1424",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21947,6 +23426,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1452",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -21996,6 +23484,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1436",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22045,6 +23542,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1437",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22109,6 +23615,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1100",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22158,6 +23673,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1434",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22207,6 +23731,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1432",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22368,6 +23901,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 697",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -22599,6 +24141,17 @@
    "level": "presumed",
    "source_codes": [
     "p65"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1052",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -22651,7 +24204,18 @@
    ],
    "use_evidence": {
     "agriculture": "DDT is the best-known of several chlorine-containing pesticides used in the 1940s and 1950s."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 123",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "pentapotassium 2,2',2\",2\"',2\"\"-(ethane-1,2-diylnitrilo)pentaacetate",
@@ -22699,6 +24263,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1719",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22762,6 +24335,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1721",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -22923,6 +24505,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1705",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23181,6 +24772,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1561",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23351,6 +24951,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1530",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23507,6 +25116,15 @@
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32011R0943:EN:NOT"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1178",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -23590,6 +25208,15 @@
      "substitution": false,
      "as": "Propazine",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002R2076:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1018",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23666,6 +25293,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1616",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23735,6 +25371,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1670",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -23944,6 +25589,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1715",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -24240,6 +25894,15 @@
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32004D0247:EN:NOT"
     },
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1008",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -24333,6 +25996,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1422",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -24650,6 +26322,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 312",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -24714,6 +26395,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1698",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -24812,6 +26502,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1763",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -24939,6 +26640,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 459",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25003,6 +26713,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1576",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25104,6 +26823,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1148",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25173,6 +26901,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1710",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25248,6 +26985,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1610",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25388,6 +27134,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1609",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25515,6 +27270,15 @@
    },
    "decisions": [
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 645",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "reach-xiv",
      "authority": "European Commission",
      "where": "European Union",
@@ -25589,6 +27353,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 737",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25664,6 +27437,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1640",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25762,6 +27544,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1764",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -25883,6 +27676,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1659",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -25929,6 +27731,17 @@
    "source_codes": [
     "nite",
     "p65"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 671",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -26024,6 +27837,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 738",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -26172,6 +27994,15 @@
      "substitution": false,
      "as": "Tolpyralate",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1684",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -26236,6 +28067,15 @@
      "substitution": false,
      "as": "Trioxymethylen",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002R2076:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1177",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -26399,6 +28239,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1567",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -26435,6 +28286,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1555",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -26471,6 +28333,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1491",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -26640,6 +28513,15 @@
      "substitution": true,
      "as": "Amitrole (aminotriazole)",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1550835595675&uri=CELEX:32015R0408"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1081",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -26710,6 +28592,15 @@
      "substitution": false,
      "as": "Benfluralin",
      "url": "http://data.europa.eu/eli/reg_impl/2021/2068/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1744",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -26780,6 +28671,15 @@
      "substitution": false,
      "as": "Bentazone",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1527841259340&uri=CELEX:32018R0660"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1724",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -26831,7 +28731,18 @@
     "endpoint": "chronic toxicity: other route",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1757",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "bromoxynil heptanoate (ISO); 2,6-dibromo-4-cyanophenyl heptanoate",
@@ -26923,7 +28834,18 @@
    ],
    "use_evidence": {
     "agriculture": "Butroxydim is a chemical used as a herbicide."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1190",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "cadmium (non-pyrophoric) [1]",
@@ -26992,7 +28914,18 @@
     "value": "Tolerable weekly intake 2.5 µg per kg of body weight",
     "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 68",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "cadmium (pyrophoric)",
@@ -27061,7 +28994,18 @@
     "value": "Tolerable weekly intake 2.5 µg per kg of body weight",
     "url": "https://www.efsa.europa.eu/en/topics/topic/metals-contaminants-food",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 68",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "cadmium sulphide",
@@ -27179,6 +29123,15 @@
      "substitution": true,
      "as": "Chlorotoluron",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1603180526907&uri=CELEX:32020R1511"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1200",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -27276,6 +29229,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1385",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -27353,6 +29317,15 @@
      "substitution": false,
      "as": "Cyanamide (H & Ca cyanamide)",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008D0745:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1595",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -27404,7 +29377,18 @@
     "endpoint": "toxicity to reproduction: other studies",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1571",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "cymoxanil (ISO); 2-cyano-N-[(ethylamino)carbonyl]-2-(methoxyimino)acetamide [1]",
@@ -27531,6 +29515,15 @@
      "substitution": false,
      "as": "Desmedipham",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1562076200970&uri=CELEX:32019R1100"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1694",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -27574,7 +29567,18 @@
    ],
    "use_evidence": {
     "construction": "Dimethyltin dichloride is used as a heat stabilizer in PVC."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1568",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "dimoxystrobin (ISO); (2E)-2-{2-[(2,5-dimethylphenoxy)methyl]phenyl}-2-(methoxyimino)-N-methylacetamide; (E)-2-(methoxyimino)-N-methyl-2-[α-(2,5-xylyloxy)-o-tolyl]acetamide",
@@ -27651,6 +29655,15 @@
      "substitution": true,
      "as": "Dimoxystrobin",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32006L0075:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1536",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -27688,6 +29701,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 986",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -27724,6 +29748,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 987",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -27774,6 +29809,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1011",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -27837,6 +29883,15 @@
      "substitution": false,
      "as": "Perchlordecone (mirex)",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1048",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "stockholm",
@@ -28006,6 +30061,15 @@
      "substitution": false,
      "as": "Dodemorph",
      "url": "http://data.europa.eu/eli/reg_impl/2025/1092/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1588",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28057,7 +30121,18 @@
     "endpoint": "toxicity to reproduction: other studies",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1585",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "fenarimol (ISO); 2,4'-dichloro-α-(pyrimidin-5-yl)benzhydryl alcohol",
@@ -28126,6 +30201,15 @@
      "substitution": false,
      "as": "Fenarimol",
      "url": "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1075",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -28222,6 +30306,15 @@
      "substitution": false,
      "as": "Fenpropidin",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1603180526907&uri=CELEX:32020R1511"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1761",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28265,7 +30358,18 @@
    ],
    "use_evidence": {
     "agriculture": "Fenpropimorph is a morpholine-derived fungicide used in agriculture, primarily on cereal crops such as wheat."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1181",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "fentin acetate (ISO); triphenyltin acetate",
@@ -28334,6 +30438,15 @@
      "substitution": false,
      "as": "Fentin acetate",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002D0478:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1115",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28391,7 +30504,18 @@
     "endpoint": "chronic toxicity: other route",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1103",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "fluazinam (ISO); 3-chloro-N-[3-chloro-2,6-dinitro-4-(trifluoromethyl)phenyl]-5-(trifluoromethyl)pyridin-2-amine",
@@ -28474,6 +30598,15 @@
      "substitution": false,
      "as": "Fluazinam",
      "url": "http://data.europa.eu/eli/reg_impl/2021/2068/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1572",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28553,6 +30686,15 @@
      "tag": "Not to be sold to the public",
      "detail": "reproductive toxicant category 1B, REACH Annex XVII entry 30",
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 736",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28623,6 +30765,15 @@
      "substitution": true,
      "as": "Fluopicolide",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32010L0015:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1712",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28707,6 +30858,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 380",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -28770,6 +30932,15 @@
      "substitution": false,
      "as": "Hymexazol",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32011L0005:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1678",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28820,6 +30991,15 @@
      "substitution": true,
      "as": "Imazamox",
      "url": "https://eur-lex.europa.eu/eli/reg_impl/2020/2007/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1691",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -28976,6 +31156,15 @@
      "substitution": false,
      "as": "Isoxaflutole",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1557499937583&uri=CELEX:32019R0717"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1020",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29072,6 +31261,15 @@
    },
    "decisions": [
     {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1403",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "code": "rotterdam",
      "authority": "national authorities, notified to the Rotterdam Convention",
      "where": "National decisions",
@@ -29131,6 +31329,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1716",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -29181,7 +31390,18 @@
     "endpoint": "toxicity to reproduction: other studies",
     "url": "https://www.efsa.europa.eu/en/data-report/chemical-hazards-database-openfoodtox",
     "read": "2026-09-13"
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1677",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "metaflumizone (ISO); (EZ)-2-[2-(4-cyanophenyl)-1-(α,α,α -trifluoro-m-tolyl)ethylidene]-[4-(trifluoromethoxy)phenyl]carbanilohydrazide [E-isomer ≥ 90 %, Z-isomer ≤ 10 % relative content] [1]",
@@ -29280,6 +31500,15 @@
      "substitution": true,
      "as": "Metconazole",
      "url": "http://data.europa.eu/eli/reg_impl/2024/1749/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1529",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29371,7 +31600,18 @@
    "use_evidence": {
     "food": "It is also produced synthetically, used as a fragrance and as a flavoring agent.",
     "cosmetics": "It is also produced synthetically, used as a fragrance and as a flavoring agent."
-   }
+   },
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 324",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "nonylphenol [1]",
@@ -29470,6 +31710,15 @@
      "substitution": true,
      "as": "Oxadiargyl",
      "url": "http://data.europa.eu/eli/reg_impl/2022/801/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1199",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29572,6 +31821,15 @@
      "substitution": true,
      "as": "Paclobutrazol",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32011L0055:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1664",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29622,6 +31880,15 @@
      "substitution": false,
      "as": "Penconazole",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32009L0077:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1573",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29700,6 +31967,15 @@
      "substitution": true,
      "as": "Pendimethalin",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1500476316854&uri=CELEX:32017R1114"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1723",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     },
     {
      "code": "rotterdam",
@@ -29794,6 +32070,15 @@
      "substitution": false,
      "as": "Pinoxaden",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0370"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1617",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -29898,7 +32183,18 @@
    "atc": [
     "P02CB01"
    ],
-   "medicinal": true
+   "medicinal": true,
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1504",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "potassium permanganate",
@@ -29961,6 +32257,15 @@
      "substitution": false,
      "as": "Potassium permanganate",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008D0768(01):EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1613",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30011,6 +32316,15 @@
      "substitution": true,
      "as": "Profoxydim",
      "url": "http://data.europa.eu/eli/reg_impl/2022/801/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1480",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30125,6 +32439,15 @@
      "substitution": false,
      "as": "Pymetrozine",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1539270240648&uri=CELEX:32018R1501"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1198",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30195,6 +32518,15 @@
      "substitution": false,
      "as": "Pyraclostrobin",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32009L0025:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1766",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30259,6 +32591,15 @@
      "substitution": false,
      "as": "Quinoclamine",
      "url": "http://data.europa.eu/eli/reg_impl/2022/801/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1704",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30296,6 +32637,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1615",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -30358,7 +32710,18 @@
     "S01BC08"
    ],
    "medicinal": true,
-   "medicine_evidence": "It is a plant hormone, and the name is from Latin salix for willow tree, from which it was initially identified and derived."
+   "medicine_evidence": "It is a plant hormone, and the name is from Latin salix for willow tree, from which it was initially identified and derived.",
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_restricted",
+     "tag": "Restricted in cosmetics",
+     "detail": "Regulation 1223/2009, Annex III, entry 98",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
+   ]
   },
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",
@@ -30466,6 +32829,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1597",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -30529,6 +32903,15 @@
      "substitution": false,
      "as": "Spirotetramat",
      "url": "http://eur-lex.europa.eu/eli/reg_impl/2018/155/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1584",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30579,6 +32962,15 @@
      "substitution": false,
      "as": "Spiroxamine",
      "url": "http://data.europa.eu/eli/reg_impl/2023/2592/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1594",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30630,6 +33022,17 @@
    "source_codes": [
     "clp",
     "nite"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1575",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -30693,6 +33096,15 @@
      "substitution": true,
      "as": "Sulcotrione",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32008L0125:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1557",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30772,6 +33184,15 @@
      "substitution": true,
      "as": "Tebuconazole",
      "url": "http://data.europa.eu/eli/reg_impl/2023/1446/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1189",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30836,6 +33257,15 @@
      "substitution": true,
      "as": "Tembotrione",
      "url": "http://eur-lex.europa.eu/eli/reg_impl/2018/155/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1582",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30886,6 +33316,15 @@
      "substitution": true,
      "as": "Tepraloxydim",
      "url": "http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32015R0408&qid=1607349898202"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1481",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -30975,6 +33414,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 988",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   },
   {
@@ -31030,6 +33480,15 @@
      "substitution": false,
      "as": "Thiamethoxam",
      "url": "http://data.europa.eu/eli/reg_impl/2022/801/oj"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1692",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -31094,6 +33553,15 @@
      "substitution": false,
      "as": "Thiourea",
      "url": "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32004D0129:EN:NOT"
+    },
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 321",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
     }
    ]
   },
@@ -31156,6 +33624,17 @@
    "level": "suspected",
    "source_codes": [
     "clp"
+   ],
+   "decisions": [
+    {
+     "code": "cosmetics",
+     "authority": "European Commission",
+     "where": "European Union",
+     "verdict": "cosmetics_banned",
+     "tag": "Banned in cosmetics",
+     "detail": "Regulation 1223/2009, Annex II, entry 1554",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518"
+    }
    ]
   }
  ],

@@ -35,6 +35,16 @@ def eget(url, timeout=60):
         return r.read()
 
 
+def epost_ids(term, retmax=2000):
+    """Some queries are longer than a URL allows; E-utilities accepts them in the body."""
+    time.sleep(0.4)
+    data = urllib.parse.urlencode({"db": "pubmed", "retmode": "json", "retmax": retmax, "term": term}).encode()
+    req = urllib.request.Request(f"{E}/esearch.fcgi", data=data,
+                                 headers={"User-Agent": "DysNet bibliography builder (info@dysnet.org)"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        return json.loads(r.read().decode())["esearchresult"]["idlist"]
+
+
 def esearch_ids(term):
     return json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(term)}&retmode=json"))["esearchresult"]["idlist"]
 
@@ -158,6 +168,16 @@ TOPIC_RX = [("epidemiology", re.compile(r"prevalence|incidence|epidemiolog|popul
             ("clinical", re.compile(r"surg|treatment|outcome|reconstruct|transfer|pollicization|lengthening|function|rehabilitat|therapy|management|classification|diagnos", re.I))]
 
 
+# A paper about a substance that harms a pregnancy earns its own tag, so the bibliography can be
+# read alongside the teratogens register instead of only alongside the conditions. "Causes" is
+# wider than this: it covers vascular disruption and genetics too.
+TERATOGEN_RX = re.compile(
+    r"teratogen|teratolog|embryotoxic|embryopath|\bthalidomide\b|\bvalproat|\bmisoprostol\b|\bisotretinoin\b|"
+    r"\bwarfarin\b|\bmethotrexate\b|\bmycophenolat|\bcarbamazepine\b|\btopiramate\b|\bphenytoin\b|"
+    r"\balcohol\b|\bsmoking\b|\bcocaine\b|\bcadmium\b|\blead\b|\bmercury\b|\bdioxin|\bpesticide|"
+    r"\bdrug[- ]induced\b|\bprenatal exposure|\bin utero exposure|\bmaternal (?:use|intake|medication|exposure)|"
+    r"\bfirst[- ]trimester exposure|\bdevelopmental toxicit", re.I)
+
 CAUSES_RX = re.compile(r"aetiolog|etiolog|\bcauses? of\b|\bcaused by\b|\bcausation|teratogen|risk factors?|exposures?\b|environmental|pathogenesis|pathogenic|mechanism|vascular disruption|maternal|prenatal (drug|medication|exposure)|pesticide|pollut|\bcluster|origin of|genetic (basis|cause|aetiology|etiology)|mutations? in|\bloci\b|\blocus\b", re.I)
 
 
@@ -182,6 +202,7 @@ def screen(text, title=None, strict=False):
     else:
         topics = {"review"} if "review" in hits else {"clinical"}
     if CAUSES_RX.search(title if title is not None else text): topics.add("causes")
+    if TERATOGEN_RX.search(text): topics.add("teratogens")
     return codes, topics
 
 
@@ -405,9 +426,76 @@ for i in range(0, len(country_ids), 50):
 
 META_RX = re.compile(r"meta-?analys|systematic review|pooled analysis|umbrella review|scoping review", re.I)
 
+# ─── 8b. The developmental and reproductive toxicology literature, by NLM's own filter ───────
+# The National Library of Medicine published the search strategy behind its Developmental and
+# Reproductive Toxicology subset: a long MeSH query for work on what harms a pregnancy. NLM
+# froze it in 2018 and says so, and it is far broader than this site, so it is used as a net
+# and not as a source: everything it returns goes through the same strict screening as the
+# causes query, and what does not describe our conditions is logged as rejected.
+DART_FILTER = (HERE / "dart-filter.txt").read_text(encoding="utf-8").strip()
+DART_QUERY = f"({DART_FILTER}) AND ({LIMB_TERMS})"
+dart_ids = epost_ids(DART_QUERY, retmax=2000)
+print(f"NLM DART filter: {len(dart_ids)} PubMed records")
+dart_kept = 0
+for i in range(0, len(dart_ids), 50):
+    batch = dart_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+        abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+        r = screen(title + " " + abstract, title, strict=True)
+        if not r:
+            review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"],
+                           "status": "rejected: NLM DART filter, not about the site's conditions"}); continue
+        codes, topics = r
+        topics.add("causes")
+        dart_kept += 1
+        for t in topics:
+            add(pmid, None, t, "NLM's developmental and reproductive toxicology filter, screened for this site's conditions", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
+print(f"  kept after screening: {dart_kept}")
+
+# ─── 8c. Cochrane systematic reviews ─────────────────────────────────────────────────────────
+# Cochrane reviews are the strongest form of evidence a family is likely to be pointed at, and
+# they carry a DOI, so the teratogens register can say plainly that a substance has one. The
+# Cochrane Library itself refuses automated requests; PubMed indexes the whole database, which
+# is the same content with the same DOI. Two nets: our conditions, and harm in pregnancy.
+COCHRANE = '"Cochrane Database Syst Rev"[Journal]'
+COCHRANE_QUERY = (f'{COCHRANE} AND (({LIMB_TERMS}) OR '
+                  '(teratogen*[tiab] OR "birth defect"[tiab] OR "birth defects"[tiab] OR "congenital malformation"[tiab] '
+                  'OR "congenital malformations"[tiab] OR "congenital anomaly"[tiab] OR "congenital anomalies"[tiab]) '
+                  'AND (pregnan*[tiab] OR maternal[tiab] OR prenatal[tiab] OR fetal[tiab] OR foetal[tiab]))')
+cochrane_ids = epost_ids(COCHRANE_QUERY, retmax=1000)
+print(f"Cochrane query: {len(cochrane_ids)} PubMed records")
+cochrane_kept = 0
+for i in range(0, len(cochrane_ids), 50):
+    batch = cochrane_ids[i:i + 50]
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={','.join(batch)}&rettype=abstract&retmode=xml").decode("utf-8", "replace")
+    for art in re.findall(r"<PubmedArticle>.*?</PubmedArticle>", xml, re.S):
+        pm = re.search(r"<PMID[^>]*>(\d+)</PMID>", art)
+        if not pm: continue
+        pmid = pm.group(1)
+        title = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<ArticleTitle>(.*?)</ArticleTitle>", art, re.S)))
+        abstract = re.sub(r"<[^>]+>", " ", " ".join(re.findall(r"<AbstractText[^>]*>(.*?)</AbstractText>", art, re.S)))
+        r = screen(title + " " + abstract, title, strict=True)
+        if not r:
+            review.append({"id": pmid, "pmid": pmid, "title": title.strip(), "members": ["PubMed search"],
+                           "status": "rejected: Cochrane query, not about the site's conditions"}); continue
+        codes, topics = r
+        topics.add("review")
+        cochrane_kept += 1
+        for t in topics:
+            add(pmid, None, t, "Cochrane systematic review, screened for this site's conditions", via="PubMed search")
+        for c in codes: seed[pmid]["codes"].add(c)
+print(f"  kept after screening: {cochrane_kept}")
+
 # metadata for all PMIDs (batched esummary)
 pmids = sorted(seed)
 entries = []
+
 for i in range(0, len(pmids), 100):
     batch = pmids[i:i + 100]
     res = json.loads(eget(f"{E}/esummary.fcgi?db=pubmed&id={','.join(batch)}&retmode=json"))["result"]
@@ -431,7 +519,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
 (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

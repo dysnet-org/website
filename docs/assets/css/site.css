@@ -877,6 +877,8 @@ ol.demands details[open] summary::after { content: "–"; }
 .src-efsa { background: #eff6ff; color: #1e40af; border-color: #bfdbfe; }
 .tera-status { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
 .st.dec { font-weight: 700; }
+.st-doi { background: #f5f3ff; color: #5b21b6; border-color: #ddd6fe; }
+.finder-chips button.is-empty { opacity: 0.45; }
 .tera-registry { margin: 0.5rem 0 0; padding: 0.45rem 0.7rem; border-left: 3px solid var(--acc, #7c3aed); background: #f8fafc; font-size: var(--text-small, 0.9rem); border-radius: 0 0.3rem 0.3rem 0; }
 .tera-registry .fine { color: #64748b; }
 #tera-decisions button { text-align: left; }

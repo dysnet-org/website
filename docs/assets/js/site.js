@@ -668,6 +668,49 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                   cosmetics_banned: "st-ban", cosmetics_restricted: "st-warn",
                   authorisation_required: "st-ban", eliminated: "st-ban", restricted: "st-ban",
                   unintentional: "st-label", banned_somewhere: "st-ban" };
+  // Every chip carries a count of what is in the current selection, so that narrowing to
+  // "Known" shows at once how many of those an authority acted on, and where.
+  function recount(rows) {
+    var n = { source: {}, level: {}, kind: {}, use: {}, dec: {}, paper: {} };
+    rows.forEach(function (r) {
+      (r.s || []).forEach(function (c) { n.source[c] = (n.source[c] || 0) + 1; });
+      n.level[r.l] = (n.level[r.l] || 0) + 1;
+      n.kind[r.k] = (n.kind[r.k] || 0) + 1;
+      if (r.med) n.kind.medicine = (n.kind.medicine || 0) + 1;
+      (r.u || []).forEach(function (u) { n.use[u] = (n.use[u] || 0) + 1; });
+      var seen = {};
+      (r.dec || []).forEach(function (d) { if (!seen[d.v]) { seen[d.v] = 1; n.dec[d.v] = (n.dec[d.v] || 0) + 1; } });
+      if (r.pc) n.paper.paper = (n.paper.paper || 0) + 1;
+      if (r.pcoch) n.paper.cochrane = (n.paper.cochrane || 0) + 1;
+    });
+    [["data-source", n.source], ["data-level", n.level], ["data-kind", n.kind],
+     ["data-use", n.use], ["data-dec", n.dec], ["data-paper", n.paper]].forEach(function (pair) {
+      document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
+        var c = pair[1][b.getAttribute(pair[0])] || 0, small = b.querySelector("small");
+        if (!small) { small = document.createElement("small"); b.appendChild(document.createTextNode(" ")); b.appendChild(small); }
+        small.textContent = c;
+        b.classList.toggle("is-empty", c === 0 && b.getAttribute("aria-pressed") !== "true");
+      });
+    });
+  }
+
+  function paperChip(r) {
+    if (!r.pc) return "";
+    var lab = "Peer-reviewed: " + r.pc + " paper" + (r.pc === 1 ? "" : "s");
+    if (r.pcn) lab += ", incl. " + r.pcn + " Cochrane";
+    return '<span class="st dec st-doi">' + lab + "</span>";
+  }
+  function paperLines(r) {
+    var out = (r.pp || []).map(function (x) {
+      var cite = esc(x.t) + (x.j ? ' <span class="fine">' + esc(x.j) + ", " + esc(x.y) + "</span>" : "");
+      var link = x.d ? ' <a href="https://doi.org/' + esc(x.d) + '" target="_blank" rel="noopener external">doi:' + esc(x.d) + ' \u2197</a>'
+               : (x.m ? ' <a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(x.m) + '/" target="_blank" rel="noopener external">PubMed \u2197</a>' : "");
+      return "<li>" + (x.c ? "<strong>Cochrane review:</strong> " : "") + cite + link + "</li>";
+    });
+    var more = r.pc - Math.min(3, (r.pp || []).length);
+    if (more > 0 && r.pq) out.push('<li><a href="' + esc(r.pq) + '" target="_blank" rel="noopener external">all ' + r.pc + ' on PubMed \u2197</a> \u00b7 a count is not a verdict: a paper may report harm, or report finding none</li>');
+    return out;
+  }
   function decChips(r) {
     return (r.dec || []).map(function (d) {
       return '<span class="st dec ' + (DEC_CLS[d.v] || "st-label") + '">' + esc(d.w) + ": " + esc(d.t) + "</span>";
@@ -698,12 +741,13 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     if (r.efsa && r.efsa.value) chips.push('<span class="st st-label">EFSA: ' + esc(r.efsa.value.split(";")[0].toLowerCase()) + '</span>');
     Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
     if (r.dec && r.dec.length) chips.unshift(decChips(r));
+    if (r.pc) chips.push(paperChip(r));
     var details = r.src.map(function (s) {
       var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "nite" ? s.st.join(", ") + (s.fy ? ", classified in the " + s.fy + " fiscal year" : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
-    details = decLines(r).concat(details);
+    details = decLines(r).concat(paperLines(r)).concat(details);
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
@@ -722,22 +766,24 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function order(rows) { rows.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); }); }
   if (DATA) order(DATA);
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
-  var state = { sources: [], levels: [], kinds: [], uses: [], decs: [] };
+  var state = { sources: [], levels: [], kinds: [], uses: [], decs: [], papers: [] };
   function apply() {
     if (!DATA) return;                      // the entries rendered into the page stay until the data lands
-    var text = q.value.trim().toLowerCase(), k = 0, out = [];
+    var text = q.value.trim().toLowerCase(), k = 0, out = [], kept = [];
     DATA.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
                (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
                (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1)) &&
                (!state.uses.length || (r.u || []).some(function (u) { return state.uses.indexOf(u) !== -1; })) &&
-               (!state.decs.length || (r.dec || []).some(function (d) { return state.decs.indexOf(d.v) !== -1; }));
-      if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
+               (!state.decs.length || (r.dec || []).some(function (d) { return state.decs.indexOf(d.v) !== -1; })) &&
+               (!state.papers.length || state.papers.every(function (p) { return p === "cochrane" ? r.pcoch : r.pc; }));
+      if (ok) { k++; kept.push(r); if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
     });
     list.innerHTML = out.join("");
     n.textContent = k;
-    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses, decision: state.decs });
+    recount(kept);
+    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses, decision: state.decs, paper: state.papers });
     more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
   }
   function bind(groupId, attr, key) {
@@ -750,19 +796,19 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     });
   }
   bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels"); bind("tera-levels", "data-kind", "kinds");
-  bind("tera-uses", "data-use", "uses"); bind("tera-decisions", "data-dec", "decs");
+  bind("tera-uses", "data-use", "uses"); bind("tera-decisions", "data-dec", "decs"); bind("tera-decisions", "data-paper", "papers");
   q.addEventListener("input", function () { expanded = false; apply(); });
   more.addEventListener("click", function () { expanded = true; apply(); });
   document.getElementById("tera-reset").addEventListener("click", function () {
-    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [], decs: [] }; expanded = false;
+    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [], decs: [], papers: [] }; expanded = false;
     document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
   });
   // a link can arrive with a search, a source, a level, a kind or a use already chosen
   var pre = filterParams();
   if (pre.get("q")) q.value = pre.get("q");
   state.sources = filterList("source"); state.levels = filterList("level");
-  state.kinds = filterList("kind"); state.uses = filterList("use"); state.decs = filterList("decision");
-  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses], ["data-dec", state.decs]].forEach(function (pair) {
+  state.kinds = filterList("kind"); state.uses = filterList("use"); state.decs = filterList("decision"); state.papers = filterList("paper");
+  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses], ["data-dec", state.decs], ["data-paper", state.papers]].forEach(function (pair) {
     document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
       if (pair[1].indexOf(b.getAttribute(pair[0])) !== -1) b.setAttribute("aria-pressed", "true");
     });

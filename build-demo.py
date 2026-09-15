@@ -9,6 +9,7 @@ import json
 import os
 import pathlib
 import re
+import urllib.parse
 
 ROOT = pathlib.Path(__file__).parent / "docs"
 
@@ -346,7 +347,7 @@ REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
 BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
-BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "teratogens": "Teratogens & exposures", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
 
 
 def doi_html(doi):
@@ -485,8 +486,16 @@ TERA_USE = {"food": "Food and drink", "construction": "Building and construction
             "agriculture": "Agriculture and pest control", "fuel": "Fuel and vehicles"}
 
 
+# Square brackets do real work in chemical names (benzo[a]pyrene) and sometimes carry a
+# meaningful qualifier (lead powder; [particle diameter < 1 mm]), so only the administrative
+# notes the source lists append to a name are removed: OEHHA's listing history, and the
+# footnote markers an Annex VI row uses when it covers several forms.
+TERA_NAME_NOISE = re.compile(r"\s*\[(?:Basis for listing[^\]]*|This substance is identified[^\]]*|\d)\]"
+                             r"|\s*\(\s*NOTE:.*$", re.I | re.S)
+
+
 def tera_display_name(e):
-    n = e["name"]
+    n = TERA_NAME_NOISE.sub("", e["name"]).strip(" ;,")
     return n if len(n) <= 90 else n.split(";")[0].strip()
 
 
@@ -522,6 +531,34 @@ TERA_DEC_CLS = {"approved": "st-warn", "pending": "st-warn", "refused": "st-ban"
                 "unintentional": "st-label", "banned_somewhere": "st-ban"}
 
 
+def tera_paper_chip(e):
+    """A classification is an administrative act; a DOI is a study anyone can go and read."""
+    n = e.get("paper_count") or 0
+    if not n:
+        return ""
+    label = f'Peer-reviewed: {n} paper' + ("s" if n != 1 else "")
+    if e.get("paper_cochrane_n"):
+        label += f', incl. {e["paper_cochrane_n"]} Cochrane'
+    return f'<span class="st dec st-doi">{label}</span>'
+
+
+def tera_paper_lines(e):
+    if not e.get("papers"):
+        return []
+    out = []
+    for x in sorted(e["papers"], key=lambda x: -int(bool(x.get("cochrane"))))[:3]:
+        cite = f'{x["title"]}' + (f' <span class="fine">{x["journal"]}, {x["year"]}</span>' if x.get("journal") else "")
+        link = (f' <a href="https://doi.org/{x["doi"]}" target="_blank" rel="noopener external">doi:{x["doi"]} ↗</a>'
+                if x.get("doi") else
+                (f' <a href="https://pubmed.ncbi.nlm.nih.gov/{x["pmid"]}/" target="_blank" rel="noopener external">PubMed ↗</a>' if x.get("pmid") else ""))
+        out.append(f'<li>{"<strong>Cochrane review:</strong> " if x.get("cochrane") else ""}{cite}{link}</li>')
+    more = (e.get("paper_count") or 0) - min(3, len(e["papers"]))
+    if more > 0 and e.get("paper_query"):
+        out.append(f'<li><a href="{e["paper_query"]}" target="_blank" rel="noopener external">'
+                   f'all {e["paper_count"]} on PubMed ↗</a> &middot; a count is not a verdict: a paper may report harm, or report finding none</li>')
+    return out
+
+
 def tera_dec_chips(e):
     return "".join(f'<span class="st dec {TERA_DEC_CLS.get(d["verdict"], "st-label")}">{d["where"]}: {d["tag"]}</span>'
                    for d in e.get("decisions", []))
@@ -553,9 +590,11 @@ def tera_item_html(e):
                 f'<a href="{reg["url"]}" target="_blank" rel="noopener external">{reg["name"]}</a>'
                 + (f' &middot; {reg["phone"]}' if reg.get("phone") else "")
                 + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>') if reg else ""
-    chips = tera_dec_chips(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
+    chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(f'<span class="use use-{u}">{TERA_USE.get(u, u)}</span>' for u in e.get("uses", []))
-    details = tera_dec_lines(e)
+    details = tera_dec_lines(e) + tera_paper_lines(e)
+    if e.get("source_note"):
+        details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
     for src in e["sources"]:
         line = src["label"] + ": " + (f'{src["category"]}, {", ".join(src["statements"])}' + (f', applies from {src["applies_from"]}' if src.get("applies_from") else "") if src["code"] == "clp" else
                                     f'{src.get("toxicity", "")}' + (f', listed {src["listed"]}' if src.get("listed") else "") + (f', via {src["mechanism"]}' if src.get("mechanism") else "") if src["code"] == "p65" else
@@ -596,6 +635,9 @@ def teratogens_html():
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
         return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "mev": e.get("medicine_evidence", ""), "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
+                "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
+                "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}
+                       for x in sorted(e.get("papers") or [], key=lambda x: -int(bool(x.get("cochrane"))))[:3]],
                 "reg": ({"m": e["registry"]["medicine"], "n": e["registry"]["name"], "u": e["registry"]["url"], "p": e["registry"].get("phone", "")} if e.get("registry") else 0),
                 "dec": [{"c": d["code"], "v": d["verdict"], "w": d["where"], "t": d["tag"], "d": d.get("detail", "")}
                         | ({"u": d.get("url", "")} if d["code"] == "eu-ppp" else {}) for d in e.get("decisions", [])]}
@@ -607,12 +649,16 @@ def teratogens_html():
                  ("public_supply_banned", "Not to be sold to the public in the EU"), ("cosmetics_banned", "Banned in cosmetics in the EU"),
                  ("cosmetics_restricted", "Restricted in cosmetics in the EU"), ("authorisation_required", "Needs an EU authorisation"),
                  ("banned_somewhere", "Banned by a country"), ("eliminated", "Eliminated worldwide by treaty"), ("restricted", "Restricted worldwide by treaty")]
+    PAPER_CHIPS = [("paper", "Has a peer-reviewed paper here"), ("cochrane", "Has a Cochrane review")]
     dec_n = {}
     for x in E:
         for d in x.get("decisions", []):
             dec_n[d["verdict"]] = dec_n.get(d["verdict"], 0) + 1
     dec_chips = "".join(f'<button type="button" data-dec="{code}" aria-pressed="false">{lab} <small>{dec_n.get(code, 0)}</small></button>'
                         for code, lab in DEC_CHIPS if dec_n.get(code))
+    paper_n = {"paper": sum(1 for x in E if x.get("paper_count")), "cochrane": sum(1 for x in E if x.get("paper_cochrane"))}
+    dec_chips += "".join(f'<button type="button" data-paper="{code}" aria-pressed="false">{lab} <small>{paper_n[code]}</small></button>'
+                         for code, lab in PAPER_CHIPS if paper_n[code])
     src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "nite": "Japan, government classification", "p65": "California Proposition 65", "ema": "EMA medicines", "efsa": "EFSA food values", "who": "WHO", "bib": "DysNet bibliography"}.get(code, code) }</button>' for code in ("clp", "nite", "p65", "ema", "efsa", "who", "bib"))
     return f"""
     <div class="bib-controls" id="tera-controls">

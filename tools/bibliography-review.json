@@ -1,5 +1,5 @@
 {
- "built": "2026-09-13",
+ "built": "2026-09-15",
  "items": [
   {
    "id": "10.1086/461669",
@@ -243,13 +243,6 @@
     "German registry for congenital thrombocytopenia (Germany)"
    ],
    "status": "unresolved: no PubMed or Crossref record"
-  },
-  {
-   "id": "10.1016/j.jcms.2023.02.003",
-   "members": [
-    "German registry for congenital thrombocytopenia (Germany)"
-   ],
-   "status": "lookup failed: KeyError"
   },
   {
    "id": "10.1080/21678707.2023.2241347",
@@ -40455,15 +40448,6 @@
    "status": "rejected: systematic review not about the site's conditions"
   },
   {
-   "id": "34687972",
-   "pmid": "34687972",
-   "title": "Pollicization in the treatment of congenital severe hypoplasia and aplasia of the thumb: a systematic review.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: systematic review not about the site's conditions"
-  },
-  {
    "id": "34454408",
    "pmid": "34454408",
    "title": "The Versatility of the DCIA Free Flap: A Forgotten Flap? Systematic Review and Meta-Analysis.",
@@ -44010,15 +43994,6 @@
    "status": "rejected: member-country query, the conditions are not the subject of the paper"
   },
   {
-   "id": "9138643",
-   "pmid": "9138643",
-   "title": "[Incidence of ectromelia deformities in the Magdeburg region].",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: member-country query, the conditions are not the subject of the paper"
-  },
-  {
    "id": "8960486",
    "pmid": "8960486",
    "title": "Noncardiac malformations at major congenital heart defects.",
@@ -44287,6 +44262,6090 @@
     "PubMed search"
    ],
    "status": "rejected: member-country query, the conditions are not the subject of the paper"
+  },
+  {
+   "id": "42616500",
+   "pmid": "42616500",
+   "title": "In Vitro Fertilization and VACTERL Birth Defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "42230530",
+   "pmid": "42230530",
+   "title": "Gabapentin and Pregabalin Use in First Trimester of Pregnancy and Risk of Specific Congenital Anomalies: An IMI ConcePTION European Case-Malformed Control Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41954183",
+   "pmid": "41954183",
+   "title": "Exploring the Impact of Missing Death Data on Identification of Congenital Malformations in Insurance Claims Data.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41856958",
+   "pmid": "41856958",
+   "title": "Fetal Fentanyl Syndrome: An Opportunity to Quantify the Risk in Prospective Cohorts of Patients With Substance Use Disorder.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41765652",
+   "pmid": "41765652",
+   "title": "[Genetic aetiology of spontaneous abortion detected by exome sequencing].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41683301",
+   "pmid": "41683301",
+   "title": "The Role of Selenium During Gestation in the Development of Fetal Congenital Anomalies: A Systematic Review.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41667381",
+   "pmid": "41667381",
+   "title": "Nager Syndrome Revisited: Integrating In&#xa0;Vivo and In&#xa0;Vitro Models to Decipher SF3B4-Dependent Tissue Coordination.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41593525",
+   "pmid": "41593525",
+   "title": "A study on the diagnostic value and classification of sirenomelia by prenatal ultrasonography.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41490893",
+   "pmid": "41490893",
+   "title": "Prevalence of major structural congenital abnormalities detected on infant surface examination in Botswana, 2014-2022: a birth outcomes surveillance study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41453370",
+   "pmid": "41453370",
+   "title": "Obstetrical, perinatal, and children's health outcomes following fresh embryo transfer after extended embryo culture.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41450985",
+   "pmid": "41450985",
+   "title": "Burden of congenital anomalies in Faisalabad, Pakistan: Consanguinity, ethnic disparities and public health implications.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41289226",
+   "pmid": "41289226",
+   "title": "Impact of first-trimester ultrasound on early detection of major fetal anomalies: Nationwide population-based study of over 1 million pregnancies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41235619",
+   "pmid": "41235619",
+   "title": "Undetected cases after implementation of first-trimester anomaly scan in low-risk population: insights from the IMITAS study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41170948",
+   "pmid": "41170948",
+   "title": "Prenatal Diagnosis of Rubinstein-Taybi Syndrome-Reporting Twelve Cases of a Rare Disease.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "41024387",
+   "pmid": "41024387",
+   "title": "A Barrier to Understanding Teratogenicity: The Critical Periods of Sensitivity for Most Structural Birth Defects Precede the Established Hemochorial Placenta.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40932552",
+   "pmid": "40932552",
+   "title": "Does assisted reproductive technology influence the complexity and associated malformations in esophageal atresia?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40773816",
+   "pmid": "40773816",
+   "title": "Prenatal detection rate of congenital anomalies over a period of 30&#xa0;years: A population-based registry study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40696506",
+   "pmid": "40696506",
+   "title": "An Unusual Mainly Skeletal Prenatal Presentation of Cornelia de Lange Syndrome Due To a Novel Variant in NIPBL.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40687390",
+   "pmid": "40687390",
+   "title": "Early life outcomes of prenatal exposure to alcohol and synthetic cannabinoids in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40610944",
+   "pmid": "40610944",
+   "title": "Association of neonatal and fetal malformations with polyhydramnios and oligohydramnios - introduction of a new \"association factor\".",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40368527",
+   "pmid": "40368527",
+   "title": "Prenatal diagnosis and management of desbuquois dysplasia type 1 due to CANT1 mutation: A case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40366952",
+   "pmid": "40366952",
+   "title": "Prevalence of congenital anomalies in newborns: a cross-sectional study in the state of Rio de Janeiro, Brazil, 2019-2021.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40305302",
+   "pmid": "40305302",
+   "title": "Microcomputed Tomography in the Adriamycin Rat Model of Malformations-Preliminary Results.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40302190",
+   "pmid": "40302190",
+   "title": "Insights into Congenital Body Stalk Anomaly Coupled with Placenta Accreta Conditions: A Case Report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40226982",
+   "pmid": "40226982",
+   "title": "Modulation of VEGF/eNOS/TGF-&#x3b2; Axis by Piracetam as a New Avenue to Ameliorate Valproic Acid-Induced Placental Toxicity and Teratogenicity in Rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40148187",
+   "pmid": "40148187",
+   "title": "When pregnancy termination fails: A tale of two teratogens: methotrexate and misoprostol - A narrative mini-review.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "40011239",
+   "pmid": "40011239",
+   "title": "Antiretroviral drug exposure in pregnancy and risk of congenital anomalies: a European case/non-case malformed study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "39975197",
+   "pmid": "39975197",
+   "title": "Early Life Outcomes of Prenatal Exposure to Alcohol and Synthetic Cannabinoids in Mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "39416614",
+   "pmid": "39416614",
+   "title": "Prevalence-pattern of congenital and hereditary anomalies in Balochistan Province of Pakistan.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "39320041",
+   "pmid": "39320041",
+   "title": "An inherited TBX3 alteration in a prenatal case of ulnar-mammary syndrome: Clinical assessment and functional characterization in Drosophila melanogaster.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "39255949",
+   "pmid": "39255949",
+   "title": "Examination of piperonyl butoxide developmental toxicity as a Sonic hedgehog pathway inhibitor targeting limb and palate morphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38980347",
+   "pmid": "38980347",
+   "title": "Risk of teratogenicity in continued pregnancy after gestational exposure to mifepristone and/or misoprostol: a systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38968942",
+   "pmid": "38968942",
+   "title": "Concomitant use of antidepressants and benzodiazepines during pregnancy and associated risk of congenital malformations: a population-based cohort study in Taiwan.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38918397",
+   "pmid": "38918397",
+   "title": "Prevalence and death rate of birth defects from population-based surveillance in Hunan Province, China, 2010-2020.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38780050",
+   "pmid": "38780050",
+   "title": "Prevalence, infant outcomes and gestational risk factors for transverse reduction deficiencies at or above the wrist: a population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38684309",
+   "pmid": "38684309",
+   "title": "[Prenatal phenotype and genetic analysis of a fetus with Fibrochondrogenesis 1 due to compound heterozygous variants of COL11A1 gene].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38622560",
+   "pmid": "38622560",
+   "title": "Multivariate logistic regression analysis of risk factors for birth defects: a study from population-based surveillance data.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38552958",
+   "pmid": "38552958",
+   "title": "Population-based surveillance of congenital anomalies over 40 years (1981-2020): Results from the Paris Registry of Congenital Malformations (remaPAR).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38441368",
+   "pmid": "38441368",
+   "title": "Limb-body wall complex: Literature review and case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38296637",
+   "pmid": "38296637",
+   "title": "Perinatal Prognosis of Pregnancies with Single Umbilical Artery in a Romanian Third-Level Unit.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38267217",
+   "pmid": "38267217",
+   "title": "Sirenomelia: An anatomical assessment and genetic sex determination of two cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38252426",
+   "pmid": "38252426",
+   "title": "First Trimester Use of Buprenorphine or Methadone and the Risk of Congenital Malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38222129",
+   "pmid": "38222129",
+   "title": "Review of Teratogenic Effects of Leflunomide, Accutane, Thalidomide, Warfarin, Tetracycline, and Angiotensin-Converting Enzyme Inhibitors.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38059661",
+   "pmid": "38059661",
+   "title": "A novel SMOC1 pathogenic homozygous variant in a fetus with mesomelia of the lower limbs, micrognathia and hypertelorism and an incidental finding of CYP21A2-related congenital adrenal hyperplasia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "38001547",
+   "pmid": "38001547",
+   "title": "Caudal regression syndrome type 1 with minimally invasive computed tomography and magnetic resonance imaging autopsy: a case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37783275",
+   "pmid": "37783275",
+   "title": "Postnatal diagnosis of congenital anomalies despite active systematic prenatal screening policies: a population-based registry study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37649433",
+   "pmid": "37649433",
+   "title": "Ear anomalies and hearing loss in patients with VACTERL association and the effect of maternal diabetes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37543708",
+   "pmid": "37543708",
+   "title": "Maternal physical activity, sitting, and risk of non-cardiac birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37309307",
+   "pmid": "37309307",
+   "title": "Oxidative balance scores and neural crest cell-related congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37128957",
+   "pmid": "37128957",
+   "title": "Differences in prenatal diagnosis rate of congenital anomalies associated with singletons and multiple births: An&#xa0;observational study of more than 1.9 million births in Zhejiang Province, eastern China, during 2012-2018.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37092239",
+   "pmid": "37092239",
+   "title": "Incidence of congenital complications related to COVID-19 infection during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37076028",
+   "pmid": "37076028",
+   "title": "Residential proximity to unconventional oil and gas development and birth defects in Ohio.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "37075751",
+   "pmid": "37075751",
+   "title": "POLR1A variants underlie phenotypic heterogeneity in craniofacial, neural, and cardiac anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36948563",
+   "pmid": "36948563",
+   "title": "Ambient air pollutants in the first trimester of pregnancy and birth defects: an observational study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36913886",
+   "pmid": "36913886",
+   "title": "Fetal phenotype of Cornelia de Lange syndrome with a molecular confirmation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36719707",
+   "pmid": "36719707",
+   "title": "Fetal Tethered Spinal Cord: Diagnostic Features and Its Association with Congenital Anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36652686",
+   "pmid": "36652686",
+   "title": "Atomoxetine in Early Pregnancy and the Prevalence of Major Congenital Malformations: A Multinational Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36572904",
+   "pmid": "36572904",
+   "title": "Prenatal diagnosis of distal 13q deletion syndrome in a fetus with esophageal atresia: a case report and review of the literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36504312",
+   "pmid": "36504312",
+   "title": "Etiological identification of recurrent male fatality due to a novel NSDHL gene mutation using trio whole-exome sequencing: A rare case report and literature review.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36484491",
+   "pmid": "36484491",
+   "title": "INDIAMAN-20 (INstant DIAgnosis of 20 Major ANomalies) protocol: application of IOTA diagnostic strategy to fetal anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36477338",
+   "pmid": "36477338",
+   "title": "Association of In Utero Antipsychotic Medication Exposure With Risk of Congenital Malformations in Nordic Countries and the US.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36458698",
+   "pmid": "36458698",
+   "title": "Maternal exposure to heparin products and risk of birth defects in the National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36356662",
+   "pmid": "36356662",
+   "title": "Assessing associations between residential proximity to greenspace and birth defects in the National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36345775",
+   "pmid": "36345775",
+   "title": "Birth defects associated with paternal firefighting in the National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36322476",
+   "pmid": "36322476",
+   "title": "5p13 microduplication in a malformed fetus and his unaffected father.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36271508",
+   "pmid": "36271508",
+   "title": "Retrospective evaluation of clinical and molecular data of 148 cases of esophageal atresia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "36168701",
+   "pmid": "36168701",
+   "title": "The association of nausea and vomiting of pregnancy, its treatments, and select birth defects: Findings from the National Birth Defect Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35932236",
+   "pmid": "35932236",
+   "title": "Associations between maternal reports of periconceptional fever from miscellaneous causes and structural birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35821640",
+   "pmid": "35821640",
+   "title": "Prenatal diagnosis and pregnancy outcome of major structural anomalies detectable in the first trimester: A population-based cohort study in the Netherlands.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35554661",
+   "pmid": "35554661",
+   "title": "Prenatal diagnosis of acrania/exencephaly/anencephaly sequence (AEAS): additional structural and genetic anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35460489",
+   "pmid": "35460489",
+   "title": "Aloe vera protects against fluoride-induced teratogenic effects during pre- and postnatal development in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35319786",
+   "pmid": "35319786",
+   "title": "A systematic review of maternal diabetes and congenital skeletal malformation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35191187",
+   "pmid": "35191187",
+   "title": "Prenatal phenotypic spectrum of full trisomy 18 in an Indian cohort.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35131773",
+   "pmid": "35131773",
+   "title": "Extended survival of a premature infant with a postnatal diagnosis of complete triploidy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35126759",
+   "pmid": "35126759",
+   "title": "VACTERL association in a fetus with multiple congenital malformations - Case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "35104296",
+   "pmid": "35104296",
+   "title": "Risks of specific congenital anomalies in offspring of women with diabetes: A systematic review and meta-analysis of population-based studies including over 80 million births.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "34403436",
+   "pmid": "34403436",
+   "title": "Developmental malformations resulting from high-dose maternal tamoxifen exposure in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "34392783",
+   "pmid": "34392783",
+   "title": "Maternal periconceptional nutrition matters. A scoping review of the current literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "34369859",
+   "pmid": "34369859",
+   "title": "Association of maternal intake of nitrate and risk of birth defects and preterm birth: a systematic review and dose-response meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "34015472",
+   "pmid": "34015472",
+   "title": "First trimester naproxen exposure and outcome of pregnancy - A German case series.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "33966183",
+   "pmid": "33966183",
+   "title": "Signal Detection in EUROmediCAT: Identification and Evaluation of Medication-Congenital Anomaly Associations and Use of VigiBase as a Complementary Source of Reference.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "33454317",
+   "pmid": "33454317",
+   "title": "Macrolide and lincosamide antibiotic exposure in the first trimester of pregnancy and risk of congenital anomaly: A European case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "33348463",
+   "pmid": "33348463",
+   "title": "Prevalence of structural birth defects among infants with Down syndrome, 2013-2017: A US population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "33230193",
+   "pmid": "33230193",
+   "title": "Maternal alcohol consumption and risk of offspring with congenital malformation: the Japan Environment and Children's Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "33179239",
+   "pmid": "33179239",
+   "title": "[Prenatal diagnosis of a fetus with Pallister-Killian syndrome with combined cytogenetic and molecular methods].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32961123",
+   "pmid": "32961123",
+   "title": "Hydroxychloroquine early in pregnancy and risk of birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32745701",
+   "pmid": "32745701",
+   "title": "Asthma Medication Use and Risk of Birth Defects: National Birth Defects Prevention Study, 1997-2011.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32617160",
+   "pmid": "32617160",
+   "title": "Major birth defects in the Brazilian side of the triple border: a population-based cross-sectional study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32573094",
+   "pmid": "32573094",
+   "title": "Genetic diagnoses and associated anomalies in fetuses prenatally diagnosed with esophageal atresia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32319733",
+   "pmid": "32319733",
+   "title": "Maternal risk factors for the VACTERL association: A EUROCAT case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32259596",
+   "pmid": "32259596",
+   "title": "Prevalence of the extensor digitorum, extensor digiti minimi and extensor indicis tendons and their variations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32238218",
+   "pmid": "32238218",
+   "title": "Maternal use of folic acid and multivitamin supplements and infant risk of birth defects in Norway, 1999-2013.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "32153672",
+   "pmid": "32153672",
+   "title": "Alcohol and Psychoactive Drugs in Pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31965066",
+   "pmid": "31965066",
+   "title": "A newly recognized multiple malformation syndrome with caudal regression associated with a biallelic c.402G&gt;A variant in TBX4.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31784481",
+   "pmid": "31784481",
+   "title": "Linked-read genome sequencing identifies biallelic pathogenic variants in  DONSON  as a novel cause of Meier-Gorlin syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31714849",
+   "pmid": "31714849",
+   "title": "An Algorithmic Approach to Complex Fetal Abdominal Wall Defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31691277",
+   "pmid": "31691277",
+   "title": "Fetal outcomes after maternal exposure to oral antifungal agents during pregnancy: A systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31587486",
+   "pmid": "31587486",
+   "title": "Prenatal diagnosis of Desbuquois dysplasia Type 1: Utilization of high-density SNP array to map homozygosity and identify the gene.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31556549",
+   "pmid": "31556549",
+   "title": "Limb body wall complex - the history of the entity and presentation of our series of cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31542953",
+   "pmid": "31542953",
+   "title": "Extremity Findings of Methotrexate Embryopathy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31454511",
+   "pmid": "31454511",
+   "title": "Specific birth defects in pregnancies of women with diabetes: National Birth Defects Prevention Study, 1997-2011.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31401151",
+   "pmid": "31401151",
+   "title": "Effects of pre-gestational diabetes mellitus and gestational diabetes mellitus on macrosomia and birth defects in Upstate New York.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31398414",
+   "pmid": "31398414",
+   "title": "Impact of state tobacco control policies on birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31325834",
+   "pmid": "31325834",
+   "title": "Prenatal exposure to nitrate in drinking water and the risk of congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "31299979",
+   "pmid": "31299979",
+   "title": "Prenatal diagnosis of fetal skeletal dysplasia using targeted next-generation sequencing: an analysis of 30 cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30924113",
+   "pmid": "30924113",
+   "title": "Fetal Congenital Anomaly in Tertiary Hospital in Lagos, South-West Nigeria: A Review of Presentation and its Outcome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30890023",
+   "pmid": "30890023",
+   "title": "Clinical Diagnosis of Classical Cornelia de Lange Syndrome Made From Postmortem Examination of Second Trimester Fetus With Novel  NIPBL  Pathogenic Variant.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30880510",
+   "pmid": "30880510",
+   "title": "Discordant malformations in monochorionic twins: a retrospective cohort study in La Reunion Island.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30790570",
+   "pmid": "30790570",
+   "title": "Influence of periconception smoking behavior on birth defect risk.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30783111",
+   "pmid": "30783111",
+   "title": "Defining a critical period in calvarial development for Hedgehog pathway antagonist-induced frontal bone dysplasia in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30548801",
+   "pmid": "30548801",
+   "title": "Associated anomalies in cases with anorectal anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30402975",
+   "pmid": "30402975",
+   "title": "Maternal genitourinary infections and risk of birth defects in the National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30189431",
+   "pmid": "30189431",
+   "title": "Fetal Skeletal Disorders.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "30045038",
+   "pmid": "30045038",
+   "title": "Early Detection of Structural Anomalies in a Primary Care Setting in the Netherlands.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29760432",
+   "pmid": "29760432",
+   "title": "Microcephaly, short stature, and limb abnormality disorder due to novel autosomal biallelic DONSON mutations in two German siblings.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29750247",
+   "pmid": "29750247",
+   "title": "tp53-dependent and independent signaling underlies the pathogenesis and possible prevention of Acrofacial Dysostosis-Cincinnati type.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29616743",
+   "pmid": "29616743",
+   "title": "The chick limb: embryology, genetics and teratology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29519207",
+   "pmid": "29519207",
+   "title": "ADHD Medication Use During Pregnancy and Risk for Selected Birth Defects: National Birth Defects Prevention Study, 1998-2011.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29396778",
+   "pmid": "29396778",
+   "title": "Fetal valproate syndrome: the Irish experience.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29388358",
+   "pmid": "29388358",
+   "title": "Metformin in the first trimester and risks for specific birth defects in the National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29094488",
+   "pmid": "29094488",
+   "title": "Maternal report of fever from cold or flu during early pregnancy and the risk for noncardiac birth defects, National Birth Defects Prevention Study, 1997-2011.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29071735",
+   "pmid": "29071735",
+   "title": "Impact of sample collection participation on the validity of estimated measures of association in the National Birth Defects Prevention Study when assessing gene-environment interactions.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "29023763",
+   "pmid": "29023763",
+   "title": "CPS49-induced neurotoxicity does not cause limb patterning anomalies in developing chicken embryos.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28992718",
+   "pmid": "28992718",
+   "title": "Advanced maternal age and risk of non-chromosomal anomalies: data from a tertiary referral hospital in Turkey.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28809041",
+   "pmid": "28809041",
+   "title": "Complex malformations involving the fetal body wall - definition and classification issues.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28805615",
+   "pmid": "28805615",
+   "title": "Prenatal diagnosis of holoprosencephaly associated with Smith-Lemli-Opitz syndrome (SLOS) in a 46,XX fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28715806",
+   "pmid": "28715806",
+   "title": "Real-Time Volume Contrast Imaging in the A Plane with a Four-Dimensional Electronic Probe Facilitates the Evaluation of Fetal Extremities in Midtrimester Sonograms.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28615173",
+   "pmid": "28615173",
+   "title": "Risk of major congenital malformations in relation to maternal overweight and obesity severity: cohort study of 1.2 million singletons.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28550954",
+   "pmid": "28550954",
+   "title": "First Trimester Influenza Vaccination and Risks for Major Structural Birth Defects in Offspring.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28544538",
+   "pmid": "28544538",
+   "title": "Cornelia de Lange syndrome: To diagnose or not to diagnose in utero?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28377269",
+   "pmid": "28377269",
+   "title": "Multivitamin use and adverse birth outcomes in high-income countries: a systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28291300",
+   "pmid": "28291300",
+   "title": "[Possible Relation Between Antenatal Venlafaxine Use and VACTERL Association in a Newborn: A Case Report].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28186364",
+   "pmid": "28186364",
+   "title": "Rare syndromes of the head and face: mandibulofacial and acrofacial dysostoses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28174813",
+   "pmid": "28174813",
+   "title": "Isolated anomalies of the fetal hand - two case reports and a review of the literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "28081906",
+   "pmid": "28081906",
+   "title": "[Neuraxial analgesia in a parturient with the VACTERL association undergoing labor and vaginal delivery].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27819746",
+   "pmid": "27819746",
+   "title": "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27768247",
+   "pmid": "27768247",
+   "title": "Associations between Maternal Water Consumption and Birth Defects in the National Birth Defects Prevention Study (2000-2005).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27654505",
+   "pmid": "27654505",
+   "title": "Risk for Congenital Malformation With H1N1 Influenza Vaccine: A Cohort Study With Sibling Analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27648933",
+   "pmid": "27648933",
+   "title": "Phenotype and genotype in 52 patients with Rubinstein-Taybi syndrome caused by EP300 mutations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27638328",
+   "pmid": "27638328",
+   "title": "A novel missense mutation, p.(R102W) in WNT7A causes Al-Awadi Raas-Rothschild syndrome in a fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27409075",
+   "pmid": "27409075",
+   "title": "Proceedings of the 3rd IPLeiria's International Health Congress : Leiria, Portugal. 6-7 May 2016.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "27007730",
+   "pmid": "27007730",
+   "title": "Agricultural Compounds in Water and Birth Defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26932830",
+   "pmid": "26932830",
+   "title": "Nasoethmoidal meningocele in a child presenting bilateral congenital cystic adenomatoid malformation: Evidence for a new entity or consequence of gestational exposures?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26932755",
+   "pmid": "26932755",
+   "title": "Improving the ultrasound detection of isolated fetal limb abnormalities.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26874011",
+   "pmid": "26874011",
+   "title": "Sf3b4-depleted Xenopus embryos: A model to study the pathogenesis of craniofacial defects in Nager syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26809266",
+   "pmid": "26809266",
+   "title": "Predicting outcome in 259 fetuses with agenesis of ductus venosus - a multicenter experience and systematic review of the literature (.).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26738512",
+   "pmid": "26738512",
+   "title": "Maternal use of oral contraceptives and risk of birth defects in Denmark: prospective, nationwide cohort study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26689858",
+   "pmid": "26689858",
+   "title": "Residential agricultural pesticide exposures and risks of selected birth defects among offspring in the San Joaquin Valley of California.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26679067",
+   "pmid": "26679067",
+   "title": "Prenatal diagnosis of Nager syndrome in a 12-week-old fetus with a whole gene deletion of SF3B4 by chromosomal microarray.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26663788",
+   "pmid": "26663788",
+   "title": "Advanced Paternal Age and Risk of Musculoskeletal Congenital Anomalies in Offspring.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26544544",
+   "pmid": "26544544",
+   "title": "Isolated bilateral transverse agenesis of the distal segments of the lower limbs at the level of the knee joint in a human fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26525082",
+   "pmid": "26525082",
+   "title": "Factors associated with major structural birth defects among newborns delivered at Muhimbili National Hospital and Municipal Hospitals in Dar Es Salaam, Tanzania 2011 - 2012.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26401846",
+   "pmid": "26401846",
+   "title": "The Effect of Dofetilide on the Heart Rate of GD11 and GD13 Rat Embryos, in vivo, Using Ultrasound.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26341422",
+   "pmid": "26341422",
+   "title": "Differences between Angus and Holstein cattle in the Lupinus leucophyllus induced inhibition of fetal activity.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "26029981",
+   "pmid": "26029981",
+   "title": "A Huge Fetal Sacrococcygeal Teratoma with a Vascular Disruption Sequence.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25898814",
+   "pmid": "25898814",
+   "title": "46,XY disorders of sex development and congenital diaphragmatic hernia: a case with dysmorphic facies, truncus arteriosus, bifid thymus, gut malrotation, rhizomelia, and adactyly.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25851783",
+   "pmid": "25851783",
+   "title": "The unprecedented recurrent diploid/tetraploid mosaicism of trisomy-18 (mixoploidy; 4n+18/2n+18): clinical report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25811402",
+   "pmid": "25811402",
+   "title": "Congenital anomalies in Canada 2013: a perinatal health surveillance report by the Public Health Agency of Canada's Canadian Perinatal Surveillance System.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25789980",
+   "pmid": "25789980",
+   "title": "Evaluation of the association of zoonotic Ljungan virus with perinatal deaths and fetal malformation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25775927",
+   "pmid": "25775927",
+   "title": "Mutations in PTF1A are not a common cause for human VATER/VACTERL association or neural tube defects mirroring Danforth's short tail mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25619733",
+   "pmid": "25619733",
+   "title": "Effects of homocysteine on mesenchymal cell proliferation and differentiation during chondrogenesis on limb development.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25473985",
+   "pmid": "25473985",
+   "title": "Assessing bottled water nitrate concentrations to evaluate total drinking water nitrate exposure and risk of birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25406847",
+   "pmid": "25406847",
+   "title": "Maternal residential proximity to chlorinated solvent emissions and birth defects in offspring: a case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25360669",
+   "pmid": "25360669",
+   "title": "A case-control study of maternal periconceptual and pregnancy recreational drug use and fetal malformation using hair analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25337663",
+   "pmid": "25337663",
+   "title": "Clinical and cytogenetic features of a Brazilian sample of patients with phenotype of oculo-auriculo-vertebral spectrum: a cross-sectional study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25250905",
+   "pmid": "25250905",
+   "title": "Relationship between bent long bones, bent scapulae, and wavy ribs: malformations or variations?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25168863",
+   "pmid": "25168863",
+   "title": "Prenatal findings in carpenter syndrome and a novel mutation in RAB23.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25099286",
+   "pmid": "25099286",
+   "title": "Laterality defects in the national birth defects prevention study (1998-2007): birth prevalence and descriptive epidemiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24975578",
+   "pmid": "24975578",
+   "title": "Limb-body wall defect: experience of a reference service of fetal medicine from Southern Brazil.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24723551",
+   "pmid": "24723551",
+   "title": "Epidemiology of multiple congenital anomalies in Europe: a EUROCAT population-based registry study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24623309",
+   "pmid": "24623309",
+   "title": "MicroRNA-34a is dispensable for p53 function as teratogenesis inducer.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24589823",
+   "pmid": "24589823",
+   "title": "Trends in the prevalences of congenital anomalies and age at motherhood in a Southern European region: a population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24502594",
+   "pmid": "24502594",
+   "title": "Nitric oxide and teratogenesis: an update.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24501809",
+   "pmid": "24501809",
+   "title": "[Valproic acid concentration in the blood serum of pregnant women and umbilical cord blood in relation to the condition of the newborn--case studies].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25804012",
+   "pmid": "25804012",
+   "title": "Electroconvulsive therapy during pregnancy as a possible cause of M&#xf6;bius syndrome: additional clinical observation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24365800",
+   "pmid": "24365800",
+   "title": "Influenza and congenital anomalies: a systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24218399",
+   "pmid": "24218399",
+   "title": "Molecular confirmation of nine cases of Cornelia de Lange syndrome diagnosed prenatally.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24131571",
+   "pmid": "24131571",
+   "title": "A case-control study of maternal bathing habits and risk for birth defects in offspring.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24129464",
+   "pmid": "24129464",
+   "title": "Metoclopramide in pregnancy and risk of major congenital malformations and fetal death.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24113157",
+   "pmid": "24113157",
+   "title": "TACRD and VACTERL associations in a fetus: case report and review of the literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24108522",
+   "pmid": "24108522",
+   "title": "Traffic-related air pollution and selected birth defects in the San Joaquin Valley of California.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "24055134",
+   "pmid": "24055134",
+   "title": "The utility of prenatal ultrasound as a screening&#xa0;tool for upper extremity congenital&#xa0;anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23913467",
+   "pmid": "23913467",
+   "title": "Prevalence and trends of selected congenital malformations in New York State, 1983 to 2007.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23897551",
+   "pmid": "23897551",
+   "title": "Early prenatal exposure to air pollution and its associations with birth defects in a state-wide birth cohort from North Carolina.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23871272",
+   "pmid": "23871272",
+   "title": "Maternal periconceptional occupational exposure to pesticides and selected musculoskeletal birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23771435",
+   "pmid": "23771435",
+   "title": "Prenatal nitrate intake from drinking water and selected birth defects in offspring of participants in the national birth defects prevention study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23746442",
+   "pmid": "23746442",
+   "title": "[Sensitivity of ultrasonographic diagnosis in hand malformations. About 80 cases].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23716465",
+   "pmid": "23716465",
+   "title": "Prenatal exposure to nitrosatable drugs, vitamin C, and risk of selected birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23696560",
+   "pmid": "23696560",
+   "title": "Deprenyl enhances the teratogenicity of hydroxyurea in organogenesis stage mouse embryos.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23652715",
+   "pmid": "23652715",
+   "title": "Maternal age-associated congenital anomalies among newborns: a retrospective study in Latvia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23574029",
+   "pmid": "23574029",
+   "title": "Anorectal malformations and pregnancy-related disorders: a registry-based case-control study in 17 European regions.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23554119",
+   "pmid": "23554119",
+   "title": "Preferential associated anomalies in 818 cases of microtia in South America.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23553869",
+   "pmid": "23553869",
+   "title": "Antihypertensive drugs and the risk of congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23514444",
+   "pmid": "23514444",
+   "title": "Maternal dietary intake of nitrates, nitrites and nitrosamines and selected birth defects in offspring: a case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23504928",
+   "pmid": "23504928",
+   "title": "The teratogenic effect of dofetilide during rat limb development and association with drug-induced bradycardia and hypoxia in the embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23275287",
+   "pmid": "23275287",
+   "title": "Frequency of cleft lip and palate among live births in Akbar Abadi Hospital.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23230241",
+   "pmid": "23230241",
+   "title": "Effects of low-dose heavy ions on embryonic development in mice and on melanocyte differentiation in the epidermis and hair bulb.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23207166",
+   "pmid": "23207166",
+   "title": "Birth defects after exposure to misoprostol in the first trimester of pregnancy: prospective follow-up study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23116519",
+   "pmid": "23116519",
+   "title": "Maternal hypertension induced by NO blockade does not program adult metabolic diseases in growth-restricted rat fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23042728",
+   "pmid": "23042728",
+   "title": "Exposure to valproic acid inhibits chondrogenesis and osteogenesis in mid-organogenesis mouse limbs.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "23007043",
+   "pmid": "23007043",
+   "title": "Exposure during pregnancy to glycol ethers and chlorinated solvents and the risk of congenital malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22908318",
+   "pmid": "22908318",
+   "title": "The penumbra of thalidomide, the litigation culture and the licensing of pharmaceuticals.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22903972",
+   "pmid": "22903972",
+   "title": "Nitrosatable drug exposure during the first trimester of pregnancy and selected congenital malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22816558",
+   "pmid": "22816558",
+   "title": "Sirenomelia: case reports and current concepts of pathogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22753220",
+   "pmid": "22753220",
+   "title": "Pregnancy outcome following exposure to angiotensin-converting enzyme inhibitors or angiotensin receptor antagonists: a systematic review.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22653710",
+   "pmid": "22653710",
+   "title": "Body stalk anomaly in Denmark during 20 years (1970-1989).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "25102004",
+   "pmid": "25102004",
+   "title": "Diverse ability of maternal immune stimulation to reduce birth defects in mice exposed to teratogens: a review.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22348786",
+   "pmid": "22348786",
+   "title": "Prenatal diagnosis of a fetus with anencephaly and thumb agenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22250027",
+   "pmid": "22250027",
+   "title": "Maternal asthma medication use and the risk of selected birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22236723",
+   "pmid": "22236723",
+   "title": "Correlation between 3D ultrasound appearance and postnatal findings in bilateral malformations of the fetal hands.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22229095",
+   "pmid": "22229095",
+   "title": "Folic acid and birth defects: a case study (Iran).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22124010",
+   "pmid": "22124010",
+   "title": "First-trimester diagnosis of body stalk anomaly using 2- and 3-dimensional sonography.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "22113624",
+   "pmid": "22113624",
+   "title": "Expression profile of NSDHL in human peripheral tissues.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21868484",
+   "pmid": "21868484",
+   "title": "Valproic acid increases formation of reactive oxygen species and induces apoptosis in postimplantation embryos: a role for oxidative stress in valproic acid-induced neural tube defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21825994",
+   "pmid": "21825994",
+   "title": "What can we learn from the thalidomide experience: an ophthalmologic perspective.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21819430",
+   "pmid": "21819430",
+   "title": "Maternal injuries during the periconceptional period and the risk of birth defects, National Birth Defects Prevention Study, 1997-2005.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21818843",
+   "pmid": "21818843",
+   "title": "Licorice extract increases cyclophosphamide teratogenicity by upregulating the expression of cytochrome P-450 2B mRNA.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21807937",
+   "pmid": "21807937",
+   "title": "Genetic deletion of Cyp26b1 negatively impacts limb skeletogenesis by inhibiting chondrogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21747128",
+   "pmid": "21747128",
+   "title": "Maternal smoking in pregnancy and birth defects: a systematic review based on 173 687 malformed cases and 11.7 million controls.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21689099",
+   "pmid": "21689099",
+   "title": "Analysis of cervical ribs in a series of human fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21674648",
+   "pmid": "21674648",
+   "title": "More folic acid, the five questions: why, who, when, how much, and how.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21660388",
+   "pmid": "21660388",
+   "title": "[Misoprostol teratogenicity: a prospective study in Argentina].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21462298",
+   "pmid": "21462298",
+   "title": "Fetal oromandibular limb hypogenesis syndrome following uterine curettage in early pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21381882",
+   "pmid": "21381882",
+   "title": "Male gender significantly increases risk of oxidative stress related congenital anomalies in the non-diabetic population.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21327892",
+   "pmid": "21327892",
+   "title": "Congenital cardiac defects: a possible association of aminopterin syndrome and in utero methotrexate exposure?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21319278",
+   "pmid": "21319278",
+   "title": "Maternal self-reported genital tract infections during pregnancy and the risk of selected birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21319175",
+   "pmid": "21319175",
+   "title": "Malformation spectrum induced by ketoconazole after single administration to pregnant rats during the critical period - comparison with vitamin A-induced malformation spectrum.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21291342",
+   "pmid": "21291342",
+   "title": "Severe fetal valproate syndrome: combination of complex cardiac defect, multicystic dysplastic kidney, and trigonocephaly.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21180376",
+   "pmid": "21180376",
+   "title": "High-dose methotrexate during pregnancy: risk of malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21079337",
+   "pmid": "21079337",
+   "title": "Fetal varicella syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "21050792",
+   "pmid": "21050792",
+   "title": "[Fetal dysmorphology: a practical approach in utero].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20890937",
+   "pmid": "20890937",
+   "title": "Ljungan virus: a commentary on its association with fetal and infant morbidity and mortality in animals and humans.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20889679",
+   "pmid": "20889679",
+   "title": "Teratogen-induced oxidative stress targets glyceraldehyde-3-phosphate dehydrogenase in the organogenesis stage mouse embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20824455",
+   "pmid": "20824455",
+   "title": "The prevalence of congenital anomalies in Europe.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20815034",
+   "pmid": "20815034",
+   "title": "Examining the evidence for vascular pathogenesis of selected birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20734661",
+   "pmid": "20734661",
+   "title": "[Single umbilical artery (SUA)].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20704476",
+   "pmid": "20704476",
+   "title": "A nonsense porcn mutation in severe focal dermal hypoplasia with natal teeth.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20672348",
+   "pmid": "20672348",
+   "title": "Reduction in cadmium-induced toxicity and c-Jun N-terminal kinase activation by glutathione in cultured mouse embryonic cells.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20633616",
+   "pmid": "20633616",
+   "title": "Are azole fungicides a teratogenic risk for human conceptus?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20578136",
+   "pmid": "20578136",
+   "title": "Holoprosencephaly and genitourinary anomalies in fetal methotrexate syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20576515",
+   "pmid": "20576515",
+   "title": "Comparing three novel endpoints for developmental osteotoxicity in the embryonic stem cell test.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20544697",
+   "pmid": "20544697",
+   "title": "The Hemimelic extra toes mouse mutant: Historical perspective on unraveling mechanisms of dysmorphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20196403",
+   "pmid": "20196403",
+   "title": "Fetal sodium valproate exposure causes Baller-Gerold syndrome phenotype: both phenotypes in the same family.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20160433",
+   "pmid": "20160433",
+   "title": "First-trimester prenatal diagnosis of Okihiro syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20100117",
+   "pmid": "20100117",
+   "title": "A possible association between acute infectious diarrhoea in pregnant women and congenital abnormalities in their offspring--a population-based case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20087193",
+   "pmid": "20087193",
+   "title": "Use of oral contraceptives in pregnancy and major structural birth defects in offspring.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20063307",
+   "pmid": "20063307",
+   "title": "Congenital malformations in infants born after in vitro fertilization in Sweden.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "20025093",
+   "pmid": "20025093",
+   "title": "Valproic acid: long-term effects on children exposed in utero.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19952004",
+   "pmid": "19952004",
+   "title": "Protective effect of periconceptional folic acid supplements on the risk of congenital heart defects: a registry-based case-control study in the northern Netherlands.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19938094",
+   "pmid": "19938094",
+   "title": "Overlap of Moebius and oromandibular limb hypogenesis syndrome with gastroschisis and pulmonary hypoplasia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19921653",
+   "pmid": "19921653",
+   "title": "Cerebral and cerebellar white matter abnormalities with magnetic resonance imaging in a child with Feingold syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19884587",
+   "pmid": "19884587",
+   "title": "Antibacterial medication use during pregnancy and risk of birth defects: National Birth Defects Prevention Study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19851987",
+   "pmid": "19851987",
+   "title": "Preventive effect of piperonyl butoxide on cyclophosphamide-induced teratogenesis in rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19645049",
+   "pmid": "19645049",
+   "title": "The effect of thalidomide in chicken embryos.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19561095",
+   "pmid": "19561095",
+   "title": "TLR9 activation coupled to IL-10 deficiency induces adverse pregnancy outcomes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19492401",
+   "pmid": "19492401",
+   "title": "The impact of human superoxide dismutase 1 expression in a mouse model on the embryotoxicity of hydroxyurea.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19490988",
+   "pmid": "19490988",
+   "title": "Valproic acid in pregnancy: how much are we endangering the embryo and fetus?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19350653",
+   "pmid": "19350653",
+   "title": "Are birth defects among Hispanics related to maternal nativity or number of years lived in the United States?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19281573",
+   "pmid": "19281573",
+   "title": "Association of maternal pre-pregnancy weight with birth defects: evidence from a case-control study in Western Australia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19245674",
+   "pmid": "19245674",
+   "title": "Fluctuating asymmetry does not consistently reflect severe developmental disorders in human fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19238877",
+   "pmid": "19238877",
+   "title": "[Folic acid and congenital malformation: scientific evidence and public health strategies].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19218883",
+   "pmid": "19218883",
+   "title": "Caudal regression and tracheoesophageal malformation induced by adriamycin: a novel chick model of VATER association.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19218861",
+   "pmid": "19218861",
+   "title": "Chorionic villus sampling and hemangiomas.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19213033",
+   "pmid": "19213033",
+   "title": "Molecular breakpoint mapping of 6q11-q14 interstitial deletions in seven patients.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19211471",
+   "pmid": "19211471",
+   "title": "Maternal overweight and obesity and the risk of congenital anomalies: a systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19103281",
+   "pmid": "19103281",
+   "title": "Green tea extract increases cyclophosphamide-induced teratogenesis by modulating the expression of cytochrome P-450 mRNA.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "19022413",
+   "pmid": "19022413",
+   "title": "Twelve new patients with 13q deletion syndrome: genotype-phenotype analyses in progress.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18825599",
+   "pmid": "18825599",
+   "title": "Brain and cerebellar hemidysplasia in a case with ipsilateral body dysplasia and suspicion of CHILD syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18675455",
+   "pmid": "18675455",
+   "title": "Placental oxidative stress alters expression of murine osteogenic genes and impairs fetal skeletal formation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18671279",
+   "pmid": "18671279",
+   "title": "Tetramethylcyclopropyl analogue of the leading antiepileptic drug, valproic acid: evaluation of the teratogenic effects of its amide derivatives in NMRI mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18655099",
+   "pmid": "18655099",
+   "title": "Gastroschisis: clinical presentation and associations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18640262",
+   "pmid": "18640262",
+   "title": "Prenatal exposure to HMG-CoA reductase inhibitors: effects on fetal and neonatal outcomes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18637569",
+   "pmid": "18637569",
+   "title": "[Diabetes, pregnancy and birth defects].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18514444",
+   "pmid": "18514444",
+   "title": "Outcomes of pregnancies following a birth with major birth defects: a population based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18460590",
+   "pmid": "18460590",
+   "title": "M&#xf6;bius syndrome in a neonate after mifepristone and misoprostol elective abortion failure.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18367374",
+   "pmid": "18367374",
+   "title": "Cadmium: toxic effects on the reproductive system and the embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18238994",
+   "pmid": "18238994",
+   "title": "Severe facial clefts in acrofacial dysostosis: a consequence of prenatal exposure to mycophenolate mofetil?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18235933",
+   "pmid": "18235933",
+   "title": "Teratogenic effect of retinoic acid in swiss mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18203163",
+   "pmid": "18203163",
+   "title": "Yunis-Varon syndrome: further delineation of the phenotype.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18186125",
+   "pmid": "18186125",
+   "title": "Non-VACTERL-type anomalies are frequent in patients with esophageal atresia/tracheo-esophageal fistula and full or partial VACTERL association.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18181216",
+   "pmid": "18181216",
+   "title": "VACTERL association and maternal diabetes: a possible causal relationship?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18019375",
+   "pmid": "18019375",
+   "title": "VACTERL-H associated with central hypothyroidism: a case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17963271",
+   "pmid": "17963271",
+   "title": "The effect of hypoxia in development.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17922056",
+   "pmid": "17922056",
+   "title": "Unique occurrence of Brachmann-de Lange syndrome in a fetus whose mother presented with a diffuse large B-cell lymphoma.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17886024",
+   "pmid": "17886024",
+   "title": "Prenatal ultrasonographical features of limb body wall complex: a review of etiopathogenesis and a new classification.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17679655",
+   "pmid": "17679655",
+   "title": "Prepregnancy obesity as a risk factor for structural birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17604599",
+   "pmid": "17604599",
+   "title": "Teratogenicity study of the dihydroorotate-dehydrogenase inhibitor and protein tyrosine kinase inhibitor Leflunomide in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17431896",
+   "pmid": "17431896",
+   "title": "On the spectrum of limb-body wall complex, exstrophy of the cloaca, and urorectal septum malformation sequence.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17406737",
+   "pmid": "17406737",
+   "title": "[Effects of folic acid fortification in the rates of malformations at birth in Chile].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17315246",
+   "pmid": "17315246",
+   "title": "In utero-initiated cancer: the role of reactive oxygen species.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17237799",
+   "pmid": "17237799",
+   "title": "Fetal alcohol exposure impairs Hedgehog cholesterol modification and signaling.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17221944",
+   "pmid": "17221944",
+   "title": "OEIS complex: prenatal ultrasound and autopsy findings.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17183587",
+   "pmid": "17183587",
+   "title": "Patterns of severe abdominal wall defects: insights into pathogenesis, delineation, and nomenclature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17164415",
+   "pmid": "17164415",
+   "title": "Tbx4 is not required for hindlimb identity or post-bud hindlimb outgrowth.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17151389",
+   "pmid": "17151389",
+   "title": "Maternal occupational exposure and risk of specific birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "17022907",
+   "pmid": "17022907",
+   "title": "Prenatal multivitamin supplementation and rates of congenital anomalies: a meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16957480",
+   "pmid": "16957480",
+   "title": "Handless, footless fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16956039",
+   "pmid": "16956039",
+   "title": "[Birth defects' occurrence in offspring of mothers taking 1st trimester medication in the Czech Republic in 1996-2004].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16902051",
+   "pmid": "16902051",
+   "title": "Depletion of glutathione induces 4-hydroxynonenal protein adducts and hydroxyurea teratogenicity in the organogenesis stage mouse embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16888707",
+   "pmid": "16888707",
+   "title": "Echogenic foci in the dilated fetal colon may be associated with the presence of a rectourinary fistula.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16800203",
+   "pmid": "16800203",
+   "title": "Folate intake and the primary prevention of non-neural birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16750609",
+   "pmid": "16750609",
+   "title": "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16548110",
+   "pmid": "16548110",
+   "title": "Statins: beware during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16496130",
+   "pmid": "16496130",
+   "title": "Teratogenic effects of nitroimidazopyridazine on the CNS in fetal Wistar (WU) rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16450209",
+   "pmid": "16450209",
+   "title": "Population-based case-control study of the common cold during pregnancy and congenital abnormalities.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16397886",
+   "pmid": "16397886",
+   "title": "Role of retinoic acid receptors alpha1 and gamma in the response of murine limbs to retinol in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16322074",
+   "pmid": "16322074",
+   "title": "Retinoid receptor antagonists alter the pattern of apoptosis in organogenesis stage mouse limbs.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16240378",
+   "pmid": "16240378",
+   "title": "Changes in the birth prevalence of selected birth defects after grain fortification with folic acid in the United States: findings from a multi-state population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16231329",
+   "pmid": "16231329",
+   "title": "Vascular-type disruptive defects in fetuses with homozygous alpha-thalassemia: report of two cases and review of the literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16206282",
+   "pmid": "16206282",
+   "title": "Nongenital malformations following exposure to progestational drugs: the last chapter of an erroneous allegation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16143434",
+   "pmid": "16143434",
+   "title": "Maternal treatment with a high dose of CpG ODN during gestation alters fetal craniofacial and distal limb development in C57BL/6 mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16104671",
+   "pmid": "16104671",
+   "title": "Invasive prenatal diagnostic procedures 2005.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "16096996",
+   "pmid": "16096996",
+   "title": "Acrofacial dysostosis (AFD) with preaxial limb hypoplasia (Nager AFD) and club foot diagnosed in a fetus from 1812 in the anatomical collections at the University of Halle, Germany.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15910618",
+   "pmid": "15910618",
+   "title": "Risk of specific congenital abnormalities in offspring of women with diabetes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15794725",
+   "pmid": "15794725",
+   "title": "Teratogenicity of sodium valproate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15789214",
+   "pmid": "15789214",
+   "title": "Fetal exposure to sodium valproate associated with Baller-Gerold syndrome: case report and review of the literature.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15777434",
+   "pmid": "15777434",
+   "title": "Infant morbidity following amniocentesis and chorionic villus sampling for prenatal karyotyping.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15766297",
+   "pmid": "15766297",
+   "title": "Safety of haloperidol and penfluridol in pregnancy: a multicenter, prospective, controlled study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15748024",
+   "pmid": "15748024",
+   "title": "[Incidence of birth defects in children of mothers using medications in the 1st trimester of pregnancy in the Czech Republic 1996-2002].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15666453",
+   "pmid": "15666453",
+   "title": "Smoking and alcohol drinking during pregnancy. The reliability of retrospective maternal self-reported information.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15619321",
+   "pmid": "15619321",
+   "title": "Prenatal diagnosis of severe structural congenital malformations in Europe.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15546153",
+   "pmid": "15546153",
+   "title": "Mechanistic and epidemiologic considerations in the evaluation of adverse birth outcomes following gestational exposure to statins.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15467316",
+   "pmid": "15467316",
+   "title": "Clinical and anatomic features of acardiac twins.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15368553",
+   "pmid": "15368553",
+   "title": "Birth defects in Arkansas: is folic acid fortification making a difference?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15320741",
+   "pmid": "15320741",
+   "title": "Teratological consequences of nitric oxide synthesis inhibition.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15242796",
+   "pmid": "15242796",
+   "title": "En1 and Wnt7a interact with Dkk1 during limb development in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15162307",
+   "pmid": "15162307",
+   "title": "Embryology of the upper limb: the molecular orchestration of morphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15030763",
+   "pmid": "15030763",
+   "title": "Regulation of retinoic acid distribution is required for proximodistal patterning and outgrowth of the developing mouse limb.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "15029090",
+   "pmid": "15029090",
+   "title": "[In utero exposure to benzodiazepine. Is there a risk for anal atresia with lorazepam?].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14764961",
+   "pmid": "14764961",
+   "title": "Prenatal diagnosis of a 'minor' form of Brachmann-de Lange syndrome by three-dimensional sonography and three-dimensional computed tomography.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14764957",
+   "pmid": "14764957",
+   "title": "Characteristic findings for diagnosis of baby complicated with both the VACTERL association and duodenal atresia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14755429",
+   "pmid": "14755429",
+   "title": "Vitamin supplements and the risk for congenital anomalies other than neural tube defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14745992",
+   "pmid": "14745992",
+   "title": "Embryo/fetal development studies with hydroxypropyl methylcellulose acetate succinate (HPMCAS) in rats and rabbits.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14745979",
+   "pmid": "14745979",
+   "title": "Mercury, cadmium, and arsenite enhance heat shock protein synthesis in chick embryos prior to embryotoxicity.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14745938",
+   "pmid": "14745938",
+   "title": "Caspase-3 mediates retinoid-induced apoptosis in the organogenesis-stage mouse limb.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14745923",
+   "pmid": "14745923",
+   "title": "M&#xf6;bius sequence in children exposed in utero to misoprostol: neuropathological study of three cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14699995",
+   "pmid": "14699995",
+   "title": "Prevalence of birth defects and rubella infection in pregnant women in Gansu, west China. A survey.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14663831",
+   "pmid": "14663831",
+   "title": "Transcervical fetoscopic diagnosis of structural defects in four first-trimester monochorionic twin intrauterine deaths.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14634970",
+   "pmid": "14634970",
+   "title": "Trends in elective terminations of pregnancy between 1989 and 2000 in a French county (the Is&#xe8;re).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14530552",
+   "pmid": "14530552",
+   "title": "Limb body wall complex.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "14499779",
+   "pmid": "14499779",
+   "title": "Risk of congenital abnormalities in children born to women with ulcerative colitis: a population-based, case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12970634",
+   "pmid": "12970634",
+   "title": "Antenatal manifestations of mitochondrial respiratory chain deficiency.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12933520",
+   "pmid": "12933520",
+   "title": "A meta-analysis of case-control and cohort studies with interval-censored exposure data: application to chorionic villus sampling.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12899117",
+   "pmid": "12899117",
+   "title": "Validation studies of drug exposures in pregnant women.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12895307",
+   "pmid": "12895307",
+   "title": "[Prenatal ultrasonographic evaluation of fetal limbs anatomy and fetal limbs malformations using a systematic continuous sequence approach].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12808670",
+   "pmid": "12808670",
+   "title": "Prenatal diagnosis of dysmorphic syndromes by routine fetal ultrasound examination across Europe.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12797522",
+   "pmid": "12797522",
+   "title": "TNF-alpha protects embryos exposed to developmental toxicants.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12638075",
+   "pmid": "12638075",
+   "title": "Congenital absence of the 5th digital ray and its proximal segmental structures.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12631536",
+   "pmid": "12631536",
+   "title": "Maternal occupational chemical exposures and biotransformation genotypes as risk factors for selected congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12584587",
+   "pmid": "12584587",
+   "title": "Embryotoxicity of cisplatin and a cisplatin-procaine complex (DPR) studied in chick embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12486762",
+   "pmid": "12486762",
+   "title": "Role of caspases in murine limb bud cell death induced by 4-hydroperoxycyclophosphamide, an activated analog of cyclophosphamide.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12415408",
+   "pmid": "12415408",
+   "title": "Sporadic aplasia cutis congenita.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12410002",
+   "pmid": "12410002",
+   "title": "Maternal periconceptional vitamins: interactions with selected factors and congenital anomalies?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12386558",
+   "pmid": "12386558",
+   "title": "Ultrafast MR imaging of the foetus: a study of 25 non-central nervous system anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12163692",
+   "pmid": "12163692",
+   "title": "Folic acid supplementation and prevention of birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12124696",
+   "pmid": "12124696",
+   "title": "Long-term follow-up of infants after transcervical chorionic villus sampling and after amniocentesis to compare congenital abnormalities and health status.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12115777",
+   "pmid": "12115777",
+   "title": "Further evidence for the role of free radicals in the limb teratogenicity of L-NAME.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12115775",
+   "pmid": "12115775",
+   "title": "Exposure-disease continuum for 2-chloro-2'-deoxyadenosine (2-CdA), a prototype teratogen: induction of lumbar hernia in the rat and species comparison for the teratogenic responses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12094106",
+   "pmid": "12094106",
+   "title": "Maternal fever, multivitamin use, and selected birth defects: evidence of interaction?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "12066086",
+   "pmid": "12066086",
+   "title": "Procedural risks versus theology: chorionic villus sampling for Orthodox Jews at less than 8 weeks' gestation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11976215",
+   "pmid": "11976215",
+   "title": "Involvement of mitochondria and other free radical sources in normal and abnormal fetal development.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11942534",
+   "pmid": "11942534",
+   "title": "Cholesterol and development: the RSH (\"Smith-Lemli-Opitz\") syndrome and related conditions.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11841898",
+   "pmid": "11841898",
+   "title": "Effect of maternal methionine pre-treatment on alcohol-induced exencephaly and axial skeletal dysmorphogenesis in mouse fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11811935",
+   "pmid": "11811935",
+   "title": "Maternal immune stimulation in mice decreases fetal malformations caused by teratogens.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11715779",
+   "pmid": "11715779",
+   "title": "[Thalidomide--a dreaded drug with new indications].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11703685",
+   "pmid": "11703685",
+   "title": "Stillbirth and neonatal mortality due to congenital anomalies: temporal trends and variation by small area deprivation scores in England and Wales, 1986-96.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11604181",
+   "pmid": "11604181",
+   "title": "Chromosomal defects and associated malformations in fetal cleft lip with or without cleft palate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11550914",
+   "pmid": "11550914",
+   "title": "Synthesis of evidence from epidemiological studies with interval-censored exposure due to grouping.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11527200",
+   "pmid": "11527200",
+   "title": "Limb-body wall complex: a compound anomaly pattern in body-wall defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11471176",
+   "pmid": "11471176",
+   "title": "Ultrasonographic and clinical appearance of a 22-week-old fetus with Brachmann-de Lange syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11460977",
+   "pmid": "11460977",
+   "title": "Limb-body wall complex, report of 2 cases with their quintessence in prenatal diagnosis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11281494",
+   "pmid": "11281494",
+   "title": "Prenatal diagnosis of VACTERL association: a case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11223858",
+   "pmid": "11223858",
+   "title": "High maternal fever during gestation and severe congenital limb disruptions.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11186881",
+   "pmid": "11186881",
+   "title": "Prenatal exposure to misoprostol and vascular disruption defects: a case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11186176",
+   "pmid": "11186176",
+   "title": "Limb-body wall complex: 4 new cases illustrating the importance of examining placenta and umbilical cord.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11141350",
+   "pmid": "11141350",
+   "title": "Synergistic teratogenic effects induced by retinoids in mice by coadministration of a RARalpha- or RARgamma-selective agonist with a RXR-selective agonist.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11137376",
+   "pmid": "11137376",
+   "title": "Dose-response of retinoic acid induced stress protein synthesis and teratogenesis in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11127844",
+   "pmid": "11127844",
+   "title": "Primary prevention of neural-tube defects and some other major congenital abnormalities: recommendations for the appropriate use of folic acid during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11092363",
+   "pmid": "11092363",
+   "title": "Patterns of radial dysmorphology with the VACTERL association in the adriamycin-exposed prenatal rat.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11077457",
+   "pmid": "11077457",
+   "title": "Teratogenic effects of antiepileptic drugs: use of an International Database on Malformations and Drug Exposure (MADRE).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11008338",
+   "pmid": "11008338",
+   "title": "[Fetal complications after failed pregnancy termination in the first trimester].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "11006356",
+   "pmid": "11006356",
+   "title": "Stage- and species-specific developmental toxicity of all-trans retinoic acid in four native North American ranids and Xenopus laevis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10982690",
+   "pmid": "10982690",
+   "title": "Development of the bones and synovial joints in the rat model of the VATER association.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10868991",
+   "pmid": "10868991",
+   "title": "The principles of management of congenital anomalies of the upper limb.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10839324",
+   "pmid": "10839324",
+   "title": "Association of sympathomimetic drugs with malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10739525",
+   "pmid": "10739525",
+   "title": "Routine second-trimester ultrasonography in the United States: a cost-benefit analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10613403",
+   "pmid": "10613403",
+   "title": "Differential alteration by thalidomide of the glutathione content of rat vs. rabbit conceptuses in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10610030",
+   "pmid": "10610030",
+   "title": "The role of RXR-alpha in retinoic acid-induced cleft palate as assessed with the RXR-alpha knockout mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10591556",
+   "pmid": "10591556",
+   "title": "Skeletal malformations associated with congenital diaphragmatic hernia: experimental and human studies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10584631",
+   "pmid": "10584631",
+   "title": "Brachmann-de Lange syndrome: a cause of early symmetric fetal growth delay.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10551793",
+   "pmid": "10551793",
+   "title": "First trimester prenatal diagnosis: chorionic villus sampling.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10549233",
+   "pmid": "10549233",
+   "title": "[Pharmacotherapy in pregnancy].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10533025",
+   "pmid": "10533025",
+   "title": "Caudal dysgenesis in staged human embryos: Carnegie stages 16-23.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10512421",
+   "pmid": "10512421",
+   "title": "Multivitamin supplementation and risk of birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10482873",
+   "pmid": "10482873",
+   "title": "Maternal corticosteroid use and risk of selected congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10482872",
+   "pmid": "10482872",
+   "title": "Apparent cyclophosphamide (cytoxan) embryopathy: a distinct phenotype?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10471900",
+   "pmid": "10471900",
+   "title": "Role of free radicals in the limb teratogenicity of L-NAME (N(G)-nitro-(L)-arginine methyl ester): a new mechanistic model of vascular disruption.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10471897",
+   "pmid": "10471897",
+   "title": "Cerebrocortical microdysgenesis is enhanced in c57BL/6J mice exposed in utero to acetazolamide.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10464598",
+   "pmid": "10464598",
+   "title": "The role of physician preferences in the choice of amniocentesis or chorionic villus sampling for prenatal genetic testing.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10441771",
+   "pmid": "10441771",
+   "title": "Adverse effects of chorionic villus sampling: a meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10379846",
+   "pmid": "10379846",
+   "title": "Combined prenatal toxicity of 6-mercaptopurine riboside and hydroxyurea in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10379842",
+   "pmid": "10379842",
+   "title": "A possible role for granulocyte macrophage-colony stimulating factor in modulating teratogen-induced effects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10179831",
+   "pmid": "10179831",
+   "title": "Formed by thalidomide: mass torts as a false cure for toxic exposure.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "10076317",
+   "pmid": "10076317",
+   "title": "Disclosure of disability: exploring the perspective of parents.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9888281",
+   "pmid": "9888281",
+   "title": "Maternal pesticide exposure from multiple sources and selected congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9724335",
+   "pmid": "9724335",
+   "title": "Association of single umbilical artery with congenital malformations of vascular etiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9785701",
+   "pmid": "9785701",
+   "title": "Valproic acid use in psychiatry: issues in treating women of reproductive age.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9771610",
+   "pmid": "9771610",
+   "title": "Three-dimensional ultrasonography of the fetal distal lower extremity: normal and abnormal.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9714441",
+   "pmid": "9714441",
+   "title": "Unilateral terminal aphalangia in father and daughter--exogenous or genetic cause?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9694631",
+   "pmid": "9694631",
+   "title": "The use of a retinoid receptor antagonist in a new model to study vitamin A-dependent developmental events.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9622312",
+   "pmid": "9622312",
+   "title": "Periconceptional folic acid containing multivitamin supplementation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9620717",
+   "pmid": "9620717",
+   "title": "Congenital abnormalities in Brazilian children associated with misoprostol misuse in first trimester of pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9587965",
+   "pmid": "9587965",
+   "title": "Pharmacologically induced embryonic dysrhythmia and episodes of hypoxia followed by reoxygenation: a common teratogenic mechanism for antiepileptic drugs?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9572377",
+   "pmid": "9572377",
+   "title": "Prenatal diagnosis of sirenomelia with bilateral hydrocephalus: report of a previously undocumented form of VACTERL-H association.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9562681",
+   "pmid": "9562681",
+   "title": "Comparison of lectin binding patterns in malformed and normal human embryos and fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9562677",
+   "pmid": "9562677",
+   "title": "Associated malformations in infants and fetuses with upper or lower neural tube defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9535508",
+   "pmid": "9535508",
+   "title": "Retinoic acid-induced caudal regression syndrome in the mouse fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9523845",
+   "pmid": "9523845",
+   "title": "Abnormal cholesterol biosynthesis as in Smith-Lemli-Opitz syndrome disrupts normal skeletal development in the rat.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9430211",
+   "pmid": "9430211",
+   "title": "Vascular disruption birth defects and history of prenatal cocaine exposure: a case control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9394169",
+   "pmid": "9394169",
+   "title": "The Cantrell-sequence: a result of maternal exposure to aminopropionitriles?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9321883",
+   "pmid": "9321883",
+   "title": "Effects of NO synthase inhibitors, arginine-deficient diet, and amiloride in pregnant rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9311580",
+   "pmid": "9311580",
+   "title": "The teratogenicity of N(omega)-nitro-L-ariginine methyl ester (L-NAME), a nitric oxide synthase inhibitor, in rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9270956",
+   "pmid": "9270956",
+   "title": "Birth defects among offspring of Norwegian farmers, 1967-1991.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9215777",
+   "pmid": "9215777",
+   "title": "Umbilical cord agenesis in limb body wall defect.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9208163",
+   "pmid": "9208163",
+   "title": "Using the Hungarian Birth Defects Registry for surveillance, research and intervention.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9168737",
+   "pmid": "9168737",
+   "title": "The effect of oligohydramnios on detection of fetal anomalies with sonography.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9296731",
+   "pmid": "9296731",
+   "title": "[Periconceptional multivitamin administration result in reduction of congenital abnormalities: adequate evidence for formulating national recommendations for Germany?].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9181670",
+   "pmid": "9181670",
+   "title": "Teratogenic effects of vigabatrin in TO mouse fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9145568",
+   "pmid": "9145568",
+   "title": "Use of biometric embryonic growth parameters as indicator of exposure to a teratogen.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9021831",
+   "pmid": "9021831",
+   "title": "Chorionic villus sampling and end-artery disruption of the fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9021830",
+   "pmid": "9021830",
+   "title": "Maternoembryonic transfusion and congenital malformations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8994252",
+   "pmid": "8994252",
+   "title": "Prenatal sonographic diagnosis of congenital varicella infection--a case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "9122888",
+   "pmid": "9122888",
+   "title": "Relation of TGF-beta 2 to inhibition of limb bud chondrogenesis by retinoid in rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8933331",
+   "pmid": "8933331",
+   "title": "The epidemiology of anotia and microtia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8874116",
+   "pmid": "8874116",
+   "title": "Two cases of maternal antenatal splenic rupture and hypotension associated with Moebius syndrome and cerebral palsy in offspring. Further evidence for a utero placental vascular aetiology for the Moebius syndrome and some cases of cerebral palsy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8737648",
+   "pmid": "8737648",
+   "title": "Non-mosaic tetrasomy 9p in a liveborn infant with multiple congenital anomalies: case report and comparison with trisomy 9p.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8807757",
+   "pmid": "8807757",
+   "title": "Transcervical chorionic villus sampling beyond 12 weeks of gestation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8864168",
+   "pmid": "8864168",
+   "title": "Parental cigarette smoking and risk for congenital anomalies of the heart, neural tube, or limb.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8857694",
+   "pmid": "8857694",
+   "title": "Teratogenic potential of cocaine.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8801299",
+   "pmid": "8801299",
+   "title": "A new rodent experimental model of esophageal atresia and tracheoesophageal fistula: preliminary report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8882398",
+   "pmid": "8882398",
+   "title": "VACTERL with hydrocephalus and branchial arch defects: prenatal, clinical, and autopsy findings in two brothers.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8761883",
+   "pmid": "8761883",
+   "title": "Pattern of retinoid-induced teratogenic effects: possible relationship with relative selectivity for nuclear retinoid receptors RAR alpha, RAR beta, and RAR gamma.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8633647",
+   "pmid": "8633647",
+   "title": "Chorionic villus sampling safety. Report of World Health Organization/EURO meeting in association with the Seventh International Conference on Early Prenatal Diagnosis of Genetic Diseases, Tel-Aviv, Israel, May 21, 1994.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8630836",
+   "pmid": "8630836",
+   "title": "Periodic health examination, 1996 update: 1. Prenatal screening for and diagnosis of Down syndrome. Canadian Task Force on the Periodic Health Examination.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8896721",
+   "pmid": "8896721",
+   "title": "Stereoselective distribution of the teratogenic thalidomide analogue EM12 in the early embryo of marmoset monkey, Wistar rat and NMRI mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7572511",
+   "pmid": "7572511",
+   "title": "Abnormalities of the hands and feet in the fetus: sonographic findings.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8559750",
+   "pmid": "8559750",
+   "title": "Pregnancy outcome after transcervical CVS with a flexible biopsy forceps: evaluation of risk factors.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8559748",
+   "pmid": "8559748",
+   "title": "Evaluation of routine prenatal diagnosis by a registry of congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8552002",
+   "pmid": "8552002",
+   "title": "Comparative effects of prenatal cocaine, alcohol, and undernutrition on maternal/fetal toxicity and fetal body composition in the Sprague-Dawley rat with observations on strain-dependent differences.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8520956",
+   "pmid": "8520956",
+   "title": "Maternal pesticide exposure and pregnancy outcome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7643245",
+   "pmid": "7643245",
+   "title": "Biotin influences palatal development of mouse embryos in organ culture.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7577855",
+   "pmid": "7577855",
+   "title": "Neural tube defects: an experimental model in the foetal rat.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7565548",
+   "pmid": "7565548",
+   "title": "Chorionic villus sampling and amniocentesis: recommendations for prenatal counseling. Centers for Disease Control and Prevention.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8533110",
+   "pmid": "8533110",
+   "title": "Induction of apoptosis and cathepsin D in limbs exposed in vitro to an activated analog of cyclophosphamide.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7650660",
+   "pmid": "7650660",
+   "title": "Transabdominal chorionic villus sampling at 9.5-12 weeks' gestation. Placental vascular resistance and fetal cardiovascular responses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7787128",
+   "pmid": "7787128",
+   "title": "Nutritional supplementation and prevention of congenital abnormalities.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7787118",
+   "pmid": "7787118",
+   "title": "Chorionic villus sampling.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7570368",
+   "pmid": "7570368",
+   "title": "Placental transfer and developmental effects of 9-cis retinoic acid in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7625437",
+   "pmid": "7625437",
+   "title": "Acrofacial dysostosis of unknown type: nosology of the acrofacial dysostoses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7617545",
+   "pmid": "7617545",
+   "title": "Distribution of all-trans-, 13-cis- and 9-cis-retinoic acid to whole rat embryos and maternal serum following oral administration of a teratogenic dose of all-trans-retinoic acid.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7723178",
+   "pmid": "7723178",
+   "title": "[Handicaps in twins and triplets].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7597654",
+   "pmid": "7597654",
+   "title": "Increased risk for transverse digital deficiency after chorionic villus sampling: results of the United States Multistate Case-Control Study, 1988-1992.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7497158",
+   "pmid": "7497158",
+   "title": "Impact of prenatal screening and diagnosis on the epidemiology of structural congenital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7899278",
+   "pmid": "7899278",
+   "title": "Does chorionic villus sampling compromise fetal umbilical blood flow?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7891381",
+   "pmid": "7891381",
+   "title": "Two fetuses with Fryns syndrome without diaphragmatic defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7934498",
+   "pmid": "7934498",
+   "title": "Population-based study of long-term outcomes after amniocentesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7837131",
+   "pmid": "7837131",
+   "title": "Safety of surgical intervention during the second trimester of pregnancy. A case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8021993",
+   "pmid": "8021993",
+   "title": "Cloacal and urogenital abnormalities induced by etretinate in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7974253",
+   "pmid": "7974253",
+   "title": "Teratogenesis by retinoic acid analogs positively correlates with elevation of retinoic acid receptor-beta 2 mRNA levels in treated embryos.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7949760",
+   "pmid": "7949760",
+   "title": "Cocaine does not influence the teratogenic effects of acute ethanol in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8070261",
+   "pmid": "8070261",
+   "title": "Impact of recommendations against periconceptional contraceptive pill use.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8073363",
+   "pmid": "8073363",
+   "title": "D-mannitol, a specific hydroxyl free radical scavenger, reduces the developmental toxicity of hydroxyurea in rabbits.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8052561",
+   "pmid": "8052561",
+   "title": "Transabdominal chorionic villus sampling and amniocentesis for prenatal diagnosis: 5 years' experience at a university centre.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8183848",
+   "pmid": "8183848",
+   "title": "Six years' experience with rapid karyotyping in prenatal diagnosis: correlations between phenotype detected by ultrasound and fetal karyotype.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7513170",
+   "pmid": "7513170",
+   "title": "First trimester biochemical screening for Down's syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8291554",
+   "pmid": "8291554",
+   "title": "Malformations and deformations in abdominal pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8253303",
+   "pmid": "8253303",
+   "title": "Phase-specific developmental toxicity in mice following maternal methanol inhalation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8290380",
+   "pmid": "8290380",
+   "title": "Recurrent pregnancy loss as an indicator for increased risk of birth defects: a population-based case-control study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8278937",
+   "pmid": "8278937",
+   "title": "Tail short variable: characterization of a new mouse mutant, and its possible analogy to certain human vascular disruption defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8238113",
+   "pmid": "8238113",
+   "title": "Cook obstetrics and gynecology catheter multicenter chorionic villus sampling trial: comparison of birth defects with expected rates.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8352290",
+   "pmid": "8352290",
+   "title": "Case-control study of congenital defects and parental employment in health care.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8102500",
+   "pmid": "8102500",
+   "title": "Report of National Institute of Child Health and Human Development Workshop on Chorionic Villus Sampling and Limb and Other Defects, October 20, 1992.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8322803",
+   "pmid": "8322803",
+   "title": "Congenital defects of the limbs in stillbirths: data from a population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8474427",
+   "pmid": "8474427",
+   "title": "Surveillance for and comparison of birth defect prevalences in two geographic areas--United States, 1983-88.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8493286",
+   "pmid": "8493286",
+   "title": "Interaction of ibuprofen with early chick embryogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8437797",
+   "pmid": "8437797",
+   "title": "Fetal hemivertebrae: associated anomalies, significance, and outcome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8432001",
+   "pmid": "8432001",
+   "title": "Induction of agenesis of the corpus callosum by the destruction of anlage of the olfactory bulb using fetal laser surgery exo utero in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8419886",
+   "pmid": "8419886",
+   "title": "[An unusual case of intercalary type of limb abnormalities].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "8475457",
+   "pmid": "8475457",
+   "title": "Omphalocele and gastroschisis: a collaborative study of five Italian congenital malformation registries.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1481846",
+   "pmid": "1481846",
+   "title": "Congenital defects of the limbs and alcohol exposure in pregnancy: data from a population based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1403521",
+   "pmid": "1403521",
+   "title": "Cloacal exstrophy: prenatal diagnosis before rupture of the cloacal membrane.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1326132",
+   "pmid": "1326132",
+   "title": "Ischemia/reperfusion: a new hypothesis for the developmental toxicity of cocaine.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1412057",
+   "pmid": "1412057",
+   "title": "Trends in rates of multiple vascular disruption defects, Atlanta, 1968-1989: is there evidence of a cocaine teratogenic epidemic?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1554011",
+   "pmid": "1554011",
+   "title": "Vertebral hypersegmentation in a case of the VATER association.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1731396",
+   "pmid": "1731396",
+   "title": "Inhibition of isotretinoin teratogenicity by acetylsalicylic acid pretreatment in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1642816",
+   "pmid": "1642816",
+   "title": "Tetraphocomelia and bilateral femorotibial synostosis. A severe variant of the thrombocytopenia-absent radii (TAR) syndrome?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1610476",
+   "pmid": "1610476",
+   "title": "[Embryotoxic interactions between a hydrolysis product of thalidomide and the surfactant Tween 20 in mice].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1805438",
+   "pmid": "1805438",
+   "title": "Genetically determined variation in the azygos vein in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1945533",
+   "pmid": "1945533",
+   "title": "Substance abuse in pregnancy: teratogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1812130",
+   "pmid": "1812130",
+   "title": "Preliminary observations on isotretinoin-induced ear malformations and pattern formation of the external ear.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1680974",
+   "pmid": "1680974",
+   "title": "Fetal alcohol syndrome: report of a case.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1672394",
+   "pmid": "1672394",
+   "title": "Severe limb abnormalities after chorion villus sampling at 56-66 days' gestation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2040114",
+   "pmid": "2040114",
+   "title": "Developmental pathogenesis of defects associated with prenatal cocaine exposure: fetal vascular disruption.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2014484",
+   "pmid": "2014484",
+   "title": "Effects of retinoic acid on chick tail bud development.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1957032",
+   "pmid": "1957032",
+   "title": "Neonatal consequences of placental and membrane dysfunction.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1790338",
+   "pmid": "1790338",
+   "title": "Developmental toxicity of cadmium in mice. I. Embryotoxic effects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2080118",
+   "pmid": "2080118",
+   "title": "Epidermal growth factor receptors in genetically induced hyperproliferative skin disorders.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2278024",
+   "pmid": "2278024",
+   "title": "Cyclophosphamide teratogenesis: evidence for compensatory responses to induced cellular toxicity.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2258010",
+   "pmid": "2258010",
+   "title": "Teratogenicity of 2-methoxyethanol applied as a single dermal dose to rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2283306",
+   "pmid": "2283306",
+   "title": "Effects of L-2-oxothiazolidine-4-carboxylate, a cysteine pro-drug, on teratogenicity of 5-fluorouracil in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2218940",
+   "pmid": "2218940",
+   "title": "Expression of Veratrum alkaloid teratogenicity in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2145652",
+   "pmid": "2145652",
+   "title": "Effect of gestational sex steroid exposure on limb development and endochondral ossification in the pregnant C57Bl/6J mouse: I. Medroxyprogesterone acetate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2218071",
+   "pmid": "2218071",
+   "title": "Teratogenic effects of nitrazepam in rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2330234",
+   "pmid": "2330234",
+   "title": "Prenatal cocaine exposure and fetal vascular disruption.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2196420",
+   "pmid": "2196420",
+   "title": "Developmental neurotoxicity of anticonvulsants: human and animal evidence on phenytoin.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2326751",
+   "pmid": "2326751",
+   "title": "Effects of phorone and/or buthionine sulfoximine on teratogenicity of 5-fluorouracil in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2306193",
+   "pmid": "2306193",
+   "title": "Comparative teratogenicity of three retinoids: the arotinoids Ro 13-7410, Ro 13-6298 and Ro 15-1570.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1688953",
+   "pmid": "1688953",
+   "title": "Teratogenicity of 5-azacytidine in the Sprague-Dawley rat.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2623642",
+   "pmid": "2623642",
+   "title": "Etiology of retinoic acid-induced cleft palate varies with the embryonic stage.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2612382",
+   "pmid": "2612382",
+   "title": "The development of asymmetry: the sidedness of drug-induced limb abnormalities is reversed in situs inversus mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2792313",
+   "pmid": "2792313",
+   "title": "Risk factors in congenital heart disease.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2772923",
+   "pmid": "2772923",
+   "title": "Transplacental pharmacokinetics and teratogenicity of a single dose of retinol (vitamin A) during organogenesis in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2801765",
+   "pmid": "2801765",
+   "title": "In utero thrombosis and neonatal gangrene in an infant of a diabetic mother.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2763206",
+   "pmid": "2763206",
+   "title": "Effects of phosphoramide mustard and acrolein, cytotoxic metabolites of cyclophosphamide, on mouse limb development in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2758673",
+   "pmid": "2758673",
+   "title": "Pathogenesis of cleft palate in Treacher Collins, Nager, and Miller syndromes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2734792",
+   "pmid": "2734792",
+   "title": "Cellular alterations and enhanced induction of cleft palate after coadministration of retinoic acid and TCDD.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2471833",
+   "pmid": "2471833",
+   "title": "Toluene embryopathy: two new cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2788132",
+   "pmid": "2788132",
+   "title": "Congenital malformations in the newborn--a prospective study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3175947",
+   "pmid": "3175947",
+   "title": "Medroxyprogesterone acetate therapy in early pregnancy has no apparent fetal effects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3054428",
+   "pmid": "3054428",
+   "title": "Prenatal adverse effects of various drugs and chemicals. A review of substances of frequent concern to mothers in the community.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2845595",
+   "pmid": "2845595",
+   "title": "Steroid contraceptive use and pregnancy outcome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3277238",
+   "pmid": "3277238",
+   "title": "Amniotic sheets.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3347910",
+   "pmid": "3347910",
+   "title": "The effects of in vivo administration of teratogenic doses of vitamin A during the preimplantation period in the mouse.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3344764",
+   "pmid": "3344764",
+   "title": "Hirschsprung disease in the offspring of mothers exposed to hyperthermia during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3424371",
+   "pmid": "3424371",
+   "title": "Interactions between caffeine and adenosine agonists in producing embryo resorptions and malformations in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2956519",
+   "pmid": "2956519",
+   "title": "Maternal exposure to spermicides in relation to certain birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3478842",
+   "pmid": "3478842",
+   "title": "Developmental effects of isotretinoin and 4-oxo-isotretinoin: the role of metabolism in teratogenicity.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3300224",
+   "pmid": "3300224",
+   "title": "Anorectal atresia: prenatal sonographic diagnosis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3629517",
+   "pmid": "3629517",
+   "title": "Cardiac and noncardiac malformations: observations in a population-based study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3596088",
+   "pmid": "3596088",
+   "title": "Evidence for negative control of growth by adenosine in the mammalian embryo: induction of Hmx/+ mutant limb outgrowth by adenosine deaminase.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3798364",
+   "pmid": "3798364",
+   "title": "Teratogenicity of paraxanthine (1,7-dimethylxanthine) in C57BL/6J mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3541275",
+   "pmid": "3541275",
+   "title": "Identification of Dh/+ and Dh/Dh embryos through close linkage of Dh and peptidase-3.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2432673",
+   "pmid": "2432673",
+   "title": "Differential effects of 4-hydroperoxycyclophosphamide on limb development in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3803426",
+   "pmid": "3803426",
+   "title": "Joint study on the teratogenic sensitivity of the Pika (Ochotona rufescens rufescens) to selected drugs.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3541610",
+   "pmid": "3541610",
+   "title": "Analysis of Pena Shokeir phenotype.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3514708",
+   "pmid": "3514708",
+   "title": "Aplasia cutis congenita: a clinical review and proposal for classification.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3738812",
+   "pmid": "3738812",
+   "title": "Acetazolamide does not disrupt limb regenerate morphogenesis in the salamander, Plethodon cinereus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3485819",
+   "pmid": "3485819",
+   "title": "Parental occupation and birth outcome in an agricultural community.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3952769",
+   "pmid": "3952769",
+   "title": "Effects of thiabendazole on the mouse limb-bud organ and cell in culture.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3491113",
+   "pmid": "3491113",
+   "title": "Isotretinoin-induced craniofacial malformations in humans and hamsters.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3459732",
+   "pmid": "3459732",
+   "title": "Isotretinoin teratogenicity in mouse whole embryo culture.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2864485",
+   "pmid": "2864485",
+   "title": "Genetic predisposition to phenytoin-induced birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4035582",
+   "pmid": "4035582",
+   "title": "Identification of the cellular retinoic acid binding protein (cRABP) within the embryonic mouse (CD-1) limb bud.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4040173",
+   "pmid": "4040173",
+   "title": "Phenotypic delineation of ring chromosome 15 and Russell-Silver syndromes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4039753",
+   "pmid": "4039753",
+   "title": "Toluene embryopathy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3992492",
+   "pmid": "3992492",
+   "title": "Developmental toxicity of the cyanogenic glycoside linamarin in the golden hamster.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3992490",
+   "pmid": "3992490",
+   "title": "Reduction of caffeine teratogenicity in mice by inducing maternal drug metabolism with beta-naphthoflavone.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3991662",
+   "pmid": "3991662",
+   "title": "The development and classification of anomalies of the limbs in the human.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "3157194",
+   "pmid": "3157194",
+   "title": "Skeletal morphogenesis: comparative effects of a mutant gene and a teratogen.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "2866601",
+   "pmid": "2866601",
+   "title": "Analysis of the activity of DNA, RNA, and protein synthesis inhibitors on Xenopus embryo development.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6515559",
+   "pmid": "6515559",
+   "title": "Muscle abnormalities associated with the twin reversed-arterial-perfusion (TRAP) sequence (acardia).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6705539",
+   "pmid": "6705539",
+   "title": "Teratogenicity and toxicity of wild tree tobacco, Nicotiana glauca in sheep.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6648831",
+   "pmid": "6648831",
+   "title": "A critical review of the McCredie-McBride hypothesis of neural crest influence on limb morphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6139886",
+   "pmid": "6139886",
+   "title": "External malformations in chick embryos following concomitant administration of methylxanthines and beta-adrenomimetic agents: 1. Gross pathologic features.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6197530",
+   "pmid": "6197530",
+   "title": "Effects of various exposure levels of 2-phenylethanol on fetal development and survival in Long-Evans rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6867945",
+   "pmid": "6867945",
+   "title": "Some teratogenic properties of ethanol and acetaldehyde in C57BL/6J mice: implications for the study of the fetal alcohol syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6867938",
+   "pmid": "6867938",
+   "title": "Peripheral nerves do not play a trophic role in limb skeletal morphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6133365",
+   "pmid": "6133365",
+   "title": "Specific craniofacial defects induced by jervine in the cultured rat embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7135256",
+   "pmid": "7135256",
+   "title": "Birth weight and birth defects in relation to maternal spermicide use.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7069902",
+   "pmid": "7069902",
+   "title": "Spermicides and birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6279895",
+   "pmid": "6279895",
+   "title": "Birth defects and vaginal spermicides.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7075194",
+   "pmid": "7075194",
+   "title": "Vaginal spermicides and outcome of pregnancy: findings in a large cohort study.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7330778",
+   "pmid": "7330778",
+   "title": "The teratogenic effects of dietary Cassava on the pregnant albino rat: a preliminary report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6271011",
+   "pmid": "6271011",
+   "title": "Are female sex hormones teratogenic?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7029775",
+   "pmid": "7029775",
+   "title": "Immunological effects of antitestis antisera on the development of mouse fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6912176",
+   "pmid": "6912176",
+   "title": "[Cooper IUD and congenital malformation? (author's transl)].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7254991",
+   "pmid": "7254991",
+   "title": "Short umbilical cord: its origin and relevance.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6909095",
+   "pmid": "6909095",
+   "title": "[Sonographic demonstration of the fetal extremities in the mid-trimester (author's transl)].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7206132",
+   "pmid": "7206132",
+   "title": "Vaginal spermicides and congenital disorders.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7268637",
+   "pmid": "7268637",
+   "title": "Comparative ultrastructural alterations in rabbit limb-buds after a teratogenic dose of either hydroxyurea or methotrexate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7268636",
+   "pmid": "7268636",
+   "title": "Effect of retinoic acid upon the chick embryonic morphogenetic systems. I. The embryotoxicity dose range.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6450827",
+   "pmid": "6450827",
+   "title": "Compression-related defects from early amnion rupture: evidence for mechanical teratogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7373184",
+   "pmid": "7373184",
+   "title": "Split--hand and split--foot deformity report of a family with 16 affected individuals in three generations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6930250",
+   "pmid": "6930250",
+   "title": "Early diagnosis of Meckel's syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "7446219",
+   "pmid": "7446219",
+   "title": "Are contraceptive pills teratogenic?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "6933910",
+   "pmid": "6933910",
+   "title": "Hydroxyurea as a reference standard in teratological screening. Comparison of the embryotoxic and teratogenic effects following single intraperitoneal or repeated oral administrations to pregnant rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "519525",
+   "pmid": "519525",
+   "title": "The effects of nitrous oxide on the developing hamster embryos.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "487263",
+   "pmid": "487263",
+   "title": "Teratogenic effects of diazepam in the hamster.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "112707",
+   "pmid": "112707",
+   "title": "Unusual muscle abnormalities associated with thalidomide treatment in a rhesus monkey: a case report.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "451934",
+   "pmid": "451934",
+   "title": "Lectin teratogenesis: defects produced by concanavalin A in fetal rabbits.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "398263",
+   "pmid": "398263",
+   "title": "The effects of exogenous female hormones on the fetus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "570307",
+   "pmid": "570307",
+   "title": "The differentiation of the columella in avian embryos treated with hadacidin with some observations on other skeletal abnormalities.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "343618",
+   "pmid": "343618",
+   "title": "Pathogenesis of congenital malformations. An hypothesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "256544",
+   "pmid": "256544",
+   "title": "The influence of preconceptional glucose values on the outcome of pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "625706",
+   "pmid": "625706",
+   "title": "Effects in mice of simultaneous prenatal exposure to ochratoxin A and T-2 toxin.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "263660",
+   "pmid": "263660",
+   "title": "The Dubowitz syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "928707",
+   "pmid": "928707",
+   "title": "Diagnosis oligohydramnios-related pulmonary hypoplasia (Potter syndrome): value of portable voiding cystourethrography in newborns with respiratory distress.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "929431",
+   "pmid": "929431",
+   "title": "Environmental heat stress effects in the hamster.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "898089",
+   "pmid": "898089",
+   "title": "Effect of intraamniotic administration of vitamin A on rat fetuses.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "18809",
+   "pmid": "18809",
+   "title": "Potentiation by the injection vehicle of the teratological action of acetazolamide in rats.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "842347",
+   "pmid": "842347",
+   "title": "A case of focal dermal hypoplasia (Goltz syndrome) with some new aspects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1034666",
+   "pmid": "1034666",
+   "title": "Direct exposure of postimplantation mouse embryos to 5-bromodeoxyuridine in vitro and its effect on subsequent chondrogenesis in the limbs.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "960013",
+   "pmid": "960013",
+   "title": "Studies of the etiology of thalidomide dysmorphogenesis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "988425",
+   "pmid": "988425",
+   "title": "[Vater or Vacterl syndrome (author's transl)].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1268519",
+   "pmid": "1268519",
+   "title": "Letter: IUD and congenital malformation.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1183764",
+   "pmid": "1183764",
+   "title": "Influence of 6-diazo-5-oxo-L-norleucine (DON), a glutamine analogue, on cartilaginous differentiation in mouse limb buds in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1160778",
+   "pmid": "1160778",
+   "title": "Letter: Synthetic sex hormones.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1172300",
+   "pmid": "1172300",
+   "title": "Teratogenic effects of chlorambucil on in vivo and in vitro organogenesis in mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1162620",
+   "pmid": "1162620",
+   "title": "The fetal alcohol syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1176851",
+   "pmid": "1176851",
+   "title": "Limb development in mouse embryos: protection against teratogenic effects of 6-diazo-5-ox-L-norleucine (DON) in vivo and in vitro.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "1215380",
+   "pmid": "1215380",
+   "title": "The action of thalidomide on the peripheral nervous system of the embryo.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4851496",
+   "pmid": "4851496",
+   "title": "Editorial: Can the pill cause birth defects?",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4134709",
+   "pmid": "4134709",
+   "title": "Letter: Birth defects and oral hormone preparations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4104480",
+   "pmid": "4104480",
+   "title": "L.S.D., intrauterine amputations, and amniotic-band syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "4994465",
+   "pmid": "4994465",
+   "title": "LSD and genetic damage.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "13967082",
+   "pmid": "13967082",
+   "title": "[The significance of new exogenous noxae for the developmental damage of germ cells and ova and their prevention].",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "13949801",
+   "pmid": "13949801",
+   "title": "Phocomelic deformity and maternal thalidomide administration. A report of four cases.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "42583810",
+   "pmid": "42583810",
+   "title": "Culture media for human pre-implantation embryos in assisted reproductive technology cycles.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "41881430",
+   "pmid": "41881430",
+   "title": "Umbilical cord antiseptics for preventing sepsis and death among newborns.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "40497447",
+   "pmid": "40497447",
+   "title": "Progestogen for preventing miscarriage in women with recurrent miscarriage of unclear etiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "40193219",
+   "pmid": "40193219",
+   "title": "Gonadotropins for ovulation induction in women with polycystic ovary syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "39912435",
+   "pmid": "39912435",
+   "title": "In vitro maturation in subfertile women with polycystic ovarian syndrome undergoing assisted reproduction.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "39704318",
+   "pmid": "39704318",
+   "title": "Oocyte activation for women following intracytoplasmic sperm injection (ICSI).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "39145520",
+   "pmid": "39145520",
+   "title": "Daily oral iron supplementation during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "37647086",
+   "pmid": "37647086",
+   "title": "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "36423200",
+   "pmid": "36423200",
+   "title": "Day 5 versus day 3 embryo biopsy for preimplantation genetic testing for monogenic/single gene defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "34808697",
+   "pmid": "34808697",
+   "title": "Growth hormone for in vitro fertilisation (IVF).",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "34634131",
+   "pmid": "34634131",
+   "title": "Preconception risk assessment for thalassaemia, sickle cell disease, cystic fibrosis and Tay-Sachs disease.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "33687069",
+   "pmid": "33687069",
+   "title": "Interventions for cutaneous disease in systemic lupus erythematosus.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "32672358",
+   "pmid": "32672358",
+   "title": "GM-CSF (granulocyte macrophage colony-stimulating factor) supplementation in culture media for women undergoing assisted reproduction.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "32358837",
+   "pmid": "32358837",
+   "title": "Aspirin or heparin or both for improving pregnancy outcomes in women with persistent antiphospholipid antibodies and recurrent pregnancy loss.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "31978254",
+   "pmid": "31978254",
+   "title": "Granulocyte-colony stimulating factor administration for subfertile women undergoing assisted reproduction.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "31745982",
+   "pmid": "31745982",
+   "title": "Progestogen for preventing miscarriage in women with recurrent miscarriage of unclear etiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "31628860",
+   "pmid": "31628860",
+   "title": "Nonsteroidal anti-inflammatory drugs for assisted reproductive technology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "31074495",
+   "pmid": "31074495",
+   "title": "Fortification of staple foods with vitamin A for vitamin A deficiency.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "30873598",
+   "pmid": "30873598",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "30298541",
+   "pmid": "30298541",
+   "title": "Progestogen for preventing miscarriage in women with recurrent miscarriage of unclear etiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "29494750",
+   "pmid": "29494750",
+   "title": "Pulse oximetry screening for critical congenital heart defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "28869276",
+   "pmid": "28869276",
+   "title": "Amniocentesis and chorionic villus sampling for prenatal diagnosis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "28799164",
+   "pmid": "28799164",
+   "title": "Preconception care for diabetic women for improving maternal and infant health.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "28407219",
+   "pmid": "28407219",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "27819746",
+   "pmid": "27819746",
+   "title": "Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "27455388",
+   "pmid": "27455388",
+   "title": "Dopamine agonists for preventing future miscarriage in women with idiopathic hyperprolactinemia and recurrent miscarriage history.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "27150280",
+   "pmid": "27150280",
+   "title": "Vitamin supplementation for preventing miscarriage.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "27142841",
+   "pmid": "27142841",
+   "title": "Different intensities of glycaemic control for pregnant women with pre-existing diabetes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26662928",
+   "pmid": "26662928",
+   "title": "Effects and safety of periconceptional oral folate supplementation for preventing birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26522344",
+   "pmid": "26522344",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26482110",
+   "pmid": "26482110",
+   "title": "Intermittent oral iron supplementation during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26387772",
+   "pmid": "26387772",
+   "title": "Screening and subsequent management for thyroid dysfunction pre-pregnancy and during pregnancy for improving maternal and infant health.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26262909",
+   "pmid": "26262909",
+   "title": "Interventions for leg cramps in pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26198451",
+   "pmid": "26198451",
+   "title": "Daily oral iron supplementation during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26171903",
+   "pmid": "26171903",
+   "title": "Long-acting FSH versus daily FSH for women undergoing assisted reproduction.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "26039815",
+   "pmid": "26039815",
+   "title": "Pyridoxine (vitamin B6) supplementation during pregnancy or labour for maternal and neonatal outcomes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "25906204",
+   "pmid": "25906204",
+   "title": "Planned early delivery versus expectant management for monoamniotic twins.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "24995856",
+   "pmid": "24995856",
+   "title": "Aspirin and/or heparin for women with unexplained recurrent miscarriage with or without inherited thrombophilia.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "24696187",
+   "pmid": "24696187",
+   "title": "Magnesium supplementation in pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "23543547",
+   "pmid": "23543547",
+   "title": "Folic acid supplementation during pregnancy for maternal health and pregnancy outcomes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "23152228",
+   "pmid": "23152228",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "22895976",
+   "pmid": "22895976",
+   "title": "Different intensities of glycaemic control for pregnant women with pre-existing diabetes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "22786531",
+   "pmid": "22786531",
+   "title": "Intermittent oral iron supplementation during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "21328261",
+   "pmid": "21328261",
+   "title": "Feeding interventions for growth and development in infants with cleft lip, cleft palate or cleft lip and palate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "21154385",
+   "pmid": "21154385",
+   "title": "Preconception care for diabetic women for improving maternal and infant health.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "20927767",
+   "pmid": "20927767",
+   "title": "Effects and safety of periconceptional folate supplementation for preventing birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "20824880",
+   "pmid": "20824880",
+   "title": "Different intensities of glycaemic control for pregnant women with pre-existing diabetes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "20824826",
+   "pmid": "20824826",
+   "title": "WITHDRAWN: Interventions for nausea and vomiting in early pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "19821424",
+   "pmid": "19821424",
+   "title": "Routine pre-pregnancy health promotion for improving pregnancy outcomes.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "17054223",
+   "pmid": "17054223",
+   "title": "Multiple-micronutrient supplementation for women during pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "16625530",
+   "pmid": "16625530",
+   "title": "Pyridoxine (vitamin B6) supplementation in pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "16437524",
+   "pmid": "16437524",
+   "title": "Preimplantation genetic screening for abnormal number of chromosomes (aneuploidies) in in vitro fertilisation or intracytoplasmic sperm injection.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "16034920",
+   "pmid": "16034920",
+   "title": "Conservative management of symptomatic and/or complicated haemorrhoids in pregnancy and the puerperium.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "15266479",
+   "pmid": "15266479",
+   "title": "Feeding interventions for growth and development in infants with cleft lip, cleft palate or cleft lip and palate.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "14973999",
+   "pmid": "14973999",
+   "title": "Acupuncture for induction of labour.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "14583914",
+   "pmid": "14583914",
+   "title": "Interventions for nausea and vomiting in early pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "12804403",
+   "pmid": "12804403",
+   "title": "Intra-cytoplasmic sperm injection versus conventional techniques for oocyte insemination during in vitro fertilisation in patients with non-male subfertility.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "11869567",
+   "pmid": "11869567",
+   "title": "Interventions for nausea and vomiting in early pregnancy.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "11279787",
+   "pmid": "11279787",
+   "title": "Acupuncture for induction of labour.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: Cochrane query, not about the site's conditions"
   }
  ]
 }

@@ -54,7 +54,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -209,7 +210,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -499,7 +501,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -653,7 +656,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -681,7 +685,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -711,7 +716,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -797,7 +803,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -856,7 +863,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -1192,7 +1200,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -1285,7 +1294,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -1318,7 +1328,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -1406,7 +1417,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -1467,7 +1479,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -1618,7 +1631,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -1733,7 +1747,8 @@
    ],
    "topics": [
     "living",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -1851,7 +1866,8 @@
     "thal"
    ],
    "topics": [
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -1972,7 +1988,8 @@
     "thal"
    ],
    "topics": [
-    "prosthetics"
+    "prosthetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -1999,7 +2016,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -2119,7 +2137,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -2506,7 +2525,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -2598,7 +2618,8 @@
    ],
    "topics": [
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -2665,7 +2686,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -3089,7 +3111,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -3199,7 +3222,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -3232,7 +3256,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -3323,7 +3348,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -3433,7 +3459,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -3550,7 +3577,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -3582,7 +3610,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -3642,7 +3671,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -3715,7 +3745,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -3862,7 +3893,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -4114,7 +4146,8 @@
    "topics": [
     "causes",
     "meta",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -4360,7 +4393,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -4515,7 +4549,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -4577,7 +4612,8 @@
    ],
    "topics": [
     "causes",
-    "prosthetics"
+    "prosthetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -4607,7 +4643,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -4666,7 +4703,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -4725,7 +4763,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -4844,7 +4883,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "Finland, amelia and phocomelia",
@@ -4996,7 +5036,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "published on the website of ERN [VASCERN] - VASCERN Registries (France)"
@@ -5027,7 +5068,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -5058,7 +5100,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -5141,7 +5184,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -5173,7 +5217,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -5294,7 +5339,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -5354,7 +5400,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -5570,7 +5617,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -5601,7 +5649,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -6038,7 +6087,8 @@
     "thal"
    ],
    "topics": [
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -6066,7 +6116,8 @@
     "thal"
    ],
    "topics": [
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -6187,7 +6238,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -6249,7 +6301,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -6424,7 +6477,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -6541,7 +6595,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -6604,7 +6659,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -6662,7 +6718,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -6694,7 +6751,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -6939,7 +6997,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -7036,7 +7095,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -7218,7 +7278,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -7249,7 +7310,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -7309,7 +7371,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -7582,7 +7645,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -7642,7 +7706,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -7916,7 +7981,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -8005,7 +8071,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -8066,7 +8133,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -8225,7 +8293,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -8347,7 +8416,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -8379,7 +8449,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -8408,7 +8479,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -8532,7 +8604,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -8655,7 +8728,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -8688,7 +8762,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -8719,7 +8794,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -8754,7 +8830,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -8814,7 +8891,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -9327,7 +9405,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -9391,7 +9470,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -9451,7 +9531,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -9574,7 +9655,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -9606,7 +9688,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -9668,7 +9751,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -9766,7 +9850,8 @@
     "causes",
     "clinical",
     "meta",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -9894,7 +9979,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -10027,7 +10113,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -10151,7 +10238,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -10210,7 +10298,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -10243,7 +10332,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -10306,7 +10396,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -10369,7 +10460,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -10397,7 +10489,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "published on the website of Stichting NESOS (Netherlands)"
@@ -10428,7 +10521,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -10555,7 +10649,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -10583,7 +10678,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -10910,7 +11006,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -11004,7 +11101,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11220,7 +11318,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -11275,7 +11374,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -11305,7 +11405,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -11337,7 +11438,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -11395,7 +11497,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -11425,7 +11528,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -11455,7 +11559,8 @@
    "topics": [
     "living",
     "meta",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -11487,7 +11592,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11518,7 +11624,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -11578,7 +11685,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11703,7 +11811,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -11733,7 +11842,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "Cited by the Causes of dysmelia review",
@@ -11796,7 +11906,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11880,7 +11991,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11908,7 +12020,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -11969,7 +12082,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -12001,7 +12115,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -12086,7 +12201,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -12312,7 +12428,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -12376,7 +12493,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -12405,7 +12523,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -12793,7 +12912,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -12917,7 +13037,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -13004,7 +13125,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -13068,7 +13190,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -13130,7 +13253,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "published on the website of Mainz registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
@@ -13157,7 +13281,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -13188,7 +13313,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -13216,7 +13342,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -13247,7 +13374,8 @@
    ],
    "topics": [
     "epidemiology",
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -13303,7 +13431,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -13337,7 +13466,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -13370,7 +13500,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -13463,7 +13594,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -13496,7 +13628,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -13528,7 +13661,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -13557,7 +13691,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -13651,7 +13786,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -13743,7 +13879,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -13828,7 +13965,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -13859,7 +13997,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -14225,7 +14364,8 @@
    ],
    "topics": [
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on Canadian limb difference and child amputee care"
@@ -14256,7 +14396,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -14444,7 +14585,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -14532,7 +14674,8 @@
    "codes": [],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on Canadian limb difference and child amputee care"
@@ -14563,7 +14706,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -14841,7 +14985,8 @@
    ],
    "topics": [
     "causes",
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -14873,7 +15018,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -14903,7 +15049,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -15031,7 +15178,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -15431,7 +15579,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -15614,7 +15763,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -15765,7 +15915,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -15828,7 +15979,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -15859,7 +16011,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "published on the website of Stichting NESOS (Netherlands)"
@@ -15894,7 +16047,8 @@
     "causes",
     "clinical",
     "meta",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -16046,7 +16200,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -16163,7 +16318,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -16530,7 +16686,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -16647,7 +16804,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -16763,7 +16921,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "published on the website of Stichting NESOS (Netherlands)"
@@ -16855,7 +17014,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -16915,7 +17075,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -16945,7 +17106,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -17045,7 +17207,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -17073,7 +17236,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "published on the website of Stichting NESOS (Netherlands)"
@@ -17124,7 +17288,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -17156,7 +17321,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -17317,7 +17483,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -17350,7 +17517,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -17382,7 +17550,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -17416,7 +17585,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -17503,7 +17673,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -17595,7 +17766,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -17652,7 +17824,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -17893,7 +18066,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -18040,7 +18214,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -18072,7 +18247,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -18165,7 +18341,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -18227,7 +18404,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -18345,7 +18523,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -18512,7 +18691,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -18696,7 +18876,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -18757,7 +18938,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -18846,7 +19028,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -18967,7 +19150,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -19090,7 +19274,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -19121,7 +19306,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -19150,7 +19336,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -19245,7 +19432,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -19396,7 +19584,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -19422,7 +19611,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -19607,7 +19797,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -19637,7 +19828,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -19669,7 +19861,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -19787,7 +19980,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -19974,7 +20168,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -20125,7 +20320,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -20180,7 +20376,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -20242,7 +20439,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -20296,7 +20494,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -20358,7 +20557,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -20612,7 +20812,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -20673,7 +20874,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -21015,7 +21217,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -21139,7 +21342,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -21172,7 +21376,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -21299,7 +21504,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -21386,7 +21592,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -21479,7 +21686,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -21574,7 +21782,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -21606,7 +21815,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -21790,7 +22000,8 @@
    "topics": [
     "causes",
     "clinical",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -21997,7 +22208,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -22054,7 +22266,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -22424,7 +22637,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22484,7 +22698,8 @@
    "topics": [
     "causes",
     "living",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22514,7 +22729,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -22543,7 +22759,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22573,7 +22790,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22669,7 +22887,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22755,7 +22974,8 @@
    "topics": [
     "causes",
     "clinical",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22784,7 +23004,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -22869,7 +23090,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -22998,7 +23220,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -23033,7 +23256,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -23062,7 +23286,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -23089,7 +23314,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -23177,7 +23403,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -23210,7 +23437,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -23244,7 +23472,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -23460,7 +23689,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -23490,7 +23720,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -23731,7 +23962,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -23820,7 +24052,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -23852,7 +24085,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -23883,7 +24117,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -24008,7 +24243,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -24036,7 +24272,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -24065,7 +24302,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -24096,7 +24334,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -24191,7 +24430,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -24345,7 +24585,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -24379,7 +24620,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -24411,7 +24653,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -24440,7 +24683,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -24469,7 +24713,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -24622,7 +24867,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -24682,7 +24928,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -24714,7 +24961,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -24875,7 +25123,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -24964,7 +25213,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -24996,7 +25246,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -25177,7 +25428,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -25324,7 +25576,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -25353,7 +25606,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -25468,7 +25722,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -25498,7 +25753,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -25527,7 +25783,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -25615,7 +25872,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -25679,7 +25937,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -25893,7 +26152,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -25925,7 +26185,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -25980,7 +26241,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -26010,7 +26272,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -26107,7 +26370,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -26288,7 +26552,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -26319,7 +26584,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -26353,7 +26619,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -26414,7 +26681,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
@@ -26482,7 +26750,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy",
@@ -26577,7 +26846,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -26727,7 +26997,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -26787,7 +27058,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -26844,7 +27116,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -26935,7 +27208,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -27203,7 +27477,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -27322,7 +27597,8 @@
     "thal"
    ],
    "topics": [
-    "living"
+    "living",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -27353,7 +27629,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -27540,7 +27817,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -27567,7 +27845,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -27602,7 +27881,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -27879,7 +28159,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -28119,7 +28400,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -28358,7 +28640,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -28389,7 +28672,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -28445,7 +28729,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -28561,7 +28846,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -28588,7 +28874,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -28710,7 +28997,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -28740,7 +29028,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -28829,7 +29118,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -28858,7 +29148,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -28890,7 +29181,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -29045,7 +29337,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -29077,7 +29370,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -29108,7 +29402,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -29285,7 +29580,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -29342,7 +29638,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -29503,7 +29800,8 @@
    "topics": [
     "causes",
     "clinical",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -29626,7 +29924,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -29654,7 +29953,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -29770,7 +30070,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -29799,7 +30100,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -29915,7 +30217,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30029,7 +30332,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30091,7 +30395,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30186,7 +30491,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -30212,7 +30518,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -30240,7 +30547,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30426,7 +30734,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -30490,7 +30799,8 @@
    ],
    "topics": [
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30607,7 +30917,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -30639,7 +30950,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -30756,7 +31068,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -30879,7 +31192,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -30905,7 +31219,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -30935,7 +31250,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31079,7 +31395,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31352,7 +31669,8 @@
    "topics": [
     "causes",
     "clinical",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -31444,7 +31762,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31505,7 +31824,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31536,7 +31856,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31679,7 +32000,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -31851,7 +32173,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -32088,7 +32411,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -32297,7 +32621,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -32388,7 +32713,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -32419,7 +32745,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -32450,7 +32777,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -32690,7 +33018,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -32925,7 +33254,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -33126,7 +33456,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -33182,7 +33513,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -33405,7 +33737,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -33435,7 +33768,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -33465,7 +33799,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -33527,7 +33862,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -33558,7 +33894,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -33858,7 +34195,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34026,7 +34364,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34058,7 +34397,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34174,7 +34514,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34259,7 +34600,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -34290,7 +34632,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -34324,7 +34667,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34566,7 +34910,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34722,7 +35067,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34890,7 +35236,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -34948,7 +35295,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -35101,7 +35449,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35131,7 +35480,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35191,7 +35541,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -35334,7 +35685,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35366,7 +35718,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35393,7 +35746,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -35456,7 +35810,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35488,7 +35843,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -35973,7 +36329,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -36059,7 +36416,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -36180,7 +36538,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -36240,7 +36599,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -36270,7 +36630,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -36384,7 +36745,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -36412,7 +36774,8 @@
    "topics": [
     "causes",
     "clinical",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -36536,7 +36899,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -36599,7 +36963,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -36631,7 +36996,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -36714,7 +37080,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -36802,7 +37169,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -37008,7 +37376,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -37036,7 +37405,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -37243,7 +37613,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -37546,7 +37917,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -37605,7 +37977,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -37697,7 +38070,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -37725,7 +38099,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -37966,7 +38341,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -37990,7 +38366,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38048,7 +38425,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -38142,7 +38520,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38168,7 +38547,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -38256,7 +38636,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -38287,7 +38668,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -38349,7 +38731,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38377,7 +38760,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -38461,7 +38845,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38492,7 +38877,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38523,7 +38909,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38765,7 +39152,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -38794,7 +39182,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -38822,7 +39211,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -38852,7 +39242,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -38881,7 +39272,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -38941,7 +39333,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39028,7 +39421,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39054,7 +39448,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39086,7 +39481,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39116,7 +39512,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39205,7 +39602,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -39233,7 +39631,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -39264,7 +39663,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39353,7 +39753,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -39409,7 +39810,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -39439,7 +39841,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -39501,7 +39904,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39683,7 +40087,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -39835,7 +40240,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -39865,7 +40271,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -39893,7 +40300,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -39950,7 +40358,8 @@
    "topics": [
     "causes",
     "genetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -40009,7 +40418,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -40100,7 +40510,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -40159,7 +40570,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -40189,7 +40601,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -40220,7 +40633,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -40304,7 +40718,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -40333,7 +40748,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -40396,7 +40812,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -40425,7 +40842,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -40541,7 +40959,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -40634,7 +41053,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -40694,7 +41114,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -40806,7 +41227,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -40896,7 +41318,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -40985,7 +41408,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41136,7 +41560,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -41165,7 +41590,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41224,7 +41650,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41251,7 +41678,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41281,7 +41709,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41576,7 +42005,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41604,7 +42034,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41696,7 +42127,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -41725,7 +42157,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -41785,7 +42218,8 @@
    ],
    "topics": [
     "causes",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41841,7 +42275,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -41868,7 +42303,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -41931,7 +42367,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -41960,7 +42397,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -41990,7 +42428,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -42166,7 +42605,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -42255,7 +42695,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -42283,7 +42724,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42313,7 +42755,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42405,7 +42848,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42431,7 +42875,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42488,7 +42933,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42513,7 +42959,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -42634,7 +43081,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -42663,7 +43111,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -42714,7 +43163,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -42801,7 +43251,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -42834,7 +43285,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -42866,7 +43318,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -42924,7 +43377,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -42955,7 +43409,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -42984,7 +43439,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -43039,7 +43495,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -43127,7 +43584,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -43156,7 +43614,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -43186,7 +43645,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -43362,7 +43822,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -43388,7 +43849,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -43533,7 +43995,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -43564,7 +44027,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -43654,7 +44118,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -43939,7 +44404,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -43965,7 +44431,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -44023,7 +44490,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -44084,7 +44552,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -44113,7 +44582,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -44141,7 +44611,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -44229,7 +44700,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -44278,7 +44750,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -44306,7 +44779,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -44418,7 +44892,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -44557,7 +45032,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -44766,7 +45242,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -44829,7 +45306,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -44886,7 +45364,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -44941,7 +45420,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -45089,7 +45569,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -45119,7 +45600,8 @@
    "topics": [
     "causes",
     "epidemiology",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -45231,7 +45713,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -45262,7 +45745,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -45294,7 +45778,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -45325,7 +45810,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -45353,7 +45839,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -45377,7 +45864,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -45412,7 +45900,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -45443,7 +45932,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -45493,7 +45983,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -45589,7 +46080,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -45617,7 +46109,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -45733,7 +46226,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -45760,7 +46254,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -45818,7 +46313,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -45845,7 +46341,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -45875,7 +46372,8 @@
    "topics": [
     "clinical",
     "prosthetics",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -45932,7 +46430,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -46021,7 +46520,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46110,7 +46610,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46137,7 +46638,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -46196,7 +46698,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -46223,7 +46726,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -46307,7 +46811,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46395,7 +46900,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -46455,7 +46961,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46484,7 +46991,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -46540,7 +47048,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46567,7 +47076,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46592,7 +47102,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -46621,7 +47132,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -46677,7 +47189,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -46704,7 +47217,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -46762,7 +47276,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46788,7 +47303,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46815,7 +47331,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46895,7 +47412,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -46982,7 +47500,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -47069,7 +47588,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47188,7 +47708,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -47217,7 +47738,8 @@
    ],
    "topics": [
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47248,7 +47770,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47274,7 +47797,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47330,7 +47854,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -47416,7 +47941,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47470,7 +47996,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47574,7 +48101,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -47604,7 +48132,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47720,7 +48249,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47748,7 +48278,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -47830,7 +48361,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -47906,7 +48438,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -47933,7 +48466,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -47984,7 +48518,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -48011,7 +48546,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -48044,7 +48580,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -48072,7 +48609,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -48214,7 +48752,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -48239,7 +48778,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -48599,7 +49139,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -48733,7 +49274,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -48903,7 +49445,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -49034,7 +49577,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -49113,7 +49657,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49196,7 +49741,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49251,7 +49797,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49276,7 +49823,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49380,7 +49928,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49406,7 +49955,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49486,7 +50036,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -49541,7 +50092,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49566,7 +50118,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49591,7 +50144,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49618,7 +50172,8 @@
    ],
    "topics": [
     "causes",
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49668,7 +50223,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49693,7 +50249,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49748,7 +50305,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49796,7 +50354,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -49847,7 +50406,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49900,7 +50460,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -49925,7 +50486,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50004,7 +50566,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50055,7 +50618,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -50082,7 +50646,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50107,7 +50672,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50210,7 +50776,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50259,7 +50826,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50285,7 +50853,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -50417,7 +50986,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50469,7 +51039,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50495,7 +51066,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -50521,7 +51093,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50546,7 +51119,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50572,7 +51146,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50597,7 +51172,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50676,7 +51252,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50703,7 +51280,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50753,7 +51331,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50805,7 +51384,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -50914,7 +51494,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -50943,7 +51524,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51024,7 +51606,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51051,7 +51634,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51105,7 +51689,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51158,7 +51743,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51183,7 +51769,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51233,7 +51820,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51259,7 +51847,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51286,7 +51875,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51311,7 +51901,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51468,7 +52059,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51550,7 +52142,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51579,7 +52172,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -51606,7 +52200,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51659,7 +52254,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -51738,7 +52334,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51763,7 +52360,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51789,7 +52387,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51865,7 +52464,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51939,7 +52539,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51967,7 +52568,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -51995,7 +52597,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52023,7 +52626,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52049,7 +52653,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52074,7 +52679,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52202,7 +52808,8 @@
     "thal"
    ],
    "topics": [
-    "prosthetics"
+    "prosthetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52253,7 +52860,8 @@
     "thal"
    ],
    "topics": [
-    "prosthetics"
+    "prosthetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52305,7 +52913,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52410,7 +53019,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52436,7 +53046,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52488,7 +53099,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52515,7 +53127,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52541,7 +53154,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -52595,7 +53209,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -52648,7 +53263,8 @@
    ],
    "topics": [
     "causes",
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -52701,7 +53317,8 @@
     "thal"
    ],
    "topics": [
-    "genetics"
+    "genetics",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52881,7 +53498,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52907,7 +53525,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52933,7 +53552,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52959,7 +53579,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -52987,7 +53608,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
@@ -53015,7 +53637,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53068,7 +53691,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53093,7 +53717,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53122,7 +53747,8 @@
    "topics": [
     "causes",
     "clinical",
-    "review"
+    "review",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53147,7 +53773,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53231,7 +53858,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53259,7 +53887,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53311,7 +53940,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53337,7 +53967,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -53418,7 +54049,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
@@ -53471,7 +54103,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53497,7 +54130,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53551,7 +54185,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -53600,7 +54235,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53625,7 +54261,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53650,7 +54287,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53675,7 +54313,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53701,7 +54340,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53726,7 +54366,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53777,7 +54418,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53803,7 +54445,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53829,7 +54472,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53858,7 +54502,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53884,7 +54529,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53913,7 +54559,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -53937,7 +54584,8 @@
    "codes": [],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -53965,7 +54613,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54100,7 +54749,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54126,7 +54776,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54152,7 +54803,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54177,7 +54829,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54203,7 +54856,8 @@
     "thal"
    ],
    "topics": [
-    "epidemiology"
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54231,7 +54885,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54259,7 +54914,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54285,7 +54941,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54310,7 +54967,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54336,7 +54994,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54362,7 +55021,8 @@
    ],
    "topics": [
     "causes",
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54387,7 +55047,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
@@ -54413,7 +55074,8 @@
     "thal"
    ],
    "topics": [
-    "clinical"
+    "clinical",
+    "teratogens"
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"

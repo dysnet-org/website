@@ -66,6 +66,11 @@
    "label": "Regulation 1223/2009: substances prohibited or restricted in cosmetic products",
    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02009R1223-20260518",
    "authority": "Binding EU regulation. Annex II lists the substances that may not be used in a cosmetic product at all; Annex III lists those allowed only within the stated restrictions. Read from the consolidated regulation, because the Commission's CosIng database publishes no usable interface."
+  },
+  "fda-registry": {
+   "label": "FDA list of pregnancy exposure registries",
+   "url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries",
+   "authority": "A public list kept by the US Food and Drug Administration. Registries are listed by the FDA at the request of their sponsor or investigator. The FDA states that it does not endorse any registry and is not responsible for the content of the registries listed."
   }
  },
  "counts": {
@@ -96,7 +101,10 @@
   "legal_any": 334,
   "legal_read": "2026-09-15",
   "legal_cosmetics": 256,
-  "legal_cosmetics-restricted": 6
+  "legal_cosmetics-restricted": 6,
+  "registries": 9,
+  "registries_listed": 205,
+  "registries_fetched": "2026-09-15"
  },
  "entries": [
   {
@@ -1181,7 +1189,17 @@
     "N06AA17"
    ],
    "medicinal": true,
-   "medicine_evidence": "Amoxapine, sold under the brand name Asendin among others, is a tricyclic antidepressant (TCA)."
+   "medicine_evidence": "Amoxapine, sold under the brand name Asendin among others, is a tricyclic antidepressant (TCA).",
+   "registry": {
+    "medicine": "Asendin (amoxapine)",
+    "condition": "Depression",
+    "name": "National Pregnancy Registry for Antidepressants",
+    "status": "ongoing",
+    "url": "https://womensmentalhealth.org/research/pregnancyregistry/",
+    "phone": "1-866-961-2388",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Angiotensin converting enzyme  (ACE) inhibitors",
@@ -1454,7 +1472,17 @@
     "L04AX01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Azathioprine, sold under the brand name Imuran, among others, is an immunosuppressive medication."
+   "medicine_evidence": "Azathioprine, sold under the brand name Imuran, among others, is an immunosuppressive medication.",
+   "registry": {
+    "medicine": "Imuran® (azathioprine)",
+    "condition": "Any transplant recipient",
+    "name": "Transplant Pregnancy Registry International",
+    "status": "ongoing",
+    "url": "https://www.transplantpregnancyregistry.org/",
+    "phone": "",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Barbiturates",
@@ -2092,7 +2120,17 @@
     "N03AF01"
    ],
    "medicinal": true,
-   "medicine_evidence": "Carbamazepine, sold under the brand name Tegretol among others, is an anticonvulsant medication used in the treatment of epilepsy and neuropathic pain."
+   "medicine_evidence": "Carbamazepine, sold under the brand name Tegretol among others, is an anticonvulsant medication used in the treatment of epilepsy and neuropathic pain.",
+   "registry": {
+    "medicine": "Tegretol, Epitol, Atretol, Carbatrol, Equetro (carbamazepine)",
+    "condition": "Epilepsy Mood Disorder Pain",
+    "name": "The North American Antiepileptic Drug in Pregnancy Registry",
+    "status": "ongoing",
+    "url": "https://www.aedpregnancyregistry.org/join-our-study/",
+    "phone": "1-888-233-2334",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "carbon disulphide",
@@ -5178,7 +5216,17 @@
     "L04AA27"
    ],
    "medicinal": true,
-   "medicine_evidence": "Fingolimod"
+   "medicine_evidence": "Fingolimod",
+   "registry": {
+    "medicine": "Gilenya (fingolimod)",
+    "condition": "Multiple Sclerosis (MS)",
+    "name": "The Gilenya Pregnancy Registry",
+    "status": "ongoing",
+    "url": "https://www.gilenyapregnancyregistry.com/",
+    "phone": "1-877-598-7237",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Flunisolide",
@@ -9929,7 +9977,17 @@
     "N05CD10"
    ],
    "medicinal": true,
-   "medicine_evidence": "Quazepam, sold under the brand name Doral among others, is a relatively long-acting benzodiazepine derivative drug developed by the Schering Corporation in the 1970s."
+   "medicine_evidence": "Quazepam, sold under the brand name Doral among others, is a relatively long-acting benzodiazepine derivative drug developed by the Schering Corporation in the 1970s.",
+   "registry": {
+    "medicine": "Doral (quazepam)",
+    "condition": "Mental Health Disorders Insomnia",
+    "name": "National Pregnancy Registry for Psychiatric Medications",
+    "status": "ongoing",
+    "url": "https://womensmentalhealth.org/research/pregnancyregistry/",
+    "phone": "1-866-961-2388",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)",
@@ -10421,7 +10479,17 @@
     "N05CD07"
    ],
    "medicinal": true,
-   "medicine_evidence": "Temazepam, sold under the brand name Restoril among others, is a medication of the benzodiazepine class which is generally used to treat severe or debilitating insomnia."
+   "medicine_evidence": "Temazepam, sold under the brand name Restoril among others, is a medication of the benzodiazepine class which is generally used to treat severe or debilitating insomnia.",
+   "registry": {
+    "medicine": "Restoril (temazepam)",
+    "condition": "Mental Health Disorders Insomnia",
+    "name": "National Pregnancy Registry for Psychiatric Medications",
+    "status": "ongoing",
+    "url": "https://womensmentalhealth.org/research/pregnancyregistry/",
+    "phone": "1-866-961-2388",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Teniposide",
@@ -10935,7 +11003,17 @@
     "N03AX11"
    ],
    "medicinal": true,
-   "medicine_evidence": "Topiramate"
+   "medicine_evidence": "Topiramate",
+   "registry": {
+    "medicine": "Topamax, Trokendi XR, Qudexy XR (topiramate)",
+    "condition": "Epilepsy Mood disorder Migraine headaches",
+    "name": "The North American Antiepileptic Drug in Pregnancy Registry",
+    "status": "ongoing",
+    "url": "https://www.aedpregnancyregistry.org/join-our-study/",
+    "phone": "1-888-233-2334",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Triazolam",
@@ -10971,7 +11049,17 @@
     "N05CD05"
    ],
    "medicinal": true,
-   "medicine_evidence": "Triazolam, sold under the brand name Halcion among others, is a central nervous system (CNS) depressant tranquilizer of the triazolobenzodiazepine (TBZD) class, which are benzodiazepine (BZD) derivatives."
+   "medicine_evidence": "Triazolam, sold under the brand name Halcion among others, is a central nervous system (CNS) depressant tranquilizer of the triazolobenzodiazepine (TBZD) class, which are benzodiazepine (BZD) derivatives.",
+   "registry": {
+    "medicine": "Halcion (triazolam)",
+    "condition": "Mental Health Disorders Insomnia",
+    "name": "National Pregnancy Registry for Psychiatric Medications",
+    "status": "ongoing",
+    "url": "https://womensmentalhealth.org/research/pregnancyregistry/",
+    "phone": "1-866-961-2388",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Trientine hydrochloride",
@@ -11399,7 +11487,17 @@
     "L01XX43"
    ],
    "medicinal": true,
-   "medicine_evidence": "Vismodegib, sold under the brand name Erivedge, is a medication used for the treatment of basal-cell carcinoma (BCC)."
+   "medicine_evidence": "Vismodegib, sold under the brand name Erivedge, is a medication used for the treatment of basal-cell carcinoma (BCC).",
+   "registry": {
+    "medicine": "ERIVEDGE® (vismodegib)",
+    "condition": "Adults with metastatic basal cell carcinoma, or with locally advanced basal cell carcinoma that has recurred following surgery or who are not candidates for surgery and who are not candidates for radiation.",
+    "name": "Erivedge® (vismodegib) Pregnancy Pharmacovigilance Program",
+    "status": "ongoing",
+    "url": "https://www.erivedge.com/",
+    "phone": "1-888-835-2555",
+    "source": "U.S. Food and Drug Administration, List of Pregnancy Exposure Registries",
+    "source_url": "https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries"
+   }
   },
   {
    "name": "Warfarin",

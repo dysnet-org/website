@@ -548,6 +548,11 @@ def tera_item_html(e):
         elif src["code"] == "nite": lab, det = "Japan NITE", ", ".join(src["statements"]) + (f' · classified {src["classified"]}' if src.get("classified") else "")
         else: lab, det = "DysNet bibliography", "peer-reviewed evidence"
         srcs.append(f'<span class="tera-src src-{src["code"]}">{lab}<small> · {det}</small></span>')
+    reg = e.get("registry")
+    reg_html = (f'<p class="tera-registry">A pregnancy registry is recruiting for {reg["medicine"]}: '
+                f'<a href="{reg["url"]}" target="_blank" rel="noopener external">{reg["name"]}</a>'
+                + (f' &middot; {reg["phone"]}' if reg.get("phone") else "")
+                + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>') if reg else ""
     chips = tera_dec_chips(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(f'<span class="use use-{u}">{TERA_USE.get(u, u)}</span>' for u in e.get("uses", []))
     details = tera_dec_lines(e)
@@ -574,7 +579,7 @@ def tera_item_html(e):
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{'<span class="badge badge-med">Medicine</span>' if e.get("medicinal") and e["kind"] != "medicine" else ""}{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
-            f'<div class="tera-srcs">{"".join(srcs)}</div>{f"<div class=tera-uses>{uses}</div>" if uses else ""}<div class="tera-status">{chips}</div>'
+            f'<div class="tera-srcs">{"".join(srcs)}</div>{f"<div class=tera-uses>{uses}</div>" if uses else ""}<div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
@@ -591,6 +596,7 @@ def teratogens_html():
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
         return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "mev": e.get("medicine_evidence", ""), "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
+                "reg": ({"m": e["registry"]["medicine"], "n": e["registry"]["name"], "u": e["registry"]["url"], "p": e["registry"].get("phone", "")} if e.get("registry") else 0),
                 "dec": [{"c": d["code"], "v": d["verdict"], "w": d["where"], "t": d["tag"], "d": d.get("detail", "")}
                         | ({"u": d.get("url", "")} if d["code"] == "eu-ppp" else {}) for d in e.get("decisions", [])]}
     records = [compact(e) for e in E]
@@ -996,6 +1002,11 @@ PAGES["/knowledge/ongoing-studies/"] = {
     <h2 class="h3" style="margin-top:var(--space-4)">Projects and directories</h2>
     <p>Work under way in the network, and the catalogues where other studies are listed.</p>
     <div style="margin-top:var(--space-2)">
+      <article class="entry" id="pregnancy-registries">
+        <h3>Pregnancy exposure registries · US Food and Drug Administration <span class="badge live">{TERA.get("counts", {}).get("registries_listed", 0)} recruiting</span></h3>
+        <p>A pregnancy exposure registry follows people who took a particular medicine while pregnant and records what happened. It is how the effect of a medicine on a pregnancy becomes known at all, and it is one of the few things a family can still do about an exposure that has already happened. The FDA keeps the public list, and {TERA.get("counts", {}).get("registries", 0)} of the medicines on our <a href="/knowledge/teratogens/">teratogens register</a> have one open, among them carbamazepine and topiramate; those entries carry the registry and its contact. Registries are listed at their sponsor&rsquo;s request and the FDA does not endorse them.</p>
+        <p class="src">FDA · <a href="https://www.fda.gov/consumers/pregnancy-exposure-registries/list-pregnancy-exposure-registries" target="_blank" rel="noopener external">List of pregnancy exposure registries ↗</a> · read {TERA.get("counts", {}).get("registries_fetched", "")}</p>
+      </article>
       <article class="entry" id="patient-journey">
         <h3>Patient Journey · ERN BOND / EURORDIS <span class="badge live">in progress</span></h3>
         <p>A five-step research project promoted by DysNet on behalf of Raggiungere, tracking the experiences of patients, families, doctors and researchers through a shared questionnaire, to give families updated medical and scientific knowledge.</p>

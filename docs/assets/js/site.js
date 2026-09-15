@@ -656,6 +656,28 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
   var CA = "A clear and reasonable warning is required before knowingly exposing anyone in California (Health and Safety Code 25249.6); listing does not ban the substance. Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day.";
   var SRC_SHORT = { clp: "EU CLP", nite: "Japan NITE", p65: "California Prop 65", ema: "EMA", efsa: "EFSA", who: "WHO", bib: "DysNet bibliography" };
+  var DEC_SRC = {
+    "eu-ppp": ["European Commission", "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"],
+    "reach-xvii": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"],
+    "reach-xiv": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"],
+    "stockholm": ["Stockholm Convention", "https://www.pops.int/TheConvention/ThePOPs/ListingofPOPs/tabid/2509/Default.aspx"],
+    "rotterdam": ["national authorities, notified to the Rotterdam Convention", "https://www.pic.int/Procedures/NotificationsofFinalRegulatoryActions/Database/tabid/1368/language/en-US/Default.aspx"]
+  };
+  var DEC_CLS = { approved: "st-warn", pending: "st-warn", refused: "st-ban", public_supply_banned: "st-ban",
+                  authorisation_required: "st-ban", eliminated: "st-ban", restricted: "st-ban",
+                  unintentional: "st-label", banned_somewhere: "st-ban" };
+  function decChips(r) {
+    return (r.dec || []).map(function (d) {
+      return '<span class="st dec ' + (DEC_CLS[d.v] || "st-label") + '">' + esc(d.w) + ": " + esc(d.t) + "</span>";
+    }).join("");
+  }
+  function decLines(r) {
+    return (r.dec || []).map(function (d) {
+      var meta = DEC_SRC[d.c] || ["", ""], u = d.u || meta[1];
+      var line = "<strong>" + esc(d.t) + "</strong> \u2014 " + esc(meta[0]) + (d.d ? ", " + esc(d.d) : "");
+      return "<li>" + line + (u ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener external">source \u2197</a>' : "") + "</li>";
+    });
+  }
   function shortJur(place, text) {
     var s = /programme/.test(text) ? "authorised with a pregnancy prevention programme" : /ontraindicated/.test(text) ? "contraindicated in pregnancy" : /REMS/.test(text) ? "REMS programme" : /boxed warning/.test(text) ? "boxed warning" : /mandatory/.test(text) ? "pregnancy warning mandatory" : /no EU-wide/.test(text) ? "legal, no pregnancy warning" : /pack/.test(text) ? "legal, pack warnings" : text.split(";")[0].slice(0, 50);
     var cls = /contraindicated/.test(s) ? "st-ban" : /(warning|REMS|programme)/.test(s) ? "st-warn" : "st-ok";
@@ -673,11 +695,13 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     if (clp && clp.cat !== "2") chips.push('<span class="st st-ban">ChemFORWARD: band F by list screening</span>');
     if (r.efsa && r.efsa.value) chips.push('<span class="st st-label">EFSA: ' + esc(r.efsa.value.split(";")[0].toLowerCase()) + '</span>');
     Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
+    if (r.dec && r.dec.length) chips.unshift(decChips(r));
     var details = r.src.map(function (s) {
       var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "nite" ? s.st.join(", ") + (s.fy ? ", classified in the " + s.fy + " fiscal year" : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
+    details = decLines(r).concat(details);
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
@@ -696,7 +720,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function order(rows) { rows.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); }); }
   if (DATA) order(DATA);
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
-  var state = { sources: [], levels: [], kinds: [], uses: [] };
+  var state = { sources: [], levels: [], kinds: [], uses: [], decs: [] };
   function apply() {
     if (!DATA) return;                      // the entries rendered into the page stay until the data lands
     var text = q.value.trim().toLowerCase(), k = 0, out = [];
@@ -705,12 +729,13 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
                (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
                (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1)) &&
-               (!state.uses.length || (r.u || []).some(function (u) { return state.uses.indexOf(u) !== -1; }));
+               (!state.uses.length || (r.u || []).some(function (u) { return state.uses.indexOf(u) !== -1; })) &&
+               (!state.decs.length || (r.dec || []).some(function (d) { return state.decs.indexOf(d.v) !== -1; }));
       if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
     });
     list.innerHTML = out.join("");
     n.textContent = k;
-    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses });
+    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses, decision: state.decs });
     more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
   }
   function bind(groupId, attr, key) {
@@ -723,19 +748,19 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     });
   }
   bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels"); bind("tera-levels", "data-kind", "kinds");
-  bind("tera-uses", "data-use", "uses");
+  bind("tera-uses", "data-use", "uses"); bind("tera-decisions", "data-dec", "decs");
   q.addEventListener("input", function () { expanded = false; apply(); });
   more.addEventListener("click", function () { expanded = true; apply(); });
   document.getElementById("tera-reset").addEventListener("click", function () {
-    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [] }; expanded = false;
+    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [], decs: [] }; expanded = false;
     document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
   });
   // a link can arrive with a search, a source, a level, a kind or a use already chosen
   var pre = filterParams();
   if (pre.get("q")) q.value = pre.get("q");
   state.sources = filterList("source"); state.levels = filterList("level");
-  state.kinds = filterList("kind"); state.uses = filterList("use");
-  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses]].forEach(function (pair) {
+  state.kinds = filterList("kind"); state.uses = filterList("use"); state.decs = filterList("decision");
+  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses], ["data-dec", state.decs]].forEach(function (pair) {
     document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
       if (pair[1].indexOf(b.getAttribute(pair[0])) !== -1) b.setAttribute("aria-pressed", "true");
     });

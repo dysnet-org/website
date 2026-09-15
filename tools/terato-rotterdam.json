@@ -1,0 +1,800 @@
+{
+ "source": "Rotterdam Convention, notifications of final regulatory action",
+ "url": "https://www.pic.int/Procedures/NotificationsofFinalRegulatoryActions/Database/tabid/1368/language/en-US/Default.aspx",
+ "captured": "2026-09-15",
+ "note": "The convention's database is assembled in the browser, not served as data, so these rows were read from the rendered page. Only the chemicals that match a substance on this register are kept; the full database held 1,466 decisions across 71 countries and 462 chemicals on the day of capture.",
+ "decisions": {
+  "2-methoxyethanol": [
+   {
+    "country": "Canada",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2008"
+   }
+  ],
+  "Benzene": [
+   {
+    "country": "Latvia",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2004"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "June 2021"
+   }
+  ],
+  "Carbendazim": [
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   }
+  ],
+  "Chlordecone": [
+   {
+    "country": "China",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2017"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2011"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2010"
+   },
+   {
+    "country": "Peru",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2017"
+   },
+   {
+    "country": "Switzerland",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Thailand",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2001"
+   }
+  ],
+  "Chloroform": [
+   {
+    "country": "Latvia",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2004"
+   }
+  ],
+  "Chlorpyrifos": [
+   {
+    "country": "Chile",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2023"
+   },
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2022"
+   },
+   {
+    "country": "Nepal",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2025"
+   },
+   {
+    "country": "Sri Lanka",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2019"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2021"
+   },
+   {
+    "country": "Malaysia",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2023"
+   }
+  ],
+  "Cyanazine": [
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   }
+  ],
+  "Cyhexatin": [
+   {
+    "country": "Brazil",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2012"
+   },
+   {
+    "country": "Canada",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   }
+  ],
+  "Diisobutyl phthalate": [
+   {
+    "country": "European Union",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2020"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2020"
+   }
+  ],
+  "Dinoterb": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2001"
+   },
+   {
+    "country": "Serbia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2024"
+   },
+   {
+    "country": "Switzerland",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Thailand",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2001"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2001"
+   }
+  ],
+  "Endrin": [
+   {
+    "country": "Bulgaria",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Canada",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Ecuador",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2020"
+   },
+   {
+    "country": "Guyana",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2007"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Jordan",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2003"
+   },
+   {
+    "country": "Peru",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2001"
+   },
+   {
+    "country": "Republic of Korea",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Romania",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Switzerland",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Uruguay",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2008"
+   }
+  ],
+  "Epoxiconazole": [
+   {
+    "country": "Norway",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2001"
+   }
+  ],
+  "Fenarimol": [
+   {
+    "country": "Serbia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2025"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   },
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2013"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2013"
+   }
+  ],
+  "Linuron": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2020"
+   },
+   {
+    "country": "Norway",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2007"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2020"
+   }
+  ],
+  "Mancozeb": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2022"
+   }
+  ],
+  "Maneb": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2024"
+   }
+  ],
+  "Mercury": [
+   {
+    "country": "Colombia",
+    "use": "Industrial",
+    "action": "Banned",
+    "date": "December 2020"
+   },
+   {
+    "country": "European Union",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2022"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide and Industrial",
+    "action": "Severely Restricted",
+    "date": "June 2021"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "June 2021"
+   }
+  ],
+  "Mirex": [
+   {
+    "country": "Bulgaria",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Colombia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2017"
+   },
+   {
+    "country": "Cuba",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2008"
+   },
+   {
+    "country": "Ecuador",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2020"
+   },
+   {
+    "country": "Guyana",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2007"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2021"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2005"
+   },
+   {
+    "country": "Switzerland",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2006"
+   },
+   {
+    "country": "Thailand",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Uruguay",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2008"
+   },
+   {
+    "country": "Canada",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2000"
+   },
+   {
+    "country": "Canada",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2008"
+   }
+  ],
+  "Nickel": [
+   {
+    "country": "Latvia",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2004"
+   }
+  ],
+  "Nitrofen": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2002"
+   },
+   {
+    "country": "Romania",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2002"
+   }
+  ],
+  "Pendimethalin": [
+   {
+    "country": "Norway",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2007"
+   }
+  ],
+  "Propargite": [
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2014"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2014"
+   }
+  ],
+  "Simazine": [
+   {
+    "country": "Norway",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2001"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   },
+   {
+    "country": "European Union",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2005"
+   },
+   {
+    "country": "United Kingdom",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2005"
+   }
+  ],
+  "Vinclozolin": [
+   {
+    "country": "Jordan",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2003"
+   },
+   {
+    "country": "Norway",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2001"
+   },
+   {
+    "country": "Türkiye",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2021"
+   }
+  ],
+  "Ethylene oxide": [
+   {
+    "country": "Brazil",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Bulgaria",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Chile",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2024"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2021"
+   },
+   {
+    "country": "Romania",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Switzerland",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2006"
+   },
+   {
+    "country": "Thailand",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Panama",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "June 2004"
+   },
+   {
+    "country": "Venezuela (Bolivarian Republic of)",
+    "use": "Pesticide",
+    "action": "Severely Restricted",
+    "date": "December 2024"
+   }
+  ],
+  "Heptachlor": [
+   {
+    "country": "Armenia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2000"
+   },
+   {
+    "country": "Brazil",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Bulgaria",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Côte d'Ivoire",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Ecuador",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2020"
+   },
+   {
+    "country": "Gambia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2004"
+   },
+   {
+    "country": "Guyana",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2007"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2021"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Republic of Korea",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Romania",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Uruguay",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2008"
+   },
+   {
+    "country": "Venezuela (Bolivarian Republic of)",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2008"
+   }
+  ],
+  "Hexachlorobenzene": [
+   {
+    "country": "Brazil",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Bulgaria",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2005"
+   },
+   {
+    "country": "Canada",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2005"
+   },
+   {
+    "country": "China",
+    "use": "Industrial",
+    "action": "Banned",
+    "date": "December 2015"
+   },
+   {
+    "country": "Côte d'Ivoire",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Ecuador",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2020"
+   },
+   {
+    "country": "Gambia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2004"
+   },
+   {
+    "country": "Guyana",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2007"
+   },
+   {
+    "country": "Hungary",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2000"
+   },
+   {
+    "country": "Indonesia",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2021"
+   },
+   {
+    "country": "Japan",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Kyrgyzstan",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2004"
+   },
+   {
+    "country": "Panama",
+    "use": "Pesticide and Industrial",
+    "action": "Banned",
+    "date": "June 2004"
+   },
+   {
+    "country": "Romania",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Thailand",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2004"
+   },
+   {
+    "country": "Uruguay",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "December 2008"
+   },
+   {
+    "country": "Venezuela (Bolivarian Republic of)",
+    "use": "Pesticide",
+    "action": "Banned",
+    "date": "June 2008"
+   },
+   {
+    "country": "Australia",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2023"
+   },
+   {
+    "country": "Canada",
+    "use": "Industrial",
+    "action": "Severely Restricted",
+    "date": "December 2008"
+   }
+  ]
+ }
+}

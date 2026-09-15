@@ -1,0 +1,65 @@
+{
+ "source": "Stockholm Convention on Persistent Organic Pollutants",
+ "url": "https://www.pops.int/TheConvention/ThePOPs/ListingofPOPs/tabid/2509/Default.aspx",
+ "captured": "2026-09-15",
+ "note": "Read from the convention's listing page, which groups the chemicals under the three annex headings. The convention publishes its CAS numbers inside prose, so matching to this register is on name.",
+ "annexes": {
+  "A": {
+   "effect": "Parties must eliminate production and use.",
+   "chemicals": [
+    "Aldrin",
+    "Chlordane",
+    "Chlordecone",
+    "Chlorpyrifos",
+    "Decabromodiphenyl ether (commercial mixture, c-decaBDE)",
+    "Dechlorane Plus",
+    "Dicofol",
+    "Dieldrin",
+    "Endrin",
+    "Heptachlor",
+    "Hexabromobiphenyl",
+    "Hexabromocyclododecane (HBCDD)",
+    "Hexabromodiphenyl ether and heptabromodiphenyl ether",
+    "Hexachlorobenzene (HCB)",
+    "Hexachlorobutadiene",
+    "Alpha hexachlorocyclohexane",
+    "Beta hexachlorocyclohexane",
+    "Lindane",
+    "Long-chain perfluorocarboxylic acids, their salts and related compounds",
+    "Medium-chain chlorinated paraffins (MCCPs)",
+    "Methoxychlor",
+    "Mirex",
+    "Pentachlorobenzene",
+    "Pentachlorophenol and its salts and esters",
+    "Polychlorinated biphenyls (PCB)",
+    "Polychlorinated naphthalenes",
+    "Perfluorooctanoic acid (PFOA), its salts and PFOA-related compounds",
+    "Perfluorohexane sulfonic acid (PFHxS), its salts and PFHxS-related compounds",
+    "Short-chain chlorinated paraffins (SCCPs)",
+    "Technical endosulfan and its related isomers",
+    "Tetrabromodiphenyl ether and pentabromodiphenyl ether",
+    "Toxaphene",
+    "UV-328"
+   ]
+  },
+  "B": {
+   "effect": "Parties must restrict production and use to the acceptable purposes the annex allows.",
+   "chemicals": [
+    "DDT",
+    "Perfluorooctane sulfonic acid (PFOS), its salts and perfluorooctane sulfonyl fluoride (PFOSF)"
+   ]
+  },
+  "C": {
+   "effect": "Parties must reduce unintentional releases, with elimination as the goal.",
+   "chemicals": [
+    "Hexachlorobenzene (HCB)",
+    "Hexachlorobutadiene (HCBD)",
+    "Pentachlorobenzene",
+    "Polychlorinated biphenyls (PCB)",
+    "Polychlorinated dibenzo-p-dioxins (PCDD)",
+    "Polychlorinated dibenzofurans (PCDF)",
+    "Polychlorinated naphthalenes"
+   ]
+  }
+ }
+}

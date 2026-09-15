@@ -870,6 +870,7 @@ ol.demands details[open] summary::after { content: "–"; }
 .tera-src { font-size: var(--text-eyebrow); font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; background: #f3f4f6; color: #374151; border: 1px solid #e5e7eb; }
 .tera-src small { font-weight: 400; }
 .src-clp { background: #eef2ff; color: #3730a3; border-color: #c7d2fe; }
+.src-nite { background: #fef2f2; color: #9f1239; border-color: #fecdd3; }
 .src-p65 { background: #fff7ed; color: #9a3412; border-color: #fed7aa; }
 .src-ema { background: #f5f3ff; color: #5b21b6; border-color: #ddd6fe; }
 .src-who { background: #ecfdf5; color: #065f46; border-color: #a7f3d0; }

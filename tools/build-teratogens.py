@@ -74,7 +74,13 @@ for r in rows[hdr + 1:]:
     dev_codes = sorted(set(m.group(0) for m in DEV_H.finditer(hs)))
     level = {"1A": "known", "1B": "presumed", "2": "suspected"}.get(cat, "suspected")
     specific = any(c in ("H360D", "H360FD", "H360Fd", "H360Df", "H361d", "H361fd") for c in dev_codes)
-    cas = norm_cas(r.get("F", "").split("\n")[0]); key = ("cas:" + cas) if cas else ("clp:" + r.get("A", ""))
+    # A row covering several forms of a substance lists one identifier per line, each followed by a
+    # footnote marker such as " [1]". Reading only the first line therefore yielded "81-81-2 [1]",
+    # which norm_cas rejected, and the row ended up with no CAS and no way to merge with the same
+    # substance on another list. Take every identifier the cell holds; the first names the row.
+    cas_all = re.findall(r"\d{2,7}-\d{2}-\d", r.get("F", ""))
+    cas = cas_all[0] if cas_all else ""
+    key = ("cas:" + cas) if cas else ("clp:" + r.get("A", ""))
     eu = {"labelling": "Mandatory hazard classification and labelling of the substance and of mixtures containing it (CLP Annex VI, harmonised)."}
     if cat in ("1A", "1B"):
         eu["consumers"] = "Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6)."
@@ -84,7 +90,7 @@ for r in rows[hdr + 1:]:
     else:
         eu["consumers"] = "Labelling required; no general ban on supply to the public for category 2."
         eu["cosmetics"] = "Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1))."
-    add(key, name=r.get("D", "").split("\n")[0].strip(), cas=cas, ec=r.get("E", "").split("\n")[0].strip(), kind="chemical",
+    add(key, name=r.get("D", "").split("\n")[0].strip(), cas=cas, ec=next(iter(re.findall(r"\d{3}-\d{3}-\d", r.get("E", ""))), ""), kind="chemical",
         source={"label": "EU harmonised classification (CLP Annex VI)", "code": "clp", "category": f"Repr. {cat}", "statements": dev_codes,
                 "developmental_specific": specific, "atp": r.get("B", ""), "applies_from": excel_date(r.get("O", "")), "url": r.get("P", ""), "index": r.get("A", "")},
         status={"clp": level}, jurisdictions={"EU / EEA": eu})

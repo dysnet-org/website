@@ -648,14 +648,14 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var DATA = null;
   try { if (dataEl.textContent.trim()) DATA = JSON.parse(dataEl.textContent); } catch (e) { DATA = null; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
-  var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
+  var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", nite: "Japan: GHS classification by the government (NITE)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
   var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" }, KIND = { chemical: "Chemical", medicine: "Medicine", product: "Consumer product" };
   var USE = { food: "Food and drink", construction: "Building and construction", goods: "Manufactured goods", cosmetics: "Cosmetics and personal care", cleaning: "Cleaning and household", agriculture: "Agriculture and pest control", fuel: "Fuel and vehicles" };
   var EU_ALL = "Mandatory hazard classification and labelling of the substance and of mixtures containing it (CLP Annex VI, harmonised).";
   var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
   var CA = "A clear and reasonable warning is required before knowingly exposing anyone in California (Health and Safety Code 25249.6); listing does not ban the substance. Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day.";
-  var SRC_SHORT = { clp: "EU CLP", p65: "California Prop 65", ema: "EMA", efsa: "EFSA", who: "WHO", bib: "DysNet bibliography" };
+  var SRC_SHORT = { clp: "EU CLP", nite: "Japan NITE", p65: "California Prop 65", ema: "EMA", efsa: "EFSA", who: "WHO", bib: "DysNet bibliography" };
   function shortJur(place, text) {
     var s = /programme/.test(text) ? "authorised with a pregnancy prevention programme" : /ontraindicated/.test(text) ? "contraindicated in pregnancy" : /REMS/.test(text) ? "REMS programme" : /boxed warning/.test(text) ? "boxed warning" : /mandatory/.test(text) ? "pregnancy warning mandatory" : /no EU-wide/.test(text) ? "legal, no pregnancy warning" : /pack/.test(text) ? "legal, pack warnings" : text.split(";")[0].slice(0, 50);
     var cls = /contraindicated/.test(s) ? "st-ban" : /(warning|REMS|programme)/.test(s) ? "st-warn" : "st-ok";
@@ -664,7 +664,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function itemHtml(r) {
     var clp = r.src.filter(function (s) { return s.c === "clp"; })[0];
     var srcs = r.src.map(function (s) {
-      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on.slice(0, 4) : "") : s.c === "ema" ? "pregnancy prevention programme or contraindication" : s.c === "who" ? "fact sheet on congenital disorders" : s.c === "efsa" ? "health-based guidance value" : "peer-reviewed evidence";
+      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") : s.c === "nite" ? s.st.join(", ") + (s.fy ? " · classified " + s.fy : "") : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on.slice(0, 4) : "") : s.c === "ema" ? "pregnancy prevention programme or contraindication" : s.c === "who" ? "fact sheet on congenital disorders" : s.c === "efsa" ? "health-based guidance value" : "peer-reviewed evidence";
       return '<span class="tera-src src-' + s.c + '">' + SRC_SHORT[s.c] + '<small> · ' + esc(det) + '</small></span>';
     }).join("");
     var chips = [];
@@ -674,7 +674,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     if (r.efsa && r.efsa.value) chips.push('<span class="st st-label">EFSA: ' + esc(r.efsa.value.split(";")[0].toLowerCase()) + '</span>');
     Object.keys(r.jur || {}).forEach(function (k) { chips.push(shortJur(k, r.jur[k])); });
     var details = r.src.map(function (s) {
-      var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
+      var line = LABEL[s.c] + ": " + (s.c === "clp" ? "Repr. " + s.cat + ", " + s.st.join(", ") + (s.from ? ", applies from " + s.from : "") : s.c === "nite" ? s.st.join(", ") + (s.fy ? ", classified in the " + s.fy + " fiscal year" : "") : s.c === "p65" ? s.tox + (s.on ? ", listed " + s.on : "") + (s.via ? ", via " + s.via : "") : (s.note || ""));
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });

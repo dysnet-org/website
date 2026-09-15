@@ -2594,7 +2594,7 @@ PAGES["/voice/"] = {
     <div class="grid cols-2" style="margin-top:var(--space-4)">
       <div class="card">
         <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
-        <p>Member. Active in the Rare Barometer programme and the European Regional Task Force on Rare Diseases (with Rare Diseases International, supporting the WHO resolution on rare diseases).</p>
+        <p>Member, and part of the <a href="https://www.eurordis.org/social-policy-action-group/" target="_blank" rel="noopener external">Social Policy Action Group</a>, where DysNet contributes on independent living. Active in the Rare Barometer programme and the European Regional Task Force on Rare Diseases (with Rare Diseases International, supporting the WHO resolution on rare diseases).</p>
       </div>
       <div class="card">
         <h3 class="h4">EDF · European Disability Forum</h3>
@@ -2646,7 +2646,7 @@ PAGES["/voice/reports/"] = {
         <p class="seat">VOICE4ALL</p>
         <h2 class="h3">New EU project on autonomous voting starts</h2>
         <time datetime="2026-05">May 2026 · Claudio Pirola</time>
-        <p>Following VOTE4ALL (study visits to the Parliaments of The Hague and Lisbon, dialogue with the Dutch Ministry of the Interior, the Municipality of Milan, the Portuguese Parliament and the mayors of Lisbon and Porto), DysNet joins the successor project: webinars and in-person workshops across the EU.</p>
+        <p>Following Vote4All (study visits to the Parliaments of The Hague and Lisbon, dialogue with the Dutch Ministry of the Interior, the Municipality of Milan, the Portuguese Parliament and the mayors of Lisbon and Porto), DysNet joins the successor project: webinars and in-person workshops across the EU.</p>
       </article>
       <article class="report">
         <p class="seat">DysNet event · Regione Lombardia</p>
@@ -2655,10 +2655,10 @@ PAGES["/voice/reports/"] = {
         <p>DysNet organised a conference on biorobotics for persons with disability at the seat of Regione Lombardia in Milan: university professors and researchers, prosthetics producers and association representatives. Follow-up: an audition before the region’s competent commission.</p>
       </article>
       <article class="report">
-        <p class="seat">EURORDIS · Social Policy Action Group</p>
+        <p class="seat">EURORDIS · <a href="https://www.eurordis.org/social-policy-action-group/" target="_blank" rel="noopener external">Social Policy Action Group</a></p>
         <h2 class="h3">Independent living: what one country already does, another can copy</h2>
         <time datetime="2026-02">February 2026 · Claudio Pirola</time>
-        <p>DysNet contributed to the group&rsquo;s work on independent living by submitting the laws already in force in several
+        <p>DysNet is a member of the group, and contributed to its work on independent living by submitting the laws already in force in several
         countries, so that a provision that works in one place can be argued for in another. The comparison is long work, and it
         continues with the full support of EURORDIS.</p>
       </article>
@@ -2701,14 +2701,38 @@ PAGES["/voice/reports/"] = {
         <p class="seat">Sport · Milano-Cortina 2026</p>
         <h2 class="h3">Disability and sport around the Winter Games</h2>
         <time datetime="2026-02">February 2026 · Claudio Pirola</time>
-        <p>The chairman reported a growing involvement in the Paralympic Games of Milano-Cortina 2026 and structured contacts with
-        the Municipality of Milan on disability and sport, with an event on the subject among the plans.</p>
+        <p>Milan co-hosted the 2026 Olympic and Paralympic Winter Games with Cortina d&rsquo;Ampezzo. The Paralympic Winter Games
+        opened in the Arena di Verona on 6 March 2026 and closed on 15 March in the Cortina curling stadium built for the Games of
+        1956: around 665 athletes, 79 medal events and six sports, fifty years after the first Paralympic Winter Games and twenty
+        after Torino 2006.<sup class="fn"><a href="#games-src">1</a></sup> In February the chairman reported a growing involvement
+        in those Games and structured contacts with the Municipality of Milan on disability and sport, with an event on the subject
+        among the plans. DysNet had already argued the case in the city a year earlier, at the first
+        <a href="#vote4all-milan">Vote4All study visit</a>, where much of the programme turned on sport as a way into public life.</p>
+        <p class="src" id="games-src">International Paralympic Committee ·
+        <a href="https://www.paralympic.org/milano-cortina-2026/about" target="_blank" rel="noopener external">About the Milano Cortina 2026 Paralympic Winter Games ↗</a></p>
       </article>
       <article class="report">
         <p class="seat">EURORDIS</p>
         <h2 class="h3">European Regional Task Force on Rare Diseases</h2>
         <time datetime="2026">2026 · Claudio Pirola</time>
         <p>DysNet participates in the task force created by EURORDIS with Rare Diseases International, supporting the WHO European region’s implementation of the World Health Assembly resolution on rare diseases.</p>
+      </article>
+      <article class="report" id="vote4all-milan">
+        <p class="seat">Vote4All · study visit, Milan</p>
+        <h2 class="h3">Three days in Milan on what makes a city usable</h2>
+        <time datetime="2025-02-13">13 to 15 February 2025 · Claudio Pirola</time>
+        <p>Milan hosted the first of the five study visits of Vote4All, the EU-funded project led by Cerebral Palsy Europe that
+        works to let everyone vote autonomously, including people with cerebral palsy and complex disabilities. In a city about to
+        co-host the 2026 Olympic and Paralympic Winter Games, much of the programme turned on sport as a driver of inclusion: the
+        PlayMore centre, which opens its sports facilities to disabled people and to refugees, presented by Milan&rsquo;s sports
+        councillor Martina Riva; the AC Milan Foundation at Casa Milan on its disability programmes in Italy and in Africa; a
+        wheelchair-accessible walk through the Porta Nuova district. The rest tested the technology and the welcome: Microsoft
+        House on digital accessibility, with Milan&rsquo;s council delegate for disabled people Haydee Longo, the Google
+        Accessibility Discovery Centre, La Scala, and a lunch at a restaurant that employs people with Down syndrome, where
+        CoorDown&rsquo;s president Martina Fuga made the economic case alongside the social one. The visits continue in Ljubljana,
+        Lisbon, Porto, The Hague and Brussels.</p>
+        <p class="src">Written for EURORDIS ·
+        <a href="https://www.eurordis.org/breaking-barriers-advancing-accessibility-and-inclusion-for-cerebral-palsy-in-milan/" target="_blank" rel="noopener external">Breaking barriers: advancing accessibility and inclusion for cerebral palsy in Milan ↗</a></p>
       </article>
       <article class="report">
         <p class="seat">EDF</p>

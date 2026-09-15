@@ -550,7 +550,7 @@ def tera_item_html(e):
         details.append(f'<li><strong>{TERA_USE.get(u, u)}:</strong> “{sent}” <a href="{e["wiki"]}" target="_blank" rel="noopener external">Wikipedia ↗</a></li>')
     if e.get("cas"):
         details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
-    ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if e.get("ec") else "",
+    ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{'<span class="badge badge-med">Medicine</span>' if e.get("medicinal") and e["kind"] != "medicine" else ""}{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
             f'<div class="tera-srcs">{"".join(srcs)}</div>{f"<div class=tera-uses>{uses}</div>" if uses else ""}<div class="tera-status">{chips}</div>'

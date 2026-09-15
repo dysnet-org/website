@@ -5338,7 +5338,7 @@
   {
    "name": "lead alkyls",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -5481,7 +5481,7 @@
   {
    "name": "lead compounds with the exception of those specified elsewhere in this Annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -8634,7 +8634,7 @@
   {
    "name": "silicic acid, lead nickel salt",
    "cas": "68130-19-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -9865,7 +9865,7 @@
   {
    "name": "Warfarin",
    "cas": "81-81-2",
-   "ec": "201-377-6 [1]",
+   "ec": "201-377-6",
    "kind": "chemical",
    "sources": [
     {
@@ -10144,7 +10144,7 @@
   {
    "name": "1,2-benzenedicarboxylic acid, dipentylester, branched and linear [1]",
    "cas": "84777-06-0",
-   "ec": "284-032-2 [1]",
+   "ec": "284-032-2",
    "kind": "chemical",
    "sources": [
     {
@@ -11070,7 +11070,7 @@
   {
    "name": "2-bromo-3,3,3-trifluoroprop-1-ene",
    "cas": "1514-82-5",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -11185,7 +11185,7 @@
   {
    "name": "2-ethylhexanoic acid and its salts, with the exception of those specified elsewhere in this Annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -11726,7 +11726,7 @@
   {
    "name": "6-[(C10-C13)-alkyl-(branched, unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic acid",
    "cas": "2156592-54-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -11764,7 +11764,7 @@
   {
    "name": "6-[C12-18-alkyl-(branched, unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic acid",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -11802,7 +11802,7 @@
   {
    "name": "6-[C12-18-alkyl-(branched, unsaturated)-2,5-dioxopyrrolidin-1-yl]hexanoic acid, sodium and tris(2-hydroxyethyl)ammonium salts",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -11878,7 +11878,7 @@
   {
    "name": "9-octadecenoic acid (Z)-, sulfonated, potassium salts [1]",
    "cas": "68609-93-8",
-   "ec": "271-843-1 [1]",
+   "ec": "271-843-1",
    "kind": "chemical",
    "sources": [
     {
@@ -12236,7 +12236,7 @@
   {
    "name": "Avermectin B1 (Abamectin)",
    "cas": "71751-41-2",
-   "ec": "- [1]",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -12301,7 +12301,7 @@
   {
    "name": "azafenidin (ISO); 2-(2,4-dichloro-5-prop-2-ynyloxyphenyl)-5,6,7,8-tetrahydro-1,2,4-triazolo[4,3-a]pyridin-3(2H)-one",
    "cas": "68049-83-2",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -12941,7 +12941,7 @@
   {
    "name": "boric acid [1]",
    "cas": "10043-35-3",
-   "ec": "233-139-2 [1]",
+   "ec": "233-139-2",
    "kind": "chemical",
    "sources": [
     {
@@ -13666,7 +13666,7 @@
   {
    "name": "cyproconazole (ISO); (2RS,3RS;2RS,3SR)-2-(4-chlorophenyl)-3-cyclopropyl-1-(1H-1,2,4-triazol-1-yl)butan-2-ol",
    "cas": "94361-06-5",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -14670,7 +14670,7 @@
   {
    "name": "difethialone (ISO); 3-[3-(4′-bromobiphenyl-4-yl)-1,2,3,4-tetrahydronaphthalen-1-yl]-4-hydroxy-2H-1-benzothiopyran-2-one",
    "cas": "104653-34-1",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -15062,7 +15062,7 @@
   {
    "name": "dioctyltin dilaurate [1]",
    "cas": "3648-18-8",
-   "ec": "222-883-3 [1]",
+   "ec": "222-883-3",
    "kind": "chemical",
    "sources": [
     {
@@ -15221,7 +15221,7 @@
   {
    "name": "disodium octaborate anhydrous [1]",
    "cas": "12008-41-2",
-   "ec": "234-541-0 [1]",
+   "ec": "234-541-0",
    "kind": "chemical",
    "sources": [
     {
@@ -15823,7 +15823,7 @@
   {
    "name": "flusilazole (ISO); bis(4-fluorophenyl)(methyl)(1H-1,2,4-triazol-1-ylmethyl)silane",
    "cas": "85509-19-9",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -16042,7 +16042,7 @@
   {
    "name": "halosulfuron-methyl (ISO); methyl 3-chloro-5-{[(4,6-dimethoxypyrimidin-2-yl)carbamoyl]sulfamoyl}-1-methyl-1H-pyrazole-4-carboxylate",
    "cas": "100784-20-1",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -16269,7 +16269,7 @@
   {
    "name": "ipconazole (ISO); (1RS,2SR,5RS;1RS,2SR,5SR)-2-(4-chlorobenzyl)-5-isopropyl-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol [1]",
    "cas": "125225-28-7",
-   "ec": "- [1]",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -16457,7 +16457,7 @@
   {
    "name": "mancozeb (ISO); manganese ethylenebis(dithiocarbamate) (polymeric) complex with zinc salt",
    "cas": "8018-01-7",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -17037,7 +17037,7 @@
   {
    "name": "myclobutanil(ISO); 2-(4-chlorophenyl)-2-(1H-1,2,4-triazol-1-ylmethyl)hexanenitrile",
    "cas": "88671-89-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -17768,7 +17768,7 @@
   {
    "name": "nickel carbonate; basic nickel carbonate; carbonic acid, nickel (2+) salt [1]",
    "cas": "3333-67-3",
-   "ec": "222-068-2 [1]",
+   "ec": "222-068-2",
    "kind": "chemical",
    "sources": [
     {
@@ -17806,7 +17806,7 @@
   {
    "name": "nickel di(acetate) [1]",
    "cas": "373-02-4",
-   "ec": "206-761-7 [1]",
+   "ec": "206-761-7",
    "kind": "chemical",
    "sources": [
     {
@@ -17882,7 +17882,7 @@
   {
    "name": "nickel dichlorate [1]",
    "cas": "67952-43-6",
-   "ec": "267-897-0 [1]",
+   "ec": "267-897-0",
    "kind": "chemical",
    "sources": [
     {
@@ -18011,7 +18011,7 @@
   {
    "name": "nickel difluoride [1]",
    "cas": "10028-18-9",
-   "ec": "233-071-3 [1]",
+   "ec": "233-071-3",
    "kind": "chemical",
    "sources": [
     {
@@ -18049,7 +18049,7 @@
   {
    "name": "nickel diformate [1]",
    "cas": "3349-06-2",
-   "ec": "222-101-0 [1]",
+   "ec": "222-101-0",
    "kind": "chemical",
    "sources": [
     {
@@ -18087,7 +18087,7 @@
   {
    "name": "nickel dihydroxide [1]",
    "cas": "12054-48-7",
-   "ec": "235-008-5 [1]",
+   "ec": "235-008-5",
    "kind": "chemical",
    "sources": [
     {
@@ -18125,7 +18125,7 @@
   {
    "name": "nickel dilactate",
    "cas": "16039-61-5",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -18163,7 +18163,7 @@
   {
    "name": "nickel dinitrate [1]",
    "cas": "13138-45-9",
-   "ec": "236-068-5 [1]",
+   "ec": "236-068-5",
    "kind": "chemical",
    "sources": [
     {
@@ -18239,7 +18239,7 @@
   {
    "name": "nickel dipotassium bis(sulfate) [1]",
    "cas": "13842-46-1",
-   "ec": "237-563-9 [1]",
+   "ec": "237-563-9",
    "kind": "chemical",
    "sources": [
     {
@@ -18520,7 +18520,7 @@
   {
    "name": "nickel(II) trifluoroacetate [1]",
    "cas": "16083-14-0",
-   "ec": "240-235-8 [1]",
+   "ec": "240-235-8",
    "kind": "chemical",
    "sources": [
     {
@@ -18647,7 +18647,7 @@
   {
    "name": "nonadecafluorodecanoic acid [1]",
    "cas": "335-76-2",
-   "ec": "206-400-3 [1]",
+   "ec": "206-400-3",
    "kind": "chemical",
    "sources": [
     {
@@ -18954,7 +18954,7 @@
   {
    "name": "perboric acid (H3BO2(O2)), monosodium salt trihydrate [1]",
    "cas": "13517-20-9",
-   "ec": "239-172-9 [1]",
+   "ec": "239-172-9",
    "kind": "chemical",
    "sources": [
     {
@@ -18992,7 +18992,7 @@
   {
    "name": "perboric acid, sodium salt [1]",
    "cas": "11138-47-9",
-   "ec": "234-390-0 [1]",
+   "ec": "234-390-0",
    "kind": "chemical",
    "sources": [
     {
@@ -19082,7 +19082,7 @@
   {
    "name": "perfluorononan-1-oic acid [1]",
    "cas": "375-95-1",
-   "ec": "206-801-3 [1]",
+   "ec": "206-801-3",
    "kind": "chemical",
    "sources": [
     {
@@ -19133,7 +19133,7 @@
   {
    "name": "Perfluorooctane sulfonate (PFOS)",
    "cas": "1763-23-1",
-   "ec": "217-179-8 [1]",
+   "ec": "217-179-8",
    "kind": "chemical",
    "sources": [
     {
@@ -19781,7 +19781,7 @@
   {
    "name": "reaction mass of 1,3-dioxan-5-ol and 1,3-dioxolan-4-ylmethanol",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -19819,7 +19819,7 @@
   {
    "name": "Reaction mass of 3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9RS)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide and 3-(difluoromethyl)-1-methyl-N-[(1RS,4SR,9SR)-1,2,3,4-tetrahydro-9-isopropyl-1,4-methanonaphthalen-5-yl]pyrazole-4-carboxamide [≥ 78 % syn isomers ≤ 15 % anti isomers relative content]; isopyrazam",
    "cas": "881685-58-1",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -20030,7 +20030,7 @@
   {
    "name": "salts and esters of dinoseb, with the exception of those specified elsewhere in this Annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -20068,7 +20068,7 @@
   {
    "name": "salts and esters of dinoterb",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -20557,7 +20557,7 @@
   {
    "name": "tetraboron disodium heptaoxide, hydrate [1]",
    "cas": "12267-73-1",
-   "ec": "235-541-3 [1]",
+   "ec": "235-541-3",
    "kind": "chemical",
    "sources": [
     {
@@ -20864,7 +20864,7 @@
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",
    "cas": "111988-49-9",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -21019,7 +21019,7 @@
   {
    "name": "tributyltin compounds, with the exception of those specified elsewhere in this annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -21186,7 +21186,7 @@
   {
    "name": "triflumizole (ISO); (1E)-N-[4-chloro-2-(trifluoromethyl)phenyl]-1-(1H-imidazol-1-yl)-2-propoxyethanimine",
    "cas": "68694-11-1",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -21608,7 +21608,7 @@
   {
    "name": "(RS)-1-{1-ethyl-4-[4-mesyl-3-(2-methoxyethoxy)-o-toluoyl]pyrazol-5-yloxy}ethyl methyl carbonate; tolpyralate",
    "cas": "1101132-67-5",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -21950,7 +21950,7 @@
   {
    "name": "acetamiprid (ISO); (1E)-N-[(6-chloropyridin-3-yl)methyl]-N-cyano-N-methylethanimidamide; (E)-N1-[(6-chloro-3-pyridyl)methyl]-N2-cyano-N1-methylacetamidine [1]",
    "cas": "135410-20-7",
-   "ec": "- [1]",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -22168,7 +22168,7 @@
   {
    "name": "benthiavalicarb-isopropyl (ISO); isopropyl [(S)-1-{[(R)-1-(6-fluoro-1,3-benzothiazol-2-yl)ethyl]carbamoyl}-2-methylpropyl]carbamate",
    "cas": "177406-68-7",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -22310,7 +22310,7 @@
   {
    "name": "cadmium (non-pyrophoric) [1]",
    "cas": "7440-43-9",
-   "ec": "231-152-8 [1]",
+   "ec": "231-152-8",
    "kind": "chemical",
    "sources": [
     {
@@ -22749,7 +22749,7 @@
   {
    "name": "cymoxanil (ISO); 2-cyano-N-[(ethylamino)carbonyl]-2-(methoxyimino)acetamide [1]",
    "cas": "57966-95-7",
-   "ec": "261-043-0 [1]",
+   "ec": "261-043-0",
    "kind": "chemical",
    "sources": [
     {
@@ -22891,7 +22891,7 @@
   {
    "name": "dimoxystrobin (ISO); (2E)-2-{2-[(2,5-dimethylphenoxy)methyl]phenyl}-2-(methoxyimino)-N-methylacetamide; (E)-2-(methoxyimino)-N-methyl-2-[α-(2,5-xylyloxy)-o-tolyl]acetamide",
    "cas": "149961-52-4",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23269,7 +23269,7 @@
   {
    "name": "fenpropidin (ISO); (R,S)-1-[3-(4-tert-butylphenyl)-2-methylpropyl]piperidine",
    "cas": "67306-00-7",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23403,7 +23403,7 @@
   {
    "name": "fluazifop-P-butyl (ISO); butyl (R)-2-[4-(5-trifluoromethyl-2-pyridyloxy)phenoxy]propionate",
    "cas": "79241-46-6",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23459,7 +23459,7 @@
   {
    "name": "fluazinam (ISO); 3-chloro-N-[3-chloro-2,6-dinitro-4-(trifluoromethyl)phenyl]-5-(trifluoromethyl)pyridin-2-amine",
    "cas": "79622-59-6",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23529,7 +23529,7 @@
   {
    "name": "flumioxazin (ISO); N-(7-fluoro-3,4-dihydro-3-oxo-4-prop-2-ynyl-2H-1,4-benzoxazin-6-yl)cyclohex-1-ene-1,2-dicarboximide",
    "cas": "103361-09-7",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23585,7 +23585,7 @@
   {
    "name": "fluopicolide (ISO); 2,6-dichloro-N-[3-chloro-5-(trifluoromethyl)-2-pyridylmethyl]benzamide",
    "cas": "239110-15-7",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23641,7 +23641,7 @@
   {
    "name": "Hexabromocyclododecane [1]",
    "cas": "25637-99-4",
-   "ec": "247-148-4 [1]",
+   "ec": "247-148-4",
    "kind": "chemical",
    "sources": [
     {
@@ -23763,7 +23763,7 @@
   {
    "name": "imazamox (ISO); (RS)-2-(4-isopropyl-4-methyl-5-oxo-2-imidazolin-2-yl)-5-methoxymethylnicotinic acid",
    "cas": "114311-32-9",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23877,7 +23877,7 @@
   {
    "name": "isoxaflutole (ISO); 5-cyclopropyl-1,2-oxazol-4-yl α,α,α-trifluoro-2-mesyl-p-tolyl ketone",
    "cas": "141112-29-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -23927,7 +23927,7 @@
   {
    "name": "malachite green hydrochloride [1]",
    "cas": "569-64-2",
-   "ec": "209-322-8 [1]",
+   "ec": "209-322-8",
    "kind": "chemical",
    "sources": [
     {
@@ -24055,7 +24055,7 @@
   {
    "name": "mesotrione (ISO); 2-[4-(methylsulfonyl)-2-nitrobenzoyl]-1,3-cyclohexanedione",
    "cas": "104206-82-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24105,7 +24105,7 @@
   {
    "name": "metaflumizone (ISO); (EZ)-2-[2-(4-cyanophenyl)-1-(α,α,α -trifluoro-m-tolyl)ethylidene]-[4-(trifluoromethoxy)phenyl]carbanilohydrazide [E-isomer ≥ 90 %, Z-isomer ≤ 10 % relative content] [1]",
    "cas": "139968-49-3",
-   "ec": "- [1]",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24141,7 +24141,7 @@
   {
    "name": "metconazole (ISO); (1RS, 5RS;1RS, 5SR)-5-(4-chlorobenzyl)-2,2-dimethyl-1-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanol",
    "cas": "125116-23-6",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24267,7 +24267,7 @@
   {
    "name": "nonylphenol [1]",
    "cas": "25154-52-3",
-   "ec": "246-672-0 [1]",
+   "ec": "246-672-0",
    "kind": "chemical",
    "sources": [
     {
@@ -24385,7 +24385,7 @@
   {
    "name": "paclobutrazol (ISO); (2RS,3RS)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl)pentan-3-ol",
    "cas": "76738-62-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24541,7 +24541,7 @@
   {
    "name": "pinoxaden (ISO); 8-(2,6-diethyl-4-methylphenyl)-7-oxo-1,2,4,5-tetrahydro-7H-pyrazolo[1,2-d][1,4,5]oxadiazepin-9-yl 2,2-dimethylpropanoate",
    "cas": "243973-20-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24597,7 +24597,7 @@
   {
    "name": "piperazine hydrochloride [1]",
    "cas": "6094-40-2",
-   "ec": "228-042-7 [1]",
+   "ec": "228-042-7",
    "kind": "chemical",
    "sources": [
     {
@@ -24750,7 +24750,7 @@
   {
    "name": "profoxydim (ISO); 2-{](EZ)-1-[}(2RS)-2-(4-chlorophenoxy)propoxyimino{]butyl[}-3-hydroxy-5-(thian-3-yl)cyclohex-2-en-1-one",
    "cas": "139001-49-3",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24786,7 +24786,7 @@
   {
    "name": "propylenethiourea",
    "cas": "2122-19-2",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24836,7 +24836,7 @@
   {
    "name": "pymetrozine (ISO); (E)-4,5-dihydro-6-methyl-4-(3-pyridylmethyleneamino)-1,2,4-triazin-3(2H)-one",
    "cas": "123312-89-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -24886,7 +24886,7 @@
   {
    "name": "pyraclostrobin (ISO); methyl N-(2-{[1-(4-chlorophenyl)-1H-pyrazol-3-yl]oxymethyl}phenyl) N-methoxy carbamate",
    "cas": "175013-18-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25090,7 +25090,7 @@
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25126,7 +25126,7 @@
   {
    "name": "salts of ioxynil with the exception of those specified elsewhere in this Annex",
    "cas": "",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25162,7 +25162,7 @@
   {
    "name": "silver zinc zeolite (Zeolite, LTA framework type, surface-modified with silver and zinc ions); [This entry covers LTA (Linde Type A) framework type zeolite which has been surface-modified with both silver and zinc ions at contents Ag+ 0,5 %-6 %, Zn2 + 5 %-16 %, and potentially with phosphorus, NH4+, Mg2+ and/or Ca2+ each at level < 3 %]",
    "cas": "130328-20-0",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25198,7 +25198,7 @@
   {
    "name": "spirotetramat (ISO); (5s,8s)-3-(2,5-dimethylphenyl)-8-methoxy-2-oxo-1-azaspiro[4,5]dec-3-en-4-yl ethyl carbonate",
    "cas": "203313-25-1",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25248,7 +25248,7 @@
   {
    "name": "spiroxamine (ISO); 8-tert-butyl-1,4-dioxaspiro[4.5]decan-2-ylmethyl(ethyl)(propyl)amine",
    "cas": "118134-30-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25334,7 +25334,7 @@
   {
    "name": "sulcotrione (ISO); 2-[2-chloro-4-(methylsulfonyl)benzoyl]cyclohexane-1,3-dione",
    "cas": "99105-77-8",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25449,7 +25449,7 @@
   {
    "name": "tembotrione (ISO); 2-{2-chloro-4-(methylsulfonyl)-3-[(2,2,2-trifluoroethoxy)methyl]benzoyl}cyclohexane-1,3-dione",
    "cas": "335104-84-2",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {
@@ -25499,7 +25499,7 @@
   {
    "name": "tepraloxydim (ISO); (RS)-(EZ)-2-{]1-[}(2E)-3-chloroallyloxyimino{]propyl[}-3-hydroxy-5-perhydropyran-4-ylcyclohex-2-en-1-one",
    "cas": "149979-41-9",
-   "ec": "-",
+   "ec": "",
    "kind": "chemical",
    "sources": [
     {

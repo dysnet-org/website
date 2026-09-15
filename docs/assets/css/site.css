@@ -879,6 +879,8 @@ ol.demands details[open] summary::after { content: "–"; }
 .st.dec { font-weight: 700; }
 .st-doi { background: #f5f3ff; color: #5b21b6; border-color: #ddd6fe; }
 .finder-chips button.is-empty { opacity: 0.45; }
+.inc-basis { margin: 0.25rem 0 0; font-size: var(--text-small, 0.9rem); color: #475569; }
+.inc-basis strong { color: #0f172a; }
 .evidence-table { margin-top: 0.6rem; font-size: var(--text-small, 0.9rem); }
 .evidence-table th, .evidence-table td { text-align: center; }
 .evidence-table tbody th { text-align: left; font-weight: 700; }

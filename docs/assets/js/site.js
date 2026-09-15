@@ -515,26 +515,41 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     return n >= 10 ? Math.round(n).toLocaleString("en") : (n >= 0.1 ? n.toFixed(1) : "<0.1");
   }
   function apply() {
-    var r = DATA.rates[sel.value | 0], rate = r[1];
+    var r = DATA.rates[sel.value | 0], rate = r[1], basis = r[4] || "", note = r[5] || "";
+    // A condition no one has measured keeps its row. Showing a dash and saying why is
+    // information; dropping it from the list would hide the gap instead of reporting it.
+    var estimable = rate !== null && rate !== undefined && rate !== "";
     var reg = region.value, needle = (q.value || "").trim().toLowerCase();
     writeFilterParams({ condition: r[3] === DATA.rates[0][3] ? "" : r[3], region: reg, country: q.value.trim() });
     var shown = 0, sum = 0;
     rows.forEach(function (tr) {
       var births = +tr.getAttribute("data-births");
-      tr.cells[3].innerHTML = cases(births, rate);
+      tr.cells[3].innerHTML = estimable ? cases(births, rate) : "&mdash;";
       var ok = (!reg || tr.getAttribute("data-region") === reg) &&
                (!needle || tr.getAttribute("data-name").indexOf(needle) !== -1);
-      if (ok) { shown++; sum += births * rate / 100000; }
+      if (ok) { shown++; if (estimable) sum += births * rate / 100000; }
       // the count and the total cover every match; the table shows the first LIMIT until asked for more
       tr.hidden = !ok || (!expanded && shown > LIMIT);
     });
     more.hidden = shown <= LIMIT;
     more.textContent = expanded ? "Show the first " + LIMIT + " countries" : "Show all " + shown.toLocaleString("en") + " countries";
     nEl.textContent = shown.toLocaleString("en");
-    totalEl.textContent = sum >= 10 ? Math.round(sum).toLocaleString("en") : sum.toFixed(1);
-    var unit = rate >= 10 ? (rate / 10) + " per 10,000 births" : rate + " per 100,000 births";
-    labelEl.textContent = r[0].toLowerCase() + " (" + unit + ", " + r[2] + ")";
+    totalEl.textContent = estimable ? (sum >= 10 ? Math.round(sum).toLocaleString("en") : sum.toFixed(1)) : "\u2014";
+    var unit = estimable ? (rate >= 10 ? (rate / 10) + " per 10,000 births" : rate + " per 100,000 births") : "";
+    labelEl.textContent = estimable
+      ? r[0].toLowerCase() + " (" + unit + ", " + r[2] + ")"
+      : r[0].toLowerCase() + ", for which no birth prevalence has been published, so no number can be estimated";
     headEl.textContent = "Expected a year: " + r[0];
+    var basisEl = document.getElementById("inc-basis");
+    if (basisEl) {
+      var LABEL = { measured: "Measured", pooled: "Pooled from several registries",
+                    reported: "Reported, without a population study behind it",
+                    derived: "Derived, not measured", none: "Not measured" };
+      var lab = LABEL[basis] || "";
+      var txt = note || (estimable ? "Source: " + r[2] + "." : "");
+      basisEl.textContent = lab ? lab + ". " + txt : "";
+      basisEl.hidden = !lab;
+    }
   }
   // a link can arrive with a condition, a region or a country already chosen
   var pre = filterParams();

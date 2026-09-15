@@ -21,8 +21,14 @@
   var DOT_THRESHOLDS = (data.rates || []).map(function (r) { return Math.round(r[1] * 100); })
     .filter(function (v, i, a) { return a.indexOf(v) === i; })
     .sort(function (x, y) { return x - y; });
+  // A condition nobody has measured has no rate to filter on. It stays in the list, and
+  // selecting it clears the dots and says why, rather than being dropped from the menu.
+  function estimable(r) { return r && r[1] !== null && r[1] !== undefined && r[1] !== ""; }
+
   function dotFilter(rateIndex) {
-    var t = Math.round(data.rates[rateIndex][1] * 100);
+    var r = data.rates[rateIndex];
+    if (!estimable(r)) return ["==", ["get", "b"], -1];   // matches nothing
+    var t = Math.round(r[1] * 100);
     return ["<=", ["get", "b"], DOT_THRESHOLDS.indexOf(t)];
   }
 
@@ -182,7 +188,9 @@
     if (!box || !sel || !data.rates) return;
     var LAYERS = DOT_LAYERS;
     data.rates.forEach(function (r, i) {
-      var o = document.createElement("option"); o.value = i; o.textContent = r[0]; sel.appendChild(o);
+      var o = document.createElement("option"); o.value = i;
+      o.textContent = r[0] + (estimable(r) ? "" : " — no published rate");
+      sel.appendChild(o);
     });
     function band() { var z = map.getZoom(); return z < 4 ? 1000 : z < 6 ? 100 : z < 9 ? 10 : 1; }
     function dotsInView() {
@@ -196,8 +204,13 @@
     }
     function legendText() {
       var r = data.rates[+sel.value], per = band(), n = dotsInView(), fmt = function (x) { return x.toLocaleString("en"); };
+      if (!estimable(r)) {
+        return r[0].toLowerCase() + " · no birth prevalence has been published for this condition, "
+             + "so no one can say how many people live with it. " + (r[5] || "");
+      }
       var scale = per === 1 ? fmt(n) + " people in view" : "1 dot = " + fmt(per) + " people · " + fmt(n) + " dots in view ≈ " + fmt(n * per) + " people";
-      return scale + " · " + r[0].toLowerCase() + " · about " + r[1] + " per 100,000 births (" + r[2] + ")";
+      var how = r[4] === "derived" ? " (derived, not measured)" : r[4] === "reported" ? " (reported, no population study)" : "";
+      return scale + " · " + r[0].toLowerCase() + " · about " + r[1] + " per 100,000 births (" + r[2] + ")" + how;
     }
     function update() {
       var r = data.rates[+sel.value];
@@ -210,6 +223,7 @@
     // hover a dot to see what it stands for; click to pin the explanation
     function dotHtml() {
       var per = band(), r = data.rates[+sel.value];
+      if (!estimable(r)) return "<p class=\"dp-main\">No birth prevalence has been published for " + r[0].toLowerCase() + ".</p>";
       var people = per === 1 ? "<strong>1 person</strong>" : "<strong>about " + per.toLocaleString("en") + " people</strong>";
       var zoomHint = per === 1 ? "" : " Zoom in to see them one by one: at city zoom, 1 dot = 1 person.";
       return "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +

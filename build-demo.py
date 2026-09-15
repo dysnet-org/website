@@ -1648,24 +1648,54 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 
 # Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
 # so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
+# Birth prevalence per 100,000 births, with the basis for each figure stated, because a number
+# without its provenance invites a reader to treat an estimate as a count. The bases are:
+#   measured  a population-based study of a defined population over a defined period
+#   pooled    several registries combined
+#   reported  a figure quoted in the literature with no population study behind it
+#   derived   a parent rate multiplied by a published proportion; the arithmetic is in the note
+#   none      no published rate. The condition is still listed, because a blank row is evidence
+#             of a gap and an omitted row is invisible.
+# (label, rate, source, basis, note)
 DOT_RATES = [
-    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012"),
-    ("Polydactyly", 84, "northern Netherlands 1981-2010"),
-    ("Syndactyly", 47, "northern Netherlands 1981-2010"),
-    ("Radial ray deficiency, all forms", 18.3, "Finland"),
-    ("Symbrachydactyly (undergrowth)", 12, "Finland"),
-    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe"),
-    ("Amniotic band syndrome", 5.3, "Orphanet, Europe"),
-    ("Ulnar hemimelia", 4.4, "Finland"),
-    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012"),
-    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries"),
-    ("Fibular hemimelia", 1.1, "Orphanet, worldwide"),
-    ("Phocomelia, all forms", 0.74, "Finland"),
-    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe"),
-    ("TAR syndrome", 0.5, "EUROCAT, Europe"),
-    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide"),
-    ("Tibial hemimelia", 0.1, "Europe"),
-    ("Tibial aplasia-ectrodactyly", 0.1, "Europe"),
+    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012", "pooled", ""),
+    ("Polydactyly", 84, "northern Netherlands 1981-2010", "measured", ""),
+    ("Syndactyly", 47, "northern Netherlands 1981-2010", "measured", ""),
+    ("Radial ray deficiency, all forms", 18.3, "Finland (Pakkasjärvi et al.)", "measured",
+     "A second Finnish population-based study, Syvänen and Raitio 2021, reports 12.2 per 100,000 "
+     "(1.22 per 10,000 births) for the same country, so read this as a range of roughly 12 to 18."),
+    ("Symbrachydactyly (undergrowth)", 12, "Finland", "measured", ""),
+    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe", "pooled", ""),
+    ("Amniotic band syndrome", 5.3, "Orphanet, Europe", "pooled", ""),
+    ("Ulnar hemimelia", 4.4, "Finland", "measured", ""),
+    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012", "pooled", ""),
+    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries", "pooled",
+     "Froster-Iskenius and Baird (Teratology, 1990) report 1.5 per 100,000 livebirths in a whole-population "
+     "registry, which is the same figure within rounding."),
+    ("Fibular hemimelia", 1.1, "Orphanet, worldwide", "reported", ""),
+    ("Amelia of the upper limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
+     "No study measures upper-limb amelia on its own. Froster-Iskenius and Baird found amelia to affect upper "
+     "and lower limbs about equally, so half of the 1.41 per 100,000 for amelia is taken here: 0.71. It is an "
+     "estimate built from two sources, not a measurement."),
+    ("Amelia of the lower limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
+     "As for the upper limb: half of amelia's 1.41 per 100,000, on the same finding of roughly equal involvement."),
+    ("Phocomelia, all forms", 0.74, "Finland", "measured", ""),
+    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe", "pooled", ""),
+    ("TAR syndrome", 0.5, "EUROCAT, Europe", "pooled", ""),
+    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide", "reported", ""),
+    ("Tibial hemimelia", 0.1, "Europe", "reported", ""),
+    ("Tibial aplasia-ectrodactyly", 0.1, "Europe", "reported", ""),
+    ("Tetra-amelia", 0.024, "Schwickert and Dame 2021", "reported",
+     "Quoted as 2.4 per 10,000,000 births in a case report, with no population study behind it."),
+    ("Cenani-Lenz syndrome", None, "", "none",
+     "46 papers in PubMed and not one reports a birth prevalence."),
+    ("Microgastria-limb reduction", None, "", "none",
+     "Fewer than a dozen papers, all of them case reports or small series."),
+    ("Radial aplasia", 2.5, "Orphanet, worldwide", "reported",
+     "Orphanet's class is 1-9 per 100,000 births, of which 2.5 is the midpoint. Finnish data measure the "
+     "wider group of radial ray deficiencies and find 13% of them isolated, which is close to this figure."),
+    ("Roberts syndrome", None, "", "none",
+     "236 papers in PubMed and not one reports a birth prevalence; about 150 cases have been described."),
 ]
 
 
@@ -1698,10 +1728,12 @@ def incidence_html():
         f'<th scope="row">{c["name"]}</th><td>{c["region"]}</td><td class="num">{c["births"]:,}</td>'
         f'<td class="num cases">{_cases(c["births"], rates[0][1])}</td></tr>'
         for c in BIRTHS["countries"])
-    options = "".join(f'<option value="{i}" data-slug="{_slug(lab)}">{lab} · {_rate_txt(r)}</option>' for i, (lab, r, _src) in enumerate(rates))
+    options = "".join(
+        f'<option value="{i}" data-slug="{_slug(lab)}">{lab} · {_rate_txt(r) if r else "no published rate"}</option>'
+        for i, (lab, r, _src, _basis, _note) in enumerate(rates))
     regions = "".join(f'<option value="{r}">{r}</option>' for r in sorted({c["region"] for c in BIRTHS["countries"]}))
-    world = {lab: _cases(WORLD_BIRTHS, r) for lab, r, _ in rates}
-    data = json.dumps({"rates": [[lab, r, src, _slug(lab)] for lab, r, src in rates],
+    world = {lab: (_cases(WORLD_BIRTHS, r) if r else "") for lab, r, _s, _b, _n in rates}
+    data = json.dumps({"rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in rates],
                        "births": [[c["name"], c["region"], c["births"]] for c in BIRTHS["countries"]]},
                       ensure_ascii=False, separators=(",", ":"))
     return f"""
@@ -1732,7 +1764,8 @@ def incidence_html():
       <button type="button" id="inc-reset">Reset</button>
       <p class="inc-count" aria-live="polite"><strong id="inc-n">{len(BIRTHS["countries"])}</strong> countries ·
         <strong id="inc-total">{world[rates[0][0]]}</strong> children a year expected, for
-        <span id="inc-label">{rates[0][0].lower()} ({_rate_txt(rates[0][1])}, {rates[0][2]})</span></p>
+<span id="inc-label">{rates[0][0].lower()} ({_rate_txt(rates[0][1])}, {rates[0][2]})</span></p>
+      <p class="inc-basis" id="inc-basis" aria-live="polite"><strong>Pooled from several registries.</strong> Source: {rates[0][2]}.</p>
     </div>
     <div class="annex-wrap">
       <table class="annex inc-table" id="inc-table">
@@ -2986,7 +3019,7 @@ for _country, _orgs in MEMBERS:
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
 MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["A national amputee organisation (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": DOT_RATES, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.

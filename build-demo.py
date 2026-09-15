@@ -2746,10 +2746,10 @@ PAGES["/voice/"] = {
     <p class="eyebrow">Mission 3 · The voice of families</p>
     <h1 class="display">Our voice for people with dysmelia: where it counts, with a mandate.</h1>
     <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
-    <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a> <span>The briefing our delegates leave on the table: the five demands, what we ask of public authorities, and what would count as progress.</span></p>
+    <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a></p>
 
     {opener("01", "Our voice", "Five demands, carried into every room we sit in.")}
-    <p>What DysNet asks for on behalf of families, in the order we argue them. Open each demand to read why it matters and what would count as progress.</p>
+    <p>What DysNet asks for on behalf of families, in the order we argue them.</p>
     {demands_html()}
 
     {opener("02", "Where we sit", "The seats, with a mandate.")}

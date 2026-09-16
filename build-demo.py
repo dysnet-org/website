@@ -152,6 +152,127 @@ SECTION_OG = {
 }
 
 
+# ── Link previews ────────────────────────────────────────────────────────────
+# A link to the bibliography used to preview a photograph of a prosthetics lab, because one
+# photo served as the preview for twelve pages. A reader sharing the teratogens register got
+# a picture of something else entirely. So each page gets a card of its own, drawn here at
+# build time: the section, the page title, and where there is one, the number that says what
+# the page holds. Photographs stay on the pages themselves, where they have a caption.
+OG_DIR = ROOT / "assets" / "og"
+OG_ACCENT = {"Knowledge": (147, 51, 234), "Registry": (22, 163, 74), "Voice": (37, 99, 235),
+             "About": (234, 88, 12), "Support": (147, 51, 234), "Contact": (234, 88, 12)}
+OG_FONTS = ["/System/Library/Fonts/Supplemental/Arial Bold.ttf", "/Library/Fonts/Arial Bold.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"]
+OG_FONTS_R = ["/System/Library/Fonts/Supplemental/Arial.ttf", "/Library/Fonts/Arial.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"]
+# what each page can say about itself in one line, filled from the registers so it stays true
+OG_STAT = {
+    "/knowledge/teratogens/": lambda: f'{TERA.get("counts", {}).get("total", 0)} substances · {TERA.get("counts", {}).get("legal_any", 0)} with a decision by an authority',
+    "/knowledge/bibliography/": lambda: f'{len(BIB.get("entries", [])):,} references, screened and sourced',
+    "/knowledge/care-centres/": lambda: f'{len(CARE_CENTRES)} centres across {len({c["country"] for c in CARE_CENTRES})} countries',
+    "/knowledge/registries/": lambda: f'{len(ORPHA_REGS.get("registries", []))} registries that already record our conditions',
+    "/knowledge/researchers/": lambda: f'{len(RESEARCHERS.get("teams", []))} research teams publishing on limb difference',
+    "/knowledge/epidemiology/": lambda: f'Birth prevalence and expected cases, {len(BIRTHS["countries"])} countries',
+    "/knowledge/understanding-dysmelia/": lambda: f'{len(CONDITIONS)} conditions, described for families',
+}
+
+
+def og_font(size, bold=True):
+    from PIL import ImageFont
+    for p in (OG_FONTS if bold else OG_FONTS_R):
+        try:
+            return ImageFont.truetype(p, size)
+        except OSError:
+            continue
+    return None
+
+
+def og_wrap(draw, text, font, width):
+    words, lines, line = text.split(), [], ""
+    for w in words:
+        t = (line + " " + w).strip()
+        if draw.textlength(t, font=font) <= width:
+            line = t
+        else:
+            if line:
+                lines.append(line)
+            line = w
+    if line:
+        lines.append(line)
+    return lines
+
+
+def build_og_card(path, title, section):
+    """Write assets/og/<slug>.png and return its URL, or None if no font is available."""
+    from PIL import Image, ImageDraw
+    f_title = og_font(64)
+    if f_title is None:
+        return None
+    f_eyebrow, f_stat, f_foot = og_font(26), og_font(30, bold=False), og_font(26, bold=False)
+    slug = (path.strip("/").replace("/", "-") or "home")
+    W, H, pad = 1200, 630, 84
+    img = Image.new("RGB", (W, H), (250, 247, 254))
+    d = ImageDraw.Draw(img)
+    accent = OG_ACCENT.get(section, (147, 51, 234))
+    d.rectangle([0, 0, 18, H], fill=accent)
+
+    logo_path = ROOT / "assets" / "img" / "dysnet-logo.png"
+    logo_h = 64
+    if logo_path.exists():
+        logo = Image.open(logo_path).convert("RGBA")
+        logo = logo.resize((int(logo.width * logo_h / logo.height), logo_h), Image.LANCZOS)
+        img.paste(logo, (pad, pad), logo)
+
+    lines = og_wrap(d, title, f_title, W - pad * 2)[:3]
+    stat = OG_STAT.get(path)
+    stat_txt = ""
+    if stat:
+        try:
+            stat_txt = stat()
+        except Exception:
+            stat_txt = ""
+    # the text block is centred between the logo and the footer, so a one-line title and a
+    # three-line one both sit where the eye lands rather than stranding a void underneath
+    block = 46 + len(lines) * 78 + (46 if stat_txt else 0)
+    top, bottom = pad + logo_h + 30, H - pad - 34
+    y = top + max(0, (bottom - top - block) // 2)
+
+    d.text((pad, y), section.upper(), font=f_eyebrow, fill=accent)
+    y += 46
+    for line in lines:
+        d.text((pad, y), line, font=f_title, fill=(36, 26, 51))
+        y += 78
+    if stat_txt:
+        d.text((pad, y + 8), stat_txt, font=f_stat, fill=(93, 84, 112))
+    d.text((pad, H - pad - 10), "www.dysnet.org", font=f_foot, fill=(93, 84, 112))
+
+    OG_DIR.mkdir(parents=True, exist_ok=True)
+    out = OG_DIR / f"{slug}.png"
+    tmp = out.with_suffix(".tmp.png")
+    img.save(tmp, "PNG", optimize=True)
+    # only rewrite when the bytes change, so the build stays quiet and git stays clean
+    if out.exists() and out.read_bytes() == tmp.read_bytes():
+        tmp.unlink()
+    else:
+        tmp.replace(out)
+    return f"/assets/og/{slug}.png"
+
+
+def og_card_for(path, title):
+    """The card this page should preview with, drawn once and cached on disk."""
+    section = next((label for prefix, label in (
+        ("/knowledge/", "Knowledge"), ("/registry/", "Registry"), ("/voice/", "Voice"),
+        ("/about/", "About"), ("/donate/", "Support"), ("/contact/", "Contact"))
+        if path.startswith(prefix)), "DysNet")
+    name = title.split(" · ")[0].strip()
+    if path == "/":
+        name, section = "The international network for limb difference", "DysNet"
+    try:
+        return build_og_card(path, name, section)
+    except Exception:
+        return None       # a missing font must not fail the build; the photo still serves
+
+
 def section_og(path):
     for prefix, img in SECTION_OG.items():
         if path.startswith(prefix): return img
@@ -160,6 +281,7 @@ def section_og(path):
 
 def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
     full = SEO_TITLES.get(path) or (title if BRAND in title else f"{title} · {BRAND}")
+    _og_img = og or og_card_for(path, title) or section_og(path) or "/assets/img/board-inail-2024.jpg"
     canonical = SITE + path
     dates = dates or {}
     is_article = "/guides/" in path or path in ARTICLE_PATHS
@@ -197,7 +319,11 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
 <meta property="og:title" content="{full}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{SITE}{og or section_og(path) or "/assets/img/board-inail-2024.jpg"}">
+<meta property="og:image" content="{SITE}{_og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{title.split(" · ")[0]} on dysnet.org">
+<meta name="twitter:image" content="{SITE}{_og_img}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="{FAVICON}">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -1325,7 +1451,6 @@ PAGES["/knowledge/researchers/"] = {
 }
 
 PAGES["/knowledge/care-centres/"] = {
-    "og": "/assets/img/inail-lab-tour.jpg",
     "title": "Care centres",
     "desc": "Reference centres, prosthetics units and expert clinics for congenital limb difference in Europe and beyond, so a family can find the nearest one.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/care-centres/", "Care centres")],
@@ -3275,7 +3400,6 @@ PAGES["/contact/"] = {
 
 # ────────────────── Pages ported from HDS website ideas ──────────────
 PAGES["/donate/"] = {
-    "og": "/assets/img/inail-lab-2.jpg",
     "title": "Support DysNet",
     "desc": "A one-off or monthly gift, membership or help in kind carries the three missions families rely on: knowledge, the registry and our voice.",
     "crumbs": [("/donate/", "Support DysNet")],

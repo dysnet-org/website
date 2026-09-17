@@ -71,7 +71,7 @@
   /* ── "On this page" contents (HDS TableOfContents pattern) ──────── */
   var main = document.getElementById("main");
   if (main) {
-    var heads = Array.prototype.slice.call(main.querySelectorAll("h2")).filter(function (h) { return !h.closest(".card, .aud-grid, .hub-grid, .person, .start-here, .entry, .annex"); });
+    var heads = Array.prototype.slice.call(main.querySelectorAll("h2")).filter(function (h) { return !h.closest(".card, .aud-grid, .aud-panel, .hub-grid, .person, .start-here, .entry, .annex"); });
     if (heads.length >= 3) {
       var box = document.createElement("nav");
       box.className = "onpage";
@@ -495,6 +495,44 @@ function writeFilterParams(obj) {
   history.replaceState(null, "", u.pathname + (s ? "?" + s : "") + u.hash);
 }
 function filterList(name) { var v = filterParams().get(name); return v ? v.split(",").filter(Boolean) : []; }
+
+/* ── Registry: one answer per reader ─────────────────────────────────────── */
+// Every panel is in the HTML, so a reader without JavaScript gets all four rather than
+// none. Here we keep one and remember the choice in the URL, so a delegate can send an
+// association straight to the panel written for it.
+(function () {
+  var box = document.getElementById("reg-aud");
+  if (!box) return;
+  var pills = Array.prototype.slice.call(box.querySelectorAll("button[data-aud]"));
+  var panels = {};
+  pills.forEach(function (b) {
+    var k = b.getAttribute("data-aud");
+    panels[k] = document.getElementById("aud-" + k);
+  });
+  function show(key, push) {
+    if (!panels[key]) key = pills[0].getAttribute("data-aud");
+    pills.forEach(function (b) {
+      var on = b.getAttribute("data-aud") === key;
+      b.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    Object.keys(panels).forEach(function (k) { if (panels[k]) panels[k].hidden = k !== key; });
+    if (push) writeFilterParams({ for: key === pills[0].getAttribute("data-aud") ? "" : key });
+  }
+  pills.forEach(function (b) {
+    b.addEventListener("click", function () { show(b.getAttribute("data-aud"), true); });
+  });
+  // arrow keys move along the row, as a tablist should
+  box.querySelector(".aud-pills").addEventListener("keydown", function (e) {
+    var i = pills.indexOf(document.activeElement);
+    if (i === -1) return;
+    var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : -1;
+    if (j < 0 || j >= pills.length) return;
+    e.preventDefault();
+    pills[j].focus();
+    show(pills[j].getAttribute("data-aud"), true);
+  });
+  show(filterParams().get("for") || pills[0].getAttribute("data-aud"), false);
+})();
 
 /* ── Epidemiology: expected cases a year, by country and condition ──── */
 (function () {

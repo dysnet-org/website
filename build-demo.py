@@ -2496,6 +2496,98 @@ REGISTRY_LD = {
     "areaServed": "Worldwide",
 }
 
+# ── Who is reading the registry page ─────────────────────────────────────────
+# The page opened on perinatal mortality and a DOI, which is the right evidence and the
+# wrong first sentence for a family whose child was born last week. Four people arrive here
+# with four different questions, so each gets a short answer in their own terms before the
+# argument proper. Every panel is rendered; the script hides all but the chosen one, so with
+# no JavaScript the reader simply gets all four.
+REGISTRY_AUDIENCES = [
+    ("families", "A family, or a person concerned",
+     "You are the reason this exists, and nothing in it happens without you.",
+     [("What it is",
+       "A place where what you or your child lives with is written down once, properly, and counted. "
+       "Today those details sit in different hospitals in different countries, in systems that cannot "
+       "talk to each other, so nobody can see the whole picture."),
+      ("What you would do",
+       "Nothing yet. The registry is being built. When it opens you enter your own information, through "
+       "your national association, and you decide who may see it."),
+      ("What stays yours",
+       "The data stays yours. You give consent study by study and you can withdraw it. DysNet does not "
+       "sell data, and it does not go to insurers or employers."),
+      ("Why it is worth doing",
+       'Across large birth-defect cohorts a cause is found in about one case in five, and usually none '
+       'for a single limb. That number moves only when enough cases are described well enough to study. '
+       '<a href="/knowledge/causes-of-dysmelia/">What the evidence shows today</a>.')],
+     ("/about/members/", "Find your national association")),
+
+    ("associations", "An association thinking of taking part",
+     "Your families keep their data, and they keep their relationship with you.",
+     [("What you would give",
+       "A point of contact, help translating the questions into your language, and families you invite "
+       "rather than enrol. Nobody is entered by their association."),
+      ("What you would get",
+       "The figures for your own country, which most associations have never had, and a seat in deciding "
+       "which research may be put to your families at all."),
+      ("What it costs",
+       'Write to the board and we will tell you what a pilot involves for an association your size. '
+       '<a href="mailto:info@dysnet.org?subject=Registry%20pilot">info@dysnet.org</a>.'),
+      ("Where it stands",
+       "Pilots first, with a small number of associations. The general assembly of 26 August 2026 "
+       "created the registry and mandated Health Data Safe as its technical partner.")],
+     ("mailto:info@dysnet.org?subject=Registry%20pilot", "Ask what a pilot involves")),
+
+    ("registries", "A registry or public health agency in Europe",
+     "This does not compete with your registry. It records what yours cannot.",
+     [("What is different",
+       'Seventy-two registries already record our conditions and not one of them is governed by the '
+       'families concerned. <a href="/knowledge/registries/">See the register of registries</a>.'),
+      ("How it lines up with yours",
+       "Every condition here carries its ORPHAcode, so figures can be compared against yours rather "
+       "than merged into them. We publish our method and our sources."),
+      ("What we would ask of you",
+       "A conversation about definitions, so that a count means the same thing on both sides. We are "
+       "not asking for your data."),
+      ("What you would get",
+       "Cases described from the patient's own side, with consent, including people who never reach a "
+       "catchment area and so never reach a population registry.")],
+     ("/knowledge/registries/", "See the register of registries")),
+
+    ("researchers", "A researcher wanting access",
+     "There is no data to request yet. There is a route to propose a study, and five registers you can use today.",
+     [("How access will work",
+       "You propose a study. The member associations and the board decide together whether it may be "
+       "put to families. Each family then consents, or does not, one study at a time."),
+      ("What will never be possible",
+       "Buying the data, or receiving it in bulk without the consent of the people it describes. The "
+       "point of a patient-owned registry is that this decision is not ours to sell."),
+      ("What exists today",
+       f'The bibliography ({len(BIB.get("entries", [])):,} references), the teratogens register '
+       f'({TERA.get("counts", {}).get("total", 0)} substances), the care centres, the researcher register '
+       'and the epidemiology tables. All free, all <a href="/knowledge/">documented and downloadable</a>.'),
+      ("What you can do now",
+       'Ask to be listed in the <a href="/knowledge/researchers/">researcher register</a>, or propose a '
+       'study for the <a href="/knowledge/ongoing-studies/">studies page</a>.')],
+     ("mailto:info@dysnet.org?subject=Research%20proposal", "Propose a study")),
+]
+
+
+def registry_audiences_html():
+    pills = "".join(
+        f'<button type="button" role="tab" data-aud="{key}" aria-selected="{"true" if i == 0 else "false"}" '
+        f'aria-controls="aud-{key}" id="pill-{key}">{label}</button>'
+        for i, (key, label, _l, _p, _c) in enumerate(REGISTRY_AUDIENCES))
+    panels = ""
+    for key, label, lede, points, (href, cta) in REGISTRY_AUDIENCES:
+        items = "".join(f'<div class="aud-point"><h3>{h}</h3><p>{t}</p></div>' for h, t in points)
+        panels += (f'<section class="aud-panel" id="aud-{key}" role="tabpanel" aria-labelledby="pill-{key}">'
+                   f'<h2 class="h3 aud-h">{label}</h2><p class="aud-lede">{lede}</p>'
+                   f'<div class="aud-points">{items}</div>'
+                   f'<p class="aud-cta"><a class="btn btn-primary" href="{href}">{cta}</a></p></section>')
+    return (f'<div class="aud" id="reg-aud"><p class="aud-q" id="aud-q">Who is reading?</p>'
+            f'<div class="aud-pills" role="tablist" aria-labelledby="aud-q">{pills}</div>{panels}</div>')
+
+
 PAGES["/registry/"] = {
     "jsonld": [REGISTRY_LD],
     "title": "The registry",
@@ -2507,6 +2599,10 @@ PAGES["/registry/"] = {
     <div class="tick" style="background:var(--dys-green)"></div>
     <p class="eyebrow" style="color:var(--dys-green-text)">Mission 2 · Flagship project</p>
     <h1 class="display">The limb-malformation registry owned by the people it describes.</h1>
+    <p class="lede">A registry is a list of cases described the same way, so they can be counted and studied. This one is being
+    built by the associations that represent the families, and the data in it belongs to the people it describes, not to us.
+    It does not exist yet: this page says what it will be, who is building it, and where it has got to.</p>
+    {registry_audiences_html()}
     <p>Congenital anomalies remain a major cause of perinatal illness and death, accounting for up to 27% of infant deaths in developed countries, as <a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">Santé publique France</a> recalls in its 2026 surveillance report, citing Syngelaki et al. (<em>Prenat Diagn</em> 2011, <a href="https://doi.org/10.1002/pd.2642" target="_blank" rel="noopener external">doi:10.1002/pd.2642</a>). Yet we still do not understand what causes most of these anomalies, and understanding begins with counting and describing cases. Research on limb agenesis is starved of exactly that. Cases are not rare, but they are scattered across countries and recorded in incompatible systems, when they are recorded at all, so too few are described well enough to investigate the possible causes thoroughly. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
     <p>Patient groups strongly suspect environmental causes and teratogenic effects, of the kind thalidomide made undeniable, behind agenesis and other forms of dysmelia. Far too little research is carried out to confirm or rule them out. Between 2007 and 2014, three clusters of transverse upper-limb agenesis came to light in France, in Loire-Atlantique, Ain and Morbihan. The investigations led by <a href="https://www.santepubliquefrance.fr/les-actualites/agenesies-transverses-des-membres-superieurs-sante-publique-france-revient-sur-les-principaux-faits" target="_blank" rel="noopener external">Santé publique France</a> with the regional registries found no common exposure. The episode did move surveillance forward: the regional registries were federated around a common database, a seventh registry followed in Nouvelle-Aquitaine, and Santé publique France plans to reach national coverage for some anomalies through the national health data system. Yet the French registries covered about one birth in six over 2019-2021 (<a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">16.4%</a>), with a stated aim of about 23.6% once the Nouvelle-Aquitaine registry is fully deployed, the ministry’s 2016 request for a national registry of malformations was answered in <a href="https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/rapportsynthese/anomalies-congenitales-liees-aux-expositions-medicamenteuses-et-environnementales-proposition-de" target="_blank" rel="noopener external">2018</a> by building on the existing registries rather than creating one, and no registry at national or European level is dedicated to limb anomalies. Those investigations also met the limits of any case investigation: families were questioned years after the birth, from memory. Families who take part actively and from pregnancy onwards, recording circumstances and exposures as they happen, can correct that weakness and give the next investigation the data the last one lacked.</p>
     <p>Our registry therefore sets itself three objectives, in this order.</p>

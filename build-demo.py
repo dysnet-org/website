@@ -453,13 +453,15 @@ def updated_badge(iso):
     return f'<span class="badge live">updated {d.strftime("%b %Y")}</span>'
 
 
-def opener(num, label, heading, acc=None, big=False):
+def opener(num, label, heading, acc=None, big=False, toc=None):
+    """toc: a short label for the contents list, where a full heading would not fit."""
     style = f' style="--acc:var(--acc-{acc});--acc-text:var(--acc-{acc}-text)"' if acc else ""
     h = "h2-lg" if big else "h2"
+    short = f' data-toc="{toc}"' if toc else ""
     return f"""<div{style}>
       <div class="tick"></div>
       <p class="eyebrow">{num} · {label}</p>
-      <h2 class="{h}">{heading}</h2>
+      <h2 class="{h}"{short}>{heading}</h2>
     </div>"""
 
 
@@ -2608,6 +2610,7 @@ PAGES["/registry/"] = {
     <p class="lede">A registry is a list of cases described the same way, so they can be counted and studied. This one is being
     built by the associations that represent the families, and the data in it belongs to the people it describes, not to us.
     It does not exist yet: this page says what it will be, who is building it, and where it has got to.</p>
+    <div id="toc-here"></div>
     {registry_audiences_html()}
     <p>Congenital anomalies remain a major cause of perinatal illness and death, accounting for up to 27% of infant deaths in developed countries, as <a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">Santé publique France</a> recalls in its 2026 surveillance report, citing Syngelaki et al. (<em>Prenat Diagn</em> 2011, <a href="https://doi.org/10.1002/pd.2642" target="_blank" rel="noopener external">doi:10.1002/pd.2642</a>). Yet we still do not understand what causes most of these anomalies, and understanding begins with counting and describing cases. Research on limb agenesis is starved of exactly that. Cases are not rare, but they are scattered across countries and recorded in incompatible systems, when they are recorded at all, so too few are described well enough to investigate the possible causes thoroughly. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
     <p>Patient groups strongly suspect environmental causes and teratogenic effects, of the kind thalidomide made undeniable, behind agenesis and other forms of dysmelia. Far too little research is carried out to confirm or rule them out. Between 2007 and 2014, three clusters of transverse upper-limb agenesis came to light in France, in Loire-Atlantique, Ain and Morbihan. The investigations led by <a href="https://www.santepubliquefrance.fr/les-actualites/agenesies-transverses-des-membres-superieurs-sante-publique-france-revient-sur-les-principaux-faits" target="_blank" rel="noopener external">Santé publique France</a> with the regional registries found no common exposure. The episode did move surveillance forward: the regional registries were federated around a common database, a seventh registry followed in Nouvelle-Aquitaine, and Santé publique France plans to reach national coverage for some anomalies through the national health data system. Yet the French registries covered about one birth in six over 2019-2021 (<a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">16.4%</a>), with a stated aim of about 23.6% once the Nouvelle-Aquitaine registry is fully deployed, the ministry’s 2016 request for a national registry of malformations was answered in <a href="https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/rapportsynthese/anomalies-congenitales-liees-aux-expositions-medicamenteuses-et-environnementales-proposition-de" target="_blank" rel="noopener external">2018</a> by building on the existing registries rather than creating one, and no registry at national or European level is dedicated to limb anomalies. Those investigations also met the limits of any case investigation: families were questioned years after the birth, from memory. Families who take part actively and from pregnancy onwards, recording circumstances and exposures as they happen, can correct that weakness and give the next investigation the data the last one lacked.</p>
@@ -2622,7 +2625,7 @@ PAGES["/registry/"] = {
 
     <p>The same conclusion was reached on the other side of the Atlantic. A Canadian workshop held in February 2024 found that the country has no national data source on limb loss and limb difference, agreed on five domains for building one, and looked to the amputee organisations themselves to carry it. Its authors describe what they call patient-powered registries, managed by patients and advocacy groups themselves. Our <a href="/knowledge/registries/">registries register</a> summarises that work and the American registry already running.</p>
 
-    {opener("01", "Words matter", "What a registry is, and what this is.")}
+    {opener("01", "Words matter", "What a registry is, and what this is.", toc="What a registry is")}
     <blockquote class="definition">
       <p>“A patient registry is an organized system that uses observational study methods to collect uniform data (clinical and other) to evaluate specified outcomes for a population defined by a particular disease, condition, or exposure, and that serves one or more predetermined scientific, clinical, or policy purposes.”</p>
       <footer>Definition of the Agency for Healthcare Research and Quality, as adopted by the European recommendations on rare-disease registries: Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. <em>Int J Environ Res Public Health</em> 2018;15(8):1644. <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a></footer>
@@ -2635,10 +2638,10 @@ PAGES["/registry/"] = {
     </ul>
     <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
-    {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.")}
+    {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}
     <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Once live, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
 
-    {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.")}
+    {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.", toc="Who decides what")}
     <div class="grid cols-3">
       <div class="card acc-studies"><h3 class="h4">Families contribute</h3><p>Through their national association, on explicit consent, in their own language.</p></div>
       <div class="card acc-studies"><h3 class="h4">Control stays with the patient</h3><p>Each person holds their own data and decides what enters the registry. Which research may be proposed to families is a shared responsibility of the member associations and the DysNet board.</p></div>
@@ -2647,7 +2650,7 @@ PAGES["/registry/"] = {
 
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="/knowledge/guides/patient-owned-registry/">New to the idea? The two-minute guide</a></p>
 
-    {opener("04", "The partner", "Built with Health Data Safe.")}
+    {opener("04", "The partner", "Built with Health Data Safe.", toc="The technical partner")}
     <div class="partner-card">
       <a class="partner-logo" href="https://www.healthdatasafe.org/en/" target="_blank" rel="noopener external"><img src="/assets/img/hds-logo.svg" alt="Health Data Safe" width="1024" height="400"></a>
       <div>
@@ -2673,7 +2676,7 @@ PAGES["/registry/"] = {
 
     <div class="tick"></div>
     <p class="eyebrow">The first pilots</p>
-    <h2 class="h2">Why Assedea and Raggiungere launch the registry with Health Data Safe.</h2>
+    <h2 data-toc="Why these two associations" class="h2">Why Assedea and Raggiungere launch the registry with Health Data Safe.</h2>
     <p>The two pilot associations, in France and Italy, carry the same duty towards their families: never let their data become a product. Their reasons for choosing Health Data Safe as the partner to launch the registry:</p>
     <ul>
       <li><strong>Ownership that is legally binding.</strong> The foundation’s statutes rule out any sale of health data and limit its use to care and research; that promise does not depend on goodwill.</li>
@@ -2683,7 +2686,7 @@ PAGES["/registry/"] = {
       <li><strong>A partner who knows the network.</strong> Health Data Safe already works alongside DysNet on the strategy that the AGM adopted, and brings its infrastructure in kind rather than as a commercial service.</li>
     </ul>
 
-    {opener("05", "Progress", "The log.")}
+    {opener("05", "Progress", "The log.", toc="The log")}
     <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">Call for funding</h3><time datetime="2026-09">September 2026</time><p>EU rare-disease calls are being screened. The registry now seeks its first funders: research foundations, rare-disease prizes, and partners able to contribute hosting, development or translation in kind. <a href="mailto:info@dysnet.org?subject=Registry%20funding">Write to the board</a> or <a href="/donate/">support the registry directly</a>.</p></div>
   </div>
@@ -2693,7 +2696,7 @@ PAGES["/registry/"] = {
   <div class="sheet sheet-cta">
     <div class="tick" style="background:#4cc42c"></div>
     <p class="eyebrow">Take part</p>
-    <h2 class="h2">Your association can be a pilot.</h2>
+    <h2 data-toc="Become a pilot" class="h2">Your association can be a pilot.</h2>
     <p>The registry grows association by association. Write to <a href="mailto:info@dysnet.org">info@dysnet.org</a> to join the first wave.</p>
   </div>
 </section>

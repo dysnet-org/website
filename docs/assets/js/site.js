@@ -78,9 +78,13 @@
       box.setAttribute("aria-label", "On this page");
       var items = heads.map(function (h, i) {
         if (!h.id) h.id = "s-" + (i + 1) + "-" + h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 40);
-        return '<li><a href="#' + h.id + '">' + h.textContent + "</a></li>";
+        var label = h.getAttribute("data-toc") || h.textContent;
+        return '<li><a href="#' + h.id + '">' + label + "</a></li>";
       }).join("");
       box.innerHTML = "<p>On this page</p><ul>" + items + "</ul>";
+      // A page can name its own slot; otherwise the position is computed from the first heading.
+      var slot = main.querySelector("#toc-here");
+      if (slot) { slot.parentNode.insertBefore(box, slot); slot.remove(); return; }
       // Anchor the box at section level: climb to the child of the section container, then step back
       // over the opener marks (tick, eyebrow) so it sits between the intro and the first section.
       var anchor = heads[0];

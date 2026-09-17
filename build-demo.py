@@ -2481,7 +2481,7 @@ PAGES["/knowledge/causes-of-dysmelia/"] = {
 HDS_ORG = {
     "@type": "Organization", "name": "Health Data Safe", "url": "https://www.healthdatasafe.org/en/",
     "sameAs": ["https://www.healthdatasafe.org", "https://www.wikidata.org/wiki/Q141112222"],
-    "nonprofitStatus": "https://schema.org/NonprofitType", "address": {"@type": "PostalAddress", "addressCountry": "CH"},
+    "address": {"@type": "PostalAddress", "addressCountry": "CH"},
 }
 REGISTRY_LD = {
     "@context": "https://schema.org", "@type": "Project",
@@ -2489,7 +2489,8 @@ REGISTRY_LD = {
     "url": SITE + "/registry/",
     "description": "The first international, interoperable registry of congenital limb malformations owned by the patient community, developed with DysNet's member associations and Health Data Safe.",
     "foundingDate": "2026-08-26",
-    "parentOrganization": {"@type": "NGO", "name": "DysNet", "url": SITE},
+    "parentOrganization": {"@type": "NGO", "name": "DysNet", "url": SITE,
+                          "sameAs": ["https://www.wikidata.org/wiki/Q131894541"]},
     "member": [
         {"@type": "OrganizationRole", "roleName": "Technical and operational partner", "startDate": "2026-08-26", "member": HDS_ORG},
         {"@type": "OrganizationRole", "roleName": "Pilot association", "member": {"@type": "Organization", "name": "Assedea", "url": "https://www.assedea.fr"}},

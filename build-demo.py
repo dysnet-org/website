@@ -2538,20 +2538,26 @@ REGISTRY_AUDIENCES = [
      ("mailto:info@dysnet.org?subject=Registry%20pilot", "Ask what a pilot involves")),
 
     ("registries", "A registry or public health agency in Europe",
-     "This does not compete with your registry. It records what yours cannot.",
-     [("What is different",
-       'Seventy-two registries already record our conditions and not one of them is governed by the '
-       'families concerned. <a href="/knowledge/registries/">See the register of registries</a>.'),
-      ("How it lines up with yours",
-       "Every condition here carries its ORPHAcode, so figures can be compared against yours rather "
-       "than merged into them. We publish our method and our sources."),
-      ("What we would ask of you",
-       "A conversation about definitions, so that a count means the same thing on both sides. We are "
-       "not asking for your data."),
+     "We want what you already hold in the common registry, and we bring the means to move it.",
+     [("Push what you hold",
+       "Your cases belong in a European picture, and today they cannot reach one. We are asking you to "
+       "contribute them, not to hand over your register: the route runs through the people themselves, "
+       "each of whom has the right to a copy of what you hold about them."),
+      ("We provide the means",
+       "Interoperability support to map your fields onto a shared minimum set and onto ORPHAcodes, "
+       "portability solutions so a record can move without being retyped, and a straightforward way to "
+       "give people their data proactively rather than on written request. That work is ours to do, "
+       "with Health Data Safe, not yours."),
+      ("Align on what you collect",
+       "Two national figures cannot be set side by side when each counts a different thing. We want a "
+       "common definition of what is recorded, so that a comparison is a comparison. "
+       '<a href="/knowledge/registries/">Seventy-two registries</a> already record our conditions and '
+       "no two of them agree."),
       ("What you would get",
-       "Cases described from the patient's own side, with consent, including people who never reach a "
-       "catchment area and so never reach a population registry.")],
-     ("/knowledge/registries/", "See the register of registries")),
+       "Figures that can honestly be compared with your neighbours', cases described from the patient's "
+       "own side, including people who never reach your catchment area, and a proactive answer to the "
+       "right of access you already owe.")],
+     ("mailto:info@dysnet.org?subject=Registry%20interoperability", "Talk to us about interoperability")),
 
     ("researchers", "A researcher wanting access",
      "There is no data to request yet. There is a route to propose a study, and five registers you can use today.",

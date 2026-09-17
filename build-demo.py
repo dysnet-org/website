@@ -2551,8 +2551,8 @@ REGISTRY_AUDIENCES = [
       ("Align on what you collect",
        "Two national figures cannot be set side by side when each counts a different thing. We want a "
        "common definition of what is recorded, so that a comparison is a comparison. "
-       '<a href="/knowledge/registries/">Seventy-two registries</a> already record our conditions and '
-       "no two of them agree."),
+       'Of the <a href="/knowledge/registries/">72 registries</a> that record our conditions, 22 name a '
+       "condition itself; the other 50 capture it only inside a broader group."),
       ("What you would get",
        "Figures that can honestly be compared with your neighbours', cases described from the patient's "
        "own side, including people who never reach your catchment area, and a proactive answer to the "

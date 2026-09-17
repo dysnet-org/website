@@ -1,7 +1,7 @@
 {
  "built": "2026-09-15",
  "source": "PubMed (NCBI E-utilities)",
- "method": "One search per substance: the substance, by CAS registry number where the register holds one and by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child. A count is not a verdict: a paper may report harm or report finding none.",
+ "method": "One search per substance: the substance, by CAS registry number where the register holds one and by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child.",
  "harm_terms": "(\"abnormalities, drug-induced\"[mh] OR teratogens[mh] OR \"prenatal exposure delayed effects\"[mh] OR teratogen[tiab] OR teratogens[tiab] OR teratogenic[tiab] OR teratogenicity[tiab] OR embryotoxic[tiab] OR embryotoxicity[tiab] OR \"developmental toxicity\"[tiab] OR \"birth defect\"[tiab] OR \"birth defects\"[tiab] OR \"congenital malformation\"[tiab] OR \"congenital malformations\"[tiab] OR \"congenital anomaly\"[tiab] OR \"congenital anomalies\"[tiab])",
  "kept_per_substance": 5,
  "substances": {

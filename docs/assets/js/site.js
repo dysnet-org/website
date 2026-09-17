@@ -723,7 +723,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       return "<li>" + (x.c ? "<strong>Cochrane review:</strong> " : "") + cite + link + "</li>";
     });
     var more = r.pc - Math.min(3, (r.pp || []).length);
-    if (more > 0 && r.pq) out.push('<li><a href="' + esc(r.pq) + '" target="_blank" rel="noopener external">all ' + r.pc + ' on PubMed \u2197</a> \u00b7 a count is not a verdict: a paper may report harm, or report finding none</li>');
+    if (more > 0 && r.pq) out.push('<li><a href="' + esc(r.pq) + '" target="_blank" rel="noopener external">all ' + r.pc + ' on PubMed \u2197</a></li>');
     return out;
   }
   function decChips(r) {

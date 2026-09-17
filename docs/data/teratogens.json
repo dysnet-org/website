@@ -75,7 +75,7 @@
   "pubmed": {
    "label": "PubMed: published literature on the substance and harm to the unborn child",
    "url": "https://pubmed.ncbi.nlm.nih.gov/",
-   "authority": "One search per substance: the substance, by CAS registry number where the register holds one and by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child. A count is not a verdict: a paper may report harm or report finding none."
+   "authority": "One search per substance: the substance, by CAS registry number where the register holds one and by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child."
   }
  },
  "counts": {

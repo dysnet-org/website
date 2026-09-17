@@ -11,8 +11,6 @@ harm to the unborn child, and if so what is the most recent of it, and is any of
 Cochrane systematic review. The answer is a count, a handful of citations with their DOIs,
 and a flag for Cochrane.
 
-A count is not a verdict. A paper may report harm, or report finding none, and the register
-says only that the literature exists and links it, so a reader can go and read it.
 
 Matching is on the substance name in title or abstract, or on its CAS registry number,
 which PubMed indexes. The CAS is the stronger of the two and is used whenever the register
@@ -182,8 +180,7 @@ def main():
         "built": time.strftime("%Y-%m-%d"),
         "source": "PubMed (NCBI E-utilities)",
         "method": ("One search per substance: the substance, by CAS registry number where the register holds one and "
-                   "by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child. "
-                   "A count is not a verdict: a paper may report harm or report finding none."),
+                   "by name in title or abstract, combined with the MeSH and title terms for harm to the unborn child."),
         "harm_terms": HARM,
         "kept_per_substance": KEEP,
         "substances": out,

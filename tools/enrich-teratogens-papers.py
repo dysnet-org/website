@@ -10,8 +10,6 @@ once per substance, and this attaches the result.
 Each substance gains the number of papers, up to five citations with their DOIs, and a flag
 when one of them is a Cochrane systematic review.
 
-The count is not a verdict. A paper may report harm, or report finding none. The register
-says the literature exists and links it.
 
 Usage: python3 tools/enrich-teratogens-papers.py [--dry-run]
 """

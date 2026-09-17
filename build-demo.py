@@ -681,7 +681,7 @@ def tera_paper_lines(e):
     more = (e.get("paper_count") or 0) - min(3, len(e["papers"]))
     if more > 0 and e.get("paper_query"):
         out.append(f'<li><a href="{e["paper_query"]}" target="_blank" rel="noopener external">'
-                   f'all {e["paper_count"]} on PubMed ↗</a> &middot; a count is not a verdict: a paper may report harm, or report finding none</li>')
+                   f'all {e["paper_count"]} on PubMed ↗</a></li>')
     return out
 
 

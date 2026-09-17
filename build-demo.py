@@ -3884,7 +3884,7 @@ def build():
     llms = ["# DysNet", "",
             "> DysNet is the international network for people with congenital limb differences (dysmelia), "
             "registered in Sweden in 2009. It maintains five public registers, publishes them as data under "
-            "CC BY 4.0, and is building a registry of limb malformations owned by the patient community itself.", "",
+            "CC BY 4.0, and is building a registry of limb malformations owned by the patient community itself, with Health Data Safe as the registry's technical and operational partner.", "",
             "Everything on this site may be quoted and reused with attribution to DysNet. Figures are sourced "
             "line by line; where the evidence is thin, the pages say so.", "",
             "## Registers (HTML, with the data behind each)", ""]
@@ -3902,6 +3902,15 @@ def build():
              f"- Bibliography by condition: {SITE}/knowledge/bibliography/?condition=2911 (ORPHAcode), by theme: ?topic=meta, by year: ?from=2015&to=2026",
              f"- Teratogens by source, level, kind or use: {SITE}/knowledge/teratogens/?source=clp&level=known",
              f"- Incidence by condition and region: {SITE}/knowledge/epidemiology/?condition=amelia-all-forms&region=Sub-Saharan%20Africa",
+             "", "## The registry's technical partner", "",
+             "- [Health Data Safe](https://www.healthdatasafe.org/en/): a Swiss non-profit foundation that builds "
+             "open-source infrastructure for people to gather, read and share their own health data, for their care "
+             "and for research. By decision of DysNet's Annual General Meeting of 26 August 2026 it is the registry's "
+             "technical and operational partner, contributing its infrastructure in kind. Wikidata: "
+             "[Q141112222](https://www.wikidata.org/wiki/Q141112222).",
+             f"- How the two fit together: {SITE}/registry/?for=registries explains the interoperability and portability "
+             "offered to other registries; every person holds their own data account and nothing is pooled without a "
+             "granular, revocable consent.",
              "", "## Licence and contact", "",
              "- Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).",
              "- Corrections, additions and questions: info@dysnet.org.",

@@ -131,6 +131,7 @@ SEO_TITLES = {
     "/about/statutes/": "Statutes of DysNet, the dysmelia network",
     "/contact/": "Contact the dysmelia network · DysNet",
     "/donate/": "Support DysNet, the dysmelia network",
+    "/privacy/": "Privacy notice: cookies, rights, registers · DysNet",
     "/404/": "Page not found · DysNet",
 }
 PEOPLE_LD = []  # filled by person_card() as the People page is defined
@@ -418,7 +419,7 @@ FOOTER = f"""</main>
       </div>
     </div>
     <div class="legal">
-      © 2026 DysNet Ideell Förening · <a href="#">Privacy</a> · <a href="#">Terms of use</a> · <a href="#">Legal notices</a>
+      © 2026 DysNet Ideell Förening · <a href="/privacy/">Privacy</a> · <a href="/about/statutes/">Statutes</a> · <a href="/about/transparency/">Transparency</a>
     </div>
   </div>
   <p class="page-date container">Page updated __PAGE_DATE__ · Written by the DysNet documentation team, reviewed by the board.</p>\n</footer>
@@ -3665,6 +3666,123 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
     <div class="tick"></div><p class="eyebrow">05 · How DysNet builds it</p>
     <h2 class="h2">Association by association, with a technical partner.</h2>
     <p>Member associations bring their families in, country by country. <a href="https://www.healthdatasafe.org/en/">Health Data Safe</a>, a Swiss non-profit foundation, is the technical and operational partner, mandated by the AGM of 26 August 2026. Read more on <a href="/registry/">the registry page</a>.</p>
+  </div>
+</section>
+""",
+}
+
+# ── Privacy ──────────────────────────────────────────────────────────────────
+# The footer promised a privacy notice and linked to nothing, which is the worst of both:
+# an association about to consider putting its families' data in a shared registry looks for
+# this page first. The site's own honesty is the argument here, so the notice describes what
+# is actually true of these files (no cookies, no analytics, no off-domain request) and states
+# the Article 14 position for the professionals our registers name, which is the part most
+# such notices leave out. Counts come from the registers so the page cannot drift from them.
+PAGES["/privacy/"] = {
+    "title": "Privacy",
+    "desc": "How DysNet handles personal data: this site sets no cookies and runs no analytics. Who is responsible, what the registers name, what the registry will do, and your rights under the GDPR.",
+    "crumbs": [("/privacy/", "Privacy")],
+    "body": f"""
+<section>
+  <div class="container">
+    <div class="tick"></div>
+    <p class="eyebrow">Privacy · Notice under Articles 13 and 14 GDPR</p>
+    <h1 class="display">This website sets no cookies and runs no analytics.</h1>
+    <p>Reading these pages leaves almost nothing behind. There is no tracking, no advertising, no account to create and no form to fill in. This notice says what little is processed anyway, what our published registers name, what the registry will do when it opens, and how you exercise your rights. It applies to <strong>www.dysnet.org</strong> and to the correspondence we receive.</p>
+    <p class="annex-note">Version of 17 September 2026. Every earlier version stays in <a href="https://github.com/dysnet-org/website">the public history of this site</a>.</p>
+
+    {opener("01", "In short", "Four things to know before the detail.", toc="In short")}
+    <div class="grid cols-2">
+      <div class="card"><h3 class="h4">No cookies</h3><p>This site stores no cookie on your device and shows no consent banner, because there is nothing to consent to.</p></div>
+      <div class="card"><h3 class="h4">No analytics</h3><p>We run no analytics, no tag manager, no advertising pixel and no social-media tracker. We cannot tell you how many people read this page, and we accept that.</p></div>
+      <div class="card"><h3 class="h4">Nothing is sold</h3><p>DysNet does not sell personal data and does not trade it. Nobody pays us for access to anyone.</p></div>
+      <div class="card"><h3 class="h4">No health data here</h3><p>This website collects nothing about your health or your child's. The registry that will do so does not exist yet, and it will ask each person separately.</p></div>
+    </div>
+
+    {opener("02", "Controller", "Who is responsible for this.", toc="Who is responsible")}
+    <p>The controller is <strong>DysNet Ideell Förening</strong>, a non-profit association registered in Sweden under organisation number 802444-3015, with its registered office at Nybodagatan 1, 171 42 Solna, Sweden, and an office at Rue du Chantier 2, B-1000 Brussels, Belgium. For anything in this notice, write to <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</p>
+    <p>Our main establishment sits in Sweden, so our lead supervisory authority is the Swedish Authority for Privacy Protection (IMY).</p>
+    <p>Each member association is its own controller for its own members, its own website and its own files. This notice does not cover what your national association does with your data, nor what Orphanet, PubMed or any other source we link to does with yours.</p>
+
+    {opener("03", "Reading a page", "What happens when you open this site.", toc="Reading a page")}
+    <p>This site is a folder of static files, published by GitHub Pages. Your request therefore reaches the servers of <strong>GitHub, Inc.</strong>, and of GitHub B.V. for readers in the EEA, rather than ours. GitHub processes the technical data that every web request carries: your IP address, the time, the page requested, your browser and your operating system. It uses that to deliver the page and to protect the service against abuse, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">its own privacy statement</a>.</p>
+    <p>We hold no visitor database and we receive no visitor-level information from GitHub. Nobody at DysNet can look up who read which page.</p>
+    <p><strong>Legal basis:</strong> our legitimate interest in publishing a website that works and stays available, Article 6(1)(f) GDPR. The data is technical, the purpose is narrow, and we take no decision about anybody on the strength of it.</p>
+
+    {opener("04", "Cookies", "Cookies, storage and consent banners.", toc="Cookies and storage")}
+    <p>This site sets no cookies, first-party or third-party. It also loads no font, script, image or map tile from anyone else's server: everything a page needs comes from www.dysnet.org. That is why you meet no cookie banner here.</p>
+    <p>One exception exists, and it is small. On the pages that carry a map, your browser remembers whether you left the information card open or closed, in a single entry called <code>dysnet-map-card</code> in the tab's own session storage. It holds the word <em>open</em> or the word <em>closed</em>, it carries no identifier, it never leaves your device, and it disappears when you close the tab.</p>
+
+    {opener("05", "Video", "Videos load only when you press play.", toc="Video and links")}
+    <p>Our videos sit on YouTube, and nothing loads from Google until you ask for it. A video appears first as a still image with a play button. Press it, and only then does a player load, from <code>youtube-nocookie.com</code>, at which point Google receives your IP address and device information under its own privacy policy. If you never press play, Google learns nothing about your visit.</p>
+    <p>The registers link out to Orphanet, PubMed, DOI resolvers, the European Commission, OEHHA and other public sources. Following a link takes you to a site with its own rules, and this notice stops at our edge.</p>
+
+    {opener("06", "Correspondence", "When you write to us.", toc="When you write to us")}
+    <p>Our mail runs on Zoho's European service. The provider is Zoho Corporation B.V., Beneluxlaan 4B, 3527 HT Utrecht, the Netherlands, acting as our processor. We read your message, answer it, and keep the thread while the matter is live.</p>
+    <ul>
+      <li><strong>General enquiries, associations and professionals:</strong> our legitimate interest in answering the people who write to us, Article 6(1)(f).</li>
+      <li><strong>Membership, donations and agreements:</strong> performing or preparing an agreement, Article 6(1)(b), together with our accounting obligations, Article 6(1)(c).</li>
+      <li><strong>If you describe your own or your child's condition,</strong> you are sending health data. As a non-profit body with a health aim, we may process it for our members and for the people in regular contact with us, without disclosing it outside, under Article 9(2)(d) GDPR. We ask for no medical detail we do not need, and you are free to write in general terms.</li>
+    </ul>
+    <p><strong>How long we keep it:</strong> ordinary correspondence goes after 24 months, unless it belongs to a file that is still live. Membership and donation records that count as accounting information stay for the seven years after the end of the calendar year in which the financial year closed, which Swedish accounting law requires (Bokföringslag 1999:1078, chapter 7).</p>
+
+    {opener("07", "Our registers", "The registers name professionals, not patients.", toc="What the registers name")}
+    <p>Part of what we publish concerns named professionals rather than visitors, and we did not collect it from them. Article 14 GDPR asks us to say so plainly, so here it is.</p>
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Register</th><th scope="col">What it names</th><th scope="col">Where it comes from</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="/knowledge/researchers/">Researchers</a></th><td>{len(RESEARCHERS.get("teams", []))} research teams: the institution, the country, the surnames and initials of first and last authors, and their publications on our conditions.</td><td>The affiliations recorded in PubMed for papers already in our bibliography.</td></tr>
+          <tr><th scope="row"><a href="/knowledge/bibliography/">Bibliography</a></th><td>{len(BIB.get("entries", [])):,} references with their authors, as published.</td><td>PubMed, Crossref and the Cochrane Library.</td></tr>
+          <tr><th scope="row"><a href="/knowledge/ongoing-studies/">Studies</a></th><td>The contact a study itself gives for taking part.</td><td>The study's own public page or publication.</td></tr>
+          <tr><th scope="row"><a href="/about/members/">Member associations</a></th><td>The contact addresses the associations publish for themselves.</td><td>Each association's own website, and the association itself.</td></tr>
+          <tr><th scope="row"><a href="/about/people/">People</a></th><td>The board and the volunteers who maintain the registers, with their role.</td><td>Themselves.</td></tr>
+          <tr><th scope="row"><a href="/knowledge/care-centres/">Care centres</a> and <a href="/knowledge/registries/">registries</a></th><td>Institutions only, with no named individual.</td><td>Member associations, the BSSH directory of children's hand clinics, and Orphanet.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Legal basis:</strong> our legitimate interest, Article 6(1)(f), in publishing a free resource on a group of conditions that too few people study. We keep to professional information that its holders have already published in a professional capacity. We publish nothing about anyone's health, and nothing private.</p>
+    <p><strong>To be corrected or removed:</strong> write to <a href="mailto:info@dysnet.org?subject=Register%20entry">info@dysnet.org</a> and name the entry. We correct or remove it within 30 days, and we do not ask you for a reason. Where a name forms part of a bibliographic reference, we can drop the entry, and we cannot rewrite the published paper.</p>
+    <p class="annex-note">One limit we state openly: the registers are published as open data under CC BY 4.0, so a copy downloaded before a removal stays with whoever downloaded it. We can only change what we publish.</p>
+
+    {opener("08", "The registry", "The registry does not exist yet.", toc="The registry")}
+    <p>No health data reaches DysNet through this website, and there is nothing here to ask us for. When the limb-malformation registry opens, it will carry its own notice, published before the first family enters anything, and it will work on these terms.</p>
+    <ul>
+      <li>Each person holds their own data account and decides what enters the registry.</li>
+      <li>Consent is explicit, granular and given study by study, under Article 9(2)(a) GDPR, and it can be withdrawn at any time.</li>
+      <li>No association enrols anybody. Families are invited, and they enter their own information.</li>
+      <li>DysNet does not sell data, and we will not pass it to insurers or employers.</li>
+      <li>Buying the data, or receiving it in bulk without the consent of the people it describes, will not be possible.</li>
+      <li>The technical partner is <a href="https://www.healthdatasafe.org/en/">Health Data Safe</a>, a Swiss non-profit foundation mandated by our Annual General Meeting of 26 August 2026. Its statutes rule out any sale of health data, limit its use to care and research, and provide that personal data is never treated as an asset of the foundation.</li>
+      <li>The roles under the GDPR, which body is controller and which is processor for which part, will be settled and published before the pilots take a single record.</li>
+    </ul>
+
+    {opener("09", "Processors", "Where the data sits, and who else touches it.", toc="Who else touches it")}
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Who</th><th scope="col">For what</th><th scope="col">Outside the EEA?</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">GitHub, Inc. and GitHub B.V.</th><td>Hosting this website, and the server logs of your requests.</td><td>Yes. GitHub states that it complies with the EU-US Data Privacy Framework.</td></tr>
+          <tr><th scope="row">Zoho Corporation B.V.</th><td>Our email, on the European service at zoho.eu.</td><td>No, for the mail itself.</td></tr>
+          <tr><th scope="row">Google</th><td>Only the video you press play on.</td><td>Yes, and only if you press play.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Nobody else. We use no advertising network, no analytics provider, no data broker and no mailing-list service for this site. We have never sold or rented personal data, and we will not.</p>
+
+    {opener("10", "Your rights", "What you can ask us to do.", toc="Your rights")}
+    <p>You may ask us to confirm what we hold about you and to give you a copy (Article 15), to correct it (16), to erase it (17), to restrict its use (18), to hand it over in a portable form (20), and to stop processing that rests on our legitimate interest (21). Where we rely on your consent, you may withdraw it at any time, and the withdrawal does not undo what was lawful before it.</p>
+    <p>Write to <a href="mailto:info@dysnet.org?subject=Data%20protection%20request">info@dysnet.org</a>. We answer within one month, free of charge. If a request is genuinely complex we may take up to two further months, and we tell you why inside the first month, as Article 12(3) requires. We may ask you to confirm who you are, and we ask for no more identification than the request needs.</p>
+    <p>We take no automated decisions about anybody and we build no profiles, so Article 22 does not come into play here.</p>
+
+    {opener("11", "Complaints", "If you are not satisfied.", toc="Complaints")}
+    <p>Tell us first, because most of it we can simply fix. You also have the right to complain to a supervisory authority, and you may choose the one where you live, where you work, or where you think the problem happened, under Article 77 GDPR. You may equally go to court, under Article 79.</p>
+    <p>Ours is <strong>Integritetsskyddsmyndigheten</strong>, the Swedish Authority for Privacy Protection: Box 8114, 104 20 Stockholm, Sweden, <a href="mailto:imy@imy.se">imy@imy.se</a>, +46 8 657 61 00. It takes complaints through <a href="https://www.imy.se/en/individuals/forms-and-e-services/file-a-gdpr-complaint/">its own form</a>.</p>
+
+    {opener("12", "Security", "Security, children and changes.", toc="Security and changes")}
+    <p><strong>Security.</strong> The site is a folder of static files with no database and no login, so it holds no visitor data that anyone could steal from it. Pages travel over HTTPS, and a plain HTTP request is redirected to it. Our source is public on GitHub, which lets anyone check what these pages do, and we treat that as a safeguard rather than a risk.</p>
+    <p><strong>Children.</strong> This site describes conditions that mostly appear at birth, so much of it is written for parents. We collect nothing from anyone, children included. If you are under 18, please ask a parent before sending us medical details about yourself.</p>
+    <p><strong>Changes.</strong> We date this notice and keep every earlier version in the site's public history. When something material changes we say so here, and for the registry we will write a new notice rather than stretch this one.</p>
   </div>
 </section>
 """,

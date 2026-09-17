@@ -1050,3 +1050,10 @@ table.annex.inc-table tbody tr:first-child th, table.annex.inc-table tbody tr:fi
 .aud-point p { margin: 0; }
 .aud-cta { margin: var(--space-3) 0 0; }
 @media (max-width: 34rem) { .aud-pills button { width: 100%; text-align: left; } }
+
+/* The privacy notice's two tables read as prose, not as figures: left-aligned, and narrow
+   enough that a phone scrolls the page rather than the table. */
+table.annex.priv-table { min-width: 34rem; }
+table.annex.priv-table th, table.annex.priv-table td { text-align: left; }
+table.annex.priv-table tbody tr:first-child th, table.annex.priv-table tbody tr:first-child td { background: #fff; }
+table.annex.priv-table tbody th { white-space: normal; }

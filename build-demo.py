@@ -132,6 +132,7 @@ SEO_TITLES = {
     "/contact/": "Contact the dysmelia network · DysNet",
     "/donate/": "Support DysNet, the dysmelia network",
     "/privacy/": "Privacy notice: cookies, rights, registers · DysNet",
+    "/accessibility/": "Accessibility of this site, measured · DysNet",
     "/404/": "Page not found · DysNet",
 }
 PEOPLE_LD = []  # filled by person_card() as the People page is defined
@@ -419,7 +420,7 @@ FOOTER = f"""</main>
       </div>
     </div>
     <div class="legal">
-      © 2026 DysNet Ideell Förening · <a href="/privacy/">Privacy</a> · <a href="/about/statutes/">Statutes</a> · <a href="/about/transparency/">Transparency</a>
+      © 2026 DysNet Ideell Förening · <a href="/privacy/">Privacy</a> · <a href="/accessibility/">Accessibility</a> · <a href="/about/statutes/">Statutes</a> · <a href="/about/transparency/">Transparency</a>
     </div>
   </div>
   <p class="page-date container">Page updated __PAGE_DATE__ · Written by the DysNet documentation team, reviewed by the board.</p>\n</footer>
@@ -529,7 +530,7 @@ def bibliography_html():
       <div class="finder-chips bib-focus" id="bib-focus"><button type="button" data-code="thal" aria-pressed="false">Thalidomide only</button><button type="button" data-exclude="thal" aria-pressed="false">Without thalidomide</button><span class="bib-focus-help">the drug, its embryopathy and its survivors: show only those papers, or leave them out</span></div>
       <div class="finder-chips" id="bib-topics">{topic_chips}</div>
       <div class="bib-years"><label for="bib-from">Published from</label> <input type="number" id="bib-from" min="{years[0]}" max="{years[-1]}" placeholder="{years[0]}" inputmode="numeric" autocomplete="off" aria-label="From year"> <label for="bib-to">to</label> <input type="number" id="bib-to" min="{years[0]}" max="{years[-1]}" placeholder="{years[-1]}" inputmode="numeric" autocomplete="off" aria-label="To year"> <span class="bib-focus-help">{years[0]}–{years[-1]}</span></div>
-      <p class="bib-count"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button></p>
+      <p class="bib-count" role="status"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button></p>
     </div>
     <ol class="bib-list" id="bib-list">{"".join(items[:60])}</ol>
     <script type="application/json" id="bib-data" data-src="/data/bibliography-index.json"></script>{PAYLOADS.__setitem__("bibliography-index.json", json.dumps({"codes": {c: names.get(c, c) for c in codes_present}, "topics": {t.replace(" ", "_"): BIB_TOPIC_LABEL.get(t, t) for t in topics}, "items": records}, ensure_ascii=False, separators=(",", ":"))) or ""}
@@ -801,7 +802,7 @@ def teratogens_html():
         <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
             <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Where the substance is used, according to its Wikipedia article</p>
       <div class="finder-chips tera-use-chips" id="tera-uses">{use_chips}</div>
-      <p class="bib-count"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
+      <p class="bib-count" role="status"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
     </div>
     <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="badge badge-med">Medicine</span> marks a substance used as a medicine, checked against the WHO ATC classification and the substance’s own article ({sum(1 for e in E if e.get("medicinal"))} of {len(E)}). Coloured tags say where the substance is used in everyday products, read from its Wikipedia article ({sum(1 for e in E if e.get("uses"))} of {len(E)}); open <em>Details</em> for the sentence each tag comes from. <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
@@ -2534,12 +2535,13 @@ REGISTRY_AUDIENCES = [
        "The figures for your own country, which most associations have never had, and a seat in deciding "
        "which research may be put to your families at all."),
       ("What it costs",
-       'Write to the board and we will tell you what a pilot involves for an association your size. '
-       '<a href="mailto:info@dysnet.org?subject=Registry%20pilot">info@dysnet.org</a>.'),
+       'No licence fee and no charge per family: Health Data Safe contributes the infrastructure in kind. The cost is '
+       'volunteer time. The <a href="/assets/dysnet-registry-pilot.pdf">two-page brief</a> answers the questions a board '
+       'asks, and you can forward it without writing to us first.'),
       ("Where it stands",
        "Pilots first, with a small number of associations. The general assembly of 26 August 2026 "
        "created the registry and mandated Health Data Safe as its technical partner.")],
-     ("mailto:info@dysnet.org?subject=Registry%20pilot", "Ask what a pilot involves")),
+     ("/assets/dysnet-registry-pilot.pdf", "Download the pilot brief (2 pages)")),
 
     ("registries", "A registry or public health agency in Europe",
      "We want what you already hold in the common registry, and we bring the means to move it.",
@@ -2966,6 +2968,242 @@ def build_brief_pdf():
     doc.build(story)
     pages = out.read_bytes().count(b"/Type /Page\n") or out.read_bytes().count(b"/Type /Page")
     return f"briefing PDF rebuilt ({out.stat().st_size // 1024} kB, {pages} page{'s' if pages != 1 else ''})"
+
+
+# ── The pilot brief ──────────────────────────────────────────────────────────
+# The registry page told an interested association to write and ask what a pilot involves,
+# which cost every one of them a round trip and gave their board nothing to read. This is
+# that answer, laid out as a board paper: what you give, what you get, what it costs, the
+# questions a treasurer asks, and the things we are careful not to claim.
+PILOT_GIVE = [
+    ("A point of contact", "One person who answers our mail and carries the pilot inside your association. Not a project team."),
+    ("Your language", "Help turning the questions into the words your families actually use, so an Italian record and a French one mean the same thing."),
+    ("An invitation, not a list", "You invite your families. Nobody is entered by their association, and we never ask you for your membership file."),
+    ("Patience with a first version", "A pilot exists to be corrected. We would rather you told us the questions are wrong than watched you answer them anyway."),
+]
+PILOT_GET = [
+    ("The figures for your own country", "Most associations have never had them. You would be able to say how many, where, and with what care, and say it with a source."),
+    ("A seat on the research question", "Which studies may be put to your families at all is decided by the member associations and the DysNet board together, not by whoever asks first."),
+    ("Data your families own", "Each person holds their own account and decides what enters the registry. Your relationship with them is not mediated by us."),
+    ("An infrastructure you do not run", "No servers, no hosting contract, no data protection officer to recruit. That burden sits with the technical partner."),
+]
+PILOT_QA = [
+    ("Who owns the data?",
+     "The person described by it. Not DysNet, not your association, and not the technical partner. Each person holds their own "
+     "account, decides what enters the registry, and can withdraw."),
+    ("What does it cost us?",
+     "No licence fee and no charge per family. Health Data Safe contributes its infrastructure in kind rather than as a "
+     "commercial service. The real cost is volunteer time: a contact, the translation, and the invitations."),
+    ("Do we hand over our member list?",
+     "No. We never ask for it. Families are invited by you and enter their own information themselves, which is also why the "
+     "registry describes a community rather than counting a population."),
+    ("What if a family changes its mind?",
+     "Consent is given study by study and can be withdrawn at any time, in the family's own language, under the GDPR rules "
+     "your association already works with."),
+    ("What if Health Data Safe disappears?",
+     "Its statutes provide that personal data is never treated as an asset of the foundation, and that on dissolution the data "
+     "is destroyed or moved to a service offering similar guarantees. The data model is built for portability for the same reason."),
+    ("Does this compete with our national registry?",
+     "No. Population registries count a catchment area from the clinical side. This records what families declare, from "
+     "pregnancy onwards, including the people who never reach a catchment area at all."),
+]
+PILOT_STEPS = [
+    ("One call", "We show you the questions, and what a single record actually looks like. Nothing is signed."),
+    ("The questions in your language", "You correct the wording until it matches how your families speak about themselves."),
+    ("A handful of families, not a launch", "You invite a small group. A pilot is meant to find what is wrong while it is still cheap to change."),
+    ("Each family opens its own account", "They decide what goes in, and they consent, or they do not. You are not asked to vouch for anyone."),
+    ("Your country's figures come back to you", "The first thing a pilot produces is a picture of your own membership that you did not have before."),
+    ("Then it becomes findable", "Once live, the registry is declared in Orphanet's European directory of rare-disease registries, where researchers already look."),
+]
+PILOT_CAREFUL = [
+    "It is not exhaustive. A registry aims at every case in a defined population; ours gathers the families who choose to take part.",
+    "There is no medical board yet. Writing a protocol and choosing what is worth collecting are scientific acts, and an association without a scientific committee will not pretend to perform them.",
+    "Declared data is not clinician-verified data. What families report about themselves is precious, and the two must never be confused.",
+]
+
+
+def build_pilot_pdf():
+    """Write docs/assets/dysnet-registry-pilot.pdf — the two-page brief an association can hand its board."""
+    import hashlib
+    from reportlab.lib import colors
+    from reportlab.lib.enums import TA_JUSTIFY
+    from reportlab.lib.pagesizes import A4
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import mm
+    from reportlab.platypus import (BaseDocTemplate, Frame, Image, KeepTogether, PageTemplate,
+                                    Paragraph, Spacer, Table, TableStyle)
+
+    out = ROOT / "assets" / "dysnet-registry-pilot.pdf"
+    logo = ROOT / "assets" / "img" / "dysnet-logo.png"
+    digest = hashlib.sha1(repr([PILOT_GIVE, PILOT_GET, PILOT_QA, PILOT_CAREFUL, PILOT_STEPS,
+                                len(BIB.get("entries", [])), TERA.get("counts", {}).get("total", 0)]).encode("utf-8")).hexdigest()
+    if out.exists() and digest.encode() in out.read_bytes():
+        return "pilot brief unchanged"
+
+    INK, MUTED = colors.HexColor("#241a33"), colors.HexColor("#5d5470")
+    GREEN, GTEXT, GDEEP, GSOFT = (colors.HexColor("#16a34a"), colors.HexColor("#15803d"),
+                                  colors.HexColor("#14532d"), colors.HexColor("#eafaf0"))
+    F, FB = "Helvetica", "Helvetica-Bold"
+
+    def st(name, **kw):
+        base = dict(fontName=F, fontSize=8.5, leading=11.3, textColor=INK, spaceAfter=0)
+        base.update(kw)
+        return ParagraphStyle(name, **base)
+
+    s_kick = st("kick", fontName=FB, fontSize=7.4, leading=10, textColor=GTEXT)
+    s_title = st("title", fontName=FB, fontSize=17.5, leading=19.5, textColor=GDEEP, spaceAfter=2)
+    s_lede = st("lede", fontSize=8.4, leading=11.2, textColor=MUTED, alignment=TA_JUSTIFY)
+    s_sec = st("sec", fontName=FB, fontSize=10.4, leading=12.6, textColor=GDEEP, spaceAfter=2.6)
+    s_h = st("h", fontName=FB, fontSize=8.6, leading=11)
+    s_body = st("body", alignment=TA_JUSTIFY)
+    s_small = st("small", fontSize=7.9, leading=10.4, textColor=MUTED)
+    s_white = st("white", fontSize=8.5, leading=11.4, textColor=colors.white)
+
+    doc = BaseDocTemplate(str(out), pagesize=A4,
+                          leftMargin=14 * mm, rightMargin=14 * mm, topMargin=12 * mm, bottomMargin=15 * mm,
+                          title="DysNet — what a registry pilot involves for your association",
+                          author="DysNet", subject="Registry pilot brief", keywords=[digest])
+    width = doc.width
+
+    def furniture(canv, docu):
+        canv.saveState()
+        y = 11 * mm
+        canv.setStrokeColor(GDEEP)
+        canv.setLineWidth(2.2)
+        canv.line(docu.leftMargin, y, docu.leftMargin + width, y)
+        canv.setFont(F, 7.2)
+        canv.setFillColor(MUTED)
+        canv.drawString(docu.leftMargin, y - 4.6 * mm, "The full detail, with sources: " + SITE.split("//")[-1] + "/registry/")
+        canv.drawRightString(docu.leftMargin + width, y - 4.6 * mm,
+                             "DysNet Ideell Förening · info@dysnet.org · page %d of 2" % canv.getPageNumber())
+        canv.restoreState()
+
+    doc.addPageTemplates([PageTemplate(id="pilot", frames=[
+        Frame(doc.leftMargin, doc.bottomMargin, width, doc.height, leftPadding=0, rightPadding=0,
+              topPadding=0, bottomPadding=0)], onPage=furniture)])
+
+    def pairs(items, cols=2):
+        """Two columns of heading-and-text, as on the web page."""
+        cw = (width - 5 * mm) / cols
+        rows, row = [], []
+        for h, t in items:
+            row.append([Paragraph(h, s_h), Spacer(1, 0.8 * mm), Paragraph(t, s_body)])
+            if len(row) == cols:
+                rows.append(row); row = []
+        if row:
+            row += [""] * (cols - len(row)); rows.append(row)
+        return Table(rows, colWidths=[cw] * cols,
+                     style=TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                       ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                       ("RIGHTPADDING", (0, 0), (-1, -1), 5 * mm),
+                                       ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                       ("BOTTOMPADDING", (0, 0), (-1, -1), 3.4 * mm)]))
+
+    head = [Paragraph("Registry pilot · Mission 2 · A paper for your board", s_kick),
+            Spacer(1, 1.6 * mm),
+            Paragraph("What a registry pilot involves for your association", s_title),
+            Spacer(1, 1.2 * mm),
+            Paragraph("DysNet is building the first international registry of limb malformations owned by the people it "
+                      "describes. The Annual General Meeting of 26 August 2026 created it and mandated Health Data Safe, a Swiss "
+                      "non-profit foundation, as its technical and operational partner. Assedea in France and Raggiungere in Italy "
+                      "launch it. This paper answers, without a meeting, what taking part would ask of your association.", s_lede)]
+    logo_w = 29 * mm
+    head_left = Image(str(logo), width=logo_w, height=logo_w * 176 / 269) if logo.exists() else Spacer(1, 1)
+    story = [Table([[head_left, head]], colWidths=[logo_w + 8 * mm, width - logo_w - 8 * mm],
+                   style=TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                     ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                     ("RIGHTPADDING", (0, 0), (0, 0), 8 * mm),
+                                     ("RIGHTPADDING", (1, 0), (1, 0), 0),
+                                     ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                     ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5 * mm),
+                                     ("LINEBELOW", (0, 0), (-1, -1), 2.2, GDEEP)])),
+             Spacer(1, 4 * mm)]
+
+    why = Table([[[Paragraph('<font name="%s" size="8.6" color="#14532d">Why a registry, and why now</font>' % FB, s_body),
+                   Spacer(1, 1.2 * mm),
+                   Paragraph("Between 2007 and 2014 three clusters of transverse upper-limb agenesis came to light in France, in "
+                             "Loire-Atlantique, Ain and Morbihan. The investigations found no common exposure, and they met the "
+                             "limit of any retrospective enquiry: families were questioned years after the birth, from memory. "
+                             "Families who record circumstances and exposures as they happen, from pregnancy onwards, give the "
+                             "next investigation what the last one lacked. No registry at national or European level is dedicated "
+                             "to limb anomalies.", s_body)]]],
+                colWidths=[width],
+                style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), GSOFT),
+                                  ("LINEBEFORE", (0, 0), (0, -1), 2.4, GREEN),
+                                  ("LEFTPADDING", (0, 0), (-1, -1), 3.4 * mm),
+                                  ("RIGHTPADDING", (0, 0), (-1, -1), 3.4 * mm),
+                                  ("TOPPADDING", (0, 0), (-1, -1), 2.4 * mm),
+                                  ("BOTTOMPADDING", (0, 0), (-1, -1), 2.6 * mm)]))
+    story += [why, Spacer(1, 4.4 * mm),
+              Paragraph("What your association gives", s_sec), pairs(PILOT_GIVE), Spacer(1, 1.6 * mm),
+              Paragraph("What your association gets", s_sec), pairs(PILOT_GET)]
+
+    story += [Paragraph("The questions your board will ask", s_sec)]
+    for q, a in PILOT_QA:
+        story.append(KeepTogether([Paragraph(q, s_h), Spacer(1, 0.7 * mm), Paragraph(a, s_body), Spacer(1, 2.6 * mm)]))
+
+    steps = [Paragraph("How a pilot runs", s_sec)]
+    for i, (h, t) in enumerate(PILOT_STEPS, 1):
+        steps.append(Table([[Paragraph('<font name="%s" color="#15803d">%d</font>' % (FB, i), s_h),
+                             [Paragraph(h, s_h), Spacer(1, 0.6 * mm), Paragraph(t, s_body)]]],
+                           colWidths=[6 * mm, width - 6 * mm],
+                           style=TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"),
+                                             ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                                             ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                                             ("TOPPADDING", (0, 0), (-1, -1), 0),
+                                             ("BOTTOMPADDING", (0, 0), (-1, -1), 2.4 * mm)])))
+    story.append(KeepTogether(steps))
+
+    stands = [[Paragraph('<font name="%s" size="8.6" color="#14532d">Where it stands today</font>' % FB, s_body),
+               Spacer(1, 1.2 * mm),
+               Paragraph("<b>26 August 2026.</b> The Annual General Meeting adopted the refocused strategy, created the registry "
+                         "and mandated Health Data Safe as its technical and operational partner.", s_body),
+               Spacer(1, 1 * mm),
+               Paragraph("<b>September 2026.</b> European rare-disease calls are being screened, and the registry is seeking its "
+                         "first funders. Assedea and Raggiungere carry the two launch pilots.", s_body)]]
+    story += [Spacer(1, 1.6 * mm),
+              Table([stands], colWidths=[width],
+                    style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), GSOFT),
+                                      ("LINEBEFORE", (0, 0), (0, -1), 2.4, GREEN),
+                                      ("LEFTPADDING", (0, 0), (-1, -1), 3.4 * mm),
+                                      ("RIGHTPADDING", (0, 0), (-1, -1), 3.4 * mm),
+                                      ("TOPPADDING", (0, 0), (-1, -1), 2.4 * mm),
+                                      ("BOTTOMPADDING", (0, 0), (-1, -1), 2.6 * mm)])),
+              Spacer(1, 4 * mm)]
+
+    careful = [Paragraph("What we are careful not to claim", s_sec),
+               Paragraph("Measured against the definition of a patient registry adopted by the European recommendations on "
+                         "rare-disease registries, what we are building is not yet a registry, and we would rather say so than "
+                         "borrow the word's authority.", s_small), Spacer(1, 1.8 * mm)]
+    for line in PILOT_CAREFUL:
+        careful += [Paragraph("\u2022  " + line, s_small), Spacer(1, 1.2 * mm)]
+    careful += [Spacer(1, 1.2 * mm),
+                Paragraph("Earning the word is the roadmap: a scientific committee, a written protocol, an agreed minimum data "
+                          "set and a published quality plan.", s_small)]
+    story.append(KeepTogether(careful))
+
+    act = [Paragraph('<font name="%s" size="9.6" color="#ffffff">What we are asking of you</font>' % FB, s_white),
+           Spacer(1, 1.4 * mm),
+           Paragraph("Tell us whether your board wants a conversation. A pilot starts with one call, a look at the questions in "
+                     "your language, and a date. Write to info@dysnet.org with the word <b>pilot</b> in the subject line.", s_white),
+           Spacer(1, 1.2 * mm),
+           Paragraph("While you decide, everything else we maintain is already free to use: a bibliography of %s references, a "
+                     "teratogens register of %s substances with the decisions authorities have taken on them, the care centres, "
+                     "the researcher register and the epidemiology tables, at %s/knowledge/."
+                     % (format(len(BIB.get("entries", [])), ","), TERA.get("counts", {}).get("total", 0),
+                        SITE.split("//")[-1]), s_white)]
+    story += [Spacer(1, 4 * mm),
+              Table([[act]], colWidths=[width],
+                    style=TableStyle([("BACKGROUND", (0, 0), (-1, -1), GDEEP),
+                                      ("LEFTPADDING", (0, 0), (-1, -1), 5 * mm),
+                                      ("RIGHTPADDING", (0, 0), (-1, -1), 5 * mm),
+                                      ("TOPPADDING", (0, 0), (-1, -1), 3.6 * mm),
+                                      ("BOTTOMPADDING", (0, 0), (-1, -1), 3.8 * mm)]))]
+
+    doc.build(story)
+    raw = out.read_bytes()
+    pages = raw.count(b"/Type /Page\n") or raw.count(b"/Type /Page")
+    return f"pilot brief rebuilt ({out.stat().st_size // 1024} kB, {pages} pages)"
 
 
 PAGES["/voice/"] = {
@@ -3702,6 +3940,7 @@ PAGES["/privacy/"] = {
     {opener("02", "Controller", "Who is responsible for this.", toc="Who is responsible")}
     <p>The controller is <strong>DysNet Ideell Förening</strong>, a non-profit association registered in Sweden under organisation number 802444-3015, with its registered office at Nybodagatan 1, 171 42 Solna, Sweden, and an office at Rue du Chantier 2, B-1000 Brussels, Belgium. For anything in this notice, write to <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</p>
     <p>Our main establishment sits in Sweden, so our lead supervisory authority is the Swedish Authority for Privacy Protection (IMY).</p>
+    <p><strong>Data protection contact.</strong> One person on the board answers for data protection and reads everything sent to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a> with <em>data protection</em> in the subject line. DysNet has not appointed a data protection officer in the sense of Article 37 GDPR, which does not require one of an association that runs a website of this kind. When the registry begins processing health data, we will reassess that and say so here.</p>
     <p>Each member association is its own controller for its own members, its own website and its own files. This notice does not cover what your national association does with your data, nor what Orphanet, PubMed or any other source we link to does with yours.</p>
 
     {opener("03", "Reading a page", "What happens when you open this site.", toc="Reading a page")}
@@ -3712,6 +3951,10 @@ PAGES["/privacy/"] = {
     {opener("04", "Cookies", "Cookies, storage and consent banners.", toc="Cookies and storage")}
     <p>This site sets no cookies, first-party or third-party. It also loads no font, script, image or map tile from anyone else's server: everything a page needs comes from www.dysnet.org. That is why you meet no cookie banner here.</p>
     <p>One exception exists, and it is small. On the pages that carry a map, your browser remembers whether you left the information card open or closed, in a single entry called <code>dysnet-map-card</code> in the tab's own session storage. It holds the word <em>open</em> or the word <em>closed</em>, it carries no identifier, it never leaves your device, and it disappears when you close the tab.</p>
+    <h3 class="h4" style="margin-top:var(--space-3)">The registers stay open</h3>
+    <p>We looked into making the registers conditional on accepting an analytics tracker, and we had the question tested before building anything. It cannot be done lawfully, and we would not want it. Swedish law lets a site store or read an identifier on your device only with your consent, or where that is strictly necessary for the service you actually asked for (9 kap. 28 § lagen (2022:482) om elektronisk kommunikation). Measuring our audience is neither of those, and consent extracted by withholding the content is not freely given, as the European Data Protection Board sets out in its guidelines on consent of 4 May 2020, at paragraphs 39 to 41.</p>
+    <p>There is a further reason that weighs more with us than the first. These pages describe a health condition, so a record that you read them carries an inference about your own or your child's health, which the GDPR protects more strictly than anything else. A family looking up a diagnosis at two in the morning owes us nothing in exchange. <strong>Every register here is readable without accepting anything, and it will stay that way.</strong></p>
+    <p>Should we ever measure our traffic, we will count pages rather than people: aggregate figures only, nothing written to your device, nothing that could single you out, and a note here before we start rather than after.</p>
 
     {opener("05", "Video", "Videos load only when you press play.", toc="Video and links")}
     <p>Our videos sit on YouTube, and nothing loads from Google until you ask for it. A video appears first as a still image with a play button. Press it, and only then does a player load, from <code>youtube-nocookie.com</code>, at which point Google receives your IP address and device information under its own privacy policy. If you never press play, Google learns nothing about your visit.</p>
@@ -3783,6 +4026,61 @@ PAGES["/privacy/"] = {
     <p><strong>Security.</strong> The site is a folder of static files with no database and no login, so it holds no visitor data that anyone could steal from it. Pages travel over HTTPS, and a plain HTTP request is redirected to it. Our source is public on GitHub, which lets anyone check what these pages do, and we treat that as a safeguard rather than a risk.</p>
     <p><strong>Children.</strong> This site describes conditions that mostly appear at birth, so much of it is written for parents. We collect nothing from anyone, children included. If you are under 18, please ask a parent before sending us medical details about yourself.</p>
     <p><strong>Changes.</strong> We date this notice and keep every earlier version in the site's public history. When something material changes we say so here, and for the registry we will write a new notice rather than stretch this one.</p>
+  </div>
+</section>
+""",
+}
+
+# ── Accessibility ────────────────────────────────────────────────────────────
+# A network for people with limb differences cannot publish a site its own members
+# struggle to operate, so this page states what was measured rather than what we hope.
+# Every figure below came from a run over the built pages on 17 September 2026, and the
+# checks are cheap enough to repeat on any build.
+PAGES["/accessibility/"] = {
+    "title": "Accessibility",
+    "desc": "How accessible this site is, measured rather than claimed: what we tested, what passed, where it still falls short, and how to tell us when something blocks you.",
+    "crumbs": [("/accessibility/", "Accessibility")],
+    "body": f"""
+<section>
+  <div class="container">
+    <div class="tick"></div>
+    <p class="eyebrow">Accessibility · Statement</p>
+    <h1 class="display">What we measured, and where this site still falls short.</h1>
+    <p>DysNet exists for people with a physical difference, so a site our own members struggle to operate would contradict the point of it. We hold www.dysnet.org to <strong>WCAG 2.2, level AA</strong>, whether or not the law requires that of an association our size. This page says what we tested, what passed, and what did not.</p>
+    <p class="annex-note">Statement of 17 September 2026, written from a run over all 24 pages of the site on that date.</p>
+
+    {opener("01", "The measurements", "What we tested, and what came back.", toc="What we measured")}
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Check</th><th scope="col">Result</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Text alternatives</th><td>31 images, every one carrying alt text.</td></tr>
+          <tr><th scope="row">Names of controls</th><td>2,224 links and 239 buttons, every one with a name a screen reader can announce.</td></tr>
+          <tr><th scope="row">Headings</th><td>One h1 per page, and no level skipped anywhere.</td></tr>
+          <tr><th scope="row">Landmarks</th><td>Every page carries a main landmark and a skip link before it.</td></tr>
+          <tr><th scope="row">Tables</th><td>All 7 data tables use real header cells with a scope.</td></tr>
+          <tr><th scope="row">Contrast</th><td>32 distinct colour, size and weight combinations on the most colour-heavy page, none below the AA threshold.</td></tr>
+          <tr><th scope="row">Target size</th><td>397 controls on that same page, every one at least 24 by 24 pixels.</td></tr>
+          <tr><th scope="row">Keyboard</th><td>Focus is always visible, as a 3-pixel outline. Nothing needs a drag, a double-click or a steady hand.</td></tr>
+          <tr><th scope="row">Motion</th><td>Animation stops when your system asks for reduced motion.</td></tr>
+          <tr><th scope="row">Changing figures</th><td>When a filter changes a count, the new figure is announced rather than silently repainted.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Two of those results came from fixes made on the day of this statement: the target-size floor, and the announcement of filter counts. We publish the date so you can hold the claim to it.</p>
+
+    {opener("02", "Shortfalls", "Where it does not reach the standard.", toc="Where it falls short")}
+    <ul>
+      <li><strong>The maps are drawn, not written.</strong> A screen reader cannot read the points plotted on the world map, and no alt text would carry a map honestly. Everything the maps show exists in text on the same pages, in the epidemiology tables, the care-centre list and the registry list, and in the data file that <a href="/knowledge/">each register page</a> offers for download.</li>
+      <li><strong>Our PDFs are not tagged.</strong> The five demands, and the briefs we publish for boards, are laid out for print rather than marked up for a screen reader. The same content sits in HTML on <a href="/voice/">the Voice pages</a>. Ask us and we will send you any of it as plain text.</li>
+      <li><strong>The site is in English only.</strong> For a network whose members are German, Italian, French, Spanish, Swedish, Dutch and Norwegian, that is an accessibility barrier as real as any technical one, and we know it.</li>
+      <li><strong>No independent audit has been commissioned,</strong> and we have not tested with every assistive technology. What is above was measured by our own tools, which find what they are built to find and no more.</li>
+      <li><strong>There is no easy-read version</strong> and no sign-language version of the main pages.</li>
+    </ul>
+
+    {opener("03", "Tell us", "If something here blocks you.", toc="If something blocks you")}
+    <p>Write to <a href="mailto:info@dysnet.org?subject=Accessibility">info@dysnet.org</a> and say what you were trying to do and what stopped you. You do not need technical words for it, and telling us which page it was is enough to start. We answer within 10 working days, and where we cannot fix something quickly we will say so and send you the content another way.</p>
+    <p>If an assistive technology of yours behaves differently from the ones we tested, that is worth telling us too. We would rather hear it from you than keep publishing a statement that is true only of our own machines.</p>
   </div>
 </section>
 """,
@@ -3976,6 +4274,7 @@ def build():
 
     # One-page briefing PDF of the five demands, rendered from the same data
     print("  " + build_brief_pdf())
+    print("  " + build_pilot_pdf())
 
     # robots.txt — everything is open, to search engines and to AI systems alike. The AI crawlers are
     # named one by one because silence reads as an oversight; this is a knowledge site and being quoted,

@@ -1057,3 +1057,10 @@ table.annex.priv-table { min-width: 34rem; }
 table.annex.priv-table th, table.annex.priv-table td { text-align: left; }
 table.annex.priv-table tbody tr:first-child th, table.annex.priv-table tbody tr:first-child td { background: #fff; }
 table.annex.priv-table tbody th { white-space: normal; }
+
+/* Target size (WCAG 2.2, 2.5.8 AA): every control a reader taps is at least 24px high.
+   This network exists for people with limb differences, many of whom point with one hand,
+   a knuckle or a prosthesis, so the minimum is the floor and not the aim. */
+.crumbs a, .legal a { display: inline-flex; align-items: center; min-height: 24px; }
+details > summary { min-height: 24px; padding-block: 0.15rem; }
+.bib-count button, .finder-chips button, .aud-pills button { min-height: 24px; }

@@ -3270,6 +3270,19 @@ PAGES["/voice/reports/"] = {
 
     <div style="margin-top:var(--space-4)">
       <article class="report">
+        <p class="seat">European Disability Forum · <a href="https://www.edf-feph.org/artificial-intelligence/" target="_blank" rel="noopener external">Artificial intelligence</a></p>
+        <h2 class="h3">Artificial intelligence to support persons with disability</h2>
+        <time datetime="2026-09">September 2026 · Claudio Pirola</time>
+        <p>DysNet is a member of the European Disability Forum and has followed its work on artificial intelligence over the
+        last few years. The Forum argues in Brussels that these systems must be designed and used inclusively, and it follows
+        the European Union&rsquo;s AI Act on behalf of disabled people.</p>
+        <p>The subject reached institutional level in Italy at <a href="#biorobotics-palazzo-pirelli">our conference at Palazzo
+        Pirelli</a> in March, and it becomes the focus of the next meeting DysNet is organising, on 28 November 2026, with a
+        foundation linked to Intesa Sanpaolo. The European Disability Forum will take part. The question the meeting puts is a
+        practical one: how far does artificial intelligence already help persons with disability do their daily work? Details
+        follow before the date.</p>
+      </article>
+      <article class="report">
         <p class="seat">Cerebral Palsy EU</p>
         <h2 class="h3">Advocacy skills webinar</h2>
         <time datetime="2026-06-22">22 June 2026 · Claudio Pirola</time>
@@ -3281,7 +3294,7 @@ PAGES["/voice/reports/"] = {
         <time datetime="2026-05">May 2026 · Claudio Pirola</time>
         <p>Following Vote4All (study visits to the Parliaments of The Hague and Lisbon, dialogue with the Dutch Ministry of the Interior, the Municipality of Milan, the Portuguese Parliament and the mayors of Lisbon and Porto), DysNet joins the successor project: webinars and in-person workshops across the EU.</p>
       </article>
-      <article class="report">
+      <article class="report" id="biorobotics-palazzo-pirelli">
         <p class="seat">DysNet event · Regione Lombardia</p>
         <h2 class="h3">Biorobotics conference at Palazzo Pirelli</h2>
         <time datetime="2026-03-26">26 March 2026 · Claudio Pirola</time>

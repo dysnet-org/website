@@ -3206,69 +3206,11 @@ def build_pilot_pdf():
     return f"pilot brief rebuilt ({out.stat().st_size // 1024} kB, {pages} pages)"
 
 
-PAGES["/voice/"] = {
-    "title": "Where DysNet sits",
-    "desc": "DysNet's seats at EURORDIS, the European Disability Forum and ERN BOND: a named delegate, a written mandate and a public report for each.",
-    "crumbs": [("/voice/", "Voice")],
-    "body": f"""
-<section>
-  <div class="container">
-    <div class="tick"></div>
-    <p class="eyebrow">Mission 3 · The voice of families</p>
-    <h1 class="display">Our voice for people with dysmelia: where it counts, with a mandate.</h1>
-    <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
-    <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a></p>
-
-    {opener("01", "Our voice", "Five demands, carried into every room we sit in.")}
-    <p>What DysNet asks for on behalf of families, in the order we argue them.</p>
-    {demands_html()}
-
-    {opener("02", "Where we sit", "The seats, with a mandate.")}
-    <div class="grid cols-2" style="margin-top:var(--space-4)">
-      <div class="card">
-        <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
-        <p>Member, and part of the <a href="https://www.eurordis.org/social-policy-action-group/" target="_blank" rel="noopener external">Social Policy Action Group</a>, where DysNet contributes on independent living. Active in the Rare Barometer programme and the European Regional Task Force on Rare Diseases (with Rare Diseases International, supporting the WHO resolution on rare diseases).</p>
-      </div>
-      <div class="card">
-        <h3 class="h4">EDF · European Disability Forum</h3>
-        <p>Member. General assemblies and workstreams on the EU Disability Card, AI, assistive technology for employment, and accessibility.</p>
-      </div>
-      <div class="card">
-        <h3 class="h4">ERN BOND · patient advocacy group</h3>
-        <p>Patient representative seat in the European Reference Network for bone diseases; promoter of the Patient Journey project.</p>
-      </div>
-      <div class="card" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
-        <h3 class="h4">EESC · European Economic and Social Committee</h3>
-        <p>Standing contacts. The EU’s consultative body for organised civil society advises the Parliament, Council and Commission, and carries a permanent group on disability rights: opinions on the EU Disability Card and on the rights of persons with disabilities are shaped here.</p>
-      </div>
-    </div>
-
-    {opener("03", "Also active in", "Projects we joined by invitation.")}
-    <ul>
-      <li><strong>VOTE4ALL / VOICE4ALL</strong> (Cerebral Palsy Europe, EU-supported): autonomous voting rights for persons with disabilities; study visits to The Hague and the Portuguese Parliament.</li>
-      <li><strong>Local lectures</strong>: Milan Civil Week, and an event planned around the Milano-Cortina 2026 Winter Paralympics.</li>
-    </ul>
-    <p style="margin-top:var(--space-3)"><a class="btn btn-primary" href="/voice/reports/">Read the delegate reports</a></p>
-  </div>
-</section>
-""",
-}
-
-PAGES["/voice/reports/"] = {
-    "og": "/assets/img/limbloss-day-2012.jpg",
-    "title": "Reports",
-    "desc": "Short written reports from DysNet's delegates after every meeting in the bodies where DysNet represents families affected by limb difference.",
-    "crumbs": [("/voice/", "Voice"), ("/voice/reports/", "Reports")],
-    "body": f"""
-<section>
-  <div class="container">
-    <div class="tick"></div>
-    <p class="eyebrow">Mission 3 · Delegate reports</p>
-    <h1 class="display">Reports from our seats.</h1>
-    <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog. Entries dated
-    February 2026 come from the chairman&rsquo;s activity report of that month.</p>
-
-    <div style="margin-top:var(--space-4)">
+# ── Delegate reports ────────────────────────────────────────────────────────
+# The feed lives here rather than inside the page, because /voice/ shows the three most
+# recent entries and the only way to keep the two in step is to have one source. The
+# teaser below reads this markup instead of a second list that would drift from it.
+REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
       <article class="report">
         <p class="seat">Cerebral Palsy EU</p>
         <h2 class="h3">Advocacy skills webinar</h2>
@@ -3381,6 +3323,90 @@ PAGES["/voice/reports/"] = {
         <p>EU Disability Card perspectives to 2027, AI and disability, assistive technology for employment, accessibility and transport.</p>
       </article>
     </div>
+"""
+
+
+def reports_teaser(n=3):
+    """The n most recent entries as cards, read from REPORTS_FEED itself."""
+    out = []
+    for art in re.findall(r'<article class="report"[^>]*>(.*?)</article>', REPORTS_FEED, re.S)[:n]:
+        seat = re.search(r'<p class="seat">(.*?)</p>', art, re.S).group(1)
+        seat = re.sub(r"<a [^>]*>(.*?)</a>", r"\1", seat, flags=re.S).strip()
+        title = re.search(r'<h2[^>]*>(.*?)</h2>', art, re.S).group(1).strip()
+        when = re.search(r"<time[^>]*>(.*?)</time>", art, re.S).group(1).split("·")[0].strip()
+        out.append(f'<div class="card"><p class="seat">{seat}</p>'
+                   f'<h3 class="h4"><a href="/voice/reports/">{title}</a></h3>'
+                   f'<p class="fine">{when}</p></div>')
+    return '<div class="grid cols-3">' + "".join(out) + "</div>"
+
+
+PAGES["/voice/"] = {
+    "title": "Where DysNet sits",
+    "desc": "DysNet's seats at EURORDIS, the European Disability Forum and ERN BOND: a named delegate, a written mandate and a public report for each.",
+    "crumbs": [("/voice/", "Voice")],
+    "body": f"""
+<section>
+  <div class="container">
+    <div class="tick"></div>
+    <p class="eyebrow">Mission 3 · The voice of families</p>
+    <h1 class="display">Our voice for people with dysmelia: where it counts, with a mandate.</h1>
+    <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
+    <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a></p>
+
+    {opener("01", "Our voice", "Five demands, carried into every room we sit in.", toc="The five demands")}
+    <p>What DysNet asks for on behalf of families, in the order we argue them.</p>
+    {demands_html()}
+
+    {opener("02", "Where we sit", "The seats, with a mandate.", toc="Where we sit")}
+    <div class="grid cols-2" style="margin-top:var(--space-4)">
+      <div class="card">
+        <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
+        <p>Member, and part of the <a href="https://www.eurordis.org/social-policy-action-group/" target="_blank" rel="noopener external">Social Policy Action Group</a>, where DysNet contributes on independent living. Active in the Rare Barometer programme and the European Regional Task Force on Rare Diseases (with Rare Diseases International, supporting the WHO resolution on rare diseases).</p>
+      </div>
+      <div class="card">
+        <h3 class="h4">EDF · European Disability Forum</h3>
+        <p>Member. General assemblies and workstreams on the EU Disability Card, AI, assistive technology for employment, and accessibility.</p>
+      </div>
+      <div class="card">
+        <h3 class="h4">ERN BOND · patient advocacy group</h3>
+        <p>Patient representative seat in the European Reference Network for bone diseases; promoter of the Patient Journey project.</p>
+      </div>
+      <div class="card" style="--acc:var(--acc-centres);--acc-text:var(--acc-centres-text)">
+        <h3 class="h4">EESC · European Economic and Social Committee</h3>
+        <p>Standing contacts. The EU’s consultative body for organised civil society advises the Parliament, Council and Commission, and carries a permanent group on disability rights: opinions on the EU Disability Card and on the rights of persons with disabilities are shaped here.</p>
+      </div>
+    </div>
+
+    {opener("03", "What came back", "Every seat reports, and the reports are public.", toc="The reports")}
+    <p>A seat is worth what it brings home, so each delegate writes a short report after every meeting and we publish it. Here are the three most recent.</p>
+    {reports_teaser(3)}
+    <p style="margin-top:var(--space-3)"><a class="btn btn-primary" href="/voice/reports/">Read all delegate reports</a></p>
+
+    {opener("04", "Also active in", "Projects we joined by invitation.", toc="Also active in")}
+    <ul>
+      <li><strong>VOTE4ALL / VOICE4ALL</strong> (Cerebral Palsy Europe, EU-supported): autonomous voting rights for persons with disabilities; study visits to The Hague and the Portuguese Parliament.</li>
+      <li><strong>Local lectures</strong>: Milan Civil Week, and an event planned around the Milano-Cortina 2026 Winter Paralympics.</li>
+    </ul>
+  </div>
+</section>
+""",
+}
+
+PAGES["/voice/reports/"] = {
+    "og": "/assets/img/limbloss-day-2012.jpg",
+    "title": "Reports",
+    "desc": "Short written reports from DysNet's delegates after every meeting in the bodies where DysNet represents families affected by limb difference.",
+    "crumbs": [("/voice/", "Voice"), ("/voice/reports/", "Reports")],
+    "body": f"""
+<section>
+  <div class="container">
+    <div class="tick"></div>
+    <p class="eyebrow">Mission 3 · Delegate reports</p>
+    <h1 class="display">Reports from our seats.</h1>
+    <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog. Entries dated
+    February 2026 come from the chairman&rsquo;s activity report of that month.</p>
+
+    {REPORTS_FEED}
 
     <figure class="photo" style="margin-top:var(--space-4)">
       <picture><source srcset="/assets/img/limbloss-day-2012.webp" type="image/webp"><img src="/assets/img/limbloss-day-2012.jpg" alt="A speaker presents DysNet and EDRIC at European LimbLoss Day 2012" width="1400" height="1050" loading="lazy" decoding="async"></picture>

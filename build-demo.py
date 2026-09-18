@@ -3264,7 +3264,7 @@ PAGES["/voice/reports/"] = {
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Mission 3 · Delegate reports</p>
-    <h1 class="display">Reports from our seats: after every meeting, a report.</h1>
+    <h1 class="display">Reports from our seats.</h1>
     <p>What our delegates heard, said and brought home, in a few paragraphs each. This feed replaces the old blog. Entries dated
     February 2026 come from the chairman&rsquo;s activity report of that month.</p>
 

@@ -3830,6 +3830,13 @@ PAGES["/donate/"] = {
         <span class="fine">A receipt, a question or a standing order: <a href="mailto:sal.giambruno@dysnet.org">sal.giambruno@dysnet.org</a> or <a href="mailto:info@dysnet.org">info@dysnet.org</a>.</span>
       </div>
 
+      <div class="give-via">
+        <h3 class="h4">Do you need a receipt for your tax return?</h3>
+        <p>DysNet is registered in Sweden, and a Swedish receipt helps a Swedish taxpayer and nobody else. Your national member association is registered where <em>you</em> pay tax, and can usually give a receipt your own tax office accepts.</p>
+        <p>So give through your association, write <strong>DysNet</strong> in the reference or message field, and ask them to pass the gift on. The money reaches the same work, and you keep the deduction. <a href="/about/members/">Find your national association</a>.</p>
+        <p class="fine">Each association decides for itself whether it can forward a gift marked this way and issue a receipt for it, so ask yours before you give.</p>
+      </div>
+
     </div>
   </div>
 </section>

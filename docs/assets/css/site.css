@@ -1064,3 +1064,11 @@ table.annex.priv-table tbody th { white-space: normal; }
 .crumbs a, .legal a { display: inline-flex; align-items: center; min-height: 24px; }
 details > summary { min-height: 24px; padding-block: 0.15rem; }
 .bib-count button, .finder-chips button, .aud-pills button { min-height: 24px; }
+
+/* The tax-deduction route through a member association, under the gift box. */
+.give-via { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--dys-line); }
+.give-via h3 { margin: 0 0 0.4rem; }
+.give-via p { margin: 0 0 0.5rem; font-size: var(--text-small); }
+.give-via p:last-child { margin-bottom: 0; }
+.give-via h3 { color: #fff; }
+.give-via a { color: #d8fcc8; }

@@ -407,8 +407,13 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 .donate-box .bank-reveal.open { display: block; }
 .donate-box .bank-reveal a { color: #d8fcc8; }
 .don-carry { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-3); padding: 0; list-style: none; max-width: none; }
-.don-carry li { background: #fff; border: 1px solid var(--dys-line); border-radius: 999px; padding: 0.35rem 1rem; font-size: var(--text-small); }
-.don-carry li strong { color: var(--dys-purple-text); }
+.don-carry li { font-size: var(--text-small); }
+.don-carry a {
+  display: inline-block; background: #fff; border: 1px solid var(--dys-line); border-radius: 999px;
+  padding: 0.35rem 1rem; color: inherit; text-decoration: none; transition: border-color .15s, background .15s;
+}
+.don-carry a:hover { border-color: var(--dys-purple); background: var(--dys-purple-soft); }
+.don-carry a strong { color: var(--dys-purple-text); }
 
 /* ── Official logo (replaces the interim SVG wordmark) ──────────── */
 .logo img { height: 3.4rem; width: auto; }

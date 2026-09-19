@@ -3790,9 +3790,9 @@ PAGES["/donate/"] = {
       <h1 class="display">Support DysNet: power the network families rely on.</h1>
       <p>DysNet runs entirely on volunteers, so a small gift goes remarkably far: it keeps the registers current, the registry moving, and a delegate in the room when European decisions are made.</p>
       <ul class="don-carry">
-        <li><strong>Knowledge</strong> · hosting &amp; translation of the five registers</li>
-        <li><strong>Registry</strong> · the patient-owned data flagship</li>
-        <li><strong>Voice</strong> · delegates where decisions are made</li>
+        <li><a href="/knowledge/"><strong>Knowledge</strong> · hosting &amp; translation of the five registers</a></li>
+        <li><a href="/registry/"><strong>Registry</strong> · the patient-owned data flagship</a></li>
+        <li><a href="/voice/"><strong>Voice</strong> · delegates where decisions are made</a></li>
       </ul>
       <figure class="don-photo">
         <picture><source srcset="/assets/img/inail-lab-2.webp" type="image/webp"><img src="/assets/img/inail-lab-2.jpg" alt="Prosthetics being crafted in the INAIL workshop visited by the DysNet board" width="1400" height="787" loading="lazy" decoding="async"></picture>

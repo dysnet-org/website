@@ -1072,3 +1072,10 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .give-via p:last-child { margin-bottom: 0; }
 .give-via h3 { color: #fff; }
 .give-via a { color: #d8fcc8; }
+/* The caveat is the one line a donor must not skim, so it is set apart rather than shrunk. */
+.give-via-note {
+  margin: var(--space-2) 0 0; padding: 0.7rem 0.9rem;
+  background: rgba(255, 255, 255, 0.12); border-left: 3px solid #d8fcc8;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: var(--text-small); line-height: 1.45; color: #fff;
+}

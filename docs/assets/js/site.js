@@ -373,7 +373,10 @@
       tip.style.left = Math.max(12, left) + "px"; tip.style.top = Math.max(12, top) + "px";
     }
     var hideTimer = null, pinned = null;
-    function hideSoon() { if (pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; }, 350); }
+    // Placed once per country, then left where it is: a tooltip that follows the pointer
+    // cannot be reached, and this one carries the member associations as links.
+    var tipFor = null;
+    function hideSoon() { if (pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; tipFor = null; }, 600); }
     // markers (care centres, research teams): hover shows the card, click pins it
     function markerTip(a, x, y) {
       var title = a.querySelector("title") ? a.querySelector("title").textContent : "";
@@ -390,9 +393,12 @@
       var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
       if (a) { clearTimeout(hideTimer); markerTip(a, e.clientX, e.clientY); return; }
       var zone = e.target.closest ? e.target.closest("path.zone") : null;
-      if (zone) { clearTimeout(hideTimer); tip.innerHTML = "<strong>" + zone.getAttribute("data-label").split(" · ")[0] + "</strong><span class=\"status\">Registry coverage</span><p style=\"margin:0.3rem 0 0\">" + zone.getAttribute("data-label").split(" · ").slice(1).join(" · ") + "</p>"; tip.style.display = "block"; var rz = host.getBoundingClientRect(); tip.style.left = Math.max(12, Math.min(e.clientX - rz.left + 14, rz.width - tip.offsetWidth - 12)) + "px"; tip.style.top = Math.max(12, Math.min(e.clientY - rz.top + 14, rz.height - tip.offsetHeight - 12)) + "px"; return; }
+      if (zone) { clearTimeout(hideTimer); if (tipFor === zone && tip.style.display === "block") return; tipFor = zone; tip.innerHTML = "<strong>" + zone.getAttribute("data-label").split(" · ")[0] + "</strong><span class=\"status\">Registry coverage</span><p style=\"margin:0.3rem 0 0\">" + zone.getAttribute("data-label").split(" · ").slice(1).join(" · ") + "</p>"; tip.style.display = "block"; var rz = host.getBoundingClientRect(); tip.style.left = Math.max(12, Math.min(e.clientX - rz.left + 14, rz.width - tip.offsetWidth - 12)) + "px"; tip.style.top = Math.max(12, Math.min(e.clientY - rz.top + 14, rz.height - tip.offsetHeight - 12)) + "px"; return; }
       var el = e.target.closest ? e.target.closest("path[class*='st-']") : null;
-      if (el) { clearTimeout(hideTimer); showTip(el, e.clientX, e.clientY); } else hideSoon();
+      if (el) {
+        clearTimeout(hideTimer);
+        if (tipFor !== el || tip.style.display !== "block") { tipFor = el; showTip(el, e.clientX, e.clientY); }
+      } else hideSoon();
     });
     svg.addEventListener("click", function (e) {
       var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;

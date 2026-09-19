@@ -540,6 +540,7 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 .map-tip .status { color: var(--dys-purple-text); font-weight: 700; font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.06em; }
 .map-tip ul { margin: 0.35rem 0 0; padding-left: 1rem; }
 .map-tip li { margin: 0; }
+.map-tip a { display: inline-flex; align-items: center; min-height: 24px; }
 
 @media (max-width: 48rem) {
   .map-hero { height: auto; min-height: 0; }

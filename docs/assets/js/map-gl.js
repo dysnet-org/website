@@ -237,8 +237,11 @@
 
   // ── tooltip (same .map-tip as the SVG map) ─────────────────────────
   var tip = document.querySelector(".map-tip");
-  var hideTimer = null;
-  function hideSoon() { clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; }, 350); }
+  var hideTimer = null, tipFor = null;
+  // The tooltip holds the list of member associations, and they are links. It used to be
+  // repositioned on every mousemove, so it slid away from the pointer that was reaching for
+  // it. It is now placed once per country and then left alone, with long enough to travel.
+  function hideSoon() { clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; tipFor = null; }, 600); }
   function showTip(c, x, y) {
     tip.innerHTML = "<strong>" + c.name + "</strong><span class=\"status\">" + data.labels[c.status] + "</span><ul>" +
       c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>";
@@ -253,7 +256,10 @@
     var a3 = e.features[0].properties.ADM0_A3, c = byA3[a3];
     map.setFilter("hover", ["==", ["get", "ADM0_A3"], c ? a3 : ""]);
     map.getCanvas().style.cursor = c ? "pointer" : "";
-    if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else hideSoon();
+    if (c) {
+      clearTimeout(hideTimer);
+      if (tipFor !== a3 || tip.style.display !== "block") { tipFor = a3; showTip(c, e.point.x, e.point.y); }
+    } else hideSoon();
   });
   map.on("mouseleave", "countries", function () { map.setFilter("hover", ["==", ["get", "ADM0_A3"], ""]); map.getCanvas().style.cursor = ""; hideSoon(); });
   tip.addEventListener("mouseenter", function () { clearTimeout(hideTimer); });
@@ -262,7 +268,7 @@
   map.on("click", "countries", function (e) {
     if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "zones-fill"]) }).length) return; // a dot, a centre, a team or a registry zone was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
-    if (c) { clearTimeout(hideTimer); showTip(c, e.point.x, e.point.y); } else tip.style.display = "none";
+    if (c) { clearTimeout(hideTimer); tipFor = c.a3 || e.features[0].properties.ADM0_A3; showTip(c, e.point.x, e.point.y); } else { tip.style.display = "none"; tipFor = null; }
   });
 
   // ── care centres: hover for details, click to pin ──────────────────

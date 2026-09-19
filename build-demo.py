@@ -3492,7 +3492,7 @@ PAGES["/about/"] = {
 # Unreachable sites (taionlus.org, vitachi.cl, ITSS on webs.com, aussiehands,
 # neurosedyn.se, steps-charity) deliberately stay unlinked until confirmed.
 MEMBERS = [
-    ("Australia", [("Aussiehands", "https://aussiehands.org/"), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com"), ("Limbs 4 Life", "https://www.limbs4life.org.au")]),
+    ("Australia", [("Aussiehands", "https://aussiehands.org/"), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com")]),
     ("Austria", [("Contergan Austria", None)]),
     ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
     ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
@@ -3620,7 +3620,6 @@ MEMBER_INFO = {
     "Aussiehands": {"role": "President and chairperson", "person": "Elizabeth Borg", "email": "info@aussiehands.org",
                     "src": "the association's site, 2026 board"},
     "Thalidomide Australia": {"email": "lisa@thalidomidegroupaustralia.com", "src": "the association's contact page"},
-    "Limbs 4 Life": {"email": "info@limbs4life.org.au", "src": "the association's contact page"},
     "Assedea": {"role": "President", "person": "Carine Faucher Lombardo", "deputy_role": "Vice-president", "deputy": "Alice Delmas",
                 "email": "contact@assedea.fr", "src": "the association's team page"},
     "Contergan NRW": {"role": "Represented by", "person": "Udo Herterich", "email": "info@contergan-nrw.eu",

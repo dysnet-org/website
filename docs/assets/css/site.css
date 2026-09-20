@@ -541,6 +541,8 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 .map-tip ul { margin: 0.35rem 0 0; padding-left: 1rem; }
 .map-tip li { margin: 0; }
 .map-tip a { display: inline-flex; align-items: center; min-height: 24px; }
+.map-tip .tip-clin { margin: 0.45rem 0 0; padding-top: 0.4rem; border-top: 1px solid var(--dys-line);
+                     font-size: var(--text-eyebrow); color: var(--dys-muted); }
 
 @media (max-width: 48rem) {
   .map-hero { height: auto; min-height: 0; }
@@ -784,6 +786,7 @@ ol.objectives strong { color: var(--dys-green-text); }
 .people-popup .dp-main strong { color: var(--dys-purple-text); }
 .map-legend .l-zone::before { background: #7dd3fc; opacity: 0.85; }
 .map-legend .l-zone-progress::before { background: repeating-linear-gradient(135deg, #fdba74 0 2px, transparent 2px 4px); border: 1px solid #fdba74; }
+.l-zone-clinical::before { background: repeating-linear-gradient(135deg, #86efac 0 2px, transparent 2px 4px); border: 1px solid #86efac; }
 #worldmap .zone { stroke-width: 0.4; cursor: pointer; }
 #worldmap .zone-covered { fill: rgba(125, 211, 252, 0.6); stroke: #bae6fd; }
 #worldmap .zone-in_progress { fill: rgba(253, 186, 116, 0.45); stroke: #fed7aa; stroke-dasharray: 1.2 0.8; }

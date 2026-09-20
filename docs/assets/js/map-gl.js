@@ -91,13 +91,18 @@
         paint: { "line-color": "rgba(255,255,255,0.12)", "line-width": 0.6 } },
       { id: "borders", type: "line", source: "ne", "source-layer": "countries",
         paint: { "line-color": "rgba(255,255,255,0.16)", "line-width": ["interpolate", ["linear"], ["zoom"], 1, 0.4, 9, 1.2] } },
-      // Areas covered by a population-based registry of congenital anomalies (register 2): solid = covered, dashed = starting
+      // Register 2 on the map: solid = a population registry covers this area, dashed = one is starting,
+      // outline only = a clinical registry recruits here. The last claims no coverage of the births in a
+      // country, so it is drawn as a border rather than a filled territory, faint enough to stay hoverable.
       { id: "zones-fill", type: "fill", source: "zones",
-        paint: { "fill-color": ["match", ["get", "status"], "in_progress", "#fdba74", "#7dd3fc"], "fill-opacity": ["match", ["get", "status"], "in_progress", 0.38, 0.5] } },
+        paint: { "fill-color": ["match", ["get", "status"], "in_progress", "#fdba74", "clinical", "#86efac", "#7dd3fc"],
+                 "fill-opacity": ["match", ["get", "status"], "in_progress", 0.38, "clinical", 0.14, 0.5] } },
       { id: "zones-line-covered", type: "line", source: "zones", filter: ["==", ["get", "status"], "covered"],
         paint: { "line-color": "#bae6fd", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8] } },
       { id: "zones-line-progress", type: "line", source: "zones", filter: ["==", ["get", "status"], "in_progress"],
         paint: { "line-color": "#fed7aa", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8], "line-dasharray": [2, 1.5] } },
+      { id: "zones-line-clinical", type: "line", source: "zones", filter: ["==", ["get", "status"], "clinical"],
+        paint: { "line-color": "#86efac", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1, 9, 2.2], "line-dasharray": [1, 1.6] } },
       // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
       // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps the dots
       // whose bucket rank is at or below that condition's rank in DOT_THRESHOLDS.
@@ -159,8 +164,9 @@
   // ── popups: hover shows, click pins (until closed or another click) ─
   var hoverPopup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, maxWidth: "22rem", className: "dot-popup hover-popup" });
   var pinnedPopup = null, hoverClass = "";
-  function attachHover(layerId, htmlFn, lngLatFn, cls) {
+  function attachHover(layerId, htmlFn, lngLatFn, cls, wants) {
     map.on("mousemove", layerId, function (e) {
+      if (wants && !wants(e)) return;
       map.getCanvas().style.cursor = "pointer";
       if (pinnedPopup) return;
       if (hoverClass !== cls) { if (hoverClass) hoverPopup.removeClassName(hoverClass); hoverPopup.addClassName(cls); hoverClass = cls; }
@@ -168,6 +174,7 @@
     });
     map.on("mouseleave", layerId, function () { map.getCanvas().style.cursor = ""; if (!pinnedPopup) hoverPopup.remove(); });
     map.on("click", layerId, function (e) {
+      if (wants && !wants(e)) return;
       var lngLat = lngLatFn(e), html = htmlFn(e);
       hoverPopup.remove();
       if (pinnedPopup) pinnedPopup.remove();
@@ -242,9 +249,13 @@
   // repositioned on every mousemove, so it slid away from the pointer that was reaching for
   // it. It is now placed once per country and then left alone, with long enough to travel.
   function hideSoon() { clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; tipFor = null; }, 600); }
+  // A clinical registry recruits through hospitals rather than covering a territory, so its outline
+  // never takes the country tooltip away from the member associations. It is named inside it instead.
   function showTip(c, x, y) {
+    var clin = (data.clinical || {})[c.name];
     tip.innerHTML = "<strong>" + c.name + "</strong><span class=\"status\">" + data.labels[c.status] + "</span><ul>" +
-      c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>";
+      c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>" +
+      (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + clin.join(", ") + "</p>" : "");
     tip.style.display = "block";
     var hero = host.parentNode.getBoundingClientRect(), hr = host.getBoundingClientRect();
     var left = Math.min(x + (hr.left - hero.left) + 14, hero.width - tip.offsetWidth - 12);
@@ -252,7 +263,8 @@
     tip.style.left = Math.max(12, left) + "px"; tip.style.top = Math.max(12, top) + "px";
   }
   map.on("mousemove", "countries", function (e) {
-    if (map.getLayer("zones-fill") && map.queryRenderedFeatures(e.point, { layers: ["zones-fill"] }).length) { map.setFilter("hover", ["==", ["get", "ADM0_A3"], ""]); hideSoon(); return; }
+    if (map.getLayer("zones-fill") && map.queryRenderedFeatures(e.point, { layers: ["zones-fill"] })
+        .filter(function (f) { return f.properties.status !== "clinical"; }).length) { map.setFilter("hover", ["==", ["get", "ADM0_A3"], ""]); hideSoon(); return; }
     var a3 = e.features[0].properties.ADM0_A3, c = byA3[a3];
     map.setFilter("hover", ["==", ["get", "ADM0_A3"], c ? a3 : ""]);
     map.getCanvas().style.cursor = c ? "pointer" : "";
@@ -266,7 +278,8 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
-    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "zones-fill"]) }).length) return; // a dot, a centre, a team or a registry zone was clicked
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "zones-fill"]) })
+        .filter(function (f) { return f.properties.status !== "clinical"; }).length) return; // a dot, a centre, a team or a registry zone was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); tipFor = c.a3 || e.features[0].properties.ADM0_A3; showTip(c, e.point.x, e.point.y); } else { tip.style.display = "none"; tipFor = null; }
   });
@@ -298,16 +311,20 @@
   // ── registry coverage zones: hover for the registry, click to pin ───
   function zoneHtml(e) {
     var z = e.features[0].properties;
-    var status = z.status === "in_progress" ? "Registry starting to cover this area" : "Covered by a population-based registry of congenital anomalies";
+    var status = z.status === "in_progress" ? "Registry starting to cover this area"
+      : z.status === "clinical" ? "A clinical registry recruiting here, not population coverage"
+      : "Covered by a population-based registry of congenital anomalies";
     var where = z.area || z.dep_name || "";
     return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
            '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + '</p>' +
            '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }
-  attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup");
+  attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup", function (e) {
+    return e.features[0].properties.status !== "clinical";  // the country tooltip speaks for these
+  });
 
   // ── layer filter: what the visitor wants to see ─────────────────────
-  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
+  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress", "zones-line-clinical"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
   function setLayer(key, on) {
     if (key === "members") { map.setPaintProperty("countries", "fill-color", on ? fillMatch : "#5a2f86"); }
     else (LAYER_IDS[key] || []).forEach(function (id) { if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none"); });

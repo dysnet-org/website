@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -235,6 +235,94 @@
    "status": "in_progress",
    "website": "https://fcrf.org.in/bdri_acvs.asp",
    "source": "Kar A. Birth defects reporting and surveillance in India: a narrative review. J Community Genet 2025;16(1):5-14, doi:10.1007/s12687-024-00760-5; Birth Anomalies Network of India, launched 2 March 2026"
+  },
+  {
+   "registry": "CoULD",
+   "label": "Congenital Upper Limb Differences registry (CoULD)",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "area": "Participating centres across the United States, from 2014",
+   "status": "clinical",
+   "website": "https://www.jhandsurg.org/article/S0363-5023(20)30674-2/fulltext",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "AHDR",
+   "label": "Australian Hand Difference Register (AHDR)",
+   "country": "Australia",
+   "iso3": "AUS",
+   "admin1": [],
+   "area": "Australia, a national register since 2017",
+   "status": "clinical",
+   "website": "https://www.mcri.edu.au/research/projects/ahdr",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "BSSH",
+   "label": "British Society for Surgery of the Hand registry",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "admin1": [],
+   "area": "United Kingdom, through the society's members, from 2019",
+   "status": "clinical",
+   "website": "https://www.bssh.ac.uk/",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Denmark",
+   "iso3": "DNK",
+   "admin1": [],
+   "area": "Denmark, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Finland",
+   "iso3": "FIN",
+   "admin1": [],
+   "area": "Finland, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Norway",
+   "iso3": "NOR",
+   "admin1": [],
+   "area": "Norway, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Sweden",
+   "iso3": "SWE",
+   "admin1": [],
+   "area": "Sweden, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [],
+   "area": "Germany, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
   }
  ]
 }

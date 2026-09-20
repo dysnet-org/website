@@ -1216,13 +1216,30 @@ PAGES["/knowledge/registries/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 2 · Registries {updated_badge(ORPHA_REGS.get("fetched"))}</p>
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
-    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-five areas are drawn, for the registries that are coded for our conditions, plus the two North American ones and India below. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
+    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-nine registries are drawn. Most are population registries, which cover a territory and count the births in it. Eight outlines mark something different, a clinical registry that recruits through participating hospitals, and the section below says why the two cannot be added together. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
 
     <div class="tick"></div>
     <p class="eyebrow">Clinical and patient-led registries</p>
     <h2 class="h2">Hand surgeons and families already run registries of their own.</h2>
-    <p>Beside the population registries that count births, a second family of registries follows the children themselves. Four of them record congenital upper limb differences, and a fifth is run by a DysNet member association for one condition. They are smaller than EUROCAT, and they hold exactly what a population registry does not: diagnosis by a standard classification, treatment, and outcomes over years.</p>
+    <p>Beside the population registries that count births, a second family of registries follows the children themselves. Four of them record congenital upper limb differences, and two more are run by DysNet member associations for one condition. They are smaller than EUROCAT, and they hold exactly what a population registry does not: diagnosis by a standard classification, treatment, and outcomes over years.</p>
+
+    <h3 class="h4" style="margin-top:var(--space-3)">They do not speak the language of this site</h3>
+    <p>Every register here is keyed to <strong>ORPHAcodes</strong>, Orphanet's identifier for a named rare disease, and the population registries above are indexed the same way. The four clinical registries classify instead by the <strong>Oberg-Manske-Tonkin</strong> system, which sorts a malformation by how the limb failed to form rather than by the name of a syndrome; CULA North records ICD-10 alongside it. The two answer different questions and neither maps cleanly onto the other. A child with a radial longitudinal deficiency appears under an ORPHAcode in a population registry and under an OMT category in a clinical one, so the two counts describe overlapping children and cannot be added. Agreeing that mapping is one of the things <a href="/voice/#demand-3">we ask for</a>.</p>
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Registry</th><th scope="col">Where</th><th scope="col">Since</th><th scope="col">Run by</th><th scope="col">Classification</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="https://www.jhandsurg.org/article/S0363-5023(20)30674-2/fulltext" target="_blank" rel="noopener external">CoULD</a></th><td>United States, participating centres</td><td>2014</td><td>Washington University in St Louis, with St Louis Children's Hospital and Shriners Children's</td><td>Oberg-Manske-Tonkin</td></tr>
+          <tr><th scope="row">AHDR</th><td>Australia, national</td><td>2017</td><td><a href="https://www.mcri.edu.au/research/projects/ahdr" target="_blank" rel="noopener external">Murdoch Children's Research Institute</a> at the Royal Children's Hospital, Melbourne, with our member <a href="https://aussiehands.org/research/" target="_blank" rel="noopener external">Aussie Hands</a></td><td>Oberg-Manske-Tonkin</td></tr>
+          <tr><th scope="row">CULA North</th><td>Denmark, Finland, Germany, Norway, Sweden</td><td>2018</td><td>Five registries with separate databases and one shared prospective protocol</td><td>Oberg-Manske-Tonkin and ICD-10</td></tr>
+          <tr><th scope="row">BSSH registry</th><td>United Kingdom</td><td>2019</td><td>The <a href="https://www.bssh.ac.uk/" target="_blank" rel="noopener external">British Society for Surgery of the Hand</a>, within the wider UK Hand Registry</td><td>Oberg-Manske-Tonkin</td></tr>
+          <tr><th scope="row"><a href="https://www.llpr.org/" target="_blank" rel="noopener external">LLPR</a></th><td>United States</td><td>2022</td><td>Built by Mayo Clinic under NIH and Department of Defense funding, and since September 2024 run by a non-profit with the Amputee Coalition</td><td>Limb loss and limb difference, acquired and congenital</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="annex-note">Years and classifications for the first four come from the comparison below; the LLPR figures from its own publication and site. Four of these are outlined on the <a href="/#map">map</a> as countries where a clinical registry recruits, which is not the same as a territory a registry covers.</p>
+
     <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>Four clinical registries, built to talk to each other <span class="badge live">2026</span></h3>
@@ -2815,7 +2832,7 @@ def demands_html():
         cta = ("".join(f'<a class="btn btn-sm btn-ghost" href="{href}">{label}</a>' for href, label in d["cta"]))
         cta = f'<p class="demand-cta">{cta}</p>' if cta else ""
         items.append(
-            f'<li><details><summary><span class="demand-n">{i}</span><span>{d["title"]}</span></summary>\n'
+            f'<li id="demand-{i}"><details><summary><span class="demand-n">{i}</span><span>{d["title"]}</span></summary>\n'
             f'        <div class="demand-body">{paras}'
             f'<p class="progress"><span>Progress looks like</span>{d["progress"]}</p>{cta}'
             f"</div></details></li>")
@@ -3527,7 +3544,16 @@ for _country, _orgs in MEMBERS:
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
 MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["A national amputee organisation (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+# Countries where a clinical registry recruits, for the country tooltip. Read from the same
+# declarative input the map outlines are drawn from, so the two cannot disagree.
+CLINICAL_BY_COUNTRY = {}
+for _a in json.loads((pathlib.Path(__file__).parent / "tools" / "registry-areas.json").read_text(encoding="utf-8"))["areas"]:
+    if _a.get("status") == "clinical":
+        CLINICAL_BY_COUNTRY.setdefault(_a["country"], [])
+        if _a["registry"] not in CLINICAL_BY_COUNTRY[_a["country"]]:
+            CLINICAL_BY_COUNTRY[_a["country"]].append(_a["registry"])
+
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.
@@ -3585,6 +3611,7 @@ MAP_HERO = """
     <span class="l-office" data-layer="offices">DysNet office</span>
     <span class="l-zone" data-layer="zones">Area covered by a registry that records our conditions</span>
     <span class="l-zone-progress" data-layer="zones">Area a registry is starting to cover</span>
+    <span class="l-zone-clinical" data-layer="zones">Country where a clinical registry recruits</span>
     <span class="l-centre" data-layer="centres">Care centre named by a member association or verified from its own institutional page (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>

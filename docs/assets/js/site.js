@@ -98,6 +98,19 @@
     }
   }
 
+  /* ── Arriving on a demand: open it ──────────────────────────────────── */
+// /voice/#demand-3 should show demand 3, not a closed row the reader has to find.
+(function openDemandFromHash() {
+  function open() {
+    var m = /^#demand-\d+$/.test(location.hash) && document.querySelector(location.hash);
+    if (!m) return;
+    var d = m.querySelector("details");
+    if (d) { d.open = true; m.scrollIntoView({ block: "start" }); }
+  }
+  open();
+  window.addEventListener("hashchange", open);
+})();
+
   /* ── Back to top (HDS global.css pattern) ────────────────────────── */
   var btt = document.createElement("button");
   btt.className = "back-to-top";

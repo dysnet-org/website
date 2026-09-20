@@ -1320,7 +1320,7 @@ PAGES["/knowledge/registries/"] = {
 
     <div class="tick"></div>
     <p class="eyebrow">China</p>
-    <h2 class="h2">China counts our conditions in the millions, and nobody in our network knew.</h2>
+    <h2 class="h2">China counts our conditions in the millions.</h2>
     <p>The <strong>Chinese Birth Defects Monitoring Network</strong> has run since the Ministry of Health started it, and is held by the National Center for Birth Defects Monitoring at West China Second University Hospital, Sichuan University, in Chengdu. It is the largest source of data on our conditions that this register has found anywhere, and it does record them: syndactyly and polydactyly are counted by the million-birth cohort, year by year. It is not population-based. Births are reported by a sample of hospitals, so it describes the country without covering it, and the section below gives the numbers that sample reaches. DysNet has no member association in China, so each entry is verified from the source named with it.</p>
     <div style="margin-top:var(--space-2)">
       <article class="entry">

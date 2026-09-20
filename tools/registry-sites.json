@@ -6,15 +6,18 @@
   "registry_ids": [
    "186319",
    "376737"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Brittany registry of congenital anomalies - contributes to the EUROCAT network",
   "country": "France",
-  "url": "https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/les-registres-des-malformations-congenitales",
+  "url": "https://www.santepubliquefrance.fr/anomalies-congenitales/notre-action",
   "registry_ids": [
    "589005"
-  ]
+  ],
+  "url_was": "https://www.santepubliquefrance.fr/anomalies-et-malformations-congenitales/les-registres-des-malformations-congenitales",
+  "url_status": "200 (the earlier page had moved), checked 19 September 2026"
  },
  {
   "name": "CEMC-Auvergne - Center for the Study of Congenital Malformations in Auvergne - contributes to the EUROCAT network",
@@ -23,7 +26,8 @@
   "registry_ids": [
    "33346",
    "589005"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "CORDS Registry: Coordination of Rare Diseases at Sanford Registry",
@@ -31,7 +35,8 @@
   "url": "http://www.sanfordresearch.org/cords/",
   "registry_ids": [
    "325728"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "CRANE: The Cleft Registry and Audit Network",
@@ -39,7 +44,8 @@
   "url": "https://www.crane-database.org.uk/about/",
   "registry_ids": [
    "174925"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network",
@@ -47,7 +53,8 @@
   "url": "http://www.angeborene-fehlbildungen.com/",
   "registry_ids": [
    "59478"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ECEMC: Registry of the Spanish Collaborative Study of Congenital Malformations",
@@ -55,7 +62,8 @@
   "url": "http://www.fundacion1000.es/ecemc",
   "registry_ids": [
    "330384"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [BOND] & ERN [Endo-ERN] - EuRREB: European Registries for Rare Endocrine and Bone conditions",
@@ -63,7 +71,8 @@
   "url": "https://eurreb.eu/",
   "registry_ids": [
    "700763"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [CRANIO] - ERN CRANIO registry",
@@ -71,7 +80,8 @@
   "url": "https://www.ern-cranio.eu/ern-cranio-registry",
   "registry_ids": [
    "643588"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [EuroBloodNet] - ENROL: European Rare Blood Disorders Platform",
@@ -79,7 +89,8 @@
   "url": "http://www.eurobloodnet.com/enrol/",
   "registry_ids": [
    "643594"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development",
@@ -87,7 +98,8 @@
   "url": "https://ern-ithaca.eu/our-research-activities/iliad/",
   "registry_ids": [
    "643616"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders",
@@ -95,7 +107,8 @@
   "url": "https://ern-skin.eu/erras-registry/",
   "registry_ids": [
    "643630"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ERN [VASCERN] - VASCERN Registries",
@@ -103,7 +116,8 @@
   "url": "https://vascern.eu/group/registry/registry/",
   "registry_ids": [
    "643628"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "EUROCAT (EU RD Platform, JRC)",
@@ -123,7 +137,8 @@
    "183949",
    "447029",
    "589005"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "EUROCAT Northern Netherlands - contributes to the international EUROCAT network",
@@ -131,7 +146,8 @@
   "url": "https://www.umcg.nl/-/eurocat",
   "registry_ids": [
    "183949"
-  ]
+  ],
+  "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026"
  },
  {
   "name": "EUROCAT VAUD Switzerland - Registry of congenital malformations of canton Vaud",
@@ -139,7 +155,8 @@
   "url": "http://www.eurocat-network.eu/",
   "registry_ids": [
    "60053"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities",
@@ -147,7 +164,8 @@
   "url": "https://www.ior.it/ricerca-e-innovazione/studi-clinici/eurr-bone-registro-europeo-le-malattie-rare-scheletriche-e-le",
   "registry_ids": [
    "218290"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "French National Registry for Rare Diseases (BNDMR)",
@@ -155,7 +173,8 @@
   "url": "http://www.bndmr.fr/",
   "registry_ids": [
    "542523"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "German registry for congenital thrombocytopenia",
@@ -163,7 +182,8 @@
   "url": "https://www.mhh.de/sorter-lab/forschung/ibmfs/thrombozytopenien",
   "registry_ids": [
    "73320"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "HemoNED: Dutch Hemophilia Registry",
@@ -172,7 +192,8 @@
   "registry_ids": [
    "613233",
    "613233"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ISMAC: Sicilian registry of congenital anomalies - contributes to the EUROCAT network",
@@ -180,7 +201,8 @@
   "url": "https://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_AreeTematiche/PIR_Epidemiologia/PIR_Registridipatologia/PIR_RegistroMalformazioni",
   "registry_ids": [
    "52840"
-  ]
+  ],
+  "url_status": "host unreachable, checked 19 September 2026"
  },
  {
   "name": "International Registry of Rare Bleeding Disorders (RBDD) - IT",
@@ -189,7 +211,8 @@
   "registry_ids": [
    "93876",
    "223603"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "MARIANNE: National cohort dedicated to research on the biological and environmental determinants of autism and neurodevelopmental disorders",
@@ -197,7 +220,8 @@
   "url": "https://cohorte-marianne.org/",
   "registry_ids": [
    "725764"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Mainz registry of congenital anomalies - contributes to the EUROCAT network",
@@ -205,7 +229,8 @@
   "url": "https://www.unimedizin-mainz.de/mainzer_modell/startseite/ueber-uns.html",
   "registry_ids": [
    "59492"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "NARSE: National Register of Rare Diseases",
@@ -213,7 +238,8 @@
   "url": "https://www.narse.de/",
   "registry_ids": [
    "735256"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "National Cleft Database",
@@ -221,7 +247,8 @@
   "url": "http://www.cleft.ie/?page_id=69",
   "registry_ids": [
    "444860"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "National Congenital Anomaly and Rare Disease Registration Service (NCARDRS)",
@@ -229,7 +256,8 @@
   "url": "https://digital.nhs.uk/services/national-disease-registration-service",
   "registry_ids": [
    "437789"
-  ]
+  ],
+  "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026"
  },
  {
   "name": "National Haemophilia Registry - Ireland",
@@ -237,7 +265,8 @@
   "url": "https://www.hiqa.ie/areas-we-work/health-information/data-collections/national-haemophilia-register",
   "registry_ids": [
    "445645"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "National Registry of congenital bleeding disorders (RNCC)",
@@ -245,7 +274,8 @@
   "url": "https://www.iss.it/oncologia/-/asset_publisher/Pr6ASUxZJvGg/content/registro-nazionale-coagulopatie-congenite-4",
   "registry_ids": [
    "500964"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Norwegian Rare Bone Disorder Registry",
@@ -253,7 +283,8 @@
   "url": "https://www.oslo-universitetssykehus.no/avdelinger/ortopedisk-klinikk/ortopedisk-avdeling-rikshospitalet/seksjon-for-barneortopedi-og-rekonstruktiv-kirurgi/norsk-register-for-sjeldne-medfodte-bensykdommer/",
   "registry_ids": [
    "716193"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Norwegian registry on rare disorders",
@@ -261,7 +292,8 @@
   "url": "https://sjeldenregisteret.no/",
   "registry_ids": [
    "584971"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "PRCM: Polish registry of congenital malformations - contributes to the EUROCAT network",
@@ -269,7 +301,8 @@
   "url": "http://www.rejestrwad.pl/",
   "registry_ids": [
    "181308"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RACAV: Registry of congenital anomalies of the Basque Country (Spain) - contributes to the EUROCAT network",
@@ -278,7 +311,8 @@
   "registry_ids": [
    "59706",
    "593776"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network",
@@ -286,7 +320,8 @@
   "url": "https://www.chu-reunion.fr/je-suis-professionnel-de-sante/la-recherche-une-mission-fondamentale-du-chu/reseau-et-registres/",
   "registry_ids": [
    "414749"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "REMACOR: La Réunion Fench Island registry of congenital anomalies - contributes to the EUROCAT network",
@@ -294,7 +329,8 @@
   "url": "https://remacor.re/",
   "registry_ids": [
    "414749"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "REMAPAR- Paris registry of congenital anomalies - contributes to the EUROCAT network",
@@ -302,7 +338,8 @@
   "url": "https://cress-umr1153.fr/fr/project/registre-des-malformations-congenitales-de-paris-remapar/",
   "registry_ids": [
    "28268"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RENAC - Portuguese registry of congenital anomalies (contributes to the EUROCAT network)",
@@ -310,7 +347,8 @@
   "url": "https://www.insa.min-saude.pt/category/areas-de-atuacao/epidemiologia/",
   "registry_ids": [
    "59379"
-  ]
+  ],
+  "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026"
  },
  {
   "name": "RERNA: Population-based Rare Disease Registry of Navarre (Spain)",
@@ -318,7 +356,8 @@
   "url": "https://portalsalud.navarra.es/es/observatorio/temas-de-salud/enfermedades-raras",
   "registry_ids": [
    "358190"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RESCUED registry (REgistry for Sudden Cardiac and UnExpected Death)",
@@ -326,7 +365,8 @@
   "url": "https://www.unimedizin-ffm.de/einrichtungen/institute/rechtsmedizin/forensische-molekularpathologie-zentrum-ploetzlicher-herztod-u-familiaere-arrhythmiesyndrome/register-ploetzlicher-herztod",
   "registry_ids": [
    "700788"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RETPLAC: Spanish Registry of Inherited Platelet Disorders",
@@ -334,16 +374,19 @@
   "url": "https://retplac.imib.es/",
   "registry_ids": [
    "657794"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RNMR: Italian National Rare Diseases Registry",
   "country": "Italy",
-  "url": "https://www.registrare.org/schede-6-il_registro_nazionale_malattie_rare",
+  "url": "https://www.registrare.org/",
   "registry_ids": [
    "306510",
    "500972"
-  ]
+  ],
+  "url_was": "https://www.registrare.org/schede-6-il_registro_nazionale_malattie_rare",
+  "url_status": "200 (the earlier page had moved), checked 19 September 2026"
  },
  {
   "name": "RaDiCo-GenIDA: International social network for data collection on the natural history of rare monogenic forms of intellectual disabilities",
@@ -351,7 +394,8 @@
   "url": "https://genida.eu/home",
   "registry_ids": [
    "477140"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RaraSwed - National registry Rare diseases",
@@ -359,7 +403,8 @@
   "url": "https://csdsamverkan.se/halsoochsjukvard/raraswedkvalitetsregister.4.775d6a7818a68c2aa6e885b5.html",
   "registry_ids": [
    "691316"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Rare Diseases Registry - Veneto Region",
@@ -367,7 +412,8 @@
   "url": "http://malattierare.regione.veneto.it/",
   "registry_ids": [
    "74396"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Rare disease registry of Aragon (Spain)",
@@ -375,7 +421,8 @@
   "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VERDOC&BASE=BZHT&PIECE=BOLE&DOCR=6&SEC=FIRMA&RNG=10&SEPARADOR=&&PUBL-C=20130315",
   "registry_ids": [
    "358186"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "ReMaBreizh: Registry of congenital malformations in Brittany",
@@ -383,7 +430,8 @@
   "url": "https://www.chu-rennes.fr/remabreizh/presentation-788.html",
   "registry_ids": [
    "642580"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "RePER: Rare Diseases Patient Registry",
@@ -391,7 +439,8 @@
   "url": "https://registroraras.isciii.es/Comun/Inicio.aspx",
   "registry_ids": [
    "237547"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Register of Congenital Malformations",
@@ -399,7 +448,8 @@
   "url": "https://thl.fi/fi/tilastot-ja-data/aineistot-ja-palvelut/rekisterien-tietosuojailmoitukset/epamuodostumat",
   "registry_ids": [
    "181319"
-  ]
+  ],
+  "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026"
  },
  {
   "name": "Registry for Patients with Vascular Malformations and Tumors (VasMuT)  - contributing to the european VASCERN registry",
@@ -407,7 +457,8 @@
   "url": "https://www.uniklinik-freiburg.de/kinderklinik/behandlungsspektrum/gefaessfehlbildungen/ratgeber-und-informationen.html",
   "registry_ids": [
    "662152"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Registry for rare diseases in Andalusia (Spain)",
@@ -415,7 +466,8 @@
   "url": "https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/operaciones/consulta/anual/71223?CodOper=b3_2194&codConsulta=71223",
   "registry_ids": [
    "357636"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Registry for rare diseases in Extremadura (Spain)",
@@ -424,7 +476,8 @@
   "registry_ids": [
    "74403",
    "74403"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Registry of inherited bleeding disorders in Emilia Romagna region",
@@ -432,7 +485,8 @@
   "url": "https://registroemofiliarer.cup2000.it/",
   "registry_ids": [
    "97015"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Rhône-Alpes registry of congenital anomalies - contributes to the EUROCAT network",
@@ -440,7 +494,8 @@
   "url": "https://www.remera.fr/",
   "registry_ids": [
    "165837"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "SIER-CV: Information System on rare diseases in Valencian Community (Spain)",
@@ -448,7 +503,8 @@
   "url": "https://www.san.gva.es/es/web/salut-publica/enfermedades-no-transmisibles/enfermedades-raras",
   "registry_ids": [
    "358366"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "SIERrm: Information System on rare diseases in the Region of Murcia (Spain)",
@@ -456,15 +512,18 @@
   "url": "http://www.murciasalud.es/sier",
   "registry_ids": [
    "358298"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Swiss Cleft Lip and Palate Registry",
   "country": "Switzerland",
-  "url": "http://swisscleftregistry.org/English/EN_main.html",
+  "url": "http://swisscleftregistry.org/",
   "registry_ids": [
    "399507"
-  ]
+  ],
+  "url_was": "http://swisscleftregistry.org/English/EN_main.html",
+  "url_status": "200 (the earlier page had moved), checked 19 September 2026"
  },
  {
   "name": "Swiss Rare Disease Registry (SRSK)",
@@ -472,7 +531,8 @@
   "url": "https://www.raredisease.ch/",
   "registry_ids": [
    "572233"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  },
  {
   "name": "Tuscan Registry of Congenital Anomalies",
@@ -480,7 +540,8 @@
   "url": "http://www.rtdc.it/",
   "registry_ids": [
    "498995"
-  ]
+  ],
+  "url_status": "host unreachable, checked 19 September 2026"
  },
  {
   "name": "Tuscan Registry of Rare Diseases",
@@ -488,6 +549,7 @@
   "url": "https://malattierare.toscana.it/rtmr-dati-statistici/registro-toscano-malattie-rare/",
   "registry_ids": [
    "434383"
-  ]
+  ],
+  "url_status": "200, checked 19 September 2026"
  }
 ]

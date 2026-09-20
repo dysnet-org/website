@@ -1060,6 +1060,28 @@ def _code_names():
     return REG_CODE_NAMES
 
 
+# Each registry's own website, harvested from the "Link" field of its Orphanet record and
+# checked on 19 September 2026. Orphanet tells a reader a registry exists; only the registry's
+# own page tells them what it collects and whom to write to. Entries whose host no longer
+# answers keep the note and lose the link, rather than sending a reader to nothing.
+REG_SITES_PATH = pathlib.Path(__file__).parent / "tools" / "registry-sites.json"
+REG_EUROCAT = "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/"
+REG_SITES, REG_NETWORK = {}, {}
+if REG_SITES_PATH.exists():
+    for _e in json.loads(REG_SITES_PATH.read_text(encoding="utf-8")):
+        if "unreachable" in (_e.get("url_status") or ""):
+            continue  # the host stopped answering; a reader is better served by no link
+        for _i in _e.get("registry_ids", []):
+            # The harvest groups several registries under one link, which is right for the
+            # EUROCAT platform and wrong for everything else: it would have sent a reader
+            # looking for Belgium's Central Registry to the bleeding-disorders registry. So a
+            # link counts as a registry's own only when the harvested name is that registry.
+            if _e["name"].strip() == next((_r["name"].strip() for _r in ORPHA_REGS.get("registries", []) if _r["id"] == _i), None):
+                REG_SITES.setdefault(_i, _e["url"])
+            elif _e["url"] == REG_EUROCAT:
+                REG_NETWORK.setdefault(_i, _e["url"])
+
+
 def registries_html():
     names = _code_names()
     regs = ORPHA_REGS.get("registries", [])
@@ -1085,7 +1107,14 @@ def registries_html():
             local = f'<br><span class="reg-local">{r["local"]}</span>' if r["local"] and r["local"] != r["name"] else ""
             site = next((f["website"] for f in ORPHA_REGS.get("france_population_registries", {}).get("registries", []) if f.get("orphanet_id") == r["id"]), None)
             if r["id"] == "589005": site = "https://www.chu-rennes.fr/remabreizh.html"
-            web = f' · <a href="{site}" target="_blank" rel="noopener external">website ↗</a>' if site else ""
+            site = site or REG_SITES.get(r["id"])
+            net = None if site else REG_NETWORK.get(r["id"])
+            if site:
+                web = f' · <a href="{site}" target="_blank" rel="noopener external">website ↗</a>'
+            elif net:
+                web = f' · <a href="{net}" target="_blank" rel="noopener external">EUROCAT ↗</a>'
+            else:
+                web = ""
             rows.append(f'<tr{cls}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
     fr = ORPHA_REGS.get("france_population_registries", {})
     fr_rows = "".join(f'<tr{" class=reg-direct" if not f.get("orphanet_id") else ""}><th scope="row">{f["region"]}</th><td><a href="{f["website"]}" target="_blank" rel="noopener external">{f["name"]}</a> · {f["host"]}{" · <strong>not yet on Orphanet</strong>" if not f.get("orphanet_id") else ""}</td><td>{f["created"]}</td><td>{f["births"]:,}{"*" if f.get("note") else ""}</td></tr>' for f in fr.get("registries", []))

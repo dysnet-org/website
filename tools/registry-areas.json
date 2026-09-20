@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -323,6 +323,17 @@
    "status": "clinical",
    "website": "https://doi.org/10.1177/17531934251348360",
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360"
+  },
+  {
+   "registry": "CBDMN",
+   "label": "Chinese Birth Defects Monitoring Network",
+   "country": "China",
+   "iso3": "CHN",
+   "admin1": [],
+   "area": "A sample of reporting hospitals: 1.3 million births in 2009, over 8% of the national total",
+   "status": "hospital",
+   "website": "https://doi.org/10.1007/s12519-011-0326-0",
+   "source": "Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. World J Pediatr 2011;7(4):302-310, doi:10.1007/s12519-011-0326-0"
   }
  ]
 }

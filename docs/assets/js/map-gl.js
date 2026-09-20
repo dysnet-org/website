@@ -95,14 +95,16 @@
       // outline only = a clinical registry recruits here. The last claims no coverage of the births in a
       // country, so it is drawn as a border rather than a filled territory, faint enough to stay hoverable.
       { id: "zones-fill", type: "fill", source: "zones",
-        paint: { "fill-color": ["match", ["get", "status"], "in_progress", "#fdba74", "clinical", "#86efac", "#7dd3fc"],
-                 "fill-opacity": ["match", ["get", "status"], "in_progress", 0.38, "clinical", 0.14, 0.5] } },
+        paint: { "fill-color": ["match", ["get", "status"], "in_progress", "#fdba74", "clinical", "#86efac", "hospital", "#fde047", "#7dd3fc"],
+                 "fill-opacity": ["match", ["get", "status"], "in_progress", 0.38, "clinical", 0.14, "hospital", 0.3, 0.5] } },
       { id: "zones-line-covered", type: "line", source: "zones", filter: ["==", ["get", "status"], "covered"],
         paint: { "line-color": "#bae6fd", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8] } },
       { id: "zones-line-progress", type: "line", source: "zones", filter: ["==", ["get", "status"], "in_progress"],
         paint: { "line-color": "#fed7aa", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8], "line-dasharray": [2, 1.5] } },
       { id: "zones-line-clinical", type: "line", source: "zones", filter: ["==", ["get", "status"], "clinical"],
         paint: { "line-color": "#86efac", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 1, 9, 2.2], "line-dasharray": [1, 1.6] } },
+      { id: "zones-line-hospital", type: "line", source: "zones", filter: ["==", ["get", "status"], "hospital"],
+        paint: { "line-color": "#fef08a", "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 9, 1.8], "line-dasharray": [4, 2] } },
       // Estimated people living with a limb difference: grey dots, 1 per 1,000 / 100 / 10 / 1 people by zoom band.
       // Base density is 100 per 100,000; a condition of prevalence r per 100,000 keeps the dots
       // whose bucket rank is at or below that condition's rank in DOT_THRESHOLDS.
@@ -313,6 +315,7 @@
     var z = e.features[0].properties;
     var status = z.status === "in_progress" ? "Registry starting to cover this area"
       : z.status === "clinical" ? "A clinical registry recruiting here, not population coverage"
+      : z.status === "hospital" ? "Hospital-based surveillance sampling births, not every birth"
       : "Covered by a population-based registry of congenital anomalies";
     var where = z.area || z.dep_name || "";
     return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
@@ -324,7 +327,7 @@
   });
 
   // ── layer filter: what the visitor wants to see ─────────────────────
-  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress", "zones-line-clinical"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
+  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress", "zones-line-clinical", "zones-line-hospital"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
   function setLayer(key, on) {
     if (key === "members") { map.setPaintProperty("countries", "fill-color", on ? fillMatch : "#5a2f86"); }
     else (LAYER_IDS[key] || []).forEach(function (id) { if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none"); });

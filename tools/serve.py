@@ -3,7 +3,7 @@
 
 Python's stock http.server ignores Range headers and would send the whole
 tileset for every tile request. GitHub Pages honours Range, so this only
-matters for local preview.  Usage: python3 tools/serve.py PORT DIRECTORY
+matters for local preview.  Usage: python3 tools/serve.py [PORT] DIRECTORY   (or set PORT in the environment)
 """
 import os
 import re
@@ -70,8 +70,11 @@ class RangeHandler(SimpleHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8732
-    directory = sys.argv[2] if len(sys.argv) > 2 else "."
+    args = sys.argv[1:]
+    port_arg = next((a for a in args if a.isdigit()), None)
+    dirs = [a for a in args if not a.isdigit()]
+    port = int(os.environ.get("PORT") or port_arg or 8732)
+    directory = dirs[0] if dirs else "."
     handler = partial(RangeHandler, directory=directory)
     print(f"Serving {directory} on http://localhost:{port} (Range supported)")
     ThreadingHTTPServer(("", port), handler).serve_forever()

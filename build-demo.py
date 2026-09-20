@@ -1216,7 +1216,7 @@ PAGES["/knowledge/registries/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 2 · Registries {updated_badge(ORPHA_REGS.get("fetched"))}</p>
     <h1 class="display">Registries recording limb difference: what already exists.</h1>
-    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Twenty-nine registries are drawn. Most are population registries, which cover a territory and count the births in it. Eight outlines mark something different, a clinical registry that recruits through participating hospitals, and the section below says why the two cannot be added together. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
+    <p>Before building a registry owned by families, DysNet mapped the registries that already record our conditions. This register lists them, says how each one relates to the ORPHAcodes on this site, and checks the French population registries against the surveillance report of Santé publique France. The area each registry covers is drawn on the <a href="/#map">landing-page map</a>, under “Registry coverage”: the French registries département by département, the others by the region, canton, province or country they record. Thirty registries are drawn. Most are population registries, which cover a territory and count the births in it. Eight outlines mark something different, a clinical registry that recruits through participating hospitals, and the section below says why the two cannot be added together. The DysNet initiative itself is described on the <a href="/registry/">registry page</a>.</p>
     {registries_html()}
 
     <div class="tick"></div>
@@ -1315,6 +1315,28 @@ PAGES["/knowledge/registries/"] = {
         <h3>Rare diseases: the ICMR registry <span class="badge live">since 2019</span></h3>
         <p>The ICMR National Registry for Rare and other Inherited Disorders, begun in November 2019 with AIIMS New Delhi, collects demography, phenotype, natural history and outcomes across six groups of conditions, skeletal dysplasias among them. Nineteen centres contribute and more than 4,000 cases have been recorded. A limb malformation reaches it only when it belongs to a syndrome one of those groups covers, the same &ldquo;by classification&rdquo; route as the European rare-disease registries in the table above.</p>
         <p class="src">Indian Council of Medical Research &middot; <a href="https://rdrdb.icmr.org.in/registry/" target="_blank" rel="noopener external">rdrdb.icmr.org.in</a> &middot; read 13 September 2026</p>
+      </article>
+    </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">China</p>
+    <h2 class="h2">China counts our conditions in the millions, and nobody in our network knew.</h2>
+    <p>The <strong>Chinese Birth Defects Monitoring Network</strong> has run since the Ministry of Health started it, and is held by the National Center for Birth Defects Monitoring at West China Second University Hospital, Sichuan University, in Chengdu. It is the largest source of data on our conditions that this register has found anywhere, and it does record them: syndactyly and polydactyly are counted by the million-birth cohort, year by year. It is not population-based. Births are reported by a sample of hospitals, so it describes the country without covering it, and the section below gives the numbers that sample reaches. DysNet has no member association in China, so each entry is verified from the source named with it.</p>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>What the network is, and what it misses <span class="badge live">since the 1990s</span></h3>
+        <p>By the 2009 data the national hospital-based system monitored over 1.3 million births, more than 8 per cent of all births in China, and 30 provincial hospital-based programmes covered a further 3.6 million, about 22 per cent. Its own authors set out the limits plainly: a short ascertainment period misses internal anomalies, inherited metabolic disease, and any malformed fetus aborted before the 28th week, and the absence of baseline data limits what the surveillance can say about causes. Those are the same limits that make a family-declared registry worth building beside it rather than instead of it.</p>
+        <p class="src">Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. <em>World J Pediatr</em> 2011;7(4):302-310 &middot; <a href="https://doi.org/10.1007/s12519-011-0326-0" target="_blank" rel="noopener external">doi:10.1007/s12519-011-0326-0</a></p>
+      </article>
+      <article class="entry">
+        <h3>Syndactyly across 24 million births <span class="badge live">2007-2019</span></h3>
+        <p>13,611 cases of syndactyly were identified among <strong>24,157,719 births</strong>, a prevalence of 5.63 per 10,000 overall, 4.66 isolated and 0.97 associated with another anomaly. The rate rose across the period for every type. The authors report it as notably higher than in other Asian and European countries, and call for the cause to be investigated. Among the cases affected on one side only, the hand was involved slightly more often than the foot. No cohort on this scale exists for any of our conditions in Europe.</p>
+        <p class="src">Chen ZY, Li WY, Xu WL, et al. The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study. <em>BMC Pregnancy Childbirth</em> 2023;23(1):334 &middot; <a href="https://doi.org/10.1186/s12884-023-05660-z" target="_blank" rel="noopener external">doi:10.1186/s12884-023-05660-z</a></p>
+      </article>
+      <article class="entry">
+        <h3>A province that publishes its own figures <span class="badge live">Hunan, 2016-2020</span></h3>
+        <p>The Birth Defects Surveillance System of Hunan Province recorded 847,755 births and 14,459 birth defects, among them 1,888 cases of polydactyly and 626 of syndactyly, which is 13.06 and 4.33 per cent of all defects found. Prevalence was 2.23 per 1,000 for polydactyly and 0.74 per 1,000 for syndactyly, both rising year on year. Nearly all were diagnosed after birth rather than before it, 96.77 per cent of polydactyly and 95.69 per cent of syndactyly within seven days, which is what a limb difference usually does: it arrives unannounced.</p>
+        <p class="src">Zhou X, Li T, Kuang H, et al. Epidemiology of congenital polydactyly and syndactyly in Hunan Province, China. <em>BMC Pregnancy Childbirth</em> 2024;24(1):216 &middot; <a href="https://doi.org/10.1186/s12884-024-06417-y" target="_blank" rel="noopener external">doi:10.1186/s12884-024-06417-y</a></p>
       </article>
     </div>
 
@@ -3612,6 +3634,7 @@ MAP_HERO = """
     <span class="l-zone" data-layer="zones">Area covered by a registry that records our conditions</span>
     <span class="l-zone-progress" data-layer="zones">Area a registry is starting to cover</span>
     <span class="l-zone-clinical" data-layer="zones">Country where a clinical registry recruits</span>
+    <span class="l-zone-hospital" data-layer="zones">Hospital-based surveillance of births</span>
     <span class="l-centre" data-layer="centres">Care centre named by a member association or verified from its own institutional page (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>

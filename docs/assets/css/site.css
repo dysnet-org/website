@@ -1111,6 +1111,25 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
                                          color: var(--dys-muted); }
 /* How many registries can count this condition. It links to the register of registries,
    where the same figures are tabulated the other way round. */
+/* where the code sits in Orphanet's tree: a line for a disorder, a folding list for a group */
+.cond-orpha { margin: 0.2rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-orpha a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
+.cond-orpha a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }
+.cond-orpha .on-page, .cond-tree .on-page { color: var(--dys-purple-text); border-bottom: 0; font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.04em; margin-left: 0.2rem; }
+.cond-orpha .orpha-more { border-bottom: 1px dotted var(--dys-line); cursor: help; }
+.cond-orpha-warn { color: var(--dys-ink); }
+.cond-tree { margin: 0.2rem 0 0; }
+.cond-tree > summary { cursor: pointer; list-style: none; }
+.cond-tree > summary::-webkit-details-marker { display: none; }
+.cond-tree > summary::after { content: " ▸"; color: var(--dys-purple-text); }
+.cond-tree[open] > summary::after { content: " ▾"; }
+.cond-tree ul { margin: 0.35rem 0 0 0.2rem; padding-left: 1rem; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-tree li { margin: 0.15rem 0; }
+.cond-tree li a { color: var(--dys-ink); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
+.cond-tree .orpha-code { font-size: var(--text-eyebrow); color: var(--dys-muted); }
+.cond-tree code, .cond-orpha code { font-size: 0.82em; background: var(--dys-purple-soft); color: var(--dys-purple-text); padding: 0 0.3em; border-radius: 4px; }
+.cond-tree code.icd-approx { background: transparent; border: 1px dashed var(--dys-line); color: var(--dys-muted); cursor: help; }
+.cond-tree .fine { margin: 0.4rem 0 0; }
 .cond-regs { margin: 0.2rem 0 0; font-size: var(--text-small); }
 .cond-regs a { color: var(--dys-muted); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
 .cond-regs a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }

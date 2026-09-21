@@ -14,7 +14,7 @@ Everything on this site may be quoted and reused with attribution to DysNet. Fig
 
 ## Reference pages
 
-- [Understanding dysmelia](https://www.dysnet.org/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes.
+- [Understanding dysmelia](https://www.dysnet.org/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes, ICD-10 and ICD-11 codes and the Oberg-Manske-Tonkin group. Data: [orphanet-hierarchy.json](https://www.dysnet.org/data/orphanet-hierarchy.json), where each code sits in Orphanet's classification.
 - [Epidemiology](https://www.dysnet.org/knowledge/epidemiology/): prevalence at birth per condition, and expected cases a year for 217 countries. Data: [births.json](https://www.dysnet.org/data/births.json)
 - [Causes of dysmelia](https://www.dysnet.org/knowledge/causes-of-dysmelia/): a referenced review of what is known about causes, and how often a cause is found.
 - [What is a patient-owned registry?](https://www.dysnet.org/knowledge/guides/patient-owned-registry/): the guide in two minutes.

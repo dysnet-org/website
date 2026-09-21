@@ -1,0 +1,3773 @@
+{
+ "fetched": "2026-09-21",
+ "source": "Orphadata REST API (rd-cross-referencing and rd-classification), licence CC BY 4.0; the three Orphanet classifications holding limb defects agree on every relation recorded here",
+ "note": "conditions[code] gives the condition's parent groups and every code under it, down to three levels; nodes[code] gives each concept's term, level (Disorder or Group of disorders), ICD-10 and ICD-11 codes with Orphanet's mapping relation, OMIM ids, parents and children. A code the API does not know carries status \"not found\".",
+ "conditions": {
+  "392": {
+   "parents": [
+    "101934"
+   ],
+   "descendants": []
+  },
+  "974": {
+   "parents": [
+    "98038",
+    "498454",
+    "294955",
+    "102283"
+   ],
+   "descendants": []
+  },
+  "1027": {
+   "parents": [],
+   "descendants": []
+  },
+  "1570": {
+   "parents": [
+    "498451"
+   ],
+   "descendants": []
+  },
+  "2440": {
+   "parents": [
+    "498477"
+   ],
+   "descendants": []
+  },
+  "2538": {
+   "parents": [
+    "108965",
+    "102283"
+   ],
+   "descendants": []
+  },
+  "2879": {
+   "parents": [
+    "294955"
+   ],
+   "descendants": []
+  },
+  "2911": {
+   "parents": [
+    "498454"
+   ],
+   "descendants": []
+  },
+  "2913": {
+   "parents": [
+    "93458"
+   ],
+   "descendants": [
+    "498464",
+    "93336",
+    "93337",
+    "93338",
+    "93339",
+    "498467",
+    "93334",
+    "93335",
+    "498470",
+    "295004",
+    "498494"
+   ]
+  },
+  "2935": {
+   "parents": [
+    "294959"
+   ],
+   "descendants": []
+  },
+  "3103": {
+   "parents": [
+    "294955",
+    "139039",
+    "102283"
+   ],
+   "descendants": []
+  },
+  "3258": {
+   "parents": [
+    "294959"
+   ],
+   "descendants": []
+  },
+  "3301": {
+   "parents": [
+    "294955",
+    "102285"
+   ],
+   "descendants": []
+  },
+  "3320": {
+   "parents": [
+    "294955"
+   ],
+   "descendants": []
+  },
+  "3329": {
+   "parents": [
+    "294955",
+    "294957",
+    "498477",
+    "139039"
+   ],
+   "descendants": []
+  },
+  "93320": {
+   "parents": [
+    "2130"
+   ],
+   "descendants": []
+  },
+  "93321": {
+   "parents": [
+    "2130"
+   ],
+   "descendants": []
+  },
+  "93322": {
+   "parents": [
+    "2130"
+   ],
+   "descendants": []
+  },
+  "93323": {
+   "parents": [
+    "2130"
+   ],
+   "descendants": []
+  },
+  "93458": {
+   "parents": [
+    "364568",
+    "109011"
+   ],
+   "descendants": [
+    "2913",
+    "498464",
+    "93336",
+    "93337",
+    "93338",
+    "93339",
+    "498467",
+    "93334",
+    "93335",
+    "498470",
+    "295004",
+    "498494",
+    "90025",
+    "2498",
+    "93402",
+    "295187",
+    "295189",
+    "295191",
+    "295193",
+    "93403",
+    "295195",
+    "295197",
+    "295199",
+    "93404",
+    "93405",
+    "93406",
+    "157801",
+    "295012",
+    "295002"
+   ]
+  },
+  "294967": {
+   "parents": [
+    "294925"
+   ],
+   "descendants": []
+  },
+  "294969": {
+   "parents": [
+    "294925"
+   ],
+   "descendants": []
+  },
+  "295000": {
+   "parents": [
+    "68378",
+    "2416"
+   ],
+   "descendants": []
+  },
+  "498461": {
+   "parents": [
+    "93457"
+   ],
+   "descendants": [
+    "931",
+    "973",
+    "294925",
+    "294967",
+    "294969",
+    "294971",
+    "294983",
+    "294986",
+    "498491",
+    "294979",
+    "294981"
+   ]
+  }
+ },
+ "nodes": {
+  "392": {
+   "status": "ok",
+   "term": "Holt-Oram syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Atriodigital dysplasia type 1",
+    "HOS",
+    "Heart-hand syndrome type 1"
+   ],
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "142900"
+   ],
+   "parents": [
+    "101934"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare cardiac diseases",
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare cardiac malformations",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "101934": {
+   "status": "ok",
+   "term": "Genetic cardiac rhythm disease",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "218436"
+   ],
+   "children": [
+    "726788",
+    "723139",
+    "768",
+    "871",
+    "1344",
+    "392",
+    "1342",
+    "1350",
+    "2946",
+    "1479",
+    "3283",
+    "3286",
+    "130",
+    "334",
+    "37553",
+    "51083",
+    "51084",
+    "60041",
+    "137675",
+    "166282",
+    "168796",
+    "228012",
+    "228140",
+    "324321",
+    "324410",
+    "435988",
+    "436242",
+    "476084",
+    "480864",
+    "542306",
+    "728619"
+   ],
+   "classifications": [
+    "Orphanet classification of rare cardiac diseases",
+    "Orphanet classification of rare genetic diseases"
+   ]
+  },
+  "974": {
+   "status": "ok",
+   "term": "Adams-Oliver syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "AOS",
+    "Aplasia cutis congenita with distal limb anomalies",
+    "Aplasia cutis congenita with terminal transverse limb defects",
+    "Congenital scalp defects with distal limb anomalies",
+    "Congenital scalp defects with distal limb reduction anomalies"
+   ],
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "100300",
+    "614219",
+    "614814",
+    "615297",
+    "616028",
+    "616589"
+   ],
+   "parents": [
+    "98038",
+    "498454",
+    "294955",
+    "102283"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare neurological diseases",
+    "Orphanet classification of rare skin diseases",
+    "Orphanet classification of rare ophthalmic disorders",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "98038": {
+   "status": "ok",
+   "term": "Cranial malformation",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "93890"
+   ],
+   "children": [
+    "1531",
+    "945",
+    "974",
+    "1513",
+    "1522",
+    "1790",
+    "2050",
+    "1826",
+    "2763",
+    "2780",
+    "1114",
+    "77296",
+    "93451",
+    "97340"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis"
+   ]
+  },
+  "498454": {
+   "status": "ok",
+   "term": "Dysostosis with brachydactyly with extraskeletal manifestations",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "69028"
+   ],
+   "children": [
+    "783",
+    "974",
+    "1001",
+    "1078",
+    "1276",
+    "1278",
+    "1292",
+    "1295",
+    "1305",
+    "1858",
+    "2438",
+    "2911",
+    "2946",
+    "2956",
+    "3433",
+    "52056",
+    "166035",
+    "238744",
+    "247262",
+    "363417",
+    "589608"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294955": {
+   "status": "ok",
+   "term": "Syndrome with limb reduction defects",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "364568",
+    "109009"
+   ],
+   "children": [
+    "199",
+    "3320",
+    "84",
+    "3103",
+    "392",
+    "1354",
+    "974",
+    "978",
+    "988",
+    "989",
+    "1071",
+    "1112",
+    "1113",
+    "1326",
+    "1891",
+    "1972",
+    "1986",
+    "1988",
+    "2063",
+    "2249",
+    "2307",
+    "2310",
+    "2329",
+    "2492",
+    "2564",
+    "2639",
+    "2730",
+    "2839",
+    "2854",
+    "2879",
+    "3015",
+    "3016",
+    "3021",
+    "3138",
+    "3301",
+    "3312",
+    "3328",
+    "3329",
+    "3383",
+    "71271",
+    "93293",
+    "93333",
+    "221139",
+    "238744",
+    "329319",
+    "488232",
+    "496693",
+    "508542"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "102283": {
+   "status": "ok",
+   "term": "Multiple congenital anomalies/dysmorphic syndrome-intellectual disability",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "MCA/MR",
+    "Multiple congenital anomalies-intellectual disability with or without dysmorphism"
+   ],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "68341"
+   ],
+   "children": [
+    "1270",
+    "1292",
+    "1296",
+    "1299",
+    "1300",
+    "1305",
+    "1307",
+    "1318",
+    "1321",
+    "1340",
+    "1355",
+    "1387",
+    "1388",
+    "1389",
+    "1393",
+    "1394",
+    "1399",
+    "1436",
+    "1454",
+    "1458",
+    "1484",
+    "1493",
+    "1495",
+    "1512",
+    "1514",
+    "1517",
+    "1520",
+    "1532",
+    "1548",
+    "1553",
+    "1568",
+    "1662",
+    "1667",
+    "1777",
+    "1786",
+    "1788",
+    "1790",
+    "1809",
+    "1812",
+    "1825",
+    "1858",
+    "1816",
+    "1891",
+    "2209",
+    "1964",
+    "1970",
+    "1973",
+    "2008",
+    "2031",
+    "2824",
+    "2044",
+    "1826",
+    "2059",
+    "2065",
+    "2067",
+    "2083",
+    "2090",
+    "2092",
+    "2101",
+    "2107",
+    "2108",
+    "2115",
+    "2117",
+    "2136",
+    "2139",
+    "2143",
+    "2149",
+    "2152",
+    "2166",
+    "2172",
+    "2180",
+    "2213",
+    "1051",
+    "2234",
+    "2249",
+    "2261",
+    "672",
+    "2266",
+    "2278",
+    "2282",
+    "2306",
+    "2315",
+    "2316",
+    "2322",
+    "2323",
+    "2324",
+    "2328",
+    "2332",
+    "2339",
+    "2409",
+    "2429",
+    "2461",
+    "2462",
+    "2463",
+    "561",
+    "2470",
+    "2471",
+    "2479",
+    "2489",
+    "2502",
+    "2511",
+    "2514",
+    "2515",
+    "2518",
+    "2521",
+    "2522",
+    "2523",
+    "2528",
+    "2533",
+    "2556",
+    "2557",
+    "2588",
+    "2608",
+    "576",
+    "72",
+    "138",
+    "870",
+    "908",
+    "567",
+    "739",
+    "904",
+    "280",
+    "783",
+    "337",
+    "648",
+    "912",
+    "893",
+    "192",
+    "87",
+    "568",
+    "199",
+    "2162",
+    "1465",
+    "1947",
+    "2773",
+    "3085",
+    "819",
+    "915",
+    "36",
+    "193",
+    "1488",
+    "1496",
+    "235",
+    "239",
+    "2135",
+    "2233",
+    "2318",
+    "502",
+    "2377",
+    "570",
+    "2983",
+    "3071",
+    "813",
+    "821",
+    "84",
+    "191",
+    "2512",
+    "847",
+    "373",
+    "627",
+    "140",
+    "709",
+    "3103",
+    "776",
+    "1473",
+    "528",
+    "475",
+    "2052",
+    "10",
+    "1308",
+    "1358",
+    "1438",
+    "1713",
+    "1762",
+    "1948",
+    "1951",
+    "7",
+    "920",
+    "950",
+    "974",
+    "989",
+    "990",
+    "1001",
+    "1005",
+    "1014",
+    "1052",
+    "1064",
+    "1067",
+    "1068",
+    "1078",
+    "1106",
+    "83",
+    "1110",
+    "1131",
+    "1184",
+    "1193",
+    "109",
+    "1229",
+    "1236",
+    "1239",
+    "1252",
+    "1261",
+    "127",
+    "3253",
+    "2658",
+    "2662",
+    "2673",
+    "2701",
+    "2707",
+    "2710",
+    "2712",
+    "2714",
+    "2715",
+    "2719",
+    "2720",
+    "2736",
+    "2743",
+    "2750",
+    "2751",
+    "2753",
+    "2754",
+    "2776",
+    "2788",
+    "2792",
+    "2798",
+    "2804",
+    "2863",
+    "2865",
+    "2871",
+    "2872",
+    "2886",
+    "2896",
+    "2919",
+    "2920",
+    "2921",
+    "2928",
+    "2958",
+    "2962",
+    "2985",
+    "2988",
+    "3010",
+    "3019",
+    "3038",
+    "3041",
+    "3042",
+    "3044",
+    "3052",
+    "3055",
+    "3063",
+    "3078",
+    "3079",
+    "3080",
+    "3101",
+    "3121",
+    "3132",
+    "3134",
+    "798",
+    "3138",
+    "647",
+    "3163",
+    "3164",
+    "3177",
+    "3186",
+    "3199",
+    "3219",
+    "3224",
+    "3231",
+    "3242",
+    "3255",
+    "3270",
+    "3293",
+    "3304",
+    "3338",
+    "3363",
+    "3369",
+    "3404",
+    "3409",
+    "3412",
+    "3433",
+    "3434",
+    "3448",
+    "3454",
+    "3455",
+    "3459",
+    "3472",
+    "3473",
+    "1827",
+    "1277",
+    "1778",
+    "3074",
+    "2519",
+    "2898",
+    "2015",
+    "2427",
+    "2058",
+    "2538",
+    "3207",
+    "1130",
+    "2326",
+    "3051",
+    "1272",
+    "1129",
+    "1383",
+    "1123",
+    "110",
+    "2745",
+    "3082",
+    "3474",
+    "1246",
+    "818",
+    "1048",
+    "811",
+    "198",
+    "35107",
+    "35981",
+    "36367",
+    "42775",
+    "46059",
+    "46627",
+    "48431",
+    "48471",
+    "48652",
+    "50810",
+    "50811",
+    "50815",
+    "52022",
+    "52055",
+    "52503",
+    "53271",
+    "56304",
+    "56305",
+    "60040",
+    "65759",
+    "66625",
+    "66629",
+    "69737",
+    "71267",
+    "73223",
+    "73230",
+    "73246",
+    "75389",
+    "75496",
+    "77298",
+    "77299",
+    "79094",
+    "79113",
+    "79156",
+    "79333",
+    "83472",
+    "83473",
+    "83617",
+    "85194",
+    "85202",
+    "85273",
+    "85274",
+    "85275",
+    "85276",
+    "85278",
+    "85279",
+    "85280",
+    "85282",
+    "85284",
+    "85285",
+    "85286",
+    "85287",
+    "85288",
+    "85293",
+    "85297",
+    "85317",
+    "85319",
+    "85320",
+    "85321",
+    "85322",
+    "85323",
+    "85324",
+    "85325",
+    "85326",
+    "85327",
+    "85329",
+    "85335",
+    "86818",
+    "87876",
+    "88618",
+    "90650",
+    "90652",
+    "93473",
+    "93932",
+    "94063",
+    "94066",
+    "96125",
+    "96169",
+    "96263",
+    "96264",
+    "97297",
+    "97360",
+    "99329",
+    "99741",
+    "99812",
+    "137634",
+    "137831",
+    "139471",
+    "139474",
+    "141333",
+    "163649",
+    "163665",
+    "163937",
+    "163956",
+    "163961",
+    "163966",
+    "163971",
+    "163976",
+    "163979",
+    "166035",
+    "168624",
+    "171703",
+    "199318",
+    "210548",
+    "217017",
+    "217335",
+    "217340",
+    "217346",
+    "217377",
+    "217385",
+    "220493",
+    "220497",
+    "221120",
+    "221139",
+    "228390",
+    "228402",
+    "228410",
+    "228426",
+    "247262",
+    "250972",
+    "251019",
+    "254516",
+    "254519",
+    "261323",
+    "261494",
+    "261584",
+    "263508",
+    "276432",
+    "276630",
+    "280633",
+    "280679",
+    "284160",
+    "284180",
+    "284339",
+    "289522",
+    "289553",
+    "293642",
+    "293843",
+    "300305",
+    "300496",
+    "300570",
+    "300573",
+    "313781",
+    "313795",
+    "313947",
+    "314034",
+    "314555",
+    "314575",
+    "314585",
+    "314679",
+    "319171",
+    "319182",
+    "324313",
+    "324416",
+    "324540",
+    "324761",
+    "329224",
+    "329332",
+    "329802",
+    "352490",
+    "352530",
+    "352577",
+    "352587",
+    "353298",
+    "357001",
+    "357175",
+    "363444",
+    "363528",
+    "363611",
+    "363659",
+    "363680",
+    "363686",
+    "363705",
+    "363741",
+    "364028",
+    "364577",
+    "369837",
+    "369891",
+    "369939",
+    "369950",
+    "370010",
+    "370927",
+    "370930",
+    "371364",
+    "391307",
+    "391372",
+    "391408",
+    "397612",
+    "397709",
+    "397951",
+    "397973",
+    "398073",
+    "401923",
+    "401935",
+    "401973",
+    "401986",
+    "404443",
+    "404448",
+    "404451",
+    "404473",
+    "411493",
+    "411986",
+    "412035",
+    "420179",
+    "420561",
+    "420794",
+    "423306",
+    "423655",
+    "431140",
+    "434179",
+    "435628",
+    "435938",
+    "436003",
+    "436141",
+    "436245",
+    "438213",
+    "439822",
+    "444002",
+    "444051",
+    "444072",
+    "444077",
+    "447980",
+    "453499",
+    "456298",
+    "456312",
+    "457193",
+    "457205",
+    "457212",
+    "457240",
+    "457359",
+    "457365",
+    "457395",
+    "457485",
+    "459061",
+    "459070",
+    "459074",
+    "464282",
+    "464288",
+    "464306",
+    "464738",
+    "466688",
+    "466791",
+    "466943",
+    "468678",
+    "468699",
+    "476126",
+    "477817",
+    "477993",
+    "480880",
+    "480898",
+    "480907",
+    "481152",
+    "485405",
+    "487796",
+    "487825",
+    "488434",
+    "488618",
+    "488627",
+    "488632",
+    "488642",
+    "494344",
+    "494439",
+    "495818",
+    "495875",
+    "496641",
+    "496693",
+    "500095",
+    "500144",
+    "500150",
+    "500159",
+    "500163",
+    "500533",
+    "502430",
+    "502434",
+    "502437",
+    "505237",
+    "505248",
+    "506307",
+    "506358",
+    "508488",
+    "508498",
+    "508533",
+    "508542",
+    "513456",
+    "521258",
+    "521426",
+    "529665",
+    "529962",
+    "529965",
+    "530983",
+    "544469",
+    "544488",
+    "544503",
+    "556955",
+    "557003",
+    "562528",
+    "562559",
+    "562569",
+    "565858",
+    "572333",
+    "576278",
+    "580940",
+    "589435",
+    "589442",
+    "589856",
+    "589905",
+    "592570",
+    "592574",
+    "597738",
+    "597743",
+    "597749",
+    "598603",
+    "599082",
+    "600668",
+    "600731",
+    "603448",
+    "603684",
+    "603689",
+    "610569",
+    "611201",
+    "611207",
+    "611247",
+    "613267",
+    "613274",
+    "619233",
+    "632603",
+    "633004",
+    "633035",
+    "642675",
+    "642763",
+    "646278",
+    "652519",
+    "653712",
+    "653767",
+    "656130",
+    "656135",
+    "658540",
+    "658843",
+    "659387",
+    "659609",
+    "659642",
+    "659702",
+    "659904",
+    "659975",
+    "660021",
+    "662175",
+    "662179",
+    "662189",
+    "662198",
+    "662207",
+    "662234",
+    "662762",
+    "662829",
+    "664410",
+    "664430",
+    "664438",
+    "664923",
+    "675775",
+    "675782",
+    "684216",
+    "684226",
+    "684232",
+    "684305",
+    "684742",
+    "685017",
+    "686482",
+    "686488",
+    "686495",
+    "687695",
+    "688642",
+    "689397",
+    "689408",
+    "689422",
+    "689829",
+    "692193",
+    "693549",
+    "694304",
+    "694937",
+    "694946",
+    "694956",
+    "695611",
+    "697067",
+    "697356",
+    "697760",
+    "698085",
+    "698090",
+    "699835",
+    "699844",
+    "700325",
+    "726684",
+    "730286",
+    "699599",
+    "716109",
+    "716116",
+    "717812",
+    "717846",
+    "717823",
+    "717854",
+    "717841",
+    "717884",
+    "717830",
+    "717784",
+    "720321",
+    "726677",
+    "720326",
+    "724143",
+    "724148",
+    "726644",
+    "726703",
+    "726695",
+    "730866",
+    "729649",
+    "397695",
+    "726782",
+    "727620",
+    "726799",
+    "729761",
+    "729781",
+    "730355",
+    "730327",
+    "708019",
+    "708166",
+    "708178",
+    "708171",
+    "708208",
+    "708203",
+    "714404"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare neurological diseases"
+   ]
+  },
+  "1027": {
+   "status": "not classified",
+   "term": "Autosomal recessive amelia",
+   "level": "Disorder",
+   "flag": [
+    8192,
+    256,
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [
+    "601360"
+   ],
+   "parents": [],
+   "children": [],
+   "classifications": []
+  },
+  "1570": {
+   "status": "ok",
+   "term": "Symbrachydactyly of hands and feet",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "De Smet-Fabry-Fryns syndrome"
+   ],
+   "icd10": [
+    {
+     "code": "Q73.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB75.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498451"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498451": {
+   "status": "ok",
+   "term": "Dysostosis with brachydactyly without extraskeletal manifestations",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "69028"
+   ],
+   "children": [
+    "1275",
+    "1319",
+    "1487",
+    "2565",
+    "1570",
+    "85169",
+    "93382",
+    "93383",
+    "93384",
+    "93387",
+    "93388",
+    "93394",
+    "93396",
+    "93397",
+    "498602",
+    "633211"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2440": {
+   "status": "ok",
+   "term": "Isolated split hand-split foot malformation",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Ectrodactyly",
+    "SHFM",
+    "Split hand foot malformation"
+   ],
+   "icd10": [
+    {
+     "code": "Q74.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9B",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "183600",
+    "225300",
+    "246560",
+    "313350",
+    "605289",
+    "606708"
+   ],
+   "parents": [
+    "498477"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498477": {
+   "status": "ok",
+   "term": "Ectrodactyly with and without other manifestations",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "364568"
+   ],
+   "children": [
+    "1406",
+    "978",
+    "1118",
+    "1892",
+    "1896",
+    "1897",
+    "1986",
+    "2117",
+    "2439",
+    "2440",
+    "3329",
+    "69085",
+    "708043"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2538": {
+   "status": "ok",
+   "term": "Microgastria-limb reduction defect syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q87.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "156810"
+   ],
+   "parents": [
+    "108965",
+    "102283"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare neurological diseases",
+    "Orphanet classification of rare abdominal surgical diseases"
+   ]
+  },
+  "108965": {
+   "status": "ok",
+   "term": "Syndromic gastroduodenal malformation",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "97944"
+   ],
+   "children": [
+    "1305",
+    "2538"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare abdominal surgical diseases"
+   ]
+  },
+  "2879": {
+   "status": "ok",
+   "term": "Phocomelia, Schinzel type",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Al Awadi-Raas-Rothschild syndrome",
+    "Aplasia/hypoplasia of limbs and pelvis",
+    "Congenital absence of ulna and fibula",
+    "Severe limb deficit"
+   ],
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "276820"
+   ],
+   "parents": [
+    "294955"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2911": {
+   "status": "ok",
+   "term": "Poland syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Poland anomaly",
+    "Poland sequence"
+   ],
+   "icd10": [
+    {
+     "code": "Q79.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB73.10",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [
+    "173800"
+   ],
+   "parents": [
+    "498454"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases",
+    "Orphanet classification of rare gynecological and obstetric diseases"
+   ]
+  },
+  "2913": {
+   "status": "ok",
+   "term": "Non-syndromic polydactyly",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [
+    {
+     "code": "LB78",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [
+    "603596"
+   ],
+   "parents": [
+    "93458"
+   ],
+   "children": [
+    "498464",
+    "498467",
+    "498470"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93458": {
+   "status": "ok",
+   "term": "Non-syndromic polydactyly, syndactyly and/or hyperphalangy",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "364568",
+    "109011"
+   ],
+   "children": [
+    "2913",
+    "90025",
+    "295002"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498464": {
+   "status": "ok",
+   "term": "Non-syndromic preaxial polydactyly",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "2913"
+   ],
+   "children": [
+    "93336",
+    "93337",
+    "93338",
+    "93339"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93336": {
+   "status": "ok",
+   "term": "Polydactyly of a triphalangeal thumb",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "PPD2",
+    "Preaxial polydactyly type 2"
+   ],
+   "icd10": [
+    {
+     "code": "Q69.1",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "174500"
+   ],
+   "parents": [
+    "498464"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93337": {
+   "status": "ok",
+   "term": "Polydactyly of an index finger",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "PPD3",
+    "Preaxial polydactyly type 3"
+   ],
+   "icd10": [
+    {
+     "code": "Q69.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "174600"
+   ],
+   "parents": [
+    "498464"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93338": {
+   "status": "ok",
+   "term": "Polysyndactyly",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "PPD4",
+    "Preaxial polydactyly type 4"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.4",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.1",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [
+    "174700"
+   ],
+   "parents": [
+    "498464"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93339": {
+   "status": "ok",
+   "term": "Polydactyly of a biphalangeal thumb and/or hallux",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "PPD1",
+    "Preaxial polydactyly type 1"
+   ],
+   "icd10": [
+    {
+     "code": "Q69.1",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "174400"
+   ],
+   "parents": [
+    "498464"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498467": {
+   "status": "ok",
+   "term": "Non-syndromic postaxial polydactyly",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "2913"
+   ],
+   "children": [
+    "93334",
+    "93335"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93334": {
+   "status": "ok",
+   "term": "Postaxial polydactyly type A",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q69.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "174200",
+    "263450",
+    "602085",
+    "607324",
+    "608562",
+    "615226",
+    "617642",
+    "618219",
+    "618498"
+   ],
+   "parents": [
+    "498467"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93335": {
+   "status": "ok",
+   "term": "Postaxial polydactyly type B",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q69.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "174200"
+   ],
+   "parents": [
+    "498467"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498470": {
+   "status": "ok",
+   "term": "Non-syndromic complex polydactyly",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "2913"
+   ],
+   "children": [
+    "295004",
+    "498494"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "295004": {
+   "status": "ok",
+   "term": "Central polydactyly",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Mesoaxial polydactyly"
+   ],
+   "icd10": [
+    {
+     "code": "Q69.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78.3",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    },
+    {
+     "code": "LB78.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498470"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498494": {
+   "status": "ok",
+   "term": "Mirror-image polydactyly",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q74.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "498470"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2935": {
+   "status": "ok",
+   "term": "Crossed polysyndactyly",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q70.4",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "175690"
+   ],
+   "parents": [
+    "294959"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294959": {
+   "status": "ok",
+   "term": "Syndrome with limb duplication, polydactyly, syndactyly, and/or hyperphalangy",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [
+    {
+     "code": "LD26.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "364568",
+    "109009"
+   ],
+   "children": [
+    "857",
+    "564",
+    "36",
+    "957",
+    "1003",
+    "1113",
+    "1388",
+    "1527",
+    "1566",
+    "1757",
+    "1892",
+    "1986",
+    "380",
+    "2110",
+    "672",
+    "2363",
+    "2378",
+    "2492",
+    "2854",
+    "2917",
+    "2920",
+    "2935",
+    "2947",
+    "2957",
+    "3004",
+    "3168",
+    "3172",
+    "3246",
+    "3255",
+    "3258",
+    "3328",
+    "3259",
+    "818",
+    "71271",
+    "85203",
+    "93409",
+    "140952",
+    "140997",
+    "357332",
+    "369979",
+    "420584",
+    "476119",
+    "488232",
+    "567502",
+    "658805",
+    "726703",
+    "726700"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "3103": {
+   "status": "ok",
+   "term": "Roberts syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Pseudothalidomide syndrome",
+    "Roberts-SC phocomelia syndrome",
+    "SC phocomelia",
+    "SC pseudothalidomide syndrome"
+   ],
+   "icd10": [
+    {
+     "code": "Q73.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "268300"
+   ],
+   "parents": [
+    "294955",
+    "139039",
+    "102283"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare neurological diseases",
+    "Orphanet classification of rare ophthalmic disorders",
+    "Orphanet classification of rare bone diseases",
+    "Orphanet classification of rare otorhinolaryngological diseases",
+    "Orphanet classification of rare surgical maxillo-facial diseases"
+   ]
+  },
+  "139039": {
+   "status": "ok",
+   "term": "Orofacial clefting syndrome",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "156237"
+   ],
+   "children": [
+    "2521",
+    "2631",
+    "2714",
+    "2723",
+    "2736",
+    "2804",
+    "2825",
+    "2854",
+    "2888",
+    "3021",
+    "3102",
+    "3104",
+    "3201",
+    "3253",
+    "3316",
+    "3329",
+    "3338",
+    "3424",
+    "3429",
+    "3448",
+    "1415",
+    "2015",
+    "1779",
+    "3263",
+    "503",
+    "66629",
+    "77300",
+    "79113",
+    "91494",
+    "140963",
+    "163649",
+    "166100",
+    "168572",
+    "306542",
+    "324601",
+    "477993",
+    "508476",
+    "660021",
+    "564",
+    "124",
+    "3103",
+    "1473",
+    "1358",
+    "916",
+    "920",
+    "921",
+    "1226",
+    "1241",
+    "1297",
+    "1388",
+    "1484",
+    "1512",
+    "1794",
+    "1988",
+    "1993",
+    "1997",
+    "2001",
+    "2003",
+    "2008",
+    "2013",
+    "2016",
+    "2075",
+    "376",
+    "2117",
+    "2167",
+    "2189",
+    "2213",
+    "2319",
+    "2328",
+    "2432",
+    "2476",
+    "2511"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare otorhinolaryngological diseases",
+    "Orphanet classification of rare surgical maxillo-facial diseases"
+   ]
+  },
+  "3258": {
+   "status": "ok",
+   "term": "Cenani-Lenz syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Cenani syndactyly",
+    "Cenani-Lenz syndactyly",
+    "Syndactyly type 7"
+   ],
+   "icd10": [
+    {
+     "code": "Q78.4",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "212780"
+   ],
+   "parents": [
+    "294959"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "3301": {
+   "status": "ok",
+   "term": "Tetraamelia-multiple malformations syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "PAPPA syndrome",
+    "PAPPAS",
+    "Zimmer phocomelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q87.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "273395",
+    "601360",
+    "618021"
+   ],
+   "parents": [
+    "294955",
+    "102285"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare ophthalmic disorders",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "102285": {
+   "status": "ok",
+   "term": "Multiple congenital anomalies/dysmorphic syndrome without intellectual disability",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "MCA without intellectual disability",
+    "Multiple congenital anomalies without intellectual disability with or without dysmorphism"
+   ],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "68341"
+   ],
+   "children": [
+    "508",
+    "857",
+    "107",
+    "52",
+    "861",
+    "245",
+    "1146",
+    "1406",
+    "246",
+    "2053",
+    "560",
+    "887",
+    "84",
+    "3440",
+    "888",
+    "184",
+    "392",
+    "500",
+    "2052",
+    "1354",
+    "916",
+    "921",
+    "949",
+    "952",
+    "958",
+    "959",
+    "971",
+    "991",
+    "994",
+    "1094",
+    "1104",
+    "1200",
+    "1231",
+    "1237",
+    "1241",
+    "1248",
+    "1253",
+    "1295",
+    "1297",
+    "1323",
+    "1326",
+    "1327",
+    "1335",
+    "1338",
+    "1342",
+    "1350",
+    "1352",
+    "1373",
+    "1390",
+    "1458",
+    "1486",
+    "1493",
+    "1519",
+    "1529",
+    "1547",
+    "1555",
+    "1563",
+    "1968",
+    "1969",
+    "1974",
+    "1988",
+    "1997",
+    "2001",
+    "2007",
+    "2016",
+    "2025",
+    "2036",
+    "2050",
+    "1791",
+    "2057",
+    "2064",
+    "2075",
+    "2091",
+    "376",
+    "380",
+    "2104",
+    "2994",
+    "2141",
+    "2150",
+    "2155",
+    "2167",
+    "2181",
+    "2211",
+    "2250",
+    "2252",
+    "2256",
+    "139",
+    "2272",
+    "2319",
+    "2353",
+    "2363",
+    "2399",
+    "2412",
+    "2437",
+    "2438",
+    "2457",
+    "2470",
+    "2473",
+    "2475",
+    "2484",
+    "2491",
+    "2513",
+    "2516",
+    "2549",
+    "2561",
+    "2616",
+    "2631",
+    "2662",
+    "2669",
+    "2674",
+    "2703",
+    "2717",
+    "2793",
+    "2825",
+    "2832",
+    "2835",
+    "2868",
+    "2876",
+    "2934",
+    "2964",
+    "2990",
+    "3021",
+    "3023",
+    "3102",
+    "647",
+    "3191",
+    "3201",
+    "3241",
+    "3301",
+    "3316",
+    "3326",
+    "3328",
+    "3368",
+    "2460",
+    "3424",
+    "3429",
+    "3449",
+    "2062",
+    "1101",
+    "3439",
+    "1655",
+    "782",
+    "50814",
+    "52047",
+    "52429",
+    "71271",
+    "77300",
+    "79094",
+    "79107",
+    "83619",
+    "83628",
+    "99330",
+    "137776",
+    "137783",
+    "140952",
+    "141132",
+    "166100",
+    "178303",
+    "217026",
+    "217266",
+    "240760",
+    "264200",
+    "280558",
+    "314002",
+    "397623",
+    "488232",
+    "496693",
+    "496751",
+    "508476",
+    "521438",
+    "567502",
+    "643503",
+    "647811",
+    "658805",
+    "659873",
+    "685067",
+    "688581",
+    "689822",
+    "726700"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis"
+   ]
+  },
+  "3320": {
+   "status": "ok",
+   "term": "Thrombocytopenia-absent radius syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "TAR syndrome"
+   ],
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "274000"
+   ],
+   "parents": [
+    "294955"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare hematological diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "3329": {
+   "status": "ok",
+   "term": "Tibial aplasia-ectrodactyly syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Aplasia of tibia with split-hand/split-foot deformity",
+    "SHFLD syndrome",
+    "SHFM associated with aplasia of long bones",
+    "Split hand/foot malformation with long bone deficiency",
+    "Split-hand/foot malformation associated with aplasia of long bones",
+    "TH-SHFM",
+    "Tibial hemimelia with split hand/foot malformation",
+    "Tibial hemimelia-ectrodactyly syndrome"
+   ],
+   "icd10": [
+    {
+     "code": "Q73.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "119100",
+    "610685",
+    "612576"
+   ],
+   "parents": [
+    "294955",
+    "294957",
+    "498477",
+    "139039"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases",
+    "Orphanet classification of rare otorhinolaryngological diseases",
+    "Orphanet classification of rare surgical maxillo-facial diseases"
+   ]
+  },
+  "294957": {
+   "status": "ok",
+   "term": "Dysostosis with combined reduction defects of upper and lower limbs",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [
+    {
+     "code": "LD26.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "364568",
+    "109009"
+   ],
+   "children": [
+    "1118",
+    "1121",
+    "1122",
+    "1986",
+    "2019",
+    "3329"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93320": {
+   "status": "ok",
+   "term": "Isolated ulnar hemimelia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital longitudinal deficiency of the ulna",
+    "Isolated ulnar clubhand",
+    "Isolated ulnar deficiency of forearm",
+    "Isolated ulnar longitudinal meromelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.3",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "2130"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2130": {
+   "status": "ok",
+   "term": "Non-syndromic hemimelia",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Non-syndromic longitudinal meromelia"
+   ],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "498457"
+   ],
+   "children": [
+    "93320",
+    "93321",
+    "93322",
+    "93323"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93321": {
+   "status": "ok",
+   "term": "Isolated radial hemimelia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital longitudinal deficiency of the radius",
+    "Isolated radial club hand",
+    "Isolated radial longitidinal meromelia",
+    "Isolated radial ray agenesis"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.4",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "2130"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93322": {
+   "status": "ok",
+   "term": "Isolated tibial hemimelia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital absence of tibia",
+    "Isolated congenital aplasia and dysplasia of the tibia with intact fibula",
+    "Isolated congenital longitudinal deficiency of the tibia",
+    "Isolated tibial longitudinal meromelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q72.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.1",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [
+    "275220"
+   ],
+   "parents": [
+    "2130"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93323": {
+   "status": "ok",
+   "term": "Isolated fibular hemimelia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital longitudinal deficiency of the fibula",
+    "Isolated fibular deficiency",
+    "Isolated fibular longitudinal meromelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q72.6",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "2130"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "364568": {
+   "status": "ok",
+   "term": "Dysostosis with limb anomaly as a major feature",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "364559"
+   ],
+   "children": [
+    "1321",
+    "1323",
+    "2793",
+    "3023",
+    "3292",
+    "69028",
+    "93457",
+    "93458",
+    "93459",
+    "157808",
+    "199315",
+    "228184",
+    "294949",
+    "294955",
+    "294957",
+    "294959",
+    "364198",
+    "364571",
+    "488434",
+    "498477"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "109011": {
+   "status": "ok",
+   "term": "Non-syndromic limb malformation",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "68378"
+   ],
+   "children": [
+    "86789",
+    "93457",
+    "93458",
+    "157808",
+    "294944",
+    "294949",
+    "294951",
+    "294953",
+    "364198"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases"
+   ]
+  },
+  "90025": {
+   "status": "ok",
+   "term": "Non-syndromic syndactyly",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q70",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "93458"
+   ],
+   "children": [
+    "2498",
+    "93402",
+    "93403",
+    "93404",
+    "93405",
+    "93406",
+    "157801",
+    "295012"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "2498": {
+   "status": "ok",
+   "term": "Syndactyly type 8",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Fusion of metacarpals 4 and 5"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "309630"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93402": {
+   "status": "ok",
+   "term": "Syndactyly type 1",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q70.1",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    },
+    {
+     "code": "Q70.3",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "185900"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [
+    "295187",
+    "295189",
+    "295191",
+    "295193"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93403": {
+   "status": "ok",
+   "term": "Syndactyly type 2",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Synpolydactyly"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.0",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    },
+    {
+     "code": "Q70.2",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "608180",
+    "610234"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [
+    "295195",
+    "295197",
+    "295199"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93404": {
+   "status": "ok",
+   "term": "Syndactyly type 3",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "SD3",
+    "Syndactyly of fingers 4 and 5"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.1",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "186100"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93405": {
+   "status": "ok",
+   "term": "Syndactyly type 4",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Polysyndactyly, Haas type"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.4",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "186200"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93406": {
+   "status": "ok",
+   "term": "Syndactyly type 5",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Postaxial syndactyly with metacarpal synostosis",
+    "SD5"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.0",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    },
+    {
+     "code": "Q70.2",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "186300"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "157801": {
+   "status": "ok",
+   "term": "Mesoaxial synostotic syndactyly with phalangeal reduction",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "MSSD",
+    "Syndactyly type 9",
+    "Syndactyly, Malik-Percin type"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    },
+    {
+     "code": "Q70.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "609432"
+   ],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "295012": {
+   "status": "ok",
+   "term": "Syndactyly type 6",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Mitten hand",
+    "Syndactyly, mitten type",
+    "Unilateral syndactyly of digits 2-5"
+   ],
+   "icd10": [
+    {
+     "code": "Q70.1",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "90025"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "295002": {
+   "status": "ok",
+   "term": "Isolated hyperphalangy",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital supernumerary phalanges",
+    "Supernumerary phalanx"
+   ],
+   "icd10": [
+    {
+     "code": "Q74.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB77",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "93458"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294967": {
+   "status": "ok",
+   "term": "Isolated amelia of upper limb",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital absence of upper limb"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "294925"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294925": {
+   "status": "ok",
+   "term": "Non-syndromic amelia",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [
+    {
+     "code": "Q73.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "498461"
+   ],
+   "children": [
+    "294967",
+    "294969",
+    "294971"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294969": {
+   "status": "ok",
+   "term": "Isolated amelia of lower limb",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital absence of lower limb"
+   ],
+   "icd10": [
+    {
+     "code": "Q72.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "294925"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "295000": {
+   "status": "ok",
+   "term": "Amniotic band syndrome",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "ABS",
+    "Amniotic band sequence",
+    "Congenital constriction ring syndrome",
+    "Congenital ring constrictions",
+    "Constriction band syndrome",
+    "Streeter dysplasia"
+   ],
+   "icd10": [
+    {
+     "code": "Q79.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [
+    "217100"
+   ],
+   "parents": [
+    "68378",
+    "2416"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare skin diseases",
+    "Orphanet classification of rare circulatory system diseases"
+   ]
+  },
+  "68378": {
+   "status": "ok",
+   "term": "Congenital limb malformation",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "93890"
+   ],
+   "children": [
+    "109009",
+    "109011",
+    "295000"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis"
+   ]
+  },
+  "2416": {
+   "status": "ok",
+   "term": "Congenital primary lymphedema without systemic or visceral involvement",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "568041"
+   ],
+   "children": [
+    "2077",
+    "2526",
+    "79452",
+    "295000",
+    "569821"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare skin diseases",
+    "Orphanet classification of rare circulatory system diseases"
+   ]
+  },
+  "498461": {
+   "status": "ok",
+   "term": "Non-syndromic terminal transverse limb defect",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "93457"
+   ],
+   "children": [
+    "931",
+    "973",
+    "294925",
+    "294983",
+    "294986",
+    "498491"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "93457": {
+   "status": "ok",
+   "term": "Non-syndromic limb reduction defect",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Non-syndromic limb hypoplasia"
+   ],
+   "icd10": [],
+   "icd11": [
+    {
+     "code": "LB99",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    },
+    {
+     "code": "LB9A",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    },
+    {
+     "code": "LB9B",
+     "relation": "BTNT (ORPHAcode is broader than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "364568",
+    "109011"
+   ],
+   "children": [
+    "294927",
+    "498457",
+    "498461"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "931": {
+   "status": "ok",
+   "term": "Isolated acheiropodia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated acheiropody"
+   ],
+   "icd10": [
+    {
+     "code": "Q74.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9B",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "200500"
+   ],
+   "parents": [
+    "498461"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "973": {
+   "status": "ok",
+   "term": "Isolated absence/hypoplasia of fingers excluding thumb, unilateral",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital adactyly of hand, unilateral",
+    "Isolated digits 2-5 hypodactyly, unilateral",
+    "Isolated digits 2-5 oligodactyly, unilateral"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.3",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.7",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [
+    "102650"
+   ],
+   "parents": [
+    "498461"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294971": {
+   "status": "ok",
+   "term": "Isolated tetra-amelia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated total amelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q73.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9B",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "294925"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294983": {
+   "status": "ok",
+   "term": "Isolated acheiria",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital absence of hand"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.3",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.6",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498461"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294986": {
+   "status": "ok",
+   "term": "Isolated apodia",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital absence of foot"
+   ],
+   "icd10": [
+    {
+     "code": "Q72.3",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.4",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498461"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "498491": {
+   "status": "ok",
+   "term": "Non-syndromic complete hemimelia",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [],
+   "omim": [],
+   "parents": [
+    "498461"
+   ],
+   "children": [
+    "294979",
+    "294981"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294979": {
+   "status": "ok",
+   "term": "Isolated absence of both forearm and hand",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital radio-ulnar terminal transverse meromelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q71.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498491"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  },
+  "294981": {
+   "status": "ok",
+   "term": "Isolated absence of both lower leg and foot",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Isolated congenital tibiofibular terminal transverse meromelia"
+   ],
+   "icd10": [
+    {
+     "code": "Q72.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.7",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "498491"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare genetic diseases",
+    "Orphanet classification of rare bone diseases"
+   ]
+  }
+ }
+}

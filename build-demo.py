@@ -2163,6 +2163,11 @@ ICD = json.loads(ICD_PATH.read_text(encoding="utf-8"))["conditions"] if ICD_PATH
 # would cost more with those registries than a missing one.
 OMT_PATH = pathlib.Path(__file__).parent / "tools" / "condition-omt.json"
 OMT_ALL = json.loads(OMT_PATH.read_text(encoding="utf-8")) if OMT_PATH.exists() else {}
+# Where each code sits in Orphanet's classification, fetched by tools/build-orphanet-hierarchy.py:
+# the parent groups of a disorder, and for a group every entity it covers. Three of our codes are
+# groups rather than diseases, and a card that carries a group code owes the reader the list.
+HIER_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json"
+HIER = json.loads(HIER_PATH.read_text(encoding="utf-8")) if HIER_PATH.exists() else {"conditions": {}, "nodes": {}}
 OMT = OMT_ALL.get("conditions", {})
 
 
@@ -2219,6 +2224,85 @@ def condition_icd_html(name):
     return f'<p class="cond-icd">{line}</p>'
 
 
+def _orpha_link(code, text=None):
+    n = HIER["nodes"].get(str(code)) or {}
+    return (f'<a href="{ORPHA_URL.format(code)}" target="_blank" rel="noopener external">'
+            f'{text or n.get("term") or "ORPHA:" + str(code)}</a>')
+
+
+def _icd_codes_html(node):
+    """A node's ICD-10 codes; one Orphanet attributes rather than maps exactly is marked."""
+    out = []
+    for e in node.get("icd10") or []:
+        exact = str(e.get("relation", "")).startswith("E")
+        out.append(f'<code{"" if exact else " class=icd-approx title=\"Orphanet attributes this code to the entity rather than mapping the two exactly\""}>{e["code"]}</code>')
+    return " ".join(out)
+
+
+def _slug_name(name):
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", name.lower())).strip("-")
+
+
+def condition_hierarchy_html(code):
+    """Where the code sits in Orphanet's tree, from tools/orphanet-hierarchy.json.
+
+    A group code lists every entity it covers, in Orphanet's order, with each one's ICD-10 code and
+    a link to its own card when this page describes it. A disorder names the group Orphanet files it
+    under, and the card on this page that group sits within, if any. A code Orphanet has withdrawn
+    says so, because the alternative is a card quietly pointing at a concept that no longer exists.
+    """
+    if not code:
+        return ""
+    code = str(code); nodes = HIER["nodes"]; rel = HIER["conditions"].get(code) or {}
+    n = nodes.get(code) or {}
+    ours = {str(c[2]): c[0] for c in CONDITIONS if c[2]}
+    if n.get("status") != "ok":
+        # Orphanet keeps a page for an excluded entity but files it in no classification.
+        return (f'<p class="cond-orpha cond-orpha-warn">Orphanet has withdrawn {_orpha_link(code, "ORPHA:" + code)} '
+                f'from its classifications; its page names the entity that replaced it.</p>')
+    if not n:
+        return ""
+    if n.get("level") == "Group of disorders":
+        desc = rel.get("descendants") or []
+        leaves = [d for d in desc if (nodes.get(d) or {}).get("level") != "Group of disorders"]
+        here = [d for d in desc if d in ours]
+        def item(c):
+            m = nodes.get(c) or {}
+            txt = _orpha_link(c) + f' <span class="orpha-code">ORPHA:{c}</span>'
+            if m.get("icd10"): txt += " " + _icd_codes_html(m)
+            if c in ours: txt += f' <a class="on-page" href="#cond-{c}">on this page</a>'
+            kids = [k for k in m.get("children") or [] if k in nodes]
+            if kids and m.get("level") == "Group of disorders":
+                txt += "<ul>" + "".join(f"<li>{item(k)}</li>" for k in kids) + "</ul>"
+            return txt
+        top = [c for c in n.get("children") or [] if c in nodes]
+        summary = (f'An Orphanet group rather than one disease. It covers <strong>{len(leaves)} disorders</strong>'
+                   + (f', and {spell(len(here))} card{"s" if len(here) > 1 else ""} on this page fall{"" if len(here) > 1 else "s"} within it' if here else '') + '.')
+        return (f'<details class="cond-tree"><summary class="cond-orpha">{summary}</summary>'
+                f'<ul>{"".join(f"<li>{item(c)}</li>" for c in top)}</ul>'
+                f'<p class="fine">Orphanet\'s classification, read {HIER.get("fetched", "")}. A greyed ICD-10 code is one Orphanet attributes rather than maps exactly.</p></details>')
+    parents = [p for p in rel.get("parents") or [] if p in nodes]
+    if not parents:
+        return ""
+    def limbish(p):
+        t = (nodes[p].get("term") or "").lower()
+        return any(w in t for w in ("limb", "melia", "reduction", "dactyly", "hyperphalangy"))
+    order = {p: i for i, p in enumerate(parents)}   # a limb-related group first, Orphanet's order otherwise
+    parents.sort(key=lambda p: (not limbish(p), order[p]))
+    first, rest = parents[0], parents[1:]
+    txt = f'Orphanet files it under {_orpha_link(first)}'
+    # the card on this page that the group itself sits within, when there is one
+    up = [g for g in (nodes[first].get("parents") or []) if g in ours and g != code]
+    if first in ours and first != code:
+        txt += f' (<a class="on-page" href="#cond-{first}">on this page</a>)'
+    elif up:
+        txt += f', within {ours[up[0]]} (<a class="on-page" href="#cond-{up[0]}">on this page</a>)'
+    if rest:
+        others = "; ".join(nodes[p].get("term") or p for p in rest)
+        txt += f' <span class="orpha-more" title="{others}">and {spell(len(rest))} other group{"s" if len(rest) > 1 else ""}</span>'
+    return f'<p class="cond-orpha">{txt}.</p>'
+
+
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     if code:
         link = (f'<p class="src"><a href="{ORPHA_URL.format(code)}" target="_blank" '
@@ -2243,8 +2327,10 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
     refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references in the bibliography &rarr;</a></p>'
             if ref_code and n_refs >= 3 else "")
-    return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{condition_registries_html(ref_code)}{link}{refs}</div>')
+    anchor = f"cond-{ref_code}" if ref_code else "cond-" + _slug_name(name)
+    return (f'<div class="card" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}'
+            f'{condition_hierarchy_html(ref_code)}{condition_registries_html(ref_code)}{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -4871,7 +4957,7 @@ EXTRA_LD = {
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), the Japanese government's GHS classification (NITE), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence, regulatory status per jurisdiction, and the decisions authorities have taken: EU pesticide approvals and refusals, REACH restrictions, treaty bans and national bans.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }
-DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "registry-areas.json": "registry-areas.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
+DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "registry-areas.json": "registry-areas.json", "orphanet-hierarchy.json": "orphanet-hierarchy.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
 
 
 def build():
@@ -4977,7 +5063,7 @@ def build():
     for name, path, desc, f in reg:
         llms.append(f"- [{name}]({SITE}{path}): {desc}. Data: [{f}]({SITE}/data/{f})")
     llms += ["", "## Reference pages", "",
-             f"- [Understanding dysmelia]({SITE}/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes.",
+             f"- [Understanding dysmelia]({SITE}/knowledge/understanding-dysmelia/): what dysmelia is, condition by condition, with ORPHAcodes, ICD-10 and ICD-11 codes and the Oberg-Manske-Tonkin group. Data: [orphanet-hierarchy.json]({SITE}/data/orphanet-hierarchy.json), where each code sits in Orphanet's classification.",
              f"- [Epidemiology]({SITE}/knowledge/epidemiology/): prevalence at birth per condition, and expected cases a year for {len(BIRTHS['countries'])} countries. Data: [births.json]({SITE}/data/births.json)",
              f"- [Causes of dysmelia]({SITE}/knowledge/causes-of-dysmelia/): a referenced review of what is known about causes, and how often a cause is found.",
              f"- [What is a patient-owned registry?]({SITE}/knowledge/guides/patient-owned-registry/): the guide in two minutes.",

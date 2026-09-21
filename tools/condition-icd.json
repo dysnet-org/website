@@ -1,0 +1,426 @@
+{
+ "built": "2026-09-21",
+ "source": "Orphanet, Orphadata cross-referencing API (rd-cross-referencing), licence CC BY 4.0",
+ "source_url": "https://api.orphadata.com/",
+ "note": "ICD-10 and ICD-11 codes as Orphanet maps them, with the mapping relation. An exact mapping means the two concepts are the same thing; a narrower or broader mapping does not. Where Orphanet maps nothing, the code is taken from the classification itself or from the CDC surveillance manual, and each such entry carries its own source.",
+ "conditions": {
+  "Adams-Oliver syndrome": {
+   "orphacode": "974",
+   "orphanet_name": "Adams-Oliver syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Amelia": {
+   "orphacode": "1027",
+   "orphanet_name": "Autosomal recessive amelia",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q71.0",
+     "title": "Congenital complete absence of upper limb(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+    },
+    {
+     "code": "Q72.0",
+     "title": "Congenital complete absence of lower limb(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+    }
+   ],
+   "icd11": []
+  },
+  "Amelia of the upper limb": {
+   "orphacode": "294967",
+   "orphanet_name": "Isolated amelia of upper limb",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q71.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Amelia of the lower limb": {
+   "orphacode": "294969",
+   "orphanet_name": "Isolated amelia of lower limb",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q72.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Amniotic band syndrome": {
+   "orphacode": "295000",
+   "orphanet_name": "Amniotic band syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q79.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Brachydactyly": {
+   "orphacode": null,
+   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give",
+   "icd10_note": "ICD-10 has no code for brachydactyly as such; the shortened digit falls under other reduction deformities."
+  },
+  "Cenani-Lenz syndrome": {
+   "orphacode": "3258",
+   "orphanet_name": "Cenani-Lenz syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q78.4",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB79.Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Crossed polysyndactyly": {
+   "orphacode": "2935",
+   "orphanet_name": "Crossed polysyndactyly",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q70.4",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Ectrodactyly (SHFM)": {
+   "orphacode": "2440",
+   "orphanet_name": "Isolated split hand-split foot malformation",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q74.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9B",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Fibular hemimelia": {
+   "orphacode": "93323",
+   "orphanet_name": "Isolated fibular hemimelia",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q72.6",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Holt-Oram syndrome": {
+   "orphacode": "392",
+   "orphanet_name": "Holt-Oram syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Microgastria–limb reduction": {
+   "orphacode": "2538",
+   "orphanet_name": "Microgastria-limb reduction defect syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Phocomelia": {
+   "orphacode": "2879",
+   "orphanet_name": "Phocomelia, Schinzel type",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Poland syndrome": {
+   "orphacode": "2911",
+   "orphanet_name": "Poland syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q79.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB73.10",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Polydactyly": {
+   "orphacode": "2913",
+   "orphanet_name": "Non-syndromic polydactyly",
+   "group": "Group of disorders",
+   "icd10": [
+    {
+     "code": "Q69",
+     "title": "Polydactyly",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB78",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Radial aplasia": {
+   "orphacode": "93321",
+   "orphanet_name": "Isolated radial hemimelia",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q71.4",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.2",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Roberts syndrome": {
+   "orphacode": "3103",
+   "orphanet_name": "Roberts syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q73.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Symbrachydactyly": {
+   "orphacode": null,
+   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give",
+   "icd10_note": "ICD-10 has no code for symbrachydactyly as such."
+  },
+  "Syndactyly": {
+   "orphacode": "93458",
+   "orphanet_name": "Non-syndromic polydactyly, syndactyly and/or hyperphalangy",
+   "group": "Group of disorders",
+   "icd10": [
+    {
+     "code": "Q70",
+     "title": "Syndactyly",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+    }
+   ],
+   "icd11": []
+  },
+  "Terminal transverse limb defect": {
+   "orphacode": "498461",
+   "orphanet_name": "Non-syndromic terminal transverse limb defect",
+   "group": "Group of disorders",
+   "icd10": [
+    {
+     "code": "Q71.2",
+     "title": "Congenital absence of both forearm and hand",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q71.3",
+     "title": "Congenital absence of hand and finger(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q72.2",
+     "title": "Congenital absence of both lower leg and foot",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q72.3",
+     "title": "Congenital absence of foot and toe(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    }
+   ],
+   "icd11": []
+  },
+  "Tetra-amelia": {
+   "orphacode": "3301",
+   "orphanet_name": "Tetraamelia-multiple malformations syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Thrombocytopenia-absent radius (TAR)": {
+   "orphacode": "3320",
+   "orphanet_name": "Thrombocytopenia-absent radius syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q87.2",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.1Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Tibial aplasia–ectrodactyly": {
+   "orphacode": "3329",
+   "orphanet_name": "Tibial aplasia-ectrodactyly syndrome",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q73.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD26.0",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ]
+  },
+  "Tibial hemimelia": {
+   "orphacode": "93322",
+   "orphanet_name": "Isolated tibial hemimelia",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q72.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB9A.1",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Ulnar hemimelia": {
+   "orphacode": "93320",
+   "orphanet_name": "Isolated ulnar hemimelia",
+   "group": "Disorder",
+   "icd10": [
+    {
+     "code": "Q71.5",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LB99.3",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  }
+ }
+}

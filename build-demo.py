@@ -472,7 +472,7 @@ REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later
     "295000": "Amniotic band syndrome", "3258": "Cenani-Lenz syndrome", "2935": "Crossed polysyndactyly", "2440": "Ectrodactyly (SHFM)",
     "93323": "Fibular hemimelia", "392": "Holt-Oram syndrome", "2538": "Microgastria–limb reduction", "2879": "Phocomelia", "2911": "Poland syndrome",
     "2913": "Polydactyly", "93321": "Radial aplasia", "3103": "Roberts syndrome", "1570": "Symbrachydactyly", "93458": "Syndactyly",
-    "3301": "Tetra-amelia", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
+    "3301": "Tetra-amelia", "498461": "Terminal transverse limb defect", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
 
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
@@ -1755,6 +1755,7 @@ CONDITIONS = [
     ("Roberts syndrome", "symmetric limb reduction with growth delay (SC phocomelia).", 3103, "Roberts syndrome", "arms legs several", "reduction", "other", "genetic"),
     ("Symbrachydactyly", "short, webbed or missing fingers, usually on one hand; not inherited.", None, None, "arms", "reduction fusion", "limbsonly", "nongenetic"),
     ("Syndactyly", "webbing between two or more fingers or toes.", 93458, "Non-syndromic polydactyly, syndactyly and/or hyperphalangy", "arms legs", "fusion extra", "limbsonly", "genetic"),
+    ("Terminal transverse limb defect", "the limb forms and then stops: everything beyond one level is missing, most often the hand or the forearm, with the parts above it normally formed.", 498461, "Non-syndromic terminal transverse limb defect", "arms legs", "reduction", "limbsonly", "nongenetic"),
     ("Tetra-amelia", "absence of all four limbs, with other malformations.", 3301, "Tetraamelia-multiple malformations syndrome", "several", "reduction", "other", "genetic"),
     ("Thrombocytopenia-absent radius (TAR)", "absent radius with low platelet counts.", 3320, "Thrombocytopenia-absent radius syndrome", "arms", "reduction", "other", "genetic"),
     ("Tibial aplasia–ectrodactyly", "tibial deficiency together with split hand–foot.", 3329, "Tibial aplasia-ectrodactyly syndrome", "legs several", "reduction", "limbsonly", "genetic"),
@@ -1782,6 +1783,42 @@ def dataset_ld(name, desc, path, file, keywords, size):
             "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE + "/data/" + file}]}
 
 
+# ── ICD-10, as Orphanet maps it (tools/build-condition-icd.py) ───────────────
+# The ORPHAcode is the identifier a rare-disease registry uses; the ICD-10 code is the one a
+# hospital, a national registry and an insurer use, and the conditions page carried only the
+# first. Orphanet publishes the mapping together with its relation, and the relation is the
+# load-bearing part: Q87.2 is the ICD-10 code for four of these conditions at once, so quoting
+# it bare would tell a reader the four are the same thing.
+ICD_PATH = pathlib.Path(__file__).parent / "tools" / "condition-icd.json"
+ICD = json.loads(ICD_PATH.read_text(encoding="utf-8"))["conditions"] if ICD_PATH.exists() else {}
+
+
+def condition_icd_html(name):
+    """The ICD-10 line for a condition card, with one marker for where the codes come from.
+
+    No marker means Orphanet maps the condition to that code exactly. "broader" means Orphanet
+    maps it as narrower than the code, so the code covers more than this condition: Q87.2 alone
+    covers four of the conditions here. "classification" means Orphanet maps nothing and the code
+    is read from the classification itself, or from the CDC surveillance manual.
+    """
+    row = ICD.get(name) or {}
+    codes = row.get("icd10") or []
+    if not codes:
+        note = row.get("icd10_note")
+        return f'<p class="cond-icd">{note}</p>' if note else ""
+    rels = [str(e.get("relation", "")) for e in codes]
+    if any(r.startswith("classification") for r in rels):
+        src = next((e.get("source", "") for e in codes if e.get("source")), "")
+        mark = f'<span class="icd-rel" title="{src}">classification</span>'
+    elif all(r.startswith("E ") for r in rels):
+        mark = ""
+    else:
+        mark = ('<span class="icd-rel" title="Orphanet maps this condition as narrower than the ICD-10 '
+                'code, so the code covers more than this condition alone">broader</span>')
+    shown = " ".join(f'<code>{e["code"]}</code>' for e in codes)
+    return f'<p class="cond-icd">ICD-10 {shown}{mark}</p>'
+
+
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     if code:
         link = (f'<p class="src"><a href="{ORPHA_URL.format(code)}" target="_blank" '
@@ -1798,7 +1835,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
             if code and n_refs >= 3 else "")
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{link}{refs}</div>')
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -1819,6 +1856,7 @@ SOURCES = [
     ("Shin YH, Baek GH, Kim YJ, Kim MJ, Kim JK. Epidemiology of congenital upper limb anomalies in Korea: a nationwide population-based study. <em>PLoS One</em>. 2021;16(3):e0248105.", "https://doi.org/10.1371/journal.pone.0248105"),
     ("Orphanet. Orphadata, epidemiological data (product 9), release of 23 June 2026. Licence CC BY 4.0.", "https://www.orphadata.com/epidemiology/"),
     ("Gordillo M, Vega H, Jabs EW. ESCO2 Spectrum Disorder. In: GeneReviews. University of Washington, Seattle.", "https://www.ncbi.nlm.nih.gov/books/NBK1153/"),
+    ("Gnansia E, Michon L, Amar E, Estève J. Evidence for a cluster of rare birth defects in the Ain department (France). <em>Birth Defects Res</em>. 2021;113(13):1015-1025. States the general prevalence of unilateral isolated transverse upper-limb reduction as one case in 10,000 births.", "https://doi.org/10.1002/bdr2.1876"),
 ]
 
 def cite(*nums):
@@ -1829,6 +1867,7 @@ LITERATURE = {
     "Amelia": "1.41 per 100,000 births (326 cases in 23.1 million births, 20 registries, 1968-2006)" + cite(1) + "; Finland: 2.43 per 100,000 births, 0.63 per 100,000 live births (1993-2008)" + cite(2),
     "Amelia of the upper limb": "Upper limbs in 54% of single-limb amelia cases" + cite(1) + "; 26% of amelia cases in Finland" + cite(2),
     "Amelia of the lower limb": "Lower limbs in 70% of amelia cases in Finland" + cite(2),
+    "Terminal transverse limb defect": "About one case in 10,000 births for the unilateral isolated upper-limb form" + cite(13) + "; this is the commonest form of limb reduction and the defect behind the three French clusters",
     "Amniotic band syndrome": "Upper-limb defects from constriction bands: 51 in 753,342 births, about 0.7 per 10,000 (Finland)" + cite(6),
     "Brachydactyly": "Isolated forms are rare, except types A3 and D, which are common" + cite(5),
     "Ectrodactyly (SHFM)": "Central ray deficiency: 41 in 753,342 births, about 0.5 per 10,000 (Finland), consistent with Orphanet" + cite(6),
@@ -1958,6 +1997,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
       {"".join(condition_card(*c) for c in CONDITIONS)}
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
+    <p class="annex-note">Each card also carries its <strong>ICD-10</strong> code, which is what a hospital, a national registry and an insurer actually use, while the ORPHAcode is what a rare-disease registry uses. Two words qualify it, and they matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
@@ -2000,6 +2040,10 @@ DOT_RATES = [
      "A second Finnish population-based study, Syvänen and Raitio 2021, reports 12.2 per 100,000 "
      "(1.22 per 10,000 births) for the same country, so read this as a range of roughly 12 to 18."),
     ("Symbrachydactyly (undergrowth)", 12, "Finland", "measured", ""),
+    ("Terminal transverse limb defect", 10, "REMERA (Gnansia et al. 2021)", "reported",
+     "The figure REMERA states for the unilateral isolated upper-limb form, one case in 10,000 births. It is "
+     "a prevalence quoted in that paper rather than measured by it, and it does not cover every terminal "
+     "transverse defect, so read it as the order of magnitude for the commonest form."),
     ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe", "pooled", ""),
     ("Amniotic band syndrome", 5.3, "Orphanet, Europe", "pooled", ""),
     ("Ulnar hemimelia", 4.4, "Finland", "measured", ""),

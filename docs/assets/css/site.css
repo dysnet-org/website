@@ -1089,3 +1089,11 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
   border-radius: 0 0.5rem 0.5rem 0;
   font-size: var(--text-small); line-height: 1.45; color: #fff;
 }
+
+/* ICD-10 on a condition card. "broader" marks a mapping Orphanet calls narrower-than, where
+   the ICD code covers more than the condition: Q87.2 alone covers four of these. */
+.cond-icd { margin: 0.35rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-icd code { font-size: 0.82em; background: var(--dys-purple-soft); color: var(--dys-purple-text);
+                 padding: 0.1rem 0.35rem; border-radius: 0.3rem; }
+.cond-icd .icd-rel { font-size: var(--text-eyebrow); margin-left: 0.3rem; padding: 0.05rem 0.3rem;
+                     border: 1px solid var(--dys-line); border-radius: 0.3rem; cursor: help; }

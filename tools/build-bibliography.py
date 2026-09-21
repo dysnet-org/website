@@ -109,6 +109,19 @@ WEBSITE_SEED = {
     # anomalies from SINASC, on our exact conditions, that the standing queries had not reached.
     "38896746": (('epidemiology',), "Congenital anomalies of the upper limbs in Brazil, from the national live-birth system", "SINASC (datasus.saude.gov.br)"),
 }
+# A few papers state their condition in the abstract and not in the title, so no vocabulary
+# rule can reach them. Each one here is a judgement, recorded with the reason.
+CODE_SEED = {
+    # REMERA's Ain cluster and the Santé publique France investigation of all three French
+    # clusters. Both are unilateral isolated transverse upper-limb reduction, ICD-10 Q71.2 and
+    # Q71.3, which is ORPHA:498461. It is deliberately not ORPHA:294967: Orphanet maps that
+    # code exactly to Q71.0, complete absence of the upper limb, which is not what these are.
+    "33565281": ("498461", "unilateral isolated transverse upper-limb reduction, Q71.2 and Q71.3, per the paper"),
+    "38671254": ("498461", "the three French clusters, same defect and same ICD-10 codes"),
+}
+for pmid, (code, why) in CODE_SEED.items():
+    add(pmid, code, None, why, via="DysNet")
+
 for pmid, (topics, note, via) in WEBSITE_SEED.items():
     for topic in topics:
         add(pmid, None, topic, note, via=via)
@@ -143,7 +156,11 @@ for pmid in REVIEW_CITED:
 # ─── 3. Member association websites ─────────────────────────────────────────
 # Vocabulary of the conditions described on the site (keyword → ORPHAcode or None for the family).
 VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build-demo.py); None = the dysmelia family in general
-    (r"\btetra-?amelia\b", "3301"), (r"\bamelia\b", "1027"), (r"\bphocomelia\b", "2879"), (r"\bmeromelia\b", None), (r"\bhemimelia\b", None),
+    (r"\btetra-?amelia\b", "3301"),
+    (r"amelia of (the )?upper limb|upper[- ]limb amelia|isolated amelia of upper", "294967"),
+    (r"amelia of (the )?lower limb|lower[- ]limb amelia|isolated amelia of lower", "294969"),
+    (r"terminal transverse|transverse (upper|lower)[- ]limb (reduction|deficien|defect)|unilateral isolated transverse", "498461"),
+    (r"\bamelia\b", "1027"), (r"\bphocomelia\b", "2879"), (r"\bmeromelia\b", None), (r"\bhemimelia\b", None),
     (r"\bectrodactyly|split[- ]hand|split[- ]foot|cleft hand|\bSHFM\b", "2440"), (r"\bsymbrachydactyly", "1570"), (r"\bbrachydactyly", None),
     (r"crossed polysyndactyly", "2935"), (r"\bpolydactyly", "2913"), (r"\bsyndactyly", "93458"),
     (r"\bpoland\W{0,3}s?\s*(syndrome|anomaly|sequence)", "2911"), (r"adams[- ]oliver", "974"), (r"holt[- ]oram", "392"), (r"roberts syndrome|SC phocomelia", "3103"),

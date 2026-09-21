@@ -798,6 +798,7 @@ ol.objectives strong { color: var(--dys-green-text); }
 #worldmap .zone-clinical { fill: none; stroke: #86efac; stroke-width: 0.6; stroke-dasharray: 0.6 1; }
 #worldmap .zone-hospital { fill: rgba(253, 224, 71, 0.3); stroke: #fef08a; stroke-dasharray: 1.6 0.8; }
 .zone-popup .dp-main strong { color: #0369a1; }
+.zone-popup .dp-since { color: var(--dys-purple-text); }
 /* short or zoomed-in windows: keep the whole card visible */
 @media (min-width: 70rem) and (max-height: 60rem) {
   .map-panel h1 { font-size: var(--text-h2); }

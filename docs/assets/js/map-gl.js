@@ -318,25 +318,50 @@
   attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup");
 
   // ── registry coverage zones: hover for the registry, click to pin ───
+  // Outlines overlap: CULA North's clinical outline covers the whole of Germany and is drawn over the
+  // Saxony-Anhalt registry, LLPR covers all fifty states over the Texas and New York registries. Taking
+  // features[0] took whichever happened to be on top, so the registry that actually covers the ground
+  // under the pointer had no card at all: at Magdeburg the clinical outline suppressed the zone popup
+  // and the population registry suppressed the country tooltip, and nothing was shown. Choose instead:
+  // never a clinical outline, which the country tooltip names, and the most specific of the rest.
+  var SCOPE_RANK = { departement: 0, regional: 1, national: 2 };
+  function pickZone(e) {
+    var best = null, bestRank = 99;
+    (e.features || []).forEach(function (f) {
+      if (f.properties.status === "clinical") return;
+      var r = SCOPE_RANK[f.properties.scope];
+      if (r === undefined) r = 1;
+      if (r < bestRank) { best = f; bestRank = r; }
+    });
+    return best;
+  }
   function zoneHtml(e) {
-    var z = e.features[0].properties;
+    var picked = pickZone(e);
+    if (!picked) return "";
+    var z = picked.properties;
     // the same words the legend and the SVG fallback use, from ZONE_LABELS in build-demo.py
     var status = ((data.zoneLabels || {})[z.status] || {}).tip || z.status;
     var where = z.area || z.dep_name || "";
+    // the year the registry started collecting, where the register has sourced one
+    var since = z.since ? '<span class="dp-since">Collecting since ' + esc(z.since) + "</span>" : "";
     // The same two counts the registries page shows, so the map does not quote a third figure.
+    // Each clause has to stand on its own: the second used to read "13 found through it", whose
+    // subject was in a first clause that is absent whenever no paper rests on the registry.
     var rb = (data.regBib || {})[z.registry], bib = "";
     if (rb && (rb[0] || rb[1])) {
       var parts = [];
       if (rb[0]) parts.push(rb[0] + " paper" + (rb[0] > 1 ? "s" : "") + " in our bibliography rest" + (rb[0] > 1 ? "" : "s") + " on it");
-      if (rb[1]) parts.push(rb[1] + " found through it");
-      bib = '<p class="dp-sub">' + parts.join(", ") + ".</p>";
+      if (rb[1]) parts.push(rb[0]
+        ? rb[1] + " more " + (rb[1] > 1 ? "were" : "was") + " found through its own publication list"
+        : rb[1] + " paper" + (rb[1] > 1 ? "s" : "") + " in our bibliography " + (rb[1] > 1 ? "were" : "was") + " found through its own publication list");
+      bib = '<p class="dp-sub">' + parts.join(", and ") + ".</p>";
     }
     return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
-           '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + '</p>' + bib +
+           '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + (since ? '<br>' + since : '') + '</p>' + bib +
            '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }
   attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup", function (e) {
-    return e.features[0].properties.status !== "clinical";  // the country tooltip speaks for these
+    return !!pickZone(e);  // a clinical outline alone: the country tooltip speaks for it
   });
 
   // ── layer filter: what the visitor wants to see ─────────────────────

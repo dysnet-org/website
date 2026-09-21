@@ -129,6 +129,10 @@ for z in ZONES["zones"]:
         features.append({"type": "Feature", "geometry": simplify_geom(f["geometry"]),
                          "properties": {"registry": z["registry"], "label": z["label"], "country": z["country"], "status": z["status"], "dep": code,
                                         "area": f["properties"]["nom"], "dep_name": f["properties"]["nom"], "website": z.get("website"),
+                                        # how specific this outline is, so the map can choose between overlapping
+                                        # ones: a département registry beats a national one under the same pointer
+                                        "scope": "departement",
+                                        "since": z.get("since"),
                                         # the popup shows the short citation; the full one stays in the data file
                                         "source": ZONES.get("source_short") or ZONES.get("source", "")}})
 
@@ -158,6 +162,8 @@ for a in AREAS["areas"]:
         features.append({"type": "Feature", "geometry": g,
                          "properties": {"registry": a["registry"], "label": a["label"], "country": a["country"], "status": a["status"],
                                         "area": a["area"], "website": a.get("website") or a.get("orphanet_url"),
+                                        "scope": "regional" if (a.get("admin1") or a.get("region")) else "national",
+                                        "since": a.get("since"),
                                         "source": a.get("source_short") or a.get("source") or AREAS.get("source_short") or AREAS.get("source", "")}})
     print(f"  {a['registry']}: {len(picked)} polygon(s)")
 OUT.write_text(json.dumps({"type": "FeatureCollection", "features": features}, separators=(",", ":")), encoding="utf-8")

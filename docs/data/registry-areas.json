@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -42,20 +42,34 @@
    "match": [
     "Finnish Register of Congenital Malformations",
     "Finnish Registry of Congenital Malformations"
-   ]
+   ],
+   "since": "1963",
+   "source": "ICBDSR Annual Report 2014, programme description for Finland",
+   "source_short": "ICBDSR Annual Report 2014"
   },
   {
    "registry": "Saxony-Anhalt",
-   "label": "Saxony-Anhalt registry of congenital anomalies (EUROCAT)",
+   "label": "Malformation Monitoring Centre Saxony-Anhalt, Magdeburg (EUROCAT)",
    "orphanet_id": "59478",
    "country": "Germany",
    "iso3": "DEU",
    "admin1": [
     "Sachsen-Anhalt"
    ],
-   "area": "Saxony-Anhalt",
+   "area": "The Federal State of Saxony-Anhalt: about 17,100 live births a year, 2.6 per cent of Germany's",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59478"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59478",
+   "since": "1980",
+   "kind": "Population-based, regional, on parental consent; attached to the medical faculty of Otto-von-Guericke University Magdeburg and funded by the Land since 1995; a member of EUROCAT, EUROmediCAT and the ICBDSR",
+   "website": "https://www.angeborene-fehlbildungen.com/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Fehlbildungsmonitoring Sachsen-Anhalt, its own site, read 21 September 2026; ICBDSR Annual Report 2014, programme description: started in 1980 in the city of Magdeburg with 4,000 births a year, enlarged to the whole Federal State by 2000, notification from 27 maternity units, 24 paediatric departments, 10 prenatal diagnostic centres, 8 pathology services and 3 genetic units. Thirteen of the papers in our bibliography were found through its own publications list, more than through any other registry here.",
+   "source_short": "Fehlbildungsmonitoring Sachsen-Anhalt, its own site; ICBDSR Annual Report 2014",
+   "match": [
+    "Saxony-Anhalt",
+    "Sachsen-Anhalt",
+    "Malformation Monitoring Centre"
+   ]
   },
   {
    "registry": "Cork and Kerry",
@@ -115,7 +129,10 @@
    ],
    "area": "Campania",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/53567"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/53567",
+   "since": "1991",
+   "source": "ICBDSR Annual Report 2014, programme description for Italy-Campania: BDRCam",
+   "source_short": "ICBDSR Annual Report 2014"
   },
   {
    "registry": "ISMAC",
@@ -141,7 +158,10 @@
    ],
    "area": "Tuscany",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/498995"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/498995",
+   "since": "1979",
+   "source": "ICBDSR Annual Report 2014, programme description for Italy-Tuscany: RTDC",
+   "source_short": "ICBDSR Annual Report 2014"
   },
   {
    "registry": "EUROCAT Northern Netherlands",
@@ -156,7 +176,10 @@
    ],
    "area": "Groningen, Friesland and Drenthe",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/183949"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/183949",
+   "since": "1981",
+   "source": "ICBDSR Annual Report 2014, programme description for Northern Netherlands",
+   "source_short": "ICBDSR Annual Report 2014"
   },
   {
    "registry": "PRCM",
@@ -219,10 +242,12 @@
    ],
    "area": "Alberta",
    "status": "covered",
-   "source": "Bedard T, Lowry RB, Sibbald B, et al. Am J Med Genet A 2015;167A(11):2599-2609, doi:10.1002/ajmg.a.37240",
+   "source": "Bedard T, Lowry RB, Sibbald B, et al. Am J Med Genet A 2015;167A(11):2599-2609, doi:10.1002/ajmg.a.37240; ICBDSR Annual Report 2014, programme description for Canada-Alberta: ACASS",
    "match": [
     "Alberta Congenital Anomalies Surveillance"
-   ]
+   ],
+   "since": "1963",
+   "source_short": "ICBDSR Annual Report 2014"
   },
   {
    "registry": "LLPR",
@@ -236,7 +261,8 @@
    "website": "https://www.llpr.org/",
    "match": [
     "Limb Loss and Preservation"
-   ]
+   ],
+   "since": "2022"
   },
   {
    "registry": "BDRI / BIND",
@@ -251,7 +277,8 @@
    "match": [
     "Birth Defects Registry of India"
    ],
-   "source_short": "Kar 2025, J Community Genet; Birth Anomalies Network of India, 2026"
+   "source_short": "Kar 2025, J Community Genet; Birth Anomalies Network of India, 2026",
+   "since": "2001"
   },
   {
    "registry": "CoULD",
@@ -266,7 +293,8 @@
    "match": [
     "(CoULD"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2014"
   },
   {
    "registry": "AHDR",
@@ -285,7 +313,8 @@
     "Australian Hand Difference Register",
     "Congenital Upper Limb Difference Registry in Australia"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2017"
   },
   {
    "registry": "BSSH",
@@ -300,7 +329,8 @@
    "match": [
     "British Society for Surgery of the Hand"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2019"
   },
   {
    "registry": "CULA North",
@@ -315,7 +345,8 @@
    "match": [
     "CULA North"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2018"
   },
   {
    "registry": "CULA North",
@@ -330,7 +361,8 @@
    "match": [
     "CULA North"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2018"
   },
   {
    "registry": "CULA North",
@@ -345,7 +377,8 @@
    "match": [
     "CULA North"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2018"
   },
   {
    "registry": "CULA North",
@@ -360,7 +393,8 @@
    "match": [
     "CULA North"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2018"
   },
   {
    "registry": "CULA North",
@@ -375,7 +409,8 @@
    "match": [
     "CULA North"
    ],
-   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol",
+   "since": "2018"
   },
   {
    "registry": "CBDMN",
@@ -386,11 +421,12 @@
    "area": "A sample of reporting hospitals: 1.3 million births in 2009, over 8% of the national total",
    "status": "hospital",
    "website": "https://doi.org/10.1007/s12519-011-0326-0",
-   "source": "Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. World J Pediatr 2011;7(4):302-310, doi:10.1007/s12519-011-0326-0",
+   "source": "Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. World J Pediatr 2011;7(4):302-310, doi:10.1007/s12519-011-0326-0; the national network began in 1986 (same source)",
    "match": [
     "Chinese newborns"
    ],
-   "source_short": "Dai et al. 2011, World J Pediatr"
+   "source_short": "Dai et al. 2011, World J Pediatr",
+   "since": "1986"
   },
   {
    "registry": "ICBDSR",
@@ -750,7 +786,8 @@
    "match": [
     "EUROCAT"
    ],
-   "source_short": "Its member registries, listed here one by one from Orphanet"
+   "source_short": "Its member registries, listed here one by one from Orphanet",
+   "since": "1979"
   }
  ],
  "source_short": "Orphanet registry records; boundaries from Natural Earth"

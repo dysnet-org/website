@@ -310,13 +310,19 @@
     gz.setAttribute("class", "zones");
     svg.appendChild(gz);
     fetch(base + data.zonesUrl).then(function (r) { return r.json(); }).then(function (gj) {
-      gj.features.forEach(function (f) {
+      var RANK = { national: 0, regional: 1, departement: 2 };
+      gj.features.slice().sort(function (a, b) {
+        return (RANK[a.properties.scope] || 1) - (RANK[b.properties.scope] || 1);
+      }).forEach(function (f) {
         var d = "";
         (f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [f.geometry.coordinates]).forEach(function (poly) {
           poly.forEach(function (ring) { d += "M" + ring.map(function (c) { var q = project(c[0], c[1]); return q[0].toFixed(2) + "," + q[1].toFixed(2); }).join("L") + "Z"; });
         });
         var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
         path.setAttribute("d", d); path.setAttribute("class", "zone zone-" + f.properties.status);
+        // painted most general first, so a département or regional outline ends up on top of a
+        // national one and the pointer finds the registry that actually covers this ground
+        path.setAttribute("data-scope", f.properties.scope || "regional");
         // the French zones carry a département name, the others the area they record; the status words
         // are the ones the legend and the WebGL map use (ZONE_LABELS in build-demo.py)
         var zl = ((data.zoneLabels || {})[f.properties.status] || {}).tip || f.properties.status;

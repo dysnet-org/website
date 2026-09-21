@@ -467,12 +467,91 @@ def opener(num, label, heading, acc=None, big=False, toc=None):
     </div>"""
 
 
-REG_CODE_NAMES = {  # card names for our ORPHAcodes (CONDITIONS is defined later in this file)
-    "974": "Adams-Oliver syndrome", "1027": "Amelia", "294967": "Amelia of the upper limb", "294969": "Amelia of the lower limb",
-    "295000": "Amniotic band syndrome", "3258": "Cenani-Lenz syndrome", "2935": "Crossed polysyndactyly", "2440": "Ectrodactyly (SHFM)",
-    "93323": "Fibular hemimelia", "392": "Holt-Oram syndrome", "2538": "Microgastria–limb reduction", "2879": "Phocomelia", "2911": "Poland syndrome",
-    "2913": "Polydactyly", "93321": "Radial aplasia", "3103": "Roberts syndrome", "1570": "Symbrachydactyly", "93458": "Syndactyly",
-    "3301": "Tetra-amelia", "498461": "Terminal transverse limb defect", "3320": "TAR syndrome", "3329": "Tibial aplasia–ectrodactyly", "93322": "Tibial hemimelia", "93320": "Ulnar hemimelia"}
+_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+_UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
+          "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+
+
+def spell(n):
+    """Numbers under 100 in words, so a sentence can open on one; digits above that."""
+    if n >= 100: return f"{n:,}"
+    if n < 20: return _UNITS[n]
+    return _TENS[n // 10] + (f"-{_UNITS[n % 10]}" if n % 10 else "")
+
+
+# (name, description, ORPHAcode or None, Orphanet preferred name, limbs, type, other-signs)
+# Codes carried from the old dysnet.org encyclopedia, verified on Orphanet 2026-08-10.
+# The last three fields feed the condition finder (plain-language triage tags):
+#   limbs: arms / legs / several   type: reduction / fusion / extra / band   other: other / limbsonly
+ORPHA_URL = "https://www.orpha.net/en/disease/detail/{}"
+CONDITIONS = [
+    ("Adams-Oliver syndrome", "limb differences combined with scalp and skull defects.", 974, "Adams-Oliver syndrome", "arms legs several", "reduction", "other", "genetic"),
+    ("Amelia", "complete absence of one or more limbs.", 1027, "Autosomal recessive amelia", "arms legs several", "reduction", "limbsonly", "genetic"),
+    ("Amelia of the upper limb", "complete or near-complete absence of one or both arms, without other malformations.", 294967, "Isolated amelia of upper limb", "arms", "reduction", "limbsonly", "nongenetic"),
+    ("Amelia of the lower limb", "complete or near-complete absence of one or both legs, without other malformations.", 294969, "Isolated amelia of lower limb", "legs", "reduction", "limbsonly", "nongenetic"),
+    ("Amniotic band syndrome", "bands of amnion constrict developing limbs before birth.", 295000, "Amniotic band syndrome", "arms legs several", "band reduction", "limbsonly", "nongenetic"),
+    ("Brachydactyly", "disproportionately short fingers or toes.", None, None, "arms legs", "reduction", "limbsonly", "genetic"),
+    ("Cenani-Lenz syndrome", "fused fingers and forearm bones give the hand a mitten-like form.", 3258, "Cenani-Lenz syndrome", "arms", "fusion", "other limbsonly", "genetic"),
+    ("Crossed polysyndactyly", "combined webbing and extra digits on hands and feet.", 2935, "Crossed polysyndactyly", "arms legs several", "extra fusion", "limbsonly", "genetic"),
+    ("Ectrodactyly (SHFM)", "split hand–foot malformation of the central rays.", 2440, "Isolated split hand-split foot malformation", "arms legs", "reduction", "limbsonly", "genetic"),
+    ("Fibular hemimelia", "partial or complete absence of the fibula.", 93323, "Isolated fibular hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
+    ("Holt-Oram syndrome", "upper-limb differences with congenital heart defects.", 392, "Holt-Oram syndrome", "arms", "reduction", "other", "genetic"),
+    ("Microgastria–limb reduction", "a small stomach together with limb reduction defects.", 2538, "Microgastria-limb reduction defect syndrome", "arms several", "reduction", "other", "nongenetic"),
+    ("Phocomelia", "intercalary limb deficiency; the hands or feet attach close to the trunk.", 2879, "Phocomelia, Schinzel type", "arms legs several", "reduction", "other", "genetic"),
+    ("Poland syndrome", "underdeveloped chest muscle with hand differences on the same side.", 2911, "Poland syndrome", "arms", "reduction fusion", "other", "genetic nongenetic"),
+    ("Polydactyly", "more than the usual number of fingers or toes.", 2913, "Non-syndromic polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
+    ("Radial aplasia", "the radius is underdeveloped or absent.", 93321, "Isolated radial hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
+    ("Roberts syndrome", "symmetric limb reduction with growth delay (SC phocomelia).", 3103, "Roberts syndrome", "arms legs several", "reduction", "other", "genetic"),
+    ("Symbrachydactyly", "short, webbed or missing fingers, usually on one hand; not inherited.", None, None, "arms", "reduction fusion", "limbsonly", "nongenetic"),
+    ("Syndactyly", "webbing between two or more fingers or toes.", 93458, "Non-syndromic polydactyly, syndactyly and/or hyperphalangy", "arms legs", "fusion extra", "limbsonly", "genetic"),
+    ("Terminal transverse limb defect", "the limb forms and then stops: everything beyond one level is missing, most often the hand or the forearm, with the parts above it normally formed.", 498461, "Non-syndromic terminal transverse limb defect", "arms legs", "reduction", "limbsonly", "nongenetic"),
+    ("Tetra-amelia", "absence of all four limbs, with other malformations.", 3301, "Tetraamelia-multiple malformations syndrome", "several", "reduction", "other", "genetic"),
+    ("Thrombocytopenia-absent radius (TAR)", "absent radius with low platelet counts.", 3320, "Thrombocytopenia-absent radius syndrome", "arms", "reduction", "other", "genetic"),
+    ("Tibial aplasia–ectrodactyly", "tibial deficiency together with split hand–foot.", 3329, "Tibial aplasia-ectrodactyly syndrome", "legs several", "reduction", "limbsonly", "genetic"),
+    ("Tibial hemimelia", "deficiency of the tibia with an intact fibula.", 93322, "Isolated tibial hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
+    ("Ulnar hemimelia", "partial or complete absence of the ulna.", 93320, "Isolated ulnar hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
+]
+
+
+# Card names for our ORPHAcodes, derived from CONDITIONS so that a condition added there reaches the
+# bibliography's labels, the coverage tables and the map in the same build. Two entries are set by
+# hand: the short label the epidemiology tables use for TAR, and ORPHA:1570, the only Orphanet entity
+# for symbrachydactyly, which the card describes without carrying as its own code.
+REG_CODE_NAMES = {str(c[2]): c[0] for c in CONDITIONS if c[2]}
+REG_CODE_NAMES["3320"] = "TAR syndrome"
+REG_CODE_NAMES["1570"] = "Symbrachydactyly"
+REG_CODE_NAMES = dict(sorted(REG_CODE_NAMES.items(), key=lambda kv: kv[1].lower()))
+
+
+MEMBERS = [
+    ("Australia", [("Aussiehands", "https://aussiehands.org/"), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com")]),
+    ("Austria", [("Contergan Austria", None)]),
+    ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
+    ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
+    ("France", [("Assedea", "https://www.assedea.fr")]),
+    ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de", "https://contergan-hessen.de/helfen/")]),
+    ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
+    ("Italy", [("Raggiungere", "https://www.raggiungere.it", "https://www.raggiungere.it/index.php/come-aiutarci-2020/331-donazioni"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
+    ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
+    ("Norway", [("Den Norske Thalidomide Forening", None)]),
+    ("Spain", [("AVITE", "https://www.avite.org")]),
+    ("Sweden", [("FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)", "https://www.thalidomide.org/", "https://www.thalidomide.org/web/kontakt/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Väst/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
+    ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org"), ("Steps Charity", "https://steps-charity.org.uk/")]),
+]
+
+# Every sentence that counts the members is computed from MEMBERS, so a change to the list reaches
+# the home page, the members page and its description in the same build. A member in a country
+# this table does not know stops the build rather than being counted on the wrong continent.
+CONTINENT = {"Australia": "Oceania", "Chile": "South America", "Canada": "North America", "United States": "North America",
+             **{c: "Europe" for c in ("Austria", "Belgium", "Denmark", "Finland", "France", "Germany", "Ireland", "Italy",
+                                      "Netherlands", "Norway", "Poland", "Portugal", "Spain", "Sweden", "Switzerland", "United Kingdom")}}
+_unmapped = sorted({c for c, _ in MEMBERS} - set(CONTINENT))
+if _unmapped:
+    raise SystemExit(f"CONTINENT has no entry for {_unmapped}; add it so the member counts stay right")
+MEMBER_STATS = {"orgs": sum(len(v) for _, v in MEMBERS), "countries": len({c for c, _ in MEMBERS}),
+                "continents": len({CONTINENT[c] for c, _ in MEMBERS})}
+MEMBER_SENTENCE = (f"{spell(MEMBER_STATS['orgs'])} organisations across {spell(MEMBER_STATS['countries'])} countries, "
+                   f"on {spell(MEMBER_STATS['continents'])} continents")
 
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
@@ -581,6 +660,11 @@ RES_PATH = pathlib.Path(__file__).parent / "tools" / "researchers.json"
 RESEARCHERS = json.loads(RES_PATH.read_text(encoding="utf-8")) if RES_PATH.exists() else {"teams": []}
 REG_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-registries.json"
 ORPHA_REGS = json.loads(REG_PATH.read_text(encoding="utf-8")) if REG_PATH.exists() else {"registries": []}
+# How the registries relate to our conditions, counted here so the demands page and the register
+# page quote the same split whenever the Orphanet records are refreshed.
+REG_SPLIT = {"total": len(ORPHA_REGS.get("registries", [])),
+             "direct": sum(1 for r in ORPHA_REGS.get("registries", []) if r.get("direct"))}
+REG_SPLIT["other"] = REG_SPLIT["total"] - REG_SPLIT["direct"]
 
 
 def researchers_html():
@@ -936,7 +1020,7 @@ __MAP_HERO__
 <section>
   <div class="container">
     {opener("04", "The network", "Our members are the associations families actually belong to.")}
-    <p>From Reach in the UK and Raggiungere in Italy to Aussiehands in Australia and AVITE in Spain: more than thirty organisations across fourteen countries, on four continents.</p>
+    <p>From Reach in the UK and Raggiungere in Italy to Aussiehands in Australia and AVITE in Spain: {MEMBER_SENTENCE}.</p>
     <p style="margin-top:var(--space-3)"><a class="btn btn-ghost" href="/about/members/">Meet the member associations</a></p>
   </div>
 </section>
@@ -1088,18 +1172,6 @@ if REG_SITES_PATH.exists():
 REG_AREAS = json.loads((pathlib.Path(__file__).parent / "tools" / "registry-areas.json").read_text(encoding="utf-8"))["areas"]
 
 
-_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
-_UNITS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
-          "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
-
-
-def spell(n):
-    """Numbers under 100 in words, so a sentence can open on one; digits above that."""
-    if n >= 100: return f"{n:,}"
-    if n < 20: return _UNITS[n]
-    return _TENS[n // 10] + (f"-{_UNITS[n % 10]}" if n % 10 else "")
-
-
 def drawn_zones():
     """What the registry-coverage layer holds, counted from the two files that define it: the
     French registries by département, everything else by the area it records. The register page
@@ -1151,8 +1223,9 @@ def registry_evidence():
         label0 = a["label"].split(":")[0].strip().lower()
         found = [e for e in entries
                  if any(key.lower() in v.lower() or (len(label0) > 6 and label0 in v.lower()) for v in e.get("via", []))]
-        if names or found:
-            out[key] = {"names": names, "found": found, "area": a}
+        # Listed even with nothing on either side: the note under the table says a dash is worth
+        # seeing, and a row that is dropped cannot be seen.
+        out[key] = {"names": names, "found": found, "area": a}
     return out
 
 
@@ -1342,7 +1415,7 @@ def registries_html():
     </div>
     <p>Three of the seven publish a declaration form for families as well as for clinicians: REMERA in Rhône-Alpes, REMACOR in La Réunion and ReMaBreizh in Brittany each open their reporting page with the words “parent or practitioner”. Families are not only counted by these registries, they can address them directly.</p>
     <p>REMERA is also the only one that publishes figures for limbs. It puts the prevalence of limb reduction anomalies in the départements it watches at 8.7 per 10,000 births in 2020, and isolated unilateral transverse agenesis of the upper limb at 0.53 per 10,000 in 2017. Its own analysis of the Ain cluster, published in 2021, found 8 such cases among the 8,204 births between 2009 and 2014 inside a circle of 16.24 km, where 0.82 were expected.</p>
-    <p class="annex-note">Sources: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>; the registries&rsquo; own websites, read 13 September 2026; Gnansia E, Michon L, Amar E, et al. <em>Birth Defects Res</em> 2021;113(13):1015-1025, <a href="https://doi.org/10.1002/bdr2.1876" target="_blank" rel="noopener external">doi:10.1002/bdr2.1876</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths. <a href="/data/registries.json">Download the registries data (JSON, CC BY 4.0)</a>.</p>
+    <p class="annex-note">Sources: <a href="{fr.get("source_url", "")}" target="_blank" rel="noopener external">{fr.get("source", "")}</a>; the registries&rsquo; own websites, read 13 September 2026; Gnansia E, Michon L, Amar E, et al. <em>Birth Defects Res</em> 2021;113(13):1015-1025, <a href="https://doi.org/10.1002/bdr2.1876" target="_blank" rel="noopener external">doi:10.1002/bdr2.1876</a>. * Estimate of the births the registry would have covered had it been operating in 2019-2021. Live births and stillbirths. Download the data (JSON, CC BY 4.0): <a href="/data/registries.json">the {REG_SPLIT["total"]} Orphanet registry records</a>, <a href="/data/registry-areas.json">the registries and surveillance systems drawn beyond them</a>, and <a href="/data/registry-zones.json">the French registries by d&eacute;partement</a>.</p>
 """ if fr else ""
     return f"""
     <div class="tick"></div>
@@ -1796,7 +1869,7 @@ PAGES["/knowledge/registries/"] = {
         ICD-10 code G70.2 at least three times between 1 January 2015 and 22 May 2024, and analysed the years 2016 to 2023.
         It identified <strong>406 patients</strong> across the country. The state insurance covers most of the population,
         so the denominator is close to national.</p>
-        <p>Every one of the 25 conditions on our <a href="/knowledge/understanding-dysmelia/">conditions page</a> now
+        <p>Every one of the {len(CONDITIONS)} conditions on our <a href="/knowledge/understanding-dysmelia/">conditions page</a> now
         carries its ICD-10 code, which means the same query could be run for limb difference in T&uuml;rkiye the day
         somebody asks for it. The limits deserve saying in the same breath. A count of codes holds no phenotype, no
         laterality, no consent and no follow-up, a family cannot see or correct its own entry, and a coding error is
@@ -2044,38 +2117,6 @@ PAGES["/knowledge/teratogens/"] = {
 """,
 }
 
-# (name, description, ORPHAcode or None, Orphanet preferred name, limbs, type, other-signs)
-# Codes carried from the old dysnet.org encyclopedia, verified on Orphanet 2026-08-10.
-# The last three fields feed the condition finder (plain-language triage tags):
-#   limbs: arms / legs / several   type: reduction / fusion / extra / band   other: other / limbsonly
-ORPHA_URL = "https://www.orpha.net/en/disease/detail/{}"
-CONDITIONS = [
-    ("Adams-Oliver syndrome", "limb differences combined with scalp and skull defects.", 974, "Adams-Oliver syndrome", "arms legs several", "reduction", "other", "genetic"),
-    ("Amelia", "complete absence of one or more limbs.", 1027, "Autosomal recessive amelia", "arms legs several", "reduction", "limbsonly", "genetic"),
-    ("Amelia of the upper limb", "complete or near-complete absence of one or both arms, without other malformations.", 294967, "Isolated amelia of upper limb", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Amelia of the lower limb", "complete or near-complete absence of one or both legs, without other malformations.", 294969, "Isolated amelia of lower limb", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Amniotic band syndrome", "bands of amnion constrict developing limbs before birth.", 295000, "Amniotic band syndrome", "arms legs several", "band reduction", "limbsonly", "nongenetic"),
-    ("Brachydactyly", "disproportionately short fingers or toes.", None, None, "arms legs", "reduction", "limbsonly", "genetic"),
-    ("Cenani-Lenz syndrome", "fused fingers and forearm bones give the hand a mitten-like form.", 3258, "Cenani-Lenz syndrome", "arms", "fusion", "other limbsonly", "genetic"),
-    ("Crossed polysyndactyly", "combined webbing and extra digits on hands and feet.", 2935, "Crossed polysyndactyly", "arms legs several", "extra fusion", "limbsonly", "genetic"),
-    ("Ectrodactyly (SHFM)", "split hand–foot malformation of the central rays.", 2440, "Isolated split hand-split foot malformation", "arms legs", "reduction", "limbsonly", "genetic"),
-    ("Fibular hemimelia", "partial or complete absence of the fibula.", 93323, "Isolated fibular hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Holt-Oram syndrome", "upper-limb differences with congenital heart defects.", 392, "Holt-Oram syndrome", "arms", "reduction", "other", "genetic"),
-    ("Microgastria–limb reduction", "a small stomach together with limb reduction defects.", 2538, "Microgastria-limb reduction defect syndrome", "arms several", "reduction", "other", "nongenetic"),
-    ("Phocomelia", "intercalary limb deficiency; the hands or feet attach close to the trunk.", 2879, "Phocomelia, Schinzel type", "arms legs several", "reduction", "other", "genetic"),
-    ("Poland syndrome", "underdeveloped chest muscle with hand differences on the same side.", 2911, "Poland syndrome", "arms", "reduction fusion", "other", "genetic nongenetic"),
-    ("Polydactyly", "more than the usual number of fingers or toes.", 2913, "Non-syndromic polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Radial aplasia", "the radius is underdeveloped or absent.", 93321, "Isolated radial hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Roberts syndrome", "symmetric limb reduction with growth delay (SC phocomelia).", 3103, "Roberts syndrome", "arms legs several", "reduction", "other", "genetic"),
-    ("Symbrachydactyly", "short, webbed or missing fingers, usually on one hand; not inherited.", None, None, "arms", "reduction fusion", "limbsonly", "nongenetic"),
-    ("Syndactyly", "webbing between two or more fingers or toes.", 93458, "Non-syndromic polydactyly, syndactyly and/or hyperphalangy", "arms legs", "fusion extra", "limbsonly", "genetic"),
-    ("Terminal transverse limb defect", "the limb forms and then stops: everything beyond one level is missing, most often the hand or the forearm, with the parts above it normally formed.", 498461, "Non-syndromic terminal transverse limb defect", "arms legs", "reduction", "limbsonly", "nongenetic"),
-    ("Tetra-amelia", "absence of all four limbs, with other malformations.", 3301, "Tetraamelia-multiple malformations syndrome", "several", "reduction", "other", "genetic"),
-    ("Thrombocytopenia-absent radius (TAR)", "absent radius with low platelet counts.", 3320, "Thrombocytopenia-absent radius syndrome", "arms", "reduction", "other", "genetic"),
-    ("Tibial aplasia–ectrodactyly", "tibial deficiency together with split hand–foot.", 3329, "Tibial aplasia-ectrodactyly syndrome", "legs several", "reduction", "limbsonly", "genetic"),
-    ("Tibial hemimelia", "deficiency of the tibia with an intact fibula.", 93322, "Isolated tibial hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Ulnar hemimelia", "partial or complete absence of the ulna.", 93320, "Isolated ulnar hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
-]
 
 
 def conditions_ld():
@@ -2188,11 +2229,15 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # one paper on symbrachydactyly carries five codes, and ORPHA:498461 carries 50 references
     # of which about a dozen name it in the title. Loïc chose the broad reading on 21 September
     # 2026, having been shown both figures. Do not narrow it to title matches as a bug fix.
-    n_refs = sum(1 for e in BIB.get("entries", []) if str(code) in e.get("codes", []))
-    refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
-            if code and n_refs >= 3 else "")
+    # A card with no code of its own still has literature and coverage under the code the name table
+    # gives its name: symbrachydactyly, under ORPHA:1570. Without this the thirteen papers tagged
+    # 1570 were reachable from the bibliography's filter and from nowhere else.
+    ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
+    n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
+    refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references in the bibliography &rarr;</a></p>'
+            if ref_code and n_refs >= 3 else "")
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{condition_registries_html(code)}{link}{refs}</div>')
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{condition_registries_html(ref_code)}{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -3157,8 +3202,8 @@ REGISTRY_AUDIENCES = [
       ("Align on what you collect",
        "Two national figures cannot be set side by side when each counts a different thing. We want a "
        "common definition of what is recorded, so that a comparison is a comparison. "
-       'Of the <a href="/knowledge/registries/">72 registries</a> that record our conditions, 22 name a '
-       "condition itself; the other 50 capture it only inside a broader group."),
+       f'Of the <a href="/knowledge/registries/">{REG_SPLIT["total"]} registries</a> that record our conditions, {REG_SPLIT["direct"]} name a '
+       f"condition itself; the other {REG_SPLIT['other']} capture it only inside a broader group."),
       ("What you would get",
        "Figures that can honestly be compared with your neighbours', cases described from the patient's "
        "own side, including people who never reach your catchment area, and a proactive answer to the "
@@ -4091,22 +4136,6 @@ PAGES["/about/"] = {
 # member pages plus known member sites, each verified reachable on 2026-08-18.
 # Unreachable sites (taionlus.org, vitachi.cl, ITSS on webs.com, aussiehands,
 # neurosedyn.se, steps-charity) deliberately stay unlinked until confirmed.
-MEMBERS = [
-    ("Australia", [("Aussiehands", "https://aussiehands.org/"), ("Thalidomide Australia", "https://thalidomidegroupaustralia.com")]),
-    ("Austria", [("Contergan Austria", None)]),
-    ("Belgium", [("A.V.S.B.", None), ("Dysmelia ASBL", "https://www.facebook.com/DysmeliaBelgium")]),
-    ("Chile", [("Vitachi – Talidomida en Chile", "https://www.facebook.com/Vitachi2015/")]),
-    ("France", [("Assedea", "https://www.assedea.fr")]),
-    ("Germany", [("Contergan NRW", "https://www.contergan-nrw.eu/"), ("HICOHA Hamburg", "https://www.hicoha.de/"), ("Interessenverband Contergangeschädigter, Köln", "http://www.conterganverband-koeln.de/"), ("Contergangeschädigte Hessen", "https://www.contergan-hessen.de", "https://contergan-hessen.de/helfen/")]),
-    ("Ireland", [("Irish Thalidomide Survivors Society", "https://irish-thalidomide.blogspot.com/")]),
-    ("Italy", [("Raggiungere", "https://www.raggiungere.it", "https://www.raggiungere.it/index.php/come-aiutarci-2020/331-donazioni"), ("Thalidomidici Italiani (TAI onlus)", "https://www.taionlus.it/"), ("V.I.TA – Vittime Talidomide Italia", "https://www.vittimetalidomideitalia.it"), ("AISP – Sindrome di Poland", "https://www.sindromedipoland.org/")]),
-    ("Netherlands", [("Stichting NESOS", "https://www.softenon.nl")]),
-    ("Norway", [("Den Norske Thalidomide Forening", None)]),
-    ("Spain", [("AVITE", "https://www.avite.org")]),
-    ("Sweden", [("FfdN, the Swedish Thalidomide Society (Föreningen för de Neurosedynskadade)", "https://www.thalidomide.org/", "https://www.thalidomide.org/web/kontakt/"), ("FfdN Stockholm", "https://www.thalidomide.org/web/ffdn-stockholm-1/"), ("FfdN Väst/Skåne", "https://www.thalidomide.org/web/ffdn-vastsverigeskane/"), ("Svensk Dysmeliförening", "https://www.dysmeli.se")]),
-    ("United Kingdom", [("Thalidomide Trust", "https://thalidomidetrust.org"), ("Reach", "https://www.reach.org.uk/", "https://www.reach.org.uk/support-us"), ("In Our Hands", None), ("PiP UK", "https://www.pip-uk.org"), ("Thalidomide Society", "https://thalidomidesociety.org"), ("Steps Charity", "https://steps-charity.org.uk/")]),
-]
-
 
 # ─────────────── Landing map: registry participants by country ───────────────
 # ISO 3166-1 numeric ids (as used by Natural Earth / world-atlas).
@@ -4140,10 +4169,41 @@ for _a in REG_AREAS:
         if _a["registry"] not in CLINICAL_BY_COUNTRY[_a["country"]]:
             CLINICAL_BY_COUNTRY[_a["country"]].append(_a["registry"])
 
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+# ── The dot tiles' own ladder ──────────────────────────────────────────────────────────────
+# Each dot in docs/assets/map/dots.pmtiles carries b, its rank on the ladder of thresholds the tiles
+# were built with, and tools/build-pop-dots.py writes that ladder to dots-ladder.json beside them.
+# The map must rank a condition on THAT ladder and not on today's DOT_RATES: between the tiles of
+# 14 September and 21 September DOT_RATES gained four thresholds, and every condition was drawn at
+# the wrong rank. A rate the tiles do not hold is drawn at the nearest lower step, and the legend
+# says so, until the tiles are rebuilt.
+DOT_LADDER = json.loads((pathlib.Path(__file__).parent / "docs" / "assets" / "map" / "dots-ladder.json").read_text(encoding="utf-8"))["thresholds"]
+_off_ladder = sorted({round(r * 100) for _, r, *_ in DOT_RATES if r is not None} - set(DOT_LADDER))
+if _off_ladder:
+    print(f"WARNING: DOT_RATES holds thresholds the dot tiles were not built with: {_off_ladder}. Those conditions "
+          "are drawn at the nearest lower step until the tiles are rebuilt: python3 tools/build-pop-dots.py "
+          "tools/ghs/<GHS-POP GeoTIFF> && bash tools/build-pop-tiles.sh")
 
-# Injected into the home page at build time (placeholder __MAP_HERO__), because
-# it needs MEMBERS, which is defined after the home page body.
+# One set of words for a registry zone's status, read by the legend, the WebGL map and the SVG
+# fallback alike. A drawn status this table does not name stops the build.
+ZONE_LABELS = {
+    "covered": {"css": "l-zone", "legend": "Area covered by a registry that records our conditions",
+                "tip": "Covered by a population-based registry of congenital anomalies"},
+    "in_progress": {"css": "l-zone-progress", "legend": "Area a registry is starting to cover",
+                    "tip": "Registry starting to cover this area"},
+    "clinical": {"css": "l-zone-clinical", "legend": "Country where a clinical registry recruits",
+                 "tip": "A clinical registry recruiting here, not population coverage"},
+    "hospital": {"css": "l-zone-hospital", "legend": "Hospital-based surveillance of births",
+                 "tip": "Hospital-based surveillance sampling births, not every birth"},
+}
+_drawn_statuses = ({a["status"] for a in REG_AREAS if a.get("map", True)}
+                   | {z["status"] for z in json.loads((pathlib.Path(__file__).parent / "tools" / "registry-zones.json").read_text(encoding="utf-8"))["zones"]})
+if _drawn_statuses - set(ZONE_LABELS):
+    raise SystemExit(f"ZONE_LABELS has no words for the drawn status {_drawn_statuses - set(ZONE_LABELS)}")
+
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False)
+
+# Injected into the home page at build time (placeholder __MAP_HERO__): it needs the map data
+# assembled below, which the home page body is written before.
 MAP_HERO = """
 <section class="map-hero" id="map" aria-label="The DysNet network on the world map">
   <div id="worldmap"></div>
@@ -4196,10 +4256,7 @@ MAP_HERO = """
     <span class="l-candidate" data-layer="members">Piloting the registry (Assedea, Raggiungere)</span>
     <span class="l-contact" data-layer="members">Contact opened</span>
     <span class="l-office" data-layer="offices">DysNet office</span>
-    <span class="l-zone" data-layer="zones">Area covered by a registry that records our conditions</span>
-    <span class="l-zone-progress" data-layer="zones">Area a registry is starting to cover</span>
-    <span class="l-zone-clinical" data-layer="zones">Country where a clinical registry recruits</span>
-    <span class="l-zone-hospital" data-layer="zones">Hospital-based surveillance of births</span>
+    __ZONE_LEGEND__
     <span class="l-centre" data-layer="centres">Care centre named by a member association or verified from its own institutional page (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
@@ -4215,6 +4272,8 @@ MAP_HERO = """
   <script src="/assets/js/map-gl.js?v=__MAPGL_V__"></script>
 </section>
 """.replace("__MAP_DATA__", MAP_DATA).replace("__MAPGL_V__", __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/js/map-gl.js").read_bytes()).hexdigest()[:8])
+# the legend's zone rows come from ZONE_LABELS, the same words the two maps use for a zone's status
+MAP_HERO = MAP_HERO.replace("__ZONE_LEGEND__", "\n    ".join(f'<span class="{v["css"]}" data-layer="zones">{v["legend"]}</span>' for v in ZONE_LABELS.values()))
 
 
 # Notes printed under a country's list, where the list alone would mislead.
@@ -4310,7 +4369,7 @@ def member_li(entry):
 
 PAGES["/about/members/"] = {
     "title": "Member associations",
-    "desc": "The national associations families belong to: thirty limb-difference and thalidomide organisations across fourteen countries, on four continents.",
+    "desc": f"The national associations families belong to: {spell(MEMBER_STATS['orgs'])} limb-difference and thalidomide organisations across {spell(MEMBER_STATS['countries'])} countries, on {spell(MEMBER_STATS['continents'])} continents.",
     "crumbs": [("/about/", "About"), ("/about/members/", "Member associations")],
     "body": f"""
 <section>
@@ -4800,7 +4859,7 @@ EXTRA_LD = {
     "/about/": lambda: [{"@context": "https://schema.org", "@graph": PEOPLE_LD}],
     "/knowledge/teratogens/": lambda: [dataset_ld("Substances and products with effects on the unborn child (DysNet teratogens register)", "Substances classified for developmental toxicity in the EU harmonised classification (CLP Annex VI), the Japanese government's GHS classification (NITE), developmental toxicants on California's Proposition 65 list, medicines under EMA pregnancy prevention programmes, alcohol and tobacco; with source, level of evidence, regulatory status per jurisdiction, and the decisions authorities have taken: EU pesticide approvals and refusals, REACH restrictions, treaty bans and national bans.", "/knowledge/teratogens/", "teratogens.json", ["teratogens", "developmental toxicity", "reproductive toxicity", "CLP", "Proposition 65", "pregnancy"], f"{TERA.get('counts', {}).get('total', 0)} substances")],
 }
-DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
+DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json", "bibliography.json": "bibliography.json", "registries.json": "orphanet-registries.json", "registry-areas.json": "registry-areas.json", "care-centres.json": "care-centres.json", "researchers.json": "researchers.json", "registry-zones.json": "registry-zones.json"}
 
 
 def build():
@@ -4930,6 +4989,14 @@ def build():
              "- Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).",
              "- Corrections, additions and questions: info@dysnet.org.",
              f"- Last built: {__import__('time').strftime('%Y-%m-%d')}.", ""]
+    # Every page the site builds, so that a page added to PAGES is never missing here. The curated
+    # sections above keep their richer wording; this lists what they have not already named.
+    mentioned = set(re.findall(r"\]\(" + re.escape(SITE) + r"(/[^)?#]*)", "\n".join(llms)))
+    rest = [f"- [{PAGES[p]['title']}]({SITE}{p}): {PAGES[p]['desc']}" for p in sorted(PAGES)
+            if p not in mentioned and p not in ("/", "/404/")]
+    if rest:
+        at = llms.index("## Licence and contact")
+        llms[at:at] = ["## Every other page", ""] + rest + [""]
     (ROOT / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
 
     print(f"Built {len(written)} pages:")

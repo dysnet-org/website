@@ -14,14 +14,20 @@ share r/100 of base dots, i.e. those with u < r*100. On the finest layer each ke
 then stands for exactly one estimated person (pop/1000 * r/100 = pop*r/100000); on coarser
 layers for 10, 100 and 1,000 people respectively.
 
-u is not stored. Only the 17 thresholds round(r*100) of build-demo.py's DOT_RATES can ever
-be compared against it, so each dot instead carries b = the rank of the lowest threshold
+u is not stored. Only the distinct thresholds round(r*100) of build-demo.py's DOT_RATES can
+ever be compared against it, so each dot instead carries b = the rank of the lowest threshold
 that admits it (bisect_right over the sorted distinct thresholds). The site keeps dots with
 b <= rank(condition), which selects exactly the same dots. This costs one byte per dot in
-place of a two-byte index into a 10,000-entry per-tile dictionary, and lets the 16% of dots
-above the highest threshold -- which no condition could ever draw -- be dropped outright.
-Together that is about 60% of the tileset. Adding a condition changes the ladder, so the
-dot layers and tiles must be rebuilt whenever DOT_RATES gains an entry.
+place of a two-byte index into a 10,000-entry per-tile dictionary, and lets the dots above
+the highest threshold -- which no condition could ever draw -- be dropped outright.
+Together that is about 60% of the tileset.
+
+The ladder travels with the tiles: this script writes it to docs/assets/map/dots-ladder.json,
+build-demo.py embeds it in the map data, and map-gl.js ranks a condition against it. Ranking
+against today's DOT_RATES instead is what went wrong in September 2026, when DOT_RATES gained
+four thresholds after the tiles were built and every condition was drawn at the wrong rank.
+Adding a rate the ladder lacks now draws it at the nearest lower step, with a note in the
+legend, until this script and build-pop-tiles.sh are run again.
 
 Deterministic (seeded), so the map does not shuffle between builds.
 Run:  python3 tools/build-pop-dots.py tools/ghs/GHS_POP_*.tif
@@ -49,7 +55,8 @@ def thresholds():
         if isinstance(node, ast.Assign) and any(
             isinstance(t, ast.Name) and t.id == "DOT_RATES" for t in node.targets
         ):
-            return sorted({round(r * 100) for _, r, _ in ast.literal_eval(node.value)})
+            # rows are (label, rate, source, basis, note); a rate of None means no published figure
+            return sorted({round(row[1] * 100) for row in ast.literal_eval(node.value) if row[1] is not None})
     raise SystemExit("DOT_RATES not found in build-demo.py")
 
 
@@ -139,6 +146,15 @@ def main():
     }
     (OUT / "stats.json").write_text(json.dumps(
         {"source": src, "world_population": world, "thresholds": T.tolist(), "dots": stats}, indent=1))
+    # The ladder beside the tiles, for build-demo.py and the map. Written here, and only here, so
+    # the two can never come from different runs.
+    import datetime
+    (ROOT / "docs" / "assets" / "map" / "dots-ladder.json").write_text(json.dumps({
+        "thresholds": T.tolist(),
+        "unit": "birth prevalence per 100,000 x 100, rounded; a dot's b is the index of the lowest threshold that admits it",
+        "tiles": "docs/assets/map/dots.pmtiles",
+        "built": datetime.date.today().isoformat(),
+        "from": "DOT_RATES in build-demo.py at the time of this run; rebuild the tiles with tools/build-pop-tiles.sh from the same run"}, indent=1) + "\n", encoding="utf-8")
     print("done", stats)
 
 

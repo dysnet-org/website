@@ -16,21 +16,31 @@
   } catch (e) { return; }
 
   // Dots carry b = the rank of the lowest prevalence threshold that admits them, not the raw
-  // u they were drawn with (see tools/build-pop-dots.py). Rebuilding the same ladder here from
-  // data.rates turns a selected condition into the rank to compare against.
-  var DOT_THRESHOLDS = (data.rates || []).map(function (r) { return Math.round(r[1] * 100); })
-    .filter(function (v, i, a) { return a.indexOf(v) === i; })
-    .sort(function (x, y) { return x - y; });
+  // u they were drawn with (see tools/build-pop-dots.py). The ladder of thresholds travels with
+  // the tiles (dots-ladder.json, embedded as data.dotLadder), and a condition is ranked on THAT
+  // ladder. Rebuilding it from today's rates was the bug of September 2026: DOT_RATES grew after
+  // the tiles were built, every rank shifted, and the map drew the wrong dots for every condition.
+  var LADDER = data.dotLadder || [];
   // A condition nobody has measured has no rate to filter on. It stays in the list, and
   // selecting it clears the dots and says why, rather than being dropped from the menu.
   function estimable(r) { return r && r[1] !== null && r[1] !== undefined && r[1] !== ""; }
-
-  function dotFilter(rateIndex) {
-    var r = data.rates[rateIndex];
-    if (!estimable(r)) return ["==", ["get", "b"], -1];   // matches nothing
-    var t = Math.round(r[1] * 100);
-    return ["<=", ["get", "b"], DOT_THRESHOLDS.indexOf(t)];
+  // The highest ladder step at or below the condition's rate, or -1 when there is none. A rate the
+  // tiles hold exactly gets its own step; one they do not is drawn at the nearest lower step, and
+  // stepNote() says so in the legend until the tiles are rebuilt.
+  function stepFor(r) {
+    if (!estimable(r)) return -1;
+    var t = Math.round(r[1] * 100), k = -1;
+    for (var i = 0; i < LADDER.length && LADDER[i] <= t; i++) k = i;
+    return k;
   }
+  function stepNote(r) {
+    if (!estimable(r)) return "";
+    var t = Math.round(r[1] * 100), k = stepFor(r);
+    if (k >= 0 && LADDER[k] === t) return "";
+    return k < 0 ? " · below the smallest step the dot layer holds (" + (LADDER[0] / 100) + " per 100,000), so no dots are drawn"
+                 : " · drawn at the nearest step the dot layer holds, " + (LADDER[k] / 100) + " per 100,000";
+  }
+  function dotFilter(rateIndex) { return ["<=", ["get", "b"], stepFor(data.rates[rateIndex])]; }
 
   window.DYSNET_GL_ACTIVE = true;
   document.querySelector(".map-hero").classList.add("gl");
@@ -219,7 +229,7 @@
       }
       var scale = per === 1 ? fmt(n) + " people in view" : "1 dot = " + fmt(per) + " people · " + fmt(n) + " dots in view ≈ " + fmt(n * per) + " people";
       var how = r[4] === "derived" ? " (derived, not measured)" : r[4] === "reported" ? " (reported, no population study)" : "";
-      return scale + " · " + r[0].toLowerCase() + " · about " + r[1] + " per 100,000 births (" + r[2] + ")" + how;
+      return scale + " · " + r[0].toLowerCase() + " · about " + r[1] + " per 100,000 births (" + r[2] + ")" + how + stepNote(r);
     }
     function update() {
       var r = data.rates[+sel.value];
@@ -237,7 +247,7 @@
       var zoomHint = per === 1 ? "" : " Zoom in to see them one by one: at city zoom, 1 dot = 1 person.";
       return "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +
         "<p class=\"dp-sub\">1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " at this zoom level." + zoomHint + "</p>" +
-        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025). Not an observed case; the registry exists to make the real ones visible.</p>";
+        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025)" + stepNote(r) + ". Not an observed case; the registry exists to make the real ones visible.</p>";
     }
     LAYERS.forEach(function (id) { attachHover(id, dotHtml, function (e) { return e.lngLat; }, "people-popup"); });
     map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
@@ -313,10 +323,8 @@
   // ── registry coverage zones: hover for the registry, click to pin ───
   function zoneHtml(e) {
     var z = e.features[0].properties;
-    var status = z.status === "in_progress" ? "Registry starting to cover this area"
-      : z.status === "clinical" ? "A clinical registry recruiting here, not population coverage"
-      : z.status === "hospital" ? "Hospital-based surveillance sampling births, not every birth"
-      : "Covered by a population-based registry of congenital anomalies";
+    // the same words the legend and the SVG fallback use, from ZONE_LABELS in build-demo.py
+    var status = ((data.zoneLabels || {})[z.status] || {}).tip || z.status;
     var where = z.area || z.dep_name || "";
     // The same two counts the registries page shows, so the map does not quote a third figure.
     var rb = (data.regBib || {})[z.registry], bib = "";

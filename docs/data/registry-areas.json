@@ -1,0 +1,550 @@
+{
+ "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage.",
+ "areas": [
+  {
+   "registry": "Antwerp",
+   "label": "Antwerp registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "179973",
+   "country": "Belgium",
+   "iso3": "BEL",
+   "admin1": [
+    "Antwerp"
+   ],
+   "area": "Province of Antwerp",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179973"
+  },
+  {
+   "registry": "Hainaut-Namur",
+   "label": "Hainaut and Namur registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "179975",
+   "country": "Belgium",
+   "iso3": "BEL",
+   "admin1": [
+    "Hainaut",
+    "Namur"
+   ],
+   "area": "Provinces of Hainaut and Namur",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179975"
+  },
+  {
+   "registry": "Finnish Register of Congenital Malformations",
+   "label": "Finnish Register of Congenital Malformations",
+   "orphanet_id": "181319",
+   "country": "Finland",
+   "iso3": "FIN",
+   "admin1": [],
+   "area": "Finland, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181319"
+  },
+  {
+   "registry": "Saxony-Anhalt",
+   "label": "Saxony-Anhalt registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "59478",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [
+    "Sachsen-Anhalt"
+   ],
+   "area": "Saxony-Anhalt",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59478"
+  },
+  {
+   "registry": "Cork and Kerry",
+   "label": "Cork and Kerry registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "175519",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Cork",
+    "Kerry"
+   ],
+   "area": "Counties Cork and Kerry",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175519"
+  },
+  {
+   "registry": "Dublin",
+   "label": "Dublin registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "175123",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Dublin",
+    "South Dublin",
+    "Fingal",
+    "Dún Laoghaire–Rathdown"
+   ],
+   "area": "County Dublin",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175123"
+  },
+  {
+   "registry": "South East of Ireland",
+   "label": "South East of Ireland registry of congenital anomalies (BINOCAR, EUROCAT)",
+   "orphanet_id": "175121",
+   "country": "Ireland",
+   "iso3": "IRL",
+   "admin1": [
+    "Carlow",
+    "Kilkenny",
+    "South Tipperary",
+    "Waterford",
+    "Wexford"
+   ],
+   "area": "South-East region",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175121"
+  },
+  {
+   "registry": "Campania",
+   "label": "Campania registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "53567",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Campania"
+   ],
+   "area": "Campania",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/53567"
+  },
+  {
+   "registry": "ISMAC",
+   "label": "ISMAC, Sicilian registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "52840",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Sicily"
+   ],
+   "area": "Sicily",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/52840"
+  },
+  {
+   "registry": "Tuscan Registry",
+   "label": "Tuscan registry of congenital anomalies",
+   "orphanet_id": "498995",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Toscana"
+   ],
+   "area": "Tuscany",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/498995"
+  },
+  {
+   "registry": "EUROCAT Northern Netherlands",
+   "label": "EUROCAT Northern Netherlands",
+   "orphanet_id": "183949",
+   "country": "Netherlands",
+   "iso3": "NLD",
+   "admin1": [
+    "Groningen",
+    "Friesland",
+    "Drenthe"
+   ],
+   "area": "Groningen, Friesland and Drenthe",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/183949"
+  },
+  {
+   "registry": "PRCM",
+   "label": "Polish Registry of Congenital Malformations (EUROCAT)",
+   "orphanet_id": "181308",
+   "country": "Poland",
+   "iso3": "POL",
+   "admin1": [],
+   "area": "Poland, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181308",
+   "match": [
+    "Polish Registry of Congenital Malformation"
+   ]
+  },
+  {
+   "registry": "RENAC",
+   "label": "RENAC, Portuguese registry of congenital anomalies (EUROCAT)",
+   "orphanet_id": "59379",
+   "country": "Portugal",
+   "iso3": "PRT",
+   "admin1": [],
+   "area": "Portugal, national",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59379"
+  },
+  {
+   "registry": "RACAV",
+   "label": "RACAV, registry of congenital anomalies of the Basque Country (EUROCAT)",
+   "orphanet_id": "59706",
+   "country": "Spain",
+   "iso3": "ESP",
+   "region": [
+    "País Vasco"
+   ],
+   "area": "Basque Country",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59706"
+  },
+  {
+   "registry": "EUROCAT Vaud",
+   "label": "EUROCAT Vaud, registry of congenital malformations of the canton of Vaud",
+   "orphanet_id": "60053",
+   "country": "Switzerland",
+   "iso3": "CHE",
+   "admin1": [
+    "Vaud"
+   ],
+   "area": "Canton of Vaud",
+   "status": "covered",
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/60053"
+  },
+  {
+   "registry": "ACASS",
+   "label": "Alberta Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Alberta"
+   ],
+   "area": "Alberta",
+   "status": "covered",
+   "source": "Bedard T, Lowry RB, Sibbald B, et al. Am J Med Genet A 2015;167A(11):2599-2609, doi:10.1002/ajmg.a.37240",
+   "match": [
+    "Alberta Congenital Anomalies Surveillance"
+   ]
+  },
+  {
+   "registry": "LLPR",
+   "label": "Limb Loss and Preservation Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "area": "United States, all 50 states",
+   "status": "covered",
+   "source": "Kaufman KR, Bernhardt K, Murphy S, et al. Arch Rehabil Res Clin Transl 2024;6(4):100356, doi:10.1016/j.arrct.2024.100356",
+   "website": "https://www.llpr.org/",
+   "match": [
+    "Limb Loss and Preservation"
+   ]
+  },
+  {
+   "registry": "BDRI / BIND",
+   "label": "India: hospital-based birth-defects reporting, and a national registry proposed",
+   "country": "India",
+   "iso3": "IND",
+   "admin1": [],
+   "area": "India, national",
+   "status": "in_progress",
+   "website": "https://fcrf.org.in/bdri_acvs.asp",
+   "source": "Kar A. Birth defects reporting and surveillance in India: a narrative review. J Community Genet 2025;16(1):5-14, doi:10.1007/s12687-024-00760-5; Birth Anomalies Network of India, launched 2 March 2026",
+   "match": [
+    "Birth Defects Registry of India"
+   ]
+  },
+  {
+   "registry": "CoULD",
+   "label": "Congenital Upper Limb Differences registry (CoULD)",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "area": "Participating centres across the United States, from 2014",
+   "status": "clinical",
+   "website": "https://www.jhandsurg.org/article/S0363-5023(20)30674-2/fulltext",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "(CoULD"
+   ]
+  },
+  {
+   "registry": "AHDR",
+   "label": "Australian Hand Difference Register (AHDR)",
+   "country": "Australia",
+   "iso3": "AUS",
+   "admin1": [],
+   "area": "Australia, a national register since 2017",
+   "status": "clinical",
+   "website": "https://www.mcri.edu.au/research/projects/ahdr",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026",
+   "match": [
+    "Australian Hand Difference Register"
+   ]
+  },
+  {
+   "registry": "BSSH",
+   "label": "British Society for Surgery of the Hand registry",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "admin1": [],
+   "area": "United Kingdom, through the society's members, from 2019",
+   "status": "clinical",
+   "website": "https://www.bssh.ac.uk/professionals/audit_database.aspx",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "British Society for Surgery of the Hand"
+   ]
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Denmark",
+   "iso3": "DNK",
+   "admin1": [],
+   "area": "Denmark, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "CULA North"
+   ]
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Finland",
+   "iso3": "FIN",
+   "admin1": [],
+   "area": "Finland, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "CULA North"
+   ]
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Norway",
+   "iso3": "NOR",
+   "admin1": [],
+   "area": "Norway, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "CULA North"
+   ]
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Sweden",
+   "iso3": "SWE",
+   "admin1": [],
+   "area": "Sweden, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "CULA North"
+   ]
+  },
+  {
+   "registry": "CULA North",
+   "label": "Congenital Upper Limb Anomalies North (CULA North)",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [],
+   "area": "Germany, participating centres, from 2018",
+   "status": "clinical",
+   "website": "https://doi.org/10.1177/17531934251348360",
+   "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
+   "match": [
+    "CULA North"
+   ]
+  },
+  {
+   "registry": "CBDMN",
+   "label": "Chinese Birth Defects Monitoring Network",
+   "country": "China",
+   "iso3": "CHN",
+   "admin1": [],
+   "area": "A sample of reporting hospitals: 1.3 million births in 2009, over 8% of the national total",
+   "status": "hospital",
+   "website": "https://doi.org/10.1007/s12519-011-0326-0",
+   "source": "Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. World J Pediatr 2011;7(4):302-310, doi:10.1007/s12519-011-0326-0",
+   "match": [
+    "Chinese newborns"
+   ]
+  },
+  {
+   "registry": "ICBDSR",
+   "label": "International Clearinghouse for Birth Defects Surveillance and Research",
+   "country": "International",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Member surveillance programmes worldwide, 31 of them in its 2024 report",
+   "status": "umbrella",
+   "since": "1974",
+   "kind": "Umbrella of national and regional surveillance programmes",
+   "classification": "ICD-10, by member programme",
+   "website": "https://www.icbdsr.org/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Its member programmes publish jointly; our epidemiology and causes pages already rest on its worldwide series on amelia and on phocomelia. Programme count from its 2024 annual report.",
+   "match": [
+    "ICBDSR",
+    "International Clearinghouse for Birth Defects"
+   ]
+  },
+  {
+   "registry": "Japan: JAOG",
+   "label": "JAOG Birth Defects Monitoring Program, Japan",
+   "country": "Japan",
+   "iso3": "JPN",
+   "admin1": [],
+   "area": "270 reporting hospitals: about 100,000 births a year, some 9 per cent of the national total",
+   "status": "hospital",
+   "since": "1972",
+   "kind": "Hospital-based, national",
+   "classification": "The ICBDSR list, with limb reduction defects split into transverse, preaxial, postaxial, intercalary and mixed",
+   "website": "https://www.jaog.or.jp/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "ICBDSR Annual Report 2014, programme description and 2012 data tables for Japan: JAOG; still described as the only national survey of congenital anomalies in Japan by Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born with Down syndrome in Japan. J Obstet Gynaecol Res 2022;48(9):2385-2391, doi:10.1111/jog.15342"
+  },
+  {
+   "registry": "SINASC",
+   "label": "SINASC: Brazilian Live Birth Information System",
+   "country": "Brazil",
+   "iso3": "BRA",
+   "admin1": [],
+   "map": true,
+   "area": "Brazil, every live birth, anomalies in field 41 of the birth declaration",
+   "status": "covered",
+   "since": "1990s",
+   "kind": "Population-based, from the live birth declaration",
+   "classification": "ICD-10 chapter XVII",
+   "website": "https://datasus.saude.gov.br/nascidos-vivos",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Moura SRB, Nakachima LR, Santos JBGD, et al. Prevalence of Congenital Anomalies of the Upper Limbs in Brazil: a descriptive cross-sectional study. Sao Paulo Med J 2024;142(6):e2023349, doi:10.1590/1516-3180.2023.0349.R1.08042024",
+   "match": [
+    "SINASC",
+    "Live Birth Information System"
+   ]
+  },
+  {
+   "registry": "ECLAMC",
+   "label": "ECLAMC: Latin-American Collaborative Study of Congenital Malformations",
+   "country": "Brazil",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "A network of maternity hospitals across South America, coordinated from Porto Alegre",
+   "status": "hospital",
+   "since": "1967",
+   "kind": "Hospital-based network",
+   "classification": "Its own protocol, with ICD-10",
+   "website": "http://www.eclamc.org/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Vianna FS, Lopez-Camelo JS, Leite JC, et al. Epidemiological surveillance of birth defects compatible with thalidomide embryopathy in Brazil. PLoS One 2011;6(7):e21735, doi:10.1371/journal.pone.0021735",
+   "match": [
+    "ECLAMC",
+    "Latin-American Collaborative Study",
+    "Latin American Collaborative Study"
+   ]
+  },
+  {
+   "registry": "Thalidomide surveillance, Brazil",
+   "label": "Thalidomide embryopathy surveillance, through ECLAMC hospitals",
+   "country": "Brazil",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Brazil, a defined phenotype watched across the ECLAMC hospitals",
+   "status": "hospital",
+   "since": "2007",
+   "kind": "Targeted surveillance of one exposure",
+   "classification": "A thalidomide embryopathy phenotype",
+   "website": "https://doi.org/10.1371/journal.pone.0021735",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Vianna FS, Lopez-Camelo JS, Leite JC, et al. Epidemiological surveillance of birth defects compatible with thalidomide embryopathy in Brazil. PLoS One 2011;6(7):e21735, doi:10.1371/journal.pone.0021735",
+   "match": [
+    "thalidomide embryopathy in Brazil"
+   ]
+  },
+  {
+   "registry": "MBRN",
+   "label": "Medical Birth Registry of Norway",
+   "country": "Norway",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Norway, every birth since 1967",
+   "status": "covered",
+   "since": "1967",
+   "kind": "Population-based, national",
+   "classification": "ICD-10",
+   "website": "https://www.fhi.no/en/hn/health-registries/medical-birth-registry-of-norway/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Sitek A, et al. Epidemiology of limb reduction defects as registered in the Medical Birth Registry of Norway, 1970-2016, which our epidemiology page cites",
+   "match": [
+    "Medical Birth Registry of Norway"
+   ]
+  },
+  {
+   "registry": "Swedish Medical Birth Register",
+   "label": "Swedish Register of Congenital Malformations, and the Medical Birth Register",
+   "country": "Sweden",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Sweden, national",
+   "status": "covered",
+   "since": "1964",
+   "kind": "Population-based, national",
+   "classification": "ICD",
+   "website": "https://www.socialstyrelsen.se/en/statistics-and-data/registers/national-medical-birth-register/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Källén B, et al. Infants with congenital limb reduction registered in the Swedish Register of Congenital Malformations, and the 2001 comparison of a population-based with a clinic-based register of upper limb deficiencies in Swedish children",
+   "match": [
+    "Swedish Register of Congenital Malformations"
+   ]
+  },
+  {
+   "registry": "Hong Kong, Prince of Wales",
+   "label": "Registry for congenital upper limb anomalies, Prince of Wales Hospital",
+   "country": "Hong Kong",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "One hospital in Hong Kong",
+   "status": "clinical",
+   "since": "2025 publication",
+   "kind": "Clinical, single centre",
+   "classification": "Not stated in the abstract",
+   "website": null,
+   "url_status": "no site found, checked 21 September 2026",
+   "source": "Registry for congenital upper limb anomalies in Prince of Wales Hospital, Hong Kong: abridged secondary publication",
+   "match": [
+    "Prince of Wales Hospital"
+   ]
+  },
+  {
+   "registry": "Southern Thailand",
+   "label": "Birth defects registries of three provinces in southern Thailand",
+   "country": "Thailand",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Three provinces",
+   "status": "covered",
+   "since": "2016 publication",
+   "kind": "Population-based, regional",
+   "classification": "ICD-10",
+   "website": null,
+   "url_status": "no site found, checked 21 September 2026",
+   "source": "Prevalence of congenital limb defects: data from birth defects registries in three provinces in Southern Thailand",
+   "match": [
+    "Southern Thailand"
+   ]
+  }
+ ]
+}

@@ -323,7 +323,10 @@
         });
         var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
         path.setAttribute("d", d); path.setAttribute("class", "zone zone-" + f.properties.status);
-        path.setAttribute("data-label", f.properties.label + " · " + f.properties.dep_name + (f.properties.status === "in_progress" ? " · starting to cover" : " · covered"));
+        // the French zones carry a département name, the others the area they record; the status words
+        // are the ones the legend and the WebGL map use (ZONE_LABELS in build-demo.py)
+        var zl = ((data.zoneLabels || {})[f.properties.status] || {}).tip || f.properties.status;
+        path.setAttribute("data-label", f.properties.label + " · " + (f.properties.area || f.properties.dep_name || f.properties.country) + " · " + zl);
         gz.appendChild(path);
       });
     }).catch(function () {});
@@ -378,8 +381,10 @@
     function showTip(el, x, y) {
       var id = el.id.slice(1), c = data.countries[id];
       if (!c) return;
+      var clin = (data.clinical || {})[c.name];
       tip.innerHTML = "<strong>" + c.name + "</strong><span class=\"status\">" + data.labels[c.status] + "</span><ul>" +
-        c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>";
+        c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>" +
+        (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + clin.join(", ") + "</p>" : "");
       tip.style.display = "block";
       var r = host.getBoundingClientRect();
       var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);

@@ -33,6 +33,20 @@ Everything on this site may be quoted and reused with attribution to DysNet. Fig
 - [Health Data Safe](https://www.healthdatasafe.org/en/): a Swiss non-profit foundation that builds open-source infrastructure for people to gather, read and share their own health data, for their care and for research. By decision of DysNet's Annual General Meeting of 26 August 2026 it is the registry's technical and operational partner, contributing its infrastructure in kind. Wikidata: [Q141112222](https://www.wikidata.org/wiki/Q141112222).
 - How the two fit together: https://www.dysnet.org/registry/?for=registries explains the interoperability and portability offered to other registries; every person holds their own data account and nothing is pooled without a granular, revocable consent.
 
+## Every other page
+
+- [About DysNet](https://www.dysnet.org/about/): DysNet, formerly EDRIC: the network for people with congenital limb differences, founded by thalidomide families and registered in Sweden in 2009.
+- [Statutes](https://www.dysnet.org/about/statutes/): The statutes of DYSNET (EDRIC), adopted 20 October 2011: objective, membership, meetings, board, accounts and amendment rules, readable online.
+- [Transparency](https://www.dysnet.org/about/transparency/): DysNet's governing documents in one place: statutes, annual accounts, AGM documents and reports, published for members and the public.
+- [Accessibility](https://www.dysnet.org/accessibility/): How accessible this site is, measured rather than claimed: what we tested, what passed, where it still falls short, and how to tell us when something blocks you.
+- [Contact](https://www.dysnet.org/contact/): Contact DysNet: info@dysnet.org, offices in Solna (Sweden) and Brussels (Belgium). For families, clinicians, researchers and associations.
+- [Support DysNet](https://www.dysnet.org/donate/): A one-off or monthly gift, membership or help in kind carries the three missions families rely on: knowledge, the registry and our voice.
+- [Knowledge](https://www.dysnet.org/knowledge/): Five maintained registers on limb difference: bibliography, registries, researchers, care centres and teratogens, plus studies you can join.
+- [Studies](https://www.dysnet.org/knowledge/ongoing-studies/): Limb-difference studies recruiting or under way: the ERN BOND Patient Journey, the Rare Barometer, prosthesis reimbursement, and who to contact.
+- [Resources](https://www.dysnet.org/knowledge/resources/): Guides, surveys and reports on dysmelia that are not research papers: Orphanet sheets, the Rare Barometer, European registry recommendations.
+- [Privacy](https://www.dysnet.org/privacy/): DysNet collects no data through this site: no cookies, no analytics, no account, no form. What little is processed anyway, what the registers name, and your rights under the GDPR.
+- [Reports](https://www.dysnet.org/voice/reports/): Short written reports from DysNet's delegates after every meeting in the bodies where DysNet represents families affected by limb difference.
+
 ## Licence and contact
 
 - Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).

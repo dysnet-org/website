@@ -1,0 +1,24 @@
+{
+ "thresholds": [
+  10,
+  44,
+  50,
+  70,
+  74,
+  110,
+  141,
+  150,
+  440,
+  530,
+  540,
+  1200,
+  1830,
+  4500,
+  4700,
+  8400
+ ],
+ "unit": "birth prevalence per 100,000 x 100, rounded; a dot's b is the index of the lowest threshold that admits it",
+ "tiles": "docs/assets/map/dots.pmtiles",
+ "built": "2026-09-14",
+ "from": "DOT_RATES in build-demo.py at commit 480a711, the state the tiles were built from. tools/build-pop-dots.py rewrites this file whenever the dot layers are regenerated; the tiles and this file must always come from the same run."
+}

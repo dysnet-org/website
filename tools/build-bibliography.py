@@ -105,6 +105,9 @@ WEBSITE_SEED = {
     "42348211": (('prosthetics', 'living'), "What children and adolescents with upper-limb difference want from a prosthesis, asked in Nigeria", "DysNet"),
     "38623353": (('clinical',), "Pollicization for bilateral hypoplastic thumbs, twin case series at a children's hospital in Ethiopia", "DysNet"),
     "35650628": (('clinical', 'epidemiology'), "Bilateral symmetrical congenital transverse limb deficiencies in siblings", "DysNet"),
+    # Found while mapping Brazil's registries: a national prevalence study of congenital upper-limb
+    # anomalies from SINASC, on our exact conditions, that the standing queries had not reached.
+    "38896746": (('epidemiology',), "Congenital anomalies of the upper limbs in Brazil, from the national live-birth system", "SINASC (datasus.saude.gov.br)"),
 }
 for pmid, (topics, note, via) in WEBSITE_SEED.items():
     for topic in topics:

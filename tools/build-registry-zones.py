@@ -140,6 +140,8 @@ if not a1_path.exists():
 A1 = json.loads(a1_path.read_text(encoding="utf-8"))["features"]
 A0 = json.loads(NE_A0.read_text(encoding="utf-8"))["features"]
 for a in AREAS["areas"]:
+    if a.get("map") is False or not a.get("iso3"):
+        continue  # listed on the page, with no territory of its own to draw
     names, regions = set(a.get("admin1") or []), set(a.get("region") or [])
     if names or regions:
         picked = [f for f in A1 if f["properties"].get("adm0_a3") == a["iso3"]

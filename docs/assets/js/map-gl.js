@@ -318,8 +318,16 @@
       : z.status === "hospital" ? "Hospital-based surveillance sampling births, not every birth"
       : "Covered by a population-based registry of congenital anomalies";
     var where = z.area || z.dep_name || "";
+    // The same two counts the registries page shows, so the map does not quote a third figure.
+    var rb = (data.regBib || {})[z.registry], bib = "";
+    if (rb && (rb[0] || rb[1])) {
+      var parts = [];
+      if (rb[0]) parts.push(rb[0] + " paper" + (rb[0] > 1 ? "s" : "") + " in our bibliography name it");
+      if (rb[1]) parts.push(rb[1] + " found through it");
+      bib = '<p class="dp-sub">' + parts.join(", ") + ".</p>";
+    }
     return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
-           '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + '</p>' +
+           '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + '</p>' + bib +
            '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }
   attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup", function (e) {

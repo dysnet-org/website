@@ -1082,6 +1082,85 @@ if REG_SITES_PATH.exists():
                 REG_NETWORK.setdefault(_i, _e["url"])
 
 
+# ── The registries this site curates by hand ─────────────────────────────────
+# One file feeds three things: the outlines on the map, the table on the registries page, and
+# the count of papers in our own bibliography that rest on each registry. Before this, the map
+# and the page were built from different places and could disagree.
+REG_AREAS = json.loads((pathlib.Path(__file__).parent / "tools" / "registry-areas.json").read_text(encoding="utf-8"))["areas"]
+
+
+def _reg_hit(title, phrase):
+    """The phrase as a substring, exactly as the bibliography's own search matches it. An acronym
+    is matched case-sensitively, or "CoULD" would catch every title containing the word "could"."""
+    if phrase.upper() == phrase or sum(c.isupper() for c in phrase) > len(phrase) / 2:
+        return phrase in title
+    return phrase.lower() in title.lower()
+
+
+def registry_evidence():
+    """Per registry, the papers in our bibliography that rest on it, in two distinct senses.
+
+    `names` — the paper's title names the registry, so the study was built on its data.
+    `found`  — we discovered the paper through that registry's own publication list, which the
+               bibliography records in its "via" field.
+
+    They are different relations and the page says which is which. Counting them here rather
+    than storing them keeps the figures from drifting away from the bibliography.
+    """
+    out, seen = {}, set()
+    entries = BIB.get("entries", [])
+    for a in REG_AREAS:
+        key = a["registry"]
+        if key in seen:
+            continue
+        seen.add(key)
+        names = [e for e in entries if a.get("match") and any(_reg_hit(e["title"], m) for m in a["match"])]
+        label0 = a["label"].split(":")[0].strip().lower()
+        found = [e for e in entries
+                 if any(key.lower() in v.lower() or (len(label0) > 6 and label0 in v.lower()) for v in e.get("via", []))]
+        if names or found:
+            out[key] = {"names": names, "found": found, "area": a}
+    return out
+
+
+def registry_evidence_html():
+    """The table that joins this register to the bibliography."""
+    ev = registry_evidence()
+    if not ev:
+        return ""
+    rows = []
+    for key, v in sorted(ev.items(), key=lambda kv: (-len(kv[1]["names"]) - len(kv[1]["found"]), kv[0])):
+        a = v["area"]
+        label = a["label"].split(":")[0] if ":" in a["label"] else a["label"]
+        site = f'<a href="{a["website"]}" target="_blank" rel="noopener external">{key}</a>' if a.get("website") else key
+        phrases = a.get("match") or [key]
+        q = max(phrases, key=lambda m: sum(1 for e in BIB.get("entries", []) if _reg_hit(e["title"], m)))
+        names = (f'<a href="/knowledge/bibliography/?q={urllib.parse.quote(q)}">{len(v["names"])}</a>'
+                 if v["names"] else "&mdash;")
+        found = str(len(v["found"])) if v["found"] else "&mdash;"
+        rows.append(f'<tr><th scope="row">{site}</th><td>{label}<br><span class="reg-local">{a["country"]}</span></td>'
+                    f'<td style="text-align:center">{names}</td><td style="text-align:center">{found}</td></tr>')
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Registries and the bibliography</p>
+    <h2 class="h2">Which registries our own evidence rests on.</h2>
+    <p>A register of registries is worth little if it sits apart from the literature on the same shelf. These figures are
+    counted from <a href="/knowledge/bibliography/">our bibliography</a> at every build, so they cannot drift away from it.
+    Two different relations, and the difference matters. <strong>Names it</strong> means the title of a paper names the
+    registry, so the study was built on its data; the number links to those papers. <strong>Found through it</strong> means
+    we discovered the paper on that registry&rsquo;s own list of publications, which is how a registry earns its place here
+    rather than being taken on trust.</p>
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Registry</th><th scope="col">What it is</th><th scope="col">Names it</th><th scope="col">Found through it</th></tr></thead>
+        <tbody>{"".join(rows)}</tbody>
+      </table>
+    </div>
+    <p class="annex-note">A dash means none, which is itself worth seeing: several registries we list have never appeared in
+    the limb-difference literature we collect, and several that shaped it are not registries at all.</p>
+"""
+
+
 def registries_html():
     names = _code_names()
     regs = ORPHA_REGS.get("registries", [])
@@ -1249,6 +1328,21 @@ PAGES["/knowledge/registries/"] = {
     {registries_html()}
 
     <div class="tick"></div>
+    <p class="eyebrow">The umbrella</p>
+    <h2 class="h2">The body that connects most of the registries above.</h2>
+    <p>The <strong>International Clearinghouse for Birth Defects Surveillance and Research</strong> has since 1974 brought
+    national and regional surveillance programmes together so that their figures can be pooled. Its recent work on
+    gastroschisis drew on 27 surveillance programmes across 24 countries. It holds no territory of its own, so it appears on
+    no map, and it belongs at the head of this register rather than inside it.</p>
+    <p>Two of the few worldwide studies of our own conditions came out of it, on <strong>amelia</strong> and on
+    <strong>phocomelia</strong>, and <a href="/knowledge/epidemiology/">our epidemiology tables</a> and
+    <a href="/knowledge/causes-of-dysmelia/">the causes review</a> already rest on its data. It was missing from this
+    register until September 2026, which is the kind of gap a register of registries should be embarrassed by: we were
+    quoting the figures of a body we had not listed.</p>
+    <p class="src">International Clearinghouse for Birth Defects Surveillance and Research &middot;
+    <a href="https://www.icbdsr.org/" target="_blank" rel="noopener external">icbdsr.org</a> &middot; read 21 September 2026</p>
+
+    <div class="tick"></div>
     <p class="eyebrow">Clinical and patient-led registries</p>
     <h2 class="h2">Hand surgeons and families already run registries of their own.</h2>
     <p>Beside the population registries that count births, a second family of registries follows the children themselves. Four of them record congenital upper limb differences, and two more are run by DysNet member associations for one condition. They are smaller than EUROCAT, and they hold exactly what a population registry does not: diagnosis by a standard classification, treatment, and outcomes over years.</p>
@@ -1320,6 +1414,8 @@ PAGES["/knowledge/registries/"] = {
       </article>
     </div>
 
+    {registry_evidence_html()}
+
     <div class="tick"></div>
     <p class="eyebrow">India</p>
     <h2 class="h2">India counts births by the million, and limb differences hardly at all.</h2>
@@ -1366,6 +1462,49 @@ PAGES["/knowledge/registries/"] = {
         <h3>A province that publishes its own figures <span class="badge live">Hunan, 2016-2020</span></h3>
         <p>The Birth Defects Surveillance System of Hunan Province recorded 847,755 births and 14,459 birth defects, among them 1,888 cases of polydactyly and 626 of syndactyly, which is 13.06 and 4.33 per cent of all defects found. Prevalence was 2.23 per 1,000 for polydactyly and 0.74 per 1,000 for syndactyly, both rising year on year. Nearly all were diagnosed after birth rather than before it, 96.77 per cent of polydactyly and 95.69 per cent of syndactyly within seven days, which is what a limb difference usually does: it arrives unannounced.</p>
         <p class="src">Zhou X, Li T, Kuang H, et al. Epidemiology of congenital polydactyly and syndactyly in Hunan Province, China. <em>BMC Pregnancy Childbirth</em> 2024;24(1):216 &middot; <a href="https://doi.org/10.1186/s12884-024-06417-y" target="_blank" rel="noopener external">doi:10.1186/s12884-024-06417-y</a></p>
+      </article>
+    </div>
+
+    <div class="tick"></div>
+    <p class="eyebrow">Brazil</p>
+    <h2 class="h2">Brazil counts every birth, and still births children with thalidomide embryopathy.</h2>
+    <p>Brazil records congenital anomalies on the birth certificate itself. <strong>SINASC</strong>, the national live-birth
+    information system of the Ministry of Health, carries them in field 41 of the live-birth declaration, coded to chapter
+    XVII of the ICD-10, and publishes through DATASUS. That makes it population-based in the strict sense: the denominator
+    is every live birth in the country. Beside it runs <strong>ECLAMC</strong>, a network of maternity hospitals across South
+    America coordinated from Porto Alegre since 1967. DysNet has no member association in Brazil, so each entry is verified
+    from the source named with it.</p>
+    <div style="margin-top:var(--space-2)">
+      <article class="entry">
+        <h3>What SINASC shows about our conditions <span class="badge live">2010-2019</span></h3>
+        <p>Across the decade the most frequent congenital anomaly of the upper limb in Brazil was supernumerary fingers,
+        coded Q69.0, in <strong>11,708 children</strong>, a prevalence of 4.02 per 10,000 live births. Reporting of upper-limb
+        anomalies rose over the ten years, which the authors read as an alert to health agencies rather than as a rise in
+        occurrence. Mothers over 40 had a 36 per cent higher prevalence than mothers under 40. In 2021 the Ministry of Health,
+        with the Brazilian Medical Genetics and Genomics Society, set a priority list of anomalies to improve that recording,
+        chosen for being diagnosable at birth and having some intervention available.</p>
+        <p class="src">Moura SRB, Nakachima LR, Santos JBGD, et al. Prevalence of Congenital Anomalies of the Upper Limbs in
+        Brazil. <em>Sao Paulo Med J</em> 2024;142(6):e2023349 &middot;
+        <a href="https://doi.org/10.1590/1516-3180.2023.0349.R1.08042024" target="_blank" rel="noopener external">doi:10.1590/1516-3180.2023.0349.R1.08042024</a>
+        &middot; <a href="https://datasus.saude.gov.br/nascidos-vivos" target="_blank" rel="noopener external">datasus.saude.gov.br</a></p>
+      </article>
+      <article class="entry">
+        <h3>Thalidomide has not finished in Brazil <span class="badge live">surveillance since 2007</span></h3>
+        <p>Thalidomide is still dispensed in Brazil for erythema nodosum leprosum, because leprosy is endemic there, and
+        children are still being born with thalidomide embryopathy. A phenotype was defined so that it could be watched
+        prospectively across the ECLAMC hospitals. Its frequency reached <strong>3.10 per 10,000 births</strong>
+        (95% CI 2.50-3.70) against a 1982-1999 baseline of 1.92 per 10,000 (95% CI 1.60-2.20), significantly higher and not
+        evenly spread across the country. In the proactive period of 2007 and 2008 two suspected cases were found, and in
+        both the mother denied having taken the drug.</p>
+        <p>This is the founding subject of our own network, sixty years on, in a country where the drug is lawfully in use.
+        It is also the clearest argument we have for <a href="/knowledge/teratogens/">the teratogens register</a> and for
+        <a href="/voice/#demand-5">demand 5</a>: a substance whose harm is beyond dispute still reaches pregnancies, and only
+        surveillance finds it.</p>
+        <p class="src">Vianna FS, Lopez-Camelo JS, Leite JC, et al. Epidemiological surveillance of birth defects compatible
+        with thalidomide embryopathy in Brazil. <em>PLoS One</em> 2011;6(7):e21735 &middot;
+        <a href="https://doi.org/10.1371/journal.pone.0021735" target="_blank" rel="noopener external">doi:10.1371/journal.pone.0021735</a>
+        &middot; with Sales Luiz Vianna F, et al. <em>Eur J Med Genet</em> 2017;60(1):12-15,
+        <a href="https://doi.org/10.1016/j.ejmg.2016.09.015" target="_blank" rel="noopener external">doi:10.1016/j.ejmg.2016.09.015</a></p>
       </article>
     </div>
 
@@ -3595,16 +3734,20 @@ for _country, _orgs in MEMBERS:
     MAP_COUNTRIES[_id] = {"name": _country, "a3": ISO_A3[_id], "status": REGISTRY_STATUS.get(_id, "member"), "orgs": _orgs}
 MAP_COUNTRIES["124"] = {"name": "Canada", "a3": "CAN", "status": "contact", "orgs": ["A national amputee organisation (contact opened, 2026)"]}
 MAP_OFFICES = [{"name": "Solna", "lat": 59.36, "lon": 17.99}, {"name": "Brussels", "lat": 50.85, "lon": 4.35}]
+# Papers in our bibliography that rest on each registry, keyed by the registry name the map
+# carries in its zone properties, so the popup and the registries page quote one figure.
+REG_BIB = {k: [len(v["names"]), len(v["found"])] for k, v in registry_evidence().items()}
+
 # Countries where a clinical registry recruits, for the country tooltip. Read from the same
 # declarative input the map outlines are drawn from, so the two cannot disagree.
 CLINICAL_BY_COUNTRY = {}
-for _a in json.loads((pathlib.Path(__file__).parent / "tools" / "registry-areas.json").read_text(encoding="utf-8"))["areas"]:
+for _a in REG_AREAS:
     if _a.get("status") == "clinical":
         CLINICAL_BY_COUNTRY.setdefault(_a["country"], [])
         if _a["registry"] not in CLINICAL_BY_COUNTRY[_a["country"]]:
             CLINICAL_BY_COUNTRY[_a["country"]].append(_a["registry"])
 
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8], "zonesSource": json.loads((pathlib.Path(__file__).parent / "tools/registry-zones.json").read_text(encoding="utf-8"))["source"]}, ensure_ascii=False)
 
 # Injected into the home page at build time (placeholder __MAP_HERO__), because
 # it needs MEMBERS, which is defined after the home page body.

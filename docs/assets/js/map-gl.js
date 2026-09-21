@@ -356,7 +356,8 @@
         : rb[1] + " paper" + (rb[1] > 1 ? "s" : "") + " in our bibliography " + (rb[1] > 1 ? "were" : "was") + " found through its own publication list");
       bib = '<p class="dp-sub">' + parts.join(", and ") + ".</p>";
     }
-    return '<p class="dp-main"><strong>' + esc(z.label) + '</strong></p>' +
+    return '<p class="dp-main"><strong>' + esc(z.label) + '</strong>'
+           + (z.local ? '<br><span class="dp-local">' + esc(z.local) + '</span>' : '') + '</p>' +
            '<p class="dp-sub">' + esc(where) + (where ? ', ' : '') + esc(z.country) + '<br>' + status + (since ? '<br>' + since : '') + '</p>' + bib +
            '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }

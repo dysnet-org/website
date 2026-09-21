@@ -163,7 +163,7 @@ for a in AREAS["areas"]:
                          "properties": {"registry": a["registry"], "label": a["label"], "country": a["country"], "status": a["status"],
                                         "area": a["area"], "website": a.get("website") or a.get("orphanet_url"),
                                         "scope": "regional" if (a.get("admin1") or a.get("region")) else "national",
-                                        "since": a.get("since"),
+                                        "since": a.get("since"), "local": a.get("local"),
                                         "source": a.get("source_short") or a.get("source") or AREAS.get("source_short") or AREAS.get("source", "")}})
     print(f"  {a['registry']}: {len(picked)} polygon(s)")
 OUT.write_text(json.dumps({"type": "FeatureCollection", "features": features}, separators=(",", ":")), encoding="utf-8")

@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing. \"label\" is the registry's official title and nothing else: no city, country or operating body appended, because the area, country and kind fields carry those. \"local\" holds the official title in the registry's own language where that is not English.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -49,7 +49,7 @@
   },
   {
    "registry": "Saxony-Anhalt",
-   "label": "Malformation Monitoring Centre Saxony-Anhalt, Magdeburg (EUROCAT)",
+   "label": "Malformation Monitoring Centre Saxony-Anhalt (EUROCAT)",
    "orphanet_id": "59478",
    "country": "Germany",
    "iso3": "DEU",
@@ -60,7 +60,7 @@
    "status": "covered",
    "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59478",
    "since": "1980",
-   "kind": "Population-based, regional, on parental consent; attached to the medical faculty of Otto-von-Guericke University Magdeburg and funded by the Land since 1995; a member of EUROCAT, EUROmediCAT and the ICBDSR",
+   "kind": "Population-based, regional, on parental consent; held at Universitätsklinikum Magdeburg, medical faculty of Otto-von-Guericke University and funded by the Land since 1995; a member of EUROCAT, EUROmediCAT and the ICBDSR",
    "website": "https://www.angeborene-fehlbildungen.com/",
    "url_status": "200, checked 21 September 2026",
    "source": "Fehlbildungsmonitoring Sachsen-Anhalt, its own site, read 21 September 2026; ICBDSR Annual Report 2014, programme description: started in 1980 in the city of Magdeburg with 4,000 births a year, enlarged to the whole Federal State by 2000, notification from 27 maternity units, 24 paediatric departments, 10 prenatal diagnostic centres, 8 pathology services and 3 genetic units. Thirteen of the papers in our bibliography were found through its own publications list, more than through any other registry here.",
@@ -69,7 +69,8 @@
     "Saxony-Anhalt",
     "Sachsen-Anhalt",
     "Malformation Monitoring Centre"
-   ]
+   ],
+   "local": "Fehlbildungsmonitoring Sachsen-Anhalt"
   },
   {
    "registry": "Cork and Kerry",
@@ -451,7 +452,7 @@
   },
   {
    "registry": "Japan: JAOG",
-   "label": "JAOG Birth Defects Monitoring Program, Japan",
+   "label": "Japan Association of Obstetricians and Gynecologists Birth Defects Monitoring Program",
    "country": "Japan",
    "iso3": "JPN",
    "admin1": [],
@@ -484,7 +485,8 @@
     "SINASC",
     "Live Birth Information System"
    ],
-   "source_short": "Moura et al. 2024, Sao Paulo Med J; DATASUS"
+   "source_short": "Moura et al. 2024, Sao Paulo Med J; DATASUS",
+   "local": "Sistema de Informações sobre Nascidos Vivos"
   },
   {
    "registry": "ECLAMC",
@@ -506,7 +508,8 @@
     "Latin-American Collaborative Study",
     "Latin American Collaborative Study"
    ],
-   "source_short": "Vianna et al. 2011, PLoS One"
+   "source_short": "Vianna et al. 2011, PLoS One",
+   "local": "Estudio Colaborativo Latino Americano de Malformaciones Congénitas"
   },
   {
    "registry": "Thalidomide surveillance, Brazil",
@@ -612,7 +615,7 @@
   },
   {
    "registry": "HCAR",
-   "label": "Hungarian Congenital Abnormality Registry (VRONY)",
+   "label": "Hungarian Congenital Abnormality Registry",
    "country": "Hungary",
    "iso3": "HUN",
    "admin1": [],
@@ -629,7 +632,8 @@
     "Hungarian Case-Control Surveillance System",
     "in Hungary"
    ],
-   "source_short": "Siffel and Czeizel 1997, Cent Eur J Public Health; ICBDSR Annual Report 2014"
+   "source_short": "Siffel and Czeizel 1997, Cent Eur J Public Health; ICBDSR Annual Report 2014",
+   "local": "Veleszületett Rendellenességek Országos Nyilvántartása (VRONY)"
   },
   {
    "registry": "TBDR",
@@ -653,7 +657,7 @@
   },
   {
    "registry": "MACDP",
-   "label": "Metropolitan Atlanta Congenital Defects Program (CDC)",
+   "label": "Metropolitan Atlanta Congenital Defects Program",
    "country": "United States",
    "iso3": "USA",
    "admin1": [],
@@ -661,7 +665,7 @@
    "area": "Five counties of metropolitan Atlanta, Georgia: about 50,000 births a year",
    "status": "covered",
    "since": "1967",
-   "kind": "Population-based, regional, run by the CDC; a founding member of the ICBDSR",
+   "kind": "Population-based, regional, run by the US Centers for Disease Control and Prevention; a founding member of the ICBDSR",
    "website": null,
    "url_status": "no current programme page found, checked 21 September 2026; the CDC's pages were reorganised in 2024",
    "source": "Yang Q, et al. The return of thalidomide: are birth defects surveillance systems ready? Am J Med Genet 1997, PMID 9415679; Reefhuis J, Honein MA. Maternal age and non-chromosomal birth defects, Atlanta 1968-2000. Birth Defects Res A 2004, PMID 15368555; Cordero JF, Layde PM. Vaginal spermicides, chromosomal abnormalities and limb reduction defects. 1983, PMID 6680698; ICBDSR Annual Report 2014, programme description",
@@ -729,16 +733,17 @@
     "RYVEMCE",
     "Registro y Vigilancia Epidemiol"
    ],
-   "source_short": "ICBDSR Annual Report 2014; Arteaga-Vázquez et al. 2012"
+   "source_short": "ICBDSR Annual Report 2014; Arteaga-Vázquez et al. 2012",
+   "local": "Registro y Vigilancia Epidemiológica de Malformaciones Congénitas Externas"
   },
   {
    "registry": "AMSP Boston",
-   "label": "Active Malformations Surveillance Program, Brigham and Women's Hospital",
+   "label": "Active Malformations Surveillance Program",
    "country": "United States",
    "iso3": "USA",
    "admin1": [],
    "map": false,
-   "area": "One hospital in Boston: 289,365 births over 41 years, 1972 to 2012",
+   "area": "Brigham and Women's Hospital, Boston: 289,365 births over 41 years, 1972 to 2012",
    "status": "hospital",
    "since": "1972",
    "kind": "Hospital-based, single centre",
@@ -752,7 +757,7 @@
   },
   {
    "registry": "NBDPS",
-   "label": "National Birth Defects Prevention Study (United States)",
+   "label": "National Birth Defects Prevention Study",
    "country": "United States",
    "iso3": null,
    "admin1": [],
@@ -772,7 +777,7 @@
   },
   {
    "registry": "EUROCAT",
-   "label": "EUROCAT, the European network of population-based registries of congenital anomalies",
+   "label": "EUROCAT: European network of population-based registries for the epidemiological surveillance of congenital anomalies",
    "country": "Europe",
    "iso3": null,
    "admin1": [],

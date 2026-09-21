@@ -1175,20 +1175,30 @@ def condition_registries_html(code):
 def condition_coverage_html():
     """The table that turns the register of registries round to face the conditions."""
     names = _code_names()
-    rows, direct_n, none_n = [], 0, 0
+    rows, direct_n, none_n, forms_n = [], 0, 0, 0
+    by_name, nothing = [], []
     for code, name in sorted(names.items(), key=lambda kv: (-len(coverage_for(kv[0])["direct"]),
                                                             -len(coverage_for(kv[0])["child"]), kv[1])):
         c = coverage_for(code)
         d, ch, pa = len(c["direct"]), len(c["child"]), len(c["parent"])
         if d:
             direct_n += 1
+            by_name.append(name)
+        elif ch:
+            forms_n += 1
         if not (d or ch or pa):
             none_n += 1
+            nothing.append(name)
         cls = ' class="reg-direct"' if d or ch else ""
         rows.append(f'<tr{cls}><th scope="row">{name}</th>'
                     f'<td style="text-align:center">{d or "&mdash;"}</td>'
                     f'<td style="text-align:center">{ch or "&mdash;"}</td>'
                     f'<td style="text-align:center">{pa or "&mdash;"}</td></tr>')
+    if nothing:
+        unreachable = (", and " + (" and ".join(nothing)) + " cannot be reached at all, by name or by classification"
+                       if len(nothing) > 1 else f", and {nothing[0]} cannot be reached at all, by name or by classification")
+    else:
+        unreachable = ""
     return f"""
     <div class="tick"></div>
     <p class="eyebrow">Coverage, condition by condition</p>
@@ -1206,9 +1216,10 @@ def condition_coverage_html():
     </div>
     <p class="annex-note">The table holds the {len(names)} ORPHAcodes this site uses; brachydactyly and symbrachydactyly are
     described without one, so they cannot appear. Of those {len(names)} codes, <strong>{direct_n} can be counted by
-    name</strong> in any registry listed on Orphanet, and {none_n} cannot be reached at all, by name or by classification.
-    One of the {none_n} is terminal transverse limb defect, the commonest form of limb difference and the defect behind all
-    three French clusters. This is what <a href="/voice/#demand-3">demand 3</a> is about, in one table.</p>
+    name</strong> in a registry listed on Orphanet: {", ".join(by_name)}. {forms_n} more are reached through their specific
+    forms, which is what Orphanet does with a group of disorders rather than a single disease. Every other code exists only
+    inside a wider category, so the case is in the data and cannot be pulled back out of it{unreachable}. This is what
+    <a href="/voice/#demand-3">demand 3</a> is about, in one table.</p>
 """
 
 
@@ -2022,6 +2033,9 @@ def orphanet_cell(code, name=None):
         return "No ORPHAcode (umbrella term)"
     c = PREV["conditions"].get(str(code))
     if not c:
+        if (ICD.get(name) or {}).get("group") == "Group of disorders":
+            return ('Orphanet holds this as a <strong>group of disorders</strong> rather than a single disease, and '
+                    'publishes no prevalence against a group')
         return "No epidemiological data published"
     rows = c["prevalence"]
     parts = []

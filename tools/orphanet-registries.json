@@ -1,6 +1,6 @@
 {
  "fetched": "2026-09-11T23:24:32.951Z",
- "source": "Orphanet, Research & trials > Patient registries, per ORPHAcode (direct / children / parent relation)",
+ "source": "Orphanet, Research & trials > Patient registries, per ORPHAcode (direct / children / parent relation); ORPHA:498461 added on 21 September 2026 by reading Orphanet's registry search for that code in the browser (51 rows, 50 distinct registries, all of them already in this file). It is recorded as a children relation, as Orphanet's other groups of disorders are here: the code names a group rather than a disease, so a registry is coded for forms within it and not for it.",
  "registries": [
   {
    "id": "59428",
@@ -8,7 +8,9 @@
    "local": "",
    "country": "AUSTRIA",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -46,7 +48,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -72,7 +75,9 @@
    "local": "Registre Central des Maladies Rares / Centraal Register Zeldzame Ziekten",
    "country": "BELGIUM",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -110,7 +115,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -131,7 +137,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -152,7 +159,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -173,7 +181,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -225,7 +234,9 @@
    "local": "Banque Nationale de Données Maladies Rares (BNDMR)",
    "country": "FRANCE",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -263,7 +274,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -308,7 +320,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -329,7 +342,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -350,7 +364,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -371,7 +386,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -392,7 +408,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -418,7 +435,9 @@
    "local": "Mainzer Geburtenregister zur Erfassung angeborener Fehlbildungen bei Neugeborenen  - Eingebunden in das EUROCAT Netzwerk",
    "country": "GERMANY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -450,7 +469,9 @@
    "local": "NARSE: Nationales Register für Seltene Erkrankungen",
    "country": "GERMANY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -510,7 +531,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -531,7 +553,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -575,7 +598,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -596,7 +620,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -611,7 +636,9 @@
    "local": "EuRR-Bone: Registro Europeo per le malattie rare scheletriche e per le anomalie della mineralizzazione",
    "country": "ITALY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -658,7 +685,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -684,7 +712,9 @@
    "local": "Registro Nazionale Malformazioni Congenite (RNMC)",
    "country": "ITALY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -716,7 +746,9 @@
    "local": "Registro Malattie Rare della Regione Veneto",
    "country": "ITALY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -759,7 +791,9 @@
    "local": "RNMR: Registro Nazionale Malattie Rare",
    "country": "ITALY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -797,7 +831,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -812,7 +847,9 @@
    "local": "Registro Toscano Malattie Rare",
    "country": "ITALY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -844,7 +881,9 @@
    "local": "",
    "country": "NETHERLANDS",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -891,7 +930,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -917,7 +957,9 @@
    "local": "Norsk register for sjeldne, medfødte bensykdommer",
    "country": "NORWAY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -947,7 +989,9 @@
    "local": "Norsk register for sjeldne diagnoser",
    "country": "NORWAY",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -985,7 +1029,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -1006,7 +1051,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -1032,7 +1078,9 @@
    "local": "ECEMC: Registro del Estudio Colaborativo Español de Malformaciones Congénitas",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1075,7 +1123,9 @@
    "local": "Registro poblacional de enfermedades raras y anomalias congenitas de Cantabria",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1113,7 +1163,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -1128,7 +1179,9 @@
    "local": "Registro de enfermedades raras de la Comunidad Autónoma de Aragón",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1160,7 +1213,9 @@
    "local": "Registro de Enfermedades Raras de la Comunidad Autónoma de Euskadi",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1192,7 +1247,9 @@
    "local": "Registro de enfermedades raras de Andalucía",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1224,7 +1281,9 @@
    "local": "Registro de enfermedades raras de Extremadura",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1256,7 +1315,9 @@
    "local": "RePER: Registro de Pacientes de Enfermedades Raras",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1288,7 +1349,9 @@
    "local": "RERGA: Registro de enfermedades raras de Galicia",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1320,7 +1383,9 @@
    "local": "RERNA: Registro poblacional de enfermedades raras de Navarra",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1363,7 +1428,9 @@
    "local": "SIER-CV: Sistema de Información de Enfermedades Raras de la Comunitat Valenciana",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1395,7 +1462,9 @@
    "local": "SIERrm: Sistema de Información sobre enfermedades raras de la Región de Murcia",
    "country": "SPAIN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1427,7 +1496,9 @@
    "local": "RaraSwed - Sällsynta diagnoser Nationellt kvalitetsregister",
    "country": "SWEDEN",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1465,7 +1536,8 @@
    ],
    "children": [
     "2913",
-    "93458"
+    "93458",
+    "498461"
    ],
    "parent": [
     "93320",
@@ -1503,7 +1575,9 @@
    "local": "Schweizer Register für seltene Krankheiten (SRSK)",
    "country": "SWITZERLAND",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1547,7 +1621,9 @@
    "local": "",
    "country": "UNITED KINGDOM",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",
@@ -1578,7 +1654,9 @@
    "local": "",
    "country": "UNITED STATES",
    "direct": [],
-   "children": [],
+   "children": [
+    "498461"
+   ],
    "parent": [
     "392",
     "974",

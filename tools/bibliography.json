@@ -1,5 +1,5 @@
 {
- "built": "2026-09-15",
+ "built": "2026-09-21",
  "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref",
  "thalidomide_query": "thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR \"birth defects\"[Title] OR phocomelia[Title] OR survivors[Title] OR \"limb\"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])",
  "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
@@ -34,6 +34,32 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "42755430",
+   "doi": "10.11604/pamj.2026.54.20.49804",
+   "title": "A twisted tale of limbs: fibular aplasia with tibial campomelia and oligosyndactyly",
+   "authors": [
+    "Kataria G",
+    "Dhawan V"
+   ],
+   "journal": "The Pan African medical journal",
+   "year": "2026",
+   "volume": "54",
+   "pages": "20",
+   "pubtypes": [],
+   "codes": [
+    "93323"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of Steps Charity (United Kingdom)"
+   ],
+   "via": [
+    "Steps Charity (United Kingdom)"
    ]
   },
   {
@@ -3028,6 +3054,32 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "38896746",
+   "doi": "10.1590/1516-3180.2023.0349.R1.08042024",
+   "title": "Prevalence of Congenital Anomalies of the Upper Limbs in Brazil: a descriptive cross-sectional study",
+   "authors": [
+    "Moura SRB",
+    "Nakachima LR",
+    "Santos JBGD",
+    "et al."
+   ],
+   "journal": "Sao Paulo medical journal = Revista paulista de medicina",
+   "year": "2024",
+   "volume": "142",
+   "pages": "e2023349",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Congenital anomalies of the upper limbs in Brazil, from the national live-birth system"
+   ],
+   "via": [
+    "SINASC (datasus.saude.gov.br)"
    ]
   },
   {

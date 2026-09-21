@@ -1037,8 +1037,7 @@ PAGES["/knowledge/bibliography/"] = {
   <div class="container" style="--acc:var(--acc-library);--acc-text:var(--acc-library-text)">
     <div class="tick"></div>
     <p class="eyebrow">Register 1 · Bibliography {updated_badge(BIB.get("built"))}</p>
-    <h1 class="display">Bibliography on limb difference: the research, readable.</h1>
-    <p>Every entry: a citation and a link to the source, tagged by condition and theme so families and clinicians find what concerns them. Search, then filter by condition, theme and year.</p>
+    <h1 class="display">Bibliography on limb difference.</h1>
     <p style="margin-top:var(--space-3)">Looking for guides, surveys and reports rather than papers? They have moved to <a href="/knowledge/resources/">Resources</a>.</p>
     <div id="bibliography">
     {bibliography_html()}

@@ -2203,6 +2203,13 @@
    "status": "unresolved: no PubMed or Crossref record"
   },
   {
+   "id": "10.1186/s13023-020-01403-x",
+   "members": [
+    "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
+   ],
+   "status": "lookup failed: KeyError"
+  },
+  {
    "id": "10.23736/s0392-0488.20.06675-4",
    "members": [
     "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
@@ -9711,15 +9718,6 @@
    "title": "Conducting clinical trials in heart failure during (and after) the COVID-19 pandemic: an Expert Consensus Position Paper from the Heart Failure Association (HFA) of the European Society of Cardiology (ESC).",
    "members": [
     "German registry for congenital thrombocytopenia (Germany)"
-   ],
-   "status": "rejected: not about the site's conditions"
-  },
-  {
-   "id": "32505191",
-   "pmid": "32505191",
-   "title": "Emergency management in epidermolysis bullosa: consensus clinical recommendations from the European reference network for rare skin diseases.",
-   "members": [
-    "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
    ],
    "status": "rejected: not about the site's conditions"
   },
@@ -40358,15 +40356,6 @@
    "status": "rejected: systematic review not about the site's conditions"
   },
   {
-   "id": "38980347",
-   "pmid": "38980347",
-   "title": "Risk of teratogenicity in continued pregnancy after gestational exposure to mifepristone and/or misoprostol: a systematic review and meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: systematic review not about the site's conditions"
-  },
-  {
    "id": "38876624",
    "pmid": "38876624",
    "title": "Intrinsic and extrinsic variables impacting upper quarter Y-balance test scores in sporting cohorts: A systematic review.",
@@ -40610,33 +40599,6 @@
    "status": "rejected: systematic review not about the site's conditions"
   },
   {
-   "id": "16750609",
-   "pmid": "16750609",
-   "title": "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: systematic review not about the site's conditions"
-  },
-  {
-   "id": "12933520",
-   "pmid": "12933520",
-   "title": "A meta-analysis of case-control and cohort studies with interval-censored exposure data: application to chorionic villus sampling.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: systematic review not about the site's conditions"
-  },
-  {
-   "id": "10441771",
-   "pmid": "10441771",
-   "title": "Adverse effects of chorionic villus sampling: a meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: systematic review not about the site's conditions"
-  },
-  {
    "id": "2143279",
    "pmid": "2143279",
    "title": "Oral contraception and congenital malformations in offspring: a review and meta-analysis of the prospective studies.",
@@ -40739,15 +40701,6 @@
    "id": "39157029",
    "pmid": "39157029",
    "title": "Limb body wall complex in a 28-week fetus and impact of cultural beliefs on maternal outcomes: A case report.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "38980347",
-   "pmid": "38980347",
-   "title": "Risk of teratogenicity in continued pregnancy after gestational exposure to mifepristone and/or misoprostol: a systematic review and meta-analysis.",
    "members": [
     "PubMed search"
    ],
@@ -40892,15 +40845,6 @@
    "id": "34369859",
    "pmid": "34369859",
    "title": "Association of maternal intake of nitrate and risk of birth defects and preterm birth: a systematic review and dose-response meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "33565281",
-   "pmid": "33565281",
-   "title": "Evidence for a cluster of rare birth defects in the Ain department (France).",
    "members": [
     "PubMed search"
    ],
@@ -41555,15 +41499,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "16750609",
-   "pmid": "16750609",
-   "title": "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "16496130",
    "pmid": "16496130",
    "title": "Teratogenic effects of nitroimidazopyridazine on the CNS in fetal Wistar (WU) rats.",
@@ -41663,15 +41598,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "12933520",
-   "pmid": "12933520",
-   "title": "A meta-analysis of case-control and cohort studies with interval-censored exposure data: application to chorionic villus sampling.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "12668170",
    "pmid": "12668170",
    "title": "Haploinsufficiency of TBX3 causes ulnar-mammary syndrome in a large Turkish family.",
@@ -41738,15 +41664,6 @@
    "id": "11811935",
    "pmid": "11811935",
    "title": "Maternal immune stimulation in mice decreases fetal malformations caused by teratogens.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "11550914",
-   "pmid": "11550914",
-   "title": "Synthesis of evidence from epidemiological studies with interval-censored exposure due to grouping.",
    "members": [
     "PubMed search"
    ],
@@ -41960,15 +41877,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "1481846",
-   "pmid": "1481846",
-   "title": "Congenital defects of the limbs and alcohol exposure in pregnancy: data from a population based study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "1412057",
    "pmid": "1412057",
    "title": "Trends in rates of multiple vascular disruption defects, Atlanta, 1968-1989: is there evidence of a cocaine teratogenic epidemic?",
@@ -42143,15 +42051,6 @@
    "id": "3803426",
    "pmid": "3803426",
    "title": "Joint study on the teratogenic sensitivity of the Pika (Ochotona rufescens rufescens) to selected drugs.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "3008556",
-   "pmid": "3008556",
-   "title": "Subclavian artery supply disruption sequence: hypothesis of a vascular etiology for Poland, Klippel-Feil, and M&#xf6;bius anomalies.",
    "members": [
     "PubMed search"
    ],
@@ -42575,15 +42474,6 @@
    "id": "8322803",
    "pmid": "8322803",
    "title": "Congenital defects of the limbs in stillbirths: data from a population-based study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: Canada query, not about the site's conditions"
-  },
-  {
-   "id": "1481846",
-   "pmid": "1481846",
-   "title": "Congenital defects of the limbs and alcohol exposure in pregnancy: data from a population based study.",
    "members": [
     "PubMed search"
    ],
@@ -44528,15 +44418,6 @@
    "id": "39255949",
    "pmid": "39255949",
    "title": "Examination of piperonyl butoxide developmental toxicity as a Sonic hedgehog pathway inhibitor targeting limb and palate morphogenesis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "38980347",
-   "pmid": "38980347",
-   "title": "Risk of teratogenicity in continued pregnancy after gestational exposure to mifepristone and/or misoprostol: a systematic review and meta-analysis.",
    "members": [
     "PubMed search"
    ],
@@ -46919,15 +46800,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "16957480",
-   "pmid": "16957480",
-   "title": "Handless, footless fetus.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "16956039",
    "pmid": "16956039",
    "title": "[Birth defects' occurrence in offspring of mothers taking 1st trimester medication in the Czech Republic in 1996-2004].",
@@ -46958,15 +46830,6 @@
    "id": "16800203",
    "pmid": "16800203",
    "title": "Folate intake and the primary prevention of non-neural birth defects.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "16750609",
-   "pmid": "16750609",
-   "title": "Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis.",
    "members": [
     "PubMed search"
    ],
@@ -47021,15 +46884,6 @@
    "id": "16240378",
    "pmid": "16240378",
    "title": "Changes in the birth prevalence of selected birth defects after grain fortification with folic acid in the United States: findings from a multi-state population-based study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "16231329",
-   "pmid": "16231329",
-   "title": "Vascular-type disruptive defects in fetuses with homozygous alpha-thalassemia: report of two cases and review of the literature.",
    "members": [
     "PubMed search"
    ],
@@ -47270,15 +47124,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "14745923",
-   "pmid": "14745923",
-   "title": "M&#xf6;bius sequence in children exposed in utero to misoprostol: neuropathological study of three cases.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "14699995",
    "pmid": "14699995",
    "title": "Prevalence of birth defects and rubella infection in pregnant women in Gansu, west China. A survey.",
@@ -47333,15 +47178,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "12933520",
-   "pmid": "12933520",
-   "title": "A meta-analysis of case-control and cohort studies with interval-censored exposure data: application to chorionic villus sampling.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "12899117",
    "pmid": "12899117",
    "title": "Validation studies of drug exposures in pregnant women.",
@@ -47372,15 +47208,6 @@
    "id": "12797522",
    "pmid": "12797522",
    "title": "TNF-alpha protects embryos exposed to developmental toxicants.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "12638075",
-   "pmid": "12638075",
-   "title": "Congenital absence of the 5th digital ray and its proximal segmental structures.",
    "members": [
     "PubMed search"
    ],
@@ -47552,15 +47379,6 @@
    "id": "11604181",
    "pmid": "11604181",
    "title": "Chromosomal defects and associated malformations in fetal cleft lip with or without cleft palate.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "11550914",
-   "pmid": "11550914",
-   "title": "Synthesis of evidence from epidemiological studies with interval-censored exposure due to grouping.",
    "members": [
     "PubMed search"
    ],
@@ -47846,15 +47664,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "10441771",
-   "pmid": "10441771",
-   "title": "Adverse effects of chorionic villus sampling: a meta-analysis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "10379846",
    "pmid": "10379846",
    "title": "Combined prenatal toxicity of 6-mercaptopurine riboside and hydroxyurea in mice.",
@@ -47927,15 +47736,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "9714441",
-   "pmid": "9714441",
-   "title": "Unilateral terminal aphalangia in father and daughter--exogenous or genetic cause?",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "9694631",
    "pmid": "9694631",
    "title": "The use of a retinoid receptor antagonist in a new model to study vitamin A-dependent developmental events.",
@@ -47948,15 +47748,6 @@
    "id": "9622312",
    "pmid": "9622312",
    "title": "Periconceptional folic acid containing multivitamin supplementation.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "9620717",
-   "pmid": "9620717",
-   "title": "Congenital abnormalities in Brazilian children associated with misoprostol misuse in first trimester of pregnancy.",
    "members": [
     "PubMed search"
    ],
@@ -48065,15 +47856,6 @@
    "id": "9215777",
    "pmid": "9215777",
    "title": "Umbilical cord agenesis in limb body wall defect.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "9208163",
-   "pmid": "9208163",
-   "title": "Using the Hungarian Birth Defects Registry for surveillance, research and intervention.",
    "members": [
     "PubMed search"
    ],
@@ -48656,15 +48438,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "1481846",
-   "pmid": "1481846",
-   "title": "Congenital defects of the limbs and alcohol exposure in pregnancy: data from a population based study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "1403521",
    "pmid": "1403521",
    "title": "Cloacal exstrophy: prenatal diagnosis before rupture of the cloacal membrane.",
@@ -48758,15 +48531,6 @@
    "id": "1680974",
    "pmid": "1680974",
    "title": "Fetal alcohol syndrome: report of a case.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "1672394",
-   "pmid": "1672394",
-   "title": "Severe limb abnormalities after chorion villus sampling at 56-66 days' gestation.",
    "members": [
     "PubMed search"
    ],

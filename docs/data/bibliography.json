@@ -2125,7 +2125,9 @@
    "volume": "39",
    "pages": "753-771",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -2133,7 +2135,8 @@
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions",
     "PubMed search on studies from the countries of our member associations",
-    "cited by the Causes of dysmelia review"
+    "cited by the Causes of dysmelia review",
+    "the three French clusters, same defect and same ICD-10 codes"
    ],
    "via": [
     "DysNet",
@@ -3256,6 +3259,41 @@
    ]
   },
   {
+   "pmid": "38980347",
+   "doi": "10.1007/s00404-024-07616-w",
+   "title": "Risk of teratogenicity in continued pregnancy after gestational exposure to mifepristone and/or misoprostol: a systematic review and meta-analysis",
+   "authors": [
+    "Jingran G",
+    "Yan D",
+    "Xiaoying Y"
+   ],
+   "journal": "Archives of gynecology and obstetrics",
+   "year": "2024",
+   "volume": "310",
+   "pages": "1331-1342",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "meta",
+    "review",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "39220272",
    "doi": "10.5582/irdr.2024.01035",
    "title": "Skeletal computed tomography findings of upper extremities in middle-aged persons with thalidomide embryopathy",
@@ -3913,7 +3951,8 @@
     "Review"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -4532,6 +4571,7 @@
     "Case Reports"
    ],
    "codes": [
+    "498461",
     "974"
    ],
    "topics": [
@@ -5512,7 +5552,8 @@
    ],
    "codes": [
     "1570",
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -5545,6 +5586,7 @@
     "1570",
     "2440",
     "2911",
+    "498461",
     "93458"
    ],
    "topics": [
@@ -6493,17 +6535,22 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology"
    ],
    "notes": [
+    "PubMed search for causes and risk factors of the site's conditions",
     "REMERA's own analysis of the Ain cluster of transverse upper-limb agenesis",
-    "cited by the Causes of dysmelia review"
+    "cited by the Causes of dysmelia review",
+    "unilateral isolated transverse upper-limb reduction, Q71.2 and Q71.3, per the paper"
    ],
    "via": [
     "DysNet",
+    "PubMed search",
     "REMERA (remera.fr)"
    ]
   },
@@ -7298,7 +7345,8 @@
     "Research Support, U.S. Gov't, Non-P.H.S."
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -10061,6 +10109,7 @@
    ],
    "codes": [
     "1027",
+    "294969",
     "295000"
    ],
    "topics": [
@@ -11149,6 +11198,7 @@
    ],
    "codes": [
     "295000",
+    "498461",
     "93458"
    ],
    "topics": [
@@ -11182,7 +11232,8 @@
    "pages": "267-272",
    "pubtypes": [],
    "codes": [
-    "2440"
+    "2440",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -13172,7 +13223,8 @@
    "pages": "3083-3089",
    "pubtypes": [],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -13361,6 +13413,7 @@
     "Case Reports"
    ],
    "codes": [
+    "498461",
     "93323"
    ],
    "topics": [
@@ -13548,6 +13601,7 @@
     "Observational Study"
    ],
    "codes": [
+    "498461",
     "93458"
    ],
    "topics": [
@@ -13614,7 +13668,9 @@
     "Multicenter Study",
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "epidemiology"
    ],
@@ -15003,7 +15059,9 @@
     "Letter",
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -15439,7 +15497,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -16028,7 +16087,9 @@
    "pubtypes": [
     "Research Support, U.S. Gov't, P.H.S."
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology",
@@ -17063,7 +17124,9 @@
     "Research Support, Non-U.S. Gov't",
     "Research Support, U.S. Gov't, P.H.S."
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology",
@@ -17961,7 +18024,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -19600,7 +19665,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -21110,7 +21176,8 @@
     "Letter"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -21390,7 +21457,8 @@
     "Research Support, N.I.H., Extramural"
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -23084,7 +23152,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -23798,7 +23867,8 @@
    "pages": "169-76",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -24240,6 +24310,36 @@
    ]
   },
   {
+   "pmid": "16957480",
+   "doi": "10.1097/01.mcd.0000220612.63025.4b",
+   "title": "Handless, footless fetus",
+   "authors": [
+    "Phadke SR",
+    "Girisha KM",
+    "Dalal A"
+   ],
+   "journal": "Clinical dysmorphology",
+   "year": "2006",
+   "volume": "15",
+   "pages": "233-234",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "16308330",
    "doi": "10.1242/dev.02172",
    "title": "Increasing Fgf4 expression in the mouse limb bud causes polysyndactyly and rescues the skeletal defects that result from loss of Fgf8 function",
@@ -24446,17 +24546,26 @@
     "Meta-Analysis",
     "Systematic Review"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
-    "meta"
+    "clinical",
+    "meta",
+    "review",
+    "teratogens"
    ],
    "notes": [
     "Misoprostol and congenital anomalies: systematic review and meta-analysis",
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions",
     "cited by the Causes of dysmelia review"
    ],
    "via": [
-    "DysNet"
+    "DysNet",
+    "PubMed search"
    ]
   },
   {
@@ -25364,6 +25473,39 @@
    ]
   },
   {
+   "pmid": "16231329",
+   "doi": "10.1002/pd.1276",
+   "title": "Vascular-type disruptive defects in fetuses with homozygous alpha-thalassemia: report of two cases and review of the literature",
+   "authors": [
+    "Adam MP",
+    "Chueh J",
+    "El-Sayed YY",
+    "et al."
+   ],
+   "journal": "Prenatal diagnosis",
+   "year": "2005",
+   "volume": "25",
+   "pages": "1088-96",
+   "pubtypes": [
+    "Case Reports",
+    "Review"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "16078767",
    "doi": "",
    "title": "[Diagnostic image (242). Intrauterine fetal demise at term]",
@@ -25624,7 +25766,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -26418,7 +26561,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -26460,6 +26604,35 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "12638075",
+   "doi": "10.1055/s-2003-37954",
+   "title": "Congenital absence of the 5th digital ray and its proximal segmental structures",
+   "authors": [
+    "Simon NP",
+    "Simon MW"
+   ],
+   "journal": "American journal of perinatology",
+   "year": "2003",
+   "volume": "20",
+   "pages": "7-10",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -26666,6 +26839,7 @@
    ],
    "codes": [
     "1027",
+    "498461",
     "93320"
    ],
    "topics": [
@@ -26811,6 +26985,38 @@
    ],
    "via": [
     "DysNet",
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "14745923",
+   "doi": "10.1002/bdra.10144",
+   "title": "Möbius sequence in children exposed in utero to misoprostol: neuropathological study of three cases",
+   "authors": [
+    "Marques-Dias MJ",
+    "Gonzalez CH",
+    "Rosemberg S"
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2003",
+   "volume": "67",
+   "pages": "1002-7",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
     "PubMed search"
    ]
   },
@@ -28085,7 +28291,8 @@
     "Letter"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -28703,6 +28910,39 @@
    ]
   },
   {
+   "pmid": "11550914",
+   "doi": "10.1111/j.0006-341x.2001.00671.x",
+   "title": "Synthesis of evidence from epidemiological studies with interval-censored exposure due to grouping",
+   "authors": [
+    "Cook RJ",
+    "Brumback BB",
+    "Wigg MB",
+    "et al."
+   ],
+   "journal": "Biometrics",
+   "year": "2001",
+   "volume": "57",
+   "pages": "671-80",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "11211946",
    "doi": "10.1111/j.8755-8920.2001.450107.x",
    "title": "TGFbeta2 in embryos with inborn anomalies: effect of maternal immunopotentiation",
@@ -29027,6 +29267,37 @@
    ]
   },
   {
+   "pmid": "12933520",
+   "doi": "10.1093/biostatistics/1.2.203",
+   "title": "A meta-analysis of case-control and cohort studies with interval-censored exposure data: application to chorionic villus sampling",
+   "authors": [
+    "Brumback BA",
+    "Cook RJ",
+    "Ryan LM"
+   ],
+   "journal": "Biostatistics (Oxford, England)",
+   "year": "2000",
+   "volume": "1",
+   "pages": "203-17",
+   "pubtypes": [],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "meta"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "11003055",
    "doi": "10.1016/s0024-3205(00)00636-6",
    "title": "A possible role of N-cadherin in thalidomide teratogenicity",
@@ -29196,7 +29467,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -29261,7 +29533,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2440"
+    "2440",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -30032,6 +30305,7 @@
     "Case Reports"
    ],
    "codes": [
+    "498461",
     "974"
    ],
    "topics": [
@@ -30157,6 +30431,39 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "10441771",
+   "doi": "10.1002/(sici)1097-0258(19990830)18:16<2163::aid-sim180>3.0.co;2-h",
+   "title": "Adverse effects of chorionic villus sampling: a meta-analysis",
+   "authors": [
+    "Brumback BA",
+    "Holmes LB",
+    "Ryan LM"
+   ],
+   "journal": "Statistics in medicine",
+   "year": "1999",
+   "volume": "18",
+   "pages": "2163-75",
+   "pubtypes": [
+    "Comparative Study",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "meta"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -30684,7 +30991,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -30781,7 +31090,8 @@
     "Review"
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498461"
    ],
    "topics": [
     "causes",
@@ -31076,6 +31386,39 @@
    ]
   },
   {
+   "pmid": "9620717",
+   "doi": "10.1016/S0140-6736(97)12363-7",
+   "title": "Congenital abnormalities in Brazilian children associated with misoprostol misuse in first trimester of pregnancy",
+   "authors": [
+    "Gonzalez CH",
+    "Marques-Dias MJ",
+    "Kim CA",
+    "et al."
+   ],
+   "journal": "Lancet (London, England)",
+   "year": "1998",
+   "volume": "351",
+   "pages": "1624-7",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
    "pmid": "11012189",
    "doi": "10.1002/stem.5530160720",
    "title": "Defective c-Mpl signaling in the syndrome of thrombocytopenia with absent radii",
@@ -31149,7 +31492,8 @@
     "Review"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -31509,6 +31853,39 @@
    "topics": [
     "causes",
     "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "9714441",
+   "doi": "10.1002/(sici)1096-8628(19980724)78:4<366::aid-ajmg12>3.0.co;2-g",
+   "title": "Unilateral terminal aphalangia in father and daughter--exogenous or genetic cause?",
+   "authors": [
+    "Neumann L",
+    "Pelz J",
+    "Kunze J"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1998",
+   "volume": "78",
+   "pages": "366-70",
+   "pubtypes": [
+    "Case Reports",
+    "Review"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -32110,7 +32487,9 @@
     "Case Reports",
     "Review"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical",
@@ -32198,7 +32577,9 @@
    "pubtypes": [
     "Comparative Study"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "genetics"
@@ -32700,7 +33081,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -32735,6 +33118,34 @@
    "topics": [
     "causes",
     "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "9208163",
+   "doi": "",
+   "title": "Using the Hungarian Birth Defects Registry for surveillance, research and intervention",
+   "authors": [
+    "Siffel C",
+    "Czeizel AE"
+   ],
+   "journal": "Central European journal of public health",
+   "year": "1997",
+   "volume": "5",
+   "pages": "79-81",
+   "pubtypes": [],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -34714,7 +35125,8 @@
     "Review"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -34989,7 +35401,9 @@
     "Case Reports",
     "Review"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical",
@@ -35197,7 +35611,9 @@
    "volume": "49",
    "pages": "242-7",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -35795,7 +36211,9 @@
    "volume": "308",
    "pages": "1473-6",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology",
@@ -35985,7 +36403,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -36174,7 +36593,9 @@
    "volume": "48",
    "pages": "323-7",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -36526,6 +36947,7 @@
    "pages": "127-35",
    "pubtypes": [],
    "codes": [
+    "498461",
     "93458"
    ],
    "topics": [
@@ -37158,7 +37580,9 @@
    "volume": "46",
    "pages": "483-5",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -37551,6 +37975,38 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "1481846",
+   "doi": "10.1002/ajmg.1320440612",
+   "title": "Congenital defects of the limbs and alcohol exposure in pregnancy: data from a population based study",
+   "authors": [
+    "Froster UG",
+    "Baird PA"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1992",
+   "volume": "44",
+   "pages": "782-5",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions",
+    "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
     "PubMed search"
@@ -38444,6 +38900,7 @@
     "Case Reports"
    ],
    "codes": [
+    "498461",
     "974"
    ],
    "topics": [
@@ -38785,6 +39242,35 @@
     "causes",
     "review",
     "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "1672394",
+   "doi": "10.1016/0140-6736(91)91374-4",
+   "title": "Severe limb abnormalities after chorion villus sampling at 56-66 days' gestation",
+   "authors": [
+    "Firth HV",
+    "Boyd PA",
+    "Chamberlain P",
+    "et al."
+   ],
+   "journal": "Lancet (London, England)",
+   "year": "1991",
+   "volume": "337",
+   "pages": "762-3",
+   "pubtypes": [],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -39137,7 +39623,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294969"
    ],
    "topics": [
     "causes",
@@ -40074,7 +40561,9 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498461"
+   ],
    "topics": [
     "causes",
     "clinical",
@@ -42266,7 +42755,8 @@
    ],
    "codes": [
     "1027",
-    "2913"
+    "2913",
+    "294967"
    ],
    "topics": [
     "causes",
@@ -42360,6 +42850,36 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ]
+  },
+  {
+   "pmid": "3008556",
+   "doi": "10.1002/ajmg.1320230405",
+   "title": "Subclavian artery supply disruption sequence: hypothesis of a vascular etiology for Poland, Klippel-Feil, and Möbius anomalies",
+   "authors": [
+    "Bavinck JN",
+    "Weaver DD"
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1986",
+   "volume": "23",
+   "pages": "903-18",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "498461"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "review"
+   ],
+   "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
@@ -46128,7 +46648,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "1027"
+    "1027",
+    "294967"
    ],
    "topics": [
     "causes",

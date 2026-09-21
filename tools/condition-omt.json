@@ -1,0 +1,172 @@
+{
+ "built": "2026-09-21",
+ "status": "PROVISIONAL. A first mapping by DysNet, for review by a hand surgeon before it is used in any negotiation.",
+ "classification": "Oberg-Manske-Tonkin (OMT), adopted by the IFSSH Scientific Committee for Congenital Conditions in place of the Swanson classification",
+ "structure": "Three groups: malformations, deformations and dysplasias, with a fourth group for syndromes. Malformations divide by whether the whole limb or the hand plate alone is affected, and by which of the three axes of limb development is primarily involved: proximal-distal, radial-ulnar or dorsal-ventral, or none of them.",
+ "scope_limit": "OMT classifies the upper limb only. Four of the conditions this site describes are of the leg, or of the leg as well, and no OMT category exists for them. That is a limit of the classification, not a gap in the mapping.",
+ "counts": "99 codes across groups I to III and 51 for syndromes in group IV",
+ "sources": [
+  {
+   "ref": "Tonkin MA, Oberg KC. The OMT Classification of Congenital Anomalies of the Hand and Upper Limb. Hand Surg 2015;20(3):336-342",
+   "doi": "10.1142/S0218810415400055"
+  },
+  {
+   "ref": "Tonkin MA, Tolerton SK, Quick TJ, et al. Classification of congenital anomalies of the hand and upper limb: development and assessment of a new system. J Hand Surg Am 2013;38(9):1845-1853",
+   "doi": "10.1016/j.jhsa.2013.03.019"
+  },
+  {
+   "ref": "Sletten IN, Winge MI, Hülsemann W, Arner M, Hansen KL, Jokihaara J. Inter- and intra-rater reliability of the Oberg-Manske-Tonkin classification of congenital upper limb anomalies. J Hand Surg Eur Vol 2022",
+   "doi": "10.1177/17531934221107264"
+  },
+  {
+   "ref": "The classification's own table is published by the IFSSH",
+   "url": "https://ifssh.info/OMT-Classification-App.php"
+  }
+ ],
+ "conditions": {
+  "Adams-Oliver syndrome": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Amelia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, amelia",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; amelia of a leg falls outside it."
+  },
+  "Amelia of the upper limb": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, amelia",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Amelia of the lower limb": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Amniotic band syndrome": {
+   "group": "Deformation (group II)",
+   "diagnosis": "constriction ring sequence",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Brachydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "proximal-distal",
+   "diagnosis": "brachydactyly",
+   "confidence": "placed by the OMT structure; the exact code within the subgroup needs the published table"
+  },
+  "Cenani-Lenz syndrome": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Crossed polysyndactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "polydactyly with syndactyly",
+   "confidence": "placed by the OMT structure; the exact code within the subgroup needs the published table"
+  },
+  "Ectrodactyly (SHFM)": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "cleft hand",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Fibular hemimelia": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Holt-Oram syndrome": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Microgastria–limb reduction": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Phocomelia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "intersegmental deficiency",
+   "confidence": "placed by the OMT structure; the exact code within the subgroup needs the published table"
+  },
+  "Poland syndrome": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "symbrachydactyly, Poland type",
+   "confidence": "placed by the OMT structure; the exact code within the subgroup needs the published table"
+  },
+  "Polydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial or ulnar polydactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Radial aplasia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial longitudinal deficiency",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Roberts syndrome": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Symbrachydactyly": {
+   "group": "Malformation",
+   "part": "whole limb or hand plate",
+   "axis": "proximal-distal",
+   "diagnosis": "symbrachydactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Terminal transverse limb defect": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Tetra-amelia": {
+   "group": "Syndrome (group IV)",
+   "diagnosis": "the limb phenotype is transverse deficiency, amelia",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Thrombocytopenia-absent radius (TAR)": {
+   "group": "Syndrome (group IV)",
+   "diagnosis": "the limb phenotype is radial longitudinal deficiency",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Tibial aplasia–ectrodactyly": {
+   "group": "Syndrome (group IV)",
+   "confidence": "placed by the structure of OMT, which holds syndromes in a group of their own"
+  },
+  "Tibial hemimelia": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Ulnar hemimelia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "ulnar longitudinal deficiency",
+   "confidence": "named in the OMT literature at this position"
+  }
+ }
+}

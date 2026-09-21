@@ -1793,6 +1793,38 @@ ICD_PATH = pathlib.Path(__file__).parent / "tools" / "condition-icd.json"
 ICD = json.loads(ICD_PATH.read_text(encoding="utf-8"))["conditions"] if ICD_PATH.exists() else {}
 
 
+# ── Oberg-Manske-Tonkin, the surgeons' classification (tools/condition-omt.json) ──
+# A third vocabulary, and the one the four clinical registries of congenital upper limb
+# difference all use. Our conditions carry ORPHAcodes and ICD codes; a hand surgeon reading
+# this page had no way to see where any of it sits in the classification they work in. This
+# mapping is DysNet's own and is marked provisional on the page, because a wrong placement
+# would cost more with those registries than a missing one.
+OMT_PATH = pathlib.Path(__file__).parent / "tools" / "condition-omt.json"
+OMT_ALL = json.loads(OMT_PATH.read_text(encoding="utf-8")) if OMT_PATH.exists() else {}
+OMT = OMT_ALL.get("conditions", {})
+
+
+def condition_omt_html(name):
+    """The OMT line for a condition card."""
+    row = OMT.get(name) or {}
+    group = row.get("group")
+    if not group:
+        if row.get("confidence"):
+            return f'<p class="cond-omt">OMT <span class="omt-na">upper limb only, so not classified here</span></p>'
+        return ""
+    bits = [group]
+    if row.get("part"):
+        bits.append(row["part"])
+    if row.get("axis"):
+        bits.append(row["axis"] + " axis")
+    title = row.get("diagnosis") or ""
+    if row.get("note"):
+        title = (title + ". " + row["note"]).strip(". ")
+    label = " · ".join(bits)
+    return (f'<p class="cond-omt">OMT <span title="{title}">{label}</span>'
+            f'<span class="omt-prov" title="{row.get("confidence", "")}">provisional</span></p>')
+
+
 def condition_icd_html(name):
     """The ICD-10 line for a condition card, with one marker for where the codes come from.
 
@@ -1816,7 +1848,13 @@ def condition_icd_html(name):
         mark = ('<span class="icd-rel" title="Orphanet maps this condition as narrower than the ICD-10 '
                 'code, so the code covers more than this condition alone">broader</span>')
     shown = " ".join(f'<code>{e["code"]}</code>' for e in codes)
-    return f'<p class="cond-icd">ICD-10 {shown}{mark}</p>'
+    line = f'ICD-10 {shown}{mark}'
+    i11 = row.get("icd11") or []
+    if i11 and mark and all(str(e.get("relation", "")).startswith("E ") for e in i11):
+        c11 = " ".join(f'<code>{e["code"]}</code>' for e in i11)
+        line += (f'<span class="icd-11"> · ICD-11 {c11}'
+                 f'<span class="icd-rel" title="ICD-11 names this condition exactly, where ICD-10 has only a broader code">exact</span></span>')
+    return f'<p class="cond-icd">{line}</p>'
 
 
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
@@ -1835,7 +1873,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
             if code and n_refs >= 3 else "")
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{link}{refs}</div>')
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -1998,6 +2036,8 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
     <p class="annex-note">Each card also carries its <strong>ICD-10</strong> code, which is what a hospital, a national registry and an insurer actually use, while the ORPHAcode is what a rare-disease registry uses. Two words qualify it, and they matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
+    <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the third vocabulary on each card, and the one the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so three of the conditions here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
+    <p class="annex-note"><strong>ICD-11</strong> appears only where it resolves something ICD-10 leaves unresolved, which on this page is three times. Amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8, and ICD-11 names each of them exactly; polydactyly has no Orphanet mapping to ICD-10 at all, and ICD-11 names it exactly. It is not a general improvement. Across these conditions the share of exact mappings rises from roughly a third under ICD-10 to under a half under ICD-11, and in one respect ICD-11 is the coarser of the two: its code LD2F.1Y covers seven of the conditions here, among them Adams-Oliver, Holt-Oram, phocomelia and Roberts syndrome, where ICD-10 at least spreads them over three codes. Anyone planning to move a registry from one to the other should know that before assuming the newer classification is the finer one.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>

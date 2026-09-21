@@ -1097,3 +1097,11 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
                  padding: 0.1rem 0.35rem; border-radius: 0.3rem; }
 .cond-icd .icd-rel { font-size: var(--text-eyebrow); margin-left: 0.3rem; padding: 0.05rem 0.3rem;
                      border: 1px solid var(--dys-line); border-radius: 0.3rem; cursor: help; }
+.cond-icd .icd-11 { white-space: nowrap; }
+/* Oberg-Manske-Tonkin on a condition card: a third vocabulary, marked provisional because it
+   is DysNet's own mapping rather than a published one. */
+.cond-omt { margin: 0.2rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-omt span[title] { color: var(--dys-ink); }
+.cond-omt .omt-prov, .cond-omt .omt-na { font-size: var(--text-eyebrow); margin-left: 0.3rem; padding: 0.05rem 0.3rem;
+                                         border: 1px dashed var(--dys-line); border-radius: 0.3rem; cursor: help;
+                                         color: var(--dys-muted); }

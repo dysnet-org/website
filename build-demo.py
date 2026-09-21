@@ -548,8 +548,15 @@ CONTINENT = {"Australia": "Oceania", "Chile": "South America", "Canada": "North 
 _unmapped = sorted({c for c, _ in MEMBERS} - set(CONTINENT))
 if _unmapped:
     raise SystemExit(f"CONTINENT has no entry for {_unmapped}; add it so the member counts stay right")
+# The associations piloting the registry under the AGM mandate of 26 August 2026. Named once, here,
+# and read by the map card, the legend and the country tooltip; a name not in MEMBERS stops the build.
+PILOTS = ("Assedea", "Raggiungere")
+_member_names = {(o[0] if isinstance(o, (list, tuple)) else o) for _, orgs in MEMBERS for o in orgs}
+_unknown_pilots = [n for n in PILOTS if not any(n.lower() in m.lower() for m in _member_names)]
+if _unknown_pilots:
+    raise SystemExit(f"PILOTS names {_unknown_pilots}, which MEMBERS does not list")
 MEMBER_STATS = {"orgs": sum(len(v) for _, v in MEMBERS), "countries": len({c for c, _ in MEMBERS}),
-                "continents": len({CONTINENT[c] for c, _ in MEMBERS})}
+                "continents": len({CONTINENT[c] for c, _ in MEMBERS}), "pilots": len(PILOTS)}
 MEMBER_SENTENCE = (f"{spell(MEMBER_STATS['orgs'])} organisations across {spell(MEMBER_STATS['countries'])} countries, "
                    f"on {spell(MEMBER_STATS['continents'])} continents")
 
@@ -4148,7 +4155,7 @@ ISO_NUM = {"Australia": "036", "Austria": "040", "Belgium": "056", "Canada": "12
 ISO_A3 = {"036": "AUS", "040": "AUT", "056": "BEL", "124": "CAN", "152": "CHL", "250": "FRA", "276": "DEU",
           "372": "IRL", "380": "ITA", "528": "NLD", "578": "NOR", "724": "ESP", "752": "SWE", "826": "GBR", "840": "USA"}
 REGISTRY_STATUS = {"250": "candidate", "380": "candidate", "124": "contact"}
-MAP_LABELS = {"member": "Member association", "candidate": "Piloting the registry (Assedea, Raggiungere; AGM mandate, August 2026)",
+MAP_LABELS = {"member": "Member association", "candidate": f"Piloting the registry ({', '.join(PILOTS)}; AGM mandate, August 2026)",
               "contact": "Contact opened"}
 MAP_COUNTRIES = {}
 for _country, _orgs in MEMBERS:
@@ -4214,9 +4221,9 @@ MAP_HERO = """
     <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
     <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
     <ul class="map-stats">
-      <li><strong data-count="countries">–</strong>countries</li>
-      <li><strong data-count="orgs">–</strong>associations</li>
-      <li><strong data-count="candidate">–</strong>associations piloting the registry</li>
+      <li><strong data-count="countries">__N_COUNTRIES__</strong>countries</li>
+      <li><strong data-count="orgs">__N_ORGS__</strong>associations</li>
+      <li><strong data-count="candidate">__N_PILOTS__</strong>associations piloting the registry</li>
     </ul>
     <div class="hero-actions">
       <a class="btn btn-primary" href="/registry/">The registry project</a>
@@ -4253,7 +4260,7 @@ MAP_HERO = """
   <div class="map-legend" id="map-legend" aria-label="Legend">
     <button type="button" class="map-legend-toggle" id="map-legend-toggle" aria-expanded="false" aria-controls="map-legend">Legend</button>
     <span class="l-member" data-layer="members">Member association</span>
-    <span class="l-candidate" data-layer="members">Piloting the registry (Assedea, Raggiungere)</span>
+    <span class="l-candidate" data-layer="members">Piloting the registry (__PILOTS__)</span>
     <span class="l-contact" data-layer="members">Contact opened</span>
     <span class="l-office" data-layer="offices">DysNet office</span>
     __ZONE_LEGEND__
@@ -4274,6 +4281,11 @@ MAP_HERO = """
 """.replace("__MAP_DATA__", MAP_DATA).replace("__MAPGL_V__", __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/js/map-gl.js").read_bytes()).hexdigest()[:8])
 # the legend's zone rows come from ZONE_LABELS, the same words the two maps use for a zone's status
 MAP_HERO = MAP_HERO.replace("__ZONE_LEGEND__", "\n    ".join(f'<span class="{v["css"]}" data-layer="zones">{v["legend"]}</span>' for v in ZONE_LABELS.values()))
+# The card's counts and the pilots' names come from MEMBERS, the same source as every sentence that
+# counts the members. The scripts used to total the map data instead, and counted Canada's
+# "contact opened" placeholder as a thirtieth association.
+MAP_HERO = (MAP_HERO.replace("__N_COUNTRIES__", str(MEMBER_STATS["countries"])).replace("__N_ORGS__", str(MEMBER_STATS["orgs"]))
+            .replace("__N_PILOTS__", str(MEMBER_STATS["pilots"])).replace("__PILOTS__", ", ".join(PILOTS)))
 
 
 # Notes printed under a country's list, where the list alone would mislead.

@@ -282,8 +282,7 @@
       return [minx - pad, miny - pad, w, h];
     }
 
-    // colour countries + accessibility
-    var counts = { member: 0, candidate: 0, contact: 0, orgs: 0 };
+    // colour countries + accessibility (the card's counts are written at build time, from the members list)
     Object.keys(data.countries).forEach(function (id) {
       var c = data.countries[id], el = svg.querySelector("#c" + id);
       if (!el) return;
@@ -291,11 +290,6 @@
       el.setAttribute("tabindex", "0");
       el.setAttribute("role", "button");
       el.setAttribute("aria-label", c.name + ": " + data.labels[c.status] + ", " + c.orgs.map(orgName).join(", "));
-      counts[c.status]++; counts.orgs += c.orgs.length;
-    });
-    document.querySelectorAll("[data-count]").forEach(function (el) {
-      var k = el.getAttribute("data-count");
-      el.textContent = k === "countries" ? counts.member + counts.candidate : counts[k];
     });
 
     // office markers

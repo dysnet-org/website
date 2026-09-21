@@ -49,16 +49,13 @@
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // ── data lookups ───────────────────────────────────────────────────
+  // The card's counts are written into the page at build time from the members list, the same
+  // source as every sentence that counts them; totalling the map data here counted a "contact
+  // opened" placeholder as an association.
   var byA3 = {};
-  var counts = { member: 0, candidate: 0, contact: 0, orgs: 0 };
   Object.keys(data.countries).forEach(function (id) {
     var c = data.countries[id];
     if (c.a3) byA3[c.a3] = c;
-    counts[c.status]++; counts.orgs += c.orgs.length;
-  });
-  document.querySelectorAll("[data-count]").forEach(function (el) {
-    var k = el.getAttribute("data-count");
-    el.textContent = k === "countries" ? counts.member + counts.candidate : counts[k];
   });
   function orgName(o) { return Array.isArray(o) ? o[0] : o; }
   function orgUrl(o) { return Array.isArray(o) && o[1] ? o[1] : null; }

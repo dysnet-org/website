@@ -1971,6 +1971,11 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
         link = ('<p class="src">Umbrella term; see the specific types on '
                 '<a href="https://www.orpha.net/en/disease" target="_blank" rel="noopener external">Orphanet</a>.</p>')
     # the register's filters now travel in the address, so a card can point at its own slice of it
+    # Deliberately broad. A code is assigned from a paper's title and its abstract, so this
+    # counts the literature that touches a condition rather than the studies devoted to it:
+    # one paper on symbrachydactyly carries five codes, and ORPHA:498461 carries 50 references
+    # of which about a dozen name it in the title. Loïc chose the broad reading on 21 September
+    # 2026, having been shown both figures. Do not narrow it to title matches as a bug fix.
     n_refs = sum(1 for e in BIB.get("entries", []) if str(code) in e.get("codes", []))
     refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
             if code and n_refs >= 3 else "")

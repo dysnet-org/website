@@ -1754,5 +1754,37 @@
     "orphanet_id": "165837"
    }
   ]
- }
+ },
+ "codes_checked": [
+  "392",
+  "974",
+  "1570",
+  "2440",
+  "2538",
+  "2879",
+  "2911",
+  "2913",
+  "2935",
+  "3103",
+  "3258",
+  "3301",
+  "3320",
+  "3329",
+  "93320",
+  "93321",
+  "93322",
+  "93323",
+  "93458",
+  "294967",
+  "294969",
+  "295000",
+  "498461"
+ ],
+ "codes_checked_note": "The ORPHAcodes whose registry lists were read from Orphanet one by one. A code outside this list has not been checked, and the conditions page says so rather than reporting no registry: the two are not the same statement. The 38 forms added to the conditions page on 21 September 2026 are not yet checked.",
+ "orphanet_registry_counts": {
+  "498461": 51,
+  "294925": 28,
+  "90025": 28
+ },
+ "orphanet_registry_counts_note": "How many registries Orphanet's own page lists for a code, read in the browser on 21 September 2026. It is a count and not a list: which registries they are is not recorded here, so these codes stay outside codes_checked."
 }

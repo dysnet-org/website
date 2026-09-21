@@ -437,28 +437,28 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.1299/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.1306/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/pd.34/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1046/j.1469-0705.2001.00385.x/pdf",
@@ -479,35 +479,35 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10719/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10089/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10365/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10275/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10371/pdf",
@@ -521,7 +521,7 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.10706/pdf",
@@ -535,14 +535,14 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.a.20112/abstract;jsessionid=b5be5bd1b9d0da8fb71b06979f974f01.d02t02",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.a.20255/pdf",
@@ -556,7 +556,7 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "lookup failed: HTTPError"
+   "status": "unresolved: no PubMed or Crossref record"
   },
   {
    "id": "10.1002/ajmg.a.20243/pdf",
@@ -12532,15 +12532,6 @@
    "status": "rejected: not about the site's conditions"
   },
   {
-   "id": "33497066",
-   "pmid": "33497066",
-   "title": "Does the Addition of a Vascularized Fibula Improve the Results of a Massive Bone Allograft Alone for Intercalary Femur Reconstruction of Malignant Bone Tumors in Children?",
-   "members": [
-    "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
-   ],
-   "status": "rejected: not about the site's conditions"
-  },
-  {
    "id": "33498287",
    "pmid": "33498287",
    "title": "Computer Navigation and 3D Printing in the Surgical Management of Bone Sarcoma.",
@@ -16871,15 +16862,6 @@
    "id": "34590591",
    "pmid": "34590591",
    "title": "Current Overview of Treatment for Metastatic Bone Disease.",
-   "members": [
-    "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
-   ],
-   "status": "rejected: not about the site's conditions"
-  },
-  {
-   "id": "34590617",
-   "pmid": "34590617",
-   "title": "Distal Fibula Reconstruction in Primary Malignant Tumours.",
    "members": [
     "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
    ],
@@ -40772,33 +40754,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "36458698",
-   "pmid": "36458698",
-   "title": "Maternal exposure to heparin products and risk of birth defects in the National Birth Defects Prevention Study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "35932236",
-   "pmid": "35932236",
-   "title": "Associations between maternal reports of periconceptional fever from miscellaneous causes and structural birth defects.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "35620934",
-   "pmid": "35620934",
-   "title": "Pre-pregnancy exposure to arsenic in diet and non-cardiac birth defects.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "35460489",
    "pmid": "35460489",
    "title": "Aloe vera protects against fluoride-induced teratogenic effects during pre- and postnatal development in mice.",
@@ -40970,15 +40925,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "28336328",
-   "pmid": "28336328",
-   "title": "Bone healing is achievable despite extensive wound dehiscence and wide plate and screws exposure in children.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "27768247",
    "pmid": "27768247",
    "title": "Associations between Maternal Water Consumption and Birth Defects in the National Birth Defects Prevention Study (2000-2005).",
@@ -41036,15 +40982,6 @@
    "id": "25406847",
    "pmid": "25406847",
    "title": "Maternal residential proximity to chlorinated solvent emissions and birth defects in offspring: a case-control study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "25381462",
-   "pmid": "25381462",
-   "title": "In situ effects of pesticides on amphibians in the Sierra Nevada.",
    "members": [
     "PubMed search"
    ],
@@ -41126,15 +41063,6 @@
    "id": "23652715",
    "pmid": "23652715",
    "title": "Maternal age-associated congenital anomalies among newborns: a retrospective study in Latvia.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "23514444",
-   "pmid": "23514444",
-   "title": "Maternal dietary intake of nitrates, nitrites and nitrosamines and selected birth defects in offspring: a case-control study.",
    "members": [
     "PubMed search"
    ],
@@ -41258,15 +41186,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "21819430",
-   "pmid": "21819430",
-   "title": "Maternal injuries during the periconceptional period and the risk of birth defects, National Birth Defects Prevention Study, 1997-2005.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "21818843",
    "pmid": "21818843",
    "title": "Licorice extract increases cyclophosphamide teratogenicity by upregulating the expression of cytochrome P-450 2B mRNA.",
@@ -41330,15 +41249,6 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
-   "id": "20196403",
-   "pmid": "20196403",
-   "title": "Fetal sodium valproate exposure causes Baller-Gerold syndrome phenotype: both phenotypes in the same family.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
    "id": "19886894",
    "pmid": "19886894",
    "title": "Trematode infection causes malformations and population effects in a declining New Zealand fish.",
@@ -41360,15 +41270,6 @@
    "id": "19822228",
    "pmid": "19822228",
    "title": "Genetic factors in esophageal atresia, tracheo-esophageal fistula and the VACTERL association: roles for FOXF1 and the 16q24.1 FOX transcription factor gene cluster, and review of the literature.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "19350653",
-   "pmid": "19350653",
-   "title": "Are birth defects among Hispanics related to maternal nativity or number of years lived in the United States?",
    "members": [
     "PubMed search"
    ],
@@ -41405,15 +41306,6 @@
    "id": "19103281",
    "pmid": "19103281",
    "title": "Green tea extract increases cyclophosphamide-induced teratogenesis by modulating the expression of cytochrome P-450 mRNA.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: causes query, not about the site's conditions"
-  },
-  {
-   "id": "19060004",
-   "pmid": "19060004",
-   "title": "A G220V substitution within the N-terminal transcription regulating domain of HOXD13 causes a variant synpolydactyly phenotype.",
    "members": [
     "PubMed search"
    ],
@@ -44570,15 +44462,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "37309307",
-   "pmid": "37309307",
-   "title": "Oxidative balance scores and neural crest cell-related congenital anomalies.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "37128957",
    "pmid": "37128957",
    "title": "Differences in prenatal diagnosis rate of congenital anomalies associated with singletons and multiple births: An&#xa0;observational study of more than 1.9 million births in Zhejiang Province, eastern China, during 2012-2018.",
@@ -44687,15 +44570,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "36458698",
-   "pmid": "36458698",
-   "title": "Maternal exposure to heparin products and risk of birth defects in the National Birth Defects Prevention Study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "36356662",
    "pmid": "36356662",
    "title": "Assessing associations between residential proximity to greenspace and birth defects in the National Birth Defects Prevention Study.",
@@ -44735,15 +44609,6 @@
    "id": "36168701",
    "pmid": "36168701",
    "title": "The association of nausea and vomiting of pregnancy, its treatments, and select birth defects: Findings from the National Birth Defect Prevention Study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "35932236",
-   "pmid": "35932236",
-   "title": "Associations between maternal reports of periconceptional fever from miscellaneous causes and structural birth defects.",
    "members": [
     "PubMed search"
    ],
@@ -44912,15 +44777,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "32745701",
-   "pmid": "32745701",
-   "title": "Asthma Medication Use and Risk of Birth Defects: National Birth Defects Prevention Study, 1997-2011.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "32617160",
    "pmid": "32617160",
    "title": "Major birth defects in the Brazilian side of the triple border: a population-based cross-sectional study.",
@@ -45032,15 +44888,6 @@
    "id": "31542953",
    "pmid": "31542953",
    "title": "Extremity Findings of Methotrexate Embryopathy.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "31454511",
-   "pmid": "31454511",
-   "title": "Specific birth defects in pregnancies of women with diabetes: National Birth Defects Prevention Study, 1997-2011.",
    "members": [
     "PubMed search"
    ],
@@ -45875,15 +45722,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "23514444",
-   "pmid": "23514444",
-   "title": "Maternal dietary intake of nitrates, nitrites and nitrosamines and selected birth defects in offspring: a case-control study.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "23504928",
    "pmid": "23504928",
    "title": "The teratogenic effect of dofetilide during rat limb development and association with drug-induced bradycardia and hypoxia in the embryo.",
@@ -46067,15 +45905,6 @@
    "id": "21825994",
    "pmid": "21825994",
    "title": "What can we learn from the thalidomide experience: an ophthalmologic perspective.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "21819430",
-   "pmid": "21819430",
-   "title": "Maternal injuries during the periconceptional period and the risk of birth defects, National Birth Defects Prevention Study, 1997-2005.",
    "members": [
     "PubMed search"
    ],
@@ -46307,24 +46136,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "20544697",
-   "pmid": "20544697",
-   "title": "The Hemimelic extra toes mouse mutant: Historical perspective on unraveling mechanisms of dysmorphogenesis.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "20196403",
-   "pmid": "20196403",
-   "title": "Fetal sodium valproate exposure causes Baller-Gerold syndrome phenotype: both phenotypes in the same family.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "20160433",
    "pmid": "20160433",
    "title": "First-trimester prenatal diagnosis of Okihiro syndrome.",
@@ -46445,15 +46256,6 @@
    "id": "19490988",
    "pmid": "19490988",
    "title": "Valproic acid in pregnancy: how much are we endangering the embryo and fetus?",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "19350653",
-   "pmid": "19350653",
-   "title": "Are birth defects among Hispanics related to maternal nativity or number of years lived in the United States?",
    "members": [
     "PubMed search"
    ],
@@ -47261,15 +47063,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "12386558",
-   "pmid": "12386558",
-   "title": "Ultrafast MR imaging of the foetus: a study of 25 non-central nervous system anomalies.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "12163692",
    "pmid": "12163692",
    "title": "Folic acid supplementation and prevention of birth defects.",
@@ -47624,15 +47417,6 @@
    "id": "10482873",
    "pmid": "10482873",
    "title": "Maternal corticosteroid use and risk of selected congenital anomalies.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "10482872",
-   "pmid": "10482872",
-   "title": "Apparent cyclophosphamide (cytoxan) embryopathy: a distinct phenotype?",
    "members": [
     "PubMed search"
    ],
@@ -48422,15 +48206,6 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "8419886",
-   "pmid": "8419886",
-   "title": "[An unusual case of intercalary type of limb abnormalities].",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "8475457",
    "pmid": "8475457",
    "title": "Omphalocele and gastroschisis: a collaborative study of five Italian congenital malformation registries.",
@@ -48497,15 +48272,6 @@
    "id": "1610476",
    "pmid": "1610476",
    "title": "[Embryotoxic interactions between a hydrolysis product of thalidomide and the surfactant Tween 20 in mice].",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "1805438",
-   "pmid": "1805438",
-   "title": "Genetically determined variation in the azygos vein in the mouse.",
    "members": [
     "PubMed search"
    ],
@@ -48872,27 +48638,9 @@
    "status": "rejected: NLM DART filter, not about the site's conditions"
   },
   {
-   "id": "3596088",
-   "pmid": "3596088",
-   "title": "Evidence for negative control of growth by adenosine in the mammalian embryo: induction of Hmx/+ mutant limb outgrowth by adenosine deaminase.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
    "id": "3798364",
    "pmid": "3798364",
    "title": "Teratogenicity of paraxanthine (1,7-dimethylxanthine) in C57BL/6J mice.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "3541275",
-   "pmid": "3541275",
-   "title": "Identification of Dh/+ and Dh/Dh embryos through close linkage of Dh and peptidase-3.",
    "members": [
     "PubMed search"
    ],
@@ -49406,24 +49154,6 @@
    "id": "898089",
    "pmid": "898089",
    "title": "Effect of intraamniotic administration of vitamin A on rat fetuses.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "18809",
-   "pmid": "18809",
-   "title": "Potentiation by the injection vehicle of the teratological action of acetazolamide in rats.",
-   "members": [
-    "PubMed search"
-   ],
-   "status": "rejected: NLM DART filter, not about the site's conditions"
-  },
-  {
-   "id": "842347",
-   "pmid": "842347",
-   "title": "A case of focal dermal hypoplasia (Goltz syndrome) with some new aspects.",
    "members": [
     "PubMed search"
    ],

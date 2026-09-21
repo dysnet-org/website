@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -250,7 +250,8 @@
    "source": "Kar A. Birth defects reporting and surveillance in India: a narrative review. J Community Genet 2025;16(1):5-14, doi:10.1007/s12687-024-00760-5; Birth Anomalies Network of India, launched 2 March 2026",
    "match": [
     "Birth Defects Registry of India"
-   ]
+   ],
+   "source_short": "Kar 2025, J Community Genet; Birth Anomalies Network of India, 2026"
   },
   {
    "registry": "CoULD",
@@ -264,7 +265,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "(CoULD"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "AHDR",
@@ -282,7 +284,8 @@
     "Australia Hand Difference Registry",
     "Australian Hand Difference Register",
     "Congenital Upper Limb Difference Registry in Australia"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "BSSH",
@@ -296,7 +299,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "British Society for Surgery of the Hand"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CULA North",
@@ -310,7 +314,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "CULA North"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CULA North",
@@ -324,7 +329,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "CULA North"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CULA North",
@@ -338,7 +344,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "CULA North"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CULA North",
@@ -352,7 +359,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "CULA North"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CULA North",
@@ -366,7 +374,8 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "match": [
     "CULA North"
-   ]
+   ],
+   "source_short": "McCombe et al. 2026, J Hand Surg Eur Vol"
   },
   {
    "registry": "CBDMN",
@@ -380,7 +389,8 @@
    "source": "Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. World J Pediatr 2011;7(4):302-310, doi:10.1007/s12519-011-0326-0",
    "match": [
     "Chinese newborns"
-   ]
+   ],
+   "source_short": "Dai et al. 2011, World J Pediatr"
   },
   {
    "registry": "ICBDSR",
@@ -400,7 +410,8 @@
    "match": [
     "ICBDSR",
     "International Clearinghouse for Birth Defects"
-   ]
+   ],
+   "source_short": "Its 2024 annual report, and its worldwide series on amelia and phocomelia"
   },
   {
    "registry": "Japan: JAOG",
@@ -415,7 +426,8 @@
    "classification": "The ICBDSR list, with limb reduction defects split into transverse, preaxial, postaxial, intercalary and mixed",
    "website": "https://www.jaog.or.jp/",
    "url_status": "200, checked 21 September 2026",
-   "source": "ICBDSR Annual Report 2014, programme description and 2012 data tables for Japan: JAOG; still described as the only national survey of congenital anomalies in Japan by Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born with Down syndrome in Japan. J Obstet Gynaecol Res 2022;48(9):2385-2391, doi:10.1111/jog.15342"
+   "source": "ICBDSR Annual Report 2014, programme description and 2012 data tables for Japan: JAOG; still described as the only national survey of congenital anomalies in Japan by Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born with Down syndrome in Japan. J Obstet Gynaecol Res 2022;48(9):2385-2391, doi:10.1111/jog.15342",
+   "source_short": "ICBDSR Annual Report 2014; Sugo et al. 2022, J Obstet Gynaecol Res"
   },
   {
    "registry": "SINASC",
@@ -435,7 +447,8 @@
    "match": [
     "SINASC",
     "Live Birth Information System"
-   ]
+   ],
+   "source_short": "Moura et al. 2024, Sao Paulo Med J; DATASUS"
   },
   {
    "registry": "ECLAMC",
@@ -456,7 +469,8 @@
     "ECLAMC",
     "Latin-American Collaborative Study",
     "Latin American Collaborative Study"
-   ]
+   ],
+   "source_short": "Vianna et al. 2011, PLoS One"
   },
   {
    "registry": "Thalidomide surveillance, Brazil",
@@ -475,7 +489,8 @@
    "source": "Vianna FS, Lopez-Camelo JS, Leite JC, et al. Epidemiological surveillance of birth defects compatible with thalidomide embryopathy in Brazil. PLoS One 2011;6(7):e21735, doi:10.1371/journal.pone.0021735",
    "match": [
     "thalidomide embryopathy in Brazil"
-   ]
+   ],
+   "source_short": "Vianna et al. 2011, PLoS One"
   },
   {
    "registry": "MBRN",
@@ -494,7 +509,8 @@
    "source": "Sitek A, et al. Epidemiology of limb reduction defects as registered in the Medical Birth Registry of Norway, 1970-2016, which our epidemiology page cites",
    "match": [
     "Medical Birth Registry of Norway"
-   ]
+   ],
+   "source_short": "Sitek et al., limb reduction defects in the Medical Birth Registry of Norway"
   },
   {
    "registry": "Swedish Medical Birth Register",
@@ -516,7 +532,8 @@
     "Swedish Medical Birth Register",
     "Swedish Register for Congenital Malformations",
     "Swedish Register of Congenital Malformations"
-   ]
+   ],
+   "source_short": "Källén et al., limb reduction in the Swedish Register of Congenital Malformations"
   },
   {
    "registry": "Hong Kong, Prince of Wales",
@@ -535,7 +552,8 @@
    "source": "Registry for congenital upper limb anomalies in Prince of Wales Hospital, Hong Kong: abridged secondary publication",
    "match": [
     "Prince of Wales Hospital"
-   ]
+   ],
+   "source_short": "Registry for congenital upper limb anomalies, Prince of Wales Hospital"
   },
   {
    "registry": "Southern Thailand",
@@ -574,7 +592,8 @@
     "Hungarian Birth Defects Registry",
     "Hungarian Case-Control Surveillance System",
     "in Hungary"
-   ]
+   ],
+   "source_short": "Siffel and Czeizel 1997, Cent Eur J Public Health; ICBDSR Annual Report 2014"
   },
   {
    "registry": "TBDR",
@@ -593,7 +612,8 @@
    "source": "Husain T, et al. Descriptive epidemiologic features shared by birth defects thought to be related to vascular disruption in Texas, 1996-2002. Birth Defects Res A 2008, PMID 18383510 (first registry data year 1996); Schraw JM, et al. Prevalence of congenital anomalies according to maternal race and ethnicity, Texas, 1999-2018. 2024, PMID 38014617; ICBDSR Annual Report 2014 (USA-Texas: BDES)",
    "match": [
     "Texas Birth Defects Registry"
-   ]
+   ],
+   "source_short": "Husain et al. 2008 and Schraw et al. 2024; ICBDSR Annual Report 2014"
   },
   {
    "registry": "MACDP",
@@ -612,7 +632,8 @@
    "match": [
     "Metropolitan Atlanta Congenital Defects Program",
     "MACDP"
-   ]
+   ],
+   "source_short": "Yang et al. 1997 and Reefhuis and Honein 2004; ICBDSR Annual Report 2014"
   },
   {
    "registry": "NYS CMR",
@@ -632,7 +653,8 @@
    "match": [
     "Congenital Malformations Registry of New York",
     "New York State Congenital Malformation"
-   ]
+   ],
+   "source_short": "Lin et al. 1994 and 1996, on limb reduction defects in New York State"
   },
   {
    "registry": "Liaoning MCH",
@@ -651,7 +673,8 @@
    "source": "Zhang JY, et al. Association between maternal exposure to PM10 and polydactyly and syndactyly: a population-based case-control study in Liaoning province, China. 2020, PMID 32416360; Jiang YT, et al. Maternal exposure to ambient SO2 and risk of polydactyly and syndactyly. 2021, PMID 33118065 (2,605 polydactyly and 595 syndactyly cases, 2010-2015)",
    "match": [
     "Liaoning"
-   ]
+   ],
+   "source_short": "Zhang et al. 2020 and Jiang et al. 2021, on polydactyly and syndactyly"
   },
   {
    "registry": "RYVEMCE",
@@ -669,7 +692,8 @@
    "match": [
     "RYVEMCE",
     "Registro y Vigilancia Epidemiol"
-   ]
+   ],
+   "source_short": "ICBDSR Annual Report 2014; Arteaga-Vázquez et al. 2012"
   },
   {
    "registry": "AMSP Boston",
@@ -687,7 +711,8 @@
    "source": "Toufaily MH, et al. Causes of congenital malformations. Birth Defects Res 2018, PMID 29377643; Gold NB, et al. Anatomic and etiological classification of congenital limb deficiencies. Am J Med Genet A 2011, PMID 21557466; Nasri HZ, et al. Vascular limb defects and maternal age. 2014, PMID 25181518",
    "match": [
     "Active Malformations Surveillance Program"
-   ]
+   ],
+   "source_short": "Toufaily et al. 2018 and Gold et al. 2011"
   },
   {
    "registry": "NBDPS",
@@ -706,7 +731,8 @@
    "match": [
     "National Birth Defects Prevention Study",
     "NBDPS"
-   ]
+   ],
+   "source_short": "Caspers Conway et al. 2014, on limb deficiencies in the NBDPS"
   },
   {
    "registry": "EUROCAT",
@@ -723,7 +749,9 @@
    "source": "Its member registries are listed in this register one by one, from Orphanet; the network publishes jointly, and eighteen papers in our bibliography rest on it",
    "match": [
     "EUROCAT"
-   ]
+   ],
+   "source_short": "Its member registries, listed here one by one from Orphanet"
   }
- ]
+ ],
+ "source_short": "Orphanet registry records; boundaries from Natural Earth"
 }

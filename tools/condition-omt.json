@@ -3,7 +3,7 @@
  "status": "PROVISIONAL. A first mapping by DysNet, for review by a hand surgeon before it is used in any negotiation.",
  "classification": "Oberg-Manske-Tonkin (OMT), adopted by the IFSSH Scientific Committee for Congenital Conditions in place of the Swanson classification",
  "structure": "Three groups: malformations, deformations and dysplasias, with a fourth group for syndromes. Malformations divide by whether the whole limb or the hand plate alone is affected, and by which of the three axes of limb development is primarily involved: proximal-distal, radial-ulnar or dorsal-ventral, or none of them.",
- "scope_limit": "OMT classifies the upper limb only. Four of the conditions this site describes are of the leg, or of the leg as well, and no OMT category exists for them. That is a limit of the classification, not a gap in the mapping.",
+ "scope_limit": "OMT classifies the upper limb only. 9 of the conditions this site describes are of the leg, or of the leg as well, and no OMT category exists for them. That is a limit of the classification, not a gap in the mapping.",
  "counts": "99 codes across groups I to III and 51 for syndromes in group IV",
  "sources": [
   {
@@ -166,6 +166,260 @@
    "part": "whole limb",
    "axis": "radial-ulnar",
    "diagnosis": "ulnar longitudinal deficiency",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Intercalary limb defect": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "intersegmental deficiency",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Humeral deficiency": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "intersegmental deficiency, proximal",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Absence of the upper arm and forearm, hand present": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "intersegmental deficiency",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Femoral deficiency": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Absence of the thigh and lower leg, foot present": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Proximal femoral focal deficiency": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Femoral bifurcation": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Apodia": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Absence of the lower leg and foot": {
+   "group": null,
+   "confidence": "OMT classifies the upper limb only"
+  },
+  "Longitudinal limb defect": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial or ulnar longitudinal deficiency",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Hemimelia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial or ulnar longitudinal deficiency",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Thumb hypoplasia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial longitudinal deficiency, thumb hypoplasia",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Acheiropodia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, forearm and carpal level",
+   "confidence": "placed by the structure of OMT rather than named in it at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Absence of fingers 2 to 5, one hand": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency of the digits",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Tetra-amelia without other malformations": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, amelia",
+   "confidence": "named in the OMT literature at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Acheiria": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, carpal level",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Complete hemimelia": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, forearm level",
+   "confidence": "placed by the structure of OMT rather than named in it at this position",
+   "note": "OMT covers the arm only; the same defect in a leg falls outside it."
+  },
+  "Absence of the forearm and hand": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "proximal-distal",
+   "diagnosis": "transverse deficiency, forearm level",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 1": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 2 (synpolydactyly)": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 3": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 4 (Haas type)": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 5": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 6 (mitten hand)": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Syndactyly type 8": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Mesoaxial synostotic syndactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "syndactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Hyperphalangy": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "proximal-distal",
+   "diagnosis": "supernumerary phalanx",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Preaxial polydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial polydactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Polydactyly of a triphalangeal thumb": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial polydactyly, triphalangeal thumb",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Polydactyly of an index finger": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial polydactyly",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Polysyndactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial polydactyly with syndactyly",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Polydactyly of a biphalangeal thumb or hallux": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "radial polydactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Postaxial polydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "ulnar polydactyly",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Postaxial polydactyly type A": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "ulnar polydactyly, well-formed extra digit",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Postaxial polydactyly type B": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "ulnar polydactyly, rudimentary extra digit",
+   "confidence": "named in the OMT literature at this position"
+  },
+  "Complex polydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "central polydactyly",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Central polydactyly": {
+   "group": "Malformation",
+   "part": "hand plate",
+   "axis": "radial-ulnar",
+   "diagnosis": "central polydactyly",
+   "confidence": "placed by the structure of OMT rather than named in it at this position"
+  },
+  "Mirror-image polydactyly": {
+   "group": "Malformation",
+   "part": "whole limb",
+   "axis": "radial-ulnar",
+   "diagnosis": "ulnar dimelia (mirror hand)",
    "confidence": "named in the OMT literature at this position"
   }
  }

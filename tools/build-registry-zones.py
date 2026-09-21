@@ -129,7 +129,8 @@ for z in ZONES["zones"]:
         features.append({"type": "Feature", "geometry": simplify_geom(f["geometry"]),
                          "properties": {"registry": z["registry"], "label": z["label"], "country": z["country"], "status": z["status"], "dep": code,
                                         "area": f["properties"]["nom"], "dep_name": f["properties"]["nom"], "website": z.get("website"),
-                                        "source": ZONES.get("source", "")}})
+                                        # the popup shows the short citation; the full one stays in the data file
+                                        "source": ZONES.get("source_short") or ZONES.get("source", "")}})
 
 # ── coverage outside France: national and admin-1 areas ──────────────────────
 a1_path = GEO / "ne_10m_admin_1.geojson"
@@ -157,7 +158,7 @@ for a in AREAS["areas"]:
         features.append({"type": "Feature", "geometry": g,
                          "properties": {"registry": a["registry"], "label": a["label"], "country": a["country"], "status": a["status"],
                                         "area": a["area"], "website": a.get("website") or a.get("orphanet_url"),
-                                        "source": a.get("source") or AREAS.get("source", "")}})
+                                        "source": a.get("source_short") or a.get("source") or AREAS.get("source_short") or AREAS.get("source", "")}})
     print(f"  {a['registry']}: {len(picked)} polygon(s)")
 OUT.write_text(json.dumps({"type": "FeatureCollection", "features": features}, separators=(",", ":")), encoding="utf-8")
 print(f"wrote {OUT.relative_to(HERE.parent)}: {len(features)} areas, {OUT.stat().st_size // 1024} KB")

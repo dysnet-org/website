@@ -211,7 +211,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta",
@@ -308,7 +308,7 @@
     "Multicenter Study"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -395,7 +395,7 @@
    "pages": "",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -453,7 +453,7 @@
    "pages": "",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -643,7 +643,7 @@
    "pages": "e12-e14",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -769,7 +769,7 @@
    "pages": "102280",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -1114,7 +1114,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta",
@@ -1304,7 +1304,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -1401,7 +1401,7 @@
    "pages": "105341",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -1493,7 +1493,7 @@
     "Comparative Study"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -1528,6 +1528,7 @@
     "Multicenter Study"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -1649,7 +1650,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -1806,6 +1807,8 @@
    "pages": "e511-e521",
    "pubtypes": [],
    "codes": [
+    "1987",
+    "2130",
     "93323"
    ],
    "topics": [
@@ -1931,7 +1934,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta",
@@ -1962,6 +1965,7 @@
    ],
    "codes": [
     "2879",
+    "294927",
     "thal"
    ],
    "topics": [
@@ -2023,7 +2027,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -2307,7 +2311,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -2340,7 +2344,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -2651,7 +2655,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -2684,7 +2688,7 @@
    "pubtypes": [],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -2784,7 +2788,7 @@
    ],
    "codes": [
     "3258",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -3011,7 +3015,8 @@
     "Systematic Review"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "meta"
@@ -3104,7 +3109,8 @@
    "pages": "1105-1110",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -3288,8 +3294,8 @@
    "pages": "e2416",
    "pubtypes": [],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -3601,6 +3607,7 @@
    "pages": "4375-4383",
    "pubtypes": [],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -3716,7 +3723,7 @@
    "pages": "1406-1410",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -3807,7 +3814,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -3840,7 +3848,7 @@
    "pages": "100834",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -3874,7 +3882,9 @@
     "Case Reports",
     "Review"
    ],
-   "codes": [],
+   "codes": [
+    "1987"
+   ],
    "topics": [
     "causes",
     "genetics",
@@ -3904,6 +3914,7 @@
    "pages": "773-780",
    "pubtypes": [],
    "codes": [
+    "498457",
     "93321",
     "thal"
    ],
@@ -4073,6 +4084,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "2130",
     "93321"
    ],
    "topics": [
@@ -4106,7 +4118,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -4168,7 +4180,7 @@
    "pubtypes": [],
    "codes": [
     "1570",
-    "93458"
+    "90025"
    ],
    "topics": [
     "clinical",
@@ -4202,7 +4214,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -4333,7 +4345,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -4398,7 +4410,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -4416,6 +4428,40 @@
     "PubMed search"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "36458698",
+   "doi": "10.1002/bdr2.2074",
+   "title": "Maternal exposure to heparin products and risk of birth defects in the National Birth Defects Prevention Study",
+   "authors": [
+    "Howley MM",
+    "Fisher SC",
+    "Van Zutphen AR",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2023",
+   "volume": "115",
+   "pages": "133-144",
+   "pubtypes": [],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
   },
   {
    "pmid": "37647086",
@@ -4516,6 +4562,41 @@
    "rests_on": []
   },
   {
+   "pmid": "37309307",
+   "doi": "10.1002/bdr2.2211",
+   "title": "Oxidative balance scores and neural crest cell-related congenital anomalies",
+   "authors": [
+    "Carmichael SL",
+    "Yang W",
+    "Ma C",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2023",
+   "volume": "115",
+   "pages": "1151-1162",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
+  },
+  {
    "pmid": "36314225",
    "doi": "10.3233/PRM-210066",
    "title": "Participation in sports of Dutch children with lower limb deficiencies",
@@ -4541,6 +4622,39 @@
     "PubMed search"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "35620934",
+   "doi": "10.1017/S1368980022001318",
+   "title": "Pre-pregnancy exposure to arsenic in diet and non-cardiac birth defects",
+   "authors": [
+    "Suhl J",
+    "Conway KM",
+    "Rhoads A",
+    "et al."
+   ],
+   "journal": "Public health nutrition",
+   "year": "2023",
+   "volume": "26",
+   "pages": "620-632",
+   "pubtypes": [],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
   },
   {
    "pmid": "38013637",
@@ -4746,7 +4860,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -4946,6 +5060,7 @@
     "Published Erratum"
    ],
    "codes": [
+    "294988",
     "thal"
    ],
    "topics": [
@@ -5008,6 +5123,7 @@
    "pages": "155-158",
    "pubtypes": [],
    "codes": [
+    "294988",
     "thal"
    ],
    "topics": [
@@ -5069,7 +5185,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -5132,7 +5248,7 @@
    "pages": "e24602",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -5192,8 +5308,8 @@
    "pages": "1427-1433",
    "pubtypes": [],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -5228,7 +5344,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -5241,6 +5358,42 @@
     "PubMed search"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "35932236",
+   "doi": "10.1002/bdr2.2068",
+   "title": "Associations between maternal reports of periconceptional fever from miscellaneous causes and structural birth defects",
+   "authors": [
+    "Mohan Dass NL",
+    "Botto LD",
+    "Tinker SC",
+    "et al."
+   ],
+   "journal": "Birth defects research",
+   "year": "2022",
+   "volume": "114",
+   "pages": "885-894",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
   },
   {
    "pmid": "35362676",
@@ -5258,6 +5411,7 @@
    "pages": "391-403",
    "pubtypes": [],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -5322,7 +5476,9 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467",
+    "93335"
    ],
    "topics": [
     "causes",
@@ -5384,7 +5540,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -5417,7 +5573,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -5571,7 +5727,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -5602,6 +5758,7 @@
     "Review"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -5697,7 +5854,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -5831,7 +5988,7 @@
     "2440",
     "2911",
     "498461",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -5866,7 +6023,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -5925,6 +6082,9 @@
     "Review"
    ],
    "codes": [
+    "1987",
+    "2130",
+    "633228",
     "93323"
    ],
    "topics": [
@@ -5957,7 +6117,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -6053,7 +6213,9 @@
    "pubtypes": [
     "Systematic Review"
    ],
-   "codes": [],
+   "codes": [
+    "294988"
+   ],
    "topics": [
     "meta"
    ],
@@ -6085,7 +6247,9 @@
     "2440",
     "2911",
     "2913",
+    "294988",
     "392",
+    "498457",
     "93321"
    ],
    "topics": [
@@ -6223,7 +6387,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -6318,7 +6483,7 @@
    "pages": "107-113",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -6352,7 +6517,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -6384,7 +6549,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -6539,7 +6705,8 @@
    "pages": "20-24",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -6639,7 +6806,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "294988",
+    "90025"
    ],
    "topics": [
     "genetics"
@@ -6740,6 +6908,69 @@
    "rests_on": []
   },
   {
+   "pmid": "34590617",
+   "doi": "10.3390/curroncol28050299",
+   "title": "Distal Fibula Reconstruction in Primary Malignant Tumours",
+   "authors": [
+    "Khal AA",
+    "Zucchini R",
+    "Giannini C",
+    "et al."
+   ],
+   "journal": "Current oncology (Toronto, Ont.)",
+   "year": "2021",
+   "volume": "28",
+   "pages": "3463-3473",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [
+    "published on the website of EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
+   ],
+   "via": [
+    "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "33497066",
+   "doi": "10.1097/CORR.0000000000001639",
+   "title": "Does the Addition of a Vascularized Fibula Improve the Results of a Massive Bone Allograft Alone for Intercalary Femur Reconstruction of Malignant Bone Tumors in Children?",
+   "authors": [
+    "Errani C",
+    "Alfaro PA",
+    "Ponz V",
+    "et al."
+   ],
+   "journal": "Clinical orthopaedics and related research",
+   "year": "2021",
+   "volume": "479",
+   "pages": "1296-1308",
+   "pubtypes": [
+    "Comparative Study"
+   ],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [
+    "published on the website of EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
+   ],
+   "via": [
+    "EuRR-Bone: European Registry for Rare Skeletal Diseases and Mineralization Abnormalities (Italy)"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "34067522",
    "doi": "10.3390/genes12050748",
    "title": "Ectodermal Dysplasia-Syndactyly Syndrome with Toe-Only Minimal Syndactyly Due to a Novel Mutation in NECTIN4: A Case Report and Literature Review",
@@ -6758,7 +6989,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -7045,7 +7276,8 @@
     "Research Support, N.I.H., Extramural"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -7143,7 +7375,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -7180,7 +7412,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -7214,7 +7446,9 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "294927"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -7275,7 +7509,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -7306,7 +7540,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "clinical"
@@ -7367,7 +7601,8 @@
    "pages": "304",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -7433,7 +7668,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -7660,6 +7896,7 @@
     "Research Support, U.S. Gov't, Non-P.H.S."
    ],
    "codes": [
+    "294979",
     "295000",
     "498461"
    ],
@@ -7823,7 +8060,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "epidemiology",
@@ -8007,7 +8244,10 @@
    "pages": "362-368",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498464",
+    "498467",
+    "93338"
    ],
    "topics": [
     "genetics"
@@ -8041,7 +8281,8 @@
    ],
    "codes": [
     "2440",
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "genetics"
@@ -8104,7 +8345,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -8197,7 +8438,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464",
+    "93339"
    ],
    "topics": [
     "causes",
@@ -8232,8 +8475,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "157801",
     "3258",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -8387,6 +8631,7 @@
     "Systematic Review"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -8511,7 +8756,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -8527,6 +8772,41 @@
    ],
    "rests_on": [
     "Liaoning MCH"
+   ]
+  },
+  {
+   "pmid": "32745701",
+   "doi": "10.1016/j.jaip.2020.07.033",
+   "title": "Asthma Medication Use and Risk of Birth Defects: National Birth Defects Prevention Study, 1997-2011",
+   "authors": [
+    "Howley MM",
+    "Papadopoulos EA",
+    "Van Bennekom CM",
+    "et al."
+   ],
+   "journal": "The journal of allergy and clinical immunology. In practice",
+   "year": "2020",
+   "volume": "8",
+   "pages": "3490-3499.e9",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
    ]
   },
   {
@@ -8610,7 +8890,9 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "epidemiology",
@@ -8713,7 +8995,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -8810,7 +9092,8 @@
     "Comparative Study"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "clinical"
@@ -9163,7 +9446,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -9298,7 +9581,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "295000"
+    "295000",
+    "498457"
    ],
    "topics": [
     "causes",
@@ -9344,6 +9628,40 @@
     "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "31454511",
+   "doi": "10.1016/j.ajog.2019.08.028",
+   "title": "Specific birth defects in pregnancies of women with diabetes: National Birth Defects Prevention Study, 1997-2011",
+   "authors": [
+    "Tinker SC",
+    "Gilboa SM",
+    "Moore CA",
+    "et al."
+   ],
+   "journal": "American journal of obstetrics and gynecology",
+   "year": "2020",
+   "volume": "222",
+   "pages": "176.e1-176.e11",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
   },
   {
    "pmid": "32727553",
@@ -9393,7 +9711,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -9455,7 +9773,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -9517,7 +9835,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -9583,6 +9901,7 @@
     "Review"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -9614,7 +9933,8 @@
     "Systematic Review"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "meta"
@@ -9737,7 +10057,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -9797,7 +10118,7 @@
    ],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -9892,7 +10213,9 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "294988",
+    "295004",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -9926,7 +10249,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -9991,7 +10316,7 @@
    "pages": "103578",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -10166,6 +10491,36 @@
    "rests_on": []
   },
   {
+   "pmid": "28336328",
+   "doi": "10.1016/j.otsr.2017.01.012",
+   "title": "Bone healing is achievable despite extensive wound dehiscence and wide plate and screws exposure in children",
+   "authors": [
+    "Melhem E",
+    "Bayoud W",
+    "Ghanem I"
+   ],
+   "journal": "Orthopaedics & traumatology, surgery & research : OTSR",
+   "year": "2019",
+   "volume": "105",
+   "pages": "757-760",
+   "pubtypes": [],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "30374058",
    "doi": "10.1038/s41431-018-0290-4",
    "title": "Deletion in 2q35 excluding the IHH gene leads to fetal severe limb anomalies and suggests a disruption of chromatin architecture",
@@ -10218,7 +10573,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -10352,7 +10707,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -10521,7 +10876,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969",
     "295000"
    ],
@@ -10595,8 +10950,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -10666,7 +11021,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464",
+    "93338"
    ],
    "topics": [
     "causes",
@@ -10696,7 +11053,7 @@
    "pages": "595-602",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -10758,7 +11115,7 @@
    "pages": "391-400",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -11119,7 +11476,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -11152,7 +11509,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -11184,7 +11541,9 @@
     "Research Support, Non-U.S. Gov't",
     "Research Support, U.S. Gov't, P.H.S."
    ],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "clinical",
@@ -11248,7 +11607,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -11310,7 +11670,9 @@
     "Historical Article",
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -11433,7 +11795,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "157801",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -11684,7 +12047,7 @@
    "codes": [
     "295000",
     "498461",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -11753,7 +12116,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -11878,7 +12241,7 @@
     "2440",
     "2879",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -11909,6 +12272,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -12033,7 +12397,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -12192,7 +12557,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -12259,7 +12624,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -12322,7 +12687,8 @@
    "pages": "17054",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "157801",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -12486,7 +12852,8 @@
    "pages": "1539-1545",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -12552,7 +12919,7 @@
     "Systematic Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -12701,6 +13068,8 @@
    "pages": "e0186388",
    "pubtypes": [],
    "codes": [
+    "1987",
+    "633228",
     "thal"
    ],
    "topics": [
@@ -12734,7 +13103,7 @@
    ],
    "codes": [
     "3258",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -12794,6 +13163,8 @@
     "Systematic Review"
    ],
    "codes": [
+    "294988",
+    "498457",
     "93321"
    ],
    "topics": [
@@ -12823,7 +13194,8 @@
    "pages": "49-54",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -13280,7 +13652,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "genetics"
@@ -13311,7 +13685,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -13658,7 +14033,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -13781,6 +14156,7 @@
    "pubtypes": [],
    "codes": [
     "295000",
+    "498457",
     "498461"
    ],
    "topics": [
@@ -13914,7 +14290,7 @@
     "Evaluation Study"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "clinical",
@@ -13978,6 +14354,8 @@
     "Case Reports"
    ],
    "codes": [
+    "1987",
+    "2130",
     "498461",
     "93323"
    ],
@@ -14173,7 +14551,7 @@
    ],
    "codes": [
     "498461",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -14209,7 +14587,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -14341,7 +14719,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -14405,7 +14783,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -14540,7 +14918,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -14940,7 +15318,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -15067,9 +15445,11 @@
     "Review"
    ],
    "codes": [
-    "1027",
     "2440",
-    "295000"
+    "294925",
+    "294927",
+    "295000",
+    "498457"
    ],
    "topics": [
     "epidemiology",
@@ -15104,7 +15484,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -15135,7 +15515,7 @@
    "pubtypes": [],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -15166,6 +15546,8 @@
     "Review"
    ],
    "codes": [
+    "1987",
+    "2130",
     "93322",
     "93323"
    ],
@@ -15176,6 +15558,39 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "25381462",
+   "doi": "10.1007/s10646-014-1375-7",
+   "title": "In situ effects of pesticides on amphibians in the Sierra Nevada",
+   "authors": [
+    "Sparling DW",
+    "Bickham J",
+    "Cowman D",
+    "et al."
+   ],
+   "journal": "Ecotoxicology (London, England)",
+   "year": "2015",
+   "volume": "24",
+   "pages": "262-78",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -15200,7 +15615,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -15235,7 +15650,7 @@
    "codes": [
     "2879",
     "3103",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -15267,7 +15682,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "epidemiology"
@@ -15500,6 +15916,7 @@
    "codes": [
     "2440",
     "2879",
+    "498457",
     "93321"
    ],
    "topics": [
@@ -15821,7 +16238,7 @@
    ],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -15851,7 +16268,8 @@
    "pages": "144-56",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -15914,8 +16332,8 @@
     "Review"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -16009,7 +16427,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "295004",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -16137,7 +16557,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -16428,7 +16848,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -16457,7 +16877,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -16684,6 +17104,7 @@
    "pages": "423-33",
    "pubtypes": [],
    "codes": [
+    "633228",
     "thal"
    ],
    "topics": [
@@ -16821,7 +17242,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -16854,7 +17275,7 @@
    "pages": "640-3",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -16918,6 +17339,8 @@
    "pages": "940-5",
    "pubtypes": [],
    "codes": [
+    "1987",
+    "2130",
     "93323"
    ],
    "topics": [
@@ -16950,6 +17373,8 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
+    "498457",
     "93323"
    ],
    "topics": [
@@ -17015,7 +17440,7 @@
    "pubtypes": [],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -17103,7 +17528,7 @@
    "pages": "1093-8",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -17198,7 +17623,8 @@
    "pages": "760-3",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -17330,7 +17756,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -17362,7 +17789,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -17554,7 +17981,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "epidemiology"
@@ -17782,6 +18209,43 @@
    "rests_on": []
   },
   {
+   "pmid": "23514444",
+   "doi": "10.1186/1475-2891-12-34",
+   "title": "Maternal dietary intake of nitrates, nitrites and nitrosamines and selected birth defects in offspring: a case-control study",
+   "authors": [
+    "Huber JC Jr",
+    "Brender JD",
+    "Zheng Q",
+    "et al."
+   ],
+   "journal": "Nutrition journal",
+   "year": "2013",
+   "volume": "12",
+   "pages": "34",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
+  },
+  {
    "pmid": "23690510",
    "doi": "10.1542/peds.2012-2941",
    "title": "Maternal mosaicism confounds the neonatal diagnosis of type 1 Timothy syndrome",
@@ -17801,7 +18265,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -17967,7 +18431,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "3320"
+    "3320",
+    "498457"
    ],
    "topics": [
     "causes",
@@ -18001,7 +18466,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -18187,7 +18653,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -18221,7 +18687,8 @@
     "Research Support, U.S. Gov't, Non-P.H.S."
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -18515,8 +18982,8 @@
     "Review"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -18551,7 +19018,7 @@
    "pubtypes": [],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -18866,7 +19333,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -19082,9 +19549,10 @@
     "Review"
    ],
    "codes": [
+    "2130",
     "2440",
     "2879",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -19119,7 +19587,7 @@
    "pages": "853-9",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -19440,7 +19908,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -19472,8 +19940,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -19511,7 +19979,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "295000"
    ],
    "topics": [
@@ -20065,7 +20533,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -20178,6 +20647,41 @@
    "rests_on": []
   },
   {
+   "pmid": "21819430",
+   "doi": "10.1111/j.1365-3016.2011.01215.x",
+   "title": "Maternal injuries during the periconceptional period and the risk of birth defects, National Birth Defects Prevention Study, 1997-2005",
+   "authors": [
+    "Tinker SC",
+    "Reefhuis J",
+    "Dellinger AM",
+    "et al."
+   ],
+   "journal": "Paediatric and perinatal epidemiology",
+   "year": "2011",
+   "volume": "25",
+   "pages": "487-96",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
+  },
+  {
    "pmid": "21671374",
    "doi": "10.1002/ajmg.a.34037",
    "title": "Methotrexate and misoprostol teratogenicity: further expansion of the clinical manifestations",
@@ -20193,7 +20697,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -20321,8 +20825,8 @@
     "Review"
    ],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -20483,7 +20987,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -20578,7 +21082,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -20641,8 +21146,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -20805,7 +21310,10 @@
    ],
    "codes": [
     "2913",
-    "93322"
+    "498464",
+    "93322",
+    "93336",
+    "93405"
    ],
    "topics": [
     "causes",
@@ -21052,7 +21560,8 @@
     "Review"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -21119,9 +21628,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
     "2913",
-    "93458",
+    "294925",
+    "90025",
     "thal"
    ],
    "topics": [
@@ -21154,6 +21663,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -21507,6 +22017,38 @@
    "rests_on": []
   },
   {
+   "pmid": "20544697",
+   "doi": "10.1002/bdrc.20181",
+   "title": "The Hemimelic extra toes mouse mutant: Historical perspective on unraveling mechanisms of dysmorphogenesis",
+   "authors": [
+    "Knudsen TB",
+    "Kochhar DM"
+   ],
+   "journal": "Birth defects research. Part C, Embryo today : reviews",
+   "year": "2010",
+   "volume": "90",
+   "pages": "155-62",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "20949521",
    "doi": "10.1002/ajmg.a.33633",
    "title": "Tibial developmental field defect in valproic acid embryopathy: Report on three cases",
@@ -21589,7 +22131,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -21675,6 +22217,38 @@
    "rests_on": []
   },
   {
+   "pmid": "19060004",
+   "doi": "10.1093/hmg/ddn410",
+   "title": "A G220V substitution within the N-terminal transcription regulating domain of HOXD13 causes a variant synpolydactyly phenotype",
+   "authors": [
+    "Fantini S",
+    "Vaccari G",
+    "Brison N",
+    "et al."
+   ],
+   "journal": "Human molecular genetics",
+   "year": "2009",
+   "volume": "18",
+   "pages": "847-60",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "93403"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "19291772",
    "doi": "10.1002/ajmg.a.32740",
    "title": "A ZRS duplication causes syndactyly type IV with tibial hypoplasia",
@@ -21692,8 +22266,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "90025",
     "93322",
-    "93458"
+    "93405"
    ],
    "topics": [
     "causes",
@@ -21725,7 +22300,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -21756,6 +22331,7 @@
     "Letter"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -21822,7 +22398,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -21835,6 +22411,41 @@
     "PubMed search"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "19350653",
+   "doi": "10.1002/bdra.20584",
+   "title": "Are birth defects among Hispanics related to maternal nativity or number of years lived in the United States?",
+   "authors": [
+    "Ramadhani T",
+    "Short V",
+    "Canfield MA",
+    "et al."
+   ],
+   "journal": "Birth defects research. Part A, Clinical and molecular teratology",
+   "year": "2009",
+   "volume": "85",
+   "pages": "755-63",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "498457"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": [
+    "NBDPS"
+   ]
   },
   {
    "pmid": "19553636",
@@ -22015,13 +22626,49 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "genetics"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "20196403",
+   "doi": "",
+   "title": "Fetal sodium valproate exposure causes Baller-Gerold syndrome phenotype: both phenotypes in the same family",
+   "authors": [
+    "Ozdemir OM",
+    "Kiliç I",
+    "Ozsari T",
+    "et al."
+   ],
+   "journal": "The Turkish journal of pediatrics",
+   "year": "2009",
+   "volume": "51",
+   "pages": "631-6",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "294988"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -22047,7 +22694,7 @@
     "Letter"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -22144,7 +22791,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -22208,7 +22855,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -22307,7 +22955,9 @@
     "Research Support, Non-U.S. Gov't",
     "Research Support, U.S. Gov't, P.H.S."
    ],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -22512,6 +23162,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "1987",
+    "2130",
     "2913",
     "93322"
    ],
@@ -22867,7 +23519,7 @@
    ],
    "codes": [
     "2911",
-    "93458"
+    "90025"
    ],
    "topics": [
     "meta"
@@ -22989,7 +23641,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -23020,8 +23672,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "93320",
     "93323",
     "thal"
@@ -23094,7 +23746,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -23127,7 +23779,7 @@
     "Letter"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -23374,7 +24026,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -23526,7 +24178,8 @@
     "Letter"
    ],
    "codes": [
-    "1027"
+    "2130",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -23558,7 +24211,7 @@
    ],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -23911,7 +24564,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -23978,7 +24631,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -24099,7 +24752,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -24288,8 +24941,9 @@
     "2440",
     "2913",
     "295000",
-    "93321",
-    "93458"
+    "295004",
+    "90025",
+    "93321"
    ],
    "topics": [
     "causes",
@@ -24616,7 +25270,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -24839,7 +25493,7 @@
    "pages": "169-76",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -24935,7 +25589,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -25027,7 +25682,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -25252,6 +25907,7 @@
     "Review"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -25346,7 +26002,8 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "498467",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -25410,7 +26067,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -25812,7 +26469,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -25940,7 +26597,8 @@
    ],
    "codes": [
     "2440",
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -26003,7 +26661,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -26033,7 +26691,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027"
+    "2130",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -26130,7 +26789,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -26164,7 +26823,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -26197,7 +26856,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -26297,7 +26957,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -26484,7 +27144,9 @@
    "pubtypes": [
     "Systematic Review"
    ],
-   "codes": [],
+   "codes": [
+    "294988"
+   ],
    "topics": [
     "meta"
    ],
@@ -26767,7 +27429,9 @@
     "Case Reports",
     "Review"
    ],
-   "codes": [],
+   "codes": [
+    "294988"
+   ],
    "topics": [
     "causes",
     "genetics",
@@ -26799,7 +27463,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -26951,7 +27615,7 @@
    "pages": "343-51",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -27137,7 +27801,7 @@
    "pages": "558-63",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -27301,7 +27965,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -27431,7 +28095,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -27490,8 +28154,10 @@
    "codes": [
     "2440",
     "2913",
-    "93320",
-    "93458"
+    "295004",
+    "498457",
+    "90025",
+    "93320"
    ],
    "topics": [
     "causes",
@@ -27590,7 +28256,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "295004",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -27811,7 +28479,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -27910,7 +28578,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "498461",
     "93320"
    ],
@@ -27977,7 +28645,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -28013,8 +28681,8 @@
     "Review"
    ],
    "codes": [
-    "93323",
-    "93458"
+    "90025",
+    "93323"
    ],
    "topics": [
     "causes",
@@ -28586,6 +29254,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -28649,7 +29318,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -29182,7 +29852,8 @@
     "Review"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -29345,7 +30016,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -29377,7 +30048,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -29410,12 +30082,43 @@
     "Letter"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
     "causes",
     "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "12386558",
+   "doi": "",
+   "title": "Ultrafast MR imaging of the foetus: a study of 25 non-central nervous system anomalies",
+   "authors": [
+    "Dell'Acqua A",
+    "Mengozzi E",
+    "Rizzo F",
+    "et al."
+   ],
+   "journal": "La Radiologia medica",
+   "year": "2002",
+   "volume": "104",
+   "pages": "75-86",
+   "pubtypes": [],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "review"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -29508,7 +30211,7 @@
    ],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -29570,7 +30273,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -29788,7 +30491,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -30007,7 +30710,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -30036,7 +30739,7 @@
    "pages": "292-300",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -30285,7 +30988,8 @@
    "pubtypes": [],
    "codes": [
     "295000",
-    "3103"
+    "3103",
+    "931"
    ],
    "topics": [
     "causes",
@@ -30505,7 +31209,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -30538,6 +31243,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93320"
    ],
    "topics": [
@@ -30700,6 +31406,7 @@
    ],
    "codes": [
     "2440",
+    "294927",
     "498461"
    ],
    "topics": [
@@ -30794,10 +31501,10 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "1027",
     "2440",
     "2879",
-    "2913"
+    "2913",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -31048,7 +31755,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -31112,7 +31819,8 @@
    "pages": "79-82",
    "pubtypes": [],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -31179,7 +31887,9 @@
     "Letter"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464",
+    "93339"
    ],
    "topics": [
     "causes",
@@ -31210,6 +31920,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -31307,7 +32018,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -31371,7 +32083,7 @@
     "Review"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -31406,7 +32118,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -31714,12 +32427,48 @@
    "pages": "325-7",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
     "causes",
     "epidemiology"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "10482872",
+   "doi": "",
+   "title": "Apparent cyclophosphamide (cytoxan) embryopathy: a distinct phenotype?",
+   "authors": [
+    "Enns GM",
+    "Roeder E",
+    "Chan RT",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics",
+   "year": "1999",
+   "volume": "86",
+   "pages": "237-41",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ],
+   "codes": [
+    "294988"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review",
+    "teratogens"
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
@@ -31894,6 +32643,7 @@
    "pages": "9-23",
    "pubtypes": [],
    "codes": [
+    "498457",
     "thal"
    ],
    "topics": [
@@ -31992,7 +32742,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "93458"
+    "90025",
+    "93403"
    ],
    "topics": [
     "causes",
@@ -32025,6 +32776,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -32440,6 +33192,8 @@
     "Letter"
    ],
    "codes": [
+    "1987",
+    "2130",
     "93322"
    ],
    "topics": [
@@ -32500,7 +33254,7 @@
    "pages": "59-72",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -32534,7 +33288,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -32724,7 +33478,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -33189,7 +33943,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -33476,7 +34230,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "epidemiology"
@@ -33629,7 +34383,9 @@
    "volume": "8",
    "pages": "157-61",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -33721,7 +34477,7 @@
    "pubtypes": [],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -34088,7 +34844,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -34117,7 +34873,7 @@
    "pubtypes": [],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -34334,6 +35090,7 @@
    "pages": "251-8",
    "pubtypes": [],
    "codes": [
+    "294927",
     "thal"
    ],
    "topics": [
@@ -34628,7 +35385,7 @@
     "Comparative Study"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -34689,7 +35446,7 @@
    "pages": "294-308",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -34785,7 +35542,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -34998,7 +35755,8 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "498467",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -35177,7 +35935,9 @@
    "volume": "347",
    "pages": "489-94",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "causes",
     "epidemiology"
@@ -35364,6 +36124,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -35493,10 +36254,11 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
     "2879",
     "2913",
-    "3103"
+    "294925",
+    "3103",
+    "498494"
    ],
    "topics": [
     "causes",
@@ -35691,7 +36453,9 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "2130",
     "2913",
+    "498464",
     "93322"
    ],
    "topics": [
@@ -35753,8 +36517,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "3103",
     "3301"
    ],
@@ -35787,8 +36551,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -36179,7 +36943,9 @@
    "volume": "33",
    "pages": "491-508",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "295002"
+   ],
    "topics": [
     "causes",
     "clinical",
@@ -36212,7 +36978,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -36242,7 +37008,9 @@
    "volume": "52",
    "pages": "71-7",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "genetics"
@@ -36303,7 +37071,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -36492,7 +37260,7 @@
     "Review"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -36714,7 +37482,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -37117,7 +37885,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -37239,8 +38007,9 @@
    "pages": "421-7",
    "pubtypes": [],
    "codes": [
+    "2130",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -37304,8 +38073,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -37650,7 +38419,7 @@
    "pages": "77-80",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -37719,6 +38488,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -37753,6 +38523,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -37816,7 +38587,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -37982,8 +38753,8 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -38046,7 +38817,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -38078,7 +38849,7 @@
     "Letter"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -38226,7 +38997,8 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -38382,8 +39154,9 @@
    "pages": "127-35",
    "pubtypes": [],
    "codes": [
+    "294927",
     "498461",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -38729,7 +39502,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -38756,7 +39529,7 @@
    "pages": "299-310",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -38919,7 +39692,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "295000"
    ],
    "topics": [
@@ -39009,7 +39782,7 @@
    "pages": "45-9",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -39236,6 +40009,37 @@
    "rests_on": []
   },
   {
+   "pmid": "8419886",
+   "doi": "",
+   "title": "[An unusual case of intercalary type of limb abnormalities]",
+   "authors": [
+    "Göblyös P",
+    "Czeizel E"
+   ],
+   "journal": "Orvosi hetilap",
+   "year": "1993",
+   "volume": "134",
+   "pages": "75-7",
+   "pubtypes": [
+    "Case Reports",
+    "English Abstract"
+   ],
+   "codes": [
+    "294927"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "8274232",
    "doi": "",
    "title": "[Polydactyly in 26,670 consecutive births. The clinical characteristics, prevalence and risk factors]",
@@ -39439,7 +40243,8 @@
    "pages": "455-64",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "294925",
+    "294927",
     "295000"
    ],
    "topics": [
@@ -39504,7 +40309,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "294988"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -39692,7 +40499,8 @@
     "Historical Article"
    ],
    "codes": [
-    "2879"
+    "2879",
+    "294927"
    ],
    "topics": [
     "causes",
@@ -39722,7 +40530,8 @@
    "pages": "71-86",
    "pubtypes": [],
    "codes": [
-    "2879"
+    "2879",
+    "294927"
    ],
    "topics": [
     "causes",
@@ -39848,7 +40657,7 @@
    ],
    "codes": [
     "295000",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -39882,7 +40691,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -40131,7 +40940,9 @@
    "pubtypes": [
     "Research Support, Non-U.S. Gov't"
    ],
-   "codes": [],
+   "codes": [
+    "498457"
+   ],
    "topics": [
     "epidemiology"
    ],
@@ -40226,7 +41037,7 @@
     "Case Reports"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -40321,7 +41132,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -40424,6 +41235,37 @@
    "rests_on": []
   },
   {
+   "pmid": "1805438",
+   "doi": "10.1002/tera.1420440610",
+   "title": "Genetically determined variation in the azygos vein in the mouse",
+   "authors": [
+    "Biddle FG",
+    "Jung JD",
+    "Eales BA"
+   ],
+   "journal": "Teratology",
+   "year": "1991",
+   "volume": "44",
+   "pages": "675-83",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "1805430",
    "doi": "10.1002/tera.1420440602",
    "title": "Limb reduction defects in humans associated with prenatal isotretinoin exposure",
@@ -40440,7 +41282,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "294988"
+   ],
    "topics": [
     "causes",
     "epidemiology",
@@ -40629,7 +41473,8 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "294927",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -40754,8 +41599,10 @@
     "Review"
    ],
    "codes": [
+    "2130",
     "2440",
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -41155,7 +42002,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "1027",
+    "294925",
     "294969"
    ],
    "topics": [
@@ -41221,7 +42068,8 @@
     "2440",
     "2879",
     "2913",
-    "93458"
+    "498467",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -41716,7 +42564,8 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "295004",
+    "90025"
    ],
    "topics": [
     "causes",
@@ -41813,7 +42662,7 @@
     "English Abstract"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -41933,7 +42782,7 @@
    "pages": "199-209",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -42125,6 +42974,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
+    "498457",
     "498461"
    ],
    "topics": [
@@ -42189,7 +43039,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -42379,7 +43229,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -42468,7 +43318,7 @@
     "Review"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -42529,7 +43379,9 @@
    "pages": "3-10",
    "pubtypes": [],
    "codes": [
+    "2130",
     "2913",
+    "498464",
     "93322",
     "thal"
    ],
@@ -42720,7 +43572,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -42841,7 +43694,7 @@
    "pages": "157-167",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -43156,7 +44009,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "3301"
    ],
    "topics": [
@@ -43187,7 +44040,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498467"
    ],
    "topics": [
     "causes",
@@ -43571,6 +44425,36 @@
    "rests_on": []
   },
   {
+   "pmid": "3596088",
+   "doi": "10.1111/j.1432-0436.1987.tb01567.x",
+   "title": "Evidence for negative control of growth by adenosine in the mammalian embryo: induction of Hmx/+ mutant limb outgrowth by adenosine deaminase",
+   "authors": [
+    "Knudsen TB",
+    "Elmer WA"
+   ],
+   "journal": "Differentiation; research in biological diversity",
+   "year": "1987",
+   "volume": "33",
+   "pages": "270-9",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "2962614",
    "doi": "",
    "title": "Horseshoe lung with multiple congenital anomalies. Case report and review of the literature",
@@ -43775,7 +44659,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -44344,6 +45228,33 @@
    "rests_on": []
   },
   {
+   "pmid": "3541275",
+   "doi": "10.1002/tera.1420340315",
+   "title": "Identification of Dh/+ and Dh/Dh embryos through close linkage of Dh and peptidase-3",
+   "authors": [
+    "Holmes LB"
+   ],
+   "journal": "Teratology",
+   "year": "1986",
+   "volume": "34",
+   "pages": "353-7",
+   "pubtypes": [],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "3740102",
    "doi": "10.1002/ajmg.1320240414",
    "title": "Implications of malformations not due to amniotic bands in the amniotic band sequence",
@@ -44390,9 +45301,10 @@
     "Review"
    ],
    "codes": [
-    "1027",
     "2913",
-    "294967"
+    "294925",
+    "294967",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -44577,7 +45489,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -44608,7 +45520,7 @@
     "Research Support, Non-U.S. Gov't"
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -44856,8 +45768,8 @@
    ],
    "codes": [
     "2913",
-    "93321",
-    "93458"
+    "90025",
+    "93321"
    ],
    "topics": [
     "causes",
@@ -44916,7 +45828,7 @@
    "pages": "108-18",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -45042,6 +45954,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
+    "2130",
     "2913"
    ],
    "topics": [
@@ -45102,7 +46015,7 @@
    "pages": "433-51",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -45491,6 +46404,7 @@
    "pages": "133-44",
    "pubtypes": [],
    "codes": [
+    "2130",
     "thal"
    ],
    "topics": [
@@ -45526,7 +46440,7 @@
    ],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -45593,7 +46507,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027",
+    "294925",
     "3103",
     "3301"
    ],
@@ -45743,7 +46657,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -46111,7 +47025,7 @@
    "pages": "253-62",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -46142,7 +47056,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -46200,8 +47114,8 @@
    "pages": "73-85",
    "pubtypes": [],
    "codes": [
-    "1027",
-    "2879"
+    "2879",
+    "294925"
    ],
    "topics": [
     "causes",
@@ -46264,7 +47178,7 @@
    ],
    "codes": [
     "2440",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -46842,6 +47756,7 @@
    ],
    "codes": [
     "2913",
+    "498464",
     "93322"
    ],
    "topics": [
@@ -47376,7 +48291,7 @@
     "English Abstract"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -47560,7 +48475,8 @@
    "pages": "99-114",
    "pubtypes": [],
    "codes": [
-    "1027",
+    "2130",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -47929,7 +48845,8 @@
     "Case Reports"
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -48080,7 +48997,8 @@
    ],
    "codes": [
     "2440",
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -48147,7 +49065,8 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "2913"
+    "2913",
+    "498464"
    ],
    "topics": [
     "causes",
@@ -48426,7 +49345,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "1027",
+    "294925",
     "294967"
    ],
    "topics": [
@@ -48578,7 +49497,7 @@
    "pages": "61-9",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -49095,6 +50014,7 @@
    "pages": "279-87",
    "pubtypes": [],
    "codes": [
+    "2130",
     "93323"
    ],
    "topics": [
@@ -49127,7 +50047,7 @@
    "pubtypes": [],
    "codes": [
     "1570",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -49275,7 +50195,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -49638,7 +50558,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -49708,6 +50628,36 @@
    "rests_on": []
   },
   {
+   "pmid": "842347",
+   "doi": "10.1111/j.1651-2227.1977.tb07844.x",
+   "title": "A case of focal dermal hypoplasia (Goltz syndrome) with some new aspects",
+   "authors": [
+    "Beganović N",
+    "Lommen EJ"
+   ],
+   "journal": "Acta paediatrica Scandinavica",
+   "year": "1977",
+   "volume": "66",
+   "pages": "255-6",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "269906",
    "doi": "",
    "title": "A survey of thalidomide embryopathy in Taiwan",
@@ -49751,7 +50701,7 @@
     "Case Reports"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -49896,6 +50846,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
+    "2130",
     "2440"
    ],
    "topics": [
@@ -50021,7 +50972,7 @@
    "codes": [
     "2440",
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -50061,6 +51012,38 @@
    ],
    "via": [
     "Orphanet",
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "18809",
+   "doi": "10.1002/tera.1420150307",
+   "title": "Potentiation by the injection vehicle of the teratological action of acetazolamide in rats",
+   "authors": [
+    "Muther TF",
+    "Jones JC",
+    "Smoak NS"
+   ],
+   "journal": "Teratology",
+   "year": "1977",
+   "volume": "15",
+   "pages": "253-9",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "2130"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
     "PubMed search"
    ],
    "rests_on": []
@@ -50382,6 +51365,7 @@
     "Case Reports"
    ],
    "codes": [
+    "2130",
     "93322"
    ],
    "topics": [
@@ -50612,7 +51596,7 @@
     "English Abstract"
    ],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -50641,7 +51625,9 @@
    "pubtypes": [
     "English Abstract"
    ],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -51011,6 +51997,7 @@
     "Research Support, U.S. Gov't, P.H.S."
    ],
    "codes": [
+    "2130",
     "2440",
     "2913",
     "93321",
@@ -51077,7 +52064,7 @@
    "pubtypes": [],
    "codes": [
     "2913",
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -51331,7 +52318,7 @@
    "pages": "193-202",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -51970,7 +52957,7 @@
    "pages": "656-68",
    "pubtypes": [],
    "codes": [
-    "93458"
+    "90025"
    ],
    "topics": [
     "causes",
@@ -52830,7 +53817,9 @@
    "volume": "15",
    "pages": "62-89",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "genetics"
@@ -54097,7 +55086,7 @@
    "pages": "511-6",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -54214,7 +55203,9 @@
    "pubtypes": [
     "Case Reports"
    ],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "clinical"
@@ -54738,8 +55729,8 @@
    "pages": "1300-5",
    "pubtypes": [],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -54825,7 +55816,7 @@
    "pages": "1405-9",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -55095,7 +56086,7 @@
    "pages": "1025-32",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -55399,8 +56390,8 @@
    "pages": "973-9",
    "pubtypes": [],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -55816,7 +56807,7 @@
    "pages": "1267-74",
    "pubtypes": [],
    "codes": [
-    "1027"
+    "294925"
    ],
    "topics": [
     "causes",
@@ -56686,8 +57677,8 @@
    "pages": "1259-62",
    "pubtypes": [],
    "codes": [
-    "1027",
     "2879",
+    "294925",
     "thal"
    ],
    "topics": [
@@ -57806,7 +58797,9 @@
    "volume": "43",
    "pages": "427-51",
    "pubtypes": [],
-   "codes": [],
+   "codes": [
+    "2130"
+   ],
    "topics": [
     "causes",
     "clinical"

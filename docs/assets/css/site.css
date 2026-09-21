@@ -1132,6 +1132,7 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-tree code, .cond-orpha code { font-size: 0.82em; background: var(--dys-purple-soft); color: var(--dys-purple-text); padding: 0 0.3em; border-radius: 4px; }
 .cond-tree code.icd-approx { background: transparent; border: 1px dashed var(--dys-line); color: var(--dys-muted); cursor: help; }
 .cond-tree .fine { margin: 0.4rem 0 0; }
+.reg-unchecked { text-align: center; color: var(--dys-muted); font-size: var(--text-eyebrow); font-style: italic; }
 .cond-regs { margin: 0.2rem 0 0; font-size: var(--text-small); }
 .cond-regs a { color: var(--dys-muted); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
 .cond-regs a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }

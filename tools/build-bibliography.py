@@ -108,6 +108,11 @@ WEBSITE_SEED = {
     # Found while mapping Brazil's registries: a national prevalence study of congenital upper-limb
     # anomalies from SINASC, on our exact conditions, that the standing queries had not reached.
     "38896746": (('epidemiology',), "Congenital anomalies of the upper limbs in Brazil, from the national live-birth system", "SINASC (datasus.saude.gov.br)"),
+    # Found while searching for registries in Japan, Pakistan and Türkiye. Both are on our exact
+    # conditions, both are the only national figure their country has, and neither was reached by
+    # the standing queries.
+    "36723395": (('epidemiology', 'clinical'), "Congenital limb deficiencies in Pakistan, 141 people, with the authors' call for a national registry", "DysNet"),
+    "30053842": (('epidemiology',), "Japan's only nationwide survey of congenital limb deficiency", "DysNet"),
 }
 # A few papers state their condition in the abstract and not in the title, so no vocabulary
 # rule can reach them. Each one here is a judgement, recorded with the reason.

@@ -437,28 +437,28 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.1299/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.1306/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/pd.34/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1046/j.1469-0705.2001.00385.x/pdf",
@@ -479,35 +479,35 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10719/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10089/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10365/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10275/pdf",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10371/pdf",
@@ -521,7 +521,7 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.10706/pdf",
@@ -535,14 +535,14 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.a.20112/abstract;jsessionid=b5be5bd1b9d0da8fb71b06979f974f01.d02t02",
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.a.20255/pdf",
@@ -556,7 +556,7 @@
    "members": [
     "EUROCAT (EU RD Platform, JRC) (Italy)"
    ],
-   "status": "unresolved: no PubMed or Crossref record"
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1002/ajmg.a.20243/pdf",
@@ -2201,13 +2201,6 @@
     "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
    ],
    "status": "unresolved: no PubMed or Crossref record"
-  },
-  {
-   "id": "10.1186/s13023-020-01403-x",
-   "members": [
-    "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
-   ],
-   "status": "lookup failed: KeyError"
   },
   {
    "id": "10.23736/s0392-0488.20.06675-4",
@@ -9718,6 +9711,15 @@
    "title": "Conducting clinical trials in heart failure during (and after) the COVID-19 pandemic: an Expert Consensus Position Paper from the Heart Failure Association (HFA) of the European Society of Cardiology (ESC).",
    "members": [
     "German registry for congenital thrombocytopenia (Germany)"
+   ],
+   "status": "rejected: not about the site's conditions"
+  },
+  {
+   "id": "32505191",
+   "pmid": "32505191",
+   "title": "Emergency management in epidermolysis bullosa: consensus clinical recommendations from the European reference network for rare skin diseases.",
+   "members": [
+    "ERN [Skin] - ERN-Skin REGISTRY: Interoperable ERN on Rare and Undiagnosed Skin Disorders (France)"
    ],
    "status": "rejected: not about the site's conditions"
   },

@@ -4463,6 +4463,33 @@
    ]
   },
   {
+   "pmid": "36723395",
+   "doi": "10.1097/PXR.0000000000000204",
+   "title": "Prevalence pattern, phenotypic manifestation, and descriptive genetics of congenital limb deficiencies in Pakistan",
+   "authors": [
+    "Bibi A",
+    "Uddin S",
+    "Naeem M",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2023",
+   "volume": "47",
+   "pages": "479-485",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "epidemiology"
+   ],
+   "notes": [
+    "Congenital limb deficiencies in Pakistan, 141 people, with the authors' call for a national registry"
+   ],
+   "via": [
+    "DysNet"
+   ]
+  },
+  {
    "pmid": "38222129",
    "doi": "10.7759/cureus.50465",
    "title": "Review of Teratogenic Effects of Leflunomide, Accutane, Thalidomide, Warfarin, Tetracycline, and Angiotensin-Converting Enzyme Inhibitors",
@@ -10876,6 +10903,32 @@
    ],
    "via": [
     "PubMed search"
+   ]
+  },
+  {
+   "pmid": "30053842",
+   "doi": "10.1186/s12891-018-2195-3",
+   "title": "Congenital limb deficiency in Japan: a cross-sectional nationwide survey on its epidemiology",
+   "authors": [
+    "Mano H",
+    "Fujiwara S",
+    "Takamura K",
+    "et al."
+   ],
+   "journal": "BMC musculoskeletal disorders",
+   "year": "2018",
+   "volume": "19",
+   "pages": "262",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "Japan's only nationwide survey of congenital limb deficiency"
+   ],
+   "via": [
+    "DysNet"
    ]
   },
   {

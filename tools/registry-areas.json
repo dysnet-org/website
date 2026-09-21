@@ -382,18 +382,33 @@
    "iso3": null,
    "admin1": [],
    "map": false,
-   "area": "27 surveillance programmes in 24 countries",
+   "area": "Member surveillance programmes worldwide, 31 of them in its 2024 report",
    "status": "umbrella",
    "since": "1974",
    "kind": "Umbrella of national and regional surveillance programmes",
    "classification": "ICD-10, by member programme",
    "website": "https://www.icbdsr.org/",
    "url_status": "200, checked 21 September 2026",
-   "source": "Its member programmes publish jointly; our epidemiology and causes pages already rest on its worldwide series on amelia and on phocomelia",
+   "source": "Its member programmes publish jointly; our epidemiology and causes pages already rest on its worldwide series on amelia and on phocomelia. Programme count from its 2024 annual report.",
    "match": [
     "ICBDSR",
     "International Clearinghouse for Birth Defects"
    ]
+  },
+  {
+   "registry": "Japan: JAOG",
+   "label": "JAOG Birth Defects Monitoring Program, Japan",
+   "country": "Japan",
+   "iso3": "JPN",
+   "admin1": [],
+   "area": "270 reporting hospitals: about 100,000 births a year, some 9 per cent of the national total",
+   "status": "hospital",
+   "since": "1972",
+   "kind": "Hospital-based, national",
+   "classification": "The ICBDSR list, with limb reduction defects split into transverse, preaxial, postaxial, intercalary and mixed",
+   "website": "https://www.jaog.or.jp/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "ICBDSR Annual Report 2014, programme description and 2012 data tables for Japan: JAOG; still described as the only national survey of congenital anomalies in Japan by Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born with Down syndrome in Japan. J Obstet Gynaecol Res 2022;48(9):2385-2391, doi:10.1111/jog.15342"
   },
   {
    "registry": "SINASC",

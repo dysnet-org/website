@@ -1105,3 +1105,9 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-omt .omt-prov, .cond-omt .omt-na { font-size: var(--text-eyebrow); margin-left: 0.3rem; padding: 0.05rem 0.3rem;
                                          border: 1px dashed var(--dys-line); border-radius: 0.3rem; cursor: help;
                                          color: var(--dys-muted); }
+/* How many registries can count this condition. It links to the register of registries,
+   where the same figures are tabulated the other way round. */
+.cond-regs { margin: 0.2rem 0 0; font-size: var(--text-small); }
+.cond-regs a { color: var(--dys-muted); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
+.cond-regs a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }
+.cond-regs strong { color: var(--dys-ink); }

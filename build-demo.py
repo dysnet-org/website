@@ -1122,6 +1122,96 @@ def registry_evidence():
     return out
 
 
+# ── Which registries cover which condition ───────────────────────────────────
+# The register said, of the 72 registries, how many name a condition and how many hold it
+# inside a broader group. Turned the other way round the same data says something harder: for
+# each condition, whether any registry in Europe can count it at all. Three can be counted
+# directly. Two cannot be reached even by classification, and one of those is the commonest
+# form of limb difference.
+def condition_coverage():
+    """Per ORPHAcode: the registries that code it directly, as a child form, or by classification."""
+    out = {}
+    regs = ORPHA_REGS.get("registries", [])
+    for code in _code_names():
+        out[code] = {
+            "direct": [r for r in regs if code in r["direct"]],
+            "child": [r for r in regs if code in r["children"]],
+            "parent": [r for r in regs if code in r["parent"]],
+        }
+    return out
+
+
+COVERAGE = None  # filled on first use, because _code_names() needs CONDITIONS
+
+
+def coverage_for(code):
+    global COVERAGE
+    if COVERAGE is None:
+        COVERAGE = condition_coverage()
+    return COVERAGE.get(str(code)) or {"direct": [], "child": [], "parent": []}
+
+
+def condition_registries_html(code):
+    """The coverage line for a condition card."""
+    if not code:
+        return ""
+    c = coverage_for(code)
+    d, ch, pa = len(c["direct"]), len(c["child"]), len(c["parent"])
+    if d:
+        txt = f'<strong>{d} registries</strong> record it by name'
+        if pa:
+            txt += f', {pa} more only inside a broader group'
+    elif ch:
+        txt = f'<strong>{ch} registries</strong> record its specific forms'
+        if pa:
+            txt += f', {pa} only inside a broader group'
+    elif pa:
+        txt = f'No registry records it by name; <strong>{pa}</strong> reach it only inside a broader group'
+    else:
+        txt = '<strong>No registry records it</strong>, by name or by classification'
+    return f'<p class="cond-regs"><a href="/knowledge/registries/">{txt}</a></p>'
+
+
+def condition_coverage_html():
+    """The table that turns the register of registries round to face the conditions."""
+    names = _code_names()
+    rows, direct_n, none_n = [], 0, 0
+    for code, name in sorted(names.items(), key=lambda kv: (-len(coverage_for(kv[0])["direct"]),
+                                                            -len(coverage_for(kv[0])["child"]), kv[1])):
+        c = coverage_for(code)
+        d, ch, pa = len(c["direct"]), len(c["child"]), len(c["parent"])
+        if d:
+            direct_n += 1
+        if not (d or ch or pa):
+            none_n += 1
+        cls = ' class="reg-direct"' if d or ch else ""
+        rows.append(f'<tr{cls}><th scope="row">{name}</th>'
+                    f'<td style="text-align:center">{d or "&mdash;"}</td>'
+                    f'<td style="text-align:center">{ch or "&mdash;"}</td>'
+                    f'<td style="text-align:center">{pa or "&mdash;"}</td></tr>')
+    return f"""
+    <div class="tick"></div>
+    <p class="eyebrow">Coverage, condition by condition</p>
+    <h2 class="h2">Which of our conditions a registry can actually count.</h2>
+    <p>The table above reads from the registries. This one reads from the conditions, out of the same Orphanet data, and it
+    is the harder view. <strong>By name</strong> means a registry is coded for that condition itself. <strong>Specific
+    forms</strong> means it is coded for forms of it rather than the condition as a whole. <strong>Broader group only</strong>
+    means the condition is somewhere inside a wider category the registry records, so a case exists in the data and cannot be
+    pulled out of it.</p>
+    <div class="annex-wrap">
+      <table class="annex priv-table">
+        <thead><tr><th scope="col">Condition</th><th scope="col">By name</th><th scope="col">Specific forms</th><th scope="col">Broader group only</th></tr></thead>
+        <tbody>{"".join(rows)}</tbody>
+      </table>
+    </div>
+    <p class="annex-note">The table holds the {len(names)} ORPHAcodes this site uses; brachydactyly and symbrachydactyly are
+    described without one, so they cannot appear. Of those {len(names)} codes, <strong>{direct_n} can be counted by
+    name</strong> in any registry listed on Orphanet, and {none_n} cannot be reached at all, by name or by classification.
+    One of the {none_n} is terminal transverse limb defect, the commonest form of limb difference and the defect behind all
+    three French clusters. This is what <a href="/voice/#demand-3">demand 3</a> is about, in one table.</p>
+"""
+
+
 def registry_evidence_html():
     """The table that joins this register to the bibliography."""
     ev = registry_evidence()
@@ -1414,6 +1504,7 @@ PAGES["/knowledge/registries/"] = {
     </div>
 
     {registry_evidence_html()}
+    {condition_coverage_html()}
 
     <div class="tick"></div>
     <p class="eyebrow">India</p>
@@ -1873,7 +1964,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={code}">{n_refs} references in the bibliography &rarr;</a></p>'
             if code and n_refs >= 3 else "")
     return (f'<div class="card" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{link}{refs}</div>')
+            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}{condition_registries_html(code)}{link}{refs}</div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────

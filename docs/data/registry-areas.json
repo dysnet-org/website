@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -38,7 +38,11 @@
    "admin1": [],
    "area": "Finland, national",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181319"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181319",
+   "match": [
+    "Finnish Register of Congenital Malformations",
+    "Finnish Registry of Congenital Malformations"
+   ]
   },
   {
    "registry": "Saxony-Anhalt",
@@ -274,7 +278,10 @@
    "source": "McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, Horwitz MD, Lam WL. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. J Hand Surg Eur Vol 2026;51(1):111-118, doi:10.1177/17531934251348360",
    "url_status": "200 in a browser (the host refuses scripted requests), checked 19 September 2026",
    "match": [
-    "Australian Hand Difference Register"
+    "AHDR",
+    "Australia Hand Difference Registry",
+    "Australian Hand Difference Register",
+    "Congenital Upper Limb Difference Registry in Australia"
    ]
   },
   {
@@ -505,6 +512,9 @@
    "url_status": "200, checked 21 September 2026",
    "source": "Källén B, et al. Infants with congenital limb reduction registered in the Swedish Register of Congenital Malformations, and the 2001 comparison of a population-based with a clinic-based register of upper limb deficiencies in Swedish children",
    "match": [
+    "Swedish Birth Defects Register",
+    "Swedish Medical Birth Register",
+    "Swedish Register for Congenital Malformations",
     "Swedish Register of Congenital Malformations"
    ]
   },
@@ -544,6 +554,175 @@
    "source": "Prevalence of congenital limb defects: data from birth defects registries in three provinces in Southern Thailand",
    "match": [
     "Southern Thailand"
+   ]
+  },
+  {
+   "registry": "HCAR",
+   "label": "Hungarian Congenital Abnormality Registry (VRONY)",
+   "country": "Hungary",
+   "iso3": "HUN",
+   "admin1": [],
+   "area": "All births in Hungary, about 100,000 a year",
+   "status": "covered",
+   "since": "1962",
+   "kind": "Population-based, national, statutory notification; a founding member of the ICBDSR",
+   "website": "https://nngyk.gov.hu/hu/veleszuletett-fejlodesi-rendellenessegek-nyilvantartasa-es-ritka-betegsegek-orszagos-kozpontja.html",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Siffel C, Czeizel AE. Using the Hungarian Birth Defects Registry for surveillance, research and intervention. Cent Eur J Public Health 1997;5(2):79-81, PMID 9208163; ICBDSR Annual Report 2014, programme description (centralised registration since 1962, monitoring since 1973, stillbirths from 24 weeks or 500 g, terminated pregnancies registered); notification governed by decree 21/2014 EMMI. Czeizel's studies of limb deficiencies in Hungary, 1975 to 1984, rest on it, including the 1970s rise in terminal transverse defects traced to high-dose oestrogen.",
+   "match": [
+    "Hungarian Congenital Abnormality Registry",
+    "Hungarian Birth Defects Registry",
+    "Hungarian Case-Control Surveillance System",
+    "in Hungary"
+   ]
+  },
+  {
+   "registry": "TBDR",
+   "label": "Texas Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Texas"
+   ],
+   "area": "Texas, statewide",
+   "status": "covered",
+   "since": "1996",
+   "kind": "Population-based, statewide, active case-finding by the Texas Department of State Health Services",
+   "website": "https://www.dshs.texas.gov/texas-birth-defects-epidemiology-surveillance",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Husain T, et al. Descriptive epidemiologic features shared by birth defects thought to be related to vascular disruption in Texas, 1996-2002. Birth Defects Res A 2008, PMID 18383510 (first registry data year 1996); Schraw JM, et al. Prevalence of congenital anomalies according to maternal race and ethnicity, Texas, 1999-2018. 2024, PMID 38014617; ICBDSR Annual Report 2014 (USA-Texas: BDES)",
+   "match": [
+    "Texas Birth Defects Registry"
+   ]
+  },
+  {
+   "registry": "MACDP",
+   "label": "Metropolitan Atlanta Congenital Defects Program (CDC)",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "map": false,
+   "area": "Five counties of metropolitan Atlanta, Georgia: about 50,000 births a year",
+   "status": "covered",
+   "since": "1967",
+   "kind": "Population-based, regional, run by the CDC; a founding member of the ICBDSR",
+   "website": null,
+   "url_status": "no current programme page found, checked 21 September 2026; the CDC's pages were reorganised in 2024",
+   "source": "Yang Q, et al. The return of thalidomide: are birth defects surveillance systems ready? Am J Med Genet 1997, PMID 9415679; Reefhuis J, Honein MA. Maternal age and non-chromosomal birth defects, Atlanta 1968-2000. Birth Defects Res A 2004, PMID 15368555; Cordero JF, Layde PM. Vaginal spermicides, chromosomal abnormalities and limb reduction defects. 1983, PMID 6680698; ICBDSR Annual Report 2014, programme description",
+   "match": [
+    "Metropolitan Atlanta Congenital Defects Program",
+    "MACDP"
+   ]
+  },
+  {
+   "registry": "NYS CMR",
+   "label": "New York State Congenital Malformations Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "New York"
+   ],
+   "area": "New York State, statewide",
+   "status": "covered",
+   "since": "1983",
+   "kind": "Population-based, statewide, statutory reporting",
+   "website": "https://www.health.ny.gov/diseases/birth_defects/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Lin S, et al. Comparison of demographic and defect characteristics among different developmental stages of congenital limb reduction defects. 1996, PMID 8822772 (281 limb reduction cases, births 1983-1987); Lin S, et al. Potential parental exposure to pesticides and limb reduction defects. Scand J Work Environ Health 1994, PMID 7973488",
+   "match": [
+    "Congenital Malformations Registry of New York",
+    "New York State Congenital Malformation"
+   ]
+  },
+  {
+   "registry": "Liaoning MCH",
+   "label": "Maternal and Child Health Certificate Registry of Liaoning Province",
+   "country": "China",
+   "iso3": "CHN",
+   "admin1": [
+    "Liaoning"
+   ],
+   "area": "Liaoning province",
+   "status": "covered",
+   "since": "2010 (first year used in the studies)",
+   "kind": "Population-based, provincial, from the birth certificate system",
+   "website": null,
+   "url_status": "no site found, checked 21 September 2026",
+   "source": "Zhang JY, et al. Association between maternal exposure to PM10 and polydactyly and syndactyly: a population-based case-control study in Liaoning province, China. 2020, PMID 32416360; Jiang YT, et al. Maternal exposure to ambient SO2 and risk of polydactyly and syndactyly. 2021, PMID 33118065 (2,605 polydactyly and 595 syndactyly cases, 2010-2015)",
+   "match": [
+    "Liaoning"
+   ]
+  },
+  {
+   "registry": "RYVEMCE",
+   "label": "Mexican Registry and Epidemiological Surveillance of External Congenital Malformations (RYVEMCE)",
+   "country": "Mexico",
+   "iso3": "MEX",
+   "admin1": [],
+   "area": "21 hospitals in 11 cities: about 62,000 births a year, some 3.5 per cent of the national total",
+   "status": "hospital",
+   "since": "1978",
+   "kind": "Hospital-based, national sample; ICBDSR member since 1980",
+   "website": null,
+   "url_status": "no site found, checked 21 September 2026",
+   "source": "ICBDSR Annual Report 2014, programme description; Arteaga-Vázquez J, et al. Congenital malformations in the offspring of epileptic mothers with and without anticonvulsant treatment. 2012, PMID 23318894; in the ICBDSR amelia study (Bermejo-Sánchez E, et al. 2011, PMID 22002956) its amelia prevalence was significantly above the pooled figure",
+   "match": [
+    "RYVEMCE",
+    "Registro y Vigilancia Epidemiol"
+   ]
+  },
+  {
+   "registry": "AMSP Boston",
+   "label": "Active Malformations Surveillance Program, Brigham and Women's Hospital",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [],
+   "map": false,
+   "area": "One hospital in Boston: 289,365 births over 41 years, 1972 to 2012",
+   "status": "hospital",
+   "since": "1972",
+   "kind": "Hospital-based, single centre",
+   "website": null,
+   "url_status": "no programme page found, checked 21 September 2026",
+   "source": "Toufaily MH, et al. Causes of congenital malformations. Birth Defects Res 2018, PMID 29377643; Gold NB, et al. Anatomic and etiological classification of congenital limb deficiencies. Am J Med Genet A 2011, PMID 21557466; Nasri HZ, et al. Vascular limb defects and maternal age. 2014, PMID 25181518",
+   "match": [
+    "Active Malformations Surveillance Program"
+   ]
+  },
+  {
+   "registry": "NBDPS",
+   "label": "National Birth Defects Prevention Study (United States)",
+   "country": "United States",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Ten surveillance sites across the United States, births 1997 to 2011",
+   "status": "study",
+   "since": "1997",
+   "kind": "Population-based case-control study built on state surveillance programmes; a study, not a registry",
+   "website": null,
+   "url_status": "no stable page found, checked 21 September 2026",
+   "source": "Caspers Conway KM, et al. Maternal periconceptional alcohol consumption and congenital limb deficiencies. Birth Defects Res A 2014, PMID 25132072 (906 limb deficiency cases); Adrien N, et al. 2026, PMID 39679807 (amniotic band syndrome, births 1997-2011)",
+   "match": [
+    "National Birth Defects Prevention Study",
+    "NBDPS"
+   ]
+  },
+  {
+   "registry": "EUROCAT",
+   "label": "EUROCAT, the European network of population-based registries of congenital anomalies",
+   "country": "Europe",
+   "iso3": null,
+   "admin1": [],
+   "map": false,
+   "area": "Member registries across Europe, coordinated by the European Commission's Joint Research Centre",
+   "status": "umbrella",
+   "kind": "Umbrella of population-based registries; most European registries in this register belong to it",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/",
+   "url_status": "200, checked 21 September 2026",
+   "source": "Its member registries are listed in this register one by one, from Orphanet; the network publishes jointly, and eighteen papers in our bibliography rest on it",
+   "match": [
+    "EUROCAT"
    ]
   }
  ]

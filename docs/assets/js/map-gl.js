@@ -327,7 +327,7 @@
     var rb = (data.regBib || {})[z.registry], bib = "";
     if (rb && (rb[0] || rb[1])) {
       var parts = [];
-      if (rb[0]) parts.push(rb[0] + " paper" + (rb[0] > 1 ? "s" : "") + " in our bibliography name it");
+      if (rb[0]) parts.push(rb[0] + " paper" + (rb[0] > 1 ? "s" : "") + " in our bibliography rest" + (rb[0] > 1 ? "" : "s") + " on it");
       if (rb[1]) parts.push(rb[1] + " found through it");
       bib = '<p class="dp-sub">' + parts.join(", ") + ".</p>";
     }

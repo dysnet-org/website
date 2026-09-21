@@ -597,10 +597,10 @@ def bibliography_html():
         elif "PubMed search" in e.get("via", []): tags += '<span class="bib-tag bib-via">PubMed search</span>'
         why = e["notes"][0] if e["notes"] else ""
         text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
-        items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-text="{text}">'
+        items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-registries="{" ".join(e.get("rests_on", []))}" data-text="{text}">'
                      f'<p class="bib-title">{e["title"]}</p><p class="bib-meta">{authors} · <em>{e["journal"]}</em> · {e["year"]}{(" · " + e["volume"]) if e["volume"] else ""}{(":" + e["pages"]) if e["pages"] else ""} · {link}</p>'
                      f'<p class="bib-tags">{tags}</p></li>')
-        records.append({"t": e["title"], "a": authors, "j": e["journal"], "y": e["year"], "v": e["volume"], "p": e["pages"], "d": e["doi"], "m": e["pmid"],
+        records.append({"t": e["title"], "r": e.get("rests_on", []), "a": authors, "j": e["journal"], "y": e["year"], "v": e["volume"], "p": e["pages"], "d": e["doi"], "m": e["pmid"],
                         "c": e["codes"], "k": [t.replace(" ", "_") for t in e["topics"]], "w": ", ".join(v.split(" (")[0] for v in via) if via else ("PubMed search" if "PubMed search" in e.get("via", []) else ""), "n": why})
     code_opts = "".join(f'<option value="{c}">{names.get(c, c)}</option>' for c in codes_present)
     topic_chips = "".join(f'<button type="button" data-topic="{t.replace(" ", "_")}" aria-pressed="false">{BIB_TOPIC_LABEL.get(t, t)}</button>' for t in topics)
@@ -1212,7 +1212,9 @@ def _reg_hit(title, phrase):
 def registry_evidence():
     """Per registry, the papers in our bibliography that rest on it, in two distinct senses.
 
-    `names` — the paper's title names the registry, so the study was built on its data.
+    `names` — the paper rests on the registry: its title or abstract names it, which
+               tools/enrich-bibliography-registries.py records in the entry's "rests_on" field.
+               Titles alone missed most of them; a registry is named in the methods.
     `found`  — we discovered the paper through that registry's own publication list, which the
                bibliography records in its "via" field.
 
@@ -1226,7 +1228,7 @@ def registry_evidence():
         if key in seen:
             continue
         seen.add(key)
-        names = [e for e in entries if a.get("match") and any(_reg_hit(e["title"], m) for m in a["match"])]
+        names = [e for e in entries if key in (e.get("rests_on") or [])]
         label0 = a["label"].split(":")[0].strip().lower()
         found = [e for e in entries
                  if any(key.lower() in v.lower() or (len(label0) > 6 and label0 in v.lower()) for v in e.get("via", []))]
@@ -1246,11 +1248,19 @@ def condition_coverage():
     """Per ORPHAcode: the registries that code it directly, as a child form, or by classification."""
     out = {}
     regs = ORPHA_REGS.get("registries", [])
+    # the registries this register lists beyond Orphanet, through the papers that rest on them:
+    # a registry whose paper in our bibliography carries a condition's code has published on it
+    published = {}
+    for key, v in registry_evidence().items():
+        for e in v["names"]:
+            for c in e.get("codes", []):
+                published.setdefault(c, set()).add(key)
     for code in _code_names():
         out[code] = {
             "direct": [r for r in regs if code in r["direct"]],
             "child": [r for r in regs if code in r["children"]],
             "parent": [r for r in regs if code in r["parent"]],
+            "published": sorted(published.get(code, set())),
         }
     return out
 
@@ -1262,7 +1272,7 @@ def coverage_for(code):
     global COVERAGE
     if COVERAGE is None:
         COVERAGE = condition_coverage()
-    return COVERAGE.get(str(code)) or {"direct": [], "child": [], "parent": []}
+    return COVERAGE.get(str(code)) or {"direct": [], "child": [], "parent": [], "published": []}
 
 
 def condition_registries_html(code):
@@ -1283,6 +1293,9 @@ def condition_registries_html(code):
         txt = f'No registry records it by name; <strong>{pa}</strong> reach it only inside a broader group'
     else:
         txt = '<strong>No registry records it</strong>, by name or by classification'
+    pub = len(c.get("published") or [])
+    if pub:
+        txt += f'; {spell(pub)} registr{"ies" if pub > 1 else "y"} beyond Orphanet ha{"ve" if pub > 1 else "s"} published on it'
     return f'<p class="cond-regs"><a href="/knowledge/registries/">{txt}</a></p>'
 
 
@@ -1294,7 +1307,7 @@ def condition_coverage_html():
     for code, name in sorted(names.items(), key=lambda kv: (-len(coverage_for(kv[0])["direct"]),
                                                             -len(coverage_for(kv[0])["child"]), kv[1])):
         c = coverage_for(code)
-        d, ch, pa = len(c["direct"]), len(c["child"]), len(c["parent"])
+        d, ch, pa, pub = len(c["direct"]), len(c["child"]), len(c["parent"]), len(c.get("published") or [])
         if d:
             direct_n += 1
             by_name.append(name)
@@ -1304,10 +1317,12 @@ def condition_coverage_html():
             none_n += 1
             nothing.append(name)
         cls = ' class="reg-direct"' if d or ch else ""
+        pub_cell = (f'<a href="/knowledge/bibliography/?condition={code}" title="{"; ".join(c["published"])}">{pub}</a>' if pub else "&mdash;")
         rows.append(f'<tr{cls}><th scope="row">{name}</th>'
                     f'<td style="text-align:center">{d or "&mdash;"}</td>'
                     f'<td style="text-align:center">{ch or "&mdash;"}</td>'
-                    f'<td style="text-align:center">{pa or "&mdash;"}</td></tr>')
+                    f'<td style="text-align:center">{pa or "&mdash;"}</td>'
+                    f'<td style="text-align:center">{pub_cell}</td></tr>')
     if nothing:
         unreachable = (", and " + (" and ".join(nothing)) + " cannot be reached at all, by name or by classification"
                        if len(nothing) > 1 else f", and {nothing[0]} cannot be reached at all, by name or by classification")
@@ -1321,10 +1336,12 @@ def condition_coverage_html():
     is the harder view. <strong>By name</strong> means a registry is coded for that condition itself. <strong>Specific
     forms</strong> means it is coded for forms of it rather than the condition as a whole. <strong>Broader group only</strong>
     means the condition is somewhere inside a wider category the registry records, so a case exists in the data and cannot be
-    pulled out of it.</p>
+    pulled out of it. <strong>Published on it</strong> counts the registries this register lists beyond Orphanet, Hungary&rsquo;s
+    or Texas&rsquo;s for instance, whose papers in our bibliography carry the condition&rsquo;s code: the join runs through the
+    literature rather than through a coding table, and the number links to those papers.</p>
     <div class="annex-wrap">
       <table class="annex priv-table">
-        <thead><tr><th scope="col">Condition</th><th scope="col">By name</th><th scope="col">Specific forms</th><th scope="col">Broader group only</th></tr></thead>
+        <thead><tr><th scope="col">Condition</th><th scope="col">By name</th><th scope="col">Specific forms</th><th scope="col">Broader group only</th><th scope="col">Published on it</th></tr></thead>
         <tbody>{"".join(rows)}</tbody>
       </table>
     </div>
@@ -1347,9 +1364,7 @@ def registry_evidence_html():
         a = v["area"]
         label = a["label"].split(":")[0] if ":" in a["label"] else a["label"]
         site = f'<a href="{a["website"]}" target="_blank" rel="noopener external">{key}</a>' if a.get("website") else key
-        phrases = a.get("match") or [key]
-        q = max(phrases, key=lambda m: sum(1 for e in BIB.get("entries", []) if _reg_hit(e["title"], m)))
-        names = (f'<a href="/knowledge/bibliography/?q={urllib.parse.quote(q)}">{len(v["names"])}</a>'
+        names = (f'<a href="/knowledge/bibliography/?registry={urllib.parse.quote(key)}">{len(v["names"])}</a>'
                  if v["names"] else "&mdash;")
         found = str(len(v["found"])) if v["found"] else "&mdash;"
         rows.append(f'<tr><th scope="row">{site}</th><td>{label}<br><span class="reg-local">{a["country"]}</span></td>'
@@ -1360,13 +1375,15 @@ def registry_evidence_html():
     <h2 class="h2">Which registries our own evidence rests on.</h2>
     <p>A register of registries is worth little if it sits apart from the literature on the same shelf. These figures are
     counted from <a href="/knowledge/bibliography/">our bibliography</a> at every build, so they cannot drift away from it.
-    Two different relations, and the difference matters. <strong>Names it</strong> means the title of a paper names the
-    registry, so the study was built on its data; the number links to those papers. <strong>Found through it</strong> means
-    we discovered the paper on that registry&rsquo;s own list of publications, which is how a registry earns its place here
-    rather than being taken on trust.</p>
+    Two different relations, and the difference matters. <strong>Rests on it</strong> means the paper&rsquo;s title or
+    abstract names the registry, so the study was built on its data; the number links to those papers in the bibliography.
+    <strong>Found through it</strong> means we discovered the paper on that registry&rsquo;s own list of publications, which
+    is how a registry earns its place here rather than being taken on trust. A registry named in the literature and absent
+    from this register is a gap in the register, not in the literature: that is how Hungary&rsquo;s national registry, Texas,
+    Atlanta, New York State, Liaoning and Mexico&rsquo;s RYVEMCE came to be added in September 2026.</p>
     <div class="annex-wrap">
       <table class="annex priv-table">
-        <thead><tr><th scope="col">Registry</th><th scope="col">What it is</th><th scope="col">Names it</th><th scope="col">Found through it</th></tr></thead>
+        <thead><tr><th scope="col">Registry</th><th scope="col">What it is</th><th scope="col">Rests on it</th><th scope="col">Found through it</th></tr></thead>
         <tbody>{"".join(rows)}</tbody>
       </table>
     </div>

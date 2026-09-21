@@ -630,7 +630,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
 (function () {
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");
   if (!list || !q) return;
-  var topic = "";
+  var topic = "", registry = "";   // registry: the register key a paper rests on, from ?registry=
   var LIMIT = 60, expanded = false, more = document.getElementById("bib-more"), focus = document.getElementById("bib-focus");
   var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to"), exclude = "";
   // the page ships the first 60 entries as HTML; the full set travels as JSON and is rendered here on demand
@@ -645,7 +645,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                    : '<a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(r.m) + '/" target="_blank" rel="noopener external">PubMed ' + esc(r.m) + '</a>';
     var tags = r.c.map(function (c) { return '<span class="bib-tag">' + esc(LABELS.codes[c] || c) + '</span>'; }).join("") +
                r.k.map(function (k) { return '<span class="bib-tag bib-topic">' + esc(LABELS.topics[k] || k) + '</span>'; }).join("") +
-               (r.w ? '<span class="bib-tag bib-via">' + (r.w === "PubMed search" ? "PubMed search" : "found on " + esc(r.w)) + '</span>' : "");
+               (r.w ? '<span class="bib-tag bib-via">' + (r.w === "PubMed search" ? "PubMed search" : "found on " + esc(r.w)) + '</span>' : "") +
+               (r.r || []).map(function (g) { return '<span class="bib-tag bib-reg">rests on ' + esc(g) + '</span>'; }).join("");
     return '<li class="bib-item"><p class="bib-title">' + esc(r.t) + '</p><p class="bib-meta">' + esc(r.a) + ' · <em>' + esc(r.j) + '</em> · ' + esc(r.y) +
            (r.v ? ' · ' + esc(r.v) : '') + (r.p ? ':' + esc(r.p) : '') + ' · ' + link + '</p><p class="bib-tags">' + tags + '</p></li>';
   }
@@ -658,7 +659,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       DATA.forEach(function (r) {
         var y = parseInt(r.y, 10) || 0;
         var ok = (!text || r.s.indexOf(text) !== -1) && (!code || r.c.indexOf(code) !== -1) && (!topic || r.k.indexOf(topic) !== -1) &&
-                 (!exclude || r.c.indexOf(exclude) === -1) && (y >= from && y <= to);
+                 (!exclude || r.c.indexOf(exclude) === -1) && (y >= from && y <= to) && (!registry || (r.r || []).indexOf(registry) !== -1);
         if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
       });
       list.innerHTML = out.join("");
@@ -668,12 +669,12 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&
                (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1) &&
                (!exclude || it.getAttribute("data-codes").split(" ").indexOf(exclude) === -1) &&
-               (y >= from && y <= to);
+               (y >= from && y <= to) && (!registry || (it.getAttribute("data-registries") || "").split(" ").indexOf(registry) !== -1);
       if (ok) k++;
       it.hidden = !ok || (!expanded && k > LIMIT);
     });
     n.textContent = k;
-    writeFilterParams({ q: q.value.trim(), condition: code, topic: topic, exclude: exclude,
+    writeFilterParams({ q: q.value.trim(), condition: code, topic: topic, exclude: exclude, registry: registry,
                         from: yFrom && yFrom.value, to: yTo && yTo.value });
     if (more) { more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching references"; }
     if (focus) focus.querySelectorAll("button").forEach(function (b) {
@@ -697,6 +698,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   if (pre.get("condition")) sel.value = pre.get("condition");
   if (pre.get("topic")) topic = pre.get("topic");
   if (pre.get("exclude")) exclude = pre.get("exclude");
+  if (pre.get("registry")) registry = pre.get("registry");
   if (pre.get("from") && yFrom) yFrom.value = pre.get("from");
   if (pre.get("to") && yTo) yTo.value = pre.get("to");
   chips.querySelectorAll("button").forEach(function (b) {
@@ -707,7 +709,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); expanded = false; apply();
     });
   });
-  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; exclude = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; exclude = ""; registry = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
   apply();
   // the full set travels as a file: until it lands, the 60 entries in the HTML are filtered in place
   var bibSrc = dataEl && dataEl.getAttribute("data-src");

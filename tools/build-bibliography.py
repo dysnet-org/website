@@ -546,5 +546,11 @@ entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
 out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+
+# Which registry each paper rests on, matched against the register's phrases in title and abstract.
+# Kept in a script of its own so it can also run alone when the register gains an entry.
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location("enrich_registries", HERE / "enrich-bibliography-registries.py")
+_mod = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_mod); _mod.main()
 print(f"{len(entries)} references | with DOI: {sum(1 for e in entries if e['doi'])} | tagged to a condition: {sum(1 for e in entries if e['codes'])}")
 (HERE / "bibliography-review.json").write_text(json.dumps({"built": time.strftime("%Y-%m-%d"), "items": review}, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -752,6 +752,8 @@ table.reg-table tr.reg-direct { background: var(--dys-green-soft); }
 .centre-popup .dp-main strong { color: var(--acc-centres-text); }
 .centre-popup .dp-local { font-weight: 400; font-size: var(--text-small); color: var(--dys-muted); }
 .bib-tag.bib-via { background: #fff7ed; color: #9a3412; border: 1px solid #fdba74; }
+/* the registry a paper rests on, from its abstract (tools/enrich-bibliography-registries.py) */
+.bib-tag.bib-reg { background: var(--dys-purple-soft); color: var(--dys-purple-text); }
 .bib-focus { align-items: center; }
 .bib-focus button { border-color: #fdba74; color: #9a3412; background: #fff7ed; font-weight: 700; }
 .bib-focus button[aria-pressed="true"] { background: #ea580c; border-color: #ea580c; color: #fff; }

@@ -636,6 +636,10 @@ table.annex th, table.annex td { text-align: left; vertical-align: top; padding:
 table.annex thead th { background: var(--dys-purple-soft); color: var(--dys-purple-text); font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.08em; }
 table.annex tbody th { font-weight: 700; white-space: nowrap; }
 table.annex tbody tr:first-child th, table.annex tbody tr:first-child td { background: var(--dys-green-soft); }
+table.annex.prev { table-layout: fixed; min-width: 64rem; }
+table.annex.prev tbody th { white-space: normal; }
+table.annex tr.annex-sep th { white-space: normal; font-weight: 400; font-style: italic; color: var(--dys-muted); background: var(--dys-purple-soft); }
+table.annex td small { color: var(--dys-muted); }
 table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-purple-text); padding: 0 0.1rem; }
 .annex-note { font-size: var(--text-small); color: var(--dys-muted); margin-top: var(--space-2); }
 ol.sources { font-size: var(--text-small); color: var(--dys-muted); padding-left: 1.4rem; max-width: var(--prose-max); }

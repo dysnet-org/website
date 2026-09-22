@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build tools/births.json: live births a year, per country, for the incidence table.
+"""Build tools/births.json: live births a year, per country, for the expected-births table.
 
-A birth prevalence says how many children in 10,000 births are born with a condition. To turn that
-into how many children a year a country can expect, you need that country's births. The World Bank
+A birth prevalence says how many births in 10,000 are affected by a condition. To turn that
+into how many affected births a year a country can expect, you need that country's births. The World Bank
 publishes the two series this needs, population (SP.POP.TOTL) and the crude birth rate
 (SP.DYN.CBRT.IN, births per 1,000 people), both CC BY 4.0; births = population x rate / 1000, taken
 from the most recent year in which a country has both. Aggregates (regions, income groups) are left

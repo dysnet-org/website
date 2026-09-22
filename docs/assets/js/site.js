@@ -592,7 +592,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var reset = document.getElementById("inc-reset"), more = document.getElementById("inc-more");
   var LIMIT = 25, expanded = false;
 
-  // same rounding as the build: a country expecting less than one child a year keeps a decimal
+  // same rounding as the build: a country expecting less than one affected birth a year keeps a decimal
   function cases(births, rate) {
     var n = births * rate / 100000;
     return n >= 10 ? Math.round(n).toLocaleString("en") : (n >= 0.1 ? n.toFixed(1) : "<0.1");
@@ -625,9 +625,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     headEl.textContent = "Expected a year: " + r[0];
     var basisEl = document.getElementById("inc-basis");
     if (basisEl) {
-      var LABEL = { measured: "Measured", pooled: "Pooled from several registries",
-                    reported: "Reported, without a population study behind it",
-                    derived: "Derived, not measured", none: "Not measured" };
+      var LABEL = DATA.basisLabels || {};   // written by the build, the same words as the prevalence table
       var lab = LABEL[basis] || "";
       var txt = note || (estimable ? "Source: " + r[2] + "." : "");
       basisEl.textContent = lab ? lab + ". " + txt : "";

@@ -48,28 +48,66 @@ def fetch(code):
         raise
 
 
+def _row(p):
+    mean = float(p.get("ValMoy") or 0) or None
+    return {"per_100000": mean, "class": p.get("PrevalenceClass"), "geo": p.get("PrevalenceGeographic"),
+            "qualification": p.get("PrevalenceQualification"), "status": p.get("PrevalenceValidationStatus"),
+            "source": (p.get("Source") or "").strip() or None}
+
+
+def resolve_pubmed(rows):
+    """First author, year and journal for every PubMed identifier Orphanet cites, from NCBI E-utilities.
+
+    Orphanet's source field is a string such as "8766141[PMID]_EUROCAT ...[OTHER]". A reader of the
+    epidemiology page is owed the study, not the number, so the identifiers are resolved here, once,
+    and the page prints them; a build never queries PubMed itself."""
+    pmids = sorted({m for v in rows.values() for r in v["birth_rows"] + v["point_rows"]
+                    for m in re.findall(r"(\d{5,9})\[PMID\]", r.get("source") or "")})
+    if not pmids:
+        return {}
+    url = ("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id="
+           + ",".join(pmids))
+    req = urllib.request.Request(url, headers={"User-Agent": "DysNet conditions builder (info@dysnet.org)"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        res = json.load(r)["result"]
+    out = {}
+    for pmid in pmids:
+        x = res.get(pmid) or {}
+        if not x.get("sortfirstauthor"):
+            continue
+        out[pmid] = {"first_author": x["sortfirstauthor"], "year": (x.get("pubdate") or "")[:4],
+                     "journal": x.get("source") or "", "title": x.get("title") or ""}
+    print(f"  resolved {len(out)} of {len(pmids)} PubMed identifiers")
+    return out
+
+
 def main():
     rows = {}
     for name, code in codes_from_build():
         res = fetch(code)
         time.sleep(0.15)
-        births = [p for p in ((res or {}).get("Prevalence") or [])
-                  if p.get("PrevalenceType") == "Prevalence at birth"]
+        prev = (res or {}).get("Prevalence") or []
+        births = [p for p in prev if p.get("PrevalenceType") == "Prevalence at birth"]
         # the most precise row first: a value and class beats a class on its own
         births.sort(key=lambda p: (p.get("PrevalenceQualification") != "Value and class",
                                    -(float(p.get("ValMoy") or 0))))
-        if not births:
-            rows[name] = {"orphacode": code, "birth_prevalence": None}
+        # every row Orphanet publishes is kept as well, because the spread between territories is
+        # itself a finding: the epidemiology page shows it, the card order uses the head row only
+        entry = {"orphacode": code, "birth_prevalence": None,
+                 "birth_rows": [_row(p) for p in births],
+                 "point_rows": [_row(p) for p in prev if p.get("PrevalenceType") == "Point prevalence"],
+                 "cases": next((int(float(p.get("ValMoy"))) for p in prev
+                                if p.get("PrevalenceType") == "Cases/families" and float(p.get("ValMoy") or 0)), None),
+                 "cases_unit": next(("families" if "amil" in (p.get("PrevalenceQualification") or "") else "cases"
+                                     for p in prev if p.get("PrevalenceType") == "Cases/families"), None)}
+        if births:
+            entry["birth_prevalence"] = _row(births[0])
+            print(f"  {name}: {entry['birth_prevalence']['per_100000']} per 100,000 "
+                  f"({births[0].get('PrevalenceClass')}, {births[0].get('PrevalenceGeographic')}); {len(births)} row(s)")
+        else:
             print(f"  {name}: none")
-            continue
-        p = births[0]
-        mean = float(p.get("ValMoy") or 0) or None
-        rows[name] = {"orphacode": code,
-                      "birth_prevalence": {"per_100000": mean, "class": p.get("PrevalenceClass"),
-                                           "geo": p.get("PrevalenceGeographic"),
-                                           "qualification": p.get("PrevalenceQualification"),
-                                           "status": p.get("PrevalenceValidationStatus")}}
-        print(f"  {name}: {mean} per 100,000 ({p.get('PrevalenceClass')}, {p.get('PrevalenceGeographic')})")
+        rows[name] = entry
+    sources = resolve_pubmed(rows)
     n = sum(1 for v in rows.values() if (v.get("birth_prevalence") or {}).get("per_100000"))
     OUT.write_text(json.dumps({
         "built": datetime.date.today().isoformat(),
@@ -79,6 +117,7 @@ def main():
                  "and Orphanet's validation status. Where a condition has several rows the most precise is kept, "
                  "a value and class before a class alone. A null means Orphanet publishes no birth prevalence for "
                  "that code, which says nothing about how common the condition is."),
+        "sources": sources,
         "conditions": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"\nwrote {OUT.name}: {n} of {len(rows)} conditions have a birth prevalence from Orphanet")
 

@@ -1,8 +1,8 @@
 {
- "built": "2026-09-21",
+ "built": "2026-09-22",
  "source": "Orphanet, Orphadata cross-referencing API (rd-cross-referencing), licence CC BY 4.0",
  "source_url": "https://api.orphadata.com/",
- "note": "ICD-10 and ICD-11 codes as Orphanet maps them, with the mapping relation. An exact mapping means the two concepts are the same thing; a narrower or broader mapping does not.",
+ "note": "ICD-10 and ICD-11 codes as Orphanet maps them, with the mapping relation. An exact mapping means the two concepts are the same thing; a narrower or broader mapping does not. Where Orphanet maps nothing, the code is taken from the classification itself or from the CDC surveillance manual, and each such entry carries its own source; those are held in tools/build-condition-icd.py so that a rebuild cannot drop them.",
  "conditions": {
   "Adams-Oliver syndrome": {
    "orphacode": "974",
@@ -86,7 +86,8 @@
   },
   "Brachydactyly": {
    "orphacode": null,
-   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give"
+   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give",
+   "icd10_note": "ICD-10 has no code for brachydactyly as such; the shortened digit falls under other reduction deformities."
   },
   "Cenani-Lenz syndrome": {
    "orphacode": "3258",
@@ -228,7 +229,14 @@
    "orphacode": "2913",
    "orphanet_name": "Non-syndromic polydactyly",
    "group": "Group of disorders",
-   "icd10": [],
+   "icd10": [
+    {
+     "code": "Q69",
+     "title": "Polydactyly",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+    }
+   ],
    "icd11": [
     {
      "code": "LB78",
@@ -272,7 +280,8 @@
   },
   "Symbrachydactyly": {
    "orphacode": null,
-   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give"
+   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give",
+   "icd10_note": "ICD-10 has no code for symbrachydactyly as such."
   },
   "Syndactyly": {
    "orphacode": "90025",
@@ -295,7 +304,32 @@
    "orphacode": "498461",
    "orphanet_name": "Non-syndromic terminal transverse limb defect",
    "group": "Group of disorders",
-   "icd10": [],
+   "icd10": [
+    {
+     "code": "Q71.2",
+     "title": "Congenital absence of both forearm and hand",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q71.3",
+     "title": "Congenital absence of hand and finger(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q72.2",
+     "title": "Congenital absence of both lower leg and foot",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    },
+    {
+     "code": "Q72.3",
+     "title": "Congenital absence of foot and toe(s)",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d \"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)\""
+    }
+   ],
    "icd11": []
   },
   "Tetra-amelia": {

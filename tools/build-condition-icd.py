@@ -48,6 +48,30 @@ def rel_name(x):
     return (v.get("name") if isinstance(v, dict) else v) or ""
 
 
+# ── Entries Orphanet cannot give, kept here and not only in the output ────────────────────────
+# Where Orphanet maps no ICD code, the code is read from the classification itself or from the CDC
+# surveillance manual, and that is a judgement with a source rather than an API answer. These lived
+# only in condition-icd.json until 21 September 2026, when a rebuild regenerated the file from the
+# API and silently dropped all four, taking the ICD-10 codes off the commonest form of limb
+# reduction. They are applied after the fetch on every run now, so a rebuild cannot lose them again.
+CLASSIFICATION = "classification (not an Orphanet mapping)"
+WHO = "WHO ICD-10, 2019 edition, chapter XVII block Q65-Q79"
+CDC = ('CDC, National Birth Defects Prevention Network surveillance manual, chapter 4.9d '
+       '"Limb Deficiency: Transverse Terminal (Q71.2, Q71.3, Q71.30, Q72.2, Q72.3, Q72.30)"')
+MANUAL_ICD10 = {
+    "Terminal transverse limb defect": [
+        {"code": "Q71.2", "title": "Congenital absence of both forearm and hand", "relation": CLASSIFICATION, "source": CDC},
+        {"code": "Q71.3", "title": "Congenital absence of hand and finger(s)", "relation": CLASSIFICATION, "source": CDC},
+        {"code": "Q72.2", "title": "Congenital absence of both lower leg and foot", "relation": CLASSIFICATION, "source": CDC},
+        {"code": "Q72.3", "title": "Congenital absence of foot and toe(s)", "relation": CLASSIFICATION, "source": CDC},
+    ],
+    "Polydactyly": [{"code": "Q69", "title": "Polydactyly", "relation": CLASSIFICATION, "source": WHO}],
+}
+MANUAL_NOTE = {
+    "Brachydactyly": "ICD-10 has no code for brachydactyly as such; the shortened digit falls under other reduction deformities.",
+    "Symbrachydactyly": "ICD-10 has no code for symbrachydactyly as such.",
+}
+
 def main():
     rows = {}
     for name, code in codes_from_build():
@@ -74,12 +98,27 @@ def main():
                       "group": r.get("DisorderGroup"), "icd10": icd10, "icd11": icd11}
         shown = ", ".join(e["code"] for e in icd10) or "none"
         print(f"  {name}: ICD-10 {shown}")
+    # the entries Orphanet cannot give, applied last so the API can never overwrite them
+    for name, codes in MANUAL_ICD10.items():
+        if name in rows and not rows[name].get("icd10"):
+            rows[name]["icd10"] = codes
+            print(f"  {name}: ICD-10 {', '.join(e['code'] for e in codes)} (from the classification, not Orphanet)")
+    for name, note in MANUAL_NOTE.items():
+        if name in rows and not rows[name].get("icd10"):
+            rows[name]["icd10_note"] = note
+    missing = [n for n in list(MANUAL_ICD10) + list(MANUAL_NOTE) if n not in rows]
+    if missing:
+        raise SystemExit(f"a hand-curated ICD entry names a condition the site no longer has: {missing}")
+
     OUT.write_text(json.dumps({
         "built": time.strftime("%Y-%m-%d"),
         "source": "Orphanet, Orphadata cross-referencing API (rd-cross-referencing), licence CC BY 4.0",
         "source_url": "https://api.orphadata.com/",
         "note": ("ICD-10 and ICD-11 codes as Orphanet maps them, with the mapping relation. An exact "
-                 "mapping means the two concepts are the same thing; a narrower or broader mapping does not."),
+                 "mapping means the two concepts are the same thing; a narrower or broader mapping does not. "
+                 "Where Orphanet maps nothing, the code is taken from the classification itself or from the CDC "
+                 "surveillance manual, and each such entry carries its own source; those are held in "
+                 "tools/build-condition-icd.py so that a rebuild cannot drop them."),
         "conditions": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     n = sum(1 for v in rows.values() if v.get("icd10"))
     print(f"\nwrote {OUT.relative_to(HERE.parent)}: {n} of {len(rows)} conditions have an ICD-10 mapping")

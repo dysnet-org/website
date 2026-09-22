@@ -431,6 +431,15 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 }
 .finder-title { font-weight: 700; font-size: var(--text-h4); margin-bottom: 0.35rem; }
 .finder-sub { font-size: var(--text-small); color: var(--dys-muted); }
+.finder-search { margin: var(--space-2) 0 0; }
+.finder-search label { display: block; font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.08em;
+                       text-transform: uppercase; color: var(--dys-muted); margin-bottom: 0.3rem; }
+.finder-search input {
+  width: 100%; box-sizing: border-box; min-height: 44px; padding: 0.5rem 0.8rem;
+  font: inherit; font-size: var(--text-body); color: var(--dys-ink);
+  background: #fff; border: 1px solid var(--dys-line); border-radius: var(--radius-card);
+}
+.finder-search input:focus { outline: 2px solid var(--dys-purple); outline-offset: 1px; border-color: var(--dys-purple); }
 .finder fieldset { border: 0; padding: 0; margin: var(--space-2) 0 0; }
 .finder legend { font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dys-purple-text); margin-bottom: var(--space-1); }
 .finder-chips { display: flex; flex-wrap: wrap; gap: var(--space-1); }
@@ -1097,6 +1106,40 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
   font-size: var(--text-small); line-height: 1.45; color: #fff;
 }
 
+/* ── A condition card, for two readers at once ──────────────────────────────────────────────
+   A family needs the name and the sentence under it, and needs to see at a glance that the rest
+   is not addressed to them. Someone building a registry needs the four vocabularies side by side
+   with the quality of each mapping. So the card runs: title, plain sentence, plain-language tags,
+   then a bordered block of codes, then a footer of what our own registers hold. */
+.cond .cond-desc { font-size: var(--text-body); color: var(--dys-ink); margin: 0; }
+.cond-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.15rem 0 0; }
+.cond-chip { font-size: var(--text-eyebrow); color: var(--dys-muted); background: var(--dys-bg);
+             border: 1px solid var(--dys-line); border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; }
+.cond-codes {
+  display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0.25rem 0.75rem;
+  margin: 0.55rem 0 0; padding: 0.6rem 0.75rem; align-items: baseline;
+  background: var(--dys-bg); border: 1px solid var(--dys-line); border-radius: var(--radius-card);
+  font-size: var(--text-small);
+}
+.cond-codes dt { font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.06em;
+                 color: var(--dys-muted); font-weight: 700; }
+.cond-codes dd { margin: 0; color: var(--dys-ink); min-width: 0; }
+.cond-codes code { font-size: 0.86em; background: var(--dys-purple-soft); color: var(--dys-purple-text);
+                   padding: 0.1rem 0.35rem; border-radius: 0.3rem; }
+.cond-codes a { color: var(--dys-purple-text); text-decoration: none; border-bottom: 1px solid transparent;
+                font-variant-numeric: tabular-nums; }
+.cond-codes a:hover { border-bottom-color: var(--dys-purple); }
+.cc-rel { font-size: var(--text-eyebrow); margin-left: 0.4rem; padding: 0.05rem 0.35rem; border-radius: 0.3rem;
+          border: 1px solid var(--dys-line); color: var(--dys-muted); cursor: help; white-space: nowrap; }
+/* the mapping relations that are not identities read as caveats, not as decoration */
+.cond-codes dd .cc-rel { background: #fff; }
+.cc-none { color: var(--dys-muted); font-style: italic; }
+.cond-foot { margin-top: auto; padding-top: 0.55rem; border-top: 1px solid var(--dys-line);
+             display: flex; flex-wrap: wrap; gap: 0.2rem 0.9rem; align-items: baseline; }
+.cond-refs { font-size: var(--text-small); color: var(--dys-purple-text); text-decoration: none; white-space: nowrap;
+             display: inline-flex; align-items: center; min-height: 24px; }
+.cond-refs:hover { text-decoration: underline; }
+
 /* ICD-10 on a condition card. "broader" marks a mapping Orphanet calls narrower-than, where
    the ICD code covers more than the condition: Q87.2 alone covers four of these. */
 .cond-icd { margin: 0.35rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
@@ -1115,13 +1158,13 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 /* How many registries can count this condition. It links to the register of registries,
    where the same figures are tabulated the other way round. */
 /* where the code sits in Orphanet's tree: a line for a disorder, a folding list for a group */
-.cond-orpha { margin: 0.2rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-orpha { margin: 0.4rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
 .cond-orpha a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
 .cond-orpha a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }
 .cond-orpha .on-page, .cond-tree .on-page { color: var(--dys-purple-text); border-bottom: 0; font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.04em; margin-left: 0.2rem; }
 .cond-orpha .orpha-more { border-bottom: 1px dotted var(--dys-line); cursor: help; }
 .cond-orpha-warn { color: var(--dys-ink); }
-.cond-tree { margin: 0.2rem 0 0; }
+.cond-tree { margin: 0.4rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
 .cond-tree > summary { cursor: pointer; list-style: none; }
 .cond-tree > summary::-webkit-details-marker { display: none; }
 .cond-tree > summary::after { content: " ▸"; color: var(--dys-purple-text); }
@@ -1134,7 +1177,7 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-tree code.icd-approx { background: transparent; border: 1px dashed var(--dys-line); color: var(--dys-muted); cursor: help; }
 .cond-tree .fine { margin: 0.4rem 0 0; }
 .reg-unchecked { text-align: center; color: var(--dys-muted); font-size: var(--text-eyebrow); font-style: italic; }
-.cond-regs { margin: 0.2rem 0 0; font-size: var(--text-small); }
+.cond-regs { margin: 0; font-size: var(--text-small); flex: 1 1 12rem; }
 .cond-regs a { color: var(--dys-muted); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
 .cond-regs a:hover { color: var(--dys-ink); border-bottom-color: var(--dys-purple); }
 .cond-regs strong { color: var(--dys-ink); }

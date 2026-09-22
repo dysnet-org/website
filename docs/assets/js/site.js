@@ -9,8 +9,11 @@
   /* ── Site search (HDS Search.astro pattern, simplified) ─────────── */
   var overlay = document.getElementById("search-overlay");
   var trigger = document.getElementById("search-btn");
+  // ?q= opens the site-wide search, unless the page has a search box of its own that owns the
+  // parameter: the bibliography, the teratogens register and the conditions page each filter
+  // themselves on ?q=, and opening the overlay over them answered a question nobody asked.
   var qParam = new URLSearchParams(location.search).get("q");
-  if (qParam) setTimeout(function () { openSearch(qParam); }, 300);
+  if (qParam && !document.querySelector("#bib-q, #tera-q, #cond-q")) setTimeout(function () { openSearch(qParam); }, 300);
   var index = null;
 
   function openSearch(preset) {
@@ -164,8 +167,12 @@
   if (!finder || !grid) return;
   var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
   var state = { limbs: "", type: "", other: "", genetic: "" };
+  // A reader who already knows what they are looking for should not have to answer three questions:
+  // the box matches a name, a synonym, an ORPHAcode or an ICD code against each card's data-search.
+  var qBox = document.getElementById("cond-q");
 
   function apply() {
+    var text = qBox ? qBox.value.trim().toLowerCase() : "";
     var n = 0;
     cards.forEach(function (c) {
       var ok = true;
@@ -173,10 +180,18 @@
         var v = state[q];
         if (v && (c.getAttribute("data-" + q) || "").split(" ").indexOf(v) === -1) ok = false;
       });
+      if (ok && text && (c.getAttribute("data-search") || "").indexOf(text) === -1) ok = false;
       c.style.display = ok ? "" : "none";
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
+    if (typeof writeFilterParams === "function") writeFilterParams({ q: text });
+  }
+  if (qBox) {
+    qBox.addEventListener("input", apply);
+    // a searched view can be linked: /knowledge/understanding-dysmelia/?q=Q71.3
+    var pre = typeof filterParams === "function" ? filterParams().get("q") : null;
+    if (pre) { qBox.value = pre; }
   }
 
   finder.querySelectorAll(".finder-chips").forEach(function (group) {
@@ -193,11 +208,13 @@
 
   document.getElementById("finder-reset").addEventListener("click", function () {
     state = { limbs: "", type: "", other: "", genetic: "" };
+    if (qBox) qBox.value = "";
     finder.querySelectorAll(".finder-chips").forEach(function (group) {
       group.querySelectorAll("button").forEach(function (x, i) { x.setAttribute("aria-pressed", i === 0 ? "true" : "false"); });
     });
     apply();
   });
+  apply();   // a ?q= in the address has to take effect on load
 })();
 
 /* ── Click-to-play YouTube facade ──────────────────────────────────── */

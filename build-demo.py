@@ -586,11 +586,60 @@ REG_CODE_NAMES = dict(sorted(REG_CODE_NAMES.items(), key=lambda kv: kv[1].lower(
 # first. Orphanet publishes the mapping together with its relation, and the relation is the
 # load-bearing part: Q87.2 is the ICD-10 code for four of these conditions at once, so quoting
 # it bare would tell a reader the four are the same thing.
+# The three plain-language facets of a condition, in the words the finder puts to a reader. The
+# finder's chips and each card's chips are both built from this, so the two cannot drift apart.
+FACETS = {
+    "limbs": [("", "Not sure / any"), ("arms", "Arms or hands"), ("legs", "Legs or feet"), ("several", "Several or all four")],
+    "type": [("", "Not sure / any"), ("reduction", "A part is missing or shorter"), ("fusion", "Fingers or toes joined"),
+             ("extra", "Extra fingers or toes"), ("band", "Ring-shaped constriction marks")],
+}
+FACET_SHORT = {"arms": "Arms or hands", "legs": "Legs or feet", "several": "Several or all four",
+               "reduction": "A part is missing", "fusion": "Joined digits", "extra": "Extra digits",
+               "band": "Constriction marks"}
+
+
+def facet_chips(q):
+    """The finder's buttons for one facet, from FACETS."""
+    return "".join(f'<button type="button" data-v="{v}" aria-pressed="{"true" if v == "" else "false"}">{lab}</button>'
+                   for v, lab in FACETS[q])
+
+
 ICD_PATH = pathlib.Path(__file__).parent / "tools" / "condition-icd.json"
 ICD = json.loads(ICD_PATH.read_text(encoding="utf-8"))["conditions"] if ICD_PATH.exists() else {}
 # How many conditions carry an ICD-10 code at all: the pages that count on it say so from here, because
 # eleven of ours are Orphanet groups that ICD-10 gives no single code to.
 ICD_COUNTED = sum(1 for r in ICD.values() if (r or {}).get("icd10"))
+
+
+def _icd_relation(codes):
+    """The one word a card puts on a set of codes for one edition."""
+    rels = [str(e.get("relation", "")) for e in codes]
+    if not rels:
+        return None
+    if any(r.startswith("classification") for r in rels):
+        return "classification"
+    if all(r.startswith("E ") for r in rels):
+        return "exact"
+    if all(r.startswith(("BTNT", "E ")) for r in rels):
+        return "narrower"
+    return "broader"
+
+
+# What the two editions actually achieve across our conditions, counted here so the notes under the
+# grid cannot drift from the cards above them.
+ICD_STATS = {}
+for _ed, _key in (("icd10", "icd10"), ("icd11", "icd11")):
+    _c = {}
+    for _v in ICD.values():
+        _r = _icd_relation((_v or {}).get(_key) or [])
+        if _r:
+            _c[_r] = _c.get(_r, 0) + 1
+    ICD_STATS[_ed] = {"rows": sum(_c.values()), **_c}
+_shared = {}
+for _v in ICD.values():
+    for _e in (_v or {}).get("icd11") or []:
+        _shared[_e["code"]] = _shared.get(_e["code"], 0) + 1
+ICD11_WIDEST = max(_shared.items(), key=lambda kv: kv[1]) if _shared else ("", 0)
 
 
 # ── Oberg-Manske-Tonkin, the surgeons' classification (tools/condition-omt.json) ──
@@ -2404,17 +2453,79 @@ def condition_hierarchy_html(code):
     return f'<p class="cond-orpha">{txt}.</p>'
 
 
-def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
+def _icd_rows(name):
+    """One row per ICD edition for the card's code block: the codes, and what Orphanet says the
+    mapping is. The relation is the load-bearing part, so it is stated on every row rather than
+    only on the ones that need a caveat: an epidemiologist reading the card should see at a glance
+    which of these codes are identities and which are approximations."""
+    row = ICD.get(name) or {}
+    out = []
+    for edition, key in (("ICD-10", "icd10"), ("ICD-11", "icd11")):
+        codes = row.get(key) or []
+        if not codes:
+            continue
+        rels = [str(e.get("relation", "")) for e in codes]
+        if any(r.startswith("classification") for r in rels):
+            rel = "from the classification"
+            why = next((e.get("source", "") for e in codes if e.get("source")), "Orphanet maps no code; this one is read from the classification itself")
+        elif all(r.startswith("E ") for r in rels):
+            rel, why = "exact", "Orphanet maps this condition and this code to each other exactly"
+        elif all(r.startswith(("BTNT", "E ")) for r in rels):
+            rel, why = "narrower", "Orphanet maps this condition as broader than the code, so the condition covers more than the code does"
+        else:
+            rel, why = "broader", "Orphanet maps this condition as narrower than the code, so the code covers more than this condition alone"
+        out.append((edition, " ".join(f'<code>{e["code"]}</code>' for e in codes), rel, why))
+    if not out and row.get("icd10_note"):
+        out.append(("ICD-10", f'<span class="cc-none">{row["icd10_note"]}</span>', "", ""))
+    return out
+
+
+def _omt_row(name):
+    """The Oberg-Manske-Tonkin position, or the reason there is none."""
+    row = OMT.get(name) or {}
+    if not row.get("group"):
+        return (("OMT", '<span class="cc-none">upper limb only, so not classified here</span>', "", row["confidence"])
+                if row.get("confidence") else None)
+    bits = [row["group"]] + ([row["part"]] if row.get("part") else []) + ([row["axis"] + " axis"] if row.get("axis") else [])
+    why = row.get("diagnosis") or ""
+    if row.get("note"):
+        why = (why + ". " + row["note"]).strip(". ")
+    return ("OMT", f'<span title="{why}">{" &middot; ".join(bits)}</span>', "provisional", row.get("confidence", ""))
+
+
+def condition_codes_html(name, code, orpha_name):
+    """The card's code block: Orphanet, ICD-10, ICD-11 and OMT side by side, each with its relation.
+
+    A condition card has two readers. A family needs the name and the sentence above this block and
+    nothing else. Someone building a registry needs exactly this: the four vocabularies that have to
+    be reconciled before two countries can add their figures together, and how good each mapping is.
+    Putting them in one labelled table rather than four grey sentences serves both, because the one
+    reader can skip a block and the other can scan it.
+    """
+    rows = []
     if code:
-        link = (f'<p class="src"><a href="{ORPHA_URL.format(code)}" target="_blank" '
-                f'rel="noopener external" title="{orpha_name} — Orphanet">'
-                f'Orphanet · ORPHA:{code} ↗</a></p>')
+        node = HIER["nodes"].get(str(code)) or {}
+        level = "group" if node.get("level") == "Group of disorders" else "disorder"
+        val = (f'<a href="{ORPHA_URL.format(code)}" target="_blank" rel="noopener external" '
+               f'title="{orpha_name} &mdash; Orphanet">ORPHA:{code} &#8599;</a>')
+        rows.append(("Orphanet", val, level, f"Orphanet holds this as a {node.get('level', 'disorder').lower()}"))
     elif name == "Symbrachydactyly":
-        link = ('<p class="src">Not an Orphanet entity as such: Orphanet lists only the rare form affecting hands and feet, '
-                f'<a href="{ORPHA_URL.format(1570)}" target="_blank" rel="noopener external" title="Symbrachydactyly of hands and feet — Orphanet">ORPHA:1570 ↗</a>.</p>')
+        rows.append(("Orphanet", f'<a href="{ORPHA_URL.format(1570)}" target="_blank" rel="noopener external">ORPHA:1570 &#8599;</a>',
+                     "hands and feet only", "Orphanet has no entity for symbrachydactyly as such: 1570 is the rarer form affecting hands and feet together"))
     else:
-        link = ('<p class="src">Umbrella term; see the specific types on '
-                '<a href="https://www.orpha.net/en/disease" target="_blank" rel="noopener external">Orphanet</a>.</p>')
+        rows.append(("Orphanet", '<span class="cc-none">no code: an umbrella term</span>', "", ""))
+    rows += _icd_rows(name)
+    omt = _omt_row(name)
+    if omt:
+        rows.append(omt)
+    cells = ""
+    for label, value, rel, why in rows:
+        badge = f'<span class="cc-rel" title="{why}">{rel}</span>' if rel else ""
+        cells += f"<dt>{label}</dt><dd>{value}{badge}</dd>"
+    return f'<dl class="cond-codes">{cells}</dl>'
+
+
+def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # the register's filters now travel in the address, so a card can point at its own slice of it
     # Deliberately broad. A code is assigned from a paper's title and its abstract, so this
     # counts the literature that touches a condition rather than the studies devoted to it:
@@ -2426,12 +2537,34 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # 1570 were reachable from the bibliography's filter and from nowhere else.
     ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
     n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
-    refs = (f'<p class="src"><a href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references in the bibliography &rarr;</a></p>'
+    refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references &rarr;</a>'
             if ref_code and n_refs >= 3 else "")
     anchor = f"cond-{ref_code}" if ref_code else "cond-" + _slug_name(name)
-    return (f'<div class="card" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}">'
-            f'<h3 class="h4">{name}</h3><p>{desc}</p>{condition_icd_html(name)}{condition_omt_html(name)}'
-            f'{condition_hierarchy_html(ref_code)}{condition_registries_html(ref_code)}{link}{refs}</div>')
+    # Three layers, in the order the two readers need them: what it is, how it is coded, what we hold
+    # on it. The plain sentence stays at the top and in the page's own voice; the codes sit in a block
+    # of their own that a family can skip in one glance; the footer is the reach of our own registers.
+    chips = "".join(f'<span class="cond-chip">{FACET_SHORT[v]}</span>'
+                    for v in limbs.split() + ctype.split() if v in FACET_SHORT)
+    # What the search box at the top of the page matches on. A reader arrives with a name, a
+    # synonym, an ORPHAcode or an ICD code from a letter, and any of them should find the card.
+    _icd = ICD.get(name) or {}
+    _node = HIER["nodes"].get(str(ref_code)) or {}
+    haystack = " ".join(filter(None, [
+        name, desc, orpha_name or "", _node.get("term") or "",
+        " ".join(_node.get("synonyms") or []),
+        f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
+        " ".join(e["code"] for e in (_icd.get("icd10") or [])),
+        " ".join(e["code"] for e in (_icd.get("icd11") or [])),
+        (OMT.get(name) or {}).get("diagnosis") or "",
+    ])).lower().replace('"', "")
+    foot = condition_registries_html(ref_code) + refs
+    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-search="{haystack}">'
+            f'<h3 class="h4">{name}</h3>'
+            f'<p class="cond-desc">{desc}</p>'
+            f'<p class="cond-chips">{chips}</p>'
+            f'{condition_codes_html(name, code, orpha_name)}'
+            f'{condition_hierarchy_html(ref_code)}'
+            f'<div class="cond-foot">{foot}</div></div>')
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -2553,25 +2686,18 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 
     <div class="finder" id="cond-finder">
       <p class="finder-title">Find the pages that concern you</p>
-      <p class="finder-sub">Three questions to narrow the list below. This helper does not diagnose anything: only a clinician or geneticist can. It simply helps you find the right Orphanet pages to read and to bring to your consultation.</p>
+      <p class="finder-sub">Search a name or a code, or answer the three questions below. This helper does not diagnose anything: only a clinician or geneticist can. It simply helps you find the right Orphanet pages to read and to bring to your consultation.</p>
+      <div class="finder-search">
+        <label for="cond-q">Name, synonym, ORPHAcode or ICD code</label>
+        <input type="search" id="cond-q" placeholder="acheiria, Q71.3, ORPHA:498461, LB99.6&hellip;" autocomplete="off" spellcheck="false">
+      </div>
       <fieldset>
         <legend>Which limbs are concerned?</legend>
-        <div class="finder-chips" data-q="limbs">
-          <button type="button" data-v="" aria-pressed="true">Not sure / any</button>
-          <button type="button" data-v="arms" aria-pressed="false">Arms or hands</button>
-          <button type="button" data-v="legs" aria-pressed="false">Legs or feet</button>
-          <button type="button" data-v="several" aria-pressed="false">Several or all four</button>
-        </div>
+        <div class="finder-chips" data-q="limbs">{facet_chips("limbs")}</div>
       </fieldset>
       <fieldset>
         <legend>What best describes the difference?</legend>
-        <div class="finder-chips" data-q="type">
-          <button type="button" data-v="" aria-pressed="true">Not sure / any</button>
-          <button type="button" data-v="reduction" aria-pressed="false">A part is missing or shorter</button>
-          <button type="button" data-v="fusion" aria-pressed="false">Fingers or toes joined</button>
-          <button type="button" data-v="extra" aria-pressed="false">Extra fingers or toes</button>
-          <button type="button" data-v="band" aria-pressed="false">Ring-shaped constriction marks</button>
-        </div>
+        <div class="finder-chips" data-q="type">{facet_chips("type")}</div>
       </fieldset>
       <fieldset>
         <legend>Are other parts of the body also concerned (heart, skull, organs, blood)?</legend>
@@ -2596,9 +2722,9 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
       {"".join(condition_card(*c) for c in CONDITIONS)}
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
-    <p class="annex-note">Each card also carries its <strong>ICD-10</strong> code, which is what a hospital, a national registry and an insurer actually use, while the ORPHAcode is what a rare-disease registry uses. Two words qualify it, and they matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, as for the numbered syndactyly types. <strong>Classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
-    <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the third vocabulary on each card, and the one the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so three of the conditions here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
-    <p class="annex-note"><strong>ICD-11</strong> appears only where it resolves something ICD-10 leaves unresolved, which on this page is three times. Amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8, and ICD-11 names each of them exactly; polydactyly has no Orphanet mapping to ICD-10 at all, and ICD-11 names it exactly. It is not a general improvement. Across these conditions the share of exact mappings rises from roughly a third under ICD-10 to under a half under ICD-11, and in one respect ICD-11 is the coarser of the two: its code LD2F.1Y covers seven of the conditions here, among them Adams-Oliver, Holt-Oram, phocomelia and Roberts syndrome, where ICD-10 at least spreads them over three codes. Anyone planning to move a registry from one to the other should know that before assuming the newer classification is the finer one.</p>
+    <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, as for the numbered syndactyly types. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
+    <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so three of the conditions here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
+    <p class="annex-note"><strong>ICD-11</strong> now sits beside ICD-10 on every card that has one, {ICD_STATS["icd11"]["rows"]} of them, because the point of the block is to show what a registry would have to reconcile rather than to flatter either edition. ICD-11 resolves real things: amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8 and ICD-11 names each exactly, and polydactyly has no Orphanet mapping to ICD-10 at all while ICD-11 names it exactly. It is not a general improvement. The share of exact mappings rises only from {ICD_STATS["icd10"].get("exact", 0)} of {ICD_STATS["icd10"]["rows"]} under ICD-10 to {ICD_STATS["icd11"].get("exact", 0)} of {ICD_STATS["icd11"]["rows"]} under ICD-11, and in one respect ICD-11 is the coarser: its code {ICD11_WIDEST[0]} stands for {spell(ICD11_WIDEST[1])} of the conditions on this page at once.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>

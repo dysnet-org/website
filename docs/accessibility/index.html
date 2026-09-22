@@ -20,8 +20,42 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css?v=03f30d84">
+<link rel="stylesheet" href="/assets/css/site.css?v=d029e4d3">
 <script>window.SITE_BASE="";</script>
+<script>
+(function () {
+  var h = location.hostname;
+  if (h === "localhost" || h === "127.0.0.1" || h === "::1" || h === "" || h.slice(-6) === ".local") return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 500
+  });
+  try {
+    if (localStorage.getItem("dysnet-consent") === "granted") {
+      gtag("consent", "update", {
+        analytics_storage: "granted",
+        functionality_storage: "granted",
+        personalization_storage: "granted"
+      });
+    }
+  } catch (e) {}
+  gtag("js", new Date());
+  gtag("config", "G-NN0QH61XFV", { anonymize_ip: true });
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=G-NN0QH61XFV";
+  document.head.appendChild(s);
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.dysnet.org/"}, {"@type": "ListItem", "position": 2, "name": "Accessibility", "item": "https://www.dysnet.org/accessibility/"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Accessibility of this site, measured", "headline": "Accessibility of this site, measured", "url": "https://www.dysnet.org/accessibility/", "description": "How accessible this site is, measured rather than claimed: what we tested, what passed, where it still falls short, and how to tell us when something blocks you.", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "url": "https://www.dysnet.org/", "name": "DysNet"}, "publisher": {"@type": "NGO", "name": "DysNet", "url": "https://www.dysnet.org/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": "https://www.dysnet.org/about/#board"}, "datePublished": "2026-09-17", "dateModified": "2026-09-22"}</script>
 </head><body>
@@ -162,6 +196,40 @@
   </div>
   <p class="page-date container">Page updated 22 September 2026 · Written by the DysNet documentation team, reviewed by the board.</p>
 </footer>
-<script src="/assets/js/site.js?v=03f30d84" defer></script>
+<div id="consent" class="consent" role="dialog" aria-live="polite" aria-label="Measurement consent" hidden>
+  <div class="consent-inner">
+    <p class="consent-msg"><strong>Help us see which pages are used</strong>
+      We would like to count visits with Google Analytics, so we can tell which registers families actually reach. Nothing is shared for advertising, and declining changes nothing about what you can read here. Our <a href="/privacy/">privacy notice</a> says what is recorded.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
+      <button type="button" class="btn btn-primary" id="consent-yes">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var b = document.getElementById("consent");
+  if (!b) return;
+  var KEY = "dysnet-consent", prior = null;
+  try { prior = localStorage.getItem(KEY); } catch (e) {}
+  if (prior === "granted" || prior === "denied") return;
+  b.hidden = false;
+  function choose(state) {
+    try { localStorage.setItem(KEY, state); } catch (e) {}
+    b.hidden = true;
+    if (typeof window.gtag === "function") {
+      var ok = state === "granted";
+      window.gtag("consent", "update", {
+        analytics_storage: ok ? "granted" : "denied",
+        functionality_storage: ok ? "granted" : "denied",
+        personalization_storage: ok ? "granted" : "denied"
+      });
+    }
+  }
+  document.getElementById("consent-yes").addEventListener("click", function () { choose("granted"); });
+  document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });
+})();
+</script>
+<script src="/assets/js/site.js?v=d029e4d3" defer></script>
 </body>
 </html>

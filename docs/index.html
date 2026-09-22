@@ -20,8 +20,42 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css?v=03f30d84">
+<link rel="stylesheet" href="/assets/css/site.css?v=d029e4d3">
 <script>window.SITE_BASE="";</script>
+<script>
+(function () {
+  var h = location.hostname;
+  if (h === "localhost" || h === "127.0.0.1" || h === "::1" || h === "" || h.slice(-6) === ".local") return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 500
+  });
+  try {
+    if (localStorage.getItem("dysnet-consent") === "granted") {
+      gtag("consent", "update", {
+        analytics_storage: "granted",
+        functionality_storage: "granted",
+        personalization_storage: "granted"
+      });
+    }
+  } catch (e) {}
+  gtag("js", new Date());
+  gtag("config", "G-NN0QH61XFV", { anonymize_ip: true });
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=G-NN0QH61XFV";
+  document.head.appendChild(s);
+})();
+</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "DysNet", "legalName": "DysNet Ideell Förening", "alternateName": "EDRIC – European Dysmelia Reference Information Centre", "url": "https://www.dysnet.org", "logo": "https://www.dysnet.org/assets/img/dysnet-logo-512.png", "description": "DysNet is the global network for people affected by congenital limb differences (dysmelia): a curated bibliography, registries and studies, a researcher register, a map of specialist care centres worldwide, and an international patient-owned registry.", "foundingDate": "2009-01-07", "foundingLocation": "Stockholm, Sweden", "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number", "value": "802444-3015"}, "address": [{"@type": "PostalAddress", "streetAddress": "Nybodagatan 1", "postalCode": "171 42", "addressLocality": "Solna", "addressCountry": "SE"}, {"@type": "PostalAddress", "streetAddress": "Rue du Chantier 2", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}], "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "info@dysnet.org", "availableLanguage": ["English"]}, "areaServed": "Worldwide", "memberOf": [{"@type": "Organization", "name": "EURORDIS – Rare Diseases Europe", "url": "https://www.eurordis.org/"}, {"@type": "Organization", "name": "European Disability Forum", "url": "https://www.edf-feph.org/"}], "knowsAbout": ["dysmelia", "congenital limb differences", "limb reduction deficiency", "rare diseases", "patient registries", "prosthetics", "assistive technology", "patient advocacy", "European Reference Networks"], "sameAs": ["https://www.facebook.com/DysNet", "https://www.linkedin.com/company/dysnet/", "https://www.youtube.com/user/DysmeliaNetwork", "https://www.orpha.net/en/patient-organisations/federations-alliances/646248", "https://www.edf-feph.org/our-members/european-dysmelia-reference-information-centre/", "https://www.lobbyfacts.eu/datacard/dysnet?rid=047603512537-13&sid=183440", "https://www.eurordis.org/eurordis_member/volup-speculum-carpo/", "https://www.wikidata.org/wiki/Q131894541"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "DysNet", "url": "https://www.dysnet.org/", "inLanguage": "en", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.dysnet.org/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "DysNet", "headline": "DysNet", "url": "https://www.dysnet.org/", "description": "The global network for people with congenital limb differences: five maintained registers, a map of specialist care, and a patient-owned registry.", "inLanguage": "en", "isPartOf": {"@type": "WebSite", "url": "https://www.dysnet.org/", "name": "DysNet"}, "publisher": {"@type": "NGO", "name": "DysNet", "url": "https://www.dysnet.org/"}, "author": {"@type": "Organization", "name": "DysNet documentation team", "url": "https://www.dysnet.org/about/#board"}, "datePublished": "2026-09-02", "dateModified": "2026-09-22"}</script>
@@ -282,6 +316,40 @@
   </div>
   <p class="page-date container">Page updated 22 September 2026 · Written by the DysNet documentation team, reviewed by the board.</p>
 </footer>
-<script src="/assets/js/site.js?v=03f30d84" defer></script>
+<div id="consent" class="consent" role="dialog" aria-live="polite" aria-label="Measurement consent" hidden>
+  <div class="consent-inner">
+    <p class="consent-msg"><strong>Help us see which pages are used</strong>
+      We would like to count visits with Google Analytics, so we can tell which registers families actually reach. Nothing is shared for advertising, and declining changes nothing about what you can read here. Our <a href="/privacy/">privacy notice</a> says what is recorded.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
+      <button type="button" class="btn btn-primary" id="consent-yes">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var b = document.getElementById("consent");
+  if (!b) return;
+  var KEY = "dysnet-consent", prior = null;
+  try { prior = localStorage.getItem(KEY); } catch (e) {}
+  if (prior === "granted" || prior === "denied") return;
+  b.hidden = false;
+  function choose(state) {
+    try { localStorage.setItem(KEY, state); } catch (e) {}
+    b.hidden = true;
+    if (typeof window.gtag === "function") {
+      var ok = state === "granted";
+      window.gtag("consent", "update", {
+        analytics_storage: ok ? "granted" : "denied",
+        functionality_storage: ok ? "granted" : "denied",
+        personalization_storage: ok ? "granted" : "denied"
+      });
+    }
+  }
+  document.getElementById("consent-yes").addEventListener("click", function () { choose("granted"); });
+  document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });
+})();
+</script>
+<script src="/assets/js/site.js?v=d029e4d3" defer></script>
 </body>
 </html>

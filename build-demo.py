@@ -37,6 +37,84 @@ ORIGIN, BASE = {
 }[DEPLOY]
 SITE = ORIGIN + BASE
 
+# ── Analytics and consent ────────────────────────────────────────────
+# Google Analytics 4 behind Consent Mode v2, mirroring the HDS website:
+# every storage purpose starts denied, the banner flips it on Accept, and
+# the stored grant is re-applied before the first pageview of later visits.
+# Localhost is skipped so tools/serve.py previews never reach the property.
+GA_ID = "G-NN0QH61XFV"
+CONSENT_KEY = "dysnet-consent"
+
+ANALYTICS_HEAD = """<script>
+(function () {
+  var h = location.hostname;
+  if (h === "localhost" || h === "127.0.0.1" || h === "::1" || h === "" || h.slice(-6) === ".local") return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    wait_for_update: 500
+  });
+  try {
+    if (localStorage.getItem("__KEY__") === "granted") {
+      gtag("consent", "update", {
+        analytics_storage: "granted",
+        functionality_storage: "granted",
+        personalization_storage: "granted"
+      });
+    }
+  } catch (e) {}
+  gtag("js", new Date());
+  gtag("config", "__GA__", { anonymize_ip: true });
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=__GA__";
+  document.head.appendChild(s);
+})();
+</script>""".replace("__KEY__", CONSENT_KEY).replace("__GA__", GA_ID)
+
+CONSENT_BANNER = """<div id="consent" class="consent" role="dialog" aria-live="polite" aria-label="Measurement consent" hidden>
+  <div class="consent-inner">
+    <p class="consent-msg"><strong>Help us see which pages are used</strong>
+      We would like to count visits with Google Analytics, so we can tell which registers families actually reach. Nothing is shared for advertising, and declining changes nothing about what you can read here. Our <a href="/privacy/">privacy notice</a> says what is recorded.</p>
+    <div class="consent-actions">
+      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
+      <button type="button" class="btn btn-primary" id="consent-yes">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var b = document.getElementById("consent");
+  if (!b) return;
+  var KEY = "__KEY__", prior = null;
+  try { prior = localStorage.getItem(KEY); } catch (e) {}
+  if (prior === "granted" || prior === "denied") return;
+  b.hidden = false;
+  function choose(state) {
+    try { localStorage.setItem(KEY, state); } catch (e) {}
+    b.hidden = true;
+    if (typeof window.gtag === "function") {
+      var ok = state === "granted";
+      window.gtag("consent", "update", {
+        analytics_storage: ok ? "granted" : "denied",
+        functionality_storage: ok ? "granted" : "denied",
+        personalization_storage: ok ? "granted" : "denied"
+      });
+    }
+  }
+  document.getElementById("consent-yes").addEventListener("click", function () { choose("granted"); });
+  document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });
+})();
+</script>""".replace("__KEY__", CONSENT_KEY)
+
 # Internal links are written root-absolute ("/knowledge/"); rebase() prefixes
 # them with BASE at write time, so page bodies stay prefix-agnostic.
 _ABS_ATTR = re.compile(r'\b(href|src)="(/(?!/)[^"]*)"')
@@ -332,6 +410,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/assets/css/site.css?v={ASSET_V}">
 <script>window.SITE_BASE={json.dumps(BASE)};</script>
+{ANALYTICS_HEAD}
 {ld_json}
 </head>"""
 
@@ -425,6 +504,7 @@ FOOTER = f"""</main>
     </div>
   </div>
   <p class="page-date container">Page updated __PAGE_DATE__ · Written by the DysNet documentation team, reviewed by the board.</p>\n</footer>
+{CONSENT_BANNER}
 <script src="/assets/js/site.js?v={ASSET_V}" defer></script>
 </body>
 </html>"""
@@ -2872,8 +2952,7 @@ def prevalence_html():
     from one resting on two thousand. Every figure in that column was checked against its original publication in September 2026.</p>
     <p>The rows run in the order of the condition cards, from the commonest to the rarest of the {RATED_N} conditions with a figure,
     then the {len(CONDITIONS) - RATED_N} without one. Orphanet publishes a birth prevalence for {orphanet_n} of the {len(CONDITIONS)};
-    our own table covers {sum(1 for c in CONDITIONS if c[0] in DOT_BASIS and DOT_BASIS[c[0]][0] != "none")}, and where both exist
-    the site uses ours, because we have read the paper behind it. <a href="/data/condition-prevalence.json">Download Orphanet&rsquo;s
+    our own table covers {sum(1 for c in CONDITIONS if c[0] in DOT_BASIS and DOT_BASIS[c[0]][0] != "none")}. <a href="/data/condition-prevalence.json">Download Orphanet&rsquo;s
     rows with their sources (JSON, CC BY 4.0)</a>.</p>
     <div class="annex-wrap">
       <table class="annex prev">

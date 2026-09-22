@@ -30,3 +30,5 @@ tools/ghs/
 tools/pop/
 tools/geo/
 tools/terato/
+__pycache__/
+*.pyc

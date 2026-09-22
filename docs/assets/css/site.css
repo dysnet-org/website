@@ -1187,6 +1187,7 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-tree li { margin: 0.15rem 0; }
 .cond-tree li a { color: var(--dys-ink); text-decoration: none; border-bottom: 1px dotted var(--dys-line); }
 .cond-tree .orpha-code { font-size: var(--text-eyebrow); color: var(--dys-muted); }
+.cond-tree .orpha-syn { color: var(--dys-muted); font-style: italic; }
 .cond-tree code, .cond-orpha code { font-size: 0.82em; background: var(--dys-purple-soft); color: var(--dys-purple-text); padding: 0 0.3em; border-radius: 4px; }
 .cond-tree code.icd-approx { background: transparent; border: 1px dashed var(--dys-line); color: var(--dys-muted); cursor: help; }
 .cond-tree .fine { margin: 0.4rem 0 0; }

@@ -610,51 +610,16 @@ CONDITIONS = [
 
     # Intercalary: the middle of the limb is missing, the end of it is formed (ORPHA:294927)
     ("Intercalary limb defect", "the middle segment of the limb is missing or short, while the hand or foot beyond it is formed.", 294927, "Non-syndromic intercalary limb defects", "arms legs several", "reduction", "limbsonly", "nongenetic"),
-    ("Femoral deficiency", "the thigh bone is short or absent, from mild shortening to complete absence.", 1987, "Isolated femoral agenesis/hypoplasia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Humeral deficiency", "the upper arm bone is short or absent, so the forearm can appear to attach close to the shoulder.", 294973, "Isolated humeral agenesis/hypoplasia", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Absence of the upper arm and forearm, hand present", "the arm between shoulder and wrist is missing or much shortened, with a hand that is normal or nearly so.", 294975, "Isolated absence of upper arm and forearm with hand present", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Absence of the thigh and lower leg, foot present", "the leg between hip and ankle is missing, with the foot present.", 294977, "Isolated absence of thigh and lower leg with foot present", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Proximal femoral focal deficiency", "the upper part of the thigh bone fails to form, so the hip end of the femur is missing or unconnected.", 633228, "Isolated proximal femoral focal deficiency", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Femoral bifurcation", "the lower end of the thigh bone is duplicated, splitting in two.", 667589, "Isolated congenital femoral bifurcation", "legs", "extra", "limbsonly", "nongenetic"),
 
     # Longitudinal: a bone along the length of the limb is missing (ORPHA:498457)
     ("Longitudinal limb defect", "a bone along the length of the limb is missing or short, while the segments above and below it are present.", 498457, "Non-syndromic longitudinal limb defect", "arms legs several", "reduction", "limbsonly", "nongenetic"),
-    ("Hemimelia", "one of the paired bones of the forearm or the lower leg is absent or grossly shortened.", 2130, "Non-syndromic hemimelia", "arms legs", "reduction", "limbsonly", "nongenetic"),
-    ("Thumb hypoplasia", "the thumb is small or absent, from slight narrowing to nothing at all.", 294988, "Isolated hypoplasia of thumb", "arms", "reduction", "limbsonly", "nongenetic"),
 
     # Terminal transverse: the limb forms and then stops (ORPHA:498461)
-    ("Acheiropodia", "hands and feet are absent on both sides, with the forearm and lower leg bones incomplete as well.", 931, "Isolated acheiropodia", "arms legs several", "reduction", "limbsonly", "genetic"),
-    ("Absence of fingers 2 to 5, one hand", "the four fingers beyond the thumb stop short on one hand, with small nail remnants on the stumps.", 973, "Isolated absence/hypoplasia of fingers excluding thumb, unilateral", "arms", "reduction", "limbsonly", "genetic"),
-    ("Tetra-amelia without other malformations", "all four limbs are partly or wholly absent, with no syndrome around it.", 294971, "Isolated tetra-amelia", "several", "reduction", "limbsonly", "nongenetic"),
-    ("Acheiria", "the hand and the wrist are absent, with nothing beyond the radius and the ulna.", 294983, "Isolated acheiria", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Apodia", "the foot and the ankle are absent, with the lower leg present.", 294986, "Isolated apodia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Complete hemimelia", "a whole segment is missing: the forearm with the hand, or the lower leg with the foot.", 498491, "Non-syndromic complete hemimelia", "arms legs", "reduction", "limbsonly", "nongenetic"),
-    ("Absence of the forearm and hand", "the arm ends below the elbow, with forearm, wrist and hand all absent.", 294979, "Isolated absence of both forearm and hand", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Absence of the lower leg and foot", "the leg ends below the knee, with tibia, fibula and foot all absent.", 294981, "Isolated absence of both lower leg and foot", "legs", "reduction", "limbsonly", "nongenetic"),
 
     # Syndactyly, the numbered types (ORPHA:90025)
-    ("Syndactyly type 1", "webbing between the third and fourth fingers, or the second and third toes, which is the commonest form.", 93402, "Syndactyly type 1", "arms legs", "fusion", "limbsonly", "genetic"),
-    ("Syndactyly type 2 (synpolydactyly)", "webbing with an extra digit inside the web, usually between the third and fourth fingers.", 93403, "Syndactyly type 2", "arms legs", "fusion extra", "limbsonly", "genetic"),
-    ("Syndactyly type 3", "complete webbing between the fourth and fifth fingers of both hands, with the feet unaffected.", 93404, "Syndactyly type 3", "arms", "fusion", "limbsonly", "genetic"),
-    ("Syndactyly type 4 (Haas type)", "all the fingers joined on both hands, often with an extra digit.", 93405, "Syndactyly type 4", "arms", "fusion extra", "limbsonly", "genetic"),
-    ("Syndactyly type 5", "webbed fingers and toes, with the metacarpals or metatarsals beneath them fused.", 93406, "Syndactyly type 5", "arms legs", "fusion", "limbsonly", "genetic"),
-    ("Syndactyly type 6 (mitten hand)", "fingers two to five joined on one hand, their end bones knotted together.", 295012, "Syndactyly type 6", "arms", "fusion", "limbsonly", "nongenetic"),
-    ("Syndactyly type 8", "the fourth and fifth metacarpals are fused, turning the little finger outwards.", 2498, "Syndactyly type 8", "arms", "fusion", "limbsonly", "genetic"),
-    ("Mesoaxial synostotic syndactyly", "the middle fingers are shortened and fused with their metacarpals, and the thumbs malformed.", 157801, "Mesoaxial synostotic syndactyly with phalangeal reduction", "arms legs", "fusion reduction", "limbsonly", "genetic"),
     ("Hyperphalangy", "an extra bone inside a finger or toe, with the usual number of digits.", 295002, "Isolated hyperphalangy", "arms legs", "extra", "limbsonly", "nongenetic"),
 
     # Polydactyly, by the axis the extra digit sits on (ORPHA:2913)
-    ("Preaxial polydactyly", "duplication on the thumb or big-toe side of the hand or the foot.", 498464, "Non-syndromic preaxial polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Polydactyly of a triphalangeal thumb", "a thumb with three bones instead of two, with or without duplication.", 93336, "Polydactyly of a triphalangeal thumb", "arms", "extra", "limbsonly", "genetic"),
-    ("Polydactyly of an index finger", "the thumb is replaced by one or two digits shaped like an index finger.", 93337, "Polydactyly of an index finger", "arms", "extra", "limbsonly", "genetic"),
-    ("Polysyndactyly", "a broad or split thumb, sometimes with webbing of the third and fourth fingers.", 93338, "Polysyndactyly", "arms", "extra fusion", "limbsonly", "genetic"),
-    ("Polydactyly of a biphalangeal thumb or hallux", "duplication of part or all of an ordinary thumb or big toe.", 93339, "Polydactyly of a biphalangeal thumb and/or hallux", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Postaxial polydactyly", "duplication on the little-finger or little-toe side.", 498467, "Non-syndromic postaxial polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Postaxial polydactyly type A", "a well-formed, working sixth digit beside the little finger or toe.", 93334, "Postaxial polydactyly type A", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Postaxial polydactyly type B", "a small extra digit on a stalk beside the little finger or toe.", 93335, "Postaxial polydactyly type B", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Complex polydactyly", "duplication that sits neither on the thumb side nor on the little-finger side.", 498470, "Non-syndromic complex polydactyly", "arms legs", "extra", "limbsonly", "nongenetic"),
-    ("Central polydactyly", "one of the three middle digits is doubled, most often the fourth.", 295004, "Central polydactyly", "arms legs", "extra", "limbsonly", "nongenetic"),
-    ("Mirror-image polydactyly", "a hand or foot with more than five digits, arranged symmetrically about a middle axis.", 498494, "Mirror-image polydactyly", "arms legs", "extra", "limbsonly", "nongenetic"),
 ]
 
 
@@ -696,7 +661,7 @@ ICD_PATH = pathlib.Path(__file__).parent / "tools" / "condition-icd.json"
 ICD = json.loads(ICD_PATH.read_text(encoding="utf-8"))["conditions"] if ICD_PATH.exists() else {}
 # How many conditions carry an ICD-10 code at all: the pages that count on it say so from here, because
 # eleven of ours are Orphanet groups that ICD-10 gives no single code to.
-ICD_COUNTED = sum(1 for r in ICD.values() if (r or {}).get("icd10"))
+ICD_COUNTED = sum(1 for c in CONDITIONS if (ICD.get(c[0]) or {}).get("icd10"))
 
 
 def _icd_relation(codes):
@@ -715,19 +680,31 @@ def _icd_relation(codes):
 
 # What the two editions actually achieve across our conditions, counted here so the notes under the
 # grid cannot drift from the cards above them.
+# Counted over the cards the page shows, not over every row the register holds: the register keeps a
+# row for each form documented inside a card, and a sentence about "the conditions on this page" that
+# counted those would be describing something the reader cannot see.
+ICD_CARDS = {c[0]: (ICD.get(c[0]) or {}) for c in CONDITIONS}
 ICD_STATS = {}
 for _ed, _key in (("icd10", "icd10"), ("icd11", "icd11")):
     _c = {}
-    for _v in ICD.values():
+    for _v in ICD_CARDS.values():
         _r = _icd_relation((_v or {}).get(_key) or [])
         if _r:
             _c[_r] = _c.get(_r, 0) + 1
     ICD_STATS[_ed] = {"rows": sum(_c.values()), **_c}
 _shared = {}
-for _v in ICD.values():
+for _v in ICD_CARDS.values():
     for _e in (_v or {}).get("icd11") or []:
         _shared[_e["code"]] = _shared.get(_e["code"], 0) + 1
 ICD11_WIDEST = max(_shared.items(), key=lambda kv: kv[1]) if _shared else ("", 0)
+# The ICD-10 code that stands for most of the cards at once, and an example of the reverse relation,
+# both read from the register so that the sentences quoting them cannot go stale when the list changes.
+_shared10 = {}
+for _v in ICD_CARDS.values():
+    for _e in (_v or {}).get("icd10") or []:
+        _shared10[_e["code"]] = _shared10.get(_e["code"], 0) + 1
+ICD10_WIDEST = max(_shared10.items(), key=lambda kv: kv[1]) if _shared10 else ("", 0)
+ICD10_NARROWER = [n for n, v in ICD_CARDS.items() if _icd_relation((v or {}).get("icd10") or []) == "narrower"]
 
 
 # ── Oberg-Manske-Tonkin, the surgeons' classification (tools/condition-omt.json) ──
@@ -756,6 +733,34 @@ DOT_ALIAS = {"Amelia, all forms": "Amelia", "Phocomelia, all forms": "Phocomelia
              "Tibial aplasia-ectrodactyly": "Tibial aplasia\u2013ectrodactyly"}
 HIER_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json"
 HIER = json.loads(HIER_PATH.read_text(encoding="utf-8")) if HIER_PATH.exists() else {"conditions": {}, "nodes": {}}
+
+
+# What each card stands for, beyond its own code: every entity Orphanet files under it. The cards
+# describe the groups, and the forms inside them are documented in the card rather than given one
+# each, so these names, synonyms and codes have to travel with the card, into its search text, into
+# the page's search keywords, and into the bibliography's labels.
+SUBCONDITIONS = {}       # card code -> [(code, term)], in Orphanet's order
+for _n, _d, _c, *_r in CONDITIONS:
+    if not _c:
+        continue
+    _desc = (HIER["conditions"].get(str(_c)) or {}).get("descendants") or []
+    SUBCONDITIONS[str(_c)] = [(d, (HIER["nodes"].get(d) or {}).get("term") or d) for d in _desc]
+SUBCONDITION_WORDS = {
+    c: " ".join(f"{t} ORPHA:{d} {d} " + " ".join((HIER["nodes"].get(d) or {}).get("synonyms") or [])
+                for d, t in kids)
+    for c, kids in SUBCONDITIONS.items() if kids}
+# Which card documents a code, for the registers that still carry the finer codes
+CARD_FOR_CODE = {str(c): str(c) for _n, _d, c, *_r in CONDITIONS if c}
+for _card, _kids in SUBCONDITIONS.items():
+    for _d, _t in _kids:
+        CARD_FOR_CODE.setdefault(_d, _card)
+
+# The register keeps the finer codes, because papers and registries are tagged with them. Each one is
+# named by Orphanet's own term and answers to the card that documents it, so a filter never shows a
+# bare number and a card's reference count covers the forms it stands for.
+REG_CODE_NAMES.update({d: t for kids in SUBCONDITIONS.values() for d, t in kids if d not in REG_CODE_NAMES})
+REG_CODE_NAMES = dict(sorted(REG_CODE_NAMES.items(), key=lambda kv: kv[1].lower()))
+
 
 
 # Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
@@ -830,9 +835,10 @@ _unresolved = [l for l, *_ in DOT_RATES if l not in DOT_ALIAS and l not in {c[0]
                and l not in DOT_NOT_A_CARD]
 if _unresolved:
     raise SystemExit(f"DOT_RATES labels that match no condition and have no alias: {_unresolved}")
+_CARD_NAMES = {c[0] for c in CONDITIONS}
 for _nm, _v in ORPHA_PREV.items():
     _bp = (_v or {}).get("birth_prevalence") or {}
-    if _nm not in CONDITION_RATE and _bp.get("per_100000"):
+    if _nm in _CARD_NAMES and _nm not in CONDITION_RATE and _bp.get("per_100000"):
         CONDITION_RATE[_nm] = (float(_bp["per_100000"]), f"Orphanet, {_bp.get('geo', '')}".rstrip(", "))
 
 
@@ -903,6 +909,15 @@ MEMBER_SENTENCE = (f"{spell(MEMBER_STATS['orgs'])} organisations across {spell(M
 # ─────────── Bibliography (tools/bibliography.json, built by tools/build-bibliography.py) ───────────
 BIB_PATH = pathlib.Path(__file__).parent / "tools" / "bibliography.json"
 BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else {"entries": []}
+# A paper tagged to one of the forms is a paper about the card that documents it, so the card's code
+# is added here rather than in the register: the tagging stays as the builder found it, and the site
+# decides what a card covers.
+for _e in BIB.get("entries", []):
+    _own = [c for c in _e.get("codes", []) if c != "thal"]
+    for _c in _own:
+        _card = CARD_FOR_CODE.get(str(_c))
+        if _card and _card not in _e["codes"]:
+            _e["codes"].append(_card)
 BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "teratogens": "Teratogens & exposures", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
 
 
@@ -2598,6 +2613,12 @@ def _slug_name(name):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", name.lower())).strip("-")
 
 
+def _key_word(term):
+    """The first six letters of a term, ignoring case and punctuation: enough to tell a spelling
+    variant of the same name from a genuinely different one."""
+    return re.sub(r"[^a-z]", "", term.lower())[:6]
+
+
 def condition_hierarchy_html(code):
     """Where the code sits in Orphanet's tree, from tools/orphanet-hierarchy.json.
 
@@ -2623,7 +2644,17 @@ def condition_hierarchy_html(code):
         here = [d for d in desc if d in ours]
         def item(c):
             m = nodes.get(c) or {}
-            txt = _orpha_link(c) + f' <span class="orpha-code">ORPHA:{c}</span>'
+            txt = _orpha_link(c)
+            # Orphanet's term is not always the name a family or a surgeon uses, and this list is now
+            # the only place the form appears, so one familiar name travels with it. A spelling
+            # variant of the same term teaches nobody anything, and nor does a bare acronym, so a
+            # synonym is shown only when it reads as a different name.
+            syn = next((x for x in (m.get("synonyms") or [])
+                        if _key_word(x) != _key_word(m.get("term") or "")
+                        and not x.isupper() and len(x) > 5), None)
+            if syn:
+                txt += f' <span class="orpha-syn">{syn.lower()}</span>'
+            txt += f' <span class="orpha-code">ORPHA:{c}</span>'
             if m.get("icd10"): txt += " " + _icd_codes_html(m)
             if c in ours: txt += f' <a class="on-page" href="#cond-{c}">on this page</a>'
             kids = [k for k in m.get("children") or [] if k in nodes]
@@ -2754,9 +2785,13 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # synonym, an ORPHAcode or an ICD code from a letter, and any of them should find the card.
     _icd = ICD.get(name) or {}
     _node = HIER["nodes"].get(str(ref_code)) or {}
+    # The forms Orphanet files under this code no longer have cards of their own, so their names,
+    # synonyms and codes are matched here: a reader who types "acheiria" or "Haas" must still land
+    # on the card that documents it rather than on nothing.
+    _kids = SUBCONDITION_WORDS.get(str(ref_code), "")
     haystack = " ".join(filter(None, [
         name, desc, orpha_name or "", _node.get("term") or "",
-        " ".join(_node.get("synonyms") or []),
+        " ".join(_node.get("synonyms") or []), _kids,
         f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
         " ".join(e["code"] for e in (_icd.get("icd10") or [])),
         " ".join(e["code"] for e in (_icd.get("icd11") or [])),
@@ -3055,8 +3090,8 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
       {"".join(condition_card(*c) for c in CONDITIONS_BY_RATE)}
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
-    <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, as for the numbered syndactyly types. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
-    <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so three of the conditions here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
+    <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: {ICD10_WIDEST[0]} stands for {spell(ICD10_WIDEST[1])} of the cards on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, {"as for " + ICD10_NARROWER[0].lower() if ICD10_NARROWER else "which happens among the forms listed inside the cards rather than among the cards themselves"}. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
+    <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so {spell(sum(1 for c in CONDITIONS if not (OMT.get(c[0]) or {}).get("group")))} of the cards here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
     <p class="annex-note"><strong>ICD-11</strong> now sits beside ICD-10 on every card that has one, {ICD_STATS["icd11"]["rows"]} of them, because the point of the block is to show what a registry would have to reconcile rather than to flatter either edition. ICD-11 resolves real things: amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8 and ICD-11 names each exactly, and polydactyly has no Orphanet mapping to ICD-10 at all while ICD-11 names it exactly. It is not a general improvement. The share of exact mappings rises only from {ICD_STATS["icd10"].get("exact", 0)} of {ICD_STATS["icd10"]["rows"]} under ICD-10 to {ICD_STATS["icd11"].get("exact", 0)} of {ICD_STATS["icd11"]["rows"]} under ICD-11, and in one respect ICD-11 is the coarser: its code {ICD11_WIDEST[0]} stands for {spell(ICD11_WIDEST[1])} of the conditions on this page at once.</p>
 
     {opener("02", "Not alone", "Which association knows my condition?")}
@@ -5517,7 +5552,10 @@ def build():
     shutil.copyfile(ROOT / "404" / "index.html", ROOT / "404.html")
 
     # Search index for the ⌘K search (HDS Search.astro pattern)
-    cond_kw = " ".join(c[0] for c in CONDITIONS)
+    cond_kw = " ".join([c[0] for c in CONDITIONS]
+                       + [t for kids in SUBCONDITIONS.values() for _d, t in kids]
+                       + [x for kids in SUBCONDITIONS.values() for d, _t in kids
+                          for x in (HIER["nodes"].get(d) or {}).get("synonyms") or []])
     search_index = []
     for p, page in PAGES.items():
         if p == "/404/":

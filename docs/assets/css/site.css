@@ -1115,6 +1115,10 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.15rem 0 0; }
 .cond-chip { font-size: var(--text-eyebrow); color: var(--dys-muted); background: var(--dys-bg);
              border: 1px solid var(--dys-line); border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; }
+.cond-order { font-size: var(--text-small); color: var(--dys-muted); margin: var(--space-2) 0 var(--space-2); }
+.cond-rate { margin: 0.35rem 0 0; font-size: var(--text-small); color: var(--dys-muted); }
+.cond-rate strong { color: var(--dys-ink); }
+.cond-rate-none { font-style: italic; }
 .cond-codes {
   display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0.25rem 0.75rem;
   margin: 0.55rem 0 0; padding: 0.6rem 0.75rem; align-items: baseline;

@@ -653,8 +653,123 @@ OMT_ALL = json.loads(OMT_PATH.read_text(encoding="utf-8")) if OMT_PATH.exists() 
 # Where each code sits in Orphanet's classification, fetched by tools/build-orphanet-hierarchy.py:
 # the parent groups of a disorder, and for a group every entity it covers. Three of our codes are
 # groups rather than diseases, and a card that carries a group code owes the reader the list.
+# ── How common each condition is, for the order the cards are shown in ───────────────────────
+# Two sources, in this order. DOT_RATES is the site's own table, each figure verified against its
+# paper and carrying the basis it rests on, and it is what the map's dots are drawn from. Orphanet's
+# birth prevalence (tools/build-condition-prevalence.py) fills in conditions the map draws no dots
+# for. Both are per 100,000 births. A condition in neither is uncounted rather than rare, and the
+# page says that where it shows it.
+PREV_PATH = pathlib.Path(__file__).parent / "tools" / "condition-prevalence.json"
+ORPHA_PREV = json.loads(PREV_PATH.read_text(encoding="utf-8"))["conditions"] if PREV_PATH.exists() else {}
+# DOT_RATES labels that are not the card's name, resolved once and asserted below
+DOT_ALIAS = {"Amelia, all forms": "Amelia", "Phocomelia, all forms": "Phocomelia",
+             "Symbrachydactyly (undergrowth)": "Symbrachydactyly", "TAR syndrome": "Thrombocytopenia-absent radius (TAR)",
+             "Microgastria-limb reduction": "Microgastria\u2013limb reduction",
+             "Tibial aplasia-ectrodactyly": "Tibial aplasia\u2013ectrodactyly"}
 HIER_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json"
 HIER = json.loads(HIER_PATH.read_text(encoding="utf-8")) if HIER_PATH.exists() else {"conditions": {}, "nodes": {}}
+
+
+# Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
+# so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
+# Birth prevalence per 100,000 births, with the basis for each figure stated, because a number
+# without its provenance invites a reader to treat an estimate as a count. The bases are:
+#   measured  a population-based study of a defined population over a defined period
+#   pooled    several registries combined
+#   reported  a figure quoted in the literature with no population study behind it
+#   derived   a parent rate multiplied by a published proportion; the arithmetic is in the note
+#   none      no published rate. The condition is still listed, because a blank row is evidence
+#             of a gap and an omitted row is invisible.
+# (label, rate, source, basis, note)
+DOT_RATES = [
+    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012", "pooled", ""),
+    ("Polydactyly", 84, "northern Netherlands 1981-2010", "measured", ""),
+    ("Syndactyly", 47, "northern Netherlands 1981-2010", "measured", ""),
+    ("Radial ray deficiency, all forms", 18.3, "Finland (Pakkasjärvi et al.)", "measured",
+     "A second Finnish population-based study, Syvänen and Raitio 2021, reports 12.2 per 100,000 "
+     "(1.22 per 10,000 births) for the same country, so read this as a range of roughly 12 to 18."),
+    ("Symbrachydactyly (undergrowth)", 12, "Finland", "measured", ""),
+    ("Terminal transverse limb defect", 10, "REMERA (Gnansia et al. 2021)", "reported",
+     "The figure REMERA states for the unilateral isolated upper-limb form, one case in 10,000 births. It is "
+     "a prevalence quoted in that paper rather than measured by it, and it does not cover every terminal "
+     "transverse defect, so read it as the order of magnitude for the commonest form."),
+    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe", "pooled", ""),
+    ("Amniotic band syndrome", 5.3, "Orphanet, Europe", "pooled", ""),
+    ("Ulnar hemimelia", 4.4, "Finland", "measured", ""),
+    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012", "pooled", ""),
+    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries", "pooled",
+     "Froster-Iskenius and Baird (Teratology, 1990) report 1.5 per 100,000 livebirths in a whole-population "
+     "registry, which is the same figure within rounding."),
+    ("Fibular hemimelia", 1.1, "Orphanet, worldwide", "reported", ""),
+    ("Amelia of the upper limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
+     "No study measures upper-limb amelia on its own. Froster-Iskenius and Baird found amelia to affect upper "
+     "and lower limbs about equally, so half of the 1.41 per 100,000 for amelia is taken here: 0.71. It is an "
+     "estimate built from two sources, not a measurement."),
+    ("Amelia of the lower limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
+     "As for the upper limb: half of amelia's 1.41 per 100,000, on the same finding of roughly equal involvement."),
+    ("Phocomelia, all forms", 0.74, "Finland", "measured", ""),
+    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe", "pooled", ""),
+    ("TAR syndrome", 0.5, "EUROCAT, Europe", "pooled", ""),
+    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide", "reported", ""),
+    ("Tibial hemimelia", 0.1, "Europe", "reported", ""),
+    ("Tibial aplasia-ectrodactyly", 0.1, "Europe", "reported", ""),
+    ("Tetra-amelia", 0.024, "Schwickert and Dame 2021", "reported",
+     "Quoted as 2.4 per 10,000,000 births in a case report, with no population study behind it."),
+    ("Cenani-Lenz syndrome", None, "", "none",
+     "46 papers in PubMed and not one reports a birth prevalence."),
+    ("Microgastria-limb reduction", None, "", "none",
+     "Fewer than a dozen papers, all of them case reports or small series."),
+    ("Radial aplasia", 2.5, "Orphanet, worldwide", "reported",
+     "Orphanet's class is 1-9 per 100,000 births, of which 2.5 is the midpoint. Finnish data measure the "
+     "wider group of radial ray deficiencies and find 13% of them isolated, which is close to this figure."),
+    ("Roberts syndrome", None, "", "none",
+     "236 papers in PubMed and not one reports a birth prevalence; about 150 cases have been described."),
+]
+
+
+CONDITION_RATE = {}   # card name -> (rate per 100,000 births, where it comes from)
+for _lab, _r, _src, _basis, _note in DOT_RATES:
+    _nm = DOT_ALIAS.get(_lab, _lab)
+    if _r not in (None, "") and _nm in {c[0] for c in CONDITIONS}:
+        CONDITION_RATE[_nm] = (float(_r), _src)
+# Two of the map's dot classes are wider than any single card and deliberately match none:
+# the total for every limb reduction defect, and the radial ray class, of which our radial
+# aplasia card is the isolated part. Every other label must reach a card or the build stops.
+DOT_NOT_A_CARD = {"All limb reduction defects", "Radial ray deficiency, all forms"}
+_unresolved = [l for l, *_ in DOT_RATES if l not in DOT_ALIAS and l not in {c[0] for c in CONDITIONS}
+               and l not in DOT_NOT_A_CARD]
+if _unresolved:
+    raise SystemExit(f"DOT_RATES labels that match no condition and have no alias: {_unresolved}")
+for _nm, _v in ORPHA_PREV.items():
+    _bp = (_v or {}).get("birth_prevalence") or {}
+    if _nm not in CONDITION_RATE and _bp.get("per_100000"):
+        CONDITION_RATE[_nm] = (float(_bp["per_100000"]), f"Orphanet, {_bp.get('geo', '')}".rstrip(", "))
+
+
+def _one_in(rate):
+    """A rate per 100,000 births as the odds a family is actually told: one in so many births."""
+    n = 100000 / rate
+    step = 10 ** max(0, len(f"{int(n)}") - 2)
+    return f"{int(round(n / step) * step):,}"
+
+
+def condition_rate_html(name):
+    """How common the condition is, in the words a family hears, with the figure behind it."""
+    hit = CONDITION_RATE.get(name)
+    if not hit:
+        return ('<p class="cond-rate cond-rate-none">No published birth prevalence'
+                '<span class="cc-rel" title="Neither our own table nor Orphanet publishes a figure for this '
+                'condition. That is a gap in what has been counted, not a statement that it is the rarest thing '
+                'here, and it is why these cards come last.">uncounted</span></p>')
+    rate, src = hit
+    return (f'<p class="cond-rate">About <strong>1 in {_one_in(rate)}</strong> births'
+            f'<span class="cc-rel" title="{rate:g} per 100,000 births &middot; {src}">{src}</span></p>')
+
+
+# The order the cards are shown in: commonest first, and the uncounted last in alphabetical order,
+# because a missing figure is not a small one.
+CONDITIONS_BY_RATE = sorted(CONDITIONS, key=lambda c: (-CONDITION_RATE.get(c[0], (0,))[0], c[0]))
+RATED_N = sum(1 for c in CONDITIONS if c[0] in CONDITION_RATE)
 OMT = OMT_ALL.get("conditions", {})
 
 
@@ -2562,6 +2677,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
             f'<h3 class="h4">{name}</h3>'
             f'<p class="cond-desc">{desc}</p>'
             f'<p class="cond-chips">{chips}</p>'
+            f'{condition_rate_html(name)}'
             f'{condition_codes_html(name, code, orpha_name)}'
             f'{condition_hierarchy_html(ref_code)}'
             f'<div class="cond-foot">{foot}</div></div>')
@@ -2718,8 +2834,13 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
       <p class="finder-count" aria-live="polite"><strong id="finder-n">{len(CONDITIONS)}</strong> of {len(CONDITIONS)} conditions match · <button type="button" id="finder-reset">Reset</button></p>
     </div>
 
+    <p class="cond-order">Ordered from the commonest to the rarest, by birth prevalence: {RATED_N} of the
+    {len(CONDITIONS)} have a published figure, ours where the map draws a dot for it and Orphanet&rsquo;s for the rest.
+    The last {len(CONDITIONS) - RATED_N} have none at all, and they are placed together at the end in alphabetical order.
+    That is a gap in what has been counted rather than a statement that they are the rarest things here, and closing it is
+    what <a href="/registry/">the registry</a> is for.</p>
     <div class="grid cols-3" id="cond-grid">
-      {"".join(condition_card(*c) for c in CONDITIONS)}
+      {"".join(condition_card(*c) for c in CONDITIONS_BY_RATE)}
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
     <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: Q87.2 stands for four of the conditions on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, as for the numbered syndactyly types. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
@@ -2748,61 +2869,6 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
 """,
 }
 
-# Dot-map selector: (label, prevalence per 100,000 births, source note). Base dot density is 100 per 100,000,
-# so each entry is drawn as the share rate/100 of the base dots. Figures are those of the annex table.
-# Birth prevalence per 100,000 births, with the basis for each figure stated, because a number
-# without its provenance invites a reader to treat an estimate as a count. The bases are:
-#   measured  a population-based study of a defined population over a defined period
-#   pooled    several registries combined
-#   reported  a figure quoted in the literature with no population study behind it
-#   derived   a parent rate multiplied by a published proportion; the arithmetic is in the note
-#   none      no published rate. The condition is still listed, because a blank row is evidence
-#             of a gap and an omitted row is invisible.
-# (label, rate, source, basis, note)
-DOT_RATES = [
-    ("All limb reduction defects", 45, "EUROCAT, Europe 2003-2012", "pooled", ""),
-    ("Polydactyly", 84, "northern Netherlands 1981-2010", "measured", ""),
-    ("Syndactyly", 47, "northern Netherlands 1981-2010", "measured", ""),
-    ("Radial ray deficiency, all forms", 18.3, "Finland (Pakkasjärvi et al.)", "measured",
-     "A second Finnish population-based study, Syvänen and Raitio 2021, reports 12.2 per 100,000 "
-     "(1.22 per 10,000 births) for the same country, so read this as a range of roughly 12 to 18."),
-    ("Symbrachydactyly (undergrowth)", 12, "Finland", "measured", ""),
-    ("Terminal transverse limb defect", 10, "REMERA (Gnansia et al. 2021)", "reported",
-     "The figure REMERA states for the unilateral isolated upper-limb form, one case in 10,000 births. It is "
-     "a prevalence quoted in that paper rather than measured by it, and it does not cover every terminal "
-     "transverse defect, so read it as the order of magnitude for the commonest form."),
-    ("Ectrodactyly (SHFM)", 5.4, "EUROCAT, Europe", "pooled", ""),
-    ("Amniotic band syndrome", 5.3, "Orphanet, Europe", "pooled", ""),
-    ("Ulnar hemimelia", 4.4, "Finland", "measured", ""),
-    ("Poland syndrome", 1.5, "EUROCAT, Europe 2005-2012", "pooled", ""),
-    ("Amelia, all forms", 1.41, "ICBDSR, 20 registries", "pooled",
-     "Froster-Iskenius and Baird (Teratology, 1990) report 1.5 per 100,000 livebirths in a whole-population "
-     "registry, which is the same figure within rounding."),
-    ("Fibular hemimelia", 1.1, "Orphanet, worldwide", "reported", ""),
-    ("Amelia of the upper limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
-     "No study measures upper-limb amelia on its own. Froster-Iskenius and Baird found amelia to affect upper "
-     "and lower limbs about equally, so half of the 1.41 per 100,000 for amelia is taken here: 0.71. It is an "
-     "estimate built from two sources, not a measurement."),
-    ("Amelia of the lower limb", 0.71, "derived from ICBDSR and Froster-Iskenius & Baird 1990", "derived",
-     "As for the upper limb: half of amelia's 1.41 per 100,000, on the same finding of roughly equal involvement."),
-    ("Phocomelia, all forms", 0.74, "Finland", "measured", ""),
-    ("Holt-Oram syndrome", 0.7, "EUROCAT, Europe", "pooled", ""),
-    ("TAR syndrome", 0.5, "EUROCAT, Europe", "pooled", ""),
-    ("Adams-Oliver syndrome", 0.44, "Orphanet, worldwide", "reported", ""),
-    ("Tibial hemimelia", 0.1, "Europe", "reported", ""),
-    ("Tibial aplasia-ectrodactyly", 0.1, "Europe", "reported", ""),
-    ("Tetra-amelia", 0.024, "Schwickert and Dame 2021", "reported",
-     "Quoted as 2.4 per 10,000,000 births in a case report, with no population study behind it."),
-    ("Cenani-Lenz syndrome", None, "", "none",
-     "46 papers in PubMed and not one reports a birth prevalence."),
-    ("Microgastria-limb reduction", None, "", "none",
-     "Fewer than a dozen papers, all of them case reports or small series."),
-    ("Radial aplasia", 2.5, "Orphanet, worldwide", "reported",
-     "Orphanet's class is 1-9 per 100,000 births, of which 2.5 is the midpoint. Finnish data measure the "
-     "wider group of radial ray deficiencies and find 13% of them isolated, which is close to this figure."),
-    ("Roberts syndrome", None, "", "none",
-     "236 papers in PubMed and not one reports a birth prevalence; about 150 cases have been described."),
-]
 
 
 # ── Incidence: what a birth prevalence means in children a year, country by country ──

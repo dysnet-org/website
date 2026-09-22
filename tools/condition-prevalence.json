@@ -1,0 +1,342 @@
+{
+ "built": "2026-09-22",
+ "source": "Orphanet, Orphadata epidemiology API (rd-epidemiology), licence CC BY 4.0",
+ "source_url": "https://api.orphadata.com/",
+ "note": "Birth prevalence per 100,000 births, as Orphanet publishes it, with the class, the territory and Orphanet's validation status. Where a condition has several rows the most precise is kept, a value and class before a class alone. A null means Orphanet publishes no birth prevalence for that code, which says nothing about how common the condition is.",
+ "conditions": {
+  "Adams-Oliver syndrome": {
+   "orphacode": "974",
+   "birth_prevalence": null
+  },
+  "Amelia": {
+   "orphacode": "294925",
+   "birth_prevalence": null
+  },
+  "Amelia of the upper limb": {
+   "orphacode": "294967",
+   "birth_prevalence": null
+  },
+  "Amelia of the lower limb": {
+   "orphacode": "294969",
+   "birth_prevalence": null
+  },
+  "Amniotic band syndrome": {
+   "orphacode": "295000",
+   "birth_prevalence": {
+    "per_100000": 5.3,
+    "class": "1-9 / 100 000",
+    "geo": "Europe",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Cenani-Lenz syndrome": {
+   "orphacode": "3258",
+   "birth_prevalence": null
+  },
+  "Crossed polysyndactyly": {
+   "orphacode": "2935",
+   "birth_prevalence": null
+  },
+  "Ectrodactyly (SHFM)": {
+   "orphacode": "2440",
+   "birth_prevalence": {
+    "per_100000": 16.4,
+    "class": "1-5 / 10 000",
+    "geo": "China",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Fibular hemimelia": {
+   "orphacode": "93323",
+   "birth_prevalence": {
+    "per_100000": 1.1033,
+    "class": "1-9 / 100 000",
+    "geo": "Worldwide",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Holt-Oram syndrome": {
+   "orphacode": "392",
+   "birth_prevalence": {
+    "per_100000": 0.95,
+    "class": "1-9 / 1 000 000",
+    "geo": "Hungary",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Microgastria–limb reduction": {
+   "orphacode": "2538",
+   "birth_prevalence": null
+  },
+  "Phocomelia": {
+   "orphacode": "2879",
+   "birth_prevalence": null
+  },
+  "Poland syndrome": {
+   "orphacode": "2911",
+   "birth_prevalence": {
+    "per_100000": 3.1,
+    "class": "1-9 / 100 000",
+    "geo": "Canada",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Polydactyly": {
+   "orphacode": "2913",
+   "birth_prevalence": null
+  },
+  "Radial aplasia": {
+   "orphacode": "93321",
+   "birth_prevalence": {
+    "per_100000": 2.5,
+    "class": "1-9 / 100 000",
+    "geo": "Worldwide",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Roberts syndrome": {
+   "orphacode": "3103",
+   "birth_prevalence": null
+  },
+  "Syndactyly": {
+   "orphacode": "90025",
+   "birth_prevalence": null
+  },
+  "Terminal transverse limb defect": {
+   "orphacode": "498461",
+   "birth_prevalence": null
+  },
+  "Tetra-amelia": {
+   "orphacode": "3301",
+   "birth_prevalence": null
+  },
+  "Thrombocytopenia-absent radius (TAR)": {
+   "orphacode": "3320",
+   "birth_prevalence": {
+    "per_100000": 0.5,
+    "class": "1-9 / 1 000 000",
+    "geo": "Europe",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Tibial aplasia–ectrodactyly": {
+   "orphacode": "3329",
+   "birth_prevalence": null
+  },
+  "Tibial hemimelia": {
+   "orphacode": "93322",
+   "birth_prevalence": {
+    "per_100000": 0.1,
+    "class": "1-9 / 1 000 000",
+    "geo": "Europe",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Ulnar hemimelia": {
+   "orphacode": "93320",
+   "birth_prevalence": null
+  },
+  "Intercalary limb defect": {
+   "orphacode": "294927",
+   "birth_prevalence": null
+  },
+  "Femoral deficiency": {
+   "orphacode": "1987",
+   "birth_prevalence": {
+    "per_100000": 1.6,
+    "class": "1-9 / 100 000",
+    "geo": "Worldwide",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Humeral deficiency": {
+   "orphacode": "294973",
+   "birth_prevalence": null
+  },
+  "Absence of the upper arm and forearm, hand present": {
+   "orphacode": "294975",
+   "birth_prevalence": {
+    "per_100000": 0.62,
+    "class": "1-9 / 1 000 000",
+    "geo": "Worldwide",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Absence of the thigh and lower leg, foot present": {
+   "orphacode": "294977",
+   "birth_prevalence": null
+  },
+  "Proximal femoral focal deficiency": {
+   "orphacode": "633228",
+   "birth_prevalence": {
+    "per_100000": 1.55,
+    "class": "1-9 / 100 000",
+    "geo": "Worldwide",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Femoral bifurcation": {
+   "orphacode": "667589",
+   "birth_prevalence": null
+  },
+  "Longitudinal limb defect": {
+   "orphacode": "498457",
+   "birth_prevalence": null
+  },
+  "Hemimelia": {
+   "orphacode": "2130",
+   "birth_prevalence": null
+  },
+  "Thumb hypoplasia": {
+   "orphacode": "294988",
+   "birth_prevalence": null
+  },
+  "Acheiropodia": {
+   "orphacode": "931",
+   "birth_prevalence": {
+    "per_100000": 0.4,
+    "class": "1-9 / 1 000 000",
+    "geo": "Brazil",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Absence of fingers 2 to 5, one hand": {
+   "orphacode": "973",
+   "birth_prevalence": null
+  },
+  "Tetra-amelia without other malformations": {
+   "orphacode": "294971",
+   "birth_prevalence": null
+  },
+  "Acheiria": {
+   "orphacode": "294983",
+   "birth_prevalence": null
+  },
+  "Apodia": {
+   "orphacode": "294986",
+   "birth_prevalence": null
+  },
+  "Complete hemimelia": {
+   "orphacode": "498491",
+   "birth_prevalence": null
+  },
+  "Absence of the forearm and hand": {
+   "orphacode": "294979",
+   "birth_prevalence": null
+  },
+  "Absence of the lower leg and foot": {
+   "orphacode": "294981",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 1": {
+   "orphacode": "93402",
+   "birth_prevalence": {
+    "per_100000": 25.0,
+    "class": "1-5 / 10 000",
+    "geo": "Europe",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Syndactyly type 2 (synpolydactyly)": {
+   "orphacode": "93403",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 3": {
+   "orphacode": "93404",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 4 (Haas type)": {
+   "orphacode": "93405",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 5": {
+   "orphacode": "93406",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 6 (mitten hand)": {
+   "orphacode": "295012",
+   "birth_prevalence": null
+  },
+  "Syndactyly type 8": {
+   "orphacode": "2498",
+   "birth_prevalence": null
+  },
+  "Mesoaxial synostotic syndactyly": {
+   "orphacode": "157801",
+   "birth_prevalence": null
+  },
+  "Hyperphalangy": {
+   "orphacode": "295002",
+   "birth_prevalence": null
+  },
+  "Preaxial polydactyly": {
+   "orphacode": "498464",
+   "birth_prevalence": null
+  },
+  "Polydactyly of a triphalangeal thumb": {
+   "orphacode": "93336",
+   "birth_prevalence": null
+  },
+  "Polydactyly of an index finger": {
+   "orphacode": "93337",
+   "birth_prevalence": null
+  },
+  "Polysyndactyly": {
+   "orphacode": "93338",
+   "birth_prevalence": null
+  },
+  "Polydactyly of a biphalangeal thumb or hallux": {
+   "orphacode": "93339",
+   "birth_prevalence": null
+  },
+  "Postaxial polydactyly": {
+   "orphacode": "498467",
+   "birth_prevalence": null
+  },
+  "Postaxial polydactyly type A": {
+   "orphacode": "93334",
+   "birth_prevalence": {
+    "per_100000": 15.7,
+    "class": "1-5 / 10 000",
+    "geo": "Mexico",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Postaxial polydactyly type B": {
+   "orphacode": "93335",
+   "birth_prevalence": {
+    "per_100000": 43.5,
+    "class": "1-5 / 10 000",
+    "geo": "Mexico",
+    "qualification": "Value and class",
+    "status": "Validated"
+   }
+  },
+  "Complex polydactyly": {
+   "orphacode": "498470",
+   "birth_prevalence": null
+  },
+  "Central polydactyly": {
+   "orphacode": "295004",
+   "birth_prevalence": null
+  },
+  "Mirror-image polydactyly": {
+   "orphacode": "498494",
+   "birth_prevalence": null
+  }
+ }
+}

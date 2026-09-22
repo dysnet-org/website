@@ -638,6 +638,8 @@ table.annex tbody th { font-weight: 700; white-space: nowrap; }
 table.annex tbody tr:first-child th, table.annex tbody tr:first-child td { background: var(--dys-green-soft); }
 table.annex.prev { table-layout: fixed; min-width: 64rem; }
 table.annex.prev tbody th { white-space: normal; }
+/* the basis labels are sentences, not code badges: they wrap inside the column they sit in */
+table.annex.prev .cc-rel { white-space: normal; display: inline-block; margin-left: 0; }
 table.annex tr.annex-sep th { white-space: normal; font-weight: 400; font-style: italic; color: var(--dys-muted); background: var(--dys-purple-soft); }
 table.annex td small { color: var(--dys-muted); }
 table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-purple-text); padding: 0 0.1rem; }

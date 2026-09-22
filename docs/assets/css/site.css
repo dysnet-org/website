@@ -163,8 +163,10 @@ nav.main a[aria-current="true"] { border-bottom-color: var(--dys-green); color: 
 
 /* ── Cards ─────────────────────────────────────────────────────── */
 .grid { display: grid; gap: var(--grid-gutter); grid-template-columns: 1fr; }
-@media (min-width: 40rem) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } .grid.cols-4 { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 60rem) { .grid.cols-3 { grid-template-columns: repeat(3, 1fr); } .grid.cols-4 { grid-template-columns: repeat(4, 1fr); } }
+/* minmax(0, 1fr) rather than 1fr: a card holding something that cannot wrap, a long source name or a
+   code, would otherwise widen its column and squeeze the others, and the row would look misaligned. */
+@media (min-width: 40rem) { .grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .grid.cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 60rem) { .grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } .grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
 .card {
   background: #fff; border: 1px solid var(--dys-line); border-top: 4px solid var(--acc);
@@ -638,8 +640,7 @@ table.annex tbody th { font-weight: 700; white-space: nowrap; }
 table.annex tbody tr:first-child th, table.annex tbody tr:first-child td { background: var(--dys-green-soft); }
 table.annex.prev { table-layout: fixed; min-width: 64rem; }
 table.annex.prev tbody th { white-space: normal; }
-/* the basis labels are sentences, not code badges: they wrap inside the column they sit in */
-table.annex.prev .cc-rel { white-space: normal; display: inline-block; margin-left: 0; }
+table.annex.prev .cc-rel { margin-left: 0; }
 table.annex tr.annex-sep th { white-space: normal; font-weight: 400; font-style: italic; color: var(--dys-muted); background: var(--dys-purple-soft); }
 table.annex td small { color: var(--dys-muted); }
 table.annex sup a { text-decoration: none; font-weight: 700; color: var(--dys-purple-text); padding: 0 0.1rem; }
@@ -1139,8 +1140,11 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 .cond-codes a { color: var(--dys-purple-text); text-decoration: none; border-bottom: 1px solid transparent;
                 font-variant-numeric: tabular-nums; }
 .cond-codes a:hover { border-bottom-color: var(--dys-purple); }
+/* the label wraps: most are one word, and the few that name a source are sentences that would
+   otherwise widen their card, their column or the cell beside them rather than break. */
 .cc-rel { font-size: var(--text-eyebrow); margin-left: 0.4rem; padding: 0.05rem 0.35rem; border-radius: 0.3rem;
-          border: 1px solid var(--dys-line); color: var(--dys-muted); cursor: help; white-space: nowrap; }
+          border: 1px solid var(--dys-line); color: var(--dys-muted); cursor: help;
+          display: inline-block; max-width: 100%; }
 /* the mapping relations that are not identities read as caveats, not as decoration */
 .cond-codes dd .cc-rel { background: #fff; }
 .cc-none { color: var(--dys-muted); font-style: italic; }
@@ -1219,3 +1223,6 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 }
 .consent .btn-ghost { background: transparent; border: 2px solid var(--dys-purple); }
 @media (prefers-reduced-motion: reduce) { .consent .btn:hover { transform: none; } }
+/* the "change your answer" control on the privacy page */
+button.btn { font-family: inherit; cursor: pointer; border: 0; }
+button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple); }

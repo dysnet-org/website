@@ -85,8 +85,8 @@ CONSENT_BANNER = """<div id="consent" class="consent" role="dialog" aria-live="p
     <p class="consent-msg"><strong>Help us see which pages are used</strong>
       We would like to count visits with Google Analytics, so we can tell which registers families actually reach. Nothing is shared for advertising, and declining changes nothing about what you can read here. Our <a href="/privacy/">privacy notice</a> says what is recorded.</p>
     <div class="consent-actions">
-      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
       <button type="button" class="btn btn-primary" id="consent-yes">Accept</button>
+      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
     </div>
   </div>
 </div>
@@ -95,6 +95,13 @@ CONSENT_BANNER = """<div id="consent" class="consent" role="dialog" aria-live="p
   var b = document.getElementById("consent");
   if (!b) return;
   var KEY = "__KEY__", prior = null;
+  document.addEventListener("click", function (ev) {
+    var t = ev.target && ev.target.closest ? ev.target.closest("[data-consent-reset]") : null;
+    if (!t) return;
+    ev.preventDefault();
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    location.reload();
+  });
   try { prior = localStorage.getItem(KEY); } catch (e) {}
   if (prior === "granted" || prior === "denied") return;
   b.hidden = false;
@@ -846,7 +853,7 @@ def condition_rate_html(name):
                 'here, and it is why these cards come last.">uncounted</span></p>')
     rate, src = hit
     return (f'<p class="cond-rate">About <strong>1 in {_one_in(rate)}</strong> births'
-            f'<span class="cc-rel" title="{rate:g} per 100,000 births &middot; {src}">{src}</span></p>')
+            f'<span class="cc-rel" title="{rate:g} per 100,000 births &middot; {html.escape(src, quote=True)}">{src}</span></p>')
 
 
 # The order the cards are shown in: commonest first, and the uncounted last in alphabetical order,
@@ -2718,7 +2725,7 @@ def condition_codes_html(name, code, orpha_name):
         rows.append(omt)
     cells = ""
     for label, value, rel, why in rows:
-        badge = f'<span class="cc-rel" title="{why}">{rel}</span>' if rel else ""
+        badge = f'<span class="cc-rel" title="{html.escape(why, quote=True)}">{rel}</span>' if rel else ""
         cells += f"<dt>{label}</dt><dd>{value}{badge}</dd>"
     return f'<dl class="cond-codes">{cells}</dl>'
 
@@ -5231,26 +5238,27 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 
 # ── Privacy ─────────────────────────────────────────────────────────────────
 # The first version ran to twelve sections and 2,240 words, which is the notice of an
-# organisation that collects things. This one collects nothing, so the page says that first
+# organisation that collects things. This one collects almost nothing, so the page says that
 # and spends its length only where a reader gains something: the registers name professionals
 # (art. 14, the part such notices skip), and the registers are not behind a consent wall.
 PAGES["/privacy/"] = {
     "title": "Privacy",
-    "desc": "DysNet collects no data through this site: no cookies, no analytics, no account, no form. What little is processed anyway, what the registers name, and your rights under the GDPR.",
+    "desc": "DysNet asks once whether it may count your visit, and collects nothing else through this site. What is processed, what the registers name, and your rights under the GDPR.",
     "crumbs": [("/privacy/", "Privacy")],
     "body": f"""
 <section>
   <div class="container">
     <div class="tick"></div>
     <p class="eyebrow">Privacy · Articles 13 and 14 GDPR</p>
-    <h1 class="display">We do not collect your data.</h1>
-    <p>No cookies, no analytics, no advertising, no tracker, no account and no form. Reading this site leaves nothing with us, and you meet no consent banner because there is nothing to consent to. This page says what little is processed anyway, what our registers name, and how to exercise your rights. Questions go to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>.</p>
-    <p class="annex-note">Version of 17 September 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. We have appointed no data protection officer, and we will name one before the registry begins processing health data.</p>
+    <h1 class="display">We collect nothing unless you say yes.</h1>
+    <p>No advertising, no tracker that follows you elsewhere, no account and no form. The one thing we ask is whether we may count your visit, and a banner asks you once. Say no and nothing changes: every page and every register stays open either way. This page says what is processed, what our registers name, and how to exercise your rights. Questions go to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>.</p>
+    <p class="annex-note">Version of 22 September 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. We have appointed no data protection officer, and we will name one before the registry begins processing health data.</p>
 
     {opener("01", "The site", "What happens when you read a page.", toc="Reading a page")}
     <ul>
       <li><strong>Your request reaches our host, not us.</strong> GitHub Pages serves these files, so GitHub receives what every web request carries: your IP address, the time, the page and your browser. It uses that to deliver the page and to protect the service. We keep no visitor database and receive nothing visitor-level, so nobody here can look up who read what. Legal basis: our legitimate interest in a website that works, Article 6(1)(f). The site is static files with no database and no login, served over HTTPS.</li>
-      <li><strong>One thing is remembered, and it stays on your device.</strong> On the pages with a map, your browser keeps the word <em>open</em> or <em>closed</em> so the information card stays as you left it. It carries no identifier, it never reaches us, and it disappears when you close the tab.</li>
+      <li><strong>We count visits only if you accept.</strong> A banner asks once. Accept, and Google Analytics records the page, the time, the country your address places you in, and your browser and device, and it gives your browser a random number so that a second page counts as the same visit rather than a new stranger. It tells us which registers people actually reach. It does not tell us who you are, and every advertising feature Google offers is switched off. Decline, and none of it loads and nothing is stored. Legal basis: your consent, Article 6(1)(a).</li>
+      <li><strong>Your answer is remembered, and so is the map card.</strong> Your browser keeps your yes or no so the banner does not ask again, and on the pages with a map it keeps the word <em>open</em> or <em>closed</em> so the information card stays as you left it. Neither carries an identifier and neither reaches us. To change your answer, use the button in section 04.</li>
       <li><strong>Videos wait for you.</strong> Nothing loads from Google until you press play. Then Google receives your IP address and device information under its own policy.</li>
     </ul>
 
@@ -5264,8 +5272,10 @@ PAGES["/privacy/"] = {
 
     {opener("04", "No wall", "The registers stay open.", toc="The registers stay open")}
     <p>We considered putting the registers behind an analytics tracker you would have to accept. We had the question tested first, and it cannot be done lawfully. It would also be wrong: these pages describe a health condition, so a record that you read them would say something about your own or your child's health. A family looking up a diagnosis at two in the morning owes us nothing in exchange.</p>
-    <p>Should we ever measure our traffic, we will count pages rather than people, and say so here before we start.</p>
-    <p class="annex-note">Why it is unlawful, for the reader who wants it: Swedish law allows an identifier to be stored on your device only with your consent, or where that is strictly necessary for the service you asked for (9 kap. 28 § lagen (2022:482) om elektronisk kommunikation). Consent extracted by withholding the content is not freely given (European Data Protection Board guidelines on consent of 4 May 2020, paragraphs 39 to 41).</p>
+    <p>This page used to promise that if we ever measured our traffic we would count pages rather than people, and say so here before we started. We are saying so. Since 22 September 2026 a banner asks whether we may count visits with Google Analytics, and it counts only for readers who accept. Refusing costs you nothing at all, which is the whole point: the registers are not the payment.</p>
+    <p>You can change your mind whenever you like, in either direction.</p>
+    <p><button type="button" class="btn btn-ghost btn-sm" data-consent-reset>Change your answer</button></p>
+    <p class="annex-note">Why the wall is unlawful, for the reader who wants it: Swedish law allows an identifier to be stored on your device only with your consent, or where that is strictly necessary for the service you asked for (9 kap. 28 § lagen (2022:482) om elektronisk kommunikation). Consent extracted by withholding the content is not freely given (European Data Protection Board guidelines on consent of 4 May 2020, paragraphs 39 to 41). Our banner asks for that consent and takes no for an answer, leaving every page readable either way, which is the condition those guidelines set.</p>
 
     {opener("05", "The registry", "Nothing is collected yet.", toc="The registry")}
     <p>The limb-malformation registry does not exist, and no health data reaches us through this site. When it opens it will carry its own notice, published before the first family enters anything. Four things will hold.</p>
@@ -5287,7 +5297,7 @@ PAGES["/privacy/"] = {
     </ul>
     <p><strong>In the registry, you will not have to ask us.</strong> These rights are part of how the registry is built rather than a procedure wrapped around it. Each person holds their own account at Health Data Safe, and from it they review, correct, export and delete their own data, and withdraw a consent to share, without writing to anybody. Health Data Safe already publishes a <a href="https://www.healthdatasafe.org/users/data-portability/">self-service download of everything in an account</a> and a <a href="https://www.healthdatasafe.org/users/data-deletion/">route to delete it</a>. Until the registry opens, the rights above are exercised by writing to us, and we carry them out by hand.</p>
     <p>Consent, where we rely on it, can be withdrawn at any time. Write to <a href="mailto:info@dysnet.org?subject=Data%20protection%20request">info@dysnet.org</a>. We answer within one month, free of charge, and if a request is genuinely complex we say so inside that month (Article 12(3)). We take no automated decisions about anybody and we build no profiles.</p>
-    <p>Only two others ever touch anything: <strong>GitHub</strong> hosts the site from the United States, and states that it complies with the EU-US Data Privacy Framework, and <strong>Zoho</strong> carries our mail on its European service. Nobody else. We use no advertising network, no analytics provider, no data broker and no mailing-list service, and we have never sold or rented personal data.</p>
+    <p>Three others ever touch anything: <strong>GitHub</strong> hosts the site from the United States, and states that it complies with the EU-US Data Privacy Framework; <strong>Zoho</strong> carries our mail on its European service; and <strong>Google</strong> counts the visits of readers who accept the banner, from the United States, and states that it complies with the same framework. Nobody else. We use no advertising network, no data broker and no mailing-list service, and we have never sold or rented personal data.</p>
     <p>If we get something wrong, tell us, because most of it we can simply fix. You may also complain to a supervisory authority, choosing the one where you live, where you work or where you think the problem happened (Article 77), and you may go to court (Article 79). Ours is <strong>Integritetsskyddsmyndigheten</strong>, the Swedish Authority for Privacy Protection: Box 8114, 104 20 Stockholm, <a href="mailto:imy@imy.se">imy@imy.se</a>, +46 8 657 61 00, which takes complaints through <a href="https://www.imy.se/en/individuals/forms-and-e-services/file-a-gdpr-complaint/">its own form</a>.</p>
   </div>
 </section>

@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css?v=2d111cd9">
+<link rel="stylesheet" href="/assets/css/site.css?v=cffc3050">
 <script>window.SITE_BASE="";</script>
 <script>
 (function () {
@@ -266,8 +266,8 @@
     <p class="consent-msg"><strong>Help us see which pages are used</strong>
       We would like to count visits with Google Analytics, so we can tell which registers families actually reach. Nothing is shared for advertising, and declining changes nothing about what you can read here. Our <a href="/privacy/">privacy notice</a> says what is recorded.</p>
     <div class="consent-actions">
-      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
       <button type="button" class="btn btn-primary" id="consent-yes">Accept</button>
+      <button type="button" class="btn btn-ghost" id="consent-no">Decline</button>
     </div>
   </div>
 </div>
@@ -276,6 +276,13 @@
   var b = document.getElementById("consent");
   if (!b) return;
   var KEY = "dysnet-consent", prior = null;
+  document.addEventListener("click", function (ev) {
+    var t = ev.target && ev.target.closest ? ev.target.closest("[data-consent-reset]") : null;
+    if (!t) return;
+    ev.preventDefault();
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    location.reload();
+  });
   try { prior = localStorage.getItem(KEY); } catch (e) {}
   if (prior === "granted" || prior === "denied") return;
   b.hidden = false;
@@ -295,6 +302,6 @@
   document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });
 })();
 </script>
-<script src="/assets/js/site.js?v=2d111cd9" defer></script>
+<script src="/assets/js/site.js?v=cffc3050" defer></script>
 </body>
 </html>

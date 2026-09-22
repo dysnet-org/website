@@ -44,7 +44,7 @@ Everything on this site may be quoted and reused with attribution to DysNet. Fig
 - [Knowledge](https://www.dysnet.org/knowledge/): Five maintained registers on limb difference: bibliography, registries, researchers, care centres and teratogens, plus studies you can join.
 - [Studies](https://www.dysnet.org/knowledge/ongoing-studies/): Limb-difference studies recruiting or under way: the ERN BOND Patient Journey, the Rare Barometer, prosthesis reimbursement, and who to contact.
 - [Resources](https://www.dysnet.org/knowledge/resources/): Guides, surveys and reports on dysmelia that are not research papers: Orphanet sheets, the Rare Barometer, European registry recommendations.
-- [Privacy](https://www.dysnet.org/privacy/): DysNet collects no data through this site: no cookies, no analytics, no account, no form. What little is processed anyway, what the registers name, and your rights under the GDPR.
+- [Privacy](https://www.dysnet.org/privacy/): DysNet asks once whether it may count your visit, and collects nothing else through this site. What is processed, what the registers name, and your rights under the GDPR.
 - [Reports](https://www.dysnet.org/voice/reports/): Short written reports from DysNet's delegates after every meeting in the bodies where DysNet represents families affected by limb difference.
 
 ## Licence and contact

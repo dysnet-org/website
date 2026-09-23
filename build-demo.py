@@ -4515,6 +4515,22 @@ def build_pilot_pdf():
 # recent entries and the only way to keep the two in step is to have one source. The
 # teaser below reads this markup instead of a second list that would drift from it.
 REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
+      <article class="report" id="edpd-2026">
+        <p class="seat">European Disability Forum · European Day of Persons with Disabilities, Brussels</p>
+        <h2 class="h3">DysNet is invited to Brussels to talk about living and working across borders</h2>
+        <time datetime="2026-12-03">3 and 4 December 2026</time>
+        <p>Places in the room at the European Day of Persons with Disabilities go by invitation, and DysNet has been invited to the
+        2026 edition. Its theme is &ldquo;Travelling, living and working across borders: fair mobility and equal protection&rdquo;,
+        and for two days it brings the European institutions together with disability organisations from across the Union to share
+        knowledge, talks and ideas. The European Commission&rsquo;s Directorate-General for Justice and Consumers opens and closes it.</p>
+        <p>The first day asks whether the assessment of a disability is a starting block or a hurdle, and how social protection and
+        social security can follow a disabled person who moves from one member state to another. The second brings the Access City
+        Award, for the cities doing most to make urban life accessible, and a panel on barrier-free transport and passengers&rsquo;
+        rights. The theme meets two threads DysNet already follows: the European Disability Card, and the comparison of what each
+        country actually provides. The sessions are streamed, and anyone can register for the livestream on the Forum&rsquo;s page.</p>
+        <p class="src">European Disability Forum ·
+        <a href="https://www.edf-feph.org/events-slug/european-day-of-persons-with-disabilities-2026/" target="_blank" rel="noopener external">European Day of Persons with Disabilities 2026 ↗</a></p>
+      </article>
       <article class="report">
         <p class="seat">Cerebral Palsy EU</p>
         <h2 class="h3">Advocacy skills webinar</h2>
@@ -4603,6 +4619,12 @@ REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
         <time datetime="2026">2026 · Claudio Pirola</time>
         <p>DysNet participates in the task force created by EURORDIS with Rare Diseases International, supporting the WHO European region’s implementation of the World Health Assembly resolution on rare diseases.</p>
       </article>
+      <article class="report">
+        <p class="seat">EDF</p>
+        <h2 class="h3">General Assembly, Vilnius</h2>
+        <time datetime="2025-06-28">28 June 2025 · Claudio Pirola</time>
+        <p>EU Disability Card perspectives to 2027, AI and disability, assistive technology for employment, accessibility and transport.</p>
+      </article>
       <article class="report" id="vote4all-milan">
         <p class="seat">Vote4All · study visit, Milan</p>
         <h2 class="h3">Three days in Milan on what makes a city usable</h2>
@@ -4619,12 +4641,6 @@ REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
         Lisbon, Porto, The Hague and Brussels.</p>
         <p class="src">Written for EURORDIS ·
         <a href="https://www.eurordis.org/breaking-barriers-advancing-accessibility-and-inclusion-for-cerebral-palsy-in-milan/" target="_blank" rel="noopener external">Breaking barriers: advancing accessibility and inclusion for cerebral palsy in Milan ↗</a></p>
-      </article>
-      <article class="report">
-        <p class="seat">EDF</p>
-        <h2 class="h3">General Assembly, Vilnius</h2>
-        <time datetime="2025-06-28">28 June 2025 · Claudio Pirola</time>
-        <p>EU Disability Card perspectives to 2027, AI and disability, assistive technology for employment, accessibility and transport.</p>
       </article>
     </div>
 """

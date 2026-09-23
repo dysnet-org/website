@@ -1,9 +1,9 @@
 {
- "built": "2026-09-21",
+ "built": "2026-09-23",
  "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref",
  "thalidomide_query": "thalidomide[Title] AND (teratogen*[Title] OR embryopath*[Title] OR \"birth defects\"[Title] OR phocomelia[Title] OR survivors[Title] OR \"limb\"[Title] OR malformation*[Title] OR Contergan[Title] OR victims[Title] OR disaster[Title] OR tragedy[Title])",
- "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
- "causes_query": "(\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]",
+ "systematic_review_query": "(meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) AND (\"Adams-Oliver syndrome\"[tiab] OR \"Al Awadi-Raas-Rothschild syndrome\"[tiab] OR \"Amelia of the lower limb\"[tiab] OR \"Amelia of the upper limb\"[tiab] OR \"Amniotic band sequence\"[tiab] OR \"Amniotic band syndrome\"[tiab] OR \"Aplasia cutis congenita with distal limb anomalies\"[tiab] OR \"Aplasia cutis congenita with terminal transverse limb defects\"[tiab] OR \"Aplasia of tibia with split-hand/split-foot deformity\"[tiab] OR \"Aplasia/hypoplasia of limbs and pelvis\"[tiab] OR \"Atriodigital dysplasia type 1\"[tiab] OR \"Brachydactyly\"[tiab] OR \"Cenani syndactyly\"[tiab] OR \"Cenani-Lenz syndactyly\"[tiab] OR \"Cenani-Lenz syndrome\"[tiab] OR \"Constriction band syndrome\"[tiab] OR \"Crossed polysyndactyly\"[tiab] OR \"Ectrodactyly\"[tiab] OR \"Fibular hemimelia\"[tiab] OR \"Heart-hand syndrome type 1\"[tiab] OR \"Holt-Oram syndrome\"[tiab] OR \"Hyperphalangy\"[tiab] OR \"Intercalary limb defect\"[tiab] OR \"Longitudinal limb defect\"[tiab] OR \"Microgastria-limb reduction defect syndrome\"[tiab] OR \"Microgastria–limb reduction\"[tiab] OR \"PAPPA syndrome\"[tiab] OR \"Phocomelia, Schinzel type\"[tiab] OR \"Poland anomaly\"[tiab] OR \"Poland sequence\"[tiab] OR \"Poland syndrome\"[tiab] OR \"Pseudothalidomide syndrome\"[tiab] OR \"Radial aplasia\"[tiab] OR \"Roberts syndrome\"[tiab] OR \"Roberts-SC phocomelia syndrome\"[tiab] OR \"SC phocomelia\"[tiab] OR \"SC pseudothalidomide syndrome\"[tiab] OR \"SHFLD syndrome\"[tiab] OR \"SHFM associated with aplasia of long bones\"[tiab] OR \"Split hand foot malformation\"[tiab] OR \"Split hand/foot malformation with long bone deficiency\"[tiab] OR \"Split-hand/foot malformation associated with aplasia of long bones\"[tiab] OR \"Streeter dysplasia\"[tiab] OR \"Supernumerary phalanx\"[tiab] OR \"Symbrachydactyly\"[tiab] OR \"Syndactyly type 7\"[tiab] OR \"TAR syndrome\"[tiab] OR \"Terminal transverse limb defect\"[tiab] OR \"Tetra-amelia\"[tiab] OR \"Tetraamelia-multiple malformations syndrome\"[tiab] OR \"Thrombocytopenia-absent radius syndrome\"[tiab] OR \"Thrombocytopenia-absent radius\"[tiab] OR \"Tibial aplasia-ectrodactyly syndrome\"[tiab] OR \"Tibial aplasia–ectrodactyly\"[tiab] OR \"Tibial hemimelia with split hand/foot malformation\"[tiab] OR \"Tibial hemimelia\"[tiab] OR \"Tibial hemimelia-ectrodactyly syndrome\"[tiab] OR \"Ulnar hemimelia\"[tiab] OR \"Zimmer phocomelia\"[tiab] OR \"absence of ulna and fibula\"[tiab] OR \"amelia of lower limb\"[tiab] OR \"amelia of upper limb\"[tiab] OR \"congenital absence of lower limb\"[tiab] OR \"congenital absence of tibia\"[tiab] OR \"congenital absence of upper limb\"[tiab] OR \"congenital aplasia and dysplasia of the tibia with intact fibula\"[tiab] OR \"congenital longitudinal deficiency of the fibula\"[tiab] OR \"congenital longitudinal deficiency of the radius\"[tiab] OR \"congenital longitudinal deficiency of the tibia\"[tiab] OR \"congenital longitudinal deficiency of the ulna\"[tiab] OR \"congenital supernumerary phalanges\"[tiab] OR \"constriction ring syndrome\"[tiab] OR \"fibular deficiency\"[tiab] OR \"fibular longitudinal meromelia\"[tiab] OR \"intercalary limb defects\"[tiab] OR \"intercalary meromelia\"[tiab] OR \"radial club hand\"[tiab] OR \"radial hemimelia\"[tiab] OR \"radial longitidinal meromelia\"[tiab] OR \"radial ray agenesis\"[tiab] OR \"ring constrictions\"[tiab] OR \"scalp defects with distal limb anomalies\"[tiab] OR \"scalp defects with distal limb reduction anomalies\"[tiab] OR \"split hand-split foot malformation\"[tiab] OR \"tibial longitudinal meromelia\"[tiab] OR \"ulnar clubhand\"[tiab] OR \"ulnar deficiency of forearm\"[tiab] OR \"ulnar longitudinal meromelia\"[tiab] OR \"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"upper limb anomalies\"[tiab] OR \"congenital hand\"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"Poland sequence\"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR \"split hand\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR \"radial longitudinal deficiency\"[tiab] OR \"radial club hand\"[tiab] OR \"fibular deficiency\"[tiab] OR \"tibial deficiency\"[tiab] OR \"amniotic band\"[tiab] OR \"Adams-Oliver\"[tiab] OR \"Holt-Oram\"[tiab] OR \"thrombocytopenia-absent radius\"[tiab] OR \"thalidomide embryopathy\"[tiab] OR dysmelia[tiab])",
+ "causes_query": "(\"Adams-Oliver syndrome\"[tiab] OR \"Al Awadi-Raas-Rothschild syndrome\"[tiab] OR \"Amelia of the lower limb\"[tiab] OR \"Amelia of the upper limb\"[tiab] OR \"Amniotic band sequence\"[tiab] OR \"Amniotic band syndrome\"[tiab] OR \"Aplasia cutis congenita with distal limb anomalies\"[tiab] OR \"Aplasia cutis congenita with terminal transverse limb defects\"[tiab] OR \"Aplasia of tibia with split-hand/split-foot deformity\"[tiab] OR \"Aplasia/hypoplasia of limbs and pelvis\"[tiab] OR \"Atriodigital dysplasia type 1\"[tiab] OR \"Brachydactyly\"[tiab] OR \"Cenani syndactyly\"[tiab] OR \"Cenani-Lenz syndactyly\"[tiab] OR \"Cenani-Lenz syndrome\"[tiab] OR \"Constriction band syndrome\"[tiab] OR \"Crossed polysyndactyly\"[tiab] OR \"Ectrodactyly\"[tiab] OR \"Fibular hemimelia\"[tiab] OR \"Heart-hand syndrome type 1\"[tiab] OR \"Holt-Oram syndrome\"[tiab] OR \"Hyperphalangy\"[tiab] OR \"Intercalary limb defect\"[tiab] OR \"Longitudinal limb defect\"[tiab] OR \"Microgastria-limb reduction defect syndrome\"[tiab] OR \"Microgastria–limb reduction\"[tiab] OR \"PAPPA syndrome\"[tiab] OR \"Phocomelia, Schinzel type\"[tiab] OR \"Poland anomaly\"[tiab] OR \"Poland sequence\"[tiab] OR \"Poland syndrome\"[tiab] OR \"Pseudothalidomide syndrome\"[tiab] OR \"Radial aplasia\"[tiab] OR \"Roberts syndrome\"[tiab] OR \"Roberts-SC phocomelia syndrome\"[tiab] OR \"SC phocomelia\"[tiab] OR \"SC pseudothalidomide syndrome\"[tiab] OR \"SHFLD syndrome\"[tiab] OR \"SHFM associated with aplasia of long bones\"[tiab] OR \"Split hand foot malformation\"[tiab] OR \"Split hand/foot malformation with long bone deficiency\"[tiab] OR \"Split-hand/foot malformation associated with aplasia of long bones\"[tiab] OR \"Streeter dysplasia\"[tiab] OR \"Supernumerary phalanx\"[tiab] OR \"Symbrachydactyly\"[tiab] OR \"Syndactyly type 7\"[tiab] OR \"TAR syndrome\"[tiab] OR \"Terminal transverse limb defect\"[tiab] OR \"Tetra-amelia\"[tiab] OR \"Tetraamelia-multiple malformations syndrome\"[tiab] OR \"Thrombocytopenia-absent radius syndrome\"[tiab] OR \"Thrombocytopenia-absent radius\"[tiab] OR \"Tibial aplasia-ectrodactyly syndrome\"[tiab] OR \"Tibial aplasia–ectrodactyly\"[tiab] OR \"Tibial hemimelia with split hand/foot malformation\"[tiab] OR \"Tibial hemimelia\"[tiab] OR \"Tibial hemimelia-ectrodactyly syndrome\"[tiab] OR \"Ulnar hemimelia\"[tiab] OR \"Zimmer phocomelia\"[tiab] OR \"absence of ulna and fibula\"[tiab] OR \"amelia of lower limb\"[tiab] OR \"amelia of upper limb\"[tiab] OR \"congenital absence of lower limb\"[tiab] OR \"congenital absence of tibia\"[tiab] OR \"congenital absence of upper limb\"[tiab] OR \"congenital aplasia and dysplasia of the tibia with intact fibula\"[tiab] OR \"congenital longitudinal deficiency of the fibula\"[tiab] OR \"congenital longitudinal deficiency of the radius\"[tiab] OR \"congenital longitudinal deficiency of the tibia\"[tiab] OR \"congenital longitudinal deficiency of the ulna\"[tiab] OR \"congenital supernumerary phalanges\"[tiab] OR \"constriction ring syndrome\"[tiab] OR \"fibular deficiency\"[tiab] OR \"fibular longitudinal meromelia\"[tiab] OR \"intercalary limb defects\"[tiab] OR \"intercalary meromelia\"[tiab] OR \"radial club hand\"[tiab] OR \"radial hemimelia\"[tiab] OR \"radial longitidinal meromelia\"[tiab] OR \"radial ray agenesis\"[tiab] OR \"ring constrictions\"[tiab] OR \"scalp defects with distal limb anomalies\"[tiab] OR \"scalp defects with distal limb reduction anomalies\"[tiab] OR \"split hand-split foot malformation\"[tiab] OR \"tibial longitudinal meromelia\"[tiab] OR \"ulnar clubhand\"[tiab] OR \"ulnar deficiency of forearm\"[tiab] OR \"ulnar longitudinal meromelia\"[tiab] OR \"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb defects\"[tiab] OR \"limb malformations\"[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"transverse limb\"[tiab]) AND (etiology[ti] OR aetiology[ti] OR causes[ti] OR \"risk factor\"[ti] OR \"risk factors\"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR \"vascular disruption\"[ti]) NOT thalidomide[ti]",
  "dart_query": "NLM DART filter AND limb terms",
  "cochrane_query": "\"Cochrane Database Syst Rev\"[Journal] AND ((\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab]) OR (teratogen*[tiab] OR \"birth defect\"[tiab] OR \"birth defects\"[tiab] OR \"congenital malformation\"[tiab] OR \"congenital malformations\"[tiab] OR \"congenital anomaly\"[tiab] OR \"congenital anomalies\"[tiab]) AND (pregnan*[tiab] OR maternal[tiab] OR prenatal[tiab] OR fetal[tiab] OR foetal[tiab]))",
  "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))",
@@ -34,33 +34,6 @@
    ],
    "via": [
     "PubMed search"
-   ],
-   "rests_on": []
-  },
-  {
-   "pmid": "42755430",
-   "doi": "10.11604/pamj.2026.54.20.49804",
-   "title": "A twisted tale of limbs: fibular aplasia with tibial campomelia and oligosyndactyly",
-   "authors": [
-    "Kataria G",
-    "Dhawan V"
-   ],
-   "journal": "The Pan African medical journal",
-   "year": "2026",
-   "volume": "54",
-   "pages": "20",
-   "pubtypes": [],
-   "codes": [
-    "93323"
-   ],
-   "topics": [
-    "clinical"
-   ],
-   "notes": [
-    "published on the website of Steps Charity (United Kingdom)"
-   ],
-   "via": [
-    "Steps Charity (United Kingdom)"
    ],
    "rests_on": []
   },
@@ -995,6 +968,36 @@
    "rests_on": []
   },
   {
+   "pmid": "42770475",
+   "doi": "10.2340/17453674.2026.46807",
+   "title": "Time of diagnosis of congenital upper limb anomalies: a cohort study of 703 patients from a local registry in Norway",
+   "authors": [
+    "Sletten IN",
+    "Winge MI",
+    "Jokihaara J"
+   ],
+   "journal": "Acta orthopaedica",
+   "year": "2026",
+   "volume": "97",
+   "pages": "678-684",
+   "pubtypes": [],
+   "codes": [
+    "2913"
+   ],
+   "topics": [
+    "causes",
+    "epidemiology"
+   ],
+   "notes": [
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search on studies from the countries of our member associations"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "39660789",
    "doi": "10.1080/15513815.2024.2440465",
    "title": "A Case Report of 10q24.32 Microduplication Associated with Split Hand/Foot Malformation (SHFM) in Prenatal Diagnosis",
@@ -1020,6 +1023,64 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40606564",
+   "doi": "10.1007/s43657-024-00191-9",
+   "title": "A Novel Heterozygous IHH c.331_333del Mutation Identified in a Fetus with Brachydactyly Type A1 Causes IHH Protein Maturation Failure in HEK293T Cells",
+   "authors": [
+    "Zhu T",
+    "Guan L",
+    "Chen D",
+    "et al."
+   ],
+   "journal": "Phenomics (Cham, Switzerland)",
+   "year": "2025",
+   "volume": "5",
+   "pages": "123-136",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40119734",
+   "doi": "10.1002/ajmg.a.64060",
+   "title": "A Novel Heterozygous c.1024A>G Variant in BMPR1B Causes Either Isolated Brachydactyly Type A4 With Variable Expressivity or Incomplete Type A4 Overlapping Type D in a Chinese Han Pedigree",
+   "authors": [
+    "Yang X",
+    "Wu X",
+    "Li H",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2025",
+   "volume": "197",
+   "pages": "e64060",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -1278,6 +1339,38 @@
    ],
    "notes": [
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40059089",
+   "doi": "10.1002/pd.6770",
+   "title": "Challenges in Identifying the Cause of Fetal Sinus Bradycardia: Coexistence of Maternal Anti-SSA Antibodies and Holt-Oram Syndrome Due to a Novel TBX5 Variant",
+   "authors": [
+    "Dai X",
+    "Shao S",
+    "Yue F",
+    "et al."
+   ],
+   "journal": "Prenatal diagnosis",
+   "year": "2025",
+   "volume": "45",
+   "pages": "563-567",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -1726,6 +1819,38 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40907933",
+   "doi": "10.1016/j.ydbio.2025.08.021",
+   "title": "Rbm8a deficiency causes hematopoietic defects by modulating Wnt/PCP signaling",
+   "authors": [
+    "Kocere A",
+    "Chiavacci E",
+    "Soneson C",
+    "et al."
+   ],
+   "journal": "Developmental biology",
+   "year": "2025",
+   "volume": "528",
+   "pages": "34-56",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural"
+   ],
+   "codes": [
+    "3320"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -2186,6 +2311,34 @@
    "topics": [
     "causes",
     "epidemiology"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "38222807",
+   "doi": "10.1002/jsp2.1302",
+   "title": "A missense GDF5 variant causes brachydactyly type A1 and multiple-synostoses syndrome 2",
+   "authors": [
+    "Li J",
+    "Liang X",
+    "Wang X",
+    "et al."
+   ],
+   "journal": "JOR spine",
+   "year": "2024",
+   "volume": "7",
+   "pages": "e1302",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -3340,6 +3493,38 @@
    "rests_on": []
   },
   {
+   "pmid": "37090609",
+   "doi": "10.1101/2023.04.12.536513",
+   "title": "Rbm8a deficiency causes hematopoietic defects by modulating Wnt/PCP signaling",
+   "authors": [
+    "Kocere A",
+    "Chiavacci E",
+    "Soneson C",
+    "et al."
+   ],
+   "journal": "bioRxiv : the preprint server for biology",
+   "year": "2024",
+   "volume": "",
+   "pages": "",
+   "pubtypes": [
+    "Preprint"
+   ],
+   "codes": [
+    "3320"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "37131334",
    "doi": "10.1177/15589447231168907",
    "title": "Readability of Online Patient Education Materials for Congenital Hand Differences",
@@ -3790,6 +3975,39 @@
    ],
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "37216008",
+   "doi": "10.1016/j.xhgg.2023.100200",
+   "title": "A complex structural variant near SOX3 causes X-linked split-hand/foot malformation",
+   "authors": [
+    "de Boer E",
+    "Marcelis C",
+    "Neveling K",
+    "et al."
+   ],
+   "journal": "HGG advances",
+   "year": "2023",
+   "volume": "4",
+   "pages": "100200",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -5139,6 +5357,40 @@
    "rests_on": []
   },
   {
+   "pmid": "36703504",
+   "doi": "10.33588/rn.7603.2022165",
+   "title": "[Warsaw breakage syndrome: an etiology for congenital microcephaly and sensorineural deafness]",
+   "authors": [
+    "Arroyo-Carrera I",
+    "Solo de Zaldívar-Tristancho M",
+    "García Navas-Núñez VD",
+    "et al."
+   ],
+   "journal": "Revista de neurologia",
+   "year": "2023",
+   "volume": "76",
+   "pages": "111-115",
+   "pubtypes": [
+    "Case Reports",
+    "English Abstract"
+   ],
+   "codes": [
+    "3103"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "34665069",
    "doi": "10.1080/09638288.2021.1986748",
    "title": "'It's more than just a running leg': a qualitative study of running-specific prosthesis use by children and youth with lower limb absence",
@@ -5923,8 +6175,8 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
-    "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+    "cited by Orphanet for Radial aplasia (point prevalence, Worldwide)",
+    "cited by Orphanet for Radial aplasia (prevalence at birth, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -6093,6 +6345,39 @@
    ],
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36523735",
+   "doi": "10.7759/cureus.31410",
+   "title": "Maternal Exposure to Mycoplasma Pneumonia and Amniotic Constriction Band: A Case Report of Probable Novel Etiology",
+   "authors": [
+    "Aljabali A",
+    "Eltobgy A",
+    "Swed S",
+    "et al."
+   ],
+   "journal": "Cureus",
+   "year": "2022",
+   "volume": "14",
+   "pages": "e31410",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "295000"
+   ],
+   "topics": [
+    "causes",
+    "clinical",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -9495,6 +9780,37 @@
    "rests_on": []
   },
   {
+   "pmid": "32019581",
+   "doi": "10.1186/s13256-020-2350-y",
+   "title": "Proximal femoral focal deficiency - a rare congenital entity: two case reports and a review of the literature",
+   "authors": [
+    "Uduma FU",
+    "Dim EM",
+    "Njeze NR"
+   ],
+   "journal": "Journal of medical case reports",
+   "year": "2020",
+   "volume": "14",
+   "pages": "27",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "633228"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated proximal femoral focal deficiency (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated proximal femoral focal deficiency (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "32893502",
    "doi": "10.1002/mgg3.1464",
    "title": "Quality of life and pain in patients with thalidomide embryopathy in Japan",
@@ -10824,6 +11140,43 @@
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "rests_on": []
+  },
+  {
+   "pmid": "31091006",
+   "doi": "10.1002/ajmg.a.61193",
+   "title": "Isolated postaxial polydactyly: Epidemiologic characteristics from a multicenter birth defects study",
+   "authors": [
+    "Ortiz-Cruz G",
+    "Luna-Muñoz L",
+    "Arteaga-Vázquez J",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2019",
+   "volume": "179",
+   "pages": "1432-1441",
+   "pubtypes": [
+    "Multicenter Study"
+   ],
+   "codes": [
+    "93334",
+    "93335"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Postaxial polydactyly type A (point prevalence, Mexico)",
+    "cited by Orphanet for Postaxial polydactyly type A (prevalence at birth, Mexico)",
+    "cited by Orphanet for Postaxial polydactyly type B (point prevalence, Mexico)",
+    "cited by Orphanet for Postaxial polydactyly type B (prevalence at birth, Mexico)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": [
+    "RYVEMCE"
+   ]
   },
   {
    "pmid": "30943953",
@@ -12760,7 +13113,7 @@
     "review"
    ],
    "notes": [
-    "cited by Orphanet for Adams-Oliver syndrome (cases/families, Worldwide)"
+    "cited by Orphanet for Adams-Oliver syndrome (cases or families described, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -13017,6 +13370,36 @@
    ],
    "via": [
     "DysNet",
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "27718516",
+   "doi": "10.1111/cge.12884",
+   "title": "Loss of the arginine methyltranserase PRMT7 causes syndromic intellectual disability with microcephaly and brachydactyly",
+   "authors": [
+    "Kernohan KD",
+    "McBride A",
+    "Xi Y",
+    "et al."
+   ],
+   "journal": "Clinical genetics",
+   "year": "2017",
+   "volume": "91",
+   "pages": "708-716",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
     "PubMed search"
    ],
    "rests_on": []
@@ -13339,8 +13722,8 @@
     "review"
    ],
    "notes": [
-    "cited by Orphanet for Isolated radial hemimelia (point prevalence, Worldwide)",
-    "cited by Orphanet for Isolated radial hemimelia (prevalence at birth, Worldwide)"
+    "cited by Orphanet for Radial aplasia (point prevalence, Worldwide)",
+    "cited by Orphanet for Radial aplasia (prevalence at birth, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -13541,6 +13924,38 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "28211986",
+   "doi": "10.1002/ajmg.a.38067",
+   "title": "The p.R56* mutation in PTHLH causes variable brachydactyly type E",
+   "authors": [
+    "Pereda A",
+    "Garzon-Lorenzo L",
+    "Garin I",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2017",
+   "volume": "173",
+   "pages": "816-819",
+   "pubtypes": [
+    "Case Reports",
+    "Letter",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -14273,6 +14688,34 @@
    "rests_on": []
   },
   {
+   "pmid": "26733284",
+   "doi": "10.1038/ejhg.2015.266",
+   "title": "Duplication of PTHLH causes osteochondroplasia with a combined brachydactyly type E/A1 phenotype with disturbed bone maturation and rhizomelia",
+   "authors": [
+    "Flöttmann R",
+    "Sowinska-Seidler A",
+    "Lavie J",
+    "et al."
+   ],
+   "journal": "European journal of human genetics : EJHG",
+   "year": "2016",
+   "volume": "24",
+   "pages": "1132-6",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "27028286",
    "doi": "10.1111/bcp.12947",
    "title": "EUROmediCAT signal detection: an evaluation of selected congenital anomaly-medication associations",
@@ -14735,6 +15178,39 @@
    "rests_on": []
   },
   {
+   "pmid": "26408260",
+   "doi": "10.1002/jcu.22306",
+   "title": "Prenatal diagnosis of proximal focal femoral deficiency: Literature review of prenatal sonographic findings",
+   "authors": [
+    "D'Ambrosio V",
+    "Pasquali G",
+    "Squarcella A",
+    "et al."
+   ],
+   "journal": "Journal of clinical ultrasound : JCU",
+   "year": "2016",
+   "volume": "44",
+   "pages": "252-9",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "1987"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated femoral agenesis/hypoplasia (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated femoral agenesis/hypoplasia (prevalence at birth, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "27768243",
    "doi": "10.1002/bdrc.21140",
    "title": "Prenatal exposure to environmental factors and congenital limb defects",
@@ -14983,8 +15459,8 @@
     "review"
    ],
    "notes": [
-    "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
-    "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+    "cited by Orphanet for Fibular hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Fibular hemimelia (prevalence at birth, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -16380,6 +16856,34 @@
    "rests_on": []
   },
   {
+   "pmid": "24954533",
+   "doi": "10.1016/j.gene.2014.06.035",
+   "title": "A new mutation in the gene ROR2 causes brachydactyly type B1",
+   "authors": [
+    "Huang D",
+    "Jiang S",
+    "Zhang Y",
+    "et al."
+   ],
+   "journal": "Gene",
+   "year": "2014",
+   "volume": "547",
+   "pages": "106-10",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "24360810",
    "doi": "10.1016/j.ajhg.2013.11.020",
    "title": "A noncoding expansion in EIF4A3 causes Richieri-Costa-Pereira syndrome, a craniofacial disorder associated with limb defects",
@@ -17290,6 +17794,38 @@
    "rests_on": []
   },
   {
+   "pmid": "25466284",
+   "doi": "10.1016/j.ajhg.2014.10.012",
+   "title": "Mutations affecting the BHLHA9 DNA-binding domain cause MSSD, mesoaxial synostotic syndactyly with phalangeal reduction, Malik-Percin type",
+   "authors": [
+    "Malik S",
+    "Percin FE",
+    "Bornholdt D",
+    "et al."
+   ],
+   "journal": "American journal of human genetics",
+   "year": "2014",
+   "volume": "95",
+   "pages": "649-59",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "157801"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Mesoaxial synostotic syndactyly with phalangeal reduction (cases or families described, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "25510709",
    "doi": "10.1016/j.tjog.2014.09.005",
    "title": "Prenatal diagnosis of a de novo 9p terminal chromosomal deletion in a fetus with major congenital anomalies",
@@ -17569,6 +18105,39 @@
    "topics": [
     "causes",
     "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "24750678",
+   "doi": "10.1111/ijlh.12213",
+   "title": "Update on the causes of platelet disorders and functional consequences",
+   "authors": [
+    "Freson K",
+    "Wijgaerts A",
+    "van Geet C"
+   ],
+   "journal": "International journal of laboratory hematology",
+   "year": "2014",
+   "volume": "36",
+   "pages": "313-25",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "3320"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
    ],
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
@@ -18519,6 +19088,36 @@
    "rests_on": []
   },
   {
+   "pmid": "23892236",
+   "doi": "10.1093/hmg/ddt351",
+   "title": "Targeted loss of the ATR-X syndrome protein in the limb mesenchyme of mice causes brachydactyly",
+   "authors": [
+    "Solomon LA",
+    "Russell BA",
+    "Watson LA",
+    "et al."
+   ],
+   "journal": "Human molecular genetics",
+   "year": "2013",
+   "volume": "22",
+   "pages": "5015-25",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "",
    "doi": "10.1155/2013/241016",
    "title": "Thalidomide Embryopathy: An Enigmatic Challenge",
@@ -18668,6 +19267,37 @@
    "rests_on": []
   },
   {
+   "pmid": "23093776",
+   "doi": "10.1172/JCI65508",
+   "title": "A misplaced lncRNA causes brachydactyly in humans",
+   "authors": [
+    "Maass PG",
+    "Rump A",
+    "Schulz H",
+    "et al."
+   ],
+   "journal": "The Journal of clinical investigation",
+   "year": "2012",
+   "volume": "122",
+   "pages": "3990-4002",
+   "pubtypes": [
+    "Clinical Trial",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "22495965",
    "doi": "10.1002/humu.22097",
    "title": "A novel 13 base pair insertion in the sonic hedgehog ZRS limb enhancer (ZRS/LMBR1) causes preaxial polydactyly with triphalangeal thumb",
@@ -18702,6 +19332,39 @@
    ],
    "via": [
     "DysNet",
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "22828468",
+   "doi": "10.1016/j.ejmg.2012.07.004",
+   "title": "A novel mutation in CDMP1 causes brachydactyly type C with \"angel-shaped phalanx\". A genotype-phenotype correlation in the mutational spectrum",
+   "authors": [
+    "Gutiérrez-Amavizca BE",
+    "Brambila-Tapia AJ",
+    "Juárez-Vázquez CI",
+    "et al."
+   ],
+   "journal": "European journal of medical genetics",
+   "year": "2012",
+   "volume": "55",
+   "pages": "611-4",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "295002"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
     "PubMed search"
    ],
    "rests_on": []
@@ -18966,6 +19629,38 @@
    "rests_on": []
   },
   {
+   "pmid": "22366785",
+   "doi": "10.1038/ng.1083",
+   "title": "Compound inheritance of a low-frequency regulatory SNP and a rare null mutation in exon-junction complex subunit RBM8A causes TAR syndrome",
+   "authors": [
+    "Albers CA",
+    "Paul DS",
+    "Schulze H",
+    "et al."
+   ],
+   "journal": "Nature genetics",
+   "year": "2012",
+   "volume": "44",
+   "pages": "435-9, S1-2",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "3320"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "22348778",
    "doi": "10.1111/j.1741-4520.2011.00351.x",
    "title": "Deciphering the mystery of thalidomide teratogenicity",
@@ -19026,6 +19721,37 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "22753018",
+   "doi": "10.1002/ajmg.a.35463",
+   "title": "Dose dependent expression of HDAC4 causes variable expressivity in a novel inherited case of brachydactyly mental retardation syndrome",
+   "authors": [
+    "Morris B",
+    "Etoubleau C",
+    "Bourthoumieu S",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2012",
+   "volume": "158A",
+   "pages": "2015-20",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -19637,6 +20363,36 @@
    "rests_on": []
   },
   {
+   "pmid": "22448207",
+   "doi": "10.2174/1874325001206010014",
+   "title": "The epidemiology, genetics and future management of syndactyly",
+   "authors": [
+    "Jordan D",
+    "Hindocha S",
+    "Dhital M",
+    "et al."
+   ],
+   "journal": "The open orthopaedics journal",
+   "year": "2012",
+   "volume": "6",
+   "pages": "14-27",
+   "pubtypes": [],
+   "codes": [
+    "93405"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Syndactyly type 4 (cases or families described, Worldwide)",
+    "cited by Orphanet for Syndactyly type 4 (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "22868950",
    "doi": "10.1007/s00404-012-2505-1",
    "title": "Three- and four-dimensional HDlive rendering images of normal and abnormal fetuses: pictorial essay",
@@ -20186,6 +20942,37 @@
    "codes": [
     "2913"
    ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "20962035",
+   "doi": "10.1093/hmg/ddq462",
+   "title": "Disruption of PCP signaling causes limb morphogenesis and skeletal defects and may underlie Robinow syndrome and brachydactyly type B",
+   "authors": [
+    "Wang B",
+    "Sinha T",
+    "Jiao K",
+    "et al."
+   ],
+   "journal": "Human molecular genetics",
+   "year": "2011",
+   "volume": "20",
+   "pages": "271-85",
+   "pubtypes": [
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
    "topics": [
     "causes",
     "genetics"
@@ -20826,7 +21613,8 @@
    ],
    "codes": [
     "2879",
-    "294925"
+    "294925",
+    "294975"
    ],
    "topics": [
     "causes",
@@ -20836,10 +21624,13 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search on studies from the countries of our member associations",
+    "cited by Orphanet for Isolated absence of upper arm and forearm with hand present (point prevalence, Worldwide)",
+    "cited by Orphanet for Isolated absence of upper arm and forearm with hand present (prevalence at birth, Worldwide)",
     "published on the website of Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "via": [
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)",
+    "Orphanet",
     "PubMed search"
    ],
    "rests_on": [
@@ -21484,6 +22275,36 @@
    "rests_on": []
   },
   {
+   "pmid": "20803877",
+   "doi": "",
+   "title": "Breast asymmetry during adolescence: physiologic and non-physiologic causes",
+   "authors": [
+    "Eidlitz-Markus T",
+    "Mukamel M",
+    "Haimi-Cohen Y",
+    "et al."
+   ],
+   "journal": "The Israel Medical Association journal : IMAJ",
+   "year": "2010",
+   "volume": "12",
+   "pages": "203-6",
+   "pubtypes": [],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "causes",
+    "living"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "19909992",
    "doi": "10.1016/j.jtcvs.2009.08.024",
    "title": "Dextrocardia in patients with Poland syndrome: phenotypic characterization provides insight into the pathogenesis",
@@ -21679,6 +22500,37 @@
    "rests_on": []
   },
   {
+   "pmid": "20691407",
+   "doi": "10.1016/j.ajhg.2010.07.011",
+   "title": "Haploinsufficiency of HDAC4 causes brachydactyly mental retardation syndrome, with brachydactyly type E, developmental delays, and behavioral problems",
+   "authors": [
+    "Williams SR",
+    "Aldred MA",
+    "Der Kaloustian VM",
+    "et al."
+   ],
+   "journal": "American journal of human genetics",
+   "year": "2010",
+   "volume": "87",
+   "pages": "219-28",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "20456269",
    "doi": "10.1111/j.1651-2227.2010.01855.x",
    "title": "Health-related quality of life in Swedish children and adolescents with limb reduction deficiency",
@@ -21826,11 +22678,41 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Isolated fibular hemimelia (point prevalence, Worldwide)",
-    "cited by Orphanet for Isolated fibular hemimelia (prevalence at birth, Worldwide)"
+    "cited by Orphanet for Fibular hemimelia (point prevalence, Worldwide)",
+    "cited by Orphanet for Fibular hemimelia (prevalence at birth, Worldwide)"
    ],
    "via": [
     "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "21129727",
+   "doi": "10.1016/j.ajhg.2010.11.005",
+   "title": "Loss of CHSY1, a secreted FRINGE enzyme, causes syndromic brachydactyly in humans via increased NOTCH signaling",
+   "authors": [
+    "Tian J",
+    "Ling L",
+    "Shboul M",
+    "et al."
+   ],
+   "journal": "American journal of human genetics",
+   "year": "2010",
+   "volume": "87",
+   "pages": "768-78",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -22207,8 +23089,8 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
-    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Canada)",
-    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, China)"
+    "cited by Orphanet for Ectrodactyly (SHFM) (prevalence at birth, Canada)",
+    "cited by Orphanet for Ectrodactyly (SHFM) (prevalence at birth, China)"
    ],
    "via": [
     "Orphanet",
@@ -22972,6 +23854,38 @@
    "rests_on": [
     "NBDPS"
    ]
+  },
+  {
+   "pmid": "19253167",
+   "doi": "10.1080/14767050802524578",
+   "title": "Maternal thrombocytopenia-absent radius syndrome complicated by severe pre-eclampsia",
+   "authors": [
+    "Wax JR",
+    "Crabtree C",
+    "Blackstone J",
+    "et al."
+   ],
+   "journal": "The journal of maternal-fetal & neonatal medicine : the official journal of the European Association of Perinatal Medicine, the Federation of Asia and Oceania Perinatal Societies, the International Society of Perinatal Obstetricians",
+   "year": "2009",
+   "volume": "22",
+   "pages": "175-7",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "3320"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
   },
   {
    "pmid": "19067400",
@@ -23854,6 +24768,71 @@
    "rests_on": []
   },
   {
+   "pmid": "18792979",
+   "doi": "10.1002/ajmg.a.32410",
+   "title": "Antenatal and postnatal evidence of periventricular leukomalacia as a further indication of vascular disruption in Adams-Oliver syndrome",
+   "authors": [
+    "Papadopoulou E",
+    "Sifakis S",
+    "Raissaki M",
+    "et al."
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2008",
+   "volume": "146A",
+   "pages": "2545-50",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "19966981",
+   "doi": "10.4103/0972-2327.40228",
+   "title": "Baller-Gerold syndrome: Further evidence for association with prenatal exposure to valproate",
+   "authors": [
+    "Lype M",
+    "Henry P",
+    "Aravind C",
+    "et al."
+   ],
+   "journal": "Annals of Indian Academy of Neurology",
+   "year": "2008",
+   "volume": "11",
+   "pages": "52-5",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "teratogens"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "18554391",
    "doi": "10.1186/1750-1172-3-15",
    "title": "Brachydactyly",
@@ -24475,6 +25454,37 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "18935987",
+   "doi": "10.1016/S1028-4559(08)60122-9",
+   "title": "Syndromes, disorders and maternal risk factors associated with neural tube defects (V)",
+   "authors": [
+    "Chen CP"
+   ],
+   "journal": "Taiwanese journal of obstetrics & gynecology",
+   "year": "2008",
+   "volume": "47",
+   "pages": "259-66",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "3103",
+    "974"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review"
+   ],
+   "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
@@ -25571,6 +26581,36 @@
    "rests_on": []
   },
   {
+   "pmid": "16014698",
+   "doi": "10.1136/jmg.2005.034058",
+   "title": "A mutation in the receptor binding site of GDF5 causes Mohr-Wriedt brachydactyly type A2",
+   "authors": [
+    "Kjaer KW",
+    "Eiberg H",
+    "Hansen L",
+    "et al."
+   ],
+   "journal": "Journal of medical genetics",
+   "year": "2006",
+   "volume": "43",
+   "pages": "225-31",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "16404586",
    "doi": "10.1007/s00439-005-0129-2",
    "title": "A novel heterozygous deletion in the EVC2 gene causes Weyers acrofacial dysostosis",
@@ -26107,6 +27147,38 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "16532134",
+   "doi": "",
+   "title": "Moyamoya syndrome as a risk factor for stroke in Saudi children. Novel and usual associations",
+   "authors": [
+    "Salih MA",
+    "Murshid WR",
+    "Al-Salman MM",
+    "et al."
+   ],
+   "journal": "Saudi medical journal",
+   "year": "2006",
+   "volume": "27 Suppl 1",
+   "pages": "S69-80",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "974"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
@@ -26939,6 +28011,38 @@
    "rests_on": []
   },
   {
+   "pmid": "15735645",
+   "doi": "10.1038/ng1526",
+   "title": "Mutation in myosin heavy chain 6 causes atrial septal defect",
+   "authors": [
+    "Ching YH",
+    "Ghosh TK",
+    "Cross SJ",
+    "et al."
+   ],
+   "journal": "Nature genetics",
+   "year": "2005",
+   "volume": "37",
+   "pages": "423-8",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "16080182",
    "doi": "10.1002/bdra.20176",
    "title": "Placental improvement and reduced distal limb defects by maternal interferon-gamma injection in methylnitrosourea-exposed mice",
@@ -27092,7 +28196,8 @@
     "teratogens"
    ],
    "notes": [
-    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+    "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -27282,7 +28387,7 @@
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations",
-    "cited by Orphanet for Isolated tibial hemimelia (prevalence at birth, Europe)"
+    "cited by Orphanet for Tibial hemimelia (prevalence at birth, Europe)"
    ],
    "via": [
     "Orphanet",
@@ -29238,6 +30343,69 @@
    "rests_on": []
   },
   {
+   "pmid": "11778160",
+   "doi": "10.1086/338921",
+   "title": "A 117-kb microdeletion removing HOXD9-HOXD13 and EVX2 causes synpolydactyly",
+   "authors": [
+    "Goodman FR",
+    "Majewski F",
+    "Collins AL",
+    "et al."
+   ],
+   "journal": "American journal of human genetics",
+   "year": "2002",
+   "volume": "70",
+   "pages": "547-55",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [
+    "2440",
+    "93403"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "12384778",
+   "doi": "10.1007/s00439-002-0815-2",
+   "title": "A novel mutation in the IHH gene causes brachydactyly type A1: a 95-year-old mystery resolved",
+   "authors": [
+    "McCready ME",
+    "Sweeney E",
+    "Fryer AE",
+    "et al."
+   ],
+   "journal": "Human genetics",
+   "year": "2002",
+   "volume": "111",
+   "pages": "368-75",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "12099571",
    "doi": "10.7863/jum.2002.21.7.811",
    "title": "Antenatal sonographic diagnosis of isolated bilateral fibular hemimelia",
@@ -29572,7 +30740,7 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Microgastria-limb reduction defect syndrome (cases/families, Worldwide)"
+    "cited by Orphanet for Microgastria–limb reduction (cases or families described, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -30435,7 +31603,7 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, United States)"
+    "cited by Orphanet for Ectrodactyly (SHFM) (prevalence at birth, United States)"
    ],
    "via": [
     "Orphanet"
@@ -33671,8 +34839,8 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Symbrachydactyly of hands and feet (cases/families, Worldwide)",
-    "cited by Orphanet for Symbrachydactyly of hands and feet (point prevalence, Worldwide)"
+    "cited by Orphanet for Symbrachydactyly (cases or families described, Worldwide)",
+    "cited by Orphanet for Symbrachydactyly (point prevalence, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -35357,7 +36525,7 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Isolated split hand-split foot malformation (prevalence at birth, Europe)"
+    "cited by Orphanet for Ectrodactyly (SHFM) (prevalence at birth, Europe)"
    ],
    "via": [
     "Orphanet"
@@ -38208,7 +39376,7 @@
     "epidemiology"
    ],
    "notes": [
-    "cited by Orphanet for Crossed polysyndactyly (cases/families, Worldwide)",
+    "cited by Orphanet for Crossed polysyndactyly (cases or families described, Worldwide)",
     "cited by Orphanet for Crossed polysyndactyly (point prevalence, Worldwide)"
    ],
    "via": [
@@ -39130,7 +40298,7 @@
     "review"
    ],
    "notes": [
-    "cited by Orphanet for Roberts syndrome (cases/families, Worldwide)",
+    "cited by Orphanet for Roberts syndrome (cases or families described, Worldwide)",
     "cited by Orphanet for Roberts syndrome (point prevalence, Worldwide)"
    ],
    "via": [
@@ -39853,8 +41021,8 @@
     "review"
    ],
    "notes": [
-    "cited by Orphanet for Tetraamelia-multiple malformations syndrome (cases/families, Worldwide)",
-    "cited by Orphanet for Tetraamelia-multiple malformations syndrome (point prevalence, Worldwide)"
+    "cited by Orphanet for Tetra-amelia (cases or families described, Worldwide)",
+    "cited by Orphanet for Tetra-amelia (point prevalence, Worldwide)"
    ],
    "via": [
     "Orphanet"
@@ -40729,6 +41897,38 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "1425493",
+   "doi": "10.1111/j.1528-1157.1992.tb06226.x",
+   "title": "Pregnancy and the risk of teratogenicity",
+   "authors": [
+    "Lindhout D",
+    "Omtzigt JG"
+   ],
+   "journal": "Epilepsia",
+   "year": "1992",
+   "volume": "33 Suppl 4",
+   "pages": "S41-8",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "causes",
+    "genetics",
+    "review",
+    "teratogens"
+   ],
+   "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
@@ -45164,6 +46364,39 @@
    "rests_on": []
   },
   {
+   "pmid": "3725479",
+   "doi": "",
+   "title": "Dominantly inherited unilateral terminal transverse defects of the hand (adactylia) in twin sisters and one daughter",
+   "authors": [
+    "Graham JM Jr",
+    "Brown FE",
+    "Struckmeyer CL",
+    "et al."
+   ],
+   "journal": "Pediatrics",
+   "year": "1986",
+   "volume": "78",
+   "pages": "103-6",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "973"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated absence/hypoplasia of fingers excluding thumb, unilateral (cases or families described, Worldwide)",
+    "cited by Orphanet for Isolated absence/hypoplasia of fingers excluding thumb, unilateral (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "3753553",
    "doi": "",
    "title": "Embryotoxicity of benzo(a)pyrene and some of its synthetic derivatives in Swiss mice",
@@ -48558,6 +49791,34 @@
    "rests_on": []
   },
   {
+   "pmid": "7083616",
+   "doi": "10.1111/j.1399-0004.1982.tb00743.x",
+   "title": "Holt-Oram syndrome: penetrance of the gene and lack of maternal effect",
+   "authors": [
+    "Gladstone I Jr",
+    "Sybert VP"
+   ],
+   "journal": "Clinical genetics",
+   "year": "1982",
+   "volume": "21",
+   "pages": "98-103",
+   "pubtypes": [],
+   "codes": [
+    "392"
+   ],
+   "topics": [
+    "causes",
+    "genetics"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "6753964",
    "doi": "",
    "title": "Lower limb deficiency and the urethral obstruction sequence",
@@ -51817,6 +53078,38 @@
    "rests_on": []
   },
   {
+   "pmid": "1155460",
+   "doi": "",
+   "title": "Genetics of acheiropodia (the handless and footless families of Brazil). VI. Formal genetic analysis",
+   "authors": [
+    "Freire-Maia A",
+    "Freire-Maia N",
+    "Morton NE",
+    "et al."
+   ],
+   "journal": "American journal of human genetics",
+   "year": "1975",
+   "volume": "27",
+   "pages": "521-7",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [
+    "931"
+   ],
+   "topics": [
+    "epidemiology"
+   ],
+   "notes": [
+    "cited by Orphanet for Isolated acheiropodia (point prevalence, Brazil)",
+    "cited by Orphanet for Isolated acheiropodia (prevalence at birth, Brazil)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "53399",
    "doi": "10.1016/s0140-6736(75)92155-8",
    "title": "Letter: Incidence of congenital limb-reduction deformities",
@@ -51915,6 +53208,36 @@
    ],
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "53068",
+   "doi": "10.1111/j.1471-0528.1975.tb00581.x",
+   "title": "Raised alpha-fetoprotein levels in amniotic fluid and maternal serum in a triplet pregnancy in which one fetus had an omphalocoele",
+   "authors": [
+    "Nevin NC",
+    "Armstrong MJ"
+   ],
+   "journal": "British journal of obstetrics and gynaecology",
+   "year": "1975",
+   "volume": "82",
+   "pages": "826-8",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "93321"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -52731,6 +54054,33 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed title search on thalidomide embryopathy"
+   ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "4340236",
+   "doi": "10.1056/NEJM197209072871004",
+   "title": "Nature and etiology of the Poland anomaly",
+   "authors": [
+    "David TJ"
+   ],
+   "journal": "The New England journal of medicine",
+   "year": "1972",
+   "volume": "287",
+   "pages": "487-9",
+   "pubtypes": [],
+   "codes": [
+    "2911"
+   ],
+   "topics": [
+    "causes",
+    "clinical"
+   ],
+   "notes": [
+    "PubMed search for causes and risk factors of the site's conditions"
    ],
    "via": [
     "PubMed search"
@@ -58813,5 +60163,5 @@
    "rests_on": []
   }
  ],
- "registries_joined": "2026-09-21"
+ "registries_joined": "2026-09-23"
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-09-21",
+ "built": "2026-09-23",
  "items": [
   {
    "id": "10.1086/461669",
@@ -224,6 +224,13 @@
    "status": "unresolved: no PubMed or Crossref record"
   },
   {
+   "id": "10.1186/s13054-022-04065-2",
+   "members": [
+    "German registry for congenital thrombocytopenia (Germany)"
+   ],
+   "status": "lookup failed: HTTPError"
+  },
+  {
    "id": "10.1136/bmjgh",
    "members": [
     "German registry for congenital thrombocytopenia (Germany)"
@@ -289,6 +296,13 @@
     "Registry for Patients with Vascular Malformations and Tumors (VasMuT)  - contributing to the european VASCERN registry (Germany)"
    ],
    "status": "rejected: not about the site's conditions (Crossref)"
+  },
+  {
+   "id": "10.1186/1471-2288-13-131",
+   "members": [
+    "Registry for Patients with Vascular Malformations and Tumors (VasMuT)  - contributing to the european VASCERN registry (Germany)"
+   ],
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.1055/b000000063",
@@ -2186,6 +2200,13 @@
     "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "status": "rejected: not about the site's conditions (Crossref)"
+  },
+  {
+   "id": "10.1038/338259a0",
+   "members": [
+    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
+   ],
+   "status": "lookup failed: HTTPError"
   },
   {
    "id": "10.3238/perskardio.2018.03.30.05",
@@ -5144,15 +5165,6 @@
    "status": "rejected: not about the site's conditions"
   },
   {
-   "id": "24160679",
-   "pmid": "24160679",
-   "title": "Google Scholar as replacement for systematic literature searches: good relative recall and precision are not enough.",
-   "members": [
-    "Registry for Patients with Vascular Malformations and Tumors (VasMuT)  - contributing to the european VASCERN registry (Germany)"
-   ],
-   "status": "rejected: not about the site's conditions"
-  },
-  {
    "id": "24186861",
    "pmid": "24186861",
    "title": "MYH9-related disease: a novel prognostic model to predict the clinical evolution of the disease based on genotype-phenotype correlations.",
@@ -5455,15 +5467,6 @@
    "title": "Quality of haemophilia care in The Netherlands: new standards for optimal care.",
    "members": [
     "HemoNED: Dutch Hemophilia Registry (Netherlands)"
-   ],
-   "status": "rejected: not about the site's conditions"
-  },
-  {
-   "id": "2493582",
-   "pmid": "2493582",
-   "title": "Association of dystrophin and an integral membrane glycoprotein.",
-   "members": [
-    "Centre Saxony-Anhalt registry of congenital anomalies - contributes to the EUROCAT network (Germany)"
    ],
    "status": "rejected: not about the site's conditions"
   },
@@ -40043,6 +40046,15 @@
    "status": "rejected: not about the site's conditions"
   },
   {
+   "id": "42773325",
+   "pmid": "42773325",
+   "title": "Recovery of ovarian function after chemotherapy in premenopausal women with breast cancer: a systematic review and meta-analysis.",
+   "members": [
+    "Steps Charity (United Kingdom)"
+   ],
+   "status": "rejected: not about the site's conditions"
+  },
+  {
    "id": "9762220",
    "pmid": "9762220",
    "title": "[Abdominal emergencies in type IV ehlers-Danlos syndrome].",
@@ -40466,6 +40478,15 @@
    "status": "rejected: systematic review not about the site's conditions"
   },
   {
+   "id": "31316265",
+   "pmid": "31316265",
+   "title": "The 'forgotten rubber band' syndrome - A systematic review of a uniquely 'desi' complication with a case illustration.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: systematic review not about the site's conditions"
+  },
+  {
    "id": "31186182",
    "pmid": "31186182",
    "title": "Biomechanical Changes Following Knee Arthroplasty During Sit-To-Stand Transfers: Systematic Review.",
@@ -40655,6 +40676,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "40454538",
+   "pmid": "40454538",
+   "title": "A Splice-Region Variant Causes an Atypical Presentation of GNAS Inactivation Disorder.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "40148187",
    "pmid": "40148187",
    "title": "When pregnancy termination fails: A tale of two teratogens: methotrexate and misoprostol - A narrative mini-review.",
@@ -40709,6 +40739,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "38412861",
+   "pmid": "38412861",
+   "title": "Haploinsufficiency of ZFHX3, encoding a key player in neuronal development, causes syndromic intellectual disability.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "38141607",
    "pmid": "38141607",
    "title": "A recurrent de novo MAX p.Arg60Gln variant causes a syndromic overgrowth disorder through differential expression of c-Myc target genes.",
@@ -40739,6 +40778,24 @@
    "id": "37543708",
    "pmid": "37543708",
    "title": "Maternal physical activity, sitting, and risk of non-cardiac birth defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "37440712",
+   "pmid": "37440712",
+   "title": "Recombinant growth hormone improves growth and adult height in patients with maternal inactivating GNAS mutations.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "37288014",
+   "pmid": "37288014",
+   "title": "A Novel Missense Mutation in the TGF-&#x3b2;-binding Protein-Like Domain 3 of  FBN1  Causes Weill-Marchesani Syndrome with Intellectual Disability.",
    "members": [
     "PubMed search"
    ],
@@ -40844,6 +40901,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "32616716",
+   "pmid": "32616716",
+   "title": "A novel pathogenic missense ADAMTS17 variant that impairs secretion causes Weill-Marchesani Syndrome with variably dysmorphic hand features.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "32238218",
    "pmid": "32238218",
    "title": "Maternal use of folic acid and multivitamin supplements and infant risk of birth defects in Norway, 1999-2013.",
@@ -40862,9 +40928,27 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "31726086",
+   "pmid": "31726086",
+   "title": "A novel ADAMTS17 variant that causes Weill-Marchesani syndrome 4 alters fibrillin-1 and collagen type I deposition in the extracellular matrix.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "31691277",
    "pmid": "31691277",
    "title": "Fetal outcomes after maternal exposure to oral antifungal agents during pregnancy: A systematic review and meta-analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "31403828",
+   "pmid": "31403828",
+   "title": "Novel  de novo  interstitial deletion in 2q36.1q36.3 causes syndromic hearing loss and further delineation of the 2q36 deletion syndrome.",
    "members": [
     "PubMed search"
    ],
@@ -40925,6 +41009,24 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "28236631",
+   "pmid": "28236631",
+   "title": "Causes of intrauterine fetal death are changing in recent years.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "28032038",
+   "pmid": "28032038",
+   "title": "Recurrent missense mutation of  GDF5  ( p.R438L ) causes proximal symphalangism in a British family.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "27768247",
    "pmid": "27768247",
    "title": "Associations between Maternal Water Consumption and Birth Defects in the National Birth Defects Prevention Study (2000-2005).",
@@ -40952,6 +41054,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "27508084",
+   "pmid": "27508084",
+   "title": "A novel nonsense mutation in the NOG gene causes familial NOG-related symphalangism spectrum disorder.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "26738512",
    "pmid": "26738512",
    "title": "Maternal use of oral contraceptives and risk of birth defects in Denmark: prospective, nationwide cohort study.",
@@ -40964,6 +41075,15 @@
    "id": "26689858",
    "pmid": "26689858",
    "title": "Residential agricultural pesticide exposures and risks of selected birth defects among offspring in the San Joaquin Valley of California.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "26333682",
+   "pmid": "26333682",
+   "title": "Two further patients with the 1q24 deletion syndrome expand the phenotype: A possible role for the miR199-214 cluster in the skeletal features of the condition.",
    "members": [
     "PubMed search"
    ],
@@ -40991,6 +41111,15 @@
    "id": "25360669",
    "pmid": "25360669",
    "title": "A case-control study of maternal periconceptual and pregnancy recreational drug use and fetal malformation using hair analysis.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "24739087",
+   "pmid": "24739087",
+   "title": "Short stature, digit anomalies and dysmorphic facial features are associated with the duplication of miR-17&#x2009;~&#x2009;92 cluster.",
    "members": [
     "PubMed search"
    ],
@@ -41249,6 +41378,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "19895254",
+   "pmid": "19895254",
+   "title": "Teratogenic effects of carbamazepine on embryonic eye development in pregnant mice.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "19886894",
    "pmid": "19886894",
    "title": "Trematode infection causes malformations and population effects in a declining New Zealand fish.",
@@ -41294,6 +41432,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "19252479",
+   "pmid": "19252479",
+   "title": "A mutation in Ihh that causes digit abnormalities alters its signalling capacity and range.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "19211471",
    "pmid": "19211471",
    "title": "Maternal overweight and obesity and the risk of congenital anomalies: a systematic review and meta-analysis.",
@@ -41306,6 +41453,15 @@
    "id": "19103281",
    "pmid": "19103281",
    "title": "Green tea extract increases cyclophosphamide-induced teratogenesis by modulating the expression of cytochrome P-450 mRNA.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "19006208",
+   "pmid": "19006208",
+   "title": "Chondrodysplasia punctata associated with maternal autoimmune diseases: expanding the spectrum from systemic lupus erythematosus (SLE) to mixed connective tissue disease (MCTD) and scleroderma report of eight cases.",
    "members": [
     "PubMed search"
    ],
@@ -41420,6 +41576,24 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "15811181",
+   "pmid": "15811181",
+   "title": "An exceptional Albanian family with seven children presenting with dysmorphic features and mental retardation: maternal phenylketonuria.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "15805157",
+   "pmid": "15805157",
+   "title": "A homozygous BMPR1B mutation causes a new subtype of acromesomelic chondrodysplasia with genital anomalies.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "15794725",
    "pmid": "15794725",
    "title": "Teratogenicity of sodium valproate.",
@@ -41510,6 +41684,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "12485621",
+   "pmid": "12485621",
+   "title": "A peptide agonist of the neural cell adhesion molecule (NCAM), C3, protects against developmental defects induced by a teratogen pyrimethamine.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "12410002",
    "pmid": "12410002",
    "title": "Maternal periconceptional vitamins: interactions with selected factors and congenital anomalies?",
@@ -41573,6 +41756,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "11200992",
+   "pmid": "11200992",
+   "title": "Radiographic findings and Gs-alpha bioactivity studies and mutation screening in acrodysostosis indicate a different etiology from pseudohypoparathyroidism.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "11186881",
    "pmid": "11186881",
    "title": "Prenatal exposure to misoprostol and vascular disruption defects: a case-control study.",
@@ -41609,6 +41801,15 @@
    "status": "rejected: causes query, not about the site's conditions"
   },
   {
+   "id": "10932187",
+   "pmid": "10932187",
+   "title": "Mutation of the gene encoding the ROR2 tyrosine kinase causes autosomal recessive Robinow syndrome.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
    "id": "10482873",
    "pmid": "10482873",
    "title": "Maternal corticosteroid use and risk of selected congenital anomalies.",
@@ -41639,6 +41840,15 @@
    "id": "9724335",
    "pmid": "9724335",
    "title": "Association of single umbilical artery with congenital malformations of vascular etiology.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "9600732",
+   "pmid": "9600732",
+   "title": "Pseudohypoparathyroidism type Ia from maternal but not paternal transmission of a Gsalpha gene mutation.",
    "members": [
     "PubMed search"
    ],
@@ -41963,6 +42173,15 @@
    "id": "3992490",
    "pmid": "3992490",
    "title": "Reduction of caffeine teratogenicity in mice by inducing maternal drug metabolism with beta-naphthoflavone.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: causes query, not about the site's conditions"
+  },
+  {
+   "id": "3879151",
+   "pmid": "3879151",
+   "title": "[Trisomy 20p derived from a maternal pericentric inversion and brachymesophalangy of the index finger].",
    "members": [
     "PubMed search"
    ],
@@ -44042,6 +44261,15 @@
    "id": "42616500",
    "pmid": "42616500",
    "title": "In Vitro Fertilization and VACTERL Birth Defects.",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: NLM DART filter, not about the site's conditions"
+  },
+  {
+   "id": "42457155",
+   "pmid": "42457155",
+   "title": "Population-Based Analysis of Prevalence, Associated Anomalies, and Mortality in Anorectal Malformations in Finland (2004-2017).",
    "members": [
     "PubMed search"
    ],

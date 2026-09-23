@@ -693,5 +693,571 @@
   "lon": -122.227403,
   "display_name": "Jasper Ridge Biological Preserve, Woodside, San Mateo County, California, United States",
   "query": "Biological, United States"
+ },
+ "Mackay Memorial Hospital|Taiwan": {
+  "lat": 25.0585727,
+  "lon": 121.5222088,
+  "display_name": "馬偕紀念醫院, 92, 中山北路二段, 中山北路婚紗街, 集英里, 中山區, 南西商圈, 臺北市, 10449, 臺灣",
+  "query": "Mackay Memorial Hospital, Taiwan"
+ },
+ "Washington University School of Medicine|United States": {
+  "lat": 47.6614466,
+  "lon": -117.397547,
+  "display_name": "University of Washington School of Medicine Spokane, 840, East Spokane Falls Boulevard, University District, Spokane, Spokane County, Washin",
+  "query": "Washington University School of Medicine"
+ },
+ "King Saud University|Saudi Arabia": {
+  "lat": 24.7248229,
+  "lon": 46.6233911,
+  "display_name": "جامعة الملك سعود, 4545, طريق الملك خالد, جامعة الملك سعود, حي النخيل, بلدية المعذر, الرياض, محافظة الرياض, منطقة الرياض, 12513, السعودية",
+  "query": "King Saud University, Saudi Arabia"
+ },
+ "University of Leuven|Belgium": {
+  "lat": 50.879202,
+  "lon": 4.7011675,
+  "display_name": "Leuven, Vlaams-Brabant, Vlaanderen, België / Belgique / Belgien",
+  "query": "Leuven, Belgium"
+ },
+ "Charité Universitätsmedizin Berlin|Germany": {
+  "lat": 52.5299885,
+  "lon": 13.3486639,
+  "display_name": "Institut für Rechtsmedizin der Charité Universitätsmedizin Berlin, 21, Turmstraße, Stephankiez, Moabit, Mitte, Berlin, 10559, Deutschland",
+  "query": "Charité Universitätsmedizin Berlin, Germany"
+ },
+ "University Hospital|Spain": {
+  "lat": 43.2824998,
+  "lon": -2.984312,
+  "display_name": "Gurutzetako Unibertsitate Ospitalea, Sotzezgarbia kalea, Cruces, Lutxana, San Vicente de Barakaldo, Gurutzeta, Barakaldo, Bizkaia, Euskadi, ",
+  "query": "University Hospital, Spain"
+ },
+ "Sanjay Gandhi Postgraduate Institute of Medical Sciences|India": {
+  "lat": 19.1286804,
+  "lon": 72.8200854,
+  "display_name": "Sanjay, Gautam Lane, Seven Bungalows, Versova, K/W Ward, Mumbai Zone 3, Mumbai, Mumbai Suburban District, Maharashtra, 400061, India",
+  "query": "Sanjay, India"
+ },
+ "St Mary's Hospital|United Kingdom": {
+  "lat": 51.517434,
+  "lon": -0.1743245,
+  "display_name": "St Mary's Hospital, Praed Street, Paddington, City of Westminster, Greater London, England, W2 1NY, United Kingdom",
+  "query": "St Mary's Hospital, United Kingdom"
+ },
+ "Tufts University School of Medicine|United States": {
+  "lat": 42.3499675,
+  "lon": -71.0621085,
+  "display_name": "Tufts University School of Medicine, 136, Harrison Avenue, Chinatown, Boston, Suffolk County, Massachusetts, 02111, United States",
+  "query": "Tufts University School of Medicine, United States"
+ },
+ "UCLA School of Public Health|United States": {
+  "lat": 34.0708777,
+  "lon": -118.4468503,
+  "display_name": "University of California, Los Angeles, Stone Canyon Road, Bel Air, Westwood, Los Angeles, Los Angeles County, California, 90077, United Stat",
+  "query": "UCLA, United States"
+ },
+ "Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán|Mexico": {
+  "lat": 19.2880601,
+  "lon": -99.156366,
+  "display_name": "Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán, Calle M. de la Cruz, Colonia Belisario Domínguez Sección XVI, San Loren",
+  "query": "Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán, Mexico"
+ },
+ "University of São Paulo|Brazil": {
+  "lat": -23.561048,
+  "lon": -46.7252264,
+  "display_name": "Universidade de São Paulo - Cidade Universitária Armando de Salles Oliveira, Rua do Lago, Butantã, São Paulo, Região Sudeste, 05508-120, Bra",
+  "query": "University of São Paulo, Brazil"
+ },
+ "Virginia Commonwealth University School of Medicine|United States": {
+  "lat": 37.1232245,
+  "lon": -78.4927721,
+  "display_name": "Virginia, United States",
+  "query": "Virginia, United States"
+ },
+ "Center for Human Genetics|Belgium": {
+  "lat": 42.2834476,
+  "lon": -83.733714,
+  "display_name": "Buhl Research Center for Human Genetics, 1241, Catherine Street, Old Fourth Ward, Ann Arbor, Washtenaw County, Michigan, 48109, United State",
+  "query": "Center for Human Genetics"
+ },
+ "Hôpital Jeanne de Flandre|France": {
+  "lat": 50.6057405,
+  "lon": 3.0322644,
+  "display_name": "Hôpital Jeanne de Flandre, Rue Pierre Delcoulx, Loos, Lille, Nord, Hauts-de-France, France métropolitaine, 59120, France",
+  "query": "Hôpital Jeanne de Flandre, France"
+ },
+ "University of Arkansas for Medical Sciences|United States": {
+  "lat": 34.748041,
+  "lon": -92.3223096,
+  "display_name": "University of Arkansas for Medical Sciences, Jonesboro Drive, Oak Forest, Little Rock, Big Rock Township, Pulaski County, Arkansas, 72205, U",
+  "query": "University of Arkansas for Medical Sciences, United States"
+ },
+ "Cedars-Sinai Medical Center|United States": {
+  "lat": 34.0751604,
+  "lon": -118.3810936,
+  "display_name": "Cedars-Sinai Medical Center, 8700, Beverly Boulevard, West Hollywood, Los Angeles County, California, 90048, United States",
+  "query": "Cedars-Sinai Medical Center, United States"
+ },
+ "Thomas Jefferson University|United States": {
+  "lat": 39.9489114,
+  "lon": -75.1580566,
+  "display_name": "Thomas Jefferson University, South 8th Street, Washington Square West, Center City, Philadelphia, Philadelphia County, Pennsylvania, 19147, ",
+  "query": "Thomas Jefferson University, United States"
+ },
+ "DePaul University|United States": {
+  "lat": 41.9245803,
+  "lon": -87.6507223,
+  "display_name": "DePaul University, 2400, North Sheffield Avenue, Wrightwood Neighbors, Lincoln Park, Chicago, North Chicago Township, Cook County, Illinois,",
+  "query": "DePaul University, United States"
+ },
+ "University of Hong Kong|China": {
+  "lat": 22.2828768,
+  "lon": 114.1378586,
+  "display_name": "香港大學 The University of Hong Kong, 列堤頓道 Lyttelton Road, 西營盤 Sai Ying Pun, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kon",
+  "query": "University of Hong Kong, China"
+ },
+ "Bureau of Environmental and Occupational Epidemiology|United States": {
+  "lat": 41.4016294,
+  "lon": -89.5341179,
+  "display_name": "Bureau County, Illinois, United States",
+  "query": "Bureau, United States"
+ },
+ "National Institute of Hygiene-WHO Collaborating Centre for the Community Control of Hereditary Diseases|Hungary": null,
+ "Hacettepe University|Turkey": {
+  "lat": 39.8674482,
+  "lon": 32.7353845,
+  "display_name": "Hacettepe Üniversitesi Beytepe Kampüsü, 1661. Cadde, Bilkent Yurtlar, Üniversiteler Mahallesi, Çankaya, Ankara, İç Anadolu Bölgesi, 06800, T",
+  "query": "Hacettepe University, Turkey"
+ },
+ "Taipei Medical University Hospital|Taiwan": {
+  "lat": 25.0255173,
+  "lon": 121.5629154,
+  "display_name": "臺北醫學大學附設醫院, 252, 吳興街, 雙和里, 信義區, 三張犁, 臺北市, 11031, 臺灣",
+  "query": "Taipei Medical University Hospital, Taiwan"
+ },
+ "Beijing Obstetrics and Gynecology Hospital|China": {
+  "lat": 39.9190158,
+  "lon": 116.3980164,
+  "display_name": "首都医科大学附属北京妇产医院（西院区）, 骑河楼北巷, 银闸小区, 东华门街道, 首都功能核心区, 东城区, 北京市, 100010, 中国",
+  "query": "Beijing Obstetrics and Gynecology Hospital"
+ },
+ "First Affiliated Hospital of Wenzhou Medical University|China": {
+  "lat": 22.3046353,
+  "lon": 114.1658157,
+  "display_name": "First 兌換店 First, 3, 柯士甸道西 Austin Road West, 官涌 Kwun Chung, 油麻地 Yau Ma Tei, 油尖旺區 Yau Tsim Mong District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+  "query": "First, China"
+ },
+ "Houston|United States": {
+  "lat": 29.7589382,
+  "lon": -95.3676974,
+  "display_name": "Houston, Harris County, Texas, United States",
+  "query": "Houston, United States"
+ },
+ "University of Colorado Anschutz Medical Campus|United States": {
+  "lat": 39.7446494,
+  "lon": -104.8386619,
+  "display_name": "University of Colorado Anschutz Medical Campus, East 17th Place, Aurora, Adams County, Colorado, 80045, United States",
+  "query": "University of Colorado Anschutz Medical Campus, United States"
+ },
+ "First Affiliated Hospital|China": {
+  "lat": 23.115375,
+  "lon": 113.2568768,
+  "display_name": "广州医科大学附属第一医院, 长堤大马路, 人民街道, 越秀区, 广州市, 广东省, 510375, 中国",
+  "query": "First Affiliated Hospital, China"
+ },
+ "Hopital Antoine Béclère|France": {
+  "lat": 48.7884488,
+  "lon": 2.2545207,
+  "display_name": "Hôpital Antoine Béclère, Impasse des Carnets, Jardin Parisien, Clamart, Antony, Hauts-de-Seine, Île-de-France, France métropolitaine, 92140,",
+  "query": "Hopital Antoine Béclère, France"
+ },
+ "Royal Children's Hospital|Australia": {
+  "lat": -37.7938505,
+  "lon": 144.949243,
+  "display_name": "Royal Children's Hospital, 48-50, Flemington Road, Parkville, Melbourne, Victoria, 3052, Australia",
+  "query": "Royal Children's Hospital, Australia"
+ },
+ "University of Copenhagen|Denmark": {
+  "lat": 55.6801502,
+  "lon": 12.572327,
+  "display_name": "Københavns Universitet, Nørregade, Nørrevold, Indre By, København, Københavns Kommune, Region Hovedstaden, 1165, Danmark",
+  "query": "University of Copenhagen, Denmark"
+ },
+ "Women and Children's Hospital|China": {
+  "lat": 36.0988461,
+  "lon": 120.3980797,
+  "display_name": "洪山坡, 辽阳路快速路, 同庆路社区, 浮山新区街道, 市北区, 青岛市, 山东省, 266011, 中国",
+  "query": "Women and Children's Hospital, China"
+ },
+ "Kasturba Medical College|India": {
+  "lat": 12.870232,
+  "lon": 74.8441593,
+  "display_name": "Kasturba Medical College, Light House Hill Road, Bendoor, Mangaluru, Mangaluru taluk, Dakshina Kannada, Karnataka, 575001, India",
+  "query": "Kasturba Medical College, India"
+ },
+ "Monash University|Australia": {
+  "lat": -37.7839745,
+  "lon": 144.9586743,
+  "display_name": "Monash University, Mile Lane, Parkville, Melbourne, Victoria, 3052, Australia",
+  "query": "Monash University, Australia"
+ },
+ "Poznan University of Medical Sciences|Poland": {
+  "lat": 52.4082409,
+  "lon": 16.8911238,
+  "display_name": "Uniwersytet Medyczny im. Karola Marcinkowskiego, Ułańska, Łazarz, Poznań, województwo wielkopolskie, 60-748, Polska",
+  "query": "Poznan University of Medical Sciences, Poland"
+ },
+ "Stanford University School of Medicine|United States": {
+  "lat": 37.4265407,
+  "lon": -122.1703055,
+  "display_name": "Stanford, Palo Alto, Santa Clara County, California, United States",
+  "query": "Stanford, United States"
+ },
+ "Guy's Hospital|United Kingdom": {
+  "lat": 51.5032099,
+  "lon": -0.0867273,
+  "display_name": "Guy's Hospital, Great Maze Pond, Borough Market, Bermondsey Village, The Borough, London Borough of Southwark, Greater London, England, SE1 ",
+  "query": "Guy's Hospital, United Kingdom"
+ },
+ "Harvard Medical School|United States": {
+  "lat": 42.3369167,
+  "lon": -71.1038922,
+  "display_name": "Harvard Medical School, 25, Shattuck Street, Longwood, Boston, Suffolk County, Massachusetts, 02115, United States",
+  "query": "Harvard Medical School, United States"
+ },
+ "Peking Union Medical College Hospital|China": {
+  "lat": 39.9110517,
+  "lon": 116.409643,
+  "display_name": "北京协和医院, 1, 帅府园胡同, 王府井社区, 东华门街道, 首都功能核心区, 东城区, 北京市, 100730, 中国",
+  "query": "Peking Union Medical College Hospital, China"
+ },
+ "University of Zurich|Switzerland": {
+  "lat": 47.4968435,
+  "lon": 8.7298072,
+  "display_name": "Zürcher Hochschule für Angewandte Wissenschaften, Corrodistrasse, Wildbach, Geiselweid, Stadt, Winterthur, Bezirk Winterthur, Zürich, 8403, ",
+  "query": "University of Zurich, Switzerland"
+ },
+ "Erasmus Medical Center|Netherlands": {
+  "lat": 51.9176312,
+  "lon": 4.5259623,
+  "display_name": "Erasmus Universiteit Rotterdam, 50, Burgemeester Oudlaan, Kralingen-Oost, Crooswijk, Kralingen-Crooswijk, Rotterdam, Zuid-Holland, Nederland",
+  "query": "Erasmus, Netherlands"
+ },
+ "John Radcliffe Hospital|United Kingdom": {
+  "lat": 51.7641187,
+  "lon": -1.2180799,
+  "display_name": "John Radcliffe Hospital, Headley Way, Headington, Oxford, Oxfordshire, England, OX3 9DU, United Kingdom",
+  "query": "John Radcliffe Hospital, United Kingdom"
+ },
+ "University of Florida College of Medicine|United States": {
+  "lat": 27.7567667,
+  "lon": -81.4639835,
+  "display_name": "Florida, United States",
+  "query": "Florida, United States"
+ },
+ "University of Torino|Italy": {
+  "lat": 45.051165,
+  "lon": 7.6811479,
+  "display_name": "Università di Torino - Dipartimento di Chimica, 9, Via Pietro Giuria, San Salvario, Circoscrizione 8, Cavoretto, Torino, Piemonte, 12125, It",
+  "query": "University of Torino, Italy"
+ },
+ "Danube Hospital|Austria": {
+  "lat": 48.1762979,
+  "lon": 16.4778977,
+  "display_name": "Donau, Katastralgemeinde Leopoldstadt, Leopoldstadt, Wien, 1020, Österreich",
+  "query": "Danube, Austria"
+ },
+ "San Camillo-Forlanini Hospital|Italy": {
+  "lat": 41.8695994,
+  "lon": 12.4559991,
+  "display_name": "Ospedale San Camillo Forlanini, 87, Circonvallazione Gianicolense, Monteverde, Municipio Roma XII, Roma, Roma Capitale, Lazio, 00152, Italia",
+  "query": "Camillo-Forlanini, Italy"
+ },
+ "University of North Carolina at Chapel Hill|United States": {
+  "lat": 35.9050354,
+  "lon": -79.0477533,
+  "display_name": "University of North Carolina at Chapel Hill, Berryhill Drive, Weatherhill Pointe, Weatherhill, Carrboro, Orange County, North Carolina, 2751",
+  "query": "University of North Carolina at Chapel Hill, United States"
+ },
+ "China Medical University|Taiwan": {
+  "lat": 24.1564155,
+  "lon": 120.6797558,
+  "display_name": "中國醫藥大學, 91, 學士路, 邱厝里, 北區, 臺中市, 40402, 臺灣",
+  "query": "China Medical University, Taiwan"
+ },
+ "National Institute of Environmental Health Sciences|United States": {
+  "lat": 42.6524953,
+  "lon": -73.7489247,
+  "display_name": "New York State Department of Environmental Conservation, 625, Broadway, Downtown, City of Albany, Albany County, New York, 12204, United Sta",
+  "query": "Environmental, United States"
+ },
+ "University Hospital Basel|Switzerland": {
+  "lat": 47.5581077,
+  "lon": 7.5878261,
+  "display_name": "Basel, Basel-Stadt, Schweiz/Suisse/Svizzera/Svizra",
+  "query": "Basel, Switzerland"
+ },
+ "Anhui Medical University|China": {
+  "lat": 31.8512134,
+  "lon": 117.2576393,
+  "display_name": "安徽医科大学, 南一环路, 二里街社区, 梅山路社区, 三里庵街道, 蜀山区, 合肥市, 安徽省, 230022, 中国",
+  "query": "Anhui Medical University, China"
+ },
+ "Shenzhen Maternity and Child Healthcare Hospital|China": {
+  "lat": 22.5445741,
+  "lon": 114.0545429,
+  "display_name": "深圳市, 广东省, 中国",
+  "query": "Shenzhen, China"
+ },
+ "Texas Department of State Health Services|United States": {
+  "lat": 30.3192335,
+  "lon": -97.735963,
+  "display_name": "Texas Department of State Health Services, 1100, West 49th Street, Brentwood, Austin, Travis County, Texas, 78756, United States",
+  "query": "Texas Department of State Health Services, United States"
+ },
+ "Chaim Sheba Medical Center|Israel": {
+  "lat": 32.0471842,
+  "lon": 34.8452013,
+  "display_name": "בית חולים תל השומר, שיבא, קרית קריניצי, רמת גן, נפת תל אביב, מחוז תל אביב, 5262657, ישראל",
+  "query": "Chaim Sheba Medical Center, Israel"
+ },
+ "Government Medical College|India": {
+  "lat": 15.4860548,
+  "lon": 80.0461963,
+  "display_name": "Government Medical College, Trunk Road, Ongole Urban, Santapeta, Ongole, Prakasam, Andhra Pradesh, 523001, India",
+  "query": "Government Medical College, India"
+ },
+ "Laboratoire de Genetique Medicale|France": {
+  "lat": 47.3988777,
+  "lon": 8.4579424,
+  "display_name": "Labor | Institut für Medizinische Genetik | Universität Zürich, 12, Wagistrasse, Schlieren, Bezirk Dietikon, Zürich, 8952, Schweiz/Suisse/Sv",
+  "query": "Laboratoire de Genetique Medicale"
+ },
+ "Mashhad University of Medical Sciences|Iran": {
+  "lat": 36.3136511,
+  "lon": 59.5359373,
+  "display_name": "دانشگاه علوم پزشکی مشهد, بولوار علوم, دانشگاه, ناحیه ۱ منطقه ۹, منطقه ۹, شهر مشهد, بخش مرکزی شهرستان مشهد, شهرستان مشهد, استان خراسان رضوی, ",
+  "query": "Mashhad University of Medical Sciences, Iran"
+ },
+ "Patuxent Wildlife Research Center|United States": {
+  "lat": 39.0521537,
+  "lon": -76.7365483,
+  "display_name": "Woodwardville, Piney Orchard, Glen Burnie, Anne Arundel County, Maryland, United States",
+  "query": "Patuxent, United States"
+ },
+ "Marshfield Clinic|United States": {
+  "lat": 44.6774855,
+  "lon": -90.1787253,
+  "display_name": "Marshfield Clinic, 1000, North Oak Avenue, Marshfield, Wood County, Wisconsin, 54449, United States",
+  "query": "Marshfield Clinic, United States"
+ },
+ "University Hospital of Modena|Italy": {
+  "lat": 44.5384728,
+  "lon": 10.9359609,
+  "display_name": "Modena, Emilia-Romagna, Italia",
+  "query": "Modena, Italy"
+ },
+ "Hopital Robert Debré|France": {
+  "lat": 48.8799187,
+  "lon": 2.4028935,
+  "display_name": "Hôpital Robert Debré, Boulevard Périphérique Intérieur, Quartier d'Amérique, Paris 19e Arrondissement, Paris, Île-de-France, France métropol",
+  "query": "Hopital Robert Debré, France"
+ },
+ "Departamento de Farmacología|Spain": {
+  "lat": 8.9824016,
+  "lon": -79.5346991,
+  "display_name": "Departamento de Farmacología, Avenida Octavio Méndez Pereira, La Cresta, El Cangrejo, Bella Vista, Distrito de Panamá, Provincia de Panamá, ",
+  "query": "Departamento de Farmacología"
+ },
+ "Kagawa University School of Medicine|Japan": {
+  "lat": 34.2480104,
+  "lon": 134.0586579,
+  "display_name": "香川県, 日本",
+  "query": "Kagawa, Japan"
+ },
+ "University of Texas|United States": {
+  "lat": 30.2851494,
+  "lon": -97.7339352,
+  "display_name": "University of Texas at Austin, 1, Allandale, Austin, Travis County, Texas, 78712, United States",
+  "query": "University of Texas, United States"
+ },
+ "Nippon Medical School|Japan": {
+  "lat": 35.721526,
+  "lon": 139.75918,
+  "display_name": "日本医科大学 医学部, 補助第179号線, 弥生一丁目, 弥生, 文京区, 東京都, 113-0032, 日本",
+  "query": "Nippon Medical School, Japan"
+ },
+ "Academic Medical Centre|Netherlands": {
+  "lat": 8.6828164,
+  "lon": 77.1344609,
+  "display_name": "Academic Block and Mathematics Block, Road to Medical Centre, Nedumangad, Thiruvananthapuram, Kerala, 695551, India",
+  "query": "Academic Medical Centre"
+ },
+ "National Taiwan University Hospital|Taiwan": {
+  "lat": 25.0405933,
+  "lon": 121.5201569,
+  "display_name": "國立臺灣大學醫學院附設醫院, 1, 常德街, 東門里, 中正區, 城內, 臺北市, 10048, 臺灣",
+  "query": "National Taiwan University Hospital, Taiwan"
+ },
+ "Rabin Medical Center|Israel": {
+  "lat": 32.0886888,
+  "lon": 34.8671956,
+  "display_name": "מרכז רפואי רבין – קמפוס ביילינסון, זאב ז'בוטינסקי, נווה גנים, פתח תקווה, נפת פתח תקווה, מחוז המרכז, 4945138, ישראל",
+  "query": "Rabin Medical Center, Israel"
+ },
+ "Centers for Disease Control and Prevention|United States": {
+  "lat": 33.7984493,
+  "lon": -84.3273482,
+  "display_name": "Centers for Disease Control and Prevention Edward R. Roybal Campus, Peavine Creek Drive, Druid Hills, Atlanta, DeKalb County, Georgia, 30322",
+  "query": "Centers for Disease Control and Prevention, United States"
+ },
+ "Emory University School of Medicine|United States": {
+  "lat": 33.7936353,
+  "lon": -84.3221796,
+  "display_name": "Emory University School of Medicine, McTyeire Drive Northeast, Druid Hills, Atlanta, DeKalb County, Georgia, 30322, United States",
+  "query": "Emory University School of Medicine, United States"
+ },
+ "University Hospital of Heraklion|Greece": {
+  "lat": 35.3039313,
+  "lon": 25.0829472,
+  "display_name": "Πανεπιστημιακό Γενικό Νοσοκομείο Ηρακλείου, ΕΠ7, Κοινότητα Βουτών, Δημοτική Ενότητα Ηρακλείου, Δήμος Ηρακλείου, Περιφερειακή Ενότητα Ηρακλεί",
+  "query": "University Hospital of Heraklion, Greece"
+ },
+ "Royal Victoria Infirmary|United Kingdom": {
+  "lat": 54.9795431,
+  "lon": -1.6196601,
+  "display_name": "Royal Victoria Infirmary, Queen Victoria Road, Haymarket, Newcastle upon Tyne, Tyne and Wear, North East, England, NE1 4LP, United Kingdom",
+  "query": "Royal Victoria Infirmary, United Kingdom"
+ },
+ "March of Dimes Birth Defects Foundation|United States": {
+  "lat": 48.1949785,
+  "lon": -96.8972889,
+  "display_name": "March, Marshall County, Minnesota, United States",
+  "query": "March, United States"
+ },
+ "University of Tokyo|Japan": {
+  "lat": 35.7117157,
+  "lon": 139.7637457,
+  "display_name": "東京大学本郷キャンパス, 1, 本郷七丁目, 本郷, 文京区, 東京都, 113-8654, 日本",
+  "query": "University of Tokyo, Japan"
+ },
+ "Università \"G d'Annunzio|Italy": {
+  "lat": 42.4519831,
+  "lon": 14.2248434,
+  "display_name": "Università G. d'Annunzio - Campus di Pescara, 42, Viale Pindaro, Porta Nuova, Pescara, Abruzzo, 65127, Italia",
+  "query": "Università \"G d'Annunzio"
+ },
+ "University Federico II of Naples|Italy": {
+  "lat": 40.8436083,
+  "lon": 14.2577393,
+  "display_name": "Università \"Federico II\" - Dipartimento di Giurisprudenza, Via dei Chiavettieri al Porto, Porto, Municipalità 2, Napoli, Campania, 80100, It",
+  "query": "University Federico II of Naples"
+ },
+ "Rambam Medical Center|Israel": {
+  "lat": 31.9640972,
+  "lon": 34.805232,
+  "display_name": "מכבי - סניף רמות ראשון לציון, 15, רוטשילד, רמב\"ם, ראשון לציון, נפת רחובות, מחוז המרכז, 7539411, ישראל",
+  "query": "Rambam Medical Center"
+ },
+ "U.S. Environmental Protection Agency|United States": {
+  "lat": 38.8939989,
+  "lon": -77.0289491,
+  "display_name": "U.S. Environmental Protection Agency, 1200, Pennsylvania Avenue Northwest, Ward 2, Washington, District of Columbia, 20004, United States",
+  "query": "U.S. Environmental Protection Agency, United States"
+ },
+ "Western General Hospital|United Kingdom": {
+  "lat": 55.9623439,
+  "lon": -3.235244,
+  "display_name": "Western General Hospital (Edinburgh), Crewe Road South, Comely Bank, Craigleith, City of Edinburgh, Alba / Scotland, EH4 2HY, United Kingdom",
+  "query": "Western General Hospital, United Kingdom"
+ },
+ "Erasmus University|Netherlands": {
+  "lat": 51.9176312,
+  "lon": 4.5259623,
+  "display_name": "Erasmus Universiteit Rotterdam, 50, Burgemeester Oudlaan, Kralingen-Oost, Crooswijk, Kralingen-Crooswijk, Rotterdam, Zuid-Holland, Nederland",
+  "query": "Erasmus University, Netherlands"
+ },
+ "Tel Aviv University|Israel": {
+  "lat": 32.1123577,
+  "lon": 34.8050129,
+  "display_name": "אוניברסיטת תל אביב, פראנקל, תל־אביב–יפו, רמת-אביב, תל־אביב–יפו, נפת תל אביב, מחוז תל אביב, 6946032, ישראל",
+  "query": "Tel Aviv University, Israel"
+ },
+ "Universitätsklinikum Charité|Germany": {
+  "lat": 49.3074203,
+  "lon": 7.3444455,
+  "display_name": "Universitätsklinikum, Homburg, Saarpfalz-Kreis, Saarland, 66424, Deutschland",
+  "query": "Universitätsklinikum, Germany"
+ },
+ "National Institute of Radiological Sciences|Japan": null,
+ "University Medical School|United Kingdom": {
+  "lat": 52.9424889,
+  "lon": -1.1857997,
+  "display_name": "Medical School, Clifton Boulevard, Dunkirk, City of Nottingham, East Midlands, England, NG7 2UH, United Kingdom",
+  "query": "University Medical School, United Kingdom"
+ },
+ "Medical University of South Carolina|United States": {
+  "lat": 32.7902452,
+  "lon": -79.9576415,
+  "display_name": "Medical University of South Carolina, 171, Ashley Avenue, The Gathering at Morris Square, West Side, Charleston, Charleston County, South Ca",
+  "query": "Medical University of South Carolina, United States"
+ },
+ "North Carolina State University|United States": {
+  "lat": 35.7718497,
+  "lon": -78.674087,
+  "display_name": "North Carolina State University, Blue Ridge Road, Westover, Raleigh, Wake County, North Carolina, 27695, United States",
+  "query": "North Carolina State University, United States"
+ },
+ "University of Alberta|Canada": {
+  "lat": 53.52682,
+  "lon": -113.5244937,
+  "display_name": "University of Alberta, 88 Avenue NW, Garneau, University of Alberta, Greater Strathcona, Edmonton, Alberta, T6G 2P9, Canada",
+  "query": "University of Alberta, Canada"
+ },
+ "Hôpitaux Universitaires de Strasbourg|France": {
+  "lat": 48.5860149,
+  "lon": 7.7089968,
+  "display_name": "Archives des Hôpitaux Universitaires de Strasbourg, Rue Hannah Arendt, Parc des Forges, Poteries, Hautepierre, Strasbourg, Bas-Rhin, Collect",
+  "query": "Hôpitaux Universitaires de Strasbourg, France"
+ },
+ "Instituto Oswaldo Cruz|Brazil": {
+  "lat": -22.8246425,
+  "lon": -47.0655289,
+  "display_name": "Instituto de Estudos Avançados, 301, Avenida Oswaldo Cruz, Barão Geraldo, Campinas, São Paulo, Região Sudeste, 13083-876, Brasil",
+  "query": "Instituto Oswaldo Cruz, Brazil"
+ },
+ "Royal Postgraduate Medical School|United Kingdom": {
+  "lat": 51.66453,
+  "lon": -0.1047793,
+  "display_name": "Postgraduate Centre, Friar Road, London Borough of Enfield, Greater London, England, EN2 8JQ, United Kingdom",
+  "query": "Postgraduate, United Kingdom"
+ },
+ "Churchill Hospital|United Kingdom": {
+  "lat": 51.749089,
+  "lon": -1.2140551,
+  "display_name": "Churchill Hospital, Old Road, Headington, Oxford, Oxfordshire, England, OX3 7JY, United Kingdom",
+  "query": "Churchill Hospital, United Kingdom"
+ },
+ "National Institute of Hygiene|Hungary": {
+  "lat": 21.0124522,
+  "lon": 105.8596303,
+  "display_name": "Viện Vệ sinh Dịch tễ Trung ương, 1, Phố Yec Xanh, Thịnh Yên, Phường Hai Bà Trưng, Thành phố Hà Nội, 11626, Việt Nam",
+  "query": "National Institute of Hygiene"
+ },
+ "Strong Memorial Hospital|": {
+  "lat": 43.12293,
+  "lon": -77.6253832,
+  "display_name": "University of Rochester Medical Center Main Campus, 601, Elmwood Avenue, City of Rochester, Monroe County, New York, 14611, United States",
+  "query": "Strong Memorial Hospital, "
+ },
+ "Kaplan Hospital|Israel": {
+  "lat": 31.8721337,
+  "lon": 34.8164782,
+  "display_name": "בית חולים קפלן, 40, קרית עקרון, נפת רחובות, מחוז המרכז, 7624416, ישראל",
+  "query": "Kaplan Hospital, Israel"
+ },
+ "Hiroshima University School of Medicine|Japan": {
+  "lat": 34.3917241,
+  "lon": 132.4517589,
+  "display_name": "広島市, 広島県, 日本",
+  "query": "Hiroshima, Japan"
  }
 }

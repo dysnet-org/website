@@ -64,10 +64,17 @@ LONG = ["bibliography", "researchers"]
 
 
 def keys_of(register, key):
+    """What a register holds, as a set that can be compared before and after a step: the keys of a
+    per-condition map, or an identifier for each record of a list (a paper's PMID or DOI, a team's
+    institution), so that the report can say what was gained and what was lost."""
     d = C.load(register)
     if not d:
         return set()
-    return set(d.get(key, {}) if key else d.get("entries", d) if isinstance(d, dict) else {})
+    v = d.get(key) if key else next((d[k] for k in ("entries", "teams", "rules") if k in d), d)
+    if isinstance(v, dict):
+        return set(v)
+    ident = lambda r: str(r.get("pmid") or r.get("doi") or r.get("institution") or r.get("pattern") or r.get("title") or r)
+    return {ident(r) if isinstance(r, dict) else str(r) for r in (v or [])}
 
 
 def vocab_codes():

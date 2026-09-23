@@ -54,6 +54,13 @@ def codes(src=None):
     return sorted(set(out), key=int)
 
 
+def extra_codes(src=None):
+    """The codes REG_CODE_NAMES names by hand, with their names: codes the site uses without a card
+    of their own, such as symbrachydactyly's 1570, which Orphanet reserves for the rare form."""
+    src = src or source()
+    return re.findall(r'REG_CODE_NAMES\["(\d+)"\] = "([^"]+)"', src)
+
+
 def dot_rates(src=None):
     """The labels of DOT_RATES, the site's own verified table of rates, and their aliases to cards."""
     src = src or source()

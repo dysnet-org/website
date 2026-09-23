@@ -16,6 +16,12 @@
    "journal": "Pediatrics",
    "title": "Limb deficiencies in newborn infants."
   },
+  "12072798": {
+   "first_author": "Stewart C",
+   "year": "2002",
+   "journal": "Clin Dysmorphol",
+   "title": "Microgastria-limb reduction anomaly with total amelia."
+  },
   "16224672": {
    "first_author": "Weber M",
    "year": "2005",
@@ -76,6 +82,12 @@
    "journal": "Orphanet J Rare Dis",
    "title": "Holt Oram syndrome: a registry-based study in Europe."
   },
+  "25466284": {
+   "first_author": "Malik S",
+   "year": "2014",
+   "journal": "Am J Hum Genet",
+   "title": "Mutations affecting the BHLHA9 DNA-binding domain cause MSSD, mesoaxial synostotic syndactyly with phalangeal reduction, Malik-Percin type."
+  },
   "26408260": {
    "first_author": "D'Ambrosio V",
    "year": "2016",
@@ -87,6 +99,12 @@
    "year": "2016",
    "journal": "J Child Orthop",
    "title": "Surgical reconstruction for fibular hemimelia."
+  },
+  "28160419": {
+   "first_author": "Hassed S",
+   "year": "2017",
+   "journal": "Am J Med Genet A",
+   "title": "Adams-Oliver syndrome review of the literature: Refining the diagnostic phenotype."
   },
   "28669420": {
    "first_author": "Colen DL",
@@ -141,6 +159,12 @@
    "year": "1996",
    "journal": "Ann Genet",
    "title": "A study on limb reduction defects in six European regions."
+  },
+  "9555583": {
+   "first_author": "De Smet L",
+   "year": "1998",
+   "journal": "Genet Couns",
+   "title": "Symbrachydactyly involving hands and feet."
   }
  },
  "conditions": {
@@ -158,6 +182,16 @@
      "source": "35449659[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 398.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "28160419[PMID]"
+    }
+   ],
    "cases": 398,
    "cases_unit": "cases"
   },
@@ -166,6 +200,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -174,6 +209,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -182,6 +218,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -215,6 +252,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -232,6 +270,16 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 30.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "[EXPERT]"
+    }
+   ],
    "cases": 30,
    "cases_unit": "cases"
   },
@@ -247,6 +295,16 @@
      "qualification": "Class only",
      "status": "Validated",
      "source": "ORPHANET_8042663[PMID]_20127219 [PMID]"
+    }
+   ],
+   "case_rows": [
+    {
+     "per_100000": 12.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "8042663[PMID]_20127219 [PMID]"
     }
    ],
    "cases": 12,
@@ -314,6 +372,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -347,6 +406,7 @@
      "source": "20498623[PMID]_27909861[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -388,6 +448,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -403,6 +464,16 @@
      "qualification": "Class only",
      "status": "Validated",
      "source": "ORPHANET"
+    }
+   ],
+   "case_rows": [
+    {
+     "per_100000": 16.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "12072798[PMID]"
     }
    ],
    "cases": 16,
@@ -422,6 +493,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -471,6 +543,7 @@
      "source": "ORPHANET_EUROCAT European surveillance of congenital anomalies 2005-2012[OTHER]"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -479,6 +552,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -512,6 +586,7 @@
      "source": "28669420[PMID]_34452798[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -529,6 +604,16 @@
      "source": "ORPHANET_20301332[PMID]"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 150.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "20301332[PMID]"
+    }
+   ],
    "cases": 150,
    "cases_unit": "cases"
   },
@@ -537,6 +622,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -545,6 +631,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -560,6 +647,16 @@
      "qualification": "Class only",
      "status": "Validated",
      "source": "ORPHANET_20301453[PMID]"
+    }
+   ],
+   "case_rows": [
+    {
+     "per_100000": 5.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Family(ies)",
+     "status": "Validated",
+     "source": "20301453[PMID]"
     }
    ],
    "cases": 5,
@@ -595,6 +692,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -612,6 +710,7 @@
      "source": "[EXPERT]"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -645,6 +744,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -662,6 +762,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -670,6 +771,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -678,6 +780,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -686,6 +789,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   }
@@ -705,6 +809,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -713,6 +818,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -730,6 +836,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -747,6 +854,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -764,6 +872,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -772,6 +881,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -780,6 +890,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -813,6 +924,7 @@
      "source": "31091006[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -846,6 +958,7 @@
      "source": "31091006[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -854,6 +967,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -862,6 +976,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -870,6 +985,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -878,6 +994,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -911,6 +1028,7 @@
      "source": "[EXPERT]"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -919,6 +1037,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -927,6 +1046,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -935,6 +1055,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -943,6 +1064,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -960,6 +1082,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -968,6 +1091,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -976,6 +1100,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -984,6 +1109,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1001,6 +1127,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1018,6 +1145,16 @@
      "source": "ORPHANET_22448207[PMID]"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 4.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "22448207[PMID]"
+    }
+   ],
    "cases": 4,
    "cases_unit": "cases"
   },
@@ -1031,6 +1168,16 @@
      "class": "<1 / 1 000 000",
      "geo": "Worldwide",
      "qualification": "Class only",
+     "status": "Validated",
+     "source": "ORPHANET"
+    }
+   ],
+   "case_rows": [
+    {
+     "per_100000": 10.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
      "status": "Validated",
      "source": "ORPHANET"
     }
@@ -1052,6 +1199,16 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 6.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Family(ies)",
+     "status": "Validated",
+     "source": "25466284[PMID]"
+    }
+   ],
    "cases": 6,
    "cases_unit": "families"
   },
@@ -1060,6 +1217,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1101,6 +1259,7 @@
      "source": "1155460[PMID]"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1118,6 +1277,16 @@
      "source": "ORPHANET_3725479[PMID]"
     }
    ],
+   "case_rows": [
+    {
+     "per_100000": 2.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Family(ies)",
+     "status": "Validated",
+     "source": "3725479[PMID]"
+    }
+   ],
    "cases": 2,
    "cases_unit": "families"
   },
@@ -1126,6 +1295,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1134,6 +1304,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1142,6 +1313,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1150,6 +1322,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1158,6 +1331,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1191,6 +1365,7 @@
      "source": "26408260[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1199,6 +1374,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1232,6 +1408,7 @@
      "source": "ORPHANET_22002800[PMID]"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1240,6 +1417,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1273,6 +1451,7 @@
      "source": "32019581[PMID]_ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1281,6 +1460,7 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1298,6 +1478,7 @@
      "source": "ORPHANET"
     }
    ],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
   },
@@ -1306,8 +1487,36 @@
    "birth_prevalence": null,
    "birth_rows": [],
    "point_rows": [],
+   "case_rows": [],
    "cases": null,
    "cases_unit": null
+  },
+  "Symbrachydactyly": {
+   "orphacode": "1570",
+   "birth_prevalence": null,
+   "birth_rows": [],
+   "point_rows": [
+    {
+     "per_100000": null,
+     "class": "<1 / 1 000 000",
+     "geo": "Worldwide",
+     "qualification": "Class only",
+     "status": "Validated",
+     "source": "ORPHANET_9555583[PMID]"
+    }
+   ],
+   "case_rows": [
+    {
+     "per_100000": 2.0,
+     "class": null,
+     "geo": "Worldwide",
+     "qualification": "Case(s)",
+     "status": "Validated",
+     "source": "9555583[PMID]"
+    }
+   ],
+   "cases": 2,
+   "cases_unit": "cases"
   }
  }
 }

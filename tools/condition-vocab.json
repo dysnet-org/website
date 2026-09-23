@@ -58,15 +58,15 @@
    "card": "Amelia > Isolated amelia of lower limb"
   },
   {
-   "pattern": "\\btetra[\\s-]+amelias?\\b",
+   "pattern": "\\bIsolated[\\s-]+tetra[\\s-]+amelias?\\b",
    "code": "294971",
-   "from": "tetra-amelia",
+   "from": "Isolated tetra-amelia",
    "card": "Amelia > Isolated tetra-amelia"
   },
   {
-   "pattern": "\\btotal[\\s-]+amelias?\\b",
+   "pattern": "\\bIsolated[\\s-]+total[\\s-]+amelias?\\b",
    "code": "294971",
-   "from": "total amelia",
+   "from": "Isolated total amelia",
    "card": "Amelia > Isolated tetra-amelia"
   },
   {

@@ -51,7 +51,8 @@ def esearch_ids(term):
     return json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(term)}&retmode=json"))["esearchresult"]["idlist"]
 
 for name, c in list(PREV.get("conditions", {}).items()) + list(PREV.get("forms", {}).items()):
-    for kind, rows in (("prevalence at birth", c.get("birth_rows") or []), ("point prevalence", c.get("point_rows") or [])):
+    for kind, rows in (("prevalence at birth", c.get("birth_rows") or []), ("point prevalence", c.get("point_rows") or []),
+                       ("cases or families described", c.get("case_rows") or [])):
         for p in rows:
             for pmid in re.findall(r"(\d{6,9})\[PMID\]", p.get("source") or ""):
                 add(pmid, c.get("orphacode"), "epidemiology", f"cited by Orphanet for {name} ({kind}, {p.get('geo')})")

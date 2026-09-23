@@ -2543,7 +2543,9 @@ def conditions_ld():
 def dataset_ld(name, desc, path, file, keywords, size):
     return {"@context": "https://schema.org", "@type": "Dataset", "name": name, "description": desc, "url": SITE + path,
             "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": True, "inLanguage": "en", "keywords": keywords,
-            "creator": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}, "variableMeasured": size,
+            # Google's Dataset guidelines accept only Person or Organization here, and flag a subtype
+            # such as NGO as an invalid object type (Search Console, September 2026)
+            "creator": {"@type": "Organization", "name": BRAND, "url": SITE + "/"}, "variableMeasured": size,
             "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE + "/data/" + file}]}
 
 

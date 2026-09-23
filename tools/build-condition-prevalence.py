@@ -76,7 +76,7 @@ def resolve_pubmed(rows):
     Orphanet's source field is a string such as "8766141[PMID]_EUROCAT ...[OTHER]". A reader of the
     epidemiology page is owed the study, not the number, so the identifiers are resolved here, once,
     and the page prints them; a build never queries PubMed itself."""
-    pmids = sorted({m for v in rows.values() for r in v["birth_rows"] + v["point_rows"]
+    pmids = sorted({m for v in rows.values() for r in v["birth_rows"] + v["point_rows"] + v.get("case_rows", [])
                     for m in re.findall(r"(\d{5,9})\[PMID\]", r.get("source") or "")})
     if not pmids:
         return {}
@@ -109,6 +109,9 @@ def fetch_rows(name, code):
     entry = {"orphacode": code, "birth_prevalence": None,
              "birth_rows": [_row(p) for p in births],
              "point_rows": [_row(p) for p in prev if p.get("PrevalenceType") == "Point prevalence"],
+             # a count of cases or families described, with the case report Orphanet cites for it:
+             # the count goes on the page, the citation into the bibliography
+             "case_rows": [_row(p) for p in prev if p.get("PrevalenceType") == "Cases/families"],
              "cases": next((int(float(p.get("ValMoy"))) for p in prev
                             if p.get("PrevalenceType") == "Cases/families" and float(p.get("ValMoy") or 0)), None),
              "cases_unit": next(("families" if "amil" in (p.get("PrevalenceQualification") or "") else "cases"
@@ -125,7 +128,9 @@ def fetch_rows(name, code):
 def main():
     cards = codes_from_build()
     rows = {name: fetch_rows(name, code) for name, code in cards}
-    forms = {name: fetch_rows(name, code) for name, code in forms_from_hierarchy([c for _n, c in cards])}
+    card_codes = [c for _n, c in cards]
+    extra = [(name, code) for code, name in C.extra_codes() if code not in card_codes]
+    forms = {name: fetch_rows(name, code) for name, code in forms_from_hierarchy(card_codes) + extra}
     sources = resolve_pubmed({**rows, **forms})
     n = sum(1 for v in rows.values() if (v.get("birth_prevalence") or {}).get("per_100000"))
     OUT.write_text(json.dumps({

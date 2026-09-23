@@ -485,9 +485,13 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
    untouched because they are first in their container. */
 .container > * + .tick,
 .container > * + div:has(> .tick) { margin-top: var(--space-7); }
-/* after a short lede and its disclosure the first section follows at section padding, not a full gap,
-   so the tool it opens with (the conditions finder) is in view on arrival */
-.container > details.def-more + div:has(> .tick) { margin-top: var(--space-5); }
+/* The first section after a page's introduction follows at section padding rather than the full
+   section gap, so the page reaches its content, a finder, a register or a table, sooner. Keyed on
+   structure, not on the page: in the container that holds the h1, the first tick-bearing sibling after
+   the page-top tick, whether a bare tick or an opener block. Later sections keep --space-7. */
+.container:has(> h1) > .tick:first-child ~ :is(.tick, div:has(> .tick)):not(.container > .tick:first-child ~ :is(.tick, div:has(> .tick)) ~ *) {
+  margin-top: var(--space-5);
+}
 
 /* ── Click-to-play YouTube facade (loads nocookie iframe on demand) ── */
 .yt-embed {

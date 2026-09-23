@@ -3058,9 +3058,11 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Start here · For families and clinicians</p>
     <h1 class="display">Understanding dysmelia.</h1>
-    <p>Dysmelia is a congenital limb difference: an arm or a leg that formed differently, incompletely or not at all before birth.
-    The word is used in two senses, and each has an authoritative source.</p>
-    <p><strong>In the narrow sense</strong>, dysmelia is a reduction: a limb, or a part of one, is missing. Sweden&rsquo;s National Board
+    <p class="lede">Dysmelia is a congenital limb difference: an arm or a leg that formed differently, incompletely or not at all
+    before birth.</p>
+    <details class="def-more">
+    <summary>Read the two senses and their sources</summary>
+    <p>The word is used in two senses, and each has an authoritative source. <strong>In the narrow sense</strong>, dysmelia is a reduction: a limb, or a part of one, is missing. Sweden&rsquo;s National Board
     of Health and Welfare, which has concentrated the specialised care of dysmelia in four university hospitals and refers every
     patient, whatever their age, to one of them for a multidisciplinary assessment, defines it as a &ldquo;<span lang="sv">medfödd
     reduktionsmissbildning av hela eller delar av övre och/eller nedre extremitet</span>&rdquo;, a congenital reduction malformation of
@@ -3080,6 +3082,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     (<a href="https://www.socialstyrelsen.se/kunskapsstod-och-regler/regler-och-riktlinjer/nationell-hogspecialiserad-vard/oversikt/dysmeli/" target="_blank" rel="noopener external">overview</a>); translation ours.
     <span id="def-src-2">2.</span> Human Phenotype Ontology,
     <a href="https://hpo.jax.org/browse/term/HP:0040064" target="_blank" rel="noopener external">HP:0040064, Abnormality of limbs</a>, synonym &ldquo;Dysmelia&rdquo;.</p>
+    </details>
 
     {opener("01", "The conditions", "Which conditions does it cover?")}
 
@@ -3130,6 +3133,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so {spell(sum(1 for c in CONDITIONS if not (OMT.get(c[0]) or {}).get("group")))} of the cards here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
     <p class="annex-note"><strong>ICD-11</strong> now sits beside ICD-10 on every card that has one, {ICD_STATS["icd11"]["rows"]} of them, because the point of the block is to show what a registry would have to reconcile rather than to flatter either edition. ICD-11 resolves real things: amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8 and ICD-11 names each exactly, and polydactyly has no Orphanet mapping to ICD-10 at all while ICD-11 names it exactly. It is not a general improvement. The share of exact mappings rises only from {ICD_STATS["icd10"].get("exact", 0)} of {ICD_STATS["icd10"]["rows"]} under ICD-10 to {ICD_STATS["icd11"].get("exact", 0)} of {ICD_STATS["icd11"]["rows"]} under ICD-11, and in one respect ICD-11 is the coarser: its code {ICD11_WIDEST[0]} stands for {spell(ICD11_WIDEST[1])} of the conditions on this page at once.</p>
 
+    <div id="toc-here"></div>
     {opener("02", "Not alone", "Which association knows my condition?")}
     <p>Whatever the diagnosis, a member association near you has walked this road: Reach and Steps in the United Kingdom for upper and lower limb differences, Aussiehands in Australia for children born with a hand difference, AISP in Italy and PIP UK for Poland syndrome, Svensk Dysmeliförening in Sweden for dysmelia in all its forms, Assedea in France for limb agenesis. <a href="/about/members/">Find yours</a>.</p>
 

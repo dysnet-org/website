@@ -98,6 +98,26 @@ section { padding-block: var(--section-pad); }
 
 .hero-h1 { font-size: var(--text-hero); line-height: 1.08; }
 .display { font-size: var(--text-display); line-height: 1.1; }
+/* the paragraph a reader must not miss: one step up the type scale, in full ink */
+.lede { font-size: var(--text-h4); line-height: 1.45; color: var(--dys-ink); font-weight: 500; max-width: var(--prose-max); }
+/* detail kept one click away, so the page leads to what the reader came for */
+details.def-more { margin-top: var(--space-2); max-width: var(--prose-max); }
+details.def-more > summary {
+  display: inline-flex; align-items: center; gap: 0.6rem; cursor: pointer; list-style: none;
+  padding: 0.5rem 0.9rem; border: 1px solid var(--dys-line); border-radius: 999px; background: #fff;
+  color: var(--dys-purple-text); font-weight: 700; font-size: var(--text-small);
+}
+details.def-more > summary::-webkit-details-marker { display: none; }
+details.def-more > summary:hover { border-color: var(--dys-purple); }
+details.def-more > summary:focus-visible { outline: 3px solid var(--dys-purple); outline-offset: 2px; }
+details.def-more > summary::after {
+  content: ""; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--dys-purple-soft) no-repeat center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'%3E%3Cpath d='M1 1l4.5 4.5L10 1' fill='none' stroke='%237222c2' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  transition: transform 0.2s ease;
+}
+details.def-more[open] > summary::after { transform: rotate(180deg); }
+details.def-more[open] > summary { margin-bottom: var(--space-1); }
+@media (prefers-reduced-motion: reduce) { details.def-more > summary::after { transition: none; } }
 .h2-lg { font-size: var(--text-h2-lg); line-height: 1.15; }
 .h2 { font-size: var(--text-h2); line-height: 1.2; }
 .h3 { font-size: var(--text-h3); line-height: 1.3; }

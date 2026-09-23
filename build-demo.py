@@ -867,6 +867,19 @@ def condition_rate_html(name):
 CONDITIONS_BY_RATE = sorted(CONDITIONS, key=lambda c: (-CONDITION_RATE.get(c[0], (0,))[0], c[0]))
 RATED_N = sum(1 for c in CONDITIONS if c[0] in CONDITION_RATE)
 OMT = OMT_ALL.get("conditions", {})
+# A card whose registers were built for an older list is a card the page half-describes. The build
+# goes on, because a missing OMT row is a hand surgeon's job and must not stop a deploy, but it says
+# so, and names the command that brings the fetched registers up to date.
+_LAG = {
+    "no place in Orphanet's classification (tools/build-orphanet-hierarchy.py)": [c[0] for c in CONDITIONS if c[2] and str(c[2]) not in HIER["nodes"]],
+    "no ICD row (tools/build-condition-icd.py)": [c[0] for c in CONDITIONS if c[0] not in ICD],
+    "no Orphanet prevalence row (tools/build-condition-prevalence.py)": [c[0] for c in CONDITIONS if c[2] and c[0] not in ORPHA_PREV],
+    "no OMT row (tools/condition-omt.json, placed by hand)": [c[0] for c in CONDITIONS if c[0] not in OMT],
+}
+for _what, _names in _LAG.items():
+    if _names:
+        print(f"WARNING: {len(_names)} card(s) with {_what}: {_names}. Run python3 tools/update-conditions.py")
+
 
 
 MEMBERS = [
@@ -3043,7 +3056,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Start here · For families and clinicians</p>
     <h1 class="display">Understanding dysmelia.</h1>
-    <p>Dysmelia is the generic term for all types of congenital limb differences: limbs that formed differently, incompletely or not at all before birth. It concerns about 5 in 10,000 people. Behind the word are many distinct conditions; the guide below introduces the main ones in plain language, with links to Orphanet, the European reference database for rare diseases.</p>
+    <p>Dysmelia is the generic term for all types of congenital limb differences: limbs that formed differently, incompletely or not at all before birth. European registries count limb reduction defects in about {DOT_RATES[0][1] / 10:g} of every 10,000 births, and polydactyly and syndactyly, which they count separately, in {CONDITION_RATE["Polydactyly"][0] / 10:g} and {CONDITION_RATE["Syndactyly"][0] / 10:g}. Behind the word are many distinct conditions; the guide below introduces them in plain language, with links to Orphanet, the European reference database for rare diseases.</p>
 
     {opener("01", "The conditions", "Which conditions does it cover?")}
 

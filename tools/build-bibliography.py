@@ -13,10 +13,12 @@ Sources of references (trusted, machine-readable):
 Metadata (title, authors, journal, year, DOI) comes from NCBI E-utilities, never from memory.
 Run: python3 tools/build-bibliography.py   (needs network; E-utilities limit 3 req/s)
 """
-import json, pathlib, re, time, urllib.request, urllib.parse
+import json, pathlib, re, sys, time, urllib.request, urllib.parse
 
 HERE = pathlib.Path(__file__).parent
-PREV = json.loads((HERE / "orphanet-prevalence.json").read_text(encoding="utf-8"))
+sys.path.insert(0, str(HERE))
+import conditions as C  # the condition list, its words and its registers, read once for every tool
+PREV = C.load("condition-prevalence.json")   # Orphanet's prevalence rows for every card and every form inside one
 E = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 
 # seed: PMID -> {codes, topics, note}
@@ -48,10 +50,11 @@ def epost_ids(term, retmax=2000):
 def esearch_ids(term):
     return json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(term)}&retmode=json"))["esearchresult"]["idlist"]
 
-for code, c in PREV["conditions"].items():
-    for p in c["prevalence"]:
-        for pmid in re.findall(r"(\d{6,9})\[PMID\]", p.get("source", "")):
-            add(pmid, code, "epidemiology", f"cited by Orphanet for {c['orphanet_name']} ({p['type'].lower()}, {p['geo']})")
+for name, c in list(PREV.get("conditions", {}).items()) + list(PREV.get("forms", {}).items()):
+    for kind, rows in (("prevalence at birth", c.get("birth_rows") or []), ("point prevalence", c.get("point_rows") or [])):
+        for p in rows:
+            for pmid in re.findall(r"(\d{6,9})\[PMID\]", p.get("source") or ""):
+                add(pmid, c.get("orphacode"), "epidemiology", f"cited by Orphanet for {name} ({kind}, {p.get('geo')})")
 
 # publications verified for the site (see the prevalence annex and the registry page)
 SITE = {
@@ -216,7 +219,12 @@ VOCAB = [  # keyword → the ORPHAcode used on the site (REG_CODE_NAMES in build
     (r"mirror[- ]image polydactyly|mirror hand", "498494"),
     (r"limb[- ](reduction|deficienc|difference|anomal|malformation|defect|loss|absence)|reduction defect|transverse (deficienc|defect)|(below|above)[- ](elbow|knee) deficien|congenital (upper|lower)[- ]limb|congenital hand|hand difference|dysmelia|dysmelic", None),
 ]
-VOCAB = [(re.compile(rx, re.I), code) for rx, code in VOCAB]
+_manual_codes = {code for _rx, code in VOCAB if code}
+_generated = [(r["pattern"], r["code"]) for r in (C.load("condition-vocab.json") or {}).get("rules", [])
+              if r["code"] not in _manual_codes]
+VOCAB = [(re.compile(rx, re.I), code) for rx, code in VOCAB + _generated]
+print(f"vocabulary: {len(VOCAB) - len(_generated)} hand-written rules, {len(_generated)} generated for "
+      f"{len({c for _r, c in _generated})} codes without one (tools/build-condition-vocab.py)")
 # thalidomide embryopathy: accepted only when the title itself is about the embryopathy or its survivors,
 # so that papers on thalidomide as a drug (myeloma, lupus, bowel disease) stay out
 THAL_TITLE = re.compile(r"thalidomide[- ](embryopathy|survivor|victim|damage|affected|syndrome|induced|impaired|exposed|related|teratogen)|thalidomide.{0,60}(embryopath|malformation|limb|phocomelia|birth defects?|teratogen|survivor|impaired)|contergan|softenon|neurosedyn", re.I)
@@ -370,14 +378,19 @@ for i in range(0, len(thal_ids), 50):
         for c in codes: seed[pmid]["codes"].add(c)
 
 # ─── 5. Systematic reviews and meta-analyses on our conditions (PubMed, fixed query) ──────────
+# The phrases the cards are known by, generated from CONDITIONS and Orphanet's synonyms, so that a
+# condition added to the site is searched for from its first build. The hand-written terms stay:
+# they carry the spellings the literature uses that Orphanet's nomenclature does not.
+COND_TERMS = " OR ".join(sorted({f'"{t}"[tiab]' for c in C.conditions() for t in C.search_terms(c["name"], c["code"])
+                                 if " " in t or len(t) >= 8}))
 META_QUERY = ('(meta-analysis[pt] OR systematic review[pt] OR "systematic review"[ti] OR "meta-analysis"[ti]) AND '
-              '("limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb difference"[tiab] OR "limb differences"[tiab] '
+              '(' + COND_TERMS + ' OR "limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb difference"[tiab] OR "limb differences"[tiab] '
               'OR "limb defects"[tiab] OR "upper limb anomalies"[tiab] OR "congenital hand"[tiab] OR polydactyly[tiab] OR syndactyly[tiab] '
               'OR "Poland syndrome"[tiab] OR "Poland sequence"[tiab] OR symbrachydactyly[tiab] OR brachydactyly[tiab] OR ectrodactyly[tiab] OR "split hand"[tiab] '
               'OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR "radial longitudinal deficiency"[tiab] OR "radial club hand"[tiab] '
               'OR "fibular deficiency"[tiab] OR "tibial deficiency"[tiab] OR "amniotic band"[tiab] OR "Adams-Oliver"[tiab] OR "Holt-Oram"[tiab] '
               'OR "thrombocytopenia-absent radius"[tiab] OR "thalidomide embryopathy"[tiab] OR dysmelia[tiab])')
-meta_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(META_QUERY)}&retmode=json&retmax=1000"))["esearchresult"]["idlist"]
+meta_ids = epost_ids(META_QUERY, retmax=1000)   # posted: the query is longer than a URL allows
 print(f"systematic-review query: {len(meta_ids)} PubMed records")
 for i in range(0, len(meta_ids), 50):
     batch = meta_ids[i:i + 50]
@@ -396,12 +409,12 @@ for i in range(0, len(meta_ids), 50):
         for c in codes: seed[pmid]["codes"].add(c)
 
 # ─── 6. Causes and risk factors of our conditions (PubMed, fixed title-level query, thalidomide excluded: covered by section 4) ──
-CAUSES_QUERY = ('("limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb defects"[tiab] OR "limb malformations"[tiab] '
+CAUSES_QUERY = ('(' + COND_TERMS + ' OR "limb reduction"[tiab] OR "limb deficiency"[tiab] OR "limb deficiencies"[tiab] OR "limb defects"[tiab] OR "limb malformations"[tiab] '
                 'OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR polydactyly[tiab] OR syndactyly[tiab] OR symbrachydactyly[tiab] '
                 'OR "Poland syndrome"[tiab] OR "amniotic band"[tiab] OR "transverse limb"[tiab]) AND '
                 '(etiology[ti] OR aetiology[ti] OR causes[ti] OR "risk factor"[ti] OR "risk factors"[ti] OR teratogen*[ti] OR maternal[ti] OR exposure[ti] '
                 'OR environmental[ti] OR pesticide*[ti] OR cluster*[ti] OR "vascular disruption"[ti]) NOT thalidomide[ti]')
-causes_ids = json.loads(eget(f"{E}/esearch.fcgi?db=pubmed&term={urllib.parse.quote(CAUSES_QUERY)}&retmode=json&retmax=2000"))["esearchresult"]["idlist"]
+causes_ids = epost_ids(CAUSES_QUERY, retmax=2000)
 print(f"causes query: {len(causes_ids)} PubMed records")
 for i in range(0, len(causes_ids), 50):
     batch = causes_ids[i:i + 50]

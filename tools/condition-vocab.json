@@ -1,0 +1,1171 @@
+{
+ "built": "2026-09-23",
+ "source": "Orphanet terms and synonyms (tools/orphanet-hierarchy.json), one pattern per phrase",
+ "note": "Generated. The bibliography builder applies its hand-written VOCAB first and these rules only for codes no hand-written rule names. Edit build-bibliography.py, not this file.",
+ "rules": [
+  {
+   "pattern": "\\bAdams[\\s-]+Oliver[\\s-]+syndromes?\\b",
+   "code": "974",
+   "from": "Adams-Oliver syndrome",
+   "card": "Adams-Oliver syndrome"
+  },
+  {
+   "pattern": "\\bAplasia[\\s-]+cutis[\\s-]+congenita[\\s-]+with[\\s-]+distal[\\s-]+limb[\\s-]+anomaliess?\\b",
+   "code": "974",
+   "from": "Aplasia cutis congenita with distal limb anomalies",
+   "card": "Adams-Oliver syndrome"
+  },
+  {
+   "pattern": "\\bAplasia[\\s-]+cutis[\\s-]+congenita[\\s-]+with[\\s-]+terminal[\\s-]+transverse[\\s-]+limb[\\s-]+defectss?\\b",
+   "code": "974",
+   "from": "Aplasia cutis congenita with terminal transverse limb defects",
+   "card": "Adams-Oliver syndrome"
+  },
+  {
+   "pattern": "\\bscalp[\\s-]+defects[\\s-]+with[\\s-]+distal[\\s-]+limb[\\s-]+anomaliess?\\b",
+   "code": "974",
+   "from": "scalp defects with distal limb anomalies",
+   "card": "Adams-Oliver syndrome"
+  },
+  {
+   "pattern": "\\bscalp[\\s-]+defects[\\s-]+with[\\s-]+distal[\\s-]+limb[\\s-]+reduction[\\s-]+anomaliess?\\b",
+   "code": "974",
+   "from": "scalp defects with distal limb reduction anomalies",
+   "card": "Adams-Oliver syndrome"
+  },
+  {
+   "pattern": "\\bamelia[\\s-]+of[\\s-]+upper[\\s-]+limbs?\\b",
+   "code": "294967",
+   "from": "amelia of upper limb",
+   "card": "Amelia > Isolated amelia of upper limb"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+upper[\\s-]+limbs?\\b",
+   "code": "294967",
+   "from": "congenital absence of upper limb",
+   "card": "Amelia > Isolated amelia of upper limb"
+  },
+  {
+   "pattern": "\\bamelia[\\s-]+of[\\s-]+lower[\\s-]+limbs?\\b",
+   "code": "294969",
+   "from": "amelia of lower limb",
+   "card": "Amelia > Isolated amelia of lower limb"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+lower[\\s-]+limbs?\\b",
+   "code": "294969",
+   "from": "congenital absence of lower limb",
+   "card": "Amelia > Isolated amelia of lower limb"
+  },
+  {
+   "pattern": "\\btetra[\\s-]+amelias?\\b",
+   "code": "294971",
+   "from": "tetra-amelia",
+   "card": "Amelia > Isolated tetra-amelia"
+  },
+  {
+   "pattern": "\\btotal[\\s-]+amelias?\\b",
+   "code": "294971",
+   "from": "total amelia",
+   "card": "Amelia > Isolated tetra-amelia"
+  },
+  {
+   "pattern": "\\bAmelia[\\s-]+of[\\s-]+the[\\s-]+upper[\\s-]+limbs?\\b",
+   "code": "294967",
+   "from": "Amelia of the upper limb",
+   "card": "Amelia of the upper limb"
+  },
+  {
+   "pattern": "\\bAmelia[\\s-]+of[\\s-]+the[\\s-]+lower[\\s-]+limbs?\\b",
+   "code": "294969",
+   "from": "Amelia of the lower limb",
+   "card": "Amelia of the lower limb"
+  },
+  {
+   "pattern": "\\bAmniotic[\\s-]+band[\\s-]+syndromes?\\b",
+   "code": "295000",
+   "from": "Amniotic band syndrome",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bAmniotic[\\s-]+band[\\s-]+sequences?\\b",
+   "code": "295000",
+   "from": "Amniotic band sequence",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bconstriction[\\s-]+ring[\\s-]+syndromes?\\b",
+   "code": "295000",
+   "from": "constriction ring syndrome",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bring[\\s-]+constrictionss?\\b",
+   "code": "295000",
+   "from": "ring constrictions",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bConstriction[\\s-]+band[\\s-]+syndromes?\\b",
+   "code": "295000",
+   "from": "Constriction band syndrome",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bStreeter[\\s-]+dysplasias?\\b",
+   "code": "295000",
+   "from": "Streeter dysplasia",
+   "card": "Amniotic band syndrome"
+  },
+  {
+   "pattern": "\\bCenani[\\s-]+Lenz[\\s-]+syndromes?\\b",
+   "code": "3258",
+   "from": "Cenani-Lenz syndrome",
+   "card": "Cenani-Lenz syndrome"
+  },
+  {
+   "pattern": "\\bCenani[\\s-]+syndactylys?\\b",
+   "code": "3258",
+   "from": "Cenani syndactyly",
+   "card": "Cenani-Lenz syndrome"
+  },
+  {
+   "pattern": "\\bCenani[\\s-]+Lenz[\\s-]+syndactylys?\\b",
+   "code": "3258",
+   "from": "Cenani-Lenz syndactyly",
+   "card": "Cenani-Lenz syndrome"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+7s?\\b",
+   "code": "3258",
+   "from": "Syndactyly type 7",
+   "card": "Cenani-Lenz syndrome"
+  },
+  {
+   "pattern": "\\bCrossed[\\s-]+polysyndactylys?\\b",
+   "code": "2935",
+   "from": "Crossed polysyndactyly",
+   "card": "Crossed polysyndactyly"
+  },
+  {
+   "pattern": "\\bEctrodactylys?\\b",
+   "code": "2440",
+   "from": "Ectrodactyly",
+   "card": "Ectrodactyly (SHFM)"
+  },
+  {
+   "pattern": "\\bsplit[\\s-]+hand[\\s-]+split[\\s-]+foot[\\s-]+malformations?\\b",
+   "code": "2440",
+   "from": "split hand-split foot malformation",
+   "card": "Ectrodactyly (SHFM)"
+  },
+  {
+   "pattern": "\\bSplit[\\s-]+hand[\\s-]+foot[\\s-]+malformations?\\b",
+   "code": "2440",
+   "from": "Split hand foot malformation",
+   "card": "Ectrodactyly (SHFM)"
+  },
+  {
+   "pattern": "\\bFibular[\\s-]+hemimelias?\\b",
+   "code": "93323",
+   "from": "Fibular hemimelia",
+   "card": "Fibular hemimelia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+longitudinal[\\s-]+deficiency[\\s-]+of[\\s-]+the[\\s-]+fibulas?\\b",
+   "code": "93323",
+   "from": "congenital longitudinal deficiency of the fibula",
+   "card": "Fibular hemimelia"
+  },
+  {
+   "pattern": "\\bfibular[\\s-]+deficiencys?\\b",
+   "code": "93323",
+   "from": "fibular deficiency",
+   "card": "Fibular hemimelia"
+  },
+  {
+   "pattern": "\\bfibular[\\s-]+longitudinal[\\s-]+meromelias?\\b",
+   "code": "93323",
+   "from": "fibular longitudinal meromelia",
+   "card": "Fibular hemimelia"
+  },
+  {
+   "pattern": "\\bHolt[\\s-]+Oram[\\s-]+syndromes?\\b",
+   "code": "392",
+   "from": "Holt-Oram syndrome",
+   "card": "Holt-Oram syndrome"
+  },
+  {
+   "pattern": "\\bAtriodigital[\\s-]+dysplasia[\\s-]+type[\\s-]+1s?\\b",
+   "code": "392",
+   "from": "Atriodigital dysplasia type 1",
+   "card": "Holt-Oram syndrome"
+  },
+  {
+   "pattern": "\\bHeart[\\s-]+hand[\\s-]+syndrome[\\s-]+type[\\s-]+1s?\\b",
+   "code": "392",
+   "from": "Heart-hand syndrome type 1",
+   "card": "Holt-Oram syndrome"
+  },
+  {
+   "pattern": "\\bMicrogastria–limb[\\s-]+reductions?\\b",
+   "code": "2538",
+   "from": "Microgastria–limb reduction",
+   "card": "Microgastria–limb reduction"
+  },
+  {
+   "pattern": "\\bMicrogastria[\\s-]+limb[\\s-]+reduction[\\s-]+defect[\\s-]+syndromes?\\b",
+   "code": "2538",
+   "from": "Microgastria-limb reduction defect syndrome",
+   "card": "Microgastria–limb reduction"
+  },
+  {
+   "pattern": "\\bPhocomelia,[\\s-]+Schinzel[\\s-]+types?\\b",
+   "code": "2879",
+   "from": "Phocomelia, Schinzel type",
+   "card": "Phocomelia"
+  },
+  {
+   "pattern": "\\bAl[\\s-]+Awadi[\\s-]+Raas[\\s-]+Rothschild[\\s-]+syndromes?\\b",
+   "code": "2879",
+   "from": "Al Awadi-Raas-Rothschild syndrome",
+   "card": "Phocomelia"
+  },
+  {
+   "pattern": "\\bAplasia/hypoplasia[\\s-]+of[\\s-]+limbs[\\s-]+and[\\s-]+pelviss?\\b",
+   "code": "2879",
+   "from": "Aplasia/hypoplasia of limbs and pelvis",
+   "card": "Phocomelia"
+  },
+  {
+   "pattern": "\\babsence[\\s-]+of[\\s-]+ulna[\\s-]+and[\\s-]+fibulas?\\b",
+   "code": "2879",
+   "from": "absence of ulna and fibula",
+   "card": "Phocomelia"
+  },
+  {
+   "pattern": "\\bPoland[\\s-]+syndromes?\\b",
+   "code": "2911",
+   "from": "Poland syndrome",
+   "card": "Poland syndrome"
+  },
+  {
+   "pattern": "\\bPoland[\\s-]+anomalys?\\b",
+   "code": "2911",
+   "from": "Poland anomaly",
+   "card": "Poland syndrome"
+  },
+  {
+   "pattern": "\\bPoland[\\s-]+sequences?\\b",
+   "code": "2911",
+   "from": "Poland sequence",
+   "card": "Poland syndrome"
+  },
+  {
+   "pattern": "\\bpreaxial[\\s-]+polydactylys?\\b",
+   "code": "498464",
+   "from": "preaxial polydactyly",
+   "card": "Polydactyly > Non-syndromic preaxial polydactyly"
+  },
+  {
+   "pattern": "\\bPolydactyly[\\s-]+of[\\s-]+a[\\s-]+triphalangeal[\\s-]+thumbs?\\b",
+   "code": "93336",
+   "from": "Polydactyly of a triphalangeal thumb",
+   "card": "Polydactyly > Polydactyly of a triphalangeal thumb"
+  },
+  {
+   "pattern": "\\bPreaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+2s?\\b",
+   "code": "93336",
+   "from": "Preaxial polydactyly type 2",
+   "card": "Polydactyly > Polydactyly of a triphalangeal thumb"
+  },
+  {
+   "pattern": "\\bPolydactyly[\\s-]+of[\\s-]+an[\\s-]+index[\\s-]+fingers?\\b",
+   "code": "93337",
+   "from": "Polydactyly of an index finger",
+   "card": "Polydactyly > Polydactyly of an index finger"
+  },
+  {
+   "pattern": "\\bPreaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+3s?\\b",
+   "code": "93337",
+   "from": "Preaxial polydactyly type 3",
+   "card": "Polydactyly > Polydactyly of an index finger"
+  },
+  {
+   "pattern": "\\bPolysyndactylys?\\b",
+   "code": "93338",
+   "from": "Polysyndactyly",
+   "card": "Polydactyly > Polysyndactyly"
+  },
+  {
+   "pattern": "\\bPreaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+4s?\\b",
+   "code": "93338",
+   "from": "Preaxial polydactyly type 4",
+   "card": "Polydactyly > Polysyndactyly"
+  },
+  {
+   "pattern": "\\bPolydactyly[\\s-]+of[\\s-]+a[\\s-]+biphalangeal[\\s-]+thumb[\\s-]+and/or[\\s-]+halluxs?\\b",
+   "code": "93339",
+   "from": "Polydactyly of a biphalangeal thumb and/or hallux",
+   "card": "Polydactyly > Polydactyly of a biphalangeal thumb and/or hallux"
+  },
+  {
+   "pattern": "\\bPreaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+1s?\\b",
+   "code": "93339",
+   "from": "Preaxial polydactyly type 1",
+   "card": "Polydactyly > Polydactyly of a biphalangeal thumb and/or hallux"
+  },
+  {
+   "pattern": "\\bpostaxial[\\s-]+polydactylys?\\b",
+   "code": "498467",
+   "from": "postaxial polydactyly",
+   "card": "Polydactyly > Non-syndromic postaxial polydactyly"
+  },
+  {
+   "pattern": "\\bPostaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+As?\\b",
+   "code": "93334",
+   "from": "Postaxial polydactyly type A",
+   "card": "Polydactyly > Postaxial polydactyly type A"
+  },
+  {
+   "pattern": "\\bPostaxial[\\s-]+polydactyly[\\s-]+type[\\s-]+Bs?\\b",
+   "code": "93335",
+   "from": "Postaxial polydactyly type B",
+   "card": "Polydactyly > Postaxial polydactyly type B"
+  },
+  {
+   "pattern": "\\bcomplex[\\s-]+polydactylys?\\b",
+   "code": "498470",
+   "from": "complex polydactyly",
+   "card": "Polydactyly > Non-syndromic complex polydactyly"
+  },
+  {
+   "pattern": "\\bCentral[\\s-]+polydactylys?\\b",
+   "code": "295004",
+   "from": "Central polydactyly",
+   "card": "Polydactyly > Central polydactyly"
+  },
+  {
+   "pattern": "\\bMesoaxial[\\s-]+polydactylys?\\b",
+   "code": "295004",
+   "from": "Mesoaxial polydactyly",
+   "card": "Polydactyly > Central polydactyly"
+  },
+  {
+   "pattern": "\\bMirror[\\s-]+image[\\s-]+polydactylys?\\b",
+   "code": "498494",
+   "from": "Mirror-image polydactyly",
+   "card": "Polydactyly > Mirror-image polydactyly"
+  },
+  {
+   "pattern": "\\bRadial[\\s-]+aplasias?\\b",
+   "code": "93321",
+   "from": "Radial aplasia",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bradial[\\s-]+hemimelias?\\b",
+   "code": "93321",
+   "from": "radial hemimelia",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+longitudinal[\\s-]+deficiency[\\s-]+of[\\s-]+the[\\s-]+radiuss?\\b",
+   "code": "93321",
+   "from": "congenital longitudinal deficiency of the radius",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bradial[\\s-]+club[\\s-]+hands?\\b",
+   "code": "93321",
+   "from": "radial club hand",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bradial[\\s-]+longitidinal[\\s-]+meromelias?\\b",
+   "code": "93321",
+   "from": "radial longitidinal meromelia",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bradial[\\s-]+ray[\\s-]+agenesiss?\\b",
+   "code": "93321",
+   "from": "radial ray agenesis",
+   "card": "Radial aplasia"
+  },
+  {
+   "pattern": "\\bRoberts[\\s-]+syndromes?\\b",
+   "code": "3103",
+   "from": "Roberts syndrome",
+   "card": "Roberts syndrome"
+  },
+  {
+   "pattern": "\\bPseudothalidomide[\\s-]+syndromes?\\b",
+   "code": "3103",
+   "from": "Pseudothalidomide syndrome",
+   "card": "Roberts syndrome"
+  },
+  {
+   "pattern": "\\bRoberts[\\s-]+SC[\\s-]+phocomelia[\\s-]+syndromes?\\b",
+   "code": "3103",
+   "from": "Roberts-SC phocomelia syndrome",
+   "card": "Roberts syndrome"
+  },
+  {
+   "pattern": "\\bSC[\\s-]+phocomelias?\\b",
+   "code": "3103",
+   "from": "SC phocomelia",
+   "card": "Roberts syndrome"
+  },
+  {
+   "pattern": "\\bSC[\\s-]+pseudothalidomide[\\s-]+syndromes?\\b",
+   "code": "3103",
+   "from": "SC pseudothalidomide syndrome",
+   "card": "Roberts syndrome"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+8s?\\b",
+   "code": "2498",
+   "from": "Syndactyly type 8",
+   "card": "Syndactyly > Syndactyly type 8"
+  },
+  {
+   "pattern": "\\bFusion[\\s-]+of[\\s-]+metacarpals[\\s-]+4[\\s-]+and[\\s-]+5s?\\b",
+   "code": "2498",
+   "from": "Fusion of metacarpals 4 and 5",
+   "card": "Syndactyly > Syndactyly type 8"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1s?\\b",
+   "code": "93402",
+   "from": "Syndactyly type 1",
+   "card": "Syndactyly > Syndactyly type 1"
+  },
+  {
+   "pattern": "\\bZygodactyly[\\s-]+type[\\s-]+1s?\\b",
+   "code": "295187",
+   "from": "Zygodactyly type 1",
+   "card": "Syndactyly > Zygodactyly type 1"
+  },
+  {
+   "pattern": "\\bSD1,[\\s-]+Weidenreich[\\s-]+types?\\b",
+   "code": "295187",
+   "from": "SD1, Weidenreich type",
+   "card": "Syndactyly > Zygodactyly type 1"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1,[\\s-]+Weidenreich[\\s-]+types?\\b",
+   "code": "295187",
+   "from": "Syndactyly type 1, Weidenreich type",
+   "card": "Syndactyly > Zygodactyly type 1"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1as?\\b",
+   "code": "295187",
+   "from": "Syndactyly type 1a",
+   "card": "Syndactyly > Zygodactyly type 1"
+  },
+  {
+   "pattern": "\\bZygodactyly,[\\s-]+Weidenreich[\\s-]+types?\\b",
+   "code": "295187",
+   "from": "Zygodactyly, Weidenreich type",
+   "card": "Syndactyly > Zygodactyly type 1"
+  },
+  {
+   "pattern": "\\bZygodactyly[\\s-]+type[\\s-]+2s?\\b",
+   "code": "295189",
+   "from": "Zygodactyly type 2",
+   "card": "Syndactyly > Zygodactyly type 2"
+  },
+  {
+   "pattern": "\\bSD1,[\\s-]+Lueken[\\s-]+types?\\b",
+   "code": "295189",
+   "from": "SD1, Lueken type",
+   "card": "Syndactyly > Zygodactyly type 2"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1,[\\s-]+Lueken[\\s-]+types?\\b",
+   "code": "295189",
+   "from": "Syndactyly type 1, Lueken type",
+   "card": "Syndactyly > Zygodactyly type 2"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1bs?\\b",
+   "code": "295189",
+   "from": "Syndactyly type 1b",
+   "card": "Syndactyly > Zygodactyly type 2"
+  },
+  {
+   "pattern": "\\bZygodactyly,[\\s-]+Lueken[\\s-]+types?\\b",
+   "code": "295189",
+   "from": "Zygodactyly, Lueken type",
+   "card": "Syndactyly > Zygodactyly type 2"
+  },
+  {
+   "pattern": "\\bZygodactyly[\\s-]+type[\\s-]+3s?\\b",
+   "code": "295191",
+   "from": "Zygodactyly type 3",
+   "card": "Syndactyly > Zygodactyly type 3"
+  },
+  {
+   "pattern": "\\bSD1,[\\s-]+Montagu[\\s-]+types?\\b",
+   "code": "295191",
+   "from": "SD1, Montagu type",
+   "card": "Syndactyly > Zygodactyly type 3"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1,[\\s-]+Montagu[\\s-]+types?\\b",
+   "code": "295191",
+   "from": "Syndactyly type 1, Montagu type",
+   "card": "Syndactyly > Zygodactyly type 3"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1cs?\\b",
+   "code": "295191",
+   "from": "Syndactyly type 1c",
+   "card": "Syndactyly > Zygodactyly type 3"
+  },
+  {
+   "pattern": "\\bZygodactyly,[\\s-]+Montagu[\\s-]+types?\\b",
+   "code": "295191",
+   "from": "Zygodactyly, Montagu type",
+   "card": "Syndactyly > Zygodactyly type 3"
+  },
+  {
+   "pattern": "\\bZygodactyly[\\s-]+type[\\s-]+4s?\\b",
+   "code": "295193",
+   "from": "Zygodactyly type 4",
+   "card": "Syndactyly > Zygodactyly type 4"
+  },
+  {
+   "pattern": "\\bSD1,[\\s-]+Castilla[\\s-]+types?\\b",
+   "code": "295193",
+   "from": "SD1, Castilla type",
+   "card": "Syndactyly > Zygodactyly type 4"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1,[\\s-]+Castilla[\\s-]+types?\\b",
+   "code": "295193",
+   "from": "Syndactyly type 1, Castilla type",
+   "card": "Syndactyly > Zygodactyly type 4"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+1ds?\\b",
+   "code": "295193",
+   "from": "Syndactyly type 1d",
+   "card": "Syndactyly > Zygodactyly type 4"
+  },
+  {
+   "pattern": "\\bZygodactyly,[\\s-]+Castilla[\\s-]+types?\\b",
+   "code": "295193",
+   "from": "Zygodactyly, Castilla type",
+   "card": "Syndactyly > Zygodactyly type 4"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+2s?\\b",
+   "code": "93403",
+   "from": "Syndactyly type 2",
+   "card": "Syndactyly > Syndactyly type 2"
+  },
+  {
+   "pattern": "\\bSynpolydactylys?\\b",
+   "code": "93403",
+   "from": "Synpolydactyly",
+   "card": "Syndactyly > Syndactyly type 2"
+  },
+  {
+   "pattern": "\\bSynpolydactyly[\\s-]+type[\\s-]+1s?\\b",
+   "code": "295195",
+   "from": "Synpolydactyly type 1",
+   "card": "Syndactyly > Synpolydactyly type 1"
+  },
+  {
+   "pattern": "\\bSD2,[\\s-]+Vordingborg[\\s-]+types?\\b",
+   "code": "295195",
+   "from": "SD2, Vordingborg type",
+   "card": "Syndactyly > Synpolydactyly type 1"
+  },
+  {
+   "pattern": "\\bSPD,[\\s-]+Vordingborg[\\s-]+types?\\b",
+   "code": "295195",
+   "from": "SPD, Vordingborg type",
+   "card": "Syndactyly > Synpolydactyly type 1"
+  },
+  {
+   "pattern": "\\bSynpolydactyly,[\\s-]+Vordingborg[\\s-]+types?\\b",
+   "code": "295195",
+   "from": "Synpolydactyly, Vordingborg type",
+   "card": "Syndactyly > Synpolydactyly type 1"
+  },
+  {
+   "pattern": "\\bSynpolydactyly[\\s-]+type[\\s-]+2s?\\b",
+   "code": "295197",
+   "from": "Synpolydactyly type 2",
+   "card": "Syndactyly > Synpolydactyly type 2"
+  },
+  {
+   "pattern": "\\bSD2,[\\s-]+Debeer[\\s-]+types?\\b",
+   "code": "295197",
+   "from": "SD2, Debeer type",
+   "card": "Syndactyly > Synpolydactyly type 2"
+  },
+  {
+   "pattern": "\\bSPD,[\\s-]+Debeer[\\s-]+types?\\b",
+   "code": "295197",
+   "from": "SPD, Debeer type",
+   "card": "Syndactyly > Synpolydactyly type 2"
+  },
+  {
+   "pattern": "\\bSynpolydactyly,[\\s-]+Debeer[\\s-]+types?\\b",
+   "code": "295197",
+   "from": "Synpolydactyly, Debeer type",
+   "card": "Syndactyly > Synpolydactyly type 2"
+  },
+  {
+   "pattern": "\\bSynpolydactyly[\\s-]+type[\\s-]+3s?\\b",
+   "code": "295199",
+   "from": "Synpolydactyly type 3",
+   "card": "Syndactyly > Synpolydactyly type 3"
+  },
+  {
+   "pattern": "\\bSD2,[\\s-]+Malik[\\s-]+types?\\b",
+   "code": "295199",
+   "from": "SD2, Malik type",
+   "card": "Syndactyly > Synpolydactyly type 3"
+  },
+  {
+   "pattern": "\\bSPD,[\\s-]+Malik[\\s-]+types?\\b",
+   "code": "295199",
+   "from": "SPD, Malik type",
+   "card": "Syndactyly > Synpolydactyly type 3"
+  },
+  {
+   "pattern": "\\bSynpolydactyly,[\\s-]+Malik[\\s-]+types?\\b",
+   "code": "295199",
+   "from": "Synpolydactyly, Malik type",
+   "card": "Syndactyly > Synpolydactyly type 3"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+3s?\\b",
+   "code": "93404",
+   "from": "Syndactyly type 3",
+   "card": "Syndactyly > Syndactyly type 3"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+of[\\s-]+fingers[\\s-]+4[\\s-]+and[\\s-]+5s?\\b",
+   "code": "93404",
+   "from": "Syndactyly of fingers 4 and 5",
+   "card": "Syndactyly > Syndactyly type 3"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+4s?\\b",
+   "code": "93405",
+   "from": "Syndactyly type 4",
+   "card": "Syndactyly > Syndactyly type 4"
+  },
+  {
+   "pattern": "\\bPolysyndactyly,[\\s-]+Haas[\\s-]+types?\\b",
+   "code": "93405",
+   "from": "Polysyndactyly, Haas type",
+   "card": "Syndactyly > Syndactyly type 4"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+5s?\\b",
+   "code": "93406",
+   "from": "Syndactyly type 5",
+   "card": "Syndactyly > Syndactyly type 5"
+  },
+  {
+   "pattern": "\\bPostaxial[\\s-]+syndactyly[\\s-]+with[\\s-]+metacarpal[\\s-]+synostosiss?\\b",
+   "code": "93406",
+   "from": "Postaxial syndactyly with metacarpal synostosis",
+   "card": "Syndactyly > Syndactyly type 5"
+  },
+  {
+   "pattern": "\\bMesoaxial[\\s-]+synostotic[\\s-]+syndactyly[\\s-]+with[\\s-]+phalangeal[\\s-]+reductions?\\b",
+   "code": "157801",
+   "from": "Mesoaxial synostotic syndactyly with phalangeal reduction",
+   "card": "Syndactyly > Mesoaxial synostotic syndactyly with phalangeal reduction"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+9s?\\b",
+   "code": "157801",
+   "from": "Syndactyly type 9",
+   "card": "Syndactyly > Mesoaxial synostotic syndactyly with phalangeal reduction"
+  },
+  {
+   "pattern": "\\bSyndactyly,[\\s-]+Malik[\\s-]+Percin[\\s-]+types?\\b",
+   "code": "157801",
+   "from": "Syndactyly, Malik-Percin type",
+   "card": "Syndactyly > Mesoaxial synostotic syndactyly with phalangeal reduction"
+  },
+  {
+   "pattern": "\\bSyndactyly[\\s-]+type[\\s-]+6s?\\b",
+   "code": "295012",
+   "from": "Syndactyly type 6",
+   "card": "Syndactyly > Syndactyly type 6"
+  },
+  {
+   "pattern": "\\bMitten[\\s-]+hands?\\b",
+   "code": "295012",
+   "from": "Mitten hand",
+   "card": "Syndactyly > Syndactyly type 6"
+  },
+  {
+   "pattern": "\\bSyndactyly,[\\s-]+mitten[\\s-]+types?\\b",
+   "code": "295012",
+   "from": "Syndactyly, mitten type",
+   "card": "Syndactyly > Syndactyly type 6"
+  },
+  {
+   "pattern": "\\bUnilateral[\\s-]+syndactyly[\\s-]+of[\\s-]+digits[\\s-]+2[\\s-]+5s?\\b",
+   "code": "295012",
+   "from": "Unilateral syndactyly of digits 2-5",
+   "card": "Syndactyly > Syndactyly type 6"
+  },
+  {
+   "pattern": "\\bTerminal[\\s-]+transverse[\\s-]+limb[\\s-]+defects?\\b",
+   "code": "498461",
+   "from": "Terminal transverse limb defect",
+   "card": "Terminal transverse limb defect"
+  },
+  {
+   "pattern": "\\bacheiropodias?\\b",
+   "code": "931",
+   "from": "acheiropodia",
+   "card": "Terminal transverse limb defect > Isolated acheiropodia"
+  },
+  {
+   "pattern": "\\bacheiropodys?\\b",
+   "code": "931",
+   "from": "acheiropody",
+   "card": "Terminal transverse limb defect > Isolated acheiropodia"
+  },
+  {
+   "pattern": "\\babsence/hypoplasia[\\s-]+of[\\s-]+fingers[\\s-]+excluding[\\s-]+thumb,[\\s-]+unilaterals?\\b",
+   "code": "973",
+   "from": "absence/hypoplasia of fingers excluding thumb, unilateral",
+   "card": "Terminal transverse limb defect > Isolated absence/hypoplasia of fingers excluding thumb, unilateral"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+adactyly[\\s-]+of[\\s-]+hand,[\\s-]+unilaterals?\\b",
+   "code": "973",
+   "from": "congenital adactyly of hand, unilateral",
+   "card": "Terminal transverse limb defect > Isolated absence/hypoplasia of fingers excluding thumb, unilateral"
+  },
+  {
+   "pattern": "\\bdigits[\\s-]+2[\\s-]+5[\\s-]+hypodactyly,[\\s-]+unilaterals?\\b",
+   "code": "973",
+   "from": "digits 2-5 hypodactyly, unilateral",
+   "card": "Terminal transverse limb defect > Isolated absence/hypoplasia of fingers excluding thumb, unilateral"
+  },
+  {
+   "pattern": "\\bdigits[\\s-]+2[\\s-]+5[\\s-]+oligodactyly,[\\s-]+unilaterals?\\b",
+   "code": "973",
+   "from": "digits 2-5 oligodactyly, unilateral",
+   "card": "Terminal transverse limb defect > Isolated absence/hypoplasia of fingers excluding thumb, unilateral"
+  },
+  {
+   "pattern": "\\bacheirias?\\b",
+   "code": "294983",
+   "from": "acheiria",
+   "card": "Terminal transverse limb defect > Isolated acheiria"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+hands?\\b",
+   "code": "294983",
+   "from": "congenital absence of hand",
+   "card": "Terminal transverse limb defect > Isolated acheiria"
+  },
+  {
+   "pattern": "\\bapodias?\\b",
+   "code": "294986",
+   "from": "apodia",
+   "card": "Terminal transverse limb defect > Isolated apodia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+foots?\\b",
+   "code": "294986",
+   "from": "congenital absence of foot",
+   "card": "Terminal transverse limb defect > Isolated apodia"
+  },
+  {
+   "pattern": "\\bcomplete[\\s-]+hemimelias?\\b",
+   "code": "498491",
+   "from": "complete hemimelia",
+   "card": "Terminal transverse limb defect > Non-syndromic complete hemimelia"
+  },
+  {
+   "pattern": "\\babsence[\\s-]+of[\\s-]+both[\\s-]+forearm[\\s-]+and[\\s-]+hands?\\b",
+   "code": "294979",
+   "from": "absence of both forearm and hand",
+   "card": "Terminal transverse limb defect > Isolated absence of both forearm and hand"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+radio[\\s-]+ulnar[\\s-]+terminal[\\s-]+transverse[\\s-]+meromelias?\\b",
+   "code": "294979",
+   "from": "congenital radio-ulnar terminal transverse meromelia",
+   "card": "Terminal transverse limb defect > Isolated absence of both forearm and hand"
+  },
+  {
+   "pattern": "\\babsence[\\s-]+of[\\s-]+both[\\s-]+lower[\\s-]+leg[\\s-]+and[\\s-]+foots?\\b",
+   "code": "294981",
+   "from": "absence of both lower leg and foot",
+   "card": "Terminal transverse limb defect > Isolated absence of both lower leg and foot"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+tibiofibular[\\s-]+terminal[\\s-]+transverse[\\s-]+meromelias?\\b",
+   "code": "294981",
+   "from": "congenital tibiofibular terminal transverse meromelia",
+   "card": "Terminal transverse limb defect > Isolated absence of both lower leg and foot"
+  },
+  {
+   "pattern": "\\bTetra[\\s-]+amelias?\\b",
+   "code": "3301",
+   "from": "Tetra-amelia",
+   "card": "Tetra-amelia"
+  },
+  {
+   "pattern": "\\bTetraamelia[\\s-]+multiple[\\s-]+malformations[\\s-]+syndromes?\\b",
+   "code": "3301",
+   "from": "Tetraamelia-multiple malformations syndrome",
+   "card": "Tetra-amelia"
+  },
+  {
+   "pattern": "\\bPAPPA[\\s-]+syndromes?\\b",
+   "code": "3301",
+   "from": "PAPPA syndrome",
+   "card": "Tetra-amelia"
+  },
+  {
+   "pattern": "\\bZimmer[\\s-]+phocomelias?\\b",
+   "code": "3301",
+   "from": "Zimmer phocomelia",
+   "card": "Tetra-amelia"
+  },
+  {
+   "pattern": "\\bThrombocytopenia[\\s-]+absent[\\s-]+radiuss?\\b",
+   "code": "3320",
+   "from": "Thrombocytopenia-absent radius",
+   "card": "Thrombocytopenia-absent radius (TAR)"
+  },
+  {
+   "pattern": "\\bThrombocytopenia[\\s-]+absent[\\s-]+radius[\\s-]+syndromes?\\b",
+   "code": "3320",
+   "from": "Thrombocytopenia-absent radius syndrome",
+   "card": "Thrombocytopenia-absent radius (TAR)"
+  },
+  {
+   "pattern": "\\bTAR[\\s-]+syndromes?\\b",
+   "code": "3320",
+   "from": "TAR syndrome",
+   "card": "Thrombocytopenia-absent radius (TAR)"
+  },
+  {
+   "pattern": "\\bTibial[\\s-]+aplasia–ectrodactylys?\\b",
+   "code": "3329",
+   "from": "Tibial aplasia–ectrodactyly",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bTibial[\\s-]+aplasia[\\s-]+ectrodactyly[\\s-]+syndromes?\\b",
+   "code": "3329",
+   "from": "Tibial aplasia-ectrodactyly syndrome",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bAplasia[\\s-]+of[\\s-]+tibia[\\s-]+with[\\s-]+split[\\s-]+hand/split[\\s-]+foot[\\s-]+deformitys?\\b",
+   "code": "3329",
+   "from": "Aplasia of tibia with split-hand/split-foot deformity",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bSHFLD[\\s-]+syndromes?\\b",
+   "code": "3329",
+   "from": "SHFLD syndrome",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bSHFM[\\s-]+associated[\\s-]+with[\\s-]+aplasia[\\s-]+of[\\s-]+long[\\s-]+boness?\\b",
+   "code": "3329",
+   "from": "SHFM associated with aplasia of long bones",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bSplit[\\s-]+hand/foot[\\s-]+malformation[\\s-]+with[\\s-]+long[\\s-]+bone[\\s-]+deficiencys?\\b",
+   "code": "3329",
+   "from": "Split hand/foot malformation with long bone deficiency",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bSplit[\\s-]+hand/foot[\\s-]+malformation[\\s-]+associated[\\s-]+with[\\s-]+aplasia[\\s-]+of[\\s-]+long[\\s-]+boness?\\b",
+   "code": "3329",
+   "from": "Split-hand/foot malformation associated with aplasia of long bones",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bTibial[\\s-]+hemimelia[\\s-]+with[\\s-]+split[\\s-]+hand/foot[\\s-]+malformations?\\b",
+   "code": "3329",
+   "from": "Tibial hemimelia with split hand/foot malformation",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bTibial[\\s-]+hemimelia[\\s-]+ectrodactyly[\\s-]+syndromes?\\b",
+   "code": "3329",
+   "from": "Tibial hemimelia-ectrodactyly syndrome",
+   "card": "Tibial aplasia–ectrodactyly"
+  },
+  {
+   "pattern": "\\bTibial[\\s-]+hemimelias?\\b",
+   "code": "93322",
+   "from": "Tibial hemimelia",
+   "card": "Tibial hemimelia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+tibias?\\b",
+   "code": "93322",
+   "from": "congenital absence of tibia",
+   "card": "Tibial hemimelia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+aplasia[\\s-]+and[\\s-]+dysplasia[\\s-]+of[\\s-]+the[\\s-]+tibia[\\s-]+with[\\s-]+intact[\\s-]+fibulas?\\b",
+   "code": "93322",
+   "from": "congenital aplasia and dysplasia of the tibia with intact fibula",
+   "card": "Tibial hemimelia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+longitudinal[\\s-]+deficiency[\\s-]+of[\\s-]+the[\\s-]+tibias?\\b",
+   "code": "93322",
+   "from": "congenital longitudinal deficiency of the tibia",
+   "card": "Tibial hemimelia"
+  },
+  {
+   "pattern": "\\btibial[\\s-]+longitudinal[\\s-]+meromelias?\\b",
+   "code": "93322",
+   "from": "tibial longitudinal meromelia",
+   "card": "Tibial hemimelia"
+  },
+  {
+   "pattern": "\\bUlnar[\\s-]+hemimelias?\\b",
+   "code": "93320",
+   "from": "Ulnar hemimelia",
+   "card": "Ulnar hemimelia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+longitudinal[\\s-]+deficiency[\\s-]+of[\\s-]+the[\\s-]+ulnas?\\b",
+   "code": "93320",
+   "from": "congenital longitudinal deficiency of the ulna",
+   "card": "Ulnar hemimelia"
+  },
+  {
+   "pattern": "\\bulnar[\\s-]+clubhands?\\b",
+   "code": "93320",
+   "from": "ulnar clubhand",
+   "card": "Ulnar hemimelia"
+  },
+  {
+   "pattern": "\\bulnar[\\s-]+deficiency[\\s-]+of[\\s-]+forearms?\\b",
+   "code": "93320",
+   "from": "ulnar deficiency of forearm",
+   "card": "Ulnar hemimelia"
+  },
+  {
+   "pattern": "\\bulnar[\\s-]+longitudinal[\\s-]+meromelias?\\b",
+   "code": "93320",
+   "from": "ulnar longitudinal meromelia",
+   "card": "Ulnar hemimelia"
+  },
+  {
+   "pattern": "\\bIntercalary[\\s-]+limb[\\s-]+defects?\\b",
+   "code": "294927",
+   "from": "Intercalary limb defect",
+   "card": "Intercalary limb defect"
+  },
+  {
+   "pattern": "\\bintercalary[\\s-]+limb[\\s-]+defectss?\\b",
+   "code": "294927",
+   "from": "intercalary limb defects",
+   "card": "Intercalary limb defect"
+  },
+  {
+   "pattern": "\\bintercalary[\\s-]+meromelias?\\b",
+   "code": "294927",
+   "from": "intercalary meromelia",
+   "card": "Intercalary limb defect"
+  },
+  {
+   "pattern": "\\bfemoral[\\s-]+agenesis/hypoplasias?\\b",
+   "code": "1987",
+   "from": "femoral agenesis/hypoplasia",
+   "card": "Intercalary limb defect > Isolated femoral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+femoral[\\s-]+deficiencys?\\b",
+   "code": "1987",
+   "from": "congenital femoral deficiency",
+   "card": "Intercalary limb defect > Isolated femoral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+short[\\s-]+femurs?\\b",
+   "code": "1987",
+   "from": "congenital short femur",
+   "card": "Intercalary limb defect > Isolated femoral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bfemoral[\\s-]+intercalary[\\s-]+meromelias?\\b",
+   "code": "1987",
+   "from": "femoral intercalary meromelia",
+   "card": "Intercalary limb defect > Isolated femoral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bhumeral[\\s-]+agenesis/hypoplasias?\\b",
+   "code": "294973",
+   "from": "humeral agenesis/hypoplasia",
+   "card": "Intercalary limb defect > Isolated humeral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence[\\s-]+of[\\s-]+humeruss?\\b",
+   "code": "294973",
+   "from": "congenital absence of humerus",
+   "card": "Intercalary limb defect > Isolated humeral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+humeral[\\s-]+deficiencys?\\b",
+   "code": "294973",
+   "from": "congenital humeral deficiency",
+   "card": "Intercalary limb defect > Isolated humeral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+hypoplasia[\\s-]+of[\\s-]+humeruss?\\b",
+   "code": "294973",
+   "from": "congenital hypoplasia of humerus",
+   "card": "Intercalary limb defect > Isolated humeral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\bhumeral[\\s-]+intercalary[\\s-]+meromelias?\\b",
+   "code": "294973",
+   "from": "humeral intercalary meromelia",
+   "card": "Intercalary limb defect > Isolated humeral agenesis/hypoplasia"
+  },
+  {
+   "pattern": "\\babsence[\\s-]+of[\\s-]+upper[\\s-]+arm[\\s-]+and[\\s-]+forearm[\\s-]+with[\\s-]+hand[\\s-]+presents?\\b",
+   "code": "294975",
+   "from": "absence of upper arm and forearm with hand present",
+   "card": "Intercalary limb defect > Isolated absence of upper arm and forearm with hand present"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+humero[\\s-]+radio[\\s-]+ulnar[\\s-]+intercalary[\\s-]+transverse[\\s-]+meromelias?\\b",
+   "code": "294975",
+   "from": "congenital humero-radio-ulnar intercalary transverse meromelia",
+   "card": "Intercalary limb defect > Isolated absence of upper arm and forearm with hand present"
+  },
+  {
+   "pattern": "\\babsence[\\s-]+of[\\s-]+thigh[\\s-]+and[\\s-]+lower[\\s-]+leg[\\s-]+with[\\s-]+foot[\\s-]+presents?\\b",
+   "code": "294977",
+   "from": "absence of thigh and lower leg with foot present",
+   "card": "Intercalary limb defect > Isolated absence of thigh and lower leg with foot present"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+femoro[\\s-]+tibio[\\s-]+fibular[\\s-]+intercalary[\\s-]+transverse[\\s-]+meromelias?\\b",
+   "code": "294977",
+   "from": "congenital femoro-tibio-fibular intercalary transverse meromelia",
+   "card": "Intercalary limb defect > Isolated absence of thigh and lower leg with foot present"
+  },
+  {
+   "pattern": "\\bproximal[\\s-]+femoral[\\s-]+focal[\\s-]+deficiencys?\\b",
+   "code": "633228",
+   "from": "proximal femoral focal deficiency",
+   "card": "Intercalary limb defect > Isolated proximal femoral focal deficiency"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+proximal[\\s-]+femoral[\\s-]+deficiencys?\\b",
+   "code": "633228",
+   "from": "congenital proximal femoral deficiency",
+   "card": "Intercalary limb defect > Isolated proximal femoral focal deficiency"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+femoral[\\s-]+bifurcations?\\b",
+   "code": "667589",
+   "from": "congenital femoral bifurcation",
+   "card": "Intercalary limb defect > Isolated congenital femoral bifurcation"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+distal[\\s-]+femoral[\\s-]+duplications?\\b",
+   "code": "667589",
+   "from": "congenital distal femoral duplication",
+   "card": "Intercalary limb defect > Isolated congenital femoral bifurcation"
+  },
+  {
+   "pattern": "\\bLongitudinal[\\s-]+limb[\\s-]+defects?\\b",
+   "code": "498457",
+   "from": "Longitudinal limb defect",
+   "card": "Longitudinal limb defect"
+  },
+  {
+   "pattern": "\\blongitudinal[\\s-]+meromelias?\\b",
+   "code": "2130",
+   "from": "longitudinal meromelia",
+   "card": "Longitudinal limb defect > Non-syndromic hemimelia"
+  },
+  {
+   "pattern": "\\bulnar[\\s-]+hemimelias?\\b",
+   "code": "93320",
+   "from": "ulnar hemimelia",
+   "card": "Longitudinal limb defect > Isolated ulnar hemimelia"
+  },
+  {
+   "pattern": "\\btibial[\\s-]+hemimelias?\\b",
+   "code": "93322",
+   "from": "tibial hemimelia",
+   "card": "Longitudinal limb defect > Isolated tibial hemimelia"
+  },
+  {
+   "pattern": "\\bfibular[\\s-]+hemimelias?\\b",
+   "code": "93323",
+   "from": "fibular hemimelia",
+   "card": "Longitudinal limb defect > Isolated fibular hemimelia"
+  },
+  {
+   "pattern": "\\bhypoplasia[\\s-]+of[\\s-]+thumbs?\\b",
+   "code": "294988",
+   "from": "hypoplasia of thumb",
+   "card": "Longitudinal limb defect > Isolated hypoplasia of thumb"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+absence/hypoplasia[\\s-]+of[\\s-]+thumbs?\\b",
+   "code": "294988",
+   "from": "congenital absence/hypoplasia of thumb",
+   "card": "Longitudinal limb defect > Isolated hypoplasia of thumb"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+thumb[\\s-]+hypodactylys?\\b",
+   "code": "294988",
+   "from": "congenital thumb hypodactyly",
+   "card": "Longitudinal limb defect > Isolated hypoplasia of thumb"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+thumb[\\s-]+oligodactylys?\\b",
+   "code": "294988",
+   "from": "congenital thumb oligodactyly",
+   "card": "Longitudinal limb defect > Isolated hypoplasia of thumb"
+  },
+  {
+   "pattern": "\\bHyperphalangys?\\b",
+   "code": "295002",
+   "from": "Hyperphalangy",
+   "card": "Hyperphalangy"
+  },
+  {
+   "pattern": "\\bcongenital[\\s-]+supernumerary[\\s-]+phalangess?\\b",
+   "code": "295002",
+   "from": "congenital supernumerary phalanges",
+   "card": "Hyperphalangy"
+  },
+  {
+   "pattern": "\\bSupernumerary[\\s-]+phalanxs?\\b",
+   "code": "295002",
+   "from": "Supernumerary phalanx",
+   "card": "Hyperphalangy"
+  }
+ ]
+}

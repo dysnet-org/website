@@ -400,7 +400,7 @@ def head(title, desc, path, is_home=False, og=None, extra_ld=None, dates=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#2a0d47">
 <title>{full}</title>
-<meta name="description" content="{desc}">
+<meta name="description" content="{desc}">{'<meta name="robots" content="noindex">' if path == "/404/" else ""}
 <link rel="canonical" href="{canonical}">
 <meta property="og:type" content="{"article" if is_article else "website"}">{f'<meta property="article:published_time" content="{dates["published"]}"><meta property="article:modified_time" content="{dates["modified"]}">' if is_article and dates.get("published") else ""}
 <meta property="og:site_name" content="DysNet">

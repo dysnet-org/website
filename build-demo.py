@@ -4519,8 +4519,8 @@ REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
         <p class="seat">European Disability Forum · European Day of Persons with Disabilities, Brussels</p>
         <h2 class="h3">DysNet is invited to Brussels to talk about living and working across borders</h2>
         <time datetime="2026-12-03">3 and 4 December 2026</time>
-        <p>Places in the room at the European Day of Persons with Disabilities go by invitation, and DysNet has been invited to the
-        2026 edition. Its theme is &ldquo;Travelling, living and working across borders: fair mobility and equal protection&rdquo;,
+        <p>Places in the room at the European Day of Persons with Disabilities go by invitation, and DysNet, which
+        <a href="#edpd-2024">took part in 2024</a>, has been invited again to the 2026 edition. Its theme is &ldquo;Travelling, living and working across borders: fair mobility and equal protection&rdquo;,
         and for two days it brings the European institutions together with disability organisations from across the Union to share
         knowledge, talks and ideas. The European Commission&rsquo;s Directorate-General for Justice and Consumers opens and closes it.</p>
         <p>The first day asks whether the assessment of a disability is a starting block or a hurdle, and how social protection and
@@ -4641,6 +4641,29 @@ REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
         Lisbon, Porto, The Hague and Brussels.</p>
         <p class="src">Written for EURORDIS ·
         <a href="https://www.eurordis.org/breaking-barriers-advancing-accessibility-and-inclusion-for-cerebral-palsy-in-milan/" target="_blank" rel="noopener external">Breaking barriers: advancing accessibility and inclusion for cerebral palsy in Milan ↗</a></p>
+      </article>
+      <article class="report" id="edpd-2024">
+        <p class="seat">European Disability Forum · European Day of Persons with Disabilities, Brussels</p>
+        <h2 class="h3">DysNet joins the European Day of Persons with Disabilities in Brussels</h2>
+        <time datetime="2024-11-28">28 and 29 November 2024</time>
+        <p>The European Commission hosted the 2024 edition with the European Disability Forum, and DysNet was in the room. The
+        conference came at a turning point, after the European elections and ahead of the new Commission&rsquo;s priorities, and it
+        looked five years ahead, to the second phase of the European Strategy for the rights of persons with disabilities.
+        Employment, independent living and transport were on the programme, with a special focus on accessible cities for the
+        fifteenth anniversary of the Access City Award. The same themes, employment and transport above all, came back at the
+        Forum&rsquo;s general assemblies in Vilnius and Ljubljana.</p>
+        <div class="grid cols-2" style="margin-top:var(--space-3)">
+          <figure class="photo"><picture><source srcset="/assets/img/edpd-2024-banner.webp" type="image/webp"><img src="/assets/img/edpd-2024-banner.jpg" alt="The conference banner: European Day of Persons with Disabilities, 28-29 November 2024, with the European Commission&rsquo;s logo" width="1000" height="750" loading="lazy" decoding="async"></picture>
+            <figcaption>The conference banner stood in the lobby on the first morning. Photo: DysNet.</figcaption></figure>
+          <figure class="photo"><picture><source srcset="/assets/img/edpd-2024-hall.webp" type="image/webp"><img src="/assets/img/edpd-2024-hall.jpg" alt="The conference hall seen from the delegates&rsquo; seats, with the speaker and a sign-language interpreter on the big screen" width="1000" height="750" loading="lazy" decoding="async"></picture>
+            <figcaption>DysNet followed the first day from the hall, on 28 November. Photo: DysNet.</figcaption></figure>
+          <figure class="photo"><picture><source srcset="/assets/img/edpd-2024-berlaymont.webp" type="image/webp"><img src="/assets/img/edpd-2024-berlaymont.jpg" alt="The Berlaymont building at night, with the European Commission&rsquo;s name on the wall" width="1000" height="750" loading="lazy" decoding="async"></picture>
+            <figcaption>The Berlaymont, seat of the European Commission, stays lit after the first day. Photo: DysNet.</figcaption></figure>
+          <figure class="photo"><picture><source srcset="/assets/img/edpd-2024-flags.webp" type="image/webp"><img src="/assets/img/edpd-2024-flags.jpg" alt="European Union flags in front of the curved glass fa&ccedil;ade of the Berlaymont" width="1000" height="750" loading="lazy" decoding="async"></picture>
+            <figcaption>Flags line the front of the Berlaymont on the second morning. Photo: DysNet.</figcaption></figure>
+        </div>
+        <p class="src">European Disability Forum ·
+        <a href="https://www.edf-feph.org/events-slug/european-day-of-persons-with-disabilities-2024/" target="_blank" rel="noopener external">European Day of Persons with Disabilities 2024 ↗</a></p>
       </article>
     </div>
 """

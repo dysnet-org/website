@@ -1777,6 +1777,48 @@ def registry_evidence_html():
 """
 
 
+def _code_label(code):
+    """A code's name for the registry pages: the card or form it belongs to, else Orphanet's own term,
+    so that a group the site has no card for (93458, the polydactyly, syndactyly and hyperphalangy
+    group the old harvest recorded) is named rather than printed as a number."""
+    code = str(code)
+    return REG_CODE_NAMES.get(code) or (HIER["nodes"].get(code) or {}).get("term") or code
+
+
+def _is_eurocat(r):
+    """EUROCAT membership as Orphanet's registry record states it, in the registry's own name."""
+    return "EUROCAT" in r["name"].upper()
+
+
+def reg_filters_html(regs):
+    """Country, condition and EUROCAT filters for the table of registries on Orphanet. Every option and
+    count is read from the rows themselves, so a registry added to the register appears in them."""
+    by_country = {}
+    for r in regs:
+        lab = COUNTRY_LABEL.get(r["country"], r["country"].title())
+        by_country[lab] = by_country.get(lab, 0) + 1
+    countries = "".join(f'<option value="{c}">{c} ({n})</option>' for c, n in sorted(by_country.items()))
+    codes = sorted({c for r in regs for k in ("direct", "children", "parent") for c in r[k]}, key=lambda c: _code_label(c).lower())
+    conditions = "".join(f'<option value="{c}">{_code_label(c)}</option>' for c in codes)
+    ec = sum(1 for r in regs if _is_eurocat(r))
+    unread = [c[0] for c in CONDITIONS if c[2] and str(c[2]) not in REG_CHECKED]
+    unread_txt = (", ".join(unread[:-1]) + " and " + unread[-1]) if len(unread) > 1 else "".join(unread)
+    note = (f'<p class="annex-note reg-filter-note">The condition list offers every code a registry on Orphanet is linked to. '
+            f'{"The registry search has not yet been read for " + unread_txt + ", so " + ("they are" if len(unread) > 1 else "it is") + " not in it." if unread else ""}</p>')
+    return f"""<div class="inc-controls reg-controls" id="reg-controls">
+      <label for="reg-country">Country</label>
+      <select id="reg-country"><option value="">Every country</option>{countries}</select>
+      <label for="reg-condition">Condition</label>
+      <select id="reg-condition"><option value="">Every condition</option>{conditions}</select>
+      <label class="reg-check" for="reg-classif"><input type="checkbox" id="reg-classif" disabled> include registries that list it only through a broader group</label>
+      <label for="reg-eurocat">EUROCAT</label>
+      <select id="reg-eurocat"><option value="">All registries</option><option value="1">EUROCAT members ({ec})</option><option value="0">Not in EUROCAT ({len(regs) - ec})</option></select>
+      <button type="button" id="reg-reset">Reset</button>
+      <p class="inc-count" aria-live="polite"><strong id="reg-n">{len(regs)}</strong> of {len(regs)} registries<span id="reg-hint"></span></p>
+    </div>
+    {note}"""
+
+
 def registries_html():
     names = _code_names()
     regs = ORPHA_REGS.get("registries", [])
@@ -1784,16 +1826,16 @@ def registries_html():
     for r in regs:
         by_country.setdefault(r["country"], []).append(r)
     total = len(regs); direct = sum(1 for r in regs if r["direct"])
-    eurocat = sum(1 for r in regs if "EUROCAT" in r["name"].upper())
+    eurocat = sum(1 for r in regs if _is_eurocat(r))
     rows = []
     for country in sorted(by_country):
         label = COUNTRY_LABEL.get(country, country.title())
         for r in sorted(by_country[country], key=lambda x: (not x["direct"], x["name"])):
             url = f"https://www.orpha.net/en/research-trials/registry/{r['id']}"
             if r["direct"]:
-                cov = "<strong>Coded for:</strong> " + ", ".join(names.get(c, c) for c in r["direct"])
+                cov = "<strong>Coded for:</strong> " + ", ".join(_code_label(c) for c in r["direct"])
                 if r["children"]:
-                    cov += "; specific forms of " + ", ".join(names.get(c, c) for c in r["children"])
+                    cov += "; specific forms of " + ", ".join(_code_label(c) for c in r["children"])
                 cls = ' class="reg-direct"'
             else:
                 n = len(r["parent"])
@@ -1810,7 +1852,9 @@ def registries_html():
                 web = f' · <a href="{net}" target="_blank" rel="noopener external">EUROCAT ↗</a>'
             else:
                 web = ""
-            rows.append(f'<tr{cls}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
+            data = (f' data-country="{label}" data-eurocat="{1 if _is_eurocat(r) else 0}" data-direct="{" ".join(r["direct"])}"'
+                    f' data-forms="{" ".join(r["children"])}" data-classif="{" ".join(r["parent"])}"')
+            rows.append(f'<tr{cls}{data}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
     fr = ORPHA_REGS.get("france_population_registries", {})
     fr_rows = "".join(f'<tr{" class=reg-direct" if not f.get("orphanet_id") else ""}><th scope="row">{f["region"]}</th><td><a href="{f["website"]}" target="_blank" rel="noopener external">{f["name"]}</a> · {f["host"]}{" · <strong>not yet on Orphanet</strong>" if not f.get("orphanet_id") else ""}</td><td>{f["created"]}</td><td>{f["births"]:,}{"*" if f.get("note") else ""}</td></tr>' for f in fr.get("registries", []))
     fr_block = f"""
@@ -1831,8 +1875,9 @@ def registries_html():
     <p class="eyebrow">Registries on Orphanet</p>
     <h2 class="h2">{total} registries already record our conditions.</h2>
     <p>Orphanet’s directory of patient registries, queried for each of the {len(names)} ORPHAcodes on this site (harvested {ORPHA_REGS.get("fetched", "")[:10]}). Two kinds of match: registries <strong>coded for</strong> one of our conditions, which are the {eurocat} congenital-anomaly registries of the <strong>EUROCAT</strong> network and their national equivalents, and registries that reach our conditions only <strong>by classification</strong>, as national rare-disease or rare-bone registries. None of them is dedicated to limb differences; this is the landscape the DysNet initiative sets out to complement, not to duplicate.</p>
+    {reg_filters_html(regs)}
     <div class="annex-wrap">
-      <table class="annex reg-table">
+      <table class="annex reg-table" id="reg-table">
         <thead><tr><th scope="col">Country</th><th scope="col">Registry (link to its Orphanet record)</th><th scope="col">How it relates to our conditions</th></tr></thead>
         <tbody>{"".join(rows)}</tbody>
       </table>

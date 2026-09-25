@@ -1041,6 +1041,13 @@ details.assoc:not([open]) + .assoc-foot { padding-top: 0; margin-top: -0.2rem; }
 .inc-controls button:hover { border-color: var(--dys-purple); }
 .inc-count { flex-basis: 100%; margin: 0; font-size: var(--text-small); color: var(--dys-muted); }
 .inc-count strong { color: var(--dys-ink); }
+/* the one control in the registries filters that is a sentence rather than a field name */
+.inc-controls label.reg-check { display: inline-flex; align-items: center; gap: 0.4rem; text-transform: none; letter-spacing: 0;
+  font-size: var(--text-small); font-weight: 600; color: var(--dys-ink); cursor: pointer; }
+.inc-controls label.reg-check:has(input:disabled) { color: var(--dys-muted); cursor: default; }
+.inc-count button { font: inherit; font-size: var(--text-small); padding: 0.2rem 0.7rem; margin-left: 0.3rem; border-radius: 999px;
+  border: 1px solid var(--dys-purple); background: #fff; color: var(--dys-purple-text); cursor: pointer; }
+.reg-filter-note { margin-top: 0; }
 table.annex.inc-table { min-width: 0; }
 table.annex.inc-table tbody tr:first-child th, table.annex.inc-table tbody tr:first-child td { background: transparent; }
 .inc-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }

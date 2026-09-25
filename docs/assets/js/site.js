@@ -647,6 +647,58 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   apply();
 })();
 
+/* ── Registries: country, condition and EUROCAT filters ─────────────── */
+(function () {
+  var table = document.getElementById("reg-table"), box = document.getElementById("reg-controls");
+  if (!table || !box) return;
+  var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+  var country = document.getElementById("reg-country"), cond = document.getElementById("reg-condition");
+  var classif = document.getElementById("reg-classif"), eurocat = document.getElementById("reg-eurocat");
+  var nEl = document.getElementById("reg-n"), hint = document.getElementById("reg-hint");
+  function has(tr, attr, code) { return (" " + (tr.getAttribute(attr) || "") + " ").indexOf(" " + code + " ") !== -1; }
+  // A condition is matched by the registries coded for it or for its specific forms; the ones that
+  // list it only through a broader group are many, so they join the result only when asked for.
+  function matches(tr, withClassif) {
+    var c = cond.value;
+    if (country.value && tr.getAttribute("data-country") !== country.value) return false;
+    if (eurocat.value !== "" && tr.getAttribute("data-eurocat") !== eurocat.value) return false;
+    if (!c) return true;
+    return has(tr, "data-direct", c) || has(tr, "data-forms", c) || (withClassif && has(tr, "data-classif", c));
+  }
+  function apply() {
+    classif.disabled = !cond.value;
+    if (!cond.value) classif.checked = false;
+    var shown = 0;
+    rows.forEach(function (tr) { var ok = matches(tr, classif.checked); tr.hidden = !ok; if (ok) shown++; });
+    nEl.textContent = shown;
+    hint.innerHTML = "";
+    if (!shown) {
+      var more = cond.value && !classif.checked ? rows.filter(function (tr) { return matches(tr, true); }).length : 0;
+      var name = cond.options[cond.selectedIndex].text;
+      if (more) {
+        hint.innerHTML = ". No registry here is coded for " + name + " itself; " + more + " list it through a broader group. " +
+          '<button type="button" id="reg-show-classif">Show them</button>';
+        document.getElementById("reg-show-classif").addEventListener("click", function () { classif.checked = true; apply(); });
+      } else {
+        hint.textContent = ". No registry matches these filters.";
+      }
+    }
+    writeFilterParams({ country: country.value, condition: cond.value, classif: classif.checked ? "1" : "", eurocat: eurocat.value });
+  }
+  // a filtered view can be linked: /knowledge/registries/?country=France&condition=2911&eurocat=1
+  var pre = filterParams();
+  if (pre.get("country")) country.value = pre.get("country");
+  if (pre.get("condition")) cond.value = pre.get("condition");
+  if (pre.get("eurocat") !== null) eurocat.value = pre.get("eurocat");
+  if (pre.get("classif") === "1") classif.checked = true;
+  [country, cond, eurocat].forEach(function (el) { el.addEventListener("change", apply); });
+  classif.addEventListener("change", apply);
+  document.getElementById("reg-reset").addEventListener("click", function () {
+    country.value = ""; cond.value = ""; eurocat.value = ""; classif.checked = false; apply();
+  });
+  apply();
+})();
+
 /* ── Bibliography: search + filters ────────────────────────────────── */
 (function () {
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");

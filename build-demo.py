@@ -2776,6 +2776,26 @@ def condition_codes_html(name, code, orpha_name):
     return f'<dl class="cond-codes">{cells}</dl>'
 
 
+def condition_search_text(name, desc, ref_code, orpha_name):
+    # What the search box at the top of the page matches on. A reader arrives with a name, a
+    # synonym, an ORPHAcode or an ICD code from a letter, and any of them should find the card.
+    # One function, because the registry matches on the same text through /data/conditions.json.
+    _icd = ICD.get(name) or {}
+    _node = HIER["nodes"].get(str(ref_code)) or {}
+    # The forms Orphanet files under this code no longer have cards of their own, so their names,
+    # synonyms and codes are matched here: a reader who types "acheiria" or "Haas" must still land
+    # on the card that documents it rather than on nothing.
+    _kids = SUBCONDITION_WORDS.get(str(ref_code), "")
+    return " ".join(filter(None, [
+        name, desc, orpha_name or "", _node.get("term") or "",
+        " ".join(_node.get("synonyms") or []), _kids,
+        f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
+        " ".join(e["code"] for e in (_icd.get("icd10") or [])),
+        " ".join(e["code"] for e in (_icd.get("icd11") or [])),
+        (OMT.get(name) or {}).get("diagnosis") or "",
+    ])).lower().replace('"', "")
+
+
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # the register's filters now travel in the address, so a card can point at its own slice of it
     # Deliberately broad. A code is assigned from a paper's title and its abstract, so this
@@ -2796,22 +2816,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # of their own that a family can skip in one glance; the footer is the reach of our own registers.
     chips = "".join(f'<span class="cond-chip">{FACET_SHORT[v]}</span>'
                     for v in limbs.split() + ctype.split() if v in FACET_SHORT)
-    # What the search box at the top of the page matches on. A reader arrives with a name, a
-    # synonym, an ORPHAcode or an ICD code from a letter, and any of them should find the card.
-    _icd = ICD.get(name) or {}
-    _node = HIER["nodes"].get(str(ref_code)) or {}
-    # The forms Orphanet files under this code no longer have cards of their own, so their names,
-    # synonyms and codes are matched here: a reader who types "acheiria" or "Haas" must still land
-    # on the card that documents it rather than on nothing.
-    _kids = SUBCONDITION_WORDS.get(str(ref_code), "")
-    haystack = " ".join(filter(None, [
-        name, desc, orpha_name or "", _node.get("term") or "",
-        " ".join(_node.get("synonyms") or []), _kids,
-        f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
-        " ".join(e["code"] for e in (_icd.get("icd10") or [])),
-        " ".join(e["code"] for e in (_icd.get("icd11") or [])),
-        (OMT.get(name) or {}).get("diagnosis") or "",
-    ])).lower().replace('"', "")
+    haystack = condition_search_text(name, desc, ref_code, orpha_name)
     foot = condition_registries_html(ref_code) + refs
     return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-search="{haystack}">'
             f'<h3 class="h4">{name}</h3>'
@@ -3047,6 +3052,40 @@ def prevalence_html():
     <h3 class="h4" style="margin-top:var(--space-4)">Sources of the prevalence figures</h3>
     <ol class="sources">{sources}</ol>
 """
+
+# The condition list as data, for the DysNet registry's condition question, which reads it live
+# (owner, 2026-09-24). Built from exactly what the cards are built from, so the page and the
+# registry cannot disagree: the same names, codes, forms and search text. Orphanet's names, codes
+# and ICD relations are Orphadata's (CC BY 4.0); the OMT placements are ours and provisional.
+def _conditions_payload():
+    def node_codes(n, key):
+        return [{"code": e["code"], "relation": e.get("relation", "")} for e in (n.get(key) or [])]
+    out = []
+    for name, desc, code, orpha_name, limbs, ctype, other, genetic in CONDITIONS:
+        ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
+        node = HIER["nodes"].get(str(code)) or {} if code else {}
+        icd = ICD.get(name) or {}
+        omt = OMT.get(name) or {}
+        subs = []
+        for sub_code, term in SUBCONDITIONS.get(str(code), []) if code else []:
+            m = HIER["nodes"].get(sub_code) or {}
+            subs.append({"orphaCode": int(sub_code), "term": term, "level": m.get("level"),
+                         "synonyms": m.get("synonyms") or [], "icd10": node_codes(m, "icd10"), "icd11": node_codes(m, "icd11")})
+        out.append({
+            "name": name, "description": desc, "orphaCode": code, "orphaLabel": orpha_name,
+            "orphaLevel": node.get("level"), "limbs": limbs.split(), "type": ctype.split(),
+            "other": other.split(), "genetic": genetic.split(),
+            "synonyms": node.get("synonyms") or [],
+            "icd10": [{"code": e["code"], "relation": e.get("relation", "")} for e in (icd.get("icd10") or [])],
+            "icd11": [{"code": e["code"], "relation": e.get("relation", "")} for e in (icd.get("icd11") or [])],
+            "omt": {k: omt.get(k) for k in ("group", "part", "axis", "diagnosis")} if omt.get("group") else None,
+            "search": condition_search_text(name, desc, ref_code, orpha_name),
+            "subconditions": subs,
+        })
+    return json.dumps({"version": 1, "page": "https://www.dysnet.org/knowledge/understanding-dysmelia/",
+                       "licence": "Orphanet names, codes and ICD relations: Orphadata, CC BY 4.0. OMT placements: DysNet, provisional.",
+                       "conditions": out}, ensure_ascii=False, separators=(",", ":"))
+
 
 PAGES["/knowledge/understanding-dysmelia/"] = {
     "title": "Understanding dysmelia",
@@ -5586,7 +5625,10 @@ def page_dates(path, new_html):
         except Exception: return ""
     # the cache-busting query changes on every asset build; a page that only carries a new hash
     # has not changed, and counting it as changed made all 22 pages claim the same date every day
-    strip = lambda t: re.sub(r"\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}", "", t)
+    # and the draft this is compared against is built without dates, so its JSON-LD has no
+    # datePublished/dateModified keys and no article:*_time tags at all: those go too, or no page
+    # ever matches its committed copy and every build dates every page today
+    strip = lambda t: re.sub(r', "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", t)
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
@@ -5618,6 +5660,7 @@ def build():
     for out_name, src_name in DATA_FILES.items():
         src = ROOT.parent / "tools" / src_name
         if src.exists(): shutil.copyfile(src, ROOT / "data" / out_name)
+    PAYLOADS["conditions.json"] = _conditions_payload()   # read live by the registry's condition question
     for name, payload in PAYLOADS.items():       # the registers' client data, fetched after first paint
         (ROOT / "data" / name).write_text(payload, encoding="utf-8")
     page_mod = {}

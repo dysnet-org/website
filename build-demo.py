@@ -1025,6 +1025,11 @@ def centres_html():
         verb = c.get("via_verb") or "named by"
         local = f'<p class="src">{c["name_local"]}</p>' if c.get("name_local") else ""
         note = f'<p class="entry-note">{CENTRE_NOTES[c["name"]]}</p>' if c["name"] in CENTRE_NOTES else ""
+        # a status an authority has given the centre (or refused it), stated with the decision it rests on
+        des = c.get("designation")
+        if des:
+            note += (f'<p class="entry-note">{des["text"]} <a href="{des["url"]}" target="_blank" rel="noopener external">'
+                     f'{des.get("source", "Source")} ↗</a></p>')
         out.append(f'<article class="entry"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
                    f'<p>{c["specialism"]}</p>{note}<p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
     return "".join(out)

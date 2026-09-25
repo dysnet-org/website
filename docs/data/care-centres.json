@@ -1,5 +1,5 @@
 {
- "built": "2026-09-13",
+ "built": "2026-09-25",
  "note": "Care centres shown on the landing map (register 4). Centres named on a member association's website (or visited by the board), including the dedicated children's hand clinics of the British Society for Surgery of the Hand directory that Reach points families to. In countries with no DysNet member association, a centre is listed only when its own institutional page (or, failing that, its published clinical series) states congenital limb difference as part of its scope; those entries carry via_verb \"verified from\" instead of \"named by\". URLs checked by curl; coordinates from OpenStreetMap Nominatim (display_name kept for audit). Raw harvest and exclusions: care-centres-harvest.json.",
  "centres": [
   {
@@ -939,34 +939,46 @@
    "label": "IREDE Foundation"
   },
   {
-   "name": "Sahlgrenska University Hospital, arm prosthetics and craniofacial units",
-   "name_local": "Sahlgrenska Universitetssjukhuset: Armprotesenheten och Gåskolan, Armprotescentrum, Ortopedkliniken, Specialistteamet för kraniofaciala missbildningar",
+   "name": "Sahlgrenska University Hospital, dysmelia teams",
+   "name_local": "Sahlgrenska Universitetssjukhuset: handkirurgi och Armprotescentrum (övre extremitet), barnortopedi vid Drottning Silvias barnsjukhus (nedre extremitet)",
    "city": "Göteborg",
    "country": "Sweden",
    "iso2": "SE",
-   "type": "Expert clinic",
-   "specialism": "Four units EX-Center works with: the arm-prosthetics unit and gait school, the arm-prosthetics centre, the orthopaedic clinic and the specialist team for craniofacial malformations.",
+   "type": "Hospital reference centre",
+   "specialism": "A team for dysmelia of the arm since the 1970s, with hand surgeons for every kind of surgery, microsurgery included, and occupational therapists and physiotherapists for advanced rehabilitation and orthoses; the arm-prosthetics centre fits arm prostheses and runs group training and family meetings. The paediatric orthopaedic section at Queen Silvia Children's Hospital treats legs and feet, limb lengthening included. EX-Center, which named the hospital, also works with its specialist team for craniofacial malformations.",
    "via": "Ex-Center",
    "via_url": "https://www.ex-center.org/web/samverkan/",
    "lat": 57.6816542,
    "lon": 11.9609871,
    "geocode_display_name": "Sahlgrenska Universitetssjukhuset, Per Dubbsgatan, Medicinareberget, Änggården, Centrum, Göteborg, Göteborgs Stad, Västra Götalands län, 413 46, Sverige",
-   "label": "Göteborg"
+   "label": "Göteborg",
+   "url": "https://www.sahlgrenska.se/patient/nationell-hogspecialiserad-vard/dysmeli/",
+   "designation": {
+    "text": "One of Sweden's four units for nationally highly specialised care of dysmelia, under the permit Socialstyrelsen's board granted on 18 September 2024, in force from 1 September 2025: every patient with dysmelia, whatever their age, is referred to one of the four for a multidisciplinary assessment, and advanced rehabilitation and complex prosthetics are provided there.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   },
   {
-   "name": "Treatment group for dysmelia and arm amputation (BEDA), Skåne University Hospital",
-   "name_local": "Behandlingsgruppen för Dysmeli och Armamputation (BEDA), Skånes Universitetssjukhus",
+   "name": "Dysmelia and arm prosthetics team, Skåne University Hospital",
+   "name_local": "Dysmeli- och armprotesteamet, Handkirurgi, Skånes universitetssjukhus (listed by EX-Center as BEDA, Behandlingsgruppen för Dysmeli och Armamputation)",
    "city": "Malmö",
    "country": "Sweden",
    "iso2": "SE",
    "type": "Expert clinic",
-   "specialism": "Treatment group for dysmelia and arm amputation at the university hospital, named by EX-Center among the clinics it works with.",
+   "specialism": "A team of Hand Surgery at Skåne University Hospital and Ottobock Care, with an occupational therapist, a hand surgeon, a social worker, an orthopaedic engineer and a physiotherapist, for people born with a different or missing hand or arm and for arm amputation later in life.",
    "via": "Ex-Center",
    "via_url": "https://www.ex-center.org/web/samverkan/",
    "lat": 55.5886141,
    "lon": 13.0021374,
    "geocode_display_name": "Skånes Universitetssjukhus, Upplandsgatan, Allmänna Sjukhuset, Innerstaden, Malmö, Malmö kommun, Skåne län, 214 28, Sverige",
-   "label": "Malmö"
+   "label": "Malmö",
+   "url": "https://vard.skane.se/skanes-universitetssjukhus-sus/mottagningar-och-avdelningar/handkirurgimottagning-rehabilitering/",
+   "designation": {
+    "text": "Not one of the four national units: Socialstyrelsen's board refused Region Skåne's application on 18 September 2024. From 1 September 2025 a patient with dysmelia is referred to one of the four for assessment and advanced care; the team remains for the rest.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   },
   {
    "name": "EX-Center, national knowledge and rehabilitation centre for multiple limb deficiencies",
@@ -986,51 +998,67 @@
    "label": "EX-Center"
   },
   {
-   "name": "Astrid Lindgren Children's Hospital, neuropaediatrics and paediatric orthopaedics",
-   "name_local": "Astrid Lindgrens Barnsjukhus: Neuropediatriska kliniken, Barnortopedi",
+   "name": "Astrid Lindgren Children's Hospital, Karolinska University Hospital: paediatric orthopaedics",
+   "name_local": "Karolinska Universitetssjukhuset, Astrid Lindgrens barnsjukhus: Barnortopedi, mottagning 2 Solna; Neuropediatriska kliniken",
    "city": "Stockholm",
    "country": "Sweden",
    "iso2": "SE",
-   "type": "Expert clinic",
-   "specialism": "Neuropaediatric clinic and paediatric orthopaedics of the children's hospital, named by EX-Center among the clinics it works with locally.",
-   "url": "https://www.karolinska.se/",
+   "type": "Hospital reference centre",
+   "specialism": "Karolinska holds Region Stockholm's permit, and the paediatric orthopaedic clinic in Solna carries it; Södersjukhuset shares the assignment. EX-Center, which named the hospital, also works with its neuropaediatric clinic.",
+   "url": "https://www.karolinska.se/vard/tema/tema-barn---astrid-lindgrens-barnsjukhus/hogspecialiserad-barnortopedi-barnmedicin/barnortopedi-mottagning-2-solna/dysmeli-nhv/",
    "via": "Ex-Center",
    "via_url": "https://www.ex-center.org/web/samverkan/",
    "lat": 59.3508017,
    "lon": 18.0333186,
    "geocode_display_name": "Karolinska universitetssjukhuset, Visionsgatan, Solna Kyrkby, Haga, Solna, Solna kommun, Stockholms län, 171 64, Sverige",
-   "label": "Stockholm"
+   "label": "Stockholm",
+   "designation": {
+    "text": "One of Sweden's four units for nationally highly specialised care of dysmelia, under the permit Socialstyrelsen's board granted on 18 September 2024, in force from 1 September 2025: every patient with dysmelia, whatever their age, is referred to one of the four for a multidisciplinary assessment, and advanced rehabilitation and complex prosthetics are provided there.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   },
   {
-   "name": "Hand surgery, Södersjukhuset",
-   "name_local": "Handkirurgen, Södersjukhuset",
+   "name": "Södersjukhuset, dysmelia team",
+   "name_local": "Södersjukhuset: NHV-uppdrag dysmeli (Handkirurgen)",
    "city": "Stockholm",
    "country": "Sweden",
    "iso2": "SE",
-   "type": "Expert clinic",
-   "specialism": "Hand surgery department, named by EX-Center among the clinics it works with locally.",
+   "type": "Hospital reference centre",
+   "specialism": "Shares Region Stockholm's assignment with Karolinska University Hospital. The team brings together orthopaedic surgeons, neurologists, hand surgeons, physiotherapists, occupational therapists and orthopaedic engineers; treatment often combines surgery, prostheses, orthoses made and fitted on site, and training the hand in play and daily activity. It works closely with the patient association for dysmelia, with meetings and courses for parents and children.",
    "via": "Ex-Center",
    "via_url": "https://www.ex-center.org/web/samverkan/",
    "lat": 59.3093206,
    "lon": 18.0558433,
    "geocode_display_name": "Södersjukhuset, Ringvägen, Södermalm, Södermalms stadsdelsområde, Stockholm, Stockholms kommun, Stockholms län, 118 67, Sverige",
-   "label": "Stockholm"
+   "label": "Stockholm",
+   "url": "https://www.sodersjukhuset.se/for-vardgivare-och-myndigheter/nationell-hogspecialiserad-vard/dysmeli/",
+   "designation": {
+    "text": "One of Sweden's four units for nationally highly specialised care of dysmelia, under the permit Socialstyrelsen's board granted on 18 September 2024, in force from 1 September 2025: every patient with dysmelia, whatever their age, is referred to one of the four for a multidisciplinary assessment, and advanced rehabilitation and complex prosthetics are provided there.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   },
   {
-   "name": "Dysmelia and Arm Prosthetics Unit, Örebro University Hospital",
-   "name_local": "Dysmeli- och Armprotesenheten, Universitetssjukhuset Örebro",
+   "name": "Dysmelia and Arm Prosthetics Centre, Örebro University Hospital",
+   "name_local": "Dysmeli- och armprotescentrum, Universitetssjukhuset Örebro",
    "city": "Örebro",
    "country": "Sweden",
    "iso2": "SE",
-   "type": "Expert clinic",
-   "specialism": "Dysmelia and arm-prosthetics unit of the university hospital, one of the clinics EX-Center works with for children and adults with limb deficiencies.",
-   "url": "https://www.regionorebrolan.se/uso/",
+   "type": "Hospital reference centre",
+   "specialism": "Takes patients from the whole country. Assessments are made by teams in which several professions see the patient together, most dysmelia operations are planned and performed at the hospital, and its orthopaedic workshop makes leg and hand prostheses; training, play and conversation support the patients, and its research studies how each intervention affects the chance of an independent life.",
+   "url": "https://www.regionorebrolan.se/dysmeli",
    "via": "Ex-Center",
    "via_url": "https://www.ex-center.org/web/samverkan/",
    "lat": 59.2754064,
    "lon": 15.227782,
    "geocode_display_name": "Universitetssjukhuset Örebro, Södra Grev Rosengatan, Norr, Örebro, Örebro kommun, Örebro län, 702 62, Sverige",
-   "label": "Örebro"
+   "label": "Örebro",
+   "designation": {
+    "text": "One of Sweden's four units for nationally highly specialised care of dysmelia, under the permit Socialstyrelsen's board granted on 18 September 2024, in force from 1 September 2025: every patient with dysmelia, whatever their age, is referred to one of the four for a multidisciplinary assessment, and advanced rehabilitation and complex prosthetics are provided there.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   },
   {
    "name": "Royal Aberdeen Children's Hospital",
@@ -1532,6 +1560,28 @@
    "via_url": "https://cure.org/hospitals/zimbabwe/",
    "via_verb": "verified from",
    "label": "CURE Zimbabwe"
+  },
+  {
+   "name": "Norrlands University Hospital, dysmelia unit",
+   "name_local": "Norrlands universitetssjukhus: nationell högspecialiserad vård, dysmeli",
+   "city": "Umeå",
+   "country": "Sweden",
+   "iso2": "SE",
+   "type": "Hospital reference centre",
+   "specialism": "Region Västerbotten's university hospital, which told Socialstyrelsen that the field matters to its future as a university hospital and to its advanced research in hand surgery. Its page describes dysmelia in the broad sense, from a missing part of a hand or foot to extra fingers or toes.",
+   "url": "https://regionvasterbotten.se/vara-sjukhus-och-halsocentraler/norrlands-universitetssjukhus/nationell-hogspecialiserad-vard/dysmeli",
+   "via": "Socialstyrelsen",
+   "via_url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+   "via_verb": "verified from",
+   "label": "Umeå",
+   "lat": 63.8172248,
+   "lon": 20.29956,
+   "geocode_display_name": "Norrlands universitetssjukhus, Akutvägen, Lilljansberget, Universitets- och sjukhusområdet, Umeå, Umeå kommun, Västerbottens län, 901 85, Sverige",
+   "designation": {
+    "text": "One of Sweden's four units for nationally highly specialised care of dysmelia, under the permit Socialstyrelsen's board granted on 18 September 2024, in force from 1 September 2025: every patient with dysmelia, whatever their age, is referred to one of the four for a multidisciplinary assessment, and advanced rehabilitation and complex prosthetics are provided there.",
+    "url": "https://www.socialstyrelsen.se/globalassets/sharepoint-dokument/dokument-webb/ovrigt/nationell-hogspecialiserad-vard-dysmeli-namndbeslut.pdf",
+    "source": "Socialstyrelsen, permit decision"
+   }
   }
  ]
 }

@@ -112,11 +112,15 @@ def run():
         notes.append(f"Bibliography: {len(zero)} card(s) have no paper yet (rebuild with --bibliography after the vocabulary changed): {zero}")
     # search: every card and every documented form is findable
     idx = json.loads((ROOT / "docs" / "search-index.json").read_text(encoding="utf-8"))
-    kw = next((p["keywords"] for p in idx if "understanding-dysmelia" in p["url"]), "").lower()
-    missing_kw = [n for n in names if n.lower() not in kw]
-    missing_kw += [t for kids in m.SUBCONDITIONS.values() for _d, t in kids if t.lower() not in kw]
+    rows = idx["entries"] if isinstance(idx, dict) else []
+    kinds = idx.get("kinds", []) if isinstance(idx, dict) else []
+    found = {(kinds[r[0]], r[2].lower()) for r in rows}
+    missing_kw = [n for n in names if ("Condition", n.lower()) not in found]
+    missing_kw += [t for kids in m.SUBCONDITIONS.values() for _d, t in kids if ("Form", t.lower()) not in found]
+    words = " ".join(r[4].lower() for r in rows if kinds[r[0]] == "Condition")
+    missing_kw += [f"ORPHA:{c}" for _n, c in coded if f"orpha:{c}" not in words]
     if missing_kw:
-        hard.append(f"search index keywords miss: {missing_kw}")
+        hard.append(f"the site search cannot find: {missing_kw}")
     # prose that names a condition by hand, page by page, so a renamed or removed card is reviewed there
     mention = {}
     for f in pages:

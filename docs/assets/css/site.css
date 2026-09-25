@@ -329,6 +329,13 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
 .search-results strong { display: block; color: var(--dys-ink); }
 .search-results span { font-size: var(--text-small); color: var(--dys-muted); }
 .search-empty { padding: var(--space-2) var(--space-3); color: var(--dys-muted); font-size: var(--text-small); }
+.search-results .search-kind { float: right; margin-left: var(--space-1); font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--dys-purple-text); background: var(--dys-purple-soft); padding: 0.1rem 0.45rem; border-radius: 999px; }
+.search-results .search-more a { color: var(--dys-purple-text); font-size: var(--text-small); font-weight: 600; }
+/* where a search result lands: clear of the sticky header, and outlined so the eye finds it */
+.card.cond[id], tr[id^="reg-"], article.entry[id], li[id^="member-"] { scroll-margin-top: 8rem; }
+.card.cond:target, article.entry:target, li[id^="member-"]:target { outline: 3px solid var(--dys-purple); outline-offset: 3px; }
+tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 
 /* ── "On this page" contents box ───────────────────────────────── */
 .onpage {

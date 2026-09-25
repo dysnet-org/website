@@ -448,7 +448,7 @@ def header_html(active):
 <div id="search-overlay" class="search-overlay" hidden>
   <div class="search-modal" role="dialog" aria-modal="true" aria-label="Search">
     <div class="search-row">
-      <input type="search" placeholder="Search the site…" aria-label="Search the site">
+      <input type="search" placeholder="A condition, an ORPHAcode, a registry, a centre…" aria-label="Search the site: conditions, ORPHAcodes and ICD codes, registries, care centres, associations, research teams and substances">
       <button type="button" class="search-close">ESC</button>
     </div>
     <ul class="search-results"></ul>
@@ -746,7 +746,8 @@ for _n, _d, _c, *_r in CONDITIONS:
     _desc = (HIER["conditions"].get(str(_c)) or {}).get("descendants") or []
     SUBCONDITIONS[str(_c)] = [(d, (HIER["nodes"].get(d) or {}).get("term") or d) for d in _desc]
 SUBCONDITION_WORDS = {
-    c: " ".join(f"{t} ORPHA:{d} {d} " + " ".join((HIER["nodes"].get(d) or {}).get("synonyms") or [])
+    c: " ".join(f"{t} ORPHA:{d} {d} " + " ".join((HIER["nodes"].get(d) or {}).get("synonyms") or []) + " "
+                + " ".join(e["code"] for ed in ("icd10", "icd11") for e in (HIER["nodes"].get(d) or {}).get(ed) or [])
                 for d, t in kids)
     for c, kids in SUBCONDITIONS.items() if kids}
 # Which card documents a code, for the registers that still carry the finer codes
@@ -880,6 +881,14 @@ for _what, _names in _LAG.items():
     if _names:
         print(f"WARNING: {len(_names)} card(s) with {_what}: {_names}. Run python3 tools/update-conditions.py")
 
+
+
+def _anchor(prefix, text):
+    """A stable id for an entry of a register, from its name, so the site search can link to it and a
+    link survives a rebuild: centre-, team-, member- and so on, then the name folded to a-z0-9."""
+    import unicodedata
+    t = unicodedata.normalize("NFKD", str(text)).encode("ascii", "ignore").decode().lower()
+    return prefix + "-" + (re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:70] or "x")
 
 
 MEMBERS = [
@@ -1030,7 +1039,7 @@ def centres_html():
         if des:
             note += (f'<p class="entry-note">{des["text"]} <a href="{des["url"]}" target="_blank" rel="noopener external">'
                      f'{des.get("source", "Source")} ↗</a></p>')
-        out.append(f'<article class="entry"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
+        out.append(f'<article class="entry" id="{_anchor("centre", c["name"])}"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
                    f'<p>{c["specialism"]}</p>{note}<p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
     return "".join(out)
 
@@ -1068,7 +1077,7 @@ def researchers_html():
         if t.get("address"): where.append(t["address"])
         if t.get("contact"): where.append(f'<a href="mailto:{t["contact"]}">{t["contact"]}</a>')
         where = f'<p class="src">{" · ".join(where)}</p>' if where else ""
-        out.append(f'<article class="entry"><h3>{t["institution"]} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
+        out.append(f'<article class="entry" id="{_anchor("team", t["institution"])}"><h3>{t["institution"]} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
                    f'<p>Authors on our bibliography: {", ".join(t["authors"])}. Most recent: <em>{rep["title"]}</em> ({rep["year"]}), {link}.</p>'
                    f'{where}<p class="bib-tags">{tags}</p></article>')
     return "".join(out)
@@ -1859,7 +1868,7 @@ def registries_html():
                 web = ""
             data = (f' data-country="{label}" data-eurocat="{1 if _is_eurocat(r) else 0}" data-direct="{" ".join(r["direct"])}"'
                     f' data-forms="{" ".join(r["children"])}" data-classif="{" ".join(r["parent"])}"')
-            rows.append(f'<tr{cls}{data}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
+            rows.append(f'<tr id="reg-{r["id"]}"{cls}{data}><th scope="row">{label}</th><td><a href="{url}" target="_blank" rel="noopener external">{r["name"]}</a>{web}{local}</td><td>{cov}</td></tr>')
     fr = ORPHA_REGS.get("france_population_registries", {})
     fr_rows = "".join(f'<tr{" class=reg-direct" if not f.get("orphanet_id") else ""}><th scope="row">{f["region"]}</th><td><a href="{f["website"]}" target="_blank" rel="noopener external">{f["name"]}</a> · {f["host"]}{" · <strong>not yet on Orphanet</strong>" if not f.get("orphanet_id") else ""}</td><td>{f["created"]}</td><td>{f["births"]:,}{"*" if f.get("note") else ""}</td></tr>' for f in fr.get("registries", []))
     fr_block = f"""
@@ -2846,6 +2855,13 @@ def condition_search_text(name, desc, ref_code, orpha_name):
     ])).lower().replace('"', "")
 
 
+def card_anchor(name, code):
+    """The code a card answers to and its anchor on the conditions page. A card with no code of its own
+    answers to the code the name table gives it: symbrachydactyly, ORPHA:1570."""
+    ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
+    return ref_code, (f"cond-{ref_code}" if ref_code else "cond-" + _slug_name(name))
+
+
 def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # the register's filters now travel in the address, so a card can point at its own slice of it
     # Deliberately broad. A code is assigned from a paper's title and its abstract, so this
@@ -2856,11 +2872,10 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # A card with no code of its own still has literature and coverage under the code the name table
     # gives its name: symbrachydactyly, under ORPHA:1570. Without this the thirteen papers tagged
     # 1570 were reachable from the bibliography's filter and from nowhere else.
-    ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
+    ref_code, anchor = card_anchor(name, code)
     n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
     refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references &rarr;</a>'
             if ref_code and n_refs >= 3 else "")
-    anchor = f"cond-{ref_code}" if ref_code else "cond-" + _slug_name(name)
     # Three layers, in the order the two readers need them: what it is, how it is coded, what we hold
     # on it. The plain sentence stays at the top and in the page's own voice; the codes sit in a block
     # of their own that a family can skip in one glance; the footer is the reach of our own registers.
@@ -5198,8 +5213,8 @@ def member_li(entry):
     give = (f'<div class="assoc-foot"><a class="btn btn-donate btn-sm" href="{support}" target="_blank" '
             f'rel="noopener external" aria-label="Support {name}">♥ Support them</a></div>') if support else ""
     if not rows:
-        return f'<li class="assoc-plain"><span>{name}</span>{give}</li>'
-    return (f'<li><details class="assoc"><summary>{name}</summary>'
+        return f'<li class="assoc-plain" id="{_anchor("member", name)}"><span>{name}</span>{give}</li>'
+    return (f'<li id="{_anchor("member", name)}"><details class="assoc"><summary>{name}</summary>'
             f'<div class="assoc-body">{"".join(rows)}</div></details>{give}</li>')
 
 PAGES["/about/members/"] = {
@@ -5665,6 +5680,49 @@ def redirect_html(new_path):
             f'<body><p>This page has moved to <a href="{new_path}">{url}</a>.</p></body></html>\n')
 
 
+def search_entries():
+    """What the site search finds: every page, and every entry of every register, each linked to the
+    card, row or entry itself. A reader arrives with a name, a synonym, an ORPHAcode, an ICD code, a
+    CAS number, a hospital or a city, and each should lead somewhere precise."""
+    out = []
+    def add(kind, url, title, desc, *words):
+        out.append({"kind": kind, "url": url, "title": title, "desc": (desc or "")[:150],
+                    "keywords": " ".join(w for w in words if w)})
+    for p, page in PAGES.items():
+        if p != "/404/":
+            add("Page", p, "Home" if p == "/" else page["title"], page["desc"])
+    cond_page = "/knowledge/understanding-dysmelia/"
+    for name, desc, code, orpha_name, *_ in CONDITIONS:
+        ref_code, anchor = card_anchor(name, code)
+        add("Condition", f"{cond_page}#{anchor}", name, desc[:1].upper() + desc[1:],
+            condition_search_text(name, desc, ref_code, orpha_name))
+        for d, term in SUBCONDITIONS.get(str(code), []):
+            n = HIER["nodes"].get(d) or {}
+            add("Form", f"{cond_page}#{anchor}", term, f"Documented in the card {name}",
+                f"ORPHA:{d} {d}", " ".join(n.get("synonyms") or []),
+                " ".join(e["code"] for ed in ("icd10", "icd11") for e in n.get(ed) or []))
+    for r in ORPHA_REGS.get("registries", []):
+        where = COUNTRY_LABEL.get(r["country"], r["country"].title())
+        add("Registry", f"/knowledge/registries/#reg-{r['id']}", r["name"],
+            f"Registry · {where}" + (" · EUROCAT member" if _is_eurocat(r) else ""), r.get("local"), where)
+    for c in CARE_CENTRES:
+        add("Care centre", f"/knowledge/care-centres/#{_anchor('centre', c['name'])}", c["name"],
+            f"{c['type']} · {c['city']}, {c['country']}", c.get("name_local"), c.get("city"), c.get("country"), c.get("specialism"))
+    for country, orgs in MEMBERS:
+        for o in orgs:
+            name = o[0] if isinstance(o, (list, tuple)) else o
+            add("Association", f"/about/members/#{_anchor('member', name)}", name, f"Member association · {country}", country)
+    for t in RESEARCHERS.get("teams", []):
+        add("Research team", f"/knowledge/researchers/#{_anchor('team', t['institution'])}", t["institution"],
+            f"Research team · {t['country'] or 'country not stated'} · {t['papers']} publications", t.get("country"), " ".join(t.get("authors") or []))
+    for e in TERA.get("entries", []):
+        lvl = TERA_LEVEL.get(e.get("level"), "")
+        add("Substance", "/knowledge/teratogens/?q=" + urllib.parse.quote(e["name"]), e["name"],
+            "Substance with effects on the unborn child" + (f" · {lvl}" if lvl else "") + (f" · CAS {e['cas']}" if e.get("cas") else ""),
+            e.get("cas"), e.get("ec"))
+    return out
+
+
 def page_dates(path, new_html):
     """datePublished = first commit of the page; dateModified = last commit, or today when this build changes the page."""
     import subprocess, datetime
@@ -5747,18 +5805,26 @@ def build():
     shutil.copyfile(ROOT / "404" / "index.html", ROOT / "404.html")
 
     # Search index for the ⌘K search (HDS Search.astro pattern)
-    cond_kw = " ".join([c[0] for c in CONDITIONS]
-                       + [t for kids in SUBCONDITIONS.values() for _d, t in kids]
-                       + [x for kids in SUBCONDITIONS.values() for d, _t in kids
-                          for x in (HIER["nodes"].get(d) or {}).get("synonyms") or []])
-    search_index = []
-    for p, page in PAGES.items():
-        if p == "/404/":
-            continue
-        kw = cond_kw if "understanding-dysmelia" in p else ""
-        search_index.append({"url": p, "title": "Home" if p == "/" else page["title"],
-                             "desc": page["desc"][:140], "keywords": kw})
-    (ROOT / "search-index.json").write_text(json.dumps(search_index, ensure_ascii=False), encoding="utf-8")
+    search_index = search_entries()
+    # every anchor a result points to must exist on the page it names, or the result opens that page
+    # at the top and the reader is left to look; and no two entries of a page may share an id
+    _missing = []
+    for path in sorted({x["url"].split("#")[0] for x in search_index if "#" in x["url"]}):
+        _html = (ROOT / path.strip("/") / "index.html").read_text(encoding="utf-8")
+        _ids = re.findall(r'\sid="([^"]+)"', _html)
+        _dupes = {i for i in _ids if _ids.count(i) > 1}
+        if _dupes:
+            raise SystemExit(f"duplicate ids on {path}: {sorted(_dupes)[:5]}")
+        _missing += [x["url"] for x in search_index if x["url"].startswith(path + "#") and x["url"].split("#", 1)[1] not in _ids]
+    if _missing:
+        raise SystemExit(f"search results point at anchors that do not exist: {_missing[:5]}")
+    # Written compactly: a kind table and one row per entry, [kind, url, title, desc, words]; a substance's
+    # url is left empty because the script builds it from the name (the register filters on ?q=).
+    _kinds = sorted({x["kind"] for x in search_index}, key=lambda k: ["Condition", "Form", "Page"].index(k) if k in ("Condition", "Form", "Page") else 9)
+    _rows = [[_kinds.index(x["kind"]), "" if x["kind"] == "Substance" else x["url"], x["title"],
+              x["desc"].replace("Substance with effects on the unborn child · ", "").replace("Substance with effects on the unborn child", ""),
+              x["keywords"]] for x in search_index]
+    (ROOT / "search-index.json").write_text(json.dumps({"kinds": _kinds, "entries": _rows}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     # sitemap.xml — demonstrates the SEO deliverable for the real launch
     urls = "\n".join(

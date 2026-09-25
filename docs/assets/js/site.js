@@ -6,6 +6,25 @@
   /* Path prefix when served from a GitHub Pages project URL; "" on www.dysnet.org. */
   var BASE = window.SITE_BASE || "";
 
+  /* ── Arriving on an anchor: land on the entry, not where it was before the page settled ── */
+  // The browser jumps to #cond-90025 as soon as the element exists, and the web fonts that load after it
+  // change the height of everything above, so a long page leaves the reader far from the entry a search
+  // result or a link promised. Once the fonts and the page have loaded, the jump is made again, unless
+  // the reader has already scrolled on their own.
+  if (location.hash.length > 1) {
+    var landed = false, moved = false;
+    window.addEventListener("wheel", function () { moved = true; }, { once: true, passive: true });
+    window.addEventListener("touchmove", function () { moved = true; }, { once: true, passive: true });
+    window.addEventListener("keydown", function () { moved = true; }, { once: true });
+    var reland = function () {
+      if (moved) return;
+      var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (el) { el.scrollIntoView({ block: "start" }); landed = true; }
+    };
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(reland);
+    window.addEventListener("load", reland);
+  }
+
   /* ── Site search (HDS Search.astro pattern, simplified) ─────────── */
   var overlay = document.getElementById("search-overlay");
   var trigger = document.getElementById("search-btn");
@@ -14,22 +33,36 @@
   // themselves on ?q=, and opening the overlay over them answered a question nobody asked.
   var qParam = new URLSearchParams(location.search).get("q");
   if (qParam && !document.querySelector("#bib-q, #tera-q, #cond-q")) setTimeout(function () { openSearch(qParam); }, 300);
-  var index = null;
+  var index = null, loading = null, lastQ = "";
+  // accents, case and punctuation around codes do not matter: "Pölydactyly", "orpha:2911", "Q71.3"
+  function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function load() {
+    if (index || loading) return loading;
+    loading = fetch(BASE + "/search-index.json").then(function (r) { return r.json(); }).then(function (d) {
+      index = d.entries.map(function (e) {
+        var kind = d.kinds[e[0]];
+        var url = e[1] || "/knowledge/teratogens/?q=" + encodeURIComponent(e[2]);
+        return { kind: kind, url: url, title: e[2], desc: kind === "Substance" ? "Substance" + (e[3] ? " · " + e[3] : "") : e[3],
+                 t: norm(e[2]), h: norm(e[2] + " " + e[3] + " " + e[4]) };
+      });
+      if (lastQ) search(lastQ);
+    });
+    return loading;
+  }
+  // the kinds a reader most often means come first when two results score alike
+  var KIND_W = { Condition: 9, Form: 7, Page: 6, Registry: 5, "Care centre": 5, Association: 5, "Research team": 3, Substance: 2 };
 
   function openSearch(preset) {
     if (!overlay) return;
     overlay.hidden = false;
     document.body.style.overflow = "hidden";
     var input = overlay.querySelector("input");
-    input.value = preset || "";
-    render([]);
+    input.value = typeof preset === "string" ? preset : "";
+    render([], "");
     input.focus();
-    if (preset) setTimeout(function () { input.dispatchEvent(new Event("input", { bubbles: true })); }, 50);
-    if (!index) {
-      fetch(BASE + "/search-index.json")
-        .then(function (r) { return r.json(); })
-        .then(function (d) { index = d; });
-    }
+    load();
+    if (input.value) search(input.value);
   }
   function closeSearch() {
     if (!overlay) return;
@@ -37,34 +70,54 @@
     document.body.style.overflow = "";
     if (trigger) trigger.focus();
   }
-  function render(hits) {
+  function more(q) {
+    // the two registers too large to list here answer the query themselves
+    var e = encodeURIComponent(q), h = esc(q);
+    return '<li class="search-more"><a href="' + BASE + '/knowledge/bibliography/?q=' + e + '">Search the bibliography for “' + h + '”</a></li>' +
+           '<li class="search-more"><a href="' + BASE + '/knowledge/teratogens/?q=' + e + '">Search the substances register for “' + h + '”</a></li>';
+  }
+  function render(hits, q) {
     var list = overlay.querySelector(".search-results");
-    if (!hits.length) {
-      list.innerHTML = '<li class="search-empty">Type to search the site — pages, registers, conditions.</li>';
+    if (!q) {
+      list.innerHTML = '<li class="search-empty">Type a condition, an ORPHAcode or ICD code, a registry, a care centre, an association or a substance.</li>';
       return;
     }
-    list.innerHTML = hits.slice(0, 8).map(function (h) {
-      return '<li><a href="' + BASE + h.url + '"><strong>' + h.title + "</strong><span>" + h.desc + "</span></a></li>";
+    if (!index) { list.innerHTML = '<li class="search-empty">Loading the index…</li>'; return; }
+    var rows = hits.slice(0, 12).map(function (h) {
+      return '<li><a href="' + BASE + h.url + '"><span class="search-kind">' + esc(h.kind) + "</span><strong>" + esc(h.title) +
+             "</strong><span>" + esc(h.desc) + "</span></a></li>";
     }).join("");
+    var none = hits.length ? "" : '<li class="search-empty">Nothing on the site matches “' + esc(q) + '”.</li>';
+    list.innerHTML = rows + none + (q.length >= 3 ? more(q) : "");
   }
   function search(q) {
-    if (!index || !q.trim()) { render([]); return; }
-    q = q.trim().toLowerCase();
-    var hits = index.filter(function (p) {
-      return (p.title + " " + p.desc + " " + (p.keywords || "")).toLowerCase().indexOf(q) !== -1;
+    lastQ = q;
+    var qn = norm(q).trim();
+    if (!index || qn.length < 2) { render([], qn.length < 2 ? "" : q.trim()); return; }
+    var tokens = qn.split(/\s+/);
+    var hits = index.filter(function (e) { return tokens.every(function (t) { return e.h.indexOf(t) !== -1; }); });
+    hits.forEach(function (e) {
+      var s = KIND_W[e.kind] || 0;
+      if (e.t === qn) s += 100;
+      else if (e.t.indexOf(qn) === 0) s += 60;
+      else if (e.t.indexOf(qn) !== -1) s += 40;
+      else if (tokens.every(function (t) { return e.t.indexOf(t) !== -1; })) s += 25;
+      if ((" " + e.h + " ").indexOf(" " + qn + " ") !== -1) s += 10;   // a whole code or word, not a fragment
+      e.s = s;
     });
-    var list = overlay.querySelector(".search-results");
-    if (!hits.length) {
-      list.innerHTML = '<li class="search-empty">No results for “' + q.replace(/[<>&]/g, "") + '”.</li>';
-      return;
-    }
-    render(hits);
+    hits.sort(function (a, b) { return b.s - a.s || a.title.length - b.title.length; });
+    render(hits, q.trim());
   }
   if (trigger && overlay) {
     trigger.addEventListener("click", openSearch);
     overlay.addEventListener("click", function (e) { if (e.target === overlay) closeSearch(); });
     overlay.querySelector(".search-close").addEventListener("click", closeSearch);
     overlay.querySelector("input").addEventListener("input", function (e) { search(e.target.value); });
+    overlay.querySelector("input").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { var a = overlay.querySelector(".search-results a"); if (a) { e.preventDefault(); a.click(); } }
+    });
+    // a result on the page already open only moves the view, so the overlay has to close itself
+    overlay.querySelector(".search-results").addEventListener("click", function (e) { if (e.target.closest("a")) closeSearch(); });
     document.addEventListener("keydown", function (e) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); openSearch(); }
       if (e.key === "Escape" && !overlay.hidden) closeSearch();

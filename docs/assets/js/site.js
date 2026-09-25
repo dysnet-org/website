@@ -33,9 +33,19 @@
   // themselves on ?q=, and opening the overlay over them answered a question nobody asked.
   var qParam = new URLSearchParams(location.search).get("q");
   if (qParam && !document.querySelector("#bib-q, #tera-q, #cond-q")) setTimeout(function () { openSearch(qParam); }, 300);
-  var index = null, loading = null, lastQ = "";
+  var index = null, loading = null, lastQ = "", sections = null;
   // accents, case and punctuation around codes do not matter: "Pölydactyly", "orpha:2911", "Q71.3"
-  function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  function norm(s) { return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+  // per-character folding keeps positions aligned, so a match found in the folded text can be shown in the original
+  // a word matches from its start, so "leiden" finds Leiden and not Schleiden, while "orpha:2911",
+  // "2911" and "q71.3" still match inside the codes they belong to
+  function has(h, t) {
+    for (var i = h.indexOf(t); i !== -1; i = h.indexOf(t, i + 1)) {
+      if (i === 0 || !/[a-z0-9]/.test(h.charAt(i - 1))) return true;
+    }
+    return false;
+  }
+  function fold(s) { return Array.prototype.map.call(String(s || ""), function (c) { return norm(c).charAt(0) || c; }).join(""); }
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function load() {
     if (index || loading) return loading;
@@ -48,10 +58,35 @@
       });
       if (lastQ) search(lastQ);
     });
+    // the text of the pages, one section per heading, arrives separately so the entries answer first
+    fetch(BASE + "/search-text.json").then(function (r) { return r.json(); }).then(function (d) {
+      sections = d.sections.map(function (x) {
+        var pg = d.pages[x[0]];
+        return { url: pg[0] + (x[1] ? "#" + x[1] : ""), page: pg[1], head: x[2], text: x[3], f: fold(x[2] + " \u2022 " + x[3]) };
+      });
+      if (lastQ) search(lastQ);
+    });
     return loading;
   }
+  // the passage around the first word of the query, in the page's own words, with the words marked
+  function snippet(sec, tokens) {
+    var full = sec.head + " \u2022 " + sec.text, at = -1;
+    for (var k = sec.f.indexOf(tokens[0]); k !== -1; k = sec.f.indexOf(tokens[0], k + 1)) {
+      if (k === 0 || !/[a-z0-9]/.test(sec.f.charAt(k - 1))) { at = k; break; }
+    }
+    if (at < 0) at = 0;
+    var a = Math.max(0, at - 70), b = Math.min(full.length, at + 130);
+    var cut = (a > 0 ? "\u2026" : "") + full.slice(a, b) + (b < full.length ? "\u2026" : "");
+    var out = esc(cut);
+    tokens.forEach(function (t) {
+      if (t.length < 2) return;
+      var i = fold(cut).indexOf(t);
+      if (i >= 0) { var w = esc(cut.slice(i, i + t.length)); out = out.replace(w, "<mark>" + w + "</mark>"); }
+    });
+    return out;
+  }
   // the kinds a reader most often means come first when two results score alike
-  var KIND_W = { Condition: 9, Form: 7, Page: 6, Registry: 5, "Care centre": 5, Association: 5, "Research team": 3, Substance: 2 };
+  var KIND_W = { Condition: 9, Person: 8, Form: 7, Page: 6, Registry: 5, "Care centre": 5, Association: 5, "Research team": 3, Substance: 2 };
 
   function openSearch(preset) {
     if (!overlay) return;
@@ -84,10 +119,14 @@
     }
     if (!index) { list.innerHTML = '<li class="search-empty">Loading the index…</li>'; return; }
     var rows = hits.slice(0, 12).map(function (h) {
+      if (h.kind === "In the text") {
+        return '<li><a href="' + BASE + h.url + '"><span class="search-kind">' + esc(h.page) + "</span><strong>" + esc(h.head || h.page) +
+               '</strong><span class="search-snip">' + h.snip + "</span></a></li>";
+      }
       return '<li><a href="' + BASE + h.url + '"><span class="search-kind">' + esc(h.kind) + "</span><strong>" + esc(h.title) +
              "</strong><span>" + esc(h.desc) + "</span></a></li>";
     }).join("");
-    var none = hits.length ? "" : '<li class="search-empty">Nothing on the site matches “' + esc(q) + '”.</li>';
+    var none = hits.length ? "" : '<li class="search-empty">Nothing on the site matches “' + esc(q) + '”' + (sections ? "" : " yet; the page text is still loading") + ".</li>";
     list.innerHTML = rows + none + (q.length >= 3 ? more(q) : "");
   }
   function search(q) {
@@ -95,7 +134,7 @@
     var qn = norm(q).trim();
     if (!index || qn.length < 2) { render([], qn.length < 2 ? "" : q.trim()); return; }
     var tokens = qn.split(/\s+/);
-    var hits = index.filter(function (e) { return tokens.every(function (t) { return e.h.indexOf(t) !== -1; }); });
+    var hits = index.filter(function (e) { return tokens.every(function (t) { return has(e.h, t); }); });
     hits.forEach(function (e) {
       var s = KIND_W[e.kind] || 0;
       if (e.t === qn) s += 100;
@@ -106,6 +145,18 @@
       e.s = s;
     });
     hits.sort(function (a, b) { return b.s - a.s || a.title.length - b.title.length; });
+    if (sections) {
+      var perPage = {}, text = [];
+      sections.forEach(function (x) {
+        if (!tokens.every(function (t) { return has(x.f, t); })) return;
+        if ((perPage[x.page] = (perPage[x.page] || 0) + 1) > 4) return;   // a page mentioned often fills no more than four lines
+        text.push({ kind: "In the text", url: x.url, page: x.page, head: x.head, snip: snippet(x, tokens),
+                    s: (fold(x.head).indexOf(qn) !== -1 ? 3 : 0) });
+      });
+      text.sort(function (a, b) { return b.s - a.s; });
+      // what the registers name comes first; the passages that mention it follow
+      hits = hits.slice(0, 8).concat(text).concat(hits.slice(8));
+    }
     render(hits, q.trim());
   }
   if (trigger && overlay) {

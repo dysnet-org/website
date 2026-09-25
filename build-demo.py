@@ -5680,6 +5680,59 @@ def redirect_html(new_path):
             f'<body><p>This page has moved to <a href="{new_path}">{url}</a>.</p></body></html>\n')
 
 
+def heading_ids(html):
+    """Give every h2 in the page's main content a stable id from its text, unless it has one, so the
+    site search can link to a section and the contents box reuses the same ids."""
+    head, sep, rest = html.partition("<main")
+    if not sep:
+        return html
+    seen = set(re.findall(r'\sid="([^"]+)"', html))
+    def one(m):
+        attrs, inner = m.group(1), m.group(2)
+        if re.search(r'\sid="', attrs):
+            return m.group(0)
+        base = _anchor("s", re.sub(r"<[^>]+>", "", inner))
+        hid, k = base, 2
+        while hid in seen:
+            hid, k = f"{base}-{k}", k + 1
+        seen.add(hid)
+        return f'<h2{attrs} id="{hid}">{inner}</h2>'
+    return head + sep + re.sub(r"<h2(\b[^>]*)>(.*?)</h2>", one, rest, flags=re.S)
+
+
+# The register pages whose entries the search indexes one by one: their lists stay out of the page
+# text, or every centre and every reference would be found twice.
+SEARCH_SKIP = {"/knowledge/care-centres/": r'<article class="entry".*?</article>',
+               "/knowledge/researchers/": r'<article class="entry".*?</article>',
+               "/knowledge/bibliography/": r'<ol class="bib-list.*?</ol>',
+               "/knowledge/teratogens/": r'<ol class="bib-list tera-list.*?</ol>'}
+
+
+def search_sections():
+    """The text of every page, one section per h2, for the site search: a word anywhere on the site
+    leads to the section it is in, with the passage around it shown in the result."""
+    pages, sections = [], []
+    for p, page in PAGES.items():
+        if p == "/404/":
+            continue
+        page_html = (ROOT / p.strip("/") / "index.html").read_text(encoding="utf-8")
+        main = page_html[page_html.find("<main"):page_html.rfind("</main>")]
+        main = re.sub(r"<script.*?</script>|<style.*?</style>|<nav class=\"onpage\".*?</nav>|<select.*?</select>", " ", main, flags=re.S)
+        if p in SEARCH_SKIP:
+            main = re.sub(SEARCH_SKIP[p], " ", main, flags=re.S)
+        pi = len(pages); pages.append([p, "Home" if p == "/" else page["title"]])
+        parts = re.split(r'(<h2\b[^>]*\sid="[^"]+"[^>]*>.*?</h2>)', main, flags=re.S)
+        text = lambda h: re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
+        intro = text(parts[0])
+        if intro:
+            sections.append([pi, "", "", intro])
+        for i in range(1, len(parts), 2):
+            hid = re.search(r'\sid="([^"]+)"', parts[i]).group(1)
+            body = text(parts[i + 1]) if i + 1 < len(parts) else ""
+            sections.append([pi, hid, text(parts[i]), body])
+    return {"pages": pages, "sections": sections}
+
+
 def search_entries():
     """What the site search finds: every page, and every entry of every register, each linked to the
     card, row or entry itself. A reader arrives with a name, a synonym, an ORPHAcode, an ICD code, a
@@ -5691,6 +5744,8 @@ def search_entries():
     for p, page in PAGES.items():
         if p != "/404/":
             add("Page", p, "Home" if p == "/" else page["title"], page["desc"])
+    for b in BOARD:
+        add("Person", "/about/#board", b[0], f"DysNet board · {b[1]}", b[2])
     cond_page = "/knowledge/understanding-dysmelia/"
     for name, desc, code, orpha_name, *_ in CONDITIONS:
         ref_code, anchor = card_anchor(name, code)
@@ -5707,7 +5762,8 @@ def search_entries():
             f"Registry · {where}" + (" · EUROCAT member" if _is_eurocat(r) else ""), r.get("local"), where)
     for c in CARE_CENTRES:
         add("Care centre", f"/knowledge/care-centres/#{_anchor('centre', c['name'])}", c["name"],
-            f"{c['type']} · {c['city']}, {c['country']}", c.get("name_local"), c.get("city"), c.get("country"), c.get("specialism"))
+            f"{c['type']} · {c['city']}, {c['country']}", c.get("name_local"), c.get("city"), c.get("country"), c.get("specialism"),
+            (c.get("designation") or {}).get("text"), c.get("via"))
     for country, orgs in MEMBERS:
         for o in orgs:
             name = o[0] if isinstance(o, (list, tuple)) else o
@@ -5736,7 +5792,7 @@ def page_dates(path, new_html):
     # and the draft this is compared against is built without dates, so its JSON-LD has no
     # datePublished/dateModified keys and no article:*_time tags at all: those go too, or no page
     # ever matches its committed copy and every build dates every page today
-    strip = lambda t: re.sub(r', "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", t)
+    strip = lambda t: re.sub(r' id="s-[^"]*"|, "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", t)
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
@@ -5782,7 +5838,7 @@ def build():
         out_dir.mkdir(parents=True, exist_ok=True)
         extra = list(page.get("jsonld") or []) + (EXTRA_LD[path]() if path in EXTRA_LD else [])
         probe = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra) + header_html(path if path != "/" else "-") + (crumbs(*page["crumbs"]) if page.get("crumbs") else "") + page["body"].replace("__MAP_HERO__", MAP_HERO) + FOOTER
-        dates = page_dates(path, rebase(probe)); page_mod[path] = dates["modified"]
+        dates = page_dates(path, heading_ids(rebase(probe))); page_mod[path] = dates["modified"]
         html = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra, dates)
         html += header_html(path if path != "/" else "-")
         if page.get("crumbs"):
@@ -5790,7 +5846,7 @@ def build():
         html += page["body"]
         html = html.replace("__MAP_HERO__", MAP_HERO)
         html += FOOTER.replace("__PAGE_DATE__", __import__("datetime").date.fromisoformat(dates["modified"]).strftime("%-d %B %Y"))
-        (out_dir / "index.html").write_text(rebase(html), encoding="utf-8")
+        (out_dir / "index.html").write_text(heading_ids(rebase(html)), encoding="utf-8")
         written.append(path)
 
     # Redirect stubs for the old Wix URLs
@@ -5825,6 +5881,7 @@ def build():
               x["desc"].replace("Substance with effects on the unborn child · ", "").replace("Substance with effects on the unborn child", ""),
               x["keywords"]] for x in search_index]
     (ROOT / "search-index.json").write_text(json.dumps({"kinds": _kinds, "entries": _rows}, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (ROOT / "search-text.json").write_text(json.dumps(search_sections(), ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     # sitemap.xml — demonstrates the SEO deliverable for the real launch
     urls = "\n".join(

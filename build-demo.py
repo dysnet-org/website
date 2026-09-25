@@ -3609,7 +3609,7 @@ _CAUSES_BODY = f"""
     <div class="tick"></div>
     <p class="eyebrow">Review · September 2026</p>
     <h1 class="display">What causes dysmelia?</h1>
-    <p class="byline"><strong>Dr Loïc Rigal</strong>, for the DysNet documentation team · first published September 2026 ·
+    <p class="byline"><strong>Loïc Rigal, PhD, JD</strong>, for the DysNet documentation team · first published September 2026 ·
     <a href="#method">how this article was written</a> · <a href="#sources">sources</a></p>
     <p class="gloss-hint">Underlined words carry a plain-language definition: hover over one, tap it, or reach it with the
     keyboard.</p>
@@ -3857,7 +3857,7 @@ _CAUSES_BODY = f"""
     <div class="tick" id="method"></div>
     <p class="eyebrow">Method</p>
     <h2 class="h2">How was this article written?</h2>
-    <p><strong>Author.</strong> Dr Loïc Rigal, for the DysNet documentation team, September 2026.</p>
+    <p><strong>Author.</strong> Loïc Rigal, PhD, JD, for the DysNet documentation team, September 2026.</p>
     <p><strong>Sources.</strong> The starting point was the DysNet <a href="/knowledge/bibliography/">bibliography</a>, the
     register of peer-reviewed publications on our conditions, searched by theme for causes, genetics and epidemiology. Where the
     register had no coverage of a question that families ask (maternal diabetes, varicella, antiseizure medicines, misoprostol,
@@ -5677,8 +5677,13 @@ def page_dates(path, new_html):
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
-    last = git("log", "-1", "--format=%cs", "--", rel) or today
-    return {"published": first, "modified": today if strip(committed) != strip(new_html) else last}
+    if strip(committed) != strip(new_html):
+        return {"published": first, "modified": today}
+    # Unchanged: keep the date the committed page already states. The file's last commit is not that
+    # date, because every stylesheet or script change rewrites the cache-busting hash in every page and
+    # so commits them all: a CSS fix would otherwise date all 24 pages to the day it was made.
+    kept = re.search(r'"dateModified": "(\d{4}-\d{2}-\d{2})"', committed)
+    return {"published": first, "modified": kept.group(1) if kept else (git("log", "-1", "--format=%cs", "--", rel) or today)}
 
 
 EXTRA_LD = {

@@ -1,0 +1,160 @@
+{
+ "synced": "2026-09-28",
+ "source": "DysNet registry, packages/dysnet-model/src/conditions-extra.json (usualNames)",
+ "note": "Everyday names of the conditions, as families and the press use them: DysNet's own list, extended and corrected by the member associations in the registry, and not Orphanet terms. Keyed by ORPHAcode, or by the card's name where the registry keys it so. Edit the registry, not this file, then run this script.",
+ "names": {
+  "294979": {
+   "en": [
+    "below-elbow limb difference",
+    "below-elbow deficiency",
+    "congenital below-elbow amputation",
+    "short arm"
+   ],
+   "fr": [
+    "agénésie du bras",
+    "agénésie de l'avant-bras",
+    "petit bras",
+    "bébés sans bras",
+    "né sans bras",
+    "agénésie transverse du membre supérieur",
+    "ATMS"
+   ],
+   "it": [
+    "agenesia del braccio",
+    "agenesia dell'avambraccio",
+    "braccio corto"
+   ]
+  },
+  "294983": {
+   "en": [
+    "missing hand",
+    "small hand",
+    "congenital hand amputation"
+   ],
+   "fr": [
+    "agénésie de la main",
+    "petite main",
+    "né sans main",
+    "agénésie transverse du membre supérieur",
+    "ATMS"
+   ],
+   "it": [
+    "agenesia della mano",
+    "mano piccola"
+   ]
+  },
+  "294967": {
+   "en": [
+    "missing arm",
+    "absent arm"
+   ],
+   "fr": [
+    "agénésie du membre supérieur",
+    "ATMS"
+   ],
+   "it": [
+    "agenesia dell'arto superiore"
+   ]
+  },
+  "294981": {
+   "en": [
+    "below-knee limb difference",
+    "below-knee deficiency",
+    "congenital below-knee amputation",
+    "short leg"
+   ],
+   "fr": [
+    "agénésie de la jambe",
+    "petite jambe",
+    "né sans jambe",
+    "agénésie transverse du membre inférieur"
+   ],
+   "it": [
+    "agenesia della gamba",
+    "gamba corta"
+   ]
+  },
+  "294986": {
+   "en": [
+    "missing foot"
+   ],
+   "fr": [
+    "agénésie du pied",
+    "né sans pied"
+   ],
+   "it": [
+    "agenesia del piede"
+   ]
+  },
+  "Syndactyly": {
+   "en": [
+    "webbed fingers",
+    "joined fingers"
+   ],
+   "fr": [
+    "doigts palmés",
+    "doigts collés"
+   ],
+   "it": [
+    "dita palmate",
+    "dita unite"
+   ]
+  },
+  "Polydactyly": {
+   "en": [
+    "extra finger",
+    "sixth finger",
+    "extra toe"
+   ],
+   "fr": [
+    "doigt surnuméraire",
+    "sixième doigt",
+    "orteil surnuméraire"
+   ],
+   "it": [
+    "dito soprannumerario",
+    "sesto dito"
+   ]
+  },
+  "2440": {
+   "en": [
+    "split hand",
+    "split foot",
+    "lobster claw hand"
+   ],
+   "fr": [
+    "main fendue",
+    "pied fendu",
+    "pince de homard"
+   ],
+   "it": [
+    "mano a spacco",
+    "piede a spacco",
+    "mano a chela di aragosta"
+   ]
+  },
+  "93321": {
+   "en": [
+    "radial club hand"
+   ],
+   "fr": [
+    "main bote radiale"
+   ],
+   "it": [
+    "mano torta radiale"
+   ]
+  },
+  "Symbrachydactyly": {
+   "en": [
+    "small hand"
+   ],
+   "fr": [
+    "petite main",
+    "main courte"
+   ],
+   "it": [
+    "mano piccola"
+   ]
+  }
+ }
+}

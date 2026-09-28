@@ -733,6 +733,35 @@ DOT_ALIAS = {"Amelia, all forms": "Amelia", "Phocomelia, all forms": "Phocomelia
              "Tibial aplasia-ectrodactyly": "Tibial aplasia\u2013ectrodactyly"}
 HIER_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json"
 HIER = json.loads(HIER_PATH.read_text(encoding="utf-8")) if HIER_PATH.exists() else {"conditions": {}, "nodes": {}}
+# The names families and the press use for a condition, kept by the DysNet registry and copied here by
+# tools/sync-usual-names.py: shown on the cards, searched in English, French and Italian, never
+# presented as Orphanet terms.
+USUAL_PATH = pathlib.Path(__file__).parent / "tools" / "condition-usual-names.json"
+USUAL = json.loads(USUAL_PATH.read_text(encoding="utf-8")).get("names", {}) if USUAL_PATH.exists() else {}
+
+
+def usual_names(name=None, code=None):
+    """The everyday names for a card or a form, by ORPHAcode first, then by the card's name."""
+    return USUAL.get(str(code)) if code and str(code) in USUAL else USUAL.get(name or "", {})
+
+
+# Searched but not shown: a name that stigmatises ("lobster claw hand"), or one that calls a congenital
+# difference an amputation, which the page's own definition sets apart. A family who types either still
+# finds the card; the card does not repeat it. The registry's list is copied unchanged.
+USUAL_NOT_SHOWN = re.compile(r"\bamputation\b|\blobster\b", re.I)
+
+
+def usual_shown(name=None, code=None, lang="en"):
+    return [n for n in usual_names(name, code).get(lang) or [] if not USUAL_NOT_SHOWN.search(n)]
+
+
+def usual_words(name=None, code=None):
+    return " ".join(n for names in usual_names(name, code).values() for n in names)
+
+
+def _quoted_or(names):
+    q = [f"&ldquo;{n}&rdquo;" for n in names]
+    return q[0] if len(q) == 1 else ", ".join(q[:-1]) + " or " + q[-1]
 
 
 # What each card stands for, beyond its own code: every entity Orphanet files under it. The cards
@@ -748,6 +777,7 @@ for _n, _d, _c, *_r in CONDITIONS:
 SUBCONDITION_WORDS = {
     c: " ".join(f"{t} ORPHA:{d} {d} " + " ".join((HIER["nodes"].get(d) or {}).get("synonyms") or []) + " "
                 + " ".join(e["code"] for ed in ("icd10", "icd11") for e in (HIER["nodes"].get(d) or {}).get(ed) or [])
+                + " " + usual_words(code=d)
                 for d, t in kids)
     for c, kids in SUBCONDITIONS.items() if kids}
 # Which card documents a code, for the registers that still carry the finer codes
@@ -2728,6 +2758,9 @@ def condition_hierarchy_html(code):
                         and not x.isupper() and len(x) > 5), None)
             if syn:
                 txt += f' <span class="orpha-syn">{syn.lower()}</span>'
+            usual = usual_shown(code=c)[:3]
+            if usual:
+                txt += f' <span class="orpha-usual">usually called {_quoted_or(usual)}</span>'
             txt += f' <span class="orpha-code">ORPHA:{c}</span>'
             if m.get("icd10"): txt += " " + _icd_codes_html(m)
             if c in ours: txt += f' <a class="on-page" href="#cond-{c}">on this page</a>'
@@ -2847,12 +2880,22 @@ def condition_search_text(name, desc, ref_code, orpha_name):
     _kids = SUBCONDITION_WORDS.get(str(ref_code), "")
     return " ".join(filter(None, [
         name, desc, orpha_name or "", _node.get("term") or "",
-        " ".join(_node.get("synonyms") or []), _kids,
+        " ".join(_node.get("synonyms") or []), _kids, usual_words(name, ref_code),
         f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
         " ".join(e["code"] for e in (_icd.get("icd10") or [])),
         " ".join(e["code"] for e in (_icd.get("icd11") or [])),
         (OMT.get(name) or {}).get("diagnosis") or "",
     ])).lower().replace('"', "")
+
+
+def usual_line(name, code):
+    """The everyday names on a card, in the site's language, said as families say them. The French
+    and Italian names are searched but not shown, since the page is in English."""
+    en = usual_shown(name, code)
+    if not en:
+        return ""
+    return (f'<p class="cond-usual" title="Everyday names, collected by DysNet and its member associations; not Orphanet terms">'
+            f'Families usually say {_quoted_or(en[:4])}.</p>')
 
 
 def card_anchor(name, code):
@@ -2885,7 +2928,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     foot = condition_registries_html(ref_code) + refs
     return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-search="{haystack}">'
             f'<h3 class="h4">{name}</h3>'
-            f'<p class="cond-desc">{desc}</p>'
+            f'<p class="cond-desc">{desc}</p>{usual_line(name, ref_code)}'
             f'<p class="cond-chips">{chips}</p>'
             f'{condition_rate_html(name)}'
             f'{condition_codes_html(name, code, orpha_name)}'
@@ -3237,6 +3280,10 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
       {"".join(condition_card(*c) for c in CONDITIONS_BY_RATE)}
     </div>
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
+    <p class="annex-note">Some cards and some of the forms listed inside them also give the names families usually use, such as
+    &ldquo;webbed fingers&rdquo; for syndactyly or &ldquo;short arm&rdquo; for an absent forearm and hand. They are not Orphanet
+    terms: DysNet collects them with its member associations, which extend and correct the list in the registry, and the
+    search box above finds them in English, French and Italian.</p>
     <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: {ICD10_WIDEST[0]} stands for {spell(ICD10_WIDEST[1])} of the cards on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, {"as for " + ICD10_NARROWER[0].lower() if ICD10_NARROWER else "which happens among the forms listed inside the cards rather than among the cards themselves"}. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
     <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so {spell(sum(1 for c in CONDITIONS if not (OMT.get(c[0]) or {}).get("group")))} of the cards here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>
     <p class="annex-note"><strong>ICD-11</strong> now sits beside ICD-10 on every card that has one, {ICD_STATS["icd11"]["rows"]} of them, because the point of the block is to show what a registry would have to reconcile rather than to flatter either edition. ICD-11 resolves real things: amniotic band syndrome and Poland syndrome share the single ICD-10 code Q79.8 and ICD-11 names each exactly, and polydactyly has no Orphanet mapping to ICD-10 at all while ICD-11 names it exactly. It is not a general improvement. The share of exact mappings rises only from {ICD_STATS["icd10"].get("exact", 0)} of {ICD_STATS["icd10"]["rows"]} under ICD-10 to {ICD_STATS["icd11"].get("exact", 0)} of {ICD_STATS["icd11"]["rows"]} under ICD-11, and in one respect ICD-11 is the coarser: its code {ICD11_WIDEST[0]} stands for {spell(ICD11_WIDEST[1])} of the conditions on this page at once.</p>
@@ -5755,7 +5802,7 @@ def search_entries():
             n = HIER["nodes"].get(d) or {}
             add("Form", f"{cond_page}#{anchor}", term, f"Documented in the card {name}",
                 f"ORPHA:{d} {d}", " ".join(n.get("synonyms") or []),
-                " ".join(e["code"] for ed in ("icd10", "icd11") for e in n.get(ed) or []))
+                " ".join(e["code"] for ed in ("icd10", "icd11") for e in n.get(ed) or []), usual_words(code=d))
     for r in ORPHA_REGS.get("registries", []):
         where = COUNTRY_LABEL.get(r["country"], r["country"].title())
         add("Registry", f"/knowledge/registries/#reg-{r['id']}", r["name"],

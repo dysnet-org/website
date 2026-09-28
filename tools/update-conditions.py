@@ -50,6 +50,8 @@ STEPS = [
      ["build-condition-prevalence.py"], "condition-prevalence.json", "conditions"),
     ("vocab", "the patterns the bibliography matches a paper against, from Orphanet's terms and synonyms",
      ["build-condition-vocab.py"], "condition-vocab.json", None),
+    ("usual", "the everyday names families use, copied from the DysNet registry, where the associations edit them",
+     ["sync-usual-names.py"], "condition-usual-names.json", "names"),
     ("bibliography", "the bibliography from PubMed, Crossref and the member and registry websites (long), then the registries each paper rests on",
      ["build-bibliography.py"], "bibliography.json", None),
     ("researchers", "the research teams, from the bibliography's author affiliations",
@@ -59,7 +61,7 @@ STEPS = [
     ("audit", "the checks: every page agrees with the list, and what is left for a person",
      ["audit-conditions.py"], None, None),
 ]
-FAST = ["hierarchy", "icd", "prevalence", "vocab", "build", "audit"]
+FAST = ["hierarchy", "icd", "prevalence", "vocab", "usual", "build", "audit"]
 LONG = ["bibliography", "researchers"]
 
 

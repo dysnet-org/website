@@ -1165,6 +1165,9 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
    with the quality of each mapping. So the card runs: title, plain sentence, plain-language tags,
    then a bordered block of codes, then a footer of what our own registers hold. */
 .cond .cond-desc { font-size: var(--text-body); color: var(--dys-ink); margin: 0; }
+/* the everyday names: in the voice of the description, lighter, and never styled as a code */
+.cond .cond-usual { margin: 0.2rem 0 0; font-size: var(--text-small); color: var(--dys-muted); font-style: italic; }
+.cond-tree .orpha-usual { color: var(--dys-muted); font-size: var(--text-small); }
 .cond-chips { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0.15rem 0 0; }
 .cond-chip { font-size: var(--text-eyebrow); color: var(--dys-muted); background: var(--dys-bg);
              border: 1px solid var(--dys-line); border-radius: 999px; padding: 0.1rem 0.5rem; white-space: nowrap; }

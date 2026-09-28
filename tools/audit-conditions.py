@@ -95,6 +95,11 @@ def run():
     generated_only = [n for n, c in coded if c not in manual_vocab_codes()]
     if generated_only:
         notes.append(f"Bibliography vocabulary: {len(generated_only)} card(s) rest on generated rules only; review them in condition-vocab.json: {generated_only}")
+    # everyday names the registry keeps for a code or a name no card or documented form carries here
+    reachable = {c for _n, c in coded} | set(names) | {d for kids in m.SUBCONDITIONS.values() for d, _t in kids}
+    stray = [k for k in getattr(m, "USUAL", {}) if k not in reachable]
+    if stray:
+        notes.append(f"Everyday names: {len(stray)} registry key(s) match no card or form on the site, so their names show nowhere: {stray}")
     unrated = [n for n in names if n not in m.CONDITION_RATE]
     if unrated:
         notes.append(f"Prevalence: {len(unrated)} card(s) have no birth prevalence from any source: {unrated}")

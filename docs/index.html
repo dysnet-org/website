@@ -39,21 +39,25 @@
     security_storage: "granted",
     wait_for_update: 500
   });
+  // Google's tag is fetched here and nowhere else, and only once the visitor has said yes
+  window.dysnetLoadAnalytics = function () {
+    if (window.dysnetAnalyticsLoaded) return;
+    window.dysnetAnalyticsLoaded = true;
+    gtag("consent", "update", {
+      analytics_storage: "granted",
+      functionality_storage: "granted",
+      personalization_storage: "granted"
+    });
+    gtag("js", new Date());
+    gtag("config", "G-NYH16RRC5Q");
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=G-NYH16RRC5Q";
+    document.head.appendChild(s);
+  };
   try {
-    if (localStorage.getItem("dysnet-consent") === "granted") {
-      gtag("consent", "update", {
-        analytics_storage: "granted",
-        functionality_storage: "granted",
-        personalization_storage: "granted"
-      });
-    }
+    if (localStorage.getItem("dysnet-consent") === "granted") window.dysnetLoadAnalytics();
   } catch (e) {}
-  gtag("js", new Date());
-  gtag("config", "G-NN0QH61XFV", { anonymize_ip: true });
-  var s = document.createElement("script");
-  s.async = true;
-  s.src = "https://www.googletagmanager.com/gtag/js?id=G-NN0QH61XFV";
-  document.head.appendChild(s);
 })();
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NGO", "name": "DysNet", "legalName": "DysNet Ideell Förening", "alternateName": "EDRIC – European Dysmelia Reference Information Centre", "url": "https://www.dysnet.org", "logo": "https://www.dysnet.org/assets/img/dysnet-logo-512.png", "description": "DysNet is the global network for people affected by congenital limb differences (dysmelia): a curated bibliography, registries and studies, a researcher register, a map of specialist care centres worldwide, and an international patient-owned registry.", "foundingDate": "2009-01-07", "foundingLocation": "Stockholm, Sweden", "identifier": {"@type": "PropertyValue", "propertyID": "Swedish organisation number", "value": "802444-3015"}, "address": [{"@type": "PostalAddress", "streetAddress": "Nybodagatan 1", "postalCode": "171 42", "addressLocality": "Solna", "addressCountry": "SE"}, {"@type": "PostalAddress", "streetAddress": "Rue du Chantier 2", "postalCode": "1000", "addressLocality": "Brussels", "addressCountry": "BE"}], "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "info@dysnet.org", "availableLanguage": ["English"]}, "areaServed": "Worldwide", "memberOf": [{"@type": "Organization", "name": "EURORDIS – Rare Diseases Europe", "url": "https://www.eurordis.org/"}, {"@type": "Organization", "name": "European Disability Forum", "url": "https://www.edf-feph.org/"}], "knowsAbout": ["dysmelia", "congenital limb differences", "limb reduction deficiency", "rare diseases", "patient registries", "prosthetics", "assistive technology", "patient advocacy", "European Reference Networks"], "sameAs": ["https://www.facebook.com/DysNet", "https://www.linkedin.com/company/dysnet/", "https://www.youtube.com/user/DysmeliaNetwork", "https://www.orpha.net/en/patient-organisations/federations-alliances/646248", "https://www.edf-feph.org/our-members/european-dysmelia-reference-information-centre/", "https://www.lobbyfacts.eu/datacard/dysnet?rid=047603512537-13&sid=183440", "https://www.eurordis.org/eurordis_member/volup-speculum-carpo/", "https://www.wikidata.org/wiki/Q131894541"]}</script>
@@ -344,14 +348,8 @@
   function choose(state) {
     try { localStorage.setItem(KEY, state); } catch (e) {}
     b.hidden = true;
-    if (typeof window.gtag === "function") {
-      var ok = state === "granted";
-      window.gtag("consent", "update", {
-        analytics_storage: ok ? "granted" : "denied",
-        functionality_storage: ok ? "granted" : "denied",
-        personalization_storage: ok ? "granted" : "denied"
-      });
-    }
+    // a yes loads Google's tag now; a no leaves it unloaded, which is what the privacy notice says
+    if (state === "granted" && typeof window.dysnetLoadAnalytics === "function") window.dysnetLoadAnalytics();
   }
   document.getElementById("consent-yes").addEventListener("click", function () { choose("granted"); });
   document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });

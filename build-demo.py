@@ -38,11 +38,13 @@ ORIGIN, BASE = {
 SITE = ORIGIN + BASE
 
 # ── Analytics and consent ────────────────────────────────────────────
-# Google Analytics 4 behind Consent Mode v2, mirroring the HDS website:
-# every storage purpose starts denied, the banner flips it on Accept, and
-# the stored grant is re-applied before the first pageview of later visits.
+# Google Analytics 4, loaded only after a yes. The privacy notice promises that a visitor who
+# declines, or has not answered, loads nothing from Google and stores nothing, so Google's tag is
+# not fetched at all until Accept: Consent Mode's "advanced" setup, which loads the tag for everyone
+# and sends cookieless pings before any answer, would break that promise. Every storage purpose
+# still starts denied, and a stored yes loads the tag before the first pageview of later visits.
 # Localhost is skipped so tools/serve.py previews never reach the property.
-GA_ID = "G-NN0QH61XFV"
+GA_ID = "G-NYH16RRC5Q"
 CONSENT_KEY = "dysnet-consent"
 
 ANALYTICS_HEAD = """<script>
@@ -62,21 +64,25 @@ ANALYTICS_HEAD = """<script>
     security_storage: "granted",
     wait_for_update: 500
   });
+  // Google's tag is fetched here and nowhere else, and only once the visitor has said yes
+  window.dysnetLoadAnalytics = function () {
+    if (window.dysnetAnalyticsLoaded) return;
+    window.dysnetAnalyticsLoaded = true;
+    gtag("consent", "update", {
+      analytics_storage: "granted",
+      functionality_storage: "granted",
+      personalization_storage: "granted"
+    });
+    gtag("js", new Date());
+    gtag("config", "__GA__");
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=__GA__";
+    document.head.appendChild(s);
+  };
   try {
-    if (localStorage.getItem("__KEY__") === "granted") {
-      gtag("consent", "update", {
-        analytics_storage: "granted",
-        functionality_storage: "granted",
-        personalization_storage: "granted"
-      });
-    }
+    if (localStorage.getItem("__KEY__") === "granted") window.dysnetLoadAnalytics();
   } catch (e) {}
-  gtag("js", new Date());
-  gtag("config", "__GA__", { anonymize_ip: true });
-  var s = document.createElement("script");
-  s.async = true;
-  s.src = "https://www.googletagmanager.com/gtag/js?id=__GA__";
-  document.head.appendChild(s);
 })();
 </script>""".replace("__KEY__", CONSENT_KEY).replace("__GA__", GA_ID)
 
@@ -108,14 +114,8 @@ CONSENT_BANNER = """<div id="consent" class="consent" role="dialog" aria-live="p
   function choose(state) {
     try { localStorage.setItem(KEY, state); } catch (e) {}
     b.hidden = true;
-    if (typeof window.gtag === "function") {
-      var ok = state === "granted";
-      window.gtag("consent", "update", {
-        analytics_storage: ok ? "granted" : "denied",
-        functionality_storage: ok ? "granted" : "denied",
-        personalization_storage: ok ? "granted" : "denied"
-      });
-    }
+    // a yes loads Google's tag now; a no leaves it unloaded, which is what the privacy notice says
+    if (state === "granted" && typeof window.dysnetLoadAnalytics === "function") window.dysnetLoadAnalytics();
   }
   document.getElementById("consent-yes").addEventListener("click", function () { choose("granted"); });
   document.getElementById("consent-no").addEventListener("click", function () { choose("denied"); });
@@ -5792,7 +5792,10 @@ def page_dates(path, new_html):
     # and the draft this is compared against is built without dates, so its JSON-LD has no
     # datePublished/dateModified keys and no article:*_time tags at all: those go too, or no page
     # ever matches its committed copy and every build dates every page today
-    strip = lambda t: re.sub(r' id="s-[^"]*"|, "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", t)
+    # the analytics tag and the consent banner sit in every page and are not its content: changing
+    # them must not date all 24 pages to the day it was done
+    _chrome = re.compile(r'<script>\s*\(function \(\) \{\s*var h = location\.hostname;.*?</script>|<div id="consent".*?</script>', re.S)
+    strip = lambda t: re.sub(r' id="s-[^"]*"|, "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", _chrome.sub("", t))
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
@@ -5876,7 +5879,8 @@ def build():
         raise SystemExit(f"search results point at anchors that do not exist: {_missing[:5]}")
     # Written compactly: a kind table and one row per entry, [kind, url, title, desc, words]; a substance's
     # url is left empty because the script builds it from the name (the register filters on ?q=).
-    _kinds = sorted({x["kind"] for x in search_index}, key=lambda k: ["Condition", "Form", "Page"].index(k) if k in ("Condition", "Form", "Page") else 9)
+    # a fixed order, so that two builds of the same site write the same file
+    _kinds = sorted({x["kind"] for x in search_index}, key=lambda k: (["Condition", "Form", "Page"].index(k) if k in ("Condition", "Form", "Page") else 9, k))
     _rows = [[_kinds.index(x["kind"]), "" if x["kind"] == "Substance" else x["url"], x["title"],
               x["desc"].replace("Substance with effects on the unborn child · ", "").replace("Substance with effects on the unborn child", ""),
               x["keywords"]] for x in search_index]

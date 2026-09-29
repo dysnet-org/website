@@ -567,60 +567,15 @@ def spell(n):
     return _TENS[n // 10] + (f"-{_UNITS[n % 10]}" if n % 10 else "")
 
 
-# (name, description, ORPHAcode or None, Orphanet preferred name, limbs, type, other-signs)
-# Codes carried from the old dysnet.org encyclopedia, verified on Orphanet 2026-08-10.
-# The last three fields feed the condition finder (plain-language triage tags):
-#   limbs: arms / legs / several   type: reduction / fusion / extra / band   other: other / limbsonly
+# The conditions come from tools/conditions.json, the one file where a condition is added or changed,
+# with everything DysNet says of it: its names in French and Italian where Orphanet has none, the names
+# families use, the plain descriptions the DysNet registry shows (the file documents its own fields).
+# CONDITIONS is the tuple the page is built from: (name, description, ORPHAcode or None, Orphanet
+# preferred name, limbs, type, other, genetic), the last four the condition finder's plain-language tags.
 ORPHA_URL = "https://www.orpha.net/en/disease/detail/{}"
-CONDITIONS = [
-    ("Adams-Oliver syndrome", "limb differences combined with scalp and skull defects.", 974, "Adams-Oliver syndrome", "arms legs several", "reduction", "other", "genetic"),
-    ("Amelia", "complete absence of one or more limbs.", 294925, "Non-syndromic amelia", "arms legs several", "reduction", "limbsonly", "nongenetic"),
-    ("Amelia of the upper limb", "complete or near-complete absence of one or both arms, without other malformations.", 294967, "Isolated amelia of upper limb", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Amelia of the lower limb", "complete or near-complete absence of one or both legs, without other malformations.", 294969, "Isolated amelia of lower limb", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Amniotic band syndrome", "bands of amnion constrict developing limbs before birth.", 295000, "Amniotic band syndrome", "arms legs several", "band reduction", "limbsonly", "nongenetic"),
-    ("Brachydactyly", "disproportionately short fingers or toes.", None, None, "arms legs", "reduction", "limbsonly", "genetic"),
-    ("Cenani-Lenz syndrome", "fused fingers and forearm bones give the hand a mitten-like form.", 3258, "Cenani-Lenz syndrome", "arms", "fusion", "other limbsonly", "genetic"),
-    ("Crossed polysyndactyly", "combined webbing and extra digits on hands and feet.", 2935, "Crossed polysyndactyly", "arms legs several", "extra fusion", "limbsonly", "genetic"),
-    ("Ectrodactyly (SHFM)", "split hand–foot malformation of the central rays.", 2440, "Isolated split hand-split foot malformation", "arms legs", "reduction", "limbsonly", "genetic"),
-    ("Fibular hemimelia", "partial or complete absence of the fibula.", 93323, "Isolated fibular hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Holt-Oram syndrome", "upper-limb differences with congenital heart defects.", 392, "Holt-Oram syndrome", "arms", "reduction", "other", "genetic"),
-    ("Microgastria–limb reduction", "a small stomach together with limb reduction defects.", 2538, "Microgastria-limb reduction defect syndrome", "arms several", "reduction", "other", "nongenetic"),
-    ("Phocomelia", "intercalary limb deficiency; the hands or feet attach close to the trunk.", 2879, "Phocomelia, Schinzel type", "arms legs several", "reduction", "other", "genetic"),
-    ("Poland syndrome", "underdeveloped chest muscle with hand differences on the same side.", 2911, "Poland syndrome", "arms", "reduction fusion", "other", "genetic nongenetic"),
-    ("Polydactyly", "more than the usual number of fingers or toes.", 2913, "Non-syndromic polydactyly", "arms legs", "extra", "limbsonly", "genetic"),
-    ("Radial aplasia", "the radius is underdeveloped or absent.", 93321, "Isolated radial hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
-    ("Roberts syndrome", "symmetric limb reduction with growth delay (SC phocomelia).", 3103, "Roberts syndrome", "arms legs several", "reduction", "other", "genetic"),
-    ("Symbrachydactyly", "short, webbed or missing fingers, usually on one hand; not inherited.", None, None, "arms", "reduction fusion", "limbsonly", "nongenetic"),
-    ("Syndactyly", "webbing between two or more fingers or toes.", 90025, "Non-syndromic syndactyly", "arms legs", "fusion", "limbsonly", "genetic"),
-    ("Terminal transverse limb defect", "the limb forms and then stops: everything beyond one level is missing, most often the hand or the forearm, with the parts above it normally formed.", 498461, "Non-syndromic terminal transverse limb defect", "arms legs", "reduction", "limbsonly", "nongenetic"),
-    ("Tetra-amelia", "absence of all four limbs, with other malformations.", 3301, "Tetraamelia-multiple malformations syndrome", "several", "reduction", "other", "genetic"),
-    ("Thrombocytopenia-absent radius (TAR)", "absent radius with low platelet counts.", 3320, "Thrombocytopenia-absent radius syndrome", "arms", "reduction", "other", "genetic"),
-    ("Tibial aplasia–ectrodactyly", "tibial deficiency together with split hand–foot.", 3329, "Tibial aplasia-ectrodactyly syndrome", "legs several", "reduction", "limbsonly", "genetic"),
-    ("Tibial hemimelia", "deficiency of the tibia with an intact fibula.", 93322, "Isolated tibial hemimelia", "legs", "reduction", "limbsonly", "nongenetic"),
-    ("Ulnar hemimelia", "partial or complete absence of the ulna.", 93320, "Isolated ulnar hemimelia", "arms", "reduction", "limbsonly", "nongenetic"),
-
-    # ── The forms Orphanet files under our three group codes ──────────────────────────────
-    # Our cards carried ORPHA:498461, 2913 and 93458, each a group of disorders, and the forms
-    # inside them were nowhere on the site. Every entry below is one of those forms, its code and
-    # Orphanet's preferred name taken from the classification, its description written from
-    # Orphanet's own definition. The "genetic" tag follows Orphanet's OMIM cross-reference: a form
-    # with an OMIM entry is marked genetic, one without it non-genetic, which is a rule and not a
-    # judgement about any one family. Subtypes below the disorder level (zygodactyly 1 to 4,
-    # synpolydactyly 1 to 3) are left to the tree on each card rather than given cards of their own.
-
-    # Intercalary: the middle of the limb is missing, the end of it is formed (ORPHA:294927)
-    ("Intercalary limb defect", "the middle segment of the limb is missing or short, while the hand or foot beyond it is formed.", 294927, "Non-syndromic intercalary limb defects", "arms legs several", "reduction", "limbsonly", "nongenetic"),
-
-    # Longitudinal: a bone along the length of the limb is missing (ORPHA:498457)
-    ("Longitudinal limb defect", "a bone along the length of the limb is missing or short, while the segments above and below it are present.", 498457, "Non-syndromic longitudinal limb defect", "arms legs several", "reduction", "limbsonly", "nongenetic"),
-
-    # Terminal transverse: the limb forms and then stops (ORPHA:498461)
-
-    # Syndactyly, the numbered types (ORPHA:90025)
-    ("Hyperphalangy", "an extra bone inside a finger or toe, with the usual number of digits.", 295002, "Isolated hyperphalangy", "arms legs", "extra", "limbsonly", "nongenetic"),
-
-    # Polydactyly, by the axis the extra digit sits on (ORPHA:2913)
-]
+REFERENCE = json.loads((pathlib.Path(__file__).parent / "tools" / "conditions.json").read_text(encoding="utf-8"))
+CONDITIONS = [(c["name"], c["description"], c.get("orphaCode"), c.get("orphanetName"), " ".join(c["limbs"]),
+               " ".join(c["type"]), " ".join(c["other"]), " ".join(c["genetic"])) for c in REFERENCE["conditions"]]
 
 
 # Card names for our ORPHAcodes, derived from CONDITIONS so that a condition added there reaches the
@@ -733,30 +688,47 @@ DOT_ALIAS = {"Amelia, all forms": "Amelia", "Phocomelia, all forms": "Phocomelia
              "Tibial aplasia-ectrodactyly": "Tibial aplasia\u2013ectrodactyly"}
 HIER_PATH = pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json"
 HIER = json.loads(HIER_PATH.read_text(encoding="utf-8")) if HIER_PATH.exists() else {"conditions": {}, "nodes": {}}
-# The names families and the press use for a condition, kept by the DysNet registry and copied here by
-# tools/sync-usual-names.py: shown on the cards, searched in English, French and Italian, never
-# presented as Orphanet terms.
-USUAL_PATH = pathlib.Path(__file__).parent / "tools" / "condition-usual-names.json"
-USUAL = json.loads(USUAL_PATH.read_text(encoding="utf-8")).get("names", {}) if USUAL_PATH.exists() else {}
+# The names families and the press use for a condition (usualNames in tools/conditions.json): shown
+# on the cards, searched in English, French and Italian, never presented as Orphanet terms. A card's
+# are on its entry, a form's under its ORPHAcode in "forms"; a code with no entry of its own as a form
+# answers with the card that carries it.
+CARD_REF = {e["name"]: e for e in REFERENCE["conditions"] + REFERENCE.get("registryOnly", [])}
+FORM_REF = REFERENCE.get("forms", {})
+CARD_BY_CODE = {str(e["orphaCode"]): e for e in CARD_REF.values() if e.get("orphaCode")}
+
+
+def ref_field(field, name=None, code=None):
+    """A field of tools/conditions.json for a card (by its name) or a form (by its ORPHAcode)."""
+    for e in (CARD_REF.get(name or ""), FORM_REF.get(str(code)) if code else None, CARD_BY_CODE.get(str(code)) if code else None):
+        if e and e.get(field):
+            return e[field]
+    return None
 
 
 def usual_names(name=None, code=None):
-    """The everyday names for a card or a form, by ORPHAcode first, then by the card's name."""
-    return USUAL.get(str(code)) if code and str(code) in USUAL else USUAL.get(name or "", {})
+    """The everyday names for a card or a form, per language."""
+    return ref_field("usualNames", name, code) or {}
 
 
-# Searched but not shown: a name that stigmatises ("lobster claw hand"), or one that calls a congenital
-# difference an amputation, which the page's own definition sets apart. A family who types either still
-# finds the card; the card does not repeat it. The registry's list is copied unchanged.
-USUAL_NOT_SHOWN = re.compile(r"\bamputation\b|\blobster\b", re.I)
+# Searched but not shown (searchOnlyNames): a name that stigmatises ("lobster claw hand"), or one that
+# calls a congenital difference an amputation, which the page's own definition sets apart. A family who
+# types either still finds the card; the card does not repeat it. Left among the names shown, one stops
+# the build, here and not on a page a family reads.
+USUAL_NOT_SHOWN = re.compile(r"amput|lobster|homard|aragosta", re.I)
+_NOT_SHOWN_LEFT = sorted({n for e in list(CARD_REF.values()) + list(FORM_REF.values())
+                          for names in (e.get("usualNames") or {}).values() for n in names if USUAL_NOT_SHOWN.search(n)})
+if _NOT_SHOWN_LEFT:
+    raise SystemExit(f"tools/conditions.json shows names it should only search; move them to searchOnlyNames: {_NOT_SHOWN_LEFT}")
 
 
 def usual_shown(name=None, code=None, lang="en"):
-    return [n for n in usual_names(name, code).get(lang) or [] if not USUAL_NOT_SHOWN.search(n)]
+    return list(usual_names(name, code).get(lang) or [])
 
 
 def usual_words(name=None, code=None):
-    return " ".join(n for names in usual_names(name, code).values() for n in names)
+    """What the search matches for a card or a form beyond its terms: the names shown and those only searched."""
+    return " ".join(n for field in ("usualNames", "searchOnlyNames") for names in (ref_field(field, name, code) or {}).values()
+                    for n in names)
 
 
 def _quoted_or(names):
@@ -3161,15 +3133,48 @@ def prevalence_html():
     <ol class="sources">{sources}</ol>
 """
 
+# Orphanet's French and Italian term for every code the conditions use, and its other names in those
+# languages (tools/build-condition-names.py): published for the DysNet registry, which asks in all three.
+NAMES_PATH = pathlib.Path(__file__).parent / "tools" / "condition-names.json"
+ORPHA_NAMES = json.loads(NAMES_PATH.read_text(encoding="utf-8"))["names"] if NAMES_PATH.exists() else {}
+# What DysNet says of a card or a form beyond the page, published as tools/conditions.json has it
+REF_FIELDS = ("dysnetNames", "plain", "extent", "usualNames", "searchOnlyNames", "formOrder", "note")
+
+
 # The condition list as data, for the DysNet registry's condition question, which reads it live
 # (owner, 2026-09-24). Built from exactly what the cards are built from, so the page and the
 # registry cannot disagree: the same names, codes, forms and search text. Orphanet's names, codes
 # and ICD relations are Orphadata's (CC BY 4.0); the OMT placements are ours and provisional.
 def _conditions_payload():
+    """/data/conditions.json: every card, the registry-only entries and the forms under each card, with
+    Orphanet's data, DysNet's own and the birth prevalence. The DysNet registry's condition question reads
+    it live, so a change to tools/conditions.json reaches it with the site; version 2 since it carries
+    everything the questionnaire shows (2026-09-28)."""
     def node_codes(n, key):
         return [{"code": e["code"], "relation": e.get("relation", "")} for e in (n.get(key) or [])]
+
+    def orphanet_names(code):
+        n = ORPHA_NAMES.get(str(code)) if code else None
+        if not n:
+            return {}
+        return {"names": {"fr": n["fr"], "it": n["it"]},
+                "otherNames": {l: (n.get("synonyms") or {}).get(l) or [] for l in ("fr", "it")}}
+
+    def rate(hit):
+        return {"birthPer100000": hit[0], "birthSource": hit[1]} if hit else {}
+
+    def ref(e):
+        return {k: e[k] for k in REF_FIELDS if e.get(k)}
+
+    form_rate = {}
+    for _v in PREV_FILE.get("forms", {}).values():
+        _bp = (_v or {}).get("birth_prevalence") or {}
+        if _v.get("orphacode") and _bp.get("per_100000"):
+            form_rate[str(_v["orphacode"])] = (float(_bp["per_100000"]), f"Orphanet, {_bp.get('geo', '')}".rstrip(", "))
     out = []
-    for name, desc, code, orpha_name, limbs, ctype, other, genetic in CONDITIONS:
+    entries = [(e, False) for e in REFERENCE["conditions"]] + [(e, True) for e in REFERENCE.get("registryOnly", [])]
+    for e, registry_only in entries:
+        name, desc, code, orpha_name = e["name"], e.get("description"), e.get("orphaCode"), e.get("orphanetName")
         ref_code = code or next((int(k) for k, v in REG_CODE_NAMES.items() if v == name), None)
         node = HIER["nodes"].get(str(code)) or {} if code else {}
         icd = ICD.get(name) or {}
@@ -3178,20 +3183,25 @@ def _conditions_payload():
         for sub_code, term in SUBCONDITIONS.get(str(code), []) if code else []:
             m = HIER["nodes"].get(sub_code) or {}
             subs.append({"orphaCode": int(sub_code), "term": term, "level": m.get("level"),
-                         "synonyms": m.get("synonyms") or [], "icd10": node_codes(m, "icd10"), "icd11": node_codes(m, "icd11")})
+                         "synonyms": m.get("synonyms") or [], "icd10": node_codes(m, "icd10"), "icd11": node_codes(m, "icd11"),
+                         **orphanet_names(sub_code), **ref(FORM_REF.get(str(sub_code)) or {}), **rate(form_rate.get(str(sub_code)))})
         out.append({
-            "name": name, "description": desc, "orphaCode": code, "orphaLabel": orpha_name,
-            "orphaLevel": node.get("level"), "limbs": limbs.split(), "type": ctype.split(),
-            "other": other.split(), "genetic": genetic.split(),
+            "name": name, **({"description": desc} if desc else {}), "orphaCode": code, "orphaLabel": orpha_name,
+            "orphaLevel": node.get("level"),
+            **({} if registry_only else {"limbs": e["limbs"], "type": e["type"], "other": e["other"], "genetic": e["genetic"]}),
             "synonyms": node.get("synonyms") or [],
-            "icd10": [{"code": e["code"], "relation": e.get("relation", "")} for e in (icd.get("icd10") or [])],
-            "icd11": [{"code": e["code"], "relation": e.get("relation", "")} for e in (icd.get("icd11") or [])],
+            "icd10": [{"code": x["code"], "relation": x.get("relation", "")} for x in (icd.get("icd10") or [])],
+            "icd11": [{"code": x["code"], "relation": x.get("relation", "")} for x in (icd.get("icd11") or [])],
             "omt": {k: omt.get(k) for k in ("group", "part", "axis", "diagnosis")} if omt.get("group") else None,
-            "search": condition_search_text(name, desc, ref_code, orpha_name),
+            "search": condition_search_text(name, desc or "", ref_code, orpha_name),
+            **orphanet_names(code), **ref(e), **rate(CONDITION_RATE.get(name)),
+            **({"registryOnly": True} if registry_only else {}),
             "subconditions": subs,
         })
-    return json.dumps({"version": 1, "page": "https://www.dysnet.org/knowledge/understanding-dysmelia/",
-                       "licence": "Orphanet names, codes and ICD relations: Orphadata, CC BY 4.0. OMT placements: DysNet, provisional.",
+    return json.dumps({"version": 2, "page": "https://www.dysnet.org/knowledge/understanding-dysmelia/",
+                       "licence": ("Orphanet names, codes, ICD relations and French and Italian terms: Orphadata, CC BY 4.0. "
+                                   "OMT placements: DysNet, provisional. Plain descriptions, everyday names and DysNet's own "
+                                   "French and Italian names: DysNet, CC BY 4.0. Birth prevalence: the source given with each figure."),
                        "conditions": out}, ensure_ascii=False, separators=(",", ":"))
 
 
@@ -3282,7 +3292,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
     <p class="annex-note">Some cards and some of the forms listed inside them also give the names families usually use, such as
     &ldquo;webbed fingers&rdquo; for syndactyly or &ldquo;short arm&rdquo; for an absent forearm and hand. They are not Orphanet
-    terms: DysNet collects them with its member associations, which extend and correct the list in the registry, and the
+    terms: DysNet collects them with its member associations, which extend and correct the list, and the
     search box above finds them in English, French and Italian.</p>
     <p class="annex-note">Every card carries a block of codes, and it is there for a different reader than the sentence above it. Four vocabularies have to be reconciled before two countries can add their figures together: the <strong>ORPHAcode</strong> a rare-disease registry uses, the <strong>ICD-10</strong> code a hospital, a national registry and an insurer use, <strong>ICD-11</strong> where it exists, and <strong>Oberg-Manske-Tonkin</strong>, which is what the hand surgeons&rsquo; registries use. Each row says how good the mapping is, because a code quoted without its relation invites a reader to treat an approximation as an identity. Of the {ICD_STATS["icd10"]["rows"]} conditions Orphanet gives an ICD-10 code, only {ICD_STATS["icd10"].get("exact", 0)} are exact. The words matter. <strong>Broader</strong> means Orphanet maps the condition as narrower than the code, so the code covers more than this condition alone: {ICD10_WIDEST[0]} stands for {spell(ICD10_WIDEST[1])} of the cards on this page at once. <strong>Narrower</strong> is the reverse, where the condition covers more than the code does, {"as for " + ICD10_NARROWER[0].lower() if ICD10_NARROWER else "which happens among the forms listed inside the cards rather than among the cards themselves"}. <strong>From the classification</strong> means Orphanet maps no code, and the one shown is read from the ICD-10 classification itself, or for terminal transverse defects from the surveillance manual of the United States Centers for Disease Control. Where ICD-10 has no code at all, the card says so rather than offering an approximation.</p>
     <p class="annex-note"><strong>Oberg-Manske-Tonkin</strong> is the last row of each card&rsquo;s code block, and the vocabulary the four clinical registries of congenital upper limb difference all use, in place of the Swanson classification the IFSSH retired. It sorts a condition by the mechanism rather than the name: which axis of limb development was disturbed, and whether the whole limb or the hand alone is affected, with syndromes held in a group of their own. This mapping is <strong>ours and provisional</strong>, offered to start the interoperability work rather than to end it, and it wants a hand surgeon&rsquo;s review before anyone relies on it. It also stops where the classification stops: OMT covers the upper limb, so {spell(sum(1 for c in CONDITIONS if not (OMT.get(c[0]) or {}).get("group")))} of the cards here, all of the leg, have no place in it. That is a limit of the classification and not a gap in the mapping.</p>

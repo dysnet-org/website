@@ -1,0 +1,750 @@
+{
+  "_about": "The conditions DysNet describes, and everything DysNet says about them, in one file. build-demo.py builds the cards of Understanding dysmelia from it and publishes it, with Orphanet's data for each code, as /data/conditions.json. The DysNet registry's condition question reads that file live, so a change made here reaches the questionnaire as soon as the site is published, with nothing to change in the registry. After an edit, run python3 tools/update-conditions.py: it also fetches Orphanet's French and Italian names for a new code, and ends with the list of what still needs a person.",
+  "_fields": {
+    "name": "The English name. The registry records it as the condition, so keep a name once families have chosen it: renamed, a card is a new condition for the registry.",
+    "description": "What the card says on the page, in English.",
+    "orphaCode, orphanetName": "The ORPHAcode, and Orphanet's preferred English term, or null for a condition Orphanet does not code. Codes carried from the old dysnet.org encyclopedia, verified on Orphanet 2026-08-10.",
+    "limbs, type, other, genetic": "The finder's plain-language tags. limbs: arms, legs, several. type: reduction, fusion, extra, band. other: other, limbsonly. genetic: genetic, nongenetic, which follows Orphanet's OMIM cross-reference, a rule and not a judgement about any one family.",
+    "dysnetNames": "DysNet's own French and Italian name, for a condition whose code the registry does not record: Orphanet names codes, so it has none to give. To be confirmed by the member associations.",
+    "plain": "What it is, in the words a family uses, in English, French and Italian, shown under the name in the registry's questionnaire. Say what is absent and what is present, so that two conditions families call alike (\"small hand\": acheiria, symbrachydactyly) are told apart.",
+    "extent": "complete, where everything beyond one level is absent, or partial, where a part is missing or shorter. Only where the definition fixes it: a syndrome whose severity varies has none.",
+    "usualNames": "The names families and the press use, per language: shown and searched, never recorded, and not Orphanet terms. A name that fits several forms is listed under each, so the search offers them all and the family picks.",
+    "searchOnlyNames": "Names searched but never shown: a stigmatising one, or one that calls a congenital difference an amputation, which the page's definition sets apart. The build stops if a name like that is left among usualNames.",
+    "formOrder": "The order of the forms inside a card, where no published figure ranks them; otherwise the forms with a birth prevalence come first, commonest first.",
+    "registryOnly": "Conditions the registry's questionnaire offers that have no card on the page.",
+    "forms": "The same fields for the forms Orphanet files under a card, keyed by ORPHAcode. _term is Orphanet's term, for whoever reads this file.",
+    "_note": "A remark for whoever edits this file. Never published."
+  },
+  "conditions": [
+    {
+      "name": "Adams-Oliver syndrome",
+      "description": "limb differences combined with scalp and skull defects.",
+      "orphaCode": 974,
+      "orphanetName": "Adams-Oliver syndrome",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "Short or missing ends of fingers or toes, with a skin and skull defect at the top of the head.",
+        "fr": "Bouts de doigts ou d’orteils courts ou manquants, avec un défaut de peau et d’os du crâne au sommet de la tête.",
+        "it": "Estremità delle dita delle mani o dei piedi corte o mancanti, con un difetto della pelle e dell’osso del cranio sulla sommità della testa."
+      }
+    },
+    {
+      "name": "Amelia",
+      "description": "complete absence of one or more limbs.",
+      "orphaCode": 294925,
+      "orphanetName": "Non-syndromic amelia",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Amélie",
+        "it": "Amelia"
+      },
+      "plain": {
+        "en": "One or more limbs are completely absent.",
+        "fr": "Un ou plusieurs membres sont complètement absents.",
+        "it": "Uno o più arti sono completamente assenti."
+      },
+      "extent": "complete"
+    },
+    {
+      "name": "Amelia of the upper limb",
+      "description": "complete or near-complete absence of one or both arms, without other malformations.",
+      "orphaCode": 294967,
+      "orphanetName": "Isolated amelia of upper limb",
+      "limbs": ["arms"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "One or both arms are completely or almost completely absent, from the shoulder, with no other malformation.",
+        "fr": "Un ou les deux bras sont absents en entier ou presque, dès l’épaule, sans autre malformation.",
+        "it": "Uno o entrambi gli arti superiori sono assenti del tutto o quasi, dalla spalla, senza altre malformazioni."
+      },
+      "extent": "complete",
+      "usualNames": {
+        "en": ["missing arm", "absent arm"],
+        "fr": ["agénésie du membre supérieur", "ATMS"],
+        "it": ["agenesia dell'arto superiore"]
+      }
+    },
+    {
+      "name": "Amelia of the lower limb",
+      "description": "complete or near-complete absence of one or both legs, without other malformations.",
+      "orphaCode": 294969,
+      "orphanetName": "Isolated amelia of lower limb",
+      "limbs": ["legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "One or both legs are completely or almost completely absent, from the hip, with no other malformation.",
+        "fr": "Une ou les deux jambes sont absentes en entier ou presque, dès la hanche, sans autre malformation.",
+        "it": "Uno o entrambi gli arti inferiori sono assenti del tutto o quasi, dall’anca, senza altre malformazioni."
+      },
+      "extent": "complete"
+    },
+    {
+      "name": "Amniotic band syndrome",
+      "description": "bands of amnion constrict developing limbs before birth.",
+      "orphaCode": 295000,
+      "orphanetName": "Amniotic band syndrome",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["band", "reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "Bands of tissue in the womb squeeze a limb or fingers: grooves, swelling, or part of a finger or limb missing.",
+        "fr": "Des brides dans l’utérus serrent un membre ou des doigts : sillons, gonflement, ou une partie d’un doigt ou d’un membre manquante.",
+        "it": "Briglie di tessuto nell’utero stringono un arto o le dita: solchi, gonfiore, o una parte di un dito o di un arto mancante."
+      }
+    },
+    {
+      "name": "Brachydactyly",
+      "description": "disproportionately short fingers or toes.",
+      "orphaCode": null,
+      "orphanetName": null,
+      "limbs": ["arms", "legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "dysnetNames": {
+        "fr": "Brachydactylie",
+        "it": "Brachidattilia"
+      },
+      "plain": {
+        "en": "Fingers or toes are shorter than usual; none is missing.",
+        "fr": "Des doigts ou orteils sont plus courts que la normale ; aucun ne manque.",
+        "it": "Alcune dita delle mani o dei piedi sono più corte del normale; nessuna manca."
+      },
+      "extent": "partial"
+    },
+    {
+      "name": "Cenani-Lenz syndrome",
+      "description": "fused fingers and forearm bones give the hand a mitten-like form.",
+      "orphaCode": 3258,
+      "orphanetName": "Cenani-Lenz syndrome",
+      "limbs": ["arms"],
+      "type": ["fusion"],
+      "other": ["other", "limbsonly"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "Fingers joined together and forearm bones fused, giving the hand a mitten shape.",
+        "fr": "Doigts soudés entre eux et os de l’avant-bras fusionnés, donnant à la main une forme de moufle.",
+        "it": "Dita unite tra loro e ossa dell’avambraccio fuse, che danno alla mano una forma a muffola."
+      }
+    },
+    {
+      "name": "Crossed polysyndactyly",
+      "description": "combined webbing and extra digits on hands and feet.",
+      "orphaCode": 2935,
+      "orphanetName": "Crossed polysyndactyly",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["extra", "fusion"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "Extra fingers or toes and joined fingers or toes, on hands and feet.",
+        "fr": "Des doigts ou orteils en plus et des doigts ou orteils soudés, aux mains et aux pieds.",
+        "it": "Dita in più e dita unite, alle mani e ai piedi."
+      }
+    },
+    {
+      "name": "Ectrodactyly (SHFM)",
+      "description": "split hand–foot malformation of the central rays.",
+      "orphaCode": 2440,
+      "orphanetName": "Isolated split hand-split foot malformation",
+      "limbs": ["arms", "legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "Split hand or foot: the middle fingers or toes are missing, leaving a deep cleft.",
+        "fr": "Main ou pied fendu : les doigts ou orteils du milieu manquent, laissant une fente profonde.",
+        "it": "Mano o piede a spacco: mancano le dita centrali, lasciando una fessura profonda."
+      },
+      "extent": "partial",
+      "usualNames": {
+        "en": ["split hand", "split foot"],
+        "fr": ["main fendue", "pied fendu"],
+        "it": ["mano a spacco", "piede a spacco"]
+      },
+      "searchOnlyNames": {
+        "en": ["lobster claw hand"],
+        "fr": ["pince de homard"],
+        "it": ["mano a chela di aragosta"]
+      }
+    },
+    {
+      "name": "Fibular hemimelia",
+      "description": "partial or complete absence of the fibula.",
+      "orphaCode": 93323,
+      "orphanetName": "Isolated fibular hemimelia",
+      "limbs": ["legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "The fibula, the thin outer bone of the lower leg, is short or absent; the leg is shorter and outer toes may be missing.",
+        "fr": "Le péroné, l’os fin extérieur de la jambe, est court ou absent ; la jambe est plus courte et des orteils du côté extérieur peuvent manquer.",
+        "it": "Il perone, l’osso sottile esterno della gamba, è corto o assente; la gamba è più corta e possono mancare dita esterne del piede."
+      },
+      "extent": "partial"
+    },
+    {
+      "name": "Holt-Oram syndrome",
+      "description": "upper-limb differences with congenital heart defects.",
+      "orphaCode": 392,
+      "orphanetName": "Holt-Oram syndrome",
+      "limbs": ["arms"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "Differences of the thumb, forearm or arm, with a heart defect. Genetic in origin.",
+        "fr": "Des différences du pouce, de l’avant-bras ou du bras, avec une malformation du cœur. D’origine génétique.",
+        "it": "Differenze del pollice, dell’avambraccio o del braccio, con una malformazione del cuore. Di origine genetica."
+      }
+    },
+    {
+      "name": "Microgastria–limb reduction",
+      "description": "a small stomach together with limb reduction defects.",
+      "orphaCode": 2538,
+      "orphanetName": "Microgastria-limb reduction defect syndrome",
+      "limbs": ["arms", "several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "A very small stomach, with one or more limbs partly absent.",
+        "fr": "Un estomac très petit, avec un ou plusieurs membres en partie absents.",
+        "it": "Uno stomaco molto piccolo, con uno o più arti in parte assenti."
+      }
+    },
+    {
+      "name": "Phocomelia",
+      "description": "intercalary limb deficiency; the hands or feet attach close to the trunk.",
+      "orphaCode": 2879,
+      "orphanetName": "Phocomelia, Schinzel type",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "dysnetNames": {
+        "fr": "Phocomélie",
+        "it": "Focomelia"
+      },
+      "plain": {
+        "en": "The middle parts of the limb are missing or very short: the hand or foot is present, close to the body.",
+        "fr": "Les parties du milieu du membre manquent ou sont très courtes : la main ou le pied est présent, près du corps.",
+        "it": "Le parti centrali dell’arto mancano o sono molto corte: la mano o il piede è presente, vicino al corpo."
+      },
+      "extent": "partial"
+    },
+    {
+      "name": "Poland syndrome",
+      "description": "underdeveloped chest muscle with hand differences on the same side.",
+      "orphaCode": 2911,
+      "orphanetName": "Poland syndrome",
+      "limbs": ["arms"],
+      "type": ["reduction", "fusion"],
+      "other": ["other"],
+      "genetic": ["genetic", "nongenetic"],
+      "plain": {
+        "en": "A chest muscle is missing or small on one side, with a smaller hand or short, joined fingers on the same side.",
+        "fr": "Un muscle de la poitrine manque ou est peu développé d’un côté, avec une main plus petite ou des doigts courts et soudés du même côté.",
+        "it": "Un muscolo del torace manca o è poco sviluppato da un lato, con una mano più piccola o dita corte e unite dallo stesso lato."
+      }
+    },
+    {
+      "name": "Polydactyly",
+      "description": "more than the usual number of fingers or toes.",
+      "orphaCode": 2913,
+      "orphanetName": "Non-syndromic polydactyly",
+      "limbs": ["arms", "legs"],
+      "type": ["extra"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "dysnetNames": {
+        "fr": "Polydactylie",
+        "it": "Polidattilia"
+      },
+      "plain": {
+        "en": "One or more extra fingers or toes.",
+        "fr": "Un ou plusieurs doigts ou orteils en plus.",
+        "it": "Una o più dita delle mani o dei piedi in più."
+      },
+      "usualNames": {
+        "en": ["extra finger", "sixth finger", "extra toe"],
+        "fr": ["doigt surnuméraire", "sixième doigt", "orteil surnuméraire"],
+        "it": ["dito soprannumerario", "sesto dito"]
+      }
+    },
+    {
+      "name": "Radial aplasia",
+      "description": "the radius is underdeveloped or absent.",
+      "orphaCode": 93321,
+      "orphanetName": "Isolated radial hemimelia",
+      "limbs": ["arms"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "The radius, the forearm bone on the thumb side, is short or absent; the hand bends towards the thumb, which may be small or missing.",
+        "fr": "Le radius, l’os de l’avant-bras du côté du pouce, est court ou absent ; la main est déviée vers le pouce, qui peut être petit ou absent.",
+        "it": "Il radio, l’osso dell’avambraccio dal lato del pollice, è corto o assente; la mano è deviata verso il pollice, che può essere piccolo o assente."
+      },
+      "extent": "partial",
+      "usualNames": {
+        "en": ["radial club hand"],
+        "fr": ["main bote radiale"],
+        "it": ["mano torta radiale"]
+      }
+    },
+    {
+      "name": "Roberts syndrome",
+      "description": "symmetric limb reduction with growth delay (SC phocomelia).",
+      "orphaCode": 3103,
+      "orphanetName": "Roberts syndrome",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "The limbs are short on both sides, their middle parts often missing, with slow growth and a cleft lip or palate.",
+        "fr": "Les membres sont courts des deux côtés, leurs parties du milieu manquant souvent, avec une croissance lente et une fente labiale ou palatine.",
+        "it": "Gli arti sono corti da entrambi i lati, spesso mancano le parti centrali, con crescita lenta e labbro leporino o palatoschisi."
+      }
+    },
+    {
+      "name": "Symbrachydactyly",
+      "description": "short, webbed or missing fingers, usually on one hand; not inherited.",
+      "orphaCode": null,
+      "orphanetName": null,
+      "limbs": ["arms"],
+      "type": ["reduction", "fusion"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Symbrachydactylie",
+        "it": "Simbrachidattilia"
+      },
+      "plain": {
+        "en": "The hand is present, at least the palm, but smaller: fingers are short, joined or missing, usually on one hand. Not inherited. Not to be confused with acheiria, where the whole hand is absent.",
+        "fr": "La main est présente, au moins la paume, mais plus petite : des doigts sont courts, soudés ou manquent, en général sur une seule main. Non héréditaire. À ne pas confondre avec l’achéirie, où la main entière est absente.",
+        "it": "La mano è presente, almeno il palmo, ma più piccola: alcune dita sono corte, unite o mancanti, di solito su una sola mano. Non ereditaria. Da non confondere con l’acheiria, in cui manca l’intera mano."
+      },
+      "extent": "partial",
+      "usualNames": {
+        "en": ["small hand"],
+        "fr": ["petite main", "main courte"],
+        "it": ["mano piccola"]
+      }
+    },
+    {
+      "name": "Syndactyly",
+      "description": "webbing between two or more fingers or toes.",
+      "orphaCode": 90025,
+      "orphanetName": "Non-syndromic syndactyly",
+      "limbs": ["arms", "legs"],
+      "type": ["fusion"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "dysnetNames": {
+        "fr": "Syndactylie",
+        "it": "Sindattilia"
+      },
+      "plain": {
+        "en": "Two or more fingers or toes are joined together, by skin or by bone.",
+        "fr": "Deux doigts ou orteils ou plus sont soudés entre eux, par la peau ou par l’os.",
+        "it": "Due o più dita delle mani o dei piedi sono unite tra loro, dalla pelle o dall’osso."
+      },
+      "usualNames": {
+        "en": ["webbed fingers", "joined fingers"],
+        "fr": ["doigts palmés", "doigts collés"],
+        "it": ["dita palmate", "dita unite"]
+      }
+    },
+    {
+      "name": "Terminal transverse limb defect",
+      "description": "the limb forms and then stops: everything beyond one level is missing, most often the hand or the forearm, with the parts above it normally formed.",
+      "orphaCode": 498461,
+      "orphanetName": "Non-syndromic terminal transverse limb defect",
+      "limbs": ["arms", "legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Défaut transverse terminal de membre",
+        "it": "Difetto trasversale terminale degli arti"
+      },
+      "plain": {
+        "en": "The limb stops at one level: everything beyond is completely absent (for example the hand, or the forearm and hand); what is above is normal.",
+        "fr": "Le membre s’arrête à un niveau : tout ce qui est au-delà est complètement absent (par exemple la main, ou l’avant-bras et la main) ; ce qui est au-dessus est normal.",
+        "it": "L’arto si interrompe a un certo livello: tutto ciò che sta oltre è completamente assente (per esempio la mano, o l’avambraccio e la mano); ciò che sta sopra è normale."
+      },
+      "extent": "complete",
+      "formOrder": [294979, 294983, 973, 294981, 294986, 498491, 294925, 294967, 294969, 294971, 931],
+      "_note": "formOrder is DysNet's own, to be confirmed with the member associations: no birth prevalence is published for the terminal transverse forms except acheiropodia (0.4 per 100,000, a founder population in Brazil), so they follow what the literature says of their frequency. The limb stopping in the forearm is the commonest, the upper limb more often than the lower, and the forms with four limbs, or all hands and feet, absent are the rarest."
+    },
+    {
+      "name": "Tetra-amelia",
+      "description": "absence of all four limbs, with other malformations.",
+      "orphaCode": 3301,
+      "orphanetName": "Tetraamelia-multiple malformations syndrome",
+      "limbs": ["several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "All four limbs are completely absent, with no other malformation.",
+        "fr": "Les quatre membres sont complètement absents, sans autre malformation.",
+        "it": "Tutti e quattro gli arti sono completamente assenti, senza altre malformazioni."
+      },
+      "extent": "complete",
+      "_note": "The page describes the syndrome its code names, ORPHA:3301, with other malformations. The registry records this card as ORPHA:294971, Isolated tetra-amelia, the entry that matches the other amelia cards, so plain describes the isolated form, as the registry's questionnaire shows it."
+    },
+    {
+      "name": "Thrombocytopenia-absent radius (TAR)",
+      "description": "absent radius with low platelet counts.",
+      "orphaCode": 3320,
+      "orphanetName": "Thrombocytopenia-absent radius syndrome",
+      "limbs": ["arms"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "The radius is absent on both sides, with low platelets in the blood; the thumbs are present.",
+        "fr": "Le radius est absent des deux côtés, avec un manque de plaquettes dans le sang ; les pouces sont présents.",
+        "it": "Il radio è assente da entrambi i lati, con piastrine basse nel sangue; i pollici sono presenti."
+      }
+    },
+    {
+      "name": "Tibial aplasia–ectrodactyly",
+      "description": "tibial deficiency together with split hand–foot.",
+      "orphaCode": 3329,
+      "orphanetName": "Tibial aplasia-ectrodactyly syndrome",
+      "limbs": ["legs", "several"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["genetic"],
+      "plain": {
+        "en": "The tibia is short or absent, with a split hand or foot.",
+        "fr": "Le tibia est court ou absent, avec une main ou un pied fendu.",
+        "it": "La tibia è corta o assente, con una mano o un piede a spacco."
+      }
+    },
+    {
+      "name": "Tibial hemimelia",
+      "description": "deficiency of the tibia with an intact fibula.",
+      "orphaCode": 93322,
+      "orphanetName": "Isolated tibial hemimelia",
+      "limbs": ["legs"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "The tibia, the main bone of the lower leg, is short or absent, while the fibula is present.",
+        "fr": "Le tibia, l’os principal de la jambe, est court ou absent, alors que le péroné est présent.",
+        "it": "La tibia, l’osso principale della gamba, è corta o assente, mentre il perone è presente."
+      },
+      "extent": "partial"
+    },
+    {
+      "name": "Ulnar hemimelia",
+      "description": "partial or complete absence of the ulna.",
+      "orphaCode": 93320,
+      "orphanetName": "Isolated ulnar hemimelia",
+      "limbs": ["arms"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "The ulna, the forearm bone on the little-finger side, is short or absent; fingers on that side may be missing.",
+        "fr": "Le cubitus, l’os de l’avant-bras du côté du petit doigt, est court ou absent ; des doigts de ce côté peuvent manquer.",
+        "it": "L’ulna, l’osso dell’avambraccio dal lato del mignolo, è corta o assente; possono mancare dita da quel lato."
+      },
+      "extent": "partial"
+    },
+    {
+      "name": "Intercalary limb defect",
+      "description": "the middle segment of the limb is missing or short, while the hand or foot beyond it is formed.",
+      "orphaCode": 294927,
+      "orphanetName": "Non-syndromic intercalary limb defects",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Défaut intercalaire de membre",
+        "it": "Difetto intercalare degli arti"
+      },
+      "plain": {
+        "en": "The middle part of the limb is missing or short, while the hand or foot is present.",
+        "fr": "La partie du milieu du membre manque ou est courte, alors que la main ou le pied est présent.",
+        "it": "La parte centrale dell’arto manca o è corta, mentre la mano o il piede è presente."
+      },
+      "extent": "partial",
+      "_note": "One of the forms Orphanet files under a group code the cards carried, given a card of its own. The middle of the limb is missing and the end of it is formed (ORPHA:294927)."
+    },
+    {
+      "name": "Longitudinal limb defect",
+      "description": "a bone along the length of the limb is missing or short, while the segments above and below it are present.",
+      "orphaCode": 498457,
+      "orphanetName": "Non-syndromic longitudinal limb defect",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Défaut longitudinal de membre",
+        "it": "Difetto longitudinale degli arti"
+      },
+      "plain": {
+        "en": "A bone along the length of the limb is missing or short, on one side of the arm or leg; the hand or foot is present, sometimes with fingers or toes missing on that side.",
+        "fr": "Un os dans la longueur du membre manque ou est court, d’un côté du bras ou de la jambe ; la main ou le pied est présent, parfois avec des doigts ou orteils manquants de ce côté.",
+        "it": "Un osso lungo l’arto manca o è corto, da un lato del braccio o della gamba; la mano o il piede è presente, a volte con dita mancanti da quel lato."
+      },
+      "extent": "partial",
+      "_note": "One of the forms Orphanet files under a group code the cards carried, given a card of its own. A bone along the length of the limb is missing (ORPHA:498457)."
+    },
+    {
+      "name": "Hyperphalangy",
+      "description": "an extra bone inside a finger or toe, with the usual number of digits.",
+      "orphaCode": 295002,
+      "orphanetName": "Isolated hyperphalangy",
+      "limbs": ["arms", "legs"],
+      "type": ["extra"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "An extra small bone inside a finger or toe; the number of fingers is usual.",
+        "fr": "Un petit os en plus dans un doigt ou un orteil ; le nombre de doigts est normal.",
+        "it": "Un piccolo osso in più in un dito della mano o del piede; il numero di dita è normale."
+      },
+      "_note": "One of the forms Orphanet files under syndactyly's group code (ORPHA:90025), given a card of its own."
+    }
+  ],
+  "registryOnly": [
+    {
+      "name": "Thalidomide embryopathy",
+      "orphaCode": 3312,
+      "orphanetName": "Thalidomide embryopathy",
+      "plain": {
+        "en": "Limb differences caused by thalidomide taken during pregnancy, most often missing or very short arms.",
+        "fr": "Différences des membres dues à la thalidomide prise pendant la grossesse, le plus souvent des bras manquants ou très courts.",
+        "it": "Differenze degli arti causate dalla talidomide assunta in gravidanza, più spesso braccia mancanti o molto corte."
+      },
+      "note": "No card of its own on the page, where thalidomide is a cause of dysmelia and a filter of the bibliography: the registry offers it because many of DysNet's member associations are organisations of thalidomide survivors. Coded ORPHA:3312, never as ORPHA:2879 Phocomelia, Schinzel type, a genetic syndrome, which would assert a cause a survivor does not have."
+    }
+  ],
+  "forms": {
+    "931": {
+      "_term": "Isolated acheiropodia",
+      "plain": {
+        "en": "Both hands and both feet are absent, with the lower ends of the forearms and lower legs. Inherited; very rare.",
+        "fr": "Les deux mains et les deux pieds sont absents, avec l’extrémité des avant-bras et des jambes. Héréditaire, très rare.",
+        "it": "Mancano entrambe le mani ed entrambi i piedi, con l’estremità degli avambracci e delle gambe. Ereditaria, molto rara."
+      },
+      "extent": "complete"
+    },
+    "973": {
+      "_term": "Isolated absence/hypoplasia of fingers excluding thumb, unilateral",
+      "plain": {
+        "en": "On one hand, fingers other than the thumb are missing or small; the thumb and the palm are present.",
+        "fr": "Sur une main, des doigts autres que le pouce manquent ou sont petits ; le pouce et la paume sont présents.",
+        "it": "Su una mano, alcune dita diverse dal pollice mancano o sono piccole; il pollice e il palmo sono presenti."
+      },
+      "extent": "partial"
+    },
+    "1987": {
+      "_term": "Isolated femoral agenesis/hypoplasia",
+      "plain": {
+        "en": "The thigh bone is absent or short; the lower leg and foot are present.",
+        "fr": "Le fémur, l’os de la cuisse, est absent ou court ; la jambe et le pied sont présents.",
+        "it": "Il femore, l’osso della coscia, è assente o corto; la gamba e il piede sono presenti."
+      },
+      "extent": "partial"
+    },
+    "2130": {
+      "_term": "Non-syndromic hemimelia",
+      "plain": {
+        "en": "A long bone of the forearm or lower leg is short or absent, on one side.",
+        "fr": "Un os long de l’avant-bras ou de la jambe est court ou absent, d’un côté.",
+        "it": "Un osso lungo dell’avambraccio o della gamba è corto o assente, da un lato."
+      },
+      "extent": "partial"
+    },
+    "294925": {
+      "_term": "Non-syndromic amelia",
+      "extent": "complete"
+    },
+    "294967": {
+      "_term": "Isolated amelia of upper limb",
+      "extent": "complete"
+    },
+    "294969": {
+      "_term": "Isolated amelia of lower limb",
+      "extent": "complete"
+    },
+    "294971": {
+      "_term": "Isolated tetra-amelia",
+      "plain": {
+        "en": "All four limbs are completely absent, with no other malformation.",
+        "fr": "Les quatre membres sont complètement absents, sans autre malformation.",
+        "it": "Tutti e quattro gli arti sono completamente assenti, senza altre malformazioni."
+      },
+      "extent": "complete"
+    },
+    "294973": {
+      "_term": "Isolated humeral agenesis/hypoplasia",
+      "plain": {
+        "en": "The upper arm bone is absent or short; the forearm and hand are present.",
+        "fr": "L’humérus, l’os du bras, est absent ou court ; l’avant-bras et la main sont présents.",
+        "it": "L’omero, l’osso del braccio, è assente o corto; l’avambraccio e la mano sono presenti."
+      },
+      "extent": "partial"
+    },
+    "294975": {
+      "_term": "Isolated absence of upper arm and forearm with hand present",
+      "plain": {
+        "en": "The upper arm and forearm are absent: the hand is attached close to the shoulder.",
+        "fr": "Le bras et l’avant-bras sont absents : la main est rattachée près de l’épaule.",
+        "it": "Il braccio e l’avambraccio sono assenti: la mano è attaccata vicino alla spalla."
+      },
+      "extent": "partial"
+    },
+    "294977": {
+      "_term": "Isolated absence of thigh and lower leg with foot present",
+      "plain": {
+        "en": "The thigh and lower leg are absent: the foot is attached close to the hip.",
+        "fr": "La cuisse et la jambe sont absentes : le pied est rattaché près de la hanche.",
+        "it": "La coscia e la gamba sono assenti: il piede è attaccato vicino all’anca."
+      },
+      "extent": "partial"
+    },
+    "294979": {
+      "_term": "Isolated absence of both forearm and hand",
+      "plain": {
+        "en": "The forearm and hand are completely absent; the arm stops at or just below the elbow.",
+        "fr": "L’avant-bras et la main sont complètement absents ; le bras s’arrête au niveau du coude ou juste en dessous.",
+        "it": "L’avambraccio e la mano sono completamente assenti; il braccio si interrompe al gomito o appena sotto."
+      },
+      "extent": "complete",
+      "usualNames": {
+        "en": ["below-elbow limb difference", "below-elbow deficiency", "short arm"],
+        "fr": [
+          "agénésie du bras",
+          "agénésie de l'avant-bras",
+          "petit bras",
+          "bébés sans bras",
+          "né sans bras",
+          "agénésie transverse du membre supérieur",
+          "ATMS"
+        ],
+        "it": ["agenesia del braccio", "agenesia dell'avambraccio", "braccio corto"]
+      },
+      "searchOnlyNames": {
+        "en": ["congenital below-elbow amputation"]
+      }
+    },
+    "294981": {
+      "_term": "Isolated absence of both lower leg and foot",
+      "plain": {
+        "en": "The lower leg and foot are completely absent; the leg stops at or just below the knee.",
+        "fr": "La jambe et le pied sont complètement absents ; le membre s’arrête au niveau du genou ou juste en dessous.",
+        "it": "La gamba e il piede sono completamente assenti; l’arto si interrompe al ginocchio o appena sotto."
+      },
+      "extent": "complete",
+      "usualNames": {
+        "en": ["below-knee limb difference", "below-knee deficiency", "short leg"],
+        "fr": [
+          "agénésie de la jambe",
+          "petite jambe",
+          "né sans jambe",
+          "agénésie transverse du membre inférieur"
+        ],
+        "it": ["agenesia della gamba", "gamba corta"]
+      },
+      "searchOnlyNames": {
+        "en": ["congenital below-knee amputation"]
+      }
+    },
+    "294983": {
+      "_term": "Isolated acheiria",
+      "plain": {
+        "en": "The whole hand is absent, from the wrist; the forearm is normal. Not to be confused with symbrachydactyly, where the hand is present but small.",
+        "fr": "La main entière est absente, à partir du poignet ; l’avant-bras est normal. À ne pas confondre avec la symbrachydactylie, où la main est présente mais petite.",
+        "it": "Manca l’intera mano, dal polso; l’avambraccio è normale. Da non confondere con la simbrachidattilia, in cui la mano è presente ma piccola."
+      },
+      "extent": "complete",
+      "usualNames": {
+        "en": ["missing hand", "small hand"],
+        "fr": [
+          "agénésie de la main",
+          "petite main",
+          "né sans main",
+          "agénésie transverse du membre supérieur",
+          "ATMS"
+        ],
+        "it": ["agenesia della mano", "mano piccola"]
+      },
+      "searchOnlyNames": {
+        "en": ["congenital hand amputation"]
+      }
+    },
+    "294986": {
+      "_term": "Isolated apodia",
+      "plain": {
+        "en": "The whole foot is absent, from the ankle; the lower leg is normal.",
+        "fr": "Le pied entier est absent, à partir de la cheville ; la jambe est normale.",
+        "it": "Manca l’intero piede, dalla caviglia; la gamba è normale."
+      },
+      "extent": "complete",
+      "usualNames": {
+        "en": ["missing foot"],
+        "fr": ["agénésie du pied", "né sans pied"],
+        "it": ["agenesia del piede"]
+      }
+    },
+    "294988": {
+      "_term": "Isolated hypoplasia of thumb",
+      "plain": {
+        "en": "The thumb is small, underdeveloped or absent; the other fingers are present.",
+        "fr": "Le pouce est petit, peu développé ou absent ; les autres doigts sont présents.",
+        "it": "Il pollice è piccolo, poco sviluppato o assente; le altre dita sono presenti."
+      },
+      "extent": "partial"
+    },
+    "498491": {
+      "_term": "Non-syndromic complete hemimelia",
+      "plain": {
+        "en": "The lower half of a limb is completely absent: the forearm and hand, or the lower leg and foot.",
+        "fr": "La moitié inférieure d’un membre est complètement absente : l’avant-bras et la main, ou la jambe et le pied.",
+        "it": "La metà inferiore di un arto è completamente assente: l’avambraccio e la mano, o la gamba e il piede."
+      },
+      "extent": "complete"
+    },
+    "633228": {
+      "_term": "Isolated proximal femoral focal deficiency",
+      "plain": {
+        "en": "The upper part of the thigh bone, near the hip, is missing or short; the leg is shorter.",
+        "fr": "La partie haute du fémur, près de la hanche, manque ou est courte ; la jambe est plus courte.",
+        "it": "La parte alta del femore, vicino all’anca, manca o è corta; la gamba è più corta."
+      },
+      "extent": "partial"
+    },
+    "667589": {
+      "_term": "Isolated congenital femoral bifurcation",
+      "plain": {
+        "en": "The thigh bone divides in two at its lower end.",
+        "fr": "Le fémur se divise en deux à son extrémité basse.",
+        "it": "Il femore si divide in due alla sua estremità inferiore."
+      }
+    }
+  }
+}

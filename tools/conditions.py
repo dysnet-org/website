@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """The one place the tools read the condition list from.
 
-CONDITIONS in build-demo.py is the single source of truth for what the site describes. Every
-builder used to parse it with its own regular expression, which meant four copies of the same
-assumption about the tuple's shape. They read it from here now, and so do the audit and the
-orchestrator, so a change to the tuple is made once.
+tools/conditions.json is the single source of truth for the conditions DysNet describes: the cards
+of Understanding dysmelia, the registry-only entries, and everything DysNet says of each (its names
+in French and Italian where Orphanet has none, the names families use, the plain descriptions).
+build-demo.py builds the page from it and publishes it as /data/conditions.json, which the DysNet
+registry's condition question reads live. The builders read it from here, and so do the audit and
+the orchestrator, so a condition is added or changed in that one file.
 
 Also here: the registers a card depends on, loaded the same way the site build loads them, and the
 words a condition is known by (Orphanet's term and synonyms), which the bibliography's vocabulary
@@ -18,9 +20,7 @@ HERE = pathlib.Path(__file__).parent
 ROOT = HERE.parent
 BUILD = ROOT / "build-demo.py"
 
-# (name, description, orphacode or None, orphanet_name or None, limbs, type, other, genetic)
-TUPLE = re.compile(r'\(\s*"([^"]+)",\s*"([^"]*)",\s*(\d+|None),\s*(?:"([^"]*)"|None),'
-                   r'\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)"\s*\)')
+REFERENCE = HERE / "conditions.json"
 
 
 def source():
@@ -34,15 +34,20 @@ def block(name, src=None):
     return src[start:src.index("\n]\n", start) + 2]
 
 
+def reference():
+    """tools/conditions.json as it is written: the cards, the registry-only entries, the forms."""
+    return json.loads(REFERENCE.read_text(encoding="utf-8"))
+
+
 def conditions(src=None):
-    """Every card, in the order of CONDITIONS, as a dict."""
-    out = []
-    for m in TUPLE.finditer(block("CONDITIONS", src)):
-        name, desc, code, orpha, limbs, ctype, other, genetic = m.groups()
-        out.append({"name": name, "desc": desc, "code": None if code == "None" else code,
-                    "orphanet_name": orpha, "limbs": limbs, "type": ctype, "other": other, "genetic": genetic})
+    """Every card of the page, in the order of tools/conditions.json, as a dict. The code is a string,
+    as the registers key it; the finder's tags are space-separated, as the page writes them."""
+    out = [{"name": c["name"], "desc": c["description"], "code": str(c["orphaCode"]) if c.get("orphaCode") else None,
+            "orphanet_name": c.get("orphanetName"), "limbs": " ".join(c["limbs"]), "type": " ".join(c["type"]),
+            "other": " ".join(c["other"]), "genetic": " ".join(c["genetic"])}
+           for c in reference()["conditions"]]
     if not out:
-        raise SystemExit("conditions.py: CONDITIONS not found or its tuple shape changed")
+        raise SystemExit("conditions.py: tools/conditions.json lists no condition")
     return out
 
 

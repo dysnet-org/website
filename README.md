@@ -13,6 +13,7 @@ centres) replacing the blog and static pages, plus the registry flagship
 | Path | What it is |
 |---|---|
 | `build-demo.py` | Generates the whole site. One layout (SEO head, header, footer) with page bodies injected. |
+| `tools/conditions.json` | The conditions: the one file where a condition is added or changed, with everything DysNet says of it in English, French and Italian. `build-demo.py` builds the cards from it and publishes it as `/data/conditions.json`, which the DysNet registry's condition question reads live. After an edit, run `python3 tools/update-conditions.py`. |
 | `docs/` | The generated site, served by GitHub Pages: 19 pages, assets, `sitemap.xml`, `search-index.json`. |
 | `docs/assets/css/site.css` | Stylesheet: golden-ratio design tokens, DysNet brand colours. |
 | `docs/assets/js/site.js` | Search, condition finder, donate widget, click-to-play video. |

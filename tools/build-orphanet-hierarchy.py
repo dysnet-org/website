@@ -15,10 +15,13 @@ Usage: python3 tools/build-orphanet-hierarchy.py
 import datetime
 import json
 import pathlib
-import re
+import sys
 import time
 import urllib.error
 import urllib.request
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import conditions as C  # noqa: E402
 
 HERE = pathlib.Path(__file__).parent
 OUT = HERE / "orphanet-hierarchy.json"
@@ -27,14 +30,9 @@ MAX_DOWN = 3   # levels of children to follow under a group
 
 
 def codes_from_build():
-    """The ORPHAcodes of the conditions, read from CONDITIONS in build-demo.py, plus the codes the
-    code-name table adds by hand (symbrachydactyly's 1570)."""
-    src = (HERE.parent / "build-demo.py").read_text(encoding="utf-8")
-    blk = src[src.index("CONDITIONS = ["):]
-    blk = blk[:blk.index("\n]\n")]
-    codes = [c for c in re.findall(r'\(\s*"[^"]+",\s*"[^"]*",\s*(\d+)', blk)]
-    codes += re.findall(r'REG_CODE_NAMES\["(\d+)"\] = ', src)
-    return sorted(set(codes), key=int)
+    """The ORPHAcodes of the conditions, read from tools/conditions.json, plus the codes the
+    code-name table of build-demo.py adds by hand (symbrachydactyly's 1570)."""
+    return C.codes()
 
 
 def get(path):

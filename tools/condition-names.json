@@ -1,0 +1,954 @@
+{
+ "built": "2026-09-28",
+ "source": "Orphanet, ORPHAcodes API and Nomenclature Pack, licence CC BY 4.0",
+ "source_url": "https://api.orphacode.org/",
+ "note": "Orphanet's preferred French and Italian term for each code the conditions use, a card's own, a form's inside a card, or a registry-only entry's, with Orphanet's other names in those languages, which the registry searches but does not show. Attribute Orphanet wherever they are displayed.",
+ "names": {
+  "392": {
+   "fr": "Syndrome de Holt-Oram",
+   "it": "Sindrome di Holt-Oram",
+   "synonyms": {
+    "fr": [
+     "Syndrome coeur-main type 1",
+     "Syndrome coeur-membres type 1",
+     "Dysplasie atrio-digitale type 1",
+     "HOS",
+     "Syndrome cardiomélique type 1"
+    ],
+    "it": [
+     "Displasia atriodigitale",
+     "Sindrome cuore-mano"
+    ]
+   }
+  },
+  "931": {
+   "fr": "Acheiropodie isolée",
+   "it": "Acheiropodia isolata",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "973": {
+   "fr": "Absence/hypoplasie isolée unilatérale des doigts à l'exception du pouce",
+   "it": "Aplasia/ipoplasia isolata monolaterale delle dita delle mani ad esclusione del pollice",
+   "synonyms": {
+    "fr": [
+     "Adactylie congénitale isolée unilatérale de la main",
+     "Hypodactylie congénitale isolée unilatérale des doigts 2-5",
+     "Oligodactylie congénitale isolée unilatérale des doigts 2-5"
+    ],
+    "it": [
+     "Adattilia congenita monolaterale isolata della mano",
+     "Adattilia unilaterale della mano",
+     "Ipodattilia unilaterale delle dita della mano 2-5",
+     "Oligodattilia unilaterale delle dita della mano 2-5"
+    ]
+   }
+  },
+  "974": {
+   "fr": "Syndrome d'Adams-Oliver",
+   "it": "Sindrome di Adams-Oliver",
+   "synonyms": {
+    "fr": [
+     "Syndrome d'anomalie congénitale du cuir chevelu-anomalies distales des membres",
+     "Syndrome d'anomalie congénitale du cuir chevelu-réduction distale des membres"
+    ],
+    "it": [
+     "AOS",
+     "Aplasia cutanae congenita con anomalie della porzione distale degli arti",
+     "Aplasia cutanae congenita con difetti trasversali della porzione terminale degli arti",
+     "Difetti congeniti del cuoio capelluto con anomalie della porzione distale degli arti",
+     "Difetti congeniti del cuoio capelluto con anomalie in riduzione degli arti"
+    ]
+   }
+  },
+  "1987": {
+   "fr": "Agénésie/hypoplasie du fémur isolée",
+   "it": "Agenesia/ipoplasia isolata del femore",
+   "synonyms": {
+    "fr": [
+     "Agénésie/hypoplasie fémorale isolée",
+     "Déficience fémorale congénitale isolée",
+     "Méromélie intercalaire fémorale isolée"
+    ],
+    "it": [
+     "Accorciamento isolato congenito del femore",
+     "CFD",
+     "CSF",
+     "Deficit isolato congenito del femore",
+     "Femore corto congenito",
+     "Meromelia intercalare femorale",
+     "Meromelia intercalare isolata del femore"
+    ]
+   }
+  },
+  "2130": {
+   "fr": "Hémimélie non syndromique",
+   "it": "Emimelia non sindromica",
+   "synonyms": {
+    "fr": [
+     "Méromélie longitudinale non syndromique"
+    ],
+    "it": [
+     "Meromelia longitudinale non sindromica"
+    ]
+   }
+  },
+  "2440": {
+   "fr": "Malformation des mains et pieds fendus isolée",
+   "it": "Malformazione da schisi delle mani e dei piedi",
+   "synonyms": {
+    "fr": [
+     "Ectrodactylie",
+     "SHFM"
+    ],
+    "it": [
+     "Deformità a chela di aragosta",
+     "Ectrodattilia",
+     "Mani deformi a chela di aragosta",
+     "Mani e piedi deformi a chela di aragosta",
+     "SHFM"
+    ]
+   }
+  },
+  "2498": {
+   "fr": "Syndactylie type 8",
+   "it": "Sindattilia, tipo 8",
+   "synonyms": {
+    "fr": [
+     "Fusion des métacarpes 4 et 5",
+     "Métacarpes 4 et 5 fusionnés"
+    ],
+    "it": [
+     "Fusione del IV e V metacarpo"
+    ]
+   }
+  },
+  "2538": {
+   "fr": "Syndrome de microgastrie-anomalie des membres",
+   "it": "Sindrome microgastria-difetto in riduzione degli arti",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "2879": {
+   "fr": "Phocomélie type Schinzel",
+   "it": "Focomelia, tipo Schinzel",
+   "synonyms": {
+    "fr": [
+     "Absence congénitale de cubitus et de péroné",
+     "Aplasie/hypoplasie des membres et du pelvis",
+     "Déficit sévère des membres",
+     "Syndrome d'Al Awadi-Raas-Rothschild"
+    ],
+    "it": [
+     "Aplasia/ipoplasia degli arti e del bacino",
+     "Assenza congenita dell'ulna e del perone",
+     "Deficit grave degli arti",
+     "Sindrome di Al Awadi-Raas-Rothschild"
+    ]
+   }
+  },
+  "2911": {
+   "fr": "Syndrome de Poland",
+   "it": "Sindrome di Poland",
+   "synonyms": {
+    "fr": [
+     "Anomalie de Poland",
+     "Séquence de Poland"
+    ],
+    "it": []
+   }
+  },
+  "2913": {
+   "fr": "Polydactylie non syndromique",
+   "it": "Polidattilia",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "2935": {
+   "fr": "Polysyndactylie croisée",
+   "it": "Polisindattilia crociata",
+   "synonyms": {
+    "fr": [],
+    "it": [
+     "Polidattilia crociata"
+    ]
+   }
+  },
+  "3103": {
+   "fr": "Syndrome de Roberts",
+   "it": "Sindrome di Roberts",
+   "synonyms": {
+    "fr": [
+     "Phocomélie SC",
+     "Syndrome de phocomélie SC de Roberts",
+     "Syndrome pseudothalidomide",
+     "Syndrome pseudothalidomide SC"
+    ],
+    "it": [
+     "SC focomelia",
+     "Sindrome da focomelia SC di Roberts",
+     "Sindrome pseudo-talidomide",
+     "Sindrome pseudo-talidomide SC"
+    ]
+   }
+  },
+  "3258": {
+   "fr": "Syndrome de Cenani-Lenz",
+   "it": "Sindrome di Cenani-Lenz",
+   "synonyms": {
+    "fr": [
+     "Syndactylie de Cenani",
+     "Syndactylie de Cenani-Lenz",
+     "Syndactylie type 7"
+    ],
+    "it": [
+     "Sindattilia di Cenani",
+     "Sindattilia di Cenani-Lenz",
+     "Sindattilia, tipo 7"
+    ]
+   }
+  },
+  "3301": {
+   "fr": "Syndrome de tetra-amélie-malformations multiples",
+   "it": "Sindrome tetra-amelia-malformazioni multiple",
+   "synonyms": {
+    "fr": [
+     "PAPPAS",
+     "Phocomélie de Zimmer",
+     "Syndrome PAPPA"
+    ],
+    "it": [
+     "Sindrome di PAPPA",
+     "PAPPAS",
+     "Focomelia di Zimmer"
+    ]
+   }
+  },
+  "3312": {
+   "fr": "Embryopathie à la thalidomide",
+   "it": "Embriopatia da talidomide",
+   "synonyms": {
+    "fr": [
+     "Foetopathie à la thalidomide"
+    ],
+    "it": []
+   }
+  },
+  "3320": {
+   "fr": "Syndrome de thrombocytopénie-aplasie radiale",
+   "it": "Trombocitopenia - aplasia radiale",
+   "synonyms": {
+    "fr": [
+     "TAR syndrome"
+    ],
+    "it": [
+     "Sindrome TAR"
+    ]
+   }
+  },
+  "3329": {
+   "fr": "Syndrome de tibia aplasique-ectrodactylie",
+   "it": "Aplasia della tibia - ectrodattilia",
+   "synonyms": {
+    "fr": [
+     "Aplasie du tibia avec anomalie des mains et pieds fendus",
+     "Hémimélie tibiale avec malformation des mains et pieds fendus",
+     "Malformation des mains et pieds fendus associée à une aplasie des os longs",
+     "Malformation des mains et pieds fendus avec une anomalie des os longs",
+     "Syndrome SHFLD",
+     "Syndrome d'hémimélie tibiale-ectrodactylie"
+    ],
+    "it": [
+     "Schisi della mano - agenesia della tibia"
+    ]
+   }
+  },
+  "90025": {
+   "fr": "Syndactylie non syndromique",
+   "it": "Sindattilia non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "93320": {
+   "fr": "Hémimélie cubitale isolée",
+   "it": "Emimelia ulnare isolata",
+   "synonyms": {
+    "fr": [
+     "Déficit isolé congénital longitudinal de l'ulna",
+     "Déficit isolé congénital longitudinal du cubitus",
+     "Hémimélie ulnaire isolée",
+     "Main bote cubitale isolée",
+     "Méromélie cubitale longitudinale isolée",
+     "Méromélie ulnaire longitudinale isolée"
+    ],
+    "it": [
+     "Deficit longitudinale congenito isolato dell'ulna",
+     "Deficit ulnare isolato dell'avambraccio",
+     "Difetto congenito longitudinale dell'ulna",
+     "Mano torta ulnare",
+     "Mano torta ulnare isolata",
+     "Meromelia longitudinale ulnare",
+     "Meromelia ulnare longitudinale isolata"
+    ]
+   }
+  },
+  "93321": {
+   "fr": "Hémimélie radiale isolée",
+   "it": "Emimelia radiale isolata",
+   "synonyms": {
+    "fr": [
+     "Agénésie du rayon radial isolée",
+     "Déficit isolé congénital longitudinal du radius",
+     "Main bote radiale isolée",
+     "Méromélie longitudinale radiale isolée"
+    ],
+    "it": [
+     "Agenesia isolata del raggio radiale",
+     "Deficit longitudinale congenito isolato del radio",
+     "Mano torta radiale isolata",
+     "Meromelia radiale longitudinale isolata"
+    ]
+   }
+  },
+  "93322": {
+   "fr": "Hémimélie tibiale isolée",
+   "it": "Emimelia tibiale Isolata",
+   "synonyms": {
+    "fr": [
+     "Absence isolée congénitale de tibia",
+     "Aplasie et dysplasie isolée du tibia avec péroné intact",
+     "Déficit isolé congénital longitudinal du tibia",
+     "Méromélie tibiale longitudinale isolée"
+    ],
+    "it": [
+     "Aplasia e displasia congenita isolata della tibia con perone intatto",
+     "Assenza della tibia congenita isolata",
+     "Deficit longitudinale congenito isolato della tibia",
+     "Meromelia tibiale longitudinale isolata"
+    ]
+   }
+  },
+  "93323": {
+   "fr": "Hémimélie fibulaire isolée",
+   "it": "Emimelia fibulare isolata",
+   "synonyms": {
+    "fr": [
+     "Déficit isolé congénital longitudinal de la fibula",
+     "Déficit isolé congénital longitudinal du péroné",
+     "Hémimélie du péroné isolée",
+     "Hémimélie péronière isolée",
+     "Méromélie longitudinale de la fibula isolée",
+     "Méromélie longitudinale du péroné isolée",
+     "Méromélie longitudinale fibulaire isolée",
+     "Méromélie longitudinale péronière isolée"
+    ],
+    "it": [
+     "Deficit isolato del perone",
+     "Deficit longitudinale congenito isolato del perone",
+     "Meromelia longitudinale isolata del perone"
+    ]
+   }
+  },
+  "93334": {
+   "fr": "Polydactylie post-axiale type A",
+   "it": "Polidattilia postassiale, tipo A",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "93335": {
+   "fr": "Polydactylie post-axiale type B",
+   "it": "Polidattilia postassiale, tipo B",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "93336": {
+   "fr": "Polydactylie d'un pouce triphalangé",
+   "it": "Polidattilia del pollice trifalangeo",
+   "synonyms": {
+    "fr": [
+     "PPD2",
+     "Polydactylie préaxiale type 2"
+    ],
+    "it": [
+     "PPD2",
+     "Polidattilia preassiale, tipo 2"
+    ]
+   }
+  },
+  "93337": {
+   "fr": "Duplication de l'index",
+   "it": "Polidattilia del dito indice",
+   "synonyms": {
+    "fr": [
+     "PPD3",
+     "Polydactylie de l'index",
+     "Polydactylie préaxiale type 3"
+    ],
+    "it": [
+     "PPD3",
+     "Polidattilia preassiale, tipo 3"
+    ]
+   }
+  },
+  "93338": {
+   "fr": "Polysyndactylie",
+   "it": "Polisindattilia",
+   "synonyms": {
+    "fr": [
+     "PPD4",
+     "Polydactylie préaxiale type 4"
+    ],
+    "it": [
+     "PPD4",
+     "Polidattilia preassiale, tipo 4"
+    ]
+   }
+  },
+  "93339": {
+   "fr": "Polydactylie d'un pouce et/ou d'un hallux biphalangé",
+   "it": "Polidattilia del pollice e/o dellalluce bifalangeo",
+   "synonyms": {
+    "fr": [
+     "PPD1",
+     "Polydactylie préaxiale type 1"
+    ],
+    "it": [
+     "PPD1",
+     "Polidattilia preassiale, tipo 1"
+    ]
+   }
+  },
+  "93402": {
+   "fr": "Syndactylie type 1",
+   "it": "Sindattilia, tipo 1",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "93403": {
+   "fr": "Syndactylie type 2",
+   "it": "Sindattilia, tipo 2",
+   "synonyms": {
+    "fr": [
+     "Synpolydactylie"
+    ],
+    "it": [
+     "Sinpolidattilia"
+    ]
+   }
+  },
+  "93404": {
+   "fr": "Syndactylie type 3",
+   "it": "Sindattilia, tipo 3",
+   "synonyms": {
+    "fr": [
+     "SD3",
+     "Syndactylie du 4ème et 5ème doigt"
+    ],
+    "it": [
+     "SD3",
+     "Sindattilia delle IV e V dita"
+    ]
+   }
+  },
+  "93405": {
+   "fr": "Syndactylie type 4",
+   "it": "Sindattilia, tipo 4",
+   "synonyms": {
+    "fr": [
+     "Polysyndactylie type Haas"
+    ],
+    "it": [
+     "Polisindattilia, tipo Hass"
+    ]
+   }
+  },
+  "93406": {
+   "fr": "Syndactylie type 5",
+   "it": "Sindattilia, tipo 5",
+   "synonyms": {
+    "fr": [
+     "Syndactylie postaxiale avec synostose métacarpienne"
+    ],
+    "it": [
+     "SD5",
+     "Sindattilia postassiale con sinostosi metacarpale"
+    ]
+   }
+  },
+  "157801": {
+   "fr": "Syndactylie mésoaxiale synostosique avec réduction phalangienne",
+   "it": "Sindattilia sinostosica mesoassiale con riduzione delle falangi",
+   "synonyms": {
+    "fr": [
+     "MSSD",
+     "Syndactylie type 9",
+     "Syndactylie type Malik-Percin"
+    ],
+    "it": [
+     "MSSD",
+     "Sindattilia, tipo 9",
+     "Sindattilia, tipo Malik-Percin"
+    ]
+   }
+  },
+  "294925": {
+   "fr": "Amélie non syndromique",
+   "it": "Amelia non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "294927": {
+   "fr": "Anomalie réductionnelle intercalaire des membres non syndromique",
+   "it": "Difetti intercalari degli arti non sindromici",
+   "synonyms": {
+    "fr": [
+     "Méromélie intercalaire non syndromique"
+    ],
+    "it": [
+     "Meromelia intercalare",
+     "Meromelia intercalare non sindromica"
+    ]
+   }
+  },
+  "294967": {
+   "fr": "Amélie isolée des membres supérieurs",
+   "it": "Amelia degli arti superiori isolata",
+   "synonyms": {
+    "fr": [
+     "Agénésie isolée congénitale des membres supérieurs"
+    ],
+    "it": [
+     "Assenza congenita isolata degli arti superiori"
+    ]
+   }
+  },
+  "294969": {
+   "fr": "Amélie isolée des membres inférieurs",
+   "it": "Amelia degli arti inferiori isolata",
+   "synonyms": {
+    "fr": [
+     "Agénésie isolée congénitale des membres inférieurs"
+    ],
+    "it": [
+     "Assenza congenita isolata degli arti inferiori"
+    ]
+   }
+  },
+  "294971": {
+   "fr": "Tétra-amélie isolée",
+   "it": "Tetra-amelia isolata",
+   "synonyms": {
+    "fr": [
+     "Amélie complète isolée"
+    ],
+    "it": [
+     "Amelia totale isolata"
+    ]
+   }
+  },
+  "294973": {
+   "fr": "Agénésie/hypoplasie de l'humérus isolée",
+   "it": "Agenesia/ipoplasia isolata dell'omero",
+   "synonyms": {
+    "fr": [
+     "Absence congénitale de l'humérus isolée",
+     "Agénésie/hypoplasie humérale isolée",
+     "Déficit congénital de l'humérus isolé",
+     "Hypoplasie congénitale de l'humérus isolée",
+     "Méromélie intercalaire humérale isolée"
+    ],
+    "it": [
+     "Assenza congenita isolata dell'omero",
+     "Deficit congenito isolato dell'omero",
+     "Ipoplasia congenita isolata dell'omero",
+     "Meromelia intercalare isolata dell'omero"
+    ]
+   }
+  },
+  "294975": {
+   "fr": "Absence isolée du bras et de l'avant-bras avec main conservée",
+   "it": "Aplasia isolata del braccio e dell'avambraccio con presenza della mano",
+   "synonyms": {
+    "fr": [
+     "Méromélie intercalaire transverse huméro-radio-cubitale isolée",
+     "Méromélie intercalaire transverse huméro-radio-ulnaire isolée"
+    ],
+    "it": [
+     "Meromelia omero-radio-ulnare trasversale intercalare congenita isolata"
+    ]
+   }
+  },
+  "294977": {
+   "fr": "Absence isolée de la cuisse et de la jambe avec pied conservé",
+   "it": "Aplasia isolata della coscia e della porzione inferiore della gamba in presenza del piede",
+   "synonyms": {
+    "fr": [
+     "Méromélie intercalaire transverse fémoro-tibio-fibulaire isolée",
+     "Méromélie intercalaire transverse fémoro-tibio-péronier isolée"
+    ],
+    "it": [
+     "Meromelia congenita isolata femoro-tibio-fibulare trasversale intercalare"
+    ]
+   }
+  },
+  "294979": {
+   "fr": "Absence isolée de l'avant-bras et de la main",
+   "it": "Assenza isolata combinata dell'avambraccio e della mano",
+   "synonyms": {
+    "fr": [
+     "Méromélie terminale transverse radio-cubitale isolée",
+     "Méromélie terminale transverse radio-ulnaire isolée"
+    ],
+    "it": [
+     "Meromelia congenita isolata radioulnare trasversale terminale"
+    ]
+   }
+  },
+  "294981": {
+   "fr": "Absence isolée de la jambe et du pied",
+   "it": "Agenesia isolata della porzione inferiore della gamba e del piede",
+   "synonyms": {
+    "fr": [
+     "Méromélie terminale transverse tibio-fibulaire isolée",
+     "Méromélie terminale transverse tibio-péronière isolée"
+    ],
+    "it": [
+     "Meromelia congenita isolata tibiofibulare trasversale terminale"
+    ]
+   }
+  },
+  "294983": {
+   "fr": "Acheirie isolée",
+   "it": "Acheiria isolata",
+   "synonyms": {
+    "fr": [
+     "Absence isolée congénitale de mains",
+     "Achirie isolée"
+    ],
+    "it": [
+     "Assenza isolata delle mani"
+    ]
+   }
+  },
+  "294986": {
+   "fr": "Apodie isolée",
+   "it": "Apodia isolata",
+   "synonyms": {
+    "fr": [
+     "Absence isolée congénitale de pied"
+    ],
+    "it": [
+     "Assenza isolata dei piedi"
+    ]
+   }
+  },
+  "294988": {
+   "fr": "Hypoplasie isolée du pouce",
+   "it": "Ipoplasia isolata del pollice",
+   "synonyms": {
+    "fr": [
+     "Absence/hypoplasie congénitale isolée du pouce",
+     "Hypodactylie du pouce isolée",
+     "Oligodactylie du pouce isolée"
+    ],
+    "it": [
+     "Aplasia/ipoplasia congenita isolata del pollice",
+     "Ipodattilia congenita isolata del pollice",
+     "Oligodattilia congenita isolata del pollice"
+    ]
+   }
+  },
+  "295000": {
+   "fr": "Syndrome de brides amniotiques",
+   "it": "Sindrome da anelli di costrizione",
+   "synonyms": {
+    "fr": [
+     "MBA",
+     "Maladie des brides amniotiques",
+     "SBA",
+     "Syndrome d'anneaux de constriction"
+    ],
+    "it": []
+   }
+  },
+  "295002": {
+   "fr": "Hyperphalangie isolée",
+   "it": "Iperfalangia isolata",
+   "synonyms": {
+    "fr": [
+     "Phalange surnuméraire congénitale isolée"
+    ],
+    "it": [
+     "Falange soprannumeraria",
+     "Falangi congenite isolate soprannumerarie"
+    ]
+   }
+  },
+  "295004": {
+   "fr": "Polydactylie centrale",
+   "it": "Polidattilia centrale",
+   "synonyms": {
+    "fr": [
+     "Polydactylie mésoaxiale"
+    ],
+    "it": [
+     "Mano a specchio",
+     "Polidattilia centrale della mano",
+     "Polidattilia mesoassiale delle dita delle mani"
+    ]
+   }
+  },
+  "295012": {
+   "fr": "Syndactylie type 6",
+   "it": "Sindattilia, tipo 6",
+   "synonyms": {
+    "fr": [
+     "Main en mitaine",
+     "Syndactylie type mitaine",
+     "Syndactylie unilatérale des doigts 2-5"
+    ],
+    "it": [
+     "Mano a guantone",
+     "Sindattilia unilaterale delle dita II-V",
+     "Sindattilia, tipo a guantone"
+    ]
+   }
+  },
+  "295187": {
+   "fr": "Zygodactylie type 1",
+   "it": "Zigodattilia, tipo 1",
+   "synonyms": {
+    "fr": [
+     "SD1 type Weidenreich",
+     "SD1a",
+     "Syndactylie type 1 type Weidenreich",
+     "Syndactylie type 1a",
+     "Zygodactylie type Weidenreich"
+    ],
+    "it": [
+     "SD1, tipo Weidenreich",
+     "SD1a",
+     "Sindattilia tipo 1, tipo Weidenreich",
+     "Sindattilia, tipo 1a",
+     "Zigodattilia, tipo Weidenreich"
+    ]
+   }
+  },
+  "295189": {
+   "fr": "Zygodactylie type 2",
+   "it": "Zigodattilia, tipo 2",
+   "synonyms": {
+    "fr": [
+     "SD1 type Lueken",
+     "SD1b",
+     "Syndactylie type 1 type Lueken",
+     "Syndactylie type 1b",
+     "Zygodactylie type Lueken"
+    ],
+    "it": [
+     "SD1, tipo Lueken",
+     "SD1b",
+     "Sindattilia tipo 1, tipo Lueken",
+     "Sindattilia, tipo 1b",
+     "Zigodattilia, tipo Lueken"
+    ]
+   }
+  },
+  "295191": {
+   "fr": "Zygodactylie type 3",
+   "it": "Zigodattilia, tipo 3",
+   "synonyms": {
+    "fr": [
+     "SD1 type Montagu",
+     "SD1c",
+     "Syndactylie type 1 type Montagu",
+     "Syndactylie type 1c",
+     "Zygodactylie type Montagu"
+    ],
+    "it": [
+     "Sindattilia tipo 1, tipo Montagu",
+     "Sindattilia, tipo 1c",
+     "Zigodattilia, tipo Montagu",
+     "SD1, tipo Montagu",
+     "SD1c"
+    ]
+   }
+  },
+  "295193": {
+   "fr": "Zygodactylie type 4",
+   "it": "Zigodattilia, tipo 4",
+   "synonyms": {
+    "fr": [
+     "SD1 type Castilla",
+     "SD1d",
+     "Syndactylie type 1 type Castilla",
+     "Syndactylie type 1d",
+     "Zygodactylie type Castilla"
+    ],
+    "it": [
+     "SD1, tipo Castilla",
+     "SD1d",
+     "Sindattilia tipo 1, tipo Castilla",
+     "Sindattilia, tipo 1d",
+     "Zigodattilia, tipo Castilla"
+    ]
+   }
+  },
+  "295195": {
+   "fr": "Sympolydactylie type 1",
+   "it": "Sinpolidattilia, tipo 1",
+   "synonyms": {
+    "fr": [
+     "SD2 type Vordingborg",
+     "SD2a",
+     "SPD type Vordingborg",
+     "SPD1",
+     "Sympolydactylie type Vordingborg"
+    ],
+    "it": [
+     "SD2, tipo Vordingborg",
+     "SD2a",
+     "SPD, tipo Vordingborg",
+     "SPD1",
+     "Sinpolidattilia, tipo Vordingborg"
+    ]
+   }
+  },
+  "295197": {
+   "fr": "Sympolydactylie type 2",
+   "it": "Sinpolidattilia, tipo 2",
+   "synonyms": {
+    "fr": [
+     "SD2 type Debeer",
+     "SD2b",
+     "SPD type Debeer",
+     "SPD2",
+     "Sympolydactylie type Debeer"
+    ],
+    "it": [
+     "SD2, tipo Debeer",
+     "SD2b",
+     "SPD, tipo Debeer",
+     "SPD2",
+     "Sinpolidattilia, tipo Debeer"
+    ]
+   }
+  },
+  "295199": {
+   "fr": "Sympolydactylie type 3",
+   "it": "Sinpolidattilia, tipo 3",
+   "synonyms": {
+    "fr": [
+     "SD2 type Malik",
+     "SD2c",
+     "SPD type Malik",
+     "SPD3",
+     "Sympolydactylie type Malik"
+    ],
+    "it": [
+     "SD2, tipo Malik",
+     "SD2c",
+     "SPD, tipo Malik",
+     "SPD3",
+     "Sinpolidattilia, tipo Malik"
+    ]
+   }
+  },
+  "498457": {
+   "fr": "Anomalie réductionnelle longitudinale non syndromique des membres",
+   "it": "Difetto longitudinale non sindromico degli arti",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498461": {
+   "fr": "Anomalie réductionnelle transverse non syndromique des membres",
+   "it": "Difetto trasversale non sindromico della porzione terminale degli arti",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498464": {
+   "fr": "Polydactylie préaxiale non syndromique",
+   "it": "Polidattilia preassiale non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498467": {
+   "fr": "Polydactylie post-axiale non syndromique",
+   "it": "Polidattilia postassiale non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498470": {
+   "fr": "Polydactylie complexe non syndromique",
+   "it": "Polidattilia complessa non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498491": {
+   "fr": "Hémimélie complète non syndromique",
+   "it": "Emimelia completa non sindromica",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "498494": {
+   "fr": "Polydactylie en miroir",
+   "it": "Polidattilia a specchio",
+   "synonyms": {
+    "fr": [],
+    "it": []
+   }
+  },
+  "633228": {
+   "fr": "Déficience fémorale focale proximale isolée",
+   "it": "Deficit focale della porzione prossimale del femore",
+   "synonyms": {
+    "fr": [
+     "Déficience fémorale congénitale isolée"
+    ],
+    "it": [
+     "CPFD",
+     "Deficit congenito della porzione prossimale del femore",
+     "PFFD"
+    ]
+   }
+  },
+  "667589": {
+   "fr": "Duplication fémorale congénitale isolée",
+   "it": "Biforcazione congenita isolata del femore",
+   "synonyms": {
+    "fr": [],
+    "it": [
+     "Duplicazione congenita isolata della porzione distale del femore"
+    ]
+   }
+  }
+ }
+}

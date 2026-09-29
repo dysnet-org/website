@@ -15,10 +15,13 @@ Usage: python3 tools/build-condition-icd.py
 """
 import json
 import pathlib
-import re
+import sys
 import time
 import urllib.error
 import urllib.request
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import conditions as C  # noqa: E402
 
 HERE = pathlib.Path(__file__).parent
 OUT = HERE / "condition-icd.json"
@@ -26,14 +29,8 @@ API = "https://api.orphadata.com/rd-cross-referencing/orphacodes/{}?lang=en"
 
 
 def codes_from_build():
-    """The ORPHAcodes of the conditions, read from CONDITIONS in build-demo.py."""
-    src = (HERE.parent / "build-demo.py").read_text(encoding="utf-8")
-    blk = src[src.index("CONDITIONS = ["):]
-    blk = blk[:blk.index("\n]\n")]
-    out = []
-    for name, code in re.findall(r'\(\s*"([^"]+)",\s*"[^"]*",\s*(\d+|None)', blk):
-        out.append((name, None if code == "None" else code))
-    return out
+    """The ORPHAcodes of the conditions, read from tools/conditions.json."""
+    return [(c["name"], c["code"]) for c in C.conditions()]
 
 
 def fetch(code):

@@ -95,11 +95,22 @@ def run():
     generated_only = [n for n, c in coded if c not in manual_vocab_codes()]
     if generated_only:
         notes.append(f"Bibliography vocabulary: {len(generated_only)} card(s) rest on generated rules only; review them in condition-vocab.json: {generated_only}")
-    # everyday names the registry keeps for a code or a name no card or documented form carries here
-    reachable = {c for _n, c in coded} | set(names) | {d for kids in m.SUBCONDITIONS.values() for d, _t in kids}
-    stray = [k for k in getattr(m, "USUAL", {}) if k not in reachable]
+    # what the DysNet registry's questionnaire shows of each condition, read from tools/conditions.json
+    ref = m.REFERENCE
+    kids = {d for ks in m.SUBCONDITIONS.values() for d, _t in ks}
+    stray = [k for k in ref.get("forms", {}) if k not in kids | {c for _n, c in coded}]
     if stray:
-        notes.append(f"Everyday names: {len(stray)} registry key(s) match no card or form on the site, so their names show nowhere: {stray}")
+        notes.append(f"tools/conditions.json: {len(stray)} entry(ies) under \"forms\" that no card documents, so what is written there shows nowhere: {stray}")
+    entries = ref["conditions"] + ref.get("registryOnly", [])
+    unnamed = [e["name"] for e in entries if not e.get("dysnetNames") and str(e.get("orphaCode") or "") not in m.ORPHA_NAMES]
+    if unnamed:
+        notes.append(f"French and Italian: {len(unnamed)} condition(s) have neither an Orphanet name nor dysnetNames, so the registry shows them in English: {unnamed}")
+    unnamed_forms = sorted((d for d in kids if d not in m.ORPHA_NAMES), key=int)
+    if unnamed_forms:
+        notes.append(f"French and Italian: {len(unnamed_forms)} form(s) have no Orphanet name yet; run tools/build-condition-names.py: {unnamed_forms}")
+    unexplained = [e["name"] for e in entries if not all((e.get("plain") or {}).get(l) for l in ("en", "fr", "it"))]
+    if unexplained:
+        notes.append(f"Plain descriptions: {len(unexplained)} condition(s) lack one in English, French or Italian, which the registry shows under the name: {unexplained}")
     unrated = [n for n in names if n not in m.CONDITION_RATE]
     if unrated:
         notes.append(f"Prevalence: {len(unrated)} card(s) have no birth prevalence from any source: {unrated}")

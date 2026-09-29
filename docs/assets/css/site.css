@@ -248,6 +248,9 @@ nav.main a[aria-current="true"] { border-bottom-color: var(--dys-green); color: 
   font-weight: 700; font-size: var(--text-h4); color: #fff; background: var(--acc);
   margin-bottom: var(--space-1);
 }
+.person .avatar.has-photo { overflow: hidden; }
+.person .avatar picture { display: block; width: 100%; height: 100%; }
+.person .avatar img { width: 100%; height: 100%; object-fit: cover; }
 .person .role { color: var(--acc-text); font-weight: 700; font-size: var(--text-small); }
 
 /* ── Country directory ─────────────────────────────────────────── */

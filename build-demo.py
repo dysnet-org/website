@@ -1294,19 +1294,28 @@ BOARD = [
     ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
     ("Dr Loïc Rigal", "Deputy Chair · France", "Doctor in pharmaceutical law and patient advocate. Elected board member of the French association Assedea. Deputy Chair since the general assembly of 26 August 2026, carrying the registry mission.", "LR", "", "Mission 2 · Registry"),
     ("Michaela Moik", "Thalidomide patient expert · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
+    ("Marie Wikström", "Secretary · Sweden", "She is the patient coordinator of EX-Center in Solna, the Swedish knowledge and rehabilitation centre for children and adults with multiple limb deficiencies, which she helped found in 1993. She has been active in the Swedish Thalidomide Society since 1986 and was its Permanent Secretary from 2004 to 2006.", "MW", "marie.wikstrom@ex-center.org", "Secretariat"),
     ("Salvatore Giambruno", "Treasurer", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
     ("Tobias Arndt", "Chief Operating Officer · Belgium", "IT expert and researcher, author on electronic commerce; supporting thalidomide projects across Europe since 2007.", "TA", "tobias.arndt@dysnet.org", "Operations"),
 ]
 
 
+# A portrait replaces the initials when a member has one: docs/assets/img/<file>.jpg and .webp, 288 px square.
+# Marie Wikström's is her portrait on EX-Center's staff page (ex-center.org/web/marie-wikstrom-1/), cropped.
+BOARD_PHOTOS = {"Marie Wikström": "board-marie-wikstrom"}
+
 def person_card(name, role, bio, init, email, chip):
     _person = {"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}}
     if email: _person["email"] = email          # omitted rather than null when a member publishes no address
+    photo = BOARD_PHOTOS.get(name)
+    if photo: _person["image"] = f"{SITE}/assets/img/{photo}.jpg"
     PEOPLE_LD.append(_person)
+    face = (f'<picture><source srcset="/assets/img/{photo}.webp" type="image/webp"><img src="/assets/img/{photo}.jpg" alt="" width="288" height="288" loading="lazy" decoding="async"></picture>'
+            if photo else init)
     return f"""<div class="card person person-flip" tabindex="0">
       <div class="faces">
         <div class="face front">
-          <div class="avatar">{init}</div>
+          <div class="avatar{' has-photo' if photo else ''}">{face}</div>
           <h3 class="h4">{name}</h3>
           <p class="role">{role}</p>
           <p><span class="chip">{chip}</span></p>

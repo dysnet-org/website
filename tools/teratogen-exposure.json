@@ -1,0 +1,1003 @@
+{
+ "_about": "Hand-curated exposure tags for the teratogens register, read by tools/enrich-teratogens-exposure.py. A tag says how a pregnancy meets the substance at a dose that matters, not every product it occurs in: alcohol is tagged Food and drink, not Medicine, because the ethanol in medicines is not the exposure. Keys are an entry's name, or the start of it when that matches one entry only. Entries not named here are tagged by rule: Pesticides and biocides when the EU Pesticides Database lists the substance or it has an ISO common name, otherwise Work and industry.",
+ "tags": {
+  "medicine": {
+   "label": "Medicine",
+   "means": "taken as a treatment; the effect comes from treatment doses"
+  },
+  "food": {
+   "label": "Food and drink",
+   "means": "swallowed in food, drinks, drinking water or supplements"
+  },
+  "recreational": {
+   "label": "Tobacco and recreational drugs",
+   "means": "smoked, vaped, inhaled or taken for pleasure"
+  },
+  "home": {
+   "label": "Home and personal care",
+   "means": "met in cosmetics, household products, toys or appliances"
+  },
+  "air": {
+   "label": "Air pollution",
+   "means": "breathed in polluted air"
+  },
+  "pesticide": {
+   "label": "Pesticides and biocides",
+   "means": "applied to kill pests on crops, animals, homes or materials"
+  },
+  "work": {
+   "label": "Work and industry",
+   "means": "met mainly where it is made or used at work"
+  }
+ },
+ "medicines": [
+  "1,4-Butanediol dimethanesulfonate (Busulfan)",
+  "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
+  "Abiraterone acetate",
+  "Acetazolamide",
+  "Acetohydroxamic acid",
+  "Actinomycin D",
+  "All-trans retinoic acid",
+  "Alprazolam",
+  "Altretamine",
+  "Amantadine hydrochloride",
+  "Ambrisentan (endothelin receptor antagonist)",
+  "Amikacin sulfate",
+  "Aminoglutethimide",
+  "Aminoglycosides",
+  "Aminopterin",
+  "Amiodarone hydrochloride",
+  "Amoxapine",
+  "Angiotensin converting enzyme",
+  "Anisindione",
+  "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)",
+  "Atenolol",
+  "Auranofin",
+  "Azathioprine",
+  "Barbiturates",
+  "Beclomethasone dipropionate",
+  "Benzodiazepines",
+  "Benzphetamine hydrochloride",
+  "Bevacizumab",
+  "Bischloroethyl nitrosourea (BCNU) (Carmustine)",
+  "Bosentan (endothelin receptor antagonist)",
+  "Butabarbital sodium",
+  "Carbamazepine",
+  "Carboplatin",
+  "Chenodiol",
+  "Chlorambucil",
+  "Chlorcyclizine hydrochloride",
+  "Chlordiazepoxide",
+  "Chlordiazepoxide hydrochloride",
+  "Cidofovir",
+  "Cladribine",
+  "Clarithromycin",
+  "Clobetasol propionate",
+  "Clomiphene citrate",
+  "Clorazepate dipotassium",
+  "Codeine phosphate",
+  "Colchicine",
+  "Conjugated estrogens",
+  "Cyclophosphamide (anhydrous)",
+  "Cyclophosphamide (hydrated)",
+  "Cytarabine",
+  "Dacarbazine",
+  "Danazol",
+  "Daunorubicin hydrochloride",
+  "Demeclocycline hydrochloride",
+  "Diazepam",
+  "Diazoxide",
+  "Dichlorphenamide",
+  "Dicumarol",
+  "Diethylstilbestrol (DES)",
+  "Diflunisal",
+  "Dihydroergotamine mesylate",
+  "Diltiazem hydrochloride",
+  "Diphenylhydantoin (Phenytoin)",
+  "Doxorubicin hydrochloride",
+  "Doxycycline (internal use)",
+  "Doxycycline calcium",
+  "Doxycycline hyclate",
+  "Doxycycline monohydrate",
+  "Ergotamine tartrate",
+  "Estropipate",
+  "Ethionamide",
+  "Etodolac",
+  "Etoposide",
+  "Etretinate",
+  "Filgrastim",
+  "Fingolimod",
+  "Flunisolide",
+  "Fluorouracil",
+  "Fluoxymesterone",
+  "Flurazepam hydrochloride",
+  "Flurbiprofen",
+  "Flutamide",
+  "Fluticasone propionate",
+  "Ganciclovir",
+  "Ganciclovir sodium",
+  "Goserelin acetate",
+  "Halazepam",
+  "Halobetasol propionate",
+  "Haloperidol",
+  "Histrelin acetate",
+  "Hydroxyurea",
+  "Idarubicin hydrochloride",
+  "Ifosfamide",
+  "Iodine-131",
+  "Isotretinoin",
+  "Lenalidomide",
+  "Leuprolide acetate",
+  "Levodopa",
+  "Lithium carbonate",
+  "Lithium citrate",
+  "Lorazepam",
+  "Lovastatin",
+  "Macitentan (endothelin receptor antagonist)",
+  "Mebendazole",
+  "Medroxyprogesterone acetate",
+  "Megestrol acetate",
+  "Melphalan",
+  "Menotropins",
+  "Meprobamate",
+  "Mercaptopurine",
+  "Methacycline hydrochloride",
+  "Methimazole",
+  "Methotrexate",
+  "Methotrexate sodium",
+  "Methyltestosterone",
+  "Midazolam hydrochloride",
+  "Minocycline hydrochloride",
+  "Misoprostol",
+  "Mitoxantrone hydrochloride",
+  "Mycophenolate mofetil and mycophenolic acid",
+  "Nafarelin acetate",
+  "Neomycin sulfate",
+  "Netilmicin sulfate",
+  "Nifedipine",
+  "Nimodipine",
+  "Nitrogen mustard (Mechlorethamine)",
+  "Nitrogen mustard hydrochloride",
+  "Norethisterone (Norethindrone)",
+  "Norethisterone (Norethindrone) /Ethinyl",
+  "Norethisterone (Norethindrone) /Mestranol",
+  "Norethisterone acetate",
+  "Norgestrel",
+  "Oxazepam",
+  "Oxymetholone",
+  "Oxytetracycline (internal use)",
+  "Oxytetracycline hydrochloride",
+  "Paclitaxel",
+  "Paramethadione",
+  "Penicillamine",
+  "Pentobarbital sodium",
+  "Pentostatin",
+  "Pertuzumab",
+  "Phenacemide",
+  "Phenprocoumon",
+  "Pimozide",
+  "Pipobroman",
+  "Plicamycin",
+  "Pomalidomide",
+  "Pravastatin sodium",
+  "Prednisolone sodium phosphate",
+  "Procarbazine hydrochloride",
+  "Propylthiouracil",
+  "Pyrimethamine",
+  "Quazepam",
+  "Ribavirin",
+  "Rifampin",
+  "Secobarbital sodium",
+  "Sermorelin acetate",
+  "Streptomycin sulfate",
+  "Streptozocin",
+  "Sulindac",
+  "Tamoxifen citrate",
+  "Temazepam",
+  "Teniposide",
+  "Testosterone cypionate",
+  "Testosterone enanthate",
+  "Tetracycline (internal use)",
+  "Tetracycline hydrochloride",
+  "Tetracyclines (internal use)",
+  "Thalidomide",
+  "theophylline; 1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione",
+  "Thioguanine",
+  "Tobramycin sulfate",
+  "Topiramate",
+  "Triazolam",
+  "Trientine hydrochloride",
+  "Trilostane",
+  "Trimethadione",
+  "Trimetrexate glucuronate",
+  "Uracil mustard",
+  "Urofollitropin",
+  "Valproate (Valproic acid)",
+  "Vinblastine sulfate",
+  "Vincristine sulfate",
+  "Vismodegib",
+  "Warfarin",
+  "Zileuton"
+ ],
+ "entries": {
+  "Alcohol (ethanol) in beverages": {
+   "tags": [
+    "food"
+   ],
+   "why": "Drinking alcohol in pregnancy is the exposure. The small amounts of ethanol in some medicines are not."
+  },
+  "Ethyl alcohol in alcoholic beverages": {
+   "tags": [
+    "food"
+   ],
+   "why": "Drinking alcohol in pregnancy is the exposure. The small amounts of ethanol in some medicines are not."
+  },
+  "Methyl mercury": {
+   "tags": [
+    "food"
+   ],
+   "why": "Reaches the diet mainly through fish and seafood."
+  },
+  "Methylmercury": {
+   "tags": [
+    "food"
+   ],
+   "why": "Reaches the diet mainly through fish and seafood."
+  },
+  "methylmercuric chloride": {
+   "tags": [
+    "food"
+   ],
+   "why": "Reaches the diet mainly through fish and seafood."
+  },
+  "Mercury and mercury compounds": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Methylmercury reaches the diet through fish and seafood; metallic mercury and its salts are met at work."
+  },
+  "Lead [Basis": {
+   "tags": [
+    "food",
+    "home",
+    "work"
+   ],
+   "why": "Reaches people through food, water from old lead pipes and dust from old lead paint, and at work."
+  },
+  "Cadmium": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Food is the main source for non-smokers, and it is met at work."
+  },
+  "Arsenic (inorganic oxides)": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Inorganic arsenic reaches people through drinking water and food, rice in particular; it is also met at work."
+  },
+  "Nickel (soluble compounds)": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Reaches people through food and drinking water, for which EFSA sets a tolerable intake; it is also met at work."
+  },
+  "2,3,7,8-Tetrachlorodibenzo": {
+   "tags": [
+    "food"
+   ],
+   "why": "Accumulates in the food chain; food of animal origin is the main source."
+  },
+  "Polychlorinated biphenyls": {
+   "tags": [
+    "food"
+   ],
+   "why": "Banned, but they persist and accumulate in the food chain; food of animal origin is the main source."
+  },
+  "Perfluorooctane sulfonate": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "A persistent PFAS: food and drinking water are the main sources for the general population; it is also met where it is made or used."
+  },
+  "perfluorooctanoic acid": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "A persistent PFAS: food and drinking water are the main sources for the general population; it is also met where it is made or used."
+  },
+  "perfluorononan-1-oic acid": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "A persistent PFAS: food and drinking water are the main sources for the general population; it is also met where it is made or used."
+  },
+  "ammoniumpentadeca- fluorooctanoate": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "A persistent PFAS: food and drinking water are the main sources for the general population; it is also met where it is made or used."
+  },
+  "Acrylamide": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Forms when starchy food is fried, baked or roasted at high temperature; it is also made as an industrial chemical."
+  },
+  "Urethane (Ethyl carbamate)": {
+   "tags": [
+    "food"
+   ],
+   "why": "Forms in fermented food and drink, stone-fruit brandies in particular."
+  },
+  "Bisphenol A (BPA)": {
+   "tags": [
+    "food",
+    "work"
+   ],
+   "why": "Migrates into food from polycarbonate and can coatings, which is why the EU now bans it in food contact materials; it is also met at work."
+  },
+  "Dichloroacetic acid": {
+   "tags": [
+    "food"
+   ],
+   "why": "Forms as a by-product when drinking water is chlorinated."
+  },
+  "Retinol/retinyl esters": {
+   "tags": [
+    "food",
+    "medicine"
+   ],
+   "why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day."
+  },
+  "Tobacco smoke (primary)": {
+   "tags": [
+    "recreational"
+   ],
+   "why": "Smoking in pregnancy is the exposure."
+  },
+  "Tobacco smoking in pregnancy": {
+   "tags": [
+    "recreational"
+   ],
+   "why": "Smoking in pregnancy is the exposure."
+  },
+  "Environmental tobacco smoke": {
+   "tags": [
+    "recreational",
+    "air"
+   ],
+   "why": "Second-hand smoke reaches a non-smoking mother through the air she breathes."
+  },
+  "Nicotine": {
+   "tags": [
+    "recreational"
+   ],
+   "why": "Reaches the unborn child through tobacco and nicotine products; its past use as an insecticide is not the exposure here."
+  },
+  "Cannabis (marijuana) smoke": {
+   "tags": [
+    "recreational"
+   ],
+   "why": "Smoking cannabis in pregnancy is the exposure."
+  },
+  "Δ9-Tetrahydrocannabinol": {
+   "tags": [
+    "recreational",
+    "medicine"
+   ],
+   "why": "The active substance of cannabis is taken recreationally or prescribed."
+  },
+  "Cocaine": {
+   "tags": [
+    "recreational"
+   ],
+   "why": "Taken as a recreational drug; its medical use as a local anaesthetic is marginal."
+  },
+  "toluene": {
+   "tags": [
+    "work",
+    "recreational"
+   ],
+   "why": "A solvent met at work; inhaled deliberately, as in glue sniffing, it harms the unborn child."
+  },
+  "pyrithione zinc": {
+   "tags": [
+    "home"
+   ],
+   "why": "Was the anti-dandruff ingredient of many shampoos until the EU banned it in cosmetics."
+  },
+  "2-(4-tert-butylbenzyl)propionaldehyde": {
+   "tags": [
+    "home"
+   ],
+   "why": "Lilial was a fragrance in cosmetics and detergents until the EU banned it in cosmetics."
+  },
+  "cis-1-(3-chloroallyl)": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "A formaldehyde-releasing preservative, it has been used in cosmetics and household products."
+  },
+  "hexyl salicylate": {
+   "tags": [
+    "home"
+   ],
+   "why": "A fragrance ingredient, it is limited by EU cosmetics rules."
+  },
+  "methyl salicylate": {
+   "tags": [
+    "medicine",
+    "home"
+   ],
+   "why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it."
+  },
+  "salicylic acid": {
+   "tags": [
+    "medicine",
+    "home"
+   ],
+   "why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it."
+  },
+  "Dichlorophene": {
+   "tags": [
+    "home",
+    "pesticide"
+   ],
+   "why": "An antimicrobial in cosmetics and household products, it is limited by EU cosmetics rules and also used as a biocide."
+  },
+  "Methanol": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "A solvent and fuel at work, it is also in screen-wash fluid at home; EU cosmetics rules limit it."
+  },
+  "Ethylene glycol (ingested)": {
+   "tags": [
+    "home"
+   ],
+   "why": "It is the main ingredient of antifreeze; California lists it only when swallowed."
+  },
+  "carbon monoxide": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Poisoning comes from faulty boilers, stoves and engines in closed spaces, and it is met at work."
+  },
+  "4,4'-sulphonyldiphenol; bisphenol S": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "It replaced bisphenol A in thermal-paper receipts and is also met at work."
+  },
+  "bis(2-ethylhexyl) phthalate": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work."
+  },
+  "dibutyl phthalate; DBP": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work."
+  },
+  "BBP; benzyl butyl phthalate": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work."
+  },
+  "diisobutyl phthalate": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work."
+  },
+  "boric acid": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "disodium octaborate": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "tetraboron disodium heptaoxide": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "perboric acid (H3BO2": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "perboric acid, sodium salt": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "sodium peroxometaborate": {
+   "tags": [
+    "home",
+    "work"
+   ],
+   "why": "Borates are in household products and slime toys, where EU toy rules cap the boron a toy may release; they are also met at work."
+  },
+  "Sulfur dioxidee": {
+   "tags": [
+    "air",
+    "work"
+   ],
+   "why": "An air pollutant from burning coal and oil, it is also met at work."
+  },
+  "Benzene": {
+   "tags": [
+    "work",
+    "air"
+   ],
+   "why": "It is met at work and in air polluted by traffic and tobacco smoke."
+  },
+  "1,3-Butadiene": {
+   "tags": [
+    "work",
+    "air"
+   ],
+   "why": "It is met at work and in traffic exhaust and tobacco smoke."
+  },
+  "benzo[a]pyrene": {
+   "tags": [
+    "work",
+    "air"
+   ],
+   "why": "It forms when wood, coal, tobacco or food burn."
+  },
+  "dinitrogen oxide": {
+   "tags": [
+    "medicine",
+    "work"
+   ],
+   "why": "Nitrous oxide is an anaesthetic and pain relief in labour; operating-room and dental staff breathe it at work."
+  },
+  "Halothane": {
+   "tags": [
+    "medicine",
+    "work"
+   ],
+   "why": "An anaesthetic gas, it is breathed at work by operating-room staff."
+  },
+  "piperazine; [solid]": {
+   "tags": [
+    "medicine",
+    "work"
+   ],
+   "why": "It is a medicine against worms, taken in gram doses, and an industrial chemical."
+  },
+  "piperazine hydrochloride": {
+   "tags": [
+    "medicine",
+    "work"
+   ],
+   "why": "It is a medicine against worms, taken in gram doses, and an industrial chemical."
+  },
+  "1,1-Dichloro-2,2-bis": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "The breakdown product of DDT, it persists in the food chain."
+  },
+  "p,p'-DDT": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "An insecticide, it is banned by the Stockholm Convention and persists in the food chain."
+  },
+  "o,p'-DDT": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a component of technical DDT, an insecticide."
+  },
+  "2,4-Diamino-6-chloro-s-triazine": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "A breakdown product of atrazine-type herbicides, it is found in drinking water."
+  },
+  "Des-ethyl atrazine": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "A breakdown product of atrazine-type herbicides, it is found in drinking water."
+  },
+  "Des-isopropyl atrazine": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "A breakdown product of atrazine-type herbicides, it is found in drinking water."
+  },
+  "1,2,4-triazole": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a breakdown product of the triazole fungicides."
+  },
+  "ethylene thiourea": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a breakdown product of the dithiocarbamate fungicides, such as mancozeb."
+  },
+  "propylenethiourea": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a breakdown product of propineb, a dithiocarbamate fungicide."
+  },
+  "Disodium cyanodithioimidocarbonate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a biocide used in industrial water and paper making."
+  },
+  "Potassium dimethyldithiocarbamate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a fungicide and biocide."
+  },
+  "Sodium dimethyldithiocarbamate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a fungicide and biocide."
+  },
+  "Metham sodium": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a soil fumigant."
+  },
+  "Fluvalinate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is an insecticide and acaricide."
+  },
+  "Resmethrin": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is an insecticide."
+  },
+  "Nitrapyrin": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is added to fertiliser to slow the conversion of nitrogen in soil."
+  },
+  "Diclofop methyl": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a herbicide."
+  },
+  "Fenoxaprop ethyl": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a herbicide."
+  },
+  "Oxythioquinox": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a fungicide and acaricide."
+  },
+  "Bromacil lithium salt": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a herbicide; the lithium is only its salt, not the medicine."
+  },
+  "Tributyltin methacrylate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a biocide of antifouling paints."
+  },
+  "tributyltin compounds": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "They are biocides of antifouling paints and wood preservatives."
+  },
+  "Margosa, ext.": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Neem extract is an insecticide."
+  },
+  "silver zinc zeolite": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a biocide added to materials to keep microbes off."
+  },
+  "salts and esters of dinoseb": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Dinoseb is a herbicide."
+  },
+  "salts and esters of dinoterb": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Dinoterb is a herbicide."
+  },
+  "salts of bromoxynil": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Bromoxynil is a herbicide."
+  },
+  "salts of ioxynil": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Ioxynil is a herbicide."
+  },
+  "lead hydrogen arsenate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "Lead arsenate is a former insecticide of orchards."
+  },
+  "dodemorph acetate": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "It is a salt of dodemorph, a fungicide."
+  },
+  "Hexachlorobenzene": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "A former fungicide, it is banned by the Stockholm Convention and persists in the food chain."
+  },
+  "Chlordecone": {
+   "tags": [
+    "pesticide"
+   ],
+   "why": "An insecticide once used on banana plantations, it still contaminates soil, water and food in the French Antilles."
+  },
+  "carbon disulphide": {
+   "tags": [
+    "work"
+   ],
+   "why": "A solvent of the viscose industry, it is met at work."
+  },
+  "ethylene oxide": {
+   "tags": [
+    "work"
+   ],
+   "why": "It sterilises medical equipment and is used to make chemicals; it is met at work."
+  },
+  "2-methoxypropanol": {
+   "tags": [
+    "work"
+   ],
+   "why": "A solvent, it is met at work."
+  },
+  "1,3,5-trioxan": {
+   "tags": [
+    "work"
+   ],
+   "why": "Used to make plastics, it is met at work."
+  },
+  "potassium permanganate": {
+   "tags": [
+    "work"
+   ],
+   "why": "An oxidising agent of water treatment and industry, it is met at work."
+  },
+  "thiourea": {
+   "tags": [
+    "work"
+   ],
+   "why": "An industrial chemical, it is met at work."
+  },
+  "quinolin-8-ol": {
+   "tags": [
+    "work"
+   ],
+   "why": "A chelating agent and fungicide, it is met at work."
+  }
+ },
+ "doses": {
+  "Lithium carbonate": {
+   "tag": "medicine",
+   "text": "Lithium in the first trimester was linked to more heart defects; the risk was about three times higher above 900 mg a day and not clearly raised at 600 mg or less.",
+   "source": "Patorno et al., N Engl J Med 2017",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28591541/",
+   "basis": "human"
+  },
+  "Lithium citrate": {
+   "tag": "medicine",
+   "text": "Lithium in the first trimester was linked to more heart defects; the risk was about three times higher above 900 mg a day and not clearly raised at 600 mg or less.",
+   "source": "Patorno et al., N Engl J Med 2017",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/28591541/",
+   "basis": "human"
+  },
+  "Valproate (Valproic acid)": {
+   "tag": "medicine",
+   "text": "At every dose studied, valproate raised the malformation rate: about 6 in 100 babies at 650 mg a day or less, 11 in 100 up to 1,450 mg, 25 in 100 above.",
+   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
+   "basis": "human"
+  },
+  "Carbamazepine": {
+   "tag": "medicine",
+   "text": "Carbamazepine raised the malformation rate with dose: about 5 in 100 babies at 700 mg a day or less, 6 in 100 up to 1,000 mg, and 9 in 100 above 1,000 mg.",
+   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
+   "basis": "human"
+  },
+  "Barbiturates": {
+   "tag": "medicine",
+   "text": "Phenobarbital raised the malformation rate with dose: about 3 in 100 babies at 60 mg a day or less, 6 in 100 up to 130 mg, and 11 in 100 above 130 mg.",
+   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
+   "basis": "human"
+  },
+  "Diphenylhydantoin (Phenytoin)": {
+   "tag": "medicine",
+   "text": "In the EURAP registry, about 6 in 100 babies exposed to phenytoin had a major malformation; the registry found no link with dose.",
+   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
+   "basis": "human"
+  },
+  "Topiramate": {
+   "tag": "medicine",
+   "text": "EMA states no dose: birth defects occur in 4 to 9 of every 100 babies exposed to topiramate, against 1 to 3 otherwise, with a possible two- to three-fold risk of neurodevelopmental disorders.",
+   "source": "EMA, topiramate referral, CMDh position 11 October 2023",
+   "url": "https://www.ema.europa.eu/en/medicines/human/referrals/topiramate",
+   "basis": "human"
+  },
+  "Methotrexate": {
+   "tag": "medicine",
+   "text": "Methotrexate embryopathy, which can include short limbs and fewer or fused fingers or toes, may follow doses of 10 mg a week or more taken 6 to 8 weeks after conception.",
+   "source": "Hyoun et al., Birth Defects Res A Clin Mol Teratol 2012",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22434686/",
+   "basis": "human"
+  },
+  "Methotrexate sodium": {
+   "tag": "medicine",
+   "text": "Methotrexate embryopathy, which can include short limbs and fewer or fused fingers or toes, may follow doses of 10 mg a week or more taken 6 to 8 weeks after conception.",
+   "source": "Hyoun et al., Birth Defects Res A Clin Mol Teratol 2012",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/22434686/",
+   "basis": "human"
+  },
+  "Warfarin": {
+   "tag": "medicine",
+   "text": "In one study of 58 pregnancies, women needing more than 5 mg of warfarin a day had 22 fetal complications, mostly miscarriages, against 5 for those on 5 mg or less.",
+   "source": "Vitale et al., J Am Coll Cardiol 1999",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/10334435/",
+   "basis": "human"
+  },
+  "Isotretinoin": {
+   "tag": "medicine",
+   "text": "Isotretinoin is a powerful cause of severe birth defects; EMA warns harm may happen even if it is taken only for a short time in pregnancy, and sets no safe dose.",
+   "source": "EMA, retinoid Article 31 referral 2018, Annex III",
+   "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-iii_en.pdf",
+   "basis": "human"
+  },
+  "Thalidomide": {
+   "tag": "medicine",
+   "text": "A single 50 mg thalidomide tablet taken between days 20 and 36 after fertilisation has been reported to cause birth defects in up to half of pregnancies.",
+   "source": "Vargesson, Birth Defects Res C Embryo Today 2015",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/26043938/",
+   "basis": "human"
+  },
+  "Mycophenolate mofetil and mycophenolic acid": {
+   "tag": "medicine",
+   "text": "EMA states no dose: about 45 to 49 in 100 exposed pregnancies end in miscarriage, and 23 to 27 in 100 babies have malformations, including extra or fused fingers or toes.",
+   "source": "EMA news, 23 October 2015",
+   "url": "https://www.ema.europa.eu/en/news/ema-recommends-additional-measures-prevent-use-mycophenolate-pregnancy",
+   "basis": "human"
+  },
+  "Retinol/retinyl esters": {
+   "tag": "food",
+   "text": "Taking more than 10,000 IU a day of preformed vitamin A from supplements in early pregnancy was linked to about five times more birth defects of cranial-neural-crest origin.",
+   "source": "Rothman et al., N Engl J Med 1995",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/7477116/",
+   "basis": "human"
+  },
+  "Alcohol (ethanol) in beverages": {
+   "tag": "food",
+   "text": "No amount of alcohol is known to be safe in pregnancy; the CDC says there is no safe time to drink and all types of alcohol can be harmful.",
+   "source": "CDC, About Alcohol Use During Pregnancy (reviewed 14 August 2026)",
+   "url": "https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+   "basis": "human"
+  },
+  "Ethyl alcohol in alcoholic beverages": {
+   "tag": "food",
+   "text": "No amount of alcohol is known to be safe in pregnancy; the CDC says there is no safe time to drink and all types of alcohol can be harmful.",
+   "source": "CDC, About Alcohol Use During Pregnancy (reviewed 14 August 2026)",
+   "url": "https://www.cdc.gov/alcohol-pregnancy/about/index.html",
+   "basis": "human"
+  },
+  "Tobacco smoking in pregnancy": {
+   "tag": "recreational",
+   "text": "Smoking in pregnancy raised the odds of limb reduction defects by about a quarter (odds ratio 1.26); the review reports no pooled figure by cigarettes per day.",
+   "source": "Hackshaw et al., Hum Reprod Update 2011",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21747128/",
+   "basis": "human"
+  },
+  "Tobacco smoke (primary)": {
+   "tag": "recreational",
+   "text": "Smoking in pregnancy raised the odds of limb reduction defects by about a quarter (odds ratio 1.26); the review reports no pooled figure by cigarettes per day.",
+   "source": "Hackshaw et al., Hum Reprod Update 2011",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21747128/",
+   "basis": "human"
+  },
+  "Lead [Basis": {
+   "tag": "food",
+   "text": "EFSA found no clear threshold below which lead is known to cause no harm, with particular concern for brain development in unborn babies, infants and children.",
+   "source": "EFSA news, 20 April 2010 (CONTAM opinion on lead in food)",
+   "url": "https://www.efsa.europa.eu/en/press/news/contam100420",
+   "basis": "human"
+  },
+  "Angiotensin converting enzyme": {
+   "tag": "medicine",
+   "text": "In the second and third trimesters, ACE inhibitors reduce the baby's kidney function and can cause injury or death; the label gives no dose limit and says to stop once pregnancy is detected.",
+   "source": "Zestril (lisinopril) US prescribing information, section 5.1, DailyMed (published May 2025)",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=838c2d78-d2d8-4981-9ec9-e50ef9e1a5d8",
+   "basis": "human"
+  },
+  "Danazol": {
+   "tag": "medicine",
+   "text": "Danazol caused male-type genital changes in 23 female babies, more often at higher doses but once at 200 mg a day; none were reported when stopped before week 8.",
+   "source": "Brunskill, Br J Obstet Gynaecol 1992",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/1606119/",
+   "basis": "human"
+  },
+  "Misoprostol": {
+   "tag": "medicine",
+   "text": "Among 42 Brazilian babies with birth defects after first-trimester misoprostol use, including limb defects and Moebius sequence, the most common dose taken was 800 micrograms (range 200 to 16,000).",
+   "source": "Gonzalez et al., Lancet 1998",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/9620717/",
+   "basis": "human"
+  }
+ }
+}

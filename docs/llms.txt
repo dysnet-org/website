@@ -25,7 +25,7 @@ Everything on this site may be quoted and reused with attribution to DysNet. Fig
 ## Filtered views can be linked
 
 - Bibliography by condition: https://www.dysnet.org/knowledge/bibliography/?condition=2911 (ORPHAcode), by theme: ?topic=meta, by year: ?from=2015&to=2026
-- Teratogens by source, level, kind or use: https://www.dysnet.org/knowledge/teratogens/?source=clp&level=known
+- Teratogens by source, level or way of exposure: https://www.dysnet.org/knowledge/teratogens/?exposure=medicine&level=known
 - Expected affected births by condition and region: https://www.dysnet.org/knowledge/epidemiology/?condition=amelia-all-forms&region=Sub-Saharan%20Africa
 
 ## The registry's technical partner

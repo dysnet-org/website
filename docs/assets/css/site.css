@@ -986,21 +986,25 @@ table.annex.evidence-table tbody tr + tr th, table.annex.evidence-table tbody tr
 .tera-name a { color: inherit; text-decoration: underline; text-decoration-color: var(--dys-line); text-underline-offset: 3px; }
 .tera-name a:hover { text-decoration-color: var(--dys-purple); color: var(--dys-purple-text); }
 
-.tera-head .badge-med { background: #ede9fe; color: #5b21b6; border-color: #c4b5fd; }
-
-/* Everyday uses of a substance, read from its Wikipedia article */
+/* How a pregnancy meets a substance, each way with its own level of evidence */
 .tera-uses { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.45rem; }
+.tera-uses:empty { display: none; }
 .use { font-size: var(--text-eyebrow); font-weight: 700; letter-spacing: 0.02em; padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid transparent; }
+.use small { font-weight: 600; opacity: 0.8; }
 button.use { cursor: pointer; }
 button.use[aria-pressed="true"] { outline: 2px solid var(--dys-ink); outline-offset: 1px; }
 button.use small { font-weight: 600; opacity: 0.75; }
+.use-medicine { background: #ede9fe; color: #5b21b6; border-color: #c4b5fd; }
 .use-food { background: #dcfce7; color: #14532d; border-color: #86efac; }
-.use-construction { background: #fef3c7; color: #78350f; border-color: #fcd34d; }
-.use-goods { background: #dbeafe; color: #1e3a8a; border-color: #93c5fd; }
-.use-cosmetics { background: #fce7f3; color: #831843; border-color: #f9a8d4; }
-.use-cleaning { background: #ccfbf1; color: #134e4a; border-color: #5eead4; }
-.use-agriculture { background: #ecfccb; color: #365314; border-color: #bef264; }
-.use-fuel { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
+.use-recreational { background: #fee2e2; color: #7f1d1d; border-color: #fca5a5; }
+.use-home { background: #fce7f3; color: #831843; border-color: #f9a8d4; }
+.use-air { background: #e0f2fe; color: #0c4a6e; border-color: #7dd3fc; }
+.use-pesticide { background: #ecfccb; color: #365314; border-color: #bef264; }
+.use-work { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
+.tera-dose { margin: 0.45rem 0 0; font-size: var(--text-small); }
+.tera-jump { margin: 0.9rem 0 1.1rem; }
+#register { scroll-margin-top: 6rem; }
+.tera-dose .fine { color: var(--dys-muted); }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 
 /* Member associations: one card per association, opening on who leads it and how to reach it */

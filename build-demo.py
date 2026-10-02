@@ -1089,10 +1089,8 @@ def researchers_html():
 TERA_PATH = pathlib.Path(__file__).parent / "tools" / "teratogens.json"
 TERA = json.loads(TERA_PATH.read_text(encoding="utf-8")) if TERA_PATH.exists() else {"entries": [], "sources": {}, "counts": {}}
 TERA_LEVEL = {"known": "Known", "presumed": "Presumed", "suspected": "Suspected"}
-TERA_KIND = {"chemical": "Chemical", "medicine": "Medicine", "product": "Consumer product"}
-TERA_USE = {"food": "Food and drink", "construction": "Building and construction", "goods": "Manufactured goods",
-            "cosmetics": "Cosmetics and personal care", "cleaning": "Cleaning and household",
-            "agriculture": "Agriculture and pest control", "fuel": "Fuel and vehicles"}
+# How a pregnancy meets a substance, each way with its own level of evidence (tools/enrich-teratogens-exposure.py)
+TERA_EXP = {k: v["label"] for k, v in (TERA.get("exposure_labels") or {}).items()}
 
 
 # Square brackets do real work in chemical names (benzo[a]pyrene) and sometimes carry a
@@ -1168,6 +1166,29 @@ def tera_paper_lines(e):
     return out
 
 
+def tera_exp_chip(r, e):
+    """One way of meeting the substance, with the level of evidence that applies to it."""
+    return (f'<span class="use use-{r["tag"]}" title="{html.escape(r.get("why") or e.get("exposure_why") or "", quote=True)}">{TERA_EXP.get(r["tag"], r["tag"])}'
+            f'<small> · {TERA_LEVEL[r["level"]]}</small></span>')
+
+
+def tera_dose_line(r):
+    d = r["dose"]
+    src = (f' <a href="{d["url"]}" target="_blank" rel="noopener external">{d["source"]} ↗</a>' if d.get("url") else f' <span class="fine">{d.get("source", "")}</span>')
+    return f'<p class="tera-dose"><strong>Dose and risk ({TERA_EXP.get(r["tag"], r["tag"]).lower()}):</strong> {d["text"]}{src}</p>'
+
+
+def tera_exp_lines(e):
+    out = [f'<li><strong>How a pregnancy meets it:</strong> {e.get("exposure_why", "")}</li>']
+    for r in e.get("exposure", []):
+        who = " and ".join(r["by"]) if r["by"] else "no authority"
+        basis = (f'no authority assesses this way of meeting it, so it takes the level {who} gives the substance' if r.get("inherited")
+                 else f'level from {who}')
+        also = f'; also {"; ".join(r["also"])}' if r.get("also") else ""
+        out.append(f'<li><strong>{TERA_EXP.get(r["tag"], r["tag"])}, {TERA_LEVEL[r["level"]].lower()}:</strong> {basis}{also}.{(" " + r["why"]) if r.get("why") else ""}</li>')
+    return out
+
+
 def tera_dec_chips(e):
     return "".join(f'<span class="st dec {TERA_DEC_CLS.get(d["verdict"], "st-label")}">{d["where"]}: {d["tag"]}</span>'
                    for d in e.get("decisions", []))
@@ -1200,8 +1221,9 @@ def tera_item_html(e):
                 + (f' &middot; {reg["phone"]}' if reg.get("phone") else "")
                 + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>') if reg else ""
     chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
-    uses = "".join(f'<span class="use use-{u}">{TERA_USE.get(u, u)}</span>' for u in e.get("uses", []))
-    details = tera_dec_lines(e) + tera_paper_lines(e)
+    uses = "".join(tera_exp_chip(r, e) for r in e.get("exposure", []))
+    doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose"))
+    details = tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
     if e.get("source_note"):
         details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
     for src in e["sources"]:
@@ -1218,16 +1240,12 @@ def tera_item_html(e):
     clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
     if clp and clp["category"].replace("Repr. ", "") in ("1A", "1B"):
         details.append('<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>')
-    if e.get("medicinal") and e.get("atc"):
-        details.append(f'<li><strong>Medicine:</strong> {("“" + e["medicine_evidence"] + "” ") if e.get("medicine_evidence") else ""}ATC {", ".join(e["atc"])}, the WHO classification of medicines.</li>')
-    for u, sent in sorted((e.get("use_evidence") or {}).items()):
-        details.append(f'<li><strong>{TERA_USE.get(u, u)}:</strong> “{sent}” <a href="{e["wiki"]}" target="_blank" rel="noopener external">Wikipedia ↗</a></li>')
     if e.get("cas"):
         details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
-    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3><span class="badge">{TERA_KIND.get(e["kind"], e["kind"])}</span>{'<span class="badge badge-med">Medicine</span>' if e.get("medicinal") and e["kind"] != "medicine" else ""}{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
-            f'<div class="tera-srcs">{"".join(srcs)}</div>{f"<div class=tera-uses>{uses}</div>" if uses else ""}<div class="tera-status">{chips}</div>{reg_html}'
+    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
+            f'<div class="tera-uses">{uses}</div>{doses}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
@@ -1243,7 +1261,10 @@ def teratogens_html():
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
-        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "k": e["kind"], "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "med": 1 if e.get("medicinal") else 0, "atc": e.get("atc", [])[:3], "mev": e.get("medicine_evidence", ""), "l": e["level"], "u": e.get("uses", []), "ue": e.get("use_evidence", {}), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "atc": e.get("atc", [])[:3], "l": e["level"],
+                "x": [{"t": r["tag"], "l": r["level"], "b": r["by"], **({"a": r["also"]} if r.get("also") else {}), **({"i": 1} if r.get("inherited") else {}),
+                       **({"w": r["why"]} if r.get("why") else {}), **({"d": r["dose"]} if r.get("dose") else {})} for r in e.get("exposure", [])],
+                "xw": e.get("exposure_why", ""), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
                 "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
                 "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}
                        for x in sorted(e.get("papers") or [], key=lambda x: -int(bool(x.get("cochrane"))))[:3]],
@@ -1253,7 +1274,7 @@ def teratogens_html():
     records = [compact(e) for e in E]
     html_first = [tera_item_html(e) for e in E[:40]]
     c = TERA.get("counts", {})
-    use_chips = "".join(f'<button type="button" class="use use-{k}" data-use="{k}" aria-pressed="false">{lab} <small>{sum(1 for e in E if k in (e.get("uses") or []))}</small></button>' for k, lab in TERA_USE.items())
+    use_chips = "".join(f'<button type="button" class="use use-{k}" data-exp="{k}" aria-pressed="false">{lab} <small>{sum(1 for e in E if any(r["tag"] == k for r in e.get("exposure", [])))}</small></button>' for k, lab in TERA_EXP.items())
     DEC_CHIPS = [("approved", "Approved as a pesticide in the EU"), ("refused", "Refused as a pesticide in the EU"),
                  ("public_supply_banned", "Not to be sold to the public in the EU"), ("cosmetics_banned", "Banned in cosmetics in the EU"),
                  ("cosmetics_restricted", "Restricted in cosmetics in the EU"), ("authorisation_required", "Needs an EU authorisation"),
@@ -1276,14 +1297,13 @@ def teratogens_html():
       <div class="finder-chips" id="tera-sources">{src_chips}</div>
       <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">What an authority decided</p>
       <div class="finder-chips" id="tera-decisions">{dec_chips}</div>
-      <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Level of evidence · Type</p>
-      <div class="finder-chips" id="tera-levels"><button type="button" data-level="known" aria-pressed="false">Known</button><button type="button" data-level="presumed" aria-pressed="false">Presumed</button><button type="button" data-level="suspected" aria-pressed="false">Suspected</button>
-        <span style="width:0.6rem"></span><button type="button" data-kind="chemical" aria-pressed="false">Chemicals</button><button type="button" data-kind="medicine" aria-pressed="false">Medicines</button><button type="button" data-kind="product" aria-pressed="false">Consumer products</button></div>
-            <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Where the substance is used, according to its Wikipedia article</p>
+      <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">How a pregnancy meets it</p>
       <div class="finder-chips tera-use-chips" id="tera-uses">{use_chips}</div>
+      <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">Level of evidence (with a way of meeting it chosen, the level for that way)</p>
+      <div class="finder-chips" id="tera-levels"><button type="button" data-level="known" aria-pressed="false">Known</button><button type="button" data-level="presumed" aria-pressed="false">Presumed</button><button type="button" data-level="suspected" aria-pressed="false">Suspected</button></div>
       <p class="bib-count" role="status"><strong id="tera-n">{len(E)}</strong> of {len(E)} entries · <button type="button" id="tera-reset">Reset</button></p>
     </div>
-    <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). <span class="badge badge-med">Medicine</span> marks a substance used as a medicine, checked against the WHO ATC classification and the substance’s own article ({sum(1 for e in E if e.get("medicinal"))} of {len(E)}). Coloured tags say where the substance is used in everyday products, read from its Wikipedia article ({sum(1 for e in E if e.get("uses"))} of {len(E)}); open <em>Details</em> for the sentence each tag comes from. <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
+    <p class="tera-legend">Names link to Wikipedia where an article exists ({sum(1 for e in E if e.get("wiki"))} of {len(E)}). Coloured tags say how a pregnancy meets the substance at a dose that matters, not every product it is found in: alcohol is tagged food and drink, not medicine, because the ethanol in medicines is not the exposure. Each tag carries the level of evidence for that way of meeting it, from the authority that speaks to it, so a medicine can be known as a treatment and only presumed where it is handled as a chemical ({sum(1 for e in E if len({r["level"] for r in e.get("exposure", [])}) > 1)} entries). {f'Where a source states the dose at which the effect is shown, the entry gives it ({sum(1 for e in E for r in e.get("exposure", []) if r.get("dose"))} entries). ' if any(r.get("dose") for e in E for r in e.get("exposure", [])) else ""}Open <em>Details</em> for the reason behind each tag. <span class="st st-label">hazard label required</span> <span class="st st-ban">banned or restricted</span> <span class="st st-warn">warning, programme or conditions</span> <span class="st st-ok">allowed without pregnancy-specific rule</span> <span class="st st-work">workplace exposure limits</span> · Open <em>Details and legal basis</em> on any entry for the exact rule and the source record.</p>
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
     <script type="application/json" id="tera-data" data-src="/data/teratogens-index.json"></script>{PAYLOADS.__setitem__("teratogens-index.json", json.dumps(records, ensure_ascii=False, separators=(",", ":"))) or ""}
@@ -2574,6 +2594,7 @@ PAGES["/knowledge/teratogens/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Register 5 · Substances of concern {updated_badge(TERA.get("built"))}</p>
     <h1 class="display">Teratogens register: which products can harm the unborn child, and who says so.</h1>
+    <p class="tera-jump"><a class="btn btn-primary" href="#register">Go to the register: {len(TERA.get('entries', []))} substances</a></p>
     <p>Families ask a simple question after a diagnosis: could something have caused this? No public authority answers it with one list. The World Health Organization keeps none. What exists is scattered across chemical law, medicines regulation and one American state. This register brings those lists together, names the source for every entry, states how strong the evidence is, and says where each substance is banned, restricted, labelled or simply allowed.</p>
     <p>It is not medical advice. For a question about a medicine or an exposure during a pregnancy, ask a teratology information service: <a href="https://www.lecrat.fr/" target="_blank" rel="noopener external">CRAT</a> in France, <a href="https://www.medicinesinpregnancy.org/" target="_blank" rel="noopener external">bumps</a> in the United Kingdom, <a href="https://mothertobaby.org/" target="_blank" rel="noopener external">MotherToBaby</a> in North America, or the <a href="https://www.entis-org.eu/centers" target="_blank" rel="noopener external">ENTIS member</a> in your country.</p>
 
@@ -2582,6 +2603,7 @@ PAGES["/knowledge/teratogens/"] = {
       <li><strong>Known</strong>: human evidence. In the EU this is category 1A of the harmonised classification; for medicines, a documented human teratogen; in California, a substance the State lists after its own experts review it, or because another law already requires the warning.</li>
       <li><strong>Presumed</strong>: strong animal evidence. Category 1B in the EU, a medicine contraindicated in pregnancy on animal data, or a substance California lists on an authoritative body&rsquo;s review, which is usually a review of animal studies. California&rsquo;s own wording is &ldquo;known to the State&rdquo;, a legal status rather than a statement about human evidence, so we read the basis of each listing rather than the phrase.</li>
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
+      <li><strong>How a pregnancy meets it</strong>: every entry is tagged with the ways a pregnant woman receives the substance at a dose that matters: {", ".join(v.lower() if i else v for i, v in enumerate(TERA_EXP.values()))}. A tag is not a list of every product the substance is found in: ethanol is in some medicines, but drinking is the exposure, so alcohol is tagged food and drink. Each tag carries its own level of evidence, from the authority that speaks to that way of meeting it: a medicines regulator for treatment, a chemical classification for the substance handled at work or sold as a pesticide or in home products. A medicine can therefore be known as a treatment and presumed where it is made ({TERA.get("counts", {}).get("exposure_split", 0)} entries). {f'Where a source states the dose at which the effect is shown in people, the entry gives it, with the source ({TERA["counts"]["doses"]} entries).' if TERA.get("counts", {}).get("doses") else ""}</li>
       <li><strong>A second authority</strong>: {TERA.get("counts", {}).get("nite", 0)} entries also carry a classification made by the Japanese government, through the GHS classification projects of the National Institute of Technology and Evaluation, to implement the labelling and safety-data-sheet duties of the Industrial Safety and Health Act and the PRTR Law. {TERA.get("counts", {}).get("nite_not_in_clp", 0)} of them have no EU harmonised entry. Each classification names the ministry that made it and the fiscal year, and links to its own page with the studies it rests on. It corroborates an entry and adds a jurisdiction; it does not set the level, because a GHS hazard code does not separate category 1A from category 1B.</li>
       <li><strong>What was decided, and by whom</strong>: the paragraphs below describe what the law provides. A tag on a card describes what an authority actually decided about that substance, and names it. {TERA.get("counts", {}).get("legal_any", 0)} entries carry at least one. The European Commission has refused {TERA.get("counts", {}).get("legal_eu-ppp", 0) - TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)} of them as pesticide active substances and <strong>approved {TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)}</strong>; {TERA.get("counts", {}).get("legal_reach-xvii", 0)} may not be sold to the general public at all; {TERA.get("counts", {}).get("legal_cosmetics", 0)} may not go into a cosmetic product; {TERA.get("counts", {}).get("legal_reach-xiv", 0)} need a Commission authorisation for any use; {TERA.get("counts", {}).get("legal_stockholm", 0)} are eliminated worldwide by treaty; and {TERA.get("counts", {}).get("legal_rotterdam", 0)} have been banned or severely restricted by at least one country, which the card names. An approval is not a contradiction: the EU excludes a category 1A or 1B reproductive toxicant from pesticide approval unless exposure is negligible, and category 2 is not excluded at all. It is, though, a decision worth seeing next to the evidence.</li>
       <li><strong>How much is tolerable</strong>: for substances in the food chain, the European Food Safety Authority derives the intake it considers tolerable and names the effect that figure rests on. {TERA.get("counts", {}).get("efsa", 0)} entries carry such a value, read from EFSA&rsquo;s pages and from its chemical hazards database, OpenFoodTox 3.0 (CC BY-ND 4.0). EFSA does not classify teratogens and its remit stops at food and feed, so its values sit beside the evidence level, never instead of it.</li>
@@ -2589,7 +2611,7 @@ PAGES["/knowledge/teratogens/"] = {
     <p><strong>Independent hazard frameworks.</strong> Manufacturers and certifiers increasingly rate chemicals with two non-profit frameworks that score developmental and reproductive toxicity among their endpoints. <a href="https://www.greenscreenchemicals.org/learn/full-greenscreen-method" target="_blank" rel="noopener external">GreenScreen for Safer Chemicals</a> (Clean Production Action) assigns Benchmarks 1 to 4, Benchmark 1 being a chemical of high concern, through assessments by licensed profilers such as ToxServices; its free List Translator flags as LT-1 any chemical that an authoritative list already classes as a high-hazard reproductive or developmental toxicant, and its <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">public registry</a> tells you, by CAS number, whether a full assessment exists. <a href="https://www.chemforward.org/" target="_blank" rel="noopener external">ChemFORWARD</a> rates chemicals used in consumer products and building materials in hazard bands A to F across 24 endpoints; its published <a href="https://static1.squarespace.com/static/60611efa464a766c6a812834/t/6657f7d9c7241a2e6ba86b55/1717041115329/Chemical+Rating+Guidance+v2.2_Abbreviated.pdf" target="_blank" rel="noopener external">rating guidance</a> places in band F, by list screening alone, every substance with an EU harmonised Repr. 1 classification or on the REACH candidate and authorisation lists as a reproductive toxicant. The two organisations <a href="https://www.chemforward.org/news/chemforward-and-greenscreen-offer-aligned-outputs-for-hazard-data-toxservices" target="_blank" rel="noopener external">reported in 2021</a> that their outputs are aligned. Full assessments sit behind subscriptions, so this register cannot import their scores; where an entry meets ChemFORWARD's published F-band criterion, it says so.</p>
     <p>The <strong>EU harmonised classification</strong> is binding law: once a substance carries a hazard statement for the unborn child (H360D, H361d and their variants), every container of it, and of mixtures containing it, must be labelled across the EU and EEA; categories 1A and 1B may not be sold to the general public, cannot be approved as pesticides and are banned from cosmetics. It says nothing about finished articles, food or medicines, which are outside its scope. <strong>Proposition 65</strong> is binding in California only and requires a warning before exposure, not a ban; it is enforced through litigation. <strong>EMA</strong> decisions bind marketing authorisations across the EU: the medicine stays available, under a pregnancy prevention programme. <strong>WHO</strong> guidance binds no one. Our <strong>bibliography</strong> reports evidence, not law.</p>
 
-    {opener("02", "The register", f"{len(TERA.get('entries', []))} substances and products.")}
+    <div id="register">{opener("02", "The register", f"{len(TERA.get('entries', []))} substances and products.")}</div>
     {teratogens_html()}
     {REGISTER_FOOT}
   </div>
@@ -6018,7 +6040,7 @@ def build():
              f"- [Member associations]({SITE}/about/members/): the associations families belong to, country by country.",
              "", "## Filtered views can be linked", "",
              f"- Bibliography by condition: {SITE}/knowledge/bibliography/?condition=2911 (ORPHAcode), by theme: ?topic=meta, by year: ?from=2015&to=2026",
-             f"- Teratogens by source, level, kind or use: {SITE}/knowledge/teratogens/?source=clp&level=known",
+             f"- Teratogens by source, level or way of exposure: {SITE}/knowledge/teratogens/?exposure=medicine&level=known",
              f"- Expected affected births by condition and region: {SITE}/knowledge/epidemiology/?condition=amelia-all-forms&region=Sub-Saharan%20Africa",
              "", "## The registry's technical partner", "",
              "- [Health Data Safe](https://www.healthdatasafe.org/en/): a Swiss non-profit foundation that builds "

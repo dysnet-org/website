@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Tag the substances of the teratogens register with the everyday products they are used in.
 
+Superseded on 2 October 2026 by tools/enrich-teratogens-exposure.py, which tags how a pregnancy meets
+a substance rather than what it is used for, and removes the fields this script writes.
+
 Source: the plain text of each substance's Wikipedia article (the article already linked from the
 register, resolved through Wikidata by CAS number). Only sentences that speak of a use are read
 ("used as", "found in", "applications", "ingredient in", "manufacture of"…), and a category is kept

@@ -903,8 +903,10 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   try { if (dataEl.textContent.trim()) DATA = JSON.parse(dataEl.textContent); } catch (e) { DATA = null; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
   var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", nite: "Japan: GHS classification by the government (NITE)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
-  var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" }, KIND = { chemical: "Chemical", medicine: "Medicine", product: "Consumer product" };
-  var USE = { food: "Food and drink", construction: "Building and construction", goods: "Manufactured goods", cosmetics: "Cosmetics and personal care", cleaning: "Cleaning and household", agriculture: "Agriculture and pest control", fuel: "Fuel and vehicles" };
+  var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" };
+  // the labels of the ways of meeting a substance are those the page prints on its filter chips
+  var EXP = {};
+  document.querySelectorAll("#tera-uses button[data-exp]").forEach(function (b) { EXP[b.getAttribute("data-exp")] = b.firstChild.textContent.trim(); });
   var EU_ALL = "Mandatory hazard classification and labelling of the substance and of mixtures containing it (CLP Annex VI, harmonised).";
   var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
@@ -925,20 +927,23 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   // Every chip carries a count of what is in the current selection, so that narrowing to
   // "Known" shows at once how many of those an authority acted on, and where.
   function recount(rows) {
-    var n = { source: {}, level: {}, kind: {}, use: {}, dec: {}, paper: {} };
+    var n = { source: {}, level: {}, exp: {}, dec: {}, paper: {} };
     rows.forEach(function (r) {
       (r.s || []).forEach(function (c) { n.source[c] = (n.source[c] || 0) + 1; });
-      n.level[r.l] = (n.level[r.l] || 0) + 1;
-      n.kind[r.k] = (n.kind[r.k] || 0) + 1;
-      if (r.med) n.kind.medicine = (n.kind.medicine || 0) + 1;
-      (r.u || []).forEach(function (u) { n.use[u] = (n.use[u] || 0) + 1; });
+      // with a way of meeting it chosen, a level counts for that way; otherwise the entry's own level
+      var lv = {}, ex = {};
+      if (state.exps.length) (r.x || []).forEach(function (x) { if (state.exps.indexOf(x.t) !== -1) lv[x.l] = 1; });
+      else lv[r.l] = 1;
+      Object.keys(lv).forEach(function (l) { n.level[l] = (n.level[l] || 0) + 1; });
+      (r.x || []).forEach(function (x) { if (!state.levels.length || state.levels.indexOf(x.l) !== -1) ex[x.t] = 1; });
+      Object.keys(ex).forEach(function (t) { n.exp[t] = (n.exp[t] || 0) + 1; });
       var seen = {};
       (r.dec || []).forEach(function (d) { if (!seen[d.v]) { seen[d.v] = 1; n.dec[d.v] = (n.dec[d.v] || 0) + 1; } });
       if (r.pc) n.paper.paper = (n.paper.paper || 0) + 1;
       if (r.pcoch) n.paper.cochrane = (n.paper.cochrane || 0) + 1;
     });
-    [["data-source", n.source], ["data-level", n.level], ["data-kind", n.kind],
-     ["data-use", n.use], ["data-dec", n.dec], ["data-paper", n.paper]].forEach(function (pair) {
+    [["data-source", n.source], ["data-level", n.level],
+     ["data-exp", n.exp], ["data-dec", n.dec], ["data-paper", n.paper]].forEach(function (pair) {
       document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
         var c = pair[1][b.getAttribute(pair[0])] || 0, small = b.querySelector("small");
         if (!small) { small = document.createElement("small"); b.appendChild(document.createTextNode(" ")); b.appendChild(small); }
@@ -977,6 +982,15 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       return "<li>" + line + (u ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener external">source \u2197</a>' : "") + "</li>";
     });
   }
+  function expLines(r) {
+    var out = ['<li><strong>How a pregnancy meets it:</strong> ' + esc(r.xw) + '</li>'];
+    (r.x || []).forEach(function (x) {
+      var who = (x.b || []).join(" and ") || "no authority";
+      var basis = x.i ? "no authority assesses this way of meeting it, so it takes the level " + who + " gives the substance" : "level from " + who;
+      out.push('<li><strong>' + esc(EXP[x.t] || x.t) + ', ' + LEVEL[x.l].toLowerCase() + ':</strong> ' + esc(basis) + (x.a ? "; also " + esc(x.a.join("; ")) : "") + "." + (x.w ? " " + esc(x.w) : "") + '</li>');
+    });
+    return out;
+  }
   function shortJur(place, text) {
     var s = /programme/.test(text) ? "authorised with a pregnancy prevention programme" : /ontraindicated/.test(text) ? "contraindicated in pregnancy" : /REMS/.test(text) ? "REMS programme" : /boxed warning/.test(text) ? "boxed warning" : /mandatory/.test(text) ? "pregnancy warning mandatory" : /no EU-wide/.test(text) ? "legal, no pregnancy warning" : /pack/.test(text) ? "legal, pack warnings" : text.split(";")[0].slice(0, 50);
     var cls = /contraindicated/.test(s) ? "st-ban" : /(warning|REMS|programme)/.test(s) ? "st-warn" : "st-ok";
@@ -1001,17 +1015,19 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
-    details = decLines(r).concat(paperLines(r)).concat(details);
+    details = expLines(r).concat(decLines(r)).concat(paperLines(r)).concat(details);
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
-    if (r.med && r.atc && r.atc.length) details.push('<li><strong>Medicine:</strong> ' + (r.mev ? '\u201c' + esc(r.mev) + '\u201d ' : "") + 'ATC ' + esc(r.atc.join(", ")) + ', the WHO classification of medicines.</li>');
-    Object.keys(r.ue || {}).sort().forEach(function (u) { details.push('<li><strong>' + (USE[u] || u) + ':</strong> \u201c' + esc(r.ue[u]) + '\u201d' + (r.w ? ' <a href="' + esc(r.w) + '" target="_blank" rel="noopener external">Wikipedia \u2197</a>' : "") + '</li>'); });
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
     var ids = [r.cas ? "CAS " + r.cas : "", /^\d{3}-\d{3}-\d$/.test(r.ec || "") ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.join(", ") : "")].filter(Boolean).join(" · ");
-    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3><span class="badge">' + (KIND[r.k] || r.k) + '</span>' + (r.med && r.k !== 'medicine' ? '<span class="badge badge-med">Medicine</span>' : '') + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
-           '<div class="tera-srcs">' + srcs + '</div>' + ((r.u && r.u.length) ? '<div class="tera-uses">' + r.u.map(function (u) { return '<span class="use use-' + u + '">' + (USE[u] || u) + '</span>'; }).join("") + '</div>' : "") + '<div class="tera-status">' + chips.join("") + '</div>' + (r.reg ? '<p class="tera-registry">A pregnancy registry is recruiting for ' + esc(r.reg.m) + ': <a href="' + esc(r.reg.u) + '" target="_blank" rel="noopener external">' + esc(r.reg.n) + '</a>' + (r.reg.p ? ' \u00b7 ' + esc(r.reg.p) : '') + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>' : '') +
+    return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
+           '<div class="tera-uses">' + (r.x || []).map(function (x) { return '<span class="use use-' + x.t + '" title="' + esc(x.w || r.xw) + '">' + esc(EXP[x.t] || x.t) + '<small> \u00b7 ' + LEVEL[x.l] + '</small></span>'; }).join("") + '</div>' +
+           (r.x || []).filter(function (x) { return x.d; }).map(function (x) {
+             return '<p class="tera-dose"><strong>Dose and risk (' + esc((EXP[x.t] || x.t).toLowerCase()) + '):</strong> ' + esc(x.d.text) + (x.d.url ? ' <a href="' + esc(x.d.url) + '" target="_blank" rel="noopener external">' + esc(x.d.source) + ' \u2197</a>' : ' <span class="fine">' + esc(x.d.source || "") + '</span>') + '</p>';
+           }).join("") +
+           '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' + (r.reg ? '<p class="tera-registry">A pregnancy registry is recruiting for ' + esc(r.reg.m) + ': <a href="' + esc(r.reg.u) + '" target="_blank" rel="noopener external">' + esc(r.reg.n) + '</a>' + (r.reg.p ? ' \u00b7 ' + esc(r.reg.p) : '') + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>' : '') +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
   function prime(rows) { rows.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec).toLowerCase(); }); }
@@ -1020,16 +1036,16 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function order(rows) { rows.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); }); }
   if (DATA) order(DATA);
   var LIMIT = 40, expanded = false, more = document.getElementById("tera-more");
-  var state = { sources: [], levels: [], kinds: [], uses: [], decs: [], papers: [] };
+  var state = { sources: [], levels: [], exps: [], decs: [], papers: [] };
   function apply() {
     if (!DATA) return;                      // the entries rendered into the page stay until the data lands
     var text = q.value.trim().toLowerCase(), k = 0, out = [], kept = [];
     DATA.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
-               (!state.levels.length || state.levels.indexOf(r.l) !== -1) &&
-               (!state.kinds.length || state.kinds.indexOf(r.k) !== -1 || (r.med && state.kinds.indexOf('medicine') !== -1)) &&
-               (!state.uses.length || (r.u || []).some(function (u) { return state.uses.indexOf(u) !== -1; })) &&
+               // a way of meeting it and a level, chosen together, must hold for the same way
+               (state.exps.length ? (r.x || []).some(function (x) { return state.exps.indexOf(x.t) !== -1 && (!state.levels.length || state.levels.indexOf(x.l) !== -1); })
+                                  : (!state.levels.length || state.levels.indexOf(r.l) !== -1)) &&
                (!state.decs.length || (r.dec || []).some(function (d) { return state.decs.indexOf(d.v) !== -1; })) &&
                (!state.papers.length || state.papers.every(function (p) { return p === "cochrane" ? r.pcoch : r.pc; }));
       if (ok) { k++; kept.push(r); if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
@@ -1037,7 +1053,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     list.innerHTML = out.join("");
     n.textContent = k;
     recount(kept);
-    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, kind: state.kinds, use: state.uses, decision: state.decs, paper: state.papers });
+    writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, exposure: state.exps, kind: [], use: [], decision: state.decs, paper: state.papers });
     more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
   }
   function bind(groupId, attr, key) {
@@ -1049,20 +1065,24 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       });
     });
   }
-  bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels"); bind("tera-levels", "data-kind", "kinds");
-  bind("tera-uses", "data-use", "uses"); bind("tera-decisions", "data-dec", "decs"); bind("tera-decisions", "data-paper", "papers");
+  bind("tera-sources", "data-source", "sources"); bind("tera-levels", "data-level", "levels");
+  bind("tera-uses", "data-exp", "exps"); bind("tera-decisions", "data-dec", "decs"); bind("tera-decisions", "data-paper", "papers");
   q.addEventListener("input", function () { expanded = false; apply(); });
   more.addEventListener("click", function () { expanded = true; apply(); });
   document.getElementById("tera-reset").addEventListener("click", function () {
-    q.value = ""; state = { sources: [], levels: [], kinds: [], uses: [], decs: [], papers: [] }; expanded = false;
+    q.value = ""; state = { sources: [], levels: [], exps: [], decs: [], papers: [] }; expanded = false;
     document.querySelectorAll("#tera-controls button[aria-pressed]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); }); apply();
   });
-  // a link can arrive with a search, a source, a level, a kind or a use already chosen
+  // a link can arrive with a search, a source, a level or a way of exposure already chosen;
+  // links made before the exposure tags said kind=medicine or use=food, and still land
   var pre = filterParams();
   if (pre.get("q")) q.value = pre.get("q");
   state.sources = filterList("source"); state.levels = filterList("level");
-  state.kinds = filterList("kind"); state.uses = filterList("use"); state.decs = filterList("decision"); state.papers = filterList("paper");
-  [["data-source", state.sources], ["data-level", state.levels], ["data-kind", state.kinds], ["data-use", state.uses], ["data-dec", state.decs], ["data-paper", state.papers]].forEach(function (pair) {
+  var OLD = { medicine: "medicine", food: "food", agriculture: "pesticide", cosmetics: "home", cleaning: "home" };
+  state.exps = filterList("exposure").concat(filterList("kind"), filterList("use")).map(function (v) { return EXP[v] ? v : OLD[v]; })
+    .filter(function (v, i, a) { return v && a.indexOf(v) === i; });
+  state.decs = filterList("decision"); state.papers = filterList("paper");
+  [["data-source", state.sources], ["data-level", state.levels], ["data-exp", state.exps], ["data-dec", state.decs], ["data-paper", state.papers]].forEach(function (pair) {
     document.querySelectorAll("#tera-controls button[" + pair[0] + "]").forEach(function (b) {
       if (pair[1].indexOf(b.getAttribute(pair[0])) !== -1) b.setAttribute("aria-pressed", "true");
     });

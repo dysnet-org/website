@@ -1,5 +1,5 @@
 {
- "_about": "Hand-curated exposure tags for the teratogens register, read by tools/enrich-teratogens-exposure.py. A tag says how a pregnancy meets the substance at a dose that matters, not every product it occurs in: alcohol is tagged Food and drink, not Medicine, because the ethanol in medicines is not the exposure. Keys are an entry's name, or the start of it when that matches one entry only. Entries not named here are tagged by rule: Pesticides and biocides when the EU Pesticides Database lists the substance or it has an ISO common name, otherwise Work and industry.",
+ "_about": "Hand-curated exposure tags for the teratogens register, read by tools/enrich-teratogens-exposure.py. A tag says how a pregnancy meets the substance at a dose that matters. Keys are an entry's name, or the start of it when that matches one entry only. Entries not named here are tagged by rule: Pesticides and biocides when the EU Pesticides Database lists the substance or it has an ISO common name, otherwise Work and industry.",
  "tags": {
   "medicine": {
    "label": "Medicine",
@@ -224,13 +224,13 @@
    "tags": [
     "food"
    ],
-   "why": "Drinking alcohol in pregnancy is the exposure. The small amounts of ethanol in some medicines are not."
+   "why": "Drinking alcohol in pregnancy is the exposure."
   },
   "Ethyl alcohol in alcoholic beverages": {
    "tags": [
     "food"
    ],
-   "why": "Drinking alcohol in pregnancy is the exposure. The small amounts of ethanol in some medicines are not."
+   "why": "Drinking alcohol in pregnancy is the exposure."
   },
   "Methyl mercury": {
    "tags": [

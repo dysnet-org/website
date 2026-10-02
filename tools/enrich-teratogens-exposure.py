@@ -3,9 +3,8 @@
 own level of evidence, and with the dose at which the effect is shown where a source states one.
 
 A tag answers one question: through what does a pregnant woman receive this substance at a dose
-that matters? It is not a list of every product the molecule occurs in. Ethanol is in some
-medicines, but drinking is the exposure, so alcohol is tagged Food and drink and not Medicine.
-Lithium is a medicine, and treatment is the exposure, so it is tagged Medicine.
+that matters? It is not a list of every product the molecule occurs in. Lithium is a medicine,
+and treatment is the exposure, so it is tagged Medicine.
 
 Seven tags (labels and meanings in tools/teratogen-exposure.json): Medicine, Food and drink,
 Tobacco and recreational drugs, Home and personal care, Air pollution, Pesticides and biocides,

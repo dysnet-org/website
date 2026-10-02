@@ -1206,6 +1206,34 @@ def tera_dec_lines(e):
     return out
 
 
+# The pregnancy facts of the medicines on the ENTIS experts' list (tools/teratogen-medicine-facts.json):
+# a plain sentence on the card, and in the details the verbatim quote it rests on, with its source.
+TERA_PREG = [("window", "When"), ("dose", "Dose"), ("effects", "Effects"), ("absolute_risk", "Risk")]
+
+
+def tera_preg_html(e):
+    pg = e.get("pregnancy")
+    if not pg:
+        return ""
+    rows = "".join(f'<dt>{lab}</dt><dd>{html.escape(pg[k]["text"])} <a href="{html.escape(pg[k]["url"], quote=True)}" target="_blank" rel="noopener external" title="{html.escape(pg[k]["source_label"], quote=True)}">source ↗</a></dd>'
+                   for k, lab in TERA_PREG if pg.get(k))
+    limb = '<span class="st st-limb">Limb defects named by the source</span>' if pg.get("limb_defects", "").startswith("named") else ""
+    return f'<div class="tera-preg"><p class="tera-preg-h">In pregnancy{limb}</p><dl>{rows}</dl></div>'
+
+
+def tera_preg_lines(e):
+    pg = e.get("pregnancy") or {}
+    out = []
+    for k, lab in TERA_PREG:
+        x = pg.get(k)
+        if not x:
+            continue
+        lang = " (in French, as published)" if x.get("quote_language") == "fr" else ""
+        ref = ", ".join(v for v in (x["source_label"], x.get("id"), x.get("date")) if v)
+        out.append(f'<li><strong>{lab}, quoted{lang}:</strong> “{html.escape(x["quote"])}” {html.escape(ref)} <a href="{html.escape(x["url"], quote=True)}" target="_blank" rel="noopener external">source ↗</a></li>')
+    return out
+
+
 def tera_item_html(e):
     srcs = []
     for src in e["sources"]:
@@ -1213,6 +1241,7 @@ def tera_item_html(e):
         elif src["code"] == "p65": lab, det = "California Prop 65", src.get("toxicity", "") + (f' · listed {src["listed"][:4]}' if src.get("listed") else "")
         elif src["code"] == "ema": lab, det = "EMA", "pregnancy prevention programme or contraindication"
         elif src["code"] == "who": lab, det = "WHO", "fact sheet on congenital disorders"
+        elif src["code"] == "entis": lab, det = "ENTIS experts", "known human structural teratogen"
         elif src["code"] == "efsa": lab, det = "EFSA", "health-based guidance value"
         elif src["code"] == "nite": lab, det = "Japan NITE", ", ".join(src["statements"]) + (f' · classified {src["classified"]}' if src.get("classified") else "")
         else: lab, det = "DysNet bibliography", "peer-reviewed evidence"
@@ -1224,8 +1253,8 @@ def tera_item_html(e):
                 + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>') if reg else ""
     chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(tera_exp_chip(r, e) for r in e.get("exposure", []))
-    doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose"))
-    details = tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
+    doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose")) + tera_preg_html(e)
+    details = tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
     if e.get("source_note"):
         details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
     for src in e["sources"]:
@@ -1267,7 +1296,10 @@ def teratogens_html():
                 "x": [{"t": r["tag"], "l": r["level"], "b": r["by"], **({"a": r["also"]} if r.get("also") else {}), **({"i": 1} if r.get("inherited") else {}),
                        **({"w": r["why"]} if r.get("why") else {}), **({"d": r["dose"]} if r.get("dose") else {}),
                        **({"bs": r["basis"]} if r.get("basis") else {}), **({"s": r["source"], "su": r["url"]} if r.get("url") else {})} for r in e.get("exposure", [])],
-                "xw": e.get("exposure_why", ""), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
+                "xw": e.get("exposure_why", ""),
+                "pg": ({**{k: {kk: e["pregnancy"][k][kk] for kk in ("text", "quote", "source_label", "url", "id", "date", "quote_language") if e["pregnancy"][k].get(kk)}
+                           for k, _l in TERA_PREG if e["pregnancy"].get(k)}, "limb": 1 if e["pregnancy"].get("limb_defects", "").startswith("named") else 0}
+                       if e.get("pregnancy") else 0), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
                 "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
                 "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}
                        for x in sorted(e.get("papers") or [], key=lambda x: -int(bool(x.get("cochrane"))))[:3]],
@@ -1282,17 +1314,19 @@ def teratogens_html():
                  ("public_supply_banned", "Not to be sold to the public in the EU"), ("cosmetics_banned", "Banned in cosmetics in the EU"),
                  ("cosmetics_restricted", "Restricted in cosmetics in the EU"), ("authorisation_required", "Needs an EU authorisation"),
                  ("banned_somewhere", "Banned by a country"), ("eliminated", "Eliminated worldwide by treaty"), ("restricted", "Restricted worldwide by treaty")]
-    PAPER_CHIPS = [("paper", "Has a peer-reviewed paper here"), ("cochrane", "Has a Cochrane review")]
+    PAPER_CHIPS = [("paper", "Has a peer-reviewed paper here"), ("cochrane", "Has a Cochrane review"),
+                   ("preg", "Stage, dose and risk documented"), ("limb", "Limb defects named by a source")]
     dec_n = {}
     for x in E:
         for d in x.get("decisions", []):
             dec_n[d["verdict"]] = dec_n.get(d["verdict"], 0) + 1
     dec_chips = "".join(f'<button type="button" data-dec="{code}" aria-pressed="false">{lab} <small>{dec_n.get(code, 0)}</small></button>'
                         for code, lab in DEC_CHIPS if dec_n.get(code))
-    paper_n = {"paper": sum(1 for x in E if x.get("paper_count")), "cochrane": sum(1 for x in E if x.get("paper_cochrane"))}
+    paper_n = {"paper": sum(1 for x in E if x.get("paper_count")), "cochrane": sum(1 for x in E if x.get("paper_cochrane")),
+               "preg": sum(1 for x in E if x.get("pregnancy")), "limb": sum(1 for x in E if (x.get("pregnancy") or {}).get("limb_defects", "").startswith("named"))}
     dec_chips += "".join(f'<button type="button" data-paper="{code}" aria-pressed="false">{lab} <small>{paper_n[code]}</small></button>'
                          for code, lab in PAPER_CHIPS if paper_n[code])
-    src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "nite": "Japan, government classification", "p65": "California Proposition 65", "ema": "EMA medicines", "efsa": "EFSA food values", "who": "WHO", "bib": "DysNet bibliography"}.get(code, code) }</button>' for code in ("clp", "nite", "p65", "ema", "efsa", "who", "bib"))
+    src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "nite": "Japan, government classification", "p65": "California Proposition 65", "ema": "EMA medicines", "efsa": "EFSA food values", "who": "WHO", "bib": "DysNet bibliography", "entis": "ENTIS experts"}.get(code, code) }</button>' for code in ("clp", "nite", "p65", "ema", "entis", "efsa", "who", "bib"))
     return f"""
     <div class="bib-controls" id="tera-controls">
       <input type="search" id="tera-q" autocomplete="off" placeholder="Search a substance, CAS number or medicine…" aria-label="Search the register">
@@ -1310,7 +1344,7 @@ def teratogens_html():
     <ol class="bib-list tera-list" id="tera-list">{"".join(html_first)}</ol>
     <p class="bib-more-row"><button type="button" class="btn btn-ghost" id="tera-more" hidden>Show all matching entries</button></p>
     <script type="application/json" id="tera-data" data-src="/data/teratogens-index.json"></script>{PAYLOADS.__setitem__("teratogens-index.json", json.dumps(records, ensure_ascii=False, separators=(",", ":"))) or ""}
-    <p class="annex-note">Built {TERA.get("built", "")}. Sources: {c.get("clp", 0)} EU harmonised entries with a hazard statement for the unborn child (CLP Annex VI, ATP23), {c.get("p65", 0)} developmental toxicants on California's Proposition 65 list, {c.get("ema", 0)} medicines under EMA pregnancy prevention programmes or contraindications, plus alcohol (WHO) and tobacco smoking (peer-reviewed literature). {c.get("both_clp_and_p65", 0)} substances appear on both the EU and the Californian lists. Decisions come from four more public registers, read {c.get("legal_read", "")}: the EU Pesticides Database of DG SANTE, REACH Annex XIV and Annex XVII entry 30 as consolidated in Regulation 1907/2006, Annexes II and III of the cosmetics Regulation 1223/2009, the Stockholm Convention&rsquo;s annexes, and the national bans and severe restrictions notified to the Rotterdam Convention. The two conventions publish names rather than identifiers, so those two are matched on name; the EU sources are matched on CAS number. The Rotterdam and Stockholm listings are assembled in the browser rather than served as data, so they are captured rather than fetched, and the capture is dated in <a href="/data/teratogens.json">the data file</a>. {c.get("nite", 0)} entries also carry the Japanese government&rsquo;s own GHS classification, made by the National Institute of Technology and Evaluation for the ministries, {c.get("nite_not_in_clp", 0)} of them with no EU harmonised entry; ECHA&rsquo;s site refuses automated requests, so those are read through <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener external">PubChem</a>, which republishes them, and matched on CAS number alone. Read {c.get("nite_read", "")}. The register takes assessments made by public authorities: the self-classifications companies notify for their own products are deliberately not used. <a href="/data/teratogens.json">Download the data (JSON, CC BY 4.0)</a>. Report an error or a missing substance: <a href="mailto:info@dysnet.org?subject=Teratogens%20register">info@dysnet.org</a>.</p>
+    <p class="annex-note">Built {TERA.get("built", "")}. Sources: {c.get("clp", 0)} EU harmonised entries with a hazard statement for the unborn child (CLP Annex VI, ATP23), {c.get("p65", 0)} developmental toxicants on California's Proposition 65 list, {c.get("ema", 0)} medicines under EMA pregnancy prevention programmes or contraindications, {c.get("entis", 0)} medicines on the ENTIS experts&rsquo; list of known human structural teratogens (Bluett-Duncan et al., Birth Defects Research, 2025), plus alcohol (WHO) and tobacco smoking (peer-reviewed literature). {c.get("both_clp_and_p65", 0)} substances appear on both the EU and the Californian lists. Decisions come from four more public registers, read {c.get("legal_read", "")}: the EU Pesticides Database of DG SANTE, REACH Annex XIV and Annex XVII entry 30 as consolidated in Regulation 1907/2006, Annexes II and III of the cosmetics Regulation 1223/2009, the Stockholm Convention&rsquo;s annexes, and the national bans and severe restrictions notified to the Rotterdam Convention. The two conventions publish names rather than identifiers, so those two are matched on name; the EU sources are matched on CAS number. The Rotterdam and Stockholm listings are assembled in the browser rather than served as data, so they are captured rather than fetched, and the capture is dated in <a href="/data/teratogens.json">the data file</a>. {c.get("nite", 0)} entries also carry the Japanese government&rsquo;s own GHS classification, made by the National Institute of Technology and Evaluation for the ministries, {c.get("nite_not_in_clp", 0)} of them with no EU harmonised entry; ECHA&rsquo;s site refuses automated requests, so those are read through <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener external">PubChem</a>, which republishes them, and matched on CAS number alone. Read {c.get("nite_read", "")}. The register takes assessments made by public authorities: the self-classifications companies notify for their own products are deliberately not used. <a href="/data/teratogens.json">Download the data (JSON, CC BY 4.0)</a>. Report an error or a missing substance: <a href="mailto:info@dysnet.org?subject=Teratogens%20register">info@dysnet.org</a>.</p>
 """
 
 BOARD = [
@@ -2607,6 +2641,7 @@ PAGES["/knowledge/teratogens/"] = {
       <li><strong>Presumed</strong>: strong animal evidence. Category 1B in the EU, a medicine contraindicated in pregnancy on animal data, or a substance California lists on an authoritative body&rsquo;s review, which is usually a review of animal studies. California&rsquo;s own wording is &ldquo;known to the State&rdquo;, a legal status rather than a statement about human evidence, so we read the basis of each listing rather than the phrase.</li>
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
       <li><strong>How a pregnancy meets it</strong>: every entry is tagged with the ways a pregnant woman receives the substance at a dose that matters: {", ".join(v.lower() if i else v for i, v in enumerate(TERA_EXP.values()))}. Each tag carries its own level of evidence, from the authority that speaks to that way of meeting it: a medicines regulator for treatment, a chemical classification for the substance handled at work or sold as a pesticide or in home products. A medicine can therefore be known as a treatment and presumed where it is made ({TERA.get("counts", {}).get("exposure_split", 0)} entries). {f'Where a source states the dose at which the effect is shown in people, the entry gives it, with the source ({TERA["counts"]["doses"]} entries).' if TERA.get("counts", {}).get("doses") else ""}</li>
+      <li><strong>Stage, dose and risk</strong>: for the {TERA.get("counts", {}).get("entis", 0)} medicines that experts of the European Network of Teratology Information Services list as known human structural teratogens (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/" target="_blank" rel="noopener external">Bluett-Duncan et al., 2025</a>), the entry states when in pregnancy the harm occurs, the dose, the effects and the absolute risk. Each fact comes from a regulator&rsquo;s product information (US FDA, EMA, ANSM, MHRA), a systematic review or a large registry study, and the details quote it word for word; two readers checked each one against its source. Where no such source states a fact, the entry leaves it out rather than guess. {TERA.get("counts", {}).get("entis_added", 0)} of these medicines were on none of the lists above and enter the register on the experts&rsquo; list.</li>
       <li><strong>A second authority</strong>: {TERA.get("counts", {}).get("nite", 0)} entries also carry a classification made by the Japanese government, through the GHS classification projects of the National Institute of Technology and Evaluation, to implement the labelling and safety-data-sheet duties of the Industrial Safety and Health Act and the PRTR Law. {TERA.get("counts", {}).get("nite_not_in_clp", 0)} of them have no EU harmonised entry. Each classification names the ministry that made it and the fiscal year, and links to its own page with the studies it rests on. It corroborates an entry and adds a jurisdiction; it does not set the level, because a GHS hazard code does not separate category 1A from category 1B.</li>
       <li><strong>What was decided, and by whom</strong>: the paragraphs below describe what the law provides. A tag on a card describes what an authority actually decided about that substance, and names it. {TERA.get("counts", {}).get("legal_any", 0)} entries carry at least one. The European Commission has refused {TERA.get("counts", {}).get("legal_eu-ppp", 0) - TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)} of them as pesticide active substances and <strong>approved {TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)}</strong>; {TERA.get("counts", {}).get("legal_reach-xvii", 0)} may not be sold to the general public at all; {TERA.get("counts", {}).get("legal_cosmetics", 0)} may not go into a cosmetic product; {TERA.get("counts", {}).get("legal_reach-xiv", 0)} need a Commission authorisation for any use; {TERA.get("counts", {}).get("legal_stockholm", 0)} are eliminated worldwide by treaty; and {TERA.get("counts", {}).get("legal_rotterdam", 0)} have been banned or severely restricted by at least one country, which the card names. An approval is not a contradiction: the EU excludes a category 1A or 1B reproductive toxicant from pesticide approval unless exposure is negligible, and category 2 is not excluded at all. It is, though, a decision worth seeing next to the evidence.</li>
       <li><strong>How much is tolerable</strong>: for substances in the food chain, the European Food Safety Authority derives the intake it considers tolerable and names the effect that figure rests on. {TERA.get("counts", {}).get("efsa", 0)} entries carry such a value, read from EFSA&rsquo;s pages and from its chemical hazards database, OpenFoodTox 3.0 (CC BY-ND 4.0). EFSA does not classify teratogens and its remit stops at food and feed, so its values sit beside the evidence level, never instead of it.</li>

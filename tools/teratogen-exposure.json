@@ -34,9 +34,12 @@
   "1,4-Butanediol dimethanesulfonate (Busulfan)",
   "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
   "Abiraterone acetate",
+  "Acenocoumarol",
   "Acetazolamide",
   "Acetohydroxamic acid",
+  "Acitretin",
   "Actinomycin D",
+  "Alitretinoin",
   "All-trans retinoic acid",
   "Alprazolam",
   "Altretamine",
@@ -59,10 +62,12 @@
   "Benzodiazepines",
   "Benzphetamine hydrochloride",
   "Bevacizumab",
+  "Bexarotene",
   "Bischloroethyl nitrosourea (BCNU) (Carmustine)",
   "Bosentan (endothelin receptor antagonist)",
   "Butabarbital sodium",
   "Carbamazepine",
+  "Carbimazole",
   "Carboplatin",
   "Chenodiol",
   "Chlorambucil",
@@ -114,6 +119,7 @@
   "Flurbiprofen",
   "Flutamide",
   "Fluticasone propionate",
+  "Fosphenytoin",
   "Ganciclovir",
   "Ganciclovir sodium",
   "Goserelin acetate",
@@ -174,6 +180,8 @@
   "Pentostatin",
   "Pertuzumab",
   "Phenacemide",
+  "Phenindione",
+  "Phenobarbital",
   "Phenprocoumon",
   "Pimozide",
   "Pipobroman",
@@ -181,6 +189,7 @@
   "Pomalidomide",
   "Pravastatin sodium",
   "Prednisolone sodium phosphate",
+  "Primidone",
   "Procarbazine hydrochloride",
   "Propylthiouracil",
   "Pyrimethamine",
@@ -1290,81 +1299,11 @@
    "url": "https://pubmed.ncbi.nlm.nih.gov/28591541/",
    "basis": "human"
   },
-  "Valproate (Valproic acid)": {
-   "tag": "medicine",
-   "text": "At every dose studied, valproate raised the malformation rate: about 6 in 100 babies at 650 mg a day or less, 11 in 100 up to 1,450 mg, 25 in 100 above.",
-   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
-   "basis": "human"
-  },
-  "Carbamazepine": {
-   "tag": "medicine",
-   "text": "Carbamazepine raised the malformation rate with dose: about 5 in 100 babies at 700 mg a day or less, 6 in 100 up to 1,000 mg, and 9 in 100 above 1,000 mg.",
-   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
-   "basis": "human"
-  },
-  "Barbiturates": {
-   "tag": "medicine",
-   "text": "Phenobarbital raised the malformation rate with dose: about 3 in 100 babies at 60 mg a day or less, 6 in 100 up to 130 mg, and 11 in 100 above 130 mg.",
-   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
-   "basis": "human"
-  },
-  "Diphenylhydantoin (Phenytoin)": {
-   "tag": "medicine",
-   "text": "In the EURAP registry, about 6 in 100 babies exposed to phenytoin had a major malformation; the registry found no link with dose.",
-   "source": "Battino et al. (EURAP), JAMA Neurol 2024",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/38497990/",
-   "basis": "human"
-  },
-  "Topiramate": {
-   "tag": "medicine",
-   "text": "EMA states no dose: birth defects occur in 4 to 9 of every 100 babies exposed to topiramate, against 1 to 3 otherwise, with a possible two- to three-fold risk of neurodevelopmental disorders.",
-   "source": "EMA, topiramate referral, CMDh position 11 October 2023",
-   "url": "https://www.ema.europa.eu/en/medicines/human/referrals/topiramate",
-   "basis": "human"
-  },
-  "Methotrexate": {
-   "tag": "medicine",
-   "text": "Methotrexate embryopathy, which can include short limbs and fewer or fused fingers or toes, may follow doses of 10 mg a week or more taken 6 to 8 weeks after conception.",
-   "source": "Hyoun et al., Birth Defects Res A Clin Mol Teratol 2012",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/22434686/",
-   "basis": "human"
-  },
   "Methotrexate sodium": {
    "tag": "medicine",
    "text": "Methotrexate embryopathy, which can include short limbs and fewer or fused fingers or toes, may follow doses of 10 mg a week or more taken 6 to 8 weeks after conception.",
    "source": "Hyoun et al., Birth Defects Res A Clin Mol Teratol 2012",
    "url": "https://pubmed.ncbi.nlm.nih.gov/22434686/",
-   "basis": "human"
-  },
-  "Warfarin": {
-   "tag": "medicine",
-   "text": "In one study of 58 pregnancies, women needing more than 5 mg of warfarin a day had 22 fetal complications, mostly miscarriages, against 5 for those on 5 mg or less.",
-   "source": "Vitale et al., J Am Coll Cardiol 1999",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/10334435/",
-   "basis": "human"
-  },
-  "Isotretinoin": {
-   "tag": "medicine",
-   "text": "Isotretinoin is a powerful cause of severe birth defects; EMA warns harm may happen even if it is taken only for a short time in pregnancy, and sets no safe dose.",
-   "source": "EMA, retinoid Article 31 referral 2018, Annex III",
-   "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-iii_en.pdf",
-   "basis": "human"
-  },
-  "Thalidomide": {
-   "tag": "medicine",
-   "text": "A single 50 mg thalidomide tablet taken between days 20 and 36 after fertilisation has been reported to cause birth defects in up to half of pregnancies.",
-   "source": "Vargesson, Birth Defects Res C Embryo Today 2015",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/26043938/",
-   "basis": "human"
-  },
-  "Mycophenolate mofetil and mycophenolic acid": {
-   "tag": "medicine",
-   "text": "EMA states no dose: about 45 to 49 in 100 exposed pregnancies end in miscarriage, and 23 to 27 in 100 babies have malformations, including extra or fused fingers or toes.",
-   "source": "EMA news, 23 October 2015",
-   "url": "https://www.ema.europa.eu/en/news/ema-recommends-additional-measures-prevent-use-mycophenolate-pregnancy",
    "basis": "human"
   },
   "Retinol/retinyl esters": {
@@ -1421,13 +1360,6 @@
    "text": "Danazol caused male-type genital changes in 23 female babies, more often at higher doses but once at 200 mg a day; none were reported when stopped before week 8.",
    "source": "Brunskill, Br J Obstet Gynaecol 1992",
    "url": "https://pubmed.ncbi.nlm.nih.gov/1606119/",
-   "basis": "human"
-  },
-  "Misoprostol": {
-   "tag": "medicine",
-   "text": "Among 42 Brazilian babies with birth defects after first-trimester misoprostol use, including limb defects and Moebius sequence, the most common dose taken was 800 micrograms (range 200 to 16,000).",
-   "source": "Gonzalez et al., Lancet 1998",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/9620717/",
    "basis": "human"
   }
  }

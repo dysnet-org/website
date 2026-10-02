@@ -902,7 +902,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var DATA = null;
   try { if (dataEl.textContent.trim()) DATA = JSON.parse(dataEl.textContent); } catch (e) { DATA = null; }
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); };
-  var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", nite: "Japan: GHS classification by the government (NITE)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)" };
+  var LABEL = { clp: "EU harmonised classification (CLP Annex VI)", nite: "Japan: GHS classification by the government (NITE)", p65: "California Proposition 65 (developmental toxicant)", ema: "EMA: pregnancy prevention programme or contraindication for teratogenicity", who: "WHO fact sheet on congenital disorders", efsa: "EFSA health-based guidance value", bib: "DysNet bibliography (peer-reviewed meta-analysis)", entis: "ENTIS experts: known human structural teratogen (Bluett-Duncan et al., 2025)" };
   var LEVEL = { known: "Known", presumed: "Presumed", suspected: "Suspected" };
   // the labels of the ways of meeting a substance are those the page prints on its filter chips
   var EXP = {};
@@ -911,7 +911,23 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var EU_1 = " Not to be supplied to the general public as a substance or in mixtures above the concentration limit (REACH Annex XVII, entry 30, where listed in Appendix 5 or 6). Cannot be approved as a pesticide active substance unless human exposure is negligible (Regulation 1107/2009, Annex II 3.6.4). Prohibited in cosmetic products (Regulation 1223/2009, Article 15). Reprotoxic substance under Directive 2004/37/EC as amended by Directive 2022/431: substitution, exposure limits and health surveillance at work.";
   var EU_2 = " Labelling required; no general ban on supply to the public for category 2. Prohibited in cosmetics unless evaluated as safe by the SCCS (Regulation 1223/2009, Article 15(1)).";
   var CA = "A clear and reasonable warning is required before knowingly exposing anyone in California (Health and Safety Code 25249.6); listing does not ban the substance. Attorney General, district attorneys and private enforcers; civil penalties up to USD 2,500 per violation per day.";
-  var SRC_SHORT = { clp: "EU CLP", nite: "Japan NITE", p65: "California Prop 65", ema: "EMA", efsa: "EFSA", who: "WHO", bib: "DysNet bibliography" };
+  var SRC_SHORT = { clp: "EU CLP", nite: "Japan NITE", p65: "California Prop 65", ema: "EMA", efsa: "EFSA", who: "WHO", bib: "DysNet bibliography", entis: "ENTIS experts" };
+  var PREG = [["window", "When"], ["dose", "Dose"], ["effects", "Effects"], ["absolute_risk", "Risk"]];
+  function pregHtml(r) {
+    if (!r.pg) return "";
+    var rows = PREG.filter(function (p) { return r.pg[p[0]]; }).map(function (p) {
+      var x = r.pg[p[0]];
+      return "<dt>" + p[1] + "</dt><dd>" + esc(x.text) + ' <a href="' + esc(x.url) + '" target="_blank" rel="noopener external" title="' + esc(x.source_label) + '">source \u2197</a></dd>';
+    }).join("");
+    return '<div class="tera-preg"><p class="tera-preg-h">In pregnancy' + (r.pg.limb ? '<span class="st st-limb">Limb defects named by the source</span>' : "") + '</p><dl>' + rows + '</dl></div>';
+  }
+  function pregLines(r) {
+    if (!r.pg) return [];
+    return PREG.filter(function (p) { return r.pg[p[0]]; }).map(function (p) {
+      var x = r.pg[p[0]], ref = [x.source_label, x.id, x.date].filter(Boolean).join(", ");
+      return "<li><strong>" + p[1] + ", quoted" + (x.quote_language === "fr" ? " (in French, as published)" : "") + ":</strong> \u201c" + esc(x.quote) + "\u201d " + esc(ref) + ' <a href="' + esc(x.url) + '" target="_blank" rel="noopener external">source \u2197</a></li>';
+    });
+  }
   var DEC_SRC = {
     "eu-ppp": ["European Commission", "https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/start/screen/active-substances"],
     "reach-xvii": ["European Commission", "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006R1907-20260622"],
@@ -941,6 +957,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       (r.dec || []).forEach(function (d) { if (!seen[d.v]) { seen[d.v] = 1; n.dec[d.v] = (n.dec[d.v] || 0) + 1; } });
       if (r.pc) n.paper.paper = (n.paper.paper || 0) + 1;
       if (r.pcoch) n.paper.cochrane = (n.paper.cochrane || 0) + 1;
+      if (r.pg) n.paper.preg = (n.paper.preg || 0) + 1;
+      if (r.pg && r.pg.limb) n.paper.limb = (n.paper.limb || 0) + 1;
     });
     [["data-source", n.source], ["data-level", n.level],
      ["data-exp", n.exp], ["data-dec", n.dec], ["data-paper", n.paper]].forEach(function (pair) {
@@ -1000,7 +1018,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function itemHtml(r) {
     var clp = r.src.filter(function (s) { return s.c === "clp"; })[0];
     var srcs = r.src.map(function (s) {
-      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") : s.c === "nite" ? s.st.join(", ") + (s.fy ? " · classified " + s.fy : "") : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on.slice(0, 4) : "") : s.c === "ema" ? "pregnancy prevention programme or contraindication" : s.c === "who" ? "fact sheet on congenital disorders" : s.c === "efsa" ? "health-based guidance value" : "peer-reviewed evidence";
+      var det = s.c === "clp" ? "Repr. " + s.cat + " · " + s.st.join(", ") : s.c === "nite" ? s.st.join(", ") + (s.fy ? " · classified " + s.fy : "") : s.c === "p65" ? s.tox + (s.on ? " · listed " + s.on.slice(0, 4) : "") : s.c === "ema" ? "pregnancy prevention programme or contraindication" : s.c === "who" ? "fact sheet on congenital disorders" : s.c === "efsa" ? "health-based guidance value" : s.c === "entis" ? "known human structural teratogen" : "peer-reviewed evidence";
       return '<span class="tera-src src-' + s.c + '">' + SRC_SHORT[s.c] + '<small> · ' + esc(det) + '</small></span>';
     }).join("");
     var chips = [];
@@ -1016,7 +1034,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
-    details = expLines(r).concat(decLines(r)).concat(paperLines(r)).concat(details);
+    details = pregLines(r).concat(expLines(r)).concat(decLines(r)).concat(paperLines(r)).concat(details);
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
@@ -1027,7 +1045,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
            '<div class="tera-uses">' + (r.x || []).map(function (x) { return '<span class="use use-' + x.t + '" title="' + esc(x.w || r.xw) + '">' + esc(EXP[x.t] || x.t) + '<small> \u00b7 ' + LEVEL[x.l] + '</small></span>'; }).join("") + '</div>' +
            (r.x || []).filter(function (x) { return x.d; }).map(function (x) {
              return '<p class="tera-dose"><strong>Dose and risk (' + esc((EXP[x.t] || x.t).toLowerCase()) + '):</strong> ' + esc(x.d.text) + (x.d.url ? ' <a href="' + esc(x.d.url) + '" target="_blank" rel="noopener external">' + esc(x.d.source) + ' \u2197</a>' : ' <span class="fine">' + esc(x.d.source || "") + '</span>') + '</p>';
-           }).join("") +
+           }).join("") + pregHtml(r) +
            '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' + (r.reg ? '<p class="tera-registry">A pregnancy registry is recruiting for ' + esc(r.reg.m) + ': <a href="' + esc(r.reg.u) + '" target="_blank" rel="noopener external">' + esc(r.reg.n) + '</a>' + (r.reg.p ? ' \u00b7 ' + esc(r.reg.p) : '') + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>' : '') +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
@@ -1048,7 +1066,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                (state.exps.length ? (r.x || []).some(function (x) { return state.exps.indexOf(x.t) !== -1 && (!state.levels.length || state.levels.indexOf(x.l) !== -1); })
                                   : (!state.levels.length || state.levels.indexOf(r.l) !== -1)) &&
                (!state.decs.length || (r.dec || []).some(function (d) { return state.decs.indexOf(d.v) !== -1; })) &&
-               (!state.papers.length || state.papers.every(function (p) { return p === "cochrane" ? r.pcoch : r.pc; }));
+               (!state.papers.length || state.papers.every(function (p) { return p === "cochrane" ? r.pcoch : p === "preg" ? r.pg : p === "limb" ? (r.pg && r.pg.limb) : r.pc; }));
       if (ok) { k++; kept.push(r); if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
     });
     list.innerHTML = out.join("");

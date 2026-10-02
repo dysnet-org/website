@@ -21,7 +21,8 @@ Which tags, in this order:
 
 Each tag carries the level of evidence that applies to that way of meeting the substance, taken
 from the authority that speaks to it, never set here:
-  - a medicines regulator (EMA) speaks to Medicine;
+  - a medicines regulator (EMA) and the ENTIS experts' list of known human teratogenic medicines
+    speak to Medicine;
   - a chemical classification (EU CLP Annex VI, Japan's NITE) speaks to the substance as a chemical
     is handled: at work, as a pesticide, in home products, in air. When a medicine also carries one,
     the medicine is handled as a chemical where it is made, so a Work and industry tag (or Pesticides
@@ -97,8 +98,8 @@ def source_levels(e):
             out.append((c, e["status"]["clp"], f"EU CLP {s['category']}"))
         elif c == "ema" and e["status"].get("ema") in RANK:
             out.append((c, e["status"]["ema"], "EMA"))
-        elif c in ("who", "bib") and e["status"].get(c) in RANK:
-            out.append((c, e["status"][c], {"who": "WHO", "bib": "DysNet bibliography"}[c]))
+        elif c in ("who", "bib", "entis") and e["status"].get(c) in RANK:
+            out.append((c, e["status"][c], {"who": "WHO", "bib": "DysNet bibliography", "entis": "ENTIS experts"}[c]))
         elif c == "p65" and "p65" in e["status"]:
             mech = s.get("mechanism", "").lower()
             out.append((c, "presumed" if "authoritative body" in mech else "known", "California Prop 65"))
@@ -116,7 +117,7 @@ def routes_for(e, tags, why):
     levels = {t: [] for t in tags}
     for code, lvl, label in source_levels(e):
         mech = next((s.get("mechanism", "") for s in e["sources"] if s["code"] == "p65"), "").lower()
-        if code == "ema":
+        if code in ("ema", "entis"):
             targets = ["medicine"] if "medicine" in tags else tags
         elif code == "p65":
             if "medicine" in tags and ("formally required" in mech or tags == ["medicine"]):

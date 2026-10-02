@@ -1,0 +1,927 @@
+{
+ "_about": "Pregnancy facts for the 24 medicines that experts of the European Network of Teratology Information Services (ENTIS) list as known human structural teratogens (Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1). For each: when in pregnancy the harm occurs, the dose, the effects, and the absolute risk, each with a verbatim quote from an authoritative source read for this file (regulators' product information: US FDA, EMA, ANSM, MHRA; systematic reviews; large registry or cohort studies; the ENTIS paper). Each fact was checked by two independent readers, one on the source and quote, one on overstatement, and settled by a third; a fact no source states is absent rather than guessed. Read 2 October 2026. Read by tools/enrich-teratogens-entis.py.",
+ "entis": {
+  "label": "ENTIS expert list of known human structural teratogens",
+  "citation": "Bluett-Duncan M et al. A Scoping Review of Human Teratogens and Their Impact on the Developing Brain. Birth Defects Res. 2025;117(9):e2497",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+  "doi": "10.1002/bdr2.2497",
+  "pmid": "40960411",
+  "quote": "Twenty‐four medications were identified by experts as having structural teratogenic potential"
+ },
+ "new_entries": [
+  {
+   "name": "Fosphenytoin",
+   "cas": "93390-81-9"
+  },
+  {
+   "name": "Phenobarbital",
+   "cas": "50-06-6"
+  },
+  {
+   "name": "Primidone",
+   "cas": "125-33-7"
+  },
+  {
+   "name": "Acenocoumarol",
+   "cas": "152-72-7"
+  },
+  {
+   "name": "Phenindione",
+   "cas": "83-12-5"
+  },
+  {
+   "name": "Carbimazole",
+   "cas": "22232-54-8"
+  },
+  {
+   "name": "Acitretin",
+   "cas": "55079-83-9"
+  },
+  {
+   "name": "Alitretinoin",
+   "cas": "5300-03-8"
+  },
+  {
+   "name": "Bexarotene",
+   "cas": "153559-49-0"
+  }
+ ],
+ "medicines": {
+  "Valproate (Valproic acid)": {
+   "entis_name": "Valproate",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "Counted by trimester, the US label says the risk of major structural defects is greatest in the first trimester, while other serious developmental effects can occur throughout pregnancy.",
+    "quote": "The risk of major structural abnormalities is greatest during the first trimester; however, other serious developmental effects can occur with valproate use throughout pregnancy.",
+    "source_label": "US label, Depakote (divalproex sodium), AbbVie, section 8.1 Pregnancy, via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%2208a65cf4-7749-4ceb-6895-8f4805e2b01f%22",
+    "id": "DailyMed set id 08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+    "date": "2026-03-31"
+   },
+   "dose": {
+    "text": "The US label says the malformation risk rises with dose, but no threshold dose below which there is no risk can be established.",
+    "quote": "This risk is dose-dependent; however, a threshold dose below which no risk exists cannot be established.",
+    "source_label": "US label, Depakote (divalproex sodium), AbbVie, section 8.1 Pregnancy, via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%2208a65cf4-7749-4ceb-6895-8f4805e2b01f%22",
+    "id": "DailyMed set id 08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+    "date": "2026-03-31"
+   },
+   "effects": {
+    "text": "The US label lists neural tube defects, cardiovascular malformations, oral clefts, craniosynostosis, hypospadias and limb malformations such as clubfoot and polydactyly among major malformations reported after valproate exposure.",
+    "quote": "The major congenital malformations included cases of neural tube defects, cardiovascular malformations, craniofacial defects (e.g., oral clefts, craniosynostosis), hypospadias, limb malformations (e.g., clubfoot, polydactyly)",
+    "source_label": "US label, Depakote (divalproex sodium), AbbVie, section 8.1 Pregnancy (Human Data), via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%2208a65cf4-7749-4ceb-6895-8f4805e2b01f%22",
+    "id": "DailyMed set id 08a65cf4-7749-4ceb-6895-8f4805e2b01f",
+    "date": "2026-03-31"
+   },
+   "absolute_risk": {
+    "text": "EMA's patient wording says that about 10 in 100 babies of women taking valproate in pregnancy have birth defects, compared with 2 to 3 in 100 babies of women without epilepsy.",
+    "quote": "in women who take valproate around 10 babies in every 100 will have birth defects. This compares to 2 to 3 babies in every 100 born to women who don’t have epilepsy.",
+    "source_label": "EMA, valproate Article 31 referral EMEA/H/A-31/1454, Annex III (package leaflet wording)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/valproate-article-31-referral-annex-iii_en.pdf",
+    "id": "EMEA/H/A-31/1454",
+    "date": "2018-06-07"
+   }
+  },
+  "Carbamazepine": {
+   "entis_name": "Carbamazepine",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "dose": {
+    "text": "In EURAP, major malformations rose with the dose taken at conception, from 4.6% at 700 mg a day or less to 5.9% above 700 up to 1,000 mg and 9.1% above 1,000 mg.",
+    "quote": "Carbamazepine (≤700) | 1506 | 70 | 4.6 (3.6-5.8) | .008 | Carbamazepine (>700 -≤1000) | 541 | 32 | 5.9 (4.1-8.2) | Carbamazepine (>1000) | 208 | 19 | 9.1 (5.6-13.9)",
+    "source_label": "Battino et al. (EURAP), JAMA Neurol 2024;81(5):481-489, Table 2 (CC-BY)",
+    "source_type": "registry or cohort",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10949148/",
+    "id": "PMID 38497990; DOI 10.1001/jamaneurol.2024.0258",
+    "date": "2024-05-01"
+   },
+   "effects": {
+    "text": "The French product information lists neural tube defects (spina bifida), craniofacial defects including cleft lip or palate, cardiovascular malformations, hypospadias, finger hypoplasia and microcephaly among the most frequent malformations.",
+    "quote": "Les malformations les plus souvent rencontrées sont des anomalies du tube neural (spina bifida), des anomalies crânio-faciales (dont les fentes labiales/palatines), des malformations cardiovasculaires, des hypospadias, une hypoplasie des doigts, une microcéphalie",
+    "source_label": "ANSM, Tegretol 200 mg comprimé sécable, RCP section 4.6 (base de données publique des médicaments, page last updated 29/09/2026)",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=61009918&typedoc=R",
+    "id": "CIS 61009918",
+    "date": "2026-09-29",
+    "quote_language": "fr"
+   },
+   "absolute_risk": {
+    "text": "In the US label, the North American registry found major malformations in 3.0% of 1,033 first-trimester exposures to carbamazepine alone, a relative risk of 2.7 (95% CI 1.0 to 7.0) versus no antiepileptic drug.",
+    "quote": "major congenital malformations of 3.0% [...] among pregnant females exposed to carbamazepine monotherapy (n=1,033) during the first trimester with a relative risk of 2.7 (95% CI: 1.0, 7.0) compared to pregnant females not taking an epileptic drug",
+    "source_label": "US label, Equetro (carbamazepine), Validus, section 8.1 Pregnancy (Human Data, NAAED Pregnancy Registry), via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%22be478f3c-40f6-47cc-8ab9-f420a9372b1c%22",
+    "id": "DailyMed set id be478f3c-40f6-47cc-8ab9-f420a9372b1c",
+    "date": "2025-08-19"
+   }
+  },
+  "Diphenylhydantoin (Phenytoin)": {
+   "entis_name": "Phenytoin",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The French product information says a particular syndrome is suggested with hydantoin use, such as phenytoin, in the first trimester; it gives no window in weeks.",
+    "quote": "Un syndrome particulier est évoqué pour la prise d'hydantoïnes au premier trimestre.",
+    "source_label": "ANSM, DI-HYDAN 100 mg (phenytoin) RCP, section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66303560/extrait#tab-rcp",
+    "id": "CIS 66303560",
+    "date": "2019-08-22",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "The UK medicines regulator judged the data on dose inconsistent and too limited to conclude whether phenytoin's malformation risk depends on dose.",
+    "quote": "Overall, these data are inconsistent and too limited to draw conclusions on a dose-dependent risk of congenital malformations following phenytoin exposure in utero.",
+    "source_label": "MHRA / Commission on Human Medicines, Public Assessment Report: antiepileptic drugs, review of safety of use during pregnancy, section 3.7",
+    "source_type": "regulator",
+    "url": "https://www.gov.uk/government/publications/public-assesment-report-of-antiepileptic-drugs-review-of-safety-of-use-during-pregnancy/antiepileptic-drugs-review-of-safety-of-use-during-pregnancy",
+    "date": "2021-01-07"
+   },
+   "effects": {
+    "text": "The US label says more major malformations, such as clefts and heart defects, and fetal hydantoin syndrome features, including nail and digit hypoplasia, microcephaly and cognitive deficits, have been reported.",
+    "quote": "Increased frequencies of major malformations (such as orofacial clefts and cardiac defects), and abnormalities characteristic of fetal hydantoin syndrome, including dysmorphic skull and facial features, nail and digit hypoplasia, growth abnormalities (including microcephaly), and cognitive deficits, have been reported",
+    "source_label": "US FDA label, Dilantin Infatabs (phenytoin), Pfizer, section 5.13 (via openFDA)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%22ca119a89-2394-4d34-8078-cd1fa4e8e2f1%22&limit=1",
+    "id": "DailyMed set id ca119a89-2394-4d34-8078-cd1fa4e8e2f1",
+    "date": "2026-05-12"
+   },
+   "absolute_risk": {
+    "text": "The UK medicines regulator says the data support that around 6 in 100 children exposed to phenytoin alone in pregnancy have a malformation, against 2 to 3 in 100 generally.",
+    "quote": "around 6% of children exposed to phenytoin monotherapy during pregnancy suffer from congenital malformations; this risk is increased compared with that in children of mothers who were not exposed to antiepileptics during pregnancy (2-3% in the general population)",
+    "source_label": "MHRA / Commission on Human Medicines, Public Assessment Report: antiepileptic drugs, review of safety of use during pregnancy, key findings for phenytoin",
+    "source_type": "regulator",
+    "url": "https://www.gov.uk/government/publications/public-assesment-report-of-antiepileptic-drugs-review-of-safety-of-use-during-pregnancy/antiepileptic-drugs-review-of-safety-of-use-during-pregnancy",
+    "date": "2021-01-07"
+   }
+  },
+  "Fosphenytoin": {
+   "entis_name": "Fosphenytoin",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "effects": {
+    "text": "The US fosphenytoin label says more major malformations, such as clefts and heart defects, and fetal hydantoin syndrome features, including nail and digit hypoplasia, have been reported with phenytoin, its active metabolite.",
+    "quote": "Increased frequencies of major malformations (such as orofacial clefts and cardiac defects), and abnormalities characteristic of fetal hydantoin syndrome, including dysmorphic skull and facial features, nail and digit hypoplasia, growth abnormalities (including microcephaly), and cognitive deficits, have been reported",
+    "source_label": "US FDA label, CEREBYX (fosphenytoin sodium), Pfizer, section 5.15 (via openFDA)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%22d4c36fad-0ba2-4cd4-9c5e-dcf843f38a5a%22&limit=1",
+    "id": "DailyMed set id d4c36fad-0ba2-4cd4-9c5e-dcf843f38a5a",
+    "date": "2025-08-28"
+   },
+   "absolute_risk": {
+    "text": "The French fosphenytoin product information says phenytoin exposure in pregnancy is associated with a major malformation rate 2 to 3 times higher than the general population's rate of 2 to 3 in 100.",
+    "quote": "l’exposition à la phénytoïne au cours de la grossesse est associée à une fréquence de malformations majeures 2 à 3 fois plus élevée que celle de la population générale, dont la fréquence est de 2 à 3 %",
+    "source_label": "ANSM, PRODILANTIN 75 mg/mL (fosphenytoin) RCP, section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60771794/extrait#tab-rcp",
+    "id": "CIS 60771794",
+    "date": "2025-11-13",
+    "quote_language": "fr"
+   }
+  },
+  "Phenobarbital": {
+   "entis_name": "Phenobarbital",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The North American registry measured the malformation risk in babies whose mothers took phenobarbital during the first trimester of pregnancy (counting basis: trimester).",
+    "quote": "The risk of major malformations was estimated among infants exposed to specific ASMs in monotherapy during the first trimester of pregnancy.",
+    "source_label": "Hernandez-Diaz et al. (North American AED Pregnancy Registry), Neurology 2025;105(3):e213786",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40669027/",
+    "id": "PMID 40669027",
+    "date": "2025-08-12"
+   },
+   "dose": {
+    "text": "The UK regulator concluded that the higher malformation risk with phenobarbital is dose-dependent but that no dose has been found to be without risk.",
+    "quote": "the increased risk seen with carbamazepine, phenobarbital and topiramate is dose-dependent but no dose has been found to be without risk",
+    "source_label": "MHRA UK Public Assessment Report, Antiepileptic drugs: review of safety of use during pregnancy (Key conclusions)",
+    "source_type": "regulator",
+    "url": "https://assets.publishing.service.gov.uk/media/5ff5bc82d3bf7f65d550563c/AED-PAR-PDF-FINAL-Jan21.pdf",
+    "date": "2021-01"
+   },
+   "effects": {
+    "text": "Phenobarbital alone is associated with a higher risk of cleft lip and palate and heart defects, and hypospadias, facial dysmorphism, neural tube effects, microcephaly and finger malformations (limb/digit flag) have also been reported.",
+    "quote": "les fentes labiales et palatines et les malformations cardiovasculaires. D'autres malformations impliquant divers systèmes de l’organisme, notamment des cas d'hypospadias, des caractéristiques faciales dysmorphiques, des effets sur le tube neural, une dysmorphie crâniofaciale (microcéphalie) et des malformations des doigts",
+    "source_label": "ANSM, RCP GARDENAL 100 mg comprimé (phénobarbital), section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61475588/extrait#tab-rcp",
+    "id": "CIS 61475588",
+    "date": "2024-07-02",
+    "quote_language": "fr"
+   },
+   "absolute_risk": {
+    "text": "The UK regulator states that most studies support malformations in 5 to 6 in 100 children exposed to phenobarbital alone, against 2 to 3 in 100 in the general population.",
+    "quote": "most individual studies support that 5-6% of children exposed to phenobarbital monotherapy during pregnancy suffer from congenital malformations. This risk is increased compared with children of mothers who were not exposed to antiepileptics during pregnancy (2-3% in general population)",
+    "source_label": "MHRA UK Public Assessment Report, Antiepileptic drugs: review of safety of use during pregnancy (Key findings for phenobarbital)",
+    "source_type": "regulator",
+    "url": "https://assets.publishing.service.gov.uk/media/5ff5bc82d3bf7f65d550563c/AED-PAR-PDF-FINAL-Jan21.pdf",
+    "date": "2021-01"
+   }
+  },
+  "Primidone": {
+   "entis_name": "Primidone",
+   "limb_defects": "unclear",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The French product information says use in the third trimester may cause withdrawal symptoms in the newborn, such as sedation, low muscle tone and poor sucking (counting basis: trimester).",
+    "quote": "En cas d'utilisation au cours du troisième trimestre de la grossesse, des symptômes de sevrage peuvent survenir chez le nouveau-né, notamment une sédation, une hypotonie et un trouble de la succion.",
+    "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+    "id": "CIS 65201684",
+    "date": "2026-08-26",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "Under a heading on the risks of primidone and of phenobarbital, its main metabolite, the French label says the malformation risk is dose-dependent and that no dose has proved risk-free.",
+    "quote": "Le risque est dose-dépendant ; cependant, aucune dose ne s'est avérée dépourvue de risque.",
+    "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+    "id": "CIS 65201684",
+    "date": "2026-08-26",
+    "quote_language": "fr"
+   },
+   "effects": {
+    "text": "The French primidone label says phenobarbital alone is associated with cleft lip and palate and heart defects, with hypospadias, neural tube effects, microcephaly and digit anomalies (limb/digit flag) also reported.",
+    "quote": "de fentes labiales et palatines, et de malformations cardiovasculaires. D'autres malformations impliquant divers systèmes corporels ont également été signalées : notamment des cas d'hypospadias, de dysmorphies faciales, d'effets sur le tube neural, de dysmorphies cranio-faciales (microcéphalie) et d'anomalies digitales.",
+    "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), section 4.6",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+    "id": "CIS 65201684",
+    "date": "2026-08-26",
+    "quote_language": "fr"
+   },
+   "absolute_risk": {
+    "text": "A Cochrane review found malformations in 7.9% of primidone-exposed children in pooled cohort data (95% CI 2.6% to 21.5%), but calls this evidence, from 112 pregnancies, extremely limited and urges caution.",
+    "quote": "Evidence pertaining to PRM was extremely limited to 112 pregnancies and caution is warranted when interpreting results. Pooled data from included cohort studies gave a malformation prevalence of 7.9% (95% CI 2.6 to 21.5%).",
+    "source_label": "Bromley et al., Cochrane Database Syst Rev 2023;8:CD010224 (Monotherapy treatment of epilepsy in pregnancy), Discussion",
+    "source_type": "systematic review",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
+    "id": "PMID 37647086",
+    "date": "2023-08-29"
+   }
+  },
+  "Topiramate": {
+   "entis_name": "Topiramate",
+   "limb_defects": "not named",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The FDA label says the oral clefts linked to topiramate occur in the first trimester, and small-for-age babies were more common when use continued until later in pregnancy.",
+    "quote": "Because of the risk of oral clefts to the fetus, which occur in the first trimester of pregnancy, all women of childbearing potential should be informed of the potential risk to the fetus from exposure to topiramate.",
+    "source_label": "US FDA label, Topamax (Janssen), section 8.1 Pregnancy, Clinical Considerations",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22TOPAMAX%22&limit=1",
+    "id": "DailyMed set id 21628112-0c47-11df-95b3-498d55d89593",
+    "date": "2026-03-12"
+   },
+   "dose": {
+    "text": "EMA states that the malformation risk has been reported to rise with dose, and that effects were observed at all doses.",
+    "quote": "The risk has been reported to be dose dependent; effects were observed in all doses.",
+    "source_label": "EMA, topiramate Article 31 referral, Annex III (agreed SmPC section 4.6 wording), CMDh position 11 October 2023",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
+    "date": "2023-10-11"
+   },
+   "effects": {
+    "text": "EMA lists cleft lip or palate, hypospadias and malformations of other body systems, and also reports low birth weight, small size for age and a possible rise in neurodevelopmental disorders.",
+    "quote": "An increased risk of congenital malformations (particularly cleft lip/palate, hypospadias, and anomalies involving various body systems) following exposure during the first trimester.",
+    "source_label": "EMA, topiramate Article 31 referral, Annex III (agreed SmPC section 4.6 wording), CMDh position 11 October 2023",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
+    "date": "2023-10-11"
+   },
+   "absolute_risk": {
+    "text": "In the North American registry, 4.3 in 100 babies exposed to topiramate alone had a major birth defect, against 1.4 in 100 in a group not taking antiseizure medicines.",
+    "quote": "The North American Antiepileptic Drug pregnancy registry data for topiramate monotherapy showed an approximate 3-fold higher prevalence of major congenital malformations (4.3%), compared with a reference group not taking AEDs (1.4%).",
+    "source_label": "EMA, topiramate Article 31 referral, Annex III (agreed SmPC section 4.6 wording), CMDh position 11 October 2023",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
+    "date": "2023-10-11"
+   }
+  },
+  "Misoprostol": {
+   "entis_name": "Misoprostol",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human",
+   "window": {
+    "text": "ANSM says a threefold higher risk of malformations has been reported after first-trimester exposure, and that a low dose used to induce labour at term carries no malformation risk.",
+    "quote": "un risque de malformations fœtales multiplié par trois (incluant le syndrome de Moebius, la maladie des brides amniotiques et des anomalies du système nerveux central) a été rapporté lors de grossesses exposées au misoprostol au cours du premier trimestre.",
+    "source_label": "ANSM, Angusta 25 microgrammes (misoprostol) RCP section 4.6, updated 09/08/2024",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=60213914&typedoc=R",
+    "id": "CIS 60213914",
+    "date": "2024-08-09",
+    "quote_language": "fr"
+   },
+   "effects": {
+    "text": "The US label cites literature reports linking first-trimester misoprostol with skull defects, cranial nerve palsies, facial malformations and limb defects, and warns it can cause abortion and premature birth.",
+    "quote": "Several reports in the literature associate the use of misoprostol during the first trimester of pregnancy with skull defects, cranial nerve palsies, facial malformations, and limb defects.",
+    "source_label": "US FDA label, Cytotec (Pfizer), Pregnancy: Teratogenic effects, and boxed warning",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22CYTOTEC%22&limit=1",
+    "id": "DailyMed set id 4ab12da7-5731-4e06-bf1c-bc3f2e711f12",
+    "date": "2026-06-04"
+   },
+   "absolute_risk": {
+    "text": "ANSM says pregnancies that continued after a failed abortion with mifepristone and misoprostol, or misoprostol alone, were associated with a threefold higher malformation risk, against about 2 in 100 in controls.",
+    "quote": "a été associé à une augmentation par 3 du risque de malformations congénitales dans le cas de grossesses évolutives exposées à la mifépristone et au misoprostol ou au misoprostol seul, comparé au groupe contrôle (environ 2%)",
+    "source_label": "ANSM, Gymiso 200 microgrammes (misoprostol) RCP section 4.6, updated 23/12/2025",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=69981979&typedoc=R",
+    "id": "CIS 69981979",
+    "date": "2025-12-23",
+    "quote_language": "fr"
+   }
+  },
+  "Warfarin": {
+   "entis_name": "Warfarin",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human",
+   "window": {
+    "text": "Malformations were described mostly after exposure between 6 and 9 weeks of pregnancy, counted from the first day of the last period (weeks of amenorrhoea).",
+    "quote": "un syndrome malformatif a été décrit dans environ 4 % à 7 % des grossesses exposées le plus souvent entre 6 et 9 semaines d'aménorrhée.",
+    "source_label": "ANSM, Résumé des Caractéristiques du Produit, COUMADINE 5 mg (warfarine), section 4.6, updated 01/12/2022",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=63245753&typedoc=R",
+    "id": "CIS 63245753",
+    "date": "2022-12-01",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "In small studies of women with mechanical heart valves, foetal adverse events appear to rise with first-trimester warfarin above 5 mg a day, but can also occur at 5 mg or less.",
+    "quote": "Thus, while it appears that foetal adverse events increase when the dose of warfarin is >5 mg/day, foetal loss and adverse events can occur in women with doses of warfarin ≤5 mg/day.",
+    "source_label": "D'Souza et al., Anticoagulation for pregnant women with mechanical heart valves: a systematic review and meta-analysis, Eur Heart J 2017;38(19):1509-1516 (Discussion)",
+    "source_type": "systematic review",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
+    "id": "PMID 28329059; DOI 10.1093/eurheartj/ehx032",
+    "date": "2017-05-14"
+   },
+   "effects": {
+    "text": "ENTIS experts list multiple malformations including an underdeveloped nose, stippled bone ends, skeletal and finger or toe (digital) defects, with reduced growth and facial differences.",
+    "quote": "Multiple malformations including nasal hypoplasia, stippled epiphyses, skeletal and digital. Growth disruption. Facial dysmorphia.",
+    "source_label": "ENTIS consensus, Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1 (one cell spanning acenocoumarol, phenindione and warfarin)",
+    "source_type": "ENTIS consensus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+    "id": "DOI 10.1002/bdr2.2497",
+    "date": "2025-09-17"
+   },
+   "absolute_risk": {
+    "text": "First-trimester warfarin exposure caused the malformation pattern in about 5% of exposed babies; the label says this is not an adequate basis for comparison with the 2–4% US background rate.",
+    "quote": "Exposure to warfarin during the first trimester of pregnancy caused a pattern of congenital malformations in about 5% of exposed offspring.",
+    "source_label": "US FDA label, Warfarin Sodium tablets (Teva), section 8.1 Pregnancy, effective 2025-06-17",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+    "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
+    "date": "2025-06-17"
+   }
+  },
+  "Acenocoumarol": {
+   "entis_name": "Acenocoumarol",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human",
+   "window": {
+    "text": "Malformations were described mostly after exposure between 6 and 9 weeks of pregnancy, counted from the first day of the last period (weeks of amenorrhoea).",
+    "quote": "un syndrome malformatif a été décrit dans environ 4 % à 7 % des grossesses exposées le plus souvent entre 6 et 9 semaines d'aménorrhée.",
+    "source_label": "ANSM, Résumé des Caractéristiques du Produit, SINTROM 4 mg (acénocoumarol), section 4.6, updated 20/06/2025",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=61510352&typedoc=R",
+    "id": "CIS 61510352",
+    "date": "2025-06-20",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "A systematic review cites registry data that did not show reduced foetal loss with low first-trimester doses of vitamin K antagonists, low meaning 2 mg a day or less for acenocoumarol.",
+    "quote": "recent data from the Registry of Pregnancy and Cardiac disease (ROPAC) registry did not demonstrate reduced foetal loss with the use of low first-trimester doses of VKAs [warfarin ≤5 mg/day, acenocoumarol ≤2 mg/day or phenprocoumon ≤3 mg/day)]",
+    "source_label": "D'Souza et al., Anticoagulation for pregnant women with mechanical heart valves: a systematic review and meta-analysis, Eur Heart J 2017;38(19):1509-1516 (Discussion, citing van Hagen 2015 ROPAC)",
+    "source_type": "systematic review",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
+    "id": "PMID 28329059; DOI 10.1093/eurheartj/ehx032",
+    "date": "2017-05-14"
+   },
+   "effects": {
+    "text": "ENTIS experts list multiple malformations including an underdeveloped nose, stippled bone ends, skeletal and finger or toe (digital) defects, with reduced growth and facial differences.",
+    "quote": "Multiple malformations including nasal hypoplasia, stippled epiphyses, skeletal and digital. Growth disruption. Facial dysmorphia.",
+    "source_label": "ENTIS consensus, Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1 (acenocoumarol row; the cell also covers phenindione and warfarin)",
+    "source_type": "ENTIS consensus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+    "id": "DOI 10.1002/bdr2.2497",
+    "date": "2025-09-17"
+   },
+   "absolute_risk": {
+    "text": "The French label states that, with vitamin K antagonists including Sintrom, a malformation syndrome has been described in about 4% to 7% of exposed pregnancies, and gives no comparison rate.",
+    "quote": "un syndrome malformatif a été décrit dans environ 4 % à 7 % des grossesses exposées le plus souvent entre 6 et 9 semaines d'aménorrhée.",
+    "source_label": "ANSM, Résumé des Caractéristiques du Produit, SINTROM 4 mg (acénocoumarol), section 4.6, updated 20/06/2025",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=61510352&typedoc=R",
+    "id": "CIS 61510352",
+    "date": "2025-06-20",
+    "quote_language": "fr"
+   }
+  },
+  "Phenindione": {
+   "entis_name": "Phenindione",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human",
+   "window": {
+    "text": "In an ENTIS multicentre cohort of vitamin K antagonist exposures (only 2 with phenindione), coumarin embryopathy risk was very small, especially when first-trimester therapy stopped by week 8, counted from the last menstrual period.",
+    "quote": "The risk for coumarin embryopathy is, however, very small, in particular when therapy during the 1(st) trimester did not take place later than week 8 after the 1(st) day of the last menstrual period.",
+    "source_label": "Schaefer C et al. Vitamin K antagonists and pregnancy outcome. A multi-centre prospective study (ENTIS, 666 exposed vs 1,094 controls). Thromb Haemost 2006;95(6):949-57, PubMed abstract",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/16732373/",
+    "id": "PMID 16732373",
+    "date": "2006-06"
+   },
+   "effects": {
+    "text": "The ENTIS consensus lists, for the anticoagulant group including phenindione, multiple malformations including nasal hypoplasia, stippled epiphyses, skeletal and digital (finger or toe) defects, growth disruption and facial dysmorphia.",
+    "quote": "Multiple malformations including nasal hypoplasia, stippled epiphyses, skeletal and digital. Growth disruption. Facial dysmorphia.",
+    "source_label": "Bluett-Duncan M et al. ENTIS expert consensus, Birth Defects Res 2025;117(9):e2497, Table 1, anticoagulant row (one cell spanning acenocoumarol, phenindione, warfarin)",
+    "source_type": "ENTIS consensus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+    "id": "PMC12442749; DOI 10.1002/bdr2.2497",
+    "date": "2025"
+   },
+   "absolute_risk": {
+    "text": "A meta-analysis in women with mechanical heart valves, counting phenindione among vitamin K antagonists, found anticoagulant-related embryopathy or fetopathy in about 2% of fetuses exposed to them throughout pregnancy at standard INR targets.",
+    "quote": "Anticoagulant-related embryopathy and foetopathy was seen in approximately 2% of the foetuses exposed to VKAs throughout pregnancy.",
+    "source_label": "D'Souza R et al. Anticoagulation for pregnant women with mechanical heart valves: a systematic review and meta-analysis. Eur Heart J 2017;38(19):1509-1516, open-access full text, Results and Table 1 (vitamin K antagonists, INR target 2.5-3.5, 12/407)",
+    "source_type": "systematic review",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
+    "id": "PMID 28329059",
+    "date": "2017-05-14"
+   }
+  },
+  "Diethylstilbestrol (DES)": {
+   "entis_name": "Diethylstilbestrol",
+   "limb_defects": "not named",
+   "evidence": "human and animal",
+   "window": {
+    "text": "In US cohorts of DES-exposed sons, undescended testis, epididymal cysts and testicular inflammation were more strongly associated with exposure before the 11th week of gestation, though timing could not be definitively separated from dose.",
+    "quote": "Because nearly all women who receive a cumulative dose of 5 grams or greater had begun taking DES before the 11th week of gestation, it was not possible to determine definitively which of these factors was more important.",
+    "source_label": "Palmer JR et al. Urogenital abnormalities in men exposed to diethylstilbestrol in utero: a cohort study (three pooled US cohorts, 1,197 exposed, 1,038 unexposed). Environ Health 2009;8:37, open-access full text, Results (Table 2) and Discussion",
+    "source_type": "registry or cohort",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2739506/",
+    "id": "PMID 19689815",
+    "date": "2009-08-18",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "In the US DESAD cohort, cervical and vaginal structural anomalies in daughters were closely associated with the total DES dose and the gestational week of first exposure; the abstract gives no threshold.",
+    "quote": "Among the 367 cases found by record review to have complete information on the DES exposure, multivariate analysis indicated close association of the anomalies with the gestational week of first exposure and the total dose.",
+    "source_label": "Jefferies JA et al. Structural anomalies of the cervix and vagina in women enrolled in the Diethylstilbestrol Adenosis (DESAD) Project. Am J Obstet Gynecol 1984;148(1):59-66, PubMed abstract",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6691382/",
+    "id": "PMID 6691382",
+    "date": "1984-01-01",
+    "quote_language": "fr"
+   },
+   "effects": {
+    "text": "US FDA-approved estrogen labelling states that DES-exposed daughters have increased risks of vaginal adenosis, cervical squamous dysplasia and clear-cell vaginal cancer later in life, and sons of urogenital abnormalities and possibly testicular cancer.",
+    "quote": "female offspring have an increased risk of vaginal adenosis, squamous cell dysplasia of the uterine cervix, and clear cell vaginal cancer later in life; male offspring have an increased risk of urogenital abnormalities and possibly testicular cancer",
+    "source_label": "US FDA-approved labeling (ANDA040312), Innofem estradiol tablets USP, boxed warning on estrogens in pregnancy, DailyMed, revised 4/2017 (product marketing ended 2009)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=10e1d3ef-808e-47e4-a050-93a5918b1085",
+    "id": "DailyMed set id 10e1d3ef-808e-47e4-a050-93a5918b1085",
+    "date": "2017-04-26"
+   },
+   "absolute_risk": {
+    "text": "In the US DESAD cohort, structural anomalies of the cervix or vagina were found in 25% of 1,655 DES-exposed daughters identified from prenatal records, versus 2% of 963 control subjects.",
+    "quote": "25% of the 1,655 subjects identified by review of prenatal records, 43% of the 800 who themselves requested entry into the project, and 49% of the 1,089 referred by physicians but in only 2% of the 963 control subjects.",
+    "source_label": "Jefferies JA et al. Structural anomalies of the cervix and vagina in women enrolled in the Diethylstilbestrol Adenosis (DESAD) Project. Am J Obstet Gynecol 1984;148(1):59-66, PubMed abstract",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/6691382/",
+    "id": "PMID 6691382",
+    "date": "1984-01-01"
+   }
+  },
+  "Carbimazole": {
+   "entis_name": "Carbimazole",
+   "limb_defects": "not named",
+   "evidence": "human",
+   "window": {
+    "text": "EU product information says carbimazole is suspected to cause malformations when used in pregnancy, particularly in the first trimester; it counts by trimester and gives no week range.",
+    "quote": "Based on human experience from epidemiological studies and spontaneous reporting, carbimazole is suspected to cause congenital malformations when administered during pregnancy, particularly in the first trimester of pregnancy and at high doses.",
+    "source_label": "EMA PRAC, New product information wording, carbimazole SmPC 4.6 (EPITT 19238), adopted 26-29 November 2018",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-26-29-november-2018-prac_en.pdf",
+    "id": "EMA/PRAC/826450/2018",
+    "date": "2019-01-04"
+   },
+   "dose": {
+    "text": "The UK medicines regulator says carbimazole is associated with an increased malformation risk, particularly at high doses, which it defines as 15 mg or more daily.",
+    "quote": "carbimazole is associated with an increased risk of congenital malformations when used during pregnancy, particularly in the first trimester of pregnancy and at high doses (15 mg or more of carbimazole daily)",
+    "source_label": "MHRA Drug Safety Update, volume 12, issue 7, February 2019 (carbimazole: increased risk of congenital malformations)",
+    "source_type": "regulator",
+    "url": "https://assets.publishing.service.gov.uk/media/5c6a89ca40f0b61a177602fb/DSU-PDF-Feb-2019.pdf",
+    "id": "MHRA Drug Safety Update vol 12 issue 7",
+    "date": "2019-02"
+   },
+   "effects": {
+    "text": "EU product information reports malformations including a missing patch of skin (aplasia cutis), choanal atresia, facial dysmorphism, exomphalos, oesophageal atresia, omphalomesenteric duct anomaly and ventricular septal defect, naming no limb defects.",
+    "quote": "Reported malformations include aplasia cutis congenita, craniofacial malformations (choanal atresia; facial dysmorphism), exomphalos, oesophageal atresia, omphalo-mesenteric duct anomaly, and ventricular septal defect.",
+    "source_label": "EMA PRAC, New product information wording, carbimazole SmPC 4.6 (EPITT 19238)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-26-29-november-2018-prac_en.pdf",
+    "id": "EMA/PRAC/826450/2018",
+    "date": "2019-01-04"
+   },
+   "absolute_risk": {
+    "text": "In a Danish nationwide register, 9.6% of children exposed to methimazole or carbimazole in early pregnancy had a birth defect diagnosed before age 2, versus 6.7% of unexposed children.",
+    "quote": "The overall frequency of birth defects was 6.7% (95% CI, 6.7% to 6.8%) in nonexposed children and higher after exposure to methimazole/carbimazole (9.6%; 95% CI, 8.2% to 11.2%)",
+    "source_label": "Andersen SL et al. Maternal thyroid function, use of antithyroid drugs in early pregnancy, and birth defects. J Clin Endocrinol Metab 2019;104(12):6040-6048 (abstract)",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31408173/",
+    "id": "PMID 31408173; DOI 10.1210/jc.2019-01343",
+    "date": "2019-12-01"
+   }
+  },
+  "Methimazole": {
+   "entis_name": "Methimazole",
+   "limb_defects": "not named",
+   "evidence": "human",
+   "window": {
+    "text": "The US label states methimazole can cause fetal harm when given in the first trimester; it counts by trimester and gives no week range.",
+    "quote": "Methimazole crosses the placental membranes and can cause fetal harm when administered in the first trimester of pregnancy.",
+    "source_label": "US FDA label, methimazole tablets, WARNINGS (First Trimester Use of Methimazole and Congenital Malformations), via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%2205a8fed7-f805-4c59-8840-630174b6d130%22",
+    "id": "DailyMed set id 05a8fed7-f805-4c59-8840-630174b6d130",
+    "date": "2025-09-10"
+   },
+   "dose": {
+    "text": "In a Korean nationwide cohort, a first-trimester cumulative methimazole dose above 495 mg was associated with higher malformation risk than a low cumulative dose of 1 to 126 mg.",
+    "quote": "In the MMI group, a high cumulative dose (>495 mg) during the first trimester was associated with an increased risk for malformations compared with a low dose (1 to 126 mg)",
+    "source_label": "Seo GH, Kim TH, Chung JH. Antithyroid drugs and congenital malformations: a nationwide Korean cohort study. Ann Intern Med 2018;168(6):405-413 (abstract)",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29357398/",
+    "id": "PMID 29357398; DOI 10.7326/M17-1398",
+    "date": "2018-03-20"
+   },
+   "effects": {
+    "text": "EU product information for thiamazole (methimazole) reports malformations including a missing patch of skin (aplasia cutis), choanal atresia, facial dysmorphism, exomphalos, oesophageal atresia, omphalomesenteric duct anomaly and ventricular septal defect, naming no limb defects.",
+    "quote": "Reported malformations include aplasia cutis congenita, craniofacial malformations (choanal atresia; facial dysmorphism), exomphalos, oesophageal atresia, omphalo-mesenteric duct anomaly, and ventricular septal defect.",
+    "source_label": "EMA PRAC, New product information wording, thiamazole (synonym: methimazole) SmPC 4.6 (EPITT 19238)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-26-29-november-2018-prac_en.pdf",
+    "id": "EMA/PRAC/826450/2018",
+    "date": "2019-01-04"
+   },
+   "absolute_risk": {
+    "text": "In a Danish nationwide register, 9.6% of children exposed to methimazole or carbimazole in early pregnancy had a birth defect diagnosed before age 2, versus 6.7% of unexposed children.",
+    "quote": "The overall frequency of birth defects was 6.7% (95% CI, 6.7% to 6.8%) in nonexposed children and higher after exposure to methimazole/carbimazole (9.6%; 95% CI, 8.2% to 11.2%)",
+    "source_label": "Andersen SL et al. Maternal thyroid function, use of antithyroid drugs in early pregnancy, and birth defects. J Clin Endocrinol Metab 2019;104(12):6040-6048 (abstract)",
+    "source_type": "registry or cohort",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31408173/",
+    "id": "PMID 31408173; DOI 10.1210/jc.2019-01343",
+    "date": "2019-12-01"
+   }
+  },
+  "Methotrexate": {
+   "entis_name": "Methotrexate",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The US label states that methotrexate exposure in the first trimester, counted by trimester of pregnancy, is associated with more miscarriages and multiple developmental problems.",
+    "quote": "Methotrexate exposure during the first trimester of pregnancy is associated with an increased incidence of spontaneous abortions and multiple adverse developmental outcomes",
+    "source_label": "US FDA label, Trexall (methotrexate) tablets, section 8.1 Pregnancy (read via openFDA)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
+    "id": "DailyMed set id e942f8db-510f-44d6-acb5-b822196f5e8c",
+    "date": "2026-06-17"
+   },
+   "dose": {
+    "text": "The EMA says data are insufficient for exposure in pregnancy above 30 mg a week, but higher rates of miscarriage and malformations are expected, particularly at doses used to treat cancer.",
+    "quote": "Insufficient data is available for methotrexate exposure during pregnancy higher than 30 mg (15 ml)/week, but higher rates of spontaneous abortions and congenital malformations are expected, in particular at doses commonly used in oncologic indications",
+    "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
+    "id": "EMEA/H/C/003756",
+    "date": "2026-07-16"
+   },
+   "effects": {
+    "text": "First-trimester exposure is associated with skull, facial, central nervous system and limb abnormalities (limb defects flagged), and sometimes heart defects and intellectual impairment.",
+    "quote": "multiple adverse developmental outcomes, including skull anomalies, facial dysmorphism, central nervous system abnormalities, limb abnormalities, and sometimes cardiac anomalies and intellectual impairment",
+    "source_label": "US FDA label, Trexall (methotrexate) tablets, section 8.1 Pregnancy (read via openFDA)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
+    "id": "DailyMed set id e942f8db-510f-44d6-acb5-b822196f5e8c",
+    "date": "2026-06-17"
+   },
+   "absolute_risk": {
+    "text": "Major birth defects occurred in 6.6% of babies born alive after low-dose methotrexate in pregnancy, compared with about 4% of babies born alive to women with the same diseases on other medicines.",
+    "quote": "Major birth defects occurred in 6.6% of live births in women exposed to low-dose methotrexate treatment (less than 30 mg [15 ml]/week) during pregnancy, compared to approximately 4% of live births in disease-matched patients",
+    "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
+    "id": "EMEA/H/C/003756",
+    "date": "2026-07-16"
+   }
+  },
+  "Aminopterin": {
+   "entis_name": "Aminopterin",
+   "limb_defects": "unclear",
+   "evidence": "human",
+   "effects": {
+    "text": "ENTIS lists multiple malformations for methotrexate and aminopterin together, including skeletal, heart and urogenital defects and holoprosencephaly (a brain malformation), plus growth disruption; limbs are not named separately.",
+    "quote": "Multiple malformations including skeletal, cardiovascular, urogenital, holoprosencephaly. Growth disruption.",
+    "source_label": "Bluett-Duncan et al., ENTIS expert consensus, Birth Defects Res 2025;117(9):e2497, Table 1 (row 'Methotrexate and Aminopterin')",
+    "source_type": "ENTIS consensus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+    "id": "PMC12442749; DOI 10.1002/bdr2.2497",
+    "date": "2025-09-17"
+   }
+  },
+  "Mycophenolate mofetil and mycophenolic acid": {
+   "entis_name": "Mycophenolate",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The US label says use during pregnancy is associated with higher risks of first-trimester pregnancy loss and of malformations, and it names no narrower window for the malformations.",
+    "quote": "Use during pregnancy is associated with increased risks of first trimester pregnancy loss and congenital malformations.",
+    "source_label": "US FDA label, CellCept (Genentech), Boxed Warning (Embryofetal toxicity), read via openFDA, version 51, effective 2026-08-05",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "id": "DailyMed set id 37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "date": "2026-08-05"
+   },
+   "dose": {
+    "text": "In rats and rabbits, mycophenolate caused malformations and pregnancy loss at doses below the recommended human clinical dose; this is an animal finding, not a human threshold.",
+    "quote": "Oral administration of mycophenolate to rats and rabbits during the period of organogenesis produced congenital malformations and pregnancy loss at doses less than the recommended clinical dose",
+    "source_label": "US FDA label, CellCept (Genentech), section 8.1 Pregnancy, read via openFDA, version 51 (DailyMed version 51 published 2026-08-10)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "id": "DailyMed set id 37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "date": "2026-08-05"
+   },
+   "effects": {
+    "text": "Documented malformations include anomalies of the distal limbs (a limb defect), defects of the outer ear, eye and face such as cleft lip and palate, and heart, oesophagus, kidney and nervous system defects.",
+    "quote": "Malformations that have been documented include external ear, eye, and other facial abnormalities including cleft lip and palate, and anomalies of the distal limbs, heart, esophagus, kidney, and nervous system.",
+    "source_label": "US FDA label, CellCept (Genentech), section 8.1 Pregnancy, Human Data",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "id": "DailyMed set id 37241e87-4af4-4dc3-a1aa-ea6f20d8dc40",
+    "date": "2026-08-05"
+   },
+   "absolute_risk": {
+    "text": "EMA reports malformations in 23 to 27% of babies exposed during pregnancy, against 4 to 5% in transplant patients on other immunosuppressants and 2 to 3% in the overall population.",
+    "quote": "The reported incidence of malformation in the offspring of mothers exposed to mycophenolate during pregnancy is 23 to 27% compared with 4 to 5% in transplant patients treated with other immunosuppressants, and 2 to 3% in the overall population.",
+    "source_label": "European Medicines Agency press release, 'EMA recommends additional measures to prevent use of mycophenolate in pregnancy'",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/news/ema-recommends-additional-measures-prevent-use-mycophenolate-pregnancy",
+    "id": "EMA/680077/2015",
+    "date": "2015-10-23"
+   }
+  },
+  "Lenalidomide": {
+   "entis_name": "Lenalidomide",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "animal only",
+   "dose": {
+    "text": "In a monkey study, limb defects appeared in the offspring at every dose tested; this is an animal finding and gives no human dose threshold.",
+    "quote": "Limb abnormalities were seen in the offspring of monkeys that were dosed with lenalidomide during organogenesis. This effect was seen at all doses tested.",
+    "source_label": "US FDA label, Revlimid (Celgene), section 4.1 Contraindications (Pregnancy), read via openFDA version 41 (DailyMed version 41 published 2026-08-06)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fa97bf5-28a2-48f1-8955-f56012d296be",
+    "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be",
+    "date": "2023-03-24"
+   },
+   "effects": {
+    "text": "In a monkey study, lenalidomide caused limb defects similar to thalidomide's birth defects in humans, and the US label warns it may cause birth defects or embryo-fetal death.",
+    "quote": "Lenalidomide, a thalidomide analogue, caused limb abnormalities in a developmental monkey study similar to birth defects caused by thalidomide in humans. If lenalidomide is used during pregnancy, it may cause birth defects or embryo-fetal death.",
+    "source_label": "US FDA label, Revlimid (Celgene), Boxed Warning, Highlights version (Embryo-fetal toxicity)",
+    "source_type": "regulator",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fa97bf5-28a2-48f1-8955-f56012d296be",
+    "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be",
+    "date": "2023-03-24"
+   }
+  },
+  "Thalidomide": {
+   "entis_name": "Thalidomide",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The EMA assessment places the sensitive period at 21 to 35 days after conception, counted from conception rather than from the last period, when the limbs and major organs form.",
+    "quote": "This sensitive period is 21-35 days after conception, a crucial time for the development of the limbs and major organ systems",
+    "source_label": "EMA CHMP assessment report, Thalidomide Pharmion (now Thalidomide BMS), non-clinical section on embryo-foetal development",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/assessment-report/thalidomide-celgene-epar-public-assessment-report_en.pdf",
+    "id": "EMEA/176582/2008",
+    "date": "2008-05-19"
+   },
+   "dose": {
+    "text": "The current US label says that even a single capsule, of any strength, taken during pregnancy can cause severe birth defects.",
+    "quote": "Even a single dose [1 capsule (regardless of strength)] taken by a pregnant woman during her pregnancy can cause severe birth defects.",
+    "source_label": "US FDA label, THALOMID (Celgene), boxed warning, via openFDA (DailyMed SPL v25)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%222eda833b-1357-4ed4-a093-194524fcb061%22&limit=1",
+    "id": "2eda833b-1357-4ed4-a093-194524fcb061",
+    "date": "2023-03-24"
+   },
+   "effects": {
+    "text": "Birth defects named in the EU product information include missing or partly missing arms and/or legs (amelia, phocomelia, hemimelia), small ears with blind or absent ear canals, eye defects, heart disease and kidney abnormalities.",
+    "quote": "ectromelia (amelia, phocomelia, hemimelia) of the upper and/or lower extremities, microtia with abnormality of the external acoustic meatus (blind or absent), middle and internal ear lesions (less frequent), ocular lesions (anophthalmia, microphthalmia), congenital heart disease, renal abnormalities.",
+    "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.6",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+    "id": "EU/1/08/443 (EMEA/H/C/000823)",
+    "date": "2025-01-22"
+   },
+   "absolute_risk": {
+    "text": "The EU product information says thalidomide causes severe birth defects at a high frequency, about 30%, and gives no comparison rate.",
+    "quote": "Thalidomide is a powerful human teratogen, inducing a high frequency (about 30 %) of severe and live-threatening birth defects",
+    "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.6",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+    "id": "EU/1/08/443 (EMEA/H/C/000823)",
+    "date": "2025-01-22"
+   }
+  },
+  "Isotretinoin": {
+   "entis_name": "Isotretinoin",
+   "limb_defects": "unclear",
+   "evidence": "human and animal",
+   "window": {
+    "text": "The US label names no gestational week and says that potentially any fetus exposed during pregnancy can be affected.",
+    "quote": "Potentially any fetus exposed during pregnancy can be affected. There are no accurate means of determining prenatally whether an exposed fetus has been affected.",
+    "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), boxed warning and section 5.1, via openFDA (DailyMed SPL v21)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
+    "id": "3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+    "date": "2026-08-19"
+   },
+   "dose": {
+    "text": "The US label says the risk of life-threatening birth defects is extremely high if pregnancy occurs while taking any amount, even for short periods.",
+    "quote": "There is an extremely high risk that life-threatening birth defects will result if pregnancy occurs while taking any amount of ABSORICA/ABSORICA LD even for short periods of time.",
+    "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), section 5.1, via openFDA (DailyMed SPL v21)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
+    "id": "3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+    "date": "2026-08-19"
+   },
+   "effects": {
+    "text": "The US label lists malformations of the face, eyes, ears, skull, central nervous system, heart and blood vessels, and thymus and parathyroid glands, but not limb defects.",
+    "quote": "Major congenital malformations that have been documented following isotretinoin exposure include malformations of the face, eyes, ears, skull, central nervous system, cardiovascular system, and thymus and parathyroid glands.",
+    "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), section 8.1 human data, via openFDA (DailyMed SPL v21)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
+    "id": "3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+    "date": "2026-08-19"
+   },
+   "absolute_risk": {
+    "text": "The EMA's safety committee says human data show a risk of retinoid embryopathy in up to 30% of exposed fetuses, for oral retinoids as a group, without a comparison rate.",
+    "quote": "The human data on congenital malformations after oral retinoid exposure shows a significant risk of retinoid embryopathy (of up to 30% of fetuses exposed)",
+    "source_label": "EMA PRAC assessment report, Article 31 referral on retinoid-containing medicinal products, section 3 benefit-risk balance",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-prac-assessment-report_en.pdf",
+    "id": "EMA/254364/2018",
+    "date": "2018-02-08"
+   }
+  },
+  "Acitretin": {
+   "entis_name": "Acitretin",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "human and animal",
+   "window": {
+    "text": "ANSM counts from treatment: a pregnancy that starts during acitretin treatment or within 3 years after stopping carries a very high risk of major malformations in the fetus.",
+    "quote": "La survenue, en dépit des mesures contraceptives, d'une grossesse au cours d'un traitement par acitrétine ou dans les 3 ans qui suivent son arrêt, comporte un risque très élevé de malformations majeures chez le fœtus.",
+    "source_label": "ANSM, SORIATANE 25 mg gélule, RCP section 4.6 (Base de données publique des médicaments)",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64225999/extrait",
+    "id": "CIS 64225999",
+    "date": "2024-09-09",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "The US label states that the blood-level threshold for increased birth defects has not been established for acitretin in humans, and post-treatment contraception time cannot be calculated precisely.",
+    "quote": "Because this threshold has not been established for acitretin in humans and because elimination rates vary among patients, the duration of posttherapy contraception to achieve adequate elimination cannot be calculated precisely.",
+    "source_label": "US FDA label, Acitretin capsules (Sigmapharm), boxed CONTRAINDICATIONS AND WARNINGS, via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%22a6546625-acb8-460e-b34e-f795bfb3680a%22&limit=1",
+    "id": "DailyMed set id a6546625-acb8-460e-b34e-f795bfb3680a",
+    "date": "2026-08-05"
+   },
+   "effects": {
+    "text": "The US label lists reported major fetal abnormalities with acitretin or etretinate, including meningomyelocele, meningoencephalocele, multiple synostoses, facial dysmorphia, and limb or digit defects (syndactyly, absent terminal phalanges, hip, ankle and forearm malformations).",
+    "quote": "Major human fetal abnormalities associated with acitretin and/or etretinate administration have been reported including meningomyelocele; meningoencephalocele; multiple synostoses; facial dysmorphia; syndactyly; absence of terminal phalanges; malformations of hip, ankle, and forearm",
+    "source_label": "US FDA label, Acitretin capsules (Sigmapharm), boxed CONTRAINDICATIONS AND WARNINGS, via openFDA",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:%22a6546625-acb8-460e-b34e-f795bfb3680a%22&limit=1",
+    "id": "DailyMed set id a6546625-acb8-460e-b34e-f795bfb3680a",
+    "date": "2026-08-05"
+   }
+  },
+  "Alitretinoin": {
+   "entis_name": "Alitretinoin",
+   "limb_defects": "named by an authoritative source",
+   "evidence": "animal only",
+   "window": {
+    "text": "ANSM counts from treatment: pregnancy during alitretinoin (Toctino) treatment or within the month after stopping carries a very high risk of very severe malformations.",
+    "quote": "La survenue, en dépit des mesures contraceptives, d'une grossesse au cours d'un traitement par TOCTINO ou dans le mois qui suit son arrêt, comporte un risque très élevé de malformations très sévères et graves chez le fœtus.",
+    "source_label": "ANSM, TOCTINO 30 mg capsule molle, RCP section 4.6 (Base de données publique des médicaments)",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69219167/extrait",
+    "id": "CIS 69219167",
+    "date": "2024-12-09",
+    "quote_language": "fr"
+   },
+   "effects": {
+    "text": "EMA's harmonised leaflet text says oral alitretinoin can cause serious abnormalities of the baby's brain, face, ear, eye, heart, thymus and parathyroid glands, and makes miscarriage more likely.",
+    "quote": "it can cause serious abnormalities of the unborn baby’s brain, face, ear, eye, heart and certain glands (thymus gland and parathyroid gland). It also makes a miscarriage more likely.",
+    "source_label": "EMA, Retinoid Article 31 referral 2018, Annex III (package leaflet text for oral acitretin, alitretinoin and isotretinoin)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-iii_en.pdf",
+    "date": "2018"
+   }
+  },
+  "Bexarotene": {
+   "entis_name": "Bexarotene",
+   "limb_defects": "unclear",
+   "evidence": "animal only",
+   "window": {
+    "text": "The US label reports malformations in rats given bexarotene by mouth on gestation days 7 to 17, and it states no human risk window.",
+    "quote": "Bexarotene caused malformations when administered orally to pregnant rats during days 7-17 of gestation.",
+    "source_label": "US FDA label, TARGRETIN (bexarotene) capsules, Bausch Health, section 8.1 Pregnancy, Animal Data (openFDA)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:1d056725-0576-4338-8089-6336e768ccdc",
+    "id": "DailyMed set id 1d056725-0576-4338-8089-6336e768ccdc",
+    "date": "2020-04-30"
+   },
+   "dose": {
+    "text": "EMA states that a safety margin for human teratogenicity has not been demonstrated for bexarotene, based on its comparison of animal and patient exposures.",
+    "quote": "Based on the comparison of animal and patient exposures to bexarotene, a margin of safety for human teratogenicity has not been demonstrated",
+    "source_label": "EMA, Targretin EPAR product information, SmPC section 4.6",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/product-information/targretin-epar-product-information_en.pdf",
+    "id": "EU/1/01/178",
+    "date": "2025-08"
+   },
+   "effects": {
+    "text": "For oral retinoids as a group, ENTIS lists multiple malformations, including central nervous system, orofacial cleft, cardiovascular, skeletal, limb and ear defects, as well as facial dysmorphia.",
+    "quote": "Multiple malformations including central nervous system abnormalities, orofacial clefts, cardiovascular, skeletal, limb and ear. Facial dysmorphia.",
+    "source_label": "Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1 (ENTIS / ConcePTION); the effects cell spans all five oral retinoids",
+    "source_type": "ENTIS consensus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+    "id": "PMC12442749; doi:10.1002/bdr2.2497",
+    "date": "2025-09-17"
+   },
+   "absolute_risk": {
+    "text": "EMA's 2018 review reports retinoid embryopathy in up to 30% of fetuses exposed to oral retinoids as a class, and it gives no rate specific to bexarotene.",
+    "quote": "The human data on congenital malformations after oral retinoid exposure show a significant risk of retinoid embryopathy (of up to 30% of fetuses exposed)",
+    "source_label": "EMA, retinoid Article 31 referral (EMEA/H/A-31/1446), Annex II scientific conclusions (EC decision 21 June 2018; Annex II first published 2 July 2018)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-ii_en.pdf",
+    "id": "EMEA/H/A-31/1446",
+    "date": "2018-06-21"
+   }
+  },
+  "All-trans retinoic acid": {
+   "entis_name": "Tretinoin",
+   "limb_defects": "unclear",
+   "evidence": "human and animal",
+   "window": {
+    "text": "France's product information says human data on tretinoin in pregnancy are limited, but there is a high risk of severe fetal malformations, particularly when it is given in the first trimester.",
+    "quote": "les données sur l'utilisation de la trétinoïne chez la femme enceinte sont limitées mais il existe un risque élevé de malformations sévères du fœtus, en particulier lorsque la trétinoïne est administrée au cours du premier trimestre de la grossesse",
+    "source_label": "ANSM, VESANOID 10 mg capsule molle, RCP section 4.6 Grossesse (Base de données publique des médicaments), RCP updated 22/04/2025",
+    "source_type": "regulator",
+    "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=65540866&typedoc=R",
+    "id": "CIS 65540866",
+    "date": "2025-04-22",
+    "quote_language": "fr"
+   },
+   "dose": {
+    "text": "In animal studies, the US label reports external, soft tissue and skeletal alterations above 0.7, 2 and 7 mg/kg/day in mice, rats and hamsters respectively, and at 10 mg/kg/day in monkeys.",
+    "quote": "Gross external, soft tissue and skeletal alterations occurred at doses higher than 0.7 mg/kg/day in mice, 2 mg/kg/day in rats, 7 mg/kg/day in hamsters, and at a dose of 10 mg/kg/day, the only dose tested, in pigtail monkeys",
+    "source_label": "US FDA label, tretinoin capsules (Par Health USA), section 8.1 Pregnancy, Animal Data (openFDA)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+    "id": "DailyMed set id 9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+    "date": "2026-08-20"
+   },
+   "effects": {
+    "text": "From human exposure to retinoids, the US label reports malformations of the central nervous system, musculoskeletal system, external ear, eye, thymus and great vessels, plus facial dysmorphia, cleft palate and parathyroid hormone deficiency.",
+    "quote": "Reported malformations include abnormalities of the central nervous system, musculoskeletal system, external ear, eye, thymus and great vessels; and facial dysmorphia, cleft palate, and parathyroid hormone deficiency.",
+    "source_label": "US FDA label, tretinoin capsules (Par Health USA), section 8.1 Human Data (openFDA)",
+    "source_type": "regulator",
+    "url": "https://api.fda.gov/drug/label.json?search=set_id:9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+    "id": "DailyMed set id 9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+    "date": "2026-08-20"
+   },
+   "absolute_risk": {
+    "text": "EMA's 2018 review reports retinoid embryopathy in up to 30% of fetuses exposed to oral retinoids as a class, and it gives no rate specific to tretinoin.",
+    "quote": "The human data on congenital malformations after oral retinoid exposure show a significant risk of retinoid embryopathy (of up to 30% of fetuses exposed)",
+    "source_label": "EMA, retinoid Article 31 referral (EMEA/H/A-31/1446), Annex II scientific conclusions (EC decision 21 June 2018; Annex II first published 2 July 2018)",
+    "source_type": "regulator",
+    "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-ii_en.pdf",
+    "id": "EMEA/H/A-31/1446",
+    "date": "2018-06-21"
+   }
+  }
+ }
+}

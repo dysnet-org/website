@@ -1003,6 +1003,13 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .use-work { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
 .tera-dose { margin: 0.45rem 0 0; font-size: var(--text-small); }
 .tera-jump { margin: 0.9rem 0 1.1rem; }
+.tera-preg { margin: 0.55rem 0 0; padding: 0.5rem 0.75rem; background: #faf5ff; border-left: 3px solid var(--dys-purple); border-radius: 0 0.3rem 0.3rem 0; font-size: var(--text-small); }
+.tera-preg-h { margin: 0 0 0.3rem; font-weight: 700; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.tera-preg dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 0.7rem; margin: 0; }
+.tera-preg dt { font-weight: 700; color: var(--dys-purple-text); }
+.tera-preg dd { margin: 0; }
+.st-limb { background: #fff7ed; color: #9a3412; border-color: #fdba74; }
+@media (max-width: 520px) { .tera-preg dl { grid-template-columns: 1fr; } .tera-preg dd { margin-bottom: 0.3rem; } }
 #register { scroll-margin-top: 6rem; }
 .tera-dose .fine { color: var(--dys-muted); }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }

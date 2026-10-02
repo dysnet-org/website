@@ -253,9 +253,17 @@
   "Mercury and mercury compounds": {
    "tags": [
     "food",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "Methylmercury reaches the diet through fish and seafood; metallic mercury and its salts are met at work."
+   "why": "Methylmercury reaches the diet through fish and seafood; metallic mercury and its salts are met at work.",
+   "routes": {
+    "home": {
+     "why": "Inorganic mercury salts are found in skin-lightening creams and soaps, and mercury preservatives are used in eye make-up.",
+     "source": "WHO, Mercury in skin lightening products (2019)",
+     "url": "https://iris.who.int/server/api/core/bitstreams/eeb2b712-a947-45a8-a830-7d8b25e6bd01/content"
+    }
+   }
   },
   "Lead [Basis": {
    "tags": [
@@ -268,16 +276,32 @@
   "Cadmium": {
    "tags": [
     "food",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "Food is the main source for non-smokers, and it is met at work."
+   "why": "Food is the main source for non-smokers, and it is met at work.",
+   "routes": {
+    "home": {
+     "why": "US FDA testing measured traces of cadmium in cosmetics, mostly pigmented products.",
+     "source": "US FDA, Testing of cosmetics for arsenic, cadmium, chromium, cobalt, lead, mercury and nickel",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/fdas-testing-cosmetics-arsenic-cadmium-chromium-cobalt-lead-mercury-and-nickel-content"
+    }
+   }
   },
   "Arsenic (inorganic oxides)": {
    "tags": [
     "food",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "Inorganic arsenic reaches people through drinking water and food, rice in particular; it is also met at work."
+   "why": "Inorganic arsenic reaches people through drinking water and food, rice in particular; it is also met at work.",
+   "routes": {
+    "home": {
+     "why": "US FDA testing measured traces of arsenic in cosmetics, mostly mineral-based make-up.",
+     "source": "US FDA, Testing of cosmetics for arsenic, cadmium, chromium, cobalt, lead, mercury and nickel",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/fdas-testing-cosmetics-arsenic-cadmium-chromium-cobalt-lead-mercury-and-nickel-content"
+    }
+   }
   },
   "Nickel (soluble compounds)": {
    "tags": [
@@ -329,9 +353,17 @@
   "Acrylamide": {
    "tags": [
     "food",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "Forms when starchy food is fried, baked or roasted at high temperature; it is also made as an industrial chemical."
+   "why": "Forms when starchy food is fried, baked or roasted at high temperature; it is also made as an industrial chemical.",
+   "routes": {
+    "home": {
+     "why": "It remains as a residue of the polyacrylamides used in cosmetics, which the EU caps at 0.1 to 0.5 mg per kg.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 66",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "Urethane (Ethyl carbamate)": {
    "tags": [
@@ -342,22 +374,51 @@
   "Bisphenol A (BPA)": {
    "tags": [
     "food",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "Migrates into food from polycarbonate and can coatings, which is why the EU now bans it in food contact materials; it is also met at work."
+   "why": "Migrates into food from polycarbonate and can coatings, which is why the EU now bans it in food contact materials; it is also met at work.",
+   "routes": {
+    "home": {
+     "why": "A hair dye was reported to California in 2019 as containing it.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
   },
   "Dichloroacetic acid": {
    "tags": [
-    "food"
+    "food",
+    "home"
    ],
-   "why": "Forms as a by-product when drinking water is chlorinated."
+   "why": "Forms as a by-product when drinking water is chlorinated.",
+   "routes": {
+    "home": {
+     "why": "Companies reported it to California in shampoos and in surfactant raw materials.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
   },
   "Retinol/retinyl esters": {
    "tags": [
     "food",
-    "medicine"
+    "medicine",
+    "home"
    ],
-   "why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day."
+   "why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day.",
+   "routes": {
+    "home": {
+     "why": "Retinol and its esters condition the skin in creams and lotions; the EU caps them and requires the label 'Consider your daily intake before use'.",
+     "source": "Commission Regulation (EU) 2024/996, Annex III entry 376",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400996",
+     "level": "suspected",
+     "by": [
+      "EU Scientific Committee on Consumer Safety (SCCS/1639/21)"
+     ],
+     "basis": "The EU's scientific committee counts harm to the unborn child among vitamin A's critical effects and limits it in cosmetics so that total intake stays within safe limits; no authority rates skin use itself."
+    }
+   }
   },
   "Tobacco smoke (primary)": {
    "tags": [
@@ -380,9 +441,17 @@
   },
   "Nicotine": {
    "tags": [
-    "recreational"
+    "recreational",
+    "home"
    ],
-   "why": "Reaches the unborn child through tobacco and nicotine products; its past use as an insecticide is not the exposure here."
+   "why": "Reaches the unborn child through tobacco and nicotine products; its past use as an insecticide is not the exposure here.",
+   "routes": {
+    "home": {
+     "why": "A perfume was reported to California in 2022 as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    }
+   }
   },
   "Cannabis (marijuana) smoke": {
    "tags": [
@@ -406,62 +475,126 @@
   "toluene": {
    "tags": [
     "work",
-    "recreational"
+    "recreational",
+    "home"
    ],
-   "why": "A solvent met at work; inhaled deliberately, as in glue sniffing, it harms the unborn child."
+   "why": "A solvent met at work; inhaled deliberately, as in glue sniffing, it harms the unborn child.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it in nail products up to 25 %, and companies reported it in 103 cosmetics to California, most of them nail polishes.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 185",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "pyrithione zinc": {
    "tags": [
     "home"
    ],
-   "why": "Was the anti-dandruff ingredient of many shampoos until the EU banned it in cosmetics."
+   "why": "Was the anti-dandruff ingredient of many shampoos until the EU banned it in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "It was a preservative and anti-dandruff agent in rinse-off hair products until the EU banned it in 2022.",
+     "source": "SCCS Opinion on Zinc Pyrithione, SCCS/1614/19",
+     "url": "https://health.ec.europa.eu/document/download/aa535110-c020-4924-8507-5f867adc9972_en"
+    }
+   }
   },
   "2-(4-tert-butylbenzyl)propionaldehyde": {
    "tags": [
     "home"
    ],
-   "why": "Lilial was a fragrance in cosmetics and detergents until the EU banned it in cosmetics."
+   "why": "Lilial was a fragrance in cosmetics and detergents until the EU banned it in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "Lilial was a fragrance ingredient of many cosmetics until the EU banned it in 2022.",
+     "source": "SCCS Opinion on Butylphenyl methylpropional, SCCS/1591/17",
+     "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf"
+    }
+   }
   },
   "cis-1-(3-chloroallyl)": {
    "tags": [
     "home",
     "work"
    ],
-   "why": "A formaldehyde-releasing preservative, it has been used in cosmetics and household products."
+   "why": "A formaldehyde-releasing preservative, it has been used in cosmetics and household products.",
+   "routes": {
+    "home": {
+     "why": "Quaternium-15 was a preservative listed in the EU cosmetic ingredient inventory before its ban.",
+     "source": "European Commission, CosIng inventory (2016 export)",
+     "url": "https://raw.githubusercontent.com/openfoodfacts/openbeautyfacts/develop/cosing/COSING_Ingredients-Fragrance.Inventory_v2.csv"
+    }
+   }
   },
   "hexyl salicylate": {
    "tags": [
     "home"
    ],
-   "why": "A fragrance ingredient, it is limited by EU cosmetics rules."
+   "why": "A fragrance ingredient, it is limited by EU cosmetics rules.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it as a fragrance ingredient, from 2 % in fragrances down to traces in toothpaste.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 380",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "methyl salicylate": {
    "tags": [
     "medicine",
     "home"
    ],
-   "why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it."
+   "why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it.",
+   "routes": {
+    "home": {
+     "why": "The EU sets limits for it by product type and bars it for children under 6 except in toothpaste.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 324",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "salicylic acid": {
    "tags": [
     "medicine",
     "home"
    ],
-   "why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it."
+   "why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it in cosmetics up to 3 %, and not in products for children under 3.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 98",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "Dichlorophene": {
    "tags": [
     "home",
     "pesticide"
    ],
-   "why": "An antimicrobial in cosmetics and household products, it is limited by EU cosmetics rules and also used as a biocide."
+   "why": "An antimicrobial in cosmetics and household products, it is limited by EU cosmetics rules and also used as a biocide.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it up to 0.5 %, labelled 'Contains Dichlorophen'.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 11",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "Methanol": {
    "tags": [
     "work",
     "home"
    ],
-   "why": "A solvent and fuel at work, it is also in screen-wash fluid at home; EU cosmetics rules limit it."
+   "why": "A solvent and fuel at work, it is also in screen-wash fluid at home; EU cosmetics rules limit it.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it only as a denaturant of ethanol and isopropyl alcohol, up to 5 %.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 52",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "Ethylene glycol (ingested)": {
    "tags": [
@@ -488,7 +621,14 @@
     "home",
     "work"
    ],
-   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work."
+   "why": "A PVC softener, it is restricted by the EU in toys and consumer articles and met at work.",
+   "routes": {
+    "home": {
+     "why": "Health Canada detected it in 8 of 252 cosmetic and personal-care products bought in 2007.",
+     "source": "Koniecki et al. (Health Canada), Environ Res 2011",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21315328/"
+    }
+   }
   },
   "dibutyl phthalate; DBP": {
    "tags": [
@@ -556,16 +696,32 @@
   "Sulfur dioxidee": {
    "tags": [
     "air",
-    "work"
+    "work",
+    "home"
    ],
-   "why": "An air pollutant from burning coal and oil, it is also met at work."
+   "why": "An air pollutant from burning coal and oil, it is also met at work.",
+   "routes": {
+    "home": {
+     "why": "Nail glues were reported to California as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    }
+   }
   },
   "Benzene": {
    "tags": [
     "work",
-    "air"
+    "air",
+    "home"
    ],
-   "why": "It is met at work and in air polluted by traffic and tobacco smoke."
+   "why": "It is met at work and in air polluted by traffic and tobacco smoke.",
+   "routes": {
+    "home": {
+     "why": "Aerosol dry shampoos were recalled in the US in 2022 because they could contain benzene.",
+     "source": "Unilever recall of dry shampoos, posted by the US FDA (18 October 2022)",
+     "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/unilever-issues-voluntary-us-recall-select-dry-shampoos-due-potential-presence-benzene"
+    }
+   }
   },
   "1,3-Butadiene": {
    "tags": [
@@ -577,9 +733,17 @@
   "benzo[a]pyrene": {
    "tags": [
     "work",
-    "air"
+    "air",
+    "home"
    ],
-   "why": "It forms when wood, coal, tobacco or food burn."
+   "why": "It forms when wood, coal, tobacco or food burn.",
+   "routes": {
+    "home": {
+     "why": "An eye-and-lip product was reported to California in 2016 as containing it.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
   },
   "dinitrogen oxide": {
    "tags": [
@@ -749,9 +913,17 @@
   },
   "silver zinc zeolite": {
    "tags": [
-    "pesticide"
+    "pesticide",
+    "home"
    ],
-   "why": "It is a biocide added to materials to keep microbes off."
+   "why": "It is a biocide added to materials to keep microbes off.",
+   "routes": {
+    "home": {
+     "why": "The EU allows it as a preservative in deodorant sprays and powder foundations.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex V entry 61",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
   },
   "salts and esters of dinoseb": {
    "tags": [
@@ -809,9 +981,17 @@
   },
   "ethylene oxide": {
    "tags": [
-    "work"
+    "work",
+    "home"
    ],
-   "why": "It sterilises medical equipment and is used to make chemicals; it is met at work."
+   "why": "It sterilises medical equipment and is used to make chemicals; it is met at work.",
+   "routes": {
+    "home": {
+     "why": "Companies reported it in 65 cosmetics to California, most of them hair-care products.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    }
+   }
   },
   "2-methoxypropanol": {
    "tags": [
@@ -839,9 +1019,260 @@
   },
   "quinolin-8-ol": {
    "tags": [
-    "work"
+    "work",
+    "home"
    ],
-   "why": "A chelating agent and fungicide, it is met at work."
+   "why": "A chelating agent and fungicide, it is met at work.",
+   "routes": {
+    "home": {
+     "why": "Its sulphate stabilises hydrogen peroxide in hair products, which the EU allows up to 0.3 %.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 51",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    }
+   }
+  },
+  "Chromium (hexavalent compounds)": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "One company reported it to California in a sea mud, a clay masque and a tinted sunscreen.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
+  },
+  "styrene": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "Companies reported it in 64 cosmetics to California, mostly perfumes, hair-styling products, shampoos and body washes.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    }
+   }
+  },
+  "N-methyl-2-pyrrolidone": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "The EU's scientific committee states it is used as a solvent in cosmetics, and companies reported it in 15 products to California.",
+     "source": "SCCS Opinion on N-Methyl-2-pyrrolidone, SCCS/1413/11",
+     "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf"
+    }
+   }
+  },
+  "Aspirin": {
+   "tags": [
+    "medicine",
+    "home"
+   ],
+   "why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "routes": {
+    "home": {
+     "why": "Companies reported it in 8 razor-bump and aftershave products to California.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
+  },
+  "lead di(acetate)": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "It coloured progressive hair dyes until the US FDA repealed its approval, effective January 2022.",
+     "source": "US FDA, Lead in Cosmetics",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/lead-cosmetics"
+    }
+   }
+  },
+  "lead compounds with the exception": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "Traditional eyeliners such as kohl, kajal and surma often contain large amounts of lead, the US FDA warns.",
+     "source": "US FDA, Lead in Cosmetics",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/lead-cosmetics"
+    }
+   }
+  },
+  "Methyl chloride": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "One company reported it to California in hair conditioners and styling products.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    }
+   }
+  },
+  "Di-isodecyl phthalate": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "Two hair-care products were reported to California in 2022 as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    }
+   }
+  },
+  "chloroform": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "It was used in cosmetics until the US FDA banned it as an ingredient in 1976.",
+     "source": "US FDA, 21 CFR 700.18",
+     "url": "https://www.ecfr.gov/current/title-21/section-700.18"
+    }
+   }
+  },
+  "2-ethylhexyl-2-ethylhexanoate": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "The US Cosmetic Ingredient Review counted it in 20 cosmetic formulations left on the skin.",
+     "source": "Cosmetic Ingredient Review, Alkyl Ethylhexanoates (2013)",
+     "url": "https://www.cir-safety.org/sites/default/files/ethylh032013rep.pdf"
+    }
+   }
+  },
+  "diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "It hardens gel nail products under UV light, as the EU's scientific committee describes; the EU has since banned it in cosmetics.",
+     "source": "SCCS Opinion on TPO, SCCS/1528/14",
+     "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_149.pdf"
+    }
+   }
+  },
+  "tetrahydrofurfuryl methacrylate": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "It is a monomer of artificial nail products, used at up to 38 % according to the US Cosmetic Ingredient Review.",
+     "source": "Cosmetic Ingredient Review, Methacrylate Ester Monomers (2021)",
+     "url": "https://cir-safety.org/sites/default/files/Methacrylate%20Ester%20Monomers.pdf"
+    }
+   }
+  },
+  "Methyl isobutyl ketone": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "US FDA data and California reports show it in a few nail products.",
+     "source": "Cosmetic Ingredient Review, MIBK",
+     "url": "https://www.cir-safety.org/sites/default/files/MIBK.pdf"
+    }
+   }
+  },
+  "N-carboxymethyliminobis": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "The US Cosmetic Ingredient Review reported it in 150 cosmetics, mostly hair dyes, as a chelating agent.",
+     "source": "Cosmetic Ingredient Review, Pentasodium pentetate and pentetic acid (2008)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18830865/"
+    }
+   }
+  },
+  "pentasodium (carboxylatomethyl)": {
+   "tags": [
+    "work",
+    "home"
+   ],
+   "why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics.",
+   "routes": {
+    "home": {
+     "why": "The US Cosmetic Ingredient Review reported it in almost 400 cosmetics, mainly hair dyes.",
+     "source": "Cosmetic Ingredient Review, Pentasodium pentetate and pentetic acid (2008)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18830865/"
+    }
+   }
+  },
+  "theophylline": {
+   "tags": [
+    "medicine",
+    "home"
+   ],
+   "why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "routes": {
+    "home": {
+     "why": "The US Cosmetic Ingredient Review found it in 5 leave-on cosmetics in 2018 FDA data.",
+     "source": "Cosmetic Ingredient Review, Methylxanthines (2019)",
+     "url": "https://www.cir-safety.org/sites/default/files/methxa122018FR.pdf"
+    }
+   }
+  },
+  "All-trans retinoic acid": {
+   "tags": [
+    "medicine",
+    "home"
+   ],
+   "why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "routes": {
+    "home": {
+     "why": "Regulators found it undeclared in skin-lightening creams and toners sold as cosmetics.",
+     "source": "Philippine FDA, Advisory No. 2020-2081",
+     "url": "https://www.fda.gov.ph/fda-advisory-no-2020-2081-public-health-warning-against-the-purchase-and-use-of-cosmetic-products-containing-banned-ingredient-s-as-reported-in-the-asean-post-marketing-alert-system-pmas/",
+     "level": "suspected",
+     "by": [
+      "Philippine FDA"
+     ],
+     "basis": "The Philippine FDA warns that tretinoin in such creams may harm the developing fetus."
+    }
+   }
   }
  },
  "doses": {

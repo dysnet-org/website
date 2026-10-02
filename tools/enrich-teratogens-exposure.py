@@ -28,10 +28,14 @@ from the authority that speaks to it, never set here:
     and biocides, for a rodenticide such as warfarin) is added at that classification's level. A
     NITE code gives no more than "presumed" (H360, category 1A or 1B) or "suspected" (H361);
   - California's Proposition 65 speaks to every way listed, except that its listing of a medicine
-    rests on the medicine, and a listing made because a label is "formally required" rests on the
-    product that carries the label;
+    rests on the medicine (and so not on the same substance in a cosmetic), and a listing made
+    because a label is "formally required" rests on the product that carries the label;
   - the WHO and the DysNet bibliography speak to the ways listed.
-A tag no authority speaks to takes the entry's own level. So valproate shows Medicine, known (EMA,
+A tag no authority speaks to takes the entry's own level, unless tools/teratogen-exposure.json
+names the authority that rates that way of meeting it (the EU's scientific committee for vitamin A
+on the skin). The file also gives each Home and personal care tag the evidence of cosmetic use and
+its source: an EU Cosmetics Regulation annex entry, products reported to California's Safe
+Cosmetics Program, a Cosmetic Ingredient Review or SCCS assessment, or a regulator's statement. So valproate shows Medicine, known (EMA,
 California), and Work and industry, presumed (Japan), and toluene shows both California's "known"
 and the EU's "suspected".
 
@@ -119,16 +123,22 @@ def routes_for(e, tags, why):
                 targets = ["medicine"]
             elif "formally required" in mech and "pesticide" in tags:
                 targets = ["pesticide"]
+            elif "medicine" in tags:
+                # California lists a medicine on its treatment doses: the listing does not speak to the
+                # same substance in a cosmetic, which a chemical classification covers instead
+                targets = [t for t in tags if t != "home"]
             else:
                 targets = tags
         elif code in ("clp", "nite"):
-            if chem:
-                targets = chem
-            elif "medicine" in tags:
+            targets = list(chem)
+            if "medicine" in tags:
+                # a medicine is handled as a chemical where it is made, whatever else it is used in
                 added = added or ("pesticide" if is_pesticide(e) else "work")
-                levels.setdefault(added, [])
-                targets = [added]
-            else:
+                if added not in tags:
+                    levels.setdefault(added, [])
+                if added not in targets:
+                    targets.append(added)
+            if not targets:
                 targets = tags
         else:
             targets = tags
@@ -150,7 +160,7 @@ def routes_for(e, tags, why):
             r["inherited"] = True
         if others:
             r["also"] = others
-        if t == added:
+        if t == added and t not in tags:
             r["why"] = ("As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
                         if t == "work" else "It is also sold as a pesticide or biocide, and a chemical classification covers it.")
         out.append(r)
@@ -193,6 +203,16 @@ def main():
         if bad:
             sys.exit(f"{e['name']}: unknown tag(s) {bad}")
         routes = sorted(routes_for(e, tags, why), key=lambda r: order.index(r["tag"]))
+        # a way of meeting it can carry its own evidence and source, and, where the authority that
+        # speaks to that way rates it differently, its own level (vitamin A on the skin, for example)
+        for r in routes:
+            note = (curated.get(e["name"], {}).get("routes") or {}).get(r["tag"])
+            if not note:
+                continue
+            r.update({k: note[k] for k in ("why", "source", "url") if note.get(k)})
+            if note.get("level"):
+                r.update({"level": note["level"], "by": note["by"], "basis": note.get("basis", "")})
+                r.pop("also", None); r.pop("inherited", None)
         dose = doses.get(e["name"])
         if dose:
             r = next((r for r in routes if r["tag"] == dose.get("tag")), None)

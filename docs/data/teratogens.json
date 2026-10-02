@@ -117,13 +117,13 @@
    "medicine": 195,
    "food": 21,
    "recreational": 8,
-   "home": 22,
+   "home": 54,
    "air": 5,
    "pesticide": 151,
-   "work": 242
+   "work": 244
   },
   "doses": 22,
-  "exposure_split": 25
+  "exposure_split": 27
  },
  "entries": [
   {
@@ -1444,9 +1444,20 @@
      "by": [
       "California Prop 65"
      ]
+    },
+    {
+     "tag": "home",
+     "level": "suspected",
+     "by": [
+      "Philippine FDA"
+     ],
+     "why": "Regulators found it undeclared in skin-lightening creams and toners sold as cosmetics.",
+     "source": "Philippine FDA, Advisory No. 2020-2081",
+     "url": "https://www.fda.gov.ph/fda-advisory-no-2020-2081-public-health-warning-against-the-purchase-and-use-of-cosmetic-products-containing-banned-ingredient-s-as-reported-in-the-asean-post-marketing-alert-system-pmas/",
+     "basis": "The Philippine FDA warns that tretinoin in such creams may harm the developing fetus."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D10AD01, L01XX14)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
   },
   {
    "name": "Alprazolam",
@@ -2297,6 +2308,16 @@
      ]
     },
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "US FDA testing measured traces of arsenic in cosmetics, mostly mineral-based make-up.",
+     "source": "US FDA, Testing of cosmetics for arsenic, cadmium, chromium, cobalt, lead, mercury and nickel",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/fdas-testing-cosmetics-arsenic-cadmium-chromium-cobalt-lead-mercury-and-nickel-content"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -2403,6 +2424,16 @@
      ]
     },
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "Japan NITE category 1"
+     ],
+     "why": "Companies reported it in 8 razor-bump and aftershave products to California.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -2411,7 +2442,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AD05, B01AC06)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
   },
   {
    "name": "Atenolol",
@@ -3160,6 +3191,19 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2271-43-2%22%5Brn%5D%20OR%20%22Benzene%22%5Btiab%5D%20OR%20%22Benzene%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "also": [
+      "Japan NITE category 2: suspected"
+     ],
+     "why": "Aerosol dry shampoos were recalled in the US in 2022 because they could contain benzene.",
+     "source": "Unilever recall of dry shampoos, posted by the US FDA (18 October 2022)",
+     "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/unilever-issues-voluntary-us-recall-select-dry-shampoos-due-potential-presence-benzene"
+    },
+    {
      "tag": "air",
      "level": "known",
      "by": [
@@ -3741,6 +3785,16 @@
      "by": [
       "California Prop 65"
      ]
+    },
+    {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "US FDA testing measured traces of cadmium in cosmetics, mostly pigmented products.",
+     "source": "US FDA, Testing of cosmetics for arsenic, cadmium, chromium, cobalt, lead, mercury and nickel",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/fdas-testing-cosmetics-arsenic-cadmium-chromium-cobalt-lead-mercury-and-nickel-content"
     },
     {
      "tag": "work",
@@ -5053,6 +5107,20 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2267-66-3%22%5Brn%5D%20OR%20%22chloroform%22%5Btiab%5D%20OR%20%22chloroform%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "also": [
+      "EU CLP Repr. 2: suspected",
+      "Japan NITE category 2: suspected"
+     ],
+     "why": "It was used in cosmetics until the US FDA banned it as an ingredient in 1976.",
+     "source": "US FDA, 21 CFR 700.18",
+     "url": "https://www.ecfr.gov/current/title-21/section-700.18"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -5064,7 +5132,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "Chlorpyrifos",
@@ -5332,6 +5400,16 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Chromium%22%5Btiab%5D%20OR%20%22Chromium%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "One company reported it to California in a sea mud, a clay masque and a tinted sunscreen.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -5339,7 +5417,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "Cidofovir",
@@ -9231,6 +9309,20 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2275-21-8%22%5Brn%5D%20OR%20%22ethylene%20oxide%22%5Btiab%5D%20OR%20%22ethylene%20oxide%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "also": [
+      "EU CLP Repr. 1B: presumed",
+      "Japan NITE category 1: presumed"
+     ],
+     "why": "Companies reported it in 65 cosmetics to California, most of them hair-care products.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -12244,6 +12336,16 @@
    ],
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "EU CLP Repr. 1A"
+     ],
+     "why": "Traditional eyeliners such as kohl, kajal and surma often contain large amounts of lead, the US FDA warns.",
+     "source": "US FDA, Lead in Cosmetics",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/lead-cosmetics"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -12251,7 +12353,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "lead di(acetate)",
@@ -12363,6 +12465,19 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22301-04-2%22%5Brn%5D%20OR%20%22lead%20di%22%5Btiab%5D%20OR%20%22lead%20di%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "EU CLP Repr. 1A"
+     ],
+     "also": [
+      "Japan NITE category 1: presumed"
+     ],
+     "why": "It coloured progressive hair dyes until the US FDA repealed its approval, effective January 2022.",
+     "source": "US FDA, Lead in Cosmetics",
+     "url": "https://www.fda.gov/cosmetics/potential-contaminants-cosmetics/lead-cosmetics"
+    },
+    {
      "tag": "work",
      "level": "known",
      "by": [
@@ -12373,7 +12488,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "lead diazide; lead azide",
@@ -16125,10 +16240,20 @@
      "level": "known",
      "by": [
       "California Prop 65"
+     ]
+    },
+    {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
      ],
      "also": [
       "Japan NITE category 2: suspected"
-     ]
+     ],
+     "why": "A perfume was reported to California in 2022 as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
     }
    ],
    "exposure_why": "Reaches the unborn child through tobacco and nicotine products; its past use as an insecticide is not the exposure here."
@@ -18632,6 +18757,17 @@
       "url": "https://pubmed.ncbi.nlm.nih.gov/7477116/",
       "basis": "human"
      }
+    },
+    {
+     "tag": "home",
+     "level": "suspected",
+     "by": [
+      "EU Scientific Committee on Consumer Safety (SCCS/1639/21)"
+     ],
+     "why": "Retinol and its esters condition the skin in creams and lotions; the EU caps them and requires the label 'Consider your daily intake before use'.",
+     "source": "Commission Regulation (EU) 2024/996, Annex III entry 376",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202400996",
+     "basis": "The EU's scientific committee counts harm to the unborn child among vitamin A's critical effects and limits it in cosmetics so that total intake stays within safe limits; no authority rates skin use itself."
     }
    ],
    "exposure_why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day."
@@ -19304,6 +19440,16 @@
    ],
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%227446-09-5%22%5Brn%5D%20OR%20%22Sulfur%20dioxidee%22%5Btiab%5D%20OR%20%22Sulfur%20dioxidee%22%5Bnm%5D%29",
    "exposure": [
+    {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "Nail glues were reported to California as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    },
     {
      "tag": "air",
      "level": "known",
@@ -20520,6 +20666,20 @@
      "by": [
       "California Prop 65"
      ]
+    },
+    {
+     "tag": "home",
+     "level": "known",
+     "by": [
+      "California Prop 65"
+     ],
+     "also": [
+      "EU CLP Repr. 2: suspected",
+      "Japan NITE category 1: presumed"
+     ],
+     "why": "The EU allows it in nail products up to 25 %, and companies reported it in 103 cosmetics to California, most of them nail polishes.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 185",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
     },
     {
      "tag": "work",
@@ -23662,7 +23822,10 @@
      "by": [
       "EU CLP Repr. 1B",
       "Japan NITE category 1"
-     ]
+     ],
+     "why": "Lilial was a fragrance ingredient of many cosmetics until the EU banned it in 2022.",
+     "source": "SCCS Opinion on Butylphenyl methylpropional, SCCS/1591/17",
+     "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf"
     }
    ],
    "exposure_why": "Lilial was a fragrance in cosmetics and detergents until the EU banned it in cosmetics."
@@ -25365,6 +25528,17 @@
      ]
     },
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65",
+      "Japan NITE category 1"
+     ],
+     "why": "It remains as a residue of the polyacrylamides used in cosmetics, which the EU caps at 0.1 to 0.5 mg per kg.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 66",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -26527,6 +26701,17 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2250-32-8%22%5Brn%5D%20OR%20%22benzo%5Ba%5Dpyrene%22%5Btiab%5D%20OR%20%22benzo%5Ba%5Dpyrene%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "An eye-and-lip product was reported to California in 2016 as containing it.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    },
+    {
      "tag": "air",
      "level": "presumed",
      "by": [
@@ -26868,7 +27053,10 @@
       "California Prop 65",
       "EU CLP Repr. 1B",
       "Japan NITE category 1"
-     ]
+     ],
+     "why": "Health Canada detected it in 8 of 252 cosmetic and personal-care products bought in 2007.",
+     "source": "Koniecki et al. (Health Canada), Environ Res 2011",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21315328/"
     },
     {
      "tag": "work",
@@ -27364,6 +27552,17 @@
      "by": [
       "California Prop 65"
      ]
+    },
+    {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65",
+      "Japan NITE category 1"
+     ],
+     "why": "A hair dye was reported to California in 2019 as containing it.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
     },
     {
      "tag": "work",
@@ -29242,6 +29441,16 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22Di-isodecyl%20phthalate%22%5Btiab%5D%20OR%20%22Di-isodecyl%20phthalate%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "Two hair-care products were reported to California in 2022 as containing it.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -29249,7 +29458,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "diboron trioxide",
@@ -30326,9 +30535,19 @@
      "tag": "food",
      "level": "presumed",
      "by": [
+      "California Prop 65"
+     ]
+    },
+    {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
       "California Prop 65",
       "Japan NITE category 1"
-     ]
+     ],
+     "why": "Companies reported it to California in shampoos and in surfactant raw materials.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
     }
    ],
    "exposure_why": "Forms as a by-product when drinking water is chlorinated."
@@ -30491,7 +30710,10 @@
      "level": "presumed",
      "by": [
       "California Prop 65"
-     ]
+     ],
+     "why": "The EU allows it up to 0.5 %, labelled 'Contains Dichlorophen'.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 11",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
     },
     {
      "tag": "pesticide",
@@ -31789,6 +32011,16 @@
    ],
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B"
+     ],
+     "why": "It hardens gel nail products under UV light, as the EU's scientific committee describes; the EU has since banned it in cosmetics.",
+     "source": "SCCS Opinion on TPO, SCCS/1528/14",
+     "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_149.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -31796,7 +32028,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "diphenylether; octabromo derivate",
@@ -35229,6 +35461,16 @@
      ]
     },
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "Inorganic mercury salts are found in skin-lightening creams and soaps, and mercury preservatives are used in eye make-up.",
+     "source": "WHO, Mercury in skin lightening products (2019)",
+     "url": "https://iris.who.int/server/api/core/bitstreams/eeb2b712-a947-45a8-a830-7d8b25e6bd01/content"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -35446,7 +35688,10 @@
      "by": [
       "California Prop 65",
       "Japan NITE category 1"
-     ]
+     ],
+     "why": "The EU allows it only as a denaturant of ethanol and isopropyl alcohol, up to 5 %.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 52",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
     },
     {
      "tag": "work",
@@ -35729,6 +35974,17 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2274-87-3%22%5Brn%5D%20OR%20%22Methyl%20chloride%22%5Btiab%5D%20OR%20%22Methyl%20chloride%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65",
+      "Japan NITE category 1"
+     ],
+     "why": "One company reported it to California in hair conditioners and styling products.",
+     "source": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+     "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -35737,7 +35993,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "Methyl isobutyl ketone (MIBK)",
@@ -35796,6 +36052,16 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22108-10-1%22%5Brn%5D%20OR%20%22Methyl%20isobutyl%20ketone%22%5Btiab%5D%20OR%20%22Methyl%20isobutyl%20ketone%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65"
+     ],
+     "why": "US FDA data and California reports show it in a few nail products.",
+     "source": "Cosmetic Ingredient Review, MIBK",
+     "url": "https://www.cir-safety.org/sites/default/files/MIBK.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -35803,7 +36069,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "methyl-ONN-azoxymethyl acetate; methyl azoxy methyl acetate",
@@ -36694,6 +36960,17 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%2267-43-6%22%5Brn%5D%20OR%20%22N-carboxymethyliminobis%20tetra%22%5Btiab%5D%20OR%20%22N-carboxymethyliminobis%20tetra%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "The US Cosmetic Ingredient Review reported it in 150 cosmetics, mostly hair dyes, as a chelating agent.",
+     "source": "Cosmetic Ingredient Review, Pentasodium pentetate and pentetic acid (2008)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18830865/"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -36702,7 +36979,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "N-ethyl-2-pyrrolidone; 1-ethylpyrrolidin-2-one",
@@ -36934,6 +37211,18 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22872-50-4%22%5Brn%5D%20OR%20%22N-methyl-2-pyrrolidone%22%5Btiab%5D%20OR%20%22N-methyl-2-pyrrolidone%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "California Prop 65",
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "The EU's scientific committee states it is used as a solvent in cosmetics, and companies reported it in 15 products to California.",
+     "source": "SCCS Opinion on N-Methyl-2-pyrrolidone, SCCS/1413/11",
+     "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -36943,7 +37232,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "N-methylacetamide",
@@ -39693,6 +39982,17 @@
    ],
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "The US Cosmetic Ingredient Review reported it in almost 400 cosmetics, mainly hair dyes.",
+     "source": "Cosmetic Ingredient Review, Pentasodium pentetate and pentetic acid (2008)",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/18830865/"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -39701,7 +40001,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "perboric acid (H3BO2(O2)), monosodium salt trihydrate [1]",
@@ -41305,7 +41605,10 @@
      "by": [
       "EU CLP Repr. 1B",
       "Japan NITE category 1"
-     ]
+     ],
+     "why": "It was a preservative and anti-dandruff agent in rinse-off hair products until the EU banned it in 2022.",
+     "source": "SCCS Opinion on Zinc Pyrithione, SCCS/1614/19",
+     "url": "https://health.ec.europa.eu/document/download/aa535110-c020-4924-8507-5f867adc9972_en"
     }
    ],
    "exposure_why": "Was the anti-dandruff ingredient of many shampoos until the EU banned it in cosmetics."
@@ -41419,6 +41722,17 @@
    ],
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22148-24-3%22%5Brn%5D%20OR%20%22quinolin-8-ol%22%5Btiab%5D%20OR%20%22quinolin-8-ol%22%5Bnm%5D%29",
    "exposure": [
+    {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "Its sulphate stabilises hydrogen peroxide in hair products, which the EU allows up to 0.3 %.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 51",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    },
     {
      "tag": "work",
      "level": "presumed",
@@ -43147,6 +43461,17 @@
    ],
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "It is a monomer of artificial nail products, used at up to 38 % according to the US Cosmetic Ingredient Review.",
+     "source": "Cosmetic Ingredient Review, Methacrylate Ester Monomers (2021)",
+     "url": "https://cir-safety.org/sites/default/files/Methacrylate%20Ester%20Monomers.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -43155,7 +43480,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "tetrahydrothiopyran-3-carboxaldehyde",
@@ -43356,6 +43681,17 @@
      "inherited": true
     },
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "EU CLP Repr. 1B",
+      "Japan NITE category 1"
+     ],
+     "why": "The US Cosmetic Ingredient Review found it in 5 leave-on cosmetics in 2018 FDA data.",
+     "source": "Cosmetic Ingredient Review, Methylxanthines (2019)",
+     "url": "https://www.cir-safety.org/sites/default/files/methxa122018FR.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -43365,7 +43701,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC R03DA04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
   },
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",
@@ -45376,6 +45712,16 @@
    ],
    "exposure": [
     {
+     "tag": "home",
+     "level": "suspected",
+     "by": [
+      "EU CLP Repr. 2"
+     ],
+     "why": "The US Cosmetic Ingredient Review counted it in 20 cosmetic formulations left on the skin.",
+     "source": "Cosmetic Ingredient Review, Alkyl Ethylhexanoates (2013)",
+     "url": "https://www.cir-safety.org/sites/default/files/ethylh032013rep.pdf"
+    },
+    {
      "tag": "work",
      "level": "suspected",
      "by": [
@@ -45383,7 +45729,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "2-methyl-5-tert-butylthiophenol",
@@ -46637,7 +46983,10 @@
      "level": "suspected",
      "by": [
       "EU CLP Repr. 2"
-     ]
+     ],
+     "why": "Quaternium-15 was a preservative listed in the EU cosmetic ingredient inventory before its ban.",
+     "source": "European Commission, CosIng inventory (2016 export)",
+     "url": "https://raw.githubusercontent.com/openfoodfacts/openbeautyfacts/develop/cosing/COSING_Ingredients-Fragrance.Inventory_v2.csv"
     },
     {
      "tag": "work",
@@ -48866,7 +49215,10 @@
      "level": "suspected",
      "by": [
       "EU CLP Repr. 2"
-     ]
+     ],
+     "why": "The EU allows it as a fragrance ingredient, from 2 % in fragrances down to traces in toothpaste.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 380",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
     }
    ],
    "exposure_why": "A fragrance ingredient, it is limited by EU cosmetics rules."
@@ -49851,7 +50203,18 @@
      "level": "suspected",
      "by": [
       "EU CLP Repr. 2"
-     ]
+     ],
+     "why": "The EU sets limits for it by product type and bars it for children under 6 except in toothpaste.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 324",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    },
+    {
+     "tag": "work",
+     "level": "suspected",
+     "by": [
+      "EU CLP Repr. 2"
+     ],
+     "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
    "exposure_why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it."
@@ -51485,7 +51848,19 @@
      "by": [
       "EU CLP Repr. 2",
       "Japan NITE category 2"
-     ]
+     ],
+     "why": "The EU allows it in cosmetics up to 3 %, and not in products for children under 3.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex III entry 98",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    },
+    {
+     "tag": "work",
+     "level": "suspected",
+     "by": [
+      "EU CLP Repr. 2",
+      "Japan NITE category 2"
+     ],
+     "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
    "exposure_why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it."
@@ -51626,6 +52001,16 @@
     }
    ],
    "exposure": [
+    {
+     "tag": "home",
+     "level": "suspected",
+     "by": [
+      "EU CLP Repr. 2"
+     ],
+     "why": "The EU allows it as a preservative in deodorant sprays and powder foundations.",
+     "source": "EU Cosmetics Regulation 1223/2009, Annex V entry 61",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02009R1223-20260518"
+    },
     {
      "tag": "pesticide",
      "level": "suspected",
@@ -51909,6 +52294,19 @@
    "paper_query": "https://pubmed.ncbi.nlm.nih.gov/?term=%28%22100-42-5%22%5Brn%5D%20OR%20%22styrene%22%5Btiab%5D%20OR%20%22styrene%22%5Bnm%5D%29",
    "exposure": [
     {
+     "tag": "home",
+     "level": "presumed",
+     "by": [
+      "Japan NITE category 1"
+     ],
+     "also": [
+      "EU CLP Repr. 2: suspected"
+     ],
+     "why": "Companies reported it in 64 cosmetics to California, mostly perfumes, hair-styling products, shampoos and body washes.",
+     "source": "California Department of Public Health, Safe Cosmetics Program data report 2009-2022 (2023)",
+     "url": "https://www.cdph.ca.gov/Programs/CCDPHP/DEODC/OHB/CSCP/CDPH%20Document%20Library/DataReport2023.pdf"
+    },
+    {
      "tag": "work",
      "level": "presumed",
      "by": [
@@ -51919,7 +52317,7 @@
      ]
     }
    ],
-   "exposure_why": "An industrial chemical, met mainly where it is made or used."
+   "exposure_why": "It is an industrial chemical, met where it is made or used, and it is also reported in cosmetics."
   },
   {
    "name": "sulcotrione (ISO); 2-[2-chloro-4-(methylsulfonyl)benzoyl]cyclohexane-1,3-dione",

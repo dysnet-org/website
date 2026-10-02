@@ -1185,7 +1185,9 @@ def tera_exp_lines(e):
         basis = (f'no authority assesses this way of meeting it, so it takes the level {who} gives the substance' if r.get("inherited")
                  else f'level from {who}')
         also = f'; also {"; ".join(r["also"])}' if r.get("also") else ""
-        out.append(f'<li><strong>{TERA_EXP.get(r["tag"], r["tag"])}, {TERA_LEVEL[r["level"]].lower()}:</strong> {basis}{also}.{(" " + r["why"]) if r.get("why") else ""}</li>')
+        why = "".join(" " + x for x in (r.get("basis"), r.get("why")) if x)
+        src = f' <a href="{r["url"]}" target="_blank" rel="noopener external">{r.get("source") or "source"} ↗</a>' if r.get("url") else ""
+        out.append(f'<li><strong>{TERA_EXP.get(r["tag"], r["tag"])}, {TERA_LEVEL[r["level"]].lower()}:</strong> {basis}{also}.{why}{src}</li>')
     return out
 
 
@@ -1263,7 +1265,8 @@ def teratogens_html():
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
         return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "atc": e.get("atc", [])[:3], "l": e["level"],
                 "x": [{"t": r["tag"], "l": r["level"], "b": r["by"], **({"a": r["also"]} if r.get("also") else {}), **({"i": 1} if r.get("inherited") else {}),
-                       **({"w": r["why"]} if r.get("why") else {}), **({"d": r["dose"]} if r.get("dose") else {})} for r in e.get("exposure", [])],
+                       **({"w": r["why"]} if r.get("why") else {}), **({"d": r["dose"]} if r.get("dose") else {}),
+                       **({"bs": r["basis"]} if r.get("basis") else {}), **({"s": r["source"], "su": r["url"]} if r.get("url") else {})} for r in e.get("exposure", [])],
                 "xw": e.get("exposure_why", ""), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
                 "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
                 "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}

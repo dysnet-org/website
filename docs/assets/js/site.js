@@ -987,7 +987,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     (r.x || []).forEach(function (x) {
       var who = (x.b || []).join(" and ") || "no authority";
       var basis = x.i ? "no authority assesses this way of meeting it, so it takes the level " + who + " gives the substance" : "level from " + who;
-      out.push('<li><strong>' + esc(EXP[x.t] || x.t) + ', ' + LEVEL[x.l].toLowerCase() + ':</strong> ' + esc(basis) + (x.a ? "; also " + esc(x.a.join("; ")) : "") + "." + (x.w ? " " + esc(x.w) : "") + '</li>');
+      out.push('<li><strong>' + esc(EXP[x.t] || x.t) + ', ' + LEVEL[x.l].toLowerCase() + ':</strong> ' + esc(basis) + (x.a ? "; also " + esc(x.a.join("; ")) : "") + "." + (x.bs ? " " + esc(x.bs) : "") + (x.w ? " " + esc(x.w) : "") +
+               (x.su ? ' <a href="' + esc(x.su) + '" target="_blank" rel="noopener external">' + esc(x.s || "source") + ' \u2197</a>' : "") + '</li>');
     });
     return out;
   }

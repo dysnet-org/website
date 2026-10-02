@@ -1302,9 +1302,9 @@ BOARD = [
 
 # A portrait replaces the initials when a member has one: docs/assets/img/<file>.jpg and .webp, 288 px square.
 # Marie Wikström's is her portrait on EX-Center's staff page (ex-center.org/web/marie-wikstrom-1/), cropped;
-# Loïc Rigal's (pictures/, git-ignored) and Salvatore Giambruno's are portraits Loïc supplied, cropped.
-BOARD_PHOTOS = {"Dr Loïc Rigal": "board-loic-rigal", "Marie Wikström": "board-marie-wikstrom",
-                "Salvatore Giambruno": "board-salvatore-giambruno"}
+# Claudio Pirola's and Loïc Rigal's (pictures/, git-ignored) and Salvatore Giambruno's are portraits Loïc supplied, cropped.
+BOARD_PHOTOS = {"Claudio Pirola": "board-claudio-pirola", "Dr Loïc Rigal": "board-loic-rigal",
+                "Marie Wikström": "board-marie-wikstrom", "Salvatore Giambruno": "board-salvatore-giambruno"}
 
 def person_card(name, role, bio, init, email, chip):
     _person = {"@type": "Person", "name": name, "jobTitle": role, "memberOf": {"@type": "NGO", "name": BRAND, "url": SITE + "/"}}

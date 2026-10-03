@@ -938,7 +938,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function pregHtml(r) {
     var out = "";
     if (r.pg) out += block(r.pg, PREG, "In pregnancy" + (r.pgd ? ' <span class="fine">(documented for ' + esc(r.pgd) + ')</span>' : "") + (r.pg.limb ? '<span class="st st-limb">Limb defects named by the source</span>' : ""));
-    if (r.cs) out += block(r.cs, COS, "In cosmetics");
+    if (r.cs) out += block(r.cs, COS, "In cosmetics" + (r.csd ? ' <span class="fine">(documented for ' + esc(r.csd) + ')</span>' : ""));
     return out;
   }
   function pregLines(r) {

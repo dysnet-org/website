@@ -5900,5 +5900,939 @@
   "Valproate (Valproic acid)",
   "Warfarin"
  ],
- "cosmetics": {}
+ "cosmetics": {
+  "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)": {
+   "limit": {
+    "text": "EU Cosmetics Regulation Annex III caps Retinol, Retinyl Acetate and Retinyl Palmitate at 0.05% Retinol Equivalent in body lotion and 0.3% RE in other leave-on and rinse-off products, under Regulation (EU) 2024/996.",
+    "quote": "For any cosmetic product containing Retinol, Retinyl Acetate or Retinyl Palmitate the following, labelling is obligatory: 'Contains Vitamin A. Consider your daily intake before use'.",
+    "source_label": "CosIng — EU Cosmetics Regulation 1223/2009, Annex III, entry 376 (European Commission, DG GROW)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2024-04-04"
+   },
+   "effects": {
+    "text": "SCCS cites a prospective study in which mothers taking over 4500 mg retinol equivalent daily had a 3.5-fold higher risk of a child born with cranial-neural-crest defects.",
+    "quote": "Women taking more than 4500 mg RE of total Vitamin A (from food and supplement) daily had a 3.5 times higher risk of giving birth to a child with cranial-neural-crest defects",
+    "source_label": "SCCS Opinion SCCS/1576/16 on Vitamin A (Retinol, Retinyl Acetate, Retinyl Palmitate), final version",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_199.pdf",
+    "date": "2016-10-06"
+   },
+   "conclusion": {
+    "text": "SCCS concludes vitamin A in cosmetics is safe at 0.05% RE in body lotion and 0.3% RE in other leave-on and rinse-off products; no numeric margin of safety is stated because the assessment compares exposure to a human tolerable upper intake level rather than an animal-study margin.",
+    "quote": "The SCCS is of the opinion that vitamin A in cosmetics at the concentrations of 0.05% Retinol Equivalent (RE) in body lotion, and 0.3% RE for other leave-on and rinse-off products is safe.",
+    "source_label": "SCCS Opinion SCCS/1639/21, revision of SCCS/1576/16 on Vitamin A, final version",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2023-08/sccs_o_261.pdf",
+    "date": "2022-10-25"
+   }
+  },
+  "salicylic acid": {
+   "limit": {
+    "text": "Annex III caps salicylic acid at 3.0% in rinse-off hair products, 2.0% in other leave-on products and 0.5% in body lotion, eye and lip products (Regulation (EU) 2021/850); Annex V separately allows 0.5% as a preservative (Regulation (EU) 2019/1966), both banned for children under 3.",
+    "quote": "Not to be used in preparations for children under 3 years of age. Not to be used in applications that may lead to exposure of the end-user's lungs by inhalation.",
+    "source_label": "CosIng — EU Cosmetics Regulation 1223/2009, Annex III entry 98 and Annex V entry 3 (European Commission, DG GROW)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2023-12-07"
+   },
+   "basis_dose": {
+    "text": "SCCS bases its margin-of-safety calculation on a developmental NOAEL of 75 mg/kg bw/day for teratogenicity in Wistar rats, from Tanaka et al. 1973a.",
+    "quote": "The POD is expressed as a no observed adverse effect level (NOAEL) of 75 mg/kg/day relating to the most sensitive toxic endpoint i.e. teratogenicity in the rat as the most sensitive species.",
+    "source_label": "SCCS Opinion SCCS/1601/18 on salicylic acid (CAS 69-72-7), final opinion with corrigendum",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/b9f205cb-07d0-4eca-895a-87de952d5b6d_en?filename=sccs_o_223.pdf",
+    "date": "2019-06-21"
+   },
+   "effects": {
+    "text": "SCCS states salicylic acid's Repr. 2 (H361d) classification rests on developmental toxicity in both rats and monkeys, with teratogenic potency strong in rats and lower in monkeys.",
+    "quote": "salicylic acid was shown to have teratogenic properties but with species differences in potency: strong in rats and lower in monkeys",
+    "source_label": "SCCS Opinion SCCS/1601/18 on salicylic acid (CAS 69-72-7), final opinion with corrigendum",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/b9f205cb-07d0-4eca-895a-87de952d5b6d_en?filename=sccs_o_223.pdf",
+    "date": "2019-06-21"
+   },
+   "conclusion": {
+    "text": "SCCS concludes salicylic acid is safe as a 0.5% preservative and up to 3.0%/2.0% for other uses, citing a probabilistic margin of safety of 195 against the 75 mg/kg bw/day NOAEL.",
+    "quote": "The derived MOS with this scenario is 195 and thus demonstrates the safety of salicylic acid for cosmetics, excluding oral products such as toothpaste and mouthwash.",
+    "source_label": "SCCS Opinion SCCS/1601/18 on salicylic acid (CAS 69-72-7), final opinion with corrigendum",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/b9f205cb-07d0-4eca-895a-87de952d5b6d_en?filename=sccs_o_223.pdf",
+    "date": "2019-06-21"
+   }
+  },
+  "methyl salicylate": {
+   "limit": {
+    "text": "Annex III sets methyl salicylate limits ranging from 0.002% in eye makeup to 2.52% in toothpaste depending on product type, under Regulation (EU) 2023/1545, banned for children under 6 except in toothpaste.",
+    "quote": "Not to be used in preparations for children under 6 years of age, with the exception of (k) \"Toothpaste\".",
+    "source_label": "CosIng — EU Cosmetics Regulation 1223/2009, Annex III, entry 324 (European Commission, DG GROW)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2023-09-11"
+   },
+   "basis_dose": {
+    "text": "SCCS bases its margin-of-safety calculation for methyl salicylate on a developmental NOAEL of 75 mg/kg bw/day from a three-generation rat study by Collins, 1971.",
+    "quote": "To assess the risk of MeS by systemic exposure, the SCCS has used the NOAEL of 75 mg/kg bw/d derived from the 3-generation study in rats by oral route (Collins et al., 1971).",
+    "source_label": "SCCS Opinion SCCS/1633/21 on methyl salicylate (methyl 2-hydroxybenzoate), final opinion",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_255.pdf",
+    "date": "2021-10-27"
+   },
+   "effects": {
+    "text": "At 150 mg/kg bw/day, methyl salicylate significantly decreased litter size, pup viability, survival and weaning data in the second generation of a three-generation rat study, and decreased pup body weight.",
+    "quote": "statistically significant decrease of litter size, viability (D0), survival (D4), weaning data in the second generation and decreased pup body weight at 150 mg/kg bw/day",
+    "source_label": "SCCS Opinion SCCS/1633/21 on methyl salicylate (methyl 2-hydroxybenzoate), final opinion",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_255.pdf",
+    "date": "2021-10-27"
+   },
+   "conclusion": {
+    "text": "SCCS concludes methyl salicylate is safe at the dossier's maximum concentrations, with systemic margins of safety above 100 for adults and a lowest aggregate value of 108 for children aged 6-10.",
+    "quote": "For children, considering all products taken individually and also the aggregated exposure, the margin of safety is above 100.",
+    "source_label": "SCCS Opinion SCCS/1633/21 on methyl salicylate (methyl 2-hydroxybenzoate), final opinion",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_255.pdf",
+    "date": "2021-10-27"
+   }
+  },
+  "hexyl salicylate": {
+   "limit": {
+    "text": "EU Annex III entry 380 caps Hexyl Salicylate at 2% in hydroalcoholic fragrances, 0.5% in rinse-off products, 0.3% in leave-on products, 0.001% in toothpaste/mouthwash, and allows 0.1% in listed products made for children under 3.",
+    "quote": "Not to be used in preparations for children under 3 years of age, with the exception of (d) “Toothpaste” and (f).",
+    "source_label": "European Commission CosIng database, Annex III export (entry 380)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2026-01-15"
+   },
+   "basis_dose": {
+    "text": "SCCS used a rat developmental NOAEL of 75 mg/kg bw/day for salicylic acid, Hexyl Salicylate's hydrolysis product, as a read-across point of departure.",
+    "quote": "SCCS uses the developmental NOAEL of 0.1% (75 mg/kg bw/day) derived from Tanaka et al. (1973a).",
+    "source_label": "SCCS Opinion on Hexyl Salicylate (SCCS/1658/23), final version of 28 February 2024",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/17f43404-596c-4b87-a74a-cd1ea68ef17a_en?filename=sccs_o_281_final.pdf",
+    "date": "2024-02-28"
+   },
+   "effects": {
+    "text": "SCCS bases Hexyl Salicylate's margin-of-safety calculation on teratogenic effects seen in orally dosed rats in the Tanaka 1973 study of its metabolite salicylic acid.",
+    "quote": "based upon the most sensitive observations in orally dosed rats, of teratogenic effects, in the Tanaka et al. 1973 study",
+    "source_label": "SCCS Opinion on Hexyl Salicylate (SCCS/1658/23), final version of 28 February 2024",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/17f43404-596c-4b87-a74a-cd1ea68ef17a_en?filename=sccs_o_281_final.pdf",
+    "date": "2024-02-28"
+   },
+   "conclusion": {
+    "text": "SCCS concludes Hexyl Salicylate is safe at the Annex III concentrations, citing a systemic margin of safety above 100 despite concerns over potential endocrine-disrupting properties.",
+    "quote": "the SCCS considers Hexyl Salicylate safe when used up to the maximum concentrations as provided in Table 1 of this Opinion.",
+    "source_label": "SCCS Opinion on Hexyl Salicylate (SCCS/1658/23), final version of 28 February 2024",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/17f43404-596c-4b87-a74a-cd1ea68ef17a_en?filename=sccs_o_281_final.pdf",
+    "date": "2024-02-28"
+   }
+  },
+  "toluene": {
+   "limit": {
+    "text": "EU Annex III entry 185 restricts Toluene to nail products at up to 25%, requiring warnings to keep it from children and limit use to adults.",
+    "quote": "Keep out of reach of children. To be used by adults only",
+    "source_label": "European Commission CosIng database, Annex III export (entry 185)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2013-05-24"
+   },
+   "basis_dose": {
+    "text": "CIR selected a rat developmental NOAEL of 500 ppm (1875 mg/m3), converted to about 540 mg/kg bw/day orally, after applying a threefold uncertainty factor to a 1500 ppm LOAEL.",
+    "quote": "500 ppm (1875 mg/m3) was selected as the NOAEL for the DART endpoint.",
+    "source_label": "CIR Final Amended Safety Assessment of Toluene as Used in Cosmetics",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/FAR_Toluene_092024.pdf",
+    "date": "2024-11-21"
+   },
+   "effects": {
+    "text": "In the pivotal rat gestational-exposure study, Toluene decreased maternal weight gain and fetal body weight at the 1500 ppm dose that set the LOAEL.",
+    "quote": "maternal weight gain of the test animals and fetal body weights in the 1500 ppm group were decreased",
+    "source_label": "CIR Final Amended Safety Assessment of Toluene as Used in Cosmetics",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/FAR_Toluene_092024.pdf",
+    "date": "2024-11-21"
+   },
+   "conclusion": {
+    "text": "CIR's Expert Panel concludes Toluene is safe in nail products up to 20%, below the EU's 25% Annex III limit, with DART margins of safety of at least 153.",
+    "quote": "The Expert Panel for Cosmetic Ingredient Safety concluded that Toluene is safe for use in nail products at concentrations up to 20%.",
+    "source_label": "CIR Final Amended Safety Assessment of Toluene as Used in Cosmetics",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/FAR_Toluene_092024.pdf",
+    "date": "2024-11-21"
+   }
+  },
+  "Dichlorophene": {
+   "limit": {
+    "text": "EU Annex III entry 11 caps Dichlorophene at 0.5% in any cosmetic product and requires the label to state its presence.",
+    "quote": "Contains Dichlorophen",
+    "source_label": "European Commission CosIng database, Annex III export (entry 11)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/III/export-csv",
+    "date": "2010-11-04"
+   },
+   "conclusion": {
+    "text": "CIR's Expert Panel found the data insufficient to support Dichlorophene's safety, stating no reproductive or developmental toxicity data existed for the substance itself.",
+    "quote": "The CIR Expert Panel concludes that the available data are insufficient to support safety of Dichlorophene or Chlorophene.",
+    "source_label": "CIR Quick Reference Table (cir-safety.org), Dichlorophene entry, citing Yamarik, Int J Toxicol 23(Suppl. 1):1-27 (2004)",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/qrt-fix_0.pdf",
+    "date": "2004"
+   }
+  },
+  "pyrithione zinc; (T-4)-bis[1-(hydroxy-.kappa.O)pyridine-2(1H)-thionato-.kappa.S]zinc": {
+   "limit": {
+    "text": "Commission Regulation (EU) 2021/1902 adds zinc pyrithione, Annex II entry 1670 (CAS 13463-41-7), to the list of substances banned in all cosmetic products, applying from 1 March 2022.",
+    "quote": "It should also be added to the list of substances prohibited in cosmetic products in Annex II to Regulation (EC) No 1223/2009.",
+    "source_label": "Commission Regulation (EU) 2021/1902, recital 8 and Annex (EUR-Lex, read this session)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1902",
+    "date": "2021-10-29"
+   },
+   "basis_dose": {
+    "text": "The SCCS derives a NOAEL of 0.75 mg/kg bw/day for maternal and developmental toxicity in rats dosed orally on gestation days 6 to 15.",
+    "quote": "A NOAEL of 0.75 mg/kg/d is derived from the study for maternal and developmental toxicity.",
+    "source_label": "SCCS Opinion on Zinc Pyrithione, SCCS/1512/13 (revision of 18 June 2014)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_133.pdf",
+    "date": "2014-06-18"
+   },
+   "effects": {
+    "text": "The SCCS reports skeletal and developmental malformations in most high-dose rat litters but states the substance is not a developmental toxicant since fetal effects occurred only alongside maternal toxicity.",
+    "quote": "However, as fetal effects occur at dosages where maternal toxicity is observed, the test article is not considered as a developmental toxicant.",
+    "source_label": "SCCS Opinion on Zinc Pyrithione, SCCS/1512/13 (revision of 18 June 2014)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_133.pdf",
+    "date": "2014-06-18"
+   },
+   "conclusion": {
+    "text": "The regulation that bans zinc pyrithione states the SCCS concluded in March 2020 it is safe up to 1% as a rinse-off anti-dandruff ingredient, the finding behind the EU's ban decision.",
+    "quote": "The SCCS concluded in its opinion of 3-4 March 2020 that Zinc Pyrithione can be considered safe when used as an anti-dandruff ingredient in rinse-off hair products up to a maximum concentration of 1 %.",
+    "source_label": "Commission Regulation (EU) 2021/1902, recital 8 (EUR-Lex, read this session)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1902",
+    "date": "2021-10-29"
+   }
+  },
+  "2-(4-tert-butylbenzyl)propionaldehyde": {
+   "limit": {
+    "text": "Commission Regulation (EU) 2021/1902 adds Butylphenyl Methylpropional, Annex II entry 1666 (CAS 80-54-6), to the cosmetics ban list, applying from 1 March 2022.",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union. It shall apply from 1 March 2022.",
+    "source_label": "Commission Regulation (EU) 2021/1902 (EUR-Lex, read this session)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1902",
+    "date": "2021-10-29"
+   },
+   "basis_dose": {
+    "text": "The SCCS sets the NOAEL for developmental toxicity at 4.5 mg/kg bw/day in an extended one-generation reproductive toxicity rat study, revising its earlier 5 mg/kg bw/day figure.",
+    "quote": "The NOAEL for developmental toxicity in the F1 and F2 progeny was 3 mg/kg bw/d (equivalent to a mean overall oral dose of 4.5 mg/kg bw/d)",
+    "source_label": "SCCS Opinion on Butylphenyl methylpropional (p-BMHCA), SCCS/1591/17, Final version",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf",
+    "date": "2019-05-10"
+   },
+   "effects": {
+    "text": "The SCCS attributes lower F1 and F2 rat pup body weights, seen at the top dose, to maternal toxicity rather than a specific developmental effect.",
+    "quote": "based on reduced pup body weights in the F1 and F2 offspring, which were observed at 10 mg/kg bw/d",
+    "source_label": "SCCS Opinion on Butylphenyl methylpropional (p-BMHCA), SCCS/1591/17, Final version",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf",
+    "date": "2019-05-10"
+   },
+   "conclusion": {
+    "text": "The SCCS concludes Lilial cannot be considered safe at the proposed fragrance concentrations once aggregate exposure from all product types is summed, giving a margin of safety of about 80 against the 4.5 mg/kg bw/day NOAEL.",
+    "quote": "However, considering the first-tier deterministic aggregate exposure, arising from the use of different product types together, Butylphenyl methylpropional at the proposed concentrations cannot be considered as safe.",
+    "source_label": "SCCS Opinion on Butylphenyl methylpropional (p-BMHCA), SCCS/1591/17, Final version",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf",
+    "date": "2019-05-10"
+   }
+  },
+  "diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide": {
+   "limit": {
+    "text": "The CosIng Annex II export lists TPO as entry 1731 (CAS 75980-60-8), banned in all cosmetic products under Commission Regulation (EU) 2025/877, replacing its former 5% Annex III nail-product entry.",
+    "quote": "1731,\"diphenyl(2,4,6-trimethylbenzoyl)phosphine oxide; INCI: Trimethylbenzoyl Diphenylphosphine Oxide\",75980-60-8,278-355-8,\"(EU) 2025/877\",,,,\"TRIMETHYLBENZOYL DIPHENYLPHOSPHINE OXIDE\",,18/06/2025",
+    "source_label": "CosIng Annex II export (European Commission, api.tech.ec.europa.eu)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "The SCCS states no reproductive-toxicity data exist for TPO and instead bases its margin of safety on a 100 mg/kg bw/day NOAEL from 90-day rat studies showing testicular atrophy.",
+    "quote": "an overall NOAEL of 100 mg/kg bw/day for repeated dose oral toxicity will be used for the calculation of the Margin of Safety (MoS)",
+    "source_label": "SCCS Opinion on Trimethylbenzoyl diphenylphosphine oxide (TPO), SCCS/1528/14",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_149.pdf",
+    "date": "2014-03-27"
+   },
+   "conclusion": {
+    "text": "In 2014 the SCCS judged TPO safe as a nail-modelling product up to 5.0%, with a margin of safety of 1515 on the testicular-atrophy NOAEL, but the EU has since banned it outright after a CMR 1B reclassification.",
+    "quote": "The SCCS is of the opinion that Trimethylbenzoyl diphenylphosphine oxide (TPO) is safe when used as a nail modelling product at a concentration of at maximum 5.0%.",
+    "source_label": "SCCS Opinion on Trimethylbenzoyl diphenylphosphine oxide (TPO), SCCS/1528/14",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_149.pdf",
+    "date": "2014-03-27"
+   }
+  },
+  "N-methyl-2-pyrrolidone; 1-methyl-2-pyrrolidone": {
+   "limit": {
+    "text": "NMP is banned from cosmetic products in the EU as Annex II entry 1393 under Regulation (EU) 2019/831, with a date of inclusion of 30 July 2020.",
+    "quote": "1393,\"N-Methyl-2-pyrrolidone; 1-methyl-2-pyrrolidone\",872-50-4,212-828-1,\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "The SCCS used the lowest oral developmental-toxicity NOAEL of 125 mg/kg bw/day in rats as the basis for its margin-of-safety calculation.",
+    "quote": "The lowest NOAEL after oral administration of NMP in rats (125 mg/kg bw/day) is considered the most relevant observation and will be used in the calculation of MOS.",
+    "source_label": "SCCS Opinion on N-Methyl-2-pyrrolidone (NMP), SCCS/1413/11",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf",
+    "date": "2011-03-22"
+   },
+   "effects": {
+    "text": "SCCS found embryolethal, teratogenic and fetotoxic developmental effects in rats, rabbits and mice after oral, dermal or intraperitoneal NMP exposure.",
+    "quote": "The developmental effects in animals consisted in embryolethal, teratogenic, and fetotoxic effects after oral (gavage) and dermal administration in rats, after oral (gavage) treatment in rabbits, and i.p. injection of mice.",
+    "source_label": "SCCS Opinion on N-Methyl-2-pyrrolidone (NMP), SCCS/1413/11",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf",
+    "date": "2011-03-22"
+   },
+   "conclusion": {
+    "text": "SCCS calculated a margin of safety of 8.4 for NMP at a worst-case 5% use concentration and concluded that this is not safe for the consumer.",
+    "quote": "the SCCS is of the opinion that the presence of NMP with a maximum use concentration of 5% in cosmetic products is not safe for the consumer.",
+    "source_label": "SCCS Opinion on N-Methyl-2-pyrrolidone (NMP), SCCS/1413/11",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_050.pdf",
+    "date": "2011-03-22"
+   }
+  },
+  "theophylline; 1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione": {
+   "limit": {
+    "text": "Theophylline is banned from cosmetic products in the EU as Annex II entry 1710 under Regulation (EU) 2023/1490, with a date of inclusion of 24 August 2023.",
+    "quote": "1710,\"Theophylline; 1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione\",58-55-9,200-385-7,\"(EU) 2023/1490\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "CIR reports a reproductive-toxicity NOAEL of 75 mg/kg bw/day and a LOAEL of 150 mg/kg bw/day for decreased testicular weight in rats, not a developmental-toxicity dose.",
+    "quote": "A significant decrease in testicular weight was apparent in rats with 150 mg/kg bw/d by gavage, but not in rats given 75 mg/kg bw or less.",
+    "source_label": "CIR Safety Assessment of Methylxanthines, Final Report",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/methxa122018FR.pdf",
+    "date": "2019-01-25"
+   },
+   "effects": {
+    "text": "CIR reports that theophylline in drinking water during gestation reduced litter size and fetal weight in rats without increasing malformations.",
+    "quote": "A reduction of litter size and fetal weight was noted, but no increases in malformations.",
+    "source_label": "CIR Safety Assessment of Methylxanthines, Final Report",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/methxa122018FR.pdf",
+    "date": "2019-01-25"
+   },
+   "conclusion": {
+    "text": "CIR's expert panel concluded that caffeine, theobromine and theophylline are safe in cosmetics at their present practices of use and concentration, without calculating a margin of safety.",
+    "quote": "The CIR Expert Panel concluded that Caffeine, Theobromine, and Theophylline are safe in cosmetics in the present practices of use and concentration described in this safety assessment.",
+    "source_label": "CIR Safety Assessment of Methylxanthines, Final Report",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/methxa122018FR.pdf",
+    "date": "2019-01-25"
+   }
+  },
+  "boric acid [1]": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "disodium octaborate anhydrous [1]": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "perboric acid (H3BO2(O2)), monosodium salt trihydrate [1]": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "perboric acid, sodium salt [1]": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "sodium peroxometaborate": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "tetraboron disodium heptaoxide, hydrate [1]": {
+   "limit": {
+    "text": "Boric acid and other borates have been banned in the EU since 29/30 July 2020 under Regulations (EU) 2019/831 and (EU) 2019/1966, and sodium perborate was re-listed under Regulation (EU) 2026/78 from 15 January 2026.",
+    "quote": "1395,\"Boric acid [1];\nBoric acid [2]\",\"10043-35-3 [1] 11113-50-1 [2]\",\"233-139-2 [1] 234-343-4 [2]\",\"(EU) 2019/831\"",
+    "source_label": "CosIng Annex II export (European Commission, DG GROW), Last update 29/09/2026",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-09-29"
+   },
+   "basis_dose": {
+    "text": "SCCS used a developmental-toxicity NOAEL of 55 mg boric acid/kg bw/day (9.6 mg boron/kg bw/day) across rat, mouse and rabbit studies.",
+    "quote": "A NOAEL for pre-natal effects in all 3 species has been established at 55 mg/kg bw/day (9.6 mg B/kg bw/day).",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "effects": {
+    "text": "SCCS reports that boric acid exposure during pregnancy caused decreased fetal body weight and cardiovascular and rib malformations in rats, mice and rabbits.",
+    "quote": "Exposure to boric acid during pregnancy (given either throughout gestation or only during major organogenesis) resulted in decreased foetal body weight, and foetal cardiovascular and rib malformations in the rat, mouse and rabbit.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "conclusion": {
+    "text": "SCCS concluded in 2010 that boric acid, borates and tetraborates were safe within Annex III concentration limits, with a margin of safety of 480, before the EU later banned them outright.",
+    "quote": "boric acid, borates and tetraborates are safe when used under the conditions laid down in entry 1a of Annex III.",
+    "source_label": "SCCS Opinion on Boron Compounds, SCCS/1249/09",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_027.pdf",
+    "date": "2010-06-22"
+   },
+   "documented_as": "boric acid and the borates as a group"
+  },
+  "cis-1-(3-chloroallyl)-3,5,7-triaza-1-azoniaadamantane chloride": {
+   "limit": {
+    "text": "EU law bans Quaternium-15's CMR cis-isomer in cosmetics under Annex II (entries 1385-1386) since Regulation (EU) 2019/831 of 22 May 2019, which deleted its prior 0.2% Annex V preservative allowance.",
+    "quote": "Quaternium-15 should be deleted from the list of preservatives allowed in cosmetic products in Annex V to Regulation (EC) No 1223/2009 and added to the list of substances prohibited in cosmetic products in Annex II",
+    "source_label": "Commission Regulation (EU) 2019/831 of 22 May 2019, recital 6 and Annex entries 1385-1386 (OJ L 137/29-30, 23.5.2019)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32019R0831",
+    "date": "2019-05-22"
+   },
+   "basis_dose": {
+    "text": "In Fischer 344 rats dosed by gavage in 1981, the sponsor proposed a NOEL of 5 mg/kg bw/day for maternal and foetal toxicity, which SCCS says should rather be considered a LOAEL.",
+    "quote": "The applicant deduced a NOEL of 5 mg/kg bw/day for maternal and foetal toxicity.",
+    "source_label": "SCCS/1344/10, Opinion on Quaternium-15 (cis-isomer), section 3.3.8.2",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_077.pdf",
+    "date": "2011-12-14"
+   },
+   "effects": {
+    "text": "In Fischer 344 rats, cis-CTAC caused fetal eye malformations, mainly microphthalmia and anophthalmia, most frequent at 25 and 75 mg/kg bw/day gavage doses.",
+    "quote": "The majority of the malformed foetuses exhibited anomalies of the eye, microphthalmia or anophthalmia.",
+    "source_label": "SCCS/1344/10, Opinion on Quaternium-15 (cis-isomer), section 3.3.8.2",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_077.pdf",
+    "date": "2011-12-14"
+   },
+   "conclusion": {
+    "text": "SCCS could not establish a reliable NOAEL or calculate a margin of safety, and it judges Quaternium-15's cis-isomer may not be safe for continued cosmetic use.",
+    "quote": "the SCCS considers its continued use in cosmetic products may not be safe for the consumers",
+    "source_label": "SCCS/1344/10, Opinion on Quaternium-15 (cis-isomer), section 4 Conclusion",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_077.pdf",
+    "date": "2011-12-14"
+   }
+  },
+  "silver zinc zeolite (Zeolite, LTA framework type, surface-modified with silver and zinc ions); [This entry covers LTA (Linde Type A) framework type zeolite which has been surface-modified with both silver and zinc ions at contents Ag+ 0,5 %-6 %, Zn2 + 5 %-16 %, and potentially with phosphorus, NH4+, Mg2+ and/or Ca2+ each at level < 3 %]": {
+   "limit": {
+    "text": "EU bans silver zinc zeolite generally as reprotoxic category 2 (Annex II, Reg. (EU) 2026/909, 28 April 2026), except up to 1% with silver capped at 2.5% in deodorant spray and powder foundation (Annex V).",
+    "quote": "the silver content in Ammonium Silver Zinc Aluminium Silicate must not exceed 2,5 %.",
+    "source_label": "CosIng Annex V export (entry 61) and Annex II export (entry 1597), citing Regulation (EU) 2026/909",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/V/export-csv",
+    "date": "2026-04-28"
+   },
+   "basis_dose": {
+    "text": "SCCS references a rat two-generation study (Schroeder 2002) using oral gavage doses of 200, 700, and 2000 mg/kg bw/day; offspring heart enlargement, the finding used for developmental classification, appeared at the mid and high doses.",
+    "quote": "performed with oral gavage doses of 200, 700, 2000 mg/kg bw/day in Rats (Schroeder 2002)",
+    "source_label": "SCCS/1650/23, Final Opinion on Silver Zinc Zeolite, section 3.4.5.1 Fertility and reproduction toxicity (dose levels; the heart-enlargement finding is discussed in the following section 3.4.5.2 Developmental Toxicity, citing the same study)",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a0d039be-384c-4b39-b069-9358dbfe5c7b_en?filename=sccs_o_270_final.pdf",
+    "date": "2023-12-21"
+   },
+   "effects": {
+    "text": "In rats, silver zinc zeolite enlarged the heart in F2 pups at the mid dose and in F1 pups at the high dose, alongside maternal toxicity.",
+    "quote": "the enlargement of hearts reported at the mid dose in F2 pups (5/27 males and 4/26 females)",
+    "source_label": "SCCS/1650/23, Final Opinion on Silver Zinc Zeolite, section 3.4.5.2",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a0d039be-384c-4b39-b069-9358dbfe5c7b_en?filename=sccs_o_270_final.pdf",
+    "date": "2023-12-21"
+   },
+   "conclusion": {
+    "text": "SCCS concludes silver zinc zeolite with up to 2.5% silver is safe at 1% in spray deodorant and powder foundation, with margins of safety of 109 to 3570 depending on exposure route.",
+    "quote": "The SCCS considers that Silver Zinc Zeolite (CAS No. 130328-20-0) incorporating a maximum silver content of 2.5% is safe in spray deodorant and powder foundation when used at the proposed concentration of 1%.",
+    "source_label": "SCCS/1650/23, Final Opinion on Silver Zinc Zeolite, section 4 Conclusion",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a0d039be-384c-4b39-b069-9358dbfe5c7b_en?filename=sccs_o_270_final.pdf",
+    "date": "2023-12-21"
+   }
+  },
+  "Methanol": {
+   "limit": {
+    "text": "EU cosmetics law caps methanol at 5% of the ethanol/isopropyl alcohol content when used as a denaturant, per Annex III entry 52 of Regulation (EC) No 1223/2009 of 22 December 2009.",
+    "quote": "Denaturant for ethanol and isopropyl alcohol 5 % (as a % ethanol and isopropyl alcohol)",
+    "source_label": "Regulation (EC) No 1223/2009, Annex III, entry 52 (OJ L 342, 22.12.2009)",
+    "source_type": "regulator",
+    "url": "https://health.ec.europa.eu/system/files/2016-11/cosmetic_1223_2009_regulation_en_0.pdf",
+    "date": "2009-12-22"
+   },
+   "conclusion": {
+    "text": "CIR's Expert Panel concluded methanol is safe for use as a denaturant in cosmetic alcohol and reaffirmed this conclusion in 2023 after reviewing newer toxicology data.",
+    "quote": "The Panel concluded that based on the data presented in the safety assessment, Methyl Alcohol is safe as used to denature alcohol used in cosmetic products.",
+    "source_label": "CIR Re-Review Summary, Methyl Alcohol (cir-safety.org)",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/RRSum_MethylAlcohol_032023.pdf",
+    "date": "2023-05-31"
+   }
+  },
+  "Mercury and mercury compounds": {
+   "limit": {
+    "text": "EU law allows Thiomersal and Phenylmercuric salts (including borate) only in eye products, at up to 0.007% calculated as mercury, combined if both are present.",
+    "quote": "Eye products 0,007 % (of Hg) If mixed with other mercurial compounds authorised by this Regulation, the maximum concentration of Hg remains fixed at 0,007 %",
+    "source_label": "Regulation (EC) No 1223/2009, Annex V, entries 16 and 17; consolidated text CELEX 02009R1223-20250501, fetched directly from the EUR-Lex/Publications Office cellar (the CosIng CSV mirror shows stale 'Directive' wording for entry 17; the actual consolidated law reads 'Regulation' for both entries 16 and 17)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009R1223",
+    "date": "2013-07-11"
+   },
+   "basis_dose": {
+    "text": "Lacking ethylmercury-specific developmental data, SCCS used methylmercury data in rats, where developmental immune effects occurred at a LOAEL of 0.0003-0.0006 mg Hg/kg bw/day.",
+    "quote": "Developmental effects on the immune system have been noted with meHg in rat models with a LOAEL ranging from 0.0003 to 0.0006 Hg mg/kg bw/day, see also Table 3.4.4-1 above.",
+    "source_label": "SCCS/1686/25, Scientific advice on the safety of Thiomersal and Phenylmercuric salts as preservatives in cosmetic products (final version)",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a351b6bd-c164-416a-8ad4-1fa18a24780d_en?filename=sccs_o_308.pdf",
+    "date": "2026-02-02"
+   },
+   "effects": {
+    "text": "In voles, a single 0.125 mg/kg bw dose of phenylmercuric acetate given on gestation day 8 significantly increased pregnancy implantation loss, per the cited study.",
+    "quote": "Exposure [of Microtus ochrogaster in terms of a single intraperitoneal dose] to 0.125 mg/kg bw PMA at day 8 in the gestation caused significantly increased implantation loss.",
+    "source_label": "SCCS/1686/25, Scientific advice on the safety of Thiomersal and Phenylmercuric salts as preservatives in cosmetic products (final version)",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a351b6bd-c164-416a-8ad4-1fa18a24780d_en?filename=sccs_o_308.pdf",
+    "date": "2026-02-02"
+   },
+   "conclusion": {
+    "text": "SCCS concluded the preservatives are not safe in cosmetic eye products at currently permitted levels, citing both a renal-toxicity margin of safety below 100 and unresolved genotoxicity evidence.",
+    "quote": "Considering that the Margin of Safety based on renal toxicity as the most sensitive endpoint is less than 100, and that genotoxicity evidence is unresolved, the use of 'Thiomersal' and 'Phenylmercuric salts'",
+    "source_label": "SCCS/1686/25, Scientific advice on the safety of Thiomersal and Phenylmercuric salts as preservatives in cosmetic products (final version)",
+    "source_type": "safety assessment",
+    "url": "https://health.ec.europa.eu/document/download/a351b6bd-c164-416a-8ad4-1fa18a24780d_en?filename=sccs_o_308.pdf",
+    "date": "2026-02-02"
+   },
+   "documented_as": "the mercury preservatives thiomersal and phenylmercuric salts"
+  },
+  "quinolin-8-ol; 8-hydroxyquinoline": {
+   "limit": {
+    "text": "Both substances are banned (Annex II), except the sulphate may stabilise hydrogen peroxide at up to 0.3% in rinse-off and 0.03% in leave-on hair products.",
+    "quote": "Stabilizer for hydrogen peroxide in rinse-off hair products Stabilizer for hydrogen peroxide in leave-on hair products (0,3 % as base) (0,03 % as base)",
+    "source_label": "Regulation (EC) No 1223/2009, Annex II entry 395 and Annex III entry 51, as corrected by Commission Regulation (EU) 2019/1966",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1966",
+    "date": "2019-11-27"
+   },
+   "basis_dose": {
+    "text": "CIR's pending 2026 draft risk assessment uses a rabbit developmental-toxicity NOAEL of 5 mg/kg bw/day as its point of departure, though the Panel still calls this NOAEL data insufficient.",
+    "quote": "Since the 5 mg/kg/day dose from the rabbit study was used as the point of departure in the risk assessment, please clearly state that this dose was a NOAEL in the Developmental and Reproductive Toxicity section",
+    "source_label": "CIR, Draft Tentative Amended Report on Oxyquinoline and Oxyquinoline Sulfate",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/Oxyquinoline_2.pdf",
+    "date": "2026-02-17"
+   },
+   "effects": {
+    "text": "In rabbits, the cited study found decreased live-born female offspring at 60 mg/kg bw/day and skeletal malformations from 15 mg/kg bw/day upward.",
+    "quote": "A decreased number of live-born female offspring (at 60 mg/kg bw/d) and skeletal malformations (at ≥ 15 mg/kg) were observed in a prenatal developmental toxicity assay",
+    "source_label": "CIR, Draft Tentative Amended Report on Oxyquinoline and Oxyquinoline Sulfate",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/Oxyquinoline_2.pdf",
+    "date": "2026-02-17"
+   },
+   "conclusion": {
+    "text": "CIR's currently published Final Amended Report still concludes both ingredients are safe only as rinse-off hydrogen-peroxide stabilisers, with leave-on safety data judged insufficient.",
+    "quote": "The CIR Expert Panel concludes that Oxyquinoline and Oxyquinoline Sulfate are safe as used in stabilizers for hydrogen peroxide in rinse-off hair care products.",
+    "source_label": "CIR Final Amended Report on Oxyquinoline and Oxyquinoline Sulfate, issued June 2002 (no day of month stated in source), published 2006, as recapped in the 2026 Draft Tentative Amended Report",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/Oxyquinoline_2.pdf",
+    "date": "2002-06"
+   }
+  },
+  "dibutyl phthalate; DBP": {
+   "limit": {
+    "text": "Dibutyl phthalate has been banned from cosmetic products since Commission Directive 2004/93/EC, now carried as Annex II entry 675 of Regulation (EC) No 1223/2009.",
+    "quote": "675. Dibutyl phthalate (Cas No 84-74-2)",
+    "source_label": "Commission Directive 2004/93/EC of 21 September 2004 amending Council Directive 76/768/EEC Annexes II and III, fetched directly from the EUR-Lex/Publications Office cellar; carried forward as Annex II entry 675 of the consolidated Regulation (EC) No 1223/2009, independently confirmed in that consolidated text",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004L0093",
+    "date": "2004-09-21"
+   },
+   "basis_dose": {
+    "text": "The EU risk assessment derived a developmental-toxicity LOAEL of 2 mg/kg bw/day in rats, since effects were still present at the lowest dose tested.",
+    "quote": "A LOAEL of 2 mg/kg bw/d feed was derived, since the effects were reversible at all dose levels, particularly the lowest dose level (20 mg/kg feed, equivalent to 1.5 to 3 mg/kg bw/day)",
+    "source_label": "SCCP/1016/06, Opinion on phthalates in cosmetic products (adopted 21 March 2007)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "effects": {
+    "text": "In rats, DBP damages developing germ cells in the testis and produces anti-androgenic effects noted in foetuses, per the committee's summary.",
+    "quote": "In adult rats, the testis is the target. DBP and DEHP have effects on germ cell development/depletion, BBP affects epididymal spermatozoa concentration. Anti-androgenic effects have also been noted in foetal rats.",
+    "source_label": "SCCP/1016/06, Opinion on phthalates in cosmetic products (adopted 21 March 2007)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "conclusion": {
+    "text": "CIR's Expert Panel reaffirmed in 2002, without reopening the 1985 Final Report, that DBP, DMP and DEP remain safe for cosmetic use at present practices and concentrations.",
+    "quote": "the CIR Expert Panel concludes that Dibutyl Phthalate, Dimethyl Phthalate, and Diethyl Phthalate are safe for use in cosmetic products in the present practices of use and concentration",
+    "source_label": "CIR Expert Panel meeting discussion of June 18-19, 2002 (reaffirming, with edited wording, the Panel's 1985 Final Report on Dibutyl, Dimethyl and Diethyl Phthalate), recapped in CIR's 2024 DBP re-review Strategy Memo",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/ADMIN_DibutylPhthalate.pdf",
+    "date": "2002-06-19"
+   }
+  },
+  "bis(2-ethylhexyl) phthalate; di-(2-ethylhexyl) phthalate; DEHP": {
+   "limit": {
+    "text": "Annex II entry 677 of the EU Cosmetics Regulation bans DEHP outright in cosmetic products, added by Commission Directive 2004/93/EC of 21 September 2004 implementing the CMR prohibition.",
+    "quote": "677. bis(2-Ethylhexyl) phthalate (Cas No 117-81-7)",
+    "source_label": "Commission Directive 2004/93/EC, Annex, point 2 (OJ L 300, 25.9.2004, p. 13-41; entry 677 on p. L300/22)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004L0093",
+    "date": "2004-09-21"
+   },
+   "basis_dose": {
+    "text": "The SCCP's 2007 phthalates opinion gives a NOAEL of 4.8 mg/kg bw/day for DEHP in rats, from a three-generation reproduction study (Wolfe et al. 2003), confirmed by CSTEE (2004b) and EFSA (2005d).",
+    "quote": "NOAEL: 4.8 mg/kg/d based on testicular effects in a three generation guideline study (Wolfe et al, 2003, cited in DEHP RAR, 2003).",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007 (SCCP, direct predecessor of the SCCS)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "effects": {
+    "text": "SCCP names testicular germ-cell effects in adult rats, alongside developmental toxicity, as DEHP's critical reproductive and developmental endpoint.",
+    "quote": "In adult rats, the testis is the target. DBP and DEHP have effects on germ cell development/depletion, BBP affects epididymal spermatozoa concentration.",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "conclusion": {
+    "text": "For DEHP traces found as perfume contaminants, SCCP calculates a margin of safety of 1920 and concludes traces up to 100 ppm pose no risk, though DEHP use itself remains banned under Annex II.",
+    "quote": "the SCCP is of the opinion that traces of up to 100 ppm total or per substance do not indicate a risk to the health of the consumer",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   }
+  },
+  "BBP; benzyl butyl phthalate e": {
+   "limit": {
+    "text": "Annex II entry 1152 of the EU Cosmetics Regulation currently bans BBP (CAS 85-68-7) outright in cosmetic products as a Category 1B reproductive toxicant.",
+    "quote": "1152,\"Benzyl butyl phthalate (BBP)\",85-68-7,201-622-7,\"(EC) 2009/1223\"",
+    "source_label": "CosIng Annex II export - List of substances prohibited in cosmetic products (European Commission, consolidated)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-10-03"
+   },
+   "basis_dose": {
+    "text": "SCCP's 2007 phthalates opinion gives a NOAEL of 50 mg/kg bw/day for BBP in rats, based on reproductive effects (SCHER 2005, EFSA 2005f); CIR separately lists BBP as reviewed since 1992.",
+    "quote": "NOAEL 50 reproductive effects",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007; corroborated by CIR's Quick Reference Table entry for Butyl Benzyl Phthalate (JACT 11(1):1-23, 1992; IJT 30(Suppl.2):73-127, 2011; IJT 36(Suppl 2):14-58, 2017)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "effects": {
+    "text": "SCCP states BBP's reproductive effect is reduced epididymal spermatozoa concentration in adult rats, part of the broader phthalate testicular-effects pattern.",
+    "quote": "BBP affects epididymal spermatozoa concentration.",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "conclusion": {
+    "text": "SCCP includes BBP among phthalates whose perfume traces up to 100 ppm it finds pose no risk, citing a high margin of safety; CIR separately lists a 'Safe' finding for BBP in cosmetics.",
+    "quote": "the SCCP is of the opinion that traces of up to 100 ppm total or per substance do not indicate a risk to the health of the consumer",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007; CIR Quick Reference Table lists Butyl Benzyl Phthalate finding 'S' (Safe)",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   }
+  },
+  "diisobutyl phthalate": {
+   "limit": {
+    "text": "Annex II entry 1492 of the EU Cosmetics Regulation bans DIBP outright, added by Commission Regulation (EU) 2019/831 which entered into force 20 days after its 23 May 2019 OJ publication.",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union.",
+    "source_label": "Commission Regulation (EU) 2019/831 of 22 May 2019, Article 2 (OJ L 137, 23.5.2019, p. 29)",
+    "source_type": "regulator",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R0831",
+    "date": "2019-05-22"
+   },
+   "basis_dose": {
+    "text": "SCCP's 2007 opinion reports that 600 mg/kg bw/day DIBP given to pregnant rats on gestation days 7-21 produced the developmental effects behind its reproductive-toxicity classification.",
+    "quote": "If dosed at 600 mg/kg bw/day to pregnant rats on gestation days 7 –21, male offspring showed similar testicular and developmental effects as found with DBP and DEHP.",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007, citing Borch et al. 2006",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "effects": {
+    "text": "SCCP states DIBP-exposed male rat offspring showed testicular and developmental effects similar to those caused by DBP and DEHP, after maternal dosing in pregnancy.",
+    "quote": "male offspring showed similar testicular and developmental effects as found with DBP and DEHP",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   },
+   "conclusion": {
+    "text": "SCCP concludes that the low DIBP concentrations found in perfume as unintentional contamination pose no measurable risk, without stating a numeric margin of safety for DIBP specifically.",
+    "quote": "The low concentrations of DIBP (0.2 - 38 mg/kg) found in samples of perfume suggest unintentional exposure from perfume and other cosmetics would pose no measurable risk for the consumer.",
+    "source_label": "SCCP Opinion SCCP/1016/06, 'Opinion on Phthalates in Cosmetic Products', adopted 21 March 2007",
+    "source_type": "safety assessment",
+    "url": "https://ec.europa.eu/health/ph_risk/committees/04_sccp/docs/sccp_o_106.pdf",
+    "date": "2007-03-21"
+   }
+  },
+  "Methyl isobutyl ketone (MIBK)": {
+   "limit": {
+    "text": "Commission Regulation (EU) 2022/1531 added MIBK (CAS 108-10-1) as entry 1689 to Annex II, the list of substances banned in cosmetic products, applying from 17 December 2022.",
+    "quote": "Article 1 shall apply from 17 December 2022.",
+    "source_label": "Commission Regulation (EU) 2022/1531, Publications Office cellar copy (EUR-Lex blocked by WAF challenge)",
+    "source_type": "regulator",
+    "url": "http://publications.europa.eu/resource/celex/32022R1531",
+    "date": "2022-09-15"
+   },
+   "basis_dose": {
+    "text": "In a two-generation inhalation study in Sprague-Dawley rats, the NOAEL for reproductive endpoints was 2000 ppm, the highest concentration tested (reported as an inhalation concentration, not mg/kg bw/day).",
+    "quote": "For reproductive endpoints, the highest concentration tested, 2000 ppm, was considered the no-observed-adverse-effect level (NOAEL).",
+    "source_label": "CIR, Amended Safety Assessment of MIBK as Used in Cosmetics (Draft Final Amended Report, Sept. 2024)",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/MIBK_2.pdf",
+    "date": "2024-09-06"
+   },
+   "effects": {
+    "text": "In Fischer 344 rats, fetal body weight per litter was significantly reduced at both 300 ppm (about 97% of control, p<.05) and 3000 ppm (about 93-94% of control, p<.001), not at 1000 ppm.",
+    "quote": "Fetal body weight was slightly reduced at 300 ppm (≈97% of control values; p < .05), but not at 1000 ppm.",
+    "source_label": "CIR, Amended Safety Assessment of MIBK as Used in Cosmetics (citing Tyl et al. 1987)",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/MIBK.pdf",
+    "date": "2023-05-19"
+   },
+   "conclusion": {
+    "text": "The CIR Expert Panel concluded that MIBK is safe as used in nail polish removers and as an alcohol denaturant in cosmetic products.",
+    "quote": "the CIR Expert Panel concludes that MIBK is safe as used in nail polish removers and as an alcohol denaturant in cosmetic products",
+    "source_label": "CIR, Amended Safety Assessment of MIBK as Used in Cosmetics",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/MIBK.pdf",
+    "date": "2023-05-19"
+   }
+  },
+  "tetrahydrofurfuryl methacrylate": {
+   "limit": {
+    "text": "Tetrahydrofurfuryl methacrylate (CAS 2455-24-5) does not appear in any entry of the EU Cosmetics Regulation's Annexes II-VI (prohibited, restricted, colorants, preservatives, or UV-filter lists) as exported from CosIng on 3 October 2026.",
+    "quote": "LIST OF SUBSTANCES PROHIBITED IN COSMETIC PRODUCTS",
+    "source_label": "CosIng (EU CosIng database), official annex CSV exports, Annexes II-VI (last updated 29/09/2026)",
+    "source_type": "regulator",
+    "url": "https://api.tech.ec.europa.eu/cosing20/1.0/api/annexes/II/export-csv",
+    "date": "2026-10-03"
+   },
+   "basis_dose": {
+    "text": "In a combined OECD TG 422 study in Sprague Dawley rats, the NOAEL for reproductive and developmental toxicity was 0.3 g/kg bw/day for males and 0.12 g/kg bw/day for females and their litters.",
+    "quote": "The NOAEL for reproductive and developmental toxicity was considered to be 0.3 g/kg bw/d for males and 0.12 g/kg bw/d for females and their litters.",
+    "source_label": "CIR, Safety Assessment of Methacrylate Ester Monomers as Used in Cosmetics (Re-Review, Nov. 2021)",
+    "source_type": "safety assessment",
+    "url": "https://cir-safety.org/sites/default/files/Methacrylate%20Ester%20Monomers.pdf",
+    "date": "2021-11-10"
+   },
+   "effects": {
+    "text": "In Sprague Dawley rats, the high dose (0.3 g/kg bw/day) significantly increased pre-birth pup loss and prolonged gestation length, with missing or dead pups noted at that dose.",
+    "quote": "The pre-birth loss was significantly increased at statistical analysis, in high dose females.",
+    "source_label": "CIR, Safety Assessment of Methacrylate Ester Monomers as Used in Cosmetics (Re-Review, Nov. 2021)",
+    "source_type": "safety assessment",
+    "url": "https://cir-safety.org/sites/default/files/Methacrylate%20Ester%20Monomers.pdf",
+    "date": "2021-11-10"
+   },
+   "conclusion": {
+    "text": "The CIR Expert Panel reaffirmed its 2005 conclusion that Tetrahydrofurfuryl Methacrylate is safe as used in nail enhancement products when skin contact is avoided, declining to reopen the assessment at its December 2021 meeting.",
+    "quote": "The Panel determined to not reopen this safety assessment on methacrylate ester monomers and reaffirmed the original conclusion.",
+    "source_label": "CIR, Rereview Summary: Methacrylate Ester Monomers, Admin materials for the 160th Expert Panel Meeting, March 7-8 2022 (recounting the December 2021 decision)",
+    "source_type": "safety assessment",
+    "url": "https://www.cir-safety.org/sites/default/files/Admin_Main.pdf",
+    "date": "2022-03-07"
+   }
+  },
+  "N-carboxymethyliminobis(ethylenenitrilo)tetra(acetic acid)": {
+   "limit": {
+    "text": "Commission Regulation (EU) 2023/1490 added Pentetic Acid (CAS 67-43-6, entry 1720) and Pentasodium Pentetate (CAS 140-01-2, entry 1721) to Annex II, banning both from cosmetic products from 1 December 2023.",
+    "quote": "It shall apply from 1 December 2023.",
+    "source_label": "Commission Regulation (EU) 2023/1490, Publications Office cellar copy (EUR-Lex blocked by WAF challenge)",
+    "source_type": "regulator",
+    "url": "http://publications.europa.eu/resource/celex/32023R1490",
+    "date": "2023-07-19"
+   },
+   "documented_as": "pentetic acid and its pentasodium salt together"
+  },
+  "pentasodium (carboxylatomethyl)iminobis(ethylenenitrilo)tetraacetate": {
+   "limit": {
+    "text": "Commission Regulation (EU) 2023/1490 added Pentetic Acid (CAS 67-43-6, entry 1720) and Pentasodium Pentetate (CAS 140-01-2, entry 1721) to Annex II, banning both from cosmetic products from 1 December 2023.",
+    "quote": "It shall apply from 1 December 2023.",
+    "source_label": "Commission Regulation (EU) 2023/1490, Publications Office cellar copy (EUR-Lex blocked by WAF challenge)",
+    "source_type": "regulator",
+    "url": "http://publications.europa.eu/resource/celex/32023R1490",
+    "date": "2023-07-19"
+   },
+   "documented_as": "pentetic acid and its pentasodium salt together"
+  }
+ }
 }

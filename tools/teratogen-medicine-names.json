@@ -1,0 +1,8135 @@
+{
+ "read": "2026-10-02",
+ "sources": {
+  "rxnorm": "https://www.nlm.nih.gov/research/umls/rxnorm/",
+  "ema": "https://www.ema.europa.eu/en/medicines/download-medicine-data",
+  "ansm": "https://base-donnees-publique.medicaments.gouv.fr/"
+ },
+ "entries": {
+  "1,4-Butanediol dimethanesulfonate (Busulfan)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1828",
+     "name": "busulfan"
+    }
+   ],
+   "generic": [
+    "busulfan"
+   ],
+   "brands_us": [
+    "Busulfex",
+    "Myleran"
+   ],
+   "brands_eu": [
+    "Busilvex",
+    "Busulfan Fresenius Kabi"
+   ],
+   "brands_eu_status": {
+    "Busulfan Fresenius Kabi": "Authorised",
+    "Busilvex": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Busulfan Fresenius Kabi": "https://www.ema.europa.eu/en/medicines/human/EPAR/busulfan-fresenius-kabi",
+    "Busilvex": "https://www.ema.europa.eu/en/medicines/human/EPAR/busilvex"
+   },
+   "substances_fr": [
+    "BUSULFAN"
+   ],
+   "brands_fr": [
+    "BUSULFAN ACCORD",
+    "BUSULFAN FRESENIUS KABI",
+    "BUSULFAN TILLOMED",
+    "MYLERAN"
+   ]
+  },
+  "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6466",
+     "name": "lomustine"
+    }
+   ],
+   "generic": [
+    "lomustine"
+   ],
+   "brands_us": [
+    "Gleostine"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "LOMUSTINE"
+   ],
+   "brands_fr": [
+    "LOMUSTINE MEDAC"
+   ]
+  },
+  "Abiraterone acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of abiraterone",
+   "ingredients": [
+    {
+     "rxcui": "1100072",
+     "name": "abiraterone"
+    }
+   ],
+   "generic": [
+    "abiraterone",
+    "abiraterone acetate"
+   ],
+   "brands_us": [
+    "Abirtega",
+    "Akeega",
+    "Yonsa",
+    "Zytiga"
+   ],
+   "brands_eu": [
+    "Abiraterone Accord",
+    "Abiraterone Krka",
+    "Abiraterone Mylan",
+    "Akeega",
+    "Zytiga"
+   ],
+   "brands_eu_status": {
+    "Akeega": "Authorised",
+    "Abiraterone Mylan": "Authorised",
+    "Abiraterone Krka": "Authorised",
+    "Abiraterone Accord": "Authorised",
+    "Zytiga": "Authorised"
+   },
+   "brands_eu_url": {
+    "Akeega": "https://www.ema.europa.eu/en/medicines/human/EPAR/akeega",
+    "Abiraterone Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-mylan",
+    "Abiraterone Krka": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-krka",
+    "Abiraterone Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-accord",
+    "Zytiga": "https://www.ema.europa.eu/en/medicines/human/EPAR/zytiga"
+   },
+   "substances_fr": [
+    "ABIRATÉRONE",
+    "ACÉTATE D'ABIRATÉRONE"
+   ],
+   "brands_fr": [
+    "ABIRATERONE ACCORD",
+    "ABIRATERONE ACETATE ZYDUS",
+    "ABIRATERONE ARROW",
+    "ABIRATERONE BIOGARAN",
+    "ABIRATERONE CRISTERS",
+    "ABIRATERONE EG",
+    "ABIRATERONE EVOLUGEN",
+    "ABIRATERONE KRKA",
+    "ABIRATERONE MYLAN",
+    "ABIRATERONE SANDOZ",
+    "ABIRATERONE TEVA",
+    "ABIRATERONE ZENTIVA",
+    "AKEEGA",
+    "IBIRON",
+    "ZYTIGA"
+   ]
+  },
+  "Acenocoumarol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "154",
+     "name": "acenocoumarol"
+    }
+   ],
+   "generic": [
+    "acenocoumarol"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉNOCOUMAROL"
+   ],
+   "brands_fr": [
+    "MINI-SINTROM",
+    "SINTROM"
+   ]
+  },
+  "Acetazolamide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "167",
+     "name": "acetazolamide"
+    }
+   ],
+   "generic": [
+    "acetazolamide",
+    "acetazolamide sodium"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTAZOLAMIDE"
+   ],
+   "brands_fr": [
+    "DIAMOX"
+   ]
+  },
+  "Acetohydroxamic acid": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "16728",
+     "name": "acetohydroxamic acid"
+    }
+   ],
+   "generic": [
+    "acetohydroxamic acid"
+   ],
+   "brands_us": [
+    "Lithostat"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Acitretin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "16818",
+     "name": "acitretin"
+    }
+   ],
+   "generic": [
+    "acitretin"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACITRÉTINE"
+   ],
+   "brands_fr": [
+    "SORIATANE"
+   ]
+  },
+  "Actinomycin D": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3100",
+     "name": "dactinomycin"
+    }
+   ],
+   "generic": [
+    "dactinomycin"
+   ],
+   "brands_us": [
+    "Cosmegen"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DACTINOMYCINE"
+   ],
+   "brands_fr": [
+    "COSMEGEN"
+   ]
+  },
+  "Alitretinoin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "81864",
+     "name": "alitretinoin"
+    }
+   ],
+   "generic": [
+    "alitretinoin"
+   ],
+   "brands_us": [
+    "Panretin"
+   ],
+   "brands_eu": [
+    "Panretin"
+   ],
+   "brands_eu_status": {
+    "Panretin": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Panretin": "https://www.ema.europa.eu/en/medicines/human/EPAR/panretin"
+   },
+   "substances_fr": [
+    "ALITRÉTINOÏNE"
+   ],
+   "brands_fr": [
+    "ALIZEM",
+    "TOCTINO"
+   ]
+  },
+  "All-trans retinoic acid": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10753",
+     "name": "tretinoin"
+    }
+   ],
+   "generic": [
+    "tretinoin",
+    "tretinoin microsphere"
+   ],
+   "brands_us": [
+    "Altreno",
+    "Atralin",
+    "Avita",
+    "Refissa",
+    "Renova",
+    "Retin-A",
+    "Tretin X",
+    "Tri-Luma",
+    "Twyneo",
+    "Veltin",
+    "Ziana"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "TRÉTINOÏNE"
+   ],
+   "brands_fr": [
+    "EFFEDERM",
+    "ERYLIK",
+    "KETREL",
+    "RETACNYL",
+    "VESANOID",
+    "ZANEA"
+   ]
+  },
+  "Alprazolam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "596",
+     "name": "alprazolam"
+    }
+   ],
+   "generic": [
+    "alprazolam"
+   ],
+   "brands_us": [
+    "Xanax"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ALPRAZOLAM"
+   ],
+   "brands_fr": [
+    "ALPRAZOLAM ARROW",
+    "ALPRAZOLAM ARROW LAB",
+    "ALPRAZOLAM BIOGARAN",
+    "ALPRAZOLAM CRISTERS",
+    "ALPRAZOLAM EG",
+    "ALPRAZOLAM EVOLUGEN PHARMA",
+    "ALPRAZOLAM HCS",
+    "ALPRAZOLAM SANDOZ",
+    "ALPRAZOLAM TEVA",
+    "ALPRAZOLAM VIATRIS",
+    "ALPRAZOLAM ZENTIVA",
+    "ALPRAZOLAM ZYDUS",
+    "ALPRAZOLAM ZYDUS FRANCE",
+    "XANAX"
+   ]
+  },
+  "Altretamine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "5296",
+     "name": "altretamine"
+    }
+   ],
+   "generic": [
+    "altretamine"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ALTRÉTAMINE"
+   ],
+   "brands_fr": [
+    "HEXASTAT"
+   ]
+  },
+  "Amantadine hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of amantadine",
+   "ingredients": [
+    {
+     "rxcui": "620",
+     "name": "amantadine"
+    }
+   ],
+   "generic": [
+    "amantadine",
+    "amantadine hydrochloride",
+    "amantadine sulfate"
+   ],
+   "brands_us": [
+    "Gocovri",
+    "Osmolex"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE D'AMANTADINE"
+   ],
+   "brands_fr": [
+    "MANTADIX"
+   ]
+  },
+  "Amikacin sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of amikacin",
+   "ingredients": [
+    {
+     "rxcui": "641",
+     "name": "amikacin"
+    }
+   ],
+   "generic": [
+    "amikacin",
+    "amikacin liposomal",
+    "amikacin sulfate",
+    "amikacin sulfate, liposomal"
+   ],
+   "brands_us": [
+    "Arikayce"
+   ],
+   "brands_eu": [
+    "Arikayce",
+    "Arikayce liposomal"
+   ],
+   "brands_eu_status": {
+    "Arikayce liposomal": "Authorised",
+    "Arikayce": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Arikayce liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce-liposomal",
+    "Arikayce": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce"
+   },
+   "substances_fr": [
+    "AMIKACINE",
+    "AMIKACINE BASE",
+    "SULFATE D'AMIKACINE"
+   ],
+   "brands_fr": [
+    "AMIKACINE PANPHARMA",
+    "AMIKACINE STRAGEN",
+    "AMIKACINE VIATRIS",
+    "ARIKAYCE LIPOSOMAL"
+   ]
+  },
+  "Aminoglutethimide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "677",
+     "name": "aminoglutethimide"
+    }
+   ],
+   "generic": [
+    "aminoglutethimide"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Aminoglycosides": {
+   "note": "",
+   "resolved_as": "class J01GA, J01GB",
+   "ingredients": [
+    {
+     "rxcui": "10109",
+     "name": "streptomycin"
+    },
+    {
+     "rxcui": "10627",
+     "name": "tobramycin"
+    },
+    {
+     "rxcui": "1596450",
+     "name": "gentamicin"
+    },
+    {
+     "rxcui": "2049549",
+     "name": "plazomicin"
+    },
+    {
+     "rxcui": "26397",
+     "name": "arbekacin"
+    },
+    {
+     "rxcui": "3328",
+     "name": "dibekacin"
+    },
+    {
+     "rxcui": "6099",
+     "name": "kanamycin"
+    },
+    {
+     "rxcui": "641",
+     "name": "amikacin"
+    },
+    {
+     "rxcui": "7299",
+     "name": "neomycin"
+    },
+    {
+     "rxcui": "7337",
+     "name": "netilmicin"
+    },
+    {
+     "rxcui": "9806",
+     "name": "sisomicin"
+    }
+   ],
+   "generic": [
+    "amikacin",
+    "amikacin liposomal",
+    "amikacin sulfate",
+    "amikacin sulfate, liposomal",
+    "arbekacin",
+    "arbekacin sulfate",
+    "dibekacin",
+    "gentamicin",
+    "gentamicin sulfate",
+    "kanamycin",
+    "kanamycin A sulfate",
+    "kanamycin sulfate",
+    "neomycin",
+    "neomycin sulfate",
+    "netilmicin",
+    "netilmicin sulfate",
+    "plazomicin",
+    "plazomicin sulfate",
+    "sisomicin",
+    "sisomicin sulfate",
+    "streptomycin",
+    "streptomycin sulfate",
+    "tobramycin",
+    "tobramycin sulfate"
+   ],
+   "brands_us": [
+    "Arikayce",
+    "Bethkis",
+    "Cortisporin",
+    "Cortisporin-TC",
+    "Cuadriderma",
+    "Garasol",
+    "Genone",
+    "Gentacalm",
+    "Gentak",
+    "GentaVed",
+    "Kitabis",
+    "Lanabiotic",
+    "Maxitrol",
+    "Mometamax",
+    "Mometamax Single",
+    "Mometavet",
+    "Motazol",
+    "Mycitracin Plus Pain Reliever",
+    "Neo-Polycin",
+    "Neo-Polycin HC",
+    "Neo-Predef",
+    "Neo-Synalar",
+    "Neovet",
+    "Oticin HC",
+    "Otomax",
+    "Poly-Dex",
+    "Spectrocin Plus",
+    "Tobi",
+    "Tobradex",
+    "Tobrex",
+    "Tresaderm",
+    "Tri Biozene",
+    "Zemdri",
+    "Zylet"
+   ],
+   "brands_eu": [
+    "Arikayce",
+    "Arikayce liposomal",
+    "Tobi Podhaler",
+    "Vantobra",
+    "Vantobra (previously Tobramycin PARI)",
+    "Zemdri"
+   ],
+   "brands_eu_status": {
+    "Arikayce liposomal": "Authorised",
+    "Vantobra (previously Tobramycin PARI)": "Authorised",
+    "Tobi Podhaler": "Authorised",
+    "Zemdri": "Application withdrawn",
+    "Vantobra": "Withdrawn",
+    "Arikayce": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Arikayce liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce-liposomal",
+    "Vantobra (previously Tobramycin PARI)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra",
+    "Tobi Podhaler": "https://www.ema.europa.eu/en/medicines/human/EPAR/tobi-podhaler",
+    "Zemdri": "https://www.ema.europa.eu/en/medicines/human/EPAR/zemdri",
+    "Vantobra": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra0",
+    "Arikayce": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce"
+   },
+   "substances_fr": [
+    "AMIKACINE",
+    "AMIKACINE BASE",
+    "GENTAMICINE",
+    "GENTAMICINE (SULFATE DE)",
+    "NÉOMYCINE (SULFATE DE)",
+    "NÉTILMICINE",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 1 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 10A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 11A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 12F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 14 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 15B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 17F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 18C (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 2 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 20 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 22F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 23F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 3 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 33F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 4 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 5 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 6B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 7F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 8 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9N (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9V (POLYOSIDES DE)",
+    "STREPTOZOCINE",
+    "SULFATE D'AMIKACINE",
+    "SULFATE DE GENTAMICINE",
+    "SULFATE DE NÉOMYCINE",
+    "SULFATE DE NÉTILMICINE",
+    "SULFATE DE TOBRAMYCINE",
+    "TOBRAMYCINE"
+   ],
+   "brands_fr": [
+    "AMIKACINE PANPHARMA",
+    "AMIKACINE STRAGEN",
+    "AMIKACINE VIATRIS",
+    "ANETENA",
+    "ANTIBIO SYNALAR",
+    "ARIKAYCE LIPOSOMAL",
+    "CHIBRO CADRON",
+    "CIDERMEX",
+    "GENTAMICINE PANPHARMA",
+    "INDOBIOTIC",
+    "MAXIDROL",
+    "NEBCINE",
+    "NETAXEN",
+    "PANOTILE",
+    "PNEUMOVAX",
+    "POLYDEXA",
+    "POLYGYNAX",
+    "POLYGYNAX VIRGO",
+    "TERGYNAN",
+    "TOBI",
+    "TOBI PODHALER",
+    "TOBRABACT",
+    "TOBRADEX",
+    "TOBRAMYCINE SUN",
+    "TOBRAMYCINE ZENTIVA",
+    "TOBREX",
+    "TODEXAL",
+    "TRUE TEST",
+    "ZANOSAR"
+   ]
+  },
+  "Aminopterin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1440264",
+     "name": "aminopterin"
+    }
+   ],
+   "generic": [
+    "aminopterin",
+    "aminopterin sodium"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Amiodarone hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of amiodarone",
+   "ingredients": [
+    {
+     "rxcui": "703",
+     "name": "amiodarone"
+    }
+   ],
+   "generic": [
+    "amiodarone",
+    "amiodarone hydrochloride"
+   ],
+   "brands_us": [
+    "Nexterone",
+    "Pacerone"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "AMIODARONE (CHLORHYDRATE D')",
+    "CHLORHYDRATE D'AMIODARONE"
+   ],
+   "brands_fr": [
+    "AMIODARONE ALMUS",
+    "AMIODARONE ARROW LAB",
+    "AMIODARONE BIOGARAN",
+    "AMIODARONE CRISTERS",
+    "AMIODARONE EG",
+    "AMIODARONE TEVA",
+    "AMIODARONE VIATRIS",
+    "AMIODARONE ZENTIVA",
+    "CORDARONE"
+   ]
+  },
+  "Amoxapine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "722",
+     "name": "amoxapine"
+    }
+   ],
+   "generic": [
+    "amoxapine"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "AMOXAPINE"
+   ],
+   "brands_fr": [
+    "DEFANYL"
+   ]
+  },
+  "Angiotensin converting enzyme  (ACE) inhibitors": {
+   "note": "",
+   "resolved_as": "class C09AA",
+   "ingredients": [
+    {
+     "rxcui": "18867",
+     "name": "benazepril"
+    },
+    {
+     "rxcui": "1998",
+     "name": "captopril"
+    },
+    {
+     "rxcui": "21102",
+     "name": "cilazapril"
+    },
+    {
+     "rxcui": "29046",
+     "name": "lisinopril"
+    },
+    {
+     "rxcui": "30131",
+     "name": "moexipril"
+    },
+    {
+     "rxcui": "35208",
+     "name": "quinapril"
+    },
+    {
+     "rxcui": "35296",
+     "name": "ramipril"
+    },
+    {
+     "rxcui": "36908",
+     "name": "spirapril"
+    },
+    {
+     "rxcui": "3827",
+     "name": "enalapril"
+    },
+    {
+     "rxcui": "38454",
+     "name": "trandolapril"
+    },
+    {
+     "rxcui": "39990",
+     "name": "zofenopril"
+    },
+    {
+     "rxcui": "50166",
+     "name": "fosinopril"
+    },
+    {
+     "rxcui": "54552",
+     "name": "perindopril"
+    },
+    {
+     "rxcui": "60245",
+     "name": "imidapril"
+    }
+   ],
+   "generic": [
+    "benazepril",
+    "benazepril hydrochloride",
+    "benazeprilat",
+    "captopril",
+    "cilazapril",
+    "enalapril",
+    "enalapril maleate",
+    "fosinopril",
+    "fosinopril sodium",
+    "imidapril",
+    "imidapril hydrochloride",
+    "lisinopril",
+    "lisinopril anhydrous",
+    "moexipril",
+    "moexipril hydrochloride",
+    "perindopril",
+    "perindopril arginine",
+    "perindopril erbumine",
+    "quinapril",
+    "quinapril hydrochloride",
+    "ramipril",
+    "spirapril",
+    "trandolapril",
+    "zofenopril",
+    "zofenopril calcium"
+   ],
+   "brands_us": [
+    "Accupril",
+    "Accuretic",
+    "Aceon",
+    "Altace",
+    "Cardalis",
+    "Epaned",
+    "Lotensin",
+    "Lotensin HCT",
+    "Lotrel",
+    "Prestalia",
+    "Prinivil",
+    "Qbrelis",
+    "Vaseretic",
+    "Vasotec",
+    "Vostally",
+    "Zestoretic",
+    "Zestril"
+   ],
+   "brands_eu": [
+    "Aqumeldi"
+   ],
+   "brands_eu_status": {
+    "Aqumeldi": "Authorised"
+   },
+   "brands_eu_url": {
+    "Aqumeldi": "https://www.ema.europa.eu/en/medicines/human/EPAR/aqumeldi"
+   },
+   "substances_fr": [
+    "BÉNAZÉPRIL (CHLORHYDRATE DE)",
+    "CAPTOPRIL",
+    "CHLORHYDRATE DE BÉNAZÉPRIL",
+    "CHLORHYDRATE DE QUINAPRIL",
+    "FOSINOPRIL SODIQUE",
+    "LISINOPRIL",
+    "LISINOPRIL ANHYDRE",
+    "LISINOPRIL DIHYDRATÉ",
+    "MALÉATE D'ÉNALAPRIL",
+    "PERINDOPRIL ERBUMINE",
+    "PÉRINDOPRIL",
+    "PÉRINDOPRIL ARGININE",
+    "PÉRINDOPRIL ERBUMINE",
+    "PÉRINDOPRIL TERT-BUTYLAMINE",
+    "QUINAPRIL (CHLORHYDRATE DE)",
+    "QUINAPRIL BASE",
+    "RAMIPRIL",
+    "TERT-BUTYLAMINE DE PÉRINDOPRIL",
+    "TOSILATE DE PÉRINDOPRIL",
+    "TRANDOLAPRIL",
+    "ZOFÉNOPRIL",
+    "ZOFÉNOPRIL CALCIQUE",
+    "ÉNALAPRIL",
+    "ÉNALAPRIL (MALÉATE D')"
+   ],
+   "brands_fr": [
+    "ACUILIX",
+    "ACUITEL",
+    "ARLUNIS",
+    "BENAZEPRIL ARROW",
+    "BENAZEPRIL EG",
+    "BENAZEPRIL HYDROCHLOROTHIAZIDE EG",
+    "BENAZEPRIL/HYDROCHLOROTHIAZIDE ARROW",
+    "BIPRETERAX",
+    "CAPTOPRIL ARROW",
+    "CAPTOPRIL BIOGARAN",
+    "CAPTOPRIL EG",
+    "CAPTOPRIL HYDROCHLOROTHIAZIDE ARROW",
+    "CAPTOPRIL VIATRIS",
+    "CAPTOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+    "CAPTOPRIL/HYDROCHLOROTHIAZIDE EG",
+    "CAPTOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+    "CIBADREX",
+    "CO-RENITEC",
+    "COGYR",
+    "COSIMPREL",
+    "COTRIATEC",
+    "COVERAM",
+    "COVERSYL",
+    "ENALAPRIL ACCORD",
+    "ENALAPRIL ARROW LAB",
+    "ENALAPRIL BIOGARAN",
+    "ENALAPRIL EG",
+    "ENALAPRIL EVOLUGEN",
+    "ENALAPRIL SANDOZ",
+    "ENALAPRIL TEVA SANTE",
+    "ENALAPRIL VIATRIS",
+    "ENALAPRIL ZENTIVA",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE ARROW",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE EG",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE TEVA",
+    "ENALAPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+    "ENALAPRIL/LERCANIDIPINE ARROW",
+    "ENALAPRIL/LERCANIDIPINE BIOGARAN",
+    "ENALAPRIL/LERCANIDIPINE BOUCHARA-RECORDATI",
+    "ENALAPRIL/LERCANIDIPINE CRISTERS",
+    "ENALAPRIL/LERCANIDIPINE EG",
+    "ENALAPRIL/LERCANIDIPINE KRKA",
+    "ENALAPRIL/LERCANIDIPINE TEVA",
+    "ENALAPRIL/LERCANIDIPINE VIATRIS",
+    "ENALAPRIL/LERCANIDIPINE ZENTIVA",
+    "FOSINOPRIL ARROW GENERIQUES",
+    "FOSINOPRIL ARROW LAB",
+    "FOSINOPRIL BIOGARAN",
+    "FOSINOPRIL HYDROCHLOROTHIAZIDE ARROW",
+    "FOSINOPRIL TEVA",
+    "FOSINOPRIL ZENTIVA",
+    "FOSINOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+    "FOSINOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+    "LERCAPRESS",
+    "LISINOPRIL ARROW",
+    "LISINOPRIL BIOGARAN",
+    "LISINOPRIL EG",
+    "LISINOPRIL TEVA",
+    "LISINOPRIL VIATRIS",
+    "LISINOPRIL ZENTIVA",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE ARROW LAB",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE EG",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE TEVA",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+    "LISINOPRIL/HYDROCHLOROTHIAZIDE ZENTIVA",
+    "NOYADA",
+    "ODRIK",
+    "PARATERAX",
+    "PERINDOPRIL ARGININE BIOGARAN",
+    "PERINDOPRIL ARGININE EG",
+    "PERINDOPRIL ARGININE HCS",
+    "PERINDOPRIL ARGININE SERVIER",
+    "PERINDOPRIL ARGININE VIATRIS",
+    "PERINDOPRIL ARGININE ZENTIVA",
+    "PERINDOPRIL ARGININE/AMLODIPINE HCS",
+    "PERINDOPRIL ARGININE/AMLODIPINE SERVIER",
+    "PERINDOPRIL ARGININE/INDAPAMIDE BIOGARAN",
+    "PERINDOPRIL ARGININE/INDAPAMIDE HCS",
+    "PERINDOPRIL ARGININE/INDAPAMIDE SERVIER",
+    "PERINDOPRIL ARGININE/INDAPAMIDE VIATRIS",
+    "PERINDOPRIL ARROW",
+    "PERINDOPRIL BIOGARAN",
+    "PERINDOPRIL KRKA",
+    "PERINDOPRIL SANDOZ",
+    "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE ARROW",
+    "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE CRISTERS",
+    "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE EG",
+    "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE VIATRIS",
+    "PERINDOPRIL TERT-BUTYLAMINE/INDAPAMIDE CRISTERS",
+    "PERINDOPRIL TEVA SANTE",
+    "PERINDOPRIL TOSILATE CRISTERS",
+    "PERINDOPRIL TOSILATE TEVA",
+    "PERINDOPRIL TOSILATE/AMLODIPINE TEVA",
+    "PERINDOPRIL TOSILATE/INDAPAMIDE TEVA",
+    "PERINDOPRIL VIATRIS",
+    "PERINDOPRIL ZYDUS",
+    "PERINDOPRIL/AMLODIPINE HCS",
+    "PERINDOPRIL/AMLODIPINE ZENTIVA",
+    "PERINDOPRIL/INDAPAMIDE BIOGARAN",
+    "PERINDOPRIL/INDAPAMIDE EG",
+    "PERINDOPRIL/INDAPAMIDE KRKA",
+    "PERINDOPRIL/INDAPAMIDE SANDOZ",
+    "PERINDOPRIL/INDAPAMIDE VIATRIS",
+    "PERINDOPRIL/INDAPAMIDE ZENTIVA",
+    "PERINDOPRIL/INDAPAMIDE ZYDUS FRANCE",
+    "PREMINOR",
+    "PRETERAX",
+    "PRETERVAL",
+    "QUINAPRIL BIOGARAN",
+    "QUINAPRIL HYDROCHLOROTHIAZIDE EG",
+    "QUINAPRIL/HYDROCHLOROTHIAZIDE ARROW LAB",
+    "RAMIPRIL / HYDROCHLOROTHIAZIDE BIOGARAN",
+    "RAMIPRIL ALMUS",
+    "RAMIPRIL ARROW GENERIQUES",
+    "RAMIPRIL ARROW LAB",
+    "RAMIPRIL BIOGARAN",
+    "RAMIPRIL CRISTERS PHARMA",
+    "RAMIPRIL EG",
+    "RAMIPRIL EVOLUGEN",
+    "RAMIPRIL KRKA",
+    "RAMIPRIL SANDOZ",
+    "RAMIPRIL TEVA SANTE",
+    "RAMIPRIL VIATRIS",
+    "RAMIPRIL ZENTIVA",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE ARROW",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE EG",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE TEVA",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+    "RAMIPRIL/HYDROCHLOROTHIAZIDE ZENTIVA",
+    "RENITEC",
+    "TARKA LP",
+    "TRANDOLAPRIL BIOGARAN",
+    "TRANDOLAPRIL VIATRIS",
+    "TRIATEC",
+    "TRIPLIXAM",
+    "TRIVERAM",
+    "ZANEXTRA",
+    "ZESTORETIC",
+    "ZESTRIL",
+    "ZOFENIL",
+    "ZOFENILDUO",
+    "ZOFENOPRIL VIATRIS"
+   ]
+  },
+  "Anisindione": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "17941",
+     "name": "anisindione"
+    }
+   ],
+   "generic": [
+    "anisindione"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1191",
+     "name": "aspirin"
+    }
+   ],
+   "generic": [
+    "acetylsalicylate sodium",
+    "aspirin"
+   ],
+   "brands_us": [
+    "Alka-Seltzer",
+    "Anacin",
+    "Anacin Advanced Headache Formula",
+    "Anacin Aspirin Regimen",
+    "Arthriten Inflammatory Pain",
+    "Ascomp",
+    "Aspergum",
+    "Aspi-Cor",
+    "Backaid IPF",
+    "Bayer Aspirin",
+    "BC Arthritis",
+    "BC Original Formula",
+    "Bromo Seltzer Antacid Pain Reliever",
+    "Bufferin",
+    "Durlaza",
+    "Ecotrin",
+    "Equagesic",
+    "Exaprin",
+    "Exaprin Plus",
+    "Excedrin",
+    "Excedrin PM Triple Action",
+    "Miniprin",
+    "Norgesic",
+    "Norwich Aspirin",
+    "Orphengesic",
+    "Pamprin Max Formula",
+    "Saleto",
+    "St. Joseph Aspirin",
+    "Stanback Headache Powder Reformulated Jan 2011",
+    "Vanquish",
+    "Vazalore",
+    "Yosprala"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACIDE ACÉTYLSALICYLIQUE",
+    "ACÉTYLSALICYLIQUE (ACIDE)"
+   ],
+   "brands_fr": [
+    "ACIDE ACETYLSALICYLIQUE BIOGARAN",
+    "ACIDE ACETYLSALICYLIQUE PANPHARMA",
+    "ACIDE ACETYLSALICYLIQUE SANDOZ",
+    "ACIDE ACETYLSALICYLIQUE VIATRIS",
+    "ACTRON",
+    "ALKA SELTZER",
+    "ASARED",
+    "ASPEGIC",
+    "ASPEGIC ADULTES",
+    "ASPEGIC ENFANTS",
+    "ASPEGIC NOURRISSONS",
+    "ASPIRINE ARROW",
+    "ASPIRINE DU RHONE",
+    "ASPIRINE PROTECT",
+    "ASPIRINE UPSA",
+    "ASPIRINE UPSA TAMPONNEE EFFERVESCENTE",
+    "ASPIRINE UPSA VITAMINEE C TAMPONNEE EFFERVESCENTE",
+    "ASPRO",
+    "ASPRO CAFEINE",
+    "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE BIOGARAN",
+    "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE EG",
+    "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE VIATRIS",
+    "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE ZENTIVA",
+    "DUOPLAVIN",
+    "KARDEGIC",
+    "MIGPRIV",
+    "RESITUNE"
+   ]
+  },
+  "Atenolol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1202",
+     "name": "atenolol"
+    }
+   ],
+   "generic": [
+    "atenolol"
+   ],
+   "brands_us": [
+    "Tenoretic",
+    "Tenormin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ATÉNOLOL"
+   ],
+   "brands_fr": [
+    "ATENOLOL ACCORD HEALTHCARE",
+    "ATENOLOL ARROW",
+    "ATENOLOL BIOGARAN",
+    "ATENOLOL CRISTERS",
+    "ATENOLOL EG",
+    "ATENOLOL EVOLUGEN PHARMA",
+    "ATENOLOL SANDOZ",
+    "ATENOLOL SFDB",
+    "ATENOLOL TEVA",
+    "ATENOLOL VIATRIS",
+    "ATENOLOL ZENTIVA",
+    "ATENOLOL ZYDUS",
+    "ATENOLOL/NIFEDIPINE BIOGARAN",
+    "ATENOLOL/NIFEDIPINE VIATRIS",
+    "TENORETIC",
+    "TENORMINE"
+   ]
+  },
+  "Auranofin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1227",
+     "name": "auranofin"
+    }
+   ],
+   "generic": [
+    "auranofin"
+   ],
+   "brands_us": [
+    "Ridaura"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Azathioprine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1256",
+     "name": "azathioprine"
+    }
+   ],
+   "generic": [
+    "azathioprine",
+    "azathioprine sodium"
+   ],
+   "brands_us": [
+    "Azasan",
+    "Imuran"
+   ],
+   "brands_eu": [
+    "Jayempi"
+   ],
+   "brands_eu_status": {
+    "Jayempi": "Authorised"
+   },
+   "brands_eu_url": {
+    "Jayempi": "https://www.ema.europa.eu/en/medicines/human/EPAR/jayempi"
+   },
+   "substances_fr": [
+    "AZATHIOPRINE"
+   ],
+   "brands_fr": [
+    "AZATHIOPRINE EG",
+    "AZATHIOPRINE TEVA",
+    "AZATHIOPRINE VIATRIS",
+    "IMUREL",
+    "JAYEMPI"
+   ]
+  },
+  "Barbiturates": {
+   "note": "",
+   "resolved_as": "class N03AA, N05CA",
+   "ingredients": [
+    {
+     "rxcui": "46795",
+     "name": "barbexaclone"
+    },
+    {
+     "rxcui": "6758",
+     "name": "mephobarbital"
+    },
+    {
+     "rxcui": "6825",
+     "name": "metharbital"
+    },
+    {
+     "rxcui": "8134",
+     "name": "phenobarbital"
+    },
+    {
+     "rxcui": "8691",
+     "name": "primidone"
+    },
+    {
+     "rxcui": "10493",
+     "name": "thiopental"
+    },
+    {
+     "rxcui": "1325",
+     "name": "barbital"
+    },
+    {
+     "rxcui": "17381",
+     "name": "aprobarbital"
+    },
+    {
+     "rxcui": "19874",
+     "name": "butobarbital"
+    },
+    {
+     "rxcui": "19928",
+     "name": "butylvinal"
+    },
+    {
+     "rxcui": "2978",
+     "name": "cyclobarbital"
+    },
+    {
+     "rxcui": "516",
+     "name": "allobarbital"
+    },
+    {
+     "rxcui": "5302",
+     "name": "hexobarbital"
+    },
+    {
+     "rxcui": "6847",
+     "name": "methohexital"
+    },
+    {
+     "rxcui": "719",
+     "name": "amobarbital"
+    },
+    {
+     "rxcui": "8004",
+     "name": "pentobarbital"
+    },
+    {
+     "rxcui": "83885",
+     "name": "proxibarbal"
+    },
+    {
+     "rxcui": "89810",
+     "name": "talbutal"
+    },
+    {
+     "rxcui": "89811",
+     "name": "vinbarbital"
+    },
+    {
+     "rxcui": "9624",
+     "name": "secobarbital"
+    }
+   ],
+   "generic": [
+    "allobarbital",
+    "amobarbital",
+    "amobarbital sodium",
+    "aprobarbital",
+    "barbexaclone",
+    "barbital",
+    "barbital sodium",
+    "butobarbital",
+    "butylvinal",
+    "cyclobarbital",
+    "hexobarbital",
+    "mephobarbital",
+    "metharbital",
+    "methohexital",
+    "methohexital sodium",
+    "pentobarbital",
+    "pentobarbital sodium",
+    "phenobarbital",
+    "phenobarbital sodium",
+    "primidone",
+    "proxibarbal",
+    "secobarbital",
+    "secobarbital sodium",
+    "talbutal",
+    "thiopental",
+    "thiopental sodium",
+    "vinbarbital"
+   ],
+   "brands_us": [
+    "Amytal",
+    "Brevital",
+    "Donnatal",
+    "Euthaphen",
+    "Euthasol",
+    "Fatal-Plus",
+    "Fidoquel",
+    "Mysoline",
+    "Nembutal",
+    "Pentobarsol",
+    "Phenohytro",
+    "Sezaby"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PHÉNOBARBITAL",
+    "PHÉNOBARBITAL SODIQUE",
+    "PRIMIDONE",
+    "THIOPENTAL ET CARBONATE SODIQUES",
+    "THIOPENTAL SODIQUE"
+   ],
+   "brands_fr": [
+    "ALEPSAL",
+    "GARDENAL",
+    "MYSOLINE",
+    "PHENOBARBITAL RICHARD",
+    "THIOPENTAL PANPHARMA",
+    "THIOPENTAL VUAB"
+   ]
+  },
+  "Beclomethasone dipropionate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of beclomethasone",
+   "ingredients": [
+    {
+     "rxcui": "1347",
+     "name": "beclomethasone"
+    }
+   ],
+   "generic": [
+    "beclomethasone",
+    "beclomethasone 17-monopropionate",
+    "beclomethasone dipropionate",
+    "beclomethasone dipropionate monohydrate"
+   ],
+   "brands_us": [
+    "Beconase",
+    "Qnasl",
+    "Qvar",
+    "Trimbow"
+   ],
+   "brands_eu": [
+    "orBec"
+   ],
+   "brands_eu_status": {
+    "orBec": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "orBec": "https://www.ema.europa.eu/en/medicines/human/EPAR/orbec"
+   },
+   "substances_fr": [
+    "BÉCLOMÉTASONE (DIPROPIONATE DE)",
+    "BÉCLOMÉTASONE BASE",
+    "BÉCLOMÉTASONE DIPROPIONATE",
+    "DIPROPIONATE DE BÉCLOMÉTASONE",
+    "DIPROPIONATE DE BÉCLOMÉTASONE ANHYDRE",
+    "DIPROPIONATE DE BÉCLOMÉTASONE MONOHYDRATÉ",
+    "DIPROPIONATE DE BÉCLOMÉTHASONE"
+   ],
+   "brands_fr": [
+    "BECLO-RHINO",
+    "BECLOJET",
+    "BECLOMETASONE CHIESI",
+    "BECLOMETASONE TEVA",
+    "BECLOMETASONE/FORMOTEROL BIOGARAN",
+    "BECLOMETASONE/FORMOTEROL EG",
+    "BECLOMETASONE/FORMOTEROL TEVA",
+    "BECLOMETASONE/FORMOTEROL VIATRIS",
+    "BECLOMETASONE/FORMOTEROL ZENTIVA",
+    "BECLOSPIN",
+    "BECLOSPRAY",
+    "BECONASE",
+    "BECOTIDE",
+    "BEMEDREX EASYHALER",
+    "ECOBEC",
+    "FORMODUAL",
+    "FORMODUAL NEXTHALER",
+    "HUMEX RHUME DES FOINS A LA BECLOMETASONE",
+    "INNOVAIR",
+    "INNOVAIR NEXTHALER",
+    "MIFLASONE",
+    "QVAR AUTOHALER",
+    "QVARSPRAY",
+    "RHINOMAXIL",
+    "RINOCLENIL",
+    "TRIMBOW"
+   ]
+  },
+  "Benzodiazepines": {
+   "note": "",
+   "resolved_as": "class N05BA, N05CD, N03AE",
+   "ingredients": [
+    {
+     "rxcui": "1749",
+     "name": "bromazepam"
+    },
+    {
+     "rxcui": "21241",
+     "name": "clobazam"
+    },
+    {
+     "rxcui": "21311",
+     "name": "cloxazolam"
+    },
+    {
+     "rxcui": "2356",
+     "name": "chlordiazepoxide"
+    },
+    {
+     "rxcui": "24524",
+     "name": "ethyl loflazepate"
+    },
+    {
+     "rxcui": "2622",
+     "name": "clotiazepam"
+    },
+    {
+     "rxcui": "26412",
+     "name": "halazepam"
+    },
+    {
+     "rxcui": "28181",
+     "name": "ketazolam"
+    },
+    {
+     "rxcui": "3155",
+     "name": "nordazepam"
+    },
+    {
+     "rxcui": "3322",
+     "name": "diazepam"
+    },
+    {
+     "rxcui": "38365",
+     "name": "tofisopam"
+    },
+    {
+     "rxcui": "596",
+     "name": "alprazolam"
+    },
+    {
+     "rxcui": "6470",
+     "name": "lorazepam"
+    },
+    {
+     "rxcui": "6680",
+     "name": "medazepam"
+    },
+    {
+     "rxcui": "7781",
+     "name": "oxazepam"
+    },
+    {
+     "rxcui": "8627",
+     "name": "prazepam"
+    },
+    {
+     "rxcui": "10355",
+     "name": "temazepam"
+    },
+    {
+     "rxcui": "10767",
+     "name": "triazolam"
+    },
+    {
+     "rxcui": "19790",
+     "name": "brotizolam"
+    },
+    {
+     "rxcui": "2383941",
+     "name": "remimazolam"
+    },
+    {
+     "rxcui": "28894",
+     "name": "lormetazepam"
+    },
+    {
+     "rxcui": "35185",
+     "name": "quazepam"
+    },
+    {
+     "rxcui": "38555",
+     "name": "triazulenone"
+    },
+    {
+     "rxcui": "4077",
+     "name": "estazolam"
+    },
+    {
+     "rxcui": "4460",
+     "name": "flunitrazepam"
+    },
+    {
+     "rxcui": "4501",
+     "name": "flurazepam"
+    },
+    {
+     "rxcui": "6960",
+     "name": "midazolam"
+    },
+    {
+     "rxcui": "7440",
+     "name": "nitrazepam"
+    },
+    {
+     "rxcui": "2598",
+     "name": "clonazepam"
+    }
+   ],
+   "generic": [
+    "alprazolam",
+    "bromazepam",
+    "brotizolam",
+    "chlordiazepoxide",
+    "chlordiazepoxide hydrochloride",
+    "clobazam",
+    "clonazepam",
+    "clotiazepam",
+    "cloxazolam",
+    "diazepam",
+    "estazolam",
+    "ethyl loflazepate",
+    "flunitrazepam",
+    "flurazepam",
+    "flurazepam hydrochloride",
+    "halazepam",
+    "ketazolam",
+    "loprazolam mesylate",
+    "lorazepam",
+    "lormetazepam",
+    "medazepam",
+    "midazolam",
+    "midazolam hydrochloride",
+    "midazolam maleate",
+    "nitrazepam",
+    "nordazepam",
+    "oxazepam",
+    "prazepam",
+    "quazepam",
+    "remimazolam",
+    "remimazolam besylate",
+    "temazepam",
+    "tofisopam",
+    "triazolam",
+    "triazulenone"
+   ],
+   "brands_us": [
+    "Ativan",
+    "Byfavo",
+    "Diastat",
+    "Doral",
+    "Halcion",
+    "Klonopin",
+    "Libervant",
+    "Librax",
+    "Loreev",
+    "Nayzilam",
+    "Onfi",
+    "Restoril",
+    "Sympazan",
+    "Valium",
+    "Valtoco",
+    "Xanax"
+   ],
+   "brands_eu": [
+    "Buccolam",
+    "Byfavo",
+    "Omforro",
+    "Tuzodi"
+   ],
+   "brands_eu_status": {
+    "Byfavo": "Authorised",
+    "Omforro": "Application withdrawn",
+    "Tuzodi": "Application withdrawn",
+    "Buccolam": "Authorised"
+   },
+   "brands_eu_url": {
+    "Byfavo": "https://www.ema.europa.eu/en/medicines/human/EPAR/byfavo",
+    "Omforro": "https://www.ema.europa.eu/en/medicines/human/EPAR/omforro",
+    "Tuzodi": "https://www.ema.europa.eu/en/medicines/human/EPAR/tuzodi",
+    "Buccolam": "https://www.ema.europa.eu/en/medicines/human/EPAR/buccolam"
+   },
+   "substances_fr": [
+    "ALPRAZOLAM",
+    "BROMAZÉPAM",
+    "BÉSYLATE DE RÉMIMAZOLAM",
+    "CHLORDIAZÉPOXIDE",
+    "CHLORHYDRATE DE MIDAZOLAM",
+    "CLOBAZAM",
+    "CLONAZÉPAM",
+    "CLOTIAZÉPAM",
+    "DIAZÉPAM",
+    "ESTAZOLAM",
+    "LOFLAZÉPATE D'ÉTHYLE",
+    "LORAZÉPAM",
+    "LORMÉTAZÉPAM",
+    "MIDAZOLAM",
+    "MIDAZOLAM (CHLORHYDRATE DE)",
+    "NITRAZÉPAM",
+    "OXAZÉPAM",
+    "PRAZÉPAM",
+    "RÉMIMAZOLAM"
+   ],
+   "brands_fr": [
+    "ALPRAZOLAM ARROW",
+    "ALPRAZOLAM ARROW LAB",
+    "ALPRAZOLAM BIOGARAN",
+    "ALPRAZOLAM CRISTERS",
+    "ALPRAZOLAM EG",
+    "ALPRAZOLAM EVOLUGEN PHARMA",
+    "ALPRAZOLAM HCS",
+    "ALPRAZOLAM SANDOZ",
+    "ALPRAZOLAM TEVA",
+    "ALPRAZOLAM VIATRIS",
+    "ALPRAZOLAM ZENTIVA",
+    "ALPRAZOLAM ZYDUS",
+    "ALPRAZOLAM ZYDUS FRANCE",
+    "BROMAZEPAM ARROW",
+    "BROMAZEPAM BIOGARAN",
+    "BROMAZEPAM CRISTERS",
+    "BROMAZEPAM EG",
+    "BROMAZEPAM TEVA",
+    "BROMAZEPAM VIATRIS",
+    "BROMAZEPAM ZENTIVA",
+    "BROMAZEPAM ZYDUS",
+    "BUCCOLAM",
+    "BYFAVO",
+    "DIAZEPAM ACCORD",
+    "DIAZEPAM ARROW",
+    "DIAZEPAM RENAUDIN",
+    "DIAZEPAM TEVA",
+    "LEXOMIL",
+    "LIBRAX",
+    "LIKOZAM",
+    "LORAZEPAM ARROW",
+    "LORAZEPAM VIATRIS",
+    "LORAZEPAM XILMAC",
+    "LORMETAZEPAM ARROW",
+    "LYSANXIA",
+    "MIDAZOLAM ACCORD",
+    "MIDAZOLAM AGUETTANT",
+    "MIDAZOLAM KALCEKS",
+    "MIDAZOLAM PANPHARMA",
+    "MIDAZOLAM VIATRIS",
+    "MOGADON",
+    "NUCTALON",
+    "OXAZEPAM ARROW",
+    "OXAZEPAM BIOGARAN",
+    "OXAZEPAM SUBSTIPHARM",
+    "OXAZEPAM VIATRIS",
+    "OZALIN",
+    "PRAZEPAM ARROW",
+    "PRAZEPAM BIOGARAN",
+    "PRAZEPAM EG",
+    "RIVOTRIL",
+    "SERESTA",
+    "TEMESTA",
+    "URBANYL",
+    "VALIUM",
+    "VERATRAN",
+    "VICTAN",
+    "XANAX"
+   ]
+  },
+  "Benzphetamine hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of benzphetamine",
+   "ingredients": [
+    {
+     "rxcui": "1422",
+     "name": "benzphetamine"
+    }
+   ],
+   "generic": [
+    "benzphetamine",
+    "benzphetamine hydrochloride"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Bevacizumab": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "253337",
+     "name": "bevacizumab"
+    }
+   ],
+   "generic": [
+    "bevacizumab",
+    "bevacizumab-adcd",
+    "bevacizumab-awwb",
+    "bevacizumab-bvzr",
+    "bevacizumab-maly",
+    "bevacizumab-nwgd",
+    "bevacizumab-tnjn",
+    "bevacizumab-vikg"
+   ],
+   "brands_us": [
+    "Alymsys",
+    "Avastin",
+    "Avzivi",
+    "Jobevne",
+    "Lytenava",
+    "Mvasi",
+    "Vegzelma",
+    "Zirabev"
+   ],
+   "brands_eu": [
+    "Abevmy",
+    "Alymsys",
+    "Avastin",
+    "Avzivi",
+    "Aybintio",
+    "Equidacent",
+    "Ipique",
+    "Kyomarc",
+    "Lextemy",
+    "Lytenava",
+    "Mvasi",
+    "Onbevzi",
+    "Orblid",
+    "Oyavas",
+    "Vegzelma",
+    "Zirabev"
+   ],
+   "brands_eu_status": {
+    "Aybintio": "Authorised",
+    "Orblid": "Application withdrawn",
+    "Lytenava": "Authorised",
+    "Abevmy": "Authorised",
+    "Zirabev": "Authorised",
+    "Alymsys": "Authorised",
+    "Avzivi": "Authorised",
+    "Vegzelma": "Authorised",
+    "Oyavas": "Authorised",
+    "Avastin": "Authorised",
+    "Mvasi": "Authorised",
+    "Onbevzi": "Withdrawn",
+    "Ipique": "Refused",
+    "Equidacent": "Withdrawn",
+    "Lextemy": "Withdrawn",
+    "Kyomarc": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Aybintio": "https://www.ema.europa.eu/en/medicines/human/EPAR/aybintio",
+    "Orblid": "https://www.ema.europa.eu/en/medicines/human/EPAR/orblid",
+    "Lytenava": "https://www.ema.europa.eu/en/medicines/human/EPAR/lytenava",
+    "Abevmy": "https://www.ema.europa.eu/en/medicines/human/EPAR/abevmy",
+    "Zirabev": "https://www.ema.europa.eu/en/medicines/human/EPAR/zirabev",
+    "Alymsys": "https://www.ema.europa.eu/en/medicines/human/EPAR/alymsys",
+    "Avzivi": "https://www.ema.europa.eu/en/medicines/human/EPAR/avzivi",
+    "Vegzelma": "https://www.ema.europa.eu/en/medicines/human/EPAR/vegzelma",
+    "Oyavas": "https://www.ema.europa.eu/en/medicines/human/EPAR/oyavas",
+    "Avastin": "https://www.ema.europa.eu/en/medicines/human/EPAR/avastin",
+    "Mvasi": "https://www.ema.europa.eu/en/medicines/human/EPAR/mvasi",
+    "Onbevzi": "https://www.ema.europa.eu/en/medicines/human/EPAR/onbevzi",
+    "Ipique": "https://www.ema.europa.eu/en/medicines/human/EPAR/ipique",
+    "Equidacent": "https://www.ema.europa.eu/en/medicines/human/EPAR/equidacent",
+    "Lextemy": "https://www.ema.europa.eu/en/medicines/human/EPAR/lextemy",
+    "Kyomarc": "https://www.ema.europa.eu/en/medicines/human/EPAR/kyomarc"
+   },
+   "substances_fr": [
+    "BÉVACIZUMAB"
+   ],
+   "brands_fr": [
+    "ABEVMY",
+    "ALYMSYS",
+    "AVASTIN",
+    "AYBINTIO",
+    "MVASI",
+    "OYAVAS",
+    "VEGZELMA",
+    "ZIRABEV"
+   ]
+  },
+  "Bexarotene": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "233272",
+     "name": "bexarotene"
+    }
+   ],
+   "generic": [
+    "bexarotene"
+   ],
+   "brands_us": [
+    "Targretin"
+   ],
+   "brands_eu": [
+    "Targretin"
+   ],
+   "brands_eu_status": {
+    "Targretin": "Authorised"
+   },
+   "brands_eu_url": {
+    "Targretin": "https://www.ema.europa.eu/en/medicines/human/EPAR/targretin"
+   },
+   "substances_fr": [
+    "BEXAROTÈNE"
+   ],
+   "brands_fr": [
+    "BEXAROTENE CIPLA",
+    "TARGRETIN"
+   ]
+  },
+  "Bischloroethyl nitrosourea (BCNU) (Carmustine)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2105",
+     "name": "carmustine"
+    }
+   ],
+   "generic": [
+    "carmustine"
+   ],
+   "brands_us": [
+    "BiCNU",
+    "Gliadel"
+   ],
+   "brands_eu": [
+    "Carmustine medac (previously Carmustine Obvius)"
+   ],
+   "brands_eu_status": {
+    "Carmustine medac (previously Carmustine Obvius)": "Authorised"
+   },
+   "brands_eu_url": {
+    "Carmustine medac (previously Carmustine Obvius)": "https://www.ema.europa.eu/en/medicines/human/EPAR/carmustine-medac"
+   },
+   "substances_fr": [
+    "CARMUSTINE"
+   ],
+   "brands_fr": [
+    "BICNU",
+    "CARMUSTINE ACCORD",
+    "CARMUSTINE ACCORDPHARMA",
+    "CARMUSTINE MEDAC",
+    "GLIADEL"
+   ]
+  },
+  "Butabarbital sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of butabarbital",
+   "ingredients": [
+    {
+     "rxcui": "477631",
+     "name": "butabarbital"
+    }
+   ],
+   "generic": [
+    "butabarbital",
+    "butabarbital sodium"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Carbamazepine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2002",
+     "name": "carbamazepine"
+    }
+   ],
+   "generic": [
+    "carbamazepine"
+   ],
+   "brands_us": [
+    "Carbatrol",
+    "Epitol",
+    "Equetro",
+    "Tegretol"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CARBAMAZÉPINE"
+   ],
+   "brands_fr": [
+    "CARBAMAZEPINE SANDOZ L.P.",
+    "CARBAMAZEPINE VIATRIS L.P.",
+    "TEGRETOL",
+    "TEGRETOL L.P."
+   ]
+  },
+  "Carbimazole": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2020",
+     "name": "carbimazole"
+    }
+   ],
+   "generic": [
+    "carbimazole"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CARBIMAZOLE"
+   ],
+   "brands_fr": [
+    "NEO-MERCAZOLE"
+   ]
+  },
+  "Carboplatin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "40048",
+     "name": "carboplatin"
+    }
+   ],
+   "generic": [
+    "carboplatin"
+   ],
+   "brands_us": [
+    "Kyxata",
+    "Paraplatin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CARBOPLATINE"
+   ],
+   "brands_fr": [
+    "CARBOPLATINE ACCORD",
+    "CARBOPLATINE ARROW LAB",
+    "CARBOPLATINE HIKMA",
+    "CARBOPLATINE HOSPIRA",
+    "CARBOPLATINE KABI",
+    "CARBOPLATINE MEDAC",
+    "CARBOPLATINE TEVA",
+    "CARBOPLATINE VIATRIS"
+   ]
+  },
+  "Chenodiol": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of chenodeoxycholate",
+   "ingredients": [
+    {
+     "rxcui": "42588",
+     "name": "chenodeoxycholate"
+    }
+   ],
+   "generic": [
+    "chenodeoxycholate",
+    "chenodeoxycholic acid"
+   ],
+   "brands_us": [
+    "Chenodal",
+    "Ctexli"
+   ],
+   "brands_eu": [
+    "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)"
+   ],
+   "brands_eu_status": {
+    "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)": "Authorised"
+   },
+   "brands_eu_url": {
+    "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)": "https://www.ema.europa.eu/en/medicines/human/EPAR/chenodeoxycholic-acid-leadiant"
+   },
+   "substances_fr": [
+    "ACIDE CHÉNODÉSOXYCHOLIQUE"
+   ],
+   "brands_fr": [
+    "CHENODEOXYCHOLIC ACID LEADIANT"
+   ]
+  },
+  "Chlorambucil": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2346",
+     "name": "chlorambucil"
+    }
+   ],
+   "generic": [
+    "chlorambucil"
+   ],
+   "brands_us": [
+    "Leukeran"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORAMBUCIL"
+   ],
+   "brands_fr": [
+    "CHLORAMINOPHENE"
+   ]
+  },
+  "Chlorcyclizine hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of chlorcyclizine",
+   "ingredients": [
+    {
+     "rxcui": "2354",
+     "name": "chlorcyclizine"
+    }
+   ],
+   "generic": [
+    "chlorcyclizine",
+    "chlorcyclizine hydrochloride"
+   ],
+   "brands_us": [
+    "Ahist Antihistamine",
+    "Dallergy Reformulated Nov 2011",
+    "Stahist AD"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Chlordiazepoxide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2356",
+     "name": "chlordiazepoxide"
+    }
+   ],
+   "generic": [
+    "chlordiazepoxide",
+    "chlordiazepoxide hydrochloride"
+   ],
+   "brands_us": [
+    "Librax"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORDIAZÉPOXIDE"
+   ],
+   "brands_fr": [
+    "LIBRAX"
+   ]
+  },
+  "Chlordiazepoxide hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of chlordiazepoxide",
+   "ingredients": [
+    {
+     "rxcui": "2356",
+     "name": "chlordiazepoxide"
+    }
+   ],
+   "generic": [
+    "chlordiazepoxide",
+    "chlordiazepoxide hydrochloride"
+   ],
+   "brands_us": [
+    "Librax"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORDIAZÉPOXIDE"
+   ],
+   "brands_fr": [
+    "LIBRAX"
+   ]
+  },
+  "Cidofovir": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "83171",
+     "name": "cidofovir"
+    }
+   ],
+   "generic": [
+    "cidofovir",
+    "cidofovir anhydrous"
+   ],
+   "brands_us": [],
+   "brands_eu": [
+    "Vistide"
+   ],
+   "brands_eu_status": {
+    "Vistide": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Vistide": "https://www.ema.europa.eu/en/medicines/human/EPAR/vistide"
+   },
+   "substances_fr": [
+    "CIDOFOVIR",
+    "CIDOFOVIR DIHYDRATÉ"
+   ],
+   "brands_fr": [
+    "CIDOFOVIR TILLOMED"
+   ]
+  },
+  "Cladribine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "44157",
+     "name": "cladribine"
+    }
+   ],
+   "generic": [
+    "cladribine"
+   ],
+   "brands_us": [
+    "Mavenclad"
+   ],
+   "brands_eu": [
+    "Litak",
+    "Mavenclad",
+    "Movectro"
+   ],
+   "brands_eu_status": {
+    "Mavenclad": "Authorised",
+    "Litak": "Authorised",
+    "Movectro": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Mavenclad": "https://www.ema.europa.eu/en/medicines/human/EPAR/mavenclad",
+    "Litak": "https://www.ema.europa.eu/en/medicines/human/EPAR/litak",
+    "Movectro": "https://www.ema.europa.eu/en/medicines/human/EPAR/movectro"
+   },
+   "substances_fr": [
+    "CLADRIBINE"
+   ],
+   "brands_fr": [
+    "LEUSTATINE",
+    "LITAK",
+    "MAVENCLAD"
+   ]
+  },
+  "Clarithromycin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "21212",
+     "name": "clarithromycin"
+    }
+   ],
+   "generic": [
+    "clarithromycin"
+   ],
+   "brands_us": [
+    "Biaxin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CLARITHROMYCINE"
+   ],
+   "brands_fr": [
+    "CLARITHROMYCINE ACCORD",
+    "CLARITHROMYCINE ALMUS",
+    "CLARITHROMYCINE ARROW",
+    "CLARITHROMYCINE ARROW LAB",
+    "CLARITHROMYCINE BIOGARAN",
+    "CLARITHROMYCINE EG",
+    "CLARITHROMYCINE EVOLUGEN",
+    "CLARITHROMYCINE HCS",
+    "CLARITHROMYCINE SANDOZ",
+    "CLARITHROMYCINE SUN",
+    "CLARITHROMYCINE TEVA",
+    "CLARITHROMYCINE VIATRIS",
+    "CLARITHROMYCINE ZYDUS",
+    "ZECLAR"
+   ]
+  },
+  "Clobetasol propionate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of clobetasol",
+   "ingredients": [
+    {
+     "rxcui": "2590",
+     "name": "clobetasol"
+    }
+   ],
+   "generic": [
+    "clobetasol",
+    "clobetasol propionate"
+   ],
+   "brands_us": [
+    "Byqlovi",
+    "Clobex",
+    "Clodan",
+    "Impoyz",
+    "Olux",
+    "Temovate",
+    "Tovet"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CLOBÉTASOL (PROPIONATE DE)",
+    "PROPIONATE DE CLOBÉTASOL"
+   ],
+   "brands_fr": [
+    "CABESOL",
+    "CLARELUX",
+    "CLOBETASOL SUBSTIPHARM",
+    "CLOBEX",
+    "DERMOVAL"
+   ]
+  },
+  "Clomiphene citrate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of clomiphene",
+   "ingredients": [
+    {
+     "rxcui": "2596",
+     "name": "clomiphene"
+    }
+   ],
+   "generic": [
+    "clomiphene",
+    "clomiphene citrate"
+   ],
+   "brands_us": [
+    "Clomid",
+    "Milophene"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Clorazepate dipotassium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of clorazepate",
+   "ingredients": [
+    {
+     "rxcui": "2353",
+     "name": "clorazepate"
+    }
+   ],
+   "generic": [
+    "clorazepate",
+    "clorazepate dipotassium",
+    "clorazepic acid"
+   ],
+   "brands_us": [
+    "Tranxene"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CLORAZÉPATE DIPOTASSIQUE"
+   ],
+   "brands_fr": [
+    "TRANXENE"
+   ]
+  },
+  "Codeine phosphate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of codeine",
+   "ingredients": [
+    {
+     "rxcui": "2670",
+     "name": "codeine"
+    }
+   ],
+   "generic": [
+    "codeine",
+    "codeine anhyd",
+    "codeine anhydrous",
+    "codeine camsyl",
+    "codeine hydrochloride",
+    "codeine phosphate",
+    "codeine phosphate anhydrous",
+    "codeine polistirex",
+    "codeine sulfate"
+   ],
+   "brands_us": [
+    "Ambifed CD",
+    "Ambifed-G CD",
+    "Ascomp",
+    "Biotussin",
+    "BroveX CB",
+    "Brovex PBC",
+    "Cheratussin",
+    "Fioricet with Codeine",
+    "Lortuss EX",
+    "M-Clear WC",
+    "M-End Max D",
+    "M-End PE",
+    "Mar-cof BP",
+    "Mar-cof CG",
+    "Maxiphen CDX",
+    "Ninjacof XG",
+    "Tuxarin",
+    "Tuzistra",
+    "Tylenol with Codeine",
+    "Zodryl AC",
+    "Zodryl DAC",
+    "Zodryl DEC"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CAMPHOSULFONATE DE CODÉINE",
+    "CODÉINE",
+    "CODÉINE (PHOSPHATE DE)",
+    "CODÉINE (PHOSPHATE DE) HÉMIHYDRATÉ",
+    "PHOSPHATE DE CODÉINE ANHYDRE",
+    "PHOSPHATE DE CODÉINE HÉMIHYDRATÉ"
+   ],
+   "brands_fr": [
+    "ANTARENE CODEINE",
+    "CLARADOL CODEINE",
+    "CODEINE-ERYSIMUM MAYOLY SPINDLER SANS SUCRE",
+    "CODOLIPRANE",
+    "CODOLIPRANE ADULTES",
+    "DAFALGAN CODEINE",
+    "KLIPAL",
+    "LINDILANE",
+    "NEO-CODION",
+    "NEO-CODION ADULTES",
+    "PADERYL",
+    "PARACETAMOL CODEINE FRILAB",
+    "PARACETAMOL/CAFEINE/CODEINE ARROW",
+    "PARACETAMOL/CAFEINE/CODEINE BIOGARAN",
+    "PARACETAMOL/CAFEINE/CODEINE VIATRIS",
+    "PARACETAMOL/CODEINE BIOGARAN",
+    "PARACETAMOL/CODEINE PIERRE FABRE",
+    "PARACETAMOL/CODEINE TEVA",
+    "PARACETAMOL/CODEINE VIATRIS",
+    "POLERY ADULTES",
+    "POLERY ADULTES SANS SUCRE",
+    "PRONTALGINE",
+    "PULMOSERUM",
+    "TUSSIPAX"
+   ]
+  },
+  "Colchicine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "2683",
+     "name": "colchicine"
+    }
+   ],
+   "generic": [
+    "colchicine"
+   ],
+   "brands_us": [
+    "Colcrys",
+    "Gloperba",
+    "Lodoco",
+    "Mitigare"
+   ],
+   "brands_eu": [
+    "Colchicine Agepha Pharma"
+   ],
+   "brands_eu_status": {
+    "Colchicine Agepha Pharma": "Authorised"
+   },
+   "brands_eu_url": {
+    "Colchicine Agepha Pharma": "https://www.ema.europa.eu/en/medicines/human/EPAR/colchicine-agepha-pharma"
+   },
+   "substances_fr": [
+    "COLCHICINE"
+   ],
+   "brands_fr": [
+    "COLCHICINE OPOCALCIUM",
+    "COLCHIMAX"
+   ]
+  },
+  "Conjugated estrogens": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4099",
+     "name": "estrogens, conjugated (USP)"
+    }
+   ],
+   "generic": [
+    "estrogens, conjugated (USP)"
+   ],
+   "brands_us": [
+    "Duavee",
+    "Premarin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Cyclophosphamide (anhydrous)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3002",
+     "name": "cyclophosphamide"
+    }
+   ],
+   "generic": [
+    "cyclophosphamide",
+    "cyclophosphamide anhydrous",
+    "cyclophosphamide lyophilized",
+    "cyclophosphamide monohydrate"
+   ],
+   "brands_us": [
+    "Frindovyx"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CYCLOPHOSPHAMIDE",
+    "CYCLOPHOSPHAMIDE ANHYDRE",
+    "CYCLOPHOSPHAMIDE MONOHYDRATÉ"
+   ],
+   "brands_fr": [
+    "CYCLOPHOSPHAMIDE REDDY PHARMA",
+    "CYCLOPHOSPHAMIDE SANDOZ",
+    "ENDOXAN"
+   ]
+  },
+  "Cyclophosphamide (hydrated)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3002",
+     "name": "cyclophosphamide"
+    }
+   ],
+   "generic": [
+    "cyclophosphamide",
+    "cyclophosphamide anhydrous",
+    "cyclophosphamide lyophilized",
+    "cyclophosphamide monohydrate"
+   ],
+   "brands_us": [
+    "Frindovyx"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CYCLOPHOSPHAMIDE",
+    "CYCLOPHOSPHAMIDE ANHYDRE",
+    "CYCLOPHOSPHAMIDE MONOHYDRATÉ"
+   ],
+   "brands_fr": [
+    "CYCLOPHOSPHAMIDE REDDY PHARMA",
+    "CYCLOPHOSPHAMIDE SANDOZ",
+    "ENDOXAN"
+   ]
+  },
+  "Cytarabine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3041",
+     "name": "cytarabine"
+    }
+   ],
+   "generic": [
+    "cytarabine",
+    "cytarabine liposome"
+   ],
+   "brands_us": [
+    "Vyxeos"
+   ],
+   "brands_eu": [
+    "DepoCyte",
+    "Vyxeos liposomal (previously Vyxeos)"
+   ],
+   "brands_eu_status": {
+    "Vyxeos liposomal (previously Vyxeos)": "Authorised",
+    "DepoCyte": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Vyxeos liposomal (previously Vyxeos)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyxeos-liposomal",
+    "DepoCyte": "https://www.ema.europa.eu/en/medicines/human/EPAR/depocyte"
+   },
+   "substances_fr": [
+    "CYTARABINE"
+   ],
+   "brands_fr": [
+    "ARACYTINE",
+    "CYTARABINE ACCORD",
+    "CYTARABINE KABI",
+    "CYTARABINE SANDOZ",
+    "VYXEOS LIPOSOMAL"
+   ]
+  },
+  "Dacarbazine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3098",
+     "name": "dacarbazine"
+    }
+   ],
+   "generic": [
+    "dacarbazine"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CITRATE DE DACARBAZINE",
+    "DACARBAZINE"
+   ],
+   "brands_fr": [
+    "DACARBAZINE LIPOMED",
+    "DACARBAZINE MEDAC",
+    "DETICENE"
+   ]
+  },
+  "Danazol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3102",
+     "name": "danazol"
+    }
+   ],
+   "generic": [
+    "danazol"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DANAZOL"
+   ],
+   "brands_fr": [
+    "DANATROL"
+   ]
+  },
+  "Daunorubicin hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of daunorubicin",
+   "ingredients": [
+    {
+     "rxcui": "3109",
+     "name": "daunorubicin"
+    }
+   ],
+   "generic": [
+    "daunorubicin",
+    "daunorubicin citrate",
+    "daunorubicin citrate liposome",
+    "daunorubicin hydrochloride",
+    "daunorubicin liposomal"
+   ],
+   "brands_us": [
+    "Vyxeos"
+   ],
+   "brands_eu": [
+    "Vyxeos liposomal (previously Vyxeos)"
+   ],
+   "brands_eu_status": {
+    "Vyxeos liposomal (previously Vyxeos)": "Authorised"
+   },
+   "brands_eu_url": {
+    "Vyxeos liposomal (previously Vyxeos)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyxeos-liposomal"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE DAUNORUBICINE",
+    "DAUNORUBICINE"
+   ],
+   "brands_fr": [
+    "CERUBIDINE",
+    "VYXEOS LIPOSOMAL"
+   ]
+  },
+  "Demeclocycline hydrochloride (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of demeclocycline",
+   "ingredients": [
+    {
+     "rxcui": "3154",
+     "name": "demeclocycline"
+    }
+   ],
+   "generic": [
+    "demeclocycline",
+    "demeclocycline hydrochloride"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE DÉMÉCLOCYCLINE",
+    "DÉMÉCLOCYCLINE"
+   ],
+   "brands_fr": [
+    "DEMECLOCYCLINE ACETLAB"
+   ]
+  },
+  "Diazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3322",
+     "name": "diazepam"
+    }
+   ],
+   "generic": [
+    "diazepam"
+   ],
+   "brands_us": [
+    "Diastat",
+    "Libervant",
+    "Valium",
+    "Valtoco"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DIAZÉPAM"
+   ],
+   "brands_fr": [
+    "DIAZEPAM ACCORD",
+    "DIAZEPAM ARROW",
+    "DIAZEPAM RENAUDIN",
+    "DIAZEPAM TEVA",
+    "VALIUM"
+   ]
+  },
+  "Diazoxide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3327",
+     "name": "diazoxide"
+    }
+   ],
+   "generic": [
+    "diazoxide",
+    "diazoxide choline"
+   ],
+   "brands_us": [
+    "Proglycem",
+    "Vykat"
+   ],
+   "brands_eu": [
+    "Viokat"
+   ],
+   "brands_eu_status": {
+    "Viokat": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Viokat": "https://www.ema.europa.eu/en/medicines/human/EPAR/viokat"
+   },
+   "substances_fr": [
+    "DIAZOXIDE"
+   ],
+   "brands_fr": [
+    "PROGLICEM"
+   ]
+  },
+  "Dichlorphenamide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3353",
+     "name": "dichlorphenamide"
+    }
+   ],
+   "generic": [
+    "dichlorphenamide"
+   ],
+   "brands_us": [
+    "Keveyis",
+    "Ormalvi"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ALCOOL DICHLORO-2,4 BENZYLIQUE",
+    "ALCOOL DICHLOROBENZYLIQUE",
+    "BICISATE (DICHLORHYDRATE DE)",
+    "CÉFÉPIME (DICHLORHYDRATE DE) MONOHYDRATÉ",
+    "CÉTIRIZINE (DICHLORHYDRATE DE)",
+    "DICHLORHYDRATE D'HISTAMINE",
+    "DICHLORHYDRATE D'ÉLACESTRANT",
+    "DICHLORHYDRATE D'ÉTHYLÈNEDIAMINE",
+    "DICHLORHYDRATE DE BÉROTRALSTAT",
+    "DICHLORHYDRATE DE BÉTAHISTINE",
+    "DICHLORHYDRATE DE CHLORHEXIDINE",
+    "DICHLORHYDRATE DE CÉFÉPIME MONOHYDRATÉ",
+    "DICHLORHYDRATE DE CÉTIRIZINE",
+    "DICHLORHYDRATE DE FLUPENTIXOL",
+    "DICHLORHYDRATE DE FÉDRATINIB MONOHYDRATÉ",
+    "DICHLORHYDRATE DE LÉVOCÉTIRIZINE",
+    "DICHLORHYDRATE DE MOMÉLOTINIB",
+    "DICHLORHYDRATE DE PICLOXYDINE",
+    "DICHLORHYDRATE DE PRAMIPEXOLE MONOHYDRATÉ",
+    "DICHLORHYDRATE DE QUIZARTINIB",
+    "DICHLORHYDRATE DE SAPROPTÉRINE",
+    "DICHLORHYDRATE DE TRIENTINE",
+    "DICHLORHYDRATE DE TRIMÉTAZIDINE",
+    "DICHLORHYDRATE DE ZUCLOPENTHIXOL",
+    "DICHLOROBENZYLIQUE (ALCOOL)",
+    "FLUNARIZINE (DICHLORHYDRATE DE)",
+    "HYDROXYZINE (DICHLORHYDRATE DE)",
+    "MANIDIPINE (DICHLORHYDRATE DE)",
+    "MÉCLOZINE (DICHLORHYDRATE DE)",
+    "PIPAMPÉRONE (DICHLORHYDRATE DE)",
+    "PRAMIPEXOLE (DICHLORHYDRATE DE) MONOHYDRATÉ",
+    "RADIUM (223RA) (DICHLORURE DE)",
+    "TRIMÉTAZIDINE (DICHLORHYDRATE DE)",
+    "ZUCLOPENTHIXOL (DICHLORHYDRATE DE)"
+   ],
+   "brands_fr": [
+    "AGYRAX",
+    "ALAIRGIX ALLERGIE CETIRIZINE",
+    "ALYOSTAL PRICK CONTROLE POSITIF",
+    "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE BIOGARAN CONSEIL",
+    "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE VIATRIS CONSEIL",
+    "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE/LIDOCAINE BIOGARAN CONSEIL",
+    "ATARAX",
+    "BETAHISTINE ACCORD",
+    "BETAHISTINE ARROW",
+    "BETAHISTINE ARROW GENERIQUES",
+    "BETAHISTINE BIOGARAN",
+    "BETAHISTINE CRISTERS",
+    "BETAHISTINE EG",
+    "BETAHISTINE EG LABO",
+    "BETAHISTINE SANDOZ",
+    "BETAHISTINE TEVA",
+    "BETAHISTINE VIATRIS",
+    "BETAHISTINE ZENTIVA",
+    "BETAHISTINE ZYDUS FRANCE",
+    "BETASERC",
+    "CEFEPIME ACCORD",
+    "CEFEPIME NORIDEM",
+    "CEFEPIME PANPHARMA",
+    "CEFEPIME STRAGEN",
+    "CEFEPIME TAMRISA",
+    "CEFEPIME VIATRIS",
+    "CETIRIZINE ALMUS",
+    "CETIRIZINE ARROW",
+    "CETIRIZINE ARROW CONSEIL",
+    "CETIRIZINE ARROW LAB",
+    "CETIRIZINE BIOGARAN",
+    "CETIRIZINE BIOGARAN CONSEIL",
+    "CETIRIZINE CRISTERS PHARMA",
+    "CETIRIZINE EG",
+    "CETIRIZINE EG LABO CONSEIL",
+    "CETIRIZINE EVOLUGEN",
+    "CETIRIZINE SANDOZ",
+    "CETIRIZINE SANDOZ CONSEIL",
+    "CETIRIZINE TEVA SANTE",
+    "CETIRIZINE TEVA SANTE CONSEIL",
+    "CETIRIZINE VIATRIS",
+    "CETIRIZINE VIATRIS CONSEIL",
+    "CETIRIZINE ZENTIVA",
+    "CLOPIXOL",
+    "CUFENCE",
+    "DIPIPERON",
+    "DRILL ALLERGIE CETIRIZINE",
+    "EXBLIFEP",
+    "FLUANXOL",
+    "HUMEX ALLERGIE CETIRIZINE",
+    "HUMEX MAL DE GORGE LIDOCAINE/ALCOOL DICHLOROBENZYLIQUE/AMYLMETACRESOL",
+    "INREBIC",
+    "KUVAN",
+    "LECTIL",
+    "LEVOCETIRIZINE ARROW",
+    "LEVOCETIRIZINE BIOGARAN",
+    "LEVOCETIRIZINE CRISTERS",
+    "LEVOCETIRIZINE EG",
+    "LEVOCETIRIZINE KRKA",
+    "LEVOCETIRIZINE SANDOZ",
+    "LEVOCETIRIZINE TEVA",
+    "LEVOCETIRIZINE VIATRIS",
+    "LEVOCETIRIZINE ZENTIVA",
+    "LEVOCETIRIZINE ZYDUS",
+    "MANIDIPINE ARROW",
+    "MANIDIPINE BIOGARAN",
+    "MANIDIPINE EG",
+    "MANIDIPINE SANDOZ",
+    "MANIDIPINE TEVA",
+    "MANIDIPINE VIATRIS",
+    "MANIDIPINE ZENTIVA",
+    "MANIDIPINE ZYDUS",
+    "NEUROLITE",
+    "OMJJARA",
+    "OPRYMEA",
+    "ORLADEYO",
+    "ORSERDU",
+    "PRAMIPEXOLE ARROW LAB",
+    "PRAMIPEXOLE BIOGARAN",
+    "PRAMIPEXOLE EG",
+    "PRAMIPEXOLE SANDOZ LP",
+    "PRAMIPEXOLE TEVA",
+    "PRAMIPEXOLE VIATRIS",
+    "PRAMIPEXOLE ZENTIVA",
+    "PRAMIPEXOLE ZENTIVA LP",
+    "REACTINE",
+    "SAPROPTERINE ARROW",
+    "SAPROPTERINE DIPHARMA",
+    "SAPROPTERINE TEVA",
+    "SERC",
+    "SIBELIUM",
+    "SIFROL",
+    "SOLUPRICK CONTROLE POSITIF",
+    "STREPSILS CITRON SANS SUCRE",
+    "STREPSILS FRAISE SANS SUCRE",
+    "STREPSILS LIDOCAINE",
+    "STREPSILS MENTHE GLACIALE",
+    "STREPSILS MIEL CITRON",
+    "STREPSILS ORANGE VITAMINE C",
+    "STREPSILSPRAY à la lidocaïne",
+    "TRIENTINE WAYMADE",
+    "TRIMETAZIDINE BIOGARAN",
+    "TRIMETAZIDINE EG",
+    "TRUE TEST",
+    "VANFLYTA",
+    "VASTAREL",
+    "VITABACT",
+    "VORJA CITRON",
+    "VORJA MENTHOL",
+    "VORJA MIEL",
+    "XOFIGO",
+    "XYZALL",
+    "ZYRTEC",
+    "ZYRTECSET"
+   ]
+  },
+  "Dicumarol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1598",
+     "name": "dicumarol"
+    }
+   ],
+   "generic": [
+    "dicumarol"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Diethylstilbestrol (DES)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3390",
+     "name": "diethylstilbestrol"
+    }
+   ],
+   "generic": [
+    "diethylstilbestrol"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CITRATE DE DIÉTHYLCARBAMAZINE",
+    "DICLOFÉNAC DE DIÉTHYLAMINE",
+    "DIÉTHYLAMINE",
+    "DIÉTHYLCARBAMAZINE",
+    "DIÉTHYLDITHIOCARBAMATE DE ZINC",
+    "SALICYLATE DE DIÉTHYLAMINE"
+   ],
+   "brands_fr": [
+    "ALGESAL SURACTIVE",
+    "DICLOFENAC ARROW",
+    "DICLOFENAC ARROW CONSEIL",
+    "DICLOFENAC BGR",
+    "DICLOFENAC BGR CONSEIL",
+    "DICLOFENAC BIOGARAN",
+    "DICLOFENAC CHEMINEAU",
+    "DICLOFENAC CRISTERS",
+    "DICLOFENAC EG",
+    "DICLOFENAC EG LABO CONSEIL",
+    "DICLOFENAC REF",
+    "DICLOFENAC SANDOZ",
+    "DICLOFENAC SANDOZ CONSEIL",
+    "DICLOFENAC TEVA",
+    "DICLOFENAC TEVA CLASSICS",
+    "DICLOFENAC TEVA CONSEIL",
+    "DICLOFENAC TEVA SANTE CONSEIL",
+    "DICLOFENAC URGO",
+    "DICLOFENAC VIATRIS",
+    "DICLOFENAC VIATRIS SANTE",
+    "DICLOFENAC ZENTIVA",
+    "DICLOFENAC ZYDUS",
+    "ENTALGINE",
+    "NOTEZINE",
+    "REPARIL",
+    "TRUE TEST",
+    "VOLTARENACTIGO",
+    "VOLTARENE EMULGEL",
+    "VOLTARENSPE"
+   ]
+  },
+  "Diflunisal": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3393",
+     "name": "diflunisal"
+    }
+   ],
+   "generic": [
+    "diflunisal"
+   ],
+   "brands_us": [
+    "Dolobid"
+   ],
+   "brands_eu": [
+    "Attrogy"
+   ],
+   "brands_eu_status": {
+    "Attrogy": "Authorised"
+   },
+   "brands_eu_url": {
+    "Attrogy": "https://www.ema.europa.eu/en/medicines/human/EPAR/attrogy"
+   },
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Dihydroergotamine mesylate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of dihydroergotamine",
+   "ingredients": [
+    {
+     "rxcui": "3418",
+     "name": "dihydroergotamine"
+    }
+   ],
+   "generic": [
+    "dihydroergotamine",
+    "dihydroergotamine mesylate",
+    "dihydroergotamine tartrate"
+   ],
+   "brands_us": [
+    "Atzumi",
+    "Brekiya",
+    "Migranal",
+    "Trudhesa"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "6-FLUORO-[18F]-L-DIHYDROXYPHÉNYLALANINE",
+    "DIHYDROCODÉINE",
+    "DIHYDROGÉNOPHOSPHATE DE RILMÉNIDINE",
+    "DIHYDROGÉNOPHOSPHATE DE SODIUM ANHYDRE",
+    "DIHYDROGÉNOPHOSPHATE DE SODIUM DODÉCAHYDRATÉ",
+    "MÉSILATE DE DIHYDROERGOTAMINE",
+    "RILMÉNIDINE (DIHYDROGÉNOPHOSPHATE DE)",
+    "SODIUM (DIHYDROGÉNOPHOSPHATE DE) DIHYDRATÉ",
+    "SODIUM-DIHYDROGÈNE PHOSPHATE ANHYDRE",
+    "TARTRATE DE DIHYDROCODÉINE"
+   ],
+   "brands_fr": [
+    "DICODIN L.P.",
+    "DIERGOSPRAY",
+    "DIGEDRYL",
+    "HYPERIUM",
+    "IASOdopa",
+    "NEUROSTHENOL",
+    "NORMACOL LAVEMENT ADULTES",
+    "NORMACOL LAVEMENT ENFANTS",
+    "OXYBOLDINE",
+    "OXYBOLDINE CITRON SANS SUCRE",
+    "PHOSPHORE OLIGOSOL",
+    "RECHOLAN",
+    "RILMENIDINE ARROW",
+    "RILMENIDINE BIOGARAN",
+    "RILMENIDINE CRISTERS",
+    "RILMENIDINE EG",
+    "RILMENIDINE EVOLUGEN",
+    "RILMENIDINE SANDOZ",
+    "RILMENIDINE TEVA",
+    "RILMENIDINE VIATRIS",
+    "RILMENIDINE ZENTIVA",
+    "RILMENIDINE ZYDUS"
+   ]
+  },
+  "Diltiazem hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of diltiazem",
+   "ingredients": [
+    {
+     "rxcui": "3443",
+     "name": "diltiazem"
+    }
+   ],
+   "generic": [
+    "diltiazem",
+    "diltiazem hydrochloride",
+    "diltiazem malate"
+   ],
+   "brands_us": [
+    "Cardizem",
+    "Cartia",
+    "Dilt",
+    "Diltzac",
+    "Matzim",
+    "Taztia",
+    "Tiadylt",
+    "Tiazac"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE DILTIAZEM",
+    "DILTIAZEM (CHLORHYDRATE DE)"
+   ],
+   "brands_fr": [
+    "BI TILDIEM L.P.",
+    "CHLORHYDRATE DE DILTIAZEM VIATRIS",
+    "DILTIAZEM ARROW LP",
+    "DILTIAZEM BGR LP",
+    "DILTIAZEM BIOGARAN",
+    "DILTIAZEM BIOGARAN L.P.",
+    "DILTIAZEM SANDOZ LP",
+    "DILTIAZEM TEVA",
+    "DILTIAZEM TEVA L.P.",
+    "DILTIAZEM TEVA SANTE LP",
+    "DILTIAZEM VIATRIS L.P.",
+    "DILTIAZEM VIATRIS LP",
+    "DILTIAZEM ZENTIVA LAB LP",
+    "MONO TILDIEM LP",
+    "TILDIEM"
+   ]
+  },
+  "Diphenylhydantoin (Phenytoin)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8183",
+     "name": "phenytoin"
+    }
+   ],
+   "generic": [
+    "phenytoin",
+    "phenytoin sodium"
+   ],
+   "brands_us": [
+    "Dilantin",
+    "Euthaphen",
+    "Euthasol",
+    "Phenytek"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PHÉNYTOÏNE",
+    "PHÉNYTOÏNE SODIQUE"
+   ],
+   "brands_fr": [
+    "DI-HYDAN",
+    "DILANTIN",
+    "PRODILANTIN"
+   ]
+  },
+  "Doxorubicin hydrochloride (Adriamycin)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3639",
+     "name": "doxorubicin"
+    }
+   ],
+   "generic": [
+    "doxorubicin",
+    "doxorubicin hydrochloride",
+    "doxorubicin hydrochloride liposome",
+    "doxorubicin liposome"
+   ],
+   "brands_us": [
+    "Adriamycin",
+    "Caelyx",
+    "Doxil"
+   ],
+   "brands_eu": [
+    "Caelyx pegylated liposomal",
+    "Celdoxome pegylated liposomal",
+    "Doxolipad",
+    "Doxorubicin Hydrochloride Tillomed",
+    "Doxorubicin SUN",
+    "Myocet liposomal (previously Myocet)",
+    "Zolsketil pegylated liposomal"
+   ],
+   "brands_eu_status": {
+    "Caelyx pegylated liposomal": "Authorised",
+    "Zolsketil pegylated liposomal": "Authorised",
+    "Celdoxome pegylated liposomal": "Lapsed",
+    "Myocet liposomal (previously Myocet)": "Authorised",
+    "Doxorubicin Hydrochloride Tillomed": "Application withdrawn",
+    "Doxolipad": "Refused",
+    "Doxorubicin SUN": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Caelyx pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/caelyx-pegylated-liposomal",
+    "Zolsketil pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/zolsketil-pegylated-liposomal",
+    "Celdoxome pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/celdoxome-pegylated-liposomal",
+    "Myocet liposomal (previously Myocet)": "https://www.ema.europa.eu/en/medicines/human/EPAR/myocet-liposomal",
+    "Doxorubicin Hydrochloride Tillomed": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxorubicin-hydrochloride-tillomed",
+    "Doxolipad": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxolipad",
+    "Doxorubicin SUN": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxorubicin-sun"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE DOXORUBICINE",
+    "DOXORUBICINE (CHLORHYDRATE DE)"
+   ],
+   "brands_fr": [
+    "ADRIBLASTINE",
+    "CAELYX PEGYLATED LIPOSOMAL",
+    "DOXORUBICINE ACCORD",
+    "DOXORUBICINE ARROW",
+    "DOXORUBICINE TEVA",
+    "ZOLSKETIL PEGYLATED LIPOSOMAL"
+   ]
+  },
+  "Doxycycline (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "3640",
+     "name": "doxycycline"
+    }
+   ],
+   "generic": [
+    "doxycycline",
+    "doxycycline anhydrous",
+    "doxycycline calcium",
+    "doxycycline hyclate",
+    "doxycycline hydrochloride",
+    "doxycycline monohydrate"
+   ],
+   "brands_us": [
+    "Acticlate",
+    "Adoxa",
+    "Alodox",
+    "Avidoxy",
+    "Doryx",
+    "Doxy",
+    "Mondoxyne",
+    "Monodox",
+    "Morgidox",
+    "Okebo",
+    "Oracea",
+    "Periostat",
+    "Targadox",
+    "Vibramycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DOXYCYCLINE",
+    "DOXYCYCLINE (HYCLATE DE)",
+    "DOXYCYCLINE ANHYDRE",
+    "DOXYCYCLINE BASE",
+    "DOXYCYCLINE HYDRATÉE",
+    "DOXYCYCLINE MONOHYDRATÉE",
+    "HYCLATE DE DOXYCYCLINE"
+   ],
+   "brands_fr": [
+    "DOXY",
+    "DOXYCYCLINE ARROW",
+    "DOXYCYCLINE ARROW LAB",
+    "DOXYCYCLINE BIOGARAN",
+    "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+    "DOXYCYCLINE SANDOZ",
+    "DOXYCYCLINE TEVA",
+    "DOXYCYCLINE VIATRIS",
+    "DOXYPALU",
+    "GRANUDOXY",
+    "TOLEXINE",
+    "VIBRAVEINEUSE"
+   ]
+  },
+  "Doxycycline calcium (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of doxycycline",
+   "ingredients": [
+    {
+     "rxcui": "3640",
+     "name": "doxycycline"
+    }
+   ],
+   "generic": [
+    "doxycycline",
+    "doxycycline anhydrous",
+    "doxycycline calcium",
+    "doxycycline hyclate",
+    "doxycycline hydrochloride",
+    "doxycycline monohydrate"
+   ],
+   "brands_us": [
+    "Acticlate",
+    "Adoxa",
+    "Alodox",
+    "Avidoxy",
+    "Doryx",
+    "Doxy",
+    "Mondoxyne",
+    "Monodox",
+    "Morgidox",
+    "Okebo",
+    "Oracea",
+    "Periostat",
+    "Targadox",
+    "Vibramycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DOXYCYCLINE",
+    "DOXYCYCLINE (HYCLATE DE)",
+    "DOXYCYCLINE ANHYDRE",
+    "DOXYCYCLINE BASE",
+    "DOXYCYCLINE HYDRATÉE",
+    "DOXYCYCLINE MONOHYDRATÉE",
+    "HYCLATE DE DOXYCYCLINE"
+   ],
+   "brands_fr": [
+    "DOXY",
+    "DOXYCYCLINE ARROW",
+    "DOXYCYCLINE ARROW LAB",
+    "DOXYCYCLINE BIOGARAN",
+    "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+    "DOXYCYCLINE SANDOZ",
+    "DOXYCYCLINE TEVA",
+    "DOXYCYCLINE VIATRIS",
+    "DOXYPALU",
+    "GRANUDOXY",
+    "TOLEXINE",
+    "VIBRAVEINEUSE"
+   ]
+  },
+  "Doxycycline hyclate (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of doxycycline",
+   "ingredients": [
+    {
+     "rxcui": "3640",
+     "name": "doxycycline"
+    }
+   ],
+   "generic": [
+    "doxycycline",
+    "doxycycline anhydrous",
+    "doxycycline calcium",
+    "doxycycline hyclate",
+    "doxycycline hydrochloride",
+    "doxycycline monohydrate"
+   ],
+   "brands_us": [
+    "Acticlate",
+    "Adoxa",
+    "Alodox",
+    "Avidoxy",
+    "Doryx",
+    "Doxy",
+    "Mondoxyne",
+    "Monodox",
+    "Morgidox",
+    "Okebo",
+    "Oracea",
+    "Periostat",
+    "Targadox",
+    "Vibramycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DOXYCYCLINE",
+    "DOXYCYCLINE (HYCLATE DE)",
+    "DOXYCYCLINE ANHYDRE",
+    "DOXYCYCLINE BASE",
+    "DOXYCYCLINE HYDRATÉE",
+    "DOXYCYCLINE MONOHYDRATÉE",
+    "HYCLATE DE DOXYCYCLINE"
+   ],
+   "brands_fr": [
+    "DOXY",
+    "DOXYCYCLINE ARROW",
+    "DOXYCYCLINE ARROW LAB",
+    "DOXYCYCLINE BIOGARAN",
+    "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+    "DOXYCYCLINE SANDOZ",
+    "DOXYCYCLINE TEVA",
+    "DOXYCYCLINE VIATRIS",
+    "DOXYPALU",
+    "GRANUDOXY",
+    "TOLEXINE",
+    "VIBRAVEINEUSE"
+   ]
+  },
+  "Doxycycline monohydrate (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of doxycycline",
+   "ingredients": [
+    {
+     "rxcui": "3640",
+     "name": "doxycycline"
+    }
+   ],
+   "generic": [
+    "doxycycline",
+    "doxycycline anhydrous",
+    "doxycycline calcium",
+    "doxycycline hyclate",
+    "doxycycline hydrochloride",
+    "doxycycline monohydrate"
+   ],
+   "brands_us": [
+    "Acticlate",
+    "Adoxa",
+    "Alodox",
+    "Avidoxy",
+    "Doryx",
+    "Doxy",
+    "Mondoxyne",
+    "Monodox",
+    "Morgidox",
+    "Okebo",
+    "Oracea",
+    "Periostat",
+    "Targadox",
+    "Vibramycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DOXYCYCLINE",
+    "DOXYCYCLINE (HYCLATE DE)",
+    "DOXYCYCLINE ANHYDRE",
+    "DOXYCYCLINE BASE",
+    "DOXYCYCLINE HYDRATÉE",
+    "DOXYCYCLINE MONOHYDRATÉE",
+    "HYCLATE DE DOXYCYCLINE"
+   ],
+   "brands_fr": [
+    "DOXY",
+    "DOXYCYCLINE ARROW",
+    "DOXYCYCLINE ARROW LAB",
+    "DOXYCYCLINE BIOGARAN",
+    "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+    "DOXYCYCLINE SANDOZ",
+    "DOXYCYCLINE TEVA",
+    "DOXYCYCLINE VIATRIS",
+    "DOXYPALU",
+    "GRANUDOXY",
+    "TOLEXINE",
+    "VIBRAVEINEUSE"
+   ]
+  },
+  "Ergotamine tartrate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of ergotamine",
+   "ingredients": [
+    {
+     "rxcui": "4025",
+     "name": "ergotamine"
+    }
+   ],
+   "generic": [
+    "ergotamine",
+    "ergotamine tartrate"
+   ],
+   "brands_us": [
+    "Cafergot",
+    "Ergomar",
+    "Migergot"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ERGOTAMINE (TARTRATE D')"
+   ],
+   "brands_fr": [
+    "GYNERGENE CAFEINE"
+   ]
+  },
+  "Estropipate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "33747",
+     "name": "estropipate"
+    }
+   ],
+   "generic": [
+    "estropipate"
+   ],
+   "brands_us": [
+    "Ogen"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Ethionamide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4127",
+     "name": "ethionamide"
+    }
+   ],
+   "generic": [
+    "ethionamide"
+   ],
+   "brands_us": [
+    "Trecator"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Etodolac": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "24605",
+     "name": "etodolac"
+    }
+   ],
+   "generic": [
+    "etodolac"
+   ],
+   "brands_us": [
+    "Lodine"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ÉTODOLAC"
+   ],
+   "brands_fr": [
+    "LODINE"
+   ]
+  },
+  "Etoposide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4179",
+     "name": "etoposide"
+    }
+   ],
+   "generic": [
+    "etoposide",
+    "etoposide phosphate"
+   ],
+   "brands_us": [
+    "Avopef",
+    "Etopophos",
+    "Toposar",
+    "Vepesid"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ÉTOPOSIDE",
+    "ÉTOPOSIDE (PHOSPHATE D')"
+   ],
+   "brands_fr": [
+    "CELLTOP",
+    "ETOPOPHOS",
+    "ETOPOSIDE ACCORD",
+    "ETOPOSIDE HIKMA",
+    "ETOPOSIDE TEVA",
+    "ETOPOSIDE VIATRIS"
+   ]
+  },
+  "Etretinate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4182",
+     "name": "etretinate"
+    }
+   ],
+   "generic": [
+    "etretinate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Filgrastim": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "68442",
+     "name": "filgrastim"
+    }
+   ],
+   "generic": [
+    "filgrastim",
+    "filgrastim-aafi",
+    "filgrastim-ayow",
+    "filgrastim-laha",
+    "filgrastim-sndz",
+    "filgrastim-txid",
+    "tbo-filgrastim"
+   ],
+   "brands_us": [
+    "Filkri",
+    "Granix",
+    "Neupogen",
+    "Nivestym",
+    "Nypozi",
+    "Releuko",
+    "Zarxio"
+   ],
+   "brands_eu": [
+    "Accofil",
+    "Biograstim",
+    "Filgrastim Hexal",
+    "Filgrastim ratiopharm",
+    "Grastofil",
+    "Nivestim",
+    "Ratiograstim",
+    "Tevagrastim",
+    "Zarzio",
+    "Zefylti"
+   ],
+   "brands_eu_status": {
+    "Nivestim": "Authorised",
+    "Zefylti": "Application withdrawn",
+    "Zarzio": "Authorised",
+    "Accofil": "Authorised",
+    "Grastofil": "Withdrawn",
+    "Filgrastim Hexal": "Authorised",
+    "Tevagrastim": "Authorised",
+    "Ratiograstim": "Authorised",
+    "Biograstim": "Withdrawn",
+    "Filgrastim ratiopharm": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Nivestim": "https://www.ema.europa.eu/en/medicines/human/EPAR/nivestim",
+    "Zefylti": "https://www.ema.europa.eu/en/medicines/human/EPAR/zefylti-0",
+    "Zarzio": "https://www.ema.europa.eu/en/medicines/human/EPAR/zarzio",
+    "Accofil": "https://www.ema.europa.eu/en/medicines/human/EPAR/accofil",
+    "Grastofil": "https://www.ema.europa.eu/en/medicines/human/EPAR/grastofil",
+    "Filgrastim Hexal": "https://www.ema.europa.eu/en/medicines/human/EPAR/filgrastim-hexal",
+    "Tevagrastim": "https://www.ema.europa.eu/en/medicines/human/EPAR/tevagrastim",
+    "Ratiograstim": "https://www.ema.europa.eu/en/medicines/human/EPAR/ratiograstim",
+    "Biograstim": "https://www.ema.europa.eu/en/medicines/human/EPAR/biograstim",
+    "Filgrastim ratiopharm": "https://www.ema.europa.eu/en/medicines/human/EPAR/filgrastim-ratiopharm"
+   },
+   "substances_fr": [
+    "FILGRASTIM"
+   ],
+   "brands_fr": [
+    "ACCOFIL",
+    "NEUPOGEN",
+    "NIVESTIM",
+    "RATIOGRASTIM",
+    "TEVAGRASTIM",
+    "ZARZIO",
+    "ZEFYLTI"
+   ]
+  },
+  "Fingolimod": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1012892",
+     "name": "fingolimod"
+    }
+   ],
+   "generic": [
+    "fingolimod",
+    "fingolimod hydrochloride",
+    "fingolimod lauryl sulfate"
+   ],
+   "brands_us": [
+    "Gilenya",
+    "Tascenso"
+   ],
+   "brands_eu": [
+    "Fingolimod Accord",
+    "Fingolimod Mylan",
+    "Gilenya"
+   ],
+   "brands_eu_status": {
+    "Gilenya": "Authorised",
+    "Fingolimod Mylan": "Application withdrawn",
+    "Fingolimod Accord": "Authorised"
+   },
+   "brands_eu_url": {
+    "Gilenya": "https://www.ema.europa.eu/en/medicines/human/EPAR/gilenya",
+    "Fingolimod Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/fingolimod-mylan-0",
+    "Fingolimod Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/fingolimod-accord"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE FINGOLIMOD",
+    "FINGOLIMOD",
+    "FINGOLIMOD (CHLORHYDRATE DE)"
+   ],
+   "brands_fr": [
+    "FINGOLIMOD ACCORD",
+    "FINGOLIMOD ARROW",
+    "FINGOLIMOD BENTA",
+    "FINGOLIMOD BGR",
+    "FINGOLIMOD BIOGARAN",
+    "FINGOLIMOD EG",
+    "FINGOLIMOD EVOLUGEN",
+    "FINGOLIMOD HCS",
+    "FINGOLIMOD MYLAN",
+    "FINGOLIMOD TEVA",
+    "FINGOLIMOD ZENTIVA",
+    "GILENYA"
+   ]
+  },
+  "Flunisolide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "25120",
+     "name": "flunisolide"
+    }
+   ],
+   "generic": [
+    "flunisolide",
+    "flunisolide anhydrous",
+    "flunisolide hemihydrate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Fluorouracil": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4492",
+     "name": "fluorouracil"
+    }
+   ],
+   "generic": [
+    "fluorouracil"
+   ],
+   "brands_us": [
+    "Adrucil",
+    "Carac",
+    "Efudex",
+    "Favlyxa",
+    "Fluoroplex",
+    "Tolak"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "FLUOROURACILE"
+   ],
+   "brands_fr": [
+    "EFUDIX",
+    "FLUOROURACILE ACCORD",
+    "FLUOROURACILE PFIZER",
+    "FLUOROURACILE TEVA",
+    "TOLAK"
+   ]
+  },
+  "Fluoxymesterone": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4494",
+     "name": "fluoxymesterone"
+    }
+   ],
+   "generic": [
+    "fluoxymesterone"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Flurazepam hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of flurazepam",
+   "ingredients": [
+    {
+     "rxcui": "4501",
+     "name": "flurazepam"
+    }
+   ],
+   "generic": [
+    "flurazepam",
+    "flurazepam hydrochloride"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Flurbiprofen": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4502",
+     "name": "flurbiprofen"
+    }
+   ],
+   "generic": [
+    "flurbiprofen",
+    "flurbiprofen sodium"
+   ],
+   "brands_us": [
+    "Ansaid",
+    "Lurbipr",
+    "Lurbiro",
+    "Ocufen"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "FLURBIPROFÈNE",
+    "FLURBIPROFÈNE SODIQUE DIHYDRATÉ"
+   ],
+   "brands_fr": [
+    "ANTADYS",
+    "CEBUTID",
+    "CEBUTID LP",
+    "OCUFEN",
+    "STREFEN"
+   ]
+  },
+  "Flutamide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4508",
+     "name": "flutamide"
+    }
+   ],
+   "generic": [
+    "flutamide"
+   ],
+   "brands_us": [
+    "Eulexin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Fluticasone propionate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of fluticasone",
+   "ingredients": [
+    {
+     "rxcui": "41126",
+     "name": "fluticasone"
+    }
+   ],
+   "generic": [
+    "fluticasone",
+    "fluticasone furoate",
+    "fluticasone propionate"
+   ],
+   "brands_us": [
+    "Advair",
+    "AirDuo",
+    "Aller-Flo",
+    "Armonair",
+    "Arnuity",
+    "Beser",
+    "Breo",
+    "Clarispray",
+    "Cutivate",
+    "Dymista",
+    "Flonase",
+    "Flonase Sensimist",
+    "Flovent",
+    "Fluticare",
+    "Nasopro 24",
+    "Trelegy",
+    "Wixela",
+    "Xhance"
+   ],
+   "brands_eu": [
+    "Aerivio Spiromax",
+    "Airexar Spiromax",
+    "Alisade",
+    "Avamys",
+    "BroPair Spiromax",
+    "Elebrato Ellipta",
+    "Relvar Ellipta",
+    "Revinty Ellipta",
+    "Seffalair Spiromax",
+    "Temybric Ellipta",
+    "Trelegy Ellipta"
+   ],
+   "brands_eu_status": {
+    "Seffalair Spiromax": "Authorised",
+    "Elebrato Ellipta": "Authorised",
+    "Trelegy Ellipta": "Authorised",
+    "BroPair Spiromax": "Withdrawn",
+    "Avamys": "Authorised",
+    "Relvar Ellipta": "Authorised",
+    "Revinty Ellipta": "Authorised",
+    "Temybric Ellipta": "Lapsed",
+    "Aerivio Spiromax": "Withdrawn",
+    "Airexar Spiromax": "Withdrawn",
+    "Alisade": "Lapsed"
+   },
+   "brands_eu_url": {
+    "Seffalair Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/seffalair-spiromax",
+    "Elebrato Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/elebrato-ellipta",
+    "Trelegy Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/trelegy-ellipta",
+    "BroPair Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/bropair-spiromax",
+    "Avamys": "https://www.ema.europa.eu/en/medicines/human/EPAR/avamys",
+    "Relvar Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/relvar-ellipta",
+    "Revinty Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/revinty-ellipta",
+    "Temybric Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/temybric-ellipta",
+    "Aerivio Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/aerivio-spiromax",
+    "Airexar Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/airexar-spiromax",
+    "Alisade": "https://www.ema.europa.eu/en/medicines/human/EPAR/alisade"
+   },
+   "substances_fr": [
+    "FUROATE DE FLUTICASONE",
+    "PROPIONATE DE FLUTICASONE"
+   ],
+   "brands_fr": [
+    "AVAMYS",
+    "AZAFLUNEX",
+    "AZELASTINE CHLORHYDRATE / FLUTICASONE PROPIONATE BIOGARAN",
+    "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE SUBSTIPHARM",
+    "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE TEVA",
+    "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE VIATRIS",
+    "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE ZENTIVA",
+    "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE ZYDUS",
+    "AZELASTINE CHLORHYDRATE/PROPIONATE DE FLUTICASONE EG",
+    "DYMISTA",
+    "ELEBRATO ELLIPTA",
+    "FIXORINOX",
+    "FLIXONASE",
+    "FLIXOTIDE",
+    "FLIXOTIDE DISKUS",
+    "FLIXOVATE",
+    "FLUTICASONE FUROATE SUBSTIPHARM",
+    "FLUTICASONE FUROATE TEVA",
+    "FLUTIFORM",
+    "PROPIONATE DE FLUTICASONE TEVA",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL ARROW AIRMASTER",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL BGR",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL BIOGARAN AIRMASTER",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL EG AIRMASTER",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL SANDOZ",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL TEVA",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL TEVA RESPIHALER",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL VIATRIS",
+    "PROPIONATE DE FLUTICASONE/SALMETEROL ZENTIVA",
+    "RELVAR ELLIPTA",
+    "REVINTY ELLIPTA",
+    "SALFLUAIR EASYHALER",
+    "SERETIDE",
+    "SERETIDE DISKUS",
+    "SYNAZE",
+    "TRELEGY ELLIPTA"
+   ]
+  },
+  "Fosphenytoin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "72236",
+     "name": "fosphenytoin"
+    }
+   ],
+   "generic": [
+    "fosphenytoin",
+    "fosphenytoin sodium"
+   ],
+   "brands_us": [
+    "Cerebyx"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "FOSPHÉNYTOÏNE SODIQUE HEPTAHYDRATÉ"
+   ],
+   "brands_fr": [
+    "PRODILANTIN"
+   ]
+  },
+  "Ganciclovir": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "4678",
+     "name": "ganciclovir"
+    }
+   ],
+   "generic": [
+    "ganciclovir",
+    "ganciclovir sodium"
+   ],
+   "brands_us": [
+    "Zirgan"
+   ],
+   "brands_eu": [
+    "Vitrasert Implant"
+   ],
+   "brands_eu_status": {
+    "Vitrasert Implant": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Vitrasert Implant": "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrasert-implant"
+   },
+   "substances_fr": [
+    "GANCICLOVIR",
+    "GANCICLOVIR SODIQUE"
+   ],
+   "brands_fr": [
+    "CYMEVAN",
+    "GANCICLOVIR HIKMA",
+    "GANCICLOVIR SANDOZ",
+    "VIRGAN"
+   ]
+  },
+  "Ganciclovir sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of ganciclovir",
+   "ingredients": [
+    {
+     "rxcui": "4678",
+     "name": "ganciclovir"
+    }
+   ],
+   "generic": [
+    "ganciclovir",
+    "ganciclovir sodium"
+   ],
+   "brands_us": [
+    "Zirgan"
+   ],
+   "brands_eu": [
+    "Vitrasert Implant"
+   ],
+   "brands_eu_status": {
+    "Vitrasert Implant": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Vitrasert Implant": "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrasert-implant"
+   },
+   "substances_fr": [
+    "GANCICLOVIR",
+    "GANCICLOVIR SODIQUE"
+   ],
+   "brands_fr": [
+    "CYMEVAN",
+    "GANCICLOVIR HIKMA",
+    "GANCICLOVIR SANDOZ",
+    "VIRGAN"
+   ]
+  },
+  "Goserelin acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of goserelin",
+   "ingredients": [
+    {
+     "rxcui": "50610",
+     "name": "goserelin"
+    }
+   ],
+   "generic": [
+    "goserelin",
+    "goserelin acetate"
+   ],
+   "brands_us": [
+    "Zoladex"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE GOSÉRÉLINE",
+    "GOSÉRÉLINE (ACÉTATE DE)",
+    "GOSÉRÉLINE BASE"
+   ],
+   "brands_fr": [
+    "ZOLADEX"
+   ]
+  },
+  "Halazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "26412",
+     "name": "halazepam"
+    }
+   ],
+   "generic": [
+    "halazepam"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Halobetasol propionate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of halobetasol",
+   "ingredients": [
+    {
+     "rxcui": "41208",
+     "name": "halobetasol"
+    }
+   ],
+   "generic": [
+    "halobetasol",
+    "halobetasol propionate"
+   ],
+   "brands_us": [
+    "Bryhali",
+    "Duobrii",
+    "Lexette",
+    "Ultravate"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Haloperidol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "5093",
+     "name": "haloperidol"
+    }
+   ],
+   "generic": [
+    "haloperidol",
+    "haloperidol decanoate",
+    "haloperidol lactate"
+   ],
+   "brands_us": [
+    "Haldol"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "DÉCANOATE D'HALOPÉRIDOL",
+    "HALOPÉRIDOL"
+   ],
+   "brands_fr": [
+    "HALDOL",
+    "HALDOL DECANOAS"
+   ]
+  },
+  "Halothane": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "5095",
+     "name": "halothane"
+    }
+   ],
+   "generic": [
+    "halothane"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Histrelin acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of histrelin",
+   "ingredients": [
+    {
+     "rxcui": "50975",
+     "name": "histrelin"
+    }
+   ],
+   "generic": [
+    "histrelin",
+    "histrelin acetate"
+   ],
+   "brands_us": [
+    "Supprelin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Hydroxyurea": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "5552",
+     "name": "hydroxyurea"
+    }
+   ],
+   "generic": [
+    "hydroxyurea"
+   ],
+   "brands_us": [
+    "Droxia",
+    "Hydrea",
+    "Siklos",
+    "Xromi"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACIDE HYDROXY-4 BUTYRIQUE",
+    "CHLORHYDRATE D'HYDROXYZINE",
+    "COMPLEXE D'HYDROXYDE FERRIQUE - SACCHAROSE",
+    "DL-ALPHA-HYDROXYMÉTHIONINATE DE CALCIUM",
+    "DÉRIVÉS HYDROXYANTHRACÉNIQUES TOTAUX EXPRIMÉS EN RHÉINE",
+    "HYDROXY-4-BUTYRATE DE SODIUM",
+    "HYDROXYCARBAMIDE",
+    "HYDROXYCITRONELLAL",
+    "HYDROXYDE D'ALUMINIUM",
+    "HYDROXYDE DE MAGNÉSIUM",
+    "HYDROXYDE DE MÉTHYLTHIONINIUM",
+    "HYDROXYDE DE POTASSIUM",
+    "HYDROXYDE DE SODIUM",
+    "HYDROXYPROGESTÉRONE (CAPROATE D')",
+    "HYDROXYZINE (CHLORHYDRATE D')",
+    "HYDROXYZINE (DICHLORHYDRATE DE)",
+    "HYDROXYÉTHYLAMIDON 130 000",
+    "HYDROXYÉTHYLAMIDON 130/0,4",
+    "MAGNÉSIUM (HYDROXYDE DE)",
+    "N-HYDROXYMÉTHYLSUCCINIMIDE",
+    "SULFATE D'HYDROXYCHLOROQUINE"
+   ],
+   "brands_fr": [
+    "AMINOMIX",
+    "ATARAX",
+    "CELSIOR",
+    "CHLORUMAGENE",
+    "COLLYRE BLEU LAITER",
+    "FER PANPHARMA",
+    "FER SANDOZ",
+    "FER VIATRIS",
+    "GAMMA-OH",
+    "GASTROPAX",
+    "GELOX",
+    "HYDREA",
+    "HYDROXYCARBAMIDE ARROW",
+    "HYDROXYZINE ARROW",
+    "HYDROXYZINE BIOGARAN",
+    "HYDROXYZINE BLUEFISH",
+    "HYDROXYZINE CRISTERS",
+    "HYDROXYZINE EG",
+    "HYDROXYZINE RENAUDIN",
+    "HYDROXYZINE TEVA",
+    "HYDROXYZINE VIATRIS",
+    "HYDROXYZINE ZENTIVA",
+    "KETOSTERIL",
+    "MAALOX MAUX D'ESTOMAC HYDROXYDE D'ALUMINIUM/HYDROXYDE DE MAGNESIUM",
+    "MAGNESIE SAN PELLEGRINO ANISEE",
+    "MAGNESIE SAN PELLEGRINO SANS ANIS",
+    "MARGA",
+    "MEDNUTRIFLEX E",
+    "MEDNUTRIFLEX OMEGA E",
+    "MOXYDAR",
+    "PEDIAVEN AP-HP NOUVEAU-NE",
+    "PERINUTRIFLEX OMEGA E",
+    "PLAQUENIL",
+    "REANUTRIFLEX E",
+    "REANUTRIFLEX OMEGA E",
+    "REFLOXAR",
+    "RHUBARBE ORTIS",
+    "SIKLOS",
+    "TRUE TEST",
+    "VENOFER",
+    "XOLAAM"
+   ]
+  },
+  "Idarubicin hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of idarubicin",
+   "ingredients": [
+    {
+     "rxcui": "5650",
+     "name": "idarubicin"
+    }
+   ],
+   "generic": [
+    "idarubicin",
+    "idarubicin hydrochloride"
+   ],
+   "brands_us": [
+    "Idamycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE D'IDARUBICINE"
+   ],
+   "brands_fr": [
+    "IDARUBICINE ACCORD",
+    "ZAVEDOS"
+   ]
+  },
+  "Ifosfamide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "5657",
+     "name": "ifosfamide"
+    }
+   ],
+   "generic": [
+    "ifosfamide"
+   ],
+   "brands_us": [
+    "Ifex"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "IFOSFAMIDE"
+   ],
+   "brands_fr": [
+    "HOLOXAN"
+   ]
+  },
+  "Iodine-131": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of sodium iodide",
+   "ingredients": [
+    {
+     "rxcui": "9884",
+     "name": "sodium iodide"
+    }
+   ],
+   "generic": [
+    "sodium iodide",
+    "sodium iodide I123",
+    "sodium iodide I131"
+   ],
+   "brands_us": [
+    "Iodopen"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Isotretinoin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6064",
+     "name": "isotretinoin"
+    }
+   ],
+   "generic": [
+    "isotretinoin"
+   ],
+   "brands_us": [
+    "Absorica",
+    "Accutane",
+    "Amnesteem",
+    "Claravis",
+    "Myorisan",
+    "Sotret",
+    "Zenatane"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ISOTRÉTINOÏNE"
+   ],
+   "brands_fr": [
+    "CONTRACNE",
+    "CURACNE",
+    "ISOTRETINOINE ACNETRAIT",
+    "PROCUTA",
+    "ROACCUTANE"
+   ]
+  },
+  "Lenalidomide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "342369",
+     "name": "lenalidomide"
+    }
+   ],
+   "generic": [
+    "lenalidomide"
+   ],
+   "brands_us": [
+    "Revlimid"
+   ],
+   "brands_eu": [
+    "Lenalidomide Accord",
+    "Lenalidomide Celgene Europe",
+    "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)",
+    "Lenalidomide Krka d.d.",
+    "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)",
+    "Lenalidomide Mylan",
+    "Revlimid"
+   ],
+   "brands_eu_status": {
+    "Lenalidomide Mylan": "Authorised",
+    "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)": "Authorised",
+    "Lenalidomide Accord": "Authorised",
+    "Revlimid": "Authorised",
+    "Lenalidomide Krka d.d.": "Withdrawn",
+    "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)": "Authorised",
+    "Lenalidomide Celgene Europe": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Lenalidomide Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-mylan",
+    "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka",
+    "Lenalidomide Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-accord",
+    "Revlimid": "https://www.ema.europa.eu/en/medicines/human/EPAR/revlimid",
+    "Lenalidomide Krka d.d.": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka-dd",
+    "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka-dd-novo-mesto",
+    "Lenalidomide Celgene Europe": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-celgene-europe"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE LÉNALIDOMIDE HYDRATÉ",
+    "LÉNALIDOMIDE"
+   ],
+   "brands_fr": [
+    "LENALIDOMIDE ACCORD",
+    "LENALIDOMIDE ARROW",
+    "LENALIDOMIDE EG",
+    "LENALIDOMIDE MYLAN",
+    "LENALIDOMIDE REDDY PHARMA",
+    "LENALIDOMIDE STRAGEN",
+    "LENALIDOMIDE TEVA",
+    "LENALIDOMIDE ZENTIVA",
+    "REVLIMID"
+   ]
+  },
+  "Leuprolide acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of leuprolide",
+   "ingredients": [
+    {
+     "rxcui": "42375",
+     "name": "leuprolide"
+    }
+   ],
+   "generic": [
+    "leuprolide",
+    "leuprolide acetate",
+    "leuprolide mesylate"
+   ],
+   "brands_us": [
+    "Camcevi",
+    "Eligard",
+    "Fensolvi",
+    "Lupron",
+    "Lutrate",
+    "Vabrinty"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Levodopa": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6375",
+     "name": "levodopa"
+    }
+   ],
+   "generic": [
+    "foslevodopa",
+    "levodopa"
+   ],
+   "brands_us": [
+    "Crexont",
+    "Dhivy",
+    "Duopa",
+    "Inbrija",
+    "Rytary",
+    "Sinemet",
+    "Stalevo",
+    "Vyalev"
+   ],
+   "brands_eu": [
+    "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)",
+    "Hopledo",
+    "Inbrija",
+    "Levodopa/Carbidopa/Entacapone Orion",
+    "Numient",
+    "Onerji",
+    "Stalevo"
+   ],
+   "brands_eu_status": {
+    "Onerji": "Authorised",
+    "Hopledo": "Authorised",
+    "Inbrija": "Authorised",
+    "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)": "Authorised",
+    "Levodopa/Carbidopa/Entacapone Orion": "Authorised",
+    "Stalevo": "Authorised",
+    "Numient": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Onerji": "https://www.ema.europa.eu/en/medicines/human/EPAR/onerji",
+    "Hopledo": "https://www.ema.europa.eu/en/medicines/human/EPAR/hopledo",
+    "Inbrija": "https://www.ema.europa.eu/en/medicines/human/EPAR/inbrija",
+    "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)": "https://www.ema.europa.eu/en/medicines/human/EPAR/corbilta",
+    "Levodopa/Carbidopa/Entacapone Orion": "https://www.ema.europa.eu/en/medicines/human/EPAR/levodopa-carbidopa-entacapone-orion",
+    "Stalevo": "https://www.ema.europa.eu/en/medicines/human/EPAR/stalevo",
+    "Numient": "https://www.ema.europa.eu/en/medicines/human/EPAR/numient"
+   },
+   "substances_fr": [
+    "LÉVODOPA"
+   ],
+   "brands_fr": [
+    "CORBILTA",
+    "DUODOPA",
+    "LECIGIMON",
+    "LEVODOPA CARBIDOPA TEVA",
+    "LEVODOPA CARBIDOPA TEVA LP",
+    "LEVODOPA/BENSERAZIDE TEVA",
+    "LEVODOPA/CARBIDOPA/ENTACAPONE ARROW",
+    "LEVODOPA/CARBIDOPA/ENTACAPONE BIOGARAN",
+    "LEVODOPA/CARBIDOPA/ENTACAPONE EG",
+    "LEVODOPA/CARBIDOPA/ENTACAPONE TEVA",
+    "LEVODOPA/CARBIDOPA/ENTACAPONE VIATRIS",
+    "MODOPAR",
+    "MODOPAR L.P.",
+    "PARLEKARV",
+    "SINEMET",
+    "SINEMET LP",
+    "STALEVO"
+   ]
+  },
+  "Lithium carbonate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "42351",
+     "name": "lithium carbonate"
+    }
+   ],
+   "generic": [
+    "lithium carbonate"
+   ],
+   "brands_us": [
+    "Lithobid"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CARBONATE DE LITHIUM"
+   ],
+   "brands_fr": [
+    "TERALITHE",
+    "TERALITHE LP"
+   ]
+  },
+  "Lithium citrate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "52105",
+     "name": "lithium citrate"
+    }
+   ],
+   "generic": [
+    "lithium citrate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CITRATE DE LITHIUM"
+   ],
+   "brands_fr": [
+    "GRANIONS DE LITHIUM"
+   ]
+  },
+  "Lorazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6470",
+     "name": "lorazepam"
+    }
+   ],
+   "generic": [
+    "lorazepam"
+   ],
+   "brands_us": [
+    "Ativan",
+    "Loreev"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "LORAZÉPAM"
+   ],
+   "brands_fr": [
+    "LORAZEPAM ARROW",
+    "LORAZEPAM VIATRIS",
+    "LORAZEPAM XILMAC",
+    "TEMESTA"
+   ]
+  },
+  "Lovastatin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6472",
+     "name": "lovastatin"
+    }
+   ],
+   "generic": [
+    "lovastatin"
+   ],
+   "brands_us": [
+    "Altoprev"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Mebendazole": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6672",
+     "name": "mebendazole"
+    }
+   ],
+   "generic": [
+    "mebendazole"
+   ],
+   "brands_us": [
+    "Emverm",
+    "Vermox"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Medroxyprogesterone acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of medroxyprogesterone",
+   "ingredients": [
+    {
+     "rxcui": "6691",
+     "name": "medroxyprogesterone"
+    }
+   ],
+   "generic": [
+    "medroxyprogesterone",
+    "medroxyprogesterone acetate"
+   ],
+   "brands_us": [
+    "Depo-Provera",
+    "depo-subQ provera",
+    "Provera"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE MÉDROXYPROGESTÉRONE"
+   ],
+   "brands_fr": [
+    "DEPO PRODASONE",
+    "DEPO PROVERA",
+    "DUOVA"
+   ]
+  },
+  "Megestrol acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of megestrol",
+   "ingredients": [
+    {
+     "rxcui": "6703",
+     "name": "megestrol"
+    }
+   ],
+   "generic": [
+    "megestrol",
+    "megestrol acetate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "MÉGESTROL (ACÉTATE DE)"
+   ],
+   "brands_fr": [
+    "MEGACE"
+   ]
+  },
+  "Melphalan": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6718",
+     "name": "melphalan"
+    }
+   ],
+   "generic": [
+    "melphalan",
+    "melphalan hydrochloride"
+   ],
+   "brands_us": [
+    "Alkeran",
+    "Evomela",
+    "Hepzato",
+    "Ivra"
+   ],
+   "brands_eu": [
+    "Pepaxti",
+    "Phelinun"
+   ],
+   "brands_eu_status": {
+    "Phelinun": "Authorised",
+    "Pepaxti": "Authorised"
+   },
+   "brands_eu_url": {
+    "Phelinun": "https://www.ema.europa.eu/en/medicines/human/EPAR/phelinun",
+    "Pepaxti": "https://www.ema.europa.eu/en/medicines/human/EPAR/pepaxti"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE MELPHALAN",
+    "MELPHALAN"
+   ],
+   "brands_fr": [
+    "ALKERAN",
+    "MELPHALAN SUN",
+    "MELPHALAN TILLOMED",
+    "PHELINUN"
+   ]
+  },
+  "Menotropins": {
+   "note": "",
+   "resolved_as": "not found in RxNorm",
+   "ingredients": [],
+   "generic": [],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Meprobamate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6760",
+     "name": "meprobamate"
+    }
+   ],
+   "generic": [
+    "meprobamate"
+   ],
+   "brands_us": [
+    "Equagesic"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Mercaptopurine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "103",
+     "name": "mercaptopurine"
+    }
+   ],
+   "generic": [
+    "mercaptopurine",
+    "mercaptopurine anhydrous"
+   ],
+   "brands_us": [
+    "Purixan"
+   ],
+   "brands_eu": [
+    "Loulla",
+    "Xaluprine (previously Mercaptopurine Nova Laboratories)"
+   ],
+   "brands_eu_status": {
+    "Xaluprine (previously Mercaptopurine Nova Laboratories)": "Authorised",
+    "Loulla": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Xaluprine (previously Mercaptopurine Nova Laboratories)": "https://www.ema.europa.eu/en/medicines/human/EPAR/xaluprine",
+    "Loulla": "https://www.ema.europa.eu/en/medicines/human/EPAR/loulla"
+   },
+   "substances_fr": [
+    "BITARTRATE DE MERCAPTAMINE",
+    "CHLORHYDRATE DE MERCAPTAMINE",
+    "MERCAPTAMINE",
+    "MERCAPTOACÉTYLTRIGLYCINE",
+    "MERCAPTOBENZOTHIAZOLE",
+    "MERCAPTOPURINE",
+    "MERCAPTOPURINE MONOHYDRATÉ"
+   ],
+   "brands_fr": [
+    "CYSTADROPS",
+    "CYSTAGON",
+    "NephroMAG",
+    "PROCYSBI",
+    "PURINETHOL",
+    "TRUE TEST",
+    "XALUPRINE"
+   ]
+  },
+  "Methacycline hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of methacycline",
+   "ingredients": [
+    {
+     "rxcui": "6812",
+     "name": "methacycline"
+    }
+   ],
+   "generic": [
+    "methacycline",
+    "methacycline hydrochloride"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Methimazole": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6835",
+     "name": "methimazole"
+    }
+   ],
+   "generic": [
+    "methimazole"
+   ],
+   "brands_us": [
+    "Felanorm",
+    "Felimazole",
+    "Reguzol"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Methotrexate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6851",
+     "name": "methotrexate"
+    }
+   ],
+   "generic": [
+    "methotrexate",
+    "methotrexate sodium"
+   ],
+   "brands_us": [
+    "Jylamvo",
+    "Otrexup",
+    "Rasuvo",
+    "Reditrex",
+    "Trexall",
+    "Xatmep"
+   ],
+   "brands_eu": [
+    "Jylamvo",
+    "Nordimet"
+   ],
+   "brands_eu_status": {
+    "Nordimet": "Authorised",
+    "Jylamvo": "Authorised"
+   },
+   "brands_eu_url": {
+    "Nordimet": "https://www.ema.europa.eu/en/medicines/human/EPAR/nordimet",
+    "Jylamvo": "https://www.ema.europa.eu/en/medicines/human/EPAR/jylamvo"
+   },
+   "substances_fr": [
+    "MÉTHOTREXATE",
+    "MÉTHOTREXATE DISODIQUE"
+   ],
+   "brands_fr": [
+    "IMENOR",
+    "IMETH",
+    "IZIXATE",
+    "METHOTREXATE ACCORD",
+    "METHOTREXATE BIODIM",
+    "METHOTREXATE TEVA",
+    "METHOTREXATE VIATRIS",
+    "METOJECT",
+    "METOTAB",
+    "NORDIMET",
+    "NOVATREX"
+   ]
+  },
+  "Methotrexate sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of methotrexate",
+   "ingredients": [
+    {
+     "rxcui": "6851",
+     "name": "methotrexate"
+    }
+   ],
+   "generic": [
+    "methotrexate",
+    "methotrexate sodium"
+   ],
+   "brands_us": [
+    "Jylamvo",
+    "Otrexup",
+    "Rasuvo",
+    "Reditrex",
+    "Trexall",
+    "Xatmep"
+   ],
+   "brands_eu": [
+    "Jylamvo",
+    "Nordimet"
+   ],
+   "brands_eu_status": {
+    "Nordimet": "Authorised",
+    "Jylamvo": "Authorised"
+   },
+   "brands_eu_url": {
+    "Nordimet": "https://www.ema.europa.eu/en/medicines/human/EPAR/nordimet",
+    "Jylamvo": "https://www.ema.europa.eu/en/medicines/human/EPAR/jylamvo"
+   },
+   "substances_fr": [
+    "MÉTHOTREXATE",
+    "MÉTHOTREXATE DISODIQUE"
+   ],
+   "brands_fr": [
+    "IMENOR",
+    "IMETH",
+    "IZIXATE",
+    "METHOTREXATE ACCORD",
+    "METHOTREXATE BIODIM",
+    "METHOTREXATE TEVA",
+    "METHOTREXATE VIATRIS",
+    "METOJECT",
+    "METOTAB",
+    "NORDIMET",
+    "NOVATREX"
+   ]
+  },
+  "Methyltestosterone": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6904",
+     "name": "methyltestosterone"
+    }
+   ],
+   "generic": [
+    "methyltestosterone"
+   ],
+   "brands_us": [
+    "Covaryx",
+    "Estratest",
+    "Methitest"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORURE DE MÉTHYLTHIONINIUM",
+    "HYDROXYDE DE MÉTHYLTHIONINIUM"
+   ],
+   "brands_fr": [
+    "CHLORURE DE METHYLTHIONINIUM PROVEBLUE",
+    "COLLYRE BLEU LAITER"
+   ]
+  },
+  "Midazolam hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of midazolam",
+   "ingredients": [
+    {
+     "rxcui": "6960",
+     "name": "midazolam"
+    }
+   ],
+   "generic": [
+    "midazolam",
+    "midazolam hydrochloride",
+    "midazolam maleate"
+   ],
+   "brands_us": [
+    "Nayzilam"
+   ],
+   "brands_eu": [
+    "Buccolam",
+    "Omforro",
+    "Tuzodi"
+   ],
+   "brands_eu_status": {
+    "Omforro": "Application withdrawn",
+    "Tuzodi": "Application withdrawn",
+    "Buccolam": "Authorised"
+   },
+   "brands_eu_url": {
+    "Omforro": "https://www.ema.europa.eu/en/medicines/human/EPAR/omforro",
+    "Tuzodi": "https://www.ema.europa.eu/en/medicines/human/EPAR/tuzodi",
+    "Buccolam": "https://www.ema.europa.eu/en/medicines/human/EPAR/buccolam"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE MIDAZOLAM",
+    "MIDAZOLAM",
+    "MIDAZOLAM (CHLORHYDRATE DE)"
+   ],
+   "brands_fr": [
+    "BUCCOLAM",
+    "MIDAZOLAM ACCORD",
+    "MIDAZOLAM AGUETTANT",
+    "MIDAZOLAM KALCEKS",
+    "MIDAZOLAM PANPHARMA",
+    "MIDAZOLAM VIATRIS",
+    "OZALIN"
+   ]
+  },
+  "Minocycline hydrochloride (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of minocycline",
+   "ingredients": [
+    {
+     "rxcui": "6980",
+     "name": "minocycline"
+    }
+   ],
+   "generic": [
+    "minocycline",
+    "minocycline hydrochloride"
+   ],
+   "brands_us": [
+    "Amzeeq",
+    "Arestin",
+    "Cleeravue-M",
+    "Emrosi",
+    "Minocin",
+    "Minolira",
+    "Solodyn",
+    "Ximino",
+    "Zilxi"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE MINOCYCLINE",
+    "MINOCYCLINE (CHLORHYDRATE DE)",
+    "MINOCYCLINE BASE"
+   ],
+   "brands_fr": [
+    "MYNOCINE",
+    "PAROCLINE"
+   ]
+  },
+  "Misoprostol": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "42331",
+     "name": "misoprostol"
+    }
+   ],
+   "generic": [
+    "misoprostol"
+   ],
+   "brands_us": [
+    "Arthrotec",
+    "Cytotec"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "MISOPROSTOL"
+   ],
+   "brands_fr": [
+    "ANGUSTA",
+    "GYMISO",
+    "MISOONE"
+   ]
+  },
+  "Mitoxantrone hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of mitoxantrone",
+   "ingredients": [
+    {
+     "rxcui": "7005",
+     "name": "mitoxantrone"
+    }
+   ],
+   "generic": [
+    "mitoxantrone",
+    "mitoxantrone hydrochloride"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE MITOXANTRONE",
+    "MITOXANTRONE"
+   ],
+   "brands_fr": [
+    "MITOXANTRONE ACCORD",
+    "NOVANTRONE"
+   ]
+  },
+  "Mycophenolate mofetil and mycophenolic acid": {
+   "note": "",
+   "resolved_as": "RxNorm mycophenolate mofetil + mycophenolic acid",
+   "ingredients": [
+    {
+     "rxcui": "68149",
+     "name": "mycophenolate mofetil"
+    },
+    {
+     "rxcui": "7145",
+     "name": "mycophenolic acid"
+    }
+   ],
+   "generic": [
+    "mycophenolate mofetil",
+    "mycophenolate mofetil hydrochloride",
+    "mycophenolic acid"
+   ],
+   "brands_us": [
+    "Cellcept",
+    "Myfortic",
+    "Myhibbin"
+   ],
+   "brands_eu": [
+    "CellCept",
+    "Myclausen",
+    "Mycophenolate mofetil Teva",
+    "Myfenax"
+   ],
+   "brands_eu_status": {
+    "CellCept": "Authorised",
+    "Mycophenolate mofetil Teva": "Authorised",
+    "Myfenax": "Authorised",
+    "Myclausen": "Authorised"
+   },
+   "brands_eu_url": {
+    "CellCept": "https://www.ema.europa.eu/en/medicines/human/EPAR/cellcept",
+    "Mycophenolate mofetil Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/mycophenolate-mofetil-teva",
+    "Myfenax": "https://www.ema.europa.eu/en/medicines/human/EPAR/myfenax",
+    "Myclausen": "https://www.ema.europa.eu/en/medicines/human/EPAR/myclausen"
+   },
+   "substances_fr": [
+    "ACIDE MYCOPHÉNOLIQUE",
+    "CHLORHYDRATE DE MYCOPHÉNOLATE MOFÉTIL",
+    "MYCOPHÉNOLATE MOFÉTIL",
+    "MYCOPHÉNOLATE SODIQUE"
+   ],
+   "brands_fr": [
+    "CELLCEPT",
+    "MYCOPHENOLATE MOFETIL ARROW",
+    "MYCOPHENOLATE MOFETIL BIOGARAN",
+    "MYCOPHENOLATE MOFETIL SANDOZ",
+    "MYCOPHENOLATE MOFETIL TEVA",
+    "MYCOPHENOLATE MOFETIL VIATRIS",
+    "MYFENAX",
+    "MYFORTIC"
+   ]
+  },
+  "Nafarelin acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of nafarelin",
+   "ingredients": [
+    {
+     "rxcui": "28656",
+     "name": "nafarelin"
+    }
+   ],
+   "generic": [
+    "nafarelin",
+    "nafarelin acetate"
+   ],
+   "brands_us": [
+    "Synarel"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE NAFARÉLINE",
+    "NAFARÉLINE BASE"
+   ],
+   "brands_fr": [
+    "SYNAREL"
+   ]
+  },
+  "Neomycin sulfate (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of neomycin",
+   "ingredients": [
+    {
+     "rxcui": "7299",
+     "name": "neomycin"
+    }
+   ],
+   "generic": [
+    "neomycin",
+    "neomycin sulfate"
+   ],
+   "brands_us": [
+    "Cortisporin",
+    "Cortisporin-TC",
+    "Cuadriderma",
+    "Lanabiotic",
+    "Maxitrol",
+    "Mycitracin Plus Pain Reliever",
+    "Neo-Polycin",
+    "Neo-Polycin HC",
+    "Neo-Predef",
+    "Neo-Synalar",
+    "Neovet",
+    "Oticin HC",
+    "Poly-Dex",
+    "Spectrocin Plus",
+    "Tresaderm",
+    "Tri Biozene"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "NÉOMYCINE (SULFATE DE)",
+    "SULFATE DE NÉOMYCINE"
+   ],
+   "brands_fr": [
+    "ANTIBIO SYNALAR",
+    "CHIBRO CADRON",
+    "CIDERMEX",
+    "MAXIDROL",
+    "PANOTILE",
+    "POLYDEXA",
+    "POLYGYNAX",
+    "POLYGYNAX VIRGO",
+    "TERGYNAN",
+    "TRUE TEST"
+   ]
+  },
+  "Netilmicin sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of netilmicin",
+   "ingredients": [
+    {
+     "rxcui": "7337",
+     "name": "netilmicin"
+    }
+   ],
+   "generic": [
+    "netilmicin",
+    "netilmicin sulfate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "NÉTILMICINE",
+    "SULFATE DE NÉTILMICINE"
+   ],
+   "brands_fr": [
+    "ANETENA",
+    "NETAXEN"
+   ]
+  },
+  "Nifedipine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7417",
+     "name": "nifedipine"
+    }
+   ],
+   "generic": [
+    "nifedipine"
+   ],
+   "brands_us": [
+    "Afeditab CR",
+    "Procardia"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "NIFÉDIPINE"
+   ],
+   "brands_fr": [
+    "ATENOLOL/NIFEDIPINE BIOGARAN",
+    "ATENOLOL/NIFEDIPINE VIATRIS",
+    "MAPAKNA LP",
+    "NIFEDIPINE ARROW L.P.",
+    "NIFEDIPINE VIATRIS L.P.",
+    "NIFEXINE"
+   ]
+  },
+  "Nimodipine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7426",
+     "name": "nimodipine"
+    }
+   ],
+   "generic": [
+    "nimodipine"
+   ],
+   "brands_us": [
+    "Nimotop",
+    "Nymalize"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "NIMODIPINE"
+   ],
+   "brands_fr": [
+    "NIMODIPINE ALTAN",
+    "NIMOTOP"
+   ]
+  },
+  "Nitrogen mustard (Mechlorethamine)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6674",
+     "name": "mechlorethamine"
+    }
+   ],
+   "generic": [
+    "mechlorethamine",
+    "mechlorethamine hydrochloride"
+   ],
+   "brands_us": [
+    "Valchlor"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE CHLORMÉTHINE",
+    "CHLORMÉTHINE"
+   ],
+   "brands_fr": [
+    "LEDAGA"
+   ]
+  },
+  "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6674",
+     "name": "mechlorethamine"
+    }
+   ],
+   "generic": [
+    "mechlorethamine",
+    "mechlorethamine hydrochloride"
+   ],
+   "brands_us": [
+    "Valchlor"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE CHLORMÉTHINE",
+    "CHLORMÉTHINE"
+   ],
+   "brands_fr": [
+    "LEDAGA"
+   ]
+  },
+  "Norethisterone (Norethindrone)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7514",
+     "name": "norethindrone"
+    }
+   ],
+   "generic": [
+    "norethindrone",
+    "norethindrone acetate",
+    "norethindrone enanthate"
+   ],
+   "brands_us": [
+    "Aygestin",
+    "Combipatch",
+    "Femhrt",
+    "Fyavolv",
+    "Gallifrey",
+    "Jevantique",
+    "Jinteli",
+    "Myfembree"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE NORÉTHISTÉRONE",
+    "NORÉTHISTÉRONE (ACÉTATE DE)"
+   ],
+   "brands_fr": [
+    "ACTIVELLE",
+    "KLIOGEST",
+    "NOVOFEMME",
+    "RYEQO",
+    "TRISEQUENS"
+   ]
+  },
+  "Norethisterone (Norethindrone) /Ethinyl estradiol": {
+   "note": "",
+   "resolved_as": "RxNorm MIN",
+   "ingredients": [
+    {
+     "rxcui": "384410",
+     "name": "ethinyl estradiol / norethindrone"
+    }
+   ],
+   "generic": [
+    "ethinyl estradiol / norethindrone",
+    "norethindrone acetate"
+   ],
+   "brands_us": [
+    "Aygestin",
+    "Combipatch",
+    "Femhrt",
+    "Fyavolv",
+    "Gallifrey",
+    "Jevantique",
+    "Jinteli",
+    "Myfembree"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Norethisterone (Norethindrone) /Mestranol": {
+   "note": "",
+   "resolved_as": "RxNorm MIN",
+   "ingredients": [
+    {
+     "rxcui": "154643",
+     "name": "mestranol / norethindrone"
+    }
+   ],
+   "generic": [
+    "mestranol / norethindrone"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Norethisterone acetate (Norethindrone acetate)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of norethindrone",
+   "ingredients": [
+    {
+     "rxcui": "7514",
+     "name": "norethindrone"
+    }
+   ],
+   "generic": [
+    "norethindrone",
+    "norethindrone acetate",
+    "norethindrone enanthate"
+   ],
+   "brands_us": [
+    "Aygestin",
+    "Combipatch",
+    "Femhrt",
+    "Fyavolv",
+    "Gallifrey",
+    "Jevantique",
+    "Jinteli",
+    "Myfembree"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE NORÉTHISTÉRONE",
+    "NORÉTHISTÉRONE (ACÉTATE DE)"
+   ],
+   "brands_fr": [
+    "ACTIVELLE",
+    "KLIOGEST",
+    "NOVOFEMME",
+    "RYEQO",
+    "TRISEQUENS"
+   ]
+  },
+  "Norgestrel": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7518",
+     "name": "norgestrel"
+    }
+   ],
+   "generic": [
+    "norgestrel"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "NORGESTIMATE"
+   ],
+   "brands_fr": [
+    "FEMI",
+    "NARAVELA",
+    "OPTIKINZY",
+    "TRIAFEMI",
+    "TRIAFEMI CONTINU",
+    "TRINARA",
+    "TRINARA CONTINU"
+   ]
+  },
+  "Oxazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7781",
+     "name": "oxazepam"
+    }
+   ],
+   "generic": [
+    "oxazepam"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "OXAZÉPAM"
+   ],
+   "brands_fr": [
+    "OXAZEPAM ARROW",
+    "OXAZEPAM BIOGARAN",
+    "OXAZEPAM SUBSTIPHARM",
+    "OXAZEPAM VIATRIS",
+    "SERESTA"
+   ]
+  },
+  "Oxymetholone": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7813",
+     "name": "oxymetholone"
+    }
+   ],
+   "generic": [
+    "oxymetholone"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Oxytetracycline (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7821",
+     "name": "oxytetracycline"
+    }
+   ],
+   "generic": [
+    "oxytetracycline",
+    "oxytetracycline anhydrous",
+    "oxytetracycline calcium",
+    "oxytetracycline dihydrate",
+    "oxytetracycline hydrochloride"
+   ],
+   "brands_us": [
+    "Agrimycin",
+    "Bio-Mycin",
+    "Compudose",
+    "Liquamycin",
+    "Noromycin",
+    "Terra-Vet",
+    "Terramycin",
+    "Vetrimycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "OXYTÉTRACYCLINE",
+    "OXYTÉTRACYCLINE (CHLORHYDRATE D')",
+    "OXYTÉTRACYCLINE DIHYDRATÉE"
+   ],
+   "brands_fr": [
+    "AURICULARUM",
+    "LACRYADEX",
+    "STERDEX"
+   ]
+  },
+  "Oxytetracycline hydrochloride (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of oxytetracycline",
+   "ingredients": [
+    {
+     "rxcui": "7821",
+     "name": "oxytetracycline"
+    }
+   ],
+   "generic": [
+    "oxytetracycline",
+    "oxytetracycline anhydrous",
+    "oxytetracycline calcium",
+    "oxytetracycline dihydrate",
+    "oxytetracycline hydrochloride"
+   ],
+   "brands_us": [
+    "Agrimycin",
+    "Bio-Mycin",
+    "Compudose",
+    "Liquamycin",
+    "Noromycin",
+    "Terra-Vet",
+    "Terramycin",
+    "Vetrimycin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "OXYTÉTRACYCLINE",
+    "OXYTÉTRACYCLINE (CHLORHYDRATE D')",
+    "OXYTÉTRACYCLINE DIHYDRATÉE"
+   ],
+   "brands_fr": [
+    "AURICULARUM",
+    "LACRYADEX",
+    "STERDEX"
+   ]
+  },
+  "Paclitaxel": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "56946",
+     "name": "paclitaxel"
+    }
+   ],
+   "generic": [
+    "paclitaxel",
+    "paclitaxel poliglumex",
+    "paclitaxel protein-bound"
+   ],
+   "brands_us": [
+    "Abraxane"
+   ],
+   "brands_eu": [
+    "Abraxane",
+    "Apealea",
+    "Apexelsin",
+    "Naveruclif",
+    "Paxene",
+    "Pazenir"
+   ],
+   "brands_eu_status": {
+    "Pazenir": "Authorised",
+    "Abraxane": "Authorised",
+    "Naveruclif": "Authorised",
+    "Apexelsin": "Authorised",
+    "Apealea": "Withdrawn",
+    "Paxene": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Pazenir": "https://www.ema.europa.eu/en/medicines/human/EPAR/pazenir",
+    "Abraxane": "https://www.ema.europa.eu/en/medicines/human/EPAR/abraxane",
+    "Naveruclif": "https://www.ema.europa.eu/en/medicines/human/EPAR/naveruclif",
+    "Apexelsin": "https://www.ema.europa.eu/en/medicines/human/EPAR/apexelsin",
+    "Apealea": "https://www.ema.europa.eu/en/medicines/human/EPAR/apealea",
+    "Paxene": "https://www.ema.europa.eu/en/medicines/human/EPAR/paxene"
+   },
+   "substances_fr": [
+    "PACLITAXEL"
+   ],
+   "brands_fr": [
+    "ABRAXANE",
+    "APEXELSIN",
+    "BUGVI",
+    "NAVERUCLIF",
+    "PACLITAXEL AHCL",
+    "PACLITAXEL ARROW",
+    "PACLITAXEL HOSPIRA",
+    "PACLITAXEL KABI",
+    "PACLITAXEL TEVA",
+    "PACLITAXEL VIATRIS",
+    "PACLITAXELSANDOZ",
+    "PAZENIR"
+   ]
+  },
+  "Paramethadione": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "32894",
+     "name": "paramethadione"
+    }
+   ],
+   "generic": [
+    "paramethadione"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Penicillamine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7975",
+     "name": "penicillamine"
+    }
+   ],
+   "generic": [
+    "penicillamine"
+   ],
+   "brands_us": [
+    "Aagylur",
+    "Cuprimine",
+    "Depen"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PENICILLINE V",
+    "PÉNICILLAMINE"
+   ],
+   "brands_fr": [
+    "ORACILLINE",
+    "TROLOVOL"
+   ]
+  },
+  "Pentobarbital sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of pentobarbital",
+   "ingredients": [
+    {
+     "rxcui": "8004",
+     "name": "pentobarbital"
+    }
+   ],
+   "generic": [
+    "pentobarbital",
+    "pentobarbital sodium"
+   ],
+   "brands_us": [
+    "Euthaphen",
+    "Euthasol",
+    "Fatal-Plus",
+    "Nembutal",
+    "Pentobarsol"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Pentostatin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8011",
+     "name": "pentostatin"
+    }
+   ],
+   "generic": [
+    "pentostatin"
+   ],
+   "brands_us": [
+    "Nipent"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PENTOSTATINE"
+   ],
+   "brands_fr": [
+    "NIPENT"
+   ]
+  },
+  "Pertuzumab": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1298944",
+     "name": "pertuzumab"
+    }
+   ],
+   "generic": [
+    "pertuzumab",
+    "pertuzumab-zzxf"
+   ],
+   "brands_us": [
+    "Perjeta",
+    "Phesgo"
+   ],
+   "brands_eu": [
+    "Pebrilzo",
+    "Perjeta",
+    "Phesgo",
+    "Poherdy"
+   ],
+   "brands_eu_status": {
+    "Pebrilzo": "Opinion",
+    "Perjeta": "Authorised",
+    "Poherdy": "Authorised",
+    "Phesgo": "Authorised"
+   },
+   "brands_eu_url": {
+    "Pebrilzo": "https://www.ema.europa.eu/en/medicines/human/EPAR/pebrilzo",
+    "Perjeta": "https://www.ema.europa.eu/en/medicines/human/EPAR/perjeta",
+    "Poherdy": "https://www.ema.europa.eu/en/medicines/human/EPAR/poherdy",
+    "Phesgo": "https://www.ema.europa.eu/en/medicines/human/EPAR/phesgo"
+   },
+   "substances_fr": [
+    "PERTUZUMAB"
+   ],
+   "brands_fr": [
+    "PERJETA",
+    "PHESGO"
+   ]
+  },
+  "Phenacemide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "33253",
+     "name": "phenacemide"
+    }
+   ],
+   "generic": [
+    "phenacemide"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Phenindione": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8130",
+     "name": "phenindione"
+    }
+   ],
+   "generic": [
+    "phenindione"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Phenobarbital": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8134",
+     "name": "phenobarbital"
+    }
+   ],
+   "generic": [
+    "phenobarbital",
+    "phenobarbital sodium"
+   ],
+   "brands_us": [
+    "Donnatal",
+    "Fidoquel",
+    "Phenohytro",
+    "Sezaby"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PHÉNOBARBITAL",
+    "PHÉNOBARBITAL SODIQUE"
+   ],
+   "brands_fr": [
+    "ALEPSAL",
+    "GARDENAL",
+    "PHENOBARBITAL RICHARD"
+   ]
+  },
+  "Phenprocoumon": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8150",
+     "name": "phenprocoumon"
+    }
+   ],
+   "generic": [
+    "phenprocoumon"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Pimozide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8331",
+     "name": "pimozide"
+    }
+   ],
+   "generic": [
+    "pimozide"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PIMOZIDE"
+   ],
+   "brands_fr": [
+    "ORAP"
+   ]
+  },
+  "Pipobroman": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8347",
+     "name": "pipobroman"
+    }
+   ],
+   "generic": [
+    "pipobroman"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PIPOBROMAN"
+   ],
+   "brands_fr": [
+    "VERCYTE"
+   ]
+  },
+  "Plicamycin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "6995",
+     "name": "plicamycin"
+    }
+   ],
+   "generic": [
+    "plicamycin"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Pravastatin sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of pravastatin",
+   "ingredients": [
+    {
+     "rxcui": "42463",
+     "name": "pravastatin"
+    }
+   ],
+   "generic": [
+    "pravastatin",
+    "pravastatin sodium"
+   ],
+   "brands_us": [
+    "Pravachol"
+   ],
+   "brands_eu": [
+    "Pravafenix"
+   ],
+   "brands_eu_status": {
+    "Pravafenix": "Authorised"
+   },
+   "brands_eu_url": {
+    "Pravafenix": "https://www.ema.europa.eu/en/medicines/human/EPAR/pravafenix"
+   },
+   "substances_fr": [
+    "PRAVASTATINE SODIQUE"
+   ],
+   "brands_fr": [
+    "PRAVASTATINE ACCORD",
+    "PRAVASTATINE ALMUS",
+    "PRAVASTATINE ARROW",
+    "PRAVASTATINE BIOGARAN",
+    "PRAVASTATINE CRISTERS",
+    "PRAVASTATINE CRISTERS PHARMA",
+    "PRAVASTATINE EG",
+    "PRAVASTATINE EVOLUGEN PHARMA",
+    "PRAVASTATINE SANDOZ",
+    "PRAVASTATINE TEVA",
+    "PRAVASTATINE VIATRIS",
+    "PRAVASTATINE ZENTIVA",
+    "PRAVASTATINE ZYDUS"
+   ]
+  },
+  "Prednisolone sodium phosphate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of prednisolone",
+   "ingredients": [
+    {
+     "rxcui": "8638",
+     "name": "prednisolone"
+    }
+   ],
+   "generic": [
+    "prednisolone",
+    "prednisolone acetate",
+    "prednisolone phosphate",
+    "prednisolone sodium metasulphobenzoate",
+    "prednisolone sodium phosphate",
+    "prednisolone sodium succinate",
+    "prednisolone tebutate"
+   ],
+   "brands_us": [
+    "Blephamide",
+    "Cortamine",
+    "MILLIPRED",
+    "Orapred",
+    "Pediapred",
+    "Pred Forte",
+    "Pred Mild",
+    "Prednistab",
+    "Surolan",
+    "Temaril-P",
+    "Veripred"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACÉTATE DE PREDNISOLONE",
+    "CAPROATE DE PREDNISOLONE",
+    "MÉTASULFOBENZOATE SODIQUE DE PREDNISOLONE",
+    "PIVALATE DE PREDNISOLONE",
+    "PREDNISOLONE",
+    "PREDNISOLONE (CAPROATE DE)",
+    "PREDNISOLONE (MÉTASULFOBENZOATE SODIQUE DE)",
+    "PREDNISONE"
+   ],
+   "brands_fr": [
+    "CORTANCYL",
+    "DELIPROCT",
+    "DERINOX",
+    "HYDROCORTANCYL",
+    "PREDNISOLONE ARROW",
+    "PREDNISOLONE BIOGARAN",
+    "PREDNISOLONE CRISTERS",
+    "PREDNISOLONE EG",
+    "PREDNISOLONE EVOLUGEN",
+    "PREDNISOLONE SANDOZ",
+    "PREDNISOLONE TEVA",
+    "PREDNISOLONE VIATRIS",
+    "PREDNISOLONE ZENTIVA",
+    "PREDNISOLONE ZENTIVA LAB",
+    "PREDNISONE ARROW",
+    "PREDNISONE BIOGARAN",
+    "PREDNISONE EG",
+    "PREDNISONE SANDOZ",
+    "PREDNISONE VIATRIS",
+    "PREDNISONE ZENTIVA",
+    "SOLUPRED",
+    "ULTARCORLENE"
+   ]
+  },
+  "Primidone": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8691",
+     "name": "primidone"
+    }
+   ],
+   "generic": [
+    "primidone"
+   ],
+   "brands_us": [
+    "Mysoline"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PRIMIDONE"
+   ],
+   "brands_fr": [
+    "MYSOLINE"
+   ]
+  },
+  "Procarbazine hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of procarbazine",
+   "ingredients": [
+    {
+     "rxcui": "8702",
+     "name": "procarbazine"
+    }
+   ],
+   "generic": [
+    "procarbazine",
+    "procarbazine hydrochloride"
+   ],
+   "brands_us": [
+    "Matulane"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE PROCARBAZINE",
+    "PROCARBAZINE"
+   ],
+   "brands_fr": [
+    "NATULAN"
+   ]
+  },
+  "Propylthiouracil": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8794",
+     "name": "propylthiouracil"
+    }
+   ],
+   "generic": [
+    "propylthiouracil"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PROPYLTHIOURACILE"
+   ],
+   "brands_fr": [
+    "PROPYLEX"
+   ]
+  },
+  "Pyrimethamine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "9010",
+     "name": "pyrimethamine"
+    }
+   ],
+   "generic": [
+    "pyrimethamine"
+   ],
+   "brands_us": [
+    "Daraprim",
+    "Rebalance"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PYRIMÉTHAMINE"
+   ],
+   "brands_fr": [
+    "MALOCIDE"
+   ]
+  },
+  "Quazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "35185",
+     "name": "quazepam"
+    }
+   ],
+   "generic": [
+    "quazepam"
+   ],
+   "brands_us": [
+    "Doral"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)": {
+   "note": "Brand names are not listed: vitamin A is in many multivitamins and prenatal vitamins, and California lists it only above 10,000 IU a day.",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "11246",
+     "name": "vitamin A"
+    }
+   ],
+   "generic": [
+    "retinol acetate",
+    "vitamin A",
+    "vitamin A myristate",
+    "vitamin A palmitate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CONCENTRAT DE VITAMINE A SYNTHÉTIQUE, FORME HUILEUSE",
+    "VITAMINE A (ACÉTATE DE)"
+   ],
+   "brands_fr": []
+  },
+  "Ribavirin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "9344",
+     "name": "ribavirin"
+    }
+   ],
+   "generic": [
+    "ribavirin"
+   ],
+   "brands_us": [
+    "Moderiba",
+    "Ribasphere",
+    "RibaTab",
+    "Virazole"
+   ],
+   "brands_eu": [
+    "Cotronak",
+    "Rebetol",
+    "Ribavirin BioPartners",
+    "Ribavirin Mylan (previously Ribavirin Three Rivers)",
+    "Ribavirin Teva",
+    "Ribavirin Teva Pharma B.V."
+   ],
+   "brands_eu_status": {
+    "Rebetol": "Withdrawn",
+    "Ribavirin Teva Pharma B.V.": "Withdrawn",
+    "Ribavirin Teva": "Withdrawn",
+    "Ribavirin Mylan (previously Ribavirin Three Rivers)": "Withdrawn",
+    "Ribavirin BioPartners": "Lapsed",
+    "Cotronak": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Rebetol": "https://www.ema.europa.eu/en/medicines/human/EPAR/rebetol",
+    "Ribavirin Teva Pharma B.V.": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-teva-pharma-bv",
+    "Ribavirin Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-teva",
+    "Ribavirin Mylan (previously Ribavirin Three Rivers)": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-mylan",
+    "Ribavirin BioPartners": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-biopartners",
+    "Cotronak": "https://www.ema.europa.eu/en/medicines/human/EPAR/cotronak"
+   },
+   "substances_fr": [
+    "RIBAVIRINE"
+   ],
+   "brands_fr": []
+  },
+  "Rifampin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "9384",
+     "name": "rifampin"
+    }
+   ],
+   "generic": [
+    "rifampin"
+   ],
+   "brands_us": [
+    "Rifadin"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "RIFAMPICINE",
+    "RIFAMPICINE SODIQUE"
+   ],
+   "brands_fr": [
+    "RIFADINE",
+    "RIFADINE IV",
+    "RIFATER",
+    "RIFINAH",
+    "RIMACTAN"
+   ]
+  },
+  "Secobarbital sodium": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of secobarbital",
+   "ingredients": [
+    {
+     "rxcui": "9624",
+     "name": "secobarbital"
+    }
+   ],
+   "generic": [
+    "secobarbital",
+    "secobarbital sodium"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Sermorelin acetate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of sermorelin",
+   "ingredients": [
+    {
+     "rxcui": "56188",
+     "name": "sermorelin"
+    }
+   ],
+   "generic": [
+    "sermorelin",
+    "sermorelin acetate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Streptomycin sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of streptomycin",
+   "ingredients": [
+    {
+     "rxcui": "10109",
+     "name": "streptomycin"
+    }
+   ],
+   "generic": [
+    "streptomycin",
+    "streptomycin sulfate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 1 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 10A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 11A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 12F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 14 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 15B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 17F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 18C (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 2 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 20 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 22F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 23F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 3 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 33F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 4 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 5 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 6B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 7F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 8 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9N (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9V (POLYOSIDES DE)",
+    "STREPTOZOCINE"
+   ],
+   "brands_fr": [
+    "PNEUMOVAX",
+    "ZANOSAR"
+   ]
+  },
+  "Streptozocin (streptozotocin)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10114",
+     "name": "streptozocin"
+    }
+   ],
+   "generic": [
+    "streptozocin"
+   ],
+   "brands_us": [
+    "Zanosar"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 1 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 10A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 11A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 12F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 14 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 15B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 17F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 18C (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19A (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 19F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 2 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 20 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 22F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 23F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 3 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 33F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 4 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 5 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 6B (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 7F (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 8 (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9N (POLYOSIDES DE)",
+    "STREPTOCOCCUS PNEUMONIAE SÉROTYPE 9V (POLYOSIDES DE)",
+    "STREPTOZOCINE"
+   ],
+   "brands_fr": [
+    "PNEUMOVAX",
+    "ZANOSAR"
+   ]
+  },
+  "Sulindac": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10237",
+     "name": "sulindac"
+    }
+   ],
+   "generic": [
+    "sulindac"
+   ],
+   "brands_us": [],
+   "brands_eu": [
+    "Flynpovi"
+   ],
+   "brands_eu_status": {
+    "Flynpovi": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Flynpovi": "https://www.ema.europa.eu/en/medicines/human/EPAR/flynpovi"
+   },
+   "substances_fr": [
+    "SULINDAC"
+   ],
+   "brands_fr": [
+    "ARTHROCINE"
+   ]
+  },
+  "Tamoxifen citrate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of tamoxifen",
+   "ingredients": [
+    {
+     "rxcui": "10324",
+     "name": "tamoxifen"
+    }
+   ],
+   "generic": [
+    "tamoxifen",
+    "tamoxifen citrate"
+   ],
+   "brands_us": [
+    "Soltamox"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CITRATE DE TAMOXIFÈNE",
+    "TAMOXIFÈNE",
+    "TAMOXIFÈNE (CITRATE DE)",
+    "TAMOXIFÈNE BASE"
+   ],
+   "brands_fr": [
+    "NOLVADEX",
+    "TAMOXIFENE ARROW",
+    "TAMOXIFENE BIOGARAN",
+    "TAMOXIFENE EG",
+    "TAMOXIFENE SANDOZ",
+    "TAMOXIFENE TEVA",
+    "TAMOXIFENE VIATRIS",
+    "TAMOXIFENE ZYDUS"
+   ]
+  },
+  "Temazepam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10355",
+     "name": "temazepam"
+    }
+   ],
+   "generic": [
+    "temazepam"
+   ],
+   "brands_us": [
+    "Restoril"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Teniposide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10362",
+     "name": "teniposide"
+    }
+   ],
+   "generic": [
+    "teniposide"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Testosterone cypionate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of testosterone",
+   "ingredients": [
+    {
+     "rxcui": "10379",
+     "name": "testosterone"
+    }
+   ],
+   "generic": [
+    "testosterone",
+    "testosterone (micronized)",
+    "testosterone cypionate",
+    "testosterone decanoate",
+    "testosterone enanthate",
+    "testosterone isocaproate",
+    "testosterone propionate",
+    "testosterone undecanoate"
+   ],
+   "brands_us": [
+    "Androderm",
+    "Androgel",
+    "Aveed",
+    "Azmiro",
+    "Depo-testosterone",
+    "Fortesta",
+    "Jatenzo",
+    "Kyzatrex",
+    "Natesto",
+    "Synovex H",
+    "Testim",
+    "Testopel",
+    "Tlando",
+    "Undecatrex",
+    "Vogelxo",
+    "Xyosted"
+   ],
+   "brands_eu": [
+    "Intrinsa",
+    "Livensa"
+   ],
+   "brands_eu_status": {
+    "Intrinsa": "Withdrawn",
+    "Livensa": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Intrinsa": "https://www.ema.europa.eu/en/medicines/human/EPAR/intrinsa",
+    "Livensa": "https://www.ema.europa.eu/en/medicines/human/EPAR/livensa"
+   },
+   "substances_fr": [
+    "TESTOSTÉRONE",
+    "UNDÉCANOATE DE TESTOSTÉRONE",
+    "ÉNANTATE DE TESTOSTÉRONE"
+   ],
+   "brands_fr": [
+    "ANDROGEL",
+    "ANDROTARDYL",
+    "NEBIDO",
+    "TESTAVAN",
+    "TESTOSTERONE BESINS",
+    "TESTOSTERONE DESMA"
+   ]
+  },
+  "Testosterone enanthate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of testosterone",
+   "ingredients": [
+    {
+     "rxcui": "10379",
+     "name": "testosterone"
+    }
+   ],
+   "generic": [
+    "testosterone",
+    "testosterone (micronized)",
+    "testosterone cypionate",
+    "testosterone decanoate",
+    "testosterone enanthate",
+    "testosterone isocaproate",
+    "testosterone propionate",
+    "testosterone undecanoate"
+   ],
+   "brands_us": [
+    "Androderm",
+    "Androgel",
+    "Aveed",
+    "Azmiro",
+    "Depo-testosterone",
+    "Fortesta",
+    "Jatenzo",
+    "Kyzatrex",
+    "Natesto",
+    "Synovex H",
+    "Testim",
+    "Testopel",
+    "Tlando",
+    "Undecatrex",
+    "Vogelxo",
+    "Xyosted"
+   ],
+   "brands_eu": [
+    "Intrinsa",
+    "Livensa"
+   ],
+   "brands_eu_status": {
+    "Intrinsa": "Withdrawn",
+    "Livensa": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Intrinsa": "https://www.ema.europa.eu/en/medicines/human/EPAR/intrinsa",
+    "Livensa": "https://www.ema.europa.eu/en/medicines/human/EPAR/livensa"
+   },
+   "substances_fr": [
+    "TESTOSTÉRONE",
+    "UNDÉCANOATE DE TESTOSTÉRONE",
+    "ÉNANTATE DE TESTOSTÉRONE"
+   ],
+   "brands_fr": [
+    "ANDROGEL",
+    "ANDROTARDYL",
+    "NEBIDO",
+    "TESTAVAN",
+    "TESTOSTERONE BESINS",
+    "TESTOSTERONE DESMA"
+   ]
+  },
+  "Tetracycline (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10395",
+     "name": "tetracycline"
+    }
+   ],
+   "generic": [
+    "tetracycline",
+    "tetracycline hydrochloride",
+    "tetracycline phosphate complex",
+    "tetracycline trihydrate"
+   ],
+   "brands_us": [
+    "Pylera",
+    "Viabecline",
+    "Vitastem"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE TÉTRACYCLINE",
+    "TÉTRACYCLINE"
+   ],
+   "brands_fr": [
+    "LYMECYCLINE ARROW",
+    "PYLERA",
+    "TETRALYSAL"
+   ]
+  },
+  "Tetracycline hydrochloride (internal use)": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of tetracycline",
+   "ingredients": [
+    {
+     "rxcui": "10395",
+     "name": "tetracycline"
+    }
+   ],
+   "generic": [
+    "tetracycline",
+    "tetracycline hydrochloride",
+    "tetracycline phosphate complex",
+    "tetracycline trihydrate"
+   ],
+   "brands_us": [
+    "Pylera",
+    "Viabecline",
+    "Vitastem"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "CHLORHYDRATE DE TÉTRACYCLINE",
+    "TÉTRACYCLINE"
+   ],
+   "brands_fr": [
+    "LYMECYCLINE ARROW",
+    "PYLERA",
+    "TETRALYSAL"
+   ]
+  },
+  "Tetracyclines (internal use)": {
+   "note": "",
+   "resolved_as": "class J01AA",
+   "ingredients": [
+    {
+     "rxcui": "10395",
+     "name": "tetracycline"
+    },
+    {
+     "rxcui": "2055906",
+     "name": "eravacycline"
+    },
+    {
+     "rxcui": "2059018",
+     "name": "sarecycline"
+    },
+    {
+     "rxcui": "2059269",
+     "name": "omadacycline"
+    },
+    {
+     "rxcui": "21272",
+     "name": "clomocycline"
+    },
+    {
+     "rxcui": "2408",
+     "name": "chlortetracycline"
+    },
+    {
+     "rxcui": "3154",
+     "name": "demeclocycline"
+    },
+    {
+     "rxcui": "3640",
+     "name": "doxycycline"
+    },
+    {
+     "rxcui": "384455",
+     "name": "tigecycline"
+    },
+    {
+     "rxcui": "6513",
+     "name": "lymecycline"
+    },
+    {
+     "rxcui": "6812",
+     "name": "methacycline"
+    },
+    {
+     "rxcui": "6980",
+     "name": "minocycline"
+    },
+    {
+     "rxcui": "7821",
+     "name": "oxytetracycline"
+    },
+    {
+     "rxcui": "9462",
+     "name": "rolitetracycline"
+    }
+   ],
+   "generic": [
+    "chlortetracycline",
+    "chlortetracycline calcium",
+    "chlortetracycline hydrochloride",
+    "clomocycline",
+    "clomocycline sodium",
+    "demeclocycline",
+    "demeclocycline hydrochloride",
+    "doxycycline",
+    "doxycycline anhydrous",
+    "doxycycline calcium",
+    "doxycycline hyclate",
+    "doxycycline hydrochloride",
+    "doxycycline monohydrate",
+    "eravacycline",
+    "eravacycline dihydrochloride",
+    "lymecycline",
+    "methacycline",
+    "methacycline hydrochloride",
+    "minocycline",
+    "minocycline hydrochloride",
+    "omadacycline",
+    "omadacycline tosylate",
+    "oxytetracycline",
+    "oxytetracycline anhydrous",
+    "oxytetracycline calcium",
+    "oxytetracycline dihydrate",
+    "oxytetracycline hydrochloride",
+    "rolitetracycline",
+    "sarecycline",
+    "sarecycline hydrochloride",
+    "tetracycline",
+    "tetracycline hydrochloride",
+    "tetracycline phosphate complex",
+    "tetracycline trihydrate",
+    "tigecycline"
+   ],
+   "brands_us": [
+    "Acticlate",
+    "Adoxa",
+    "Agrimycin",
+    "Alodox",
+    "Amzeeq",
+    "Arestin",
+    "Avidoxy",
+    "Bio-Mycin",
+    "Cleeravue-M",
+    "Compudose",
+    "Doryx",
+    "Doxy",
+    "Emrosi",
+    "Liquamycin",
+    "Minocin",
+    "Minolira",
+    "Mondoxyne",
+    "Monodox",
+    "Morgidox",
+    "Noromycin",
+    "Nuzyra",
+    "Okebo",
+    "Oracea",
+    "Periostat",
+    "Pylera",
+    "Seysara",
+    "Solodyn",
+    "Targadox",
+    "Terra-Vet",
+    "Terramycin",
+    "Tygacil",
+    "Vetrimycin",
+    "Viabecline",
+    "Vibramycin",
+    "Vitastem",
+    "Xerava",
+    "Ximino",
+    "Zilxi"
+   ],
+   "brands_eu": [
+    "Tigecycline Accord",
+    "Tygacil",
+    "Xerava"
+   ],
+   "brands_eu_status": {
+    "Xerava": "Authorised",
+    "Tygacil": "Authorised",
+    "Tigecycline Accord": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Xerava": "https://www.ema.europa.eu/en/medicines/human/EPAR/xerava",
+    "Tygacil": "https://www.ema.europa.eu/en/medicines/human/EPAR/tygacil",
+    "Tigecycline Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/tigecycline-accord-1"
+   },
+   "substances_fr": [
+    "CHLORHYDRATE DE CHLORTÉTRACYCLINE",
+    "CHLORHYDRATE DE DÉMÉCLOCYCLINE",
+    "CHLORHYDRATE DE MINOCYCLINE",
+    "CHLORHYDRATE DE TÉTRACYCLINE",
+    "DOXYCYCLINE",
+    "DOXYCYCLINE (HYCLATE DE)",
+    "DOXYCYCLINE ANHYDRE",
+    "DOXYCYCLINE BASE",
+    "DOXYCYCLINE HYDRATÉE",
+    "DOXYCYCLINE MONOHYDRATÉE",
+    "DÉMÉCLOCYCLINE",
+    "HYCLATE DE DOXYCYCLINE",
+    "LYMÉCYCLINE",
+    "MINOCYCLINE (CHLORHYDRATE DE)",
+    "MINOCYCLINE BASE",
+    "OXYTÉTRACYCLINE",
+    "OXYTÉTRACYCLINE (CHLORHYDRATE D')",
+    "OXYTÉTRACYCLINE DIHYDRATÉE",
+    "TIGÉCYCLINE",
+    "TÉTRACYCLINE",
+    "ÉRAVACYCLINE"
+   ],
+   "brands_fr": [
+    "AUREOMYCINE EVANS",
+    "AUREOMYCINE MONOT",
+    "AURICULARUM",
+    "DEMECLOCYCLINE ACETLAB",
+    "DOXY",
+    "DOXYCYCLINE ARROW",
+    "DOXYCYCLINE ARROW LAB",
+    "DOXYCYCLINE BIOGARAN",
+    "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+    "DOXYCYCLINE SANDOZ",
+    "DOXYCYCLINE TEVA",
+    "DOXYCYCLINE VIATRIS",
+    "DOXYPALU",
+    "GRANUDOXY",
+    "LACRYADEX",
+    "LYMECYCLINE ARROW",
+    "MYNOCINE",
+    "PAROCLINE",
+    "PYLERA",
+    "STERDEX",
+    "TETRALYSAL",
+    "TIGECYCLINE ACCORD",
+    "TIGECYCLINE HIKMA",
+    "TIGECYCLINE VIATRIS",
+    "TOLEXINE",
+    "TYGACIL",
+    "VIBRAVEINEUSE",
+    "XERAVA"
+   ]
+  },
+  "Thalidomide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10432",
+     "name": "thalidomide"
+    }
+   ],
+   "generic": [
+    "thalidomide"
+   ],
+   "brands_us": [
+    "Thalomid"
+   ],
+   "brands_eu": [
+    "Thalidomide BMS (previously Thalidomide Celgene)",
+    "Thalidomide Lipomed"
+   ],
+   "brands_eu_status": {
+    "Thalidomide Lipomed": "Authorised",
+    "Thalidomide BMS (previously Thalidomide Celgene)": "Authorised"
+   },
+   "brands_eu_url": {
+    "Thalidomide Lipomed": "https://www.ema.europa.eu/en/medicines/human/EPAR/thalidomide-lipomed",
+    "Thalidomide BMS (previously Thalidomide Celgene)": "https://www.ema.europa.eu/en/medicines/human/EPAR/thalidomide-bms"
+   },
+   "substances_fr": [
+    "THALIDOMIDE"
+   ],
+   "brands_fr": [
+    "THALIDOMIDE ACCORD",
+    "THALIDOMIDE BMS"
+   ]
+  },
+  "Thioguanine": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10485",
+     "name": "thioguanine"
+    }
+   ],
+   "generic": [
+    "thioguanine",
+    "thioguanine anhydrous"
+   ],
+   "brands_us": [
+    "Tabloid"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "THIOGUANINE"
+   ],
+   "brands_fr": [
+    "LANVIS"
+   ]
+  },
+  "Tobramycin sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of tobramycin",
+   "ingredients": [
+    {
+     "rxcui": "10627",
+     "name": "tobramycin"
+    }
+   ],
+   "generic": [
+    "tobramycin",
+    "tobramycin sulfate"
+   ],
+   "brands_us": [
+    "Bethkis",
+    "Kitabis",
+    "Tobi",
+    "Tobradex",
+    "Tobrex",
+    "Zylet"
+   ],
+   "brands_eu": [
+    "Tobi Podhaler",
+    "Vantobra",
+    "Vantobra (previously Tobramycin PARI)"
+   ],
+   "brands_eu_status": {
+    "Vantobra (previously Tobramycin PARI)": "Authorised",
+    "Tobi Podhaler": "Authorised",
+    "Vantobra": "Withdrawn"
+   },
+   "brands_eu_url": {
+    "Vantobra (previously Tobramycin PARI)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra",
+    "Tobi Podhaler": "https://www.ema.europa.eu/en/medicines/human/EPAR/tobi-podhaler",
+    "Vantobra": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra0"
+   },
+   "substances_fr": [
+    "SULFATE DE TOBRAMYCINE",
+    "TOBRAMYCINE"
+   ],
+   "brands_fr": [
+    "NEBCINE",
+    "TOBI",
+    "TOBI PODHALER",
+    "TOBRABACT",
+    "TOBRADEX",
+    "TOBRAMYCINE SUN",
+    "TOBRAMYCINE ZENTIVA",
+    "TOBREX",
+    "TODEXAL"
+   ]
+  },
+  "Topiramate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "38404",
+     "name": "topiramate"
+    }
+   ],
+   "generic": [
+    "topiramate"
+   ],
+   "brands_us": [
+    "Eprontia",
+    "Qsymia",
+    "Qudexy",
+    "Topamax",
+    "Trokendi"
+   ],
+   "brands_eu": [
+    "Qsiva"
+   ],
+   "brands_eu_status": {
+    "Qsiva": "Refused"
+   },
+   "brands_eu_url": {
+    "Qsiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/qsiva"
+   },
+   "substances_fr": [
+    "TOPIRAMATE"
+   ],
+   "brands_fr": [
+    "EPITOMAX",
+    "TOPIRAMATE ARROW LAB",
+    "TOPIRAMATE BGR",
+    "TOPIRAMATE SANDOZ",
+    "TOPIRAMATE VIATRIS"
+   ]
+  },
+  "Triazolam": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10767",
+     "name": "triazolam"
+    }
+   ],
+   "generic": [
+    "triazolam"
+   ],
+   "brands_us": [
+    "Halcion"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Trientine hydrochloride": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of trientine",
+   "ingredients": [
+    {
+     "rxcui": "10798",
+     "name": "trientine"
+    }
+   ],
+   "generic": [
+    "trientine",
+    "trientine hydrochloride",
+    "trientine tetrahydrochloride"
+   ],
+   "brands_us": [
+    "Cuvrior",
+    "Syprine"
+   ],
+   "brands_eu": [
+    "Cufence",
+    "Cuprior"
+   ],
+   "brands_eu_status": {
+    "Cufence": "Authorised",
+    "Cuprior": "Authorised"
+   },
+   "brands_eu_url": {
+    "Cufence": "https://www.ema.europa.eu/en/medicines/human/EPAR/cufence",
+    "Cuprior": "https://www.ema.europa.eu/en/medicines/human/EPAR/cuprior"
+   },
+   "substances_fr": [
+    "DICHLORHYDRATE DE TRIENTINE",
+    "TRIENTINE",
+    "TÉTRACHLORHYDRATE DE TRIENTINE"
+   ],
+   "brands_fr": [
+    "CUFENCE",
+    "CUPRIOR",
+    "TRIENTINE WAYMADE"
+   ]
+  },
+  "Trilostane": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "38668",
+     "name": "trilostane"
+    }
+   ],
+   "generic": [
+    "trilostane"
+   ],
+   "brands_us": [
+    "Vetoryl"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Trimethadione": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10827",
+     "name": "trimethadione"
+    }
+   ],
+   "generic": [
+    "trimethadione"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PHLOROGLUCINOL (TRIMÉTHYL ÉTHER DU)",
+    "TRIMETHYLACETATE DE FLUOCORTOLONE",
+    "TRIMÉTHOPRIME",
+    "TRIMÉTHYLPHLOROGLUCINOL"
+   ],
+   "brands_fr": [
+    "BACTRIM",
+    "BACTRIM FORTE",
+    "COTRIMOXAZOLE TEVA",
+    "DELPRIM",
+    "PHLOROGLUCINOL/TRIMETHYLPHLOROGLUCINOL ARROW",
+    "SPASFON",
+    "ULTRAPROCT"
+   ]
+  },
+  "Trimetrexate glucuronate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of trimetrexate",
+   "ingredients": [
+    {
+     "rxcui": "42333",
+     "name": "trimetrexate"
+    }
+   ],
+   "generic": [
+    "trimetrexate",
+    "trimetrexate glucuronate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Uracil mustard": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10996",
+     "name": "uracil mustard"
+    }
+   ],
+   "generic": [
+    "uracil mustard"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Urofollitropin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "134404",
+     "name": "urofollitropin"
+    }
+   ],
+   "generic": [
+    "urofollitropin"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "UROFOLLITROPINE"
+   ],
+   "brands_fr": [
+    "FOSTIMONKIT"
+   ]
+  },
+  "Valproate (Valproic acid)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "40254",
+     "name": "valproate"
+    }
+   ],
+   "generic": [
+    "calcium valproate",
+    "divalproex sodium",
+    "magnesium valproate",
+    "sodium valproate",
+    "valproate",
+    "valproic acid"
+   ],
+   "brands_us": [
+    "Depakote"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "SODIUM (VALPROATE DE)",
+    "VALPROATE DE SODIUM"
+   ],
+   "brands_fr": [
+    "DEPAKINE",
+    "DEPAKINE CHRONO",
+    "MICROPAKINE L.P.",
+    "VALPROATE DE SODIUM AGUETTANT",
+    "VALPROATE DE SODIUM ARROW",
+    "VALPROATE DE SODIUM ARROW L.P.",
+    "VALPROATE DE SODIUM BIOGARAN L.P.",
+    "VALPROATE DE SODIUM EG L.P.",
+    "VALPROATE DE SODIUM TEVA SANTE L.P.",
+    "VALPROATE DE SODIUM VIATRIS L.P."
+   ]
+  },
+  "Vinblastine sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of vinblastine",
+   "ingredients": [
+    {
+     "rxcui": "11198",
+     "name": "vinblastine"
+    }
+   ],
+   "generic": [
+    "vinblastine",
+    "vinblastine sulfate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "SULFATE DE VINBLASTINE",
+    "VINBLASTINE ANHYDRE"
+   ],
+   "brands_fr": [
+    "VELBE"
+   ]
+  },
+  "Vincristine sulfate": {
+   "note": "",
+   "resolved_as": "RxNorm PIN of vincristine",
+   "ingredients": [
+    {
+     "rxcui": "11202",
+     "name": "vincristine"
+    }
+   ],
+   "generic": [
+    "vincristine",
+    "vincristine liposome",
+    "vincristine sulfate",
+    "vincristine sulfate liposome"
+   ],
+   "brands_us": [
+    "Marqibo",
+    "Vincasar"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "SULFATE DE VINCRISTINE"
+   ],
+   "brands_fr": [
+    "ONCOVIN",
+    "VINCRISTINE HOSPIRA",
+    "VINCRISTINE TEVA"
+   ]
+  },
+  "Vismodegib": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1242987",
+     "name": "vismodegib"
+    }
+   ],
+   "generic": [
+    "vismodegib"
+   ],
+   "brands_us": [
+    "Erivedge"
+   ],
+   "brands_eu": [
+    "Erivedge"
+   ],
+   "brands_eu_status": {
+    "Erivedge": "Authorised"
+   },
+   "brands_eu_url": {
+    "Erivedge": "https://www.ema.europa.eu/en/medicines/human/EPAR/erivedge"
+   },
+   "substances_fr": [
+    "VISMODÉGIB"
+   ],
+   "brands_fr": [
+    "ERIVEDGE"
+   ]
+  },
+  "Warfarin": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "11289",
+     "name": "warfarin"
+    }
+   ],
+   "generic": [
+    "warfarin",
+    "warfarin potassium",
+    "warfarin sodium"
+   ],
+   "brands_us": [
+    "Coumadin",
+    "Jantoven"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "WARFARINE SODIQUE"
+   ],
+   "brands_fr": [
+    "COUMADINE"
+   ]
+  },
+  "Zileuton": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "40575",
+     "name": "zileuton"
+    }
+   ],
+   "generic": [
+    "zileuton"
+   ],
+   "brands_us": [
+    "Zyflo"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Δ9-Tetrahydrocannabinol (Δ9-THC)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10402",
+     "name": "dronabinol"
+    }
+   ],
+   "generic": [
+    "delta 9-tetrahydrocannabinol acetate",
+    "dronabinol"
+   ],
+   "brands_us": [
+    "Marinol",
+    "Syndros"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Ambrisentan (endothelin receptor antagonist)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "358274",
+     "name": "ambrisentan"
+    }
+   ],
+   "generic": [
+    "ambrisentan"
+   ],
+   "brands_us": [
+    "Letairis"
+   ],
+   "brands_eu": [
+    "Ambrisentan Viatris (previously Ambrisentan Mylan)",
+    "Ambrisentan Zentiva",
+    "Volibris"
+   ],
+   "brands_eu_status": {
+    "Ambrisentan Viatris (previously Ambrisentan Mylan)": "Authorised",
+    "Volibris": "Authorised",
+    "Ambrisentan Zentiva": "Application withdrawn"
+   },
+   "brands_eu_url": {
+    "Ambrisentan Viatris (previously Ambrisentan Mylan)": "https://www.ema.europa.eu/en/medicines/human/EPAR/ambrisentan-viatris",
+    "Volibris": "https://www.ema.europa.eu/en/medicines/human/EPAR/volibris",
+    "Ambrisentan Zentiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/ambrisentan-zentiva"
+   },
+   "substances_fr": [
+    "AMBRISENTAN"
+   ],
+   "brands_fr": [
+    "AMBRISENTAN ACCORD",
+    "AMBRISENTAN STRAGEN",
+    "AMBRISENTAN TEVA",
+    "AMBRISENTAN VIATRIS",
+    "VOLIBRIS"
+   ]
+  },
+  "Bosentan (endothelin receptor antagonist)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "75207",
+     "name": "bosentan"
+    }
+   ],
+   "generic": [
+    "bosentan",
+    "bosentan anhydrous"
+   ],
+   "brands_us": [
+    "Tracleer"
+   ],
+   "brands_eu": [
+    "Stayveer",
+    "Tracleer"
+   ],
+   "brands_eu_status": {
+    "Tracleer": "Authorised",
+    "Stayveer": "Authorised"
+   },
+   "brands_eu_url": {
+    "Tracleer": "https://www.ema.europa.eu/en/medicines/human/EPAR/tracleer",
+    "Stayveer": "https://www.ema.europa.eu/en/medicines/human/EPAR/stayveer"
+   },
+   "substances_fr": [
+    "BOSENTAN",
+    "BOSENTAN BASE",
+    "BOSENTAN MONOHYDRATÉ"
+   ],
+   "brands_fr": [
+    "BOSENTAN ACCORD",
+    "BOSENTAN ARROW",
+    "BOSENTAN STRAGEN",
+    "BOSENTAN SUN",
+    "BOSENTAN VIATRIS",
+    "TRACLEER"
+   ]
+  },
+  "dinitrogen oxide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "7486",
+     "name": "nitrous oxide"
+    }
+   ],
+   "generic": [
+    "nitrous oxide"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "PROTOXYDE D'AZOTE"
+   ],
+   "brands_fr": [
+    "ACTYNOX",
+    "ANTASOL",
+    "ENTONOX",
+    "KALINOX",
+    "PLACYNOX",
+    "PROTOXYDE D'AZOTE MEDICINAL AIR LIQUIDE SANTE FRANCE",
+    "PROTOXYDE D'AZOTE MEDICINAL AIR PRODUCTS MEDICAL",
+    "PROTOXYDE D'AZOTE MEDICINAL LINDE HEALTHCARE",
+    "PROTOXYDE D'AZOTE MEDICINAL MESSER FRANCE",
+    "PROTOXYDE D'AZOTE MEDICINAL SOL FRANCE"
+   ]
+  },
+  "Macitentan (endothelin receptor antagonist)": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1442132",
+     "name": "macitentan"
+    }
+   ],
+   "generic": [
+    "macitentan"
+   ],
+   "brands_us": [
+    "Opsumit",
+    "Opsynvi"
+   ],
+   "brands_eu": [
+    "Macitentan Accord",
+    "Macitentan AccordPharma",
+    "Opsumit",
+    "Yuvanci"
+   ],
+   "brands_eu_status": {
+    "Macitentan Accord": "Authorised",
+    "Macitentan AccordPharma": "Authorised",
+    "Opsumit": "Authorised",
+    "Yuvanci": "Authorised"
+   },
+   "brands_eu_url": {
+    "Macitentan Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/macitentan-accord",
+    "Macitentan AccordPharma": "https://www.ema.europa.eu/en/medicines/human/EPAR/macitentan-accordpharma",
+    "Opsumit": "https://www.ema.europa.eu/en/medicines/human/EPAR/opsumit",
+    "Yuvanci": "https://www.ema.europa.eu/en/medicines/human/EPAR/yuvanci"
+   },
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "Pomalidomide": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "1369713",
+     "name": "pomalidomide"
+    }
+   ],
+   "generic": [
+    "pomalidomide"
+   ],
+   "brands_us": [
+    "Pomalyst"
+   ],
+   "brands_eu": [
+    "Imnovid (previously Pomalidomide Celgene)",
+    "Pomalidomide Accord",
+    "Pomalidomide Krka",
+    "Pomalidomide Teva",
+    "Pomalidomide Viatris",
+    "Pomalidomide Zentiva"
+   ],
+   "brands_eu_status": {
+    "Pomalidomide Teva": "Authorised",
+    "Pomalidomide Krka": "Authorised",
+    "Pomalidomide Accord": "Authorised",
+    "Pomalidomide Zentiva": "Authorised",
+    "Pomalidomide Viatris": "Authorised",
+    "Imnovid (previously Pomalidomide Celgene)": "Authorised"
+   },
+   "brands_eu_url": {
+    "Pomalidomide Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-teva",
+    "Pomalidomide Krka": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-krka",
+    "Pomalidomide Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-accord",
+    "Pomalidomide Zentiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-zentiva",
+    "Pomalidomide Viatris": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-viatris",
+    "Imnovid (previously Pomalidomide Celgene)": "https://www.ema.europa.eu/en/medicines/human/EPAR/imnovid"
+   },
+   "substances_fr": [
+    "POMALIDOMIDE"
+   ],
+   "brands_fr": [
+    "IMNOVID",
+    "POMALIDOMIDE ACCORD",
+    "POMALIDOMIDE EG",
+    "POMALIDOMIDE EUGIA",
+    "POMALIDOMIDE REIG JOFRE",
+    "POMALIDOMIDE STRAGEN",
+    "POMALIDOMIDE VIATRIS"
+   ]
+  },
+  "theophylline; 1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "10438",
+     "name": "theophylline"
+    }
+   ],
+   "generic": [
+    "theophylline",
+    "theophylline anhydrous",
+    "theophylline sodium glycinate"
+   ],
+   "brands_us": [
+    "Elixophyllin",
+    "Theo-24"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "THÉOPHYLLINE"
+   ],
+   "brands_fr": [
+    "DILATRANE",
+    "TEDRALAN"
+   ]
+  },
+  "methyl salicylate": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "29787",
+     "name": "methyl salicylate"
+    }
+   ],
+   "generic": [
+    "methyl salicylate"
+   ],
+   "brands_us": [
+    "Arthricare for Women Pain Relieving Nighttime",
+    "Arthritis Hot Pain Relief",
+    "Atomic Balm",
+    "Castiva Cooling",
+    "Cramergesic",
+    "Dendracin Neurodendraxcin",
+    "Doloracin with Lidocaine",
+    "Dragon",
+    "Eagle Brand Medicated Oil",
+    "Flexall Ultra Plus",
+    "Gordogesic",
+    "Katinko",
+    "Kofal",
+    "LidoPro",
+    "LidoPro Patch",
+    "Ling Nam Ultra Balm",
+    "Listerine Antiseptic",
+    "Listerine Ultraclean",
+    "Medi-Derm",
+    "Medi-Derm with Lidocaine",
+    "Medrox",
+    "Methagual",
+    "Rocainol",
+    "Thera-Gesic",
+    "Thera-Gesic Plus",
+    "Tricylate",
+    "Veneno de Abeja Aceite de Vibora",
+    "Wong To Yick",
+    "Xoten",
+    "Xoten-C",
+    "ZIKS Pain Relief"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "SALICYLATE DE MÉTHYLE"
+   ],
+   "brands_fr": [
+    "BAUME AROMA",
+    "INONGAN"
+   ]
+  },
+  "piperazine hydrochloride [1]": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8340",
+     "name": "piperazine"
+    }
+   ],
+   "generic": [
+    "piperazine",
+    "piperazine adipate",
+    "piperazine citrate",
+    "piperazine dihydrochloride",
+    "piperazine hexahydrate",
+    "piperazine hydrate",
+    "piperazine phosphate",
+    "piperazine sulfate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "piperazine; [solid]": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "8340",
+     "name": "piperazine"
+    }
+   ],
+   "generic": [
+    "piperazine",
+    "piperazine adipate",
+    "piperazine citrate",
+    "piperazine dihydrochloride",
+    "piperazine hexahydrate",
+    "piperazine hydrate",
+    "piperazine phosphate",
+    "piperazine sulfate"
+   ],
+   "brands_us": [],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [],
+   "brands_fr": []
+  },
+  "salicylic acid": {
+   "note": "",
+   "resolved_as": "RxNorm IN",
+   "ingredients": [
+    {
+     "rxcui": "9525",
+     "name": "salicylic acid"
+    }
+   ],
+   "generic": [
+    "magnesium salicylate tetrahydrate",
+    "potassium salicylate",
+    "salicylate",
+    "salicylic acid",
+    "sodium salicylate"
+   ],
+   "brands_us": [
+    "Acneclir",
+    "Acnevir",
+    "AcneWorx",
+    "Ala Seb T",
+    "Azo Urinary Tract Defense",
+    "Bensal",
+    "Broda Acne Spa",
+    "clear days ahead",
+    "Clear Proof Acne Medication",
+    "Clearskin Blemish",
+    "Clearskin Pore Penetrating Black Mineral Mask",
+    "Clearskin Professional Daily Correcting",
+    "Clenziderm",
+    "Compound W brand of salicylic acid",
+    "Cornstick",
+    "Cystex",
+    "Denorex Extra Strength Reformulated Aug 2012",
+    "DermalZone",
+    "Dermoneen",
+    "DHS Salicylic Acid 3%",
+    "Differin Acne Clearing",
+    "Dream Pure BB",
+    "Duofilm",
+    "Duoplant",
+    "Everclean",
+    "Exoderm",
+    "Fostex Bar",
+    "Freezone",
+    "Glycylic",
+    "Gordofilm",
+    "Inova 8-2",
+    "Ionil Plus",
+    "Keralyt",
+    "Keralyt 5",
+    "Kleer Plex",
+    "Mediplast",
+    "MG217 Psoriasis Salicylic Acid",
+    "Mosco Corn & Callus Remover",
+    "Mosco One Step Corn Remover",
+    "Nizoral Psoriasis",
+    "Noxzema Clean",
+    "Oxy Deep Pore",
+    "P & S",
+    "Pernox Scrub Cleanser",
+    "Phisoderm Clear Confidence Body Wash",
+    "Phisoderm Clear Confidence Daily Gel Face Wash",
+    "Propa P.H.",
+    "Propa P.H. Acne Mask",
+    "Psoriasin Wash",
+    "Rayasal",
+    "Rogaine Anti-Dandruff",
+    "Salinocaine",
+    "Salvax",
+    "Salycim",
+    "Salyntra",
+    "Scalpicin Scalp Relief",
+    "Sebasorb",
+    "Sebex",
+    "Sebobalance",
+    "Sebulex",
+    "Selsun Blue Naturals",
+    "Skinmedica Purifying Foaming Wash",
+    "St. Ives Blemish & Blackhead Control",
+    "Stri-Dex",
+    "Stri-Dex Clear Gel",
+    "Stridex",
+    "Super Spot Remover",
+    "Ultrasal",
+    "Verruguin",
+    "Verrustat",
+    "Versiclear",
+    "Virasal",
+    "WARTICIDE",
+    "Wartstick",
+    "X-Seb T Pearl",
+    "Xalix",
+    "Zapzyt Acne Wash",
+    "Zit Stick"
+   ],
+   "brands_eu": [],
+   "brands_eu_status": {},
+   "brands_eu_url": {},
+   "substances_fr": [
+    "ACIDE SALICYLIQUE",
+    "SALICYLATE D'ISOAMYLE",
+    "SALICYLATE DE CHOLINE",
+    "SALICYLATE DE DIÉTHYLAMINE",
+    "SALICYLATE DE GLYCOL",
+    "SALICYLATE DE MÉTHYLE",
+    "SALICYLATE DE SODIUM",
+    "SALICYLIQUE (ACIDE)"
+   ],
+   "brands_fr": [
+    "ALGESAL BAUME",
+    "ALGESAL SURACTIVE",
+    "BAUME AROMA",
+    "BAUME SAINT BERNARD",
+    "BRULEX",
+    "CIELLA",
+    "CORICIDE LE DIABLE",
+    "DIPROSALIC",
+    "DUOFILM",
+    "GLYCO-THYMOLINE",
+    "INONGAN",
+    "KERAFILM",
+    "LUMBALGINE",
+    "PANSORAL",
+    "POMMADE M.O. COCHON",
+    "PYRALVEX",
+    "REPARIL",
+    "SYNTHOL",
+    "VERRUFILM"
+   ]
+  }
+ }
+}

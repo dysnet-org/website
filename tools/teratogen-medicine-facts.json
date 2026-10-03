@@ -1,5 +1,5 @@
 {
- "_about": "Pregnancy facts for the 24 medicines that experts of the European Network of Teratology Information Services (ENTIS) list as known human structural teratogens (Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1). For each: when in pregnancy the harm occurs, the dose, the effects, and the absolute risk, each with a verbatim quote from an authoritative source read for this file (regulators' product information: US FDA, EMA, ANSM, MHRA; systematic reviews; large registry or cohort studies; the ENTIS paper). Each fact was checked by two independent readers, one on the source and quote, one on overstatement, and settled by a third; a fact no source states is absent rather than guessed. Read 2 October 2026. Read by tools/enrich-teratogens-entis.py.",
+ "_about": "Pregnancy facts for medicines, starting with the 24 that experts of the European Network of Teratology Information Services (ENTIS) list as known human structural teratogens (Bluett-Duncan et al., Birth Defects Res 2025;117(9):e2497, Table 1). For each: when in pregnancy the harm occurs, the dose, the effects, and the absolute risk, each with a verbatim quote from an authoritative source read for this file (regulators' product information: US FDA, EMA, ANSM, MHRA; systematic reviews; large registry or cohort studies; the ENTIS paper). Each fact was checked by two independent readers, one on the source and quote, one on overstatement, and settled by a third; a fact no source states is absent rather than guessed. Read 2 October 2026. Further medicines are documented the same way; \"entis_list\" names the 24 on the experts' list. \"cosmetics\" holds, for cosmetic ingredients, the EU limit, the dose the safety assessment rests on, the effect on development and the assessor's conclusion, from the EU Cosmetics Regulation, SCCS opinions and Cosmetic Ingredient Review reports. Read by tools/enrich-teratogens-entis.py.",
  "entis": {
   "label": "ENTIS expert list of known human structural teratogens",
   "citation": "Bluett-Duncan M et al. A Scoping Review of Human Teratogens and Their Impact on the Developing Brain. Birth Defects Res. 2025;117(9):e2497",
@@ -923,5 +923,32 @@
     "date": "2018-06-21"
    }
   }
- }
+ },
+ "entis_list": [
+  "Acenocoumarol",
+  "Acitretin",
+  "Alitretinoin",
+  "All-trans retinoic acid",
+  "Aminopterin",
+  "Bexarotene",
+  "Carbamazepine",
+  "Carbimazole",
+  "Diethylstilbestrol (DES)",
+  "Diphenylhydantoin (Phenytoin)",
+  "Fosphenytoin",
+  "Isotretinoin",
+  "Lenalidomide",
+  "Methimazole",
+  "Methotrexate",
+  "Misoprostol",
+  "Mycophenolate mofetil and mycophenolic acid",
+  "Phenindione",
+  "Phenobarbital",
+  "Primidone",
+  "Thalidomide",
+  "Topiramate",
+  "Valproate (Valproic acid)",
+  "Warfarin"
+ ],
+ "cosmetics": {}
 }

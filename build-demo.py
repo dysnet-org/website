@@ -1208,30 +1208,67 @@ def tera_dec_lines(e):
 
 # The pregnancy facts of the medicines on the ENTIS experts' list (tools/teratogen-medicine-facts.json):
 # a plain sentence on the card, and in the details the verbatim quote it rests on, with its source.
-TERA_PREG = [("window", "When"), ("dose", "Dose"), ("effects", "Effects"), ("absolute_risk", "Risk")]
+TERA_PREG = [("regulatory", "Rules"), ("window", "When"), ("dose", "Dose"), ("effects", "Effects"), ("other_effects", "Other effects"),
+             ("absolute_risk", "Risk"), ("before_after", "Before and after"), ("paternal", "Father"), ("monitoring", "If exposed"),
+             ("evidence_base", "Evidence")]
+# and, for cosmetic ingredients, what EU law allows and what the safety assessment rests on
+TERA_COS = [("limit", "EU rule"), ("basis_dose", "Dose studied"), ("effects", "Effect"), ("conclusion", "Assessment")]
+
+
+def tera_block(rec, spec, title, extra=""):
+    rows = "".join(f'<dt>{lab}</dt><dd>{html.escape(rec[k]["text"])} <a href="{html.escape(rec[k]["url"], quote=True)}" target="_blank" rel="noopener external" title="{html.escape(rec[k]["source_label"], quote=True)}">source ↗</a></dd>'
+                   for k, lab in spec if rec.get(k))
+    return f'<div class="tera-preg"><p class="tera-preg-h">{title}{extra}</p><dl>{rows}</dl></div>' if rows else ""
 
 
 def tera_preg_html(e):
+    out = ""
     pg = e.get("pregnancy")
-    if not pg:
-        return ""
-    rows = "".join(f'<dt>{lab}</dt><dd>{html.escape(pg[k]["text"])} <a href="{html.escape(pg[k]["url"], quote=True)}" target="_blank" rel="noopener external" title="{html.escape(pg[k]["source_label"], quote=True)}">source ↗</a></dd>'
-                   for k, lab in TERA_PREG if pg.get(k))
-    limb = '<span class="st st-limb">Limb defects named by the source</span>' if pg.get("limb_defects", "").startswith("named") else ""
-    return f'<div class="tera-preg"><p class="tera-preg-h">In pregnancy{limb}</p><dl>{rows}</dl></div>'
+    if pg:
+        limb = '<span class="st st-limb">Limb defects named by the source</span>' if pg.get("limb_defects", "").startswith("named") else ""
+        title = "In pregnancy" + (f' <span class="fine">(documented for {html.escape(pg["documented_as"])})</span>' if pg.get("documented_as") else "")
+        out += tera_block(pg, TERA_PREG, title, limb)
+    if e.get("cosmetic"):
+        out += tera_block(e["cosmetic"], TERA_COS, "In cosmetics")
+    return out
 
 
 def tera_preg_lines(e):
-    pg = e.get("pregnancy") or {}
     out = []
-    for k, lab in TERA_PREG:
-        x = pg.get(k)
+    for rec, spec in ((e.get("pregnancy") or {}, TERA_PREG), (e.get("cosmetic") or {}, TERA_COS)):
+      for k, lab in spec:
+        x = rec.get(k)
         if not x:
             continue
         lang = " (in French, as published)" if x.get("quote_language") == "fr" else ""
         ref = ", ".join(v for v in (x["source_label"], x.get("id"), x.get("date")) if v)
         out.append(f'<li><strong>{lab}, quoted{lang}:</strong> “{html.escape(x["quote"])}” {html.escape(ref)} <a href="{html.escape(x["url"], quote=True)}" target="_blank" rel="noopener external">source ↗</a></li>')
     return out
+
+
+TERA_NAME_REGIONS = [("us", "US"), ("eu", "EU"), ("fr", "France")]
+
+
+def tera_names_html(e, cap=10):
+    """The generic and brand names a medicine is sold under, from RxNorm, EMA and the French database."""
+    n = e.get("names")
+    if not n:
+        return ""
+    def short(xs):
+        return html.escape(", ".join(xs[:cap])) + (f' <span class="fine">+{len(xs) - cap} more</span>' if len(xs) > cap else "")
+    parts = ([f'<strong>Generic</strong> {short(n["generic"])}'] if n["generic"] else []) + \
+            [f'<strong>{lab}</strong> {short(n[k])}' for k, lab in TERA_NAME_REGIONS if n[k]]
+    note = f' <span class="fine">{html.escape(n["note"])}</span>' if n.get("note") else ""
+    return f'<p class="tera-names"><span class="tera-names-h">Also known or sold as</span> {" · ".join(parts)}{note}</p>'
+
+
+def tera_names_line(e):
+    n = e.get("names")
+    if not n:
+        return []
+    rx = ", ".join(f'<a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&amp;searchTerm={c}" target="_blank" rel="noopener external">RxNorm {c} ↗</a>' for c in n["rxcui"])
+    regions = "; ".join(f'{lab}: {html.escape(", ".join(n[k]))}' for k, lab in TERA_NAME_REGIONS if n[k])
+    return [f'<li><strong>Names, from official registries:</strong> {regions}. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency&rsquo;s list of centrally authorised medicines, French names from the ANSM public medicines database; read {n["read"]}. {rx}</li>']
 
 
 def tera_item_html(e):
@@ -1254,7 +1291,7 @@ def tera_item_html(e):
     chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(tera_exp_chip(r, e) for r in e.get("exposure", []))
     doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose")) + tera_preg_html(e)
-    details = tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
+    details = tera_names_line(e) + tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
     if e.get("source_note"):
         details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
     for src in e["sources"]:
@@ -1276,7 +1313,7 @@ def tera_item_html(e):
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
-            f'<div class="tera-uses">{uses}</div>{doses}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
+            f'{tera_names_html(e)}<div class="tera-uses">{uses}</div>{doses}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
@@ -1299,7 +1336,11 @@ def teratogens_html():
                 "xw": e.get("exposure_why", ""),
                 "pg": ({**{k: {kk: e["pregnancy"][k][kk] for kk in ("text", "quote", "source_label", "url", "id", "date", "quote_language") if e["pregnancy"][k].get(kk)}
                            for k, _l in TERA_PREG if e["pregnancy"].get(k)}, "limb": 1 if e["pregnancy"].get("limb_defects", "").startswith("named") else 0}
-                       if e.get("pregnancy") else 0), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
+                       if e.get("pregnancy") else 0),
+                "pgd": (e.get("pregnancy") or {}).get("documented_as", ""),
+                "nm": ({"g": e["names"]["generic"], "us": e["names"]["us"], "eu": e["names"]["eu"], "fr": e["names"]["fr"], "rx": e["names"]["rxcui"], "rd": e["names"]["read"], "nt": e["names"].get("note", "")} if e.get("names") else 0),
+                "cs": ({k: {kk: e["cosmetic"][k][kk] for kk in ("text", "quote", "source_label", "url", "id", "date", "quote_language") if e["cosmetic"][k].get(kk)}
+                        for k, _l in TERA_COS if e["cosmetic"].get(k)} if e.get("cosmetic") else 0), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
                 "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
                 "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}
                        for x in sorted(e.get("papers") or [], key=lambda x: -int(bool(x.get("cochrane"))))[:3]],
@@ -1329,7 +1370,7 @@ def teratogens_html():
     src_chips = "".join(f'<button type="button" data-source="{code}" aria-pressed="false">{ {"clp": "EU harmonised classification", "nite": "Japan, government classification", "p65": "California Proposition 65", "ema": "EMA medicines", "efsa": "EFSA food values", "who": "WHO", "bib": "DysNet bibliography", "entis": "ENTIS experts"}.get(code, code) }</button>' for code in ("clp", "nite", "p65", "ema", "entis", "efsa", "who", "bib"))
     return f"""
     <div class="bib-controls" id="tera-controls">
-      <input type="search" id="tera-q" autocomplete="off" placeholder="Search a substance, CAS number or medicine…" aria-label="Search the register">
+      <input type="search" id="tera-q" autocomplete="off" placeholder="Search a substance, CAS number, medicine or brand name…" aria-label="Search the register">
       <p class="bib-focus-help" style="margin:0.2rem 0 0.4rem">Listed by</p>
       <div class="finder-chips" id="tera-sources">{src_chips}</div>
       <p class="bib-focus-help" style="margin:0.4rem 0 0.4rem">What an authority decided</p>
@@ -5902,7 +5943,7 @@ def search_entries():
         lvl = TERA_LEVEL.get(e.get("level"), "")
         add("Substance", "/knowledge/teratogens/?q=" + urllib.parse.quote(e["name"]), e["name"],
             "Substance with effects on the unborn child" + (f" · {lvl}" if lvl else "") + (f" · CAS {e['cas']}" if e.get("cas") else ""),
-            e.get("cas"), e.get("ec"))
+            e.get("cas"), e.get("ec"), *((e.get("names") or {}).get(k) and " ".join((e.get("names") or {}).get(k)) for k in ("generic", "us", "eu", "fr")))
     return out
 
 

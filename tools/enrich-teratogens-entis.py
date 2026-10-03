@@ -25,7 +25,10 @@ import pathlib
 HERE = pathlib.Path(__file__).parent
 TERA = HERE / "teratogens.json"
 FACTS = HERE / "teratogen-medicine-facts.json"
+NAMES = HERE / "teratogen-medicine-names.json"   # tools/build-teratogen-names.py: RxNorm, EMA, ANSM
 RANK = {"known": 0, "presumed": 1, "suspected": 2}
+# what a pharmacist advising a pregnant woman needs, each field a quoted fact or absent
+PREG_FIELDS = ("regulatory", "window", "dose", "effects", "other_effects", "absolute_risk", "before_after", "paternal", "monitoring", "evidence_base")
 
 
 def level(e):
@@ -51,21 +54,42 @@ def main():
         e["sources"] = [s for s in e["sources"] if s["code"] != "entis"]
         e["status"].pop("entis", None)
         e.pop("pregnancy", None)
+    for e in data["entries"]:
+        e.pop("cosmetic", None)
     for name, rec in facts["medicines"].items():
         e = by_name[name]
-        e["sources"].append({"label": src["label"], "code": "entis", "url": src["url"],
-                             "note": f'{rec["entis_name"]} is on the list of medicines that ENTIS experts identify as known human structural teratogens ({src["citation"]}).'})
-        e["status"]["entis"] = "known"
-        e["pregnancy"] = {k: v for k, v in rec.items() if k != "entis_name"}
+        if name in facts.get("entis_list", []):
+            e["sources"].append({"label": src["label"], "code": "entis", "url": src["url"],
+                                 "note": f'{rec["entis_name"]} is on the list of medicines that ENTIS experts identify as known human structural teratogens ({src["citation"]}).'})
+            e["status"]["entis"] = "known"
+        e["pregnancy"] = {k: v for k, v in rec.items() if k not in ("entis_name", "documented_as")}
+        if rec.get("documented_as"):
+            e["pregnancy"]["documented_as"] = rec["documented_as"]
+    for name, rec in facts.get("cosmetics", {}).items():
+        by_name[name]["cosmetic"] = rec
+    # the generic and brand names a medicine is sold under, so it can be found by the name on the box
+    names = json.loads(NAMES.read_text(encoding="utf-8")) if NAMES.exists() else {"entries": {}}
+    for e in data["entries"]:
+        e.pop("names", None)
+        n = names["entries"].get(e["name"])
+        if n and (n["generic"] or n["brands_us"] or n["brands_eu"] or n["brands_fr"] or n.get("note")):
+            own = e["name"].lower()
+            e["names"] = {"generic": [g for g in n["generic"] if g.lower() not in own], "us": n["brands_us"], "eu": n["brands_eu"],
+                          "fr": n["brands_fr"], "rxcui": [i["rxcui"] for i in n["ingredients"]][:3], "resolved_as": n["resolved_as"], "read": names["read"], "note": n.get("note", "")}
     for e in data["entries"]:
         e["source_codes"] = sorted({s["code"] for s in e["sources"]})
         e["level"] = level(e)
     data["entries"].sort(key=lambda e: (RANK[e["level"]], e["name"].lower()))
     c = data["counts"]
     c["total"] = len(data["entries"])
-    c["entis"] = len(facts["medicines"])
+    c["entis"] = len(facts.get("entis_list", []))
+    c["pregnancy_documented"] = len(facts["medicines"])
+    c["cosmetic_documented"] = len(facts.get("cosmetics", {}))
     c["entis_added"] = sum(1 for n in facts["new_entries"])
-    c["pregnancy_facts"] = sum(1 for r in facts["medicines"].values() for f in ("window", "dose", "effects", "absolute_risk") if r.get(f))
+    c["pregnancy_facts"] = sum(1 for r in facts["medicines"].values() for f in PREG_FIELDS if r.get(f))
+    c["with_names"] = sum(1 for e in data["entries"] if e.get("names"))
+    c["brand_names"] = sum(len(e["names"]["us"]) + len(e["names"]["eu"]) + len(e["names"]["fr"]) for e in data["entries"] if e.get("names"))
+    c["cosmetic_facts"] = sum(1 for r in facts.get("cosmetics", {}).values() for f in ("limit", "basis_dose", "effects", "conclusion") if r.get(f))
     for k in ("known", "presumed", "suspected"):
         if k in c:
             c[k] = sum(1 for e in data["entries"] if e["level"] == k)

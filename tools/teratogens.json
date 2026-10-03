@@ -133,7 +133,12 @@
   "exposure_split": 27,
   "entis": 24,
   "entis_added": 9,
-  "pregnancy_facts": 83
+  "pregnancy_facts": 83,
+  "pregnancy_documented": 24,
+  "cosmetic_documented": 0,
+  "cosmetic_facts": 0,
+  "with_names": 203,
+  "brand_names": 2139
  },
  "entries": [
   {
@@ -353,7 +358,30 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AB01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AB01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Busulfex",
+     "Myleran"
+    ],
+    "eu": [
+     "Busilvex",
+     "Busulfan Fresenius Kabi"
+    ],
+    "fr": [
+     "BUSULFAN ACCORD",
+     "BUSULFAN FRESENIUS KABI",
+     "BUSULFAN TILLOMED",
+     "MYLERAN"
+    ],
+    "rxcui": [
+     "1828"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
@@ -418,7 +446,23 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Gleostine"
+    ],
+    "eu": [],
+    "fr": [
+     "LOMUSTINE MEDAC"
+    ],
+    "rxcui": [
+     "6466"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "2-ethoxyethanol; ethylene glycol monoethyl ether",
@@ -1086,7 +1130,46 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Abirtega",
+     "Akeega",
+     "Yonsa",
+     "Zytiga"
+    ],
+    "eu": [
+     "Abiraterone Accord",
+     "Abiraterone Krka",
+     "Abiraterone Mylan",
+     "Akeega",
+     "Zytiga"
+    ],
+    "fr": [
+     "ABIRATERONE ACCORD",
+     "ABIRATERONE ACETATE ZYDUS",
+     "ABIRATERONE ARROW",
+     "ABIRATERONE BIOGARAN",
+     "ABIRATERONE CRISTERS",
+     "ABIRATERONE EG",
+     "ABIRATERONE EVOLUGEN",
+     "ABIRATERONE KRKA",
+     "ABIRATERONE MYLAN",
+     "ABIRATERONE SANDOZ",
+     "ABIRATERONE TEVA",
+     "ABIRATERONE ZENTIVA",
+     "AKEEGA",
+     "IBIRON",
+     "ZYTIGA"
+    ],
+    "rxcui": [
+     "1100072"
+    ],
+    "resolved_as": "RxNorm PIN of abiraterone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Acenocoumarol",
@@ -1105,6 +1188,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -1147,20 +1244,21 @@
      "quote_language": "fr"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "MINI-SINTROM",
+     "SINTROM"
+    ],
+    "rxcui": [
+     "154"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Acetazolamide",
@@ -1272,7 +1370,23 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC01).",
+   "names": {
+    "generic": [
+     "acetazolamide sodium"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "DIAMOX"
+    ],
+    "rxcui": [
+     "167"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Acetohydroxamic acid",
@@ -1338,7 +1452,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G04BX03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G04BX03).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Lithostat"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "16728"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Acitretin",
@@ -1357,6 +1485,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -1389,20 +1531,20 @@
      "date": "2026-08-05"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "SORIATANE"
+    ],
+    "rxcui": [
+     "16818"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Actinomycin D",
@@ -1492,7 +1634,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DA01).",
+   "names": {
+    "generic": [
+     "dactinomycin"
+    ],
+    "us": [
+     "Cosmegen"
+    ],
+    "eu": [],
+    "fr": [
+     "COSMEGEN"
+    ],
+    "rxcui": [
+     "3100"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Alcohol (ethanol) in beverages",
@@ -1616,6 +1776,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -1638,20 +1812,25 @@
      "date": "2018"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [
+     "Panretin"
+    ],
+    "eu": [
+     "Panretin"
+    ],
+    "fr": [
+     "ALIZEM",
+     "TOCTINO"
+    ],
+    "rxcui": [
+     "81864"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "All-trans retinoic acid",
@@ -1814,6 +1993,40 @@
      "id": "EMEA/H/A-31/1446",
      "date": "2018-06-21"
     }
+   },
+   "names": {
+    "generic": [
+     "tretinoin",
+     "tretinoin microsphere"
+    ],
+    "us": [
+     "Altreno",
+     "Atralin",
+     "Avita",
+     "Refissa",
+     "Renova",
+     "Retin-A",
+     "Tretin X",
+     "Tri-Luma",
+     "Twyneo",
+     "Veltin",
+     "Ziana"
+    ],
+    "eu": [],
+    "fr": [
+     "EFFEDERM",
+     "ERYLIK",
+     "KETREL",
+     "RETACNYL",
+     "VESANOID",
+     "ZANEA"
+    ],
+    "rxcui": [
+     "10753"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -1904,7 +2117,36 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA12)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA12).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Xanax"
+    ],
+    "eu": [],
+    "fr": [
+     "ALPRAZOLAM ARROW",
+     "ALPRAZOLAM ARROW LAB",
+     "ALPRAZOLAM BIOGARAN",
+     "ALPRAZOLAM CRISTERS",
+     "ALPRAZOLAM EG",
+     "ALPRAZOLAM EVOLUGEN PHARMA",
+     "ALPRAZOLAM HCS",
+     "ALPRAZOLAM SANDOZ",
+     "ALPRAZOLAM TEVA",
+     "ALPRAZOLAM VIATRIS",
+     "ALPRAZOLAM ZENTIVA",
+     "ALPRAZOLAM ZYDUS",
+     "ALPRAZOLAM ZYDUS FRANCE",
+     "XANAX"
+    ],
+    "rxcui": [
+     "596"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Altretamine",
@@ -1947,7 +2189,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX03).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "HEXASTAT"
+    ],
+    "rxcui": [
+     "5296"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Amantadine hydrochloride",
@@ -2026,7 +2282,26 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "amantadine sulfate"
+    ],
+    "us": [
+     "Gocovri",
+     "Osmolex"
+    ],
+    "eu": [],
+    "fr": [
+     "MANTADIX"
+    ],
+    "rxcui": [
+     "620"
+    ],
+    "resolved_as": "RxNorm PIN of amantadine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Amikacin sulfate",
@@ -2113,7 +2388,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "amikacin liposomal",
+     "amikacin sulfate, liposomal"
+    ],
+    "us": [
+     "Arikayce"
+    ],
+    "eu": [
+     "Arikayce",
+     "Arikayce liposomal"
+    ],
+    "fr": [
+     "AMIKACINE PANPHARMA",
+     "AMIKACINE STRAGEN",
+     "AMIKACINE VIATRIS",
+     "ARIKAYCE LIPOSOMAL"
+    ],
+    "rxcui": [
+     "641"
+    ],
+    "resolved_as": "RxNorm PIN of amikacin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Aminoglutethimide",
@@ -2156,7 +2456,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BG01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BG01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "677"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Aminoglycosides",
@@ -2243,7 +2555,118 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "amikacin",
+     "amikacin liposomal",
+     "amikacin sulfate",
+     "amikacin sulfate, liposomal",
+     "arbekacin",
+     "arbekacin sulfate",
+     "dibekacin",
+     "gentamicin",
+     "gentamicin sulfate",
+     "kanamycin",
+     "kanamycin A sulfate",
+     "kanamycin sulfate",
+     "neomycin",
+     "neomycin sulfate",
+     "netilmicin",
+     "netilmicin sulfate",
+     "plazomicin",
+     "plazomicin sulfate",
+     "sisomicin",
+     "sisomicin sulfate",
+     "streptomycin",
+     "streptomycin sulfate",
+     "tobramycin",
+     "tobramycin sulfate"
+    ],
+    "us": [
+     "Arikayce",
+     "Bethkis",
+     "Cortisporin",
+     "Cortisporin-TC",
+     "Cuadriderma",
+     "Garasol",
+     "Genone",
+     "Gentacalm",
+     "Gentak",
+     "GentaVed",
+     "Kitabis",
+     "Lanabiotic",
+     "Maxitrol",
+     "Mometamax",
+     "Mometamax Single",
+     "Mometavet",
+     "Motazol",
+     "Mycitracin Plus Pain Reliever",
+     "Neo-Polycin",
+     "Neo-Polycin HC",
+     "Neo-Predef",
+     "Neo-Synalar",
+     "Neovet",
+     "Oticin HC",
+     "Otomax",
+     "Poly-Dex",
+     "Spectrocin Plus",
+     "Tobi",
+     "Tobradex",
+     "Tobrex",
+     "Tresaderm",
+     "Tri Biozene",
+     "Zemdri",
+     "Zylet"
+    ],
+    "eu": [
+     "Arikayce",
+     "Arikayce liposomal",
+     "Tobi Podhaler",
+     "Vantobra",
+     "Vantobra (previously Tobramycin PARI)",
+     "Zemdri"
+    ],
+    "fr": [
+     "AMIKACINE PANPHARMA",
+     "AMIKACINE STRAGEN",
+     "AMIKACINE VIATRIS",
+     "ANETENA",
+     "ANTIBIO SYNALAR",
+     "ARIKAYCE LIPOSOMAL",
+     "CHIBRO CADRON",
+     "CIDERMEX",
+     "GENTAMICINE PANPHARMA",
+     "INDOBIOTIC",
+     "MAXIDROL",
+     "NEBCINE",
+     "NETAXEN",
+     "PANOTILE",
+     "PNEUMOVAX",
+     "POLYDEXA",
+     "POLYGYNAX",
+     "POLYGYNAX VIRGO",
+     "TERGYNAN",
+     "TOBI",
+     "TOBI PODHALER",
+     "TOBRABACT",
+     "TOBRADEX",
+     "TOBRAMYCINE SUN",
+     "TOBRAMYCINE ZENTIVA",
+     "TOBREX",
+     "TODEXAL",
+     "TRUE TEST",
+     "ZANOSAR"
+    ],
+    "rxcui": [
+     "10109",
+     "10627",
+     "1596450"
+    ],
+    "resolved_as": "class J01GA, J01GB",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Aminopterin",
@@ -2352,6 +2775,20 @@
      "id": "PMC12442749; DOI 10.1002/bdr2.2497",
      "date": "2025-09-17"
     }
+   },
+   "names": {
+    "generic": [
+     "aminopterin sodium"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "1440264"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -2407,7 +2844,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Nexterone",
+     "Pacerone"
+    ],
+    "eu": [],
+    "fr": [
+     "AMIODARONE ALMUS",
+     "AMIODARONE ARROW LAB",
+     "AMIODARONE BIOGARAN",
+     "AMIODARONE CRISTERS",
+     "AMIODARONE EG",
+     "AMIODARONE TEVA",
+     "AMIODARONE VIATRIS",
+     "AMIODARONE ZENTIVA",
+     "CORDARONE"
+    ],
+    "rxcui": [
+     "703"
+    ],
+    "resolved_as": "RxNorm PIN of amiodarone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Amoxapine",
@@ -2475,7 +2937,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N06AA17)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N06AA17).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "DEFANYL"
+    ],
+    "rxcui": [
+     "722"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Angiotensin converting enzyme  (ACE) inhibitors",
@@ -2568,7 +3044,215 @@
      }
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "benazepril",
+     "benazepril hydrochloride",
+     "benazeprilat",
+     "captopril",
+     "cilazapril",
+     "enalapril",
+     "enalapril maleate",
+     "fosinopril",
+     "fosinopril sodium",
+     "imidapril",
+     "imidapril hydrochloride",
+     "lisinopril",
+     "lisinopril anhydrous",
+     "moexipril",
+     "moexipril hydrochloride",
+     "perindopril",
+     "perindopril arginine",
+     "perindopril erbumine",
+     "quinapril",
+     "quinapril hydrochloride",
+     "ramipril",
+     "spirapril",
+     "trandolapril",
+     "zofenopril",
+     "zofenopril calcium"
+    ],
+    "us": [
+     "Accupril",
+     "Accuretic",
+     "Aceon",
+     "Altace",
+     "Cardalis",
+     "Epaned",
+     "Lotensin",
+     "Lotensin HCT",
+     "Lotrel",
+     "Prestalia",
+     "Prinivil",
+     "Qbrelis",
+     "Vaseretic",
+     "Vasotec",
+     "Vostally",
+     "Zestoretic",
+     "Zestril"
+    ],
+    "eu": [
+     "Aqumeldi"
+    ],
+    "fr": [
+     "ACUILIX",
+     "ACUITEL",
+     "ARLUNIS",
+     "BENAZEPRIL ARROW",
+     "BENAZEPRIL EG",
+     "BENAZEPRIL HYDROCHLOROTHIAZIDE EG",
+     "BENAZEPRIL/HYDROCHLOROTHIAZIDE ARROW",
+     "BIPRETERAX",
+     "CAPTOPRIL ARROW",
+     "CAPTOPRIL BIOGARAN",
+     "CAPTOPRIL EG",
+     "CAPTOPRIL HYDROCHLOROTHIAZIDE ARROW",
+     "CAPTOPRIL VIATRIS",
+     "CAPTOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+     "CAPTOPRIL/HYDROCHLOROTHIAZIDE EG",
+     "CAPTOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+     "CIBADREX",
+     "CO-RENITEC",
+     "COGYR",
+     "COSIMPREL",
+     "COTRIATEC",
+     "COVERAM",
+     "COVERSYL",
+     "ENALAPRIL ACCORD",
+     "ENALAPRIL ARROW LAB",
+     "ENALAPRIL BIOGARAN",
+     "ENALAPRIL EG",
+     "ENALAPRIL EVOLUGEN",
+     "ENALAPRIL SANDOZ",
+     "ENALAPRIL TEVA SANTE",
+     "ENALAPRIL VIATRIS",
+     "ENALAPRIL ZENTIVA",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE ARROW",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE EG",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE TEVA",
+     "ENALAPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+     "ENALAPRIL/LERCANIDIPINE ARROW",
+     "ENALAPRIL/LERCANIDIPINE BIOGARAN",
+     "ENALAPRIL/LERCANIDIPINE BOUCHARA-RECORDATI",
+     "ENALAPRIL/LERCANIDIPINE CRISTERS",
+     "ENALAPRIL/LERCANIDIPINE EG",
+     "ENALAPRIL/LERCANIDIPINE KRKA",
+     "ENALAPRIL/LERCANIDIPINE TEVA",
+     "ENALAPRIL/LERCANIDIPINE VIATRIS",
+     "ENALAPRIL/LERCANIDIPINE ZENTIVA",
+     "FOSINOPRIL ARROW GENERIQUES",
+     "FOSINOPRIL ARROW LAB",
+     "FOSINOPRIL BIOGARAN",
+     "FOSINOPRIL HYDROCHLOROTHIAZIDE ARROW",
+     "FOSINOPRIL TEVA",
+     "FOSINOPRIL ZENTIVA",
+     "FOSINOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+     "FOSINOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+     "LERCAPRESS",
+     "LISINOPRIL ARROW",
+     "LISINOPRIL BIOGARAN",
+     "LISINOPRIL EG",
+     "LISINOPRIL TEVA",
+     "LISINOPRIL VIATRIS",
+     "LISINOPRIL ZENTIVA",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE ARROW LAB",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE BIOGARAN",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE EG",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE TEVA",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+     "LISINOPRIL/HYDROCHLOROTHIAZIDE ZENTIVA",
+     "NOYADA",
+     "ODRIK",
+     "PARATERAX",
+     "PERINDOPRIL ARGININE BIOGARAN",
+     "PERINDOPRIL ARGININE EG",
+     "PERINDOPRIL ARGININE HCS",
+     "PERINDOPRIL ARGININE SERVIER",
+     "PERINDOPRIL ARGININE VIATRIS",
+     "PERINDOPRIL ARGININE ZENTIVA",
+     "PERINDOPRIL ARGININE/AMLODIPINE HCS",
+     "PERINDOPRIL ARGININE/AMLODIPINE SERVIER",
+     "PERINDOPRIL ARGININE/INDAPAMIDE BIOGARAN",
+     "PERINDOPRIL ARGININE/INDAPAMIDE HCS",
+     "PERINDOPRIL ARGININE/INDAPAMIDE SERVIER",
+     "PERINDOPRIL ARGININE/INDAPAMIDE VIATRIS",
+     "PERINDOPRIL ARROW",
+     "PERINDOPRIL BIOGARAN",
+     "PERINDOPRIL KRKA",
+     "PERINDOPRIL SANDOZ",
+     "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE ARROW",
+     "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE CRISTERS",
+     "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE EG",
+     "PERINDOPRIL TERT-BUTYLAMINE/AMLODIPINE VIATRIS",
+     "PERINDOPRIL TERT-BUTYLAMINE/INDAPAMIDE CRISTERS",
+     "PERINDOPRIL TEVA SANTE",
+     "PERINDOPRIL TOSILATE CRISTERS",
+     "PERINDOPRIL TOSILATE TEVA",
+     "PERINDOPRIL TOSILATE/AMLODIPINE TEVA",
+     "PERINDOPRIL TOSILATE/INDAPAMIDE TEVA",
+     "PERINDOPRIL VIATRIS",
+     "PERINDOPRIL ZYDUS",
+     "PERINDOPRIL/AMLODIPINE HCS",
+     "PERINDOPRIL/AMLODIPINE ZENTIVA",
+     "PERINDOPRIL/INDAPAMIDE BIOGARAN",
+     "PERINDOPRIL/INDAPAMIDE EG",
+     "PERINDOPRIL/INDAPAMIDE KRKA",
+     "PERINDOPRIL/INDAPAMIDE SANDOZ",
+     "PERINDOPRIL/INDAPAMIDE VIATRIS",
+     "PERINDOPRIL/INDAPAMIDE ZENTIVA",
+     "PERINDOPRIL/INDAPAMIDE ZYDUS FRANCE",
+     "PREMINOR",
+     "PRETERAX",
+     "PRETERVAL",
+     "QUINAPRIL BIOGARAN",
+     "QUINAPRIL HYDROCHLOROTHIAZIDE EG",
+     "QUINAPRIL/HYDROCHLOROTHIAZIDE ARROW LAB",
+     "RAMIPRIL / HYDROCHLOROTHIAZIDE BIOGARAN",
+     "RAMIPRIL ALMUS",
+     "RAMIPRIL ARROW GENERIQUES",
+     "RAMIPRIL ARROW LAB",
+     "RAMIPRIL BIOGARAN",
+     "RAMIPRIL CRISTERS PHARMA",
+     "RAMIPRIL EG",
+     "RAMIPRIL EVOLUGEN",
+     "RAMIPRIL KRKA",
+     "RAMIPRIL SANDOZ",
+     "RAMIPRIL TEVA SANTE",
+     "RAMIPRIL VIATRIS",
+     "RAMIPRIL ZENTIVA",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE ARROW",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE EG",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE SANDOZ",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE TEVA",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE VIATRIS",
+     "RAMIPRIL/HYDROCHLOROTHIAZIDE ZENTIVA",
+     "RENITEC",
+     "TARKA LP",
+     "TRANDOLAPRIL BIOGARAN",
+     "TRANDOLAPRIL VIATRIS",
+     "TRIATEC",
+     "TRIPLIXAM",
+     "TRIVERAM",
+     "ZANEXTRA",
+     "ZESTORETIC",
+     "ZESTRIL",
+     "ZOFENIL",
+     "ZOFENILDUO",
+     "ZOFENOPRIL VIATRIS"
+    ],
+    "rxcui": [
+     "18867",
+     "1998",
+     "21102"
+    ],
+    "resolved_as": "class C09AA",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Anisindione",
@@ -2608,7 +3292,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "17941"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Arsenic (inorganic oxides)",
@@ -2821,7 +3517,82 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "acetylsalicylate sodium"
+    ],
+    "us": [
+     "Alka-Seltzer",
+     "Anacin",
+     "Anacin Advanced Headache Formula",
+     "Anacin Aspirin Regimen",
+     "Arthriten Inflammatory Pain",
+     "Ascomp",
+     "Aspergum",
+     "Aspi-Cor",
+     "Backaid IPF",
+     "Bayer Aspirin",
+     "BC Arthritis",
+     "BC Original Formula",
+     "Bromo Seltzer Antacid Pain Reliever",
+     "Bufferin",
+     "Durlaza",
+     "Ecotrin",
+     "Equagesic",
+     "Exaprin",
+     "Exaprin Plus",
+     "Excedrin",
+     "Excedrin PM Triple Action",
+     "Miniprin",
+     "Norgesic",
+     "Norwich Aspirin",
+     "Orphengesic",
+     "Pamprin Max Formula",
+     "Saleto",
+     "St. Joseph Aspirin",
+     "Stanback Headache Powder Reformulated Jan 2011",
+     "Vanquish",
+     "Vazalore",
+     "Yosprala"
+    ],
+    "eu": [],
+    "fr": [
+     "ACIDE ACETYLSALICYLIQUE BIOGARAN",
+     "ACIDE ACETYLSALICYLIQUE PANPHARMA",
+     "ACIDE ACETYLSALICYLIQUE SANDOZ",
+     "ACIDE ACETYLSALICYLIQUE VIATRIS",
+     "ACTRON",
+     "ALKA SELTZER",
+     "ASARED",
+     "ASPEGIC",
+     "ASPEGIC ADULTES",
+     "ASPEGIC ENFANTS",
+     "ASPEGIC NOURRISSONS",
+     "ASPIRINE ARROW",
+     "ASPIRINE DU RHONE",
+     "ASPIRINE PROTECT",
+     "ASPIRINE UPSA",
+     "ASPIRINE UPSA TAMPONNEE EFFERVESCENTE",
+     "ASPIRINE UPSA VITAMINEE C TAMPONNEE EFFERVESCENTE",
+     "ASPRO",
+     "ASPRO CAFEINE",
+     "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE BIOGARAN",
+     "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE EG",
+     "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE VIATRIS",
+     "CLOPIDOGREL/ACIDE ACETYLSALICYLIQUE ZENTIVA",
+     "DUOPLAVIN",
+     "KARDEGIC",
+     "MIGPRIV",
+     "RESITUNE"
+    ],
+    "rxcui": [
+     "1191"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Atenolol",
@@ -2911,7 +3682,39 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C07AB03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C07AB03).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Tenoretic",
+     "Tenormin"
+    ],
+    "eu": [],
+    "fr": [
+     "ATENOLOL ACCORD HEALTHCARE",
+     "ATENOLOL ARROW",
+     "ATENOLOL BIOGARAN",
+     "ATENOLOL CRISTERS",
+     "ATENOLOL EG",
+     "ATENOLOL EVOLUGEN PHARMA",
+     "ATENOLOL SANDOZ",
+     "ATENOLOL SFDB",
+     "ATENOLOL TEVA",
+     "ATENOLOL VIATRIS",
+     "ATENOLOL ZENTIVA",
+     "ATENOLOL ZYDUS",
+     "ATENOLOL/NIFEDIPINE BIOGARAN",
+     "ATENOLOL/NIFEDIPINE VIATRIS",
+     "TENORETIC",
+     "TENORMINE"
+    ],
+    "rxcui": [
+     "1202"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Auranofin",
@@ -2985,7 +3788,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CB03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CB03).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Ridaura"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "1227"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Azathioprine",
@@ -3091,7 +3908,32 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX01).",
+   "names": {
+    "generic": [
+     "azathioprine sodium"
+    ],
+    "us": [
+     "Azasan",
+     "Imuran"
+    ],
+    "eu": [
+     "Jayempi"
+    ],
+    "fr": [
+     "AZATHIOPRINE EG",
+     "AZATHIOPRINE TEVA",
+     "AZATHIOPRINE VIATRIS",
+     "IMUREL",
+     "JAYEMPI"
+    ],
+    "rxcui": [
+     "1256"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Barbiturates",
@@ -3178,7 +4020,69 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "allobarbital",
+     "amobarbital",
+     "amobarbital sodium",
+     "aprobarbital",
+     "barbexaclone",
+     "barbital",
+     "barbital sodium",
+     "butobarbital",
+     "butylvinal",
+     "cyclobarbital",
+     "hexobarbital",
+     "mephobarbital",
+     "metharbital",
+     "methohexital",
+     "methohexital sodium",
+     "pentobarbital",
+     "pentobarbital sodium",
+     "phenobarbital",
+     "phenobarbital sodium",
+     "primidone",
+     "proxibarbal",
+     "secobarbital",
+     "secobarbital sodium",
+     "talbutal",
+     "thiopental",
+     "thiopental sodium",
+     "vinbarbital"
+    ],
+    "us": [
+     "Amytal",
+     "Brevital",
+     "Donnatal",
+     "Euthaphen",
+     "Euthasol",
+     "Fatal-Plus",
+     "Fidoquel",
+     "Mysoline",
+     "Nembutal",
+     "Pentobarsol",
+     "Phenohytro",
+     "Sezaby"
+    ],
+    "eu": [],
+    "fr": [
+     "ALEPSAL",
+     "GARDENAL",
+     "MYSOLINE",
+     "PHENOBARBITAL RICHARD",
+     "THIOPENTAL PANPHARMA",
+     "THIOPENTAL VUAB"
+    ],
+    "rxcui": [
+     "46795",
+     "6758",
+     "6825"
+    ],
+    "resolved_as": "class N03AA, N05CA",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Beclomethasone dipropionate",
@@ -3271,7 +4175,56 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A07EA07, D07AC15)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A07EA07, D07AC15).",
+   "names": {
+    "generic": [
+     "beclomethasone 17-monopropionate",
+     "beclomethasone dipropionate monohydrate"
+    ],
+    "us": [
+     "Beconase",
+     "Qnasl",
+     "Qvar",
+     "Trimbow"
+    ],
+    "eu": [
+     "orBec"
+    ],
+    "fr": [
+     "BECLO-RHINO",
+     "BECLOJET",
+     "BECLOMETASONE CHIESI",
+     "BECLOMETASONE TEVA",
+     "BECLOMETASONE/FORMOTEROL BIOGARAN",
+     "BECLOMETASONE/FORMOTEROL EG",
+     "BECLOMETASONE/FORMOTEROL TEVA",
+     "BECLOMETASONE/FORMOTEROL VIATRIS",
+     "BECLOMETASONE/FORMOTEROL ZENTIVA",
+     "BECLOSPIN",
+     "BECLOSPRAY",
+     "BECONASE",
+     "BECOTIDE",
+     "BEMEDREX EASYHALER",
+     "ECOBEC",
+     "FORMODUAL",
+     "FORMODUAL NEXTHALER",
+     "HUMEX RHUME DES FOINS A LA BECLOMETASONE",
+     "INNOVAIR",
+     "INNOVAIR NEXTHALER",
+     "MIFLASONE",
+     "QVAR AUTOHALER",
+     "QVARSPRAY",
+     "RHINOMAXIL",
+     "RINOCLENIL",
+     "TRIMBOW"
+    ],
+    "rxcui": [
+     "1347"
+    ],
+    "resolved_as": "RxNorm PIN of beclomethasone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "benomyl (ISO); methyl 1-(butylcarbamoyl)benzimidazol-2-ylcarbamate",
@@ -3684,7 +4637,138 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "alprazolam",
+     "bromazepam",
+     "brotizolam",
+     "chlordiazepoxide",
+     "chlordiazepoxide hydrochloride",
+     "clobazam",
+     "clonazepam",
+     "clotiazepam",
+     "cloxazolam",
+     "diazepam",
+     "estazolam",
+     "ethyl loflazepate",
+     "flunitrazepam",
+     "flurazepam",
+     "flurazepam hydrochloride",
+     "halazepam",
+     "ketazolam",
+     "loprazolam mesylate",
+     "lorazepam",
+     "lormetazepam",
+     "medazepam",
+     "midazolam",
+     "midazolam hydrochloride",
+     "midazolam maleate",
+     "nitrazepam",
+     "nordazepam",
+     "oxazepam",
+     "prazepam",
+     "quazepam",
+     "remimazolam",
+     "remimazolam besylate",
+     "temazepam",
+     "tofisopam",
+     "triazolam",
+     "triazulenone"
+    ],
+    "us": [
+     "Ativan",
+     "Byfavo",
+     "Diastat",
+     "Doral",
+     "Halcion",
+     "Klonopin",
+     "Libervant",
+     "Librax",
+     "Loreev",
+     "Nayzilam",
+     "Onfi",
+     "Restoril",
+     "Sympazan",
+     "Valium",
+     "Valtoco",
+     "Xanax"
+    ],
+    "eu": [
+     "Buccolam",
+     "Byfavo",
+     "Omforro",
+     "Tuzodi"
+    ],
+    "fr": [
+     "ALPRAZOLAM ARROW",
+     "ALPRAZOLAM ARROW LAB",
+     "ALPRAZOLAM BIOGARAN",
+     "ALPRAZOLAM CRISTERS",
+     "ALPRAZOLAM EG",
+     "ALPRAZOLAM EVOLUGEN PHARMA",
+     "ALPRAZOLAM HCS",
+     "ALPRAZOLAM SANDOZ",
+     "ALPRAZOLAM TEVA",
+     "ALPRAZOLAM VIATRIS",
+     "ALPRAZOLAM ZENTIVA",
+     "ALPRAZOLAM ZYDUS",
+     "ALPRAZOLAM ZYDUS FRANCE",
+     "BROMAZEPAM ARROW",
+     "BROMAZEPAM BIOGARAN",
+     "BROMAZEPAM CRISTERS",
+     "BROMAZEPAM EG",
+     "BROMAZEPAM TEVA",
+     "BROMAZEPAM VIATRIS",
+     "BROMAZEPAM ZENTIVA",
+     "BROMAZEPAM ZYDUS",
+     "BUCCOLAM",
+     "BYFAVO",
+     "DIAZEPAM ACCORD",
+     "DIAZEPAM ARROW",
+     "DIAZEPAM RENAUDIN",
+     "DIAZEPAM TEVA",
+     "LEXOMIL",
+     "LIBRAX",
+     "LIKOZAM",
+     "LORAZEPAM ARROW",
+     "LORAZEPAM VIATRIS",
+     "LORAZEPAM XILMAC",
+     "LORMETAZEPAM ARROW",
+     "LYSANXIA",
+     "MIDAZOLAM ACCORD",
+     "MIDAZOLAM AGUETTANT",
+     "MIDAZOLAM KALCEKS",
+     "MIDAZOLAM PANPHARMA",
+     "MIDAZOLAM VIATRIS",
+     "MOGADON",
+     "NUCTALON",
+     "OXAZEPAM ARROW",
+     "OXAZEPAM BIOGARAN",
+     "OXAZEPAM SUBSTIPHARM",
+     "OXAZEPAM VIATRIS",
+     "OZALIN",
+     "PRAZEPAM ARROW",
+     "PRAZEPAM BIOGARAN",
+     "PRAZEPAM EG",
+     "RIVOTRIL",
+     "SERESTA",
+     "TEMESTA",
+     "URBANYL",
+     "VALIUM",
+     "VERATRAN",
+     "VICTAN",
+     "XANAX"
+    ],
+    "rxcui": [
+     "1749",
+     "21241",
+     "21311"
+    ],
+    "resolved_as": "class N05BA, N05CD, N03AE",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Benzphetamine hydrochloride",
@@ -3724,7 +4808,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "1422"
+    ],
+    "resolved_as": "RxNorm PIN of benzphetamine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Bevacizumab",
@@ -3798,7 +4894,62 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC07)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC07).",
+   "names": {
+    "generic": [
+     "bevacizumab-adcd",
+     "bevacizumab-awwb",
+     "bevacizumab-bvzr",
+     "bevacizumab-maly",
+     "bevacizumab-nwgd",
+     "bevacizumab-tnjn",
+     "bevacizumab-vikg"
+    ],
+    "us": [
+     "Alymsys",
+     "Avastin",
+     "Avzivi",
+     "Jobevne",
+     "Lytenava",
+     "Mvasi",
+     "Vegzelma",
+     "Zirabev"
+    ],
+    "eu": [
+     "Abevmy",
+     "Alymsys",
+     "Avastin",
+     "Avzivi",
+     "Aybintio",
+     "Equidacent",
+     "Ipique",
+     "Kyomarc",
+     "Lextemy",
+     "Lytenava",
+     "Mvasi",
+     "Onbevzi",
+     "Orblid",
+     "Oyavas",
+     "Vegzelma",
+     "Zirabev"
+    ],
+    "fr": [
+     "ABEVMY",
+     "ALYMSYS",
+     "AVASTIN",
+     "AYBINTIO",
+     "MVASI",
+     "OYAVAS",
+     "VEGZELMA",
+     "ZIRABEV"
+    ],
+    "rxcui": [
+     "253337"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Bexarotene",
@@ -3817,6 +4968,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "animal only",
@@ -3857,20 +5022,25 @@
      "date": "2018-06-21"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [
+     "Targretin"
+    ],
+    "eu": [
+     "Targretin"
+    ],
+    "fr": [
+     "BEXAROTENE CIPLA",
+     "TARGRETIN"
+    ],
+    "rxcui": [
+     "233272"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Bischloroethyl nitrosourea (BCNU) (Carmustine)",
@@ -3982,7 +5152,30 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "BiCNU",
+     "Gliadel"
+    ],
+    "eu": [
+     "Carmustine medac (previously Carmustine Obvius)"
+    ],
+    "fr": [
+     "BICNU",
+     "CARMUSTINE ACCORD",
+     "CARMUSTINE ACCORDPHARMA",
+     "CARMUSTINE MEDAC",
+     "GLIADEL"
+    ],
+    "rxcui": [
+     "2105"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "brodifacoum (ISO); 4-hydroxy-3-(3-(4′-bromo-4-biphenylyl)-1,2,3,4-tetrahydro-1-naphthyl)coumarin",
@@ -4132,7 +5325,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "477631"
+    ],
+    "resolved_as": "RxNorm PIN of butabarbital",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cadmium",
@@ -4461,6 +5666,28 @@
      "id": "DailyMed set id be478f3c-40f6-47cc-8ab9-f420a9372b1c",
      "date": "2025-08-19"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Carbatrol",
+     "Epitol",
+     "Equetro",
+     "Tegretol"
+    ],
+    "eu": [],
+    "fr": [
+     "CARBAMAZEPINE SANDOZ L.P.",
+     "CARBAMAZEPINE VIATRIS L.P.",
+     "TEGRETOL",
+     "TEGRETOL L.P."
+    ],
+    "rxcui": [
+     "2002"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -4480,6 +5707,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -4520,20 +5761,20 @@
      "date": "2019-12-01"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "NEO-MERCAZOLE"
+    ],
+    "rxcui": [
+     "2020"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "carbon disulphide",
@@ -4941,7 +6182,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XA02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Kyxata",
+     "Paraplatin"
+    ],
+    "eu": [],
+    "fr": [
+     "CARBOPLATINE ACCORD",
+     "CARBOPLATINE ARROW LAB",
+     "CARBOPLATINE HIKMA",
+     "CARBOPLATINE HOSPIRA",
+     "CARBOPLATINE KABI",
+     "CARBOPLATINE MEDAC",
+     "CARBOPLATINE TEVA",
+     "CARBOPLATINE VIATRIS"
+    ],
+    "rxcui": [
+     "40048"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Chenodiol",
@@ -4984,7 +6249,29 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A05AA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A05AA01).",
+   "names": {
+    "generic": [
+     "chenodeoxycholate",
+     "chenodeoxycholic acid"
+    ],
+    "us": [
+     "Chenodal",
+     "Ctexli"
+    ],
+    "eu": [
+     "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)"
+    ],
+    "fr": [
+     "CHENODEOXYCHOLIC ACID LEADIANT"
+    ],
+    "rxcui": [
+     "42588"
+    ],
+    "resolved_as": "RxNorm PIN of chenodeoxycholate",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Chlorambucil",
@@ -5096,7 +6383,23 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Leukeran"
+    ],
+    "eu": [],
+    "fr": [
+     "CHLORAMINOPHENE"
+    ],
+    "rxcui": [
+     "2346"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Chlorcyclizine hydrochloride",
@@ -5136,7 +6439,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Ahist Antihistamine",
+     "Dallergy Reformulated Nov 2011",
+     "Stahist AD"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "2354"
+    ],
+    "resolved_as": "RxNorm PIN of chlorcyclizine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Chlordecone (Kepone)",
@@ -5425,7 +6744,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA02).",
+   "names": {
+    "generic": [
+     "chlordiazepoxide hydrochloride"
+    ],
+    "us": [
+     "Librax"
+    ],
+    "eu": [],
+    "fr": [
+     "LIBRAX"
+    ],
+    "rxcui": [
+     "2356"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Chlordiazepoxide hydrochloride",
@@ -5512,7 +6849,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Librax"
+    ],
+    "eu": [],
+    "fr": [
+     "LIBRAX"
+    ],
+    "rxcui": [
+     "2356"
+    ],
+    "resolved_as": "RxNorm PIN of chlordiazepoxide",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "chloroform; trichloromethane",
@@ -6027,7 +7380,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB12)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB12).",
+   "names": {
+    "generic": [
+     "cidofovir anhydrous"
+    ],
+    "us": [],
+    "eu": [
+     "Vistide"
+    ],
+    "fr": [
+     "CIDOFOVIR TILLOMED"
+    ],
+    "rxcui": [
+     "83171"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cladribine",
@@ -6118,7 +7489,29 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB04, L04AA40)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB04, L04AA40).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Mavenclad"
+    ],
+    "eu": [
+     "Litak",
+     "Mavenclad",
+     "Movectro"
+    ],
+    "fr": [
+     "LEUSTATINE",
+     "LITAK",
+     "MAVENCLAD"
+    ],
+    "rxcui": [
+     "44157"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Clarithromycin",
@@ -6230,7 +7623,36 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J01FA09)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J01FA09).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Biaxin"
+    ],
+    "eu": [],
+    "fr": [
+     "CLARITHROMYCINE ACCORD",
+     "CLARITHROMYCINE ALMUS",
+     "CLARITHROMYCINE ARROW",
+     "CLARITHROMYCINE ARROW LAB",
+     "CLARITHROMYCINE BIOGARAN",
+     "CLARITHROMYCINE EG",
+     "CLARITHROMYCINE EVOLUGEN",
+     "CLARITHROMYCINE HCS",
+     "CLARITHROMYCINE SANDOZ",
+     "CLARITHROMYCINE SUN",
+     "CLARITHROMYCINE TEVA",
+     "CLARITHROMYCINE VIATRIS",
+     "CLARITHROMYCINE ZYDUS",
+     "ZECLAR"
+    ],
+    "rxcui": [
+     "21212"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Clobetasol propionate",
@@ -6285,7 +7707,33 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Byqlovi",
+     "Clobex",
+     "Clodan",
+     "Impoyz",
+     "Olux",
+     "Temovate",
+     "Tovet"
+    ],
+    "eu": [],
+    "fr": [
+     "CABESOL",
+     "CLARELUX",
+     "CLOBETASOL SUBSTIPHARM",
+     "CLOBEX",
+     "DERMOVAL"
+    ],
+    "rxcui": [
+     "2590"
+    ],
+    "resolved_as": "RxNorm PIN of clobetasol",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Clomiphene citrate",
@@ -6364,7 +7812,22 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Clomid",
+     "Milophene"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "2596"
+    ],
+    "resolved_as": "RxNorm PIN of clomiphene",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Clorazepate dipotassium",
@@ -6435,7 +7898,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "clorazepic acid"
+    ],
+    "us": [
+     "Tranxene"
+    ],
+    "eu": [],
+    "fr": [
+     "TRANXENE"
+    ],
+    "rxcui": [
+     "2353"
+    ],
+    "resolved_as": "RxNorm PIN of clorazepate",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cocaine",
@@ -6568,7 +8049,75 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "codeine anhyd",
+     "codeine anhydrous",
+     "codeine camsyl",
+     "codeine hydrochloride",
+     "codeine phosphate anhydrous",
+     "codeine polistirex",
+     "codeine sulfate"
+    ],
+    "us": [
+     "Ambifed CD",
+     "Ambifed-G CD",
+     "Ascomp",
+     "Biotussin",
+     "BroveX CB",
+     "Brovex PBC",
+     "Cheratussin",
+     "Fioricet with Codeine",
+     "Lortuss EX",
+     "M-Clear WC",
+     "M-End Max D",
+     "M-End PE",
+     "Mar-cof BP",
+     "Mar-cof CG",
+     "Maxiphen CDX",
+     "Ninjacof XG",
+     "Tuxarin",
+     "Tuzistra",
+     "Tylenol with Codeine",
+     "Zodryl AC",
+     "Zodryl DAC",
+     "Zodryl DEC"
+    ],
+    "eu": [],
+    "fr": [
+     "ANTARENE CODEINE",
+     "CLARADOL CODEINE",
+     "CODEINE-ERYSIMUM MAYOLY SPINDLER SANS SUCRE",
+     "CODOLIPRANE",
+     "CODOLIPRANE ADULTES",
+     "DAFALGAN CODEINE",
+     "KLIPAL",
+     "LINDILANE",
+     "NEO-CODION",
+     "NEO-CODION ADULTES",
+     "PADERYL",
+     "PARACETAMOL CODEINE FRILAB",
+     "PARACETAMOL/CAFEINE/CODEINE ARROW",
+     "PARACETAMOL/CAFEINE/CODEINE BIOGARAN",
+     "PARACETAMOL/CAFEINE/CODEINE VIATRIS",
+     "PARACETAMOL/CODEINE BIOGARAN",
+     "PARACETAMOL/CODEINE PIERRE FABRE",
+     "PARACETAMOL/CODEINE TEVA",
+     "PARACETAMOL/CODEINE VIATRIS",
+     "POLERY ADULTES",
+     "POLERY ADULTES SANS SUCRE",
+     "PRONTALGINE",
+     "PULMOSERUM",
+     "TUSSIPAX"
+    ],
+    "rxcui": [
+     "2670"
+    ],
+    "resolved_as": "RxNorm PIN of codeine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Colchicine",
@@ -6669,7 +8218,29 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M04AC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M04AC01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Colcrys",
+     "Gloperba",
+     "Lodoco",
+     "Mitigare"
+    ],
+    "eu": [
+     "Colchicine Agepha Pharma"
+    ],
+    "fr": [
+     "COLCHICINE OPOCALCIUM",
+     "COLCHIMAX"
+    ],
+    "rxcui": [
+     "2683"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Conjugated estrogens",
@@ -6724,7 +8295,24 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "estrogens, conjugated (USP)"
+    ],
+    "us": [
+     "Duavee",
+     "Premarin"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4099"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cyanazine",
@@ -7120,7 +8708,29 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA01).",
+   "names": {
+    "generic": [
+     "cyclophosphamide anhydrous",
+     "cyclophosphamide lyophilized",
+     "cyclophosphamide monohydrate"
+    ],
+    "us": [
+     "Frindovyx"
+    ],
+    "eu": [],
+    "fr": [
+     "CYCLOPHOSPHAMIDE REDDY PHARMA",
+     "CYCLOPHOSPHAMIDE SANDOZ",
+     "ENDOXAN"
+    ],
+    "rxcui": [
+     "3002"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cyclophosphamide (hydrated)",
@@ -7229,7 +8839,29 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "cyclophosphamide anhydrous",
+     "cyclophosphamide lyophilized",
+     "cyclophosphamide monohydrate"
+    ],
+    "us": [
+     "Frindovyx"
+    ],
+    "eu": [],
+    "fr": [
+     "CYCLOPHOSPHAMIDE REDDY PHARMA",
+     "CYCLOPHOSPHAMIDE SANDOZ",
+     "ENDOXAN"
+    ],
+    "rxcui": [
+     "3002"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Cyhexatin",
@@ -7436,7 +9068,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC01).",
+   "names": {
+    "generic": [
+     "cytarabine liposome"
+    ],
+    "us": [
+     "Vyxeos"
+    ],
+    "eu": [
+     "DepoCyte",
+     "Vyxeos liposomal (previously Vyxeos)"
+    ],
+    "fr": [
+     "ARACYTINE",
+     "CYTARABINE ACCORD",
+     "CYTARABINE KABI",
+     "CYTARABINE SANDOZ",
+     "VYXEOS LIPOSOMAL"
+    ],
+    "rxcui": [
+     "3041"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Dacarbazine",
@@ -7523,7 +9180,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "DACARBAZINE LIPOMED",
+     "DACARBAZINE MEDAC",
+     "DETICENE"
+    ],
+    "rxcui": [
+     "3098"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Danazol",
@@ -7619,7 +9292,21 @@
      }
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03XA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03XA01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "DANATROL"
+    ],
+    "rxcui": [
+     "3102"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Daunorubicin hydrochloride",
@@ -7706,7 +9393,30 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "daunorubicin citrate",
+     "daunorubicin citrate liposome",
+     "daunorubicin liposomal"
+    ],
+    "us": [
+     "Vyxeos"
+    ],
+    "eu": [
+     "Vyxeos liposomal (previously Vyxeos)"
+    ],
+    "fr": [
+     "CERUBIDINE",
+     "VYXEOS LIPOSOMAL"
+    ],
+    "rxcui": [
+     "3109"
+    ],
+    "resolved_as": "RxNorm PIN of daunorubicin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Demeclocycline hydrochloride (internal use)",
@@ -7785,7 +9495,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "DEMECLOCYCLINE ACETLAB"
+    ],
+    "rxcui": [
+     "3154"
+    ],
+    "resolved_as": "RxNorm PIN of demeclocycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Diazepam",
@@ -7851,7 +9575,30 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Diastat",
+     "Libervant",
+     "Valium",
+     "Valtoco"
+    ],
+    "eu": [],
+    "fr": [
+     "DIAZEPAM ACCORD",
+     "DIAZEPAM ARROW",
+     "DIAZEPAM RENAUDIN",
+     "DIAZEPAM TEVA",
+     "VALIUM"
+    ],
+    "rxcui": [
+     "3322"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Diazoxide",
@@ -7942,7 +9689,28 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02DA01, V03AH01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02DA01, V03AH01).",
+   "names": {
+    "generic": [
+     "diazoxide choline"
+    ],
+    "us": [
+     "Proglycem",
+     "Vykat"
+    ],
+    "eu": [
+     "Viokat"
+    ],
+    "fr": [
+     "PROGLICEM"
+    ],
+    "rxcui": [
+     "3327"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Dichlorphenamide",
@@ -8016,7 +9784,137 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Keveyis",
+     "Ormalvi"
+    ],
+    "eu": [],
+    "fr": [
+     "AGYRAX",
+     "ALAIRGIX ALLERGIE CETIRIZINE",
+     "ALYOSTAL PRICK CONTROLE POSITIF",
+     "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE BIOGARAN CONSEIL",
+     "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE VIATRIS CONSEIL",
+     "AMYLMETACRESOL/ALCOOL DICHLOROBENZYLIQUE/LIDOCAINE BIOGARAN CONSEIL",
+     "ATARAX",
+     "BETAHISTINE ACCORD",
+     "BETAHISTINE ARROW",
+     "BETAHISTINE ARROW GENERIQUES",
+     "BETAHISTINE BIOGARAN",
+     "BETAHISTINE CRISTERS",
+     "BETAHISTINE EG",
+     "BETAHISTINE EG LABO",
+     "BETAHISTINE SANDOZ",
+     "BETAHISTINE TEVA",
+     "BETAHISTINE VIATRIS",
+     "BETAHISTINE ZENTIVA",
+     "BETAHISTINE ZYDUS FRANCE",
+     "BETASERC",
+     "CEFEPIME ACCORD",
+     "CEFEPIME NORIDEM",
+     "CEFEPIME PANPHARMA",
+     "CEFEPIME STRAGEN",
+     "CEFEPIME TAMRISA",
+     "CEFEPIME VIATRIS",
+     "CETIRIZINE ALMUS",
+     "CETIRIZINE ARROW",
+     "CETIRIZINE ARROW CONSEIL",
+     "CETIRIZINE ARROW LAB",
+     "CETIRIZINE BIOGARAN",
+     "CETIRIZINE BIOGARAN CONSEIL",
+     "CETIRIZINE CRISTERS PHARMA",
+     "CETIRIZINE EG",
+     "CETIRIZINE EG LABO CONSEIL",
+     "CETIRIZINE EVOLUGEN",
+     "CETIRIZINE SANDOZ",
+     "CETIRIZINE SANDOZ CONSEIL",
+     "CETIRIZINE TEVA SANTE",
+     "CETIRIZINE TEVA SANTE CONSEIL",
+     "CETIRIZINE VIATRIS",
+     "CETIRIZINE VIATRIS CONSEIL",
+     "CETIRIZINE ZENTIVA",
+     "CLOPIXOL",
+     "CUFENCE",
+     "DIPIPERON",
+     "DRILL ALLERGIE CETIRIZINE",
+     "EXBLIFEP",
+     "FLUANXOL",
+     "HUMEX ALLERGIE CETIRIZINE",
+     "HUMEX MAL DE GORGE LIDOCAINE/ALCOOL DICHLOROBENZYLIQUE/AMYLMETACRESOL",
+     "INREBIC",
+     "KUVAN",
+     "LECTIL",
+     "LEVOCETIRIZINE ARROW",
+     "LEVOCETIRIZINE BIOGARAN",
+     "LEVOCETIRIZINE CRISTERS",
+     "LEVOCETIRIZINE EG",
+     "LEVOCETIRIZINE KRKA",
+     "LEVOCETIRIZINE SANDOZ",
+     "LEVOCETIRIZINE TEVA",
+     "LEVOCETIRIZINE VIATRIS",
+     "LEVOCETIRIZINE ZENTIVA",
+     "LEVOCETIRIZINE ZYDUS",
+     "MANIDIPINE ARROW",
+     "MANIDIPINE BIOGARAN",
+     "MANIDIPINE EG",
+     "MANIDIPINE SANDOZ",
+     "MANIDIPINE TEVA",
+     "MANIDIPINE VIATRIS",
+     "MANIDIPINE ZENTIVA",
+     "MANIDIPINE ZYDUS",
+     "NEUROLITE",
+     "OMJJARA",
+     "OPRYMEA",
+     "ORLADEYO",
+     "ORSERDU",
+     "PRAMIPEXOLE ARROW LAB",
+     "PRAMIPEXOLE BIOGARAN",
+     "PRAMIPEXOLE EG",
+     "PRAMIPEXOLE SANDOZ LP",
+     "PRAMIPEXOLE TEVA",
+     "PRAMIPEXOLE VIATRIS",
+     "PRAMIPEXOLE ZENTIVA",
+     "PRAMIPEXOLE ZENTIVA LP",
+     "REACTINE",
+     "SAPROPTERINE ARROW",
+     "SAPROPTERINE DIPHARMA",
+     "SAPROPTERINE TEVA",
+     "SERC",
+     "SIBELIUM",
+     "SIFROL",
+     "SOLUPRICK CONTROLE POSITIF",
+     "STREPSILS CITRON SANS SUCRE",
+     "STREPSILS FRAISE SANS SUCRE",
+     "STREPSILS LIDOCAINE",
+     "STREPSILS MENTHE GLACIALE",
+     "STREPSILS MIEL CITRON",
+     "STREPSILS ORANGE VITAMINE C",
+     "STREPSILSPRAY à la lidocaïne",
+     "TRIENTINE WAYMADE",
+     "TRIMETAZIDINE BIOGARAN",
+     "TRIMETAZIDINE EG",
+     "TRUE TEST",
+     "VANFLYTA",
+     "VASTAREL",
+     "VITABACT",
+     "VORJA CITRON",
+     "VORJA MENTHOL",
+     "VORJA MIEL",
+     "XOFIGO",
+     "XYZALL",
+     "ZYRTEC",
+     "ZYRTECSET"
+    ],
+    "rxcui": [
+     "3353"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Dicumarol",
@@ -8093,7 +9991,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "1598"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Diethylstilbestrol (DES)",
@@ -8258,6 +10168,48 @@
      "id": "PMID 6691382",
      "date": "1984-01-01"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "ALGESAL SURACTIVE",
+     "DICLOFENAC ARROW",
+     "DICLOFENAC ARROW CONSEIL",
+     "DICLOFENAC BGR",
+     "DICLOFENAC BGR CONSEIL",
+     "DICLOFENAC BIOGARAN",
+     "DICLOFENAC CHEMINEAU",
+     "DICLOFENAC CRISTERS",
+     "DICLOFENAC EG",
+     "DICLOFENAC EG LABO CONSEIL",
+     "DICLOFENAC REF",
+     "DICLOFENAC SANDOZ",
+     "DICLOFENAC SANDOZ CONSEIL",
+     "DICLOFENAC TEVA",
+     "DICLOFENAC TEVA CLASSICS",
+     "DICLOFENAC TEVA CONSEIL",
+     "DICLOFENAC TEVA SANTE CONSEIL",
+     "DICLOFENAC URGO",
+     "DICLOFENAC VIATRIS",
+     "DICLOFENAC VIATRIS SANTE",
+     "DICLOFENAC ZENTIVA",
+     "DICLOFENAC ZYDUS",
+     "ENTALGINE",
+     "NOTEZINE",
+     "REPARIL",
+     "TRUE TEST",
+     "VOLTARENACTIGO",
+     "VOLTARENE EMULGEL",
+     "VOLTARENSPE"
+    ],
+    "rxcui": [
+     "3390"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -8340,7 +10292,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N02BA11)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N02BA11).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Dolobid"
+    ],
+    "eu": [
+     "Attrogy"
+    ],
+    "fr": [],
+    "rxcui": [
+     "3393"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Dihydroergotamine mesylate",
@@ -8411,7 +10379,49 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "dihydroergotamine tartrate"
+    ],
+    "us": [
+     "Atzumi",
+     "Brekiya",
+     "Migranal",
+     "Trudhesa"
+    ],
+    "eu": [],
+    "fr": [
+     "DICODIN L.P.",
+     "DIERGOSPRAY",
+     "DIGEDRYL",
+     "HYPERIUM",
+     "IASOdopa",
+     "NEUROSTHENOL",
+     "NORMACOL LAVEMENT ADULTES",
+     "NORMACOL LAVEMENT ENFANTS",
+     "OXYBOLDINE",
+     "OXYBOLDINE CITRON SANS SUCRE",
+     "PHOSPHORE OLIGOSOL",
+     "RECHOLAN",
+     "RILMENIDINE ARROW",
+     "RILMENIDINE BIOGARAN",
+     "RILMENIDINE CRISTERS",
+     "RILMENIDINE EG",
+     "RILMENIDINE EVOLUGEN",
+     "RILMENIDINE SANDOZ",
+     "RILMENIDINE TEVA",
+     "RILMENIDINE VIATRIS",
+     "RILMENIDINE ZENTIVA",
+     "RILMENIDINE ZYDUS"
+    ],
+    "rxcui": [
+     "3418"
+    ],
+    "resolved_as": "RxNorm PIN of dihydroergotamine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Diltiazem hydrochloride",
@@ -8498,7 +10508,46 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "diltiazem malate"
+    ],
+    "us": [
+     "Cardizem",
+     "Cartia",
+     "Dilt",
+     "Diltzac",
+     "Matzim",
+     "Taztia",
+     "Tiadylt",
+     "Tiazac"
+    ],
+    "eu": [],
+    "fr": [
+     "BI TILDIEM L.P.",
+     "CHLORHYDRATE DE DILTIAZEM VIATRIS",
+     "DILTIAZEM ARROW LP",
+     "DILTIAZEM BGR LP",
+     "DILTIAZEM BIOGARAN",
+     "DILTIAZEM BIOGARAN L.P.",
+     "DILTIAZEM SANDOZ LP",
+     "DILTIAZEM TEVA",
+     "DILTIAZEM TEVA L.P.",
+     "DILTIAZEM TEVA SANTE LP",
+     "DILTIAZEM VIATRIS L.P.",
+     "DILTIAZEM VIATRIS LP",
+     "DILTIAZEM ZENTIVA LAB LP",
+     "MONO TILDIEM LP",
+     "TILDIEM"
+    ],
+    "rxcui": [
+     "3443"
+    ],
+    "resolved_as": "RxNorm PIN of diltiazem",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "dinocap (ISO); (RS)-2,6-dinitro-4-octylphenyl crotonates and (RS)-2,4-dinitro-6-octylphenyl crotonates in which ‘octyl’ is a reaction mass of 1-methylheptyl, 1-ethylhexyl and 1-propylpentyl groups",
@@ -8937,6 +10986,29 @@
      "url": "https://www.gov.uk/government/publications/public-assesment-report-of-antiepileptic-drugs-review-of-safety-of-use-during-pregnancy/antiepileptic-drugs-review-of-safety-of-use-during-pregnancy",
      "date": "2021-01-07"
     }
+   },
+   "names": {
+    "generic": [
+     "phenytoin sodium"
+    ],
+    "us": [
+     "Dilantin",
+     "Euthaphen",
+     "Euthasol",
+     "Phenytek"
+    ],
+    "eu": [],
+    "fr": [
+     "DI-HYDAN",
+     "DILANTIN",
+     "PRODILANTIN"
+    ],
+    "rxcui": [
+     "8183"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -9024,7 +11096,41 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "doxorubicin hydrochloride liposome",
+     "doxorubicin liposome"
+    ],
+    "us": [
+     "Adriamycin",
+     "Caelyx",
+     "Doxil"
+    ],
+    "eu": [
+     "Caelyx pegylated liposomal",
+     "Celdoxome pegylated liposomal",
+     "Doxolipad",
+     "Doxorubicin Hydrochloride Tillomed",
+     "Doxorubicin SUN",
+     "Myocet liposomal (previously Myocet)",
+     "Zolsketil pegylated liposomal"
+    ],
+    "fr": [
+     "ADRIBLASTINE",
+     "CAELYX PEGYLATED LIPOSOMAL",
+     "DOXORUBICINE ACCORD",
+     "DOXORUBICINE ARROW",
+     "DOXORUBICINE TEVA",
+     "ZOLSKETIL PEGYLATED LIPOSOMAL"
+    ],
+    "rxcui": [
+     "3639"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Doxycycline (internal use)",
@@ -9115,7 +11221,53 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB22, J01AA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB22, J01AA02).",
+   "names": {
+    "generic": [
+     "doxycycline anhydrous",
+     "doxycycline calcium",
+     "doxycycline hyclate",
+     "doxycycline hydrochloride",
+     "doxycycline monohydrate"
+    ],
+    "us": [
+     "Acticlate",
+     "Adoxa",
+     "Alodox",
+     "Avidoxy",
+     "Doryx",
+     "Doxy",
+     "Mondoxyne",
+     "Monodox",
+     "Morgidox",
+     "Okebo",
+     "Oracea",
+     "Periostat",
+     "Targadox",
+     "Vibramycin"
+    ],
+    "eu": [],
+    "fr": [
+     "DOXY",
+     "DOXYCYCLINE ARROW",
+     "DOXYCYCLINE ARROW LAB",
+     "DOXYCYCLINE BIOGARAN",
+     "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+     "DOXYCYCLINE SANDOZ",
+     "DOXYCYCLINE TEVA",
+     "DOXYCYCLINE VIATRIS",
+     "DOXYPALU",
+     "GRANUDOXY",
+     "TOLEXINE",
+     "VIBRAVEINEUSE"
+    ],
+    "rxcui": [
+     "3640"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Doxycycline calcium (internal use)",
@@ -9202,7 +11354,52 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "doxycycline anhydrous",
+     "doxycycline hyclate",
+     "doxycycline hydrochloride",
+     "doxycycline monohydrate"
+    ],
+    "us": [
+     "Acticlate",
+     "Adoxa",
+     "Alodox",
+     "Avidoxy",
+     "Doryx",
+     "Doxy",
+     "Mondoxyne",
+     "Monodox",
+     "Morgidox",
+     "Okebo",
+     "Oracea",
+     "Periostat",
+     "Targadox",
+     "Vibramycin"
+    ],
+    "eu": [],
+    "fr": [
+     "DOXY",
+     "DOXYCYCLINE ARROW",
+     "DOXYCYCLINE ARROW LAB",
+     "DOXYCYCLINE BIOGARAN",
+     "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+     "DOXYCYCLINE SANDOZ",
+     "DOXYCYCLINE TEVA",
+     "DOXYCYCLINE VIATRIS",
+     "DOXYPALU",
+     "GRANUDOXY",
+     "TOLEXINE",
+     "VIBRAVEINEUSE"
+    ],
+    "rxcui": [
+     "3640"
+    ],
+    "resolved_as": "RxNorm PIN of doxycycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Doxycycline hyclate (internal use)",
@@ -9289,7 +11486,52 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "doxycycline anhydrous",
+     "doxycycline calcium",
+     "doxycycline hydrochloride",
+     "doxycycline monohydrate"
+    ],
+    "us": [
+     "Acticlate",
+     "Adoxa",
+     "Alodox",
+     "Avidoxy",
+     "Doryx",
+     "Doxy",
+     "Mondoxyne",
+     "Monodox",
+     "Morgidox",
+     "Okebo",
+     "Oracea",
+     "Periostat",
+     "Targadox",
+     "Vibramycin"
+    ],
+    "eu": [],
+    "fr": [
+     "DOXY",
+     "DOXYCYCLINE ARROW",
+     "DOXYCYCLINE ARROW LAB",
+     "DOXYCYCLINE BIOGARAN",
+     "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+     "DOXYCYCLINE SANDOZ",
+     "DOXYCYCLINE TEVA",
+     "DOXYCYCLINE VIATRIS",
+     "DOXYPALU",
+     "GRANUDOXY",
+     "TOLEXINE",
+     "VIBRAVEINEUSE"
+    ],
+    "rxcui": [
+     "3640"
+    ],
+    "resolved_as": "RxNorm PIN of doxycycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Doxycycline monohydrate (internal use)",
@@ -9376,7 +11618,52 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "doxycycline anhydrous",
+     "doxycycline calcium",
+     "doxycycline hyclate",
+     "doxycycline hydrochloride"
+    ],
+    "us": [
+     "Acticlate",
+     "Adoxa",
+     "Alodox",
+     "Avidoxy",
+     "Doryx",
+     "Doxy",
+     "Mondoxyne",
+     "Monodox",
+     "Morgidox",
+     "Okebo",
+     "Oracea",
+     "Periostat",
+     "Targadox",
+     "Vibramycin"
+    ],
+    "eu": [],
+    "fr": [
+     "DOXY",
+     "DOXYCYCLINE ARROW",
+     "DOXYCYCLINE ARROW LAB",
+     "DOXYCYCLINE BIOGARAN",
+     "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+     "DOXYCYCLINE SANDOZ",
+     "DOXYCYCLINE TEVA",
+     "DOXYCYCLINE VIATRIS",
+     "DOXYPALU",
+     "GRANUDOXY",
+     "TOLEXINE",
+     "VIBRAVEINEUSE"
+    ],
+    "rxcui": [
+     "3640"
+    ],
+    "resolved_as": "RxNorm PIN of doxycycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Environmental tobacco smoke (ETS)",
@@ -9533,7 +11820,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Cafergot",
+     "Ergomar",
+     "Migergot"
+    ],
+    "eu": [],
+    "fr": [
+     "GYNERGENE CAFEINE"
+    ],
+    "rxcui": [
+     "4025"
+    ],
+    "resolved_as": "RxNorm PIN of ergotamine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Estropipate",
@@ -9573,7 +11878,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Ogen"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "33747"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Ethionamide",
@@ -9674,7 +11993,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AD03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AD03).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Trecator"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4127"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Ethyl alcohol in alcoholic beverages",
@@ -10183,7 +12516,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB08)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB08).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Lodine"
+    ],
+    "eu": [],
+    "fr": [
+     "LODINE"
+    ],
+    "rxcui": [
+     "24605"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Etoposide",
@@ -10295,7 +12644,33 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB01).",
+   "names": {
+    "generic": [
+     "etoposide phosphate"
+    ],
+    "us": [
+     "Avopef",
+     "Etopophos",
+     "Toposar",
+     "Vepesid"
+    ],
+    "eu": [],
+    "fr": [
+     "CELLTOP",
+     "ETOPOPHOS",
+     "ETOPOSIDE ACCORD",
+     "ETOPOSIDE HIKMA",
+     "ETOPOSIDE TEVA",
+     "ETOPOSIDE VIATRIS"
+    ],
+    "rxcui": [
+     "4179"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Etretinate",
@@ -10385,7 +12760,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D05BB01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D05BB01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4182"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Filgrastim",
@@ -10428,7 +12815,53 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L03AA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L03AA02).",
+   "names": {
+    "generic": [
+     "filgrastim-aafi",
+     "filgrastim-ayow",
+     "filgrastim-laha",
+     "filgrastim-sndz",
+     "filgrastim-txid",
+     "tbo-filgrastim"
+    ],
+    "us": [
+     "Filkri",
+     "Granix",
+     "Neupogen",
+     "Nivestym",
+     "Nypozi",
+     "Releuko",
+     "Zarxio"
+    ],
+    "eu": [
+     "Accofil",
+     "Biograstim",
+     "Filgrastim Hexal",
+     "Filgrastim ratiopharm",
+     "Grastofil",
+     "Nivestim",
+     "Ratiograstim",
+     "Tevagrastim",
+     "Zarzio",
+     "Zefylti"
+    ],
+    "fr": [
+     "ACCOFIL",
+     "NEUPOGEN",
+     "NIVESTIM",
+     "RATIOGRASTIM",
+     "TEVAGRASTIM",
+     "ZARZIO",
+     "ZEFYLTI"
+    ],
+    "rxcui": [
+     "68442"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Fingolimod",
@@ -10523,7 +12956,42 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AA27)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AA27).",
+   "names": {
+    "generic": [
+     "fingolimod hydrochloride",
+     "fingolimod lauryl sulfate"
+    ],
+    "us": [
+     "Gilenya",
+     "Tascenso"
+    ],
+    "eu": [
+     "Fingolimod Accord",
+     "Fingolimod Mylan",
+     "Gilenya"
+    ],
+    "fr": [
+     "FINGOLIMOD ACCORD",
+     "FINGOLIMOD ARROW",
+     "FINGOLIMOD BENTA",
+     "FINGOLIMOD BGR",
+     "FINGOLIMOD BIOGARAN",
+     "FINGOLIMOD EG",
+     "FINGOLIMOD EVOLUGEN",
+     "FINGOLIMOD HCS",
+     "FINGOLIMOD MYLAN",
+     "FINGOLIMOD TEVA",
+     "FINGOLIMOD ZENTIVA",
+     "GILENYA"
+    ],
+    "rxcui": [
+     "1012892"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Flunisolide",
@@ -10590,7 +13058,22 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC R01AD04, R03BA03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC R01AD04, R03BA03).",
+   "names": {
+    "generic": [
+     "flunisolide anhydrous",
+     "flunisolide hemihydrate"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "25120"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Fluorouracil",
@@ -10713,7 +13196,32 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Adrucil",
+     "Carac",
+     "Efudex",
+     "Favlyxa",
+     "Fluoroplex",
+     "Tolak"
+    ],
+    "eu": [],
+    "fr": [
+     "EFUDIX",
+     "FLUOROURACILE ACCORD",
+     "FLUOROURACILE PFIZER",
+     "FLUOROURACILE TEVA",
+     "TOLAK"
+    ],
+    "rxcui": [
+     "4492"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Fluoxymesterone",
@@ -10756,7 +13264,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4494"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Flurazepam hydrochloride",
@@ -10796,7 +13316,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4501"
+    ],
+    "resolved_as": "RxNorm PIN of flurazepam",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Flurbiprofen",
@@ -10865,7 +13397,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AE09, M02AA19)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AE09, M02AA19).",
+   "names": {
+    "generic": [
+     "flurbiprofen sodium"
+    ],
+    "us": [
+     "Ansaid",
+     "Lurbipr",
+     "Lurbiro",
+     "Ocufen"
+    ],
+    "eu": [],
+    "fr": [
+     "ANTADYS",
+     "CEBUTID",
+     "CEBUTID LP",
+     "OCUFEN",
+     "STREFEN"
+    ],
+    "rxcui": [
+     "4502"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Flutamide",
@@ -10977,7 +13534,21 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BB01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BB01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Eulexin"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "4508"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Fluticasone propionate",
@@ -11064,7 +13635,89 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "fluticasone furoate"
+    ],
+    "us": [
+     "Advair",
+     "AirDuo",
+     "Aller-Flo",
+     "Armonair",
+     "Arnuity",
+     "Beser",
+     "Breo",
+     "Clarispray",
+     "Cutivate",
+     "Dymista",
+     "Flonase",
+     "Flonase Sensimist",
+     "Flovent",
+     "Fluticare",
+     "Nasopro 24",
+     "Trelegy",
+     "Wixela",
+     "Xhance"
+    ],
+    "eu": [
+     "Aerivio Spiromax",
+     "Airexar Spiromax",
+     "Alisade",
+     "Avamys",
+     "BroPair Spiromax",
+     "Elebrato Ellipta",
+     "Relvar Ellipta",
+     "Revinty Ellipta",
+     "Seffalair Spiromax",
+     "Temybric Ellipta",
+     "Trelegy Ellipta"
+    ],
+    "fr": [
+     "AVAMYS",
+     "AZAFLUNEX",
+     "AZELASTINE CHLORHYDRATE / FLUTICASONE PROPIONATE BIOGARAN",
+     "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE SUBSTIPHARM",
+     "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE TEVA",
+     "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE VIATRIS",
+     "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE ZENTIVA",
+     "AZELASTINE CHLORHYDRATE/FLUTICASONE PROPIONATE ZYDUS",
+     "AZELASTINE CHLORHYDRATE/PROPIONATE DE FLUTICASONE EG",
+     "DYMISTA",
+     "ELEBRATO ELLIPTA",
+     "FIXORINOX",
+     "FLIXONASE",
+     "FLIXOTIDE",
+     "FLIXOTIDE DISKUS",
+     "FLIXOVATE",
+     "FLUTICASONE FUROATE SUBSTIPHARM",
+     "FLUTICASONE FUROATE TEVA",
+     "FLUTIFORM",
+     "PROPIONATE DE FLUTICASONE TEVA",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL ARROW AIRMASTER",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL BGR",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL BIOGARAN AIRMASTER",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL EG AIRMASTER",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL SANDOZ",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL TEVA",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL TEVA RESPIHALER",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL VIATRIS",
+     "PROPIONATE DE FLUTICASONE/SALMETEROL ZENTIVA",
+     "RELVAR ELLIPTA",
+     "REVINTY ELLIPTA",
+     "SALFLUAIR EASYHALER",
+     "SERETIDE",
+     "SERETIDE DISKUS",
+     "SYNAZE",
+     "TRELEGY ELLIPTA"
+    ],
+    "rxcui": [
+     "41126"
+    ],
+    "resolved_as": "RxNorm PIN of fluticasone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Fosphenytoin",
@@ -11083,6 +13736,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -11106,20 +13773,24 @@
      "quote_language": "fr"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [
+     "fosphenytoin sodium"
+    ],
+    "us": [
+     "Cerebyx"
+    ],
+    "eu": [],
+    "fr": [
+     "PRODILANTIN"
+    ],
+    "rxcui": [
+     "72236"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Ganciclovir",
@@ -11210,7 +13881,30 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB06, S01AD09)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB06, S01AD09).",
+   "names": {
+    "generic": [
+     "ganciclovir sodium"
+    ],
+    "us": [
+     "Zirgan"
+    ],
+    "eu": [
+     "Vitrasert Implant"
+    ],
+    "fr": [
+     "CYMEVAN",
+     "GANCICLOVIR HIKMA",
+     "GANCICLOVIR SANDOZ",
+     "VIRGAN"
+    ],
+    "rxcui": [
+     "4678"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Ganciclovir sodium",
@@ -11250,7 +13944,28 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Zirgan"
+    ],
+    "eu": [
+     "Vitrasert Implant"
+    ],
+    "fr": [
+     "CYMEVAN",
+     "GANCICLOVIR HIKMA",
+     "GANCICLOVIR SANDOZ",
+     "VIRGAN"
+    ],
+    "rxcui": [
+     "4678"
+    ],
+    "resolved_as": "RxNorm PIN of ganciclovir",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Goserelin acetate",
@@ -11332,7 +14047,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02AE03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02AE03).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Zoladex"
+    ],
+    "eu": [],
+    "fr": [
+     "ZOLADEX"
+    ],
+    "rxcui": [
+     "50610"
+    ],
+    "resolved_as": "RxNorm PIN of goserelin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Halazepam",
@@ -11375,7 +14106,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA13)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA13).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "26412"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Halobetasol propionate",
@@ -11418,7 +14161,24 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D07AC21)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D07AC21).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Bryhali",
+     "Duobrii",
+     "Lexette",
+     "Ultravate"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "41208"
+    ],
+    "resolved_as": "RxNorm PIN of halobetasol",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Haloperidol",
@@ -11541,7 +14301,27 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AD01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AD01).",
+   "names": {
+    "generic": [
+     "haloperidol decanoate",
+     "haloperidol lactate"
+    ],
+    "us": [
+     "Haldol"
+    ],
+    "eu": [],
+    "fr": [
+     "HALDOL",
+     "HALDOL DECANOAS"
+    ],
+    "rxcui": [
+     "5093"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Halothane",
@@ -11652,7 +14432,19 @@
      ]
     }
    ],
-   "exposure_why": "An anaesthetic gas, it is breathed at work by operating-room staff."
+   "exposure_why": "An anaesthetic gas, it is breathed at work by operating-room staff.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "5095"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Hexachlorobenzene",
@@ -12074,7 +14866,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Supprelin"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "50975"
+    ],
+    "resolved_as": "RxNorm PIN of histrelin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Hydroxyurea",
@@ -12164,7 +14970,66 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX05)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX05).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Droxia",
+     "Hydrea",
+     "Siklos",
+     "Xromi"
+    ],
+    "eu": [],
+    "fr": [
+     "AMINOMIX",
+     "ATARAX",
+     "CELSIOR",
+     "CHLORUMAGENE",
+     "COLLYRE BLEU LAITER",
+     "FER PANPHARMA",
+     "FER SANDOZ",
+     "FER VIATRIS",
+     "GAMMA-OH",
+     "GASTROPAX",
+     "GELOX",
+     "HYDREA",
+     "HYDROXYCARBAMIDE ARROW",
+     "HYDROXYZINE ARROW",
+     "HYDROXYZINE BIOGARAN",
+     "HYDROXYZINE BLUEFISH",
+     "HYDROXYZINE CRISTERS",
+     "HYDROXYZINE EG",
+     "HYDROXYZINE RENAUDIN",
+     "HYDROXYZINE TEVA",
+     "HYDROXYZINE VIATRIS",
+     "HYDROXYZINE ZENTIVA",
+     "KETOSTERIL",
+     "MAALOX MAUX D'ESTOMAC HYDROXYDE D'ALUMINIUM/HYDROXYDE DE MAGNESIUM",
+     "MAGNESIE SAN PELLEGRINO ANISEE",
+     "MAGNESIE SAN PELLEGRINO SANS ANIS",
+     "MARGA",
+     "MEDNUTRIFLEX E",
+     "MEDNUTRIFLEX OMEGA E",
+     "MOXYDAR",
+     "PEDIAVEN AP-HP NOUVEAU-NE",
+     "PERINUTRIFLEX OMEGA E",
+     "PLAQUENIL",
+     "REANUTRIFLEX E",
+     "REANUTRIFLEX OMEGA E",
+     "REFLOXAR",
+     "RHUBARBE ORTIS",
+     "SIKLOS",
+     "TRUE TEST",
+     "VENOFER",
+     "XOLAAM"
+    ],
+    "rxcui": [
+     "5552"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Idarubicin hydrochloride",
@@ -12235,7 +15100,24 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Idamycin"
+    ],
+    "eu": [],
+    "fr": [
+     "IDARUBICINE ACCORD",
+     "ZAVEDOS"
+    ],
+    "rxcui": [
+     "5650"
+    ],
+    "resolved_as": "RxNorm PIN of idarubicin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Ifosfamide",
@@ -12325,7 +15207,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA06)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA06).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Ifex"
+    ],
+    "eu": [],
+    "fr": [
+     "HOLOXAN"
+    ],
+    "rxcui": [
+     "5657"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Iodine-131",
@@ -12412,7 +15310,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "sodium iodide",
+     "sodium iodide I123",
+     "sodium iodide I131"
+    ],
+    "us": [
+     "Iodopen"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "9884"
+    ],
+    "resolved_as": "RxNorm PIN of sodium iodide",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Isotretinoin",
@@ -12556,6 +15472,32 @@
      "id": "EMA/254364/2018",
      "date": "2018-02-08"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Absorica",
+     "Accutane",
+     "Amnesteem",
+     "Claravis",
+     "Myorisan",
+     "Sotret",
+     "Zenatane"
+    ],
+    "eu": [],
+    "fr": [
+     "CONTRACNE",
+     "CURACNE",
+     "ISOTRETINOINE ACNETRAIT",
+     "PROCUTA",
+     "ROACCUTANE"
+    ],
+    "rxcui": [
+     "6064"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -13880,6 +16822,38 @@
      "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be",
      "date": "2023-03-24"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Revlimid"
+    ],
+    "eu": [
+     "Lenalidomide Accord",
+     "Lenalidomide Celgene Europe",
+     "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)",
+     "Lenalidomide Krka d.d.",
+     "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)",
+     "Lenalidomide Mylan",
+     "Revlimid"
+    ],
+    "fr": [
+     "LENALIDOMIDE ACCORD",
+     "LENALIDOMIDE ARROW",
+     "LENALIDOMIDE EG",
+     "LENALIDOMIDE MYLAN",
+     "LENALIDOMIDE REDDY PHARMA",
+     "LENALIDOMIDE STRAGEN",
+     "LENALIDOMIDE TEVA",
+     "LENALIDOMIDE ZENTIVA",
+     "REVLIMID"
+    ],
+    "rxcui": [
+     "342369"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -13967,7 +16941,28 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "leuprolide mesylate"
+    ],
+    "us": [
+     "Camcevi",
+     "Eligard",
+     "Fensolvi",
+     "Lupron",
+     "Lutrate",
+     "Vabrinty"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "42375"
+    ],
+    "resolved_as": "RxNorm PIN of leuprolide",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Levodopa",
@@ -14057,7 +17052,56 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N04BA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N04BA01).",
+   "names": {
+    "generic": [
+     "foslevodopa"
+    ],
+    "us": [
+     "Crexont",
+     "Dhivy",
+     "Duopa",
+     "Inbrija",
+     "Rytary",
+     "Sinemet",
+     "Stalevo",
+     "Vyalev"
+    ],
+    "eu": [
+     "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)",
+     "Hopledo",
+     "Inbrija",
+     "Levodopa/Carbidopa/Entacapone Orion",
+     "Numient",
+     "Onerji",
+     "Stalevo"
+    ],
+    "fr": [
+     "CORBILTA",
+     "DUODOPA",
+     "LECIGIMON",
+     "LEVODOPA CARBIDOPA TEVA",
+     "LEVODOPA CARBIDOPA TEVA LP",
+     "LEVODOPA/BENSERAZIDE TEVA",
+     "LEVODOPA/CARBIDOPA/ENTACAPONE ARROW",
+     "LEVODOPA/CARBIDOPA/ENTACAPONE BIOGARAN",
+     "LEVODOPA/CARBIDOPA/ENTACAPONE EG",
+     "LEVODOPA/CARBIDOPA/ENTACAPONE TEVA",
+     "LEVODOPA/CARBIDOPA/ENTACAPONE VIATRIS",
+     "MODOPAR",
+     "MODOPAR L.P.",
+     "PARLEKARV",
+     "SINEMET",
+     "SINEMET LP",
+     "STALEVO"
+    ],
+    "rxcui": [
+     "6375"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Lithium carbonate",
@@ -14172,7 +17216,24 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Lithobid"
+    ],
+    "eu": [],
+    "fr": [
+     "TERALITHE",
+     "TERALITHE LP"
+    ],
+    "rxcui": [
+     "42351"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Lithium citrate",
@@ -14218,7 +17279,21 @@
      }
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "GRANIONS DE LITHIUM"
+    ],
+    "rxcui": [
+     "52105"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Lorazepam",
@@ -14308,7 +17383,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA06)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA06).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Ativan",
+     "Loreev"
+    ],
+    "eu": [],
+    "fr": [
+     "LORAZEPAM ARROW",
+     "LORAZEPAM VIATRIS",
+     "LORAZEPAM XILMAC",
+     "TEMESTA"
+    ],
+    "rxcui": [
+     "6470"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Lovastatin",
@@ -14398,7 +17493,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C10AA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C10AA02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Altoprev"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6472"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Mebendazole",
@@ -14488,7 +17597,22 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P02CA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P02CA01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Emverm",
+     "Vermox"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6672"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Medroxyprogesterone acetate",
@@ -14575,7 +17699,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Depo-Provera",
+     "depo-subQ provera",
+     "Provera"
+    ],
+    "eu": [],
+    "fr": [
+     "DEPO PRODASONE",
+     "DEPO PROVERA",
+     "DUOVA"
+    ],
+    "rxcui": [
+     "6691"
+    ],
+    "resolved_as": "RxNorm PIN of medroxyprogesterone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Megestrol acetate",
@@ -14634,7 +17778,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC05, G03DB02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC05, G03DB02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "MEGACE"
+    ],
+    "rxcui": [
+     "6703"
+    ],
+    "resolved_as": "RxNorm PIN of megestrol",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Melphalan",
@@ -14730,7 +17888,34 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA03).",
+   "names": {
+    "generic": [
+     "melphalan hydrochloride"
+    ],
+    "us": [
+     "Alkeran",
+     "Evomela",
+     "Hepzato",
+     "Ivra"
+    ],
+    "eu": [
+     "Pepaxti",
+     "Phelinun"
+    ],
+    "fr": [
+     "ALKERAN",
+     "MELPHALAN SUN",
+     "MELPHALAN TILLOMED",
+     "PHELINUN"
+    ],
+    "rxcui": [
+     "6718"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Menotropins",
@@ -14902,7 +18087,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BC01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Equagesic"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6760"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Mercaptopurine",
@@ -14989,7 +18188,34 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "mercaptopurine anhydrous"
+    ],
+    "us": [
+     "Purixan"
+    ],
+    "eu": [
+     "Loulla",
+     "Xaluprine (previously Mercaptopurine Nova Laboratories)"
+    ],
+    "fr": [
+     "CYSTADROPS",
+     "CYSTAGON",
+     "NephroMAG",
+     "PROCYSBI",
+     "PURINETHOL",
+     "TRUE TEST",
+     "XALUPRINE"
+    ],
+    "rxcui": [
+     "103"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Methacycline hydrochloride",
@@ -15044,7 +18270,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6812"
+    ],
+    "resolved_as": "RxNorm PIN of methacycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Methimazole",
@@ -15194,6 +18432,22 @@
      "id": "PMID 31408173; DOI 10.1210/jc.2019-01343",
      "date": "2019-12-01"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Felanorm",
+     "Felimazole",
+     "Reguzol"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6835"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -15340,6 +18594,42 @@
      "id": "EMEA/H/C/003756",
      "date": "2026-07-16"
     }
+   },
+   "names": {
+    "generic": [
+     "methotrexate sodium"
+    ],
+    "us": [
+     "Jylamvo",
+     "Otrexup",
+     "Rasuvo",
+     "Reditrex",
+     "Trexall",
+     "Xatmep"
+    ],
+    "eu": [
+     "Jylamvo",
+     "Nordimet"
+    ],
+    "fr": [
+     "IMENOR",
+     "IMETH",
+     "IZIXATE",
+     "METHOTREXATE ACCORD",
+     "METHOTREXATE BIODIM",
+     "METHOTREXATE TEVA",
+     "METHOTREXATE VIATRIS",
+     "METOJECT",
+     "METOTAB",
+     "NORDIMET",
+     "NOVATREX"
+    ],
+    "rxcui": [
+     "6851"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -15417,7 +18707,41 @@
      }
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Jylamvo",
+     "Otrexup",
+     "Rasuvo",
+     "Reditrex",
+     "Trexall",
+     "Xatmep"
+    ],
+    "eu": [
+     "Jylamvo",
+     "Nordimet"
+    ],
+    "fr": [
+     "IMENOR",
+     "IMETH",
+     "IZIXATE",
+     "METHOTREXATE ACCORD",
+     "METHOTREXATE BIODIM",
+     "METHOTREXATE TEVA",
+     "METHOTREXATE VIATRIS",
+     "METOJECT",
+     "METOTAB",
+     "NORDIMET",
+     "NOVATREX"
+    ],
+    "rxcui": [
+     "6851"
+    ],
+    "resolved_as": "RxNorm PIN of methotrexate",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Methyl bromide, as a structural fumigant",
@@ -16220,7 +19544,26 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA02, G03EK01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA02, G03EK01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Covaryx",
+     "Estratest",
+     "Methitest"
+    ],
+    "eu": [],
+    "fr": [
+     "CHLORURE DE METHYLTHIONINIUM PROVEBLUE",
+     "COLLYRE BLEU LAITER"
+    ],
+    "rxcui": [
+     "6904"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Midazolam hydrochloride",
@@ -16307,7 +19650,35 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "midazolam maleate"
+    ],
+    "us": [
+     "Nayzilam"
+    ],
+    "eu": [
+     "Buccolam",
+     "Omforro",
+     "Tuzodi"
+    ],
+    "fr": [
+     "BUCCOLAM",
+     "MIDAZOLAM ACCORD",
+     "MIDAZOLAM AGUETTANT",
+     "MIDAZOLAM KALCEKS",
+     "MIDAZOLAM PANPHARMA",
+     "MIDAZOLAM VIATRIS",
+     "OZALIN"
+    ],
+    "rxcui": [
+     "6960"
+    ],
+    "resolved_as": "RxNorm PIN of midazolam",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Minocycline hydrochloride (internal use)",
@@ -16394,7 +19765,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Amzeeq",
+     "Arestin",
+     "Cleeravue-M",
+     "Emrosi",
+     "Minocin",
+     "Minolira",
+     "Solodyn",
+     "Ximino",
+     "Zilxi"
+    ],
+    "eu": [],
+    "fr": [
+     "MYNOCINE",
+     "PAROCLINE"
+    ],
+    "rxcui": [
+     "6980"
+    ],
+    "resolved_as": "RxNorm PIN of minocycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Misoprostol",
@@ -16527,6 +19923,25 @@
      "date": "2025-12-23",
      "quote_language": "fr"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Arthrotec",
+     "Cytotec"
+    ],
+    "eu": [],
+    "fr": [
+     "ANGUSTA",
+     "GYMISO",
+     "MISOONE"
+    ],
+    "rxcui": [
+     "42331"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -16620,7 +20035,22 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "MITOXANTRONE ACCORD",
+     "NOVANTRONE"
+    ],
+    "rxcui": [
+     "7005"
+    ],
+    "resolved_as": "RxNorm PIN of mitoxantrone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Mycophenolate mofetil and mycophenolic acid",
@@ -16752,6 +20182,39 @@
      "id": "EMA/680077/2015",
      "date": "2015-10-23"
     }
+   },
+   "names": {
+    "generic": [
+     "mycophenolate mofetil hydrochloride"
+    ],
+    "us": [
+     "Cellcept",
+     "Myfortic",
+     "Myhibbin"
+    ],
+    "eu": [
+     "CellCept",
+     "Myclausen",
+     "Mycophenolate mofetil Teva",
+     "Myfenax"
+    ],
+    "fr": [
+     "CELLCEPT",
+     "MYCOPHENOLATE MOFETIL ARROW",
+     "MYCOPHENOLATE MOFETIL BIOGARAN",
+     "MYCOPHENOLATE MOFETIL SANDOZ",
+     "MYCOPHENOLATE MOFETIL TEVA",
+     "MYCOPHENOLATE MOFETIL VIATRIS",
+     "MYFENAX",
+     "MYFORTIC"
+    ],
+    "rxcui": [
+     "68149",
+     "7145"
+    ],
+    "resolved_as": "RxNorm mycophenolate mofetil + mycophenolic acid",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -16954,7 +20417,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Synarel"
+    ],
+    "eu": [],
+    "fr": [
+     "SYNAREL"
+    ],
+    "rxcui": [
+     "28656"
+    ],
+    "resolved_as": "RxNorm PIN of nafarelin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Neomycin sulfate (internal use)",
@@ -17017,7 +20496,47 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Cortisporin",
+     "Cortisporin-TC",
+     "Cuadriderma",
+     "Lanabiotic",
+     "Maxitrol",
+     "Mycitracin Plus Pain Reliever",
+     "Neo-Polycin",
+     "Neo-Polycin HC",
+     "Neo-Predef",
+     "Neo-Synalar",
+     "Neovet",
+     "Oticin HC",
+     "Poly-Dex",
+     "Spectrocin Plus",
+     "Tresaderm",
+     "Tri Biozene"
+    ],
+    "eu": [],
+    "fr": [
+     "ANTIBIO SYNALAR",
+     "CHIBRO CADRON",
+     "CIDERMEX",
+     "MAXIDROL",
+     "PANOTILE",
+     "POLYDEXA",
+     "POLYGYNAX",
+     "POLYGYNAX VIRGO",
+     "TERGYNAN",
+     "TRUE TEST"
+    ],
+    "rxcui": [
+     "7299"
+    ],
+    "resolved_as": "RxNorm PIN of neomycin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Netilmicin sulfate",
@@ -17057,7 +20576,22 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "ANETENA",
+     "NETAXEN"
+    ],
+    "rxcui": [
+     "7337"
+    ],
+    "resolved_as": "RxNorm PIN of netilmicin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Nickel (soluble compounds)",
@@ -17429,7 +20963,29 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA05)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA05).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Afeditab CR",
+     "Procardia"
+    ],
+    "eu": [],
+    "fr": [
+     "ATENOLOL/NIFEDIPINE BIOGARAN",
+     "ATENOLOL/NIFEDIPINE VIATRIS",
+     "MAPAKNA LP",
+     "NIFEDIPINE ARROW L.P.",
+     "NIFEDIPINE VIATRIS L.P.",
+     "NIFEXINE"
+    ],
+    "rxcui": [
+     "7417"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Nimodipine",
@@ -17519,7 +21075,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA06)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA06).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Nimotop",
+     "Nymalize"
+    ],
+    "eu": [],
+    "fr": [
+     "NIMODIPINE ALTAN",
+     "NIMOTOP"
+    ],
+    "rxcui": [
+     "7426"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Nitrogen mustard (Mechlorethamine)",
@@ -17620,7 +21194,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA05)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA05).",
+   "names": {
+    "generic": [
+     "mechlorethamine hydrochloride"
+    ],
+    "us": [
+     "Valchlor"
+    ],
+    "eu": [],
+    "fr": [
+     "LEDAGA"
+    ],
+    "rxcui": [
+     "6674"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -17707,7 +21299,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Valchlor"
+    ],
+    "eu": [],
+    "fr": [
+     "LEDAGA"
+    ],
+    "rxcui": [
+     "6674"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Norethisterone (Norethindrone)",
@@ -17798,7 +21406,37 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC01, G03DC02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC01, G03DC02).",
+   "names": {
+    "generic": [
+     "norethindrone acetate",
+     "norethindrone enanthate"
+    ],
+    "us": [
+     "Aygestin",
+     "Combipatch",
+     "Femhrt",
+     "Fyavolv",
+     "Gallifrey",
+     "Jevantique",
+     "Jinteli",
+     "Myfembree"
+    ],
+    "eu": [],
+    "fr": [
+     "ACTIVELLE",
+     "KLIOGEST",
+     "NOVOFEMME",
+     "RYEQO",
+     "TRISEQUENS"
+    ],
+    "rxcui": [
+     "7514"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Norethisterone (Norethindrone) /Ethinyl estradiol",
@@ -17838,7 +21476,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "ethinyl estradiol / norethindrone",
+     "norethindrone acetate"
+    ],
+    "us": [
+     "Aygestin",
+     "Combipatch",
+     "Femhrt",
+     "Fyavolv",
+     "Gallifrey",
+     "Jevantique",
+     "Jinteli",
+     "Myfembree"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "384410"
+    ],
+    "resolved_as": "RxNorm MIN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Norethisterone (Norethindrone) /Mestranol",
@@ -17878,7 +21540,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "mestranol / norethindrone"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "154643"
+    ],
+    "resolved_as": "RxNorm MIN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Norethisterone acetate (Norethindrone acetate)",
@@ -17949,7 +21625,36 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "norethindrone enanthate"
+    ],
+    "us": [
+     "Aygestin",
+     "Combipatch",
+     "Femhrt",
+     "Fyavolv",
+     "Gallifrey",
+     "Jevantique",
+     "Jinteli",
+     "Myfembree"
+    ],
+    "eu": [],
+    "fr": [
+     "ACTIVELLE",
+     "KLIOGEST",
+     "NOVOFEMME",
+     "RYEQO",
+     "TRISEQUENS"
+    ],
+    "rxcui": [
+     "7514"
+    ],
+    "resolved_as": "RxNorm PIN of norethindrone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Norgestrel",
@@ -18012,7 +21717,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "FEMI",
+     "NARAVELA",
+     "OPTIKINZY",
+     "TRIAFEMI",
+     "TRIAFEMI CONTINU",
+     "TRINARA",
+     "TRINARA CONTINU"
+    ],
+    "rxcui": [
+     "7518"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Oxazepam",
@@ -18102,7 +21827,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA04).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "OXAZEPAM ARROW",
+     "OXAZEPAM BIOGARAN",
+     "OXAZEPAM SUBSTIPHARM",
+     "OXAZEPAM VIATRIS",
+     "SERESTA"
+    ],
+    "rxcui": [
+     "7781"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Oxymetholone",
@@ -18160,7 +21903,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A14AA05)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A14AA05).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "7813"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Oxytetracycline (internal use)",
@@ -18267,7 +22022,37 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D06AA03, G01AA07)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D06AA03, G01AA07).",
+   "names": {
+    "generic": [
+     "oxytetracycline anhydrous",
+     "oxytetracycline calcium",
+     "oxytetracycline dihydrate",
+     "oxytetracycline hydrochloride"
+    ],
+    "us": [
+     "Agrimycin",
+     "Bio-Mycin",
+     "Compudose",
+     "Liquamycin",
+     "Noromycin",
+     "Terra-Vet",
+     "Terramycin",
+     "Vetrimycin"
+    ],
+    "eu": [],
+    "fr": [
+     "AURICULARUM",
+     "LACRYADEX",
+     "STERDEX"
+    ],
+    "rxcui": [
+     "7821"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Oxytetracycline hydrochloride (internal use)",
@@ -18354,7 +22139,36 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "oxytetracycline anhydrous",
+     "oxytetracycline calcium",
+     "oxytetracycline dihydrate"
+    ],
+    "us": [
+     "Agrimycin",
+     "Bio-Mycin",
+     "Compudose",
+     "Liquamycin",
+     "Noromycin",
+     "Terra-Vet",
+     "Terramycin",
+     "Vetrimycin"
+    ],
+    "eu": [],
+    "fr": [
+     "AURICULARUM",
+     "LACRYADEX",
+     "STERDEX"
+    ],
+    "rxcui": [
+     "7821"
+    ],
+    "resolved_as": "RxNorm PIN of oxytetracycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "p,p'-Oxybis(benzenesulfonyl hydrazide)",
@@ -18485,7 +22299,44 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CD01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CD01).",
+   "names": {
+    "generic": [
+     "paclitaxel poliglumex",
+     "paclitaxel protein-bound"
+    ],
+    "us": [
+     "Abraxane"
+    ],
+    "eu": [
+     "Abraxane",
+     "Apealea",
+     "Apexelsin",
+     "Naveruclif",
+     "Paxene",
+     "Pazenir"
+    ],
+    "fr": [
+     "ABRAXANE",
+     "APEXELSIN",
+     "BUGVI",
+     "NAVERUCLIF",
+     "PACLITAXEL AHCL",
+     "PACLITAXEL ARROW",
+     "PACLITAXEL HOSPIRA",
+     "PACLITAXEL KABI",
+     "PACLITAXEL TEVA",
+     "PACLITAXEL VIATRIS",
+     "PACLITAXELSANDOZ",
+     "PAZENIR"
+    ],
+    "rxcui": [
+     "56946"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Paramethadione",
@@ -18567,7 +22418,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC01).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "32894"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Penicillamine",
@@ -18657,7 +22520,26 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CC01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CC01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Aagylur",
+     "Cuprimine",
+     "Depen"
+    ],
+    "eu": [],
+    "fr": [
+     "ORACILLINE",
+     "TROLOVOL"
+    ],
+    "rxcui": [
+     "7975"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Pentobarbital sodium",
@@ -18744,7 +22626,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Euthaphen",
+     "Euthasol",
+     "Fatal-Plus",
+     "Nembutal",
+     "Pentobarsol"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "8004"
+    ],
+    "resolved_as": "RxNorm PIN of pentobarbital",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Pentostatin",
@@ -18826,7 +22726,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX08)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX08).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Nipent"
+    ],
+    "eu": [],
+    "fr": [
+     "NIPENT"
+    ],
+    "rxcui": [
+     "8011"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Pertuzumab",
@@ -18869,7 +22785,32 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC13)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC13).",
+   "names": {
+    "generic": [
+     "pertuzumab-zzxf"
+    ],
+    "us": [
+     "Perjeta",
+     "Phesgo"
+    ],
+    "eu": [
+     "Pebrilzo",
+     "Perjeta",
+     "Phesgo",
+     "Poherdy"
+    ],
+    "fr": [
+     "PERJETA",
+     "PHESGO"
+    ],
+    "rxcui": [
+     "1298944"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Phenacemide",
@@ -18938,7 +22879,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AX07)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AX07).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "33253"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Phenindione",
@@ -18957,6 +22910,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -18988,20 +22955,18 @@
      "date": "2017-05-14"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "8130"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Phenobarbital",
@@ -19020,6 +22985,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -19059,20 +23038,29 @@
      "date": "2021-01"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [
+     "phenobarbital sodium"
+    ],
+    "us": [
+     "Donnatal",
+     "Fidoquel",
+     "Phenohytro",
+     "Sezaby"
+    ],
+    "eu": [],
+    "fr": [
+     "ALEPSAL",
+     "GARDENAL",
+     "PHENOBARBITAL RICHARD"
+    ],
+    "rxcui": [
+     "8134"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Phenprocoumon",
@@ -19173,7 +23161,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA04).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "8150"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Phenylphosphine [Basis for listing changed effective June 6, 2014]",
@@ -19296,7 +23296,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AG02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AG02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "ORAP"
+    ],
+    "rxcui": [
+     "8331"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Pipobroman",
@@ -19339,7 +23353,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AX02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AX02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "VERCYTE"
+    ],
+    "rxcui": [
+     "8347"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Plicamycin",
@@ -19382,7 +23410,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DC02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DC02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "6995"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Polychlorinated biphenyls",
@@ -19581,7 +23621,37 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Pravachol"
+    ],
+    "eu": [
+     "Pravafenix"
+    ],
+    "fr": [
+     "PRAVASTATINE ACCORD",
+     "PRAVASTATINE ALMUS",
+     "PRAVASTATINE ARROW",
+     "PRAVASTATINE BIOGARAN",
+     "PRAVASTATINE CRISTERS",
+     "PRAVASTATINE CRISTERS PHARMA",
+     "PRAVASTATINE EG",
+     "PRAVASTATINE EVOLUGEN PHARMA",
+     "PRAVASTATINE SANDOZ",
+     "PRAVASTATINE TEVA",
+     "PRAVASTATINE VIATRIS",
+     "PRAVASTATINE ZENTIVA",
+     "PRAVASTATINE ZYDUS"
+    ],
+    "rxcui": [
+     "42463"
+    ],
+    "resolved_as": "RxNorm PIN of pravastatin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Prednisolone sodium phosphate",
@@ -19621,7 +23691,60 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "prednisolone acetate",
+     "prednisolone phosphate",
+     "prednisolone sodium metasulphobenzoate",
+     "prednisolone sodium succinate",
+     "prednisolone tebutate"
+    ],
+    "us": [
+     "Blephamide",
+     "Cortamine",
+     "MILLIPRED",
+     "Orapred",
+     "Pediapred",
+     "Pred Forte",
+     "Pred Mild",
+     "Prednistab",
+     "Surolan",
+     "Temaril-P",
+     "Veripred"
+    ],
+    "eu": [],
+    "fr": [
+     "CORTANCYL",
+     "DELIPROCT",
+     "DERINOX",
+     "HYDROCORTANCYL",
+     "PREDNISOLONE ARROW",
+     "PREDNISOLONE BIOGARAN",
+     "PREDNISOLONE CRISTERS",
+     "PREDNISOLONE EG",
+     "PREDNISOLONE EVOLUGEN",
+     "PREDNISOLONE SANDOZ",
+     "PREDNISOLONE TEVA",
+     "PREDNISOLONE VIATRIS",
+     "PREDNISOLONE ZENTIVA",
+     "PREDNISOLONE ZENTIVA LAB",
+     "PREDNISONE ARROW",
+     "PREDNISONE BIOGARAN",
+     "PREDNISONE EG",
+     "PREDNISONE SANDOZ",
+     "PREDNISONE VIATRIS",
+     "PREDNISONE ZENTIVA",
+     "SOLUPRED",
+     "ULTARCORLENE"
+    ],
+    "rxcui": [
+     "8638"
+    ],
+    "resolved_as": "RxNorm PIN of prednisolone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Primidone",
@@ -19640,6 +23763,20 @@
    },
    "jurisdictions": {},
    "wiki": "",
+   "source_codes": [
+    "entis"
+   ],
+   "level": "known",
+   "exposure": [
+    {
+     "tag": "medicine",
+     "level": "known",
+     "by": [
+      "ENTIS experts"
+     ]
+    }
+   ],
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -19683,20 +23820,22 @@
      "date": "2023-08-29"
     }
    },
-   "source_codes": [
-    "entis"
-   ],
-   "level": "known",
-   "exposure": [
-    {
-     "tag": "medicine",
-     "level": "known",
-     "by": [
-      "ENTIS experts"
-     ]
-    }
-   ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "names": {
+    "generic": [],
+    "us": [
+     "Mysoline"
+    ],
+    "eu": [],
+    "fr": [
+     "MYSOLINE"
+    ],
+    "rxcui": [
+     "8691"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Procarbazine hydrochloride",
@@ -19783,7 +23922,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Matulane"
+    ],
+    "eu": [],
+    "fr": [
+     "NATULAN"
+    ],
+    "rxcui": [
+     "8702"
+    ],
+    "resolved_as": "RxNorm PIN of procarbazine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Propylthiouracil",
@@ -19895,7 +24050,21 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H03BA02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H03BA02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "PROPYLEX"
+    ],
+    "rxcui": [
+     "8794"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Pyrimethamine",
@@ -19985,7 +24154,24 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P01BD01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P01BD01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Daraprim",
+     "Rebalance"
+    ],
+    "eu": [],
+    "fr": [
+     "MALOCIDE"
+    ],
+    "rxcui": [
+     "9010"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Quazepam",
@@ -20038,7 +24224,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD10)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD10).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Doral"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "35185"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)",
@@ -20103,7 +24303,24 @@
      "basis": "The EU's scientific committee counts harm to the unborn child among vitamin A's critical effects and limits it in cosmetics so that total intake stays within safe limits; no authority rates skin use itself."
     }
    ],
-   "exposure_why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day."
+   "exposure_why": "High-dose vitamin A comes from supplements or treatment; California lists it only above 10,000 IU a day.",
+   "names": {
+    "generic": [
+     "retinol acetate",
+     "vitamin A",
+     "vitamin A myristate",
+     "vitamin A palmitate"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "11246"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": "Brand names are not listed: vitamin A is in many multivitamins and prenatal vitamins, and California lists it only above 10,000 IU a day."
+   }
   },
   {
    "name": "Ribavirin",
@@ -20194,7 +24411,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB04, J05AP01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB04, J05AP01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Moderiba",
+     "Ribasphere",
+     "RibaTab",
+     "Virazole"
+    ],
+    "eu": [
+     "Cotronak",
+     "Rebetol",
+     "Ribavirin BioPartners",
+     "Ribavirin Mylan (previously Ribavirin Three Rivers)",
+     "Ribavirin Teva",
+     "Ribavirin Teva Pharma B.V."
+    ],
+    "fr": [],
+    "rxcui": [
+     "9344"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Rifampin",
@@ -20284,7 +24525,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AB02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AB02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Rifadin"
+    ],
+    "eu": [],
+    "fr": [
+     "RIFADINE",
+     "RIFADINE IV",
+     "RIFATER",
+     "RIFINAH",
+     "RIMACTAN"
+    ],
+    "rxcui": [
+     "9384"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Secobarbital sodium",
@@ -20324,7 +24585,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "9624"
+    ],
+    "resolved_as": "RxNorm PIN of secobarbital",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Sermorelin acetate",
@@ -20364,7 +24637,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "56188"
+    ],
+    "resolved_as": "RxNorm PIN of sermorelin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "silicic acid, lead nickel salt",
@@ -20585,7 +24870,22 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "PNEUMOVAX",
+     "ZANOSAR"
+    ],
+    "rxcui": [
+     "10109"
+    ],
+    "resolved_as": "RxNorm PIN of streptomycin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Streptozocin (streptozotocin)",
@@ -20694,7 +24994,24 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Zanosar"
+    ],
+    "eu": [],
+    "fr": [
+     "PNEUMOVAX",
+     "ZANOSAR"
+    ],
+    "rxcui": [
+     "10114"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Sulfur dioxidee",
@@ -20880,7 +25197,23 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [
+     "Flynpovi"
+    ],
+    "fr": [
+     "ARTHROCINE"
+    ],
+    "rxcui": [
+     "10237"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Tamoxifen citrate",
@@ -20967,7 +25300,30 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Soltamox"
+    ],
+    "eu": [],
+    "fr": [
+     "NOLVADEX",
+     "TAMOXIFENE ARROW",
+     "TAMOXIFENE BIOGARAN",
+     "TAMOXIFENE EG",
+     "TAMOXIFENE SANDOZ",
+     "TAMOXIFENE TEVA",
+     "TAMOXIFENE VIATRIS",
+     "TAMOXIFENE ZYDUS"
+    ],
+    "rxcui": [
+     "10324"
+    ],
+    "resolved_as": "RxNorm PIN of tamoxifen",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Temazepam",
@@ -21035,7 +25391,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD07)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD07).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Restoril"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "10355"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Teniposide",
@@ -21115,7 +25485,19 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "10362"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "tert-Amyl methyl ether",
@@ -21267,7 +25649,53 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "testosterone (micronized)",
+     "testosterone decanoate",
+     "testosterone enanthate",
+     "testosterone isocaproate",
+     "testosterone propionate",
+     "testosterone undecanoate"
+    ],
+    "us": [
+     "Androderm",
+     "Androgel",
+     "Aveed",
+     "Azmiro",
+     "Depo-testosterone",
+     "Fortesta",
+     "Jatenzo",
+     "Kyzatrex",
+     "Natesto",
+     "Synovex H",
+     "Testim",
+     "Testopel",
+     "Tlando",
+     "Undecatrex",
+     "Vogelxo",
+     "Xyosted"
+    ],
+    "eu": [
+     "Intrinsa",
+     "Livensa"
+    ],
+    "fr": [
+     "ANDROGEL",
+     "ANDROTARDYL",
+     "NEBIDO",
+     "TESTAVAN",
+     "TESTOSTERONE BESINS",
+     "TESTOSTERONE DESMA"
+    ],
+    "rxcui": [
+     "10379"
+    ],
+    "resolved_as": "RxNorm PIN of testosterone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Testosterone enanthate",
@@ -21346,7 +25774,53 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "testosterone (micronized)",
+     "testosterone cypionate",
+     "testosterone decanoate",
+     "testosterone isocaproate",
+     "testosterone propionate",
+     "testosterone undecanoate"
+    ],
+    "us": [
+     "Androderm",
+     "Androgel",
+     "Aveed",
+     "Azmiro",
+     "Depo-testosterone",
+     "Fortesta",
+     "Jatenzo",
+     "Kyzatrex",
+     "Natesto",
+     "Synovex H",
+     "Testim",
+     "Testopel",
+     "Tlando",
+     "Undecatrex",
+     "Vogelxo",
+     "Xyosted"
+    ],
+    "eu": [
+     "Intrinsa",
+     "Livensa"
+    ],
+    "fr": [
+     "ANDROGEL",
+     "ANDROTARDYL",
+     "NEBIDO",
+     "TESTAVAN",
+     "TESTOSTERONE BESINS",
+     "TESTOSTERONE DESMA"
+    ],
+    "rxcui": [
+     "10379"
+    ],
+    "resolved_as": "RxNorm PIN of testosterone",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Tetracycline (internal use)",
@@ -21442,7 +25916,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB13, D06AA04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB13, D06AA04).",
+   "names": {
+    "generic": [
+     "tetracycline hydrochloride",
+     "tetracycline phosphate complex",
+     "tetracycline trihydrate"
+    ],
+    "us": [
+     "Pylera",
+     "Viabecline",
+     "Vitastem"
+    ],
+    "eu": [],
+    "fr": [
+     "LYMECYCLINE ARROW",
+     "PYLERA",
+     "TETRALYSAL"
+    ],
+    "rxcui": [
+     "10395"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Tetracycline hydrochloride (internal use)",
@@ -21529,7 +26027,30 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "tetracycline phosphate complex",
+     "tetracycline trihydrate"
+    ],
+    "us": [
+     "Pylera",
+     "Viabecline",
+     "Vitastem"
+    ],
+    "eu": [],
+    "fr": [
+     "LYMECYCLINE ARROW",
+     "PYLERA",
+     "TETRALYSAL"
+    ],
+    "rxcui": [
+     "10395"
+    ],
+    "resolved_as": "RxNorm PIN of tetracycline",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Tetracyclines (internal use)",
@@ -21616,7 +26137,128 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "chlortetracycline",
+     "chlortetracycline calcium",
+     "chlortetracycline hydrochloride",
+     "clomocycline",
+     "clomocycline sodium",
+     "demeclocycline",
+     "demeclocycline hydrochloride",
+     "doxycycline",
+     "doxycycline anhydrous",
+     "doxycycline calcium",
+     "doxycycline hyclate",
+     "doxycycline hydrochloride",
+     "doxycycline monohydrate",
+     "eravacycline",
+     "eravacycline dihydrochloride",
+     "lymecycline",
+     "methacycline",
+     "methacycline hydrochloride",
+     "minocycline",
+     "minocycline hydrochloride",
+     "omadacycline",
+     "omadacycline tosylate",
+     "oxytetracycline",
+     "oxytetracycline anhydrous",
+     "oxytetracycline calcium",
+     "oxytetracycline dihydrate",
+     "oxytetracycline hydrochloride",
+     "rolitetracycline",
+     "sarecycline",
+     "sarecycline hydrochloride",
+     "tetracycline hydrochloride",
+     "tetracycline phosphate complex",
+     "tetracycline trihydrate",
+     "tigecycline"
+    ],
+    "us": [
+     "Acticlate",
+     "Adoxa",
+     "Agrimycin",
+     "Alodox",
+     "Amzeeq",
+     "Arestin",
+     "Avidoxy",
+     "Bio-Mycin",
+     "Cleeravue-M",
+     "Compudose",
+     "Doryx",
+     "Doxy",
+     "Emrosi",
+     "Liquamycin",
+     "Minocin",
+     "Minolira",
+     "Mondoxyne",
+     "Monodox",
+     "Morgidox",
+     "Noromycin",
+     "Nuzyra",
+     "Okebo",
+     "Oracea",
+     "Periostat",
+     "Pylera",
+     "Seysara",
+     "Solodyn",
+     "Targadox",
+     "Terra-Vet",
+     "Terramycin",
+     "Tygacil",
+     "Vetrimycin",
+     "Viabecline",
+     "Vibramycin",
+     "Vitastem",
+     "Xerava",
+     "Ximino",
+     "Zilxi"
+    ],
+    "eu": [
+     "Tigecycline Accord",
+     "Tygacil",
+     "Xerava"
+    ],
+    "fr": [
+     "AUREOMYCINE EVANS",
+     "AUREOMYCINE MONOT",
+     "AURICULARUM",
+     "DEMECLOCYCLINE ACETLAB",
+     "DOXY",
+     "DOXYCYCLINE ARROW",
+     "DOXYCYCLINE ARROW LAB",
+     "DOXYCYCLINE BIOGARAN",
+     "DOXYCYCLINE PHARMACIE CENTRALE DES ARMEES",
+     "DOXYCYCLINE SANDOZ",
+     "DOXYCYCLINE TEVA",
+     "DOXYCYCLINE VIATRIS",
+     "DOXYPALU",
+     "GRANUDOXY",
+     "LACRYADEX",
+     "LYMECYCLINE ARROW",
+     "MYNOCINE",
+     "PAROCLINE",
+     "PYLERA",
+     "STERDEX",
+     "TETRALYSAL",
+     "TIGECYCLINE ACCORD",
+     "TIGECYCLINE HIKMA",
+     "TIGECYCLINE VIATRIS",
+     "TOLEXINE",
+     "TYGACIL",
+     "VIBRAVEINEUSE",
+     "XERAVA"
+    ],
+    "rxcui": [
+     "10395",
+     "2055906",
+     "2059018"
+    ],
+    "resolved_as": "class J01AA",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Thalidomide",
@@ -21770,6 +26412,26 @@
      "id": "EU/1/08/443 (EMEA/H/C/000823)",
      "date": "2025-01-22"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Thalomid"
+    ],
+    "eu": [
+     "Thalidomide BMS (previously Thalidomide Celgene)",
+     "Thalidomide Lipomed"
+    ],
+    "fr": [
+     "THALIDOMIDE ACCORD",
+     "THALIDOMIDE BMS"
+    ],
+    "rxcui": [
+     "10432"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -21860,7 +26522,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB03)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB03).",
+   "names": {
+    "generic": [
+     "thioguanine anhydrous"
+    ],
+    "us": [
+     "Tabloid"
+    ],
+    "eu": [],
+    "fr": [
+     "LANVIS"
+    ],
+    "rxcui": [
+     "10485"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Tobacco smoke (primary)",
@@ -21993,7 +26673,40 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Bethkis",
+     "Kitabis",
+     "Tobi",
+     "Tobradex",
+     "Tobrex",
+     "Zylet"
+    ],
+    "eu": [
+     "Tobi Podhaler",
+     "Vantobra",
+     "Vantobra (previously Tobramycin PARI)"
+    ],
+    "fr": [
+     "NEBCINE",
+     "TOBI",
+     "TOBI PODHALER",
+     "TOBRABACT",
+     "TOBRADEX",
+     "TOBRAMYCINE SUN",
+     "TOBRAMYCINE ZENTIVA",
+     "TOBREX",
+     "TODEXAL"
+    ],
+    "rxcui": [
+     "10627"
+    ],
+    "resolved_as": "RxNorm PIN of tobramycin",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "toluene",
@@ -22313,6 +27026,32 @@
      "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
      "date": "2023-10-11"
     }
+   },
+   "names": {
+    "generic": [],
+    "us": [
+     "Eprontia",
+     "Qsymia",
+     "Qudexy",
+     "Topamax",
+     "Trokendi"
+    ],
+    "eu": [
+     "Qsiva"
+    ],
+    "fr": [
+     "EPITOMAX",
+     "TOPIRAMATE ARROW LAB",
+     "TOPIRAMATE BGR",
+     "TOPIRAMATE SANDOZ",
+     "TOPIRAMATE VIATRIS"
+    ],
+    "rxcui": [
+     "38404"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -22381,7 +27120,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD05)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD05).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Halcion"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "10767"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Trientine hydrochloride",
@@ -22421,7 +27174,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "trientine tetrahydrochloride"
+    ],
+    "us": [
+     "Cuvrior",
+     "Syprine"
+    ],
+    "eu": [
+     "Cufence",
+     "Cuprior"
+    ],
+    "fr": [
+     "CUFENCE",
+     "CUPRIOR",
+     "TRIENTINE WAYMADE"
+    ],
+    "rxcui": [
+     "10798"
+    ],
+    "resolved_as": "RxNorm PIN of trientine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "trilead bis(orthophosphate)",
@@ -22539,7 +27316,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H02CA01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H02CA01).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Vetoryl"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "38668"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Trimethadione",
@@ -22629,7 +27420,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC02).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "BACTRIM",
+     "BACTRIM FORTE",
+     "COTRIMOXAZOLE TEVA",
+     "DELPRIM",
+     "PHLOROGLUCINOL/TRIMETHYLPHLOROGLUCINOL ARROW",
+     "SPASFON",
+     "ULTRAPROCT"
+    ],
+    "rxcui": [
+     "10827"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Trimetrexate glucuronate",
@@ -22669,7 +27480,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "42333"
+    ],
+    "resolved_as": "RxNorm PIN of trimetrexate",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Uracil mustard",
@@ -22712,7 +27535,19 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD08)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD08).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "10996"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Urofollitropin",
@@ -22794,7 +27629,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03GA04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03GA04).",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "FOSTIMONKIT"
+    ],
+    "rxcui": [
+     "134404"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Valproate (Valproic acid)",
@@ -22951,6 +27800,36 @@
      "id": "EMEA/H/A-31/1454",
      "date": "2018-06-07"
     }
+   },
+   "names": {
+    "generic": [
+     "calcium valproate",
+     "divalproex sodium",
+     "magnesium valproate",
+     "sodium valproate"
+    ],
+    "us": [
+     "Depakote"
+    ],
+    "eu": [],
+    "fr": [
+     "DEPAKINE",
+     "DEPAKINE CHRONO",
+     "MICROPAKINE L.P.",
+     "VALPROATE DE SODIUM AGUETTANT",
+     "VALPROATE DE SODIUM ARROW",
+     "VALPROATE DE SODIUM ARROW L.P.",
+     "VALPROATE DE SODIUM BIOGARAN L.P.",
+     "VALPROATE DE SODIUM EG L.P.",
+     "VALPROATE DE SODIUM TEVA SANTE L.P.",
+     "VALPROATE DE SODIUM VIATRIS L.P."
+    ],
+    "rxcui": [
+     "40254"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -23006,7 +27885,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "VELBE"
+    ],
+    "rxcui": [
+     "11198"
+    ],
+    "resolved_as": "RxNorm PIN of vinblastine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Vincristine sulfate",
@@ -23093,7 +27986,29 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "vincristine liposome",
+     "vincristine sulfate liposome"
+    ],
+    "us": [
+     "Marqibo",
+     "Vincasar"
+    ],
+    "eu": [],
+    "fr": [
+     "ONCOVIN",
+     "VINCRISTINE HOSPIRA",
+     "VINCRISTINE TEVA"
+    ],
+    "rxcui": [
+     "11202"
+    ],
+    "resolved_as": "RxNorm PIN of vincristine",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Vismodegib",
@@ -23185,7 +28100,25 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX43)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX43).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Erivedge"
+    ],
+    "eu": [
+     "Erivedge"
+    ],
+    "fr": [
+     "ERIVEDGE"
+    ],
+    "rxcui": [
+     "1242987"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Warfarin",
@@ -23401,6 +28334,26 @@
      "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
      "date": "2025-06-17"
     }
+   },
+   "names": {
+    "generic": [
+     "warfarin potassium",
+     "warfarin sodium"
+    ],
+    "us": [
+     "Coumadin",
+     "Jantoven"
+    ],
+    "eu": [],
+    "fr": [
+     "COUMADINE"
+    ],
+    "rxcui": [
+     "11289"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
    }
   },
   {
@@ -23464,7 +28417,21 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Zyflo"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "40575"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Δ9-Tetrahydrocannabinol (Δ9-THC)",
@@ -23558,7 +28525,25 @@
      ]
     }
    ],
-   "exposure_why": "The active substance of cannabis is taken recreationally or prescribed."
+   "exposure_why": "The active substance of cannabis is taken recreationally or prescribed.",
+   "names": {
+    "generic": [
+     "delta 9-tetrahydrocannabinol acetate",
+     "dronabinol"
+    ],
+    "us": [
+     "Marinol",
+     "Syndros"
+    ],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "10402"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "1,1-Dichloro-2,2-bis(p-chloropheny)ethylene (DDE)",
@@ -27293,7 +32278,31 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX02)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX02).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Letairis"
+    ],
+    "eu": [
+     "Ambrisentan Viatris (previously Ambrisentan Mylan)",
+     "Ambrisentan Zentiva",
+     "Volibris"
+    ],
+    "fr": [
+     "AMBRISENTAN ACCORD",
+     "AMBRISENTAN STRAGEN",
+     "AMBRISENTAN TEVA",
+     "AMBRISENTAN VIATRIS",
+     "VOLIBRIS"
+    ],
+    "rxcui": [
+     "358274"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Amitraz",
@@ -29451,7 +34460,33 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX01)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX01).",
+   "names": {
+    "generic": [
+     "bosentan anhydrous"
+    ],
+    "us": [
+     "Tracleer"
+    ],
+    "eu": [
+     "Stayveer",
+     "Tracleer"
+    ],
+    "fr": [
+     "BOSENTAN ACCORD",
+     "BOSENTAN ARROW",
+     "BOSENTAN STRAGEN",
+     "BOSENTAN SUN",
+     "BOSENTAN VIATRIS",
+     "TRACLEER"
+    ],
+    "rxcui": [
+     "75207"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "Bromacil lithium salt",
@@ -33496,7 +38531,32 @@
      ]
     }
    ],
-   "exposure_why": "Nitrous oxide is an anaesthetic and pain relief in labour; operating-room and dental staff breathe it at work."
+   "exposure_why": "Nitrous oxide is an anaesthetic and pain relief in labour; operating-room and dental staff breathe it at work.",
+   "names": {
+    "generic": [
+     "nitrous oxide"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [
+     "ACTYNOX",
+     "ANTASOL",
+     "ENTONOX",
+     "KALINOX",
+     "PLACYNOX",
+     "PROTOXYDE D'AZOTE MEDICINAL AIR LIQUIDE SANTE FRANCE",
+     "PROTOXYDE D'AZOTE MEDICINAL AIR PRODUCTS MEDICAL",
+     "PROTOXYDE D'AZOTE MEDICINAL LINDE HEALTHCARE",
+     "PROTOXYDE D'AZOTE MEDICINAL MESSER FRANCE",
+     "PROTOXYDE D'AZOTE MEDICINAL SOL FRANCE"
+    ],
+    "rxcui": [
+     "7486"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "dinoterb (ISO); 2-tert-butyl-4,6-dinitrophenol",
@@ -36679,7 +41739,27 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX04)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX04).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Opsumit",
+     "Opsynvi"
+    ],
+    "eu": [
+     "Macitentan Accord",
+     "Macitentan AccordPharma",
+     "Opsumit",
+     "Yuvanci"
+    ],
+    "fr": [],
+    "rxcui": [
+     "1442132"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "mancozeb (ISO); manganese ethylenebis(dithiocarbamate) (polymeric) complex with zinc salt",
@@ -42607,7 +47687,36 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX06)."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX06).",
+   "names": {
+    "generic": [],
+    "us": [
+     "Pomalyst"
+    ],
+    "eu": [
+     "Imnovid (previously Pomalidomide Celgene)",
+     "Pomalidomide Accord",
+     "Pomalidomide Krka",
+     "Pomalidomide Teva",
+     "Pomalidomide Viatris",
+     "Pomalidomide Zentiva"
+    ],
+    "fr": [
+     "IMNOVID",
+     "POMALIDOMIDE ACCORD",
+     "POMALIDOMIDE EG",
+     "POMALIDOMIDE EUGIA",
+     "POMALIDOMIDE REIG JOFRE",
+     "POMALIDOMIDE STRAGEN",
+     "POMALIDOMIDE VIATRIS"
+    ],
+    "rxcui": [
+     "1369713"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "potassium 1-methyl-3-morpholinocarbonyl-4-[3-(1-methyl-3-morpholinocarbonyl-5-oxo-2-pyrazolin-4-ylidene)-1-propenyl]pyrazole-5-olate; [containing ≥ 0,5 % N,N-dimethylformamide (EC No 200-679-5)]",
@@ -45361,7 +50470,28 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "names": {
+    "generic": [
+     "theophylline anhydrous",
+     "theophylline sodium glycinate"
+    ],
+    "us": [
+     "Elixophyllin",
+     "Theo-24"
+    ],
+    "eu": [],
+    "fr": [
+     "DILATRANE",
+     "TEDRALAN"
+    ],
+    "rxcui": [
+     "10438"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "thiacloprid (ISO); (Z)-3-(6-chloro-3-pyridylmethyl)-1,3-thiazolidin-2-ylidenecyanamide; {(2Z)-3-[(6-chloropyridin-3-yl)methyl]-1,3-thiazolidin-2-ylidene}cyanamide",
@@ -51560,7 +56690,54 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it."
+   "exposure_why": "It is the active ingredient of muscle rubs, and it is in mouthwash and flavourings, where EU cosmetics rules limit it.",
+   "names": {
+    "generic": [],
+    "us": [
+     "Arthricare for Women Pain Relieving Nighttime",
+     "Arthritis Hot Pain Relief",
+     "Atomic Balm",
+     "Castiva Cooling",
+     "Cramergesic",
+     "Dendracin Neurodendraxcin",
+     "Doloracin with Lidocaine",
+     "Dragon",
+     "Eagle Brand Medicated Oil",
+     "Flexall Ultra Plus",
+     "Gordogesic",
+     "Katinko",
+     "Kofal",
+     "LidoPro",
+     "LidoPro Patch",
+     "Ling Nam Ultra Balm",
+     "Listerine Antiseptic",
+     "Listerine Ultraclean",
+     "Medi-Derm",
+     "Medi-Derm with Lidocaine",
+     "Medrox",
+     "Methagual",
+     "Rocainol",
+     "Thera-Gesic",
+     "Thera-Gesic Plus",
+     "Tricylate",
+     "Veneno de Abeja Aceite de Vibora",
+     "Wong To Yick",
+     "Xoten",
+     "Xoten-C",
+     "ZIKS Pain Relief"
+    ],
+    "eu": [],
+    "fr": [
+     "BAUME AROMA",
+     "INONGAN"
+    ],
+    "rxcui": [
+     "29787"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "nonylphenol [1]",
@@ -52281,7 +57458,27 @@
      ]
     }
    ],
-   "exposure_why": "It is a medicine against worms, taken in gram doses, and an industrial chemical."
+   "exposure_why": "It is a medicine against worms, taken in gram doses, and an industrial chemical.",
+   "names": {
+    "generic": [
+     "piperazine adipate",
+     "piperazine citrate",
+     "piperazine dihydrochloride",
+     "piperazine hexahydrate",
+     "piperazine hydrate",
+     "piperazine phosphate",
+     "piperazine sulfate"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "8340"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "piperazine; [solid]",
@@ -52424,7 +57621,27 @@
      ]
     }
    ],
-   "exposure_why": "It is a medicine against worms, taken in gram doses, and an industrial chemical."
+   "exposure_why": "It is a medicine against worms, taken in gram doses, and an industrial chemical.",
+   "names": {
+    "generic": [
+     "piperazine adipate",
+     "piperazine citrate",
+     "piperazine dihydrochloride",
+     "piperazine hexahydrate",
+     "piperazine hydrate",
+     "piperazine phosphate",
+     "piperazine sulfate"
+    ],
+    "us": [],
+    "eu": [],
+    "fr": [],
+    "rxcui": [
+     "8340"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "potassium permanganate",
@@ -53165,7 +58382,123 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it."
+   "exposure_why": "It treats warts and calluses at high strength, and it is in skin-care and anti-acne products, where EU cosmetics rules limit it.",
+   "names": {
+    "generic": [
+     "magnesium salicylate tetrahydrate",
+     "potassium salicylate",
+     "salicylate",
+     "sodium salicylate"
+    ],
+    "us": [
+     "Acneclir",
+     "Acnevir",
+     "AcneWorx",
+     "Ala Seb T",
+     "Azo Urinary Tract Defense",
+     "Bensal",
+     "Broda Acne Spa",
+     "clear days ahead",
+     "Clear Proof Acne Medication",
+     "Clearskin Blemish",
+     "Clearskin Pore Penetrating Black Mineral Mask",
+     "Clearskin Professional Daily Correcting",
+     "Clenziderm",
+     "Compound W brand of salicylic acid",
+     "Cornstick",
+     "Cystex",
+     "Denorex Extra Strength Reformulated Aug 2012",
+     "DermalZone",
+     "Dermoneen",
+     "DHS Salicylic Acid 3%",
+     "Differin Acne Clearing",
+     "Dream Pure BB",
+     "Duofilm",
+     "Duoplant",
+     "Everclean",
+     "Exoderm",
+     "Fostex Bar",
+     "Freezone",
+     "Glycylic",
+     "Gordofilm",
+     "Inova 8-2",
+     "Ionil Plus",
+     "Keralyt",
+     "Keralyt 5",
+     "Kleer Plex",
+     "Mediplast",
+     "MG217 Psoriasis Salicylic Acid",
+     "Mosco Corn & Callus Remover",
+     "Mosco One Step Corn Remover",
+     "Nizoral Psoriasis",
+     "Noxzema Clean",
+     "Oxy Deep Pore",
+     "P & S",
+     "Pernox Scrub Cleanser",
+     "Phisoderm Clear Confidence Body Wash",
+     "Phisoderm Clear Confidence Daily Gel Face Wash",
+     "Propa P.H.",
+     "Propa P.H. Acne Mask",
+     "Psoriasin Wash",
+     "Rayasal",
+     "Rogaine Anti-Dandruff",
+     "Salinocaine",
+     "Salvax",
+     "Salycim",
+     "Salyntra",
+     "Scalpicin Scalp Relief",
+     "Sebasorb",
+     "Sebex",
+     "Sebobalance",
+     "Sebulex",
+     "Selsun Blue Naturals",
+     "Skinmedica Purifying Foaming Wash",
+     "St. Ives Blemish & Blackhead Control",
+     "Stri-Dex",
+     "Stri-Dex Clear Gel",
+     "Stridex",
+     "Super Spot Remover",
+     "Ultrasal",
+     "Verruguin",
+     "Verrustat",
+     "Versiclear",
+     "Virasal",
+     "WARTICIDE",
+     "Wartstick",
+     "X-Seb T Pearl",
+     "Xalix",
+     "Zapzyt Acne Wash",
+     "Zit Stick"
+    ],
+    "eu": [],
+    "fr": [
+     "ALGESAL BAUME",
+     "ALGESAL SURACTIVE",
+     "BAUME AROMA",
+     "BAUME SAINT BERNARD",
+     "BRULEX",
+     "CIELLA",
+     "CORICIDE LE DIABLE",
+     "DIPROSALIC",
+     "DUOFILM",
+     "GLYCO-THYMOLINE",
+     "INONGAN",
+     "KERAFILM",
+     "LUMBALGINE",
+     "PANSORAL",
+     "POMMADE M.O. COCHON",
+     "PYRALVEX",
+     "REPARIL",
+     "SYNTHOL",
+     "VERRUFILM"
+    ],
+    "rxcui": [
+     "9525"
+    ],
+    "resolved_as": "RxNorm IN",
+    "read": "2026-10-02",
+    "note": ""
+   }
   },
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",

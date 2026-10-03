@@ -1285,27 +1285,6 @@
   }
  },
  "doses": {
-  "Lithium carbonate": {
-   "tag": "medicine",
-   "text": "Lithium in the first trimester was linked to more heart defects; the risk was about three times higher above 900 mg a day and not clearly raised at 600 mg or less.",
-   "source": "Patorno et al., N Engl J Med 2017",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/28591541/",
-   "basis": "human"
-  },
-  "Lithium citrate": {
-   "tag": "medicine",
-   "text": "Lithium in the first trimester was linked to more heart defects; the risk was about three times higher above 900 mg a day and not clearly raised at 600 mg or less.",
-   "source": "Patorno et al., N Engl J Med 2017",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/28591541/",
-   "basis": "human"
-  },
-  "Methotrexate sodium": {
-   "tag": "medicine",
-   "text": "Methotrexate embryopathy, which can include short limbs and fewer or fused fingers or toes, may follow doses of 10 mg a week or more taken 6 to 8 weeks after conception.",
-   "source": "Hyoun et al., Birth Defects Res A Clin Mol Teratol 2012",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/22434686/",
-   "basis": "human"
-  },
   "Retinol/retinyl esters": {
    "tag": "food",
    "text": "Taking more than 10,000 IU a day of preformed vitamin A from supplements in early pregnancy was linked to about five times more birth defects of cranial-neural-crest origin.",
@@ -1346,20 +1325,6 @@
    "text": "EFSA found no clear threshold below which lead is known to cause no harm, with particular concern for brain development in unborn babies, infants and children.",
    "source": "EFSA news, 20 April 2010 (CONTAM opinion on lead in food)",
    "url": "https://www.efsa.europa.eu/en/press/news/contam100420",
-   "basis": "human"
-  },
-  "Angiotensin converting enzyme": {
-   "tag": "medicine",
-   "text": "In the second and third trimesters, ACE inhibitors reduce the baby's kidney function and can cause injury or death; the label gives no dose limit and says to stop once pregnancy is detected.",
-   "source": "Zestril (lisinopril) US prescribing information, section 5.1, DailyMed (published May 2025)",
-   "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=838c2d78-d2d8-4981-9ec9-e50ef9e1a5d8",
-   "basis": "human"
-  },
-  "Danazol": {
-   "tag": "medicine",
-   "text": "Danazol caused male-type genital changes in 23 female babies, more often at higher doses but once at 200 mg a day; none were reported when stopped before week 8.",
-   "source": "Brunskill, Br J Obstet Gynaecol 1992",
-   "url": "https://pubmed.ncbi.nlm.nih.gov/1606119/",
    "basis": "human"
   }
  }

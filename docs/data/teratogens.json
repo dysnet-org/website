@@ -133,7 +133,7 @@
   "exposure_split": 27,
   "entis": 24,
   "entis_added": 9,
-  "pregnancy_facts": 83,
+  "pregnancy_facts": 211,
   "pregnancy_documented": 24,
   "cosmetic_documented": 0,
   "cosmetic_facts": 0,
@@ -1242,6 +1242,55 @@
      "id": "CIS 61510352",
      "date": "2025-06-20",
      "quote_language": "fr"
+    },
+    "before_after": {
+     "text": "The French Sintrom label says women of childbearing age must be told to use effective contraception during treatment and until 3 days after stopping, and to plan pregnancies to allow a safer alternative.",
+     "quote": "de la nécessité d’utiliser une contraception efficace pendant le traitement et jusqu’à 3 jours après l’arrêt de celui-ci et d’anticiper un projet de grossesse afin de permettre le relais par une alternative thérapeutique plus sûre",
+     "source_label": "ANSM, Résumé des Caractéristiques du Produit, SINTROM 4 mg (acénocoumarol), sections 4.4 and 4.6, updated 20/06/2025",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61510352/extrait",
+     "id": "CIS 61510352",
+     "date": "2025-06-20",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "The French Sintrom label states that cerebral fetopathy, mainly central nervous system and eye anomalies, occurs in 1 to 2% of vitamin K antagonist exposures beyond 9 weeks of amenorrhoea.",
+     "quote": "une fœtopathie cérébrale survient dans 1 à 2 % des cas d’exposition au-delà de 9 semaines d'aménorrhée",
+     "source_label": "ANSM, Résumé des Caractéristiques du Produit, SINTROM 4 mg (acénocoumarol), section 4.6 (class passage on vitamin K antagonists), updated 20/06/2025",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61510352/extrait",
+     "id": "CIS 61510352",
+     "date": "2025-06-20",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "ANSM's December 2018 letter announced that vitamin K antagonists, including acenocoumarol, are contraindicated in pregnancy, except for women with a mechanical heart valve at high thromboembolic risk whose potential benefits outweigh the risks.",
+     "quote": "l’utilisation des antivitamines K est désormais contre-indiquée au cours de la grossesse, sauf chez les femmes enceintes portant une valve cardiaque mécanique qui présentent un risque thromboembolique élevé",
+     "source_label": "ANSM, Lettre aux professionnels de santé, Traitement par antivitamines K (AVK) : nouvelles informations (COUMADINE, PREVISCAN, SINTROM, MINISINTROM), 1 December 2018",
+     "source_type": "regulator",
+     "url": "https://ansm.sante.fr/uploads/2021/04/23/dhpc-avk-2018-11-30.pdf",
+     "id": "ANSM DHPC 2018-11-30 (AVK)",
+     "date": "2018-12-01",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "If Sintrom is used in pregnancy or pregnancy is discovered on treatment, the French label requires specialised prenatal diagnosis by ultrasound, or even MRI, adapted to the period of exposure.",
+     "quote": "la patiente doit être pleinement informée des risques pour le fœtus et un diagnostic prénatal spécialisé (échographique voire IRM) adapté en fonction de la période d'exposition doit être instauré",
+     "source_label": "ANSM, Résumé des Caractéristiques du Produit, SINTROM 4 mg (acénocoumarol), section 4.6, updated 20/06/2025",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61510352/extrait",
+     "id": "CIS 61510352",
+     "date": "2025-06-20",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A multicentre prospective ENTIS cohort (1988–2004) followed 226 acenocoumarol-exposed pregnancies among 666 vitamin K antagonist exposures and 1,094 unexposed controls; its abstract reports results for the class as a whole.",
+     "quote": "we compared 666 pregnant women exposed to phenprocoumon (n = 280), acenocoumarol (n = 226), fluindione (n = 99), warfarin (n = 63) and phenindione (n = 2) to a non-exposed control group (n = 1,094)",
+     "source_label": "Schaefer C et al., Vitamin K antagonists and pregnancy outcome. A multi-centre prospective study, Thromb Haemost 2006;95(6):949-57, PubMed abstract",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16732373/",
+     "id": "PMID 16732373; DOI 10.1160/TH06-02-0108",
+     "date": "2006-06"
     }
    },
    "names": {
@@ -1529,6 +1578,64 @@
      "url": "https://api.fda.gov/drug/label.json?search=set_id:%22a6546625-acb8-460e-b34e-f795bfb3680a%22&limit=1",
      "id": "DailyMed set id a6546625-acb8-460e-b34e-f795bfb3680a",
      "date": "2026-08-05"
+    },
+    "before_after": {
+     "text": "ANSM requires women who can become pregnant to use contraception from at least 1 month before acitretin, throughout treatment and for at least 3 years after stopping, even without periods.",
+     "quote": "Une méthode de contraception doit être utilisée pendant au moins 1 mois avant le début du traitement, pendant toute la durée du traitement et pendant au moins 3 ans après l'arrêt du traitement par acitrétine, même en cas d’aménorrhée.",
+     "source_label": "ANSM, SORIATANE 25 mg gélule (acitrétine), RCP section 4.4, Contraception (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64225999/extrait",
+     "id": "CIS 64225999",
+     "date": "2024-09-09",
+     "quote_language": "fr"
+    },
+    "paternal": {
+     "text": "The US label says acitretin in semen appears to pose little, if any, risk to a fetus during or after a man's treatment, but the no-effect limit for teratogenicity is unknown.",
+     "quote": "although it appears that residual acitretin in seminal fluid poses little, if any, risk to a fetus while a male patient is taking the drug or after it is discontinued, the no-effect limit for teratogenicity is unknown",
+     "source_label": "US FDA label, Acitretin capsules (Sigmapharm), boxed CONTRAINDICATIONS AND WARNINGS, Important Information for Males, via openFDA",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%22a6546625-acb8-460e-b34e-f795bfb3680a%22&limit=1",
+     "id": "DailyMed set id a6546625-acb8-460e-b34e-f795bfb3680a",
+     "date": "2026-08-05"
+    },
+    "other_effects": {
+     "text": "Beyond malformations, acitretin's French product information states that there is also an increased risk of miscarriage.",
+     "quote": "Il existe également une augmentation du risque d'avortement spontané.",
+     "source_label": "ANSM, SORIATANE 25 mg gélule (acitrétine), RCP section 4.6 Grossesse (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64225999/extrait",
+     "id": "CIS 64225999",
+     "date": "2024-09-09",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "France's product information strictly contraindicates acitretin in pregnant women and in women who can become pregnant unless every condition of the pregnancy prevention programme is met.",
+     "quote": "SORIATANE 25 mg, gélule est strictement contre-indiqué chez : - les femmes enceintes, - les femmes en âge de procréer, sauf si toutes les conditions du « Programme de prévention de la grossesse » sont remplies.",
+     "source_label": "ANSM, SORIATANE 25 mg gélule (acitrétine), RCP section 4.4, Effets tératogènes (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64225999/extrait",
+     "id": "CIS 64225999",
+     "date": "2024-09-09",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "If a woman becomes pregnant on acitretin, ANSM requires stopping treatment and referring her to a physician specialised or experienced in teratology for evaluation and advice.",
+     "quote": "En cas de grossesse chez une femme traitée par acitrétine, le traitement doit être interrompu et la patiente doit être orientée vers un médecin spécialisé ou expérimenté en tératologie pour évaluation et conseil.",
+     "source_label": "ANSM, SORIATANE 25 mg gélule (acitrétine), RCP section 4.4, Programme de prévention de la grossesse (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/64225999/extrait",
+     "id": "CIS 64225999",
+     "date": "2024-09-09",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "Manufacturers' pharmacovigilance data assessed by EU regulators in 2018 counted 442 acitretin pregnancy cases since marketing, 132 conceived during treatment and 260 after it.",
+     "quote": "Acitretin: 442 pregnancy cases (132 related to conception during treatment, 260 after completing treatment);",
+     "source_label": "EMA PRAC assessment report, Article 31 referral on retinoid-containing medicinal products, section 2.4.1 Teratogenic effects, oral retinoids",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-prac-assessment-report_en.pdf",
+     "id": "EMA/254364/2018; EMEA/H/A-31/1446",
+     "date": "2018-02-08"
     }
    },
    "names": {
@@ -1810,6 +1917,64 @@
      "source_type": "regulator",
      "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-iii_en.pdf",
      "date": "2018"
+    },
+    "before_after": {
+     "text": "ANSM requires women who can become pregnant to use contraception from at least 1 month before alitretinoin, throughout treatment and for at least 1 month after stopping, even without periods.",
+     "quote": "Une méthode de contraception doit être utilisée pendant au moins 1 mois avant le début du traitement, pendant toute la durée du traitement et pendant au moins 1 mois après l'arrêt du traitement par alitrétinoïne, même en cas d'aménorrhée.",
+     "source_label": "ANSM, TOCTINO 30 mg capsule molle (alitrétinoïne), RCP section 4.4, Contraception (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69219167/extrait",
+     "id": "CIS 69219167",
+     "date": "2024-12-09",
+     "quote_language": "fr"
+    },
+    "paternal": {
+     "text": "ANSM says available data suggest that a woman's exposure through the semen of men taking alitretinoin is not high enough to be linked to its teratogenic effects.",
+     "quote": "Les données disponibles suggèrent que le niveau d’exposition maternelle à partir du sperme de patients traités par TOCTINO n’est pas suffisant pour être associé aux effets tératogènes de TOCTINO.",
+     "source_label": "ANSM, TOCTINO 30 mg capsule molle (alitrétinoïne), RCP section 4.4, Hommes (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69219167/extrait",
+     "id": "CIS 69219167",
+     "date": "2024-12-09",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "Canada's product monograph states that pregnancy during alitretinoin treatment or within one month after stopping carries a risk of malformation and an increased risk of spontaneous abortion.",
+     "quote": "Pregnancy occurring during treatment with HANZEMA and for one month after its discontinuation, carries the risk of fetal malformation and the increased risk of spontaneous abortion",
+     "source_label": "Health Canada product monograph, HANZEMA (alitretinoin capsules, Dr. Reddy's), Warnings and Precautions, Pregnancy",
+     "source_type": "regulator",
+     "url": "https://pdf.hres.ca/dpd_pm/00067982.PDF",
+     "id": "DIN 02477432 (10 mg); DIN 02477440 (30 mg)",
+     "date": "2022-10-20"
+    },
+    "regulatory": {
+     "text": "France's product information strictly contraindicates alitretinoin in pregnant women and in women who can become pregnant unless every condition of the pregnancy prevention programme is met.",
+     "quote": "TOCTINO est strictement contre-indiqué chez : · les femmes enceintes · les femmes en âge de procréer, sauf si toutes les conditions du Programme de prévention de la grossesse sont remplies",
+     "source_label": "ANSM, TOCTINO 30 mg capsule molle (alitrétinoïne), RCP section 4.4, Effets tératogènes (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69219167/extrait",
+     "id": "CIS 69219167",
+     "date": "2024-12-09",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "If a woman becomes pregnant on alitretinoin, ANSM requires stopping treatment and referring her to a physician specialised or experienced in teratology for evaluation and advice.",
+     "quote": "En cas de grossesse chez une femme traitée par l’alitrétinoïne, le traitement doit être interrompu et la patiente doit être orientée vers un médecin spécialisé ou expérimenté en tératologie pour évaluation et conseil.",
+     "source_label": "ANSM, TOCTINO 30 mg capsule molle (alitrétinoïne), RCP section 4.4, Programme de prévention de la grossesse (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69219167/extrait",
+     "id": "CIS 69219167",
+     "date": "2024-12-09",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "Manufacturers' pharmacovigilance data assessed by EU regulators in 2018 counted 17 oral alitretinoin pregnancy cases since marketing, 12 conceived during treatment and 4 more than one month after stopping treatment.",
+     "quote": "Alitretinoin: 17 pregnancy cases (12 related to conception during treatment, 4 more than one month after stopping treatment);",
+     "source_label": "EMA PRAC assessment report, Article 31 referral on retinoid-containing medicinal products, section 2.4.1 Teratogenic effects, oral retinoids",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-prac-assessment-report_en.pdf",
+     "id": "EMA/254364/2018; EMEA/H/A-31/1446",
+     "date": "2018-02-08"
     }
    },
    "names": {
@@ -1992,6 +2157,61 @@
      "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-ii_en.pdf",
      "id": "EMEA/H/A-31/1446",
      "date": "2018-06-21"
+    },
+    "before_after": {
+     "text": "For women who could become pregnant, the US label requires a negative pregnancy test before starting and says to advise two effective contraceptive methods during treatment and for 1 month after the last dose.",
+     "quote": "Females of reproductive potential must have a negative pregnancy test before initiating tretinoin capsules. Advise females of reproductive potential to use two effective methods of contraception during treatment with tretinoin capsules and for 1 month after the last dose.",
+     "source_label": "US FDA label, tretinoin capsules (Par Health USA), boxed warning, via openFDA (DailyMed SPL version 20)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%229c4ae9d9-c2a0-4995-a27a-e3f0f0284db9%22&limit=1",
+     "id": "DailyMed set id 9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+     "date": "2026-08-20"
+    },
+    "paternal": {
+     "text": "The US label says men taking oral tretinoin whose female partners could become pregnant should be advised to use effective contraception during treatment and for 1 week after the last dose.",
+     "quote": "Advise males with female partners of reproductive potential to use effective contraception during and after treatment with tretinoin capsules and for 1 week after the last dose.",
+     "source_label": "US FDA label, tretinoin capsules (Par Health USA), section 8.3 Use in Females and Males of Reproductive Potential, via openFDA (DailyMed SPL version 20)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%229c4ae9d9-c2a0-4995-a27a-e3f0f0284db9%22&limit=1",
+     "id": "DailyMed set id 9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+     "date": "2026-08-20"
+    },
+    "other_effects": {
+     "text": "The US label says exposure to retinoids, the class tretinoin belongs to, in human pregnancy increases the risk of spontaneous abortion and premature birth as well as major malformations.",
+     "quote": "Tretinoin capsules are a retinoid and there is an increased risk of major congenital malformations, spontaneous abortions and premature births following exposure to retinoids during pregnancy in humans.",
+     "source_label": "US FDA label, tretinoin capsules (Par Health USA), section 8.1 Pregnancy, Risk Summary, via openFDA (DailyMed SPL version 20)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%229c4ae9d9-c2a0-4995-a27a-e3f0f0284db9%22&limit=1",
+     "id": "DailyMed set id 9c4ae9d9-c2a0-4995-a27a-e3f0f0284db9",
+     "date": "2026-08-20"
+    },
+    "regulatory": {
+     "text": "Health Canada's product monograph places tretinoin's teratogenicity in its serious-warnings box and contraindicates its use in pregnant women.",
+     "quote": "Teratogenic effect: Tretinoin is highly teratogenic. Its use is contraindicated in pregnant women.",
+     "source_label": "Health Canada, VESANOID (tretinoin) 10 mg capsules product monograph (Cheplapharm), section 3 Serious Warnings and Precautions Box",
+     "source_type": "regulator",
+     "url": "https://pdf.hres.ca/dpd_pm/00068303.PDF",
+     "id": "DIN 02145839",
+     "date": "2022-11-18"
+    },
+    "monitoring": {
+     "text": "If Vesanoid is given in early pregnancy, the French product information says the patient must be told of the risk of teratogenic effects and of severe fetal malformations.",
+     "quote": "Si Vesanoid est administré en début de grossesse, la patiente doit être avertie du risque d'effets tératogènes de Vesanoid et du risque de malformations fœtales sévères.",
+     "source_label": "ANSM, VESANOID 10 mg capsule molle, RCP section 4.6 Grossesse (Base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65540866/extrait",
+     "id": "CIS 65540866",
+     "date": "2025-04-22",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A 2020 systematic review of 66 articles, 53 of them single case reports, found 92 pregnant women with APL eligible for induction, about three-quarters treated with all-trans retinoic acid alone or with chemotherapy.",
+     "quote": "Sixty-six articles met the eligibility criteria (53 single case reports). Ninety-two patients were eligible for induction therapy, with most them being treated with all-trans retinoic acid alone (32%) or combined with chemotherapy (43%)",
+     "source_label": "Santolaria A, Perales A, Montesinos P, Sanz MA. Acute promyelocytic leukemia during pregnancy: a systematic review of the literature. Cancers (Basel) 2020;12(4):968, abstract",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7225915/",
+     "id": "PMID 32295152; PMC7225915; doi:10.3390/cancers12040968",
+     "date": "2020-04-14"
     }
    },
    "names": {
@@ -2770,6 +2990,24 @@
      "text": "ENTIS lists multiple malformations for methotrexate and aminopterin together, including skeletal, heart and urogenital defects and holoprosencephaly (a brain malformation), plus growth disruption; limbs are not named separately.",
      "quote": "Multiple malformations including skeletal, cardiovascular, urogenital, holoprosencephaly. Growth disruption.",
      "source_label": "Bluett-Duncan et al., ENTIS expert consensus, Birth Defects Res 2025;117(9):e2497, Table 1 (row 'Methotrexate and Aminopterin')",
+     "source_type": "ENTIS consensus",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+     "id": "PMC12442749; DOI 10.1002/bdr2.2497",
+     "date": "2025-09-17"
+    },
+    "other_effects": {
+     "text": "ENTIS lists growth disruption besides multiple malformations in its joint entry for methotrexate and aminopterin, so the entry is not specific to aminopterin.",
+     "quote": "Multiple malformations including skeletal, cardiovascular, urogenital, holoprosencephaly. Growth disruption.",
+     "source_label": "Bluett-Duncan et al., ConcePTION scoping review with ENTIS expert-panel list of teratogens, Birth Defects Res 2025;117(9):e2497, Table 1 (row 'Methotrexate and Aminopterin')",
+     "source_type": "ENTIS consensus",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
+     "id": "PMC12442749; DOI 10.1002/bdr2.2497",
+     "date": "2025-09-17"
+    },
+    "evidence_base": {
+     "text": "A scoping review using the ENTIS expert list found 7 case series or reports and no empirical cohort on neurodevelopment after methotrexate or aminopterin, which it counts together.",
+     "quote": "Structural teratogens included in this review and the number of case series/reports and empirical cohorts identified.",
+     "source_label": "Bluett-Duncan et al., ConcePTION scoping review with ENTIS expert-panel list of teratogens, Birth Defects Res 2025;117(9):e2497, Table 1 caption; row 'Methotrexate and Aminopterin' gives 7 case series/reports and 0 empirical cohorts",
      "source_type": "ENTIS consensus",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/",
      "id": "PMC12442749; DOI 10.1002/bdr2.2497",
@@ -5020,6 +5258,60 @@
      "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-annex-ii_en.pdf",
      "id": "EMEA/H/A-31/1446",
      "date": "2018-06-21"
+    },
+    "before_after": {
+     "text": "The US label requires effective contraception from 1 month before starting bexarotene, throughout treatment and for at least 1 month after stopping it.",
+     "quote": "Effective contraception must be used for 1 month prior to the initiation of therapy, during therapy and for at least 1 month following discontinuation of therapy",
+     "source_label": "US FDA label, TARGRETIN (bexarotene) capsules, Bausch Health, section 8.3 Females and Males of Reproductive Potential, via openFDA (DailyMed SPL version 16)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%221d056725-0576-4338-8089-6336e768ccdc%22&limit=1",
+     "id": "DailyMed set id 1d056725-0576-4338-8089-6336e768ccdc",
+     "date": "2020-04-30"
+    },
+    "paternal": {
+     "text": "The EU product information says men taking bexarotene whose partners are, may be or could become pregnant must use condoms during intercourse throughout treatment and for at least one month after the last dose.",
+     "quote": "Male patients with sexual partners who are pregnant, possibly pregnant, or may potentially become pregnant must use condoms during sexual intercourse while taking bexarotene and for at least one month after the last dose.",
+     "source_label": "EMA, Targretin EPAR product information, SmPC section 4.6 Contraception in males and females",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/targretin-epar-product-information_en.pdf",
+     "id": "EU/1/01/178",
+     "date": "2025-08-11"
+    },
+    "other_effects": {
+     "text": "In animal studies only, bexarotene given by mouth to pregnant rats at more than 10 mg/kg/day caused developmental mortality.",
+     "quote": "At doses greater than 10 mg/kg/day, bexarotene caused developmental mortality.",
+     "source_label": "US FDA label, TARGRETIN (bexarotene) capsules, Bausch Health, section 8.1 Pregnancy, Animal Data, via openFDA (DailyMed SPL version 16)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%221d056725-0576-4338-8089-6336e768ccdc%22&limit=1",
+     "id": "DailyMed set id 1d056725-0576-4338-8089-6336e768ccdc",
+     "date": "2020-04-30"
+    },
+    "regulatory": {
+     "text": "The EU product information contraindicates bexarotene in pregnancy and breastfeeding, and in women of child-bearing potential who do not use effective contraception.",
+     "quote": "Pregnancy and lactation. Women of child-bearing potential without effective birth-control measures.",
+     "source_label": "EMA, Targretin EPAR product information, SmPC section 4.3 Contraindications",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/targretin-epar-product-information_en.pdf",
+     "id": "EU/1/01/178",
+     "date": "2025-08-11"
+    },
+    "monitoring": {
+     "text": "If pregnancy occurs during treatment, the US label says to stop bexarotene immediately and to advise the woman of the potential risk to the fetus.",
+     "quote": "If pregnancy does occur during treatment with TARGRETIN, immediately discontinue the drug and advise the pregnant female of the potential risk to a fetus.",
+     "source_label": "US FDA label, TARGRETIN (bexarotene) capsules, Bausch Health, section 8.1 Pregnancy, Risk Summary, via openFDA (DailyMed SPL version 16)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%221d056725-0576-4338-8089-6336e768ccdc%22&limit=1",
+     "id": "DailyMed set id 1d056725-0576-4338-8089-6336e768ccdc",
+     "date": "2020-04-30"
+    },
+    "evidence_base": {
+     "text": "EMA's product information for the oral capsules says there are no adequate data on bexarotene use in pregnant women and that animal studies have shown reproductive toxicity.",
+     "quote": "There are no adequate data from the use of bexarotene in pregnant women. Studies in animals have shown reproductive toxicity.",
+     "source_label": "EMA, Targretin (oral capsules) EPAR product information, SmPC section 4.6 Pregnancy",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/targretin-epar-product-information_en.pdf",
+     "id": "EU/1/01/178",
+     "date": "2025-08-11"
     }
    },
    "names": {
@@ -5665,6 +5957,55 @@
      "url": "https://api.fda.gov/drug/label.json?search=set_id:%22be478f3c-40f6-47cc-8ab9-f420a9372b1c%22",
      "id": "DailyMed set id be478f3c-40f6-47cc-8ab9-f420a9372b1c",
      "date": "2025-08-19"
+    },
+    "before_after": {
+     "text": "French product information says a pregnancy test should be considered before starting, and effective contraception is needed during treatment and until two weeks after stopping, as hormonal contraceptives may fail.",
+     "quote": "Les femmes susceptibles de procréer doivent utiliser une contraception efficace pendant le traitement et jusqu’à deux semaines après l’arrêt du traitement.",
+     "source_label": "ANSM, Tegretol 200 mg comprimé sécable, RCP sections 4.4 and 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61009918/extrait",
+     "id": "CIS 61009918",
+     "date": "2026-08-14",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "French product information says a Nordic registry study suggests more small-for-gestational-age births (12.8% versus 10.9% for children of untreated women with epilepsy), and that neurodevelopmental studies are contradictory and cannot exclude a risk.",
+     "quote": "Le risque de PAG chez les enfants de femmes épileptiques traitées par carbamazépine était de 12,8 %, contre 10,9 % chez les enfants de femmes épileptiques ne recevant pas de traitement antiépileptique.",
+     "source_label": "ANSM, Tegretol 200 mg comprimé sécable, RCP section 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61009918/extrait",
+     "id": "CIS 61009918",
+     "date": "2026-08-14",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "Since 2025 in France, girls, women who could become pregnant and pregnant women must show the pharmacist, with the prescription, an information form co-signed yearly with their doctor to obtain carbamazepine.",
+     "quote": "Pour dispenser ce médicament à une fille, une adolescente, une femme susceptible d’avoir des enfants ou enceinte, la patiente doit vous présenter, en plus de l’ordonnance, l’attestation d’information partagée signée chaque année par elle et le médecin.",
+     "source_label": "ANSM news, 'Carbamazépine et grossesse : renforcement de l'information des femmes', information for pharmacists (published 13/12/2024, updated 27/03/2025)",
+     "source_type": "regulator",
+     "url": "https://ansm.sante.fr/actualites/impression/5182",
+     "id": "ANSM actualité 5182",
+     "date": "2025-03-27",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "French product information recommends specialised prenatal monitoring for malformations and growth restriction, folic acid before and during pregnancy and, if treatment continues, monotherapy at the lowest effective dose with plasma-level monitoring.",
+     "quote": "Une surveillance prénatale spécialisée de ces malformations et du retard de croissance est recommandée.",
+     "source_label": "ANSM, Tegretol 200 mg comprimé sécable, RCP section 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61009918/extrait",
+     "id": "CIS 61009918",
+     "date": "2026-08-14",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A 2023 Cochrane systematic review pooled 5,415 carbamazepine-exposed children from 37 cohort studies and 2,806 from five health-record studies, all observational, finding major malformations in 4.7% and 4.0%.",
+     "quote": "The prevalence of major malformations (any type) in the cohort studies for children exposed to carbamazepine (CBZ) (N = 5415), based on data from 37 studies, was 4.7% (95% CI 3.7 to 5.9).",
+     "source_label": "Bromley et al., Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child, Cochrane Database Syst Rev 2023, Results (carbamazepine)",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
+     "id": "Cochrane CD010224.pub3; PMID 37647086; PMCID PMC10463554",
+     "date": "2023-08-29"
     }
    },
    "names": {
@@ -5759,6 +6100,51 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/31408173/",
      "id": "PMID 31408173; DOI 10.1210/jc.2019-01343",
      "date": "2019-12-01"
+    },
+    "before_after": {
+     "text": "EU product information tells women who could become pregnant to use reliable contraception from the start of carbimazole treatment and during it, and sets no period after stopping.",
+     "quote": "If you could get pregnant, use reliable contraception from the time you start treatment and during treatment.",
+     "source_label": "EMA PRAC, New product information wording, carbimazole package leaflet section 2 (EPITT 19238), adopted 26-29 November 2018",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-26-29-november-2018-prac_en.pdf",
+     "id": "EMA/PRAC/826450/2018",
+     "date": "2019-01-04"
+    },
+    "other_effects": {
+     "text": "New Zealand product information says transient thyroid function abnormalities have been reported in newborns whose mothers took carbimazole (Neo-Mercazole) during pregnancy.",
+     "quote": "Transient thyroid function abnormalities have been reported in new-borns born to mothers treated with Neo-Mercazole during pregnancy.",
+     "source_label": "Medsafe (New Zealand regulator), Neo-Mercazole (carbimazole) New Zealand Data Sheet, section 4.6, revised 10 December 2020",
+     "source_type": "regulator",
+     "url": "https://www.medsafe.govt.nz/profs/Datasheet/n/Neo-Mercazoletab.pdf",
+     "id": "Neo-Mercazole NZ Data Sheet",
+     "date": "2020-12-10"
+    },
+    "regulatory": {
+     "text": "Under the 2018 EU wording, carbimazole may be given in pregnancy only after a strict individual benefit-risk assessment, at the lowest effective dose and without added thyroid hormones.",
+     "quote": "Carbimazole must only be administered during pregnancy after a strict individual benefit/risk assessment and only at the lowest effective dose without additional administration of thyroid hormones.",
+     "source_label": "EMA PRAC, New product information wording, carbimazole SmPC 4.6 (EPITT 19238), adopted 26-29 November 2018",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/prac-recommendation/new-product-information-wording-extracts-prac-recommendations-signals-adopted-26-29-november-2018-prac_en.pdf",
+     "id": "EMA/PRAC/826450/2018",
+     "date": "2019-01-04"
+    },
+    "monitoring": {
+     "text": "New Zealand product information says a prenatal ultrasound should be considered to detect some of the malformations it lists and to monitor the fetal thyroid, and a neonatal thyroid function test should be performed.",
+     "quote": "A prenatal exam (ultrasound) should be considered in order to detect some of the above-cited malformations and to monitor the foetal thyroid gland. A neonatal thyroid function test should be performed.",
+     "source_label": "Medsafe (New Zealand regulator), Neo-Mercazole (carbimazole) New Zealand Data Sheet, section 4.6, revised 10 December 2020",
+     "source_type": "regulator",
+     "url": "https://www.medsafe.govt.nz/profs/Datasheet/n/Neo-Mercazoletab.pdf",
+     "id": "Neo-Mercazole NZ Data Sheet",
+     "date": "2020-12-10"
+    },
+    "evidence_base": {
+     "text": "A 2022 systematic review and meta-analysis of 16 cohort studies counted 5,957 pregnancy exposures to carbimazole or methimazole, analysed together rather than drug by drug.",
+     "quote": "We identified 16 cohort studies comprising 5957, 15,785, and 15,666 exposures to CMZ/MMI, PTU, and untreated hyperthyroidism, respectively.",
+     "source_label": "Agrawal M et al. Antithyroid drug therapy in pregnancy and risk of congenital anomalies: systematic review and meta-analysis. Clin Endocrinol (Oxf) 2022;96(6):857-868 (abstract)",
+     "source_type": "systematic review",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34845757/",
+     "id": "PMID 34845757; DOI 10.1111/cen.14646",
+     "date": "2022-06"
     }
    },
    "names": {
@@ -10167,6 +10553,52 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/6691382/",
      "id": "PMID 6691382",
      "date": "1984-01-01"
+    },
+    "paternal": {
+     "text": "France's medicines agency states that, to date, no consequences have been shown in children whose fathers were themselves exposed to DES before birth.",
+     "quote": "À ce jour, il n’a pas été mis en évidence de conséquences chez les enfants de pères exposés in utero au DES.",
+     "source_label": "ANSM (French medicines agency), dossier thématique 'Diéthylstilbestrol (DES) et grossesse', published 20/07/2026, updated 21/07/2026",
+     "source_type": "regulator",
+     "url": "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/diethylstilbestrol-des-et-grossesse",
+     "date": "2026-07-21",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "Women exposed to DES before birth had higher cumulative risks than unexposed women of infertility (33.3% vs 15.5%), spontaneous abortion (50.3% vs 38.6%) and preterm delivery (53.3% vs 17.8%), assessed to age 45.",
+     "quote": "for infertility, 33.3% vs. 15.5% (hazard ratio, 2.37; 95% confidence interval [CI], 2.05 to 2.75); spontaneous abortion, 50.3% vs. 38.6% (hazard ratio, 1.64; 95% CI, 1.42 to 1.88); preterm delivery, 53.3% vs. 17.8%",
+     "source_label": "Hoover RN et al. Adverse health outcomes in women exposed in utero to diethylstilbestrol (three pooled studies initiated in the 1970s). N Engl J Med 2011;365(14):1304-14, PubMed abstract, Results",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21991952/",
+     "id": "PMID 21991952; DOI 10.1056/NEJMoa1013961",
+     "date": "2011-10-06"
+    },
+    "regulatory": {
+     "text": "In France, the indication for recurrent spontaneous miscarriage was removed in 1976 and a contraindication for use in pregnant women was added in 1977.",
+     "quote": "En France, l’indication \" avortements spontanés à répétition \" a été supprimée en 1976 et la contre-indication d’utilisation chez la femme enceinte a été ajoutée en 1977.",
+     "source_label": "Afssaps (now ANSM), Mise au point 'Complications liées à l’exposition in utero au diéthylstilbestrol (DES)', Actualisation 2011 (June 2011), Historique",
+     "source_type": "regulator",
+     "url": "https://ansm.sante.fr/uploads/2021/03/11/a2abb4db0658b1c97ade1be777f219ce.pdf",
+     "date": "2011-06",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "For women exposed to DES before birth, France's medicines agency recommends reinforced gynaecological follow-up for dysplasia, adenosis and adenocarcinoma, plus breast cancer screening as recommended for their age.",
+     "quote": "Suivi gynécologique renforcé (dysplasie, adénose, adénocarcinome). Dépistage du cancer du sein selon les recommandations pour cette tranche d’âge.",
+     "source_label": "ANSM (French medicines agency), dossier thématique 'Diéthylstilbestrol (DES) et grossesse', section Pour les professionnels de santé, Prise en charge, 2e génération, published 20/07/2026, updated 21/07/2026",
+     "source_type": "regulator",
+     "url": "https://ansm.sante.fr/dossiers-thematiques/medicaments-et-grossesse/diethylstilbestrol-des-et-grossesse",
+     "date": "2026-07-21",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "Human evidence includes the pooled long-term follow-up of three studies started in the 1970s, covering 4,653 women exposed to DES before birth and 1,927 unexposed controls.",
+     "quote": "We combined data from three studies initiated in the 1970s with continued long-term follow-up of 4653 women exposed in utero to DES and 1927 unexposed controls.",
+     "source_label": "Hoover RN et al. Adverse health outcomes in women exposed in utero to diethylstilbestrol (three pooled studies initiated in the 1970s). N Engl J Med 2011;365(14):1304-14, PubMed abstract, Methods",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/21991952/",
+     "id": "PMID 21991952; DOI 10.1056/NEJMoa1013961",
+     "date": "2011-10-06",
+     "quote_language": "fr"
     }
    },
    "names": {
@@ -10982,6 +11414,50 @@
      "text": "The UK medicines regulator says the data support that around 6 in 100 children exposed to phenytoin alone in pregnancy have a malformation, against 2 to 3 in 100 generally.",
      "quote": "around 6% of children exposed to phenytoin monotherapy during pregnancy suffer from congenital malformations; this risk is increased compared with that in children of mothers who were not exposed to antiepileptics during pregnancy (2-3% in the general population)",
      "source_label": "MHRA / Commission on Human Medicines, Public Assessment Report: antiepileptic drugs, review of safety of use during pregnancy, key findings for phenytoin",
+     "source_type": "regulator",
+     "url": "https://www.gov.uk/government/publications/public-assesment-report-of-antiepileptic-drugs-review-of-safety-of-use-during-pregnancy/antiepileptic-drugs-review-of-safety-of-use-during-pregnancy",
+     "date": "2021-01-07"
+    },
+    "before_after": {
+     "text": "EU regulators say a pregnancy test should be considered before starting oral phenytoin, and women who could become pregnant should use effective contraception during treatment and for one month after stopping.",
+     "quote": "Pregnancy testing in women of childbearing potential should be considered prior to initiating treatment with X. Women of childbearing potential should use effective contraception during treatment and for one month after stopping treatment.",
+     "source_label": "EMA/CMDh, phenytoin PSUSA: scientific conclusions and amendments to the product information, Annex II, SmPC section 4.6 (oral phenytoin products)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/psusa/phenytoin-cmdh-scientific-conclusions-and-grounds-variation-amendments-product-information-and-timetable-implementation-psusa00002392202008_en.pdf",
+     "id": "PSUSA/00002392/202008",
+     "date": "2021-04 (CMDh adoption)"
+    },
+    "other_effects": {
+     "text": "The UK regulator says that, although clinical studies report inconsistent findings, the totality of the data shows a possible adverse effect of phenytoin on the child's neurodevelopment.",
+     "quote": "for phenobarbital and phenytoin, although the clinical studies report inconsistent findings, the totality of the data show the possibility of adverse effects on neurodevelopment",
+     "source_label": "MHRA, Drug Safety Update vol. 14 issue 6: Antiepileptic drugs in pregnancy, updated advice following comprehensive safety review",
+     "source_type": "regulator",
+     "url": "https://www.gov.uk/drug-safety-update/antiepileptic-drugs-in-pregnancy-updated-advice-following-comprehensive-safety-review",
+     "date": "2021-01-07"
+    },
+    "regulatory": {
+     "text": "Under a 2021 EU agreement, oral phenytoin product information says it should not be used in women of childbearing potential unless, after careful consideration of alternatives, the benefit is judged to outweigh the risks.",
+     "quote": "X should not be used in women of childbearing potential unless the benefit is judged to outweigh the risks following careful consideration of alternative suitable treatment options.",
+     "source_label": "EMA/CMDh, phenytoin PSUSA: CMDh position (agreement adopted at the April 2021 CMDh meeting), Annex II, SmPC section 4.4 (oral phenytoin products)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/psusa/phenytoin-cmdh-scientific-conclusions-and-grounds-variation-amendments-product-information-and-timetable-implementation-psusa00002392202008_en.pdf",
+     "id": "PSUSA/00002392/202008",
+     "date": "2021-04 (CMDh agreement)"
+    },
+    "monitoring": {
+     "text": "If phenytoin must continue in pregnancy, the French product information requires specialised prenatal monitoring aimed at the described malformations, with the same screening whether or not the woman took folic acid.",
+     "quote": "une surveillance prénatale spécialisée orientée sur les malformations décrites ci-dessus doit être instaurée. Le dépistage des malformations sera identique que la patiente ait reçu ou non de l'acide folique.",
+     "source_label": "ANSM, DI-HYDAN 100 mg (phenytoin) RCP, section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/66303560/extrait#tab-rcp",
+     "id": "CIS 66303560",
+     "date": "2019-08-22",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "The UK regulator's review rests on clinical studies, including meta-analyses and pregnancy registries, of more than 2,000 phenytoin-exposed pregnancies, around 1,000 of them exposed in the first trimester.",
+     "quote": "Clinical studies involving more than 2,000 pregnancies exposed to phenytoin, including around 1,000 pregnancies exposed in the first trimester, show an increased risk of major congenital malformations following prenatal phenytoin exposure",
+     "source_label": "MHRA / Commission on Human Medicines, Public Assessment Report: antiepileptic drugs, review of safety of use during pregnancy, section 3.7",
      "source_type": "regulator",
      "url": "https://www.gov.uk/government/publications/public-assesment-report-of-antiepileptic-drugs-review-of-safety-of-use-during-pregnancy/antiepileptic-drugs-review-of-safety-of-use-during-pregnancy",
      "date": "2021-01-07"
@@ -13771,6 +14247,55 @@
      "id": "CIS 60771794",
      "date": "2025-11-13",
      "quote_language": "fr"
+    },
+    "before_after": {
+     "text": "The French fosphenytoin product information says women of childbearing potential must use effective contraception during treatment, and a pregnancy test should be considered before starting.",
+     "quote": "Les femmes en âge de procréer doivent utiliser une méthode contraceptive efficace pendant le traitement. Une recherche de grossesse doit être envisagée chez les femmes en âge de procréer avant l’instauration d’un traitement par PRODILANTIN.",
+     "source_label": "ANSM, PRODILANTIN 75 mg/mL (fosphenytoin) RCP, section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60771794/extrait#tab-rcp",
+     "id": "CIS 60771794",
+     "date": "2025-11-13",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "The French fosphenytoin product information says studies of neurodevelopmental risk in children exposed to phenytoin during pregnancy are contradictory and the risk cannot be excluded.",
+     "quote": "Les études liées au risque neurodéveloppemental chez les enfants exposés à la phénytoïne pendant la grossesse sont contradictoires et le risque ne peut être exclu.",
+     "source_label": "ANSM, PRODILANTIN 75 mg/mL (fosphenytoin) RCP, section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60771794/extrait#tab-rcp",
+     "id": "CIS 60771794",
+     "date": "2025-11-13",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "The French fosphenytoin (PRODILANTIN) product information says it must not be used in women of childbearing potential, women planning a pregnancy or pregnant women, except in case of clinical need.",
+     "quote": "PRODILANTIN ne doit pas être utilisé chez les femmes en âge de procréer, les femmes qui planifient une grossesse et les femmes enceintes, sauf en cas de besoin clinique.",
+     "source_label": "ANSM, PRODILANTIN 75 mg/mL (fosphenytoin) RCP, section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60771794/extrait#tab-rcp",
+     "id": "CIS 60771794",
+     "date": "2025-11-13",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "If fosphenytoin is continued in pregnancy after careful benefit-risk reassessment, the French product information recommends the lowest effective dose and an adapted prenatal follow-up aimed at the described malformations.",
+     "quote": "Si après réévaluation attentive du bénéfice/risque, le traitement par PRODILANTIN est poursuivi pendant la grossesse, il est recommandé d'utiliser la dose minimale efficace et d’instaurer un suivi prénatal adapté, orienté sur la survenue éventuelle des malformations décrites.",
+     "source_label": "ANSM, PRODILANTIN 75 mg/mL (fosphenytoin) RCP, section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60771794/extrait#tab-rcp",
+     "id": "CIS 60771794",
+     "date": "2025-11-13",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "The US fosphenytoin label takes its human evidence from phenytoin, the active metabolite, citing meta-analyses of observational studies and registries that estimate an approximately 2.4-fold increased risk of any major malformation.",
+     "quote": "Meta-analyses using data from published observational studies and registries have estimated an approximately 2.4-fold increased risk for any major malformation in children with prenatal phenytoin exposure compared to controls.",
+     "source_label": "US FDA label, CEREBYX (fosphenytoin sodium), Pfizer, section 8.1 (via openFDA)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%22d4c36fad-0ba2-4cd4-9c5e-dcf843f38a5a%22&limit=1",
+     "id": "DailyMed set id d4c36fad-0ba2-4cd4-9c5e-dcf843f38a5a",
+     "date": "2025-08-28"
     }
    },
    "names": {
@@ -15471,6 +15996,63 @@
      "url": "https://www.ema.europa.eu/en/documents/referral/retinoid-article-31-referral-prac-assessment-report_en.pdf",
      "id": "EMA/254364/2018",
      "date": "2018-02-08"
+    },
+    "before_after": {
+     "text": "The French label requires contraception from at least 1 month before isotretinoin, throughout treatment and for at least 1 month after stopping, even in women without periods.",
+     "quote": "Une méthode de contraception doit être utilisée pendant au moins 1 mois avant le début du traitement, pendant toute la durée du traitement et pendant au moins 1 mois après l'arrêt du traitement par l’isotrétinoïne, même en cas d’aménorrhée.",
+     "source_label": "ANSM, RCP ISOTRETINOINE ACNETRAIT 20 mg, capsule molle, section 4.4 (Programme de Prévention de la Grossesse, Contraception), RCP updated 30/07/2026",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60265569/extrait",
+     "id": "CIS 60265569",
+     "date": "2026-07-30",
+     "quote_language": "fr"
+    },
+    "paternal": {
+     "text": "The French label says available data suggest that maternal exposure through the semen of men taking isotretinoin is too low to be linked to the drug's teratogenic effects.",
+     "quote": "Les données disponibles suggèrent que le niveau d'exposition maternelle à partir du sperme des patients traités par ISOTRETINOINE ACNETRAIT 20 mg, capsule molle n’est pas suffisant pour être associé aux effets tératogènes d’ISOTRETINOINE ACNETRAIT 20 mg, capsule molle.",
+     "source_label": "ANSM, RCP ISOTRETINOINE ACNETRAIT 20 mg, capsule molle, section 4.4 (Hommes), RCP updated 30/07/2026",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60265569/extrait",
+     "id": "CIS 60265569",
+     "date": "2026-07-30",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "The US label reports cases of IQ below 85, with or without other abnormalities, in children exposed before birth, and an increased risk of miscarriage and premature birth.",
+     "quote": "Cases of IQ scores less than 85 with or without other abnormalities have been reported in children exposed in utero to isotretinoin. An increased risk of spontaneous abortion and premature births have been reported with isotretinoin exposure during pregnancy.",
+     "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), section 8.1 Human Data, via openFDA (SPL version 21)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
+     "id": "3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+     "date": "2026-08-19"
+    },
+    "regulatory": {
+     "text": "The French label contraindicates isotretinoin in pregnancy and breastfeeding, and in women who could become pregnant unless every condition of the Pregnancy Prevention Programme is met.",
+     "quote": "L'isotrétinoïne est contre-indiquée chez les femmes enceintes ou qui allaitent (voir rubrique 4.6). L'isotrétinoïne est contre-indiquée chez les femmes en âge de procréer sauf si toutes les conditions du « Programme de Prévention de la Grossesse » sont remplies",
+     "source_label": "ANSM, RCP ISOTRETINOINE ACNETRAIT 20 mg, capsule molle, section 4.3 Contre-indications, RCP updated 30/07/2026",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60265569/extrait",
+     "id": "CIS 60265569",
+     "date": "2026-07-30",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "If pregnancy occurs, the US label says to stop isotretinoin immediately and refer to an obstetrician-gynaecologist experienced in reproductive toxicity, and that no accurate means can determine prenatally whether an exposed fetus is affected.",
+     "quote": "There are no accurate means of determining prenatally whether an exposed fetus has been affected. If pregnancy occurs, discontinue ABSORICA/ABSORICA LD immediately and refer the patient to an Obstetrician- Gynecologist experienced in reproductive toxicity for further evaluation and counseling",
+     "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), boxed warning, via openFDA (SPL version 21)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
+     "id": "3ef0cff8-19c1-4441-b780-fca6c7ee1615",
+     "date": "2026-08-19"
+    },
+    "evidence_base": {
+     "text": "A 2021 systematic review and meta-analysis of 10 studies with 2,783 isotretinoin-exposed women found a 15% sample-weighted major-malformation rate, and only 3 studies had an unexposed comparison group.",
+     "quote": "Ten eligible studies that combined 2,783 isotretinoin-exposed women were included in our study. The rate of MM weighted for the sample size was 15%. Three studies that included an unexposed comparison group were eligible for the meta-analysis.",
+     "source_label": "Choi et al., The rates of major malformations after gestational exposure to isotretinoin: a systematic review and meta-analysis, Obstet Gynecol Sci 2021;64(4):364-373 (abstract)",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8290153/",
+     "id": "PMID 33757281; DOI 10.5468/ogs.20373; PMC8290153",
+     "date": "2021-03-17"
     }
    },
    "names": {
@@ -16820,6 +17402,60 @@
      "source_type": "regulator",
      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fa97bf5-28a2-48f1-8955-f56012d296be",
      "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be",
+     "date": "2023-03-24"
+    },
+    "before_after": {
+     "text": "A woman who can become pregnant must use effective contraception from at least 4 weeks before lenalidomide to at least 4 weeks after, even during interruptions, unless committed to absolute, continuous, monthly-confirmed abstinence.",
+     "quote": "for at least 4 weeks before therapy, during therapy, and until at least 4 weeks after lenalidomide therapy and even in case of dose interruption unless the patient commits to absolute and continuous abstinence confirmed on a monthly basis",
+     "source_label": "EMA product information, Revlimid (lenalidomide), SmPC section 4.4, Contraception (women of childbearing potential) (EN product information last updated 09/09/2025)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/revlimid-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000717 (EU/1/07/391)",
+     "date": "2025-09-09"
+    },
+    "paternal": {
+     "text": "Under the EU product information, men on lenalidomide should use condoms during treatment and dose interruptions and for 1 week after stopping if their partner is pregnant, or could become pregnant without contraception.",
+     "quote": "all male patients taking lenalidomide should use condoms throughout treatment duration, during dose interruption and for 1 week after cessation of treatment if their partner is pregnant or of childbearing potential and has no contraception.",
+     "source_label": "EMA product information, Revlimid (lenalidomide), SmPC section 4.6, Women of childbearing potential/Contraception in males and females (EN product information last updated 09/09/2025)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/revlimid-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000717 (EU/1/07/391)",
+     "date": "2025-09-09"
+    },
+    "other_effects": {
+     "text": "In animal studies, lenalidomide caused embryo death in pregnant rabbits at 20 times the maximum recommended human dose; this is an animal result.",
+     "quote": "Similar studies in pregnant rabbits and rats at 20 times and 200 times the MRHD respectively, produced embryo lethality in rabbits",
+     "source_label": "US FDA label, Revlimid (Celgene), section 8.1 Pregnancy, Animal data, read via openFDA (version 41, effective 2023-03-24)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%225fa97bf5-28a2-48f1-8955-f56012d296be%22&limit=1",
+     "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be, version 41",
+     "date": "2023-03-24"
+    },
+    "regulatory": {
+     "text": "The EU product information requires lenalidomide to be prescribed under a Pregnancy Prevention Programme unless there is reliable evidence that the patient does not have childbearing potential.",
+     "quote": "Due to the teratogenic potential, lenalidomide must be prescribed under a Pregnancy Prevention Programme (see section 4.4) unless there is reliable evidence that the patient does not have childbearing potential.",
+     "source_label": "EMA product information, Revlimid (lenalidomide), SmPC section 4.6 (EN product information last updated 09/09/2025)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/revlimid-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000717 (EU/1/07/391)",
+     "date": "2025-09-09"
+    },
+    "monitoring": {
+     "text": "If a woman becomes pregnant on lenalidomide, treatment must be stopped and she should be referred to a physician specialised or experienced in teratology for evaluation and advice.",
+     "quote": "If pregnancy occurs in a woman treated with lenalidomide, treatment must be stopped and the patient should be referred to a physician specialised or experienced in teratology for evaluation and advice.",
+     "source_label": "EMA product information, Revlimid (lenalidomide), SmPC section 4.6 (EN product information last updated 09/09/2025)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/revlimid-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000717 (EU/1/07/391)",
+     "date": "2025-09-09"
+    },
+    "evidence_base": {
+     "text": "The US label bases its pregnancy warning on lenalidomide's mechanism of action and on animal studies; the label's pregnancy data section presents animal data only.",
+     "quote": "Based on the mechanism of action [see Clinical Pharmacology (12.1) ] and findings from animal studies [see Data] , REVLIMID can cause embryo-fetal harm when administered to a pregnant female",
+     "source_label": "US FDA label, Revlimid (Celgene), section 8.1 Pregnancy, Risk Summary, read via openFDA (version 41, effective 2023-03-24)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%225fa97bf5-28a2-48f1-8955-f56012d296be%22&limit=1",
+     "id": "DailyMed set id 5fa97bf5-28a2-48f1-8955-f56012d296be, version 41",
      "date": "2023-03-24"
     }
    },
@@ -18431,6 +19067,52 @@
      "url": "https://pubmed.ncbi.nlm.nih.gov/31408173/",
      "id": "PMID 31408173; DOI 10.1210/jc.2019-01343",
      "date": "2019-12-01"
+    },
+    "before_after": {
+     "text": "Canada's methimazole monograph says women of childbearing potential should use effective contraception during methimazole therapy, and it gives no period after stopping and no pregnancy test.",
+     "quote": "Women of childbearing potential should use effective methods of contraception during methimazole therapy.",
+     "source_label": "Health Canada, TAPAZOLE (methimazole tablets) Product Monograph, section 7.1.1 Pregnant Women, revised 19 December 2025",
+     "source_type": "regulator",
+     "url": "https://pdf.hres.ca/dpd_pm/00082874.PDF",
+     "id": "Submission Control Number 301478",
+     "date": "2025-12-19"
+    },
+    "other_effects": {
+     "text": "Canada's monograph says methimazole readily crosses the placenta and can induce goitre and hypothyroidism in the developing fetus.",
+     "quote": "Methimazole readily crosses the placental membranes and can induce goiter and hypothyroidism in the developing fetus.",
+     "source_label": "Health Canada, TAPAZOLE (methimazole tablets) Product Monograph, section 7.1.1 Pregnant Women, revised 19 December 2025",
+     "source_type": "regulator",
+     "url": "https://pdf.hres.ca/dpd_pm/00082874.PDF",
+     "id": "Submission Control Number 301478",
+     "date": "2025-12-19"
+    },
+    "regulatory": {
+     "text": "French product information for thiamazole (Thyrozol) contraindicates treatment combining thiamazole with thyroid hormones during pregnancy, and its contraindications section lists no other pregnancy contraindication.",
+     "quote": "Un traitement associant le thiamazole et des hormones thyroïdiennes est contre-indiqué pendant la grossesse (voir rubrique 4.6).",
+     "source_label": "ANSM, base de données publique des médicaments, THYROZOL 10 mg (thiamazole) RCP section 4.3, page updated 11/04/2023",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/69969425/extrait",
+     "id": "CIS 69969425",
+     "date": "2023-04-11",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "Canada's monograph recommends close maternal, fetal and neonatal monitoring when methimazole is used in pregnancy, with the methimazole dose adjusted as necessary.",
+     "quote": "Close maternal, fetal, and neonatal monitoring is recommended, with adjustment of methimazole as necessary.",
+     "source_label": "Health Canada, TAPAZOLE (methimazole tablets) Product Monograph, section 7.1.1 Pregnant Women, revised 19 December 2025",
+     "source_type": "regulator",
+     "url": "https://pdf.hres.ca/dpd_pm/00082874.PDF",
+     "id": "Submission Control Number 301478",
+     "date": "2025-12-19"
+    },
+    "evidence_base": {
+     "text": "A 2022 systematic review and meta-analysis of 16 cohort studies counted 5,957 pregnancy exposures to carbimazole or methimazole, analysed together rather than drug by drug.",
+     "quote": "We identified 16 cohort studies comprising 5957, 15,785, and 15,666 exposures to CMZ/MMI, PTU, and untreated hyperthyroidism, respectively.",
+     "source_label": "Agrawal M et al. Antithyroid drug therapy in pregnancy and risk of congenital anomalies: systematic review and meta-analysis. Clin Endocrinol (Oxf) 2022;96(6):857-868 (abstract)",
+     "source_type": "systematic review",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34845757/",
+     "id": "PMID 34845757; DOI 10.1111/cen.14646",
+     "date": "2022-06"
     }
    },
    "names": {
@@ -18593,6 +19275,60 @@
      "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
      "id": "EMEA/H/C/003756",
      "date": "2026-07-16"
+    },
+    "before_after": {
+     "text": "The EU product information requires pregnancy to be excluded before use in non-cancer indications, and effective contraception in women of childbearing potential during treatment and for at least six months after.",
+     "quote": "In non-oncologic indications, the absence of pregnancy must be confirmed before Jylamvo is used. If women of child bearing potential are treated, effective contraception must be used during treatment and for at least six months after.",
+     "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.4 (Teratogenicity – Reproductive risk)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/003756",
+     "date": "2026-09-07"
+    },
+    "paternal": {
+     "text": "As a precaution, the EU product information recommends reliable contraception for sexually active treated men or their female partners until at least 3 months after stopping, and no semen donation until 3 months after.",
+     "quote": "recommended to use reliable contraception during treatment of the male patient and for at least 3 months after cessation of methotrexate. Men should not donate semen during therapy or for 3 months following discontinuation of methotrexate.",
+     "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6 (Contraception in males)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/003756",
+     "date": "2026-09-07"
+    },
+    "other_effects": {
+     "text": "The US label states that exposure in the second and third trimesters is associated with intrauterine growth restriction and functional abnormalities.",
+     "quote": "Adverse outcomes associated with exposure during second and third trimesters of pregnancy include intrauterine growth restriction and functional abnormalities.",
+     "source_label": "US FDA label, Trexall (methotrexate) tablets, section 8.1 Pregnancy (read via openFDA)",
+     "source_type": "regulator",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
+     "id": "DailyMed set id e942f8db-510f-44d6-acb5-b822196f5e8c",
+     "date": "2026-06-17"
+    },
+    "regulatory": {
+     "text": "The US label carries a boxed warning that methotrexate tablets can cause embryo-fetal toxicity, including fetal death, and contraindicates them in pregnancy for non-cancer diseases.",
+     "quote": "WARNING: EMBRYO-FETAL TOXICITY, HYPERSENSITIVITY REACTIONS, SEVERE ADVERSE REACTIONS, AND RISK OF MEDICATION ERRORS Methotrexate tablets can cause embryo-fetal toxicity, including fetal death. For non-neoplastic diseases, methotrexate tablets are contraindicated in pregnancy.",
+     "source_label": "US FDA label, Trexall (methotrexate) tablets, Boxed Warning (read via openFDA)",
+     "source_type": "regulator",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
+     "id": "DailyMed set id e942f8db-510f-44d6-acb5-b822196f5e8c",
+     "date": "2026-06-17"
+    },
+    "monitoring": {
+     "text": "If pregnancy occurs during treatment or up to six months after, the EU product information says to give medical advice on the risk to the child and to perform ultrasound examinations.",
+     "quote": "If pregnancy occurs during treatment with methotrexate and up to six months thereafter, medical advice should be given regarding the risk of harmful effects on the child associated with treatment and ultrasonography examinations should be performed",
+     "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6 (Pregnancy)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/003756",
+     "date": "2026-09-07"
+    },
+    "evidence_base": {
+     "text": "A prospective multicentre cohort study included 324 pregnancies exposed to methotrexate at 30 mg/week or less, 188 after conception and 136 in the 12 weeks before, plus 459 disease-matched and 1,107 non-autoimmune comparison women.",
+     "quote": "The study sample included 324 MTX-exposed pregnancies (188 exposed post-conception, 136 exposed pre-conception), 459 disease-matched comparison women, and 1,107 comparison women without autoimmune diseases.",
+     "source_label": "Weber-Schoendorfer C et al., Arthritis Rheumatol 2014;66(5):1101-10, prospective multicenter cohort (PubMed abstract)",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/24470106/",
+     "id": "PMID 24470106; DOI 10.1002/art.38368",
+     "date": "2014-05"
     }
    },
    "names": {
@@ -19922,6 +20658,52 @@
      "id": "CIS 69981979",
      "date": "2025-12-23",
      "quote_language": "fr"
+    },
+    "before_after": {
+     "text": "For NSAID-ulcer prevention, the US label requires a negative serum pregnancy test within 2 weeks before starting and effective contraception, and advises avoiding pregnancy for at least one month or one cycle after stopping.",
+     "quote": "It is also important to avoid pregnancy while taking this medication and for at least one month or through one menstrual cycle after you stop taking it.",
+     "source_label": "US FDA label, Cytotec (Pfizer), boxed warning and Patient Information leaflet",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22CYTOTEC%22&limit=1",
+     "id": "DailyMed set id 4ab12da7-5731-4e06-bf1c-bc3f2e711f12",
+     "date": "2026-06-04"
+    },
+    "other_effects": {
+     "text": "Beyond birth defects, the US label warns misoprostol in pregnancy can cause abortion, premature birth or uterine rupture, and, in obstetric use, fetal bradycardia and fetal death have been reported.",
+     "quote": "CYTOTEC (MISOPROSTOL) ADMINISTRATION TO WOMEN WHO ARE PREGNANT CAN CAUSE BIRTH DEFECTS, ABORTION, PREMATURE BIRTH OR UTERINE RUPTURE.",
+     "source_label": "US FDA label, Cytotec (Pfizer), boxed warning and Labor and delivery",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22CYTOTEC%22&limit=1",
+     "id": "DailyMed set id 4ab12da7-5731-4e06-bf1c-bc3f2e711f12",
+     "date": "2026-06-04"
+    },
+    "regulatory": {
+     "text": "The US label carries a boxed warning, contraindicates use by pregnant women to prevent NSAID ulcers, and allows use in women of childbearing potential only at high ulcer risk and under set conditions.",
+     "quote": "Cytotec should not be taken by pregnant women to reduce the risk of ulcers induced by nonsteroidal anti-inflammatory drugs (NSAIDs).",
+     "source_label": "US FDA label, Cytotec (Pfizer), boxed warning and Contraindications",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22CYTOTEC%22&limit=1",
+     "id": "DailyMed set id 4ab12da7-5731-4e06-bf1c-bc3f2e711f12",
+     "date": "2026-06-04"
+    },
+    "monitoring": {
+     "text": "ANSM says that if a woman continues the pregnancy after a failed abortion, a specialised centre should follow it with prenatal ultrasound paying particular attention to the limbs and head.",
+     "quote": "Si la patiente désire poursuivre sa grossesse, un suivi attentif de la grossesse avec échographie prénatale portant une attention particulière aux membres et à la tête, doit être mise en place dans un centre spécialisé.",
+     "source_label": "ANSM, RCP GYMISO 200 microgrammes comprimé (misoprostol), section 4.6, updated 23/12/2025",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=69981979&typedoc=R",
+     "id": "CIS 69981979",
+     "date": "2025-12-23",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A 2006 meta-analysis of misoprostol and birth defects pooled four case-control studies with 4,899 cases of congenital anomalies and 5,742 controls.",
+     "quote": "Four studies involving 4899 cases of congenital anomalies and 5742 controls were included in accordance with the selection criteria.",
+     "source_label": "da Silva Dal Pizzol T, Knop FP, Mengue SS. Prenatal exposure to misoprostol and congenital anomalies: systematic review and meta-analysis. Reprod Toxicol 2006;22(4):666-71",
+     "source_type": "systematic review",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16750609/",
+     "id": "PMID 16750609",
+     "date": "2006-11"
     }
    },
    "names": {
@@ -20181,6 +20963,60 @@
      "url": "https://www.ema.europa.eu/en/news/ema-recommends-additional-measures-prevent-use-mycophenolate-pregnancy",
      "id": "EMA/680077/2015",
      "date": "2015-10-23"
+    },
+    "before_after": {
+     "text": "Women who can become pregnant must use at least one reliable contraceptive method before starting mycophenolate, during treatment and for six weeks after stopping, unless they choose abstinence.",
+     "quote": "women of childbearing potential must use at least one form of reliable contraception (see section 4.3) before starting the therapy, during therapy, and for six weeks after stopping the therapy, unless abstinence is the chosen method of contraception.",
+     "source_label": "EMA product information, CellCept (mycophenolate mofetil), SmPC section 4.6 Fertility, pregnancy and lactation (EN product information last updated 07/05/2026)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000082 (EU/1/96/005)",
+     "date": "2026-05-07"
+    },
+    "paternal": {
+     "text": "As a precaution, a sexually active man taking mycophenolate or his female partner is recommended to use reliable contraception during his treatment and for at least 90 days after he stops.",
+     "quote": "Therefore, the following precautionary measures are recommended: sexually active male patients or their female partners are recommended to use reliable contraception during treatment of the male patient and for at least 90 days after cessation of mycophenolate mofetil.",
+     "source_label": "EMA product information, CellCept (mycophenolate mofetil), SmPC section 4.6, subsection Men (EN product information last updated 07/05/2026)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000082 (EU/1/96/005)",
+     "date": "2026-05-07"
+    },
+    "other_effects": {
+     "text": "Beyond malformations, spontaneous abortion has been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, against 12 to 33% in solid organ transplant patients on other immunosuppressants.",
+     "quote": "Spontaneous abortions have been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, compared to a reported rate of between 12 and 33% in solid organ transplant patients treated with immunosuppressants other than mycophenolate mofetil.",
+     "source_label": "EMA product information, CellCept (mycophenolate mofetil), SmPC section 4.6, subsection Pregnancy (EN product information last updated 07/05/2026)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000082 (EU/1/96/005)",
+     "date": "2026-05-07"
+    },
+    "regulatory": {
+     "text": "The EU product information contraindicates mycophenolate in pregnancy unless there is no suitable alternative treatment to prevent transplant rejection.",
+     "quote": "Therefore, treatment is contraindicated in pregnancy unless there are no suitable alternative treatments to prevent transplant rejection.",
+     "source_label": "EMA product information, CellCept (mycophenolate mofetil), SmPC section 4.4, subsection Teratogenic effects (EN product information last updated 07/05/2026)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000082 (EU/1/96/005)",
+     "date": "2026-05-07"
+    },
+    "monitoring": {
+     "text": "If pregnancy occurs or is suspected during or shortly after treatment, the patient should not stop taking mycophenolate but must contact their doctor immediately.",
+     "quote": "Advice on action if a pregnancy occurs or is suspected during or shortly after being treated with mycophenolate mofetil. Patients will be informed that they should not stop taking mycophenolate mofetil but must contact their doctor immediately.",
+     "source_label": "EMA product information, CellCept (mycophenolate mofetil), Annex II.D, key elements of the educational materials (EN product information last updated 07/05/2026)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
+     "id": "EMEA/H/C/000082 (EU/1/96/005)",
+     "date": "2026-05-07"
+    },
+    "evidence_base": {
+     "text": "A US transplant registry cohort covered 382 pregnancies in kidney recipients managed on mycophenolate, grouped by when each woman stopped it, some before conception, so not all were exposed in pregnancy.",
+     "quote": "Data from the National Transplantation Pregnancy Registry included 382 cases in which KTRs managed on MPA became pregnant. Overall, 22 variables, including the time in which a KTR discontinued MPA, were assessed",
+     "source_label": "King RW et al., Pregnancy Outcomes Related to Mycophenolate Exposure in Female Kidney Transplant Recipients, Am J Transplant 2017;17(1):151-160, abstract (retrospective cohort, US National Transplantation Pregnancy Registry)",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/27321569/",
+     "id": "PMID 27321569; doi:10.1111/ajt.13928",
+     "date": "2017-01"
     }
    },
    "names": {
@@ -22953,6 +23789,51 @@
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
      "id": "PMID 28329059",
      "date": "2017-05-14"
+    },
+    "before_after": {
+     "text": "The UK label says women of child-bearing age treated with phenindione should be cautioned about possible pregnancy complications; it sets no contraception duration, washout period or pregnancy test.",
+     "quote": "Women of child-bearing age who are treated with Dindevan should be cautioned about the possible complications of pregnancy.",
+     "source_label": "UK Summary of Product Characteristics, Dindevan 25mg Tablets / Phenindione 25mg Tablets (Mercury Pharma Group / ADVANZ Pharma), section 4.6, date of revision 19/02/2024, on emc",
+     "source_type": "regulator",
+     "url": "https://www.medicines.org.uk/emc/product/5677/smpc",
+     "id": "PL 10972/0038",
+     "date": "2024-02-19"
+    },
+    "other_effects": {
+     "text": "In women with mechanical heart valves, a meta-analysis counting phenindione among vitamin K antagonists found a 1.4% fetopathy risk (central nervous system or eye abnormalities) from second- and third-trimester exposure after first-trimester heparin.",
+     "quote": "Also, although sequential treatment eliminates the risk of anticoagulant-related embryopathy, the risk of anticoagulant-related foetopathy from second- and third-trimester exposure is 1.4%.",
+     "source_label": "D'Souza R et al. Anticoagulation for pregnant women with mechanical heart valves: a systematic review and meta-analysis. Eur Heart J 2017;38(19):1509-1516, open-access full text, Discussion",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
+     "id": "PMID 28329059; DOI 10.1093/eurheartj/ehx032",
+     "date": "2017-05-14"
+    },
+    "regulatory": {
+     "text": "The UK phenindione label contraindicates oral anticoagulant therapy in pregnancy because of possible teratogenicity and the risk of fetal haemorrhage near term.",
+     "quote": "Oral anticoagulant therapy is contraindicated in pregnancy because of possible teratogenicity and the risk of foetal haemorrhage near term.",
+     "source_label": "UK Summary of Product Characteristics, Dindevan 25mg Tablets / Phenindione 25mg Tablets (Mercury Pharma Group / ADVANZ Pharma), sections 4.3 and 4.6, date of revision 19/02/2024, on emc",
+     "source_type": "regulator",
+     "url": "https://www.medicines.org.uk/emc/product/5677/smpc",
+     "id": "PL 10972/0038",
+     "date": "2024-02-19"
+    },
+    "monitoring": {
+     "text": "An ENTIS multicentre cohort study recommends close obstetric follow-up, including a level II (detailed) ultrasound scan, after any vitamin K antagonist exposure during pregnancy, a class that includes phenindione.",
+     "quote": "Close follow-up by the obstetrician including level II ultrasound should be recommended in any case of VKA exposure during pregnancy.",
+     "source_label": "Schaefer C et al. Vitamin K antagonists and pregnancy outcome. A multi-centre prospective study (ENTIS, 12 centres). Thromb Haemost 2006;95(6):949-57, PubMed abstract",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16732373/",
+     "id": "PMID 16732373; DOI 10.1160/TH06-02-0108",
+     "date": "2006-06"
+    },
+    "evidence_base": {
+     "text": "An ENTIS multicentre prospective study compared 666 pregnant women exposed to vitamin K antagonists, including 2 exposed to phenindione, with a non-exposed control group of 1,094 women.",
+     "quote": "we compared 666 pregnant women exposed to phenprocoumon (n = 280), acenocoumarol (n = 226), fluindione (n = 99), warfarin (n = 63) and phenindione (n = 2) to a non-exposed control group (n = 1,094).",
+     "source_label": "Schaefer C et al. Vitamin K antagonists and pregnancy outcome. A multi-centre prospective study (ENTIS, 12 centres). Thromb Haemost 2006;95(6):949-57, PubMed abstract",
+     "source_type": "registry or cohort",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16732373/",
+     "id": "PMID 16732373; DOI 10.1160/TH06-02-0108",
+     "date": "2006-06"
     }
    },
    "names": {
@@ -23033,6 +23914,52 @@
      "text": "The UK regulator states that most studies support malformations in 5 to 6 in 100 children exposed to phenobarbital alone, against 2 to 3 in 100 in the general population.",
      "quote": "most individual studies support that 5-6% of children exposed to phenobarbital monotherapy during pregnancy suffer from congenital malformations. This risk is increased compared with children of mothers who were not exposed to antiepileptics during pregnancy (2-3% in general population)",
      "source_label": "MHRA UK Public Assessment Report, Antiepileptic drugs: review of safety of use during pregnancy (Key findings for phenobarbital)",
+     "source_type": "regulator",
+     "url": "https://assets.publishing.service.gov.uk/media/5ff5bc82d3bf7f65d550563c/AED-PAR-PDF-FINAL-Jan21.pdf",
+     "date": "2021-01"
+    },
+    "before_after": {
+     "text": "The French label says women of childbearing potential must use effective contraception during phenobarbital treatment and for 2 months after the last dose, and a pregnancy test should be considered before starting.",
+     "quote": "Les femmes en âge de procréer doivent utiliser une contraception efficace pendant le traitement et pendant 2 mois après la dernière prise.",
+     "source_label": "ANSM, RCP GARDENAL 100 mg comprimé (phénobarbital), sections 4.4 and 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61475588/extrait#tab-rcp",
+     "id": "CIS 61475588",
+     "date": "2024-07-02",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "The UK regulator concluded that, although human studies are inconsistent, the data taken with animal (non-clinical) studies support possible adverse effects of phenobarbital on the child's neurodevelopment.",
+     "quote": "for phenobarbital and phenytoin, although the clinical studies report inconsistent findings, considering these alongside the non-clinical studies which demonstrate a possible effect, the totality of the data support the possibility of adverse effects on neurodevelopment",
+     "source_label": "MHRA UK Public Assessment Report, Antiepileptic drugs: review of safety of use during pregnancy (Key conclusions)",
+     "source_type": "regulator",
+     "url": "https://assets.publishing.service.gov.uk/media/5ff5bc82d3bf7f65d550563c/AED-PAR-PDF-FINAL-Jan21.pdf",
+     "date": "2021-01"
+    },
+    "regulatory": {
+     "text": "The French label says phenobarbital must not be used in women of childbearing potential unless the potential benefit is judged to outweigh the risks after other suitable treatment options are assessed.",
+     "quote": "Le phénobarbital ne doit pas être utilisé chez les femmes en âge de procréer à moins que le bénéfice potentiel ne soit jugé supérieur aux risques après évaluation des autres options thérapeutiques appropriées.",
+     "source_label": "ANSM, RCP GARDENAL 100 mg comprimé (phénobarbital), section 4.4",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61475588/extrait#tab-rcp",
+     "id": "CIS 61475588",
+     "date": "2024-07-02",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "When phenobarbital is used in pregnancy, the French label requires specialised prenatal monitoring aimed at the malformations it describes, such as clefts and heart defects.",
+     "quote": "Une surveillance prénatale spécialisée orientée sur les malformations décrites ci-dessus doit être instaurée.",
+     "source_label": "ANSM, RCP GARDENAL 100 mg comprimé (phénobarbital), section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/61475588/extrait#tab-rcp",
+     "id": "CIS 61475588",
+     "date": "2024-07-02",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "On congenital malformations, the UK regulator's review drew on three meta-analyses and other epidemiological studies involving around 1,800 phenobarbital-exposed pregnancies, including 600 exposed in the first trimester.",
+     "quote": "These clinical studies, involving around 1800 pregnancies exposed to phenobarbital (including 600 pregnancies exposed in the first trimester), show an increased risk of major congenital malformations following phenobarbital exposure",
+     "source_label": "MHRA UK Public Assessment Report, Antiepileptic drugs: review of safety of use during pregnancy (section 3.6 Phenobarbital, Congenital malformations)",
      "source_type": "regulator",
      "url": "https://assets.publishing.service.gov.uk/media/5ff5bc82d3bf7f65d550563c/AED-PAR-PDF-FINAL-Jan21.pdf",
      "date": "2021-01"
@@ -23814,6 +24741,64 @@
      "text": "A Cochrane review found malformations in 7.9% of primidone-exposed children in pooled cohort data (95% CI 2.6% to 21.5%), but calls this evidence, from 112 pregnancies, extremely limited and urges caution.",
      "quote": "Evidence pertaining to PRM was extremely limited to 112 pregnancies and caution is warranted when interpreting results. Pooled data from included cohort studies gave a malformation prevalence of 7.9% (95% CI 2.6 to 21.5%).",
      "source_label": "Bromley et al., Cochrane Database Syst Rev 2023;8:CD010224 (Monotherapy treatment of epilepsy in pregnancy), Discussion",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
+     "id": "PMID 37647086",
+     "date": "2023-08-29"
+    },
+    "before_after": {
+     "text": "The French label says women of childbearing potential must use highly effective contraception during primidone treatment and for 2 months after the last dose, and a pregnancy test should be considered before starting.",
+     "quote": "Les femmes en âge de procréer doivent utiliser une méthode contraceptive hautement efficace pendant le traitement et pendant 2 mois après la dernière prise.",
+     "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), sections 4.4 and 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+     "id": "CIS 65201684",
+     "date": "2026-08-26",
+     "quote_language": "fr"
+    },
+    "paternal": {
+     "text": "The French patient leaflet tells men and women of childbearing age to use effective contraception during treatment and until 2 months after stopping, although the prescriber's summary addresses contraception for women only.",
+     "quote": "Si vous êtes un homme ou une femme en âge d’avoir des enfants, sous devez utiliser une contraception efficace pendant et jusqu’à 2 mois après l’arrêt du traitement.",
+     "source_label": "ANSM, Notice MYSOLINE 250 mg comprimé sécable (primidone), section 2, Avertissements et précautions",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-notice",
+     "id": "CIS 65201684",
+     "date": "2026-08-26",
+     "quote_language": "fr"
+    },
+    "other_effects": {
+     "text": "The French primidone label says studies of neurodevelopmental disorders in children exposed in pregnancy to phenobarbital, primidone's main metabolite, are contradictory and a risk cannot be excluded.",
+     "quote": "Les études relatives au risque de troubles du développement neurologique chez les enfants exposés au phénobarbital pendant la grossesse sont contradictoires, et un risque ne peut être exclu.",
+     "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), section 4.6",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+     "id": "CIS 65201684",
+     "date": "2026-08-26",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "The French label says primidone must not be used in women of childbearing potential or pregnant women unless the potential benefit is judged to outweigh the risks after other suitable options are assessed.",
+     "quote": "La primidone ne doit pas être utilisée chez les femmes en âge de procréer et les femmes enceintes, sauf si le bénéfice potentiel est jugé supérieur aux risques, après évaluation des autres options thérapeutiques appropriées.",
+     "source_label": "ANSM, RCP MYSOLINE 250 mg comprimé sécable (primidone), section 4.4",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/65201684/extrait#tab-rcp",
+     "id": "CIS 65201684",
+     "date": "2026-08-26",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "The US Mysoline label says pregnant women on anticonvulsant therapy, including primidone, should receive prophylactic vitamin K1 for 1 month before, and during, delivery.",
+     "quote": "Pregnant women under anticonvulsant therapy should receive prophylactic vitamin K1 therapy for 1 month prior to, and during, delivery.",
+     "source_label": "US FDA label, MYSOLINE (primidone) tablets, NDA009170, Warnings: Pregnancy (openFDA, effective 2026-09-10)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%22af593171-dabb-4ea3-b44c-89ed457b2c46%22&limit=1",
+     "id": "NDA009170",
+     "date": "2026-09-10"
+    },
+    "evidence_base": {
+     "text": "A Cochrane systematic review found data on only 112 primidone-exposed children, from seven cohort studies, with 7.9% major malformations (95% CI 2.6% to 21.5%).",
+     "quote": "The prevalence of major malformations (any type) in cohort studies for children exposed to primidone (PRM) (N = 112), based on data from seven studies, was 7.9% (95% CI 2.6 to 21.5)",
+     "source_label": "Bromley et al., Cochrane Database Syst Rev 2023;8:CD010224 (Monotherapy treatment of epilepsy in pregnancy), Results: Primidone",
      "source_type": "systematic review",
      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
      "id": "PMID 37647086",
@@ -26411,6 +27396,60 @@
      "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
      "id": "EU/1/08/443 (EMEA/H/C/000823)",
      "date": "2025-01-22"
+    },
+    "before_after": {
+     "text": "EU labelling requires women of childbearing potential to use one effective contraceptive from at least 4 weeks before to at least 4 weeks after treatment, interruptions included, unless committed to absolute, continuous, monthly-confirmed abstinence.",
+     "quote": "method of contraception for at least 4 weeks before start of treatment, during treatment, and until at least 4 weeks after thalidomide treatment and even in case of dose interruption unless the patient commits to absolute and continuous abstinence",
+     "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.4 (Pregnancy Prevention Programme, Contraception)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+     "id": "EU/1/08/443 (EMEA/H/C/000823)",
+     "date": "2025-01-22"
+    },
+    "paternal": {
+     "text": "As a precaution, EU labelling requires men to use condoms during treatment, dose interruptions and for at least 7 days after stopping if their partner is pregnant, or could become pregnant without effective contraception.",
+     "quote": "as a precaution all male patients must use condoms during treatment, during dose interruption and for at least 7 days following discontinuation of treatment if their partner is pregnant or is of childbearing potential not using effective contraception.",
+     "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.4 (Men)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+     "id": "EU/1/08/443 (EMEA/H/C/000823)",
+     "date": "2025-01-22"
+    },
+    "other_effects": {
+     "text": "The US label reports death at or shortly after birth in about 40% of infants, without saying which infants were counted.",
+     "quote": "Mortality at or shortly after birth has been reported in about 40% of infants.",
+     "source_label": "US FDA label, THALOMID (Celgene), section 5.1 Embryo-Fetal Toxicity, via openFDA (SPL version 25)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%222eda833b-1357-4ed4-a093-194524fcb061%22&limit=1",
+     "id": "2eda833b-1357-4ed4-a093-194524fcb061",
+     "date": "2023-03-24"
+    },
+    "regulatory": {
+     "text": "The EU label contraindicates thalidomide in pregnancy, and in women who could become pregnant unless every condition of its Pregnancy Prevention Programme is met.",
+     "quote": "Thalidomide is contraindicated during pregnancy and in women of childbearing potential unless all the conditions of the Pregnancy Prevention Programme are met",
+     "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.6 (see also section 4.3)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+     "id": "EU/1/08/443 (EMEA/H/C/000823)",
+     "date": "2025-01-22"
+    },
+    "monitoring": {
+     "text": "If pregnancy occurs, the EU label says thalidomide must be stopped immediately and the patient should be referred to a physician specialised or experienced in teratology for evaluation and advice.",
+     "quote": "If pregnancy occurs in a woman treated with thalidomide, treatment must be stopped immediately and the patient should be referred to a physician specialised or experienced in teratology for evaluation and advice.",
+     "source_label": "EMA SmPC, Thalidomide BMS 50 mg hard capsules, section 4.6",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/product-information/thalidomide-bms-epar-product-information_en.pdf",
+     "id": "EU/1/08/443 (EMEA/H/C/000823)",
+     "date": "2025-01-22"
+    },
+    "evidence_base": {
+     "text": "The US label gives no count of exposed pregnancies and names oral ingestion as the only maternal exposure known to cause birth defects, with no specific data on risks of skin absorption or inhalation.",
+     "quote": "Oral ingestion is the only type of maternal THALOMID exposure known to result in drug-associated birth defects. There are no specific data available regarding the reproductive risks of cutaneous absorption or inhalation of THALOMID",
+     "source_label": "US FDA label, THALOMID (Celgene), section 5.1 Embryo-Fetal Toxicity, via openFDA (SPL version 25)",
+     "source_type": "regulator",
+     "url": "https://api.fda.gov/drug/label.json?search=set_id:%222eda833b-1357-4ed4-a093-194524fcb061%22&limit=1",
+     "id": "2eda833b-1357-4ed4-a093-194524fcb061",
+     "date": "2023-03-24"
     }
    },
    "names": {
@@ -27025,6 +28064,49 @@
      "source_type": "regulator",
      "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
      "date": "2023-10-11"
+    },
+    "before_after": {
+     "text": "For women who can become pregnant, the UK regulator requires a negative pregnancy test before starting and highly effective contraception throughout treatment and for at least 4 weeks after the last dose.",
+     "quote": "discuss with them the need to use highly effective contraception throughout treatment and for at least four weeks after the last dose of topiramate",
+     "source_label": "MHRA Drug Safety Update vol. 17 issue 11, Topiramate (Topamax): introduction of new safety measures, including a Pregnancy Prevention Programme (Advice for prescribers)",
+     "source_type": "regulator",
+     "url": "https://www.gov.uk/drug-safety-update/topiramate-topamax-introduction-of-new-safety-measures-including-a-pregnancy-prevention-programme",
+     "date": "2024-06-20"
+    },
+    "other_effects": {
+     "text": "Beyond malformations, EMA says topiramate can cause foetal growth restriction, and some data suggest a higher risk of neurodevelopmental disorders while other data do not.",
+     "quote": "Some data suggest an increased risk of neurodevelopmental disorders in children exposed to topiramate in utero, while other data do not suggest such an increased risk",
+     "source_label": "EMA, topiramate Article 31 referral (EMEA/H/A-31/1520), Annex III: agreed product-information wording, CMDh position (SmPC section 4.4)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
+     "date": "2023-10-11"
+    },
+    "regulatory": {
+     "text": "ANSM contraindicates topiramate in pregnancy and in women who could conceive without highly effective contraception, with two epilepsy-only exceptions; dispensing to them, pregnant women and girls requires an annual co-signed attestation.",
+     "quote": "Médicament nécessitant une surveillance particulière pendant le traitement : la prescription initiale annuelle nécessite la signature par le médecin et la patiente de l’attestation d’information partagée. La délivrance nécessite la présentation de l’attestation annuelle co-signée.",
+     "source_label": "ANSM, RCP EPITOMAX 100 mg comprimé pelliculé (topiramate), sections 4.3 and 4.6 and Conditions de prescription et de délivrance, updated 18/09/2025",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/affichageDoc.php?specid=61913385&typedoc=R",
+     "id": "CIS 61913385",
+     "date": "2025-09-18",
+     "quote_language": "fr"
+    },
+    "monitoring": {
+     "text": "For epilepsy, EMA says that if topiramate is used in pregnancy, the woman should be referred to a specialist for evaluation and counselling, with careful prenatal monitoring.",
+     "quote": "If topiramate is used during pregnancy, the patient should be referred to a specialist for evaluation and counselling regarding the exposed pregnancy. Careful prenatal monitoring should be performed.",
+     "source_label": "EMA, topiramate Article 31 referral (EMEA/H/A-31/1520), Annex III: agreed product-information wording, CMDh position (SmPC section 4.6, indication epilepsy)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/documents/referral/topiramate-article-31-referral-annex-iii_en.pdf",
+     "date": "2023-10-11"
+    },
+    "evidence_base": {
+     "text": "A 2023 Cochrane review pooled 510 topiramate-exposed children from eight cohort studies and found major malformations in 3.9% of them.",
+     "quote": "The prevalence of major malformations (any type) in cohort studies for children exposed to topiramate (TPM) (N = 510), based on data from eight studies, was 3.9% (95% CI 2.3 to 6.5).",
+     "source_label": "Bromley R et al., Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child, Cochrane Database Syst Rev 2023;8:CD010224",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
+     "id": "PMC10463554",
+     "date": "2023-08-29"
     }
    },
    "names": {
@@ -27799,6 +28881,63 @@
      "url": "https://www.ema.europa.eu/en/documents/referral/valproate-article-31-referral-annex-iii_en.pdf",
      "id": "EMEA/H/A-31/1454",
      "date": "2018-06-07"
+    },
+    "before_after": {
+     "text": "For women able to have children, French product information requires a negative pregnancy test before starting and at regular intervals, uninterrupted effective contraception, and, if pregnancy is planned, every effort to switch before conception.",
+     "quote": "qu’elles ne soient pas enceintes (test de grossesse plasmatique d’une sensibilité d’au moins 25 mUI/ml négatif à l’instauration du traitement et à intervalles réguliers pendant le traitement)",
+     "source_label": "ANSM, Depakine 500 mg comprimé gastro-résistant, RCP sections 4.4 and 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60184188/extrait",
+     "id": "CIS 60184188",
+     "date": "2026-09-24",
+     "quote_language": "fr"
+    },
+    "paternal": {
+     "text": "As a precaution against a possible neurodevelopmental risk to children, the MHRA advises men to use condoms plus partner contraception, and not to donate sperm, during valproate treatment and for 3 months after stopping.",
+     "quote": "as a precaution, recommend that male patients use effective contraception (condoms, plus contraception used by the female sexual partner) throughout the valproate treatment period and for 3 months after stopping valproate",
+     "source_label": "MHRA Drug Safety Update, 'Valproate use in men: as a precaution, men and their partners should use effective contraception'",
+     "source_type": "regulator",
+     "url": "https://www.gov.uk/drug-safety-update/valproate-use-in-men-as-a-precaution-men-and-their-partners-should-use-effective-contraception",
+     "id": "Drug Safety Update volume 18, issue 2, September 2024",
+     "date": "2024-09-05"
+    },
+    "other_effects": {
+     "text": "French product information says studies show up to 30 to 40% of preschool children exposed in utero to valproate monotherapy have early developmental delays, such as late speech and walking.",
+     "quote": "Lorsque le valproate est administré en monothérapie, les études menées chez des enfants d'âge préscolaire exposés in utero au valproate montrent que jusqu'à 30 à 40 % d'entre eux présentent des retards de développement dans la petite enfance",
+     "source_label": "ANSM, Depakine 500 mg comprimé gastro-résistant, RCP section 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60184188/extrait",
+     "id": "CIS 60184188",
+     "date": "2026-09-24",
+     "quote_language": "fr"
+    },
+    "regulatory": {
+     "text": "Since a 2018 EU-wide decision, valproate is contraindicated in girls and women able to have children unless a pregnancy prevention programme is followed, and in pregnancy unless, for epilepsy, no other effective treatment exists.",
+     "quote": "Valproate medicines are now therefore contraindicated, i.e. must not be used, in girls and women able to have children unless the terms of a special pregnancy prevention programme are followed.",
+     "source_label": "EMA, valproate and related substances Article 31 referral EMEA/H/A-31/1454, referral page (overview and information for patients and healthcare professionals)",
+     "source_type": "regulator",
+     "url": "https://www.ema.europa.eu/en/medicines/human/referrals/valproate-related-substances-0",
+     "id": "EMEA/H/A-31/1454",
+     "date": "2018-05-31"
+    },
+    "monitoring": {
+     "text": "For exposed pregnancies, French product information requires specialised prenatal monitoring for neural tube and other defects, maternal and newborn clotting tests around birth, and close follow-up of the child's neurodevelopment.",
+     "quote": "une surveillance prénatale spécialisée doit être instaurée en vue de détecter d’éventuelles anomalies touchant le tube neural ou d’autres malformations",
+     "source_label": "ANSM, Depakine 500 mg comprimé gastro-résistant, RCP section 4.6 (base de données publique des médicaments)",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/60184188/extrait",
+     "id": "CIS 60184188",
+     "date": "2026-09-24",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A 2023 Cochrane systematic review pooled 3,018 valproate-exposed children from 31 cohort studies and 1,364 from six health-record studies, all observational, finding major malformations in 9.8% and 9.7%.",
+     "quote": "The prevalence of major malformations (any type) in cohort studies for children exposed to valproate (VPA) (N = 3018), based on data from 31 studies, was 9.8% (95% CI 8.1 to 11.9).",
+     "source_label": "Bromley et al., Monotherapy treatment of epilepsy in pregnancy: congenital malformation outcomes in the child, Cochrane Database Syst Rev 2023, Results (valproate)",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10463554/",
+     "id": "Cochrane CD010224.pub3; PMID 37647086; PMCID PMC10463554",
+     "date": "2023-08-29"
     }
    },
    "names": {
@@ -28333,6 +29472,52 @@
      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
      "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
      "date": "2025-06-17"
+    },
+    "before_after": {
+     "text": "The US label asks prescribers to verify pregnancy status before starting warfarin and to advise effective contraception during treatment and for at least 1 month after the last dose.",
+     "quote": "Advise females of reproductive potential to use effective contraception during treatment and for at least 1 month after the final dose of warfarin sodium.",
+     "source_label": "US FDA label, Warfarin Sodium tablets (Teva), section 8.3 Females and Males of Reproductive Potential, effective 2025-06-17",
+     "source_type": "regulator",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "date": "2025-06-17"
+    },
+    "other_effects": {
+     "text": "The US label states that intellectual disability ('mental retardation'), blindness, schizencephaly, microcephaly, hydrocephalus and other adverse outcomes have been reported after warfarin exposure in the second and third trimesters.",
+     "quote": "Mental retardation, blindness, schizencephaly, microcephaly, hydrocephalus, and other adverse pregnancy outcomes have been reported following warfarin exposure during the second and third trimesters of pregnancy",
+     "source_label": "US FDA label, Warfarin Sodium tablets (Teva), section 8.1 Pregnancy, Fetal/Neonatal Adverse Reactions, effective 2025-06-17",
+     "source_type": "regulator",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "date": "2025-06-17"
+    },
+    "regulatory": {
+     "text": "The US label contraindicates warfarin in pregnancy except for women with mechanical heart valves at high risk of thromboembolism; its boxed warning concerns bleeding, not pregnancy.",
+     "quote": "Warfarin sodium is contraindicated in women who are pregnant except in pregnant women with mechanical heart valves, who are at high risk of thromboembolism",
+     "source_label": "US FDA label, Warfarin Sodium tablets (Teva), section 4 Contraindications (boxed warning: bleeding risk), effective 2025-06-17",
+     "source_type": "regulator",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "id": "DailyMed set id 0cbce382-9c88-4f58-ae0f-532a841e8f95",
+     "date": "2025-06-17"
+    },
+    "monitoring": {
+     "text": "If Coumadine is used in pregnancy or pregnancy is discovered on treatment, the French label requires specialised prenatal diagnosis by ultrasound, or even MRI, adapted to the period of exposure.",
+     "quote": "la patiente doit être pleinement informée des risques pour le fœtus et un diagnostic prénatal spécialisé (échographique voire IRM) adapté en fonction de la période d'exposition doit être instauré",
+     "source_label": "ANSM, Résumé des Caractéristiques du Produit, COUMADINE 5 mg (warfarine), section 4.6, updated 01/12/2022",
+     "source_type": "regulator",
+     "url": "https://base-donnees-publique.medicaments.gouv.fr/medicament/63245753/extrait",
+     "id": "CIS 63245753",
+     "date": "2022-12-01",
+     "quote_language": "fr"
+    },
+    "evidence_base": {
+     "text": "A 2017 meta-analysis found no randomised trials; 30 non-randomised studies (1,373 pregnancies) used vitamin K antagonists throughout pregnancy in women with mechanical heart valves, all at moderate or high risk of bias.",
+     "quote": "Of the 30 studies (1373 pregnancies) that reported the use of VKAs throughout pregnancy, 11 (581 pregnancies) used a standard INR target of 2.5–3.5",
+     "source_label": "D'Souza et al., Anticoagulation for pregnant women with mechanical heart valves: a systematic review and meta-analysis, Eur Heart J 2017;38(19):1509-1516 (Results)",
+     "source_type": "systematic review",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5429939/",
+     "id": "PMID 28329059; DOI 10.1093/eurheartj/ehx032",
+     "date": "2017-05-14"
     }
    },
    "names": {

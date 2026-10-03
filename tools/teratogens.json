@@ -364,7 +364,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AB01).",
+   "exposure_why": "Taken as a medicine (ATC L01AB01).",
    "names": {
     "inn": [
      "busulfan"
@@ -513,7 +513,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD02).",
+   "exposure_why": "Taken as a medicine (ATC L01AD02).",
    "names": {
     "inn": [
      "lomustine"
@@ -1237,7 +1237,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "abiraterone"
@@ -1412,7 +1412,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -1689,7 +1689,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC01).",
+   "exposure_why": "Taken as a medicine (ATC S01EC01).",
    "names": {
     "inn": [
      "acetazolamide"
@@ -1835,7 +1835,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G04BX03).",
+   "exposure_why": "Taken as a medicine (ATC G04BX03).",
    "names": {
     "inn": [
      "acetohydroxamic acid"
@@ -1927,7 +1927,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -2184,7 +2184,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DA01).",
+   "exposure_why": "Taken as a medicine (ATC L01DA01).",
    "names": {
     "inn": [
      "actinomycin D"
@@ -2381,7 +2381,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -2661,7 +2661,7 @@
      "basis": "The Philippine FDA warns that tretinoin in such creams may harm the developing fetus."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -3060,7 +3060,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA12).",
+   "exposure_why": "Taken as a medicine (ATC N05BA12).",
    "names": {
     "inn": [
      "alprazolam"
@@ -3226,7 +3226,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX03).",
+   "exposure_why": "Taken as a medicine (ATC L01XX03).",
    "names": {
     "inn": [
      "altretamine"
@@ -3362,7 +3362,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "amantadine"
@@ -3523,7 +3523,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -3778,7 +3778,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BG01).",
+   "exposure_why": "Taken as a medicine (ATC L02BG01).",
    "names": {
     "inn": [
      "aminoglutethimide"
@@ -3923,7 +3923,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -4574,7 +4574,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human",
@@ -4699,7 +4699,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -4953,7 +4953,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N06AA17).",
+   "exposure_why": "Taken as a medicine (ATC N06AA17).",
    "names": {
     "inn": [
      "amoxapine"
@@ -5104,7 +5104,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -5923,7 +5923,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "anisindione"
@@ -6218,7 +6218,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "acetylsalicylic acid"
@@ -6601,7 +6601,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C07AB03).",
+   "exposure_why": "Taken as a medicine (ATC C07AB03).",
    "names": {
     "inn": [
      "atenolol"
@@ -6797,7 +6797,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CB03).",
+   "exposure_why": "Taken as a medicine (ATC M01CB03).",
    "names": {
     "inn": [
      "auranofin"
@@ -6963,7 +6963,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX01).",
+   "exposure_why": "Taken as a medicine (ATC L04AX01).",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -7250,7 +7250,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "allobarbital",
@@ -7736,7 +7736,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A07EA07, D07AC15).",
+   "exposure_why": "Taken as a medicine (ATC A07EA07, D07AC15).",
    "names": {
     "inn": [
      "beclometasone"
@@ -8360,7 +8360,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "alprazolam",
@@ -9334,7 +9334,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "benzfetamine"
@@ -9457,7 +9457,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC07).",
+   "exposure_why": "Taken as a medicine (ATC L01XC07).",
    "names": {
     "inn": [
      "bevacizumab"
@@ -9645,7 +9645,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "animal only",
@@ -9918,7 +9918,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD01).",
+   "exposure_why": "Taken as a medicine (ATC L01AD01).",
    "names": {
     "inn": [
      "carmustine"
@@ -10158,7 +10158,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "secbutabarbital"
@@ -10545,7 +10545,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AF01).",
+   "exposure_why": "Taken as a medicine (ATC N03AF01).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -10768,7 +10768,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -11326,7 +11326,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XA02).",
+   "exposure_why": "Taken as a medicine (ATC L01XA02).",
    "names": {
     "inn": [
      "carboplatin"
@@ -11454,7 +11454,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A05AA01).",
+   "exposure_why": "Taken as a medicine (ATC A05AA01).",
    "names": {
     "inn": [
      "chenodeoxycholic acid"
@@ -11643,7 +11643,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA02).",
+   "exposure_why": "Taken as a medicine (ATC L01AA02).",
    "names": {
     "inn": [
      "chlorambucil"
@@ -11743,7 +11743,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "chlorcyclizine"
@@ -12084,7 +12084,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA02).",
+   "exposure_why": "Taken as a medicine (ATC N05BA02).",
    "names": {
     "inn": [
      "chlordiazepoxide"
@@ -12257,7 +12257,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "chlordiazepoxide"
@@ -12905,7 +12905,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB12).",
+   "exposure_why": "Taken as a medicine (ATC J05AB12).",
    "names": {
     "inn": [
      "cidofovir"
@@ -13058,7 +13058,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB04, L04AA40).",
+   "exposure_why": "Taken as a medicine (ATC L01BB04, L04AA40).",
    "names": {
     "inn": [
      "cladribine"
@@ -13259,7 +13259,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J01FA09).",
+   "exposure_why": "Taken as a medicine (ATC J01FA09).",
    "names": {
     "inn": [
      "clarithromycin"
@@ -13466,7 +13466,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "clobetasol"
@@ -13660,7 +13660,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "clomifene"
@@ -13802,7 +13802,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "dipotassium clorazepate"
@@ -14046,7 +14046,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "codeine"
@@ -14293,7 +14293,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M04AC01).",
+   "exposure_why": "Taken as a medicine (ATC M04AC01).",
    "names": {
     "inn": [],
     "inn_checked": {
@@ -14456,7 +14456,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [],
     "inn_checked": {
@@ -14903,7 +14903,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA01).",
+   "exposure_why": "Taken as a medicine (ATC L01AA01).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -15207,7 +15207,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -15609,7 +15609,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC01).",
+   "exposure_why": "Taken as a medicine (ATC L01BC01).",
    "names": {
     "inn": [
      "cytarabine"
@@ -15783,7 +15783,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "dacarbazine"
@@ -15937,7 +15937,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03XA01).",
+   "exposure_why": "Taken as a medicine (ATC G03XA01).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -16150,7 +16150,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "daunorubicin"
@@ -16315,7 +16315,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -16527,7 +16527,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA01).",
+   "exposure_why": "Taken as a medicine (ATC N05BA01).",
    "names": {
     "inn": [
      "diazepam"
@@ -16729,7 +16729,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02DA01, V03AH01).",
+   "exposure_why": "Taken as a medicine (ATC C02DA01, V03AH01).",
    "names": {
     "inn": [
      "diazoxide"
@@ -16882,7 +16882,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC S01EC02).",
+   "exposure_why": "Taken as a medicine (ATC S01EC02).",
    "names": {
     "inn": [
      "dichlofenamide"
@@ -17023,7 +17023,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA01).",
+   "exposure_why": "Taken as a medicine (ATC B01AA01).",
    "names": {
     "inn": [
      "dicoumarol"
@@ -17193,7 +17193,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03CB02, G03CC05).",
+   "exposure_why": "Taken as a medicine (ATC G03CB02, G03CC05).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -17437,7 +17437,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N02BA11).",
+   "exposure_why": "Taken as a medicine (ATC N02BA11).",
    "names": {
     "inn": [
      "diflunisal"
@@ -17560,7 +17560,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "dihydroergotamine"
@@ -17723,7 +17723,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "diltiazem"
@@ -18279,7 +18279,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AB02).",
+   "exposure_why": "Taken as a medicine (ATC N03AB02).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -18549,7 +18549,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "doxorubicin"
@@ -18772,7 +18772,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB22, J01AA02).",
+   "exposure_why": "Taken as a medicine (ATC A01AB22, J01AA02).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -19091,7 +19091,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -19404,7 +19404,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -19717,7 +19717,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -20100,7 +20100,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "ergotamine"
@@ -20211,7 +20211,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [],
     "inn_checked": {
@@ -20365,7 +20365,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AD03).",
+   "exposure_why": "Taken as a medicine (ATC J04AD03).",
    "names": {
     "inn": [
      "ethionamide"
@@ -21055,7 +21055,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB08).",
+   "exposure_why": "Taken as a medicine (ATC M01AB08).",
    "names": {
     "inn": [
      "etodolac"
@@ -21233,7 +21233,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB01).",
+   "exposure_why": "Taken as a medicine (ATC L01CB01).",
    "names": {
     "inn": [
      "etoposide"
@@ -21404,7 +21404,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D05BB01).",
+   "exposure_why": "Taken as a medicine (ATC D05BB01).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -21563,7 +21563,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L03AA02).",
+   "exposure_why": "Taken as a medicine (ATC L03AA02).",
    "names": {
     "inn": [
      "filgrastim"
@@ -21776,7 +21776,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AA27).",
+   "exposure_why": "Taken as a medicine (ATC L04AA27).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -22087,7 +22087,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC R01AD04, R03BA03).",
+   "exposure_why": "Taken as a medicine (ATC R01AD04, R03BA03).",
    "names": {
     "inn": [
      "flunisolide"
@@ -22304,7 +22304,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BC02).",
+   "exposure_why": "Taken as a medicine (ATC L01BC02).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -22518,7 +22518,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA01).",
+   "exposure_why": "Taken as a medicine (ATC G03BA01).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -22696,7 +22696,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "flurazepam"
@@ -22824,7 +22824,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AE09, M02AA19).",
+   "exposure_why": "Taken as a medicine (ATC M01AE09, M02AA19).",
    "names": {
     "inn": [
      "flurbiprofen"
@@ -23050,7 +23050,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02BB01).",
+   "exposure_why": "Taken as a medicine (ATC L02BB01).",
    "names": {
     "inn": [
      "flutamide"
@@ -23196,7 +23196,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "fluticasone"
@@ -23466,7 +23466,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -23697,7 +23697,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB06, S01AD09).",
+   "exposure_why": "Taken as a medicine (ATC J05AB06, S01AD09).",
    "names": {
     "inn": [
      "ganciclovir"
@@ -23826,7 +23826,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "ganciclovir"
@@ -23995,7 +23995,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L02AE03).",
+   "exposure_why": "Taken as a medicine (ATC L02AE03).",
    "names": {
     "inn": [
      "Goserelin"
@@ -24104,7 +24104,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA13).",
+   "exposure_why": "Taken as a medicine (ATC N05BA13).",
    "names": {
     "inn": [
      "halazepam"
@@ -24200,7 +24200,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D07AC21).",
+   "exposure_why": "Taken as a medicine (ATC D07AC21).",
    "names": {
     "inn": [
      "ulobetasol"
@@ -24380,7 +24380,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AD01).",
+   "exposure_why": "Taken as a medicine (ATC N05AD01).",
    "names": {
     "inn": [
      "haloperidol"
@@ -25064,7 +25064,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "histrelin"
@@ -25210,7 +25210,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX05).",
+   "exposure_why": "Taken as a medicine (ATC L01XX05).",
    "names": {
     "inn": [
      "hydroxycarbamide"
@@ -25372,7 +25372,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "idarubicin"
@@ -25526,7 +25526,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA06).",
+   "exposure_why": "Taken as a medicine (ATC L01AA06).",
    "names": {
     "inn": [
      "ifosfamide"
@@ -25673,7 +25673,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -25967,7 +25967,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D10AD04, D10BA01).",
+   "exposure_why": "Taken as a medicine (ATC D10AD04, D10BA01).",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -27734,7 +27734,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX04).",
+   "exposure_why": "Taken as a medicine (ATC L04AX04).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -28032,7 +28032,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "leuprorelin"
@@ -28228,7 +28228,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N04BA01).",
+   "exposure_why": "Taken as a medicine (ATC N04BA01).",
    "names": {
     "inn": [
      "levodopa"
@@ -28455,7 +28455,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -28703,7 +28703,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -28976,7 +28976,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA06).",
+   "exposure_why": "Taken as a medicine (ATC N05BA06).",
    "names": {
     "inn": [
      "lorazepam"
@@ -29178,7 +29178,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C10AA02).",
+   "exposure_why": "Taken as a medicine (ATC C10AA02).",
    "names": {
     "inn": [
      "lovastatin"
@@ -29352,7 +29352,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P02CA01).",
+   "exposure_why": "Taken as a medicine (ATC P02CA01).",
    "names": {
     "inn": [
      "mebendazole"
@@ -29512,7 +29512,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "medroxyprogesterone"
@@ -29672,7 +29672,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC05, G03DB02).",
+   "exposure_why": "Taken as a medicine (ATC G03AC05, G03DB02).",
    "names": {
     "inn": [
      "megestrol"
@@ -29844,7 +29844,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA03).",
+   "exposure_why": "Taken as a medicine (ATC L01AA03).",
    "names": {
     "inn": [
      "melphalan"
@@ -30009,7 +30009,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "atc_list": [
     {
      "code": "G03GA02",
@@ -30117,7 +30117,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BC01).",
+   "exposure_why": "Taken as a medicine (ATC N05BC01).",
    "names": {
     "inn": [
      "meprobamate"
@@ -30271,7 +30271,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "mercaptopurine"
@@ -30424,7 +30424,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -30668,7 +30668,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H03BB02).",
+   "exposure_why": "Taken as a medicine (ATC H03BB02).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -30951,7 +30951,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BA01, L04AX03).",
+   "exposure_why": "Taken as a medicine (ATC L01BA01, L04AX03).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -31291,7 +31291,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -32362,7 +32362,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03BA02, G03EK01).",
+   "exposure_why": "Taken as a medicine (ATC G03BA02, G03EK01).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -32602,7 +32602,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "midazolam"
@@ -32803,7 +32803,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -33073,7 +33073,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A02BB01, G02AD06).",
+   "exposure_why": "Taken as a medicine (ATC A02BB01, G02AD06).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -33334,7 +33334,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "mitoxantrone"
@@ -33489,7 +33489,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -33953,7 +33953,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "nafarelin"
@@ -34078,7 +34078,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -34313,7 +34313,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -34844,7 +34844,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA05).",
+   "exposure_why": "Taken as a medicine (ATC C08CA05).",
    "names": {
     "inn": [
      "nifedipine"
@@ -35048,7 +35048,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C08CA06).",
+   "exposure_why": "Taken as a medicine (ATC C08CA06).",
    "names": {
     "inn": [
      "nimodipine"
@@ -35241,7 +35241,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AA05).",
+   "exposure_why": "Taken as a medicine (ATC L01AA05).",
    "names": {
     "inn": [
      "chlormethine"
@@ -35399,7 +35399,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "chlormethine"
@@ -35559,7 +35559,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03AC01, G03DC02).",
+   "exposure_why": "Taken as a medicine (ATC G03AC01, G03DC02).",
    "names": {
     "inn": [
      "norethisterone"
@@ -35701,7 +35701,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "norethisterone",
@@ -35954,7 +35954,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "norethisterone",
@@ -36086,7 +36086,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "norethisterone"
@@ -36250,7 +36250,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "norgestrel"
@@ -36386,7 +36386,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05BA04).",
+   "exposure_why": "Taken as a medicine (ATC N05BA04).",
    "names": {
     "inn": [
      "oxazepam"
@@ -36517,7 +36517,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A14AA05).",
+   "exposure_why": "Taken as a medicine (ATC A14AA05).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -36757,7 +36757,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC D06AA03, G01AA07).",
+   "exposure_why": "Taken as a medicine (ATC D06AA03, G01AA07).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -37024,7 +37024,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -37319,7 +37319,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CD01).",
+   "exposure_why": "Taken as a medicine (ATC L01CD01).",
    "names": {
     "inn": [
      "paclitaxel"
@@ -37525,7 +37525,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC01).",
+   "exposure_why": "Taken as a medicine (ATC N03AC01).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -37677,7 +37677,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01CC01).",
+   "exposure_why": "Taken as a medicine (ATC M01CC01).",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -37909,7 +37909,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "pentobarbital"
@@ -38046,7 +38046,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX08).",
+   "exposure_why": "Taken as a medicine (ATC L01XX08).",
    "names": {
     "inn": [
      "pentostatin"
@@ -38150,7 +38150,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XC13).",
+   "exposure_why": "Taken as a medicine (ATC L01XC13).",
    "names": {
     "inn": [
      "pertuzumab"
@@ -38300,7 +38300,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AX07).",
+   "exposure_why": "Taken as a medicine (ATC N03AX07).",
    "names": {
     "inn": [
      "Phenacemide"
@@ -38418,7 +38418,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -38584,7 +38584,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -38857,7 +38857,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC B01AA04).",
+   "exposure_why": "Taken as a medicine (ATC B01AA04).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -39125,7 +39125,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05AG02).",
+   "exposure_why": "Taken as a medicine (ATC N05AG02).",
    "names": {
     "inn": [
      "pimozide"
@@ -39241,7 +39241,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AX02).",
+   "exposure_why": "Taken as a medicine (ATC L01AX02).",
    "names": {
     "inn": [
      "pipobroman"
@@ -39331,7 +39331,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01DC02).",
+   "exposure_why": "Taken as a medicine (ATC L01DC02).",
    "names": {
     "inn": [
      "plicamycin"
@@ -39588,7 +39588,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "pravastatin"
@@ -39778,7 +39778,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "prednisolone"
@@ -40009,7 +40009,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "unclear",
     "evidence": "human and animal",
@@ -40264,7 +40264,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "procarbazine"
@@ -40437,7 +40437,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H03BA02).",
+   "exposure_why": "Taken as a medicine (ATC H03BA02).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -40671,7 +40671,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC P01BD01).",
+   "exposure_why": "Taken as a medicine (ATC P01BD01).",
    "names": {
     "inn": [
      "pyrimethamine"
@@ -40787,7 +40787,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD10).",
+   "exposure_why": "Taken as a medicine (ATC N05CD10).",
    "names": {
     "inn": [
      "quazepam"
@@ -41236,7 +41236,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J05AB04, J05AP01).",
+   "exposure_why": "Taken as a medicine (ATC J05AB04, J05AP01).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -41506,7 +41506,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC J04AB02).",
+   "exposure_why": "Taken as a medicine (ATC J04AB02).",
    "names": {
     "inn": [
      "rifampicin"
@@ -41638,7 +41638,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "secobarbital"
@@ -41728,7 +41728,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "sermorelin"
@@ -42011,7 +42011,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -42276,7 +42276,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "streptozocin"
@@ -42524,7 +42524,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC M01AB02).",
+   "exposure_why": "Taken as a medicine (ATC M01AB02).",
    "names": {
     "inn": [
      "sulindac"
@@ -42680,7 +42680,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "tamoxifen"
@@ -42842,7 +42842,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD07).",
+   "exposure_why": "Taken as a medicine (ATC N05CD07).",
    "names": {
     "inn": [
      "temazepam"
@@ -42972,7 +42972,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01CB02).",
+   "exposure_why": "Taken as a medicine (ATC L01CB02).",
    "names": {
     "inn": [
      "teniposide"
@@ -43179,7 +43179,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -43477,7 +43477,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -43792,7 +43792,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC A01AB13, D06AA04).",
+   "exposure_why": "Taken as a medicine (ATC A01AB13, D06AA04).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -44100,7 +44100,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -44357,7 +44357,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -45056,7 +45056,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX02).",
+   "exposure_why": "Taken as a medicine (ATC L04AX02).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -45320,7 +45320,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01BB03).",
+   "exposure_why": "Taken as a medicine (ATC L01BB03).",
    "names": {
     "inn": [
      "tioguanine"
@@ -45516,7 +45516,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -46186,7 +46186,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AX11).",
+   "exposure_why": "Taken as a medicine (ATC N03AX11).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human and animal",
@@ -46469,7 +46469,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N05CD05).",
+   "exposure_why": "Taken as a medicine (ATC N05CD05).",
    "names": {
     "inn": [
      "triazolam"
@@ -46572,7 +46572,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "2,2,2-tetramine"
@@ -46780,7 +46780,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC H02CA01).",
+   "exposure_why": "Taken as a medicine (ATC H02CA01).",
    "names": {
     "inn": [
      "trilostane"
@@ -46927,7 +46927,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AC02).",
+   "exposure_why": "Taken as a medicine (ATC N03AC02).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "human",
@@ -47080,7 +47080,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "trimetrexate"
@@ -47173,7 +47173,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01AD08).",
+   "exposure_why": "Taken as a medicine (ATC L01AD08).",
    "names": {
     "inn": [
      "uramustine"
@@ -47308,7 +47308,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC G03GA04).",
+   "exposure_why": "Taken as a medicine (ATC G03GA04).",
    "names": {
     "inn": [
      "urofollitropin"
@@ -47497,7 +47497,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC N03AG01).",
+   "exposure_why": "Taken as a medicine (ATC N03AG01).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human and animal",
@@ -47800,7 +47800,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "vinblastina",
@@ -47947,7 +47947,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "vincristine"
@@ -48123,7 +48123,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L01XX43).",
+   "exposure_why": "Taken as a medicine (ATC L01XX43).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -48452,7 +48452,7 @@
      "why": "It is also sold as a pesticide or biocide, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "human",
@@ -48691,7 +48691,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "names": {
     "inn": [
      "zileuton"
@@ -52738,7 +52738,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX02).",
+   "exposure_why": "Taken as a medicine (ATC C02KX02).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "animal only",
@@ -55258,7 +55258,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX01).",
+   "exposure_why": "Taken as a medicine (ATC C02KX01).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "animal only",
@@ -63209,7 +63209,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC C02KX04).",
+   "exposure_why": "Taken as a medicine (ATC C02KX04).",
    "pregnancy": {
     "limb_defects": "not named",
     "evidence": "animal only",
@@ -69846,7 +69846,7 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it (WHO ATC L04AX06).",
+   "exposure_why": "Taken as a medicine (ATC L04AX06).",
    "pregnancy": {
     "limb_defects": "named by an authoritative source",
     "evidence": "animal only",
@@ -73012,7 +73012,7 @@
      "why": "As a chemical, it is handled where the medicine is made, and a chemical classification covers it."
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "exposure_why": "Taken as a medicine.",
    "cosmetic": {
     "limit": {
      "text": "Theophylline is banned from cosmetic products in the EU as Annex II entry 1710 under Regulation (EU) 2023/1490, with a date of inclusion of 24 August 2023.",

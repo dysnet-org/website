@@ -197,7 +197,7 @@ def main():
             tags, why = curated[e["name"]]["tags"], curated[e["name"]]["why"]
         elif e["name"] in medicines:
             tags = ["medicine"]
-            why = "It is taken as a medicine, and treatment is how a pregnancy meets it" + (f" (WHO ATC {', '.join(e['atc'][:2])})." if e.get("atc") else ".")
+            why = "Taken as a medicine" + (f" (ATC {', '.join(e['atc'][:2])})." if e.get("atc") else ".")
         else:
             tags, why = rule(e)
         bad = [t for t in tags if t not in spec["tags"]]

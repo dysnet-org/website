@@ -1015,7 +1015,7 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .tera-preg dd { margin: 0; }
 .st-limb { background: #fff7ed; color: #9a3412; border-color: #fdba74; }
 @media (max-width: 520px) { .tera-preg dl { grid-template-columns: 1fr; } .tera-preg dd { margin-bottom: 0.3rem; } }
-#register { scroll-margin-top: 6rem; }
+#register, .tera-item { scroll-margin-top: 6rem; }
 .tera-dose .fine { color: var(--dys-muted); }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 

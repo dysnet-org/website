@@ -872,6 +872,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   // a link can arrive with a condition, a theme, a search or a year range already chosen
   var pre = filterParams();
   if (pre.get("q")) q.value = pre.get("q");
+  var arrive = !!pre.get("q");
   if (pre.get("condition")) sel.value = pre.get("condition");
   if (pre.get("topic")) topic = pre.get("topic");
   if (pre.get("exclude")) exclude = pre.get("exclude");
@@ -1112,7 +1113,10 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function apply() {
     if (!DATA) return;                      // the entries rendered into the page stay until the data lands
     var text = fold(q.value.trim()), k = 0, out = [], kept = [];
-    DATA.forEach(function (r) {
+    // the entry whose own name is the search comes first, as when a site search result sends a reader here
+    var rows = text ? DATA.filter(function (r) { return fold(r.f) === text || fold(r.n) === text; }) : [];
+    rows = rows.concat(DATA.filter(function (r) { return rows.indexOf(r) === -1; }));
+    rows.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&
                // a way of meeting it and a level, chosen together, must hold for the same way
@@ -1127,6 +1131,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     recount(kept);
     writeFilterParams({ q: q.value.trim(), source: state.sources, level: state.levels, exposure: state.exps, kind: [], use: [], decision: state.decs, paper: state.papers });
     more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching entries";
+    // a link that arrives with a search opens on the first card it finds, not at the top of the page
+    if (arrive && DATA && list.firstElementChild) { arrive = false; list.firstElementChild.scrollIntoView({ block: "start" }); }
   }
   function bind(groupId, attr, key) {
     document.querySelectorAll("#" + groupId + " button[" + attr + "]").forEach(function (b) {
@@ -1149,6 +1155,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   // links made before the exposure tags said kind=medicine or use=food, and still land
   var pre = filterParams();
   if (pre.get("q")) q.value = pre.get("q");
+  var arrive = !!pre.get("q");
   state.sources = filterList("source"); state.levels = filterList("level");
   var OLD = { medicine: "medicine", food: "food", agriculture: "pesticide", cosmetics: "home", cleaning: "home" };
   state.exps = filterList("exposure").concat(filterList("kind"), filterList("use")).map(function (v) { return EXP[v] ? v : OLD[v]; })

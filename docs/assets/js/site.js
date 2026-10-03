@@ -922,18 +922,40 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     }).join("");
     return rows ? '<div class="tera-preg"><p class="tera-preg-h">' + title + '</p><dl>' + rows + '</dl></div>' : "";
   }
-  var REGIONS = [["us", "US"], ["eu", "EU"], ["fr", "France"]];
+  var REGIONS = [["us", "US"], ["ud", "US, discontinued"], ["eu", "EU"], ["fr", "France"], ["it", "Italy"], ["es", "Spain"], ["ca", "Canada"]];
+  var LANGS = { fr: "French", de: "German", es: "Spanish", it: "Italian", nl: "Dutch", pt: "Portuguese", la: "Latin" };
   function namesHtml(r) {
     if (!r.nm) return "";
     var cap = 10, short = function (xs) { return esc(xs.slice(0, cap).join(", ")) + (xs.length > cap ? ' <span class="fine">+' + (xs.length - cap) + ' more</span>' : ""); };
-    var parts = (r.nm.g.length ? ["<strong>Generic</strong> " + short(r.nm.g)] : []).concat(REGIONS.filter(function (x) { return r.nm[x[0]].length; }).map(function (x) { return "<strong>" + x[1] + "</strong> " + short(r.nm[x[0]]); }));
+    var lg = r.nm.lg || {}, langs = Object.keys(lg).map(function (l) { return lg[l].slice(0, 2).map(function (x) { return esc(x) + ' <span class="fine">(' + l + ')</span>'; }).join(", "); }).filter(Boolean).join(", ");
+    var parts = ((r.nm.i || []).length ? ["<strong>INN</strong> " + short(r.nm.i)] : []).concat(r.nm.g.length ? ["<strong>Generic</strong> " + short(r.nm.g)] : []).concat(REGIONS.filter(function (x) { return (r.nm[x[0]] || []).length; }).map(function (x) { return "<strong>" + x[1] + "</strong> " + short(r.nm[x[0]]); })).concat(langs ? ["<strong>Other languages</strong> " + langs] : []);
     return '<p class="tera-names"><span class="tera-names-h">Also known or sold as</span> ' + parts.join(" \u00b7 ") + (r.nm.nt ? ' <span class="fine">' + esc(r.nm.nt) + '</span>' : "") + '</p>';
+  }
+  function cosprodHtml(r) {
+    var c = r.cp;
+    if (!c || !c.e) return "";
+    var pl = function (n, w) { return n + " " + w + (n !== 1 ? "s" : ""); };
+    var body = c.n ? pl(c.n, "product") + " of " + pl(c.b, "brand") + " on sale at the last report. <em>Kinds:</em> " + c.t.map(function (t) { return esc(t[0]) + " (" + t[1] + ")"; }).join(", ") +
+      ". <em>For example:</em> " + c.x.map(function (x) { var p = x[1] === x[1].toUpperCase() ? x[1].toLowerCase().replace(/\b\w/g, function (m) { return m.toUpperCase(); }) : x[1]; return "<strong>" + esc(x[0]) + "</strong> " + esc(p) + ' <span class="fine">(' + esc(x[2]) + ")</span>"; }).join("; ") + "."
+      : pl(c.e, "product") + " reported, all since discontinued or reformulated.";
+    return '<p class="tera-names tera-cosprod"><span class="tera-names-h">Reported in cosmetics</span> ' + body + ' <span class="fine">Companies report these products to the California Safe Cosmetics Program because they contain the chemical; the amount is not reported, and a report is not a finding of harm. Data up to ' + esc(c.d.slice(0, 7)) + '. <a href="' + esc(c.su) + '" target="_blank" rel="noopener external">' + esc(c.sl) + ' \u2197</a></span></p>';
+  }
+  var TIS = [["crat", "CRAT, Paris (French)"], ["embryotox", "Embryotox, Berlin (German)"], ["bumps", "UKTIS bumps, UK (English)"]];
+  function tisHtml(r) {
+    if (!r.ti) return "";
+    var parts = TIS.map(function (c) {
+      var links = r.ti.filter(function (x) { return x.s === c[0]; }).map(function (x) { return '<a href="' + esc(x.u) + '" target="_blank" rel="noopener external">' + esc(x.t) + ' \u2197</a>'; }).join(", ");
+      return links ? "<strong>" + c[1] + "</strong> " + links : "";
+    }).filter(Boolean);
+    return '<p class="tera-names tera-tis"><span class="tera-names-h">What the information services say</span> ' + parts.join(" \u00b7 ") + ' <span class="fine">Their own pages, in their own words; members of ENTIS, the European network of these services.</span></p>';
   }
   function namesLine(r) {
     if (!r.nm) return [];
     var rx = (r.nm.rx || []).map(function (c) { return '<a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&amp;searchTerm=' + esc(c) + '" target="_blank" rel="noopener external">RxNorm ' + esc(c) + ' \u2197</a>'; }).join(", ");
-    var regions = REGIONS.filter(function (x) { return r.nm[x[0]].length; }).map(function (x) { return x[1] + ": " + esc(r.nm[x[0]].join(", ")); }).join("; ");
-    return ['<li><strong>Names, from official registries:</strong> ' + regions + '. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency\u2019s list of centrally authorised medicines, French names from the ANSM public medicines database; read ' + esc(r.nm.rd) + '. ' + rx + '</li>'];
+    var regions = REGIONS.filter(function (x) { return (r.nm[x[0]] || []).length; }).map(function (x) { return x[1] + ": " + esc(r.nm[x[0]].join(", ")); }).join("; ");
+    var inn = (r.nm.i || []).length ? "INN: " + esc(r.nm.i.join(", ")) + "; " : r.nm.ni ? 'INN: none, the WHO has assigned none to this substance (<a href="' + esc(r.nm.ni[1]) + '" target="_blank" rel="noopener external">' + esc(r.nm.ni[0].slice(0, 60)) + ' \u2197</a>); ' : "";
+    var lg = r.nm.lg || {}, langs = Object.keys(lg).map(function (l) { return LANGS[l] + ": " + esc(lg[l].join(", ")); }).join("; ");
+    return ['<li><strong>Names, from official registries:</strong> ' + inn + regions + (langs ? "; " + langs : "") + '. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance\u2019s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada\u2019s Drug Product Database, matched on the WHO ATC code. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency\u2019s list of centrally authorised medicines, French names from the ANSM public medicines database; read ' + esc(r.nm.rd) + '. ' + rx + '</li>'];
   }
   function pregHtml(r) {
     var out = "";
@@ -1069,12 +1091,18 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
            namesHtml(r) + '<div class="tera-uses">' + (r.x || []).map(function (x) { return '<span class="use use-' + x.t + '" title="' + esc(x.w || r.xw) + '">' + esc(EXP[x.t] || x.t) + '<small> \u00b7 ' + LEVEL[x.l] + '</small></span>'; }).join("") + '</div>' +
            (r.x || []).filter(function (x) { return x.d; }).map(function (x) {
              return '<p class="tera-dose"><strong>Dose and risk (' + esc((EXP[x.t] || x.t).toLowerCase()) + '):</strong> ' + esc(x.d.text) + (x.d.url ? ' <a href="' + esc(x.d.url) + '" target="_blank" rel="noopener external">' + esc(x.d.source) + ' \u2197</a>' : ' <span class="fine">' + esc(x.d.source || "") + '</span>') + '</p>';
-           }).join("") + pregHtml(r) +
+           }).join("") + pregHtml(r) + cosprodHtml(r) + tisHtml(r) +
            '<div class="tera-srcs">' + srcs + '</div><div class="tera-status">' + chips.join("") + '</div>' + (r.reg ? '<p class="tera-registry">A pregnancy registry is recruiting for ' + esc(r.reg.m) + ': <a href="' + esc(r.reg.u) + '" target="_blank" rel="noopener external">' + esc(r.reg.n) + '</a>' + (r.reg.p ? ' \u00b7 ' + esc(r.reg.p) : '') + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>' : '') +
            '<details class="tera-details"><summary>Details and legal basis</summary><ul>' + details.join("") + '</ul></details></li>';
   }
   // a medicine is found by any name it is sold under, not only the name the source lists it by
-  function prime(rows) { rows.forEach(function (r) { r.t = (r.f + " " + r.cas + " " + r.ec + (r.nm ? " " + [].concat(r.nm.g, r.nm.us, r.nm.eu, r.nm.fr).join(" ") : "")).toLowerCase(); }); }
+  // search text: the entry's names, its INN and brands in every country and language, and the cosmetics brands reported for it; accents folded
+  function fold(s) { return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+  function prime(rows) { rows.forEach(function (r) {
+    var nm = r.nm ? [].concat(r.nm.i || [], r.nm.g, r.nm.us, r.nm.ud || [], r.nm.eu, r.nm.fr, r.nm.it || [], r.nm.es || [], r.nm.ca || [], [].concat.apply([], Object.keys(r.nm.lg || {}).map(function (l) { return r.nm.lg[l]; }))) : [];
+    var cp = r.cp ? r.cp.x.map(function (x) { return x[0] + " " + x[1]; }) : [];
+    r.t = fold([r.f, r.n, r.cas, r.ec].concat(nm, cp).join(" "));
+  }); }
   if (DATA) prime(DATA);
   var ORDER = { known: 0, presumed: 1, suspected: 2 };
   function order(rows) { rows.sort(function (a, b) { return (ORDER[a.l] - ORDER[b.l]) || a.n.toLowerCase().replace(/^[^a-z]+/, "").localeCompare(b.n.toLowerCase().replace(/^[^a-z]+/, "")); }); }
@@ -1083,7 +1111,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var state = { sources: [], levels: [], exps: [], decs: [], papers: [] };
   function apply() {
     if (!DATA) return;                      // the entries rendered into the page stay until the data lands
-    var text = q.value.trim().toLowerCase(), k = 0, out = [], kept = [];
+    var text = fold(q.value.trim()), k = 0, out = [], kept = [];
     DATA.forEach(function (r) {
       var ok = (!text || r.t.indexOf(text) !== -1) &&
                (!state.sources.length || state.sources.some(function (s) { return r.s.indexOf(s) !== -1; })) &&

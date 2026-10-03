@@ -1247,7 +1247,8 @@ def tera_preg_lines(e):
     return out
 
 
-TERA_NAME_REGIONS = [("us", "US"), ("eu", "EU"), ("fr", "France")]
+TERA_NAME_REGIONS = [("us", "US"), ("us_discontinued", "US, discontinued"), ("eu", "EU"), ("fr", "France"), ("it", "Italy"), ("es", "Spain"), ("ca", "Canada")]
+TERA_LANGS = {"fr": "French", "de": "German", "es": "Spanish", "it": "Italian", "nl": "Dutch", "pt": "Portuguese", "la": "Latin"}
 
 
 def tera_names_html(e, cap=10):
@@ -1257,10 +1258,48 @@ def tera_names_html(e, cap=10):
         return ""
     def short(xs):
         return html.escape(", ".join(xs[:cap])) + (f' <span class="fine">+{len(xs) - cap} more</span>' if len(xs) > cap else "")
-    parts = ([f'<strong>Generic</strong> {short(n["generic"])}'] if n["generic"] else []) + \
-            [f'<strong>{lab}</strong> {short(n[k])}' for k, lab in TERA_NAME_REGIONS if n[k]]
+    langs = ", ".join(f'{html.escape(x)} <span class="fine">({l})</span>' for l, v in n.get("languages", {}).items() for x in v[:2])
+    parts = ([f'<strong>INN</strong> {short(n["inn"])}'] if n.get("inn") else []) + \
+            ([f'<strong>Generic</strong> {short(n["generic"])}'] if n["generic"] else []) + \
+            [f'<strong>{lab}</strong> {short(n[k])}' for k, lab in TERA_NAME_REGIONS if n.get(k)] + \
+            ([f'<strong>Other languages</strong> {langs}'] if langs else [])
     note = f' <span class="fine">{html.escape(n["note"])}</span>' if n.get("note") else ""
     return f'<p class="tera-names"><span class="tera-names-h">Also known or sold as</span> {" · ".join(parts)}{note}</p>'
+
+
+def tera_cosprod_html(e):
+    """Kinds of cosmetics, and brands, that companies reported to California as containing the chemical."""
+    c = e.get("cosmetic_products")
+    if not c or not c["products_ever"]:
+        return ""
+    src = c["source"]
+    if c["products_current"]:
+        types = ", ".join(f'{html.escape(t)} ({n})' for t, n in c["types_current"])
+        ex = "; ".join(f'<strong>{html.escape(x["brand"])}</strong> {html.escape(x["product"].title() if x["product"].isupper() else x["product"])} <span class="fine">({html.escape(x["type"])})</span>' for x in c["examples"])
+        body = (f'{c["products_current"]} product{"s" if c["products_current"] != 1 else ""} of {c["brands_current"]} brand{"s" if c["brands_current"] != 1 else ""} on sale at the last report. '
+                f'<em>Kinds:</em> {types}. <em>For example:</em> {ex}.')
+    else:
+        body = f'{c["products_ever"]} product{"s" if c["products_ever"] != 1 else ""} reported, all since discontinued or reformulated.'
+    return (f'<p class="tera-names tera-cosprod"><span class="tera-names-h">Reported in cosmetics</span> {body} '
+            f'<span class="fine">Companies report these products to the California Safe Cosmetics Program because they contain the chemical; the amount is not reported, and a report is not a finding of harm. Data up to {c["data_until"][:7]}. '
+            f'<a href="{src["url"]}" target="_blank" rel="noopener external">{html.escape(src["label"])} ↗</a></span></p>')
+
+
+TERA_TIS = {"crat": "CRAT, Paris (French)", "embryotox": "Embryotox, Berlin (German)", "bumps": "UKTIS bumps, UK (English)"}
+
+
+def tera_tis_html(e):
+    """Links to the page each teratology information service publishes on this medicine; their terms allow a link, not a copy."""
+    t = e.get("tis")
+    if not t:
+        return ""
+    parts = []
+    for code, lab in TERA_TIS.items():
+        links = ", ".join(f'<a href="{html.escape(x["u"], quote=True)}" target="_blank" rel="noopener external">{html.escape(x["t"])} ↗</a>' for x in t if x["s"] == code)
+        if links:
+            parts.append(f"<strong>{lab}</strong> {links}")
+    return (f'<p class="tera-names tera-tis"><span class="tera-names-h">What the information services say</span> {" · ".join(parts)} '
+            f'<span class="fine">Their own pages, in their own words; members of ENTIS, the European network of these services.</span></p>')
 
 
 def tera_names_line(e):
@@ -1268,8 +1307,13 @@ def tera_names_line(e):
     if not n:
         return []
     rx = ", ".join(f'<a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&amp;searchTerm={c}" target="_blank" rel="noopener external">RxNorm {c} ↗</a>' for c in n["rxcui"])
-    regions = "; ".join(f'{lab}: {html.escape(", ".join(n[k]))}' for k, lab in TERA_NAME_REGIONS if n[k])
-    return [f'<li><strong>Names, from official registries:</strong> {regions}. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency&rsquo;s list of centrally authorised medicines, French names from the ANSM public medicines database; read {n["read"]}. {rx}</li>']
+    regions = "; ".join(f'{lab}: {html.escape(", ".join(n[k]))}' for k, lab in TERA_NAME_REGIONS if n.get(k))
+    ic = n.get("inn_checked") or {}
+    inn = (f'INN: {html.escape(", ".join(n["inn"]))}; ' if n.get("inn") else
+           f'INN: none, the WHO has assigned none to this substance (<a href="{html.escape(ic["url"], quote=True)}" target="_blank" rel="noopener external">{html.escape(ic["source"][:60])} ↗</a>); ' if ic.get("status") == "no INN" else "")
+    langs = "; ".join(f'{TERA_LANGS[l]}: {html.escape(", ".join(v))}' for l, v in n.get("languages", {}).items())
+    wd = ", ".join(f'<a href="https://www.wikidata.org/wiki/{q}" target="_blank" rel="noopener external">Wikidata {q} ↗</a>' for q in n.get("wikidata", [])[:3])
+    return [f'<li><strong>Names, from official registries:</strong> {inn}{regions}{"; " + langs if langs else ""}. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance&rsquo;s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada&rsquo;s Drug Product Database, matched on the WHO ATC code {html.escape(", ".join(n.get("atc_codes", [])[:6]))}{" (SNOMED CT " + html.escape(", ".join(n.get("snomed", [])[:3])) + ")" if n.get("snomed") else ""}. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency&rsquo;s list of centrally authorised medicines, French names from the ANSM public medicines database; read {n["read"]}. {rx}{", " + wd if wd else ""}</li>']
 
 
 def tera_item_html(e):
@@ -1314,7 +1358,7 @@ def tera_item_html(e):
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
-            f'{tera_names_html(e)}<div class="tera-uses">{uses}</div>{doses}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
+            f'{tera_names_html(e)}<div class="tera-uses">{uses}</div>{doses}{tera_cosprod_html(e)}{tera_tis_html(e)}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
 
@@ -1339,7 +1383,12 @@ def teratogens_html():
                            for k, _l in TERA_PREG if e["pregnancy"].get(k)}, "limb": 1 if e["pregnancy"].get("limb_defects", "").startswith("named") else 0}
                        if e.get("pregnancy") else 0),
                 "pgd": (e.get("pregnancy") or {}).get("documented_as", ""),
-                "nm": ({"g": e["names"]["generic"], "us": e["names"]["us"], "eu": e["names"]["eu"], "fr": e["names"]["fr"], "rx": e["names"]["rxcui"], "rd": e["names"]["read"], "nt": e["names"].get("note", "")} if e.get("names") else 0),
+                "nm": ({"i": e["names"]["inn"], **({"ni": [e["names"]["inn_checked"]["source"], e["names"]["inn_checked"]["url"]]} if (e["names"].get("inn_checked") or {}).get("status") == "no INN" else {}), "lg": e["names"]["languages"], "ud": e["names"]["us_discontinued"], "it": e["names"]["it"], "es": e["names"]["es"], "ca": e["names"]["ca"], "g": e["names"]["generic"], "us": e["names"]["us"], "eu": e["names"]["eu"], "fr": e["names"]["fr"], "rx": e["names"]["rxcui"], "rd": e["names"]["read"], "nt": e["names"].get("note", "")} if e.get("names") else 0),
+                "ti": e.get("tis", 0),
+                "cp": ({"n": e["cosmetic_products"]["products_current"], "e": e["cosmetic_products"]["products_ever"], "b": e["cosmetic_products"]["brands_current"],
+                        "t": e["cosmetic_products"]["types_current"], "x": [[x["brand"], x["product"], x["type"]] for x in e["cosmetic_products"]["examples"]],
+                        "d": e["cosmetic_products"]["data_until"], "sl": e["cosmetic_products"]["source"]["label"], "su": e["cosmetic_products"]["source"]["url"]}
+                       if e.get("cosmetic_products") else 0),
                 "cs": ({k: {kk: e["cosmetic"][k][kk] for kk in ("text", "quote", "source_label", "url", "id", "date", "quote_language") if e["cosmetic"][k].get(kk)}
                         for k, _l in TERA_COS if e["cosmetic"].get(k)} if e.get("cosmetic") else 0),
                 "csd": (e.get("cosmetic") or {}).get("documented_as", ""), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
@@ -2685,6 +2734,7 @@ PAGES["/knowledge/teratogens/"] = {
       <li><strong>Suspected</strong>: limited evidence, category 2 in the EU, or an association shown in epidemiological studies.</li>
       <li><strong>How a pregnancy meets it</strong>: every entry is tagged with the ways a pregnant woman receives the substance at a dose that matters: {", ".join(v.lower() if i else v for i, v in enumerate(TERA_EXP.values()))}. Each tag carries its own level of evidence, from the authority that speaks to that way of meeting it: a medicines regulator for treatment, a chemical classification for the substance handled at work or sold as a pesticide or in home products. A medicine can therefore be known as a treatment and presumed where it is made ({TERA.get("counts", {}).get("exposure_split", 0)} entries). {f'Where a source states the dose at which the effect is shown in people, the entry gives it, with the source ({TERA["counts"]["doses"]} entries).' if TERA.get("counts", {}).get("doses") else ""}</li>
       <li><strong>For pharmacists</strong>: for the {TERA.get("counts", {}).get("entis", 0)} medicines that experts of the European Network of Teratology Information Services list as known human structural teratogens (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12442749/" target="_blank" rel="noopener external">Bluett-Duncan et al., 2025</a>), the entry gives what a pharmacist needs to advise a pregnant woman: the regulator&rsquo;s rules, when in pregnancy the harm occurs, the dose, the malformations and other effects, the absolute risk, what is required before conception and after stopping, what concerns the father, what to do after an exposure, and the evidence it all rests on. Each fact comes from a regulator&rsquo;s product information (US FDA, EMA, ANSM, MHRA), a systematic review or a large registry study, and the details quote it word for word; two readers checked each one against its source. Where no such source states a fact, the entry leaves it out rather than guess. {TERA.get("counts", {}).get("entis_added", 0)} of these medicines were on none of the lists above and enter the register on the experts&rsquo; list.</li>
+      <li><strong>What the information services say</strong>: for {TERA.get("counts", {}).get("tis_linked", 0)} medicines, the entry links to the page that a teratology information service publishes on it: the <a href="https://www.lecrat.fr" target="_blank" rel="noopener external">CRAT</a> in Paris, <a href="https://www.embryotox.de" target="_blank" rel="noopener external">Embryotox</a> in Berlin and the UK Teratology Information Service&rsquo;s <a href="https://www.medicinesinpregnancy.org" target="_blank" rel="noopener external">bumps</a> leaflets. They are members of <a href="https://www.entis-org.eu/centers" target="_blank" rel="noopener external">ENTIS</a>; of its {TERA.get("counts", {}).get("tis_centres", 0)} centres, only a few publish a public page per medicine. Their terms allow a link, not a copy, so the register quotes nothing from them, and a link appears only when the page is about that medicine, not its class.</li>
       <li><strong>In cosmetics</strong>: for {TERA.get("counts", {}).get("cosmetic_documented", 0)} entries used in cosmetics, the card gives what EU cosmetics law allows, the dose the safety assessment rests on, the effect on the unborn child it names, and the assessor&rsquo;s conclusion, each quoted from the EU Cosmetics Regulation, an opinion of the EU Scientific Committee on Consumer Safety or a US Cosmetic Ingredient Review report.</li>
       <li><strong>A second authority</strong>: {TERA.get("counts", {}).get("nite", 0)} entries also carry a classification made by the Japanese government, through the GHS classification projects of the National Institute of Technology and Evaluation, to implement the labelling and safety-data-sheet duties of the Industrial Safety and Health Act and the PRTR Law. {TERA.get("counts", {}).get("nite_not_in_clp", 0)} of them have no EU harmonised entry. Each classification names the ministry that made it and the fiscal year, and links to its own page with the studies it rests on. It corroborates an entry and adds a jurisdiction; it does not set the level, because a GHS hazard code does not separate category 1A from category 1B.</li>
       <li><strong>What was decided, and by whom</strong>: the paragraphs below describe what the law provides. A tag on a card describes what an authority actually decided about that substance, and names it. {TERA.get("counts", {}).get("legal_any", 0)} entries carry at least one. The European Commission has refused {TERA.get("counts", {}).get("legal_eu-ppp", 0) - TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)} of them as pesticide active substances and <strong>approved {TERA.get("counts", {}).get("legal_eu-ppp-approved", 0)}</strong>; {TERA.get("counts", {}).get("legal_reach-xvii", 0)} may not be sold to the general public at all; {TERA.get("counts", {}).get("legal_cosmetics", 0)} may not go into a cosmetic product; {TERA.get("counts", {}).get("legal_reach-xiv", 0)} need a Commission authorisation for any use; {TERA.get("counts", {}).get("legal_stockholm", 0)} are eliminated worldwide by treaty; and {TERA.get("counts", {}).get("legal_rotterdam", 0)} have been banned or severely restricted by at least one country, which the card names. An approval is not a contradiction: the EU excludes a category 1A or 1B reproductive toxicant from pesticide approval unless exposure is negligible, and category 2 is not excluded at all. It is, though, a decision worth seeing next to the evidence.</li>

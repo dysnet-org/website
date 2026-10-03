@@ -1,0 +1,1569 @@
+{
+ "read": "2026-10-03",
+ "services": {
+  "crat": {
+   "label": "CRAT (Paris)",
+   "site": "https://www.lecrat.fr",
+   "language": "fr",
+   "about": "Centre de Référence sur les Agents Tératogènes, AP-HP, Paris"
+  },
+  "embryotox": {
+   "label": "Embryotox (Berlin)",
+   "site": "https://www.embryotox.de",
+   "language": "de",
+   "about": "Pharmakovigilanz- und Beratungszentrum für Embryonaltoxikologie, Charité, Berlin"
+  },
+  "bumps": {
+   "label": "UKTIS bumps (UK)",
+   "site": "https://www.medicinesinpregnancy.org",
+   "language": "en",
+   "about": "best use of medicines in pregnancy, the public leaflets of the UK Teratology Information Service"
+  }
+ },
+ "entries": {
+  "Acetazolamide": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/acetazolamid",
+     "title": "Acetazolamid"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7458/",
+     "title": "Acétazolamide – Grossesse"
+    }
+   ]
+  },
+  "Acitretin": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/10880/",
+     "title": "Acitrétine – Grossesse"
+    }
+   ]
+  },
+  "All-trans retinoic acid": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/tretinoin",
+     "title": "Tretinoin"
+    }
+   ]
+  },
+  "Alprazolam": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/alprazolam",
+     "title": "Alprazolam"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6046/",
+     "title": "Alprazolam – Grossesse"
+    }
+   ]
+  },
+  "Amikacin sulfate": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/amikacin/",
+     "title": "Amikacin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7705/",
+     "title": "Amikacine – Grossesse"
+    }
+   ]
+  },
+  "Aminoglycosides": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/gentamicin",
+     "title": "Gentamicin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/amikacin/",
+     "title": "Amikacin"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/aminoglycosides/",
+     "title": "Aminoglycosides"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/gentamicin/",
+     "title": "Gentamicin"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/neomycin/",
+     "title": "Neomycin"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/streptomycin/",
+     "title": "Streptomycin"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tobramycin/",
+     "title": "Tobramycin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/5053/",
+     "title": "Néomycine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7705/",
+     "title": "Amikacine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7712/",
+     "title": "Gentamicine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7735/",
+     "title": "Tobramycine – Grossesse"
+    }
+   ]
+  },
+  "Amiodarone hydrochloride": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/amiodaron",
+     "title": "Amiodaron"
+    }
+   ]
+  },
+  "Amoxapine": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7797/",
+     "title": "Amoxapine – Grossesse"
+    }
+   ]
+  },
+  "Angiotensin converting enzyme  (ACE) inhibitors": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/benazepril",
+     "title": "Benazepril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/captopril",
+     "title": "Captopril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/enalapril",
+     "title": "Enalapril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/fosinopril",
+     "title": "Fosinopril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lisinopril",
+     "title": "Lisinopril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/perindopril",
+     "title": "Perindopril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/quinapril",
+     "title": "Quinapril"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/ramipril",
+     "title": "Ramipril"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7199/",
+     "title": "Captopril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7208/",
+     "title": "Enalapril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7216/",
+     "title": "Bénazépril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7220/",
+     "title": "Quinapril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7273/",
+     "title": "Lisinopril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7320/",
+     "title": "Périndopril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7328/",
+     "title": "Ramipril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7344/",
+     "title": "Trandolapril – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7360/",
+     "title": "Zofénopril – Grossesse"
+    }
+   ]
+  },
+  "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/acetylsalicylsaeure",
+     "title": "Acetylsalicylsäure"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/aspirin-for-pain/",
+     "title": "Aspirin for pain"
+    }
+   ]
+  },
+  "Atenolol": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/atenolol",
+     "title": "Atenolol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/atenolol/",
+     "title": "Atenolol"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/9259/",
+     "title": "Aténolol – Grossesse"
+    }
+   ]
+  },
+  "Azathioprine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/azathioprin",
+     "title": "Azathioprin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/azathioprine/",
+     "title": "Azathioprine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8894/",
+     "title": "Azathioprine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/8905/",
+     "title": "Azathioprine – Exposition paternelle"
+    }
+   ]
+  },
+  "Barbiturates": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/thiopental",
+     "title": "Thiopental"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12178/",
+     "title": "Primidone – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/8134/",
+     "title": "Phénobarbital – Grossesse"
+    }
+   ]
+  },
+  "Beclomethasone dipropionate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/beclometason",
+     "title": "Beclometason"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/beclometasone/",
+     "title": "Beclometasone"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8199/",
+     "title": "Béclométasone – Grossesse"
+    }
+   ]
+  },
+  "Benzodiazepines": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/alprazolam",
+     "title": "Alprazolam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/bromazepam",
+     "title": "Bromazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/clobazam",
+     "title": "Clobazam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/clonazepam",
+     "title": "Clonazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/diazepam",
+     "title": "Diazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/flunitrazepam",
+     "title": "Flunitrazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lorazepam",
+     "title": "Lorazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lormetazepam",
+     "title": "Lormetazepam"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/midazolam",
+     "title": "Midazolam"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/11239/",
+     "title": "Clonazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/11241/",
+     "title": "Loprazolam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/11243/",
+     "title": "Lormétazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/11271/",
+     "title": "Estazolam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/11640/",
+     "title": "Nitrazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/12497/",
+     "title": "Clobazam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/3817/",
+     "title": "Prazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/3828/",
+     "title": "Nordazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/3869/",
+     "title": "Diazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/3891/",
+     "title": "Oxazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6046/",
+     "title": "Alprazolam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6057/",
+     "title": "Bromazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6061/",
+     "title": "Lorazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6975/",
+     "title": "Clotiazépam – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6979/",
+     "title": "Chlordiazépoxide – Grossesse"
+    }
+   ]
+  },
+  "Carbamazepine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/carbamazepin",
+     "title": "Carbamazepin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/carbamazepine/",
+     "title": "Carbamazepine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12249/",
+     "title": "Carbamazépine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/12656/",
+     "title": "Carbamazépine – Exposition paternelle"
+    }
+   ]
+  },
+  "Carbimazole": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/carbimazol",
+     "title": "Carbimazol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/carbimazole/",
+     "title": "Carbimazole"
+    }
+   ]
+  },
+  "Chlordiazepoxide": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6979/",
+     "title": "Chlordiazépoxide – Grossesse"
+    }
+   ]
+  },
+  "Chlordiazepoxide hydrochloride": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6979/",
+     "title": "Chlordiazépoxide – Grossesse"
+    }
+   ]
+  },
+  "Clarithromycin": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/clarithromycin",
+     "title": "Clarithromycin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/clarithromycin/",
+     "title": "Clarithromycin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/13419/",
+     "title": "Clarithromycine – Grossesse"
+    }
+   ]
+  },
+  "Clobetasol propionate": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/5165/",
+     "title": "Clobétasol – Grossesse"
+    }
+   ]
+  },
+  "Clorazepate dipotassium": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3878/",
+     "title": "Clorazépate dipotassique – Grossesse"
+    }
+   ]
+  },
+  "Codeine phosphate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/codein",
+     "title": "Codein"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/codeine/",
+     "title": "Codeine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/4478/",
+     "title": "Codéine – Grossesse"
+    }
+   ]
+  },
+  "Colchicine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/colchicin",
+     "title": "Colchicin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/colchicine/",
+     "title": "Colchicine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/9166/",
+     "title": "Colchicine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/9188/",
+     "title": "Colchicine – Exposition paternelle"
+    }
+   ]
+  },
+  "Cyclophosphamide (anhydrous)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/cyclophosphamid",
+     "title": "Cyclophosphamid"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8912/",
+     "title": "Cyclophosphamide – Grossesse"
+    }
+   ]
+  },
+  "Cyclophosphamide (hydrated)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/cyclophosphamid",
+     "title": "Cyclophosphamid"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8912/",
+     "title": "Cyclophosphamide – Grossesse"
+    }
+   ]
+  },
+  "Demeclocycline hydrochloride (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/demeclocycline/",
+     "title": "Demeclocycline"
+    }
+   ]
+  },
+  "Diazepam": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/diazepam",
+     "title": "Diazepam"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3869/",
+     "title": "Diazépam – Grossesse"
+    }
+   ]
+  },
+  "Dihydroergotamine mesylate": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/4299/",
+     "title": "Dihydroergotamine – Grossesse"
+    }
+   ]
+  },
+  "Diltiazem hydrochloride": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/diltiazem",
+     "title": "Diltiazem"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/diltiazem/",
+     "title": "Diltiazem"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/9322/",
+     "title": "Diltiazem – Grossesse"
+    }
+   ]
+  },
+  "Doxycycline (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/doxycyclin",
+     "title": "Doxycyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/doxycycline/",
+     "title": "Doxycycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6396/",
+     "title": "Doxycycline – Grossesse"
+    }
+   ]
+  },
+  "Doxycycline calcium (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/doxycyclin",
+     "title": "Doxycyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/doxycycline/",
+     "title": "Doxycycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6396/",
+     "title": "Doxycycline – Grossesse"
+    }
+   ]
+  },
+  "Doxycycline hyclate (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/doxycyclin",
+     "title": "Doxycyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/doxycycline/",
+     "title": "Doxycycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6396/",
+     "title": "Doxycycline – Grossesse"
+    }
+   ]
+  },
+  "Doxycycline monohydrate (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/doxycyclin",
+     "title": "Doxycyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/doxycycline/",
+     "title": "Doxycycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6396/",
+     "title": "Doxycycline – Grossesse"
+    }
+   ]
+  },
+  "Ergotamine tartrate": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/4270/",
+     "title": "Ergotamine – Grossesse"
+    }
+   ]
+  },
+  "Etodolac": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/15297/",
+     "title": "Etodolac – Grossesse"
+    }
+   ]
+  },
+  "Fingolimod": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/fingolimod/",
+     "title": "Fingolimod"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/9216/",
+     "title": "Fingolimod – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/9224/",
+     "title": "Fingolimod – Exposition paternelle"
+    }
+   ]
+  },
+  "Flunisolide": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/flunisolid",
+     "title": "Flunisolid"
+    }
+   ]
+  },
+  "Flurbiprofen": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/15293/",
+     "title": "Flurbiprofène – Grossesse"
+    }
+   ]
+  },
+  "Fluticasone propionate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/fluticason",
+     "title": "Fluticason"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/fluticasone/",
+     "title": "Fluticasone"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8107/",
+     "title": "Fluticasone – Grossesse"
+    }
+   ]
+  },
+  "Ganciclovir": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/ganciclovir",
+     "title": "Ganciclovir"
+    }
+   ]
+  },
+  "Ganciclovir sodium": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/ganciclovir",
+     "title": "Ganciclovir"
+    }
+   ]
+  },
+  "Haloperidol": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/haloperidol",
+     "title": "Haloperidol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/haloperidol/",
+     "title": "Haloperidol"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12044/",
+     "title": "Halopéridol – Grossesse"
+    }
+   ]
+  },
+  "Hydroxyurea": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/11769/",
+     "title": "Hydroxycarbamide – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/13505/",
+     "title": "Hydroxycarbamide – Exposition paternelle"
+    }
+   ]
+  },
+  "Iodine-131": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/iodine-131/",
+     "title": "Iodine 131"
+    }
+   ]
+  },
+  "Isotretinoin": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/isotretinoin",
+     "title": "Isotretinoin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/isotretinoin-tablets/",
+     "title": "Isotretinoin capsules"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6376/",
+     "title": "Isotrétinoïne – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/12958/",
+     "title": "Isotrétinoïne – Exposition paternelle"
+    }
+   ]
+  },
+  "Lenalidomide": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/lenalidomide/",
+     "title": "Lenalidomide"
+    }
+   ]
+  },
+  "Leuprolide acetate": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12886/",
+     "title": "Leuproréline – Grossesse"
+    }
+   ]
+  },
+  "Levodopa": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/levodopa",
+     "title": "Levodopa"
+    }
+   ]
+  },
+  "Lithium carbonate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lithiumsalze",
+     "title": "Lithiumsalze"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/lithium/",
+     "title": "Lithium"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/11974/",
+     "title": "Lithium – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/13510/",
+     "title": "Lithium – Exposition paternelle"
+    }
+   ]
+  },
+  "Lithium citrate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lithiumsalze",
+     "title": "Lithiumsalze"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/lithium/",
+     "title": "Lithium"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/11974/",
+     "title": "Lithium – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/13510/",
+     "title": "Lithium – Exposition paternelle"
+    }
+   ]
+  },
+  "Lorazepam": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lorazepam",
+     "title": "Lorazepam"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6061/",
+     "title": "Lorazépam – Grossesse"
+    }
+   ]
+  },
+  "Lovastatin": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lovastatin",
+     "title": "Lovastatin"
+    }
+   ]
+  },
+  "Mebendazole": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/mebendazol",
+     "title": "Mebendazol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/mebendazole/",
+     "title": "Mebendazole"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7657/",
+     "title": "Mébendazole – Grossesse"
+    }
+   ]
+  },
+  "Medroxyprogesterone acetate": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6266/",
+     "title": "Médroxyprogestérone – Grossesse"
+    }
+   ]
+  },
+  "Mercaptopurine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/mercaptopurin",
+     "title": "Mercaptopurin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/mercaptopurine/",
+     "title": "Mercaptopurine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/16668/",
+     "title": "Mercaptopurine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/16680/",
+     "title": "Mercaptopurine – Exposition paternelle"
+    }
+   ]
+  },
+  "Methimazole": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/thiamazol",
+     "title": "Methimazol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/methimazole/",
+     "title": "Methimazole"
+    }
+   ]
+  },
+  "Methotrexate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/methotrexat",
+     "title": "Methotrexat"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/methotrexate/",
+     "title": "Methotrexate"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3331/",
+     "title": "Méthotrexate – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/10800/",
+     "title": "Méthotrexate – Exposition paternelle"
+    }
+   ]
+  },
+  "Methotrexate sodium": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/methotrexat",
+     "title": "Methotrexat"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/methotrexate/",
+     "title": "Methotrexate"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3331/",
+     "title": "Méthotrexate – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/10800/",
+     "title": "Méthotrexate – Exposition paternelle"
+    }
+   ]
+  },
+  "Midazolam hydrochloride": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/midazolam",
+     "title": "Midazolam"
+    }
+   ]
+  },
+  "Minocycline hydrochloride (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/minocyclin",
+     "title": "Minocyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/minocycline/",
+     "title": "Minocycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12925/",
+     "title": "Minocycline – Grossesse"
+    }
+   ]
+  },
+  "Misoprostol": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/misoprostol",
+     "title": "Misoprostol"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/misoprostol/",
+     "title": "Misoprostol"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3357/",
+     "title": "Misoprostol – Grossesse"
+    }
+   ]
+  },
+  "Mycophenolate mofetil and mycophenolic acid": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/mycophenolat",
+     "title": "Mycophenolat"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/mycophenolate/",
+     "title": "Mycophenolate"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8864/",
+     "title": "Mycophénolate – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/8876/",
+     "title": "Mycophénolate – Exposition paternelle"
+    }
+   ]
+  },
+  "Neomycin sulfate (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/neomycin/",
+     "title": "Neomycin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/5053/",
+     "title": "Néomycine – Grossesse"
+    }
+   ]
+  },
+  "Nifedipine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/nifedipin",
+     "title": "Nifedipin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/nifedipine/",
+     "title": "Nifedipine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7173/",
+     "title": "Nifédipine – Grossesse"
+    }
+   ]
+  },
+  "Nimodipine": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/nimodipin",
+     "title": "Nimodipin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/nimodipine/",
+     "title": "Nimodipine"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/9385/",
+     "title": "Nimodipine – Grossesse"
+    }
+   ]
+  },
+  "Oxazepam": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3891/",
+     "title": "Oxazépam – Grossesse"
+    }
+   ]
+  },
+  "Oxytetracycline (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/oxytetracycline/",
+     "title": "Oxytetracycline"
+    }
+   ]
+  },
+  "Oxytetracycline hydrochloride (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/oxytetracycline/",
+     "title": "Oxytetracycline"
+    }
+   ]
+  },
+  "Phenobarbital": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8134/",
+     "title": "Phénobarbital – Grossesse"
+    }
+   ]
+  },
+  "Phenprocoumon": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/phenprocoumon",
+     "title": "Phenprocoumon"
+    }
+   ]
+  },
+  "Pimozide": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/pimozid",
+     "title": "Pimozid"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12033/",
+     "title": "Pimozide – Grossesse"
+    }
+   ]
+  },
+  "Pravastatin sodium": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/pravastatin",
+     "title": "Pravastatin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8622/",
+     "title": "Pravastatine – Grossesse"
+    }
+   ]
+  },
+  "Prednisolone sodium phosphate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/prednisolon",
+     "title": "Prednisolon"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/prednisolone/",
+     "title": "Prednisolone"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/3509/",
+     "title": "Prednisolone – Grossesse"
+    }
+   ]
+  },
+  "Primidone": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12178/",
+     "title": "Primidone – Grossesse"
+    }
+   ]
+  },
+  "Propylthiouracil": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/propylthiouracil",
+     "title": "Propylthiouracil"
+    }
+   ]
+  },
+  "Ribavirin": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/ribavirin/",
+     "title": "Ribavirin"
+    }
+   ]
+  },
+  "Rifampin": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/rifampicin",
+     "title": "Rifampicin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/rifampicin/",
+     "title": "Rifampicin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8385/",
+     "title": "Rifampicine – Grossesse"
+    }
+   ]
+  },
+  "Streptomycin sulfate": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/streptomycin/",
+     "title": "Streptomycin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7746/",
+     "title": "Streptomycine – Grossesse"
+    }
+   ]
+  },
+  "Sulindac": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/15301/",
+     "title": "Sulindac – Grossesse"
+    }
+   ]
+  },
+  "Tamoxifen citrate": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tamoxifen/",
+     "title": "Tamoxifen"
+    }
+   ]
+  },
+  "Tetracycline (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tetracycline/",
+     "title": "Tetracycline"
+    }
+   ]
+  },
+  "Tetracycline hydrochloride (internal use)": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tetracycline/",
+     "title": "Tetracycline"
+    }
+   ]
+  },
+  "Tetracyclines (internal use)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/doxycyclin",
+     "title": "Doxycyclin"
+    },
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/minocyclin",
+     "title": "Minocyclin"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/demeclocycline/",
+     "title": "Demeclocycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/doxycycline/",
+     "title": "Doxycycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/lymecycline/",
+     "title": "Lymecycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/minocycline/",
+     "title": "Minocycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/oxytetracycline/",
+     "title": "Oxytetracycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tetracycline/",
+     "title": "Tetracycline"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tigecycline/",
+     "title": "Tigecycline"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12925/",
+     "title": "Minocycline – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6391/",
+     "title": "Lymécycline – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/6396/",
+     "title": "Doxycycline – Grossesse"
+    }
+   ]
+  },
+  "Thalidomide": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/thalidomide/",
+     "title": "Thalidomide"
+    }
+   ]
+  },
+  "Tobramycin sulfate": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/tobramycin/",
+     "title": "Tobramycin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7735/",
+     "title": "Tobramycine – Grossesse"
+    }
+   ]
+  },
+  "Topiramate": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/topiramat",
+     "title": "Topiramat"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/topiramate/",
+     "title": "Topiramate"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12235/",
+     "title": "Topiramate – Grossesse"
+    }
+   ]
+  },
+  "Valproate (Valproic acid)": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/valproinsaeure",
+     "title": "Valproinsäure"
+    }
+   ],
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/sodium-valproate/",
+     "title": "Sodium valproate"
+    },
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/valproic-acid/",
+     "title": "Valproic acid"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/12594/",
+     "title": "Acide valproïque – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/12655/",
+     "title": "Acide valproïque – Exposition paternelle"
+    }
+   ]
+  },
+  "Warfarin": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/warfarin/",
+     "title": "Warfarin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/10071/",
+     "title": "Warfarine – Grossesse"
+    }
+   ]
+  },
+  "dinitrogen oxide": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/recreational-drugs/",
+     "title": "Nitrous oxide"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8303/",
+     "title": "Protoxyde d’azote – Grossesse"
+    }
+   ]
+  },
+  "Pomalidomide": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/pomalidomide/",
+     "title": "Pomalidomide"
+    }
+   ]
+  },
+  "theophylline; 1,3-dimethyl-3,7-dihydro-1H-purine-2,6-dione": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/theophyllin",
+     "title": "Theophyllin"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/4958/",
+     "title": "Théophylline – Grossesse"
+    }
+   ]
+  },
+  "piperazine hydrochloride [1]": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/piperazine/",
+     "title": "Piperazine"
+    }
+   ]
+  },
+  "piperazine; [solid]": {
+   "bumps": [
+    {
+     "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/piperazine/",
+     "title": "Piperazine"
+    }
+   ]
+  }
+ }
+}

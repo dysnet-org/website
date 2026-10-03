@@ -1,0 +1,393 @@
+{
+ "_about": "WHO International Nonproprietary Names checked by hand for the register medicines Wikidata and ChEBI did not give one for, read 2026-10-03. Sources: the WHO cumulative list of recommended INNs as republished by Fimea, ChEBI names typed INN, and, for colchicine, the British Pharmacopoeia Commission. 'no INN' means the WHO has assigned none (a salt, a mixture, a biological or a natural substance).",
+ "entries": {
+  "Aminopterin": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "Fimea (Finnish Medicines Agency) reproduction of WHO Cumulative List of INN, Recommended List 95 (17.6.2026)",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "aminopromazine ... aminopterin sodium / aminopterinum natricum ... aminoquinol (plain 'aminopterin' absent; only the sodium salt is listed)"
+  },
+  "Chenodiol": {
+   "inn": [
+    "chenodeoxycholic acid"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "acidum chenodeoxycholicum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "chenodeoxycholic acid   acidum chenodeoxycholicum   kenodeoksikoolihappo"
+  },
+  "Chlorcyclizine": {
+   "inn": [
+    "chlorcyclizine"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "chlorcyclizinum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "chlorcyclizine   chlorcyclizinum   kloorisyklitsiini"
+  },
+  "Clorazepate": {
+   "inn": [
+    "dipotassium clorazepate"
+   ],
+   "status": "INN",
+   "fr": "clorazepate dipotassique",
+   "es": "clorazepato dipotasico",
+   "la": "dikalii clorazepas",
+   "source": "ChEBI (CHEBI:3762), names typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3762",
+   "quote": "dipotassium clorazepate / clorazepate dipotassique / dikalii clorazepas / clorazepato dipotasico — type: INN"
+  },
+  "Colchicine": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "British Pharmacopoeia Commission, Expert Advisory Group on Nomenclature, minutes NOM 11/1 (February 2016)",
+   "url": "https://www.pharmacopoeia.com/file/NOM---February-2016.pdf",
+   "quote": "Colchicine and Technitium[99mTc] Tilmanocept ... had not been assigned an INN"
+  },
+  "Conjugated estrogens": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:749574) \"Conjugated estrogens\" listed only as SYNONYM, not INN; absent from Fimea WHO cumulative INN list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:749574",
+   "quote": "Conjugated estrogens — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "Cyclophosphamide": {
+   "inn": [
+    "cyclophosphamide"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "cyclophosphamidum",
+   "source": "ChEBI (CHEBI:4026) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4026",
+   "quote": "cyclophosphamide — type: INN (English, adapted)"
+  },
+  "Estropipate": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:4873) \"Estropipate\" listed only as SYNONYM; absent from Fimea WHO cumulative INN list between estrone and esuberaprost",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4873",
+   "quote": "Estropipate — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "Halazepam": {
+   "inn": [
+    "halazepam"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "halazepamum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "halazepam   halazepamum   halatsepaami"
+  },
+  "Halobetasol": {
+   "inn": [
+    "ulobetasol"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "ulobetasolum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95 (USAN 'halobetasol propionate' = INN 'ulobetasol'; no separate ester entry, same pattern as clobetasol/clobetasol propionate)",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "ulobetasol   ulobetasolum   ulobetasoli"
+  },
+  "Iodine-131": {
+   "inn": [
+    "sodium iodide (131I)"
+   ],
+   "status": "INN",
+   "fr": "iodure (131I) de sodium",
+   "es": "ioduro (131I) de sodio",
+   "la": "natrii iodidum (131I)",
+   "source": "ChEBI (CHEBI:749371), names typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:749371",
+   "quote": "sodium iodide i 131 (en) / iodure (131i) de sodium (fr) / ioduro (131i) de sodio (es) — type: INN"
+  },
+  "Lithium carbonate": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:6504) \"Lithium carbonate\" listed only as SYNONYM/IUPAC NAME, no INN-type entry; absent from Fimea WHO cumulative INN list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6504",
+   "quote": "lithium carbonate — SYNONYM; lithium carbonate — IUPAC NAME (no INN-type name recorded)"
+  },
+  "Lithium citrate": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:64735) \"lithium citrate\" listed only as SYNONYM, no INN-type entry; absent from Fimea WHO cumulative INN list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64735",
+   "quote": "lithium citrate — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "Menotropins": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:753399) \"Menotropins\" listed only as SYNONYM; absent from Fimea WHO cumulative INN list between menogaril and meobentine",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:753399",
+   "quote": "Menotropins — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "Mercaptopurine": {
+   "inn": [
+    "mercaptopurine"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "mercaptopurinum",
+   "source": "ChEBI (CHEBI:50667) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:50667",
+   "quote": "mercaptopurine — type: INN (English)"
+  },
+  "Netilmicin": {
+   "inn": [
+    "netilmicin"
+   ],
+   "status": "INN",
+   "fr": "netilmicine",
+   "es": "netilmicina",
+   "la": "netilmicinum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95; fr/es from ChEBI (CHEBI:748901)",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "netilmicin   netilmicinum   netilmisiini"
+  },
+  "Norethisterone (Norethindrone) /Ethinyl": {
+   "inn": [
+    "norethisterone",
+    "ethinylestradiol"
+   ],
+   "status": "INN",
+   "fr": "norethistérone (ChEBI)",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:7627) typed INN for norethisterone; Netherlands MEB Public Assessment Report (h117923) for ethinylestradiol",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7627",
+   "quote": "norethisterone — type: INN (en/fr) | \"Ethinylestradiol (EE) is the international non-proprietary name (INN) of the drug substance.\""
+  },
+  "Norethisterone (Norethindrone) /Mestranol": {
+   "inn": [
+    "norethisterone",
+    "mestranol"
+   ],
+   "status": "INN",
+   "fr": "norethistérone",
+   "es": "",
+   "la": "mestranolum",
+   "source": "ChEBI (CHEBI:7627, CHEBI:6784), both typed INN",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:6784",
+   "quote": "mestranol / mestranolum — type: INN; norethisterone — type: INN"
+  },
+  "Norgestrel": {
+   "inn": [
+    "norgestrel"
+   ],
+   "status": "INN",
+   "fr": "norgestrel",
+   "es": "norgestrel",
+   "la": "norgestrelum",
+   "source": "ChEBI (CHEBI:7630) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7630",
+   "quote": "norgestrel / norgestrelum — type: INN (en/es/fr/la)"
+  },
+  "Oxazepam": {
+   "inn": [
+    "oxazepam"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "oxazepamum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "oxazepam   oxazepamum   oksatsepaami"
+  },
+  "Retinol/retinyl esters": {
+   "inn": [
+    "retinol"
+   ],
+   "status": "INN",
+   "fr": "rétinol",
+   "es": "retinol",
+   "la": "retinolum",
+   "source": "ChEBI (CHEBI:17336) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17336",
+   "quote": "retinol / retinolum / rétinol — type: INN (en/es/fr/la)"
+  },
+  "Streptozocin": {
+   "inn": [
+    "streptozocin"
+   ],
+   "status": "INN",
+   "fr": "streptozocine",
+   "es": "estreptozocina",
+   "la": "streptozocinum",
+   "source": "ChEBI (CHEBI:9288) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:9288",
+   "quote": "streptozocin / streptozocine / estreptozocina / streptozocinum — type: INN"
+  },
+  "Thioguanine": {
+   "inn": [
+    "tioguanine"
+   ],
+   "status": "INN",
+   "fr": "tioguanine",
+   "es": "",
+   "la": "tioguaninum",
+   "source": "ChEBI (CHEBI:9555) typed INN (English spelling is 'tioguanine', not 'thioguanine'); corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:9555",
+   "quote": "tioguanine — type: INN (en, adapted); tioguanine — type: INN (fr)"
+  },
+  "Triazolam": {
+   "inn": [
+    "triazolam"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "triazolamum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "triazolam   triazolamum   triatsolaami"
+  },
+  "Uracil mustard": {
+   "inn": [
+    "uramustine"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "uramustinum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "uramustine   uramustinum   uramustiini"
+  },
+  "Urofollitropin": {
+   "inn": [
+    "urofollitropin"
+   ],
+   "status": "INN",
+   "fr": "urofollitropine",
+   "es": "urofolitropina",
+   "la": "urofollitropinum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95; fr/es from ChEBI (CHEBI:749510)",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "urofollitropin   urofollitropinum   urofollitropiini"
+  },
+  "Valproate": {
+   "inn": [
+    "valproic acid"
+   ],
+   "status": "INN",
+   "fr": "acide valproïque",
+   "es": "ácido valproico",
+   "la": "acidum valproicum",
+   "source": "ChEBI (CHEBI:39867) typed INN; corroborated by Fimea WHO cumulative list (also lists 'valproate semisodium' as a separate INN for the hemisodium salt)",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39867",
+   "quote": "valproic acid / acide valproïque / acidum valproicum / ácido valproico — type: INN"
+  },
+  "Vincristine": {
+   "inn": [
+    "vincristine"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "vincristinum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "vincristine   vincristinum   vinkristiini"
+  },
+  "Ambrisentan": {
+   "inn": [
+    "ambrisentan"
+   ],
+   "status": "INN",
+   "fr": "",
+   "es": "",
+   "la": "ambrisentanum",
+   "source": "Fimea reproduction of WHO Cumulative List of INN, Recommended List 95",
+   "url": "https://fimea.fi/documents/147152901/159459792/INN+lista+(EN).pdf",
+   "quote": "ambrisentan   ambrisentanum   ambrisentaani"
+  },
+  "Bosentan": {
+   "inn": [
+    "bosentan"
+   ],
+   "status": "INN",
+   "fr": "bosentan",
+   "es": "bosentán",
+   "la": "bosentanum",
+   "source": "ChEBI (CHEBI:51450) typed INN; corroborated by Fimea WHO cumulative list",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:51450",
+   "quote": "bosentan / bosentanum / bosentán — type: INN (en/fr/es/la)"
+  },
+  "dinitrogen oxide": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:17045) \"Nitrous oxide\" listed only as SYNONYM/UNIPROT NAME, no INN-type entry; absent from Fimea WHO cumulative INN list between nitrosulfathiazole and nitroxinil",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17045",
+   "quote": "Nitrous oxide — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "theophylline": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:28177) \"Theophylline\" listed only as SYNONYM/UNIPROT NAME, no INN-type entry; absent from Fimea WHO cumulative INN list between theodrenaline and theophylline ephedrine",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28177",
+   "quote": "THEOPHYLLINE — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "methyl salicylate": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:88839) \"Methyl salicylate\" listed only as SYNONYM/UNIPROT NAME, no INN-type entry; absent from Fimea WHO cumulative INN list between methylrosanilinium chloride and methylsamidorphan chloride",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:88839",
+   "quote": "Methyl salicylate — SYNONYM (no INN-type name recorded for this entry)"
+  },
+  "piperazine": {
+   "inn": [],
+   "status": "no INN",
+   "fr": "",
+   "es": "",
+   "la": "",
+   "source": "ChEBI (CHEBI:28568) \"piperazine\" listed only as IUPAC NAME/SYNONYM, no INN-type entry; absent from Fimea WHO cumulative INN list between piperaquine and piperazine calcium edetate",
+   "url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28568",
+   "quote": "piperazine — IUPAC NAME; Piperazine — SYNONYM (no INN-type name recorded)"
+  }
+ }
+}

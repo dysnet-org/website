@@ -1,0 +1,1711 @@
+{
+ "read": "2026-10-03",
+ "data_until": "2020-06-24",
+ "source": {
+  "label": "California Safe Cosmetics Program, Chemicals in Cosmetics open data",
+  "url": "https://data.chhs.ca.gov/dataset/chemicals-in-cosmetics",
+  "search": "https://cscpsearch.cdph.ca.gov/search/publicsearch",
+  "authority": "California Department of Public Health"
+ },
+ "entries": {
+  "toluene": {
+   "california_names": [
+    "Toluene"
+   ],
+   "products_ever": 60,
+   "products_current": 55,
+   "brands_current": 15,
+   "types_current": [
+    [
+     "Nail Polish and Enamel",
+     33
+    ],
+    [
+     "Basecoats and Undercoats",
+     11
+    ],
+    [
+     "Artificial Nails and Related Products",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Suntan Enhancers",
+     1
+    ],
+    [
+     "Scrubs and Exfoliants",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Nail Polish and Enamel",
+     34
+    ],
+    [
+     "Basecoats and Undercoats",
+     12
+    ],
+    [
+     "Artificial Nails and Related Products",
+     3
+    ],
+    [
+     "Other Nail Products",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Suntan Enhancers",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Entity Nail Top Coat",
+     "product": "UV Nail Topcoat",
+     "type": "UV Gel Nail Polish",
+     "company": "Entity Beauty, Inc.",
+     "reported": "2018-02-17"
+    },
+    {
+     "brand": "Seche Vite",
+     "product": "Seche Vite Top Coat",
+     "type": "Other Nail Products",
+     "company": "American International Industries",
+     "reported": "2018-01-02"
+    },
+    {
+     "brand": "Seche",
+     "product": "Seche Vive Instant Gel Effect Top Coat",
+     "type": "Nail Polish and Enamel",
+     "company": "American International Industries",
+     "reported": "2017-04-12"
+    },
+    {
+     "brand": "Tammy Taylor Nails",
+     "product": "Z-Coat",
+     "type": "Nail Polish and Enamel",
+     "company": "Tammy Taylor Nails, Inc.",
+     "reported": "2016-08-08"
+    },
+    {
+     "brand": "Tammy Taylor",
+     "product": "A Coat",
+     "type": "Artificial Nails and Related Products",
+     "company": "Tammy Taylor Nails, Inc.",
+     "reported": "2016-08-08"
+    },
+    {
+     "brand": "CALI CHEM",
+     "product": "AIR-BRUSH GLOWING TOPCOAT",
+     "type": "Artificial Nails and Related Products",
+     "company": "CALI CHEM INC",
+     "reported": "2010-06-03"
+    },
+    {
+     "brand": "BIOGLO",
+     "product": "VISIBLY SOFT MILK MASK",
+     "type": "Facial Masks",
+     "company": "L&S Cosmetics & Toiletries (M) Sdn Bhd",
+     "reported": "2010-05-18"
+    },
+    {
+     "brand": "Bliss",
+     "product": "Clog Dissolving Cleansing Milk",
+     "type": "Skin Cleansers",
+     "company": "Bliss World LLC",
+     "reported": "2009-11-09"
+    }
+   ],
+   "last_report": "2020-04-24"
+  },
+  "styrene": {
+   "california_names": [
+    "Styrene"
+   ],
+   "products_ever": 52,
+   "products_current": 26,
+   "brands_current": 10,
+   "types_current": [
+    [
+     "Hair Styling Products",
+     7
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     3
+    ],
+    [
+     "Perfumes/Eaux de Parfum",
+     3
+    ],
+    [
+     "Body Washes and Soaps",
+     2
+    ],
+    [
+     "Hair Conditioners (leave-in)",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ]
+   ],
+   "types_ever": [
+    [
+     "Toilet Water/Eaux de Toilette",
+     11
+    ],
+    [
+     "Perfumes/Eaux de Parfum",
+     9
+    ],
+    [
+     "Hair Styling Products",
+     7
+    ],
+    [
+     "Body Washes and Soaps",
+     4
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     4
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     4
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Careline",
+     "product": "Self Heating Face Mask With Natural Activated Charcoal",
+     "type": "Skin Cleansers",
+     "company": "Cosmopharm Ltd.",
+     "reported": "2020-03-20"
+    },
+    {
+     "brand": "Liz Claiborne",
+     "product": "Liz Claiborne Eau De Toilette Spray",
+     "type": "Toilet Water/Eaux de Toilette",
+     "company": "Elizabeth Arden, Inc.",
+     "reported": "2017-01-26"
+    },
+    {
+     "brand": "Elizabeth Arden",
+     "product": "Elizabeth Arden Splendor Eau de Parfum",
+     "type": "Perfumes/Eaux de Parfum",
+     "company": "Elizabeth Arden, Inc.",
+     "reported": "2017-01-18"
+    },
+    {
+     "brand": "Selsun Blue",
+     "product": "Selsun Blue Moisturizing Dandruff Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Chattem, Inc.",
+     "reported": "2015-08-04"
+    },
+    {
+     "brand": "Gold Bond",
+     "product": "Gold Bond Medicated Body Lotion Original Strength",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "Chattem, Inc.",
+     "reported": "2015-08-04"
+    },
+    {
+     "brand": "LANVIN PARIS",
+     "product": "ARPEGE EAU DE PARFUM",
+     "type": "Perfumes/Eaux de Parfum",
+     "company": "Interparfums",
+     "reported": "2014-03-13"
+    },
+    {
+     "brand": "Connemara",
+     "product": "Eau de Toilette",
+     "type": "Toilet Water/Eaux de Toilette",
+     "company": "Fragrances of Ireland Ltd.",
+     "reported": "2013-11-11"
+    },
+    {
+     "brand": "John Paul Mitchell Systems",
+     "product": "Awapuhi Moisture Mist (Non-Aerosol)",
+     "type": "Hair Conditioners (leave-in)",
+     "company": "John Paul Mitchell Systems",
+     "reported": "2010-12-30"
+    }
+   ],
+   "last_report": "2020-03-20"
+  },
+  "Ethylene glycol (ingested)": {
+   "california_names": [
+    "Ethylene glycol"
+   ],
+   "products_ever": 14,
+   "products_current": 6,
+   "brands_current": 6,
+   "types_current": [
+    [
+     "Body Washes and Soaps",
+     2
+    ],
+    [
+     "Foundations and Bases",
+     1
+    ],
+    [
+     "Scrubs and Exfoliants",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     5
+    ],
+    [
+     "Body Washes and Soaps",
+     3
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Permanent Waves and Wave Sets",
+     2
+    ],
+    [
+     "Foundations and Bases",
+     1
+    ],
+    [
+     "Scrubs and Exfoliants",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Elizabeth Arden",
+     "product": "Elizabeth Arden Ceramide Plump Perfect Ultra Lift and Firm Moisture Cream SPF 30",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "Elizabeth Arden, Inc.",
+     "reported": "2017-01-18"
+    },
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "Vera Wang",
+     "product": "Vera Wang Bath and Shower Creme",
+     "type": "Body Washes and Soaps",
+     "company": "Coty",
+     "reported": "2013-10-07"
+    },
+    {
+     "brand": "Calvin Klein Obsession",
+     "product": "Calvin Klein Obsession Shower Gel",
+     "type": "Body Washes and Soaps",
+     "company": "Coty",
+     "reported": "2009-10-05"
+    },
+    {
+     "brand": "Vera Wang Princess",
+     "product": "Vera Wang Princess Body Polish",
+     "type": "Scrubs and Exfoliants",
+     "company": "Coty",
+     "reported": "2009-10-05"
+    },
+    {
+     "brand": "Laboratoire Remede",
+     "product": "Soft Focusing Lotion",
+     "type": "Foundations and Bases",
+     "company": "Bliss World LLC",
+     "reported": "2009-09-28"
+    }
+   ],
+   "last_report": "2019-12-27"
+  },
+  "lead di(acetate)": {
+   "california_names": [
+    "Lead acetate"
+   ],
+   "products_ever": 7,
+   "products_current": 6,
+   "brands_current": 3,
+   "types_current": [
+    [
+     "Hair Tints and Rinses (coloring)",
+     4
+    ],
+    [
+     "Hair Styling Products",
+     2
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Tints and Rinses (coloring)",
+     4
+    ],
+    [
+     "Hair Styling Products",
+     2
+    ],
+    [
+     "Hair Dyes and Colors",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Youthair",
+     "product": "Youthair Creme",
+     "type": "Hair Styling Products",
+     "company": "American International Industries",
+     "reported": "2010-05-13"
+    },
+    {
+     "brand": "Grecian Plus",
+     "product": "Grecian Plus Gradual Haircolor Foam",
+     "type": "Hair Tints and Rinses (coloring)",
+     "company": "Combe Incorporated",
+     "reported": "2009-10-05"
+    },
+    {
+     "brand": "Grecian Formula 16",
+     "product": "Grecian Formula 16 Liquid",
+     "type": "Hair Tints and Rinses (coloring)",
+     "company": "Combe Incorporated",
+     "reported": "2009-10-05"
+    }
+   ],
+   "last_report": "2018-11-19"
+  },
+  "All-trans retinoic acid": {
+   "california_names": [
+    "All-trans retinoic acid"
+   ],
+   "products_ever": 8,
+   "products_current": 8,
+   "brands_current": 5,
+   "types_current": [
+    [
+     "Hair Styling Products",
+     3
+    ],
+    [
+     "Body Washes and Soaps",
+     2
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Indoor Tanning Products",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Styling Products",
+     3
+    ],
+    [
+     "Body Washes and Soaps",
+     2
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Indoor Tanning Products",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "ARCHIPELAGO",
+     "product": "GRAPEFRUIT BODY WASH",
+     "type": "Body Washes and Soaps",
+     "company": "Archipelago Inc.",
+     "reported": "2010-05-24"
+    },
+    {
+     "brand": "CALIFORNIA NORTH",
+     "product": "Titanium Self Tanner",
+     "type": "Indoor Tanning Products",
+     "company": "CALIFORNIA NORTH",
+     "reported": "2009-11-10"
+    },
+    {
+     "brand": "Serum",
+     "product": "Serum",
+     "type": "Hair Styling Products",
+     "company": "I.C.O.N. Line, Inc.",
+     "reported": "2009-10-15"
+    },
+    {
+     "brand": "Sultry",
+     "product": "Sultry",
+     "type": "Hair Styling Products",
+     "company": "I.C.O.N. Line, Inc.",
+     "reported": "2009-10-15"
+    },
+    {
+     "brand": "Web",
+     "product": "Web",
+     "type": "Hair Styling Products",
+     "company": "I.C.O.N. Line, Inc.",
+     "reported": "2009-10-15"
+    }
+   ],
+   "last_report": "2010-05-24"
+  },
+  "benzo[a]pyrene; benzo[def]chrysene": {
+   "california_names": [
+    "Benzo[a]pyrene"
+   ],
+   "products_ever": 1,
+   "products_current": 0,
+   "brands_current": 0,
+   "types_current": [],
+   "types_ever": [
+    [
+     "Lip Balm (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Facial Cream",
+     1
+    ]
+   ],
+   "examples": [],
+   "last_report": "2016-03-09"
+  },
+  "Aspirin (NOTE:  It is especially  important not to use aspirin during the last three months of pregnancy,  unless specifically directed to do so by a physician because it may cause  problems in the unborn child or  complications during delivery.)": {
+   "california_names": [
+    "Acetylsalicylic acid",
+    "Aspirin"
+   ],
+   "products_ever": 8,
+   "products_current": 8,
+   "brands_current": 5,
+   "types_current": [
+    [
+     "Aftershave Products",
+     7
+    ],
+    [
+     "Skin Cleansers",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Aftershave Products",
+     7
+    ],
+    [
+     "Skin Cleansers",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Skin Tight",
+     "product": "Skin Tight - Extra Strength",
+     "type": "Aftershave Products",
+     "company": "B & C PRODUCTS, INC.",
+     "reported": "2019-11-13"
+    },
+    {
+     "brand": "Woody Bump Repair",
+     "product": "Woody Bump Repair",
+     "type": "Aftershave Products",
+     "company": "American International Industries",
+     "reported": "2017-05-08"
+    },
+    {
+     "brand": "Tend Skin",
+     "product": "Tend Skin Liquid",
+     "type": "Aftershave Products",
+     "company": "The Tend Skin Company",
+     "reported": "2010-07-13"
+    },
+    {
+     "brand": "GiGi",
+     "product": "No Bump",
+     "type": "Aftershave Products",
+     "company": "American International Industries",
+     "reported": "2009-12-23"
+    },
+    {
+     "brand": "Clubman",
+     "product": "Club Mend Bump Repair Gel",
+     "type": "Aftershave Products",
+     "company": "American International Industries",
+     "reported": "2009-12-14"
+    }
+   ],
+   "last_report": "2019-11-13"
+  },
+  "Phenacemide": {
+   "california_names": [
+    "Phenacemide"
+   ],
+   "products_ever": 1,
+   "products_current": 1,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Nighttime Skin Care",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Nighttime Skin Care",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Bodyography SKIN",
+     "product": "Night Treatment",
+     "type": "Nighttime Skin Care",
+     "company": "Robanda International",
+     "reported": "2019-02-08"
+    }
+   ],
+   "last_report": "2019-02-08"
+  },
+  "Methanol": {
+   "california_names": [
+    "Methanol"
+   ],
+   "products_ever": 6,
+   "products_current": 5,
+   "brands_current": 2,
+   "types_current": [
+    [
+     "Facial Cream",
+     2
+    ],
+    [
+     "Hair Conditioners (leave-in)",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Hair Conditioners (rinse-out)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Facial Cream",
+     2
+    ],
+    [
+     "Hair Conditioners (leave-in)",
+     1
+    ],
+    [
+     "Eyeliner/Eyebrow Pencils",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Hair Conditioners (rinse-out)",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Conditioner",
+     "type": "Hair Conditioners (rinse-out)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "BIOLOGIQUE RECHERCHE",
+     "product": "COMPLEXE ROYAL",
+     "type": "Facial Cream",
+     "company": "BR SAS",
+     "reported": "2009-10-02"
+    }
+   ],
+   "last_report": "2014-02-04"
+  },
+  "Benzene": {
+   "california_names": [
+    "Benzene"
+   ],
+   "products_ever": 4,
+   "products_current": 1,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Hair Styling Products",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Conditioners (rinse-out)",
+     2
+    ],
+    [
+     "Hair Styling Products",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Regis Design Line",
+     "product": "Texture Cream Casual Styler",
+     "type": "Hair Styling Products",
+     "company": "Regis Corporation",
+     "reported": "2014-02-05"
+    }
+   ],
+   "last_report": "2014-02-06"
+  },
+  "Methyl chloride": {
+   "california_names": [
+    "Methyl chloride"
+   ],
+   "products_ever": 7,
+   "products_current": 3,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Hair Conditioners (rinse-out)",
+     2
+    ],
+    [
+     "Hair Styling Products",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Conditioners (rinse-out)",
+     4
+    ],
+    [
+     "Hair Styling Products",
+     3
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Regis Design Line",
+     "product": "Interrupt Texturizing Clay",
+     "type": "Hair Styling Products",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    }
+   ],
+   "last_report": "2014-02-05"
+  },
+  "lead powder; [particle diameter < 1 mm]": {
+   "california_names": [
+    "Lead"
+   ],
+   "products_ever": 7,
+   "products_current": 6,
+   "brands_current": 4,
+   "types_current": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "Dermaminerals",
+     "product": "Breathable Coverage Mineral Foundation SPF-30",
+     "type": "Sunscreen (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-12-30"
+    },
+    {
+     "brand": "Dermaquest Skin Therapy",
+     "product": "Post-Skin Resurfacing Balm Therapeutic Care",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-05-28"
+    },
+    {
+     "brand": "Harmon Face Values",
+     "product": "Harmon Zinc Oxide Ointment 2oz",
+     "type": "Baby Skin Care",
+     "company": "Harmon Stores Inc.",
+     "reported": "2009-10-14"
+    }
+   ],
+   "last_report": "2014-02-06"
+  },
+  "Lead [Basis for listing changed effective November 22, 2013]": {
+   "california_names": [
+    "Lead"
+   ],
+   "products_ever": 7,
+   "products_current": 6,
+   "brands_current": 4,
+   "types_current": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "Dermaminerals",
+     "product": "Breathable Coverage Mineral Foundation SPF-30",
+     "type": "Sunscreen (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-12-30"
+    },
+    {
+     "brand": "Dermaquest Skin Therapy",
+     "product": "Post-Skin Resurfacing Balm Therapeutic Care",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-05-28"
+    },
+    {
+     "brand": "Harmon Face Values",
+     "product": "Harmon Zinc Oxide Ointment 2oz",
+     "type": "Baby Skin Care",
+     "company": "Harmon Stores Inc.",
+     "reported": "2009-10-14"
+    }
+   ],
+   "last_report": "2014-02-06"
+  },
+  "mercury": {
+   "california_names": [
+    "Mercury and mercury compounds"
+   ],
+   "products_ever": 4,
+   "products_current": 4,
+   "brands_current": 2,
+   "types_current": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ]
+   ],
+   "types_ever": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Dermaminerals",
+     "product": "Breathable Coverage Mineral Foundation SPF-30",
+     "type": "Sunscreen (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-12-30"
+    },
+    {
+     "brand": "Dermaquest Skin Therapy",
+     "product": "Post-Skin Resurfacing Balm Therapeutic Care",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-05-28"
+    }
+   ],
+   "last_report": "2010-12-30"
+  },
+  "Mercury and mercury compounds": {
+   "california_names": [
+    "Mercury and mercury compounds"
+   ],
+   "products_ever": 4,
+   "products_current": 4,
+   "brands_current": 2,
+   "types_current": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ]
+   ],
+   "types_ever": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     2
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Dermaminerals",
+     "product": "Breathable Coverage Mineral Foundation SPF-30",
+     "type": "Sunscreen (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-12-30"
+    },
+    {
+     "brand": "Dermaquest Skin Therapy",
+     "product": "Post-Skin Resurfacing Balm Therapeutic Care",
+     "type": "Skin Moisturizers (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-05-28"
+    }
+   ],
+   "last_report": "2010-12-30"
+  },
+  "ethylene oxide; oxirane": {
+   "california_names": [
+    "Ethylene oxide"
+   ],
+   "products_ever": 31,
+   "products_current": 23,
+   "brands_current": 11,
+   "types_current": [
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     6
+    ],
+    [
+     "Other Bath Products",
+     6
+    ],
+    [
+     "Hair Conditioners (rinse-out)",
+     6
+    ],
+    [
+     "Other Hair Care Product",
+     4
+    ],
+    [
+     "Hair Styling Products",
+     2
+    ],
+    [
+     "Skin Cleansers",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Conditioners (rinse-out)",
+     9
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     8
+    ],
+    [
+     "Other Bath Products",
+     6
+    ],
+    [
+     "Hair Styling Products",
+     5
+    ],
+    [
+     "Other Hair Care Product",
+     4
+    ],
+    [
+     "Skin Cleansers",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Lumorol K 5019",
+     "product": "Lumorol K 5019",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Oxetal VD 92",
+     "product": "Oxetal VD 92",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Setacin 103 SB",
+     "product": "Setacin 103 SB",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Zetesap C 11",
+     "product": "Zetesap C 11",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Zetesol LA 370",
+     "product": "Zetesol LA 370",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Zetesol LES 2/K",
+     "product": "Zetesol LES 2/K",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Harmon Face Values",
+     "product": "Harmon Face Values Argan Oil Conditioner 21oz  (w/pump)",
+     "type": "Hair Conditioners (rinse-out)",
+     "company": "Harmon Stores Inc.",
+     "reported": "2014-08-01"
+    },
+    {
+     "brand": "Regis Design Line",
+     "product": "Texture Cream Casual Styler",
+     "type": "Hair Styling Products",
+     "company": "Regis Corporation",
+     "reported": "2014-02-05"
+    }
+   ],
+   "last_report": "2020-03-03"
+  },
+  "Acrylamide": {
+   "california_names": [
+    "Acrylamide"
+   ],
+   "products_ever": 4,
+   "products_current": 3,
+   "brands_current": 3,
+   "types_current": [
+    [
+     "Other Nail Products",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Facial Cream",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Other Nail Products",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Perfjohn",
+     "product": "Horse Chestnut Varicose Spider Veins Cream",
+     "type": "Facial Cream",
+     "company": "Perfect Angel Cosmetics & Health CO., Limited",
+     "reported": "2017-09-08"
+    },
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "Nail Tek",
+     "product": "Quicken",
+     "type": "Other Nail Products",
+     "company": "Alfalfa Nail Supply, Inc.",
+     "reported": "2009-09-18"
+    }
+   ],
+   "last_report": "2017-09-08"
+  },
+  "Dichloroacetic acid": {
+   "california_names": [
+    "Dichloroacetic acid"
+   ],
+   "products_ever": 6,
+   "products_current": 5,
+   "brands_current": 5,
+   "types_current": [
+    [
+     "Other Hair Care Product",
+     3
+    ],
+    [
+     "Other Bath Products",
+     3
+    ],
+    [
+     "Skin Fresheners",
+     1
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Other Hair Care Product",
+     3
+    ],
+    [
+     "Other Bath Products",
+     3
+    ],
+    [
+     "Hair Shampoos (making a cosmetic claim)",
+     2
+    ],
+    [
+     "Skin Fresheners",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Amphotensid B 5",
+     "product": "Amphotensid B 5",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Lumorol K 5019",
+     "product": "Lumorol K 5019",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Lumorol K 5303",
+     "product": "Lumorol K 5303",
+     "type": "Other Bath Products",
+     "company": "Zschimmer & Schwarz, Inc.",
+     "reported": "2020-03-03"
+    },
+    {
+     "brand": "Regis Design Line",
+     "product": "Moisturizing Shampoo",
+     "type": "Hair Shampoos (making a cosmetic claim)",
+     "company": "Regis Corporation",
+     "reported": "2014-02-04"
+    },
+    {
+     "brand": "Merle Roberts",
+     "product": "Facial Pore Tightening",
+     "type": "Skin Fresheners",
+     "company": "Concept Laboratories, Inc.",
+     "reported": "2010-06-25"
+    }
+   ],
+   "last_report": "2020-03-03"
+  },
+  "Bisphenol A (BPA)": {
+   "california_names": [
+    "Bisphenol A (BPA)"
+   ],
+   "products_ever": 1,
+   "products_current": 1,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Hair Tints and Rinses (coloring)",
+     1
+    ],
+    [
+     "Products Related to Hair Coloring",
+     1
+    ],
+    [
+     "Hair Dyes and Colors",
+     1
+    ],
+    [
+     "Other Personal Care Product",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Hair Tints and Rinses (coloring)",
+     1
+    ],
+    [
+     "Products Related to Hair Coloring",
+     1
+    ],
+    [
+     "Hair Dyes and Colors",
+     1
+    ],
+    [
+     "Other Personal Care Product",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Punky Colour",
+     "product": "Mood Switch",
+     "type": "Hair Dyes and Colors",
+     "company": "American International Industries",
+     "reported": "2019-11-21"
+    }
+   ],
+   "last_report": "2019-11-21"
+  },
+  "dibutyl phthalate; DBP": {
+   "california_names": [
+    "Di-n-butyl phthalate (DBP)"
+   ],
+   "products_ever": 5,
+   "products_current": 4,
+   "brands_current": 2,
+   "types_current": [
+    [
+     "Basecoats and Undercoats",
+     1
+    ],
+    [
+     "Nail Polish and Enamel",
+     1
+    ],
+    [
+     "Nail Decoration",
+     1
+    ],
+    [
+     "Artificial Nails and Related Products",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Nail Polish and Enamel",
+     2
+    ],
+    [
+     "Artificial Nails and Related Products",
+     1
+    ],
+    [
+     "Basecoats and Undercoats",
+     1
+    ],
+    [
+     "Nail Decoration",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Sassy & Chic",
+     "product": "Nail Art Decoration Kit",
+     "type": "Nail Decoration",
+     "company": "Greenbrier International, Inc.",
+     "reported": "2016-10-17"
+    },
+    {
+     "brand": "Lise Watier Cosmétiques Inc.",
+     "product": "Vernis à ongles / Nail Enamel",
+     "type": "Nail Polish and Enamel",
+     "company": "Lise Watier Cosmétiques Inc.",
+     "reported": "2010-12-30"
+    }
+   ],
+   "last_report": "2016-10-17"
+  },
+  "N-methyl-2-pyrrolidone; 1-methyl-2-pyrrolidone": {
+   "california_names": [
+    "N-Methylpyrrolidone"
+   ],
+   "products_ever": 12,
+   "products_current": 7,
+   "brands_current": 4,
+   "types_current": [
+    [
+     "Other Makeup Product",
+     3
+    ],
+    [
+     "Nail Polish and Enamel Removers",
+     2
+    ],
+    [
+     "Hair Styling Products",
+     1
+    ],
+    [
+     "Basecoats and Undercoats",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Mascara/Eyelash Products",
+     4
+    ],
+    [
+     "Other Makeup Product",
+     3
+    ],
+    [
+     "Nail Polish and Enamel Removers",
+     2
+    ],
+    [
+     "Hair Styling Products",
+     1
+    ],
+    [
+     "Basecoats and Undercoats",
+     1
+    ],
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Borboleta",
+     "product": "BLACK Borboleta Lash Adhesive",
+     "type": "Other Makeup Product",
+     "company": "Borboleta Beauty",
+     "reported": "2017-12-15"
+    },
+    {
+     "brand": "Kiss",
+     "product": "All or 1 Artificial Nail Remover",
+     "type": "Nail Polish and Enamel Removers",
+     "company": "Kiss Products, Inc.",
+     "reported": "2010-12-30"
+    },
+    {
+     "brand": "ProStrong",
+     "product": "Proactivator Nail bonder",
+     "type": "Basecoats and Undercoats",
+     "company": "ProStrong Inc.",
+     "reported": "2010-06-14"
+    },
+    {
+     "brand": "Brocato",
+     "product": "Blonde Bombshell",
+     "type": "Hair Styling Products",
+     "company": "Beautopia LLC",
+     "reported": "2009-10-14"
+    }
+   ],
+   "last_report": "2017-12-15"
+  },
+  "Chromium (hexavalent compounds)": {
+   "california_names": [
+    "Chromium (hexavalent compounds)"
+   ],
+   "products_ever": 3,
+   "products_current": 2,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Acne Products (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Scrubs and Exfoliants",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Acne Products (making a cosmetic claim)",
+     1
+    ],
+    [
+     "Scrubs and Exfoliants",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Dermalogica",
+     "product": "MediBac Clearing Masque - Part 1",
+     "type": "Acne Products (making a cosmetic claim)",
+     "company": "Dermalogica",
+     "reported": "2009-09-08"
+    }
+   ],
+   "last_report": "2014-04-21"
+  },
+  "Arsenic (inorganic oxides)": {
+   "california_names": [
+    "Arsenic (inorganic oxides)"
+   ],
+   "products_ever": 1,
+   "products_current": 1,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Sunscreen (making a cosmetic claim)",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Dermaminerals",
+     "product": "Breathable Coverage Mineral Foundation SPF-30",
+     "type": "Sunscreen (making a cosmetic claim)",
+     "company": "DERMAQUEST, INC.",
+     "reported": "2010-12-30"
+    }
+   ],
+   "last_report": "2010-12-30"
+  },
+  "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)": {
+   "california_names": [
+    "Acetic acid, retinyl ester",
+    "Retinol",
+    "Retinol palmitate",
+    "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.",
+    "Retinyl acetate",
+    "Retinyl palmitate",
+    "Vitamin A",
+    "Vitamin A palmitate"
+   ],
+   "products_ever": 1789,
+   "products_current": 1506,
+   "brands_current": 316,
+   "types_current": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     324
+    ],
+    [
+     "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     206
+    ],
+    [
+     "Foundations and Bases",
+     153
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     148
+    ],
+    [
+     "Lip Color - Lipsticks, Liners, and Pencils",
+     78
+    ],
+    [
+     "Lip Gloss/Shine",
+     59
+    ]
+   ],
+   "types_ever": [
+    [
+     "Skin Moisturizers (making a cosmetic claim)",
+     393
+    ],
+    [
+     "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     234
+    ],
+    [
+     "Foundations and Bases",
+     168
+    ],
+    [
+     "Sunscreen (making a cosmetic claim)",
+     168
+    ],
+    [
+     "Lip Color - Lipsticks, Liners, and Pencils",
+     100
+    ],
+    [
+     "Lip Gloss/Shine",
+     86
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Eucerin",
+     "product": "Eucerin Anti-Wrinkle Night Cream",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "Beiersdorf, Inc.",
+     "reported": "2020-04-15"
+    },
+    {
+     "brand": "Ultraceuticals",
+     "product": "Ultra A Perfecting Eye Cream",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "Ultraceuticals Pty Ltd",
+     "reported": "2020-03-17"
+    },
+    {
+     "brand": "IOPE",
+     "product": "IOPE RETINOL EXPERT 0.1%",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "AMOREPACIFIC US INC.",
+     "reported": "2020-03-05"
+    },
+    {
+     "brand": "NeoStrata",
+     "product": "Retinol 0.3% Overnight Peel",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "NeoStrata Company, Inc., a Johnson & Johnson Company",
+     "reported": "2020-02-14"
+    },
+    {
+     "brand": "Exuviance",
+     "product": "Pure Retinol Correcting Peel",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "NeoStrata Company, Inc., a Johnson & Johnson Company",
+     "reported": "2020-02-14"
+    },
+    {
+     "brand": "Exuviance Professional",
+     "product": "Total Correct Day with Sunscreen Broad Spectrum SPF 30",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "NeoStrata Company, Inc., a Johnson & Johnson Company",
+     "reported": "2020-01-24"
+    },
+    {
+     "brand": "StriVectin",
+     "product": "SD Eye Concentrate For Wrinkles",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "StriVectin Operating Company, Inc.",
+     "reported": "2019-12-31"
+    },
+    {
+     "brand": "SanMedica International, LLC",
+     "product": "SeroVital Deep Penetrating Anti-Aging Cream for Neck & Decollete",
+     "type": "Anti-Wrinkle/Anti-Aging Products (making a cosmetic claim)",
+     "company": "SanMedica International, LLC",
+     "reported": "2019-12-19"
+    }
+   ],
+   "last_report": "2020-04-15"
+  },
+  "Cadmium": {
+   "california_names": [
+    "Cadmium and cadmium compounds"
+   ],
+   "products_ever": 1,
+   "products_current": 1,
+   "brands_current": 1,
+   "types_current": [
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ]
+   ],
+   "types_ever": [
+    [
+     "Facial Cream",
+     1
+    ],
+    [
+     "Baby Skin Care",
+     1
+    ]
+   ],
+   "examples": [
+    {
+     "brand": "Harmon Face Values",
+     "product": "Harmon Zinc Oxide Ointment 2oz",
+     "type": "Baby Skin Care",
+     "company": "Harmon Stores Inc.",
+     "reported": "2009-10-14"
+    }
+   ],
+   "last_report": "2009-10-14"
+  }
+ }
+}

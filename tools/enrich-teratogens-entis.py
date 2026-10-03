@@ -26,6 +26,7 @@ HERE = pathlib.Path(__file__).parent
 TERA = HERE / "teratogens.json"
 FACTS = HERE / "teratogen-medicine-facts.json"
 NAMES = HERE / "teratogen-medicine-names.json"   # tools/build-teratogen-names.py: RxNorm, EMA, ANSM
+TIS = HERE / "teratogen-tis-links.json"           # tools/build-teratogen-tis-links.py: CRAT, Embryotox, bumps
 RANK = {"known": 0, "presumed": 1, "suspected": 2}
 # what a pharmacist advising a pregnant woman needs, each field a quoted fact or absent
 PREG_FIELDS = ("regulatory", "window", "dose", "effects", "other_effects", "absolute_risk", "before_after", "paternal", "monitoring", "evidence_base")
@@ -72,10 +73,30 @@ def main():
     for e in data["entries"]:
         e.pop("names", None)
         n = names["entries"].get(e["name"])
-        if n and (n["generic"] or n["brands_us"] or n["brands_eu"] or n["brands_fr"] or n.get("note")):
+        if n and (n["generic"] or n["brands_us"] or n["brands_eu"] or n["brands_fr"] or n.get("brands_it") or n.get("brands_es") or n.get("brands_ca") or n.get("inn") or n.get("note")):
             own = e["name"].lower()
-            e["names"] = {"generic": [g for g in n["generic"] if g.lower() not in own], "us": n["brands_us"], "eu": n["brands_eu"],
+            inn = n.get("inn", [])
+            langs = {l: [x for x in v if x.lower() not in own and x.lower() not in [i.lower() for i in inn]] for l, v in n.get("languages", {}).items()}
+            e["names"] = {"inn": inn, "inn_checked": n.get("inn_checked", {}), "languages": {l: v for l, v in langs.items() if v}, "us_discontinued": n.get("brands_us_discontinued", []),
+                          "wikidata": n.get("wikidata", []), "atc_codes": n.get("atc", []), "snomed": n.get("snomed", []),
+                          "it": n.get("brands_it", []), "es": n.get("brands_es", []), "ca": n.get("brands_ca", []),
+                          "generic": [g for g in n["generic"] if g.lower() not in own and g.lower() not in [i.lower() for i in inn]], "us": n["brands_us"], "eu": n["brands_eu"],
                           "fr": n["brands_fr"], "rxcui": [i["rxcui"] for i in n["ingredients"]][:3], "resolved_as": n["resolved_as"], "read": names["read"], "note": n.get("note", "")}
+    # the kinds of cosmetics, and brands, that companies reported to California as containing it
+    cp = HERE / "teratogen-cosmetic-products.json"
+    cpd = json.loads(cp.read_text(encoding="utf-8")) if cp.exists() else {"entries": {}}
+    for e in data["entries"]:
+        e.pop("cosmetic_products", None)
+        x = cpd["entries"].get(e["name"])
+        if x:
+            e["cosmetic_products"] = {**x, "data_until": cpd["data_until"], "source": cpd["source"]}
+    # the page each teratology information service publishes on the medicine: linked, never copied
+    tis = json.loads(TIS.read_text(encoding="utf-8"))["entries"] if TIS.exists() else {}
+    for e in data["entries"]:
+        e.pop("tis", None)
+        links = tis.get(e["name"])
+        if links:
+            e["tis"] = [{"s": code, "t": x["title"], "u": x["url"]} for code in ("crat", "embryotox", "bumps") for x in links.get(code, [])]
     for e in data["entries"]:
         e["source_codes"] = sorted({s["code"] for s in e["sources"]})
         e["level"] = level(e)
@@ -88,7 +109,12 @@ def main():
     c["entis_added"] = sum(1 for n in facts["new_entries"])
     c["pregnancy_facts"] = sum(1 for r in facts["medicines"].values() for f in PREG_FIELDS if r.get(f))
     c["with_names"] = sum(1 for e in data["entries"] if e.get("names"))
-    c["brand_names"] = sum(len(e["names"]["us"]) + len(e["names"]["eu"]) + len(e["names"]["fr"]) for e in data["entries"] if e.get("names"))
+    c["brand_names"] = sum(len(e["names"]["us"]) + len(e["names"]["us_discontinued"]) + len(e["names"]["eu"]) + len(e["names"]["fr"]) + len(e["names"]["it"]) + len(e["names"]["es"]) + len(e["names"]["ca"]) for e in data["entries"] if e.get("names"))
+    c["with_inn"] = sum(1 for e in data["entries"] if e.get("names", {}).get("inn"))
+    centres = HERE / "teratogen-tis-centres.json"   # the survey of ENTIS member services
+    c["tis_centres"] = len(json.loads(centres.read_text(encoding="utf-8"))["centres"]) if centres.exists() else 0
+    c["cosmetic_products"] = sum(1 for e in data["entries"] if e.get("cosmetic_products"))
+    c["tis_linked"] = sum(1 for e in data["entries"] if e.get("tis"))
     c["cosmetic_facts"] = sum(1 for r in facts.get("cosmetics", {}).values() for f in ("limit", "basis_dose", "effects", "conclusion") if r.get(f))
     for k in ("known", "presumed", "suspected"):
         if k in c:

@@ -1,0 +1,1035 @@
+{
+ "_about": "Survey of the member teratology information services listed by ENTIS at https://www.entis-org.eu/centers, read 2026-10-03: whether each publishes a public page per medicine, and the sentence of its terms that governs reuse and linking. Sites that did not load are marked unclear, not no.",
+ "source": "https://www.entis-org.eu/centers",
+ "read": "2026-10-03",
+ "centres": [
+  {
+   "centre": "Buenos Aires",
+   "name": "Línea Salud Fetal",
+   "institution": "Centro Nacional de Genética Médica (CeNAGeM), ANLIS \"Dr. Carlos G. Malbrán\", Ministerio de Salud de la Nación",
+   "country": "Argentina",
+   "website": "www.anlis.gov.ar/inst/CeNaGeM/saludfetal/todo.htm (as listed by ENTIS; could not be opened, see notes)",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": "Spanish (per ENTIS centre page)",
+   "audience": "public and healthcare professionals (per ENTIS centre page; not verified on a live site)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found"
+   },
+   "notes": "The centre has no separate ENTIS-listed website other than the ANLIS institutional domain. https://www.anlis.gov.ar/inst/CeNaGeM/saludfetal/todo.htm and the http version both failed to load (certificate error: 'unable to verify the first certificate'). The institutional page https://www.argentina.gob.ar/salud/anlis/cenagem (current ANLIS domain) was found via search but was not confirmed to contain the Línea Salud Fetal content or any per-medicine pages. Service appears to be phone/email only (0800 444 2111, saludfetal@renac.com per search). Cannot confirm publication of public medicine pages.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/buenos-aires",
+    "https://www.anlis.gov.ar/inst/CeNaGeM/saludfetal/todo.htm",
+    "http://www.anlis.gov.ar/inst/CeNaGeM/saludfetal/todo.htm",
+    "https://www.argentina.gob.ar/salud/anlis/cenagem"
+   ]
+  },
+  {
+   "centre": "Sydney",
+   "name": "MotherSafe",
+   "institution": "Royal Hospital for Women, South Eastern Sydney Local Health District (SESLHD)",
+   "country": "Australia",
+   "website": "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe/mothersafe-factsheets (list of topic factsheets, not individual drug-name URLs for every substance)",
+   "languages": "English (one factsheet, 'Planning for Healthy Pregnancy', also offered in Arabic, Bengali, Chinese, Spanish)",
+   "audience": "public (pregnant/breastfeeding women) and healthcare providers",
+   "approx_substances": "~40 factsheets, organised by exposure/topic (e.g. Herbal Medicines, Alcohol Consumption, Smoking Cessation and NRT, Radiocontrast) rather than one page per branded/generic drug name",
+   "sample_pages": {
+    "valproate": "not found - no valproate-specific factsheet appears in the factsheet list",
+    "isotretinoin": "not found - no isotretinoin/Roaccutane-specific factsheet appears in the list",
+    "lithium": "not found - no lithium-specific factsheet appears in the list"
+   },
+   "other_material": [
+    "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe/useful-links (curated external links: UKTIS, MotherToBaby, TGA Prescribing Medicines in Pregnancy Database, NRAMP antipsychotic-in-pregnancy registry, Australian Epilepsy Pregnancy Registry)",
+    "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe/nausea-and-vomiting-pregnancy-nvp-and-hyperemesis-gravidarum-hg"
+   ],
+   "terms": {
+    "quote": "No part of this publication may be reproduced in any material form or transmitted to any other person without the prior written permission of the South Eastern Sydney Local Health District and/or the State of NSW",
+    "url": "https://www.seslhd.health.nsw.gov.au/copyright-and-disclaimer-statement",
+    "class": "reuse forbidden (permission required; limited personal single-copy exception with attribution)"
+   },
+   "notes": "ENTIS's own Sydney page had no content ('Information to be added soon'); all findings come from the SESLHD/MotherSafe site located via search.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/sydney",
+    "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe",
+    "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe/useful-links",
+    "https://www.seslhd.health.nsw.gov.au/royal-hospital-for-women/services-clinics/directory/mothersafe/mothersafe-factsheets",
+    "https://www.seslhd.health.nsw.gov.au/copyright-and-disclaimer-statement"
+   ]
+  },
+  {
+   "centre": "Graz",
+   "name": "TIS Graz (Teratologische Sprechstunde)",
+   "institution": "Medical University of Graz, Institute of Human Genetics, Diagnostic and Research Center for Molecular BioMedicine",
+   "country": "Austria",
+   "website": "http://www.embryotox.at (as listed by ENTIS; site would not load, see notes)",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": null,
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found"
+   },
+   "notes": "embryotox.at could not be opened in four attempts (https://www.embryotox.at, https://embryotox.at, http://www.embryotox.at, http://embryotox.at): the https variants returned TLS/certificate errors ('unable to verify the first certificate' / 'TLSV1_ALERT_UNRECOGNIZED_NAME') and the http variant returned HTTP 404. Could not verify any page content, so all content questions are unclear.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/graz",
+    "https://www.embryotox.at",
+    "https://embryotox.at",
+    "http://www.embryotox.at",
+    "http://embryotox.at"
+   ]
+  },
+  {
+   "centre": "Porto Alegre",
+   "name": "SIAT (Sistema Nacional de Informação sobre Agentes Teratogênicos) - Gravidez Segura",
+   "institution": "Hospital de Clínicas de Porto Alegre (HCPA) / Universidade Federal do Rio Grande do Sul (UFRGS)",
+   "country": "Brazil",
+   "website": "https://www.gravidezsegura.org",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "https://www.gravidezsegura.org/<slug>/ and https://gravidezsegura.org/informacoes-profissionais/<slug> - pages exist per selected agent/topic, not a full per-drug catalogue",
+   "languages": "Portuguese (Brazil)",
+   "audience": "both - split into 'Público Geral' (general public) and 'Público Profissional' (professionals) sections",
+   "approx_substances": "~10-12 named teratogenic agents/topics (e.g. alcohol, cocaine, misoprostol, systemic retinoids, thalidomide, plus infectious agents like Zika, toxoplasmosis, rubella, and COVID-19); not a comprehensive drug-by-drug database",
+   "sample_pages": {
+    "valproate": "not found - no dedicated valproato/ácido valproico page located via site navigation or search",
+    "isotretinoin": "https://www.gravidezsegura.org/retinoides-sistemicos/ (verified - page content confirmed about isotretinoin/systemic retinoids as teratogens, used for severe cystic acne)",
+    "lithium": "not found - no dedicated lítio page located via site navigation or search"
+   },
+   "other_material": [
+    "https://gravidezsegura.org/informacoes-profissionais/agentes-teratogenicos (professional overview page on teratogenic agents)",
+    "https://www.gravidezsegura.org/medicamentos/ (general-public page on medicines in pregnancy, not per-drug)"
+   ],
+   "terms": {
+    "quote": "© TODOS OS DIREITOS RESERVADOS PARA SIAT | 2026",
+    "url": "https://www.gravidezsegura.org/ (footer notice)",
+    "class": "reuse forbidden (all rights reserved; the dedicated page https://www.gravidezsegura.org/politicas-de-privacidade/ covers only data/cookie privacy, not content licensing or reuse)"
+   },
+   "notes": "Site uses a consultation form (https://consulta.gravidezsegura.org) for personalised queries in addition to static content pages.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/porto-alegre",
+    "https://www.gravidezsegura.org",
+    "https://www.gravidezsegura.org/",
+    "https://www.gravidezsegura.org/retinoides-sistemicos/",
+    "https://www.gravidezsegura.org/medicamentos/",
+    "https://gravidezsegura.org/informacoes-profissionais/agentes-teratogenicos",
+    "https://www.gravidezsegura.org/politicas-de-privacidade/"
+   ]
+  },
+  {
+   "centre": "Rio de Janeiro",
+   "name": "Disque-Gestante: Serviço e Registro de Informação Teratogênica do Rio de Janeiro",
+   "institution": "Departamento de Genética, Instituto de Biologia, Universidade Federal do Rio de Janeiro (UFRJ)",
+   "country": "Brazil",
+   "website": "http://disquegestante.org (as listed by ENTIS; domain does not resolve, see notes)",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": null,
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found"
+   },
+   "notes": "disquegestante.org does not resolve (DNS error 'getaddrinfo ENOTFOUND') in all four forms tried (http/https, with/without www). No alternate official domain was found via search; the service appears to only have phone/email contact (per the ENTIS page) with no confirmed live website. Cannot verify any page content.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/rio-de-janeiro",
+    "http://disquegestante.org",
+    "https://disquegestante.org",
+    "http://www.disquegestante.org"
+   ]
+  },
+  {
+   "centre": "Zagreb",
+   "name": "Teratološko savjetovalište (Teratology Advisory Service)",
+   "institution": "Children's Hospital \"Srebrnjak\" and General Hospital \"Sveti Duh\"",
+   "country": "Croatia",
+   "website": "https://www.bolnica-srebrnjak.hr (hospital's general website; no separate TIS site given by ENTIS)",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "Croatian (primary), with some English",
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "Copyright © 2026 Dječja Bolnica Srebrnjak. All Rights Reserved.",
+    "url": "https://www.bolnica-srebrnjak.hr/index.php/hr/87-db-srebrnjak/516-izjava-o-pristupacnosti",
+    "class": "no terms found (only a generic copyright notice, no reuse-specific clause)"
+   },
+   "notes": "The hospital website is a general pediatric-hospital site (departments, appointment booking, scientific activities) with no identifiable teratology/medicines-in-pregnancy section or content. The advisory service's listed hours are very limited (Thursday 14-16h, Friday 9-13h), consistent with a telephone/in-person consultation only, not an online public information resource.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/zagreb",
+    "https://www.bolnica-srebrnjak.hr",
+    "https://www.bolnica-srebrnjak.hr/index.php/hr/87-db-srebrnjak/516-izjava-o-pristupacnosti"
+   ]
+  },
+  {
+   "centre": "Odense",
+   "name": "Lægemiddelinformationen (The Drug Information), Odense University Hospital",
+   "institution": "Odense University Hospital (OUH), Department of Clinical Pharmacology",
+   "country": "Denmark",
+   "website": "https://ouh.dk/til-patienter-og-parorende/odense/afdelinger/farmakologi (current department page; ENTIS listed no dedicated centre website; an older URL found via search, http://www.ouh.dk/wm126039, returned HTTP 404)",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "Danish",
+   "audience": "primarily healthcare professionals (the service answers clinician questions on medicine use incl. in pregnancy by phone/email; the department page itself has no patient-facing per-medicine content)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found"
+   },
+   "notes": "The department page (https://ouh.dk/til-patienter-og-parorende/odense/afdelinger/farmakologi/praesentation-af-afdelingen) only contains a department presentation and contact details; no pregnancy/medicine content or substance pages were visible, and no footer/legal links were found on the fetched excerpt.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/odense",
+    "http://www.ouh.dk/wm126039",
+    "https://ouh.dk/til-patienter-og-parorende/odense/afdelinger/farmakologi/praesentation-af-afdelingen"
+   ]
+  },
+  {
+   "centre": "Helsinki",
+   "name": "Teratologinen tietopalvelu (Teratology Information Service)",
+   "institution": "HUS (Hospital District of Helsinki and Uusimaa / Helsinki University Hospital)",
+   "country": "Finland",
+   "website": "https://www.hus.fi/en/patient/how-get-help/teratology-information-service-safety-medication-during-pregnancy-and",
+   "publishes_medicine_pages": "no",
+   "url_pattern": "https://www.hus.fi/en/patient/how-get-help/teratology-information-service-safety-medication-during-pregnancy-and[-N] - content is organised by category (Illness, Medications and vaccines, Intoxicants, etc.), not one page per individual medicine",
+   "languages": "Finnish (primary); English pages also exist (site offers English navigation)",
+   "audience": "public (pregnant/nursing individuals and those planning pregnancy) and professionals (pharmacies, authorities, media)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": "not found - discussed only inline within the 'Medications and vaccines' category page, no standalone URL",
+    "isotretinoin": "not found - no standalone page located",
+    "lithium": "not found - discussed only inline within the 'Medications and vaccines' category page, no standalone URL"
+   },
+   "other_material": [
+    "https://www.hus.fi/en/follow-study-medicines-used-during-pregnancy (follow-up study on medicines used during pregnancy)"
+   ],
+   "terms": {
+    "quote": "HUSin verkkosivuston tekstisisältöjä voi lainata ja sivuja voi linkittää, mutta lähde on aina mainittava.",
+    "url": "https://www.hus.fi/tietoa-palvelusta-ja-tekijanoikeudet",
+    "class": "citation allowed (text may be quoted and pages linked, provided the source is always cited; images/graphics need separate permission)"
+   },
+   "notes": "Service also offers a chat (Mon & Thu 13-15) and phone line (Mon-Fri 9-13) for personalised queries.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/helsinki",
+    "http://www.hus.fi/sairaanhoito/sairaanhoitopalvelut/teratologinen-tietopalvelu/Sivut/default.aspx",
+    "https://www.hus.fi/en/patient/how-get-help/teratology-information-service-safety-medication-during-pregnancy-and",
+    "https://www.hus.fi/en/patient/how-get-help/teratology-information-service-safety-medication-during-pregnancy-and-2",
+    "https://www.hus.fi/tietoa-palvelusta-ja-tekijanoikeudet"
+   ]
+  },
+  {
+   "centre": "Lyon",
+   "name": "TIS – Lyon2 (Centre de Pharmacovigilance de Lyon)",
+   "institution": "Centre Hospitalo-Universitaire de Pharmaco-Toxicologie (SHUPT), Hospices Civils de Lyon",
+   "country": "France",
+   "website": "no dedicated centre website found; Lyon is represented within the national French regional pharmacovigilance-centre network site https://www.rfcrpv.fr (reseau francais des CRPV)",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "French",
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.rfcrpv.fr (bulletins/newsletters from the regional pharmacovigilance centre network, e.g. an autumn 2026 bulletin discussing isotretinoin exposure in pregnancy; not substance-specific permanent pages)"
+   ],
+   "terms": {
+    "quote": "Toute reproduction, distribution, modification, adaptation, retransmission ou publication, meme partielle, de ces differents elements est strictement interdite",
+    "url": "https://www.rfcrpv.fr/mentions-legales/",
+    "class": "reuse forbidden",
+    "deep_links": "Explicitly restricted: the site states a hyperlink to it requires prior written authorisation from RFCRPV (\"sans l'autorisation expresse et prealable du RFCRPV\"). Note: this is the network site rfcrpv.fr, not a Lyon-specific legal page; the ENTIS Lyon page gives no independent website for the Lyon centre itself, so this is the closest applicable terms page found."
+   },
+   "notes": "The ENTIS Lyon page gives only contact details (CHU Lyon, Dr T. Vial) and no website URL. A web search found the centre operates under the French regional pharmacovigilance network (CRPV), publicly represented via rfcrpv.fr, which functions as a contact/bulletin hub, not a per-medicine database. No evidence of public per-substance pages for Lyon was found.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/lyon",
+    "https://www.rfcrpv.fr",
+    "https://www.rfcrpv.fr/mentions-legales/"
+   ]
+  },
+  {
+   "centre": "Paris-CRAT",
+   "name": "Centre de Reference sur les Agents Teratogenes (CRAT)",
+   "institution": "Hopital Trousseau, APHP (Assistance Publique - Hopitaux de Paris)",
+   "country": "France",
+   "website": "https://www.lecrat.fr",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "Numeric slug per page/topic, e.g. https://www.lecrat.fr/{id}/ ; separate pages typically exist per drug and per topic (pregnancy / breastfeeding / paternal exposure), e.g. 11949 = Lithium-Allaitement, 12655 = Acide valproique-Exposition paternelle, 6376 = Isotretinoine-Grossesse",
+   "languages": "French",
+   "audience": "Both general public and health professionals",
+   "approx_substances": "Site states roughly 1,100 data sheets per older press reporting (Le Quotidien du Medecin); current exact count not verified on-page during this survey",
+   "sample_pages": {
+    "valproate": "https://www.lecrat.fr/12655/ (Acide valproique - Exposition paternelle; related pages exist for pregnancy/breastfeeding, e.g. https://www.lecrat.fr/12594/)",
+    "isotretinoin": "https://www.lecrat.fr/6376/ (Isotretinoine - Grossesse)",
+    "lithium": "https://www.lecrat.fr/11949/ (Lithium - Allaitement)"
+   },
+   "other_material": [
+    "https://www.lecrat.fr/3147/ (Les medicaments dangereux pendant la grossesse - classified list of confirmed/suspected teratogens and fetotoxic agents, with a downloadable PDF list)"
+   ],
+   "terms": {
+    "quote": "Tous les contenus presents sur le site sont couverts par le droit d'auteur.",
+    "url": "https://www.lecrat.fr/mentions-legales",
+    "class": "citation allowed",
+    "deep_links": "Allowed, with a condition: \"La creation des liens hypertextes pointant vers le contenu du site www.lecrat.fr est autorisee sous reserve d'etre accessible par l'ouverture d'une nouvelle fenetre\" (link must open in a new window; embedding/framing the page inside another site is not allowed). Citation in scientific/medical communication is explicitly invited with a prescribed reference format (\"CRAT. Centre de Reference sur les Agents Teratogenes. [Page name]. Available at: [URL]. (accessed [date]).\"); copying, downloading, scraping, or commercial reuse beyond citation requires written permission from the publication director or APHP legal affairs."
+   },
+   "notes": "CRAT is the clearest case of a public per-substance register among the surveyed centres, with per-topic pages (pregnancy/breastfeeding/paternal) for most drugs, plus a curated teratogen risk list.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/paris-crat",
+    "https://www.lecrat.fr",
+    "https://www.lecrat.fr/mentions-legales",
+    "https://www.lecrat.fr/12655/",
+    "https://www.lecrat.fr/6376/",
+    "https://www.lecrat.fr/11949/",
+    "https://www.lecrat.fr/3147/"
+   ]
+  },
+  {
+   "centre": "Paris-HSVP",
+   "name": "Centre Regional de Pharmacovigilance et d'information sur le medicament (site Cochin)",
+   "institution": "Hopitaux Universitaires Paris Centre (Cochin), Assistance Publique - Hopitaux de Paris",
+   "country": "France",
+   "website": "no dedicated centre website found; the centre is reachable only via its AP-HP hospital department page, e.g. https://www.aphp.fr/cochin/service-de-pharmacologie-perinatale-pediatrique-et-adulte-cchnckhegp",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "French",
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found",
+    "deep_links": "unclear - no dedicated site to assess"
+   },
+   "notes": "The ENTIS page for this centre gives only AP-HP contact details (phone, email, address) and explicitly has no independent external website. A web search confirms the centre exists as the AP-HP Cochin pharmacovigilance/pharmacology department but found no public medicine-information site distinct from the general AP-HP hospital page (which is a service directory, not a drug-in-pregnancy register).",
+   "evidence": [
+    "https://www.entis-org.eu/centers/paris-hsvp",
+    "https://www.aphp.fr/cochin/service-de-pharmacologie-perinatale-pediatrique-et-adulte-cchnckhegp"
+   ]
+  },
+  {
+   "centre": "Berlin",
+   "name": "Pharmakovigilanz- und Beratungszentrum fur Embryonaltoxikologie (Embryotox)",
+   "institution": "Charite - Universitatsmedizin Berlin",
+   "country": "Germany",
+   "website": "https://www.embryotox.de",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/{substance-slug}",
+   "languages": "German",
+   "audience": "Both public (\"Eltern\"/parents) and professionals (\"Fachkreise\")",
+   "approx_substances": "More than 400 (\"Informationen zu mehr als 400 Arzneimitteln\")",
+   "sample_pages": {
+    "valproate": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/valproinsaeure",
+    "isotretinoin": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/isotretinoin",
+    "lithium": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lithiumsalze"
+   },
+   "other_material": [
+    "https://www.embryotox.de/arzneimittel (full medicines index)",
+    "https://www.embryotox.de/erkrankungen (pages organised by disease, e.g. epilepsy, bipolar disorder)"
+   ],
+   "terms": {
+    "quote": "Downloads und Kopien dieser Seite sind nur fuer den privaten, nicht kommerziellen Gebrauch gestattet.",
+    "url": "https://www.embryotox.de/impressum",
+    "class": "citation allowed (private/non-commercial reuse only; any other reproduction, modification or distribution needs written consent of the author/creator)",
+    "deep_links": "Not explicitly addressed in the impressum; only private, non-commercial copying/downloading of pages is permitted, with any reproduction/adaptation/distribution beyond that requiring written consent (\"bedurfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers\")."
+   },
+   "notes": "Confirmed live, public, no-login pages for all three sample substances.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/berlin",
+    "https://www.embryotox.de",
+    "https://www.embryotox.de/impressum",
+    "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/valproinsaeure",
+    "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/isotretinoin",
+    "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/lithiumsalze"
+   ]
+  },
+  {
+   "centre": "Ulm",
+   "name": "Beratungsstelle fur Reproduktionstoxikologie (Reprotox)",
+   "institution": "Universitatsfrauenklinik Ulm / Universitatsklinikum Ulm",
+   "country": "Germany",
+   "website": "http://www.reprotox.de",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": "German (per external descriptions)",
+   "audience": "Public and professionals (consultation-based, per external descriptions)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found",
+    "exact_reason": "site unreachable"
+   },
+   "notes": "reprotox.de could not be loaded directly: every attempt (https://www.reprotox.de, http://www.reprotox.de, https://reprotox.de, http://reprotox.de) returned a TLS handshake error (\"TLSV1_ALERT_UNRECOGNIZED_NAME\"), suggesting an SNI/certificate misconfiguration on the server side as seen from this tool, not a confirmed absence of the site. Third-party descriptions (university press release, idw-online) describe Reprotox as operating an internal case database (\"FETIS\") and taking enquiries via an online consultation request form, which suggests it may function more as a request/advice service than a browsable public per-substance encyclopedia like Embryotox - but this could not be confirmed on the page itself, so it is reported as unclear rather than guessed.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/ulm",
+    "http://www.reprotox.de (TLS error - page content not retrieved)",
+    "https://www.reprotox.de (TLS error - page content not retrieved)"
+   ]
+  },
+  {
+   "centre": "Jerusalem",
+   "name": "Israeli Teratology Information Service",
+   "institution": "Department of Child Development and Rehabilitation, Ministry of Health, with Hadassah Medical School / Hebrew University",
+   "country": "Israel",
+   "website": "no dedicated centre website; represented by a government service description page at https://www.gov.il/en/service/israeli-teratology-information-service-pregnancy-and-nursing",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "Hebrew and English (gov.il service page exists in both)",
+   "audience": "Public and health professionals (phone/consultation-based)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.gov.il/en/service/israeli-teratology-information-service-pregnancy-and-nursing (service description: free consultation for risk during pregnancy/breastfeeding; contact-based, no per-medicine content)"
+   ],
+   "terms": {
+    "quote": "unable to retrieve the specific gov.il terms-of-use text during this survey (the general gov.il terms-of-use page returned HTTP 403 to the automated fetch tool); search snippets indicate gov.il states generally that \"copyrights for the Ministry's publications belong to the State of Israel\"",
+    "url": "https://www.gov.il/en/pages/gov_terms_of_use",
+    "class": "unclear",
+    "deep_links": "unclear - not verified on-page"
+   },
+   "notes": "The ENTIS page gives no website; it is reached only through a generic Israeli government service page describing the free phone consultation, not a substance database. The gov.il terms-of-use page itself returned 403 Forbidden to the automated fetch tool, so the exact reuse clause could not be quoted directly from the page; classification is left unclear pending direct access.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/jerusalem",
+    "https://www.gov.il/en/service/israeli-teratology-information-service-pregnancy-and-nursing"
+   ]
+  },
+  {
+   "centre": "Zerifin",
+   "name": "Drug Consultation Information Center (Clinical Pharmacology & Toxicology Unit)",
+   "institution": "Shamir Medical Center (Assaf Harofeh), affiliated with Tel-Aviv University Faculty of Medicine",
+   "country": "Israel",
+   "website": "https://www.shamir.org/he/clinic/medicationcounseling/",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "Hebrew (site also mentions English, Russian and Arabic versions exist for parts of the hospital site)",
+   "audience": "Public and health professionals",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.shamir.org/he/clinic/medicationcounseling/ (thematic guides, e.g. antibiotics in pregnancy, nausea/vomiting in pregnancy; \"Heriophon\" telephone/WhatsApp hotline for medication-safety queries in pregnancy/breastfeeding; educational videos)"
+   ],
+   "terms": {
+    "quote": "אין להעתיק, להפיץ, להציג בפומבי או למסור לצד שלישי כל חלק מן התכנים המופיעים באתר בלא קבלת הסכמת מראה מראש ובכתב (no copying, distribution, public display, or sharing of any site content with third parties is permitted without prior written consent)",
+    "url": "https://www.shamir.org/he/about/terms-of-use/",
+    "class": "reuse forbidden",
+    "deep_links": "Not explicitly addressed in the terms-of-use text found; only a blanket no-reuse-without-written-consent clause is stated."
+   },
+   "notes": "No per-medicine pages; the unit publishes topical/thematic guides and relies on a hotline for individualised drug-safety questions.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/zerifin",
+    "https://www.shamir.org/he/clinic/medicationcounseling/",
+    "https://www.shamir.org/he/about/terms-of-use/"
+   ]
+  },
+  {
+   "centre": "Lausanne",
+   "name": "Swiss Teratogen Information Service (STIS)",
+   "institution": "Centre Hospitalier Universitaire Vaudois (CHUV), Division de Pharmacologie et Toxicologie Cliniques",
+   "country": "Switzerland",
+   "website": "http://www.swisstis.ch (redirects to https://www.chuv.ch/fr/stis)",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": "French (site navigation also showed English/German labels, but STIS content itself is French)",
+   "audience": "Health professionals (the service states its mission is to inform/advise health professionals; case requests go through the \"medCHUV\" professional portal, i.e. login-only for individual case review)",
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.chuv.ch/fileadmin/sites/stis/documents/RappSTIS-2025.pdf (STIS 2025 activity report, public PDF)",
+    "https://www.chuv.ch/fr/stis/patientes (public patient-facing information section)",
+    "https://www.chuv.ch/fr/chuv-home/personnel-de-la-sante/medchuv-un-portail-pour-les-medecins/adresser-un-dossier-pour-avis/detail/avis/avis-sur-dossier-teratovigilance-stis (case-review request, login-only, for professionals via medCHUV)"
+   ],
+   "terms": {
+    "quote": "Ce site depend du Centre hospitalier universitaire vaudois (CHUV) (the Impressum states editorial/technical responsibility under CHUV but no explicit reuse/copyright clause was found in the retrieved content)",
+    "url": "http://www.chuv.ch/fr/stis/en-bref/impressum",
+    "class": "no terms found",
+    "deep_links": "Not addressed in the impressum content retrieved."
+   },
+   "notes": "STIS is a professional advisory/case-review service (teratovigilance), not a public per-substance database; individualised case opinions are requested only through the medCHUV professional login portal.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/lausanne",
+    "http://www.swisstis.ch",
+    "https://www.chuv.ch/fr/stis",
+    "http://www.chuv.ch/fr/stis",
+    "http://www.chuv.ch/fr/stis/en-bref/impressum",
+    "https://www.chuv.ch/fr/chuv-home/personnel-de-la-sante/medchuv-un-portail-pour-les-medecins/adresser-un-dossier-pour-avis/detail/avis/avis-sur-dossier-teratovigilance-stis"
+   ]
+  },
+  {
+   "centre": "Bergamo",
+   "name": "SSD Centro Antiveleni (Poison Control Center) - Drug/Teratology Information Service",
+   "institution": "ASST Papa Giovanni XXIII",
+   "country": "Italy",
+   "website": "https://www.asst-pg23.it/reparti/centro-antiveleni",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": [
+    "Italian"
+   ],
+   "audience": "public and professionals (telephone/outpatient consultation)",
+   "approx_substances": "unclear",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.asst-pg23.it/sites/default/files/documenti-caricati/reparti-servizi/2023-03/Report%20CAV%20BG%202022.pdf"
+   ],
+   "terms": {
+    "quote": "L'ASST Papa Giovanni XXIII possiede i diritti di proprietà intellettuale delle informazioni presenti su questo sito. E' vietata qualsiasi riproduzione pubblica totale o parziale senza l'espressa autorizzazione.",
+    "url": "https://www.asst-pg23.it/note-legali",
+    "class": "reuse forbidden"
+   },
+   "notes": "The ENTIS page's listed website (hpg23.it) is dead/refused connection; current site is asst-pg23.it. The centre's page describes a dedicated outpatient clinic for drugs in pregnancy/breastfeeding (the only one in Lombardy) and secondary sources (third-party articles, not the centre's own site) describe a 2017 document with per-active-ingredient compatibility sheets for OTC drugs, but no working URL to that document or to any individual medicine page could be located or verified on the centre's own site after multiple searches. Treated as unclear rather than yes, since nothing was directly verified.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/bergamo",
+    "https://www.hpg23.it/section/259/Tossicologia_-_Centro_antiveleni",
+    "https://www.asst-pg23.it/reparti/centro-antiveleni",
+    "http://www.asst-pg23.it/2013/12/_farmaci_e_gravidanza/",
+    "https://www.asst-pg23.it/note-legali"
+   ]
+  },
+  {
+   "centre": "Firenze",
+   "name": "CRR Tossicologia Perinatale (Centro di Riferimento Regionale di Tossicologia Perinatale)",
+   "institution": "SODc Tossicologia Medica, Azienda Ospedaliero-Universitaria Careggi",
+   "country": "Italy",
+   "website": "https://www.aou-careggi.toscana.it/internet/diagnosi-e-cura/strutture-cliniche/crr-centri-di-riferimento-regionale/crr-tossicologia-perinatale/",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": [
+    "Italian"
+   ],
+   "audience": "public and professionals (telephone consultation)",
+   "approx_substances": "n/a",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "Sono consentite citazioni a titolo di cronaca o recensione, se accompagnate dall'indicazione della fonte.",
+    "url": "https://www.aou-careggi.toscana.it/internet/note-legali/",
+    "class": "citation allowed"
+   },
+   "notes": "The ENTIS page gave entis-org.eu itself as the website (no real link); the centre's actual institutional page was found by search. No downloadable drug lists, guidelines, or per-medicine pages are linked; the service is phone-consultation based only.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/firenze",
+    "https://www.aou-careggi.toscana.it/internet/diagnosi-e-cura/strutture-cliniche/crr-centri-di-riferimento-regionale/crr-tossicologia-perinatale/",
+    "https://www.aou-careggi.toscana.it/internet/note-legali/"
+   ]
+  },
+  {
+   "centre": "Milan",
+   "name": "Centro Antiveleni e Servizio Farmaci in Gravidanza (Milan Poison Control Service)",
+   "institution": "ASST Grande Ospedale Metropolitano Niguarda",
+   "country": "Italy",
+   "website": "https://www.centroantiveleni.org",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": [
+    "Italian"
+   ],
+   "audience": "public and professionals",
+   "approx_substances": "unclear",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "Centro Antiveleni di Milano © 2001-2026 All rights reserved.",
+    "url": "https://www.centroantiveleni.org/privacy-policy/",
+    "class": "reuse forbidden"
+   },
+   "notes": "ENTIS listed website www.centroantiveleni.org/contatti-2 which is just a contact form. Site navigation references a 'Gravidanza' section and other topic sections (Farmaci, Droghe, Prodotti naturali) but /gravidanza/ returned 404 and no per-substance page URL could be confirmed loading. Marked unclear rather than no/yes because the nav label strongly suggests such content exists somewhere on the site, but I could not verify an exact working URL.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/milan",
+    "https://www.centroantiveleni.org/contatti-2",
+    "https://www.centroantiveleni.org",
+    "https://www.centroantiveleni.org/gravidanza/",
+    "https://www.centroantiveleni.org/privacy-policy/"
+   ]
+  },
+  {
+   "centre": "Padova",
+   "name": "CEPIG - Centro per l'Informazione Genetica / TIS Padua (UOC Genetica ed Epidemiologia Clinica)",
+   "institution": "Azienda Ospedale-Università di Padova / Clinical Genetics Unit, Dept. of Women's and Children's Health, University of Padua",
+   "country": "Italy",
+   "website": "https://www.sdb.unipd.it/genetica",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": [
+    "Italian"
+   ],
+   "audience": "professionals and patients, by written referral",
+   "approx_substances": "n/a",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "possono essere distribuite e copiate (indicando chiaramente la fonte) purchè non se ne alterino significato, contenuti e valori",
+    "url": "https://www.aopd.veneto.it/note-legali",
+    "class": "citation allowed"
+   },
+   "notes": "ENTIS listed entis-org.eu itself as the website. The real service site (sdb.unipd.it/genetica) returned a connection error on direct fetch; content confirmed via search instead. The teratology consultation (CEPIG) is request-based (email/fax form with informed consent, referral required), not a public per-medicine page database; no drug lists or leaflets found.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/padova",
+    "http://www.sdb.unipd.it/genetica",
+    "https://www.aopd.veneto.it/note-legali"
+   ]
+  },
+  {
+   "centre": "Roma",
+   "name": "Telefono Rosso - Centro Studi per la Tutela della Salute della Madre e del Concepito",
+   "institution": "Università Cattolica del Sacro Cuore / Fondazione Policlinico Universitario Agostino Gemelli IRCCS",
+   "country": "Italy",
+   "website": "https://www.policlinicogemelli.it/telefono-rosso/",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": [
+    "Italian"
+   ],
+   "audience": "public and professionals (telephone consultation)",
+   "approx_substances": "n/a",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "Nessuna parte del portale, nessun marchio, nessun contenuto, logo, grafica, suono o immagine può essere riprodotto, ritrasmesso o altrimenti utilizzato senza l'espresso consenso del Policlinico Universitario A. Gemelli IRCCS.",
+    "url": "https://www.policlinicogemelli.it/condizioni-di-utilizzo/",
+    "class": "reuse forbidden"
+   },
+   "notes": "ENTIS page's listed URL (an .aspx deep link) returned 404; current page is policlinicogemelli.it/telefono-rosso/. Service description mentions use of 'international databases' for consultation but no public drug lists, leaflets or per-substance pages are linked on the site itself.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/roma",
+    "https://www.policlinicogemelli.it/Policlinico_Gemelli.aspx?p=A7D5578C-8E11-4314-A2FD-A4D8F9EC4E76&n=S_telefono_rosso",
+    "https://www.policlinicogemelli.it/telefono-rosso/",
+    "https://www.policlinicogemelli.it/condizioni-di-utilizzo/"
+   ]
+  },
+  {
+   "centre": "Tokyo",
+   "name": "Japan Drug Information Institute in Pregnancy (JDIIP) / Pregnancy and Drug Information Center (妊娠と薬情報センター)",
+   "institution": "National Center for Child Health and Development (NCCHD)",
+   "country": "Japan",
+   "website": "https://www.ncchd.go.jp/kusuri/",
+   "publishes_medicine_pages": "no",
+   "url_pattern": "https://www.ncchd.go.jp/kusuri/lactation/druglist_*.html (category/alphabetical lactation drug LISTS, not one page per substance); ad hoc single-drug pages exist only for a few named items, e.g. https://www.ncchd.go.jp/kusuri/covid19_yakuzai.html",
+   "languages": [
+    "Japanese",
+    "partial English section referenced (/en/center/activity/JDIIP/)"
+   ],
+   "audience": "public (consultation intake + info pages); a professional-only section exists behind further detail (e.g. covid19_yakuzai_medical.html)",
+   "approx_substances": "Lactation list covers roughly 22 therapeutic categories with multiple generic names each (dozens of substances), not individually paged",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://www.ncchd.go.jp/kusuri/lactation/druglist_yakkou.html",
+    "https://www.ncchd.go.jp/kusuri/lactation/druglist_aiu.html",
+    "https://www.ncchd.go.jp/kusuri/lactation/druglist_unfit.html",
+    "https://www.ncchd.go.jp/kusuri/process/qa_ninshin.html",
+    "https://www.ncchd.go.jp/kusuri/lactation/qa_junyu.html",
+    "https://www.ncchd.go.jp/kusuri/covid19_yakuzai.html"
+   ],
+   "terms": {
+    "quote": "当ホームぺージに掲載されている個々の情報（文章、写真、イラスト、資料など）は著作権の対象となっています。",
+    "url": "https://www.ncchd.go.jp/site.html",
+    "class": "citation allowed"
+   },
+   "notes": "Confirmed lithium is NOT on the 'unsuitable for breastfeeding' list (only amiodarone, cocaine, and radioactive iodine-123/131 are listed there); valproate, isotretinoin and lithium do not appear in the lactation drug-category list either (anticancer drugs and most psychiatric drugs are explicitly excluded from these tables as 'too limited evidence'). No individual page exists for any of the three target substances, so publishes_medicine_pages is 'no' for the page-per-substance model, though the site does publish genuinely useful public lactation drug lists for a pharmacist (see other_material). The copyright page states reuse/copy generally requires permission but citation with source attribution is allowed under certain conditions per the fuller policy text found via search (not independently re-verified verbatim beyond the quoted sentence).",
+   "evidence": [
+    "https://www.entis-org.eu/centers/tokyo",
+    "https://www.ncchd.go.jp/kusuri/",
+    "https://www.ncchd.go.jp/kusuri/lactation/druglist_yakkou.html",
+    "https://www.ncchd.go.jp/kusuri/lactation/druglist_unfit.html",
+    "https://www.ncchd.go.jp/kusuri/process/",
+    "https://www.ncchd.go.jp/site.html"
+   ]
+  },
+  {
+   "centre": "Saint Petersburg",
+   "name": "Medical center for drug safety in pregnancy and lactation",
+   "institution": "unclear (ENTIS page gives no institution beyond ENTIS membership itself)",
+   "country": "Russia",
+   "website": "http://www.babyrisk.ru",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": [
+    "Russian"
+   ],
+   "audience": "unclear",
+   "approx_substances": "unclear",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://babyrisk.ru/content/bezopasnost-lekarstv-u-beremennyh (title/snippet only, not opened)"
+   ],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found"
+   },
+   "notes": "Could not open babyrisk.ru directly: WebFetch failed with 'certificate has expired' on every page attempted (both the homepage and an internal content page). Search-engine snippets suggest the site has general articles about drug categories/safety in pregnancy (e.g. a page on 'Безопасность лекарств у беременных' mentioning isotretinoin as a drug to avoid, among others) rather than a confirmed per-substance page model, but this is unverified since no page actually loaded. No terms-of-use/copyright page could be found via search either. Everything here should be treated as unconfirmed.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/saint-petersburg",
+    "http://www.babyrisk.ru"
+   ]
+  },
+  {
+   "centre": "Barcelona",
+   "name": "Clinical Pharmacology Service (Servei de Farmacologia Clínica)",
+   "institution": "Hospital Universitari Vall d'Hebron",
+   "country": "Spain",
+   "website": "https://www.vallhebron.com",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": [
+    "Catalan",
+    "Spanish"
+   ],
+   "audience": "professionals (ENTIS entry: serves healthcare professionals in the Barcelona area)",
+   "approx_substances": "n/a",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": "Citar sempre la font de la informació, sigui l'autor o el titular dels drets.",
+    "url": "https://www.vallhebron.com/avis-legal",
+    "class": "citation allowed"
+   },
+   "notes": "No public pages about teratogens, medicine lists, guidelines or leaflets were found on the general hospital site; the Clinical Pharmacology Service appears to operate purely as a professional consultation service. The hospital's own legal notice permits reuse of site content generally (not specific to this service) provided the source is cited, meaning/content is not distorted, the update date is noted, and use is non-commercial.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/barcelona",
+    "https://www.vallhebron.com",
+    "https://www.vallhebron.com/avis-legal"
+   ]
+  },
+  {
+   "centre": "Madrid",
+   "name": "Servicio de Información Telefónica sobre Teratógenos Español (SITTE) / Servicio de Información Telefónica para la Embarazada (SITE)",
+   "institution": "Unidad de Investigación sobre Anomalías Congénitas (CIAC), Instituto de Investigación de Enfermedades Raras (IIER), Instituto de Salud Carlos III (ISCIII)",
+   "country": "Spain",
+   "website": "No dedicated SITTE/SITE website found. The service is described only on the ENTIS centre page and on ISCIII's institutional site (https://www.isciii.es/servicios/registros-enfermedades-raras); the specific sub-page https://www.isciii.es/QueHacemos/Servicios/RegistrosInformacionEnfermedadesRaras/Paginas/RiesgosEmbarazo.aspx returned only generic ISCIII site-wide navigation when fetched, not substance content.",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": null,
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://revista.isciii.es/index.php/ecemc/en/article/download/728/790 (Boletín del ECEMC: annual SITTE/SITE activity report, PDF, includes statistics on teratogen consultations, not a per-substance public database)",
+    "https://www.isciii.es/servicios/unidad-tecnica-talidomida-inicio (ISCIII Thalidomide Technical Unit, related but distinct service)"
+   ],
+   "terms": {
+    "quote": "queda prohibida su reproducción, distribución, comunicación pública y transformación, total o parcial, sin la autorización expresa del ISCIII",
+    "url": "https://www.isciii.es/aviso-legal",
+    "class": "reuse forbidden",
+    "deep_links": "Not addressed specifically; general legal notice governs the whole isciii.es domain, no SITTE/SITE-specific terms found."
+   },
+   "notes": "SITTE/SITE is a phone/email consultation service for professionals (SITTE) and pregnant women (SITE) run from within ISCIII; no evidence of any public, login-free page per medicine/substance was found despite searching ISCIII's site and Spanish search results. The 'legal notice' found is ISCIII's institution-wide notice, not specific to this service.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/madrid",
+    "https://www.isciii.es/QueHacemos/Servicios/RegistrosInformacionEnfermedadesRaras/Paginas/RiesgosEmbarazo.aspx",
+    "https://www.isciii.es/aviso-legal",
+    "https://revista.isciii.es/index.php/ecemc/en/article/download/728/790",
+    "https://repisalud.isciii.es/entities/publication/ea31f8e4-573d-485a-9202-ca63a67a1ca9"
+   ]
+  },
+  {
+   "centre": "'s-Hertogenbosch",
+   "name": "Moeders van Morgen (TIS – Teratology Information Service), Lareb",
+   "institution": "Netherlands Pharmacovigilance Centre Lareb (Bijwerkingencentrum Lareb)",
+   "country": "Netherlands",
+   "website": "https://www.lareb.nl/mvm-kennis (also live.lareb.nl mirror)",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "Two patterns observed on lareb.nl: /tis-knowledge-screen?id=N (per-topic knowledge screen) and /mvm-kennis-pagina?naam=[Topic-Name]&type=TIS. The site appears to be a JavaScript-rendered app; WebFetch could only reliably retrieve a generic shell for these URLs, so pages were confirmed indirectly via indexed titles/snippets rather than full direct rendering.",
+   "languages": "Dutch (primary); some general background pages also in English (/en/)",
+   "audience": "public (patients / those planning pregnancy or breastfeeding), written to support patient-clinician discussion",
+   "approx_substances": "Unclear exact count; knowledge-screen ids run at least into the hundreds (e.g. id=455, id=229, id=168, id=56 all resolve to distinct topics), suggesting a large number of substance/topic pages, but no index listing a total was found.",
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": "https://www.lareb.nl/tis-knowledge-screen?id=229 (indexed under isotretinoïne; page itself rendered as a generic shell under WebFetch and could not be independently confirmed beyond the search-engine snippet)",
+    "lithium": "https://www.lareb.nl/tis-knowledge-screen?id=56 (indexed as 'Lithium tijdens de zwangerschap'; same rendering caveat as above)"
+   },
+   "other_material": [
+    "https://www.lareb.nl/mvm-kennis (general background pages: medicine use with child wish/pregnancy, breastfeeding, male medicine use pre-conception, pregnancy dosing adjustments)",
+    "MediMama app (linked from mvm-kennis, not a web page)"
+   ],
+   "terms": {
+    "quote": "None of the texts and reports shown on the site may be used, published, distributed and/or copied without written permission from Lareb.",
+    "url": "https://www.lareb.nl/en/pages/disclaimer/",
+    "class": "reuse forbidden",
+    "deep_links": "Not specifically addressed; disclaimer permits personal use and citation with attribution but requires written permission for reproduction/redistribution."
+   },
+   "notes": "A page specifically about valproate/valproic acid use by women in pregnancy was not confirmed; the only valproate-related Lareb page found via search was 'Valproinezuur gebruik door de man met kinderwens' (paternal pre-conception use), at https://www.lareb.nl/mvm-kennis-pagina?naam=Valproinezuur-gebruik-door-de-man-met-kinderwens&type=TIS&origString=... — this is about paternal exposure, not the general valproate-in-pregnancy page, so it is not given as the sample page. Because the site renders content client-side, automated fetches returned a generic page shell rather than the substance-specific text for the id-based URLs; confirmation here rests on search-engine-indexed titles, which is a weaker form of verification than directly reading the rendered page.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/s-hertogenbosch",
+    "https://www.lareb.nl/mvm-kennis",
+    "https://www.lareb.nl/en/pages/disclaimer/",
+    "https://www.lareb.nl/tis-knowledge",
+    "https://www.lareb.nl/tis-knowledge-screen?id=56",
+    "https://www.lareb.nl/tis-knowledge-screen?id=229"
+   ]
+  },
+  {
+   "centre": "RELIS Network",
+   "name": "RELIS (Regionale legemiddelinformasjonssentre) — Trygg Mammamedisin",
+   "institution": "Four regional centres: Haukeland universitetssjukehus (RELIS Vest), Oslo universitetssykehus HF Ullevål (RELIS Sør-Øst), St. Olavs hospital HF (RELIS Midt-Norge), Universitetssykehuset Nord-Norge HF (RELIS Nord-Norge)",
+   "country": "Norway",
+   "website": "https://relis.no (professional-facing: Q&A/article database) and https://www.tryggmammamedisin.no (public-facing: pregnancy/breastfeeding medicine advice)",
+   "publishes_medicine_pages": "no",
+   "url_pattern": "tryggmammamedisin.no is organised by health condition, not by substance: /faq/gravid/[condition]/ (pregnancy) and /faq/ammer/[condition]/ (breastfeeding), e.g. /faq/gravid/svangerskapskvalme/, /faq/ammer/hostemedisiner-2/. No per-drug-name page pattern was found.",
+   "languages": "Norwegian only",
+   "audience": "public (tryggmammamedisin.no: pregnant/breastfeeding women) and healthcare professionals (relis.no: Q&A submission and searchable answered-question/article archive)",
+   "approx_substances": "Not applicable — content is condition-based (about 10 common-ailment categories observed: cough, nausea, heartburn, constipation, allergy, fungal infection, pain relief, nasal congestion, cortisone creams, haemorrhoids), not a per-substance list.",
+   "other_material": [
+    "https://relis.no/artikler/ (RELIS professional article/Q&A archive, searchable, useful to a pharmacist for specific drug-safety questions including in pregnancy, e.g. https://relis.no/artikler/27973/ and https://relis.no/artikler/47421)",
+    "https://www.tryggmammamedisin.no/hent-svar and /spor-oss (personalised Q&A intake, not published monographs)"
+   ],
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "terms": {
+    "quote": "Copyright © 2026 RELIS (generic footer notice only; no elaborated reuse/copyright clause was found on relis.no or tryggmammamedisin.no despite searching)",
+    "url": "https://relis.no/",
+    "class": "no terms found",
+    "deep_links": "Not addressed; no dedicated terms-of-use, disclaimer, or legal-notice page could be located on either domain."
+   },
+   "notes": "Despite targeted searches for valproate/isotretinoin/lithium pages on tryggmammamedisin.no, no dedicated per-substance pages were found; the service works by condition-based FAQ plus individualised question-and-answer requests, not published medicine monographs. RELIS's professional side (relis.no) does publish a large searchable archive of previously answered drug-safety questions (useful to a pharmacist) but this is a Q&A archive, not one page per medicine.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/relis",
+    "https://relis.no/",
+    "https://www.tryggmammamedisin.no/",
+    "https://tryggmammamedisin.no/faq/gravid/svangerskapskvalme/",
+    "https://tryggmammamedisin.no/faq/ammer/hostemedisiner-2/",
+    "https://tryggmammamedisin.no/hvem-er-vi/"
+   ]
+  },
+  {
+   "centre": "Istanbul",
+   "name": "TIS Istanbul",
+   "institution": "Marmara University Hospital Pendik & Prof. Enver Ataseven Başıbüyük Hospital Maltepe",
+   "country": "Turkey",
+   "website": "None found. No dedicated website is referenced on the ENTIS centre page, and repeated targeted web searches (Turkish and English) for a Marmara University / Istanbul teratology information service website turned up only unrelated institutional pages and academic articles about the service, never a URL for the service itself.",
+   "publishes_medicine_pages": "no",
+   "url_pattern": null,
+   "languages": null,
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://pubmed.ncbi.nlm.nih.gov/28626851 (published research article about the service's counselling activity, not a public resource page)"
+   ],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found",
+    "deep_links": "Not applicable — no website exists to address this."
+   },
+   "notes": "This appears to be a phone/email consultation service only (contact via zgoren@gmail.com), with no public web presence beyond its ENTIS directory listing.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/istanbul",
+    "https://pubmed.ncbi.nlm.nih.gov/28626851",
+    "https://link.springer.com/article/10.1007/s11096-017-0496-5"
+   ]
+  },
+  {
+   "centre": "Izmir",
+   "name": "Terafar – İzmir Katip Çelebi University Teratology Information, Training and Research Center",
+   "institution": "İzmir Katip Çelebi University, Atatürk Eğitim ve Araştırma Hastanesi (Clinical Pharmacology and Toxicology Unit)",
+   "country": "Turkey",
+   "website": "https://terafar.ikcu.edu.tr",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": "Turkish (site title and pages seen are in Turkish)",
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [
+    "https://terafar.ikcu.edu.tr/Duyuru/37790/teratojenite-danismanligi-calistayi (announcement about a teratogenicity counselling workshop, not a medicine-information page)",
+    "https://terafar.ikcu.edu.tr/Iletisim/1167 (contact page)"
+   ],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found",
+    "deep_links": null
+   },
+   "notes": "Could not load the live site directly: every WebFetch attempt (https and http) failed with a TLS certificate error ('unable to verify the first certificate'), so the site's structure could not be verified first-hand. Google-indexed pages for this domain found only an announcements page and a contact page; targeted searches for valproate/isotretinoin/lithium content on this domain returned no results. Based on available evidence this looks like a university consultation unit rather than a public medicine-information database, but this is marked 'unclear' rather than 'no' because the site itself could not be opened to check.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/izmir",
+    "https://terafar.ikcu.edu.tr (fetch failed: TLS certificate error)",
+    "http://terafar.ikcu.edu.tr (fetch failed: TLS certificate error)",
+    "https://terafar.ikcu.edu.tr/Duyuru/37790/teratojenite-danismanligi-calistayi",
+    "https://terafar.ikcu.edu.tr/Iletisim/1167"
+   ]
+  },
+  {
+   "centre": "Trabzon",
+   "name": "Trabzon-TIS (Karadeniz Technical University Teratology Information Service)",
+   "institution": "Karadeniz Technical University Faculty of Medicine",
+   "country": "Turkey",
+   "website": "www.ktupharmacology.com (stated on ENTIS page)",
+   "publishes_medicine_pages": "unclear",
+   "url_pattern": null,
+   "languages": null,
+   "audience": null,
+   "approx_substances": null,
+   "sample_pages": {
+    "valproate": null,
+    "isotretinoin": null,
+    "lithium": null
+   },
+   "other_material": [],
+   "terms": {
+    "quote": null,
+    "url": null,
+    "class": "no terms found",
+    "deep_links": null
+   },
+   "notes": "The domain www.ktupharmacology.com did not resolve on repeated attempts (DNS failure: 'getaddrinfo ENOTFOUND www.ktupharmacology.com') tried over both http and https on 2026-10-03. Web search for the domain's content returned no cached pages beyond academic references describing the service in general terms. The site appears to be currently offline or the domain has lapsed; cannot determine whether it ever published per-medicine pages.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/trabzon",
+    "http://www.ktupharmacology.com (DNS failure)",
+    "https://www.ktupharmacology.com (DNS failure)"
+   ]
+  },
+  {
+   "centre": "Newcastle upon Tyne",
+   "name": "UK Teratology Information Service (UKTIS); public-facing arm: bumps (Best Use of Medicines in Pregnancy)",
+   "institution": "Newcastle upon Tyne Hospitals NHS Foundation Trust",
+   "country": "United Kingdom",
+   "website": "https://uktis.org (professionals) and https://www.medicinesinpregnancy.org (bumps, public)",
+   "publishes_medicine_pages": "yes",
+   "url_pattern": "Public (bumps): medicinesinpregnancy.org/leaflets-a-z/[substance-slug]/. Professional (UKTIS): uktis.org/monographs/use-of-[substance]-in-pregnancy/ — summary visible to all, full monograph text behind NHS healthcare-professional login ('You need to be logged in to see the full monograph').",
+   "languages": "English for leaflets and monographs; a small set of patient-education animations also offered in Arabic, Urdu, Polish, Slovak and Spanish",
+   "audience": "public / patients (bumps leaflets, full text, no login) and healthcare professionals (UKTIS monographs, summary public, full text login-only)",
+   "approx_substances": "Not precisely counted; the bumps Leaflets A-Z index lists dozens of named substances/forms (confirmed entries include three separate valproate-form leaflets, two retinoid/isotretinoin leaflets, and lithium), but no total count was stated on the pages read.",
+   "sample_pages": {
+    "valproate": "https://www.medicinesinpregnancy.org/leaflets-a-z/sodium-valproate/ (confirmed: public, no login, about sodium valproate in pregnancy)",
+    "isotretinoin": "https://www.medicinesinpregnancy.org/leaflets-a-z/isotretinoin-tablets/ (confirmed: public, no login, about isotretinoin capsules in pregnancy)",
+    "lithium": "https://www.medicinesinpregnancy.org/leaflets-a-z/lithium/ (confirmed: public, no login, about lithium in pregnancy)"
+   },
+   "other_material": [
+    "https://uktis.org/monographs/use-of-sodium-valproate-in-pregnancy/, https://uktis.org/monographs/use-of-isotretinoin-in-pregnancy/, https://uktis.org/monographs/use-of-lithium-in-pregnancy/ (professional monograph summaries, public; full text login-only for NHS healthcare professionals)",
+    "www.toxbase.org (referenced as the full literature-review resource, registration required; not independently verified in this survey)"
+   ],
+   "terms": {
+    "quote": "This material may be freely reproduced for education and not for profit purposes within the UK National Health Service as long as the service is acknowledged in any work produced.",
+    "url": "https://uktis.org/copyright-notice/ (near-identical wording also at https://www.medicinesinpregnancy.org/about-us/copyright-notice/)",
+    "class": "citation allowed (NHS non-profit education only; commercial reproduction forbidden without written permission)",
+    "deep_links": "Not specifically addressed; the notice governs reproduction of 'the website' and 'material' generally, with no separate statement about linking to individual leaflet/monograph pages."
+   },
+   "notes": "UKTIS and bumps are two sides of the same service (same NHS Trust): bumps leaflets are plain-language and fully public; UKTIS monographs are the underlying professional evidence reviews, publicly summarised but gated behind an NHS professional login for full text, as the task anticipated.",
+   "evidence": [
+    "https://www.entis-org.eu/centers/newcastle-upon-tyne",
+    "https://uktis.org",
+    "https://uktis.org/monographs/",
+    "https://uktis.org/monographs/use-of-sodium-valproate-in-pregnancy/",
+    "https://uktis.org/copyright-notice/",
+    "https://www.medicinesinpregnancy.org/",
+    "https://www.medicinesinpregnancy.org/leaflets-a-z/",
+    "https://www.medicinesinpregnancy.org/leaflets-a-z/sodium-valproate/",
+    "https://www.medicinesinpregnancy.org/leaflets-a-z/isotretinoin-tablets/",
+    "https://www.medicinesinpregnancy.org/leaflets-a-z/lithium/",
+    "https://www.medicinesinpregnancy.org/about-us/copyright-notice/"
+   ]
+  }
+ ]
+}

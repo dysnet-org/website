@@ -5955,6 +5955,17 @@ def search_sections():
     return {"pages": pages, "sections": sections}
 
 
+def _tera_search_words(e):
+    """Every name a reader may type for a register entry: INN, generic names, brands in every country the
+    register reads (current and discontinued), the names in other languages, ATC codes, and the brands and
+    products companies reported to California for a cosmetic."""
+    n = e.get("names") or {}
+    words = [x for k in ("inn", "generic", "us", "us_discontinued", "eu", "fr", "it", "es", "ca", "atc_codes") for x in n.get(k) or []]
+    words += [x for v in (n.get("languages") or {}).values() for x in v] + list(e.get("atc") or [])
+    words += [f'{x["brand"]} {x["product"]}' for x in (e.get("cosmetic_products") or {}).get("examples", [])]
+    return [" ".join(words)] if words else []
+
+
 def search_entries():
     """What the site search finds: every page, and every entry of every register, each linked to the
     card, row or entry itself. A reader arrives with a name, a synonym, an ORPHAcode, an ICD code, a
@@ -5997,7 +6008,7 @@ def search_entries():
         lvl = TERA_LEVEL.get(e.get("level"), "")
         add("Substance", "/knowledge/teratogens/?q=" + urllib.parse.quote(e["name"]), e["name"],
             "Substance with effects on the unborn child" + (f" · {lvl}" if lvl else "") + (f" · CAS {e['cas']}" if e.get("cas") else ""),
-            e.get("cas"), e.get("ec"), *((e.get("names") or {}).get(k) and " ".join((e.get("names") or {}).get(k)) for k in ("generic", "us", "eu", "fr")))
+            e.get("cas"), e.get("ec"), *_tera_search_words(e))
     return out
 
 

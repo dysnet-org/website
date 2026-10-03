@@ -1101,7 +1101,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   function prime(rows) { rows.forEach(function (r) {
     var nm = r.nm ? [].concat(r.nm.i || [], r.nm.g, r.nm.us, r.nm.ud || [], r.nm.eu, r.nm.fr, r.nm.it || [], r.nm.es || [], r.nm.ca || [], [].concat.apply([], Object.keys(r.nm.lg || {}).map(function (l) { return r.nm.lg[l]; }))) : [];
     var cp = r.cp ? r.cp.x.map(function (x) { return x[0] + " " + x[1]; }) : [];
-    r.t = fold([r.f, r.n, r.cas, r.ec].concat(nm, cp).join(" "));
+    r.t = fold([r.f, r.n, r.cas, r.ec].concat(r.atc || [], nm, cp).join(" "));
   }); }
   if (DATA) prime(DATA);
   var ORDER = { known: 0, presumed: 1, suspected: 2 };

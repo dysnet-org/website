@@ -142,7 +142,9 @@
   "with_inn": 192,
   "tis_centres": 31,
   "cosmetic_products": 25,
-  "tis_linked": 98
+  "tis_linked": 98,
+  "with_atc": 200,
+  "epar_links": 163
  },
  "entries": [
   {
@@ -390,6 +392,14 @@
      "2571007",
      "387138002"
     ],
+    "eu_url": {
+     "Busulfan Fresenius Kabi": "https://www.ema.europa.eu/en/medicines/human/EPAR/busulfan-fresenius-kabi",
+     "Busilvex": "https://www.ema.europa.eu/en/medicines/human/EPAR/busilvex"
+    },
+    "eu_status": {
+     "Busulfan Fresenius Kabi": "Authorised",
+     "Busilvex": "Withdrawn"
+    },
     "it": [
      "BUSULFAN ACCORD",
      "BUSULFAN FRESENIUS KABI",
@@ -431,7 +441,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "1-(2-Chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU) (Lomustine)",
@@ -524,6 +541,8 @@
      "387227009",
      "40999006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -543,7 +562,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AD02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "2-ethoxyethanol; ethylene glycol monoethyl ether",
@@ -1237,6 +1263,20 @@
      "699679004",
      "767857007"
     ],
+    "eu_url": {
+     "Akeega": "https://www.ema.europa.eu/en/medicines/human/EPAR/akeega",
+     "Abiraterone Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-mylan",
+     "Abiraterone Krka": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-krka",
+     "Abiraterone Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/abiraterone-accord",
+     "Zytiga": "https://www.ema.europa.eu/en/medicines/human/EPAR/zytiga"
+    },
+    "eu_status": {
+     "Akeega": "Authorised",
+     "Abiraterone Mylan": "Authorised",
+     "Abiraterone Krka": "Authorised",
+     "Abiraterone Accord": "Authorised",
+     "Zytiga": "Authorised"
+    },
     "it": [
      "ABIRATERONE ABDI",
      "ABIRATERONE ABDI FARMA",
@@ -1333,7 +1373,14 @@
     "resolved_as": "RxNorm PIN of abiraterone",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L02BX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Acenocoumarol",
@@ -1493,6 +1540,8 @@
      "387457003",
      "79356008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "SINTROM"
     ],
@@ -1515,6 +1564,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B01AA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -1667,6 +1723,8 @@
      "372709008",
      "72469007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DIAMOX"
     ],
@@ -1693,6 +1751,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "S01EC01",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -1804,6 +1869,8 @@
      "387426003",
      "74819009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "URONEFREX"
@@ -1821,7 +1888,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G04BX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Acitretin",
@@ -1979,6 +2053,8 @@
      "108914001",
      "386938006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "NEOTIGASON",
      "ZORIAS"
@@ -2005,6 +2081,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "D05BB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -2129,6 +2212,8 @@
      "387353003",
      "64127001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "COSMEGEN"
     ],
@@ -2152,7 +2237,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Alcohol (ethanol) in beverages",
@@ -2401,6 +2493,12 @@
      "116086005",
      "409488005"
     ],
+    "eu_url": {
+     "Panretin": "https://www.ema.europa.eu/en/medicines/human/EPAR/panretin"
+    },
+    "eu_status": {
+     "Panretin": "Withdrawn"
+    },
     "it": [
      "ALITRECARE",
      "TOCTINO"
@@ -2429,7 +2527,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XF02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D11AH04",
+     "route": "skin",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "All-trans retinoic acid",
@@ -2688,6 +2798,8 @@
      "387305002",
      "54972005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "TRETINOINA SAME",
      "VESANOID"
@@ -2738,6 +2850,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01XF01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L01XX14",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D10AD01",
+     "route": "skin",
+     "source": "RxNorm"
+    }
+   ],
    "cosmetic_products": {
     "california_names": [
      "All-trans retinoic acid"
@@ -2951,6 +3080,8 @@
      "111127002",
      "386983007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ALPRAZIG",
      "ALPRAZOLAM AUROBINDO",
@@ -3034,6 +3165,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA12",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -3121,6 +3259,8 @@
      "387385000",
      "69879000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -3136,7 +3276,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Amantadine hydrochloride",
@@ -3252,6 +3399,8 @@
      "64507008",
      "703084004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "MANTADAN"
     ],
@@ -3280,7 +3429,14 @@
     "resolved_as": "RxNorm PIN of amantadine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N04BB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Amikacin sulfate",
@@ -3493,6 +3649,14 @@
      "48836000",
      "782373008"
     ],
+    "eu_url": {
+     "Arikayce liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce-liposomal",
+     "Arikayce": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce"
+    },
+    "eu_status": {
+     "Arikayce liposomal": "Authorised",
+     "Arikayce": "Application withdrawn"
+    },
     "it": [
      "AMICASIL",
      "AMIKACINA B. BRAUN",
@@ -3543,6 +3707,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01GB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D06AX12",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01AA21",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -3633,6 +3814,8 @@
      "387257000",
      "47124006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -3646,7 +3829,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L02BG01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Aminoglycosides",
@@ -3966,6 +4156,22 @@
      "89695009",
      "96031003"
     ],
+    "eu_url": {
+     "Arikayce liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce-liposomal",
+     "Vantobra (previously Tobramycin PARI)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra",
+     "Tobi Podhaler": "https://www.ema.europa.eu/en/medicines/human/EPAR/tobi-podhaler",
+     "Zemdri": "https://www.ema.europa.eu/en/medicines/human/EPAR/zemdri",
+     "Vantobra": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra0",
+     "Arikayce": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce"
+    },
+    "eu_status": {
+     "Arikayce liposomal": "Authorised",
+     "Vantobra (previously Tobramycin PARI)": "Authorised",
+     "Tobi Podhaler": "Authorised",
+     "Zemdri": "Application withdrawn",
+     "Vantobra": "Withdrawn",
+     "Arikayce": "Application withdrawn"
+    },
     "it": [
      "AMICASIL",
      "AMIKACINA B. BRAUN",
@@ -4129,6 +4335,83 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B05CA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB12",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB14",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A07AA01",
+     "route": "gut, not absorbed",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A07AA04",
+     "route": "gut, not absorbed",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A07AA08",
+     "route": "gut, not absorbed",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -4339,6 +4622,8 @@
     "snomed": [
      "6790004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -4354,6 +4639,11 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -4527,6 +4817,8 @@
      "52574003",
      "69236009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AMIODAR",
      "AMIODARONE",
@@ -4580,6 +4872,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C01BD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -4687,6 +4986,8 @@
      "29840005",
      "373754002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -4703,6 +5004,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N06AA17",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -5002,6 +5310,12 @@
      "703662000",
      "713473008"
     ],
+    "eu_url": {
+     "Aqumeldi": "https://www.ema.europa.eu/en/medicines/human/EPAR/aqumeldi"
+    },
+    "eu_status": {
+     "Aqumeldi": "Authorised"
+    },
     "it": [
      "ALAPRIL",
      "AQUMELDI",
@@ -5411,6 +5725,78 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C09AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA10",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA11",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA13",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA15",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C09AA16",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -5562,6 +5948,8 @@
      "38122009",
      "397228002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -5575,6 +5963,11 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -5871,6 +6264,8 @@
      "387458008",
      "7947003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ACIDO ACETILSALICILICO   MYLAN",
      "ACIDO ACETILSALICILICO AUROBINDO",
@@ -6014,6 +6409,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B01AC06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N02BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A01AD05",
+     "route": "mouth",
+     "source": "RxNorm"
+    }
+   ],
    "cosmetic_products": {
     "california_names": [
      "Acetylsalicylic acid",
@@ -6217,6 +6629,8 @@
      "387506000",
      "87652004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ATENOL",
      "ATENOLOLO ABC",
@@ -6286,6 +6700,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C07AB03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -6410,6 +6831,8 @@
      "18002004",
      "387100001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -6427,7 +6850,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "M01CB03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Azathioprine",
@@ -6659,6 +7089,12 @@
      "372574004",
      "67221004"
     ],
+    "eu_url": {
+     "Jayempi": "https://www.ema.europa.eu/en/medicines/human/EPAR/jayempi"
+    },
+    "eu_status": {
+     "Jayempi": "Authorised"
+    },
     "it": [
      "AZAFOR",
      "AZATIOPRINA ASPEN",
@@ -6699,6 +7135,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AX01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -6992,6 +7435,8 @@
      "89422005",
      "91594002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "FENOBARBITALE SODICO S.A.L.F.",
      "GARDENALE",
@@ -7065,6 +7510,123 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N01AF01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N01AF02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N01AF03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N03AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N03AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N03AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N03AA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N03AA30",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA10",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA15",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA16",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA19",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA21",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CA22",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -7219,6 +7781,12 @@
      "1389007",
      "426017007"
     ],
+    "eu_url": {
+     "orBec": "https://www.ema.europa.eu/en/medicines/human/EPAR/orbec"
+    },
+    "eu_status": {
+     "orBec": "Application withdrawn"
+    },
     "it": [
      "BECLOMETASONE DOC GENERICI",
      "BECLOMETASONE TEVA",
@@ -7300,6 +7868,28 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "A07EA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R03BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D07AC15",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AD01",
+     "route": "nose",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -8032,6 +8622,18 @@
      "96236000",
      "96237009"
     ],
+    "eu_url": {
+     "Byfavo": "https://www.ema.europa.eu/en/medicines/human/EPAR/byfavo",
+     "Omforro": "https://www.ema.europa.eu/en/medicines/human/EPAR/omforro",
+     "Tuzodi": "https://www.ema.europa.eu/en/medicines/human/EPAR/tuzodi",
+     "Buccolam": "https://www.ema.europa.eu/en/medicines/human/EPAR/buccolam"
+    },
+    "eu_status": {
+     "Byfavo": "Authorised",
+     "Omforro": "Application withdrawn",
+     "Tuzodi": "Application withdrawn",
+     "Buccolam": "Authorised"
+    },
     "it": [
      "ALPRAZIG",
      "ALPRAZOLAM AUROBINDO",
@@ -8424,6 +9026,153 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AE01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA10",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA11",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA12",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA13",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA16",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA18",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA21",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA22",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05BA23",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD10",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD11",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N05CD14",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -8614,6 +9363,8 @@
      "6088007",
      "67428007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -8627,6 +9378,11 @@
     "resolved_as": "RxNorm PIN of benzphetamine",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A08AA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -8721,6 +9477,42 @@
      "409405006",
      "409406007"
     ],
+    "eu_url": {
+     "Aybintio": "https://www.ema.europa.eu/en/medicines/human/EPAR/aybintio",
+     "Orblid": "https://www.ema.europa.eu/en/medicines/human/EPAR/orblid",
+     "Lytenava": "https://www.ema.europa.eu/en/medicines/human/EPAR/lytenava",
+     "Abevmy": "https://www.ema.europa.eu/en/medicines/human/EPAR/abevmy",
+     "Zirabev": "https://www.ema.europa.eu/en/medicines/human/EPAR/zirabev",
+     "Alymsys": "https://www.ema.europa.eu/en/medicines/human/EPAR/alymsys",
+     "Avzivi": "https://www.ema.europa.eu/en/medicines/human/EPAR/avzivi",
+     "Vegzelma": "https://www.ema.europa.eu/en/medicines/human/EPAR/vegzelma",
+     "Oyavas": "https://www.ema.europa.eu/en/medicines/human/EPAR/oyavas",
+     "Avastin": "https://www.ema.europa.eu/en/medicines/human/EPAR/avastin",
+     "Mvasi": "https://www.ema.europa.eu/en/medicines/human/EPAR/mvasi",
+     "Onbevzi": "https://www.ema.europa.eu/en/medicines/human/EPAR/onbevzi",
+     "Ipique": "https://www.ema.europa.eu/en/medicines/human/EPAR/ipique",
+     "Equidacent": "https://www.ema.europa.eu/en/medicines/human/EPAR/equidacent",
+     "Lextemy": "https://www.ema.europa.eu/en/medicines/human/EPAR/lextemy",
+     "Kyomarc": "https://www.ema.europa.eu/en/medicines/human/EPAR/kyomarc"
+    },
+    "eu_status": {
+     "Aybintio": "Authorised",
+     "Orblid": "Application withdrawn",
+     "Lytenava": "Authorised",
+     "Abevmy": "Authorised",
+     "Zirabev": "Authorised",
+     "Alymsys": "Authorised",
+     "Avzivi": "Authorised",
+     "Vegzelma": "Authorised",
+     "Oyavas": "Authorised",
+     "Avastin": "Authorised",
+     "Mvasi": "Authorised",
+     "Onbevzi": "Withdrawn",
+     "Ipique": "Refused",
+     "Equidacent": "Withdrawn",
+     "Lextemy": "Withdrawn",
+     "Kyomarc": "Application withdrawn"
+    },
     "it": [
      "ABEVMY",
      "ALYMSYS",
@@ -8804,7 +9596,24 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01FG01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L01XC07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01LA08",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Bexarotene",
@@ -8958,6 +9767,12 @@
      "116346006",
      "387023000"
     ],
+    "eu_url": {
+     "Targretin": "https://www.ema.europa.eu/en/medicines/human/EPAR/targretin"
+    },
+    "eu_status": {
+     "Targretin": "Authorised"
+    },
     "it": [
      "BEXAROTENE CIPLA",
      "TARGRETIN"
@@ -8984,7 +9799,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XF03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Bischloroethyl nitrosourea (BCNU) (Carmustine)",
@@ -9128,6 +9950,12 @@
      "51326002",
      "786790001"
     ],
+    "eu_url": {
+     "Carmustine medac (previously Carmustine Obvius)": "https://www.ema.europa.eu/en/medicines/human/EPAR/carmustine-medac"
+    },
+    "eu_status": {
+     "Carmustine medac (previously Carmustine Obvius)": "Authorised"
+    },
     "it": [
      "BICNU",
      "CARMUSTINA AUROBINDO",
@@ -9173,7 +10001,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "brodifacoum (ISO); 4-hydroxy-3-(3-(4′-bromo-4-biphenylyl)-1,2,3,4-tetrahydro-1-naphthyl)coumarin",
@@ -9348,6 +10183,8 @@
      "4780009",
      "9268004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -9361,6 +10198,11 @@
     "resolved_as": "RxNorm PIN of butabarbital",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -9820,6 +10662,8 @@
      "387222003",
      "40820003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CARBAMAZEPINA AUROBINDO",
      "CARBAMAZEPINA EG",
@@ -9864,6 +10708,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AF01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -10024,6 +10875,8 @@
      "325325006",
      "395831005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "NEO-TOMIZOL"
@@ -10042,6 +10895,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "H03BB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -10500,6 +11360,8 @@
      "108759002",
      "386905002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CARBOPLATINO AHCL",
      "CARBOPLATINO AUROBINDO ITALIA",
@@ -10542,7 +11404,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Chenodiol",
@@ -10623,6 +11492,12 @@
      "82490009",
      "89132005"
     ],
+    "eu_url": {
+     "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)": "https://www.ema.europa.eu/en/medicines/human/EPAR/chenodeoxycholic-acid-leadiant"
+    },
+    "eu_status": {
+     "Chenodeoxycholic acid Leadiant (previously Chenodeoxycholic acid sigma-tau)": "Authorised"
+    },
     "it": [
      "ACIDO CHENODESOSSICOLICO LEADIANT"
     ],
@@ -10649,7 +11524,14 @@
     "resolved_as": "RxNorm PIN of chenodeoxycholate",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "A05AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Chlorambucil",
@@ -10789,6 +11671,8 @@
      "387249003",
      "46009007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LEUKERAN"
     ],
@@ -10812,7 +11696,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Chlorcyclizine hydrochloride",
@@ -10878,6 +11769,8 @@
      "R06AE04"
     ],
     "snomed": [],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -10895,7 +11788,14 @@
     "resolved_as": "RxNorm PIN of chlorcyclizine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "R06AE04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Chlordecone (Kepone)",
@@ -11228,6 +12128,8 @@
      "40601003",
      "82746003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LIBRIUM"
     ],
@@ -11255,6 +12157,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -11392,6 +12301,8 @@
      "40601003",
      "82746003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LIBRIUM"
     ],
@@ -11417,6 +12328,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -12011,6 +12929,12 @@
      "108688007",
      "386894007"
     ],
+    "eu_url": {
+     "Vistide": "https://www.ema.europa.eu/en/medicines/human/EPAR/vistide"
+    },
+    "eu_status": {
+     "Vistide": "Withdrawn"
+    },
     "it": [
      "CIDOFOVIR TILLOMED"
     ],
@@ -12036,7 +12960,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "J05AB12",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Cladribine",
@@ -12161,6 +13092,16 @@
      "108800000",
      "386916009"
     ],
+    "eu_url": {
+     "Mavenclad": "https://www.ema.europa.eu/en/medicines/human/EPAR/mavenclad",
+     "Litak": "https://www.ema.europa.eu/en/medicines/human/EPAR/litak",
+     "Movectro": "https://www.ema.europa.eu/en/medicines/human/EPAR/movectro"
+    },
+    "eu_status": {
+     "Mavenclad": "Authorised",
+     "Litak": "Authorised",
+     "Movectro": "Application withdrawn"
+    },
     "it": [
      "LEUSTATIN",
      "LITAK",
@@ -12194,7 +13135,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01BB04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L04AA40",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Clarithromycin",
@@ -12345,6 +13298,8 @@
      "387487009",
      "83999008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CLAMODIN",
      "CLARITROL",
@@ -12433,6 +13388,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01FA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -12538,6 +13500,8 @@
      "419129004",
      "48614001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CLOBECARE",
      "CLOBESOL",
@@ -12599,6 +13563,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "D07AD01",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01BA17",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -12724,6 +13700,8 @@
      "387166005",
      "387346007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CLOMID"
     ],
@@ -12746,7 +13724,14 @@
     "resolved_as": "RxNorm PIN of clomiphene",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03GB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Clorazepate dipotassium",
@@ -12864,6 +13849,8 @@
      "387453004",
      "39815009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "TRANSENE"
     ],
@@ -12891,6 +13878,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -12990,7 +13984,29 @@
      ]
     }
    ],
-   "exposure_why": "Taken as a recreational drug; its medical use as a local anaesthetic is marginal."
+   "exposure_why": "Taken as a recreational drug; its medical use as a local anaesthetic is marginal.",
+   "atc_list": [
+    {
+     "code": "N01BC01",
+     "route": "systemic",
+     "source": "Wikidata"
+    },
+    {
+     "code": "R02AD03",
+     "route": "throat",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S01HA01",
+     "route": "eye",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S02DA02",
+     "route": "ear",
+     "source": "Wikidata"
+    }
+   ]
   },
   {
    "name": "Codeine phosphate",
@@ -13069,6 +14085,8 @@
      "766880009",
      "85990009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "HEDERIX PLAN"
     ],
@@ -13151,6 +14169,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "R05DA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -13304,6 +14329,12 @@
      "387413002",
      "73133000"
     ],
+    "eu_url": {
+     "Colchicine Agepha Pharma": "https://www.ema.europa.eu/en/medicines/human/EPAR/colchicine-agepha-pharma"
+    },
+    "eu_status": {
+     "Colchicine Agepha Pharma": "Authorised"
+    },
     "it": [
      "COLCHICINA LIRCA"
     ],
@@ -13342,6 +14373,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "M04AC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -13436,6 +14474,8 @@
      "126098001",
      "16832004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "EQUIN"
@@ -13460,7 +14500,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03CA57",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Cyanazine",
@@ -13993,6 +15040,8 @@
      "725850006",
      "74470007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CICLOFOSFAMIDE ACCORD",
      "CICLOFOSFAMIDE SEACROSS",
@@ -14031,6 +15080,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -14288,6 +15344,8 @@
      "725850006",
      "74470007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CICLOFOSFAMIDE ACCORD",
      "CICLOFOSFAMIDE SEACROSS",
@@ -14326,6 +15384,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -14579,6 +15644,14 @@
      "387511003",
      "89265009"
     ],
+    "eu_url": {
+     "Vyxeos liposomal (previously Vyxeos)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyxeos-liposomal",
+     "DepoCyte": "https://www.ema.europa.eu/en/medicines/human/EPAR/depocyte"
+    },
+    "eu_status": {
+     "Vyxeos liposomal (previously Vyxeos)": "Authorised",
+     "DepoCyte": "Withdrawn"
+    },
     "it": [
      "ARACYTIN",
      "CITARABINA ACCORD",
@@ -14616,7 +15689,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01BC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Dacarbazine",
@@ -14733,6 +15813,8 @@
      "387441003",
      "77750008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DACARBAZINA LIPOMED",
      "DACARBAZINA MEDAC"
@@ -14758,7 +15840,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AX04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Danazol",
@@ -14944,6 +16033,8 @@
      "126124009",
      "87881000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DANATROL"
     ],
@@ -14965,7 +16056,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03XA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Daunorubicin hydrochloride",
@@ -15092,6 +16190,12 @@
      "426996001",
      "65972004"
     ],
+    "eu_url": {
+     "Vyxeos liposomal (previously Vyxeos)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyxeos-liposomal"
+    },
+    "eu_status": {
+     "Vyxeos liposomal (previously Vyxeos)": "Authorised"
+    },
     "it": [
      "DAUNOBLASTINA"
     ],
@@ -15125,7 +16229,14 @@
     "resolved_as": "RxNorm PIN of daunorubicin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Demeclocycline hydrochloride (internal use)",
@@ -15319,6 +16430,8 @@
      "372779007",
      "5737008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -15335,6 +16448,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -15433,6 +16553,8 @@
      "387264003",
      "48546005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ANSIOLIN",
      "DIAZEPAM ABC",
@@ -15498,6 +16620,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -15634,6 +16763,12 @@
      "387328001",
      "58905004"
     ],
+    "eu_url": {
+     "Viokat": "https://www.ema.europa.eu/en/medicines/human/EPAR/viokat"
+    },
+    "eu_status": {
+     "Viokat": "Application withdrawn"
+    },
     "it": [
      "PROGLICEM"
     ],
@@ -15661,7 +16796,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "C02DA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "V03AH01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Dichlorphenamide",
@@ -15774,6 +16921,8 @@
      "19583005",
      "387111009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -15790,7 +16939,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "S01EC02",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Dicumarol",
@@ -15892,6 +17048,8 @@
      "423414002",
      "79209008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -15905,7 +17063,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "B01AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Diethylstilbestrol (DES)",
@@ -16158,6 +17323,8 @@
      "396026002",
      "79332009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -16171,7 +17338,24 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03CB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03CC05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L02AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Diflunisal",
@@ -16271,6 +17455,12 @@
      "20865003",
      "387116004"
     ],
+    "eu_url": {
+     "Attrogy": "https://www.ema.europa.eu/en/medicines/human/EPAR/attrogy"
+    },
+    "eu_status": {
+     "Attrogy": "Authorised"
+    },
     "it": [
      "ATTROGY"
     ],
@@ -16292,7 +17482,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N02BA11",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Dihydroergotamine mesylate",
@@ -16394,6 +17591,8 @@
      "387468003",
      "48875009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DIIDERGOT",
      "DINEZA"
@@ -16424,6 +17623,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N02CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -16548,6 +17754,8 @@
      "372793000",
      "59941008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ALTIAZEM",
      "DILADEL",
@@ -16643,6 +17851,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C08DB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C05AE03",
+     "route": "rectum and veins, local",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -17185,6 +18405,8 @@
      "387416005",
      "40556005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AURANTIN",
      "DINTOINA",
@@ -17227,6 +18449,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -17364,6 +18593,24 @@
      "772118008",
      "90875009"
     ],
+    "eu_url": {
+     "Caelyx pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/caelyx-pegylated-liposomal",
+     "Zolsketil pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/zolsketil-pegylated-liposomal",
+     "Celdoxome pegylated liposomal": "https://www.ema.europa.eu/en/medicines/human/EPAR/celdoxome-pegylated-liposomal",
+     "Myocet liposomal (previously Myocet)": "https://www.ema.europa.eu/en/medicines/human/EPAR/myocet-liposomal",
+     "Doxorubicin Hydrochloride Tillomed": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxorubicin-hydrochloride-tillomed",
+     "Doxolipad": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxolipad",
+     "Doxorubicin SUN": "https://www.ema.europa.eu/en/medicines/human/EPAR/doxorubicin-sun"
+    },
+    "eu_status": {
+     "Caelyx pegylated liposomal": "Authorised",
+     "Zolsketil pegylated liposomal": "Authorised",
+     "Celdoxome pegylated liposomal": "Lapsed",
+     "Myocet liposomal (previously Myocet)": "Authorised",
+     "Doxorubicin Hydrochloride Tillomed": "Application withdrawn",
+     "Doxolipad": "Refused",
+     "Doxorubicin SUN": "Application withdrawn"
+    },
     "it": [
      "ADRIBLASTINA",
      "CAELYX PEGYLATED LIPOSOMAL",
@@ -17427,7 +18674,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Doxycycline (internal use)",
@@ -17640,6 +18894,8 @@
      "785692009",
      "81508005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "BASSADO",
      "DOXYNOR",
@@ -17720,6 +18976,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A01AB22",
+     "route": "mouth",
+     "source": "Wikidata"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -17945,6 +19213,8 @@
      "785692009",
      "81508005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "BASSADO",
      "DOXYNOR",
@@ -18024,6 +19294,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -18249,6 +19526,8 @@
      "785692009",
      "81508005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "BASSADO",
      "DOXYNOR",
@@ -18328,6 +19607,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -18553,6 +19839,8 @@
      "785692009",
      "81508005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "BASSADO",
      "DOXYNOR",
@@ -18632,6 +19920,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -18841,6 +20136,8 @@
      "395975005",
      "396046007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -18861,6 +20158,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N02CA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -18937,6 +20241,8 @@
      "395829001",
      "784234005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -18953,6 +20259,11 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -19085,6 +20396,8 @@
      "32800009",
      "414148003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -19100,7 +20413,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "J04AD03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Ethyl alcohol in alcoholic beverages",
@@ -19768,6 +21088,8 @@
      "108510003",
      "386860005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -19786,6 +21108,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "M01AB08",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -19933,6 +21262,8 @@
      "426891005",
      "56928005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ETOPOSIDE ACCORD",
      "ETOPOSIDE HIKMA",
@@ -19976,7 +21307,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01CB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Etretinate",
@@ -20160,6 +21498,8 @@
      "108912002",
      "386937001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -20173,7 +21513,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "D05BB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Filgrastim",
@@ -20234,6 +21581,30 @@
      "108965009",
      "386948008"
     ],
+    "eu_url": {
+     "Nivestim": "https://www.ema.europa.eu/en/medicines/human/EPAR/nivestim",
+     "Zefylti": "https://www.ema.europa.eu/en/medicines/human/EPAR/zefylti-0",
+     "Zarzio": "https://www.ema.europa.eu/en/medicines/human/EPAR/zarzio",
+     "Accofil": "https://www.ema.europa.eu/en/medicines/human/EPAR/accofil",
+     "Grastofil": "https://www.ema.europa.eu/en/medicines/human/EPAR/grastofil",
+     "Filgrastim Hexal": "https://www.ema.europa.eu/en/medicines/human/EPAR/filgrastim-hexal",
+     "Tevagrastim": "https://www.ema.europa.eu/en/medicines/human/EPAR/tevagrastim",
+     "Ratiograstim": "https://www.ema.europa.eu/en/medicines/human/EPAR/ratiograstim",
+     "Biograstim": "https://www.ema.europa.eu/en/medicines/human/EPAR/biograstim",
+     "Filgrastim ratiopharm": "https://www.ema.europa.eu/en/medicines/human/EPAR/filgrastim-ratiopharm"
+    },
+    "eu_status": {
+     "Nivestim": "Authorised",
+     "Zefylti": "Application withdrawn",
+     "Zarzio": "Authorised",
+     "Accofil": "Authorised",
+     "Grastofil": "Withdrawn",
+     "Filgrastim Hexal": "Authorised",
+     "Tevagrastim": "Authorised",
+     "Ratiograstim": "Authorised",
+     "Biograstim": "Withdrawn",
+     "Filgrastim ratiopharm": "Withdrawn"
+    },
     "it": [
      "ACCOFIL",
      "GRANULOKINE",
@@ -20303,7 +21674,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L03AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Fingolimod",
@@ -20506,6 +21884,16 @@
      "703109008",
      "715640009"
     ],
+    "eu_url": {
+     "Gilenya": "https://www.ema.europa.eu/en/medicines/human/EPAR/gilenya",
+     "Fingolimod Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/fingolimod-mylan-0",
+     "Fingolimod Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/fingolimod-accord"
+    },
+    "eu_status": {
+     "Gilenya": "Authorised",
+     "Fingolimod Mylan": "Application withdrawn",
+     "Fingolimod Accord": "Authorised"
+    },
     "it": [
      "FINGOLIMOD ACCORD",
      "FINGOLIMOD AUROBINDO",
@@ -20604,6 +21992,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AA27",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L04AE01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -20718,6 +22118,8 @@
      "116588001",
      "43879000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AERFLU",
      "AEROLID",
@@ -20761,6 +22163,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "R03BA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AD04",
+     "route": "nose",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -21013,6 +22427,8 @@
      "3127006",
      "387172005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "FLUOROURACILE AHCL",
      "FLUOROURACILE HIKMA",
@@ -21052,7 +22468,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01BC02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Fluoxymesterone",
@@ -21211,6 +22634,8 @@
      "126125005",
      "63470003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -21224,7 +22649,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Flurazepam hydrochloride",
@@ -21292,6 +22724,8 @@
      "27928002",
      "387109000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DALMADORM",
      "FELISON",
@@ -21314,7 +22748,14 @@
     "resolved_as": "RxNorm PIN of flurazepam",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Flurbiprofen",
@@ -21418,6 +22859,8 @@
      "373506008",
      "54344006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ASPIGOLADOLACT",
      "BENACTIVDOL  GOLA",
@@ -21467,6 +22910,28 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "M01AE09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "M02AA19",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R02AX01",
+     "route": "throat",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01BC04",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -21613,6 +23078,8 @@
      "387587007",
      "96371003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "FLUTAMIDE EG"
     ],
@@ -21635,7 +23102,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L02BB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Fluticasone propionate",
@@ -21759,6 +23233,32 @@
      "397192001",
      "426409006"
     ],
+    "eu_url": {
+     "Seffalair Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/seffalair-spiromax",
+     "Elebrato Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/elebrato-ellipta",
+     "Trelegy Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/trelegy-ellipta",
+     "BroPair Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/bropair-spiromax",
+     "Avamys": "https://www.ema.europa.eu/en/medicines/human/EPAR/avamys",
+     "Relvar Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/relvar-ellipta",
+     "Revinty Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/revinty-ellipta",
+     "Temybric Ellipta": "https://www.ema.europa.eu/en/medicines/human/EPAR/temybric-ellipta",
+     "Aerivio Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/aerivio-spiromax",
+     "Airexar Spiromax": "https://www.ema.europa.eu/en/medicines/human/EPAR/airexar-spiromax",
+     "Alisade": "https://www.ema.europa.eu/en/medicines/human/EPAR/alisade"
+    },
+    "eu_status": {
+     "Seffalair Spiromax": "Authorised",
+     "Elebrato Ellipta": "Authorised",
+     "Trelegy Ellipta": "Authorised",
+     "BroPair Spiromax": "Withdrawn",
+     "Avamys": "Authorised",
+     "Relvar Ellipta": "Authorised",
+     "Revinty Ellipta": "Authorised",
+     "Temybric Ellipta": "Lapsed",
+     "Aerivio Spiromax": "Withdrawn",
+     "Airexar Spiromax": "Withdrawn",
+     "Alisade": "Lapsed"
+    },
     "it": [
      "AKTANOS",
      "AVAMYS",
@@ -21891,6 +23391,33 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "R03BA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R03BA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D07AC17",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AD08",
+     "route": "nose",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AD12",
+     "route": "nose",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -22042,6 +23569,8 @@
      "372484000",
      "386843000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -22064,6 +23593,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AB05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -22185,6 +23721,12 @@
      "76587005",
      "78025001"
     ],
+    "eu_url": {
+     "Vitrasert Implant": "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrasert-implant"
+    },
+    "eu_status": {
+     "Vitrasert Implant": "Withdrawn"
+    },
     "it": [
      "CITOVIRAX",
      "GANCICLOVIR ACCORD",
@@ -22226,6 +23768,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J05AB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01AD09",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -22296,6 +23850,12 @@
      "76587005",
      "78025001"
     ],
+    "eu_url": {
+     "Vitrasert Implant": "https://www.ema.europa.eu/en/medicines/human/EPAR/vitrasert-implant"
+    },
+    "eu_status": {
+     "Vitrasert Implant": "Withdrawn"
+    },
     "it": [
      "CITOVIRAX",
      "GANCICLOVIR ACCORD",
@@ -22335,6 +23895,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J05AB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01AD09",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -22455,6 +24027,8 @@
      "108773006",
      "126138002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ZOLADEX"
     ],
@@ -22480,7 +24054,14 @@
     "resolved_as": "RxNorm PIN of goserelin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L02AE03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Halazepam",
@@ -22554,6 +24135,8 @@
      "371367008",
      "63545000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -22567,7 +24150,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05BA13",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Halobetasol propionate",
@@ -22637,6 +24227,8 @@
      "764616008",
      "764617004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -22658,7 +24250,14 @@
     "resolved_as": "RxNorm PIN of halobetasol",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "D07AC21",
+     "route": "skin",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Haloperidol",
@@ -22814,6 +24413,8 @@
      "412196004",
      "412197008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ALOPERIDOLO GALENICA SENESE",
      "ALOPERIDOLO HIKMA",
@@ -22852,6 +24453,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05AD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -23012,6 +24620,8 @@
      "387351001",
      "63682003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -23025,7 +24635,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N01AB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Hexachlorobenzene",
@@ -23478,6 +25095,8 @@
      "109050002",
      "126198004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -23494,7 +25113,14 @@
     "resolved_as": "RxNorm PIN of histrelin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L02AE05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Hydroxyurea",
@@ -23618,6 +25244,8 @@
      "387314007",
      "56602009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "IDROSSICARBAMIDE AUROBINDO",
      "ONCO CARBIDE",
@@ -23655,6 +25283,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01XX05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -23766,6 +25401,8 @@
      "108788001",
      "372539000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ZAVEDOS"
     ],
@@ -23792,7 +25429,14 @@
     "resolved_as": "RxNorm PIN of idarubicin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Ifosfamide",
@@ -23910,6 +25554,8 @@
      "108757000",
      "386904003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "HOLOXAN"
     ],
@@ -23933,7 +25579,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Iodine-131",
@@ -24157,6 +25810,8 @@
      "768462002",
      "783854008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "SODIO IODURO (123I) CAPSULE GE HEALTHCARE S.R.L.",
      "SODIO IODURO (123I) CURIUM NETHERLANDS",
@@ -24185,6 +25840,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "V09FX02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "V09FX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "V10XA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -24430,6 +26102,8 @@
      "38314008",
      "387208003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AISOSKIN",
      "ISDIBEN",
@@ -24482,6 +26156,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "D10BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D10AD04",
+     "route": "skin",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -26155,6 +27841,24 @@
      "421471009",
      "421737001"
     ],
+    "eu_url": {
+     "Lenalidomide Mylan": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-mylan",
+     "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka",
+     "Lenalidomide Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-accord",
+     "Revlimid": "https://www.ema.europa.eu/en/medicines/human/EPAR/revlimid",
+     "Lenalidomide Krka d.d.": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka-dd",
+     "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-krka-dd-novo-mesto",
+     "Lenalidomide Celgene Europe": "https://www.ema.europa.eu/en/medicines/human/EPAR/lenalidomide-celgene-europe"
+    },
+    "eu_status": {
+     "Lenalidomide Mylan": "Authorised",
+     "Lenalidomide Krka (previously Lenalidomide Krka d.d. Novo mesto)": "Authorised",
+     "Lenalidomide Accord": "Authorised",
+     "Revlimid": "Authorised",
+     "Lenalidomide Krka d.d.": "Withdrawn",
+     "Lenalidomide Krka d.d. Novo mesto (previously Lenalidomide Krka)": "Authorised",
+     "Lenalidomide Celgene Europe": "Application withdrawn"
+    },
     "it": [
      "KLEDER",
      "LENALIDOMIDE ACCORD",
@@ -26228,6 +27932,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AX04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -26356,6 +28067,8 @@
      "397198002",
      "70562007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CAMCEVI",
      "ELIGARD",
@@ -26412,6 +28125,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L02AE02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -26539,6 +28259,24 @@
      "15383004",
      "387086006"
     ],
+    "eu_url": {
+     "Onerji": "https://www.ema.europa.eu/en/medicines/human/EPAR/onerji",
+     "Hopledo": "https://www.ema.europa.eu/en/medicines/human/EPAR/hopledo",
+     "Inbrija": "https://www.ema.europa.eu/en/medicines/human/EPAR/inbrija",
+     "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)": "https://www.ema.europa.eu/en/medicines/human/EPAR/corbilta",
+     "Levodopa/Carbidopa/Entacapone Orion": "https://www.ema.europa.eu/en/medicines/human/EPAR/levodopa-carbidopa-entacapone-orion",
+     "Stalevo": "https://www.ema.europa.eu/en/medicines/human/EPAR/stalevo",
+     "Numient": "https://www.ema.europa.eu/en/medicines/human/EPAR/numient"
+    },
+    "eu_status": {
+     "Onerji": "Authorised",
+     "Hopledo": "Authorised",
+     "Inbrija": "Authorised",
+     "Corbilta (previously Levodopa/Carbidopa/Entacapone Sandoz)": "Authorised",
+     "Levodopa/Carbidopa/Entacapone Orion": "Authorised",
+     "Stalevo": "Authorised",
+     "Numient": "Withdrawn"
+    },
     "it": [
      "INBRIJA"
     ],
@@ -26595,6 +28333,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N04BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -26853,6 +28598,8 @@
      "16977003",
      "387095003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CARBOLITHIUM",
      "LITIO CARBONATO L.F.M.",
@@ -26888,6 +28635,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05AN01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -27069,6 +28823,8 @@
      "17805003",
      "387098001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CARBOLITHIUM",
      "LITIO CARBONATO L.F.M.",
@@ -27102,6 +28858,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05AN01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -27238,6 +29001,8 @@
      "19225000",
      "387106007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "CONTROL",
      "LORANS",
@@ -27305,6 +29070,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -27442,6 +29214,8 @@
      "386024001",
      "96303004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LOVASTATINA DOC",
      "LOVASTATINA EG",
@@ -27475,6 +29249,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C10AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -27596,6 +29377,8 @@
      "387311004",
      "56059005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "VERMOX"
     ],
@@ -27619,6 +29402,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "P02CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -27763,6 +29553,8 @@
      "126113007",
      "36621009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "DEPO-PROVERA",
      "FARLUTAL",
@@ -27798,6 +29590,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "G03AC06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03DA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L02AB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -27894,6 +29703,8 @@
      "126092000",
      "38578004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "GESTROLTEX",
      "MEGACE",
@@ -27920,7 +29731,24 @@
     "resolved_as": "RxNorm PIN of megestrol",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03AC05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03DB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L02AB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Melphalan",
@@ -28051,6 +29879,14 @@
      "426388000",
      "544002"
     ],
+    "eu_url": {
+     "Phelinun": "https://www.ema.europa.eu/en/medicines/human/EPAR/phelinun",
+     "Pepaxti": "https://www.ema.europa.eu/en/medicines/human/EPAR/pepaxti"
+    },
+    "eu_status": {
+     "Phelinun": "Authorised",
+     "Pepaxti": "Authorised"
+    },
     "it": [
      "ALKERAN",
      "MELFALAN HIKMA",
@@ -28095,7 +29931,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Menotropins",
@@ -28166,7 +30009,14 @@
      ]
     }
    ],
-   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it."
+   "exposure_why": "It is taken as a medicine, and treatment is how a pregnancy meets it.",
+   "atc_list": [
+    {
+     "code": "G03GA02",
+     "route": "systemic",
+     "source": "WHO ATC/DDD Index"
+    }
+   ]
   },
   {
    "name": "Meprobamate",
@@ -28310,6 +30160,8 @@
      "387395007",
      "70864001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -28325,7 +30177,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05BC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Mercaptopurine",
@@ -28438,6 +30297,14 @@
      "1039008",
      "386835005"
     ],
+    "eu_url": {
+     "Xaluprine (previously Mercaptopurine Nova Laboratories)": "https://www.ema.europa.eu/en/medicines/human/EPAR/xaluprine",
+     "Loulla": "https://www.ema.europa.eu/en/medicines/human/EPAR/loulla"
+    },
+    "eu_status": {
+     "Xaluprine (previously Mercaptopurine Nova Laboratories)": "Authorised",
+     "Loulla": "Application withdrawn"
+    },
     "it": [
      "PURINETHOL",
      "XALUPRINE"
@@ -28474,6 +30341,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01BB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -28662,6 +30536,8 @@
      "50973009",
      "72416006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -28675,7 +30551,14 @@
     "resolved_as": "RxNorm PIN of methacycline",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "J01AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Methimazole",
@@ -28910,6 +30793,8 @@
      "37656002",
      "404864000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "TAPAZOLE"
     ],
@@ -28937,6 +30822,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "H03BB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -29201,6 +31093,14 @@
      "412247000",
      "68887009"
     ],
+    "eu_url": {
+     "Nordimet": "https://www.ema.europa.eu/en/medicines/human/EPAR/nordimet",
+     "Jylamvo": "https://www.ema.europa.eu/en/medicines/human/EPAR/jylamvo"
+    },
+    "eu_status": {
+     "Nordimet": "Authorised",
+     "Jylamvo": "Authorised"
+    },
     "it": [
      "AFSLAMET",
      "IMMUTREX",
@@ -29287,6 +31187,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L04AX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -29522,6 +31434,14 @@
      "412247000",
      "68887009"
     ],
+    "eu_url": {
+     "Nordimet": "https://www.ema.europa.eu/en/medicines/human/EPAR/nordimet",
+     "Jylamvo": "https://www.ema.europa.eu/en/medicines/human/EPAR/jylamvo"
+    },
+    "eu_status": {
+     "Nordimet": "Authorised",
+     "Jylamvo": "Authorised"
+    },
     "it": [
      "AFSLAMET",
      "IMMUTREX",
@@ -29606,6 +31526,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L01BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L04AX03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -30552,6 +32484,8 @@
      "126161000",
      "42348003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -30569,7 +32503,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03BA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03EK01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Midazolam hydrochloride",
@@ -30683,6 +32629,16 @@
      "424521005",
      "84213009"
     ],
+    "eu_url": {
+     "Omforro": "https://www.ema.europa.eu/en/medicines/human/EPAR/omforro",
+     "Tuzodi": "https://www.ema.europa.eu/en/medicines/human/EPAR/tuzodi",
+     "Buccolam": "https://www.ema.europa.eu/en/medicines/human/EPAR/buccolam"
+    },
+    "eu_status": {
+     "Omforro": "Application withdrawn",
+     "Tuzodi": "Application withdrawn",
+     "Buccolam": "Authorised"
+    },
     "it": [
      "BUCCOLAM",
      "EPISTATUS",
@@ -30747,6 +32703,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05CD08",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -30952,6 +32915,8 @@
      "372653009",
      "52886009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "MINOCIN"
     ],
@@ -30985,6 +32950,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA08",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -31206,6 +33178,8 @@
      "387242007",
      "43684009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ANGUSTA",
      "CYTOTEC",
@@ -31239,6 +33213,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "A02BB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G02AD06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -31379,6 +33365,8 @@
      "386913001",
      "412249002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ONKOTRONE"
     ],
@@ -31402,7 +33390,14 @@
     "resolved_as": "RxNorm PIN of mitoxantrone",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DB07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Mycophenolate mofetil and mycophenolic acid",
@@ -31635,6 +33630,18 @@
      "409331009",
      "441632007"
     ],
+    "eu_url": {
+     "CellCept": "https://www.ema.europa.eu/en/medicines/human/EPAR/cellcept",
+     "Mycophenolate mofetil Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/mycophenolate-mofetil-teva",
+     "Myfenax": "https://www.ema.europa.eu/en/medicines/human/EPAR/myfenax",
+     "Myclausen": "https://www.ema.europa.eu/en/medicines/human/EPAR/myclausen"
+    },
+    "eu_status": {
+     "CellCept": "Authorised",
+     "Mycophenolate mofetil Teva": "Authorised",
+     "Myfenax": "Authorised",
+     "Myclausen": "Authorised"
+    },
     "it": [
      "ACIDO MICOFENOLICO ACCORD",
      "ACIDO MICOFENOLICO TILLOMED",
@@ -31716,6 +33723,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -31971,6 +33985,8 @@
      "109047000",
      "126196000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "SYNAREL"
@@ -31992,7 +34008,14 @@
     "resolved_as": "RxNorm PIN of nafarelin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "H01CA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Neomycin sulfate (internal use)",
@@ -32176,6 +34199,8 @@
      "70961008",
      "73093001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "NEOMICINA SALVAT"
@@ -32220,6 +34245,23 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B05CA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01GB05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A07AA01",
+     "route": "gut, not absorbed",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -32393,6 +34435,8 @@
      "19405002",
      "387110005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ARQUETA",
      "NETTACIN COLLIRIO",
@@ -32416,7 +34460,19 @@
     "resolved_as": "RxNorm PIN of netilmicin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "J01GB07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01AA23",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Nickel (soluble compounds)",
@@ -32825,6 +34881,8 @@
      "387490003",
      "85272000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ADALAT CRONO",
      "AMARKOR",
@@ -32877,6 +34935,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C08CA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -33014,6 +35079,8 @@
      "387502003",
      "87285001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ISKIDROP",
      "NIMOBRAIN",
@@ -33050,6 +35117,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C08CA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -33204,6 +35278,8 @@
      "372692002",
      "387071000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LEDAGA"
     ],
@@ -33229,7 +35305,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Nitrogen mustard hydrochloride (Mechlorethamine hydrochloride)",
@@ -33353,6 +35436,8 @@
      "372692002",
      "387071000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "LEDAGA"
     ],
@@ -33376,7 +35461,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Norethisterone (Norethindrone)",
@@ -33508,6 +35600,8 @@
      "395811006",
      "63758001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "PRIMOLUT NOR"
     ],
@@ -33555,7 +35649,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03AC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03DC02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Norethisterone (Norethindrone) /Ethinyl estradiol",
@@ -33688,6 +35794,8 @@
      "126104005",
      "412256008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -33783,6 +35891,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "G03AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03AB04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -33873,6 +35993,8 @@
     "snomed": [
      "412450000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -33888,6 +36010,11 @@
     "resolved_as": "RxNorm MIN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03AB&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -34000,6 +36127,8 @@
      "395811006",
      "63758001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "PRIMOLUT NOR"
     ],
@@ -34046,7 +36175,19 @@
     "resolved_as": "RxNorm PIN of norethindrone",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03AC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "G03DC02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Norgestrel",
@@ -34131,6 +36272,8 @@
      "126106007",
      "82240008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -34146,7 +36289,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03AA06",
+     "route": "systemic",
+     "source": "WHO ATC/DDD Index"
+    }
+   ]
   },
   {
    "name": "Oxazepam",
@@ -34268,6 +36418,8 @@
      "387455006",
      "79225003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "SERPAX"
     ],
@@ -34294,6 +36446,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05BA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -34469,6 +36628,8 @@
      "126101002",
      "6116004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -34482,7 +36643,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "A14AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Oxytetracycline (internal use)",
@@ -34707,6 +36875,8 @@
      "442345001",
      "54729007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -34739,6 +36909,28 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D06AA03",
+     "route": "skin",
+     "source": "Wikidata"
+    },
+    {
+     "code": "G01AA07",
+     "route": "vagina",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S01AA04",
+     "route": "eye",
+     "source": "Wikidata"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -34950,6 +37142,8 @@
      "442345001",
      "54729007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -34981,6 +37175,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -35144,6 +37345,22 @@
      "426653008",
      "67735003"
     ],
+    "eu_url": {
+     "Pazenir": "https://www.ema.europa.eu/en/medicines/human/EPAR/pazenir",
+     "Abraxane": "https://www.ema.europa.eu/en/medicines/human/EPAR/abraxane",
+     "Naveruclif": "https://www.ema.europa.eu/en/medicines/human/EPAR/naveruclif",
+     "Apexelsin": "https://www.ema.europa.eu/en/medicines/human/EPAR/apexelsin",
+     "Apealea": "https://www.ema.europa.eu/en/medicines/human/EPAR/apealea",
+     "Paxene": "https://www.ema.europa.eu/en/medicines/human/EPAR/paxene"
+    },
+    "eu_status": {
+     "Pazenir": "Authorised",
+     "Abraxane": "Authorised",
+     "Naveruclif": "Authorised",
+     "Apexelsin": "Authorised",
+     "Apealea": "Withdrawn",
+     "Paxene": "Withdrawn"
+    },
     "it": [
      "ABRAXANE",
      "ABUTRAX",
@@ -35214,7 +37431,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01CD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L01CD03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Paramethadione",
@@ -35336,6 +37565,8 @@
      "400424004",
      "61357000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -35349,7 +37580,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N03AC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Penicillamine",
@@ -35552,6 +37790,8 @@
      "387235007",
      "4219002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "CUPRIPEN"
@@ -35575,7 +37815,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "M01CC01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Pentobarbital sodium",
@@ -35688,6 +37935,8 @@
      "372703009",
      "66843009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -35708,7 +37957,14 @@
     "resolved_as": "RxNorm PIN of pentobarbital",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Pentostatin",
@@ -35821,6 +38077,8 @@
      "28149003",
      "387154004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "NIPENT"
     ],
@@ -35842,7 +38100,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XX08",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Pertuzumab",
@@ -35908,6 +38173,18 @@
      "704226002",
      "704227006"
     ],
+    "eu_url": {
+     "Pebrilzo": "https://www.ema.europa.eu/en/medicines/human/EPAR/pebrilzo",
+     "Perjeta": "https://www.ema.europa.eu/en/medicines/human/EPAR/perjeta",
+     "Poherdy": "https://www.ema.europa.eu/en/medicines/human/EPAR/poherdy",
+     "Phesgo": "https://www.ema.europa.eu/en/medicines/human/EPAR/phesgo"
+    },
+    "eu_status": {
+     "Pebrilzo": "Opinion",
+     "Perjeta": "Authorised",
+     "Poherdy": "Authorised",
+     "Phesgo": "Authorised"
+    },
     "it": [
      "PERJETA",
      "POHERDY"
@@ -35942,7 +38219,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01FD02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L01XC13",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Phenacemide",
@@ -36038,6 +38327,8 @@
      "18712002",
      "400358006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -36052,6 +38343,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AX07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "cosmetic_products": {
     "california_names": [
      "Phenacemide"
@@ -36232,6 +38530,8 @@
      "387260007",
      "47527007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -36245,7 +38545,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "B01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Phenobarbital",
@@ -36397,6 +38704,8 @@
      "51073002",
      "76898000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "FENOBARBITALE SODICO S.A.L.F.",
      "GARDENALE",
@@ -36434,6 +38743,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -36657,6 +38973,8 @@
     "snomed": [
      "59488002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -36671,6 +38989,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B01AA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -36830,6 +39155,8 @@
      "108438008",
      "386848009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ORAP"
     ],
@@ -36853,6 +39180,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N05AG02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -36930,6 +39264,8 @@
     "snomed": [
      "24823004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -36945,7 +39281,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AX02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Plicamycin",
@@ -37024,6 +39367,8 @@
      "18335001",
      "387101002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -37037,7 +39382,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01DC02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Polychlorinated biphenyls",
@@ -37274,6 +39626,12 @@
      "96305006",
      "96306007"
     ],
+    "eu_url": {
+     "Pravafenix": "https://www.ema.europa.eu/en/medicines/human/EPAR/pravafenix"
+    },
+    "eu_status": {
+     "Pravafenix": "Authorised"
+    },
     "it": [
      "APLACTIN",
      "LANGIPRAV",
@@ -37362,6 +39720,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "C10AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -37472,6 +39837,8 @@
      "96335004",
      "96336003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "PREDNISOLONE MEDIPHA SANTE",
      "SINTREDIUS"
@@ -37537,6 +39904,63 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "A07EA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "H02AB06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A01AC04",
+     "route": "mouth",
+     "source": "RxNorm"
+    },
+    {
+     "code": "C05AA04",
+     "route": "rectum and veins, local",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D07AA03",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D07XA02",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AD02",
+     "route": "nose",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01BA04",
+     "route": "eye",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01CB02",
+     "route": "eye",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S02BA03",
+     "route": "ear",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S03BA02",
+     "route": "eye and ear",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -37714,6 +40138,8 @@
      "387256009",
      "47120002"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "MYSOLINE"
     ],
@@ -37738,6 +40164,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -37860,6 +40293,8 @@
      "387474003",
      "81583003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "NATULAN"
     ],
@@ -37883,7 +40318,14 @@
     "resolved_as": "RxNorm PIN of procarbazine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Propylthiouracil",
@@ -38105,6 +40547,8 @@
      "3814009",
      "387203007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -38124,6 +40568,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "H03BA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "embryotox",
@@ -38254,6 +40705,8 @@
      "373769001",
      "59589008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "DARAPRIM"
@@ -38274,7 +40727,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "P01BD01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Quazepam",
@@ -38345,6 +40805,8 @@
      "108391004",
      "371372004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -38360,7 +40822,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CD10",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Retinol/retinyl esters, when in daily dosages in excess of 10,000 IU, or 3,000 retinol equivalents.  (NOTE:  Retinol/retinyl esters are required and essential for maintenance of normal reproductive function.  The recommended daily level during pregnancy is 8,000 IU.)",
@@ -38501,6 +40970,8 @@
      "82156005",
      "82622003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -38520,6 +40991,28 @@
     "read": "2026-10-03",
     "note": "Brand names are not listed: vitamin A is in many multivitamins and prenatal vitamins, and California lists it only above 10,000 IU a day."
    },
+   "atc_list": [
+    {
+     "code": "A11CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D10AD02",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "R01AX02",
+     "route": "nose",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01XA02",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "cosmetic_products": {
     "california_names": [
      "Acetic acid, retinyl ester",
@@ -38857,6 +41350,22 @@
      "35063004",
      "387188005"
     ],
+    "eu_url": {
+     "Rebetol": "https://www.ema.europa.eu/en/medicines/human/EPAR/rebetol",
+     "Ribavirin Teva Pharma B.V.": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-teva-pharma-bv",
+     "Ribavirin Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-teva",
+     "Ribavirin Mylan (previously Ribavirin Three Rivers)": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-mylan",
+     "Ribavirin BioPartners": "https://www.ema.europa.eu/en/medicines/human/EPAR/ribavirin-biopartners",
+     "Cotronak": "https://www.ema.europa.eu/en/medicines/human/EPAR/cotronak"
+    },
+    "eu_status": {
+     "Rebetol": "Withdrawn",
+     "Ribavirin Teva Pharma B.V.": "Withdrawn",
+     "Ribavirin Teva": "Withdrawn",
+     "Ribavirin Mylan (previously Ribavirin Three Rivers)": "Withdrawn",
+     "Ribavirin BioPartners": "Lapsed",
+     "Cotronak": "Withdrawn"
+    },
     "it": [
      "RIBAVIRINA AUROBINDO"
     ],
@@ -38889,6 +41398,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J05AB04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J05AP01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -39022,6 +41543,8 @@
      "29175007",
      "387159009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "RIFADIN"
     ],
@@ -39052,6 +41575,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J04AB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -39136,6 +41666,8 @@
      "42444000",
      "66639008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -39149,7 +41681,14 @@
     "resolved_as": "RxNorm PIN of secobarbital",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Sermorelin acetate",
@@ -39224,6 +41763,8 @@
      "395870004",
      "412303008"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -39237,7 +41778,19 @@
     "resolved_as": "RxNorm PIN of sermorelin",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "H01AC04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "V04CD03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "silicic acid, lead nickel salt",
@@ -39573,6 +42126,8 @@
      "40877002",
      "73246001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "SULFATO DE ESTREPTOMICINA REIG JOFRE"
@@ -39589,6 +42144,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01GA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A07AA04",
+     "route": "gut, not absorbed",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -39741,6 +42308,8 @@
      "16915004",
      "404876000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "STREPTOZOCINA KEOCYT"
     ],
@@ -39762,7 +42331,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AD04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Sulfur dioxidee",
@@ -39978,6 +42554,12 @@
      "387513000",
      "89505005"
     ],
+    "eu_url": {
+     "Flynpovi": "https://www.ema.europa.eu/en/medicines/human/EPAR/flynpovi"
+    },
+    "eu_status": {
+     "Flynpovi": "Application withdrawn"
+    },
     "it": [],
     "es": [],
     "ca": [
@@ -39998,6 +42580,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "M01AB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -40128,6 +42717,8 @@
      "41395001",
      "75959001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "KESSAR",
      "NOLVADEX",
@@ -40170,6 +42761,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L02BA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -40268,6 +42866,8 @@
      "387300007",
      "54705000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [
@@ -40285,7 +42885,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CD07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Teniposide",
@@ -40398,6 +43005,8 @@
      "387460005",
      "7959004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -40411,7 +43020,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01CB02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "tert-Amyl methyl ether",
@@ -40684,6 +43300,14 @@
      "43688007",
      "96338002"
     ],
+    "eu_url": {
+     "Intrinsa": "https://www.ema.europa.eu/en/medicines/human/EPAR/intrinsa",
+     "Livensa": "https://www.ema.europa.eu/en/medicines/human/EPAR/livensa"
+    },
+    "eu_status": {
+     "Intrinsa": "Withdrawn",
+     "Livensa": "Withdrawn"
+    },
     "it": [
      "NEBID",
      "SELTIGEX",
@@ -40767,7 +43391,14 @@
     "resolved_as": "RxNorm PIN of testosterone",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03BA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Testosterone enanthate",
@@ -40967,6 +43598,14 @@
      "43688007",
      "96338002"
     ],
+    "eu_url": {
+     "Intrinsa": "https://www.ema.europa.eu/en/medicines/human/EPAR/intrinsa",
+     "Livensa": "https://www.ema.europa.eu/en/medicines/human/EPAR/livensa"
+    },
+    "eu_status": {
+     "Intrinsa": "Withdrawn",
+     "Livensa": "Withdrawn"
+    },
     "it": [
      "NEBID",
      "SELTIGEX",
@@ -41050,7 +43689,14 @@
     "resolved_as": "RxNorm PIN of testosterone",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03BA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Tetracycline (internal use)",
@@ -41271,6 +43917,8 @@
      "66261008",
      "96075004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AMBRAMICINA"
     ],
@@ -41322,6 +43970,43 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "A01AB13",
+     "route": "mouth",
+     "source": "Wikidata"
+    },
+    {
+     "code": "D06AA04",
+     "route": "skin",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S01AA09",
+     "route": "eye",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S02AA08",
+     "route": "ear",
+     "source": "Wikidata"
+    },
+    {
+     "code": "S03AA02",
+     "route": "eye and ear",
+     "source": "Wikidata"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -41539,6 +44224,8 @@
      "66261008",
      "96075004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "AMBRAMICINA"
     ],
@@ -41570,6 +44257,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -41929,6 +44623,16 @@
      "96076003",
      "96077007"
     ],
+    "eu_url": {
+     "Xerava": "https://www.ema.europa.eu/en/medicines/human/EPAR/xerava",
+     "Tygacil": "https://www.ema.europa.eu/en/medicines/human/EPAR/tygacil",
+     "Tigecycline Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/tigecycline-accord-1"
+    },
+    "eu_status": {
+     "Xerava": "Authorised",
+     "Tygacil": "Authorised",
+     "Tigecycline Accord": "Application withdrawn"
+    },
     "it": [
      "AMBRAMICINA",
      "BASSADO",
@@ -42105,6 +44809,78 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01AA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA05",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA06",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA07",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA08",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA09",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA11",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA12",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA13",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA14",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "J01AA15",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -42402,6 +45178,14 @@
      "404878004",
      "78702007"
     ],
+    "eu_url": {
+     "Thalidomide Lipomed": "https://www.ema.europa.eu/en/medicines/human/EPAR/thalidomide-lipomed",
+     "Thalidomide BMS (previously Thalidomide Celgene)": "https://www.ema.europa.eu/en/medicines/human/EPAR/thalidomide-bms"
+    },
+    "eu_status": {
+     "Thalidomide Lipomed": "Authorised",
+     "Thalidomide BMS (previously Thalidomide Celgene)": "Authorised"
+    },
     "it": [
      "TALIDOMIDE ACCORD",
      "TALIDOMIDE AUROBINDO",
@@ -42433,6 +45217,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AX02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -42558,6 +45349,8 @@
      "387407006",
      "72623000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "TIOGUANINA ASPEN"
     ],
@@ -42583,7 +45376,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01BB03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Tobacco smoke (primary)",
@@ -42835,6 +45635,16 @@
      "373548001",
      "89695009"
     ],
+    "eu_url": {
+     "Vantobra (previously Tobramycin PARI)": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra",
+     "Tobi Podhaler": "https://www.ema.europa.eu/en/medicines/human/EPAR/tobi-podhaler",
+     "Vantobra": "https://www.ema.europa.eu/en/medicines/human/EPAR/vantobra0"
+    },
+    "eu_status": {
+     "Vantobra (previously Tobramycin PARI)": "Authorised",
+     "Tobi Podhaler": "Authorised",
+     "Vantobra": "Withdrawn"
+    },
     "it": [
      "BRAMICIL",
      "BRAMITOB",
@@ -42910,6 +45720,18 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "J01GB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01AA12",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -43480,6 +46302,12 @@
      "108400009",
      "386844006"
     ],
+    "eu_url": {
+     "Qsiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/qsiva"
+    },
+    "eu_status": {
+     "Qsiva": "Refused"
+    },
     "it": [
      "TOPAMAX",
      "TOPIRAMATO AUROBINDO",
@@ -43550,6 +46378,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AX11",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -43660,6 +46495,8 @@
      "111128007",
      "386984001"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "HALCION",
      "SONGAR",
@@ -43688,7 +46525,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N05CD05",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Trientine hydrochloride",
@@ -43766,6 +46610,14 @@
      "1149496005",
      "373456001"
     ],
+    "eu_url": {
+     "Cufence": "https://www.ema.europa.eu/en/medicines/human/EPAR/cufence",
+     "Cuprior": "https://www.ema.europa.eu/en/medicines/human/EPAR/cuprior"
+    },
+    "eu_status": {
+     "Cufence": "Authorised",
+     "Cuprior": "Authorised"
+    },
     "it": [
      "CUFENCE",
      "CUPRIOR",
@@ -43803,7 +46655,14 @@
     "resolved_as": "RxNorm PIN of trientine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "A16AX12",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "trilead bis(orthophosphate)",
@@ -43954,6 +46813,8 @@
      "25142008",
      "387134000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -43969,7 +46830,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "H02CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Trimethadione",
@@ -44150,6 +47018,8 @@
      "386170005",
      "70732003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -44163,7 +47033,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N03AC02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Trimetrexate glucuronate",
@@ -44231,6 +47108,8 @@
      "372899008",
      "91339009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -44244,7 +47123,14 @@
     "resolved_as": "RxNorm PIN of trimetrexate",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "P01AX07",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Uracil mustard",
@@ -44318,6 +47204,8 @@
     "snomed": [
      "17243005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -44331,7 +47219,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01AD08",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Urofollitropin",
@@ -44454,6 +47349,8 @@
      "126185008",
      "395920003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "FOSTIMON"
     ],
@@ -44476,7 +47373,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "G03GA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Valproate (Valproic acid)",
@@ -44746,6 +47650,8 @@
      "433011000221103",
      "5641004"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ACIDO VALPROICO E SODIO VALPROATO EG",
      "ACIDO VALPROICO E SODIO VALPROATO RATIOPHARM",
@@ -44806,6 +47712,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N03AG01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -44916,6 +47829,8 @@
      "387051009",
      "387115000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "VELBE"
     ],
@@ -44938,7 +47853,14 @@
     "resolved_as": "RxNorm PIN of vinblastine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01CA01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Vincristine sulfate",
@@ -45068,6 +47990,8 @@
      "426357004",
      "426490000"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "VINCRISTINA PFIZER ITALIA",
      "VINCRISTINA TEVA ITALIA"
@@ -45100,7 +48024,14 @@
     "resolved_as": "RxNorm PIN of vincristine",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01CA02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Vismodegib",
@@ -45303,6 +48234,12 @@
      "703812008",
      "703813003"
     ],
+    "eu_url": {
+     "Erivedge": "https://www.ema.europa.eu/en/medicines/human/EPAR/erivedge"
+    },
+    "eu_status": {
+     "Erivedge": "Authorised"
+    },
     "it": [
      "ERIVEDGE"
     ],
@@ -45328,7 +48265,19 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "L01XJ01",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "L01XX43",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Warfarin",
@@ -45630,6 +48579,8 @@
      "48603004",
      "63167009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "COUMADIN"
     ],
@@ -45659,6 +48610,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "B01AA03",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -45761,6 +48719,8 @@
      "108617005",
      "386180009"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -45776,6 +48736,11 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DC&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -45906,6 +48871,8 @@
      "72024007",
      "96225007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -45924,7 +48891,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "A04AD10",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "1,1-Dichloro-2,2-bis(p-chloropheny)ethylene (DDE)",
@@ -49875,6 +52849,16 @@
      "427735003",
      "428159003"
     ],
+    "eu_url": {
+     "Ambrisentan Viatris (previously Ambrisentan Mylan)": "https://www.ema.europa.eu/en/medicines/human/EPAR/ambrisentan-viatris",
+     "Volibris": "https://www.ema.europa.eu/en/medicines/human/EPAR/volibris",
+     "Ambrisentan Zentiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/ambrisentan-zentiva"
+    },
+    "eu_status": {
+     "Ambrisentan Viatris (previously Ambrisentan Mylan)": "Authorised",
+     "Volibris": "Authorised",
+     "Ambrisentan Zentiva": "Application withdrawn"
+    },
     "it": [
      "AMBRISENTAN ACCORD",
      "AMBRISENTAN MEDAC",
@@ -49917,7 +52901,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "C02KX02",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Amitraz",
@@ -52385,6 +55376,14 @@
      "385558007",
      "385559004"
     ],
+    "eu_url": {
+     "Tracleer": "https://www.ema.europa.eu/en/medicines/human/EPAR/tracleer",
+     "Stayveer": "https://www.ema.europa.eu/en/medicines/human/EPAR/stayveer"
+    },
+    "eu_status": {
+     "Tracleer": "Authorised",
+     "Stayveer": "Authorised"
+    },
     "it": [
      "BOSENTAN ABDI",
      "BOSENTAN ACCORD",
@@ -52436,7 +55435,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "C02KX01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "Bromacil lithium salt",
@@ -55655,7 +58661,14 @@
      "url": "https://www.cir-safety.org/sites/default/files/qrt-fix_0.pdf",
      "date": "2004"
     }
-   }
+   },
+   "atc_list": [
+    {
+     "code": "P02DX02",
+     "route": "systemic",
+     "source": "Wikidata"
+    }
+   ]
   },
   {
    "name": "Diclofop methyl",
@@ -56763,6 +59776,8 @@
      "111132001",
      "388185005"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "ALFAPROT",
      "AZOTO PROTOSSIDO AIR LIQUIDE SANITA'",
@@ -56820,6 +59835,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "N01AX13",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -60297,6 +63319,18 @@
      "710283008",
      "715555005"
     ],
+    "eu_url": {
+     "Macitentan Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/macitentan-accord",
+     "Macitentan AccordPharma": "https://www.ema.europa.eu/en/medicines/human/EPAR/macitentan-accordpharma",
+     "Opsumit": "https://www.ema.europa.eu/en/medicines/human/EPAR/opsumit",
+     "Yuvanci": "https://www.ema.europa.eu/en/medicines/human/EPAR/yuvanci"
+    },
+    "eu_status": {
+     "Macitentan Accord": "Authorised",
+     "Macitentan AccordPharma": "Authorised",
+     "Opsumit": "Authorised",
+     "Yuvanci": "Authorised"
+    },
     "it": [
      "MACITENTAN ABDI",
      "MACITENTAN AUROBINDO",
@@ -60353,7 +63387,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "C02KX04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "mancozeb (ISO); manganese ethylenebis(dithiocarbamate) (polymeric) complex with zinc salt",
@@ -66915,6 +69956,22 @@
      "703789000",
      "703790009"
     ],
+    "eu_url": {
+     "Pomalidomide Teva": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-teva",
+     "Pomalidomide Krka": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-krka",
+     "Pomalidomide Accord": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-accord",
+     "Pomalidomide Zentiva": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-zentiva",
+     "Pomalidomide Viatris": "https://www.ema.europa.eu/en/medicines/human/EPAR/pomalidomide-viatris",
+     "Imnovid (previously Pomalidomide Celgene)": "https://www.ema.europa.eu/en/medicines/human/EPAR/imnovid"
+    },
+    "eu_status": {
+     "Pomalidomide Teva": "Authorised",
+     "Pomalidomide Krka": "Authorised",
+     "Pomalidomide Accord": "Authorised",
+     "Pomalidomide Zentiva": "Authorised",
+     "Pomalidomide Viatris": "Authorised",
+     "Imnovid (previously Pomalidomide Celgene)": "Authorised"
+    },
     "it": [
      "IMNOVID",
      "POMALIDOMIDE ABDI",
@@ -66987,6 +70044,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "L04AX06",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -67691,7 +70755,14 @@
      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32021R1902",
      "date": "2021-10-29"
     }
-   }
+   },
+   "atc_list": [
+    {
+     "code": "D11AX12",
+     "route": "skin",
+     "source": "Wikidata"
+    }
+   ]
   },
   {
    "name": "quinolin-8-ol; 8-hydroxyquinoline",
@@ -67856,7 +70927,29 @@
      "url": "https://www.cir-safety.org/sites/default/files/Oxyquinoline_2.pdf",
      "date": "2002-06"
     }
-   }
+   },
+   "atc_list": [
+    {
+     "code": "A01AB07",
+     "route": "mouth",
+     "source": "Wikidata"
+    },
+    {
+     "code": "D08AH03",
+     "route": "skin",
+     "source": "Wikidata"
+    },
+    {
+     "code": "G01AC30",
+     "route": "vagina",
+     "source": "Wikidata"
+    },
+    {
+     "code": "R02AA14",
+     "route": "throat",
+     "source": "Wikidata"
+    }
+   ]
   },
   {
    "name": "reaction mass of 1,3-dioxan-5-ol and 1,3-dioxolan-4-ylmethanol",
@@ -70028,6 +73121,8 @@
      "45940009",
      "66493003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [
      "ELIXIFILIN",
@@ -70059,6 +73154,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "R03DA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "crat",
@@ -76408,6 +79510,8 @@
      "111141006",
      "386988003"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -76456,6 +79560,11 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
+   },
+   "atc_none": {
+    "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+    "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02BA&showdescription=no",
+    "read": "2026-10-03"
    }
   },
   {
@@ -77218,6 +80327,8 @@
      "96113001",
      "96114007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -77240,6 +80351,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "P02CB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -77430,6 +80548,8 @@
      "96113001",
      "96114007"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [],
     "es": [],
     "ca": [],
@@ -77452,6 +80572,13 @@
     "read": "2026-10-03",
     "note": ""
    },
+   "atc_list": [
+    {
+     "code": "P02CB01",
+     "route": "systemic",
+     "source": "RxNorm"
+    }
+   ],
    "tis": [
     {
      "s": "bumps",
@@ -78276,6 +81403,8 @@
      "46741005",
      "72968006"
     ],
+    "eu_url": {},
+    "eu_status": {},
     "it": [
      "OMKASA",
      "URSAFLOG COMOD"
@@ -78390,7 +81519,29 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "atc_list": [
+    {
+     "code": "N02BA04",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "N02BA12",
+     "route": "systemic",
+     "source": "RxNorm"
+    },
+    {
+     "code": "D01AE12",
+     "route": "skin",
+     "source": "RxNorm"
+    },
+    {
+     "code": "S01BC08",
+     "route": "eye",
+     "source": "RxNorm"
+    }
+   ]
   },
   {
    "name": "salts of bromoxynil with the exception of those specified elsewhere in this Annex",

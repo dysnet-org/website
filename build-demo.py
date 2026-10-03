@@ -1247,8 +1247,34 @@ def tera_preg_lines(e):
     return out
 
 
+def tera_atc_head(codes):
+    return ("ATC " + ", ".join(codes[:3]) + (f" +{len(codes) - 3}" if len(codes) > 3 else "")) if codes else ""
+
+
+def tera_atc_line(e):
+    """The WHO ATC codes, each with the route it stands for, linked to the WHO index."""
+    if e.get("atc_list"):
+        codes = "; ".join(f'<a href="https://atcddd.fhi.no/atc_ddd_index/?code={x["code"]}&amp;showdescription=no" target="_blank" rel="noopener external">{x["code"]}</a> ({"systemic use" if x["route"] == "systemic" else x["route"]})' for x in e["atc_list"])
+        srcs = ", ".join(sorted({x["source"] for x in e["atc_list"]}))
+        return [f'<li><strong>WHO ATC codes:</strong> {codes}. Each code stands for one form of the medicine: a code for the eye, the skin or the mouth is a local form, not the one taken by mouth or injection. Read from {srcs}.</li>']
+    if e.get("atc_none"):
+        a = e["atc_none"]
+        return [f'<li><strong>WHO ATC code:</strong> none. The WHO ATC/DDD Index lists no code for this substance (read {a["read"]}). <a href="{html.escape(a["url"], quote=True)}" target="_blank" rel="noopener external">WHO index ↗</a></li>']
+    return []
+
+
 TERA_NAME_REGIONS = [("us", "US"), ("us_discontinued", "US, discontinued"), ("eu", "EU"), ("fr", "France"), ("it", "Italy"), ("es", "Spain"), ("ca", "Canada")]
 TERA_LANGS = {"fr": "French", "de": "German", "es": "Spanish", "it": "Italian", "nl": "Dutch", "pt": "Portuguese", "la": "Latin"}
+
+
+def tera_epar(n, cap=10):
+    """EU brand names, each linked to its European public assessment report (EPAR) on the EMA site."""
+    def one(b):
+        u, st = (n.get("eu_url") or {}).get(b), (n.get("eu_status") or {}).get(b, "")
+        lab = html.escape(b) + (f' <span class="fine">({html.escape(st.lower())})</span>' if st and st != "Authorised" else "")
+        return f'<a href="{html.escape(u, quote=True)}" target="_blank" rel="noopener external" title="EPAR, European Medicines Agency">{lab}</a>' if u else lab
+    xs = n["eu"]
+    return ", ".join(one(b) for b in xs[:cap]) + (f' <span class="fine">+{len(xs) - cap} more</span>' if len(xs) > cap else "") + ' <span class="fine">(EPAR)</span>'
 
 
 def tera_names_html(e, cap=10):
@@ -1261,7 +1287,7 @@ def tera_names_html(e, cap=10):
     langs = ", ".join(f'{html.escape(x)} <span class="fine">({l})</span>' for l, v in n.get("languages", {}).items() for x in v[:2])
     parts = ([f'<strong>INN</strong> {short(n["inn"])}'] if n.get("inn") else []) + \
             ([f'<strong>Generic</strong> {short(n["generic"])}'] if n["generic"] else []) + \
-            [f'<strong>{lab}</strong> {short(n[k])}' for k, lab in TERA_NAME_REGIONS if n.get(k)] + \
+            [f'<strong>{lab}</strong> {tera_epar(n, cap) if k == "eu" else short(n[k])}' for k, lab in TERA_NAME_REGIONS if n.get(k)] + \
             ([f'<strong>Other languages</strong> {langs}'] if langs else [])
     note = f' <span class="fine">{html.escape(n["note"])}</span>' if n.get("note") else ""
     return f'<p class="tera-names"><span class="tera-names-h">Also known or sold as</span> {" · ".join(parts)}{note}</p>'
@@ -1309,11 +1335,11 @@ def tera_names_line(e):
     rx = ", ".join(f'<a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&amp;searchTerm={c}" target="_blank" rel="noopener external">RxNorm {c} ↗</a>' for c in n["rxcui"])
     regions = "; ".join(f'{lab}: {html.escape(", ".join(n[k]))}' for k, lab in TERA_NAME_REGIONS if n.get(k))
     ic = n.get("inn_checked") or {}
-    inn = (f'INN: {html.escape(", ".join(n["inn"]))}; ' if n.get("inn") else
-           f'INN: none, the WHO has assigned none to this substance (<a href="{html.escape(ic["url"], quote=True)}" target="_blank" rel="noopener external">{html.escape(ic["source"][:60])} ↗</a>); ' if ic.get("status") == "no INN" else "")
+    inn = (f'INN: {html.escape(", ".join(n["inn"]))}' if n.get("inn") else
+           f'INN: none, the WHO has assigned none to this substance (<a href="{html.escape(ic["url"], quote=True)}" target="_blank" rel="noopener external" title="{html.escape(ic["source"], quote=True)}">source ↗</a>)' if ic.get("status") == "no INN" else "")
     langs = "; ".join(f'{TERA_LANGS[l]}: {html.escape(", ".join(v))}' for l, v in n.get("languages", {}).items())
     wd = ", ".join(f'<a href="https://www.wikidata.org/wiki/{q}" target="_blank" rel="noopener external">Wikidata {q} ↗</a>' for q in n.get("wikidata", [])[:3])
-    return [f'<li><strong>Names, from official registries:</strong> {inn}{regions}{"; " + langs if langs else ""}. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance&rsquo;s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada&rsquo;s Drug Product Database, matched on the WHO ATC code {html.escape(", ".join(n.get("atc_codes", [])[:6]))}{" (SNOMED CT " + html.escape(", ".join(n.get("snomed", [])[:3])) + ")" if n.get("snomed") else ""}. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency&rsquo;s list of centrally authorised medicines, French names from the ANSM public medicines database; read {n["read"]}. {rx}{", " + wd if wd else ""}</li>']
+    return [f'<li><strong>Names, from official registries:</strong> {"; ".join(x for x in (inn, regions, langs) if x)}. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance&rsquo;s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada&rsquo;s Drug Product Database, matched on the WHO ATC code {html.escape(", ".join(n.get("atc_codes", [])[:6]))}{" (SNOMED CT " + html.escape(", ".join(n.get("snomed", [])[:3])) + ")" if n.get("snomed") else ""}. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency&rsquo;s list of centrally authorised medicines, each linked to its European public assessment report (EPAR), French names from the ANSM public medicines database; read {n["read"]}. {rx}{", " + wd if wd else ""}</li>']
 
 
 def tera_item_html(e):
@@ -1336,7 +1362,7 @@ def tera_item_html(e):
     chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(tera_exp_chip(r, e) for r in e.get("exposure", []))
     doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose")) + tera_preg_html(e)
-    details = tera_names_line(e) + tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
+    details = tera_names_line(e) + tera_atc_line(e) + tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
     if e.get("source_note"):
         details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
     for src in e["sources"]:
@@ -1356,7 +1382,7 @@ def tera_item_html(e):
     if e.get("cas"):
         details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
     ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
-                                 ("ATC " + ", ".join(e["atc"][:3])) if e.get("atc") else "") if x)
+                                 tera_atc_head([x["code"] for x in e.get("atc_list", [])])) if x)
     return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
             f'{tera_names_html(e)}<div class="tera-uses">{uses}</div>{doses}{tera_cosprod_html(e)}{tera_tis_html(e)}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
@@ -1374,7 +1400,8 @@ def teratogens_html():
         # jurisdiction texts for CLP and Proposition 65 are templated in site.js; others travel with the record
         codes = set(e["source_codes"])
         jur = {k: (" ".join(v.values()) if isinstance(v, dict) else v) for k, v in e["jurisdictions"].items() if not ((k == "California (USA)" and "p65" in codes) or (k == "EU / EEA" and "clp" in codes))}
-        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "atc": e.get("atc", [])[:3], "l": e["level"],
+        return {"n": tera_display_name(e), "f": e["name"], "cas": e.get("cas", ""), "ec": e.get("ec", ""), "del": e.get("delisted", ""), "efsa": e.get("efsa", {}), "atc": [x["code"] for x in e.get("atc_list", [])], "al": [[x["code"], x["route"], x["source"]] for x in e.get("atc_list", [])],
+                **({"an": [e["atc_none"]["url"], e["atc_none"]["read"]]} if e.get("atc_none") else {}), "l": e["level"],
                 "x": [{"t": r["tag"], "l": r["level"], "b": r["by"], **({"a": r["also"]} if r.get("also") else {}), **({"i": 1} if r.get("inherited") else {}),
                        **({"w": r["why"]} if r.get("why") else {}), **({"d": r["dose"]} if r.get("dose") else {}),
                        **({"bs": r["basis"]} if r.get("basis") else {}), **({"s": r["source"], "su": r["url"]} if r.get("url") else {})} for r in e.get("exposure", [])],
@@ -1383,7 +1410,7 @@ def teratogens_html():
                            for k, _l in TERA_PREG if e["pregnancy"].get(k)}, "limb": 1 if e["pregnancy"].get("limb_defects", "").startswith("named") else 0}
                        if e.get("pregnancy") else 0),
                 "pgd": (e.get("pregnancy") or {}).get("documented_as", ""),
-                "nm": ({"i": e["names"]["inn"], **({"ni": [e["names"]["inn_checked"]["source"], e["names"]["inn_checked"]["url"]]} if (e["names"].get("inn_checked") or {}).get("status") == "no INN" else {}), "lg": e["names"]["languages"], "ud": e["names"]["us_discontinued"], "it": e["names"]["it"], "es": e["names"]["es"], "ca": e["names"]["ca"], "g": e["names"]["generic"], "us": e["names"]["us"], "eu": e["names"]["eu"], "fr": e["names"]["fr"], "rx": e["names"]["rxcui"], "rd": e["names"]["read"], "nt": e["names"].get("note", "")} if e.get("names") else 0),
+                "nm": ({"i": e["names"]["inn"], **({"ni": [e["names"]["inn_checked"]["source"], e["names"]["inn_checked"]["url"]]} if (e["names"].get("inn_checked") or {}).get("status") == "no INN" else {}), "lg": e["names"]["languages"], "ud": e["names"]["us_discontinued"], "it": e["names"]["it"], "es": e["names"]["es"], "ca": e["names"]["ca"], "eup": {b: [u, (e["names"].get("eu_status") or {}).get(b, "")] for b, u in (e["names"].get("eu_url") or {}).items()}, "g": e["names"]["generic"], "us": e["names"]["us"], "eu": e["names"]["eu"], "fr": e["names"]["fr"], "rx": e["names"]["rxcui"], "rd": e["names"]["read"], "nt": e["names"].get("note", "")} if e.get("names") else 0),
                 "ti": e.get("tis", 0),
                 "cp": ({"n": e["cosmetic_products"]["products_current"], "e": e["cosmetic_products"]["products_ever"], "b": e["cosmetic_products"]["brands_current"],
                         "t": e["cosmetic_products"]["types_current"], "x": [[x["brand"], x["product"], x["type"]] for x in e["cosmetic_products"]["examples"]],
@@ -5961,7 +5988,7 @@ def _tera_search_words(e):
     products companies reported to California for a cosmetic."""
     n = e.get("names") or {}
     words = [x for k in ("inn", "generic", "us", "us_discontinued", "eu", "fr", "it", "es", "ca", "atc_codes") for x in n.get(k) or []]
-    words += [x for v in (n.get("languages") or {}).values() for x in v] + list(e.get("atc") or [])
+    words += [x for v in (n.get("languages") or {}).values() for x in v] + [x["code"] for x in e.get("atc_list", [])]
     words += [f'{x["brand"]} {x["product"]}' for x in (e.get("cosmetic_products") or {}).get("examples", [])]
     return [" ".join(words)] if words else []
 

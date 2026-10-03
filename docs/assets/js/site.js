@@ -929,7 +929,9 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     if (!r.nm) return "";
     var cap = 10, short = function (xs) { return esc(xs.slice(0, cap).join(", ")) + (xs.length > cap ? ' <span class="fine">+' + (xs.length - cap) + ' more</span>' : ""); };
     var lg = r.nm.lg || {}, langs = Object.keys(lg).map(function (l) { return lg[l].slice(0, 2).map(function (x) { return esc(x) + ' <span class="fine">(' + l + ')</span>'; }).join(", "); }).filter(Boolean).join(", ");
-    var parts = ((r.nm.i || []).length ? ["<strong>INN</strong> " + short(r.nm.i)] : []).concat(r.nm.g.length ? ["<strong>Generic</strong> " + short(r.nm.g)] : []).concat(REGIONS.filter(function (x) { return (r.nm[x[0]] || []).length; }).map(function (x) { return "<strong>" + x[1] + "</strong> " + short(r.nm[x[0]]); })).concat(langs ? ["<strong>Other languages</strong> " + langs] : []);
+    // EU brands link to their European public assessment report (EPAR)
+    var epar = function (xs) { var p = r.nm.eup || {}; return xs.slice(0, cap).map(function (b) { var v = p[b], lab = esc(b) + (v && v[1] && v[1] !== "Authorised" ? ' <span class="fine">(' + esc(v[1].toLowerCase()) + ')</span>' : ""); return v ? '<a href="' + esc(v[0]) + '" target="_blank" rel="noopener external" title="EPAR, European Medicines Agency">' + lab + '</a>' : lab; }).join(", ") + (xs.length > cap ? ' <span class="fine">+' + (xs.length - cap) + ' more</span>' : "") + ' <span class="fine">(EPAR)</span>'; };
+    var parts = ((r.nm.i || []).length ? ["<strong>INN</strong> " + short(r.nm.i)] : []).concat(r.nm.g.length ? ["<strong>Generic</strong> " + short(r.nm.g)] : []).concat(REGIONS.filter(function (x) { return (r.nm[x[0]] || []).length; }).map(function (x) { return "<strong>" + x[1] + "</strong> " + (x[0] === "eu" ? epar(r.nm.eu) : short(r.nm[x[0]])); })).concat(langs ? ["<strong>Other languages</strong> " + langs] : []);
     return '<p class="tera-names"><span class="tera-names-h">Also known or sold as</span> ' + parts.join(" \u00b7 ") + (r.nm.nt ? ' <span class="fine">' + esc(r.nm.nt) + '</span>' : "") + '</p>';
   }
   function cosprodHtml(r) {
@@ -954,9 +956,18 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
     if (!r.nm) return [];
     var rx = (r.nm.rx || []).map(function (c) { return '<a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&amp;searchTerm=' + esc(c) + '" target="_blank" rel="noopener external">RxNorm ' + esc(c) + ' \u2197</a>'; }).join(", ");
     var regions = REGIONS.filter(function (x) { return (r.nm[x[0]] || []).length; }).map(function (x) { return x[1] + ": " + esc(r.nm[x[0]].join(", ")); }).join("; ");
-    var inn = (r.nm.i || []).length ? "INN: " + esc(r.nm.i.join(", ")) + "; " : r.nm.ni ? 'INN: none, the WHO has assigned none to this substance (<a href="' + esc(r.nm.ni[1]) + '" target="_blank" rel="noopener external">' + esc(r.nm.ni[0].slice(0, 60)) + ' \u2197</a>); ' : "";
+    var inn = (r.nm.i || []).length ? "INN: " + esc(r.nm.i.join(", ")) : r.nm.ni ? 'INN: none, the WHO has assigned none to this substance (<a href="' + esc(r.nm.ni[1]) + '" target="_blank" rel="noopener external" title="' + esc(r.nm.ni[0]) + '">source \u2197</a>)' : "";
     var lg = r.nm.lg || {}, langs = Object.keys(lg).map(function (l) { return LANGS[l] + ": " + esc(lg[l].join(", ")); }).join("; ");
-    return ['<li><strong>Names, from official registries:</strong> ' + inn + regions + (langs ? "; " + langs : "") + '. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance\u2019s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada\u2019s Drug Product Database, matched on the WHO ATC code. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency\u2019s list of centrally authorised medicines, French names from the ANSM public medicines database; read ' + esc(r.nm.rd) + '. ' + rx + '</li>'];
+    return ['<li><strong>Names, from official registries:</strong> ' + [inn, regions, langs].filter(Boolean).join("; ") + '. The INN is the International Nonproprietary Name the WHO gives the substance, and the names in other languages are its names there, both read from Wikidata and from ChEBI (EMBL-EBI) by the substance\u2019s RxNorm code. Discontinued US brands come from Drugs@FDA (US Food and Drug Administration). Italian, Spanish and Canadian names come from the open data of the Agenzia Italiana del Farmaco (AIFA, CC BY 4.0), the CIMA database of the Agencia Española de Medicamentos y Productos Sanitarios (AEMPS, www.aemps.gob.es) and Health Canada\u2019s Drug Product Database, matched on the WHO ATC code. US brands and generic names from RxNorm (US National Library of Medicine), EU names from the European Medicines Agency\u2019s list of centrally authorised medicines, each linked to its European public assessment report (EPAR), French names from the ANSM public medicines database; read ' + esc(r.nm.rd) + '. ' + rx + '</li>'];
+  }
+  function atcLine(r) {
+    if ((r.al || []).length) {
+      var codes = r.al.map(function (x) { return '<a href="https://atcddd.fhi.no/atc_ddd_index/?code=' + esc(x[0]) + '&amp;showdescription=no" target="_blank" rel="noopener external">' + esc(x[0]) + '</a> (' + (x[1] === "systemic" ? "systemic use" : esc(x[1])) + ')'; }).join("; ");
+      var srcs = r.al.map(function (x) { return x[2]; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort().join(", ");
+      return ['<li><strong>WHO ATC codes:</strong> ' + codes + '. Each code stands for one form of the medicine: a code for the eye, the skin or the mouth is a local form, not the one taken by mouth or injection. Read from ' + esc(srcs) + '.</li>'];
+    }
+    if (r.an) return ['<li><strong>WHO ATC code:</strong> none. The WHO ATC/DDD Index lists no code for this substance (read ' + esc(r.an[1]) + '). <a href="' + esc(r.an[0]) + '" target="_blank" rel="noopener external">WHO index \u2197</a></li>'];
+    return [];
   }
   function pregHtml(r) {
     var out = "";
@@ -1081,13 +1092,13 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       var u = s.u || (s.c === "p65" ? "https://oehha.ca.gov/proposition-65/proposition-65-list" : "");
       return "<li>" + esc(line) + (u ? ' <a href="' + esc(u) + '"' + (/^http/.test(u) ? ' target="_blank" rel="noopener external"' : '') + '>source ↗</a>' : '') + "</li>";
     });
-    details = namesLine(r).concat(pregLines(r)).concat(expLines(r)).concat(decLines(r)).concat(paperLines(r)).concat(details);
+    details = namesLine(r).concat(atcLine(r)).concat(pregLines(r)).concat(expLines(r)).concat(decLines(r)).concat(paperLines(r)).concat(details);
     if (clp) details.push("<li><strong>EU / EEA:</strong> " + EU_ALL + (clp.cat === "2" ? EU_2 : EU_1) + "</li>");
     if (r.s.indexOf("p65") !== -1) details.push("<li><strong>California (USA):</strong> " + (r.del ? "Listed as a developmental toxicant and delisted on " + esc(r.del) + "; no warning is required today. " : "") + CA + "</li>");
     Object.keys(r.jur || {}).forEach(function (k) { details.push("<li><strong>" + esc(k) + ":</strong> " + esc(r.jur[k]) + "</li>"); });
     if (clp && clp.cat !== "2") details.push("<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>");
     if (r.cas) details.push('<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS ' + esc(r.cas) + '.</li>');
-    var ids = [r.cas ? "CAS " + r.cas : "", /^\d{3}-\d{3}-\d$/.test(r.ec || "") ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.join(", ") : "")].filter(Boolean).join(" · ");
+    var ids = [r.cas ? "CAS " + r.cas : "", /^\d{3}-\d{3}-\d$/.test(r.ec || "") ? "EC " + r.ec : "", (r.atc && r.atc.length ? "ATC " + r.atc.slice(0, 3).join(", ") + (r.atc.length > 3 ? " +" + (r.atc.length - 3) : "") : "")].filter(Boolean).join(" · ");
     return '<li class="tera-item"><div class="tera-head"><span class="tera-level tera-' + r.l + '">' + LEVEL[r.l] + '</span><h3 class="tera-name">' + (r.w ? '<a href="' + esc(r.w) + '" target="_blank" rel="noopener external" title="Wikipedia">' + esc(r.n) + '</a>' : esc(r.n)) + '</h3>' + (ids ? '<span class="tera-ids">' + ids + '</span>' : '') + '</div>' +
            namesHtml(r) + '<div class="tera-uses">' + (r.x || []).map(function (x) { return '<span class="use use-' + x.t + '" title="' + esc(x.w || r.xw) + '">' + esc(EXP[x.t] || x.t) + '<small> \u00b7 ' + LEVEL[x.l] + '</small></span>'; }).join("") + '</div>' +
            (r.x || []).filter(function (x) { return x.d; }).map(function (x) {

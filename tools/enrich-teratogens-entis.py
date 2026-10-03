@@ -32,6 +32,20 @@ RANK = {"known": 0, "presumed": 1, "suspected": 2}
 PREG_FIELDS = ("regulatory", "window", "dose", "effects", "other_effects", "absolute_risk", "before_after", "paternal", "monitoring", "evidence_base")
 
 
+# ATC groups of medicines applied or acting locally, and the route they stand for; every other code is systemic use
+LOCAL_ROUTES = [("S01", "eye"), ("S02", "ear"), ("S03", "eye and ear"), ("D", "skin"), ("A01", "mouth"), ("G01", "vagina"),
+                ("R01", "nose"), ("R02", "throat"), ("A07A", "gut, not absorbed"), ("C05", "rectum and veins, local")]
+
+
+SYSTEMIC_D = ("D01B", "D05B", "D10B")   # antifungals, antipsoriatics and anti-acne medicines for systemic use
+
+
+def atc_route(code):
+    if code.startswith(SYSTEMIC_D):
+        return "systemic"
+    return next((r for p, r in LOCAL_ROUTES if code.startswith(p)), "systemic")
+
+
 def level(e):
     """The entry's level: the strongest of its sources, as tools/build-teratogens.py computes it."""
     levels = [v for k, v in e["status"].items() if v in RANK]
@@ -79,9 +93,28 @@ def main():
             langs = {l: [x for x in v if x.lower() not in own and x.lower() not in [i.lower() for i in inn]] for l, v in n.get("languages", {}).items()}
             e["names"] = {"inn": inn, "inn_checked": n.get("inn_checked", {}), "languages": {l: v for l, v in langs.items() if v}, "us_discontinued": n.get("brands_us_discontinued", []),
                           "wikidata": n.get("wikidata", []), "atc_codes": n.get("atc", []), "snomed": n.get("snomed", []),
+                          "eu_url": n.get("brands_eu_url", {}), "eu_status": n.get("brands_eu_status", {}),
                           "it": n.get("brands_it", []), "es": n.get("brands_es", []), "ca": n.get("brands_ca", []),
                           "generic": [g for g in n["generic"] if g.lower() not in own and g.lower() not in [i.lower() for i in inn]], "us": n["brands_us"], "eu": n["brands_eu"],
                           "fr": n["brands_fr"], "rxcui": [i["rxcui"] for i in n["ingredients"]][:3], "resolved_as": n["resolved_as"], "read": names["read"], "note": n.get("note", "")}
+    # the WHO ATC codes of each medicine, each with the route it stands for: RxNorm, Wikidata, or the WHO index checked by hand
+    chk = json.loads((HERE / "teratogen-atc-checked.json").read_text(encoding="utf-8")) if (HERE / "teratogen-atc-checked.json").exists() else {"entries": {}}
+    for e in data["entries"]:
+        e.pop("atc_list", None); e.pop("atc_none", None)
+        codes = {}
+        for c in (e.get("names") or {}).get("atc_codes", []):
+            codes.setdefault(c, "RxNorm")
+        for c in e.get("atc") or []:
+            codes.setdefault(c, "Wikidata")
+        w = chk["entries"].get(e["name"])
+        if w:
+            for c, _n in w["codes"]:
+                codes.setdefault(c, "WHO ATC/DDD Index")
+            if not w["codes"] and not codes:
+                e["atc_none"] = {"source": chk["source"], "url": w["url"], "read": chk["read"]}
+        if codes:
+            e["atc_list"] = sorted(({"code": c, "route": atc_route(c), "source": v} for c, v in codes.items()),
+                                   key=lambda x: (x["route"] != "systemic", x["code"]))
     # the kinds of cosmetics, and brands, that companies reported to California as containing it
     cp = HERE / "teratogen-cosmetic-products.json"
     cpd = json.loads(cp.read_text(encoding="utf-8")) if cp.exists() else {"entries": {}}
@@ -114,6 +147,8 @@ def main():
     centres = HERE / "teratogen-tis-centres.json"   # the survey of ENTIS member services
     c["tis_centres"] = len(json.loads(centres.read_text(encoding="utf-8"))["centres"]) if centres.exists() else 0
     c["cosmetic_products"] = sum(1 for e in data["entries"] if e.get("cosmetic_products"))
+    c["with_atc"] = sum(1 for e in data["entries"] if e.get("atc_list"))
+    c["epar_links"] = sum(len(e["names"]["eu_url"]) for e in data["entries"] if e.get("names"))
     c["tis_linked"] = sum(1 for e in data["entries"] if e.get("tis"))
     c["cosmetic_facts"] = sum(1 for r in facts.get("cosmetics", {}).values() for f in ("limit", "basis_dose", "effects", "conclusion") if r.get(f))
     for k in ("known", "presumed", "suspected"):

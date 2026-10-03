@@ -1,0 +1,72 @@
+{
+ "_about": "WHO ATC codes checked by hand in the WHO ATC/DDD Index, read 2026-10-03, for the register medicines to which neither RxNorm nor Wikidata attaches one. 'codes' are the index's own entries for the substance; an empty list means the index lists none.",
+ "source": "WHO Collaborating Centre for Drug Statistics Methodology, ATC/DDD Index",
+ "read": "2026-10-03",
+ "entries": {
+  "Norethisterone (Norethindrone)": {
+   "codes": [
+    [
+     "G03AC01",
+     "norethisterone"
+    ],
+    [
+     "G03DC02",
+     "norethisterone"
+    ]
+   ],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03DC&showdescription=no"
+  },
+  "Menotropins": {
+   "codes": [
+    [
+     "G03GA02",
+     "human menopausal gonadotrophin"
+    ]
+   ],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03GA&showdescription=no"
+  },
+  "Norgestrel": {
+   "codes": [
+    [
+     "G03AA06",
+     "norgestrel and ethinylestradiol"
+    ]
+   ],
+   "note": "The index lists norgestrel only in combinations.",
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03AA&showdescription=no"
+  },
+  "Aminopterin": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=L01BA&showdescription=no"
+  },
+  "Anisindione": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=B01AA&showdescription=no"
+  },
+  "Benzphetamine hydrochloride": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=A08AA&showdescription=no"
+  },
+  "Butabarbital sodium": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N05CA&showdescription=no"
+  },
+  "Estropipate": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03CA&showdescription=no"
+  },
+  "Zileuton": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=R03DC&showdescription=no"
+  },
+  "methyl salicylate": {
+   "codes": [],
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=N02BA&showdescription=no"
+  },
+  "Norethisterone (Norethindrone) /Mestranol": {
+   "codes": [],
+   "note": "The index has no code for norethisterone with mestranol; it codes norethisterone with an estrogen only as sequential (G03AB04) and hormone-replacement (G03FA01) preparations.",
+   "url": "https://atcddd.fhi.no/atc_ddd_index/?code=G03AB&showdescription=no"
+  }
+ }
+}

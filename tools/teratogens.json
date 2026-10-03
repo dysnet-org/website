@@ -142,7 +142,7 @@
   "with_inn": 192,
   "tis_centres": 31,
   "cosmetic_products": 25,
-  "tis_linked": 94
+  "tis_linked": 98
  },
  "entries": [
   {
@@ -1514,7 +1514,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "tis": [
+    {
+     "s": "crat",
+     "t": "Acénocoumarol- Grossesse",
+     "u": "https://www.lecrat.fr/10077/"
+    }
+   ]
   },
   {
    "name": "Acetazolamide",
@@ -4140,8 +4147,18 @@
     },
     {
      "s": "crat",
+     "t": "Kanamycine – Grossesse",
+     "u": "https://www.lecrat.fr/7730/"
+    },
+    {
+     "s": "crat",
      "t": "Tobramycine – Grossesse",
      "u": "https://www.lecrat.fr/7735/"
+    },
+    {
+     "s": "crat",
+     "t": "Streptomycine – Grossesse",
+     "u": "https://www.lecrat.fr/7746/"
     },
     {
      "s": "embryotox",
@@ -10026,6 +10043,11 @@
     "note": ""
    },
    "tis": [
+    {
+     "s": "crat",
+     "t": "Carbimazole / Thiamazole – Grossesse",
+     "u": "https://www.lecrat.fr/8685/"
+    },
     {
      "s": "embryotox",
      "t": "Carbimazol",
@@ -17204,7 +17226,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "tis": [
+    {
+     "s": "crat",
+     "t": "Phénytoïne / Fosphénytoïne – Grossesse",
+     "u": "https://www.lecrat.fr/7086/"
+    }
+   ]
   },
   {
    "name": "Doxorubicin hydrochloride (Adriamycin)",
@@ -22034,7 +22063,14 @@
     "resolved_as": "RxNorm IN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "tis": [
+    {
+     "s": "crat",
+     "t": "Phénytoïne / Fosphénytoïne – Grossesse",
+     "u": "https://www.lecrat.fr/7086/"
+    }
+   ]
   },
   {
    "name": "Ganciclovir",
@@ -28903,6 +28939,11 @@
    },
    "tis": [
     {
+     "s": "crat",
+     "t": "Carbimazole / Thiamazole – Grossesse",
+     "u": "https://www.lecrat.fr/8685/"
+    },
+    {
      "s": "embryotox",
      "t": "Methimazol",
      "u": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/thiamazol"
@@ -33741,7 +33782,19 @@
     "resolved_as": "RxNorm MIN",
     "read": "2026-10-03",
     "note": ""
-   }
+   },
+   "tis": [
+    {
+     "s": "crat",
+     "t": "Ethinylestradiol – Grossesse",
+     "u": "https://www.lecrat.fr/6225/"
+    },
+    {
+     "s": "embryotox",
+     "t": "Ethinylestradiol",
+     "u": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/kontrazeptiva-orale"
+    }
+   ]
   },
   {
    "name": "Norethisterone (Norethindrone) /Mestranol",

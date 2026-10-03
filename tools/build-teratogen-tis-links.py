@@ -5,8 +5,9 @@ Three services of the European Network of Teratology Information Services (ENTIS
 public page per medicine; tools/teratogen-tis-centres.json records the survey of all its centres.
 Their terms allow a link, not a copy, so the register links to them and quotes nothing:
 
-- CRAT, Paris (lecrat.fr): its search, one query per French substance name; the pages titled
-  "<substance> – Grossesse" and "<substance> – Exposition paternelle". Links open in a new window,
+- CRAT, Paris (lecrat.fr): its search, one query per French substance name (ANSM, and the French INN
+  from Wikidata and ChEBI) and per English name (INN, RxNorm ingredient); the pages titled "<substance> – Grossesse" and "<substance> – Exposition
+  paternelle", including those that name two substances ("Phénytoïne / Fosphénytoïne"). Links open in a new window,
   as its legal notice requires.
 - Embryotox, Berlin (embryotox.de): its A to Z index of medicines, which also lists synonyms.
 - UKTIS, Newcastle (medicinesinpregnancy.org, the bumps leaflets): its A to Z index.
@@ -69,7 +70,8 @@ def text(t):
 
 
 def candidates(name, n):
-    out = set(n["generic"]) | {i["name"] for i in n["ingredients"]} | {s.title() for s in n.get("substances_fr", [])}
+    out = set(n["generic"]) | {i["name"] for i in n["ingredients"]} | {s.title() for s in n.get("substances_fr", [])} | set(n.get("inn", [])) | \
+        {x for l in ("fr", "de", "es", "it", "la") for x in n.get("languages", {}).get(l, [])}
     m = re.search(r"\(([^()]+)\)\s*$", name)
     out.add(m.group(1) if m else name)
     for c in list(out):
@@ -102,14 +104,18 @@ def main():
             rec["bumps"] = sorted({x["url"]: x for x in b}.values(), key=lambda x: x["url"])
         # CRAT: search each French and English name, keep the pages whose title names this substance
         crat = {}
-        fr = [s for s in n.get("substances_fr", [])] or [c for c in cands if c.lower() in [g.lower() for g in n["generic"]]] or sorted(cands)[:1]
+        # queried by its French substance names and by its English names (INN and RxNorm ingredient), since CRAT's
+        # search matches words and a page may be titled with either spelling
+        fr = [s for s in n.get("substances_fr", [])] + list(n.get("languages", {}).get("fr", [])) + list(n.get("inn", [])) + [i["name"] for i in n["ingredients"] if " / " not in i["name"]]
+        fr = fr or [c for c in cands if c.lower() in [g.lower() for g in n["generic"]]] or sorted(cands)[:1]
         for q in sorted({" ".join(SALTS.sub(" ", fold(c)).split()) for c in fr} - {""}):
             q = " ".join(q.split())
             page = get("https://www.lecrat.fr/?s=" + urllib.parse.quote(q), "crat-" + re.sub(r"[^a-z0-9]+", "-", q) + ".html")
             for u, t in re.findall(r'href="(https://www\.lecrat\.fr/\d+/)"[^>]*>(.*?)</a>', page, re.S):
                 t = text(t)
-                m = re.match(r"(.+?)\s+[–-]\s+(Grossesse|Exposition paternelle)$", t)
-                if m and skel(m.group(1)) in keys:
+                # "Lithium – Grossesse", "Acénocoumarol- Grossesse", "Phénytoïne / Fosphénytoïne – Grossesse"
+                m = re.match(r"(.+?)\s*[–-]\s*(Grossesse|Exposition paternelle)$", t)
+                if m and any(skel(part) in keys for part in re.split(r"\s*/\s*", m.group(1))):
                     crat[u] = {"url": u, "title": t}
         if crat:
             rec["crat"] = sorted(crat.values(), key=lambda x: (not x["title"].endswith("Grossesse"), x["url"]))

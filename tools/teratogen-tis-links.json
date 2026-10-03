@@ -21,6 +21,14 @@
   }
  },
  "entries": {
+  "Acenocoumarol": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/10077/",
+     "title": "Acénocoumarol- Grossesse"
+    }
+   ]
+  },
   "Acetazolamide": {
    "embryotox": [
     {
@@ -126,8 +134,16 @@
      "title": "Gentamicine – Grossesse"
     },
     {
+     "url": "https://www.lecrat.fr/7730/",
+     "title": "Kanamycine – Grossesse"
+    },
+    {
      "url": "https://www.lecrat.fr/7735/",
      "title": "Tobramycine – Grossesse"
+    },
+    {
+     "url": "https://www.lecrat.fr/7746/",
+     "title": "Streptomycine – Grossesse"
     }
    ]
   },
@@ -455,6 +471,12 @@
      "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/carbimazole/",
      "title": "Carbimazole"
     }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8685/",
+     "title": "Carbimazole / Thiamazole – Grossesse"
+    }
    ]
   },
   "Chlordiazepoxide": {
@@ -631,6 +653,14 @@
     }
    ]
   },
+  "Diphenylhydantoin (Phenytoin)": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7086/",
+     "title": "Phénytoïne / Fosphénytoïne – Grossesse"
+    }
+   ]
+  },
   "Doxycycline (internal use)": {
    "embryotox": [
     {
@@ -778,6 +808,14 @@
     {
      "url": "https://www.lecrat.fr/8107/",
      "title": "Fluticasone – Grossesse"
+    }
+   ]
+  },
+  "Fosphenytoin": {
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/7086/",
+     "title": "Phénytoïne / Fosphénytoïne – Grossesse"
     }
    ]
   },
@@ -1019,6 +1057,12 @@
      "url": "https://www.medicinesinpregnancy.org/leaflets-a-z/methimazole/",
      "title": "Methimazole"
     }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/8685/",
+     "title": "Carbimazole / Thiamazole – Grossesse"
+    }
    ]
   },
   "Methotrexate": {
@@ -1192,6 +1236,20 @@
     {
      "url": "https://www.lecrat.fr/9385/",
      "title": "Nimodipine – Grossesse"
+    }
+   ]
+  },
+  "Norethisterone (Norethindrone) /Ethinyl estradiol": {
+   "embryotox": [
+    {
+     "url": "https://www.embryotox.de/arzneimittel/details/ansicht/medikament/kontrazeptiva-orale",
+     "title": "Ethinylestradiol"
+    }
+   ],
+   "crat": [
+    {
+     "url": "https://www.lecrat.fr/6225/",
+     "title": "Ethinylestradiol – Grossesse"
     }
    ]
   },

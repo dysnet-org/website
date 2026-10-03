@@ -80,13 +80,13 @@ def rule(e):
         state = "approved" if ppp["verdict"] == "approved" else "not approved"
         return ["pesticide"], f"The EU Pesticides Database lists it as an active substance, {state}."
     if "(iso)" in e["name"].lower():
-        return ["pesticide"], "Its ISO common name, the international naming system for pesticides, marks it as a pesticide active substance."
+        return ["pesticide"], "Pesticide active substance (ISO common name)."
     verdicts = {d["verdict"] for d in e.get("decisions", [])}
     if "public_supply_banned" in verdicts:
         return ["work"], "An industrial chemical: the EU bars its sale to the public (REACH Annex XVII entry 30), so exposure happens at work."
     if "authorisation_required" in verdicts:
         return ["work"], "An industrial chemical: each use needs an EU authorisation (REACH Annex XIV), so exposure happens at work."
-    return ["work"], "An industrial chemical, met mainly where it is made or used."
+    return ["work"], "Industrial chemical, met at work."
 
 
 def source_levels(e):

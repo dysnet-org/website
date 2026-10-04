@@ -113,6 +113,11 @@ FR_ALIASES = {"aspirin": ["acide acetylsalicylique"], "nitrous oxide": ["protoxy
 SALT = re.compile(r"\b(hydrochloride|sulfate|sulphate|sodium|acetate|citrate|phosphate|mesylate|tartrate|propionate|dipropionate|cypionate|enanthate|hyclate|monohydrate|calcium|dipotassium|glucuronate|anhydrous|hydrated)\b", re.I)
 
 
+def untag(s):
+    """Wikidata and ChEBI write some names with italics markup (9-<i>cis</i>-retinoic acid); the name is the text alone."""
+    return re.sub(r"</?[a-zA-Z]+>", "", s)
+
+
 def get(url, cache=None, binary=False):
     if cache and cache.exists():
         return cache.read_bytes() if binary else cache.read_text(encoding="utf-8")
@@ -226,7 +231,7 @@ def wikidata(cuis):
         it(b)["chebi"].add(b["chebi"]["value"])
     for b in ask('SELECT ?item ?cui ?inn WHERE { VALUES ?cui { %s } ?item wdt:P3345 ?cui . OPTIONAL { ?item wdt:P2275 ?inn . FILTER(LANG(?inn) = "en") } }' % vals, "wikidata-inn-en.json"):
         if "inn" in b:
-            it(b)["inn"].add(b["inn"]["value"])
+            it(b)["inn"].add(untag(b["inn"]["value"]))
         else:
             it(b)
     langs = ", ".join(f'"{l}"' for l in LANGS + ("en",))
@@ -252,10 +257,10 @@ def wikidata(cuis):
             d = json.loads(get(CHEBI + ch + "/", RAW / "chebi" / f"{ch}.json"))
             inns = (d.get("names") or {}).get("INN", [])
             for x in inns:
-                o["inn_lang"].setdefault(x["language_code"], set()).add(x["name"])
+                o["inn_lang"].setdefault(x["language_code"], set()).add(untag(x["name"]))
             if inns and not o["inn"]:
-                en = [x["name"] for x in inns if x["language_code"] == "en"]
-                o["inn"] |= set(en) or {d["name"]}
+                en = [untag(x["name"]) for x in inns if x["language_code"] == "en"]
+                o["inn"] |= set(en) or {untag(d["name"])}
     return out
 
 

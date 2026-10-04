@@ -14,7 +14,7 @@ centres) replacing the blog and static pages, plus the registry flagship
 |---|---|
 | `build-demo.py` | Generates the whole site. One layout (SEO head, header, footer) with page bodies injected. |
 | `tools/conditions.json` | The conditions: the one file where a condition is added or changed, with everything DysNet says of it in English, French and Italian. `build-demo.py` builds the cards from it and publishes it as `/data/conditions.json`, which the DysNet registry's condition question reads live. After an edit, run `python3 tools/update-conditions.py`. |
-| `docs/` | The generated site, served by GitHub Pages: 19 pages, assets, `sitemap.xml`, `search-index.json`. |
+| `docs/` | The generated site, served by GitHub Pages: 25 pages (24 in the sitemap), the redirect stubs of the old Wix URLs, assets, `sitemap.xml`, `search-index.json`. |
 | `docs/assets/css/site.css` | Stylesheet: golden-ratio design tokens, DysNet brand colours. |
 | `docs/assets/js/site.js` | Search, condition finder, donate widget, click-to-play video. |
 
@@ -25,8 +25,12 @@ python3 build-demo.py                 # regenerate docs/ for www.dysnet.org
 python3 tools/serve.py 8732 docs      # Range-capable; open http://localhost:8732/
 ```
 
-No dependencies beyond Python 3 for the pages themselves. They are plain static
-HTML, so they can be hosted anywhere at near-zero cost.
+Python 3.12 or newer, plus Pillow (the social-preview cards) and reportlab (the two
+PDFs): `python3 -m pip install -r requirements.txt`. The pages themselves are plain static
+HTML, so they can be hosted anywhere at near-zero cost. The build stops on a condition list
+that is inconsistent, a register that lags behind it, a placeholder left in a page or a page
+left in `docs/` that nothing writes any more; `.github/workflows/build-check.yml` rebuilds
+every push to `main` and fails if the committed `docs/` differs from what the source produces.
 
 ## The landing map
 
@@ -41,14 +45,14 @@ API key, no third-party request):
 | `docs/assets/fonts/` | Open Sans glyph ranges for map labels. |
 | `docs/assets/js/map-gl.js` | The map: country colouring from the members data, region views, tooltips, offices. |
 | `docs/assets/map/world.svg` | Fallback map for browsers without WebGL (also `tools/build-world-map.py`). |
-| `docs/assets/map/dots.pmtiles` | Estimated people living with a limb difference, as grey dots (98 MB, zoom 0-9). Built from the GHSL population grid (EU JRC, GHS-POP 2025, CC BY 4.0): one base dot per 1,000 people placed inside its 1 km cell, with coarser layers (1 dot = 10 / 100 / 1,000 people) for lower zooms. Each dot carries a random `u`; a condition of prevalence *r* per 100,000 is drawn by keeping dots with `u < r*100`. |
+| `docs/assets/map/dots.pmtiles` | Estimated people living with a limb difference, as grey dots (39 MB, zoom 0-9). Built from the GHSL population grid (EU JRC, GHS-POP 2025, CC BY 4.0): one base dot per 1,000 people placed inside its 1 km cell, with coarser layers (1 dot = 10 / 100 / 1,000 people) for lower zooms. Each dot carries a random `u`; a condition of prevalence *r* per 100,000 is drawn by keeping dots with `u < r*100`. |
 | `tools/build-pop-dots.py`, `tools/build-pop-tiles.sh` | Regenerate the dots: download `GHS_POP_E2025_GLOBE_R2023A_4326_30ss_V1_0` into `tools/ghs/`, run the Python script (needs numpy, tifffile, imagecodecs; ~3 min), then the shell script (tippecanoe + tile-join; ~2 min). Raw inputs are git-ignored. Bump `?v=` in `map-gl.js` after regenerating. |
-| `tools/orphanet-prevalence.json` | Orphanet epidemiology extract behind the prevalence annex and the dot selector's rates (`DOT_RATES` in `build-demo.py`). |
+| `tools/condition-prevalence.json` | Orphanet epidemiology extract behind the prevalence annex and the dot selector's rates (`DOT_RATES` in `build-demo.py`). |
 
 The opening view is guessed from the device time zone only. Zoom is capped at
 city level on purpose, and the dots are labelled as estimates on the map: they are
 prevalence × population, never observed cases. Keep `dots.pmtiles` under GitHub's
-100 MB file limit (it is at 98 MB); if a regeneration grows it, host it on an
+100 MB file limit (it is at 39 MB); if a regeneration grows it, host it on an
 object store or lower the base density. Local preview needs a server that honours HTTP Range
 requests, hence `tools/serve.py` (GitHub Pages does natively).
 
@@ -75,10 +79,11 @@ DEPLOY=pages python3 build-demo.py   # github.io project URL, /website prefix
 | `DEPLOY` | Served at | Link prefix | `docs/CNAME` |
 |---|---|---|---|
 | `prod` (default) | `https://www.dysnet.org` | none | written |
-| `pages` | `https://dysnet-org.github.io/website/` | `/website` | removed |
+| `pages` | `https://dysnet-org.github.io/website/` | `/website` | must be absent |
 
-Do not commit a `pages` build: it removes `docs/CNAME`, which takes the custom
-domain off GitHub Pages.
+A `pages` build refuses to run while `docs/CNAME` exists, because committing one
+from this checkout would take the custom domain off GitHub Pages. Build it in a
+copy of the repository with `docs/CNAME` removed, never here.
 
 ## Status
 

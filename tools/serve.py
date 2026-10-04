@@ -77,4 +77,4 @@ if __name__ == "__main__":
     directory = dirs[0] if dirs else "."
     handler = partial(RangeHandler, directory=directory)
     print(f"Serving {directory} on http://localhost:{port} (Range supported)")
-    ThreadingHTTPServer(("", port), handler).serve_forever()
+    ThreadingHTTPServer(("127.0.0.1", port), handler).serve_forever()

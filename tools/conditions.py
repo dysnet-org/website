@@ -34,9 +34,70 @@ def block(name, src=None):
     return src[start:src.index("\n]\n", start) + 2]
 
 
+# The finder's tags, as _fields in tools/conditions.json defines them. The site filters cards and the
+# registry filters its answers on these exact strings, so a typo would publish silently to both.
+TAGS = {"limbs": {"arms", "legs", "several"}, "type": {"reduction", "fusion", "extra", "band"},
+        "other": {"other", "limbsonly"}, "genetic": {"genetic", "nongenetic"}}
+LANGS = ("en", "fr", "it")
+
+
+def validate_reference(ref):
+    """Stop on anything in tools/conditions.json that the site or the registry would publish wrong:
+    a missing key, a tag outside the finder's vocabulary, a duplicate name or code, a form keyed by
+    something other than an ORPHAcode, a plain description without one of the three languages."""
+    bad = []
+    cards, extra, forms = ref.get("conditions"), ref.get("registryOnly", []), ref.get("forms", {})
+    if not isinstance(cards, list) or not cards:
+        raise SystemExit("conditions.json: 'conditions' must be a non-empty list")
+    for where, entries in (("conditions", cards), ("registryOnly", extra)):
+        for i, e in enumerate(entries):
+            tag = f"{where}[{i}] {e.get('name', '?')!r}"
+            if not isinstance(e.get("name"), str) or not e["name"].strip():
+                bad.append(f"{tag}: no name")
+            code = e.get("orphaCode")
+            if code is not None and (not isinstance(code, int) or isinstance(code, bool) or code <= 0):
+                bad.append(f"{tag}: orphaCode must be a positive integer or null, not {code!r}")
+            if e.get("orphanetName") is not None and not isinstance(e["orphanetName"], str):
+                bad.append(f"{tag}: orphanetName must be a string or null")
+            plain = e.get("plain")
+            if not isinstance(plain, dict) or not all(isinstance(plain.get(l), str) and plain[l].strip() for l in LANGS):
+                bad.append(f"{tag}: plain needs a sentence in each of {LANGS}")
+            if where == "conditions":
+                if not isinstance(e.get("description"), str) or not e["description"].strip():
+                    bad.append(f"{tag}: no description")
+                for k, allowed in TAGS.items():
+                    v = e.get(k)
+                    if not isinstance(v, list) or not v:
+                        bad.append(f"{tag}: {k} must be a non-empty list")
+                    elif set(v) - allowed:
+                        bad.append(f"{tag}: {k} has {sorted(set(v) - allowed)}, not in {sorted(allowed)}")
+                if code is None:
+                    dn = e.get("dysnetNames") or {}
+                    if not all(isinstance(dn.get(l), str) and dn[l].strip() for l in ("fr", "it")):
+                        bad.append(f"{tag}: a card without an ORPHAcode needs dysnetNames.fr and .it (Orphanet has none to give)")
+    names = [e.get("name") for e in cards + extra]
+    for n in sorted({n for n in names if names.count(n) > 1}):
+        bad.append(f"name {n!r} appears {names.count(n)} times")
+    codes = [e.get("orphaCode") for e in cards + extra if e.get("orphaCode") is not None]
+    for cd in sorted({cd for cd in codes if codes.count(cd) > 1}):
+        bad.append(f"ORPHAcode {cd} appears {codes.count(cd)} times")
+    if not isinstance(forms, dict):
+        bad.append("'forms' must be an object keyed by ORPHAcode")
+    else:
+        for k, f in forms.items():
+            if not re.fullmatch(r"[1-9]\d*", str(k)):
+                bad.append(f"forms[{k!r}]: the key must be an ORPHAcode")
+            p = (f or {}).get("plain")
+            if p is not None and not all(isinstance(p.get(l), str) and p[l].strip() for l in LANGS):
+                bad.append(f"forms[{k!r}]: plain needs a sentence in each of {LANGS}")
+    if bad:
+        raise SystemExit("tools/conditions.json has " + str(len(bad)) + " problem(s):\n  " + "\n  ".join(bad))
+    return ref
+
+
 def reference():
     """tools/conditions.json as it is written: the cards, the registry-only entries, the forms."""
-    return json.loads(REFERENCE.read_text(encoding="utf-8"))
+    return validate_reference(json.loads(REFERENCE.read_text(encoding="utf-8")))
 
 
 def conditions(src=None):

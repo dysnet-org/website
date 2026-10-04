@@ -51,13 +51,15 @@ main checkout only. Everything else builds anywhere.
 ## Publishing
 
 GitHub Pages serves `docs/` from `main`. **Committing a rebuilt `docs/` to `main`
-publishes to www.dysnet.org.** Never push without being asked. Never commit a
-`DEPLOY=pages` build to `main`: it deletes `docs/CNAME` and takes the custom
-domain off Pages.
+publishes to www.dysnet.org.** Never push without being asked. A `DEPLOY=pages`
+build refuses to run while `docs/CNAME` exists (committing one once took the
+custom domain off Pages); it belongs in a copy of the repository, never here.
+`.github/workflows/build-check.yml` rebuilds every push to `main` and fails if
+the committed `docs/` is not what the source produces.
 
 ## Registers
 
-The four knowledge registers are built from `tools/*.json` by `build-demo.py`.
+The five knowledge registers are built from `tools/*.json` by `build-demo.py`.
 Each entry records where it came from, and the wording of that provenance is
 load-bearing, not decoration:
 

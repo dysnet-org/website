@@ -3,24 +3,34 @@
 
 Architecture mirrors the HDS website (Astro BaseLayout pattern):
 one layout carrying SEO head + header + footer, page bodies injected.
-Run:  python3 build-demo.py
+Run:  python3 build-demo.py          (Python 3.12 or newer; pip install -r requirements.txt)
 """
 import html
 import json
 import os
 import pathlib
 import re
+import sys
 import urllib.parse
 
 ROOT = pathlib.Path(__file__).parent / "docs"
+sys.path.insert(0, str(pathlib.Path(__file__).parent / "tools"))
+from conditions import validate_reference  # noqa: E402  tools/conditions.py, the one reader of the condition list
+
+
+def esc(s):
+    """A value from a register, made safe for HTML text and attributes. The registers are harvested
+    (PubMed titles carry c.1024A>G, chemical names carry "< 1 mm"), so nothing from them is interpolated raw."""
+    return html.escape("" if s is None else str(s), quote=True)
 
 def _asset_version():
     import hashlib
     h = hashlib.sha1()
     for f in ("assets/css/site.css", "assets/js/site.js"):
         p = ROOT / f
-        if p.exists():
-            h.update(p.read_bytes())
+        if not p.exists():
+            raise SystemExit(f"{p} is missing: the build hashes it into every page's asset links")
+        h.update(p.read_bytes())
     return h.hexdigest()[:8]
 
 ASSET_V = _asset_version()
@@ -355,10 +365,7 @@ def og_card_for(path, title):
     name = title.split(" · ")[0].strip()
     if path == "/":
         name, section = "The international network for limb difference", "DysNet"
-    try:
-        return build_og_card(path, name, section)
-    except Exception:
-        return None       # a missing font must not fail the build; the photo still serves
+    return build_og_card(path, name, section)   # Pillow and the font were checked when build() started
 
 
 def section_og(path):
@@ -574,6 +581,7 @@ def spell(n):
 # preferred name, limbs, type, other, genetic), the last four the condition finder's plain-language tags.
 ORPHA_URL = "https://www.orpha.net/en/disease/detail/{}"
 REFERENCE = json.loads((pathlib.Path(__file__).parent / "tools" / "conditions.json").read_text(encoding="utf-8"))
+validate_reference(REFERENCE)   # a typo in a tag or a duplicate code would otherwise publish to the site and the registry
 CONDITIONS = [(c["name"], c["description"], c.get("orphaCode"), c.get("orphanetName"), " ".join(c["limbs"]),
                " ".join(c["type"]), " ".join(c["other"]), " ".join(c["genetic"])) for c in REFERENCE["conditions"]]
 
@@ -870,16 +878,22 @@ def condition_rate_html(name):
 CONDITIONS_BY_RATE = sorted(CONDITIONS, key=lambda c: (-CONDITION_RATE.get(c[0], (0,))[0], c[0]))
 RATED_N = sum(1 for c in CONDITIONS if c[0] in CONDITION_RATE)
 OMT = OMT_ALL.get("conditions", {})
-# A card whose registers were built for an older list is a card the page half-describes. The build
-# goes on, because a missing OMT row is a hand surgeon's job and must not stop a deploy, but it says
-# so, and names the command that brings the fetched registers up to date.
-_LAG = {
+# A card whose registers were built for an older list is a card the page half-describes. The registers
+# a script fetches (classification, ICD) stop the build, because the fix is one command away and a card
+# without them reached the live site once. A missing OMT row is a hand surgeon's job and a missing
+# prevalence row may be Orphanet's silence, so those only warn.
+_LAG_STOP = {
     "no place in Orphanet's classification (tools/build-orphanet-hierarchy.py)": [c[0] for c in CONDITIONS if c[2] and str(c[2]) not in HIER["nodes"]],
     "no ICD row (tools/build-condition-icd.py)": [c[0] for c in CONDITIONS if c[0] not in ICD],
+}
+_LAG_WARN = {
     "no Orphanet prevalence row (tools/build-condition-prevalence.py)": [c[0] for c in CONDITIONS if c[2] and c[0] not in ORPHA_PREV],
     "no OMT row (tools/condition-omt.json, placed by hand)": [c[0] for c in CONDITIONS if c[0] not in OMT],
 }
-for _what, _names in _LAG.items():
+for _what, _names in _LAG_STOP.items():
+    if _names:
+        raise SystemExit(f"{len(_names)} card(s) with {_what}: {_names}. Run python3 tools/update-conditions.py")
+for _what, _names in _LAG_WARN.items():
     if _names:
         print(f"WARNING: {len(_names)} card(s) with {_what}: {_names}. Run python3 tools/update-conditions.py")
 
@@ -976,8 +990,8 @@ def bibliography_html():
         elif "PubMed search" in e.get("via", []): tags += '<span class="bib-tag bib-via">PubMed search</span>'
         why = e["notes"][0] if e["notes"] else ""
         text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
-        items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-registries="{" ".join(e.get("rests_on", []))}" data-text="{text}">'
-                     f'<p class="bib-title">{e["title"]}</p><p class="bib-meta">{authors} · <em>{e["journal"]}</em> · {e["year"]}{(" · " + e["volume"]) if e["volume"] else ""}{(":" + e["pages"]) if e["pages"] else ""} · {link}</p>'
+        items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-registries="{" ".join(e.get("rests_on", []))}" data-text="{esc(text)}">'
+                     f'<p class="bib-title">{esc(e["title"])}</p><p class="bib-meta">{esc(authors)} · <em>{esc(e["journal"])}</em> · {e["year"]}{(" · " + esc(e["volume"])) if e["volume"] else ""}{(":" + esc(e["pages"])) if e["pages"] else ""} · {link}</p>'
                      f'<p class="bib-tags">{tags}</p></li>')
         records.append({"t": e["title"], "r": e.get("rests_on", []), "a": authors, "j": e["journal"], "y": e["year"], "v": e["volume"], "p": e["pages"], "d": e["doi"], "m": e["pmid"],
                         "c": e["codes"], "k": [t.replace(" ", "_") for t in e["topics"]], "w": ", ".join(v.split(" (")[0] for v in via) if via else ("PubMed search" if "PubMed search" in e.get("via", []) else ""), "n": why})
@@ -1028,21 +1042,21 @@ def centres_html():
     for c in sorted(CARE_CENTRES, key=lambda c: (c["country"], c["city"], c["name"])):
         if c["country"] != last:
             n = sum(1 for x in CARE_CENTRES if x["country"] == c["country"])
-            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{c["country"]} <span class="badge live">{n}</span></h2>')
+            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{esc(c["country"])} <span class="badge live">{n}</span></h2>')
             last = c["country"]
         host = c["url"].split("//")[-1].split("/")[0].removeprefix("www.") if c.get("url") else ""
-        link = f'<a href="{c["url"]}" target="_blank" rel="noopener external">{host}</a>' if c.get("url") else "no public website"
-        via = f'<a href="{c["via_url"]}" target="_blank" rel="noopener external">{c["via"]}</a>' if c.get("via_url") else c.get("via", "")
+        link = f'<a href="{esc(c["url"])}" target="_blank" rel="noopener external">{esc(host)}</a>' if c.get("url") else "no public website"
+        via = f'<a href="{esc(c["via_url"])}" target="_blank" rel="noopener external">{esc(c["via"])}</a>' if c.get("via_url") else esc(c.get("via", ""))
         verb = c.get("via_verb") or "named by"
-        local = f'<p class="src">{c["name_local"]}</p>' if c.get("name_local") else ""
+        local = f'<p class="src">{esc(c["name_local"])}</p>' if c.get("name_local") else ""
         note = f'<p class="entry-note">{CENTRE_NOTES[c["name"]]}</p>' if c["name"] in CENTRE_NOTES else ""
         # a status an authority has given the centre (or refused it), stated with the decision it rests on
         des = c.get("designation")
         if des:
-            note += (f'<p class="entry-note">{des["text"]} <a href="{des["url"]}" target="_blank" rel="noopener external">'
-                     f'{des.get("source", "Source")} ↗</a></p>')
-        out.append(f'<article class="entry" id="{_anchor("centre", c["name"])}"><h3>{c["name"]} <span class="badge">{c["type"]}</span></h3>{local}'
-                   f'<p>{c["specialism"]}</p>{note}<p class="src">{c["city"]}, {c["country"]} · {link} · {verb} {via}</p></article>')
+            note += (f'<p class="entry-note">{esc(des["text"])} <a href="{esc(des["url"])}" target="_blank" rel="noopener external">'
+                     f'{esc(des.get("source", "Source"))} ↗</a></p>')
+        out.append(f'<article class="entry" id="{_anchor("centre", c["name"])}"><h3>{esc(c["name"])} <span class="badge">{esc(c["type"])}</span></h3>{local}'
+                   f'<p>{esc(c["specialism"])}</p>{note}<p class="src">{esc(c["city"])}, {esc(c["country"])} · {link} · {verb} {via}</p></article>')
     return "".join(out)
 
 
@@ -1070,17 +1084,17 @@ def researchers_html():
         c = t["country"] or "Country not stated"
         if c != last:
             n = sum(1 for x in teams if (x["country"] or "Country not stated") == c)
-            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{c} <span class="badge live">{n}</span></h2>'); last = c
+            out.append(f'<h2 class="h3" style="margin-top:var(--space-4)">{esc(c)} <span class="badge live">{n}</span></h2>'); last = c
         rep = t["representative"]
         link = doi_html(rep["doi"]) if rep.get("doi") else f'<a href="https://pubmed.ncbi.nlm.nih.gov/{rep["pmid"]}/" target="_blank" rel="noopener external">PubMed {rep["pmid"]}</a>'
         tags = "".join(f'<span class="bib-tag">{names.get(c2, c2)}</span>' for c2 in t["codes"] if c2 in names)
         yrs = f'{t["years"][0]}–{t["years"][1]}' if t["years"][0] != t["years"][1] else str(t["years"][0])
         where = []
-        if t.get("address"): where.append(t["address"])
-        if t.get("contact"): where.append(f'<a href="mailto:{t["contact"]}">{t["contact"]}</a>')
+        if t.get("address"): where.append(esc(t["address"]))
+        if t.get("contact"): where.append(f'<a href="mailto:{esc(t["contact"])}">{esc(t["contact"])}</a>')
         where = f'<p class="src">{" · ".join(where)}</p>' if where else ""
-        out.append(f'<article class="entry" id="{_anchor("team", t["institution"])}"><h3>{t["institution"]} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
-                   f'<p>Authors on our bibliography: {", ".join(t["authors"])}. Most recent: <em>{rep["title"]}</em> ({rep["year"]}), {link}.</p>'
+        out.append(f'<article class="entry" id="{_anchor("team", t["institution"])}"><h3>{esc(t["institution"])} <span class="badge">{t["papers"]} publications · {yrs}</span></h3>'
+                   f'<p>Authors on our bibliography: {esc(", ".join(t["authors"]))}. Most recent: <em>{esc(rep["title"])}</em> ({rep["year"]}), {link}.</p>'
                    f'{where}<p class="bib-tags">{tags}</p></article>')
     return "".join(out)
 
@@ -1154,8 +1168,8 @@ def tera_paper_lines(e):
         return []
     out = []
     for x in sorted(e["papers"], key=lambda x: -int(bool(x.get("cochrane"))))[:3]:
-        cite = f'{x["title"]}' + (f' <span class="fine">{x["journal"]}, {x["year"]}</span>' if x.get("journal") else "")
-        link = (f' <a href="https://doi.org/{x["doi"]}" target="_blank" rel="noopener external">doi:{x["doi"]} ↗</a>'
+        cite = esc(x["title"]) + (f' <span class="fine">{esc(x["journal"])}, {x["year"]}</span>' if x.get("journal") else "")
+        link = (f' <a href="https://doi.org/{esc(x["doi"])}" target="_blank" rel="noopener external">doi:{esc(x["doi"])} ↗</a>'
                 if x.get("doi") else
                 (f' <a href="https://pubmed.ncbi.nlm.nih.gov/{x["pmid"]}/" target="_blank" rel="noopener external">PubMed ↗</a>' if x.get("pmid") else ""))
         out.append(f'<li>{"<strong>Cochrane review:</strong> " if x.get("cochrane") else ""}{cite}{link}</li>')
@@ -1174,34 +1188,34 @@ def tera_exp_chip(r, e):
 
 def tera_dose_line(r):
     d = r["dose"]
-    src = (f' <a href="{d["url"]}" target="_blank" rel="noopener external">{d["source"]} ↗</a>' if d.get("url") else f' <span class="fine">{d.get("source", "")}</span>')
-    return f'<p class="tera-dose"><strong>Dose and risk ({TERA_EXP.get(r["tag"], r["tag"]).lower()}):</strong> {d["text"]}{src}</p>'
+    src = (f' <a href="{esc(d["url"])}" target="_blank" rel="noopener external">{esc(d["source"])} ↗</a>' if d.get("url") else f' <span class="fine">{esc(d.get("source", ""))}</span>')
+    return f'<p class="tera-dose"><strong>Dose and risk ({TERA_EXP.get(r["tag"], r["tag"]).lower()}):</strong> {esc(d["text"])}{src}</p>'
 
 
 def tera_exp_lines(e):
-    out = [f'<li><strong>How a pregnancy meets it:</strong> {e.get("exposure_why", "")}</li>']
+    out = [f'<li><strong>How a pregnancy meets it:</strong> {esc(e.get("exposure_why", ""))}</li>']
     for r in e.get("exposure", []):
         who = " and ".join(r["by"]) if r["by"] else "no authority"
         basis = (f'no authority assesses this way of meeting it, so it takes the level {who} gives the substance' if r.get("inherited")
                  else f'level from {who}')
-        also = f'; also {"; ".join(r["also"])}' if r.get("also") else ""
-        why = "".join(" " + x for x in (r.get("basis"), r.get("why")) if x)
-        src = f' <a href="{r["url"]}" target="_blank" rel="noopener external">{r.get("source") or "source"} ↗</a>' if r.get("url") else ""
+        also = f'; also {esc("; ".join(r["also"]))}' if r.get("also") else ""
+        why = "".join(" " + esc(x) for x in (r.get("basis"), r.get("why")) if x)
+        src = f' <a href="{esc(r["url"])}" target="_blank" rel="noopener external">{esc(r.get("source") or "source")} ↗</a>' if r.get("url") else ""
         out.append(f'<li><strong>{TERA_EXP.get(r["tag"], r["tag"])}, {TERA_LEVEL[r["level"]].lower()}:</strong> {basis}{also}.{why}{src}</li>')
     return out
 
 
 def tera_dec_chips(e):
-    return "".join(f'<span class="st dec {TERA_DEC_CLS.get(d["verdict"], "st-label")}">{d["where"]}: {d["tag"]}</span>'
+    return "".join(f'<span class="st dec {TERA_DEC_CLS.get(d["verdict"], "st-label")}">{esc(d["where"])}: {esc(d["tag"])}</span>'
                    for d in e.get("decisions", []))
 
 
 def tera_dec_lines(e):
     out = []
     for d in e.get("decisions", []):
-        line = f'<strong>{d["tag"]}</strong> &mdash; {d["authority"]}' + (f', {d["detail"]}' if d.get("detail") else "")
+        line = f'<strong>{esc(d["tag"])}</strong> &mdash; {esc(d["authority"])}' + (f', {esc(d["detail"])}' if d.get("detail") else "")
         if d.get("url"):
-            line += f' <a href="{d["url"]}" target="_blank" rel="noopener external">source ↗</a>'
+            line += f' <a href="{esc(d["url"])}" target="_blank" rel="noopener external">source ↗</a>'
         out.append(f"<li>{line}</li>")
     return out
 
@@ -1308,7 +1322,7 @@ def tera_cosprod_html(e):
         body = f'{c["products_ever"]} product{"s" if c["products_ever"] != 1 else ""} reported, all since discontinued or reformulated.'
     return (f'<p class="tera-names tera-cosprod"><span class="tera-names-h">Reported in cosmetics</span> {body} '
             f'<span class="fine">Companies report these products to the California Safe Cosmetics Program because they contain the chemical; the amount is not reported, and a report is not a finding of harm. Data up to {c["data_until"][:7]}. '
-            f'<a href="{src["url"]}" target="_blank" rel="noopener external">{html.escape(src["label"])} ↗</a></span></p>')
+            f'<a href="{esc(src["url"])}" target="_blank" rel="noopener external">{html.escape(src["label"])} ↗</a></span></p>')
 
 
 TERA_TIS = {"crat": "CRAT, Paris (French)", "embryotox": "Embryotox, Berlin (German)", "bumps": "UKTIS bumps, UK (English)"}
@@ -1355,35 +1369,36 @@ def tera_item_html(e):
         else: lab, det = "DysNet bibliography", "peer-reviewed evidence"
         srcs.append(f'<span class="tera-src src-{src["code"]}">{lab}<small> · {det}</small></span>')
     reg = e.get("registry")
-    reg_html = (f'<p class="tera-registry">A pregnancy registry is recruiting for {reg["medicine"]}: '
-                f'<a href="{reg["url"]}" target="_blank" rel="noopener external">{reg["name"]}</a>'
-                + (f' &middot; {reg["phone"]}' if reg.get("phone") else "")
+    reg_html = (f'<p class="tera-registry">A pregnancy registry is recruiting for {esc(reg["medicine"])}: '
+                f'<a href="{esc(reg["url"])}" target="_blank" rel="noopener external">{esc(reg["name"])}</a>'
+                + (f' &middot; {esc(reg["phone"])}' if reg.get("phone") else "")
                 + ' <span class="fine">listed by the FDA, which does not endorse it</span></p>') if reg else ""
-    chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{txt}</span>' for txt, cls in tera_status_chips(e))
+    chips = tera_dec_chips(e) + tera_paper_chip(e) + "".join(f'<span class="st {cls}">{esc(txt)}</span>' for txt, cls in tera_status_chips(e))
     uses = "".join(tera_exp_chip(r, e) for r in e.get("exposure", []))
     doses = "".join(tera_dose_line(r) for r in e.get("exposure", []) if r.get("dose")) + tera_preg_html(e)
     details = tera_names_line(e) + tera_atc_line(e) + tera_preg_lines(e) + tera_exp_lines(e) + tera_dec_lines(e) + tera_paper_lines(e)
     if e.get("source_note"):
-        details.append(f'<li><strong>California&rsquo;s note:</strong> {e["source_note"]}</li>')
+        details.append(f'<li><strong>California&rsquo;s note:</strong> {esc(e["source_note"])}</li>')
     for src in e["sources"]:
         line = src["label"] + ": " + (f'{src["category"]}, {", ".join(src["statements"])}' + (f', applies from {src["applies_from"]}' if src.get("applies_from") else "") if src["code"] == "clp" else
                                     f'{src.get("toxicity", "")}' + (f', listed {src["listed"]}' if src.get("listed") else "") + (f', via {src["mechanism"]}' if src.get("mechanism") else "") if src["code"] == "p65" else
                                     ", ".join(src["statements"]) + (f', classified in the {src["classified"]} fiscal year' if src.get("classified") else "") if src["code"] == "nite" else src.get("note", ""))
-        if src.get("url"): line += f' <a href="{src["url"]}"{" target=_blank rel=\"noopener external\"" if src["url"].startswith("http") else ""}>source ↗</a>'
+        line = esc(line)
+        if src.get("url"): line += f' <a href="{esc(src["url"])}"{" target=_blank rel=\"noopener external\"" if src["url"].startswith("http") else ""}>source ↗</a>'
         details.append(f"<li>{line}</li>")
     for place, val in e["jurisdictions"].items():
         txt = " ".join(val.values()) if isinstance(val, dict) else val
         if place == "California (USA)" and e.get("delisted"):
             txt = f"Listed as a developmental toxicant and delisted on {e['delisted']}; no warning is required today. " + txt
-        details.append(f"<li><strong>{place}:</strong> {txt}</li>")
+        details.append(f"<li><strong>{esc(place)}:</strong> {esc(txt)}</li>")
     clp = next((x for x in e["sources"] if x["code"] == "clp"), None)
     if clp and clp["category"].replace("Repr. ", "") in ("1A", "1B"):
         details.append('<li><strong>ChemFORWARD:</strong> meets the list-screening criterion for the F hazard band (Annex VI Repr. 1), per Chemical Hazard Rating Guidance v2.2, May 2024.</li>')
     if e.get("cas"):
-        details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {e["cas"]}.</li>')
-    ids = " · ".join(x for x in (f"CAS {e['cas']}" if e.get("cas") else "", f"EC {e['ec']}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
+        details.append(f'<li><strong>GreenScreen:</strong> check the <a href="https://registry.greenscreenchemicals.org/" target="_blank" rel="noopener external">assessment registry</a> for CAS {esc(e["cas"])}.</li>')
+    ids = " · ".join(x for x in (f"CAS {esc(e['cas'])}" if e.get("cas") else "", f"EC {esc(e['ec'])}" if re.fullmatch(r"\d{3}-\d{3}-\d", (e.get("ec") or "").strip()) else "",
                                  tera_atc_head([x["code"] for x in e.get("atc_list", [])])) if x)
-    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{e["wiki"]}" target="_blank" rel="noopener external" title="Wikipedia">{tera_display_name(e)}</a>' if e.get("wiki") else tera_display_name(e)}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
+    return (f'<li class="tera-item"><div class="tera-head"><span class="tera-level tera-{e["level"]}">{TERA_LEVEL[e["level"]]}</span><h3 class="tera-name">{f'<a href="{esc(e["wiki"])}" target="_blank" rel="noopener external" title="Wikipedia">{esc(tera_display_name(e))}</a>' if e.get("wiki") else esc(tera_display_name(e))}</h3>{f"<span class=tera-ids>{ids}</span>" if ids else ""}</div>'
             f'{tera_names_html(e)}<div class="tera-uses">{uses}</div>{doses}{tera_cosprod_html(e)}{tera_tis_html(e)}<div class="tera-srcs">{"".join(srcs)}</div><div class="tera-status">{chips}</div>{reg_html}'
             f'<details class="tera-details"><summary>Details and legal basis</summary><ul>{"".join(details)}</ul></details></li>')
 
@@ -5294,7 +5309,7 @@ _drawn_statuses = ({a["status"] for a in REG_AREAS if a.get("map", True)}
 if _drawn_statuses - set(ZONE_LABELS):
     raise SystemExit(f"ZONE_LABELS has no words for the drawn status {_drawn_statuses - set(ZONE_LABELS)}")
 
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False)
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
 
 # Injected into the home page at build time (placeholder __MAP_HERO__): it needs the map data
 # assembled below, which the home page body is written before.
@@ -5447,23 +5462,23 @@ def member_li(entry):
     i = MEMBER_INFO.get(name, {})
     rows = []
     if i.get("person"):
-        rows.append(f'<p class="assoc-lead"><strong>{i.get("role", "President")}</strong>{i["person"]}</p>')
+        rows.append(f'<p class="assoc-lead"><strong>{esc(i.get("role", "President"))}</strong>{esc(i["person"])}</p>')
     if i.get("deputy"):
-        rows.append(f'<p class="assoc-lead"><strong>{i.get("deputy_role", "Vice chair")}</strong>{i["deputy"]}</p>')
+        rows.append(f'<p class="assoc-lead"><strong>{esc(i.get("deputy_role", "Vice chair"))}</strong>{esc(i["deputy"])}</p>')
     contact = []
-    if i.get("person_email"): contact.append(f'<a href="mailto:{i["person_email"]}">{i["person_email"]}</a>')
-    if i.get("email"): contact.append(f'<a href="mailto:{i["email"]}">{i["email"]}</a>')
-    if i.get("phone"): contact.append(i["phone"])
+    if i.get("person_email"): contact.append(f'<a href="mailto:{esc(i["person_email"])}">{esc(i["person_email"])}</a>')
+    if i.get("email"): contact.append(f'<a href="mailto:{esc(i["email"])}">{esc(i["email"])}</a>')
+    if i.get("phone"): contact.append(esc(i["phone"]))
     if contact: rows.append(f'<p class="assoc-contact">Contact: {" · ".join(contact)}</p>')
     if url:
         host = url.split("//")[-1].split("/")[0].removeprefix("www.")
-        rows.append(f'<p class="assoc-site"><a href="{url}" target="_blank" rel="noopener external">{host} ↗</a></p>')
+        rows.append(f'<p class="assoc-site"><a href="{esc(url)}" target="_blank" rel="noopener external">{esc(host)} ↗</a></p>')
     # the donation button stays outside the dropdown, visible without opening the card
-    give = (f'<div class="assoc-foot"><a class="btn btn-donate btn-sm" href="{support}" target="_blank" '
-            f'rel="noopener external" aria-label="Support {name}">♥ Support them</a></div>') if support else ""
+    give = (f'<div class="assoc-foot"><a class="btn btn-donate btn-sm" href="{esc(support)}" target="_blank" '
+            f'rel="noopener external" aria-label="Support {esc(name)}">♥ Support them</a></div>') if support else ""
     if not rows:
-        return f'<li class="assoc-plain" id="{_anchor("member", name)}"><span>{name}</span>{give}</li>'
-    return (f'<li id="{_anchor("member", name)}"><details class="assoc"><summary>{name}</summary>'
+        return f'<li class="assoc-plain" id="{_anchor("member", name)}"><span>{esc(name)}</span>{give}</li>'
+    return (f'<li id="{_anchor("member", name)}"><details class="assoc"><summary>{esc(name)}</summary>'
             f'<div class="assoc-body">{"".join(rows)}</div></details>{give}</li>')
 
 PAGES["/about/members/"] = {
@@ -6055,7 +6070,7 @@ def page_dates(path, new_html):
     # the analytics tag and the consent banner sit in every page and are not its content: changing
     # them must not date all 24 pages to the day it was done
     _chrome = re.compile(r'<script>\s*\(function \(\) \{\s*var h = location\.hostname;.*?</script>|<div id="consent".*?</script>', re.S)
-    strip = lambda t: re.sub(r' id="s-[^"]*"|, "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", _chrome.sub("", t))
+    strip = lambda t: html.unescape(re.sub(r' id="s-[^"]*"|, "date(?:Published|Modified)": "[^"]*"|<meta property="article:(?:published|modified)_time" content="[^"]*">|\?v=[0-9a-f]+|\d{4}-\d{2}-\d{2}|Page updated [^<]*|\d{1,2} [A-Z][a-z]+ \d{4}', "", _chrome.sub("", t)))
     committed = git("show", f"HEAD:{rel}")
     first = (git("log", "--diff-filter=A", "--format=%cs", "--", rel).splitlines() or [today])[-1]
     if not committed: return {"published": today, "modified": today}
@@ -6088,6 +6103,18 @@ DATA_FILES = {"teratogens.json": "teratogens.json", "births.json": "births.json"
 def build():
     written = []
     import shutil
+    # Without Pillow or a font, every page's social-preview card used to fall back to a photo in silence,
+    # and without reportlab the build crashed after the pages were already on disk. Say so before writing.
+    try:
+        import PIL, reportlab  # noqa: F401
+    except ImportError as e:
+        raise SystemExit(f"{e.name} is not installed: python3 -m pip install -r requirements.txt")
+    if og_font(64) is None:
+        raise SystemExit("no font for the social-preview cards (OG_FONTS in build-demo.py); on Debian: apt install fonts-dejavu-core")
+    # The github.io build must never land in a docs/ that carries the custom domain: deleting CNAME and
+    # committing took www.dysnet.org off GitHub Pages once. Build it from a copy without docs/CNAME.
+    if DEPLOY != "prod" and (ROOT / "CNAME").exists():
+        raise SystemExit("DEPLOY=pages would overwrite the www.dysnet.org site in docs/. Build it in a copy of the repository without docs/CNAME.")
     (ROOT / "data").mkdir(exist_ok=True)
     for out_name, src_name in DATA_FILES.items():
         src = ROOT.parent / "tools" / src_name
@@ -6109,7 +6136,12 @@ def build():
         html += page["body"]
         html = html.replace("__MAP_HERO__", MAP_HERO)
         html += FOOTER.replace("__PAGE_DATE__", __import__("datetime").date.fromisoformat(dates["modified"]).strftime("%-d %B %Y"))
-        (out_dir / "index.html").write_text(heading_ids(rebase(html)), encoding="utf-8")
+        final = heading_ids(rebase(html))
+        # a __TOKEN__ the templates spell differently from its .replace() would otherwise ship as text
+        left = sorted(set(re.findall(r"__[A-Z][A-Z0-9_]+__", final)))
+        if left:
+            raise SystemExit(f"{path}: placeholder(s) never replaced: {left}")
+        (out_dir / "index.html").write_text(final, encoding="utf-8")
         written.append(path)
 
     # Redirect stubs for the old Wix URLs
@@ -6118,6 +6150,13 @@ def build():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(redirect_html(new_path), encoding="utf-8")
     print(f"  + {len(REDIRECTS)} redirect stubs for old Wix URLs")
+    # The build adds pages and never removed one: a page dropped from PAGES or REDIRECTS kept its
+    # index.html, which GitHub Pages kept serving while the sitemap and the search forgot it.
+    expected = {(ROOT / p.strip("/")).resolve() for p in list(PAGES) + list(REDIRECTS)}
+    orphans = sorted(str(f.parent.relative_to(ROOT)) for f in ROOT.rglob("index.html")
+                     if f.parent.resolve() not in expected and "assets" not in f.parts)
+    if orphans:
+        raise SystemExit(f"docs/ holds pages this build no longer writes; delete them or they stay live: {orphans}")
 
     # Root 404.html (GitHub Pages convention, as on the HDS site)
     import shutil
@@ -6158,12 +6197,9 @@ def build():
     # GitHub Pages: serve the folder verbatim, no Jekyll processing
     (ROOT / ".nojekyll").write_text("", encoding="utf-8")
 
-    # Custom domain for GitHub Pages; absent on the project-URL build
-    cname = ROOT / "CNAME"
+    # Custom domain for GitHub Pages. The github.io build never touches it (see the check at the top).
     if DEPLOY == "prod":
-        cname.write_text("www.dysnet.org\n", encoding="utf-8")
-    elif cname.exists():
-        cname.unlink()
+        (ROOT / "CNAME").write_text("www.dysnet.org\n", encoding="utf-8")
 
     # One-page briefing PDF of the five demands, rendered from the same data
     print("  " + build_brief_pdf())
@@ -6225,7 +6261,7 @@ def build():
              "", "## Licence and contact", "",
              "- Text and data: CC BY 4.0, attribution to DysNet (www.dysnet.org).",
              "- Corrections, additions and questions: info@dysnet.org.",
-             f"- Last built: {__import__('time').strftime('%Y-%m-%d')}.", ""]
+             f"- Last built: {max(page_mod.values())}.", ""]   # the newest page date, so an unchanged site rebuilds byte for byte
     # Every page the site builds, so that a page added to PAGES is never missing here. The curated
     # sections above keep their richer wording; this lists what they have not already named.
     mentioned = set(re.findall(r"\]\(" + re.escape(SITE) + r"(/[^)?#]*)", "\n".join(llms)))

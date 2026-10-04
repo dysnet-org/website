@@ -239,12 +239,12 @@
     // hover a dot to see what it stands for; click to pin the explanation
     function dotHtml() {
       var per = band(), r = data.rates[+sel.value];
-      if (!estimable(r)) return "<p class=\"dp-main\">No birth prevalence has been published for " + r[0].toLowerCase() + ".</p>";
+      if (!estimable(r)) return "<p class=\"dp-main\">No birth prevalence has been published for " + esc(r[0].toLowerCase()) + ".</p>";
       var people = per === 1 ? "<strong>1 person</strong>" : "<strong>about " + per.toLocaleString("en") + " people</strong>";
       var zoomHint = per === 1 ? "" : " Zoom in to see them one by one: at city zoom, 1 dot = 1 person.";
-      return "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + r[0].toLowerCase() + "</em> around here.</p>" +
+      return "<p class=\"dp-main\">This dot stands for " + people + " estimated to live with <em>" + esc(r[0].toLowerCase()) + "</em> around here.</p>" +
         "<p class=\"dp-sub\">1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " at this zoom level." + zoomHint + "</p>" +
-        "<p class=\"dp-foot\">Estimate: " + r[1] + " per 100,000 births (" + r[2] + ") × population living here (GHSL 2025)" + stepNote(r) + ". Not an observed case; the registry exists to make the real ones visible.</p>";
+        "<p class=\"dp-foot\">Estimate: " + esc(r[1]) + " per 100,000 births (" + esc(r[2]) + ") × population living here (GHSL 2025)" + stepNote(r) + ". Not an observed case; the registry exists to make the real ones visible.</p>";
     }
     LAYERS.forEach(function (id) { attachHover(id, dotHtml, function (e) { return e.lngLat; }, "people-popup"); });
     map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
@@ -262,9 +262,9 @@
   // never takes the country tooltip away from the member associations. It is named inside it instead.
   function showTip(c, x, y) {
     var clin = (data.clinical || {})[c.name];
-    tip.innerHTML = "<strong>" + c.name + "</strong><span class=\"status\">" + data.labels[c.status] + "</span><ul>" +
-      c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>" +
-      (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + clin.join(", ") + "</p>" : "");
+    tip.innerHTML = "<strong>" + esc(c.name) + "</strong><span class=\"status\">" + esc(data.labels[c.status]) + "</span><ul>" +
+      c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + esc(u) + "\" target=\"_blank\" rel=\"noopener external\">" + esc(orgName(o)) + "</a>" : esc(orgName(o))) + "</li>"; }).join("") + "</ul>" +
+      (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + esc(clin.join(", ")) + "</p>" : "");
     tip.style.display = "block";
     var hero = host.parentNode.getBoundingClientRect(), hr = host.getBoundingClientRect();
     var left = Math.min(x + (hr.left - hero.left) + 14, hero.width - tip.offsetWidth - 12);

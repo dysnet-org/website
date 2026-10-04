@@ -1,0 +1,29 @@
+# The committed docs/ is the live site, so this checks that it is exactly what build-demo.py produces.
+# It fails when someone commits a source change without rebuilding, or a docs/ edit made by hand, or a
+# build that stopped half-way. Dates and the social-preview PNGs are left out of the comparison: the
+# dates depend on the day of the build, the PNGs on the machine's fonts (Arial on a Mac, DejaVu here).
+# A red check does not stop GitHub Pages from publishing; it says the published site needs a rebuild.
+name: Build check
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y --no-install-recommends fonts-dejavu-core
+      - run: python3 -m pip install -r requirements.txt
+      - run: python3 build-demo.py
+      - name: docs/ must match the build
+        run: |
+          git diff --exit-code --stat \
+            -I '<lastmod>|"date(Published|Modified)"|article:(published|modified)_time|Page updated|Last built' \
+            -- docs ':!docs/assets/og' ':!docs/assets/*.pdf' \
+          || { echo '::error::docs/ differs from what build-demo.py produces. Run python3 build-demo.py and commit docs/.'; exit 1; }
+          test -z "$(git status --porcelain -- docs ':!docs/assets/og')" \
+          || { echo '::error::the build wrote files that are not committed:'; git status --porcelain -- docs; exit 1; }

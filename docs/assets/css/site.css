@@ -297,7 +297,8 @@ footer.site .legal { border-top: 1px solid rgba(255,255,255,0.2); margin-top: va
   text-decoration: none; transition: top 0.2s ease;
 }
 .skip-link:focus { top: 0; }
-:focus-visible { outline: 3px solid var(--dys-green); outline-offset: 2px; }
+/* purple holds 3:1 on the light pages (the logo green was 2.1:1, below WCAG 1.4.11); the white inner ring keeps the mark visible on the dark hero */
+:focus-visible { outline: 3px solid var(--dys-purple-text); outline-offset: 2px; box-shadow: 0 0 0 2px #fff; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 
 /* ══ Ideas ported from the HDS website ══════════════════════════ */
@@ -537,9 +538,9 @@ tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 #worldmap path.st-member    { fill: #c084fc; cursor: pointer; }
 #worldmap path.st-candidate { fill: var(--dys-green); cursor: pointer; }
 #worldmap path.st-contact   { fill: #fbbf24; cursor: pointer; }
-#worldmap path.st-member:hover, #worldmap path.st-member:focus { fill: #e9d5ff; outline: none; }
-#worldmap path.st-candidate:hover, #worldmap path.st-candidate:focus { fill: #86efac; outline: none; }
-#worldmap path.st-contact:hover, #worldmap path.st-contact:focus { fill: #fde68a; outline: none; }
+#worldmap path.st-member:hover, #worldmap path.st-member:focus { fill: #e9d5ff; }
+#worldmap path.st-candidate:hover, #worldmap path.st-candidate:focus { fill: #86efac; }
+#worldmap path.st-contact:hover, #worldmap path.st-contact:focus { fill: #fde68a; }
 #worldmap .office circle { fill: #fff; stroke: var(--dys-green); stroke-width: 1.2; }
 #worldmap .office text { fill: #fff; font-size: 5px; font-weight: 700; paint-order: stroke; stroke: #2a0d47; stroke-width: 1.5px; }
 
@@ -639,6 +640,7 @@ tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 
 /* ── Landing map, WebGL edition (MapLibre + self-hosted PMTiles) ─────── */
 #glmap { position: absolute; inset: 0; }
+.map-hero:not(.gl) #glmap { display: none; }   /* without WebGL the empty canvas box sat over the SVG map and took its clicks */
 .map-hero.gl #worldmap { display: none; }
 .map-hero .maplibregl-canvas { outline: none; }
 .map-hero .maplibregl-ctrl-top-right { top: 1.5rem; right: 1.5rem; }

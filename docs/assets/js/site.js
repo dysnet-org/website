@@ -33,7 +33,7 @@
   // themselves on ?q=, and opening the overlay over them answered a question nobody asked.
   var qParam = new URLSearchParams(location.search).get("q");
   if (qParam && !document.querySelector("#bib-q, #tera-q, #cond-q")) setTimeout(function () { openSearch(qParam); }, 300);
-  var index = null, loading = null, lastQ = "", sections = null;
+  var index = null, loading = null, lastQ = "", sections = null, failed = false;
   // accents, case and punctuation around codes do not matter: "Pölydactyly", "orpha:2911", "Q71.3"
   function norm(s) { return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
   // per-character folding keeps positions aligned, so a match found in the folded text can be shown in the original
@@ -49,7 +49,7 @@
   function esc(s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function load() {
     if (index || loading) return loading;
-    loading = fetch(BASE + "/search-index.json").then(function (r) { return r.json(); }).then(function (d) {
+    loading = fetch(BASE + "/search-index.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
       index = d.entries.map(function (e) {
         var kind = d.kinds[e[0]];
         var url = e[1] || "/knowledge/teratogens/?q=" + encodeURIComponent(e[2]);
@@ -57,7 +57,7 @@
                  t: norm(e[2]), h: norm(e[2] + " " + e[3] + " " + e[4]) };
       });
       if (lastQ) search(lastQ);
-    });
+    }).catch(function () { failed = true; loading = null; if (lastQ) search(lastQ); });   // say so, instead of "Loading…" for ever
     // the text of the pages, one section per heading, arrives separately so the entries answer first
     fetch(BASE + "/search-text.json").then(function (r) { return r.json(); }).then(function (d) {
       sections = d.sections.map(function (x) {
@@ -117,7 +117,7 @@
       list.innerHTML = '<li class="search-empty">Type a condition, an ORPHAcode or ICD code, a registry, a care centre, an association or a substance.</li>';
       return;
     }
-    if (!index) { list.innerHTML = '<li class="search-empty">Loading the index…</li>'; return; }
+    if (!index) { list.innerHTML = '<li class="search-empty">' + (failed ? "The search index could not be loaded. Check the connection and reload the page." : "Loading the index…") + "</li>"; return; }
     var rows = hits.slice(0, 12).map(function (h) {
       if (h.kind === "In the text") {
         return '<li><a href="' + BASE + h.url + '"><span class="search-kind">' + esc(h.page) + "</span><strong>" + esc(h.head || h.page) +
@@ -191,17 +191,19 @@
       box.innerHTML = "<p>On this page</p><ul>" + items + "</ul>";
       // A page can name its own slot; otherwise the position is computed from the first heading.
       var slot = main.querySelector("#toc-here");
-      if (slot) { slot.parentNode.insertBefore(box, slot); slot.remove(); return; }
-      // Anchor the box at section level: climb to the child of the section container, then step back
-      // over the opener marks (tick, eyebrow) so it sits between the intro and the first section.
-      var anchor = heads[0];
-      while (anchor.parentNode && anchor.parentNode !== main &&
-             !(anchor.parentNode.classList && anchor.parentNode.classList.contains("container"))) anchor = anchor.parentNode;
-      var prev = anchor.previousElementSibling;
-      while (prev && prev.classList && (prev.classList.contains("tick") || prev.classList.contains("eyebrow"))) {
-        anchor = prev; prev = anchor.previousElementSibling;
+      if (slot) { slot.parentNode.insertBefore(box, slot); slot.remove(); }   // no early return: the back-to-top button below is for every page
+      else {
+        // Anchor the box at section level: climb to the child of the section container, then step back
+        // over the opener marks (tick, eyebrow) so it sits between the intro and the first section.
+        var anchor = heads[0];
+        while (anchor.parentNode && anchor.parentNode !== main &&
+               !(anchor.parentNode.classList && anchor.parentNode.classList.contains("container"))) anchor = anchor.parentNode;
+        var prev = anchor.previousElementSibling;
+        while (prev && prev.classList && (prev.classList.contains("tick") || prev.classList.contains("eyebrow"))) {
+          anchor = prev; prev = anchor.previousElementSibling;
+        }
+        anchor.parentNode.insertBefore(box, anchor);
       }
-      anchor.parentNode.insertBefore(box, anchor);
     }
   }
 
@@ -225,7 +227,7 @@
   btt.innerHTML = "↑";
   btt.hidden = true;
   document.body.appendChild(btt);
-  btt.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+  btt.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); });
   window.addEventListener("scroll", function () { btt.hidden = window.scrollY < 600; }, { passive: true });
 })();
 
@@ -258,9 +260,13 @@
   sync();
   var toggle = document.getElementById("bank-toggle");
   var details = document.getElementById("bank-details");
+  if (!toggle || !details) return;
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", "bank-details");
   toggle.addEventListener("click", function () {
-    details.classList.toggle("open");
-    toggle.textContent = details.classList.contains("open") ? "Bank details below ↓" : "Give by bank transfer";
+    var open = details.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.textContent = open ? "Bank details below ↓" : "Give by bank transfer";
   });
 })();
 
@@ -499,13 +505,14 @@
 
     // tooltip
     var tip = document.querySelector(".map-tip");
+    function esc(s) { return String(s || "").replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
     function showTip(el, x, y) {
       var id = el.id.slice(1), c = data.countries[id];
       if (!c) return;
       var clin = (data.clinical || {})[c.name];
-      tip.innerHTML = "<strong>" + c.name + "</strong><span class=\"status\">" + data.labels[c.status] + "</span><ul>" +
-        c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + u + "\" target=\"_blank\" rel=\"noopener external\">" + orgName(o) + "</a>" : orgName(o)) + "</li>"; }).join("") + "</ul>" +
-        (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + clin.join(", ") + "</p>" : "");
+      tip.innerHTML = "<strong>" + esc(c.name) + "</strong><span class=\"status\">" + esc(data.labels[c.status]) + "</span><ul>" +
+        c.orgs.map(function (o) { var u = orgUrl(o); return "<li>" + (u ? "<a href=\"" + esc(u) + "\" target=\"_blank\" rel=\"noopener external\">" + esc(orgName(o)) + "</a>" : esc(orgName(o))) + "</li>"; }).join("") + "</ul>" +
+        (clin && clin.length ? '<p class="tip-clin">Clinical registry here: ' + esc(clin.join(", ")) + "</p>" : "");
       tip.style.display = "block";
       var r = host.getBoundingClientRect();
       var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);
@@ -520,8 +527,8 @@
     function markerTip(a, x, y) {
       var title = a.querySelector("title") ? a.querySelector("title").textContent : "";
       var parts = title.split(" · "), href = a.getAttribute("href");
-      tip.innerHTML = "<strong>" + parts[0] + "</strong><span class=\"status\">" + (a.parentNode.classList.contains("team") ? "Research team" : "Care centre") + "</span><p style=\"margin:0.3rem 0 0\">" + parts.slice(1).join(" · ") + "</p>" +
-        (href ? "<p style=\"margin:0.3rem 0 0\"><a href=\"" + href + "\"" + (/^https?:/.test(href) ? " target=\"_blank\" rel=\"noopener external\"" : "") + ">" + (a.parentNode.classList.contains("team") ? "Researchers register" : "Website ↗") + "</a></p>" : "");
+      tip.innerHTML = "<strong>" + esc(parts[0]) + "</strong><span class=\"status\">" + (a.parentNode.classList.contains("team") ? "Research team" : "Care centre") + "</span><p style=\"margin:0.3rem 0 0\">" + esc(parts.slice(1).join(" · ")) + "</p>" +
+        (href ? "<p style=\"margin:0.3rem 0 0\"><a href=\"" + esc(href) + "\"" + (/^https?:/.test(href) ? " target=\"_blank\" rel=\"noopener external\"" : "") + ">" + (a.parentNode.classList.contains("team") ? "Researchers register" : "Website ↗") + "</a></p>" : "");
       tip.style.display = "block";
       var r = host.getBoundingClientRect();
       var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);
@@ -551,7 +558,18 @@
       var el = e.target; if (!el.classList || !/st-/.test(el.className.baseVal || "")) return;
       var b = el.getBoundingClientRect(); showTip(el, b.left + b.width / 2, b.top + b.height / 2);
     });
-    svg.addEventListener("focusout", function () { tip.style.display = "none"; });
+    // The countries carry role="button": Enter or Space opens the tooltip and moves into it, so its
+    // association links can be tabbed through; it closes when focus leaves both the map and the tooltip.
+    svg.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var el = e.target; if (!el.classList || !/st-/.test(el.className.baseVal || "")) return;
+      e.preventDefault();
+      var b = el.getBoundingClientRect(); showTip(el, b.left + b.width / 2, b.top + b.height / 2);
+      var first = tip.querySelector("a"); if (first) first.focus();
+    });
+    function leaving(e) { if (!(e.relatedTarget && (tip.contains(e.relatedTarget) || svg.contains(e.relatedTarget)))) tip.style.display = "none"; }
+    svg.addEventListener("focusout", leaving);
+    tip.addEventListener("focusout", leaving);
 
     // region views
     var current = full.slice();

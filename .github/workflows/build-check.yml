@@ -25,5 +25,6 @@ jobs:
             -I '<lastmod>|"date(Published|Modified)"|article:(published|modified)_time|Page updated|Last built' \
             -- docs ':!docs/assets/og' ':!docs/assets/*.pdf' \
           || { echo '::error::docs/ differs from what build-demo.py produces. Run python3 build-demo.py and commit docs/.'; exit 1; }
-          test -z "$(git status --porcelain -- docs ':!docs/assets/og')" \
-          || { echo '::error::the build wrote files that are not committed:'; git status --porcelain -- docs; exit 1; }
+          # files the build wrote that nobody committed (modified files were compared above, dates aside)
+          test -z "$(git ls-files --others --exclude-standard -- docs)" \
+          || { echo '::error::the build wrote files that are not committed:'; git ls-files --others --exclude-standard -- docs; exit 1; }

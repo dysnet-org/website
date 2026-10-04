@@ -1,0 +1,255 @@
+{
+ "_about": "Physical agents on the teratogens register: not substances, so no CAS number. Each pregnancy fact is quoted from its source (ICRP Publications 84 and 103, ACOG Committee Opinion 723, US CDC, Directive 2013/59/Euratom, 10 CFR 20.1208), read 2026-10-04 and checked by two independent readers, one for the quotes against the sources, one for overstatement. Read by tools/enrich-teratogens-entis.py.",
+ "sources": {
+  "icrp": {
+   "label": "ICRP (International Commission on Radiological Protection)",
+   "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+   "citation": "ICRP Publication 84, Pregnancy and Medical Radiation, Ann ICRP 2000;30(1); ICRP Publication 103, Ann ICRP 2007;37(2-4), section 3.4",
+   "authority": "The international body that issues recommendations on protection against ionising radiation, on which EU and national radiation protection law is built."
+  }
+ },
+ "entries": [
+  {
+   "name": "Ionising radiation (X-rays, gamma rays)",
+   "kind": "physical agent",
+   "level": "known",
+   "wiki": "https://en.wikipedia.org/wiki/Ionizing_radiation",
+   "source": {
+    "label": "ICRP Publication 84, Pregnancy and Medical Radiation (2000), and Publication 103 (2007)",
+    "code": "icrp",
+    "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+    "note": "The International Commission on Radiological Protection describes the effects of radiation on the embryo and fetus, among them malformations, microcephaly and intellectual disability, and the dose above which they are expected."
+   },
+   "jurisdictions": {
+    "EU / EEA": "Once a worker declares her pregnancy, the dose to the unborn child must be as low as reasonably achievable and unlikely to exceed 1 mSv for the rest of the pregnancy (Directive 2013/59/Euratom, Article 10).",
+    "United States": "The dose to the embryo or fetus of a declared pregnant worker must not exceed 5 mSv (0.5 rem) over the whole pregnancy (10 CFR 20.1208)."
+   },
+   "pregnancy": {
+    "regulatory": {
+     "text": "Under EU law, once a pregnant worker has told her employer she is pregnant, working conditions must keep the dose to the unborn child as low as reasonably achievable, so that it is unlikely to exceed 1 mSv for the rest of the pregnancy.",
+     "quote": "the equivalent dose to the unborn child is as low as reasonably achievable and unlikely to exceed 1 mSv during at least the remainder of the pregnancy",
+     "source_label": "Council Directive 2013/59/Euratom, Article 10(1), \"Protection of pregnant and breastfeeding workers\"",
+     "source_type": "law",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0059",
+     "id": "CELEX 32013L0059, Art. 10(1); ELI http://data.europa.eu/eli/dir/2013/59/oj",
+     "date": "2013-12-05 (OJ L 13, 17.1.2014)"
+    },
+    "regulatory_us": {
+     "text": "Under US Nuclear Regulatory Commission rules, once a radiation worker has formally declared her pregnancy, her employer must keep the dose to the embryo or fetus from her occupational exposure under 0.5 rem (5 mSv) for the whole pregnancy.",
+     "quote": "The licensee shall ensure that the dose equivalent to the embryo/fetus during the entire pregnancy, due to the occupational exposure of a declared pregnant woman, does not exceed 0.5 rem (5 mSv).",
+     "source_label": "10 CFR 20.1208(a), \"Dose equivalent to an embryo/fetus\"",
+     "source_type": "regulator",
+     "url": "https://www.ecfr.gov/current/title-10/chapter-I/part-20/subpart-C/section-20.1208",
+     "id": "10 CFR 20.1208",
+     "date": "56 FR 23396, May 21, 1991, as amended 63 FR 39482, July 23, 1998"
+    },
+    "window": [
+     {
+      "text": "ICRP explains that in the earliest days after conception, when the embryo has very few cells, radiation damage tends to be all-or-none: it either kills the conceptus (failure to implant) or leaves it with essentially no increased rate of malformation.",
+      "quote": "When the number of cells in the conceptus is small and their nature is not yet specialised, the effect of damage to these cells is most likely to take the form of failure to implant or of an undetectable death of the conceptus; malformations are unlikely or very rare.",
+      "source_label": "ICRP Publication 84, paragraph (24)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     },
+     {
+      "text": "ACOG states that, based on atomic-bomb-survivor data, the brain is most vulnerable to radiation-induced harm when exposure occurs at 8 to 15 weeks of gestation.",
+      "quote": "the risk of central nervous system effects is greatest with exposure at 8–15 weeks of gestation",
+      "source_label": "ACOG Committee Opinion No. 723, section \"Ionizing Radiation Including X-rays\"",
+      "source_type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+      "id": "ACOG Committee Opinion No. 723",
+      "date": "October 2017 (reaffirmed 2026)"
+     }
+    ],
+    "dose": [
+     {
+      "text": "ICRP's 2007 recommendations conclude, based on animal data, that there is a true dose threshold of about 100 mGy for radiation-induced malformations, so malformation risk is not expected well below that dose.",
+      "quote": "On the basis of animal data it is judged that there is a true dose threshold of around 100 mGy for the induction of malformations; therefore, for practical purposes, the Commission judges that risks of malformation after in-utero exposure to doses well below 100 mGy are not expected.",
+      "source_label": "ICRP Publication 103, Section 3.4 \"Radiation effects in the embryo and fetus\", paragraph (95)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_37_2-4",
+      "id": "ICRP Publication 103",
+      "date": "2007"
+     },
+     {
+      "text": "ACOG states that no increase in anomalies, growth restriction, or pregnancy loss has been reported at fetal radiation doses under 50 mGy, which is already above what diagnostic imaging typically delivers.",
+      "quote": "Fetal risk of anomalies, growth restriction, or abortion have not been reported with radiation exposure of less than 50 mGy, a level above the range of exposure for diagnostic procedures",
+      "source_label": "ACOG Committee Opinion No. 723, section \"Ionizing Radiation Including X-rays\"",
+      "source_type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+      "id": "ACOG Committee Opinion No. 723",
+      "date": "October 2017 (reaffirmed 2026)"
+     }
+    ],
+    "effects": [
+     {
+      "text": "ACOG lists growth restriction, microcephaly, and intellectual disability as the most common harms seen in humans after high-dose radiation exposure in pregnancy.",
+      "quote": "In humans, growth restriction, microcephaly, and intellectual disability are the most common adverse effects from high-dose radiation exposure",
+      "source_label": "ACOG Committee Opinion No. 723, section \"Ionizing Radiation Including X-rays\"",
+      "source_type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+      "id": "ACOG Committee Opinion No. 723",
+      "date": "October 2017 (reaffirmed 2026)"
+     },
+     {
+      "text": "ICRP describes that, above a practical dose threshold, cell-killing effects of radiation in pregnancy can include fetal death, nervous system abnormalities, cataracts, growth retardation, malformations, and behavioural disorders.",
+      "quote": "damage from ionising radiation during pregnancy that results in cell killing can cause a wide range of effects, including lethality, central nervous system abnormalities, cataracts, growth retardation, malformations, and even behavioural disorders",
+      "source_label": "ICRP Publication 84, paragraph (23)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     }
+    ],
+    "other_effects": [
+     {
+      "text": "ICRP notes that the largest case-control studies of in-utero diagnostic radiation exposure found evidence of an increased risk of childhood cancer of all types.",
+      "quote": "The largest case-control studies of in-utero medical irradiation provided evidence of increased childhood cancer of all types.",
+      "source_label": "ICRP Publication 103, Section 3.4 \"Radiation effects in the embryo and fetus\", paragraph (97)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_37_2-4",
+      "id": "ICRP Publication 103",
+      "date": "2007"
+     },
+     {
+      "text": "CDC states that in-utero radiation exposure may raise the child's cancer risk, particularly at doses above 0.1 Gy, which are far higher than typical diagnostic imaging doses.",
+      "quote": "Radiation exposure to an embryo/fetus may increase the risk of cancer in the offspring, especially at radiation doses > 0.1 Gy, which are well above typical doses received in diagnostic radiology.",
+      "source_label": "CDC, \"Radiation and Pregnancy: Information for Clinicians\", section \"Carcinogenic effects of prenatal radiation exposure\"",
+      "source_type": "regulator",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/pregnancy.html",
+      "id": "CDC Radiation Emergencies - Clinical Guidance: Pregnancy",
+      "date": "page reviewed January 31, 2025"
+     }
+    ],
+    "absolute_risk": [
+     {
+      "text": "ICRP gives a specific figure: at a fetal dose of 1 Gy (1,000 mGy) received during the 8-15 week window, about 40% of exposed fetuses would be expected to show severe mental retardation.",
+      "quote": "At fetal doses of 1,000 mGy during 8-15 weeks gestational age, the probability of this effect is about 40%.",
+      "source_label": "ICRP Publication 84, paragraph (28)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     },
+     {
+      "text": "ACOG gives a figure for childhood leukaemia risk: a fetal dose of 10-20 mGy may raise the leukaemia risk by a factor of 1.5 to 2 above the roughly 1-in-3,000 background rate.",
+      "quote": "A 10–20 mGy fetal exposure may increase the risk of leukemia by a factor of 1.5–2.0 over a background rate of approximately 1 in 3,000",
+      "source_label": "ACOG Committee Opinion No. 723, section \"Ionizing Radiation Including X-rays\"",
+      "source_type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+      "id": "ACOG Committee Opinion No. 723",
+      "date": "October 2017 (reaffirmed 2026)"
+     }
+    ],
+    "monitoring": [
+     {
+      "text": "ICRP states that a fetal dose below 100 mGy is not, by itself, a medical reason to end a pregnancy.",
+      "quote": "Fetal doses below 100 mGy should not be considered a reason for terminating a pregnancy.",
+      "source_label": "ICRP Publication 84, paragraph (151), \"Consideration of termination of pregnancy after radiation exposure\"",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     },
+     {
+      "text": "CDC advises clinicians to turn to hospital medical and health physicists for expert help in estimating the radiation dose actually received by the fetus.",
+      "quote": "Hospital medical physicists and health physicists are good resources for expertise in estimating the radiation dose to the fetus.",
+      "source_label": "CDC, \"Radiation and Pregnancy: Information for Clinicians\", section \"Estimating the radiation dose to the embryo or fetus\"",
+      "source_type": "regulator",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/pregnancy.html",
+      "id": "CDC Radiation Emergencies - Clinical Guidance: Pregnancy",
+      "date": "page reviewed January 31, 2025"
+     }
+    ],
+    "diagnostic_doses": [
+     {
+      "text": "ICRP notes that fetal doses from ordinary diagnostic radiology are usually well under 50 mGy, far below the threshold of concern, which is why pregnancy testing is not routinely required beforehand.",
+      "quote": "Since fetal doses are usually well below 50 mGy in diagnostic radiology, pregnancy tests are not usually done.",
+      "source_label": "ICRP Publication 84, paragraph (56)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     },
+     {
+      "text": "ACOG gives a concrete example: CT pelvimetry can deliver up to 50 mGy to the fetus, but a low-exposure technique can bring this down to about 2.5 mGy while still being diagnostic.",
+      "quote": "CT pelvimetry exposure can be as high as 50 mGy but can be reduced to approximately 2.5 mGy (including fetal gonad exposure) by using a low-exposure technique that is adequate for diagnosis.",
+      "source_label": "ACOG Committee Opinion No. 723, section \"Computed Tomography\"",
+      "source_type": "guideline",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+      "id": "ACOG Committee Opinion No. 723",
+      "date": "October 2017 (reaffirmed 2026)"
+     }
+    ],
+    "not_ionising": {
+     "text": "ACOG states that ultrasound and MRI are not associated with risk to the fetus and are the preferred imaging methods in pregnancy, to be used when they can answer the clinical question.",
+     "quote": "Ultrasonography and magnetic resonance imaging are not associated with risk and are the imaging techniques of choice for the pregnant patient, but they should be used prudently and only when use is expected to answer a relevant clinical question or otherwise provide medical benefit to the patient.",
+     "source_label": "ACOG Committee Opinion No. 723, Abstract / Recommendations",
+     "source_type": "guideline",
+     "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
+     "id": "ACOG Committee Opinion No. 723",
+     "date": "October 2017 (reaffirmed 2026)"
+    },
+    "evidence_base": [
+     {
+      "text": "ICRP's human data on radiation effects on fetal brain development come from children who were exposed in utero during the atomic bombings of Hiroshima and Nagasaki.",
+      "quote": "Values of intelligence quotient (IQ) lower than expected have been reported in some children exposed in utero at Hiroshima and Nagasaki.",
+      "source_label": "ICRP Publication 84, paragraph (27)",
+      "source_type": "international body",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
+      "id": "ICRP Publication 84",
+      "date": "2000"
+     },
+     {
+      "text": "CDC confirms that the main human evidence for cancer risk from prenatal radiation exposure comes from the long-running lifespan study of Japanese atomic bomb survivors.",
+      "quote": "The primary data for the risk of developing cancer from prenatal exposure to radiation come from the lifespan study of the Japanese atomic bomb (A-bomb) survivors",
+      "source_label": "CDC, \"Radiation and Pregnancy: Information for Clinicians\", section \"Carcinogenic effects of prenatal radiation exposure\"",
+      "source_type": "regulator",
+      "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/pregnancy.html",
+      "id": "CDC Radiation Emergencies - Clinical Guidance: Pregnancy",
+      "date": "page reviewed January 31, 2025"
+     }
+    ]
+   },
+   "also_known_as": {
+    "en": [
+     "X-rays",
+     "gamma rays",
+     "radiography",
+     "CT scan",
+     "computed tomography",
+     "fluoroscopy",
+     "mammography",
+     "nuclear medicine",
+     "radiotherapy"
+    ],
+    "fr": [
+     "rayonnements ionisants",
+     "rayons X",
+     "radiographie",
+     "scanner",
+     "radiothérapie",
+     "médecine nucléaire"
+    ],
+    "de": [
+     "ionisierende Strahlung",
+     "Röntgenstrahlen",
+     "Computertomographie",
+     "Strahlentherapie"
+    ],
+    "es": [
+     "radiación ionizante",
+     "rayos X",
+     "radioterapia"
+    ],
+    "it": [
+     "radiazioni ionizzanti",
+     "raggi X",
+     "radioterapia"
+    ]
+   }
+  }
+ ]
+}

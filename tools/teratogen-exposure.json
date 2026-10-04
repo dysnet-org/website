@@ -1282,6 +1282,25 @@
      "basis": "The Philippine FDA warns that tretinoin in such creams may harm the developing fetus."
     }
    }
+  },
+  "Ionising radiation (X-rays, gamma rays)": {
+   "tags": [
+    "medicine",
+    "work"
+   ],
+   "why": "Met in medical imaging and radiotherapy, and at work in radiology, nuclear medicine and the nuclear industry.",
+   "routes": {
+    "medicine": {
+     "why": "Diagnostic X-rays usually give the unborn child well under 50 mGy; the risk lies with high doses such as radiotherapy.",
+     "source": "ICRP Publication 84, paragraph (56)",
+     "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1"
+    },
+    "work": {
+     "why": "EU law keeps the dose to the unborn child of a worker who declares her pregnancy unlikely to exceed 1 mSv.",
+     "source": "Directive 2013/59/Euratom, Article 10",
+     "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0059"
+    }
+   }
   }
  },
  "doses": {

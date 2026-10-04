@@ -1007,6 +1007,7 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .tera-jump { margin: 0.9rem 0 1.1rem; }
 .tera-notice { margin: 0.9rem 0 0; padding: 0.6rem 0.85rem; border-left: 4px solid #d97706; background: #fef3c7; color: #422006; border-radius: 0 0.35rem 0.35rem 0; }
 .tera-notice a { color: #92400e; }
+.tera-kind { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; border: 1px solid #94a3b8; border-radius: 0.3rem; font-size: 0.75rem; color: #334155; vertical-align: middle; }
 .tera-names { margin: 0.35rem 0 0; font-size: var(--text-small); color: var(--dys-ink); }
 .tera-names-h { font-weight: 700; color: var(--dys-purple-text); margin-right: 0.35rem; }
 .tera-names .fine { color: var(--dys-muted); }

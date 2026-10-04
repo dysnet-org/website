@@ -26,10 +26,11 @@ HERE = pathlib.Path(__file__).parent
 TERA = HERE / "teratogens.json"
 FACTS = HERE / "teratogen-medicine-facts.json"
 NAMES = HERE / "teratogen-medicine-names.json"   # tools/build-teratogen-names.py: RxNorm, EMA, ANSM
-TIS = HERE / "teratogen-tis-links.json"           # tools/build-teratogen-tis-links.py: CRAT, Embryotox, bumps
+TIS = HERE / "teratogen-tis-links.json"
+PHYS = HERE / "teratogen-physical-agents.json"     # ionising radiation, with its facts quoted from ICRP, ACOG, CDC and the law           # tools/build-teratogen-tis-links.py: CRAT, Embryotox, bumps
 RANK = {"known": 0, "presumed": 1, "suspected": 2}
 # what a pharmacist advising a pregnant woman needs, each field a quoted fact or absent
-PREG_FIELDS = ("regulatory", "window", "dose", "effects", "other_effects", "absolute_risk", "before_after", "paternal", "monitoring", "evidence_base")
+PREG_FIELDS = ("regulatory", "regulatory_us", "window", "dose", "diagnostic_doses", "effects", "other_effects", "absolute_risk", "before_after", "paternal", "monitoring", "not_ionising", "evidence_base")
 
 
 # ATC groups of medicines applied or acting locally, and the route they stand for; every other code is systemic use
@@ -82,6 +83,24 @@ def main():
             e["pregnancy"]["documented_as"] = rec["documented_as"]
     for name, rec in facts.get("cosmetics", {}).items():
         by_name[name]["cosmetic"] = rec
+    # physical agents (ionising radiation): not substances, so no CAS number; each fact quoted from its source
+    phys = json.loads(PHYS.read_text(encoding="utf-8")) if PHYS.exists() else {"entries": [], "sources": {}}
+    for x in phys["entries"]:
+        e = by_name.get(x["name"])
+        if not e:
+            e = {"name": x["name"], "cas": "", "ec": "", "sources": [], "status": {}, "jurisdictions": {}, "wiki": x.get("wiki", "")}
+            data["entries"].append(e)
+            by_name[x["name"]] = e
+        e["agent"] = "physical"          # not "kind": tools/enrich-teratogens-exposure.py clears that old field
+        e["also_known_as"] = x.get("also_known_as", {})
+        e["sources"] = [s for s in e["sources"] if s["code"] != x["source"]["code"]] + [x["source"]]
+        e["status"][x["source"]["code"]] = x["level"]
+        e["jurisdictions"] = x.get("jurisdictions", {})
+        e["pregnancy"] = x["pregnancy"]
+        if x.get("wiki"):
+            e["wiki"] = x["wiki"]
+    for code, v in phys.get("sources", {}).items():
+        data["sources"][code] = v
     # the generic and brand names a medicine is sold under, so it can be found by the name on the box
     names = json.loads(NAMES.read_text(encoding="utf-8")) if NAMES.exists() else {"entries": {}}
     for e in data["entries"]:
@@ -138,6 +157,8 @@ def main():
     c["total"] = len(data["entries"])
     c["entis"] = len(facts.get("entis_list", []))
     c["pregnancy_documented"] = len(facts["medicines"])
+    c["icrp"] = sum(1 for e in data["entries"] if "icrp" in e["status"])
+    c["physical_agents"] = sum(1 for e in data["entries"] if e.get("agent") == "physical")
     c["cosmetic_documented"] = len(facts.get("cosmetics", {}))
     c["entis_added"] = sum(1 for n in facts["new_entries"])
     c["pregnancy_facts"] = sum(1 for r in facts["medicines"].values() for f in PREG_FIELDS if r.get(f))

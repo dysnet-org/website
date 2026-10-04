@@ -668,7 +668,7 @@
     "quote_language": "fr"
    },
    "effects": {
-    "text": "The US label cites literature reports linking first-trimester misoprostol with skull defects, cranial nerve palsies, facial malformations and limb defects, and warns it can cause abortion and premature birth.",
+    "text": "The US label cites literature reports linking first-trimester misoprostol with skull defects, cranial nerve palsies, facial malformations and limb defects, and warns it can cause miscarriage and premature birth.",
     "quote": "Several reports in the literature associate the use of misoprostol during the first trimester of pregnancy with skull defects, cranial nerve palsies, facial malformations, and limb defects.",
     "source_label": "US FDA label, Cytotec (Pfizer), Pregnancy: Teratogenic effects, and boxed warning",
     "source_type": "regulator",
@@ -677,7 +677,7 @@
     "date": "2026-06-04"
    },
    "absolute_risk": {
-    "text": "ANSM says pregnancies that continued after a failed abortion with mifepristone and misoprostol, or misoprostol alone, were associated with a threefold higher malformation risk, against about 2 in 100 in controls.",
+    "text": "ANSM says that when a pregnancy continued after exposure to mifepristone and misoprostol, or misoprostol alone, the risk of malformation was three times higher, against about 2 in 100 in controls.",
     "quote": "a été associé à une augmentation par 3 du risque de malformations congénitales dans le cas de grossesses évolutives exposées à la mifépristone et au misoprostol ou au misoprostol seul, comparé au groupe contrôle (environ 2%)",
     "source_label": "ANSM, Gymiso 200 microgrammes (misoprostol) RCP section 4.6, updated 23/12/2025",
     "source_type": "regulator",
@@ -696,8 +696,8 @@
     "date": "2026-06-04"
    },
    "other_effects": {
-    "text": "Beyond birth defects, the US label warns misoprostol in pregnancy can cause abortion, premature birth or uterine rupture, and, in obstetric use, fetal bradycardia and fetal death have been reported.",
-    "quote": "CYTOTEC (MISOPROSTOL) ADMINISTRATION TO WOMEN WHO ARE PREGNANT CAN CAUSE BIRTH DEFECTS, ABORTION, PREMATURE BIRTH OR UTERINE RUPTURE.",
+    "text": "Beyond birth defects, the US label warns misoprostol in pregnancy can cause miscarriage, premature birth or uterine rupture, and, in obstetric use, fetal bradycardia and fetal death have been reported.",
+    "quote": "CYTOTEC (MISOPROSTOL) ADMINISTRATION TO WOMEN WHO ARE PREGNANT CAN CAUSE BIRTH DEFECTS, [MISCARRIAGE], PREMATURE BIRTH OR UTERINE RUPTURE.",
     "source_label": "US FDA label, Cytotec (Pfizer), boxed warning and Labor and delivery",
     "source_type": "regulator",
     "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:%22CYTOTEC%22&limit=1",
@@ -714,7 +714,7 @@
     "date": "2026-06-04"
    },
    "monitoring": {
-    "text": "ANSM says that if a woman continues the pregnancy after a failed abortion, a specialised centre should follow it with prenatal ultrasound paying particular attention to the limbs and head.",
+    "text": "If the pregnancy continues after exposure, ANSM says a specialised centre should follow it with prenatal ultrasound paying particular attention to the limbs and head. Consult your healthcare professional.",
     "quote": "Si la patiente désire poursuivre sa grossesse, un suivi attentif de la grossesse avec échographie prénatale portant une attention particulière aux membres et à la tête, doit être mise en place dans un centre spécialisé.",
     "source_label": "ANSM, RCP GYMISO 200 microgrammes comprimé (misoprostol), section 4.6, updated 23/12/2025",
     "source_type": "regulator",
@@ -1042,8 +1042,8 @@
     "quote_language": "fr"
    },
    "other_effects": {
-    "text": "Women exposed to DES before birth had higher cumulative risks than unexposed women of infertility (33.3% vs 15.5%), spontaneous abortion (50.3% vs 38.6%) and preterm delivery (53.3% vs 17.8%), assessed to age 45.",
-    "quote": "for infertility, 33.3% vs. 15.5% (hazard ratio, 2.37; 95% confidence interval [CI], 2.05 to 2.75); spontaneous abortion, 50.3% vs. 38.6% (hazard ratio, 1.64; 95% CI, 1.42 to 1.88); preterm delivery, 53.3% vs. 17.8%",
+    "text": "Women exposed to DES before birth had higher cumulative risks than unexposed women of infertility (33.3% vs 15.5%), miscarriage (50.3% vs 38.6%) and preterm delivery (53.3% vs 17.8%), assessed to age 45.",
+    "quote": "for infertility, 33.3% vs. 15.5% (hazard ratio, 2.37; 95% confidence interval [CI], 2.05 to 2.75); [miscarriage], 50.3% vs. 38.6% (hazard ratio, 1.64; 95% CI, 1.42 to 1.88); preterm delivery, 53.3% vs. 17.8%",
     "source_label": "Hoover RN et al. Adverse health outcomes in women exposed in utero to diethylstilbestrol (three pooled studies initiated in the 1970s). N Engl J Med 2011;365(14):1304-14, PubMed abstract, Results",
     "source_type": "registry or cohort",
     "url": "https://pubmed.ncbi.nlm.nih.gov/21991952/",
@@ -1258,7 +1258,7 @@
    "evidence": "human and animal",
    "window": {
     "text": "The US label states that methotrexate exposure in the first trimester, counted by trimester of pregnancy, is associated with more miscarriages and multiple developmental problems.",
-    "quote": "Methotrexate exposure during the first trimester of pregnancy is associated with an increased incidence of spontaneous abortions and multiple adverse developmental outcomes",
+    "quote": "Methotrexate exposure during the first trimester of pregnancy is associated with an increased incidence of [miscarriages] and multiple adverse developmental outcomes",
     "source_label": "US FDA label, Trexall (methotrexate) tablets, section 8.1 Pregnancy (read via openFDA)",
     "source_type": "regulator",
     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
@@ -1267,7 +1267,7 @@
    },
    "dose": {
     "text": "The EMA says data are insufficient for exposure in pregnancy above 30 mg a week, but higher rates of miscarriage and malformations are expected, particularly at doses used to treat cancer.",
-    "quote": "Insufficient data is available for methotrexate exposure during pregnancy higher than 30 mg (15 ml)/week, but higher rates of spontaneous abortions and congenital malformations are expected, in particular at doses commonly used in oncologic indications",
+    "quote": "Insufficient data is available for methotrexate exposure during pregnancy higher than 30 mg (15 ml)/week, but higher rates of [miscarriages] and congenital malformations are expected, in particular at doses commonly used in oncologic indications",
     "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6",
     "source_type": "regulator",
     "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",
@@ -1438,8 +1438,8 @@
     "date": "2026-05-07"
    },
    "other_effects": {
-    "text": "Beyond malformations, spontaneous abortion has been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, against 12 to 33% in solid organ transplant patients on other immunosuppressants.",
-    "quote": "Spontaneous abortions have been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, compared to a reported rate of between 12 and 33% in solid organ transplant patients treated with immunosuppressants other than mycophenolate mofetil.",
+    "text": "Beyond malformations, miscarriage has been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, against 12 to 33% in solid organ transplant patients on other immunosuppressants.",
+    "quote": "[Miscarriages] have been reported in 45 to 49% of pregnant women exposed to mycophenolate mofetil, compared to a reported rate of between 12 and 33% in solid organ transplant patients treated with immunosuppressants other than mycophenolate mofetil.",
     "source_label": "EMA product information, CellCept (mycophenolate mofetil), SmPC section 4.6, subsection Pregnancy (EN product information last updated 07/05/2026)",
     "source_type": "regulator",
     "url": "https://www.ema.europa.eu/en/documents/product-information/cellcept-epar-product-information_en.pdf",
@@ -1708,7 +1708,7 @@
    },
    "other_effects": {
     "text": "The US label reports cases of IQ below 85, with or without other abnormalities, in children exposed before birth, and an increased risk of miscarriage and premature birth.",
-    "quote": "Cases of IQ scores less than 85 with or without other abnormalities have been reported in children exposed in utero to isotretinoin. An increased risk of spontaneous abortion and premature births have been reported with isotretinoin exposure during pregnancy.",
+    "quote": "Cases of IQ scores less than 85 with or without other abnormalities have been reported in children exposed in utero to isotretinoin. An increased risk of [miscarriage] and premature births have been reported with isotretinoin exposure during pregnancy.",
     "source_label": "US FDA label, ABSORICA / ABSORICA LD (Sun Pharmaceutical), section 8.1 Human Data, via openFDA (SPL version 21)",
     "source_type": "regulator",
     "url": "https://api.fda.gov/drug/label.json?search=set_id:%223ef0cff8-19c1-4441-b780-fca6c7ee1615%22&limit=1",
@@ -1878,8 +1878,8 @@
     "quote_language": "fr"
    },
    "other_effects": {
-    "text": "Canada's product monograph states that pregnancy during alitretinoin treatment or within one month after stopping carries a risk of malformation and an increased risk of spontaneous abortion.",
-    "quote": "Pregnancy occurring during treatment with HANZEMA and for one month after its discontinuation, carries the risk of fetal malformation and the increased risk of spontaneous abortion",
+    "text": "Canada's product monograph states that pregnancy during alitretinoin treatment or within one month after stopping carries a risk of malformation and an increased risk of miscarriage.",
+    "quote": "Pregnancy occurring during treatment with HANZEMA and for one month after its discontinuation, carries the risk of fetal malformation and the increased risk of [miscarriage]",
     "source_label": "Health Canada product monograph, HANZEMA (alitretinoin capsules, Dr. Reddy's), Warnings and Precautions, Pregnancy",
     "source_type": "regulator",
     "url": "https://pdf.hres.ca/dpd_pm/00067982.PDF",
@@ -2071,8 +2071,8 @@
     "date": "2026-08-20"
    },
    "other_effects": {
-    "text": "The US label says exposure to retinoids, the class tretinoin belongs to, in human pregnancy increases the risk of spontaneous abortion and premature birth as well as major malformations.",
-    "quote": "Tretinoin capsules are a retinoid and there is an increased risk of major congenital malformations, spontaneous abortions and premature births following exposure to retinoids during pregnancy in humans.",
+    "text": "The US label says exposure to retinoids, the class tretinoin belongs to, in human pregnancy increases the risk of miscarriage and premature birth as well as major malformations.",
+    "quote": "Tretinoin capsules are a retinoid and there is an increased risk of major congenital malformations, [miscarriages] and premature births following exposure to retinoids during pregnancy in humans.",
     "source_label": "US FDA label, tretinoin capsules (Par Health USA), section 8.1 Pregnancy, Risk Summary, via openFDA (DailyMed SPL version 20)",
     "source_type": "regulator",
     "url": "https://api.fda.gov/drug/label.json?search=set_id:%229c4ae9d9-c2a0-4995-a27a-e3f0f0284db9%22&limit=1",
@@ -4403,7 +4403,7 @@
    },
    "absolute_risk": {
     "text": "In the Gilenya pregnancy registry (2011-2024), 8.2% (EUROCAT) or 10.9% (MACDP) of 147 first-trimester-exposed outcomes had major birth defects, against a 2% to 4% US background.",
-    "quote": "the rate of major birth defects among 147 live births, stillbirths, or terminations of pregnancy due to fetal anomalies from women who were administered fingolimod during the first trimester was 8.2% (95% CI: 4.3-13.8)",
+    "quote": "the rate of major birth defects among 147 live births, stillbirths, or [other pregnancies with fetal anomalies] from women who were administered fingolimod during the first trimester was 8.2% (95% CI: 4.3-13.8)",
     "source_label": "US FDA label, Gilenya (Novartis), effective 22 July 2026, read via openFDA, section 8.1 Pregnancy, Human Data (Gilenya Pregnancy Registry 2011-2024)",
     "source_type": "regulator",
     "url": "https://api.fda.gov/drug/label.json?search=set_id:%22cc9e1c8c-0e2b-44e2-878b-27057f786be9%22&limit=1",
@@ -4920,7 +4920,7 @@
    },
    "absolute_risk": {
     "text": "The final 2013 NTP systematic review found an apparent major malformation rate of 18% (7/40) after first-trimester cyclophosphamide exposure in published cases, against 3% in the US general population.",
-    "quote": "the apparent rate of major malformations following exposure to cyclophosphamide during the first trimester was 18% (7/40 conceptuses, based on 36 liveborn infants and examination of the fetuses of 2 stillbirths and 2 induced abortions)",
+    "quote": "the apparent rate of major malformations following exposure to cyclophosphamide during the first trimester was 18% (7/40 conceptuses, based on 36 liveborn infants and examination of the fetuses of 2 stillbirths and [2 other pregnancies])",
     "source_label": "US National Toxicology Program (NIEHS), NTP Monograph on Developmental Effects and Pregnancy Outcomes Associated with Cancer Chemotherapy Use During Pregnancy, section 5.11 (final monograph, supersedes the prepublication copy)",
     "source_type": "systematic review",
     "url": "https://ntp.niehs.nih.gov/sites/default/files/ntp/ohat/cancer_chemo_preg/chemopregnancy_monofinal_508.pdf",
@@ -5008,7 +5008,7 @@
    },
    "absolute_risk": {
     "text": "The final 2013 NTP systematic review found an apparent major malformation rate of 18% (7/40) after first-trimester cyclophosphamide exposure in published cases, against 3% in the US general population.",
-    "quote": "the apparent rate of major malformations following exposure to cyclophosphamide during the first trimester was 18% (7/40 conceptuses, based on 36 liveborn infants and examination of the fetuses of 2 stillbirths and 2 induced abortions)",
+    "quote": "the apparent rate of major malformations following exposure to cyclophosphamide during the first trimester was 18% (7/40 conceptuses, based on 36 liveborn infants and examination of the fetuses of 2 stillbirths and [2 other pregnancies])",
     "source_label": "US National Toxicology Program (NIEHS), NTP Monograph on Developmental Effects and Pregnancy Outcomes Associated with Cancer Chemotherapy Use During Pregnancy, section 5.11 (final monograph, supersedes the prepublication copy)",
     "source_type": "systematic review",
     "url": "https://ntp.niehs.nih.gov/sites/default/files/ntp/ohat/cancer_chemo_preg/chemopregnancy_monofinal_508.pdf",
@@ -5095,7 +5095,7 @@
    },
    "absolute_risk": {
     "text": "The final 2013 NTP systematic review reports an apparent rate of major malformations likely attributable to first-trimester fluorouracil exposure of 31% (4/13) in published cases, against 3% in the US general population.",
-    "quote": "the apparent rate of major malformations likely attributable to exposure to 5-fluorouracil in the first trimester was 31% (4/13 conceptuses, based on 10 liveborn infants and examination of the fetuses of 2 induced abortions and 1 stillbirth)",
+    "quote": "the apparent rate of major malformations likely attributable to exposure to 5-fluorouracil in the first trimester was 31% (4/13 conceptuses, based on 10 liveborn infants and examination of the fetuses of [2 other pregnancies] and 1 stillbirth)",
     "source_label": "US National Toxicology Program (NIEHS), NTP Monograph on Developmental Effects and Pregnancy Outcomes Associated with Cancer Chemotherapy Use During Pregnancy, section 5.2.4 (final monograph, supersedes the prepublication copy)",
     "source_type": "systematic review",
     "url": "https://ntp.niehs.nih.gov/sites/default/files/ntp/ohat/cancer_chemo_preg/chemopregnancy_monofinal_508.pdf",
@@ -5783,7 +5783,7 @@
    "evidence": "human and animal",
    "window": {
     "text": "The US label states that methotrexate exposure in the first trimester, counted by trimester of pregnancy, is associated with more miscarriages and multiple developmental problems.",
-    "quote": "Methotrexate exposure during the first trimester of pregnancy is associated with an increased incidence of spontaneous abortions and multiple adverse developmental outcomes",
+    "quote": "Methotrexate exposure during the first trimester of pregnancy is associated with an increased incidence of [miscarriages] and multiple adverse developmental outcomes",
     "source_label": "US FDA label, Trexall (methotrexate) tablets, section 8.1 Pregnancy (read via openFDA)",
     "source_type": "regulator",
     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e942f8db-510f-44d6-acb5-b822196f5e8c",
@@ -5792,7 +5792,7 @@
    },
    "dose": {
     "text": "The EMA says data are insufficient for exposure in pregnancy above 30 mg a week, but higher rates of miscarriage and malformations are expected, particularly at doses used to treat cancer.",
-    "quote": "Insufficient data is available for methotrexate exposure during pregnancy higher than 30 mg (15 ml)/week, but higher rates of spontaneous abortions and congenital malformations are expected, in particular at doses commonly used in oncologic indications",
+    "quote": "Insufficient data is available for methotrexate exposure during pregnancy higher than 30 mg (15 ml)/week, but higher rates of [miscarriages] and congenital malformations are expected, in particular at doses commonly used in oncologic indications",
     "source_label": "EMA, Jylamvo (methotrexate) EPAR product information, SmPC section 4.6",
     "source_type": "regulator",
     "url": "https://www.ema.europa.eu/en/documents/product-information/jylamvo-epar-product-information_en.pdf",

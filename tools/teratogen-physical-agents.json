@@ -75,7 +75,7 @@
      },
      {
       "text": "ACOG states that no increase in anomalies, growth restriction, or pregnancy loss has been reported at fetal radiation doses under 50 mGy, which is already above what diagnostic imaging typically delivers.",
-      "quote": "Fetal risk of anomalies, growth restriction, or abortion have not been reported with radiation exposure of less than 50 mGy, a level above the range of exposure for diagnostic procedures",
+      "quote": "Fetal risk of anomalies, growth restriction, or [pregnancy loss] have not been reported with radiation exposure of less than 50 mGy, a level above the range of exposure for diagnostic procedures",
       "source_label": "ACOG Committee Opinion No. 723, section \"Ionizing Radiation Including X-rays\"",
       "source_type": "guideline",
       "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/10/guidelines-for-diagnostic-imaging-during-pregnancy-and-lactation",
@@ -143,26 +143,15 @@
       "date": "October 2017 (reaffirmed 2026)"
      }
     ],
-    "monitoring": [
-     {
-      "text": "ICRP states that a fetal dose below 100 mGy is not, by itself, a medical reason to end a pregnancy.",
-      "quote": "Fetal doses below 100 mGy should not be considered a reason for terminating a pregnancy.",
-      "source_label": "ICRP Publication 84, paragraph (151), \"Consideration of termination of pregnancy after radiation exposure\"",
-      "source_type": "international body",
-      "url": "https://journals.sagepub.com/doi/pdf/10.1177/ANIB_30_1",
-      "id": "ICRP Publication 84",
-      "date": "2000"
-     },
-     {
-      "text": "CDC advises clinicians to turn to hospital medical and health physicists for expert help in estimating the radiation dose actually received by the fetus.",
-      "quote": "Hospital medical physicists and health physicists are good resources for expertise in estimating the radiation dose to the fetus.",
-      "source_label": "CDC, \"Radiation and Pregnancy: Information for Clinicians\", section \"Estimating the radiation dose to the embryo or fetus\"",
-      "source_type": "regulator",
-      "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/pregnancy.html",
-      "id": "CDC Radiation Emergencies - Clinical Guidance: Pregnancy",
-      "date": "page reviewed January 31, 2025"
-     }
-    ],
+    "monitoring": {
+     "text": "If exposed, consult your healthcare professional. CDC says hospital medical physicists and health physicists can estimate the dose the unborn child received.",
+     "quote": "Hospital medical physicists and health physicists are good resources for expertise in estimating the radiation dose to the fetus.",
+     "source_label": "CDC, \"Radiation and Pregnancy: Information for Clinicians\", section \"Estimating the radiation dose to the embryo or fetus\"",
+     "source_type": "regulator",
+     "url": "https://www.cdc.gov/radiation-emergencies/hcp/clinical-guidance/pregnancy.html",
+     "id": "CDC Radiation Emergencies - Clinical Guidance: Pregnancy",
+     "date": "page reviewed January 31, 2025"
+    },
     "diagnostic_doses": [
      {
       "text": "ICRP notes that fetal doses from ordinary diagnostic radiology are usually well under 50 mGy, far below the threshold of concern, which is why pregnancy testing is not routinely required beforehand.",

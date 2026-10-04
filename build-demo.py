@@ -2337,7 +2337,7 @@ PAGES["/knowledge/registries/"] = {
     <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>What the network is, and what it misses <span class="badge live">since the 1990s</span></h3>
-        <p>By the 2009 data the national hospital-based system monitored over 1.3 million births, more than 8 per cent of all births in China, and 30 provincial hospital-based programmes covered a further 3.6 million, about 22 per cent. Its own authors set out the limits plainly: a short ascertainment period misses internal anomalies, inherited metabolic disease, and any malformed fetus aborted before the 28th week, and the absence of baseline data limits what the surveillance can say about causes. Those are the same limits that make a family-declared registry worth building beside it rather than instead of it.</p>
+        <p>By the 2009 data the national hospital-based system monitored over 1.3 million births, more than 8 per cent of all births in China, and 30 provincial hospital-based programmes covered a further 3.6 million, about 22 per cent. Its own authors set out the limits plainly: a short ascertainment period misses internal anomalies, inherited metabolic disease, and any malformation in a pregnancy that ended before the 28th week, and the absence of baseline data limits what the surveillance can say about causes. Those are the same limits that make a family-declared registry worth building beside it rather than instead of it.</p>
         <p class="src">Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. <em>World J Pediatr</em> 2011;7(4):302-310 &middot; <a href="https://doi.org/10.1007/s12519-011-0326-0" target="_blank" rel="noopener external">doi:10.1007/s12519-011-0326-0</a></p>
       </article>
       <article class="entry">
@@ -3322,7 +3322,7 @@ def prevalence_html():
     <h3 class="h4" style="margin-top:var(--space-4)">How to read these figures</h3>
     <p class="annex-note"><strong>They are birth prevalences, not incidences.</strong> A registry counts the affected births in a
     defined population over a defined period and divides by all births there. EUROCAT, whose convention the European figures
-    follow, counts live births, fetal deaths and terminations of pregnancy after a prenatal diagnosis in the numerator, and live
+    follow, counts every affected pregnancy in the numerator, whatever its outcome, and live
     and still births in the denominator, always per 10,000 births{cite(14)}. Orphanet states its figures per 100,000. An incidence
     would count every affected conception, and the pregnancies lost before any registry can see them are never counted, so no
     registry measures one; a prevalence at birth is the measure that exists. None of these figures says how many people live with a

@@ -1493,15 +1493,14 @@ BOARD = [
     ("Claudio Pirola", "Chair · Italy", "Joined Raggiungere in 1999; at DysNet since its 2012 foundation. Carries representation, external voice and member relations.", "CP", "claudio.pirola@dysnet.org", "Mission 3 · Voice"),
     ("Dr Loïc Rigal", "Deputy Chair · France", "Doctor in pharmaceutical law and patient advocate. Elected board member of the French association Assedea. Deputy Chair since the general assembly of 26 August 2026, carrying the registry mission.", "LR", "", "Mission 2 · Registry"),
     ("Michaela Moik", "Thalidomide patient expert · Austria", "Thalidomide survivor, co-founder of the Austrian thalidomide self-help group, former youth social worker in Vienna.", "MM", "michi.moik@dysnet.org", "Member relations"),
-    ("Marie Wikström", "Secretary · Sweden", "She is the patient coordinator of EX-Center in Solna, the Swedish knowledge and rehabilitation centre for children and adults with multiple limb deficiencies, which she helped found in 1993. She has been active in the Swedish Thalidomide Society since 1986 and was its Permanent Secretary from 2004 to 2006. She is herself a thalidomide survivor.", "MW", "marie.wikstrom@ex-center.org", "Secretariat"),
+    ("Marie Wikström", "Board member · Sweden", "Coordinator and co-founder, in 1993, of EX-Center, Sweden's national knowledge and rehabilitation centre for people with multiple limb loss, run jointly by a care provider and a patient organisation. It serves mainly people with dysmelia, with thalidomide damage, or with amputations. She works for the Swedish Thalidomide Society (FfdN), active in it since 1986: its Permanent Secretary from 2004 to 2006, and president of FfdN-Stockholm for 16 years. A thalidomide survivor herself, she keeps the disability perspective at the heart of EX-Center's daily work.", "MW", "marie.wikstrom@ex-center.org", "Rehabilitation"),
     ("Salvatore Giambruno", "Treasurer", "Past president of Raggiungere and of LEDHA; a career in sales management; parent of a daughter with dysmelia.", "SG", "sal.giambruno@dysnet.org", "Accounts"),
     ("Tobias Arndt", "Chief Operating Officer · Belgium", "IT expert and researcher, author on electronic commerce; supporting thalidomide projects across Europe since 2007.", "TA", "tobias.arndt@dysnet.org", "Operations"),
 ]
 
 
 # A portrait replaces the initials when a member has one: docs/assets/img/<file>.jpg and .webp, 288 px square.
-# Marie Wikström's is her portrait on EX-Center's staff page (ex-center.org/web/marie-wikstrom-1/), cropped;
-# Claudio Pirola's and Loïc Rigal's (pictures/, git-ignored) and Salvatore Giambruno's are portraits Loïc supplied, cropped.
+# All four are portraits Loïc supplied, cropped (Claudio Pirola's and Loïc Rigal's originals in pictures/, git-ignored).
 BOARD_PHOTOS = {"Claudio Pirola": "board-claudio-pirola", "Dr Loïc Rigal": "board-loic-rigal",
                 "Marie Wikström": "board-marie-wikstrom", "Salvatore Giambruno": "board-salvatore-giambruno"}
 

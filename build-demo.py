@@ -6214,17 +6214,23 @@ def build():
     print("  " + build_brief_pdf())
     print("  " + build_pilot_pdf())
 
-    # robots.txt — everything is open, to search engines and to AI systems alike. The AI crawlers are
-    # named one by one because silence reads as an oversight; this is a knowledge site and being quoted,
-    # with attribution, is the point.
-    ai_bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot",
-               "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot",
-               "meta-externalagent", "Bingbot", "Amazonbot", "Bytespider", "DuckAssistBot", "cohere-ai", "MistralAI-User"]
+    # robots.txt — open to search engines and to the AI systems that search and cite on a reader's
+    # behalf; closed to the crawlers that collect text to train models, on the knowledge registers and
+    # the members' voice (the board's decision of October 2026). The same text also travels as the
+    # register data and the site search indexes, so those are closed to training too.
+    search_bots = ["Bingbot", "OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot",
+                   "Perplexity-User", "DuckAssistBot", "MistralAI-User"]
+    training_bots = ["GPTBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Applebot-Extended", "CCBot",
+                     "meta-externalagent", "Bytespider", "Amazonbot", "cohere-ai", "cohere-training-data-crawler",
+                     "AI2Bot", "Diffbot", "Omgilibot"]
+    no_training = ["/knowledge/", "/voice/", "/data/", "/search-text.json", "/search-index.json"]
     (ROOT / "robots.txt").write_text(
-        "# DysNet welcomes search engines and AI systems. Everything here is public, and the registers\n"
-        "# are published as data under CC BY 4.0: see /llms.txt and /data/.\n"
+        "# DysNet welcomes search engines and the AI systems that search and cite on a reader's behalf.\n"
+        "# Crawlers that collect text to train AI models may not use the knowledge registers or the\n"
+        "# members' voice (" + ", ".join(no_training) + ").\n"
         "User-agent: *\nAllow: /\n\n"
-        + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ai_bots)
+        + "".join(f"User-agent: {b}\nAllow: /\n\n" for b in search_bots)
+        + "".join(f"User-agent: {b}\n" + "".join(f"Disallow: {d}\n" for d in no_training) + "Allow: /\n\n" for b in training_bots)
         + f"Sitemap: {SITE}/sitemap.xml\n", encoding="utf-8")
 
     # IndexNow: the key file Bing, Yandex and Seznam fetch to check that a submission really comes

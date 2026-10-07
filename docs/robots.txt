@@ -1,9 +1,10 @@
-# DysNet welcomes search engines and AI systems. Everything here is public, and the registers
-# are published as data under CC BY 4.0: see /llms.txt and /data/.
+# DysNet welcomes search engines and the AI systems that search and cite on a reader's behalf.
+# Crawlers that collect text to train AI models may not use the knowledge registers or the
+# members' voice (/knowledge/, /voice/, /data/, /search-text.json, /search-index.json).
 User-agent: *
 Allow: /
 
-User-agent: GPTBot
+User-agent: Bingbot
 Allow: /
 
 User-agent: OAI-SearchBot
@@ -12,13 +13,10 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: Claude-User
-Allow: /
-
-User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
@@ -27,34 +25,122 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: meta-externalagent
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
 User-agent: DuckAssistBot
 Allow: /
 
-User-agent: cohere-ai
+User-agent: MistralAI-User
 Allow: /
 
-User-agent: MistralAI-User
+User-agent: GPTBot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: ClaudeBot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: anthropic-ai
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Google-Extended
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Applebot-Extended
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: CCBot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: meta-externalagent
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Bytespider
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Amazonbot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: cohere-ai
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: AI2Bot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Diffbot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
+Allow: /
+
+User-agent: Omgilibot
+Disallow: /knowledge/
+Disallow: /voice/
+Disallow: /data/
+Disallow: /search-text.json
+Disallow: /search-index.json
 Allow: /
 
 Sitemap: https://www.dysnet.org/sitemap.xml

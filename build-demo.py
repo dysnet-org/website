@@ -968,6 +968,31 @@ def doi_html(doi):
     return f'<a href="{_h.escape(href, quote=True)}" target="_blank" rel="noopener external">doi:{_h.escape(doi)}</a>'
 
 
+# Every reference on the site is written in one style, Vancouver (ICMJE / US National Library of
+# Medicine), from the PubMed record tools/build-vancouver-meta.py keeps for each cited article.
+VANCOUVER = json.loads((pathlib.Path(__file__).parent / "tools" / "vancouver-meta.json").read_text(encoding="utf-8")) if (pathlib.Path(__file__).parent / "tools" / "vancouver-meta.json").exists() else {}
+
+
+def vmeta(pmid="", doi=""):
+    return VANCOUVER.get(f"pmid:{pmid}") if pmid and VANCOUVER.get(f"pmid:{pmid}") else VANCOUVER.get(f"doi:{(doi or '').lower()}")
+
+
+def vancouver(m, title=True, link=True):
+    """Authors (six, then et al.). Title. Journal (NLM abbreviation). Year;Volume(Issue):Pages. doi"""
+    import html as _h
+    a = m.get("authors") or []
+    authors = ", ".join(a[:6]) + (", et al" if len(a) > 6 else "")
+    t = m.get("title", "").strip()
+    t = t if t[-1:] in ".?!" else t + "."
+    vol = m.get("volume", "") + (f'({m["issue"]})' if m.get("issue") else "")
+    where = m.get("year", "") + (f";{vol}" if vol else "") + (f':{m["pages"]}' if m.get("pages") else "")
+    out = (f"{_h.escape(authors, quote=False)}. " if authors else "") + (f"{_h.escape(t, quote=False)} " if title and t != "." else "") + f'<em>{_h.escape(m.get("journal", ""), quote=False)}</em>. {_h.escape(where, quote=False)}.'
+    if link:
+        out += " " + (doi_html(m["doi"]) if m.get("doi") else
+                      f'<a href="https://pubmed.ncbi.nlm.nih.gov/{m["pmid"]}/" target="_blank" rel="noopener external">PMID: {m["pmid"]}</a>' if m.get("pmid") else "")
+    return out
+
+
 # The registers ship a first slice as HTML (crawlable, readable without JavaScript) and the full
 # set as JSON. Inlining that JSON made the two pages 477 KB and 400 KB; written as files and fetched
 # after first paint, the pages are 68 KB and 83 KB and the filters come alive a moment later.
@@ -989,12 +1014,14 @@ def bibliography_html():
         if via: tags += f'<span class="bib-tag bib-via">found on {", ".join(v.split(" (")[0] for v in via)}</span>'
         elif "PubMed search" in e.get("via", []): tags += '<span class="bib-tag bib-via">PubMed search</span>'
         why = e["notes"][0] if e["notes"] else ""
+        vm = vmeta(e.get("pmid"), e.get("doi"))
+        vcite = vancouver(vm, title=False) if vm else f'{esc(authors)}. <em>{esc(e["journal"])}</em>. {e["year"]}. {link}'
         text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
         items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-registries="{" ".join(e.get("rests_on", []))}" data-text="{esc(text)}">'
-                     f'<p class="bib-title">{esc(e["title"])}</p><p class="bib-meta">{esc(authors)} · <em>{esc(e["journal"])}</em> · {e["year"]}{(" · " + esc(e["volume"])) if e["volume"] else ""}{(":" + esc(e["pages"])) if e["pages"] else ""} · {link}</p>'
+                     f'<p class="bib-title">{esc(e["title"])}</p><p class="bib-meta">{vcite}</p>'
                      f'<p class="bib-tags">{tags}</p></li>')
         records.append({"t": e["title"], "r": e.get("rests_on", []), "a": authors, "j": e["journal"], "y": e["year"], "v": e["volume"], "p": e["pages"], "d": e["doi"], "m": e["pmid"],
-                        "c": e["codes"], "k": [t.replace(" ", "_") for t in e["topics"]], "w": ", ".join(v.split(" (")[0] for v in via) if via else ("PubMed search" if "PubMed search" in e.get("via", []) else ""), "n": why})
+                        "c": e["codes"], "k": [t.replace(" ", "_") for t in e["topics"]], "w": ", ".join(v.split(" (")[0] for v in via) if via else ("PubMed search" if "PubMed search" in e.get("via", []) else ""), "n": why, "vc": vcite})
     code_opts = "".join(f'<option value="{c}">{names.get(c, c)}</option>' for c in codes_present)
     topic_chips = "".join(f'<button type="button" data-topic="{t.replace(" ", "_")}" aria-pressed="false">{BIB_TOPIC_LABEL.get(t, t)}</button>' for t in topics)
     years = sorted({e["year"] for e in entries if e["year"]})
@@ -1168,8 +1195,9 @@ def tera_paper_lines(e):
         return []
     out = []
     for x in sorted(e["papers"], key=lambda x: -int(bool(x.get("cochrane"))))[:3]:
-        cite = esc(x["title"]) + (f' <span class="fine">{esc(x["journal"])}, {x["year"]}</span>' if x.get("journal") else "")
-        link = (f' <a href="https://doi.org/{esc(x["doi"])}" target="_blank" rel="noopener external">doi:{esc(x["doi"])} ↗</a>'
+        vm = vmeta(x.get("pmid"), x.get("doi"))
+        cite = vancouver(vm) if vm else esc(x["title"]) + (f' <span class="fine">{esc(x["journal"])}, {x["year"]}</span>' if x.get("journal") else "")
+        link = "" if vm else (f' <a href="https://doi.org/{esc(x["doi"])}" target="_blank" rel="noopener external">doi:{esc(x["doi"])} ↗</a>'
                 if x.get("doi") else
                 (f' <a href="https://pubmed.ncbi.nlm.nih.gov/{x["pmid"]}/" target="_blank" rel="noopener external">PubMed ↗</a>' if x.get("pmid") else ""))
         out.append(f'<li>{"<strong>Cochrane review:</strong> " if x.get("cochrane") else ""}{cite}{link}</li>')
@@ -1443,7 +1471,8 @@ def teratogens_html():
                         for k, _l in TERA_COS if e["cosmetic"].get(k)} if e.get("cosmetic") else 0),
                 "csd": (e.get("cosmetic") or {}).get("documented_as", ""), "s": e["source_codes"], "src": srcs, "jur": jur, "w": e.get("wiki") or "",
                 "pc": e.get("paper_count") or 0, "pcn": e.get("paper_cochrane_n") or 0, "pcoch": 1 if e.get("paper_cochrane") else 0, "pq": e.get("paper_query", ""),
-                "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0}
+                "pp": [{"t": x["title"], "j": x.get("journal", ""), "y": x.get("year", ""), "d": x.get("doi", ""), "m": x.get("pmid", ""), "c": 1 if x.get("cochrane") else 0,
+                        **({"vc": vancouver(vmeta(x.get("pmid"), x.get("doi")))} if vmeta(x.get("pmid"), x.get("doi")) else {})}
                        for x in sorted(e.get("papers") or [], key=lambda x: -int(bool(x.get("cochrane"))))[:3]],
                 "reg": ({"m": e["registry"]["medicine"], "n": e["registry"]["name"], "u": e["registry"]["url"], "p": e["registry"].get("phone", "")} if e.get("registry") else 0),
                 "dec": [{"c": d["code"], "v": d["verdict"], "w": d["where"], "t": d["tag"], "d": d.get("detail", "")}
@@ -2252,17 +2281,17 @@ PAGES["/knowledge/registries/"] = {
       <article class="entry">
         <h3>Four clinical registries, built to talk to each other <span class="badge live">2026</span></h3>
         <p>A comparison of the registries for congenital upper limb difference names the Congenital Upper Limb Difference registry in the United States, Congenital Upper Limb Anomalies North in northern Europe, the Australian Hand Difference Register, and the British Society for Surgery of the Hand registry in the United Kingdom. The authors find that these registries collect similar data, which allows effective interoperability while each keeps its own features, and they set out recommendations for the registries that follow.</p>
-        <p class="src">McCombe D, Wall L, Goldfarb C, Hülsemann W. <em>J Hand Surg Eur Vol</em> 2026;51(1):111-118 · <a href="https://doi.org/10.1177/17531934251348360" target="_blank" rel="noopener external">doi:10.1177/17531934251348360</a></p>
+        <p class="src">McCombe D, Wall L, Goldfarb C, Hülsemann W, Sletten IN, Wilks D, et al. Congenital upper limb difference patient registries: characteristics, comparisons and recommendations. <em>J Hand Surg Eur Vol</em>. 2026;51(1):111-118. <a href="https://doi.org/10.1177/17531934251348360" target="_blank" rel="noopener external">doi:10.1177/17531934251348360</a></p>
       </article>
       <article class="entry">
         <h3>What it takes to keep one alive <span class="badge live">2026</span></h3>
         <p>Eight hand surgeons, two from each of those four registries, were interviewed about founding and sustaining them. They describe the early experience, the logistical obstacles, the research each registry produced, and whether an international congenital hand registry is feasible. That last question is the one DysNet asks from the families’ side.</p>
-        <p class="src">Mosa A, Romans S, Goldfarb CA, Wall LB. <em>J Hand Surg Am</em> 2026;51(9):883.e1-883.e8 · <a href="https://doi.org/10.1016/j.jhsa.2026.02.017" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2026.02.017</a></p>
+        <p class="src">Mosa A, Romans S, Goldfarb CA, Wall LB. Establishing and Maintaining Congenital Upper Limb Difference Registries: Insights From Global Experiences. <em>J Hand Surg Am</em>. 2026;51(8):883.e1-883.e8. <a href="https://doi.org/10.1016/j.jhsa.2026.02.017" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2026.02.017</a></p>
       </article>
       <article class="entry">
         <h3>CoULD, and what a registry sees that a survey does not <span class="badge live">United States</span></h3>
         <p>The multicentre Congenital Upper Limb Differences registry analysed its first four years at the two founding centres, a cohort of 1,381 patients. Compared with a one-year cross-sectional cohort from the American Midwest and with a Swedish birth registry, about a third of the diagnosis categories differed in frequency. The registry picked up more conditions that present late and more that rarely lead to surgery, which is precisely what a registry built on hospital episodes tends to miss.</p>
-        <p class="src">Vuillermin C, Canizares MF, Bauer AS, Miller PE. <em>J Hand Surg Am</em> 2021;46(6):515.e1-515.e11 · <a href="https://doi.org/10.1016/j.jhsa.2020.11.006" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2020.11.006</a></p>
+        <p class="src">Vuillermin C, Canizares MF, Bauer AS, Miller PE, Goldfarb CA. Congenital Upper Limb Differences Registry (CoULD): Registry Inclusion Effect. <em>J Hand Surg Am</em>. 2021;46(6):515.e1-515.e11. <a href="https://doi.org/10.1016/j.jhsa.2020.11.006" target="_blank" rel="noopener external">doi:10.1016/j.jhsa.2020.11.006</a></p>
       </article>
       <article class="entry">
         <h3>The Italian Poland syndrome register, and its biobank <span class="badge live">Italy</span></h3>
@@ -2285,17 +2314,17 @@ PAGES["/knowledge/registries/"] = {
         <h3>Canada: a national strategy, and no registry yet <span class="badge live">2026</span></h3>
         <p>Canada has no national data source on limb loss and limb difference, so incidence, prevalence, risk factors and care outcomes remain unknown, and services vary from province to province. A survey of 96 invited representatives, answered by 53, was followed by a virtual workshop on 14 February 2024 attended by 64 people. Participants agreed on five domains for a future registry: representation, standardization, practice-based evidence, research and innovation, and policy and funding. Amputee advocacy organisations took part alongside clinicians, researchers and decision-makers, and the workshop looked to them to champion the registry. The authors also describe patient-powered registries, which patients and advocacy groups manage themselves, which is the model DysNet is building.</p>
         <p>A survey of the rehabilitation centres that treat people with limb loss found the same gap on the clinical side. Of 36 centres approached across the country, 31 answered, and the authors describe a landscape without shared rehabilitation guidelines and without a shared clinical database.</p>
-        <p class="src">Mayo AL, Hitzig SL, Zidarov D, et al. <em>Can Prosthet Orthot J</em> 2026;9(1):46909 · <a href="https://doi.org/10.33137/cpoj.v9i1.46909" target="_blank" rel="noopener external">doi:10.33137/cpoj.v9i1.46909</a> · Hitzig SL, Zidarov D, MacKay C, et al. <em>Prosthet Orthot Int</em> 2025;49(2):248-255 · <a href="https://doi.org/10.1097/PXR.0000000000000405" target="_blank" rel="noopener external">doi:10.1097/PXR.0000000000000405</a></p>
+        <p class="src">Mayo AL, Hitzig SL, Zidarov D, MacKay C, Kaufman KR, Noonan VK, et al. A national strategy for a canadian limb loss and limb difference registry. <em>Can Prosthet Orthot J</em>. 2026;9(1):46909. <a href="https://doi.org/10.33137/cpoj.v9i1.46909" target="_blank" rel="noopener external">doi:10.33137/cpoj.v9i1.46909</a> · Hitzig SL, Zidarov D, MacKay C, Dilkas S, Alshehri F, Russell R, et al. An environmental scan of limb loss rehabilitation centers across Canada. <em>Prosthet Orthot Int</em>. 2025;49(2):248-255. <a href="https://doi.org/10.1097/PXR.0000000000000405" target="_blank" rel="noopener external">doi:10.1097/PXR.0000000000000405</a></p>
       </article>
       <article class="entry">
         <h3>United States: the Limb Loss and Preservation Registry <span class="badge live">running</span></h3>
         <p>The registry standardises outcome data on limb loss and limb difference across all 50 states. More than 1,100 trigger codes identify a patient, and every later episode of care is then collected for that person’s lifetime. It has gathered data on more than 435,000 patients and more than 11.5 million episodes of care.</p>
-        <p class="src">Kaufman KR, Bernhardt K, Murphy S, et al. <em>Arch Rehabil Res Clin Transl</em> 2024;6(4):100356 · <a href="https://doi.org/10.1016/j.arrct.2024.100356" target="_blank" rel="noopener external">doi:10.1016/j.arrct.2024.100356</a></p>
+        <p class="src">Kaufman KR, Bernhardt K, Murphy S, Archer M, Brandt JM, Bowman L, et al. Creation of a Limb Loss and Preservation Registry for Improving the Quality of Patient Care in the United States. <em>Arch Rehabil Res Clin Transl</em>. 2024;6(3):100356. <a href="https://doi.org/10.1016/j.arrct.2024.100356" target="_blank" rel="noopener external">doi:10.1016/j.arrct.2024.100356</a></p>
       </article>
       <article class="entry">
         <h3>Alberta: 33 years of congenital limb deficiencies <span class="badge live">population-based</span></h3>
         <p>The Alberta Congenital Anomalies Surveillance System records live births, stillbirths and terminations. Between 1980 and 2012 it ascertained 795 cases of congenital limb deficiency among 1,411,652 births, a prevalence of 5.6 per 10,000. It is the kind of population registry that Europe knows through EUROCAT, and it shows what continuity over three decades makes visible.</p>
-        <p class="src">Bedard T, Lowry RB, Sibbald B, et al. <em>Am J Med Genet A</em> 2015;167A(11):2599-2609 · <a href="https://doi.org/10.1002/ajmg.a.37240" target="_blank" rel="noopener external">doi:10.1002/ajmg.a.37240</a></p>
+        <p class="src">Bedard T, Lowry RB, Sibbald B, Kiefer GN, Metcalfe A. Congenital limb deficiencies in Alberta-a review of 33 years (1980-2012) from the Alberta Congenital Anomalies Surveillance System (ACASS). <em>Am J Med Genet A</em>. 2015;167A(11):2599-609. <a href="https://doi.org/10.1002/ajmg.a.37240" target="_blank" rel="noopener external">doi:10.1002/ajmg.a.37240</a></p>
       </article>
     </div>
 
@@ -2310,7 +2339,7 @@ PAGES["/knowledge/registries/"] = {
       <article class="entry">
         <h3>What India records today <span class="badge live">2025 review</span></h3>
         <p>A narrative review of birth-defect reporting in India finds three systems and no national surveillance. The WHO South-East Asia Region newborn and birth-defects surveillance, running since 2014, is passive and hospital-based: 70 non-randomly selected hospitals in 2020, 1,545,258 births reported and 18,006 birth defects detected, a prevalence of 1.16 per cent. Limb reduction defects are among the conditions it records. The national child-screening programme, Rashtriya Bal Swasthya Karyakram, has screened 157.36 million children since 2013 through mobile health teams, and the nine birth defects it looks for at birth include talipes and developmental dysplasia of the hip, but not limb reduction defects. A child born without a hand is not sought by the programme built to find children who need care.</p>
-        <p class="src">Kar A. Birth defects reporting and surveillance in India: a narrative review. <em>J Community Genet</em> 2025;16(1):5-14 &middot; <a href="https://doi.org/10.1007/s12687-024-00760-5" target="_blank" rel="noopener external">doi:10.1007/s12687-024-00760-5</a></p>
+        <p class="src">Kar A. Birth defects reporting and surveillance in India: a narrative review. <em>J Community Genet</em>. 2025;16(1):5-14. <a href="https://doi.org/10.1007/s12687-024-00760-5" target="_blank" rel="noopener external">doi:10.1007/s12687-024-00760-5</a></p>
       </article>
       <article class="entry">
         <h3>The Birth Defects Registry of India <span class="badge live">since 2001</span></h3>
@@ -2337,17 +2366,17 @@ PAGES["/knowledge/registries/"] = {
       <article class="entry">
         <h3>What the network is, and what it misses <span class="badge live">since the 1990s</span></h3>
         <p>By the 2009 data the national hospital-based system monitored over 1.3 million births, more than 8 per cent of all births in China, and 30 provincial hospital-based programmes covered a further 3.6 million, about 22 per cent. Its own authors set out the limits plainly: a short ascertainment period misses internal anomalies, inherited metabolic disease, and any malformation in a pregnancy that ended before the 28th week, and the absence of baseline data limits what the surveillance can say about causes. Those are the same limits that make a family-declared registry worth building beside it rather than instead of it.</p>
-        <p class="src">Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. <em>World J Pediatr</em> 2011;7(4):302-310 &middot; <a href="https://doi.org/10.1007/s12519-011-0326-0" target="_blank" rel="noopener external">doi:10.1007/s12519-011-0326-0</a></p>
+        <p class="src">Dai L, Zhu J, Liang J, Wang YP, Wang H, Mao M. Birth defects surveillance in China. <em>World J Pediatr</em>. 2011;7(4):302-10. <a href="https://doi.org/10.1007/s12519-011-0326-0" target="_blank" rel="noopener external">doi:10.1007/s12519-011-0326-0</a></p>
       </article>
       <article class="entry">
         <h3>Syndactyly across 24 million births <span class="badge live">2007-2019</span></h3>
         <p>13,611 cases of syndactyly were identified among <strong>24,157,719 births</strong>, a prevalence of 5.63 per 10,000 overall, 4.66 isolated and 0.97 associated with another anomaly. The rate rose across the period for every type. The authors report it as notably higher than in other Asian and European countries, and call for the cause to be investigated. Among the cases affected on one side only, the hand was involved slightly more often than the foot. No cohort on this scale exists for any of our conditions in Europe.</p>
-        <p class="src">Chen ZY, Li WY, Xu WL, et al. The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study. <em>BMC Pregnancy Childbirth</em> 2023;23(1):334 &middot; <a href="https://doi.org/10.1186/s12884-023-05660-z" target="_blank" rel="noopener external">doi:10.1186/s12884-023-05660-z</a></p>
+        <p class="src">Chen ZY, Li WY, Xu WL, Gao YY, Liu Z, Li Q, et al. The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study. <em>BMC Pregnancy Childbirth</em>. 2023;23(1):334. <a href="https://doi.org/10.1186/s12884-023-05660-z" target="_blank" rel="noopener external">doi:10.1186/s12884-023-05660-z</a></p>
       </article>
       <article class="entry">
         <h3>A province that publishes its own figures <span class="badge live">Hunan, 2016-2020</span></h3>
         <p>The Birth Defects Surveillance System of Hunan Province recorded 847,755 births and 14,459 birth defects, among them 1,888 cases of polydactyly and 626 of syndactyly, which is 13.06 and 4.33 per cent of all defects found. Prevalence was 2.23 per 1,000 for polydactyly and 0.74 per 1,000 for syndactyly, both rising year on year. Nearly all were diagnosed after birth rather than before it, 96.77 per cent of polydactyly and 95.69 per cent of syndactyly within seven days, which is what a limb difference usually does: it arrives unannounced.</p>
-        <p class="src">Zhou X, Li T, Kuang H, et al. Epidemiology of congenital polydactyly and syndactyly in Hunan Province, China. <em>BMC Pregnancy Childbirth</em> 2024;24(1):216 &middot; <a href="https://doi.org/10.1186/s12884-024-06417-y" target="_blank" rel="noopener external">doi:10.1186/s12884-024-06417-y</a></p>
+        <p class="src">Zhou X, Li T, Kuang H, Zhou Y, Xie D, He J, et al. Epidemiology of congenital polydactyly and syndactyly in Hunan Province, China. <em>BMC Pregnancy Childbirth</em>. 2024;24(1):216. <a href="https://doi.org/10.1186/s12884-024-06417-y" target="_blank" rel="noopener external">doi:10.1186/s12884-024-06417-y</a></p>
       </article>
     </div>
 
@@ -2369,9 +2398,7 @@ PAGES["/knowledge/registries/"] = {
         occurrence. Mothers over 40 had a 36 per cent higher prevalence than mothers under 40. In 2021 the Ministry of Health,
         with the Brazilian Medical Genetics and Genomics Society, set a priority list of anomalies to improve that recording,
         chosen for being diagnosable at birth and having some intervention available.</p>
-        <p class="src">Moura SRB, Nakachima LR, Santos JBGD, et al. Prevalence of Congenital Anomalies of the Upper Limbs in
-        Brazil. <em>Sao Paulo Med J</em> 2024;142(6):e2023349 &middot;
-        <a href="https://doi.org/10.1590/1516-3180.2023.0349.R1.08042024" target="_blank" rel="noopener external">doi:10.1590/1516-3180.2023.0349.R1.08042024</a>
+        <p class="src">Moura SRB, Nakachima LR, Santos JBGD, Belloti JC, Fernandes CH, Faloppa F, et al. Prevalence of Congenital Anomalies of the Upper Limbs in Brazil: a descriptive cross-sectional study. <em>Sao Paulo Med J</em>. 2024;142(6):e2023349. <a href="https://doi.org/10.1590/1516-3180.2023.0349.R1.08042024" target="_blank" rel="noopener external">doi:10.1590/1516-3180.2023.0349.R1.08042024</a>
         &middot; <a href="https://datasus.saude.gov.br/nascidos-vivos" target="_blank" rel="noopener external">datasus.saude.gov.br</a></p>
       </article>
       <article class="entry">
@@ -2386,11 +2413,8 @@ PAGES["/knowledge/registries/"] = {
         It is also the clearest argument we have for <a href="/knowledge/teratogens/">the teratogens register</a> and for
         <a href="/voice/#demand-5">demand 5</a>: a substance whose harm is beyond dispute still reaches pregnancies, and only
         surveillance finds it.</p>
-        <p class="src">Vianna FS, Lopez-Camelo JS, Leite JC, et al. Epidemiological surveillance of birth defects compatible
-        with thalidomide embryopathy in Brazil. <em>PLoS One</em> 2011;6(7):e21735 &middot;
-        <a href="https://doi.org/10.1371/journal.pone.0021735" target="_blank" rel="noopener external">doi:10.1371/journal.pone.0021735</a>
-        &middot; with Sales Luiz Vianna F, et al. <em>Eur J Med Genet</em> 2017;60(1):12-15,
-        <a href="https://doi.org/10.1016/j.ejmg.2016.09.015" target="_blank" rel="noopener external">doi:10.1016/j.ejmg.2016.09.015</a></p>
+        <p class="src">Vianna FS, Lopez-Camelo JS, Leite JC, Sanseverino MT, Dutra Mda G, Castilla EE, et al. Epidemiological surveillance of birth defects compatible with thalidomide embryopathy in Brazil. <em>PLoS One</em>. 2011;6(7):e21735. <a href="https://doi.org/10.1371/journal.pone.0021735" target="_blank" rel="noopener external">doi:10.1371/journal.pone.0021735</a>
+        &middot; with Sales Luiz Vianna F, Kowalski TW, Fraga LR, Sanseverino MT, Schuler-Faccini L. The impact of thalidomide use in birth defects in Brazil. <em>Eur J Med Genet</em>. 2017;60(1):12-15. <a href="https://doi.org/10.1016/j.ejmg.2016.09.015" target="_blank" rel="noopener external">doi:10.1016/j.ejmg.2016.09.015</a></p>
       </article>
     </div>
 
@@ -2436,9 +2460,7 @@ PAGES["/knowledge/registries/"] = {
         route.</p>
         <p class="src">ICBDSR, <em>Annual Report 2014</em> and <em>Annual Report 2024</em> &middot;
         <a href="https://www.icbdsr.org/resources/annual-report/" target="_blank" rel="noopener external">icbdsr.org/resources/annual-report</a>
-        &middot; with Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born
-        with Down syndrome in Japan. <em>J Obstet Gynaecol Res</em> 2022;48(9):2385-2391,
-        <a href="https://doi.org/10.1111/jog.15342" target="_blank" rel="noopener external">doi:10.1111/jog.15342</a></p>
+        &middot; with Sugo Y, Kurasawa K, Saigusa Y, Hamanoue H, Hirahara F, Miyagi E. Changes in the number of babies born with Down syndrome in Japan. <em>J Obstet Gynaecol Res</em>. 2022;48(9):2385-2391. <a href="https://doi.org/10.1111/jog.15342" target="_blank" rel="noopener external">doi:10.1111/jog.15342</a></p>
       </article>
       <article class="entry">
         <h3>The country surveyed limb deficiency once <span class="badge live">2014-2015</span></h3>
@@ -2456,9 +2478,7 @@ PAGES["/knowledge/registries/"] = {
         <p>Its authors call it the first nationwide epidemiological survey of congenital limb deficiency in Japan. A survey
         answers a question once, and this one ran for two years. A registry keeps answering, and that difference is the
         reason this register exists.</p>
-        <p class="src">Mano H, Fujiwara S, Takamura K, et al. Congenital limb deficiency in Japan: a cross-sectional
-        nationwide survey on its epidemiology. <em>BMC Musculoskelet Disord</em> 2018;19(1):262 &middot;
-        <a href="https://doi.org/10.1186/s12891-018-2195-3" target="_blank" rel="noopener external">doi:10.1186/s12891-018-2195-3</a></p>
+        <p class="src">Mano H, Fujiwara S, Takamura K, Kitoh H, Takayama S, Ogata T, et al. Congenital limb deficiency in Japan: a cross-sectional nationwide survey on its epidemiology. <em>BMC Musculoskelet Disord</em>. 2018;19(1):262. <a href="https://doi.org/10.1186/s12891-018-2195-3" target="_blank" rel="noopener external">doi:10.1186/s12891-018-2195-3</a></p>
       </article>
       <article class="entry">
         <h3>A national birth cohort, and 369 limb differences in it <span class="badge live">JECS</span></h3>
@@ -2471,10 +2491,7 @@ PAGES["/knowledge/registries/"] = {
         from the first appointment, and it shows both what that design can answer and what it cannot. A cohort closes
         to new entrants, its consent belongs to the study rather than to the family, and when it ends the children are no
         longer counted anywhere.</p>
-        <p class="src">Ikeda A, Marsela M, Miyashita C, et al. Heavy metals and trace elements in maternal blood and
-        prevalence of congenital limb abnormalities among newborns: the Japan Environment and Children&rsquo;s Study.
-        <em>Environ Health Prev Med</em> 2024;29:36 &middot;
-        <a href="https://doi.org/10.1265/ehpm.23-00366" target="_blank" rel="noopener external">doi:10.1265/ehpm.23-00366</a></p>
+        <p class="src">Ikeda A, Marsela M, Miyashita C, Yamaguchi T, Saijo Y, Ito Y, et al. Heavy metals and trace elements in maternal blood and prevalence of congenital limb abnormalities among newborns: the Japan Environment and Children's Study. <em>Environ Health Prev Med</em>. 2024;29:36. <a href="https://doi.org/10.1265/ehpm.23-00366" target="_blank" rel="noopener external">doi:10.1265/ehpm.23-00366</a></p>
       </article>
       <article class="entry">
         <h3>Registration was already an aim in 1976 <span class="badge live">JSSH</span></h3>
@@ -2486,8 +2503,7 @@ PAGES["/knowledge/registries/"] = {
         professional society can carry the first for half a century without the second. It is also a reason to ask the
         society directly rather than to conclude from silence, the same approach the <a href="/registry/">registry
         page</a> sets out for the northern European hand registries.</p>
-        <p class="src">Minamikawa Y, Horii E, Hamada Y. Hand Surgery in Japan. <em>J Hand Microsurg</em> 2021;13(1):42-48
-        &middot; <a href="https://doi.org/10.1055/s-0041-1725210" target="_blank" rel="noopener external">doi:10.1055/s-0041-1725210</a></p>
+        <p class="src">Minamikawa Y, Horii E, Hamada Y. Hand Surgery in Japan. <em>J Hand Microsurg</em>. 2021;13(1):42-48. <a href="https://doi.org/10.1055/s-0041-1725210" target="_blank" rel="noopener external">doi:10.1055/s-0041-1725210</a></p>
       </article>
     </div>
 
@@ -2512,10 +2528,7 @@ PAGES["/knowledge/registries/"] = {
         symbrachydactyly and radial aplasia, so the data is already compatible with our own coding. The authors end by
         stating the need to establish a national registry for congenital limb deficiency. That is a call from a clinical
         rehabilitation service and a genetics department together, which is exactly the pairing a registry needs.</p>
-        <p class="src">Bibi A, Uddin S, Naeem M, Syed A, Ud-Din Qazi W, Rathore FA, Malik S. Prevalence pattern, phenotypic
-        manifestation, and descriptive genetics of congenital limb deficiencies in Pakistan. <em>Prosthet Orthot Int</em>
-        2023;47(5):479-485 &middot;
-        <a href="https://doi.org/10.1097/PXR.0000000000000204" target="_blank" rel="noopener external">doi:10.1097/PXR.0000000000000204</a></p>
+        <p class="src">Bibi A, Uddin S, Naeem M, Syed A, Ud-Din Qazi W, Rathore FA, et al. Prevalence pattern, phenotypic manifestation, and descriptive genetics of congenital limb deficiencies in Pakistan. <em>Prosthet Orthot Int</em>. 2023;47(5):479-485. <a href="https://doi.org/10.1097/PXR.0000000000000204" target="_blank" rel="noopener external">doi:10.1097/PXR.0000000000000204</a></p>
       </article>
       <article class="entry">
         <h3>A year of newborn screening in three Karachi hospitals <span class="badge live">2023-2024</span></h3>
@@ -2526,9 +2539,7 @@ PAGES["/knowledge/registries/"] = {
         <p>The programme describes itself as cross-sectional, so it has an end date. It also puts the real question in view.
         Reaching nearly three quarters of the births at three hospitals took health workers examining newborns one by one,
         and that is the recurring cost any Pakistani registry would have to carry rather than a one-off effort.</p>
-        <p class="src">Samad L, Junejo S, Ali Muhammad A, et al. Newborn screening for external congenital anomalies at
-        three public hospitals in Karachi, Pakistan. <em>BMJ Paediatr Open</em> 2026;10(1):e004015 &middot;
-        <a href="https://doi.org/10.1136/bmjpo-2025-004015" target="_blank" rel="noopener external">doi:10.1136/bmjpo-2025-004015</a></p>
+        <p class="src">Samad L, Junejo S, Ali Muhammad A, Sherwani M, Fatima M, Nawab M, et al. Newborn screening for external congenital anomalies at three public hospitals in Karachi, Pakistan. <em>BMJ Paediatr Open</em>. 2026;10(1):e004015. <a href="https://doi.org/10.1136/bmjpo-2025-004015" target="_blank" rel="noopener external">doi:10.1136/bmjpo-2025-004015</a></p>
       </article>
     </div>
 
@@ -2552,9 +2563,7 @@ PAGES["/knowledge/registries/"] = {
         same query could be run for most of limb difference in T&uuml;rkiye the day somebody asks for it. The limits deserve saying in the same breath. A count of codes holds no phenotype, no
         laterality, no consent and no follow-up, a family cannot see or correct its own entry, and a coding error is
         invisible. It answers how many, and almost nothing else.</p>
-        <p class="src">Inan B, et al. Epidemiological study of congenital myasthenic syndromes based on national electronic
-        health database of Turkiye. <em>North Clin Istanb</em> 2025;12(4):468-474 &middot;
-        <a href="https://doi.org/10.14744/nci.2025.08455" target="_blank" rel="noopener external">doi:10.14744/nci.2025.08455</a></p>
+        <p class="src">Inan B, Ozturk B, Ata N, Taskiran E, Birinci S, Sonkaya R, et al. Epidemiological study of congenital myasthenic syndromes based on national electronic health database of Turkiye. <em>North Clin Istanb</em>. 2025;12(4):468-474. <a href="https://doi.org/10.14744/nci.2025.08455" target="_blank" rel="noopener external">doi:10.14744/nci.2025.08455</a></p>
       </article>
       <article class="entry">
         <h3>What one hospital sees in ten years <span class="badge live">2014-2023</span></h3>
@@ -2566,9 +2575,7 @@ PAGES["/knowledge/registries/"] = {
         <p>A single hospital series is what a country without a registry has to argue from, and it cannot say whether the
         rate it reports is the country&rsquo;s rate. The same authors reporting the same numbers from a national register
         would change what a health ministry could be asked for.</p>
-        <p class="src">&Ccedil;etin H, Sorkun S, Lafc&#305; &#304;, et al. Congenital Anomaly Prevalence: A 10-Year
-        Retrospective Study in a Tertiary Hospital in Turkey. <em>Birth Defects Res</em> 2026;118(9):e70113 &middot;
-        <a href="https://doi.org/10.1002/bdr2.70113" target="_blank" rel="noopener external">doi:10.1002/bdr2.70113</a></p>
+        <p class="src">Çetin H, Sorkun S, Lafcı İ, Kılıç D, Kaleli B, Özdemir ÖMA, et al. Congenital Anomaly Prevalence: A 10-Year Retrospective Study in a Tertiary Hospital in Turkey. <em>Birth Defects Res</em>. 2026;118(9):e70113. <a href="https://doi.org/10.1002/bdr2.70113" target="_blank" rel="noopener external">doi:10.1002/bdr2.70113</a></p>
       </article>
     </div>
 
@@ -2630,7 +2637,7 @@ PAGES["/knowledge/resources/"] = {
       <article class="entry">
         <h3>Recommendations for improving the quality of rare disease registries <span class="badge live">peer-reviewed</span></h3>
         <p>The European reference on what a rare-disease registry is and how to run one well: definition, governance, data quality, patient involvement and sustainability. The yardstick DysNet uses for its own initiative.</p>
-        <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, et al. Int J Environ Res Public Health 2018;15(8):1644 · <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
+        <p class="src">Kodra Y, Weinbach J, Posada-de-la-Paz M, Coi A, Lemonnier SL, van Enckevort D, et al. Recommendations for Improving the Quality of Rare Disease Registries. <em>Int J Environ Res Public Health</em>. 2018;15(8):1644. <a href="https://doi.org/10.3390/ijerph15081644" target="_blank" rel="noopener external">doi:10.3390/ijerph15081644</a> · topic: registries, research methods</p>
       </article>
       <article class="entry">
         <h3>Thalidomide research bibliography, The Thalidomide Trust <span class="badge live">source</span></h3>
@@ -3285,7 +3292,9 @@ def prevalence_html():
             o += f' <a href="{ORPHA_URL.format(code)}" target="_blank" rel="noopener external" title="{orpha_name} on Orphanet">ORPHA:{code}</a>' + cite(11)
         lit = LITERATURE.get(name, "No population figure found")
         rows.append(f'<tr><th scope="row">{name}</th><td>{site_figure_cell(name)}</td><td>{o}</td><td>{lit}</td></tr>')
-    sources = "".join(f'<li id="src-{i}">{t} <a href="{u}" target="_blank" rel="noopener external">{u.replace("https://", "")}</a></li>' for i, (t, u) in enumerate(SOURCES, 1))
+    sources = "".join(f'<li id="src-{i}">' + (vancouver(vmeta(doi=u[16:])) if u.startswith("https://doi.org/") and vmeta(doi=u[16:]) else
+                                               f'{t} <a href="{u}" target="_blank" rel="noopener external">{u.replace("https://doi.org/", "doi:").replace("https://", "")}</a>') + '</li>'
+                      for i, (t, u) in enumerate(SOURCES, 1))
     # how far the same condition differs from one territory to another, read off Orphanet's rows
     spreads = []
     for name, *_ in CONDITIONS:
@@ -3884,10 +3893,13 @@ def causes_sources_html():
     rows = []
     for i, key in enumerate(CAUSES_REF_ORDER, 1):
         a, t, j, y, v, p, link = _causes_ref(key)
-        vol = f" {v}" if v else ""
-        pag = f":{p}" if p else ""
+        e = BIB_BY_PMID.get(key[5:]) if key.startswith("pmid:") else BIB_BY_DOI.get(key.lower())
+        vm = vmeta(e.get("pmid"), e.get("doi"))
+        if vm:
+            rows.append(f'<li id="ref-{i}">{vancouver(vm)}</li>')
+            continue
         shown = link.replace("https://doi.org/", "doi:").replace("https://", "")
-        rows.append(f'<li id="ref-{i}">{a.rstrip(".")}. {t.rstrip(".")}. <em>{j}</em>. {y};{vol.strip()}{pag}. '
+        rows.append(f'<li id="ref-{i}">{a.rstrip(".")}. {t.rstrip(".")}. <em>{j}</em>. {y}{";" + v if v else ""}{":" + p if p else ""}. '
                     f'<a href="{link}" target="_blank" rel="noopener external">{shown}</a></li>')
     return f"""
     <h2 class="h4" style="margin-top:var(--space-4)" id="sources">Sources</h2>

@@ -842,8 +842,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
                r.k.map(function (k) { return '<span class="bib-tag bib-topic">' + esc(LABELS.topics[k] || k) + '</span>'; }).join("") +
                (r.w ? '<span class="bib-tag bib-via">' + (r.w === "PubMed search" ? "PubMed search" : "found on " + esc(r.w)) + '</span>' : "") +
                (r.r || []).map(function (g) { return '<span class="bib-tag bib-reg">rests on ' + esc(g) + '</span>'; }).join("");
-    return '<li class="bib-item"><p class="bib-title">' + esc(r.t) + '</p><p class="bib-meta">' + esc(r.a) + ' · <em>' + esc(r.j) + '</em> · ' + esc(r.y) +
-           (r.v ? ' · ' + esc(r.v) : '') + (r.p ? ':' + esc(r.p) : '') + ' · ' + link + '</p><p class="bib-tags">' + tags + '</p></li>';
+    // the Vancouver citation is written by the build (r.vc, already escaped HTML)
+    return '<li class="bib-item"><p class="bib-title">' + esc(r.t) + '</p><p class="bib-meta">' + (r.vc || (esc(r.a) + '. <em>' + esc(r.j) + '</em>. ' + esc(r.y) + '. ' + link)) + '</p><p class="bib-tags">' + tags + '</p></li>';
   }
   var items = DATA ? null : Array.prototype.slice.call(list.querySelectorAll(".bib-item"));
   function apply() {
@@ -1058,6 +1058,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   }
   function paperLines(r) {
     var out = (r.pp || []).map(function (x) {
+      if (x.vc) return "<li>" + (x.c ? "<strong>Cochrane review:</strong> " : "") + x.vc + "</li>";   // Vancouver, written by the build
       var cite = esc(x.t) + (x.j ? ' <span class="fine">' + esc(x.j) + ", " + esc(x.y) + "</span>" : "");
       var link = x.d ? ' <a href="https://doi.org/' + esc(x.d) + '" target="_blank" rel="noopener external">doi:' + esc(x.d) + ' \u2197</a>'
                : (x.m ? ' <a href="https://pubmed.ncbi.nlm.nih.gov/' + esc(x.m) + '/" target="_blank" rel="noopener external">PubMed \u2197</a>' : "");

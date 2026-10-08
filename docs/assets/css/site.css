@@ -1298,3 +1298,6 @@ details > summary { min-height: 24px; padding-block: 0.15rem; }
 /* the "change your answer" control on the privacy page */
 button.btn { font-family: inherit; cursor: pointer; border: 0; }
 button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple); }
+
+/* text for screen readers only: it completes a visible label without changing it */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

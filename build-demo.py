@@ -5495,7 +5495,7 @@ def member_li(entry):
         rows.append(f'<p class="assoc-site"><a href="{esc(url)}" target="_blank" rel="noopener external">{esc(host)} ↗</a></p>')
     # the donation button stays outside the dropdown, visible without opening the card
     give = (f'<div class="assoc-foot"><a class="btn btn-donate btn-sm" href="{esc(support)}" target="_blank" '
-            f'rel="noopener external" aria-label="Support {esc(name)}">♥ Support them</a></div>') if support else ""
+            f'rel="noopener external"><span aria-hidden="true">♥</span> Support them<span class="sr-only">: {esc(name)}</span></a></div>') if support else ""
     if not rows:
         return f'<li class="assoc-plain" id="{_anchor("member", name)}"><span>{esc(name)}</span>{give}</li>'
     return (f'<li id="{_anchor("member", name)}"><details class="assoc"><summary>{esc(name)}</summary>'

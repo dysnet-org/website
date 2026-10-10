@@ -3843,9 +3843,15 @@ def glossify(html):
             pat, definition, label, url = item
             # the prose is hard-wrapped, so a term may be split across a line break
             for m in re.finditer(r"\b" + pat.replace(" ", r"\s+"), tok):
-                if any(m.start() < e and s < m.end() for s, e, *_ in hits):
+                # a whole word only: a plural or the -y/-ies of "study" joins the term; any other
+                # ending means the term is part of a longer word ("embryo" in "embryopathy")
+                tail = re.match(r"[A-Za-z]*", tok[m.end():]).group(0)
+                if tail and tail not in ("s", "es", "y", "ies"):
                     continue
-                hits.append((m.start(), m.end(), m.group(0), definition, label, url))
+                end = m.end() + len(tail)
+                if any(m.start() < e and s < end for s, e, *_ in hits):
+                    continue
+                hits.append((m.start(), end, tok[m.start():end], definition, label, url))
                 remaining.remove(item)
                 break
         if hits:

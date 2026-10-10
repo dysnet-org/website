@@ -3931,30 +3931,31 @@ _CAUSES_BODY = f"""
     </blockquote>
 
     {opener("01", "The window", "When does a limb form? Four weeks in which a limb is decided.")}
-    <p>Human limbs are built between roughly the fourth and the eighth week after conception. A bud of undifferentiated
+    <p>Human limbs are built between roughly the fourth and the eighth week after conception, that is, the sixth to the tenth
+    week of pregnancy as it is usually counted, from the first day of the last period. A bud of undifferentiated
     mesenchyme grows out of the body wall under the control of three signalling centres, each governing one axis. The apical
     ectodermal ridge, a thickened rim of ectoderm at the tip, drives outgrowth from shoulder to fingertip through fibroblast
     growth factors. The zone of polarising activity, at the posterior margin, sets the thumb-to-little-finger axis through
     sonic hedgehog. The dorsal ectoderm, through WNT7A, separates the back of the hand from the palm. The three are locked in
     feedback loops: remove one and the others fail in turn{cref("10.1631/jzus.b2000285")}.</p>
-    <p>Two consequences follow, and they shape everything below. First, <strong>timing decides the shape of the defect more than
-    the cause does</strong>: the same insult a few days earlier or later produces a different limb, and very different insults
+    <p>Two consequences follow, and they shape everything below. First, <strong>timing often decides the shape of the defect more
+    than the cause does</strong>: the same insult a few days earlier or later produces a different limb, and very different insults
     striking at the same hour produce limbs that look alike{cref("10.1111/j.1440-169X.2007.00939.x", "10.1007/s00204-024-03930-z")}.
-    Second, by the time a pregnancy is confirmed, most of this window has already passed. A limb difference is therefore almost
-    never the result of anything that happened after the mother knew she was pregnant.</p>
+    Second, the window often opens around the time a pregnancy is discovered and stays open for about four weeks, so an
+    exposure in early pregnancy can matter even after the mother knows she is pregnant. When it happened, set against this
+    window, is the first question in judging whether it could have caused a limb difference.</p>
 
     {opener("02", "How often a cause is found", "How often is a cause found? Most of the time, honestly, we do not know.")}
     <p>The China Birth Cohort Study reviewed 2,123 birth defect cases and found an identifiable cause in 22.4% of them: 415
     chromosomal anomalies, 31 monogenic disorders, 23 environmental exposures and 6 attributable to twinning. Among live births
-    the proportion fell to 13.4%{cref("10.1136/bmjpo-2025-003451")}. This is not a Chinese peculiarity; it is what every
-    well-run cohort finds.</p>
+    the proportion fell to 13.4%{cref("10.1136/bmjpo-2025-003451")}.</p>
     <p>For limb differences specifically, the most useful study is a population-based series of 391 fetuses and children with
     limb reduction defects registered in the northern Netherlands between 1981 and 2017. An aetiological diagnosis was made
-    almost three times as often when several limbs were affected as when one was (relative risk 2.9, 95% CI 2.2 to 3.8). No
-    genetic disorder at all was identified among isolated defects of a single limb, whereas a genetic disorder was found in 16%
-    of cases that had one affected limb alongside other anomalies{cref("10.1002/ajmg.a.61875")}. The practical reading is
-    consistent with what geneticists advise: an isolated one-limb difference is usually sporadic, with a low recurrence risk;
-    several limbs, or other organs involved, make genetic testing worthwhile.</p>
+    almost three times as often when several limbs were affected as when one was (relative risk 2.9, 95% CI 2.2 to 3.8). In this
+    cohort, no genetic disorder was identified among isolated defects of a single limb, whereas a genetic disorder was found in 16%
+    of cases that had one affected limb alongside other anomalies{cref("10.1002/ajmg.a.61875")}. The authors conclude that
+    genetic testing seems less useful when a single limb is affected and nothing else, and is warranted when other anomalies
+    are present. That is a finding about a group, not a verdict on one child: a clinical geneticist judges each case.</p>
     <p>Counting also depends on classification. Under the Oberg-Manske-Tonkin system, the 577 congenital upper-limb anomalies
     recorded in Stockholm over eleven years split into 429 malformations, 124 deformations, 10 dysplasias and 14
     syndromes{cref("10.1016/j.jhsa.2013.11.014")}. Malformations and deformations have entirely different causes, and mixing
@@ -3995,8 +3996,8 @@ _CAUSES_BODY = f"""
     live-born babies with trisomy 13, 44% had polydactyly{cref("10.1002/ajmg.a.37355")}; limb deficiencies also occur, though
     less often{cref("10.1002/1096-8628(20000814)93:4<339::aid-ajmg15>3.0.co;2-r")}. Smaller copy-number changes are found in a
     minority of patients with conditions usually called non-genetic, such as Poland
-    syndrome{cref("10.1186/s12881-016-0351-x")}. In consanguineous families, exome sequencing is the reasonable first
-    test{cref("10.3390/genes12070962")}, and recessive variants in genes such as <em>BHLHA9</em> account for syndactyly forms
+    syndrome{cref("10.1186/s12881-016-0351-x")}. In consanguineous families, exome sequencing is argued to be the minimal
+    approach, particularly when the features do not point to one known condition{cref("10.3390/genes12070962")}, and recessive variants in genes such as <em>BHLHA9</em> account for syndactyly forms
     that would otherwise look sporadic{cref("10.1038/hgv.2017.54")}.</p>
 
     {opener("04", "Medicines and chemicals", "Which medicines and chemicals are proven? One certainty, several strong signals, and a long tail of weak ones.")}
@@ -4023,8 +4024,8 @@ _CAUSES_BODY = f"""
     <em>TBX5</em>{cref("10.1038/s41598-019-47739-8")} and in angiogenesis genes{cref("10.1016/j.reprotox.2017.01.012")} has been
     examined in survivors, and screens continue in differentiating stem cells{cref("10.3390/cells14030215")}, without a
     settled answer.</p>
-    <p><strong>Misoprostol</strong> is the strongest post-thalidomide signal. First reported from Brazil, where it was used in
-    unsuccessful attempts to end a pregnancy{cref("10.1056/nejm199806253382604")}, it was confirmed by a meta-analysis of four
+    <p><strong>Misoprostol</strong> gives one of the clearest signals since thalidomide. First reported from
+    Brazil{cref("10.1056/nejm199806253382604")}, it was confirmed by a meta-analysis of four
     case-control studies covering 4,899 cases: odds ratio 25.31 (95% CI 11.11 to 57.66) for Möbius sequence and 11.86 (4.86 to
     28.90) for terminal transverse limb defects{cref("10.1016/j.reprotox.2006.03.015")}. The presumed mechanism is uterine
     contraction and a fall in blood flow to the embryo, which is why the defects are transverse rather than
@@ -4061,10 +4062,11 @@ _CAUSES_BODY = f"""
     reported, on small numbers. All of this rests on self-reported or modelled exposure, and the misclassification that follows
     can move an odds ratio in either direction{cref("10.1111/ppe.13161")}.</p>
 
-    {opener("05", "The mother’s health", "Which maternal conditions matter? Diabetes is the one that matters most.")}
+    {opener("05", "The mother’s health", "Which maternal conditions matter? Diabetes is the best documented.")}
     <p>A meta-analysis covering more than 80 million births found that pre-gestational diabetes raises the risk of congenital
-    anomaly overall (relative risk 1.99) far more than gestational diabetes does (1.18); for limb reduction defects specifically,
-    gestational diabetes carried a relative risk of 1.14 (95% CI 1.06 to 1.23){cref("10.1371/journal.pmed.1003900")}. Caudal
+    anomaly overall (relative risk 1.99) far more than gestational diabetes does (1.18). For limb reduction defects
+    specifically, diabetes present before pregnancy carried a relative risk of 2.73 (95% CI 1.98 to 3.76, nine studies) and
+    gestational diabetes one of 1.14 (1.06 to 1.23){cref("10.1371/journal.pmed.1003900")}. Caudal
     regression and femoral hypoplasia remain the signature patterns of diabetic embryopathy{cref("10.1002/ajmg.a.32071")}, and
     raised glucose alone is enough to produce limb defects in experimental
     embryos{cref("10.1016/j.bbadis.2020.165955")}. Because the damage is done before most pregnancies are confirmed, glycaemic
@@ -4112,8 +4114,8 @@ _CAUSES_BODY = f"""
     complex and amniotic bands are one entity or two is still
     argued{cref("10.1002/bdr2.1442")}.</p>
     <p><strong>Crowding, and what it does not explain.</strong> Reduced amniotic fluid, uterine anomalies and twin pregnancies do
-    restrict fetal movement and can deform a normally formed limb{cref("pmid:3533366")}. But the common assumption that
-    clubfoot and joint contractures are therefore mechanical is, in most cases, wrong. Arthrogryposis and the fetal akinesia
+    restrict fetal movement and can deform a normally formed limb{cref("pmid:3533366")}. But crowding explains less than is
+    often assumed. Arthrogryposis and the fetal akinesia
     deformation sequence are usually intrinsic: more than 320 genes have been implicated, and neuromuscular or connective-tissue
     disease is a far more frequent explanation than crowding{cref("10.1002/pd.5505")}. The lack of movement produces the
     contractures; something else produces the lack of movement. This is exactly why the malformation-deformation distinction in
@@ -4134,8 +4136,9 @@ _CAUSES_BODY = f"""
     carrying one working copy of <em>Shh</em> or <em>Gli2</em> develop limb defects after prenatal alcohol exposure that
     wild-type littermates do not{cref("10.1002/bdr2.1026")}, and a hedgehog pathway agonist given at the right hour produces
     preaxial polydactyly{cref("10.1002/bdra.23571")}. Human candidate-gene studies have looked for the same interactions across
-    limb development, angiogenesis and coagulation genes{cref("10.1002/ajmg.a.35565", "10.1002/ajmg.a.31402")}. For most
-    children, the honest formulation is that susceptibility and exposure met, and that neither alone would have been enough.</p>
+    limb development, angiogenesis and coagulation genes{cref("10.1002/ajmg.a.35565", "10.1002/ajmg.a.31402")}. These models
+    show that a susceptibility and an exposure can combine to cause a defect that neither causes alone. How often this explains
+    a child's limb difference is not known.</p>
 
     {opener("10", "Clusters", "What happens when a cluster is investigated properly?")}
     <p>In the Ain department of France, a regional registry reported an excess of isolated transverse upper-limb reduction

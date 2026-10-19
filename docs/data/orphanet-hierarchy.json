@@ -1,5 +1,5 @@
 {
- "fetched": "2026-09-23",
+ "fetched": "2026-10-19",
  "source": "Orphadata REST API (rd-cross-referencing and rd-classification), licence CC BY 4.0; the three Orphanet classifications holding limb defects agree on every relation recorded here",
  "note": "conditions[code] gives the condition's parent groups and every code under it, down to three levels; nodes[code] gives each concept's term, level (Disorder or Group of disorders), ICD-10 and ICD-11 codes with Orphanet's mapping relation, OMIM ids, parents and children. A code the API does not know carries status \"not found\".",
  "conditions": {
@@ -91,6 +91,13 @@
    "parents": [
     "294955",
     "102285"
+   ],
+   "descendants": []
+  },
+  "3312": {
+   "parents": [
+    "294955",
+    "251529"
    ],
    "descendants": []
   },
@@ -2507,6 +2514,85 @@
    ],
    "classifications": [
     "Orphanet classification of rare developmental anomalies during embryogenesis"
+   ]
+  },
+  "3312": {
+   "status": "ok",
+   "term": "Thalidomide embryopathy",
+   "level": "Disorder",
+   "flag": [
+    1
+   ],
+   "synonyms": [
+    "Fetal thalidomide syndrome"
+   ],
+   "icd10": [
+    {
+     "code": "Q86.8",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "LD2F.0Y",
+     "relation": "NTBT (ORPHAcode is narrower than the targeted code used to represent it)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "294955",
+    "251529"
+   ],
+   "children": [],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare bone diseases",
+    "Orphanet classification of rare disorders due to toxic effects",
+    "Orphanet classification of rare teratologic disorders"
+   ]
+  },
+  "251529": {
+   "status": "ok",
+   "term": "Toxic or drug-related embryofetopathy",
+   "level": "Group of disorders",
+   "flag": [
+    1
+   ],
+   "synonyms": [],
+   "icd10": [],
+   "icd11": [
+    {
+     "code": "LD2F.0",
+     "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ],
+   "omim": [],
+   "parents": [
+    "52662"
+   ],
+   "children": [
+    "1915",
+    "1908",
+    "1909",
+    "1910",
+    "1911",
+    "1918",
+    "1914",
+    "1916",
+    "1917",
+    "1920",
+    "1923",
+    "2305",
+    "3312",
+    "40366",
+    "268249",
+    "370068",
+    "485358"
+   ],
+   "classifications": [
+    "Orphanet classification of rare developmental anomalies during embryogenesis",
+    "Orphanet classification of rare disorders due to toxic effects",
+    "Orphanet classification of rare teratologic disorders"
    ]
   },
   "3320": {

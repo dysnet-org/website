@@ -1,5 +1,5 @@
 {
- "built": "2026-09-28",
+ "built": "2026-10-19",
  "source": "Orphanet, ORPHAcodes API and Nomenclature Pack, licence CC BY 4.0",
  "source_url": "https://api.orphacode.org/",
  "note": "Orphanet's preferred French and Italian term for each code the conditions use, a card's own, a form's inside a card, or a registry-only entry's, with Orphanet's other names in those languages, which the registry searches but does not show. Attribute Orphanet wherever they are displayed.",

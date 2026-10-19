@@ -409,6 +409,22 @@
       "_note": "The page describes the syndrome its code names, ORPHA:3301, with other malformations. The registry records this card as ORPHA:294971, Isolated tetra-amelia, the entry that matches the other amelia cards, so plain describes the isolated form, as the registry's questionnaire shows it."
     },
     {
+      "name": "Thalidomide embryopathy",
+      "description": "limb differences caused by thalidomide taken in early pregnancy: arms or legs absent or very short, often with ear, eye and internal-organ anomalies.",
+      "orphaCode": 3312,
+      "orphanetName": "Thalidomide embryopathy",
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["other"],
+      "genetic": ["nongenetic"],
+      "plain": {
+        "en": "Limb differences caused by thalidomide taken during pregnancy, most often missing or very short arms.",
+        "fr": "Différences des membres dues à la thalidomide prise pendant la grossesse, le plus souvent des bras manquants ou très courts.",
+        "it": "Differenze degli arti causate dalla talidomide assunta in gravidanza, più spesso braccia mancanti o molto corte."
+      },
+      "_note": "A card since October 2026; before, a registry-only entry, offered because many of DysNet's member associations are organisations of thalidomide survivors. Coded ORPHA:3312, never as ORPHA:2879 Phocomelia, Schinzel type, a genetic syndrome, which would assert a cause a survivor does not have."
+    },
+    {
       "name": "Thrombocytopenia-absent radius (TAR)",
       "description": "absent radius with low platelet counts.",
       "orphaCode": 3320,
@@ -529,19 +545,7 @@
       "_note": "One of the forms Orphanet files under syndactyly's group code (ORPHA:90025), given a card of its own."
     }
   ],
-  "registryOnly": [
-    {
-      "name": "Thalidomide embryopathy",
-      "orphaCode": 3312,
-      "orphanetName": "Thalidomide embryopathy",
-      "plain": {
-        "en": "Limb differences caused by thalidomide taken during pregnancy, most often missing or very short arms.",
-        "fr": "Différences des membres dues à la thalidomide prise pendant la grossesse, le plus souvent des bras manquants ou très courts.",
-        "it": "Differenze degli arti causate dalla talidomide assunta in gravidanza, più spesso braccia mancanti o molto corte."
-      },
-      "note": "No card of its own on the page, where thalidomide is a cause of dysmelia and a filter of the bibliography: the registry offers it because many of DysNet's member associations are organisations of thalidomide survivors. Coded ORPHA:3312, never as ORPHA:2879 Phocomelia, Schinzel type, a genetic syndrome, which would assert a cause a survivor does not have."
-    }
-  ],
+  "registryOnly": [],
   "forms": {
     "931": {
       "_term": "Isolated acheiropodia",

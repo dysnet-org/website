@@ -1,5 +1,5 @@
 {
- "built": "2026-09-23",
+ "built": "2026-10-19",
  "source": "Orphanet terms and synonyms (tools/orphanet-hierarchy.json), one pattern per phrase",
  "note": "Generated. The bibliography builder applies its hand-written VOCAB first and these rules only for codes no hand-written rule names. Edit build-bibliography.py, not this file.",
  "rules": [
@@ -842,6 +842,18 @@
    "code": "3301",
    "from": "Zimmer phocomelia",
    "card": "Tetra-amelia"
+  },
+  {
+   "pattern": "\\bThalidomide[\\s-]+embryopathys?\\b",
+   "code": "3312",
+   "from": "Thalidomide embryopathy",
+   "card": "Thalidomide embryopathy"
+  },
+  {
+   "pattern": "\\bFetal[\\s-]+thalidomide[\\s-]+syndromes?\\b",
+   "code": "3312",
+   "from": "Fetal thalidomide syndrome",
+   "card": "Thalidomide embryopathy"
   },
   {
    "pattern": "\\bThrombocytopenia[\\s-]+absent[\\s-]+radiuss?\\b",

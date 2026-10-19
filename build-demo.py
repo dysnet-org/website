@@ -951,6 +951,9 @@ BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else
 # is added here rather than in the register: the tagging stays as the builder found it, and the site
 # decides what a card covers.
 for _e in BIB.get("entries", []):
+    # the thalidomide focus is the literature of the Thalidomide embryopathy card, ORPHA:3312
+    if "thal" in _e.get("codes", []) and "3312" not in _e["codes"]:
+        _e["codes"].append("3312")
     _own = [c for c in _e.get("codes", []) if c != "thal"]
     for _c in _own:
         _card = CARD_FOR_CODE.get(str(_c))
@@ -1002,7 +1005,8 @@ PAYLOADS = {}
 def bibliography_html():
     entries = BIB.get("entries", [])
     names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
-    codes_present = sorted({c for e in entries for c in e["codes"]}, key=lambda c: names.get(c, c))
+    # ORPHA:3312 carries the same papers as the thalidomide focus, which the menu already offers
+    codes_present = sorted({c for e in entries for c in e["codes"]} - {"3312"}, key=lambda c: names.get(c, c))
     topics = sorted({t for e in entries for t in e["topics"]}, key=lambda t: list(BIB_TOPIC_LABEL).index(t) if t in BIB_TOPIC_LABEL else 99)
     items, records = [], []
     for e in entries:
@@ -1950,7 +1954,7 @@ def condition_coverage_html():
             else:
                 unchecked.append(name)
         cls = ' class="reg-direct"' if d or ch else ""
-        pub_cell = (f'<a href="/knowledge/bibliography/?condition={code}" title="{"; ".join(c["published"])}">{pub}</a>' if pub else "&mdash;")
+        pub_cell = (f'<a href="/knowledge/bibliography/?condition={"thal" if str(code) == "3312" else code}" title="{"; ".join(c["published"])}">{pub}</a>' if pub else "&mdash;")
         if not (d or ch or pa) and str(code) not in REG_CHECKED:
             n = REG_COUNTS.get(str(code))
             cells = (f'<td colspan="3" class="reg-unchecked">{"Orphanet lists " + str(n) + ", not yet read one by one" if n else "not checked yet"}</td>')
@@ -3111,7 +3115,7 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # 1570 were reachable from the bibliography's filter and from nowhere else.
     ref_code, anchor = card_anchor(name, code)
     n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
-    refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={ref_code}">{n_refs} references &rarr;</a>'
+    refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={"thal" if str(ref_code) == "3312" else ref_code}">{n_refs} references &rarr;</a>'
             if ref_code and n_refs >= 3 else "")
     # Three layers, in the order the two readers need them: what it is, how it is coded, what we hold
     # on it. The plain sentence stays at the top and in the page's own voice; the codes sit in a block

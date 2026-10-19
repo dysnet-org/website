@@ -1004,7 +1004,7 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .use-pesticide { background: #ecfccb; color: #365314; border-color: #bef264; }
 .use-work { background: #e2e8f0; color: #334155; border-color: #94a3b8; }
 .tera-dose { margin: 0.45rem 0 0; font-size: var(--text-small); }
-.tera-jump { margin: 0.9rem 0 1.1rem; }
+.tera-jump { margin: 0.9rem 0 1.1rem; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); color: var(--dys-muted); }
 .tera-notice { margin: 0.9rem 0 0; padding: 0.6rem 0.85rem; border-left: 4px solid #d97706; background: #fef3c7; color: #422006; border-radius: 0 0.35rem 0.35rem 0; }
 .tera-notice a { color: #92400e; }
 .tera-kind { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.45rem; border: 1px solid #94a3b8; border-radius: 0.3rem; font-size: 0.75rem; color: #334155; vertical-align: middle; }
@@ -1018,7 +1018,7 @@ button.use small { font-weight: 600; opacity: 0.75; }
 .tera-preg dd { margin: 0; }
 .st-limb { background: #fff7ed; color: #9a3412; border-color: #fdba74; }
 @media (max-width: 520px) { .tera-preg dl { grid-template-columns: 1fr; } .tera-preg dd { margin-bottom: 0.3rem; } }
-#register, .tera-item { scroll-margin-top: 6rem; }
+#register, #how-to-read, .tera-item { scroll-margin-top: 6rem; }
 .tera-dose .fine { color: var(--dys-muted); }
 .tera-use-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 

@@ -2164,6 +2164,21 @@ PAGES["/knowledge/ongoing-studies/"] = {
         <p>An observational study combining MRI and behavioural measures to understand how the central nervous system reorganises in people born with upper-limb amelia, compared with controls. About 70 participants; adults with congenital upper-limb loss can take part in Zurich.</p>
         <p class="src">University of Zurich, Switzerland · recruiting until 2027 · <a href="https://clinicaltrials.gov/study/NCT06043518" target="_blank" rel="noopener external">ClinicalTrials.gov · NCT06043518 ↗</a></p>
       </article>
+      <article class="entry">
+        <h3>3D-printed prostheses and the developing brain · University of Nebraska <span class="badge live">recruiting</span></h3>
+        <p>A trial that fits children born with a difference of the hand or arm on one side with a customised 3D-printed prosthesis, then measures with functional near-infrared spectroscopy how it changes activity in the motor cortex and how the child moves. The aim is rehabilitation that makes children less likely to give up their prosthesis. About 40 participants aged 3 to 18.</p>
+        <p class="src">University of Nebraska, Omaha, United States · recruiting until 2030 · <a href="https://clinicaltrials.gov/study/NCT04110730" target="_blank" rel="noopener external">ClinicalTrials.gov · NCT04110730 ↗</a></p>
+      </article>
+      <article class="entry">
+        <h3>A one-handed video game controller · University of Manitoba <span class="badge live">recruiting</span></h3>
+        <p>A trial of an adapter that lets a child play video games with one hand, testing whether it improves play and enjoyment after a week of use at home. Children aged 7 to 17 with a limb difference on one side can take part, whatever its cause or level and whether or not they use a prosthesis; it takes two visits to the Rehabilitation Centre for Children in Winnipeg, in English. About 20 participants.</p>
+        <p class="src">University of Manitoba, Winnipeg, Canada · recruiting until 2027 · <a href="https://clinicaltrials.gov/study/NCT05981664" target="_blank" rel="noopener external">ClinicalTrials.gov · NCT05981664 ↗</a></p>
+      </article>
+      <article class="entry">
+        <h3>Genes behind eye-movement disorders, Duane radial ray and Möbius syndromes included · Boston Children’s Hospital <span class="badge live">recruiting</span></h3>
+        <p>An observational genetic study looking for the genes behind conditions in which the nerves that move the eyes develop abnormally, and the anomalies that come with them. Among its conditions are Duane radial ray syndrome, where eye-movement problems come with differences of the thumb and forearm, and Möbius syndrome, sometimes seen with limb differences. Open to all ages; about 20,000 participants.</p>
+        <p class="src">Boston Children’s Hospital, United States · recruiting until 2030 · <a href="https://clinicaltrials.gov/study/NCT03059420" target="_blank" rel="noopener external">ClinicalTrials.gov · NCT03059420 ↗</a></p>
+      </article>
     </div>
 
     <h2 class="h3" style="margin-top:var(--space-4)">Surveys and interview studies</h2>

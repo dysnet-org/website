@@ -4971,6 +4971,22 @@ REPORTS_FEED = """    <div style="margin-top:var(--space-4)">
         which prostheses and assistive devices the Italian health service pays for. It is the step from a conference to the
         institution that can act on what it heard.</p>
       </article>
+      <article class="report" id="general-assembly-2026">
+        <p class="seat">DysNet · General Assembly</p>
+        <h2 class="h3">DysNet: moving forward, always!</h2>
+        <time datetime="2026-08-26">26 August 2026 · Claudio Pirola, Chair</time>
+        <p>During the General Assembly of last August I was reconfirmed in the role of DysNet’s Chair for the next two years. It’s an honour for me to continue to serve this Community in a context of deep social and technological changes the world is going through.</p>
+        <p>As discussed and agreed, our activity will be mainly focused on three clear missions:</p>
+        <ul>
+          <li><a href="/knowledge/"><strong>Knowledge</strong></a>: be the international reference point for limb-difference research, with five maintained registers, directly connected to <a href="https://www.orpha.net/" target="_blank" rel="noopener external">Orphanet</a></li>
+          <li><a href="/registry/"><strong>Registry</strong></a>: build the international registry of limb malformations, owned by the patients themselves</li>
+          <li><a href="/voice/"><strong>Voice</strong></a>: represent families wherever decisions about them are made, with clear mandates and public reports</li>
+        </ul>
+        <p>In this context our relationship with the international organizations <a href="https://www.eurordis.org/" target="_blank" rel="noopener external">EURORDIS</a>, the European Organization for Rare Diseases, and <a href="https://www.edf-feph.org/" target="_blank" rel="noopener external">EDF</a>, the European Disability Forum, will be more and more strategic. Relationships with other EU organizations, such as <a href="https://cerebralpalsyeurope.org/" target="_blank" rel="noopener external">Cerebral Palsy Europe</a>, whose projects we have been following for two years now, will also be strengthened; initiatives at institutional level in various countries to support the rights of persons with disabilities, as we have been doing over these last years, will continue to be among the core activities of our Federation.</p>
+        <p>Many thanks to all the Board Members who shared up to now the activity of DysNet and to the new Members who decided to grant their support for the future.</p>
+        <p>Special thanks to <a href="https://www.loicrigal.com" target="_blank" rel="noopener external">Loïc Rigal</a> from <a href="https://www.assedea.fr/" target="_blank" rel="noopener external">Assedea</a>, France, new Deputy Chair, a person with great skills precious for our initiatives.</p>
+        <p>Congratulations Loïc and all the best to the whole new Board for the future activities.</p>
+      </article>
       <article class="report">
         <p class="seat">Cerebral Palsy EU</p>
         <h2 class="h3">Advocacy skills webinar</h2>
@@ -5117,8 +5133,9 @@ def reports_teaser(n=3):
         seat = re.sub(r"<a [^>]*>(.*?)</a>", r"\1", seat, flags=re.S).strip()
         title = re.search(r'<h2[^>]*>(.*?)</h2>', art, re.S).group(1).strip()
         when = re.search(r"<time[^>]*>(.*?)</time>", art, re.S).group(1).split("·")[0].strip()
+        rid = re.findall(r'<article class="report"(?: id="([^"]+)")?>', REPORTS_FEED[:REPORTS_FEED.find(art)])[-1]
         out.append(f'<div class="card"><p class="seat">{seat}</p>'
-                   f'<h3 class="h4"><a href="/voice/reports/">{title}</a></h3>'
+                   f'<h3 class="h4"><a href="/voice/reports/{"#" + rid if rid else ""}">{title}</a></h3>'
                    f'<p class="fine">{when}</p></div>')
     return '<div class="grid cols-3">' + "".join(out) + "</div>"
 
@@ -5136,27 +5153,11 @@ PAGES["/voice/"] = {
     <p>DysNet keeps its seats but chooses them: a restricted list of international bodies active alongside researchers. Each seat has a named delegate, a written mandate, and a short written report to members after every meeting.</p>
     <p class="brief-cta"><a class="btn btn-primary" href="/assets/dysnet-five-demands.pdf" download><span class="btn-ic" aria-hidden="true">↓</span> Download the five demands (one-page PDF)</a></p>
 
-    {opener("01", "From the Chair", "DysNet: moving forward, always!", toc="From the Chair")}
-    <div class="chair-msg">
-      <p>During the General Assembly of last August I was reconfirmed in the role of DysNet’s Chair for the next two years. It’s an honour for me to continue to serve this Community in a context of deep social and technological changes the world is going through.</p>
-      <p>As discussed and agreed, our activity will be mainly focused on three clear missions:</p>
-      <ul>
-        <li><a href="/knowledge/"><strong>Knowledge</strong></a>: be the international reference point for limb-difference research, with five maintained registers, directly connected to <a href="https://www.orpha.net/" target="_blank" rel="noopener external">Orphanet</a></li>
-        <li><a href="/registry/"><strong>Registry</strong></a>: build the international registry of limb malformations, owned by the patients themselves</li>
-        <li><a href="/voice/"><strong>Voice</strong></a>: represent families wherever decisions about them are made, with clear mandates and public reports</li>
-      </ul>
-      <p>In this context our relationship with the international organizations <a href="https://www.eurordis.org/" target="_blank" rel="noopener external">EURORDIS</a>, the European Organization for Rare Diseases, and <a href="https://www.edf-feph.org/" target="_blank" rel="noopener external">EDF</a>, the European Disability Forum, will be more and more strategic. Relationships with other EU organizations, such as <a href="https://cerebralpalsyeurope.org/" target="_blank" rel="noopener external">Cerebral Palsy Europe</a>, whose projects we have been following for two years now, will also be strengthened; initiatives at institutional level in various countries to support the rights of persons with disabilities, as we have been doing over these last years, will continue to be among the core activities of our Federation.</p>
-      <p>Many thanks to all the Board Members who shared up to now the activity of DysNet and to the new Members who decided to grant their support for the future.</p>
-      <p>Special thanks to <a href="https://www.loicrigal.com" target="_blank" rel="noopener external">Loïc Rigal</a> from <a href="https://www.assedea.fr/" target="_blank" rel="noopener external">Assedea</a>, France, new Deputy Chair, a person with great skills precious for our initiatives.</p>
-      <p>Congratulations Loïc and all the best to the whole new Board for the future activities.</p>
-      <p class="chair-sign"><picture><source srcset="/assets/img/board-claudio-pirola.webp" type="image/webp"><img src="/assets/img/board-claudio-pirola.jpg" alt="" width="72" height="72" loading="lazy" decoding="async"></picture><span><a href="/about/#board"><strong>Claudio Pirola</strong></a><br>DysNet’s Chair</span></p>
-    </div>
-
-    {opener("02", "Our voice", "Five demands, carried into every room we sit in.", toc="The five demands")}
+    {opener("01", "Our voice", "Five demands, carried into every room we sit in.", toc="The five demands")}
     <p>What DysNet asks for on behalf of families, in the order we argue them.</p>
     {demands_html()}
 
-    {opener("03", "Where we sit", "The seats, with a mandate.", toc="Where we sit")}
+    {opener("02", "Where we sit", "The seats, with a mandate.", toc="Where we sit")}
     <div class="grid cols-2" style="margin-top:var(--space-4)">
       <div class="card">
         <h3 class="h4">EURORDIS · Rare Diseases Europe</h3>
@@ -5176,12 +5177,12 @@ PAGES["/voice/"] = {
       </div>
     </div>
 
-    {opener("04", "What came back", "Every seat reports, and the reports are public.", toc="The reports")}
+    {opener("03", "What came back", "Every seat reports, and the reports are public.", toc="The reports")}
     <p>A seat is worth what it brings home, so each delegate writes a short report after every meeting and we publish it. Here are the three most recent.</p>
     {reports_teaser(3)}
     <p style="margin-top:var(--space-3)"><a class="btn btn-primary" href="/voice/reports/">Read all delegate reports</a></p>
 
-    {opener("05", "Also active in", "Projects we joined by invitation.", toc="Also active in")}
+    {opener("04", "Also active in", "Projects we joined by invitation.", toc="Also active in")}
     <ul>
       <li><strong>VOTE4ALL / VOICE4ALL</strong> (Cerebral Palsy Europe, EU-supported): autonomous voting rights for persons with disabilities; study visits to The Hague and the Portuguese Parliament.</li>
       <li><strong>Local lectures</strong>: Milan Civil Week, and an event planned around the Milano-Cortina 2026 Winter Paralympics.</li>

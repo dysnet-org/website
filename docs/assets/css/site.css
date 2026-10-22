@@ -1317,10 +1317,17 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 #cond-hpo:disabled { opacity: 0.6; }
 .cond-match { margin: var(--space-1) 0 0; padding: 0.3rem 0.6rem; border-radius: 0.3rem; background: var(--dys-purple-soft); color: var(--dys-ink); font-size: var(--text-small); }
 
-/* Acronyms (assets/js/acronyms.js): they look like the text around them; the full form shows on hover or tap */
-abbr.acr { text-decoration: none; border: 0; cursor: help; }
-abbr.acr:hover { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-#acr-tip { position: absolute; z-index: 60; max-width: min(22rem, calc(100vw - 16px)); padding: 6px 10px; border-radius: 8px;
+/* Acronyms and hard words (assets/js/glossary.js): they look like the text around them; the meaning shows on hover or tap */
+abbr.acr, span.term { text-decoration: none; border: 0; cursor: help; }
+abbr.acr:hover, span.term:hover { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+#word-tip { position: absolute; z-index: 60; max-width: min(22rem, calc(100vw - 16px)); padding: 6px 10px; border-radius: 8px;
   background: var(--dys-ink); color: #fff; font: 500 13px/1.4 "Avenir Next", "Segoe UI", system-ui, sans-serif; letter-spacing: 0; text-transform: none;
-  box-shadow: 0 4px 16px rgb(0 0 0 / .18); pointer-events: none; }
-#acr-tip b { font-weight: 700; margin-right: 6px; }
+  text-align: left; box-shadow: 0 4px 16px rgb(0 0 0 / .18); pointer-events: none; }
+#word-tip b { font-weight: 700; margin-right: 6px; }
+/* a hard word: the white card of the causes article's glossary, which the mouse can reach to follow the source link */
+#word-tip.is-term { max-width: min(24rem, calc(100vw - 16px)); padding: 0.8rem 0.95rem; background: #fff; color: var(--dys-ink);
+  border: 1px solid rgba(36, 26, 51, 0.14); border-radius: var(--radius-card); box-shadow: 0 12px 34px rgba(36, 26, 51, 0.18);
+  font-size: var(--text-small); font-weight: 400; line-height: 1.5; pointer-events: auto; }
+#word-tip.is-term b { display: block; margin: 0 0 0.2rem; color: var(--dys-purple-text); }
+#word-tip.is-term a { display: block; margin-top: 0.45rem; }
+@media print { #word-tip { display: none !important; } }

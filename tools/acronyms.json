@@ -1,5 +1,5 @@
 {
- "_about": "Acronyms on dysnet.org and their full form, shown when the mouse rests on them (or on a tap). build-demo.py writes docs/assets/js/acronyms.js from this file. Add an acronym here when a page starts using it; leave out ambiguous ones (US, OR, IT, EC) and brand names.",
+ "_about": "Acronyms on dysnet.org and their full form, shown when the mouse rests on them (or on a tap). build-demo.py writes docs/assets/js/glossary.js from this file and tools/glossary.json. Add an acronym here when a page starts using it; leave out ambiguous ones (US, OR, IT, EC) and brand names.",
  "acronyms": {
   "ACE": "angiotensin-converting enzyme (ACE inhibitors are blood-pressure medicines)",
   "ACOG": "American College of Obstetricians and Gynecologists",

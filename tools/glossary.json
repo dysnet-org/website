@@ -1,0 +1,982 @@
+{
+ "_about": "Plain-language definitions of the hard words the site uses, shown when the mouse rests on a word (or on a tap), on every page; written for families by the DysNet documentation team. Each word links to the DysNet condition card ('card') or to its term in the Human Phenotype Ontology ('hpo') when one exists. The definitions of the causes article (GLOSSARY in build-demo.py) are shown site-wide too. build-demo.py writes them into docs/assets/js/glossary.js.",
+ "terms": [
+  {
+   "forms": [
+    "dysmelia",
+    "dysmélie"
+   ],
+   "def": "Any difference in how a limb formed before birth: part of an arm, leg, hand or foot is missing, shorter, joined or extra. It is the umbrella word DysNet uses for all of them."
+  },
+  {
+   "forms": [
+    "amelia",
+    "amélie"
+   ],
+   "def": "The complete absence of one or more limbs.",
+   "card": "294925"
+  },
+  {
+   "forms": [
+    "meromelia"
+   ],
+   "def": "The partial absence of a limb: part of it formed and part did not."
+  },
+  {
+   "forms": [
+    "ectromelia"
+   ],
+   "def": "The absence or severe shortening of one or more of the long bones of a limb."
+  },
+  {
+   "forms": [
+    "hemimelia",
+    "hémimélie"
+   ],
+   "def": "The absence or marked shortening of one of the two bones of the forearm or lower leg. It is named after the bone concerned: radial, ulnar, tibial or fibular hemimelia."
+  },
+  {
+   "forms": [
+    "acromelia"
+   ],
+   "def": "Shortening of the end parts of the limbs, the hands and feet."
+  },
+  {
+   "forms": [
+    "oligodactyly",
+    "oligodactylie"
+   ],
+   "def": "Fewer than five fingers on a hand, or fewer than five toes on a foot.",
+   "hpo": "HP:0012165"
+  },
+  {
+   "forms": [
+    "hypodactyly"
+   ],
+   "def": "Fewer than five fingers on a hand, or fewer than five toes on a foot; another word for oligodactyly.",
+   "hpo": "HP:0012165"
+  },
+  {
+   "forms": [
+    "adactyly"
+   ],
+   "def": "The absence of all the fingers of a hand or all the toes of a foot.",
+   "hpo": "HP:0009776"
+  },
+  {
+   "forms": [
+    "monodactyly"
+   ],
+   "def": "A hand or foot with a single finger or toe."
+  },
+  {
+   "forms": [
+    "ectrodactyly",
+    "ectrodactylie"
+   ],
+   "def": "Also called split hand or split foot: the middle fingers or toes are missing, leaving a deep gap in the centre, so the hand or foot looks divided in two.",
+   "card": "2440"
+  },
+  {
+   "forms": [
+    "split hand/foot malformation",
+    "split hand",
+    "split foot"
+   ],
+   "def": "Missing middle fingers or toes, leaving a deep gap in the centre of the hand or foot; also called ectrodactyly.",
+   "card": "2440"
+  },
+  {
+   "forms": [
+    "brachydactyly",
+    "brachydactylie"
+   ],
+   "def": "Short fingers or toes, because one or more of their small bones are short.",
+   "card": "brachydactyly"
+  },
+  {
+   "forms": [
+    "symbrachydactyly",
+    "symbrachydactylie"
+   ],
+   "def": "A hand, more rarely a foot, on one side only, with short, small or missing fingers; small skin buds often sit where fingers would be. It is usually not inherited.",
+   "card": "1570"
+  },
+  {
+   "forms": [
+    "zygodactyly",
+    "zygodactylie"
+   ],
+   "def": "A form of syndactyly that runs in families: usually the third and fourth fingers, or the second and third toes, are joined by skin."
+  },
+  {
+   "forms": [
+    "polysyndactyly"
+   ],
+   "def": "Extra fingers or toes that are also joined to their neighbours.",
+   "card": "2935"
+  },
+  {
+   "forms": [
+    "syndactylie"
+   ],
+   "def": "Fingers or toes joined together, by skin alone or by bone.",
+   "card": "90025"
+  },
+  {
+   "forms": [
+    "polydactylie"
+   ],
+   "def": "Being born with one or more extra fingers or toes.",
+   "card": "2913"
+  },
+  {
+   "forms": [
+    "phocomélie",
+    "focomelia"
+   ],
+   "def": "A limb in which the hand or foot is attached close to the body because the segments in between are absent or very short.",
+   "card": "2879"
+  },
+  {
+   "forms": [
+    "hyperphalangy"
+   ],
+   "def": "A finger or toe with one more small bone than usual, which makes it longer.",
+   "card": "295002"
+  },
+  {
+   "forms": [
+    "triphalangeal thumb",
+    "triphalangeal"
+   ],
+   "def": "A thumb with three small bones instead of two, so that it is longer and looks more like a finger.",
+   "hpo": "HP:0001199"
+  },
+  {
+   "forms": [
+    "biphalangeal"
+   ],
+   "def": "With two small bones instead of the usual three."
+  },
+  {
+   "forms": [
+    "clinodactyly"
+   ],
+   "def": "A finger that curves sideways, most often the little finger bending towards the ring finger.",
+   "hpo": "HP:0030084"
+  },
+  {
+   "forms": [
+    "camptodactyly"
+   ],
+   "def": "A finger that stays bent at its middle joint and cannot be fully straightened.",
+   "hpo": "HP:0012385"
+  },
+  {
+   "forms": [
+    "acheiropodia"
+   ],
+   "def": "A very rare inherited condition in which both hands and both feet are absent."
+  },
+  {
+   "forms": [
+    "preaxial"
+   ],
+   "def": "On the thumb side of the hand or the big-toe side of the foot."
+  },
+  {
+   "forms": [
+    "postaxial"
+   ],
+   "def": "On the little-finger side of the hand or the little-toe side of the foot."
+  },
+  {
+   "forms": [
+    "mesoaxial"
+   ],
+   "def": "In the middle of the hand or foot, affecting the central fingers or toes."
+  },
+  {
+   "forms": [
+    "radial ray"
+   ],
+   "def": "The thumb side of the arm: the radius bone of the forearm, the thumb and the bones between them. Radial ray differences affect any part of that line."
+  },
+  {
+   "forms": [
+    "terminal transverse limb defect",
+    "terminal transverse"
+   ],
+   "def": "A limb that stops at a certain level, as if cut across, with nothing beyond it; the most common form is a forearm that ends below the elbow.",
+   "card": "498461"
+  },
+  {
+   "forms": [
+    "transverse limb defect",
+    "transverse limb defects",
+    "transverse limb reduction",
+    "transverse upper limb reduction defects"
+   ],
+   "def": "A limb that stops at a certain level, as if cut across, with nothing beyond it.",
+   "card": "498461"
+  },
+  {
+   "forms": [
+    "longitudinal limb defect",
+    "longitudinal deficiency",
+    "radial longitudinal deficiency"
+   ],
+   "def": "A limb in which a bone is missing or short along one side, while the parts beyond it are present, often changed.",
+   "card": "498457"
+  },
+  {
+   "forms": [
+    "intercalary limb defect",
+    "intercalary"
+   ],
+   "def": "A limb in which a middle segment is missing or short, while the hand or foot is present.",
+   "card": "294927"
+  },
+  {
+   "forms": [
+    "proximal femoral focal deficiency"
+   ],
+   "def": "A thigh bone that did not form properly at its top end, near the hip, so that the leg is much shorter."
+  },
+  {
+   "forms": [
+    "synostosis",
+    "synostoses"
+   ],
+   "def": "Two bones joined into one that are normally separate. In the forearm, it stops the hand turning palm up and palm down."
+  },
+  {
+   "forms": [
+    "radioulnar synostosis",
+    "radio-ulnar synostosis"
+   ],
+   "def": "The two forearm bones joined together near the elbow, so that the hand cannot turn palm up and palm down.",
+   "hpo": "HP:0002974"
+  },
+  {
+   "forms": [
+    "contracture",
+    "contractures"
+   ],
+   "def": "A joint that cannot be fully straightened or bent because the tissues around it are tight or short.",
+   "hpo": "HP:0034392"
+  },
+  {
+   "forms": [
+    "clubfoot",
+    "talipes"
+   ],
+   "def": "A foot turned inwards and downwards from birth. It is usually treated with plaster casts and a brace in the first months of life.",
+   "hpo": "HP:0001762"
+  },
+  {
+   "forms": [
+    "hypermobility"
+   ],
+   "def": "Joints that bend further than usual.",
+   "hpo": "HP:0001382"
+  },
+  {
+   "forms": [
+    "pseudarthrosis"
+   ],
+   "def": "A bone that broke, or never formed fully, and did not heal, leaving a false joint where the bone should be solid."
+  },
+  {
+   "forms": [
+    "phalanx",
+    "phalanges",
+    "phalangeal"
+   ],
+   "def": "The small bones of the fingers and toes. Each finger has three, the thumb and the big toe two."
+  },
+  {
+   "forms": [
+    "interphalangeal"
+   ],
+   "def": "Between two of the small bones of a finger or toe, that is, at a finger or toe joint."
+  },
+  {
+   "forms": [
+    "metacarpal",
+    "metacarpals"
+   ],
+   "def": "The five long bones of the palm, between the wrist and the fingers."
+  },
+  {
+   "forms": [
+    "metatarsal",
+    "metatarsals"
+   ],
+   "def": "The five long bones in the middle of the foot, between the ankle and the toes."
+  },
+  {
+   "forms": [
+    "carpal",
+    "carpals"
+   ],
+   "def": "Of the wrist: the eight small bones between the forearm and the palm."
+  },
+  {
+   "forms": [
+    "radius"
+   ],
+   "def": "The forearm bone on the thumb side."
+  },
+  {
+   "forms": [
+    "radial"
+   ],
+   "def": "On the thumb side of the forearm and hand, where the radius bone lies."
+  },
+  {
+   "forms": [
+    "ulna",
+    "ulnar"
+   ],
+   "def": "The forearm bone on the little-finger side, and what lies on that side of the arm and hand."
+  },
+  {
+   "forms": [
+    "tibia",
+    "tibial"
+   ],
+   "def": "The shinbone: the larger of the two lower-leg bones, on the big-toe side."
+  },
+  {
+   "forms": [
+    "fibula",
+    "fibular"
+   ],
+   "def": "The thinner of the two lower-leg bones, on the outer side."
+  },
+  {
+   "forms": [
+    "femur",
+    "femoral"
+   ],
+   "def": "The thigh bone."
+  },
+  {
+   "forms": [
+    "humerus",
+    "humeral"
+   ],
+   "def": "The upper-arm bone, between the shoulder and the elbow."
+  },
+  {
+   "forms": [
+    "hallux"
+   ],
+   "def": "The big toe."
+  },
+  {
+   "forms": [
+    "vertebra",
+    "vertebrae",
+    "vertebral"
+   ],
+   "def": "The bones of the spine, stacked one on top of the other."
+  },
+  {
+   "forms": [
+    "sacrum"
+   ],
+   "def": "The triangular bone at the base of the spine, between the hip bones."
+  },
+  {
+   "forms": [
+    "scoliosis"
+   ],
+   "def": "A sideways curve of the spine.",
+   "hpo": "HP:0002650"
+  },
+  {
+   "forms": [
+    "craniosynostosis"
+   ],
+   "def": "Bones of the baby's skull joining too early, which changes the shape of the head.",
+   "hpo": "HP:0001363"
+  },
+  {
+   "forms": [
+    "dysostosis",
+    "dysostoses"
+   ],
+   "def": "A malformation of one or a few individual bones."
+  },
+  {
+   "forms": [
+    "osteogenesis imperfecta"
+   ],
+   "def": "Also called brittle bone disease: an inherited condition in which bones break very easily, because the collagen that strengthens them is faulty."
+  },
+  {
+   "forms": [
+    "aplasia",
+    "aplasie"
+   ],
+   "def": "A body part that did not form at all."
+  },
+  {
+   "forms": [
+    "agenesis",
+    "agénésie",
+    "agenesia"
+   ],
+   "def": "A body part that never formed; it means the same as aplasia."
+  },
+  {
+   "forms": [
+    "hypoplasia",
+    "hypoplasie",
+    "ipoplasia"
+   ],
+   "def": "Underdevelopment: the part is present, but smaller or less complete than it should be."
+  },
+  {
+   "forms": [
+    "dysplasia",
+    "dysplasie"
+   ],
+   "def": "Abnormal development of a tissue or organ: it is there, but built differently."
+  },
+  {
+   "forms": [
+    "congenital",
+    "congénital",
+    "congénitale"
+   ],
+   "def": "Present at birth. A congenital difference formed before birth; it is not necessarily inherited."
+  },
+  {
+   "forms": [
+    "anomaly",
+    "anomalies"
+   ],
+   "def": "A difference from the usual structure of the body. Registries use congenital anomaly for any difference present at birth."
+  },
+  {
+   "forms": [
+    "malformation",
+    "malformations"
+   ],
+   "def": "A body part built differently from the start, during the baby's development before birth."
+  },
+  {
+   "forms": [
+    "syndrome",
+    "syndromes"
+   ],
+   "def": "A set of features that occur together often enough to be recognised as one condition, usually with one cause."
+  },
+  {
+   "forms": [
+    "syndromic"
+   ],
+   "def": "Part of a syndrome: the limb difference comes with differences in other parts of the body."
+  },
+  {
+   "forms": [
+    "non-syndromic",
+    "nonsyndromic"
+   ],
+   "def": "Occurring on its own: the limb difference is not part of a wider syndrome."
+  },
+  {
+   "forms": [
+    "bilateral"
+   ],
+   "def": "On both sides of the body."
+  },
+  {
+   "forms": [
+    "unilateral"
+   ],
+   "def": "On one side of the body only."
+  },
+  {
+   "forms": [
+    "proximal"
+   ],
+   "def": "Closer to the trunk: towards the shoulder or the hip."
+  },
+  {
+   "forms": [
+    "distal"
+   ],
+   "def": "Further from the trunk: towards the fingertips or the toes."
+  },
+  {
+   "forms": [
+    "digit",
+    "digits"
+   ],
+   "def": "A finger or a toe."
+  },
+  {
+   "forms": [
+    "dysmorphic",
+    "dysmorphism",
+    "dysmorphia",
+    "dysmorphology"
+   ],
+   "def": "Doctors' words for physical features that differ from the usual, such as the shape of the face or hands. Dysmorphology is the medical field that studies them to find a diagnosis."
+  },
+  {
+   "forms": [
+    "morphology"
+   ],
+   "def": "The shape and structure of a body part."
+  },
+  {
+   "forms": [
+    "atrophy"
+   ],
+   "def": "The wasting or shrinking of a tissue or organ that had formed normally."
+  },
+  {
+   "forms": [
+    "aetiology",
+    "etiology"
+   ],
+   "def": "The cause of a condition, or the study of causes."
+  },
+  {
+   "forms": [
+    "incidence"
+   ],
+   "def": "The number of new cases over a given time or among a given number of births."
+  },
+  {
+   "forms": [
+    "ORPHAcode",
+    "ORPHAcodes"
+   ],
+   "def": "The number Orphanet gives each rare disease, so that doctors, registries and families everywhere can name the same condition the same way."
+  },
+  {
+   "forms": [
+    "ontology"
+   ],
+   "def": "A structured vocabulary in which each term has a definition and a place among broader and narrower terms, so computers and people use words the same way."
+  },
+  {
+   "forms": [
+    "prenatal",
+    "prénatal",
+    "antenatal",
+    "antenatally",
+    "prenatally"
+   ],
+   "def": "Before birth, during pregnancy."
+  },
+  {
+   "forms": [
+    "perinatal"
+   ],
+   "def": "Around the time of birth, from the last weeks of pregnancy to the first weeks of life."
+  },
+  {
+   "forms": [
+    "intrauterine",
+    "in utero"
+   ],
+   "def": "Inside the womb, before birth."
+  },
+  {
+   "forms": [
+    "trimester",
+    "trimesters"
+   ],
+   "def": "One of the three periods of about three months into which a pregnancy is divided. The limbs form in the first trimester."
+  },
+  {
+   "forms": [
+    "fetus",
+    "foetus",
+    "fetal",
+    "foetal"
+   ],
+   "def": "The developing baby from the ninth week after conception until birth, after the embryo stage."
+  },
+  {
+   "forms": [
+    "embryonic",
+    "embryogenesis"
+   ],
+   "def": "Of the embryo, the developing child during the first eight weeks after conception, when the limbs and organs are built."
+  },
+  {
+   "forms": [
+    "organogenesis"
+   ],
+   "def": "The weeks, roughly the third to the eighth after conception, in which the organs and limbs are formed. It is the period most sensitive to teratogens."
+  },
+  {
+   "forms": [
+    "limb bud",
+    "limb buds"
+   ],
+   "def": "The small swelling on the side of the embryo from which an arm or a leg grows. Arm buds appear about four weeks after conception, leg buds a few days later."
+  },
+  {
+   "forms": [
+    "placenta",
+    "placental",
+    "placentation"
+   ],
+   "def": "The organ that joins the baby to the mother's blood supply during pregnancy and brings it oxygen and food."
+  },
+  {
+   "forms": [
+    "amniotic",
+    "amnion",
+    "amniotiques"
+   ],
+   "def": "Of the amniotic sac, the bag of membranes filled with fluid in which the baby grows."
+  },
+  {
+   "forms": [
+    "oligohydramnios"
+   ],
+   "def": "Too little amniotic fluid around the baby. The baby has less room to move, and pressure can deform the limbs.",
+   "hpo": "HP:0001562"
+  },
+  {
+   "forms": [
+    "hydrops fetalis",
+    "hydrops"
+   ],
+   "def": "A serious build-up of fluid in several parts of the unborn baby's body."
+  },
+  {
+   "forms": [
+    "teratogenic",
+    "teratogenicity",
+    "teratogenesis",
+    "teratogène",
+    "tératogène"
+   ],
+   "def": "Able to disturb the development of an unborn child and cause a birth defect; teratogenesis is the process by which this happens."
+  },
+  {
+   "forms": [
+    "teratology"
+   ],
+   "def": "The study of birth defects and their causes. Teratology information services answer questions about medicines and other exposures in pregnancy."
+  },
+  {
+   "forms": [
+    "embryotoxic",
+    "embryotoxicity",
+    "embryo-fetal toxicity",
+    "embryo-foetal toxicity"
+   ],
+   "def": "Harmful to the embryo or fetus: able to cause a malformation, poor growth or the loss of the pregnancy."
+  },
+  {
+   "forms": [
+    "neurodevelopment",
+    "neurodevelopmental"
+   ],
+   "def": "The development of the brain and of the skills it supports: movement, speech, learning, attention and behaviour."
+  },
+  {
+   "forms": [
+    "neural tube",
+    "neural tube defect",
+    "neural tube defects"
+   ],
+   "def": "The neural tube is the groove in the early embryo that closes to form the brain and spinal cord. A neural tube defect means it did not close completely, as in spina bifida."
+  },
+  {
+   "forms": [
+    "spina bifida"
+   ],
+   "def": "A gap in the spine where the backbone and the spinal cord did not close completely before birth.",
+   "hpo": "HP:0002414"
+  },
+  {
+   "forms": [
+    "pharmacovigilance"
+   ],
+   "def": "The monitoring of medicines' side effects once they are on the market, by doctors, patients, companies and medicines agencies."
+  },
+  {
+   "forms": [
+    "endocrine disruptor",
+    "endocrine disruptors",
+    "endocrine disrupting"
+   ],
+   "def": "A chemical that interferes with the body's hormones."
+  },
+  {
+   "forms": [
+    "craniofacial"
+   ],
+   "def": "Of the skull and the face."
+  },
+  {
+   "forms": [
+    "orofacial"
+   ],
+   "def": "Of the mouth and the face."
+  },
+  {
+   "forms": [
+    "cleft palate"
+   ],
+   "def": "A gap in the roof of the mouth, left when its two halves did not join before birth.",
+   "hpo": "HP:0000175"
+  },
+  {
+   "forms": [
+    "cleft lip"
+   ],
+   "def": "A gap in the upper lip, left when its parts did not join before birth.",
+   "hpo": "HP:0000204"
+  },
+  {
+   "forms": [
+    "microcephaly"
+   ],
+   "def": "A head smaller than expected for the baby's age, usually because the brain is smaller.",
+   "hpo": "HP:0000252"
+  },
+  {
+   "forms": [
+    "hydrocephalus"
+   ],
+   "def": "Too much fluid in the cavities of the brain, which can enlarge the head.",
+   "hpo": "HP:0000238"
+  },
+  {
+   "forms": [
+    "holoprosencephaly"
+   ],
+   "def": "A brain that did not divide fully into its two halves during development.",
+   "hpo": "HP:0001360"
+  },
+  {
+   "forms": [
+    "encephalocele",
+    "meningoencephalocele"
+   ],
+   "def": "A sac containing brain tissue that bulges through a gap in the skull.",
+   "hpo": "HP:0002084"
+  },
+  {
+   "forms": [
+    "anophthalmia"
+   ],
+   "def": "The absence of one or both eyes.",
+   "hpo": "HP:0000528"
+  },
+  {
+   "forms": [
+    "microphthalmia"
+   ],
+   "def": "One or both eyes abnormally small.",
+   "hpo": "HP:0000568"
+  },
+  {
+   "forms": [
+    "gastroschisis"
+   ],
+   "def": "A gap in the belly wall beside the navel, through which the intestines lie outside the body at birth.",
+   "hpo": "HP:0001543"
+  },
+  {
+   "forms": [
+    "omphalocele",
+    "exomphalos"
+   ],
+   "def": "Organs of the belly bulging out through the navel, covered by a thin membrane.",
+   "hpo": "HP:0001539"
+  },
+  {
+   "forms": [
+    "hypospadias",
+    "hypospadia"
+   ],
+   "def": "In a boy, the opening of the urethra on the underside of the penis instead of at its tip.",
+   "hpo": "HP:0000047"
+  },
+  {
+   "forms": [
+    "atresia"
+   ],
+   "def": "A passage of the body that should be open but is closed or missing, such as the oesophagus or the anus."
+  },
+  {
+   "forms": [
+    "fistula"
+   ],
+   "def": "An abnormal channel joining two organs or passages that are normally separate."
+  },
+  {
+   "forms": [
+    "ectodermal dysplasia",
+    "ectodermal dysplasias"
+   ],
+   "def": "Inherited conditions affecting the hair, teeth, nails and sweat glands, which all grow from the embryo's outer layer."
+  },
+  {
+   "forms": [
+    "ectoderm",
+    "ectodermal"
+   ],
+   "def": "The outer layer of cells of the early embryo, which forms the skin, hair, nails, teeth and nervous system."
+  },
+  {
+   "forms": [
+    "hemangioma",
+    "haemangioma"
+   ],
+   "def": "A common birthmark made of small blood vessels, often a raised red patch. It is usually harmless and fades during childhood.",
+   "hpo": "HP:0001028"
+  },
+  {
+   "forms": [
+    "polycystic"
+   ],
+   "def": "Containing many cysts, small sacs filled with fluid."
+  },
+  {
+   "forms": [
+    "mitochondrial"
+   ],
+   "def": "Of the mitochondria, the tiny power plants inside our cells. They carry a little DNA of their own, inherited from the mother."
+  },
+  {
+   "forms": [
+    "thrombocytopenia"
+   ],
+   "def": "Too few platelets in the blood, the cells that help it clot, so bruising and bleeding come more easily.",
+   "hpo": "HP:0001873"
+  },
+  {
+   "forms": [
+    "anaemia",
+    "anemia"
+   ],
+   "def": "Too few red blood cells or too little haemoglobin to carry oxygen, which causes tiredness and paleness.",
+   "hpo": "HP:0001903"
+  },
+  {
+   "forms": [
+    "leukaemia",
+    "leukemia"
+   ],
+   "def": "A cancer of the cells in the bone marrow that make blood cells."
+  },
+  {
+   "forms": [
+    "bradycardia"
+   ],
+   "def": "A heartbeat slower than normal.",
+   "hpo": "HP:0001662"
+  },
+  {
+   "forms": [
+    "echocardiography",
+    "echocardiographic",
+    "echocardiogram"
+   ],
+   "def": "An ultrasound scan of the heart."
+  },
+  {
+   "forms": [
+    "hypothyroidism"
+   ],
+   "def": "A thyroid gland that makes too little hormone, which slows the body down.",
+   "hpo": "HP:0000821"
+  },
+  {
+   "forms": [
+    "hyperthyroidism"
+   ],
+   "def": "A thyroid gland that makes too much hormone, which speeds the body up.",
+   "hpo": "HP:0000836"
+  },
+  {
+   "forms": [
+    "hypertension"
+   ],
+   "def": "High blood pressure.",
+   "hpo": "HP:0000822"
+  },
+  {
+   "forms": [
+    "cytomegalovirus"
+   ],
+   "def": "A very common virus. When a mother catches it during pregnancy, above all for the first time, it can harm the baby, mainly its hearing and brain."
+  },
+  {
+   "forms": [
+    "retinoid",
+    "retinoids"
+   ],
+   "def": "Medicines related to vitamin A, used mainly for acne and skin diseases. Taken by mouth, they are among the most harmful medicines for an unborn child."
+  },
+  {
+   "forms": [
+    "antiepileptic",
+    "antiepileptics",
+    "anticonvulsant",
+    "anticonvulsants"
+   ],
+   "def": "Medicines that prevent epileptic seizures. Some are also used for mood disorders or pain."
+  },
+  {
+   "forms": [
+    "anticoagulant",
+    "anticoagulants"
+   ],
+   "def": "Medicines that slow blood clotting, used to prevent or treat clots."
+  },
+  {
+   "forms": [
+    "corticosteroid",
+    "corticosteroids"
+   ],
+   "def": "Medicines related to cortisone, a hormone the body makes, used to calm inflammation and the immune system."
+  },
+  {
+   "forms": [
+    "macrolide",
+    "macrolides"
+   ],
+   "def": "A family of antibiotics that includes erythromycin, clarithromycin and azithromycin."
+  },
+  {
+   "forms": [
+    "angiogenesis"
+   ],
+   "def": "The growth of new blood vessels."
+  },
+  {
+   "forms": [
+    "prosthetist",
+    "prosthetists"
+   ],
+   "def": "A health professional who designs, makes and fits artificial limbs."
+  },
+  {
+   "forms": [
+    "orthotic",
+    "orthotics",
+    "orthotist",
+    "orthotists"
+   ],
+   "def": "Orthotics are braces, splints and insoles made to support or correct a part of the body; an orthotist makes and fits them."
+  }
+ ]
+}

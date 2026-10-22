@@ -1316,3 +1316,11 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 #cond-hsys, #cond-hpo, #cond-hfreq { flex: 1 1 14rem; min-width: 0; max-width: 26rem; padding: 0.45rem 0.6rem; border: 1px solid var(--dys-line); border-radius: 0.4rem; background: #fff; font: inherit; }
 #cond-hpo:disabled { opacity: 0.6; }
 .cond-match { margin: var(--space-1) 0 0; padding: 0.3rem 0.6rem; border-radius: 0.3rem; background: var(--dys-purple-soft); color: var(--dys-ink); font-size: var(--text-small); }
+
+/* Acronyms (assets/js/acronyms.js): they look like the text around them; the full form shows on hover or tap */
+abbr.acr { text-decoration: none; border: 0; cursor: help; }
+abbr.acr:hover { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+#acr-tip { position: absolute; z-index: 60; max-width: min(22rem, calc(100vw - 16px)); padding: 6px 10px; border-radius: 8px;
+  background: var(--dys-ink); color: #fff; font: 500 13px/1.4 "Avenir Next", "Segoe UI", system-ui, sans-serif; letter-spacing: 0; text-transform: none;
+  box-shadow: 0 4px 16px rgb(0 0 0 / .18); pointer-events: none; }
+#acr-tip b { font-weight: 700; margin-right: 6px; }

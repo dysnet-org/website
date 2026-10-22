@@ -3141,7 +3141,8 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     foot = condition_registries_html(ref_code) + refs
     hpo_attr = " ".join(sorted(hp for hp, v in card_features(ref_code).items() if v[0] != "Excluded (0%)"))
     hsys_attr = " ".join(sorted({hpo_sys_slug(hpo_system(hp)) for hp in hpo_attr.split()}))
-    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-hsys="{hsys_attr}" data-search="{haystack}">'
+    hfreq_attr = ";".join(f"{hp}={v[0]}" for hp, v in sorted(card_features(ref_code).items()) if v[0] != "Excluded (0%)")
+    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-hsys="{hsys_attr}" data-hfreq="{hfreq_attr}" data-search="{haystack}">'
             f'<h3 class="h4">{name}</h3>'
             f'<p class="cond-desc">{desc}</p>{usual_line(name, ref_code)}'
             f'<p class="cond-chips">{chips}</p>'
@@ -3210,7 +3211,8 @@ def condition_pheno_html(ref_code):
                 rows.append(f"<dt>{freq}</dt><dd>{links}</dd>")
         forms = sorted({n for v in feats.values() for n in v[2]})
         note = (f'<p class="fine">Recorded by Orphanet for the forms it files here: {esc("; ".join(forms))}.</p>' if forms else "")
-        out += (f'<details class="cond-pheno"><summary>Associated features <span class="fine">{len(feats)}, from Orphanet</span></summary>'
+        dist = ", ".join(f'{sum(1 for v in feats.values() if v[0] == fq)} {fq.split(" (")[0].lower()}' for fq in PHENO_FREQ if any(v[0] == fq for v in feats.values()))
+        out += (f'<details class="cond-pheno"><summary>Associated features <span class="fine">{dist} · from Orphanet</span></summary>'
                 f'<dl>{"".join(rows)}</dl>{note}</details>')
     if func:
         items = "".join(f'<li>{esc(name)}: ' + "; ".join(esc(", ".join(x for x in (f.lower(), (sv.lower() + " severity") if sv else "", t.lower()) if x)) for f, sv, t in combos) + '</li>'

@@ -313,6 +313,14 @@
       if (ok && hpo && (c.getAttribute("data-hpo") || "").split(" ").indexOf(hpo) === -1) ok = false;
       if (ok && hsys && (c.getAttribute("data-hsys") || "").split(" ").indexOf(hsys) === -1) ok = false;
       c.style.display = ok ? "" : "none";
+      // with a feature chosen, each remaining card says how often Orphanet records it for that condition
+      var line = c.querySelector(".cond-match");
+      if (ok && hpo) {
+        var m = (";" + (c.getAttribute("data-hfreq") || "") + ";").match(new RegExp(";" + hpo.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "=([^;]*);"));
+        if (!line) { line = document.createElement("p"); line.className = "cond-match"; c.querySelector(".cond-desc").insertAdjacentElement("afterend", line); }
+        var label = hpoSel.options[hpoSel.selectedIndex] ? hpoSel.options[hpoSel.selectedIndex].textContent.replace(/ \(\d+\)$/, "") : "";
+        line.textContent = label + ": " + (m ? m[1].charAt(0).toLowerCase() + m[1].slice(1) : "") + " in this condition, according to Orphanet";
+      } else if (line) { line.remove(); }
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;

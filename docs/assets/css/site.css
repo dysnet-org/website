@@ -1313,6 +1313,6 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 .cond-pheno dd { margin: 0; }
 .cond-pheno ul { margin: var(--space-1) 0; padding-left: 1.1rem; }
 .hpo-pick { display: flex; flex-wrap: wrap; gap: var(--space-1); }
-#cond-hsys, #cond-hpo { flex: 1 1 14rem; min-width: 0; max-width: 26rem; padding: 0.45rem 0.6rem; border: 1px solid var(--dys-line); border-radius: 0.4rem; background: #fff; font: inherit; }
+#cond-hsys, #cond-hpo, #cond-hfreq { flex: 1 1 14rem; min-width: 0; max-width: 26rem; padding: 0.45rem 0.6rem; border: 1px solid var(--dys-line); border-radius: 0.4rem; background: #fff; font: inherit; }
 #cond-hpo:disabled { opacity: 0.6; }
 .cond-match { margin: var(--space-1) 0 0; padding: 0.3rem 0.6rem; border-radius: 0.3rem; background: var(--dys-purple-soft); color: var(--dys-ink); font-size: var(--text-small); }

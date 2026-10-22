@@ -282,13 +282,21 @@
   var qBox = document.getElementById("cond-q");
   // the associated features, in two steps: a part of the body, then a feature within it. A card stays when
   // Orphanet records the feature (or any feature of that part of the body) for it, never when excluded.
-  var hpoSel = document.getElementById("cond-hpo"), sysSel = document.getElementById("cond-hsys");
+  var hpoSel = document.getElementById("cond-hpo"), sysSel = document.getElementById("cond-hsys"), freqSel = document.getElementById("cond-hfreq");
+  // Orphanet's frequency labels, most to least frequent: a threshold keeps ranks up to it
+  var FREQ_RANK = { "Obligate (100%)": 0, "Very frequent (99-80%)": 1, "Frequent (79-30%)": 2, "Occasional (29-5%)": 3, "Very rare (<4-1%)": 4 };
+  function cardFreqs(c) {
+    var out = {};
+    (c.getAttribute("data-hfreq") || "").split(";").forEach(function (x) { var i = x.indexOf("="); if (i > 0) out[x.slice(0, i)] = x.slice(i + 1); });
+    return out;
+  }
   var featByGroup = {};
   if (hpoSel && sysSel) {
     hpoSel.querySelectorAll("optgroup").forEach(function (g) {
       featByGroup[g.getAttribute("data-sys")] = Array.prototype.map.call(g.querySelectorAll("option"), function (o) { return [o.value, o.textContent]; });
     });
   }
+  function fp0() { return typeof filterParams === "function" ? filterParams() : null; }
   function fillFeatures(sys) {
     if (!hpoSel || !sysSel) return;
     hpoSel.innerHTML = "";
@@ -301,7 +309,7 @@
 
   function apply() {
     var text = qBox ? qBox.value.trim().toLowerCase() : "";
-    var hpo = hpoSel ? hpoSel.value : "", hsys = sysSel ? sysSel.value : "";
+    var hpo = hpoSel ? hpoSel.value : "", hsys = sysSel ? sysSel.value : "", fmax = freqSel && freqSel.value ? +freqSel.value : 9;
     var n = 0;
     cards.forEach(function (c) {
       var ok = true;
@@ -312,19 +320,24 @@
       if (ok && text && (c.getAttribute("data-search") || "").indexOf(text) === -1) ok = false;
       if (ok && hpo && (c.getAttribute("data-hpo") || "").split(" ").indexOf(hpo) === -1) ok = false;
       if (ok && hsys && (c.getAttribute("data-hsys") || "").split(" ").indexOf(hsys) === -1) ok = false;
+      if (ok && fmax < 9 && (hpo || hsys)) {
+        // the chosen feature, or any feature of the chosen part of the body, must occur at least that often
+        var fr = cardFreqs(c), pool = hpo ? [hpo] : (featByGroup[hsys] || []).map(function (f) { return f[0]; });
+        ok = pool.some(function (h) { return fr[h] && FREQ_RANK[fr[h]] <= fmax; });
+      }
       c.style.display = ok ? "" : "none";
       // with a feature chosen, each remaining card says how often Orphanet records it for that condition
       var line = c.querySelector(".cond-match");
       if (ok && hpo) {
         var m = (";" + (c.getAttribute("data-hfreq") || "") + ";").match(new RegExp(";" + hpo.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "=([^;]*);"));
         if (!line) { line = document.createElement("p"); line.className = "cond-match"; c.querySelector(".cond-desc").insertAdjacentElement("afterend", line); }
-        var label = hpoSel.options[hpoSel.selectedIndex] ? hpoSel.options[hpoSel.selectedIndex].textContent.replace(/ \(\d+\)$/, "") : "";
+        var label = hpoSel.options[hpoSel.selectedIndex] ? hpoSel.options[hpoSel.selectedIndex].textContent.split(" · ")[0] : "";
         line.textContent = label + ": " + (m ? m[1].charAt(0).toLowerCase() + m[1].slice(1) : "") + " in this condition, according to Orphanet";
       } else if (line) { line.remove(); }
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
-    if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hsys: hsys, hpo: hpo });
+    if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hsys: hsys, hpo: hpo, freq: freqSel ? freqSel.value : "" });
   }
   if (qBox) {
     qBox.addEventListener("input", apply);
@@ -335,6 +348,7 @@
   if (hpoSel && sysSel) {
     sysSel.addEventListener("change", function () { fillFeatures(sysSel.value); apply(); });
     hpoSel.addEventListener("change", apply);
+    if (freqSel) { freqSel.addEventListener("change", apply); if (fp0() && fp0().get("freq")) freqSel.value = fp0().get("freq"); }
     // a part of the body or a feature can be linked: ?hsys=limbs, ?hpo=HP:0001171
     var fp = typeof filterParams === "function" ? filterParams() : null;
     var preH = fp && fp.get("hpo"), preS = fp && fp.get("hsys");
@@ -360,6 +374,7 @@
     state = { limbs: "", type: "", other: "", genetic: "" };
     if (qBox) qBox.value = "";
     if (sysSel) { sysSel.value = ""; fillFeatures(""); }
+    if (freqSel) freqSel.value = "";
     finder.querySelectorAll(".finder-chips").forEach(function (group) {
       group.querySelectorAll("button").forEach(function (x, i) { x.setAttribute("aria-pressed", i === 0 ? "true" : "false"); });
     });

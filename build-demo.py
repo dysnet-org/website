@@ -3234,22 +3234,30 @@ def hpo_menu_html():
     """The finder's two menus: a body system, then a feature within it, each with the number of cards it leaves.
     The second menu holds every feature in groups, so it works without JavaScript; the script then shows only
     the chosen system's features."""
-    cards, sys_cards = {}, {}
+    cards, sys_cards, freqs = {}, {}, {}
     for name, desc, code, orpha_name, *_ in CONDITIONS:
         ref_code, _a = card_anchor(name, code)
         for hp, v in card_features(ref_code).items():
             if v[0] != "Excluded (0%)":
                 cards.setdefault(hp, set()).add(name)
                 sys_cards.setdefault(hpo_system(hp), set()).add(name)
+                freqs.setdefault(hp, []).append(v[0])
+    def spread(hp):
+        # how the feature's frequency divides across the conditions that have it
+        parts = [f'{fq.split(" (")[0].lower()} in {freqs[hp].count(fq)}' for fq in PHENO_FREQ if freqs[hp].count(fq)]
+        return ", ".join(parts)
     groups = {}
     for hp, names in cards.items():
         groups.setdefault(hpo_system(hp), []).append((pheno_label(hp), hp, len(names)))
     order = sorted(groups, key=lambda g: (g != "Limbs", g != "Bones, joints and muscles", g == "Other", g))
     sys_opts = "".join(f'<option value="{hpo_sys_slug(g)}">{esc(g)} ({len(sys_cards[g])})</option>' for g in order)
-    opts = "".join(f'<optgroup label="{esc(g)}" data-sys="{hpo_sys_slug(g)}">' + "".join(f'<option value="{hp}">{esc(lab)} ({n})</option>'
+    opts = "".join(f'<optgroup label="{esc(g)}" data-sys="{hpo_sys_slug(g)}">' + "".join(f'<option value="{hp}">{esc(lab)} · {n} condition{"s" if n != 1 else ""}: {spread(hp)}</option>'
                                                          for lab, hp, n in sorted(groups[g], key=lambda x: (-x[2], x[0].lower()))) + "</optgroup>" for g in order)
     return (f'<div class="hpo-pick"><select id="cond-hsys" aria-label="Body system"><option value="">Any part of the body</option>{sys_opts}</select>'
-            f'<select id="cond-hpo" aria-label="Feature"><option value="">Any feature</option>{opts}</select></div>'), len(cards)
+            f'<select id="cond-hpo" aria-label="Feature"><option value="">Any feature</option>{opts}</select>'
+            f'<select id="cond-hfreq" aria-label="How often"><option value="">How often? Any frequency</option>'
+            f'<option value="1">80% or more (obligate or very frequent)</option><option value="2">30% or more (frequent at least)</option>'
+            f'<option value="3">5% or more (occasional at least)</option></select></div>'), len(cards)
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -3625,7 +3633,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
         </div>
       </fieldset>
       <fieldset>
-        <legend>Is there another feature you know of? Choose the part of the body, then the feature.</legend>
+        <legend>Is there another feature you know of? Choose the part of the body, then the feature, and how often it should occur.</legend>
         {hpo_menu_html()[0]}
         <p class="fine" style="margin:0.4rem 0 0">Features as Orphanet records them for each condition, in the Human Phenotype Ontology, grouped by body system; the number is how many cards it leaves. A condition does not always show every feature.</p>
       </fieldset>

@@ -6407,6 +6407,18 @@ def search_entries():
     return out
 
 
+def external_new_window(html):
+    """Every link to another site opens in a new window, so a reader keeps their place on the card they came from."""
+    def fix(m):
+        tag = m.group(0)
+        if "target=" in tag:
+            return tag
+        if "rel=" not in tag:
+            tag = tag[:-1] + ' rel="noopener external">'
+        return tag[:-1] + ' target="_blank">'
+    return re.sub(r'<a\b[^>]*\bhref="https?://(?!(?:www\.)?dysnet\.org[/"])[^"]*"[^>]*>', fix, html)
+
+
 def page_dates(path, new_html):
     """datePublished = first commit of the page; dateModified = last commit, or today when this build changes the page."""
     import subprocess, datetime
@@ -6481,7 +6493,7 @@ def build():
         out_dir.mkdir(parents=True, exist_ok=True)
         extra = list(page.get("jsonld") or []) + (EXTRA_LD[path]() if path in EXTRA_LD else [])
         probe = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra) + header_html(path if path != "/" else "-") + (crumbs(*page["crumbs"]) if page.get("crumbs") else "") + page["body"].replace("__MAP_HERO__", MAP_HERO) + FOOTER
-        dates = page_dates(path, heading_ids(rebase(probe))); page_mod[path] = dates["modified"]
+        dates = page_dates(path, external_new_window(heading_ids(rebase(probe)))); page_mod[path] = dates["modified"]
         html = head(page["title"], page["desc"], path, page.get("is_home", False), page.get("og"), extra, dates)
         html += header_html(path if path != "/" else "-")
         if page.get("crumbs"):
@@ -6489,7 +6501,7 @@ def build():
         html += page["body"]
         html = html.replace("__MAP_HERO__", MAP_HERO)
         html += FOOTER.replace("__PAGE_DATE__", __import__("datetime").date.fromisoformat(dates["modified"]).strftime("%-d %B %Y"))
-        final = heading_ids(rebase(html))
+        final = external_new_window(heading_ids(rebase(html)))
         # a __TOKEN__ the templates spell differently from its .replace() would otherwise ship as text
         left = sorted(set(re.findall(r"__[A-Z][A-Z0-9_]+__", final)))
         if left:

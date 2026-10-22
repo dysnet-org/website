@@ -1302,3 +1302,14 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 /* text for screen readers only: it completes a visible label without changing it */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 
+
+/* Understanding dysmelia: associated features and daily life, from Orphanet */
+.cond-pheno { margin-top: var(--space-1); font-size: var(--text-small); min-width: 0; overflow-wrap: anywhere; }
+.cond-pheno summary { cursor: pointer; color: var(--dys-purple-text); }
+.cond-pheno dl { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: 0.3rem var(--space-1); margin: var(--space-1) 0; }
+@media (max-width: 30rem) { .cond-pheno dl { grid-template-columns: minmax(0, 1fr); } .cond-pheno dt { margin-top: 0.3rem; } }
+.card.cond { min-width: 0; }
+.cond-pheno dt { color: var(--dys-muted); }
+.cond-pheno dd { margin: 0; }
+.cond-pheno ul { margin: var(--space-1) 0; padding-left: 1.1rem; }
+#cond-hpo { width: 100%; max-width: 32rem; padding: 0.45rem 0.6rem; border: 1px solid var(--dys-line); border-radius: 0.4rem; background: #fff; font: inherit; }

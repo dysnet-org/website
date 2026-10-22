@@ -280,9 +280,12 @@
   // A reader who already knows what they are looking for should not have to answer three questions:
   // the box matches a name, a synonym, an ORPHAcode or an ICD code against each card's data-search.
   var qBox = document.getElementById("cond-q");
+  // the associated-features menu: a card stays when Orphanet records the feature for it (never when excluded)
+  var hpoSel = document.getElementById("cond-hpo");
 
   function apply() {
     var text = qBox ? qBox.value.trim().toLowerCase() : "";
+    var hpo = hpoSel ? hpoSel.value : "";
     var n = 0;
     cards.forEach(function (c) {
       var ok = true;
@@ -291,17 +294,24 @@
         if (v && (c.getAttribute("data-" + q) || "").split(" ").indexOf(v) === -1) ok = false;
       });
       if (ok && text && (c.getAttribute("data-search") || "").indexOf(text) === -1) ok = false;
+      if (ok && hpo && (c.getAttribute("data-hpo") || "").split(" ").indexOf(hpo) === -1) ok = false;
       c.style.display = ok ? "" : "none";
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
-    if (typeof writeFilterParams === "function") writeFilterParams({ q: text });
+    if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hpo: hpo });
   }
   if (qBox) {
     qBox.addEventListener("input", apply);
     // a searched view can be linked: /knowledge/understanding-dysmelia/?q=Q71.3
     var pre = typeof filterParams === "function" ? filterParams().get("q") : null;
     if (pre) { qBox.value = pre; }
+  }
+  if (hpoSel) {
+    hpoSel.addEventListener("change", apply);
+    // a feature can be linked too: /knowledge/understanding-dysmelia/?hpo=HP:0001171
+    var preH = typeof filterParams === "function" ? filterParams().get("hpo") : null;
+    if (preH) { hpoSel.value = preH; }
   }
 
   finder.querySelectorAll(".finder-chips").forEach(function (group) {
@@ -319,6 +329,7 @@
   document.getElementById("finder-reset").addEventListener("click", function () {
     state = { limbs: "", type: "", other: "", genetic: "" };
     if (qBox) qBox.value = "";
+    if (hpoSel) hpoSel.value = "";
     finder.querySelectorAll(".finder-chips").forEach(function (group) {
       group.querySelectorAll("button").forEach(function (x, i) { x.setAttribute("aria-pressed", i === 0 ? "true" : "false"); });
     });

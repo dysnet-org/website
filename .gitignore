@@ -32,3 +32,6 @@ tools/geo/
 tools/terato/
 __pycache__/
 *.pyc
+
+# Orphadata phenotype and functional files, and the HPO (re-downloaded by tools/build-condition-phenotypes.py)
+tools/orphadata-raw/

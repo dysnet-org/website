@@ -1,0 +1,8006 @@
+{
+ "source": {
+  "label": "Orphadata, Orphanet's scientific knowledge base",
+  "url": "https://sciences.orphadata.com/orphanet-scientific-knowledge-files/",
+  "licence": "CC BY 4.0",
+  "phenotypes": "https://www.orphadata.com/data/xml/en_product4.xml",
+  "phenotypes_date": "2026-06-23",
+  "functional": "https://www.orphadata.com/data/xml/en_funct_consequences.xml",
+  "functional_date": "2026-06-23",
+  "hpo": "Human Phenotype Ontology, hp/releases/2026-09-01",
+  "hpo_url": "https://hpo.jax.org/"
+ },
+ "fetched": "2026-10-22",
+ "frequencies": [
+  "Obligate (100%)",
+  "Very frequent (99-80%)",
+  "Frequent (79-30%)",
+  "Occasional (29-5%)",
+  "Very rare (<4-1%)",
+  "Excluded (0%)"
+ ],
+ "terms": {
+  "HP:0000003": {
+   "name": "Multicystic kidney dysplasia",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000028": {
+   "name": "Cryptorchidism",
+   "lay": "Undescended testes",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000040": {
+   "name": "Long penis",
+   "lay": "Enlarged penis",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000046": {
+   "name": "Small scrotum",
+   "lay": "Smaller than typical growth of scrotum",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000047": {
+   "name": "Hypospadias",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000062": {
+   "name": "Ambiguous genitalia",
+   "lay": "Ambiguous external genitalia",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000070": {
+   "name": "Ureterocele",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000076": {
+   "name": "Vesicoureteral reflux",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000077": {
+   "name": "Abnormality of the kidney",
+   "lay": "Abnormal kidney",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000081": {
+   "name": "Duplicated collecting system",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000085": {
+   "name": "Horseshoe kidney",
+   "lay": "Horseshoe kidneys",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000089": {
+   "name": "Renal hypoplasia",
+   "lay": "Small kidneys",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000104": {
+   "name": "Renal agenesis",
+   "lay": "Absent kidney",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000110": {
+   "name": "Renal dysplasia",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000113": {
+   "name": "Polycystic kidney dysplasia",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000119": {
+   "name": "Abnormality of the genitourinary system",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000143": {
+   "name": "Rectovaginal fistula",
+   "lay": "Abnormal connection between rectum and vagina",
+   "systems": [
+    "Digestive system",
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000148": {
+   "name": "Vaginal atresia",
+   "lay": "Abnormally closed or absent vagina",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000151": {
+   "name": "Aplasia of the uterus",
+   "lay": "Absent uterus",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0000160": {
+   "name": "Narrow mouth",
+   "lay": "Small mouth",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000175": {
+   "name": "Cleft palate",
+   "lay": "Cleft roof of mouth",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000202": {
+   "name": "Orofacial cleft",
+   "lay": "Cleft of the mouth",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000204": {
+   "name": "Cleft upper lip",
+   "lay": "Cleft of upper lip",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000218": {
+   "name": "High palate",
+   "lay": "Elevated palate",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000238": {
+   "name": "Hydrocephalus",
+   "lay": "Too much cerebrospinal fluid in the brain",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0000248": {
+   "name": "Brachycephaly",
+   "lay": "Broad head shape",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0000252": {
+   "name": "Microcephaly",
+   "lay": "Abnormally small head",
+   "systems": [
+    "Bones, joints and muscles",
+    "Brain and nerves",
+    "Head and neck"
+   ]
+  },
+  "HP:0000271": {
+   "name": "Abnormality of the face",
+   "lay": "Abnormal face",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000272": {
+   "name": "Malar flattening",
+   "lay": "Zygomatic flattening",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0000288": {
+   "name": "Abnormality of the philtrum",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000293": {
+   "name": "Full cheeks",
+   "lay": "Apple cheeks",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000316": {
+   "name": "Hypertelorism",
+   "lay": "Wide-set eyes",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000322": {
+   "name": "Short philtrum",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000337": {
+   "name": "Broad forehead",
+   "lay": "Increased width of the forehead",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000347": {
+   "name": "Micrognathia",
+   "lay": "Little lower jaw",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0000348": {
+   "name": "High forehead",
+   "lay": "Tall forehead",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000356": {
+   "name": "Abnormality of the outer ear",
+   "lay": "Abnormality of the external ear",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000358": {
+   "name": "Posteriorly rotated ears",
+   "lay": "Ears rotated toward back of head",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000364": {
+   "name": "Hearing abnormality",
+   "lay": "Abnormal hearing",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000365": {
+   "name": "Hearing impairment",
+   "lay": "Deafness",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000377": {
+   "name": "Abnormal pinna morphology",
+   "lay": "Abnormally shaped ears",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000387": {
+   "name": "Absent earlobe",
+   "lay": "Earlobe, absent",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000396": {
+   "name": "Overfolded helix",
+   "lay": "Overfolded ears",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000407": {
+   "name": "Sensorineural hearing impairment",
+   "lay": "",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000411": {
+   "name": "Protruding ear",
+   "lay": "Prominent ear",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0000430": {
+   "name": "Underdeveloped nasal alae",
+   "lay": "Underdeveloped tissue around nostril",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000444": {
+   "name": "Convex nasal ridge",
+   "lay": "Beaked nose",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000464": {
+   "name": "Abnormality of the neck",
+   "lay": "Deformity of the neck",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000470": {
+   "name": "Short neck",
+   "lay": "Decreased length of neck",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0000478": {
+   "name": "Abnormality of the eye",
+   "lay": "Abnormal eye",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000482": {
+   "name": "Microcornea",
+   "lay": "Cornea of eye less than 10mm in diameter",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000486": {
+   "name": "Strabismus",
+   "lay": "Cross-eyed",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000494": {
+   "name": "Downslanted palpebral fissures",
+   "lay": "Downward slanting of the opening between the eyelids",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000501": {
+   "name": "Glaucoma",
+   "lay": "",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000508": {
+   "name": "Ptosis",
+   "lay": "Drooping upper eyelid",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000518": {
+   "name": "Cataract",
+   "lay": "Clouding of the lens of the eye",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000520": {
+   "name": "Proptosis",
+   "lay": "Bulging eye",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000526": {
+   "name": "Aniridia",
+   "lay": "Absent iris",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000528": {
+   "name": "Anophthalmia",
+   "lay": "Absence of eyeballs",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000545": {
+   "name": "Myopia",
+   "lay": "Close sighted",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000568": {
+   "name": "Microphthalmia",
+   "lay": "Abnormally small eyeball",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000582": {
+   "name": "Upslanted palpebral fissure",
+   "lay": "Upward slanting of the opening between the eyelids",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000589": {
+   "name": "Coloboma",
+   "lay": "Notched pupil",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000592": {
+   "name": "Blue sclerae",
+   "lay": "Blue outer white part of eyeball",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000593": {
+   "name": "Abnormal anterior chamber morphology",
+   "lay": "",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000612": {
+   "name": "Iris coloboma",
+   "lay": "Cat eye",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000639": {
+   "name": "Nystagmus",
+   "lay": "Involuntary, rapid, rhythmic eye movements",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000648": {
+   "name": "Optic atrophy",
+   "lay": "",
+   "systems": [
+    "Eyes"
+   ]
+  },
+  "HP:0000656": {
+   "name": "Ectropion",
+   "lay": "Everted eyelid",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000668": {
+   "name": "Hypodontia",
+   "lay": "Failure of development of between one and six teeth",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0000682": {
+   "name": "Abnormal dental enamel morphology",
+   "lay": "Abnormal tooth enamel",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0000765": {
+   "name": "Abnormal thorax morphology",
+   "lay": "Abnormality of the chest",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000766": {
+   "name": "Abnormal sternum morphology",
+   "lay": "Abnormality of the sternum",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000767": {
+   "name": "Pectus excavatum",
+   "lay": "Funnel chest",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000768": {
+   "name": "Pectus carinatum",
+   "lay": "Pigeon chest",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000772": {
+   "name": "Abnormal rib morphology",
+   "lay": "Abnormality of the ribs",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000773": {
+   "name": "Short ribs",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000776": {
+   "name": "Congenital diaphragmatic hernia",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000819": {
+   "name": "Diabetes mellitus",
+   "lay": "",
+   "systems": [
+    "Hormones",
+    "Metabolism"
+   ]
+  },
+  "HP:0000821": {
+   "name": "Hypothyroidism",
+   "lay": "Underactive thyroid",
+   "systems": [
+    "Hormones"
+   ]
+  },
+  "HP:0000855": {
+   "name": "Insulin resistance",
+   "lay": "Body fails to respond to insulin",
+   "systems": [
+    "Metabolism"
+   ]
+  },
+  "HP:0000882": {
+   "name": "Hypoplastic scapulae",
+   "lay": "Small shoulder blade",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000889": {
+   "name": "Abnormal clavicle morphology",
+   "lay": "Abnormal collarbone",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000891": {
+   "name": "Cervical ribs",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000912": {
+   "name": "Sprengel anomaly",
+   "lay": "High shoulder blade",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000921": {
+   "name": "Missing ribs",
+   "lay": "Absent ribs",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000925": {
+   "name": "Abnormality of the vertebral column",
+   "lay": "Abnormal spine",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000944": {
+   "name": "Abnormal metaphysis morphology",
+   "lay": "Abnormality of the wide portion of a long bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0000965": {
+   "name": "Cutis marmorata",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0000987": {
+   "name": "Atypical scarring of skin",
+   "lay": "Atypical scarring",
+   "systems": [
+    "Bones, joints and muscles",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001057": {
+   "name": "Aplasia cutis congenita",
+   "lay": "Absence of part of skin at birth",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001155": {
+   "name": "Abnormality of the hand",
+   "lay": "Abnormal hands",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0001156": {
+   "name": "Brachydactyly",
+   "lay": "Short fingers or toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001159": {
+   "name": "Syndactyly",
+   "lay": "Webbed fingers or toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001161": {
+   "name": "Hand polydactyly",
+   "lay": "Extra finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001162": {
+   "name": "Postaxial hand polydactyly",
+   "lay": "Extra little finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001167": {
+   "name": "Abnormal finger morphology",
+   "lay": "Abnormalities of the fingers",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001171": {
+   "name": "Split hand",
+   "lay": "Split-hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001172": {
+   "name": "Abnormal thumb morphology",
+   "lay": "Abnormality of the thumb",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001177": {
+   "name": "Preaxial hand polydactyly",
+   "lay": "Extra thumb",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001181": {
+   "name": "Adducted thumb",
+   "lay": "Inward turned thumb",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001199": {
+   "name": "Triphalangeal thumb",
+   "lay": "Finger-like thumb",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001239": {
+   "name": "Wrist flexion contracture",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001249": {
+   "name": "Intellectual disability",
+   "lay": "Low intelligence",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001250": {
+   "name": "Seizure",
+   "lay": "Epilepsy",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001263": {
+   "name": "Global developmental delay",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001269": {
+   "name": "Hemiparesis",
+   "lay": "Weakness of one side of body",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001274": {
+   "name": "Agenesis of corpus callosum",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001276": {
+   "name": "Hypertonia",
+   "lay": "Spasticity and rigidity of muscles",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001288": {
+   "name": "Gait disturbance",
+   "lay": "Abnormal gait",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001331": {
+   "name": "Absent septum pellucidum",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0001357": {
+   "name": "Plagiocephaly",
+   "lay": "Asymmetry of the posterior head",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0001362": {
+   "name": "Calvarial skull defect",
+   "lay": "Cranial defect",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0001363": {
+   "name": "Craniosynostosis",
+   "lay": "Deformity of the skull",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0001376": {
+   "name": "Limitation of joint mobility",
+   "lay": "Decreased joint mobility",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001377": {
+   "name": "Limited elbow extension",
+   "lay": "Decreased elbow extension",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001382": {
+   "name": "Joint hypermobility",
+   "lay": "Double-Jointed",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001385": {
+   "name": "Hip dysplasia",
+   "lay": "Abnormal formation of the hip",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001387": {
+   "name": "Joint stiffness",
+   "lay": "Stiff joint",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001392": {
+   "name": "Abnormality of the liver",
+   "lay": "Abnormal liver",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0001394": {
+   "name": "Cirrhosis",
+   "lay": "Scar tissue replaces healthy tissue in the liver",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0001409": {
+   "name": "Portal hypertension",
+   "lay": "",
+   "systems": [
+    "Digestive system",
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001440": {
+   "name": "Metatarsal synostosis",
+   "lay": "Fusion of the long bones of the feet",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001501": {
+   "name": "6 metacarpals",
+   "lay": "6 long bones of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001508": {
+   "name": "Failure to thrive",
+   "lay": "Faltering weight",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0001510": {
+   "name": "Growth delay",
+   "lay": "Delayed growth",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0001511": {
+   "name": "Intrauterine growth retardation",
+   "lay": "Prenatal growth deficiency",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0001518": {
+   "name": "Small for gestational age",
+   "lay": "Birth weight less than 10th percentile",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0001539": {
+   "name": "Omphalocele",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Digestive system"
+   ]
+  },
+  "HP:0001541": {
+   "name": "Ascites",
+   "lay": "Accumulation of fluid in the abdomen",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0001543": {
+   "name": "Gastroschisis",
+   "lay": "",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0001555": {
+   "name": "Asymmetry of the thorax",
+   "lay": "Asymmetric chest",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001558": {
+   "name": "Decreased fetal movement",
+   "lay": "Less than 10 fetal movements in 12 hours",
+   "systems": [
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0001561": {
+   "name": "Polyhydramnios",
+   "lay": "High levels of amniotic fluid",
+   "systems": [
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0001596": {
+   "name": "Alopecia",
+   "lay": "Hair loss",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001600": {
+   "name": "Abnormality of the larynx",
+   "lay": "",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0001601": {
+   "name": "Laryngomalacia",
+   "lay": "Softening of voice box tissue",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0001622": {
+   "name": "Premature birth",
+   "lay": "Premature delivery of affected infants",
+   "systems": [
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0001627": {
+   "name": "Abnormal heart morphology",
+   "lay": "Abnormality of the heart",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001629": {
+   "name": "Ventricular septal defect",
+   "lay": "Hole in heart wall separating two lower heart chambers",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001631": {
+   "name": "Atrial septal defect",
+   "lay": "An opening in the wall separating the top two chambers of the heart",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001636": {
+   "name": "Tetralogy of Fallot",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001641": {
+   "name": "Abnormal pulmonary valve morphology",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001643": {
+   "name": "Patent ductus arteriosus",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001651": {
+   "name": "Dextrocardia",
+   "lay": "Heart tip and four chambers point towards right side of body",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001660": {
+   "name": "Truncus arteriosus",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001671": {
+   "name": "Abnormal cardiac septum morphology",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001678": {
+   "name": "Atrioventricular block",
+   "lay": "Interruption of electrical communication between upper and lower chambers of heart",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001679": {
+   "name": "Abnormal aortic morphology",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001683": {
+   "name": "Ectopia cordis",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0001743": {
+   "name": "Abnormality of the spleen",
+   "lay": "",
+   "systems": [
+    "Digestive system",
+    "Heart and blood vessels",
+    "Immune system"
+   ]
+  },
+  "HP:0001762": {
+   "name": "Talipes equinovarus",
+   "lay": "Club feet",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0001770": {
+   "name": "Toe syndactyly",
+   "lay": "Fused toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001772": {
+   "name": "Talipes equinovalgus",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0001773": {
+   "name": "Short foot",
+   "lay": "Short feet",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001789": {
+   "name": "Hydrops fetalis",
+   "lay": "",
+   "systems": [
+    "Metabolism",
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0001799": {
+   "name": "Short nail",
+   "lay": "Short nails",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001802": {
+   "name": "Absent toenail",
+   "lay": "Absent toenails",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001804": {
+   "name": "Hypoplastic fingernail",
+   "lay": "Small fingernail",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001817": {
+   "name": "Absent fingernail",
+   "lay": "",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0001829": {
+   "name": "Foot polydactyly",
+   "lay": "Duplication of bones of the toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001830": {
+   "name": "Postaxial foot polydactyly",
+   "lay": "Extra toe attached near the little toe",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001831": {
+   "name": "Short toe",
+   "lay": "Short toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001839": {
+   "name": "Split foot",
+   "lay": "Lobster-claw foot deformity",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001840": {
+   "name": "Metatarsus adductus",
+   "lay": "Front half of foot turns inward",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001841": {
+   "name": "Preaxial foot polydactyly",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001849": {
+   "name": "Foot oligodactyly",
+   "lay": "Missing toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001852": {
+   "name": "Sandal gap",
+   "lay": "Gap between 1st and 2nd toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0001873": {
+   "name": "Thrombocytopenia",
+   "lay": "Low platelet count",
+   "systems": [
+    "Blood"
+   ]
+  },
+  "HP:0001882": {
+   "name": "Decreased total leukocyte count",
+   "lay": "Decreased blood leukocyte number",
+   "systems": [
+    "Blood",
+    "Immune system"
+   ]
+  },
+  "HP:0001883": {
+   "name": "Talipes",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0001928": {
+   "name": "Abnormality of coagulation",
+   "lay": "",
+   "systems": [
+    "Blood"
+   ]
+  },
+  "HP:0002007": {
+   "name": "Frontal bossing",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0002020": {
+   "name": "Gastroesophageal reflux",
+   "lay": "Acid reflux",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002023": {
+   "name": "Anal atresia",
+   "lay": "Absent anus",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002032": {
+   "name": "Esophageal atresia",
+   "lay": "Birth defect in which part of esophagus did not develop",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002036": {
+   "name": "Hiatus hernia",
+   "lay": "Stomach hernia",
+   "systems": [
+    "Bones, joints and muscles",
+    "Digestive system"
+   ]
+  },
+  "HP:0002040": {
+   "name": "Esophageal varix",
+   "lay": "Enlarged vein in esophagus",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002084": {
+   "name": "Encephalocele",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Brain and nerves",
+    "Head and neck"
+   ]
+  },
+  "HP:0002088": {
+   "name": "Abnormal lung morphology",
+   "lay": "Abnormality of lung structure",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0002092": {
+   "name": "Pulmonary arterial hypertension",
+   "lay": "Increased blood pressure in blood vessels of lungs",
+   "systems": [
+    "Breathing",
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0002101": {
+   "name": "Abnormal lung lobation",
+   "lay": "",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0002132": {
+   "name": "Porencephalic cyst",
+   "lay": "Cavity within brain",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002139": {
+   "name": "Arrhinencephaly",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002162": {
+   "name": "Low posterior hairline",
+   "lay": "Low hairline at back of neck",
+   "systems": [
+    "Head and neck",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0002164": {
+   "name": "Nail dysplasia",
+   "lay": "Atypical nail growth",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0002239": {
+   "name": "Gastrointestinal hemorrhage",
+   "lay": "Gastrointestinal bleeding",
+   "systems": [
+    "Blood",
+    "Digestive system",
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0002240": {
+   "name": "Hepatomegaly",
+   "lay": "Enlarged liver",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002257": {
+   "name": "Chronic rhinitis",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0002353": {
+   "name": "EEG abnormality",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002414": {
+   "name": "Spina bifida",
+   "lay": "Split spine",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002435": {
+   "name": "Meningocele",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002475": {
+   "name": "Myelomeningocele",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002488": {
+   "name": "Acute leukemia",
+   "lay": "Acute blood cancer",
+   "systems": [
+    "Blood",
+    "Immune system",
+    "Tumours"
+   ]
+  },
+  "HP:0002536": {
+   "name": "Abnormal cortical gyration",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0002566": {
+   "name": "Intestinal malrotation",
+   "lay": "",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002575": {
+   "name": "Tracheoesophageal fistula",
+   "lay": "Abnormal connection between trachea and esophagus",
+   "systems": [
+    "Breathing",
+    "Digestive system"
+   ]
+  },
+  "HP:0002612": {
+   "name": "Congenital hepatic fibrosis",
+   "lay": "Excessive buildup of connective tissue and scarring of liver at birth",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0002650": {
+   "name": "Scoliosis",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002673": {
+   "name": "Coxa valga",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002705": {
+   "name": "High, narrow palate",
+   "lay": "Narrow, high-arched roof of mouth",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0002758": {
+   "name": "Osteoarthritis",
+   "lay": "Degenerative joint disease",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002777": {
+   "name": "Tracheal stenosis",
+   "lay": "Narrowing of windpipe",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0002803": {
+   "name": "Congenital contracture",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002808": {
+   "name": "Kyphosis",
+   "lay": "Hunched back",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002814": {
+   "name": "Abnormality of the lower limb",
+   "lay": "Lower limb deformities",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0002817": {
+   "name": "Abnormality of the upper limb",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0002818": {
+   "name": "Abnormal morphology of the radius",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002823": {
+   "name": "Abnormal femur morphology",
+   "lay": "Abnormality of the thighbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002827": {
+   "name": "Hip dislocation",
+   "lay": "Dislocated hips",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002857": {
+   "name": "Genu valgum",
+   "lay": "Knock knees",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002937": {
+   "name": "Hemivertebrae",
+   "lay": "Missing part of vertebrae",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002949": {
+   "name": "Fused cervical vertebrae",
+   "lay": "Fused neck",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002970": {
+   "name": "Genu varum",
+   "lay": "Outward bow-leggedness",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002974": {
+   "name": "Radioulnar synostosis",
+   "lay": "Fused forearm bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002979": {
+   "name": "Bowing of the legs",
+   "lay": "Bowed legs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002980": {
+   "name": "Femoral bowing",
+   "lay": "Bowed thighbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002982": {
+   "name": "Tibial bowing",
+   "lay": "Bowed shankbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002983": {
+   "name": "Micromelia",
+   "lay": "Smaller or shorter than typical limbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002984": {
+   "name": "Hypoplasia of the radius",
+   "lay": "Underdeveloped outer large forearm bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002986": {
+   "name": "Radial bowing",
+   "lay": "Bowing of outer large bone of the forearm",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002987": {
+   "name": "Elbow flexion contracture",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002990": {
+   "name": "Fibular aplasia",
+   "lay": "Absent calf bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002991": {
+   "name": "Abnormal fibula morphology",
+   "lay": "Abnormality of the calf bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002992": {
+   "name": "Abnormal tibia morphology",
+   "lay": "Abnormality of the shankbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002996": {
+   "name": "Limited elbow movement",
+   "lay": "Decreased elbow mobility",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0002999": {
+   "name": "Patellar dislocation",
+   "lay": "Dislocated kneecap",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003022": {
+   "name": "Hypoplasia of the ulna",
+   "lay": "Underdeveloped inner large forearm bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003038": {
+   "name": "Fibular hypoplasia",
+   "lay": "Short calf bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003041": {
+   "name": "Humeroradial synostosis",
+   "lay": "Fusion of upper and lower arm bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003042": {
+   "name": "Elbow dislocation",
+   "lay": "Dislocations of the elbows",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003057": {
+   "name": "Tetraamelia",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003059": {
+   "name": "Abnormality of the radioulnar joints",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0003083": {
+   "name": "Dislocated radial head",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003097": {
+   "name": "Short femur",
+   "lay": "Short thighbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003184": {
+   "name": "Decreased hip abduction",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003196": {
+   "name": "Short nose",
+   "lay": "Decreased length of nose",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0003272": {
+   "name": "Abnormal hip bone morphology",
+   "lay": "Abnormality of the hip bone",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003274": {
+   "name": "Hypoplastic acetabulae",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003298": {
+   "name": "Spina bifida occulta",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0003312": {
+   "name": "Abnormal vertebral body morphology",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003316": {
+   "name": "Butterfly vertebrae",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003365": {
+   "name": "Arthralgia of the hip",
+   "lay": "Hip joint pain",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003422": {
+   "name": "Vertebral segmentation defect",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003498": {
+   "name": "Disproportionate short stature",
+   "lay": "",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0003826": {
+   "name": "Stillbirth",
+   "lay": "Fetal death",
+   "systems": []
+  },
+  "HP:0003887": {
+   "name": "Abnormal humeral head morphology",
+   "lay": "Abnormal head of long bone in upper arm",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003967": {
+   "name": "Sclerotic forearm bones",
+   "lay": "Increased bone density of forearm bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003974": {
+   "name": "Absent radius",
+   "lay": "Missing outer large bone of forearm",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0003982": {
+   "name": "Aplasia of the ulna",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004050": {
+   "name": "Absent hand",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004058": {
+   "name": "Hand monodactyly",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004209": {
+   "name": "Clinodactyly of the 5th finger",
+   "lay": "Curvature of little finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004243": {
+   "name": "Abnormal scaphoid morphology",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004252": {
+   "name": "Abnormal trapezium morphology",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004279": {
+   "name": "Short palm",
+   "lay": "Short hands",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004322": {
+   "name": "Short stature",
+   "lay": "Decreased body height",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0004349": {
+   "name": "Reduced bone mineral density",
+   "lay": "Low solidness and mass of the bones",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004383": {
+   "name": "Hypoplastic left ventricle",
+   "lay": "Underdeveloped left heart",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0004691": {
+   "name": "2-3 toe syndactyly",
+   "lay": "Webbed 2nd and 3rd toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0004717": {
+   "name": "Axial malrotation of the kidney",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0004736": {
+   "name": "Crossed fused renal ectopia",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0004757": {
+   "name": "Paroxysmal atrial fibrillation",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0004871": {
+   "name": "Perineal fistula",
+   "lay": "",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0004935": {
+   "name": "Pulmonary artery atresia",
+   "lay": "",
+   "systems": [
+    "Breathing",
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0004987": {
+   "name": "Mesomelic leg shortening",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005011": {
+   "name": "Mesomelic arm shortening",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005048": {
+   "name": "Synostosis of carpal bones",
+   "lay": "Fusion of wrist bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005085": {
+   "name": "Limited knee flexion/extension",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005255": {
+   "name": "Absence of pectoralis minor muscle",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005280": {
+   "name": "Depressed nasal bridge",
+   "lay": "Concave bridge of nose",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0005613": {
+   "name": "Aplasia/hypoplasia of the femur",
+   "lay": "Absent/small thighbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005736": {
+   "name": "Short tibia",
+   "lay": "Short shinbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005772": {
+   "name": "Aplasia/Hypoplasia of the tibia",
+   "lay": "Absent/small shankbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005773": {
+   "name": "Short forearm",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005792": {
+   "name": "Short humerus",
+   "lay": "Short long bone of upper arm",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005876": {
+   "name": "Progressive flexion contractures",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005879": {
+   "name": "Congenital finger flexion contractures",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005892": {
+   "name": "Proximal tibial and fibular fusion",
+   "lay": "Fusion of innermost shinbone and calf bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005916": {
+   "name": "Abnormal metacarpal morphology",
+   "lay": "Abnormal shape of long bones of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005930": {
+   "name": "Abnormal epiphysis morphology",
+   "lay": "Abnormal shape of end part of bone",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0005988": {
+   "name": "Congenital muscular torticollis",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Head and neck"
+   ]
+  },
+  "HP:0006008": {
+   "name": "Unilateral brachydactyly",
+   "lay": "Short digits on one side",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006055": {
+   "name": "Ulnar deviated club hands",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0006097": {
+   "name": "3-4 finger osseus syndactyly",
+   "lay": "Webbed 3rd-4th fingers",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006101": {
+   "name": "Finger syndactyly",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006376": {
+   "name": "Limited elbow flexion",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006380": {
+   "name": "Knee flexion contracture",
+   "lay": "Inability to straighten knee",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006426": {
+   "name": "Rudimentary to absent tibiae",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006433": {
+   "name": "Radial ray deficiency",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006437": {
+   "name": "Disproportionate prominence of the femoral medial condyle",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006443": {
+   "name": "Patellar aplasia",
+   "lay": "Absent kneecap",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006460": {
+   "name": "Ankle hypermobility",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006467": {
+   "name": "Limited shoulder movement",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006487": {
+   "name": "Bowing of the long bones",
+   "lay": "Bowed long bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006495": {
+   "name": "Aplasia/Hypoplasia of the ulna",
+   "lay": "Absence/underdevelopment of inner forearm bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006498": {
+   "name": "Aplasia/Hypoplasia of the patella",
+   "lay": "Absent/small kneecap",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006501": {
+   "name": "Aplasia/Hypoplasia of the radius",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006507": {
+   "name": "Aplasia/hypoplasia of the humerus",
+   "lay": "Absent/small long bone in upper arm",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006633": {
+   "name": "Glenoid fossa hypoplasia",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006660": {
+   "name": "Aplastic clavicle",
+   "lay": "Absent collarbone",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006695": {
+   "name": "Atrioventricular canal defect",
+   "lay": "Hole in center of heart",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0006703": {
+   "name": "Aplasia/Hypoplasia of the lungs",
+   "lay": "Absent/small lungs",
+   "systems": [
+    "Breathing"
+   ]
+  },
+  "HP:0006709": {
+   "name": "Aplasia/Hypoplasia of the nipples",
+   "lay": "Absent/small nipples",
+   "systems": [
+    "Breast"
+   ]
+  },
+  "HP:0006714": {
+   "name": "Aplasia/Hypoplasia of the sternum",
+   "lay": "Absent/small sternum",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0006970": {
+   "name": "Periventricular leukomalacia",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0007370": {
+   "name": "Aplasia/Hypoplasia of the corpus callosum",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0007413": {
+   "name": "Nevus flammeus of the forehead",
+   "lay": "Port-wine stain on forehead",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0007452": {
+   "name": "Midface capillary hemangioma",
+   "lay": "",
+   "systems": [
+    "Head and neck",
+    "Heart and blood vessels",
+    "Tumours"
+   ]
+  },
+  "HP:0007477": {
+   "name": "Abnormal dermatoglyphics",
+   "lay": "Abnormal fingerprints",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0007485": {
+   "name": "Absence of subcutaneous fat",
+   "lay": "Absent fat below the skin",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0007598": {
+   "name": "Bilateral single transverse palmar creases",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0008065": {
+   "name": "Aplasia/Hypoplasia of the skin",
+   "lay": "Absent/small skin",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0008070": {
+   "name": "Sparse hair",
+   "lay": "Thin, sparse hair",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0008362": {
+   "name": "Aplasia/Hypoplasia of the hallux",
+   "lay": "Absent/small big toe",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0008368": {
+   "name": "Tarsal synostosis",
+   "lay": "Fused ankle bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0008517": {
+   "name": "Aplasia/Hypoplasia of the sacrum",
+   "lay": "Absent/small sacrum",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0008551": {
+   "name": "Microtia",
+   "lay": "Small ears",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0008665": {
+   "name": "Clitoral hypertrophy",
+   "lay": "Enlarged clitoris",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0008678": {
+   "name": "Renal hypoplasia/aplasia",
+   "lay": "Absent/small kidney",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0008736": {
+   "name": "Hypoplasia of penis",
+   "lay": "Underdeveloped penis",
+   "systems": [
+    "Kidneys, bladder and genitals"
+   ]
+  },
+  "HP:0008800": {
+   "name": "Limited hip movement",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0008846": {
+   "name": "Severe intrauterine growth retardation",
+   "lay": "Severe prenatal growth deficiency",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0008872": {
+   "name": "Feeding difficulties in infancy",
+   "lay": "",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0008897": {
+   "name": "Postnatal growth retardation",
+   "lay": "Growth delay as children",
+   "systems": [
+    "Growth"
+   ]
+  },
+  "HP:0009103": {
+   "name": "Aplasia/Hypoplasia involving the pelvis",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009108": {
+   "name": "Aplasia/Hypoplasia involving the femoral head and neck",
+   "lay": "Absent/small head and neck of thighbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009164": {
+   "name": "Abnormal calcification of the carpal bones",
+   "lay": "Abnormal calcification of the wrist bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009238": {
+   "name": "Aplasia of the 5th finger",
+   "lay": "Absent little finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009281": {
+   "name": "Aplasia of the 4th finger",
+   "lay": "Absent ring finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009380": {
+   "name": "Finger aplasia",
+   "lay": "Absent fingers",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009465": {
+   "name": "Ulnar deviation of finger",
+   "lay": "Finger bends toward pinky",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009466": {
+   "name": "Radial deviation of finger",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009471": {
+   "name": "Contracture of the proximal interphalangeal joint of the 3rd finger",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009484": {
+   "name": "Deviation of the hand or of fingers of the hand",
+   "lay": "Displaced hand or fingers of the hand",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0009556": {
+   "name": "Absent tibia",
+   "lay": "Absent shankbone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009594": {
+   "name": "Retinal hamartoma",
+   "lay": "",
+   "systems": [
+    "Eyes",
+    "Head and neck",
+    "Tumours"
+   ]
+  },
+  "HP:0009601": {
+   "name": "Aplasia/Hypoplasia of the thumb",
+   "lay": "Absent/small thumb",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009623": {
+   "name": "Proximal placement of thumb",
+   "lay": "Attachment of thumb close to wrist",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009700": {
+   "name": "Finger symphalangism",
+   "lay": "Fused finger bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009701": {
+   "name": "Metacarpal synostosis",
+   "lay": "Fused long bones of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009702": {
+   "name": "Carpal synostosis",
+   "lay": "Fused wrist bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009751": {
+   "name": "Aplasia of the pectoralis major muscle",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009756": {
+   "name": "Popliteal pterygium",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0009760": {
+   "name": "Antecubital pterygium",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0009775": {
+   "name": "Amniotic constriction ring",
+   "lay": "",
+   "systems": [
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0009777": {
+   "name": "Absent thumb",
+   "lay": "Absent thumbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009778": {
+   "name": "Short thumb",
+   "lay": "Short thumbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009800": {
+   "name": "Maternal diabetes",
+   "lay": "gestational diabetes",
+   "systems": []
+  },
+  "HP:0009812": {
+   "name": "Amelia involving the upper limbs",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009813": {
+   "name": "Upper limb phocomelia",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009826": {
+   "name": "Limb undergrowth",
+   "lay": "limb shortening",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009827": {
+   "name": "Amelia",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009829": {
+   "name": "Phocomelia",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009843": {
+   "name": "Aplasia/Hypoplasia of the middle phalanges of the hand",
+   "lay": "Absent/small middle finger bone of the hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009882": {
+   "name": "Short distal phalanx of finger",
+   "lay": "Short outermost finger bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009891": {
+   "name": "Underdeveloped supraorbital ridges",
+   "lay": "Flattened bony protrusion above eyes",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0009892": {
+   "name": "Anotia",
+   "lay": "Absent ear",
+   "systems": [
+    "Ears"
+   ]
+  },
+  "HP:0009924": {
+   "name": "Aplasia/Hypoplasia involving the nose",
+   "lay": "Decreased nasal size",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0009943": {
+   "name": "Complete duplication of thumb phalanx",
+   "lay": "Complete duplication of thumb bones",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009959": {
+   "name": "Duplication of phalanx of 3rd finger",
+   "lay": "Duplication of middle finger bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0009988": {
+   "name": "Duplication of the distal phalanx of the 5th finger",
+   "lay": "Duplication of the outermost little finger bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010011": {
+   "name": "Abnormal 3rd metacarpal morphology",
+   "lay": "Abnormality of the 3rd long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010035": {
+   "name": "Aplasia of the 1st metacarpal",
+   "lay": "Absent 1st long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010037": {
+   "name": "Aplasia of the 2nd metacarpal",
+   "lay": "Absent 2nd long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010043": {
+   "name": "Aplasia of the 4th metacarpal",
+   "lay": "Absent 4th long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010048": {
+   "name": "Aplasia of metacarpal bones",
+   "lay": "Absent long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010049": {
+   "name": "Short metacarpal",
+   "lay": "Shortened long bone of hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010109": {
+   "name": "Short hallux",
+   "lay": "Short big toe",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010176": {
+   "name": "Curved toe phalanx",
+   "lay": "Curved toe bone",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010219": {
+   "name": "Structural foot deformity",
+   "lay": "",
+   "systems": [
+    "Limbs"
+   ]
+  },
+  "HP:0010301": {
+   "name": "Spinal dysraphism",
+   "lay": "",
+   "systems": [
+    "Brain and nerves"
+   ]
+  },
+  "HP:0010311": {
+   "name": "Aplasia/Hypoplasia of the breasts",
+   "lay": "Absent/small breasts",
+   "systems": [
+    "Breast"
+   ]
+  },
+  "HP:0010331": {
+   "name": "Aplasia/Hypoplasia of the 3rd toe",
+   "lay": "Absent/small 3rd toe",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010442": {
+   "name": "Polydactyly",
+   "lay": "More than five fingers or toes on hands or feet",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010483": {
+   "name": "Amniotic constriction rings of arms",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0010491": {
+   "name": "Digital constriction ring",
+   "lay": "",
+   "systems": [
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0010494": {
+   "name": "Acromelia of the lower limbs",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010495": {
+   "name": "Amniotic constriction rings of legs",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0010501": {
+   "name": "Limitation of knee mobility",
+   "lay": "Limited knee movement",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010554": {
+   "name": "Cutaneous finger syndactyly",
+   "lay": "Webbed fingers",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010579": {
+   "name": "Cone-shaped epiphysis",
+   "lay": "Cone-shaped end part of bone",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010624": {
+   "name": "Aplastic/hypoplastic toenail",
+   "lay": "Absent/small toenails",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0010708": {
+   "name": "1-5 finger cutaneous syndactyly",
+   "lay": "Webbed 1st-5th fingers",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010721": {
+   "name": "Abnormal hair whorl",
+   "lay": "Abnormal hair whorls",
+   "systems": [
+    "Skin, hair and nails"
+   ]
+  },
+  "HP:0010741": {
+   "name": "Pedal edema",
+   "lay": "Fluid accumulation in lower limbs",
+   "systems": [
+    "Limbs",
+    "Metabolism"
+   ]
+  },
+  "HP:0010742": {
+   "name": "Edema of the upper limbs",
+   "lay": "Fluid accumulation in upper limbs",
+   "systems": [
+    "Limbs",
+    "Metabolism"
+   ]
+  },
+  "HP:0010760": {
+   "name": "Absent toe",
+   "lay": "Absent toes",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0010772": {
+   "name": "Anomalous pulmonary venous return",
+   "lay": "",
+   "systems": [
+    "Breathing",
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0011220": {
+   "name": "Prominent forehead",
+   "lay": "Bulging forehead",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0011304": {
+   "name": "Broad thumb",
+   "lay": "Broad thumbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0011428": {
+   "name": "Short fetal femur length",
+   "lay": "Short fetal thigh bone length",
+   "systems": [
+    "Bones, joints and muscles",
+    "Pregnancy and birth"
+   ]
+  },
+  "HP:0011603": {
+   "name": "Congenital malformation of the great arteries",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0011705": {
+   "name": "First degree atrioventricular block",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0011849": {
+   "name": "Abnormal bone ossification",
+   "lay": "Abnormal bone maturation",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0011968": {
+   "name": "Feeding difficulties",
+   "lay": "Feeding problems",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0012165": {
+   "name": "Oligodactyly",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0012386": {
+   "name": "Absent hallux",
+   "lay": "Absent big toe",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0012531": {
+   "name": "Pain",
+   "lay": "",
+   "systems": [
+    "General"
+   ]
+  },
+  "HP:0025023": {
+   "name": "Rectal atresia",
+   "lay": "",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0030032": {
+   "name": "Partial absence of foot",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0030043": {
+   "name": "Hip subluxation",
+   "lay": "Partial hip dislocation",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0030680": {
+   "name": "Abnormal cardiovascular system morphology",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0030772": {
+   "name": "Proximal femoral focal deficiency",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0030835": {
+   "name": "Elbow pain",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "General"
+   ]
+  },
+  "HP:0031058": {
+   "name": "Impairment of activities of daily living",
+   "lay": "",
+   "systems": [
+    "General"
+   ]
+  },
+  "HP:0031095": {
+   "name": "Abnormal humerus morphology",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0033127": {
+   "name": "Abnormality of the musculoskeletal system",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0040069": {
+   "name": "Abnormal lower limb bone morphology",
+   "lay": "Abnormal shape of bones of the lower limbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0040070": {
+   "name": "Abnormal upper limb bone morphology",
+   "lay": "Abnormal shape of bones of the upper limbs",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0040071": {
+   "name": "Abnormal morphology of ulna",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0045086": {
+   "name": "Knee joint hypermobility",
+   "lay": "Knee joint over-flexibility",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100013": {
+   "name": "Neoplasm of the breast",
+   "lay": "Breast tumor",
+   "systems": [
+    "Breast",
+    "Tumours"
+   ]
+  },
+  "HP:0100026": {
+   "name": "Arteriovenous malformation",
+   "lay": "",
+   "systems": [
+    "Heart and blood vessels"
+   ]
+  },
+  "HP:0100240": {
+   "name": "Synostosis of joints",
+   "lay": "Fusion of joints",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100257": {
+   "name": "Ectrodactyly",
+   "lay": "Cleft hand",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100260": {
+   "name": "Mesoaxial polydactyly",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100335": {
+   "name": "Non-midline cleft of the upper lip",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:0100490": {
+   "name": "Camptodactyly of finger",
+   "lay": "Permanent flexion of the finger",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100558": {
+   "name": "Hemiatrophy of upper limb",
+   "lay": "Asymmetric upper limb shortening",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles",
+    "Growth"
+   ]
+  },
+  "HP:0100559": {
+   "name": "Lower limb asymmetry",
+   "lay": "Left and right leg differ in length or width",
+   "systems": [
+    "Limbs",
+    "Growth"
+   ]
+  },
+  "HP:0100569": {
+   "name": "Abnormally ossified vertebrae",
+   "lay": "Abnormal bone maturation of vertebra",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100633": {
+   "name": "Esophagitis",
+   "lay": "Inflammation of the esophagus",
+   "systems": [
+    "Digestive system",
+    "Immune system"
+   ]
+  },
+  "HP:0100656": {
+   "name": "Thoracoabdominal wall defect",
+   "lay": "",
+   "systems": [
+    "Bones, joints and muscles",
+    "Digestive system"
+   ]
+  },
+  "HP:0100694": {
+   "name": "Tibial torsion",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100745": {
+   "name": "Abnormality of the humeroulnar joint",
+   "lay": "",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0100841": {
+   "name": "Microgastria",
+   "lay": "",
+   "systems": [
+    "Digestive system"
+   ]
+  },
+  "HP:0100842": {
+   "name": "Septo-optic dysplasia",
+   "lay": "",
+   "systems": [
+    "Brain and nerves",
+    "Eyes"
+   ]
+  },
+  "HP:0200021": {
+   "name": "Down-sloping shoulder",
+   "lay": "Rounded shoulders",
+   "systems": [
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0200055": {
+   "name": "Small hand",
+   "lay": "Disproportionately small hands",
+   "systems": [
+    "Limbs",
+    "Bones, joints and muscles"
+   ]
+  },
+  "HP:0410030": {
+   "name": "Cleft lip",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  },
+  "HP:5201015": {
+   "name": "Craniofacial cleft",
+   "lay": "",
+   "systems": [
+    "Head and neck"
+   ]
+  }
+ },
+ "codes": {
+  "392": {
+   "name": "Holt-Oram syndrome",
+   "hpo": [
+    [
+     "HP:0030680",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000889",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001387",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005916",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009777",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006501",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001631",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001678",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0011705",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002808",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004757",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001199",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001629",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001679",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0031095",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006695",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0011304",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0200021",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004383",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001643",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000767",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009829",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002974",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000912",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "",
+   "functional": [
+    [
+     "Cooking/preparing meals",
+     [
+      [
+       "Occasional",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Dressing/undressing",
+     [
+      [
+       "Occasional",
+       "Low",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Handling objects (fine hand use)",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Lifting and carrying objects",
+     [
+      [
+       "Occasional",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Practicing sports",
+     [
+      [
+       "Occasional",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Reaching and catching objects",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ]
+   ]
+  },
+  "931": {
+   "name": "Isolated acheiropodia",
+   "hpo": [
+    [
+     "HP:0005930",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000944",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004050",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003974",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003982",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002990",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005792",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009813",
+     "Very frequent (99-80%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "973": {
+   "name": "Isolated absence/hypoplasia of fingers excluding thumb, unilateral",
+   "hpo": [
+    [
+     "HP:0005916",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009988",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0010049",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001799",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009778",
+     "Very frequent (99-80%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "974": {
+   "name": "Adams-Oliver syndrome",
+   "hpo": [
+    [
+     "HP:0002814",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002817",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004050",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0010760",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001057",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008065",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001362",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000965",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001508",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008070",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005916",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001641",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001156",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000518",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000238",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000568",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004935",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009882",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000486",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001883",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001636",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001817",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001596",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010624",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0100026",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001541",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001394",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002612",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001882",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002353",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002084",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002040",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002239",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001269",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001276",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001804",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001249",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006970",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002132",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001409",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001622",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002092",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001250",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001873",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "1570": {
+   "name": "Symbrachydactyly of hands and feet",
+   "hpo": [
+    [
+     "HP:0100745",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009800",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0031095",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0040071",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006501",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009601",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0003422",
+     "Frequent (79-30%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "2440": {
+   "name": "Isolated split hand-split foot malformation",
+   "hpo": [
+    [
+     "HP:0012165",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004058",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001839",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004050",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000526",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000407",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "24115638[PMID]"
+  },
+  "2538": {
+   "name": "Microgastria-limb reduction defect syndrome",
+   "hpo": [
+    [
+     "HP:0002818",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001743",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100633",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001508",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0011968",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002020",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001510",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002036",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100841",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009778",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001167",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0031095",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005916",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005988",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002007",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000003",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001357",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0011220",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000110",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0030680",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002536",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004050",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001331",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001274",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009827",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002023",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000528",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006660",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002139",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001631",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004736",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0100257",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003042",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002032",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002240",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000085",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002566",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000568",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0012165",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004871",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009829",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0025023",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000143",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000104",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008678",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002575",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001660",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "2879": {
+   "name": "Phocomelia, Schinzel type",
+   "hpo": [
+    [
+     "HP:0002992",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003982",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009103",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008517",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006487",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003498",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100257",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002990",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009380",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001849",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002983",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002164",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000151",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002984",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001511",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000347",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002986",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000470",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002023",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001362",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000028",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002705",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003041",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001789",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008736",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002435",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000411",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003196",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001883",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002575",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "2911": {
+   "name": "Poland syndrome",
+   "hpo": [
+    [
+     "HP:0007485",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009751",
+     "Very frequent (99-80%)",
+     1
+    ],
+    [
+     "HP:0010311",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006709",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001555",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001155",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005255",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009700",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000089",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0200055",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006008",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0007477",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0031095",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0040071",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000766",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001392",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002814",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000356",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004050",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002488",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006501",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006714",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009601",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001631",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001156",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010579",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000776",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000028",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001651",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000819",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000081",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002084",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001161",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002937",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000047",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002808",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002162",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000252",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000921",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000545",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0100013",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000768",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000767",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002974",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004349",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008678",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009594",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000470",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000773",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003298",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000912",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000070",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003422",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000076",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "30335292[PMID]_32758259[PMID]",
+   "functional": [
+    [
+     "Cooking/preparing meals",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Doing housework",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Driving",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in and maintaining intimate relationships",
+     [
+      [
+       "Frequent",
+       "Moderate",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Complete",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in sexual relationships",
+     [
+      [
+       "Frequent",
+       "Moderate",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Complete",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Handling objects (fine hand use)",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Complete",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Lifting and carrying objects",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Performing professional tasks",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Performing vigorous activities (climbing, running, jumping, swimming,...)",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Practicing sports",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Reaching and catching objects",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving messages in sign language",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Complete",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving nonverbal messages",
+     [
+      [
+       "Occasional",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Moderate",
+       "Transient limitation"
+      ]
+     ]
+    ],
+    [
+     "Seeking employment",
+     [
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Socializing",
+     [
+      [
+       "Occasional",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Using communication devices",
+     [
+      [
+       "Frequent",
+       "Low",
+       "Permanent limitation"
+      ],
+      [
+       "Occasional",
+       "Severe",
+       "Permanent limitation"
+      ],
+      [
+       "Frequent",
+       "Moderate",
+       "Transient limitation"
+      ]
+     ]
+    ]
+   ]
+  },
+  "2935": {
+   "name": "Crossed polysyndactyly",
+   "hpo": [
+    [
+     "HP:0006101",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001162",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0007477",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000356",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000288",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009601",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005280",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000364",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008736",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000486",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000582",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "3103": {
+   "name": "Roberts syndrome",
+   "hpo": [
+    [
+     "HP:0002817",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009601",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006487",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000248",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004209",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009943",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000316",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002984",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000272",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005011",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000252",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009829",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008897",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009623",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009466",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008846",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008070",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000430",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0030680",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000377",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000387",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001156",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000518",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000204",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0008665",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000028",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001263",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001249",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000040",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000347",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0007452",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001622",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000520",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002974",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009891",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0007598",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000592",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001363",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000501",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000218",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006380",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000568",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000639",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006443",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000113",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001561",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005876",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001852",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000470",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005048",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001873",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001239",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "",
+   "functional": [
+    [
+     "Accessing higher education",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Acquiring language",
+     [
+      [
+       "Frequent",
+       "Moderate",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Applying knowledge",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Attending mainstream school",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Attending preschool",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Attending school in an adapted mainstream/special environment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Bending",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Calculating",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Caring for body parts (skin, teeth, nails, hair, genitals)",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Carrying out daily routines",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Changing body position",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Communicating with others",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Controlling one's own general behaviour",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Cooking/preparing meals",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Doing housework",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Dressing/undressing",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Drinking",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Driving",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Eating",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Education",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in and maintaining intimate relationships",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in paid work in a standard environment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in paid work in a supported/sheltered environment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Engaging in sexual relationships",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Handling money/managing one's own budget",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Handling objects (fine hand use)",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Handling stress, responsabilities, emergencies and ensuring one's safety",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Household",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Interacting with other people",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning a profession (vocational training/apprenticeship) in an adapted mainstream/special environment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning a profession (vocational training/apprenticeship) in the standard environment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning to calculate",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning to read",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Learning to write",
+     [
+      [
+       "Very frequent",
+       "Severe",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Life management",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Lifting and carrying objects",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Looking after/helping others",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Maintaining a standing position",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Maintaining body position",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Maintaining family relationships",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Making decisions/taking initiatives/finding solutions",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Making/keeping friends",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Managing one's health (diet, medications, prevention, needs, assistance, monitoring)",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Motor skills",
+     [
+      [
+       "Very frequent",
+       "Severe",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Moving around outside the home",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Moving around using transportation",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Moving around within the home",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Participating in a conversation",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Performing professional tasks",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Performing vigorous activities (climbing, running, jumping, swimming,...)",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Playing with others",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Producing messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Producing messages in sign language",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Producing nonverbal messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Reaching and catching objects",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Reading",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving messages in sign language",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving nonverbal messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving spoken messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Receiving written messages",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Regulating defecation",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Regulating urination",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Seeing/watching",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Seeking employment",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Shopping",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Sitting",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Socializing",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Speaking",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Standing",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Taking part in community life",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Transferring oneself",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Travelling",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Undertaking a complex/multiple task",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Using communication devices",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Using objects",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Using transportation",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Walking",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Walking long distances",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Walking short distances",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Washing oneself",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Work and economic life",
+     [
+      [
+       "Frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Writing",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ],
+    [
+     "Writing messages",
+     [
+      [
+       "Very frequent",
+       "Unspecified",
+       "Permanent limitation"
+      ]
+     ]
+    ]
+   ]
+  },
+  "3258": {
+   "name": "Cenani-Lenz syndrome",
+   "hpo": [
+    [
+     "HP:0005916",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001817",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0002007",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0012165",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005048",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100240",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001802",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000494",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000316",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002984",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0003022",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002974",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009778",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000682",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0007477",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003312",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000518",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000444",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004736",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000656",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003042",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001849",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000365",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002705",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002827",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000668",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000821",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001601",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000272",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002983",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000639",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000520",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000411",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000508",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008678",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003196",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000322",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "3301": {
+   "name": "Tetraamelia-multiple malformations syndrome",
+   "hpo": [
+    [
+     "HP:0009924",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009103",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006703",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000238",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008551",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0000202",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001561",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003057",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001671",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002101",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000772",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001600",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100569",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0010494",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001274",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009812",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002023",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006709",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000518",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000028",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000293",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0008736",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000612",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000482",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000347",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000568",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000921",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000003",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000160",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100335",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000648",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100842",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000046",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002777",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000148",
+     "Frequent (79-30%)",
+     0
+    ]
+   ],
+   "hpo_source": "7625439[PMID]_4076260[PMID]_31761294[PMID]"
+  },
+  "3312": {
+   "name": "Thalidomide embryopathy",
+   "hpo": [
+    [
+     "HP:0030680",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002991",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009601",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006495",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005613",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006507",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001177",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006433",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004322",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001199",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009813",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000356",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009892",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002257",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000365",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000855",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "3320": {
+   "name": "Thrombocytopenia-absent radius syndrome",
+   "hpo": [
+    [
+     "HP:0001928",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0003974",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001873",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006498",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006495",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006507",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000337",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004209",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002673",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002970",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000348",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002827",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002999",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000358",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100694",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001671",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000119",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000077",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001181",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000151",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0004717",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0011304",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000891",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002990",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002949",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000085",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000347",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0007413",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009829",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000407",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001636",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "3329": {
+   "name": "Tibial aplasia-ectrodactyly syndrome",
+   "hpo": [
+    [
+     "HP:0001171",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005772",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100257",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001376",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002823",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002991",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006495",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001156",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002980",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003038",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001539",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000396",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006443",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009756",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001162",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001177",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003097",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "93320": {
+   "name": "Isolated ulnar hemimelia",
+   "hpo": [
+    [
+     "HP:0006495",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0040070",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0003059",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009380",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002996",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002758",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002986",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006433",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005773",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006055",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0010011",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009164",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003887",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0100745",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009760",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010048",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009281",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009238",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010331",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003316",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009702",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005879",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009471",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010176",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003083",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009959",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002987",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0030835",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006633",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0100558",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003041",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000882",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001377",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006376",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006467",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009701",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003967",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010301",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0009813",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "31524738[PMID]_6630492[PMID]_27843519[PMID]_30712123[PMID]"
+  },
+  "93321": {
+   "name": "Isolated radial hemimelia",
+   "hpo": [
+    [
+     "HP:0006501",
+     "Obligate (100%)",
+     1
+    ],
+    [
+     "HP:0004243",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001172",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004252",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0010035",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009484",
+     "Very frequent (99-80%)",
+     0
+    ]
+   ],
+   "hpo_source": "17105006[PMID]_5478898[PMID]"
+  },
+  "93322": {
+   "name": "Isolated tibial hemimelia",
+   "hpo": [
+    [
+     "HP:0009556",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001762",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006380",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004987",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001171",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0012386",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003974",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006460",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010037",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010043",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010554",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001849",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001385",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001840",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0012165",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0030032",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010442",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005892",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006433",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006426",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005736",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001839",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001159",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008368",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000062",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002673",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000028",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000365",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002937",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002827",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000047",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002475",
+     "Very rare (<4-1%)",
+     0
+    ]
+   ],
+   "hpo_source": "26791356[PMID]_31078790[PMID]_27277586[PMID]_27909860[PMID]"
+  },
+  "93323": {
+   "name": "Isolated fibular hemimelia",
+   "hpo": [
+    [
+     "HP:0002991",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001288",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0040069",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006437",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002857",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009826",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100559",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005736",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001762",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002982",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0011849",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006460",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003365",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002979",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003184",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003038",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0030043",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0031058",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001382",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001387",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0045086",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001376",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0005085",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0012165",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0012531",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0030772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003097",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001831",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010219",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001772",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000593",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001627",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0040071",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000478",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000528",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001363",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0100257",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002990",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001849",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0003274",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001249",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000110",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002414",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0100656",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001873",
+     "Very rare (<4-1%)",
+     0
+    ]
+   ],
+   "hpo_source": "15754355[PMID]_15083119[PMID]_29744100[PMID]_30269159[PMID]_30875935[PMID]_27227952[PMID]"
+  },
+  "93402": {
+   "name": "Syndactyly type 1",
+   "hpo": [
+    [
+     "HP:0004691",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006097",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009700",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "22448207[PMID]"
+  },
+  "93403": {
+   "name": "Syndactyly type 2",
+   "hpo": [
+    [
+     "HP:0004691",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006097",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005916",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100490",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004209",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009700",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001830",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001773",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004279",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100260",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001841",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001852",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "22333904[PMID]_22448207[PMID]"
+  },
+  "93404": {
+   "name": "Syndactyly type 3",
+   "hpo": [
+    [
+     "HP:0006101",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100490",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001831",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "93405": {
+   "name": "Syndactyly type 4",
+   "hpo": [
+    [
+     "HP:0010708",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100490",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001161",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001501",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001829",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0005736",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0001376",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001199",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "17476456[PMID]"
+  },
+  "93406": {
+   "name": "Syndactyly type 5",
+   "hpo": [
+    [
+     "HP:0009701",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001440",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009882",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009465",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004691",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0006097",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0100490",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0004209",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": ""
+  },
+  "157801": {
+   "name": "Mesoaxial synostotic syndactyly with phalangeal reduction",
+   "hpo": [
+    [
+     "HP:0004691",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0008362",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009843",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004209",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009700",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0006101",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009701",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0010109",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0004279",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0009778",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005048",
+     "Frequent (79-30%)",
+     0
+    ]
+   ],
+   "hpo_source": "9783716[PMID]"
+  },
+  "294975": {
+   "name": "Isolated absence of upper arm and forearm with hand present",
+   "hpo": [
+    [
+     "HP:0009813",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0001671",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001627",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000765",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000271",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0033127",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000464",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000925",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000987",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003826",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0003272",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0002088",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0011603",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0010442",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0000104",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001518",
+     "Very rare (<4-1%)",
+     0
+    ],
+    [
+     "HP:0001159",
+     "Very rare (<4-1%)",
+     0
+    ]
+   ],
+   "hpo_source": "3890511[PMID]_22002800[PMID]"
+  },
+  "295000": {
+   "name": "Amniotic band syndrome",
+   "hpo": [
+    [
+     "HP:0010721",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002814",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009775",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0010495",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0010491",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000238",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0000316",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0011220",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0002817",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010483",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0007370",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0410030",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000175",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0000589",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002803",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:5201015",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001558",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001683",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010742",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002084",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0008872",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001543",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001263",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001539",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0010741",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001622",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0002650",
+     "Occasional (29-5%)",
+     0
+    ],
+    [
+     "HP:0001762",
+     "Occasional (29-5%)",
+     0
+    ]
+   ],
+   "hpo_source": "31424867[PMID]_31407870[PMID]_25531236[PMID]"
+  },
+  "633228": {
+   "name": "Isolated proximal femoral focal deficiency",
+   "hpo": [
+    [
+     "HP:0009108",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0005613",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0100559",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0011428",
+     "Very frequent (99-80%)",
+     0
+    ],
+    [
+     "HP:0010501",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0008800",
+     "Frequent (79-30%)",
+     0
+    ],
+    [
+     "HP:0009800",
+     "Excluded (0%)",
+     0
+    ]
+   ],
+   "hpo_source": "39070373[PMID]_23984135[PMID]_23915863[PMID]_30787784[PMID]"
+  }
+ }
+}

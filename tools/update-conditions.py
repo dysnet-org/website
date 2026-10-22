@@ -52,6 +52,8 @@ STEPS = [
      ["build-condition-icd.py"], "condition-icd.json", "conditions"),
     ("prevalence", "Orphanet's birth prevalence rows for each card, with the studies they cite resolved on PubMed",
      ["build-condition-prevalence.py"], "condition-prevalence.json", "conditions"),
+    ("phenotypes", "the clinical features (HPO) and functional consequences Orphadata records for each card and its forms",
+     ["build-condition-phenotypes.py"], "condition-phenotypes.json", "codes"),
     ("vocab", "the patterns the bibliography matches a paper against, from Orphanet's terms and synonyms",
      ["build-condition-vocab.py"], "condition-vocab.json", None),
     ("names", "Orphanet's French and Italian names of every card and form, which the registry's questionnaire shows",
@@ -65,7 +67,7 @@ STEPS = [
     ("audit", "the checks: every page agrees with the list, and what is left for a person",
      ["audit-conditions.py"], None, None),
 ]
-FAST = ["hierarchy", "icd", "prevalence", "vocab", "names", "build", "audit"]
+FAST = ["hierarchy", "icd", "prevalence", "phenotypes", "vocab", "names", "build", "audit"]
 LONG = ["bibliography", "researchers"]
 
 

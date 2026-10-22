@@ -3139,14 +3139,102 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
                     for v in limbs.split() + ctype.split() if v in FACET_SHORT)
     haystack = condition_search_text(name, desc, ref_code, orpha_name)
     foot = condition_registries_html(ref_code) + refs
-    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-search="{haystack}">'
+    hpo_attr = " ".join(sorted(hp for hp, v in card_features(ref_code).items() if v[0] != "Excluded (0%)"))
+    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-search="{haystack}">'
             f'<h3 class="h4">{name}</h3>'
             f'<p class="cond-desc">{desc}</p>{usual_line(name, ref_code)}'
             f'<p class="cond-chips">{chips}</p>'
             f'{condition_rate_html(name)}'
             f'{condition_codes_html(name, code, orpha_name)}'
             f'{condition_hierarchy_html(ref_code)}'
+            f'{condition_pheno_html(ref_code)}'
             f'<div class="cond-foot">{foot}</div></div>')
+
+
+# ─────────── Clinical features and daily life (tools/condition-phenotypes.json, Orphadata CC BY 4.0) ───────────
+# What Orphanet records for a card's code and for the forms it files under it: features coded in the
+# Human Phenotype Ontology with their frequency, and functional consequences in the Orphanet Functioning
+# Thesaurus. A feature recorded at several frequencies (a form says frequent, another occasional) keeps
+# the highest; "excluded" (Orphanet says the condition does not have it) is shown but never matches the menu.
+PHENO = json.loads((pathlib.Path(__file__).parent / "tools" / "condition-phenotypes.json").read_text(encoding="utf-8")) if (pathlib.Path(__file__).parent / "tools" / "condition-phenotypes.json").exists() else {"codes": {}, "terms": {}, "frequencies": []}
+_PHENO_HIER = json.loads((pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json").read_text(encoding="utf-8")).get("conditions", {})
+PHENO_FREQ = PHENO.get("frequencies", [])
+
+
+def pheno_codes(ref_code):
+    if not ref_code:
+        return []
+    return [str(ref_code)] + [c for c in _PHENO_HIER.get(str(ref_code), {}).get("descendants", []) if c != str(ref_code)]
+
+
+def card_features(ref_code):
+    """{HPO id: (frequency, diagnostic criterion, [names of the forms it comes from])} for a card."""
+    feats = {}
+    for c in pheno_codes(ref_code):
+        rec = PHENO["codes"].get(c) or {}
+        for hp, freq, diag in rec.get("hpo", []):
+            rank = PHENO_FREQ.index(freq) if freq in PHENO_FREQ else 9
+            old = feats.get(hp)
+            src = [] if c == str(ref_code) else [rec.get("name", c)]
+            if old is None:
+                feats[hp] = [freq, diag, src, rank]
+            else:
+                # the highest frequency wins, but a feature present anywhere is never reported as excluded
+                better = (old[0] == "Excluded (0%)" and freq != "Excluded (0%)") or (freq != "Excluded (0%)" and rank < old[3])
+                if better:
+                    feats[hp] = [freq, diag or old[1], old[2] + src, rank]
+                else:
+                    old[2] += src
+    return feats
+
+
+def pheno_label(hp):
+    t = PHENO["terms"].get(hp, {})
+    return t.get("lay") or t.get("name", hp)
+
+
+def condition_pheno_html(ref_code):
+    feats = card_features(ref_code)
+    func = [f for c in pheno_codes(ref_code) for f in (PHENO["codes"].get(c) or {}).get("functional", [])]
+    if not feats and not func:
+        return ""
+    out = ""
+    if feats:
+        rows = []
+        for freq in PHENO_FREQ:
+            items = sorted((hp for hp, v in feats.items() if v[0] == freq), key=lambda hp: pheno_label(hp).lower())
+            if items:
+                links = ", ".join(f'<a href="https://hpo.jax.org/browse/term/{hp}" target="_blank" rel="noopener external" title="HPO: {esc(PHENO["terms"].get(hp, {}).get("name", hp))} ({hp})">{esc(pheno_label(hp))}</a>'
+                                  + (' <span class="fine">(diagnostic criterion)</span>' if feats[hp][1] else "") for hp in items)
+                rows.append(f"<dt>{freq}</dt><dd>{links}</dd>")
+        forms = sorted({n for v in feats.values() for n in v[2]})
+        note = (f'<p class="fine">Recorded by Orphanet for the forms it files here: {esc("; ".join(forms))}.</p>' if forms else "")
+        out += (f'<details class="cond-pheno"><summary>Associated features <span class="fine">{len(feats)}, from Orphanet</span></summary>'
+                f'<dl>{"".join(rows)}</dl>{note}</details>')
+    if func:
+        items = "".join(f'<li>{esc(name)}: ' + "; ".join(esc(", ".join(x for x in (f.lower(), (sv.lower() + " severity") if sv else "", t.lower()) if x)) for f, sv, t in combos) + '</li>'
+                        for name, combos in func)
+        out += (f'<details class="cond-pheno"><summary>Daily life <span class="fine">{len(func)} limitations, from Orphanet</span></summary>'
+                f'<ul>{items}</ul><p class="fine">Activity limitations and participation restrictions in the Orphanet Functioning Thesaurus, which follows the WHO&rsquo;s ICF; each with how often and how severely it occurs.</p></details>')
+    return out
+
+
+def hpo_menu_html():
+    """The finder's menu of associated features, grouped by body system, each with the number of cards it leaves."""
+    cards = {}
+    for name, desc, code, orpha_name, *_ in CONDITIONS:
+        ref_code, _a = card_anchor(name, code)
+        for hp, v in card_features(ref_code).items():
+            if v[0] != "Excluded (0%)":
+                cards.setdefault(hp, set()).add(name)
+    groups = {}
+    for hp, names in cards.items():
+        sysl = (PHENO["terms"].get(hp, {}).get("systems") or ["Other"])[0]
+        groups.setdefault(sysl, []).append((pheno_label(hp), hp, len(names)))
+    order = sorted(groups, key=lambda g: (g != "Limbs", g != "Bones, joints and muscles", g))
+    opts = "".join(f'<optgroup label="{esc(g)}">' + "".join(f'<option value="{hp}">{esc(lab)} ({n})</option>'
+                                                         for lab, hp, n in sorted(groups[g], key=lambda x: (-x[2], x[0].lower()))) + "</optgroup>" for g in order)
+    return f'<select id="cond-hpo"><option value="">Any feature</option>{opts}</select>', len(cards)
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -3521,6 +3609,11 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
           <button type="button" data-v="nongenetic" aria-pressed="false">No</button>
         </div>
       </fieldset>
+      <fieldset>
+        <legend><label for="cond-hpo">Is there another feature you know of? Pick one to narrow the list.</label></legend>
+        {hpo_menu_html()[0]}
+        <p class="fine" style="margin:0.4rem 0 0">Features as Orphanet records them for each condition, in the Human Phenotype Ontology, grouped by body system; the number is how many cards have it. A condition does not always show every feature.</p>
+      </fieldset>
       <p class="finder-count" aria-live="polite"><strong id="finder-n">{len(CONDITIONS)}</strong> of {len(CONDITIONS)} conditions match · <button type="button" id="finder-reset">Reset</button></p>
     </div>
 
@@ -3532,7 +3625,7 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
     <div class="grid cols-3" id="cond-grid">
       {"".join(condition_card(*c) for c in CONDITIONS_BY_RATE)}
     </div>
-    <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
+    <p style="margin-top:var(--space-3)">Each card links to the condition’s page on Orphanet, the European reference database for rare diseases, through its permanent ORPHAcode; the codes were carried over from the previous DysNet site and re-verified in August 2026. The associated features and the daily-life limitations come from <a href="{PHENO.get("source", {}).get("url", "")}" target="_blank" rel="noopener external">Orphadata</a>, Orphanet&rsquo;s scientific knowledge base (CC BY 4.0, release of {PHENO.get("source", {}).get("phenotypes_date", "")}), with the features named in the <a href="https://hpo.jax.org/" target="_blank" rel="noopener external">Human Phenotype Ontology</a> ({PHENO.get("source", {}).get("hpo", "").split(", ")[-1].replace("hp/releases/", "release ")}). Know one we have not covered, or have information to add? <a href="mailto:info@dysnet.org">Tell us</a>.</p>
     <p class="annex-note">Some cards and some of the forms listed inside them also give the names families usually use, such as
     &ldquo;webbed fingers&rdquo; for syndactyly or &ldquo;short arm&rdquo; for an absent forearm and hand. They are not Orphanet
     terms: DysNet collects them with its member associations, which extend and correct the list, and the

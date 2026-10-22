@@ -1306,8 +1306,10 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 /* Understanding dysmelia: associated features and daily life, from Orphanet */
 .cond-pheno { margin-top: var(--space-1); font-size: var(--text-small); min-width: 0; overflow-wrap: anywhere; }
 .cond-pheno summary { cursor: pointer; color: var(--dys-purple-text); }
-.cond-pheno dl { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: 0.3rem var(--space-1); margin: var(--space-1) 0; }
-@media (max-width: 30rem) { .cond-pheno dl { grid-template-columns: minmax(0, 1fr); } .cond-pheno dt { margin-top: 0.3rem; } }
+/* the frequency on its own line, the features below it across the whole card: a side column left them too narrow to read */
+.cond-pheno dl { margin: var(--space-1) 0; }
+.cond-pheno dt { margin-top: 0.55rem; font-weight: 600; }
+.cond-pheno dt:first-child { margin-top: 0; }
 .card.cond { min-width: 0; }
 .cond-pheno dt { color: var(--dys-muted); }
 .cond-pheno dd { margin: 0; }
@@ -1325,9 +1327,10 @@ abbr.acr:hover, span.term:hover { text-decoration: underline dotted; text-decora
   text-align: left; box-shadow: 0 4px 16px rgb(0 0 0 / .18); pointer-events: none; }
 #word-tip b { font-weight: 700; margin-right: 6px; }
 /* a hard word: the white card of the causes article's glossary, which the mouse can reach to follow the source link */
-#word-tip.is-term { max-width: min(24rem, calc(100vw - 16px)); padding: 0.8rem 0.95rem; background: #fff; color: var(--dys-ink);
+#word-tip.is-term { max-width: min(24rem, calc(100vw - 16px)); padding: 0.65rem 0.8rem; background: #fff; color: var(--dys-ink);
   border: 1px solid rgba(36, 26, 51, 0.14); border-radius: var(--radius-card); box-shadow: 0 12px 34px rgba(36, 26, 51, 0.18);
   font-size: var(--text-small); font-weight: 400; line-height: 1.5; pointer-events: auto; }
 #word-tip.is-term b { display: block; margin: 0 0 0.2rem; color: var(--dys-purple-text); }
 #word-tip.is-term a { display: block; margin-top: 0.45rem; }
+#word-tip.is-sheet { position: fixed; left: 12px; right: 12px; bottom: 12px; top: auto; max-width: none; z-index: 95; }   /* above the back-to-top button */
 @media print { #word-tip { display: none !important; } }

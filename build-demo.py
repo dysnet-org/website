@@ -3140,7 +3140,8 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     haystack = condition_search_text(name, desc, ref_code, orpha_name)
     foot = condition_registries_html(ref_code) + refs
     hpo_attr = " ".join(sorted(hp for hp, v in card_features(ref_code).items() if v[0] != "Excluded (0%)"))
-    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-search="{haystack}">'
+    hsys_attr = " ".join(sorted({hpo_sys_slug(hpo_system(hp)) for hp in hpo_attr.split()}))
+    return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-hsys="{hsys_attr}" data-search="{haystack}">'
             f'<h3 class="h4">{name}</h3>'
             f'<p class="cond-desc">{desc}</p>{usual_line(name, ref_code)}'
             f'<p class="cond-chips">{chips}</p>'
@@ -3219,22 +3220,34 @@ def condition_pheno_html(ref_code):
     return out
 
 
+def hpo_system(hp):
+    return (PHENO["terms"].get(hp, {}).get("systems") or ["Other"])[0]
+
+
+def hpo_sys_slug(name):
+    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
 def hpo_menu_html():
-    """The finder's menu of associated features, grouped by body system, each with the number of cards it leaves."""
-    cards = {}
+    """The finder's two menus: a body system, then a feature within it, each with the number of cards it leaves.
+    The second menu holds every feature in groups, so it works without JavaScript; the script then shows only
+    the chosen system's features."""
+    cards, sys_cards = {}, {}
     for name, desc, code, orpha_name, *_ in CONDITIONS:
         ref_code, _a = card_anchor(name, code)
         for hp, v in card_features(ref_code).items():
             if v[0] != "Excluded (0%)":
                 cards.setdefault(hp, set()).add(name)
+                sys_cards.setdefault(hpo_system(hp), set()).add(name)
     groups = {}
     for hp, names in cards.items():
-        sysl = (PHENO["terms"].get(hp, {}).get("systems") or ["Other"])[0]
-        groups.setdefault(sysl, []).append((pheno_label(hp), hp, len(names)))
-    order = sorted(groups, key=lambda g: (g != "Limbs", g != "Bones, joints and muscles", g))
-    opts = "".join(f'<optgroup label="{esc(g)}">' + "".join(f'<option value="{hp}">{esc(lab)} ({n})</option>'
+        groups.setdefault(hpo_system(hp), []).append((pheno_label(hp), hp, len(names)))
+    order = sorted(groups, key=lambda g: (g != "Limbs", g != "Bones, joints and muscles", g == "Other", g))
+    sys_opts = "".join(f'<option value="{hpo_sys_slug(g)}">{esc(g)} ({len(sys_cards[g])})</option>' for g in order)
+    opts = "".join(f'<optgroup label="{esc(g)}" data-sys="{hpo_sys_slug(g)}">' + "".join(f'<option value="{hp}">{esc(lab)} ({n})</option>'
                                                          for lab, hp, n in sorted(groups[g], key=lambda x: (-x[2], x[0].lower()))) + "</optgroup>" for g in order)
-    return f'<select id="cond-hpo"><option value="">Any feature</option>{opts}</select>', len(cards)
+    return (f'<div class="hpo-pick"><select id="cond-hsys" aria-label="Body system"><option value="">Any part of the body</option>{sys_opts}</select>'
+            f'<select id="cond-hpo" aria-label="Feature"><option value="">Any feature</option>{opts}</select></div>'), len(cards)
 
 
 # ───────────── Annex: prevalence of the listed conditions (Orphanet + literature) ─────────────
@@ -3610,9 +3623,9 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
         </div>
       </fieldset>
       <fieldset>
-        <legend><label for="cond-hpo">Is there another feature you know of? Pick one to narrow the list.</label></legend>
+        <legend>Is there another feature you know of? Choose the part of the body, then the feature.</legend>
         {hpo_menu_html()[0]}
-        <p class="fine" style="margin:0.4rem 0 0">Features as Orphanet records them for each condition, in the Human Phenotype Ontology, grouped by body system; the number is how many cards have it. A condition does not always show every feature.</p>
+        <p class="fine" style="margin:0.4rem 0 0">Features as Orphanet records them for each condition, in the Human Phenotype Ontology, grouped by body system; the number is how many cards it leaves. A condition does not always show every feature.</p>
       </fieldset>
       <p class="finder-count" aria-live="polite"><strong id="finder-n">{len(CONDITIONS)}</strong> of {len(CONDITIONS)} conditions match · <button type="button" id="finder-reset">Reset</button></p>
     </div>

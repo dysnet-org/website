@@ -280,12 +280,28 @@
   // A reader who already knows what they are looking for should not have to answer three questions:
   // the box matches a name, a synonym, an ORPHAcode or an ICD code against each card's data-search.
   var qBox = document.getElementById("cond-q");
-  // the associated-features menu: a card stays when Orphanet records the feature for it (never when excluded)
-  var hpoSel = document.getElementById("cond-hpo");
+  // the associated features, in two steps: a part of the body, then a feature within it. A card stays when
+  // Orphanet records the feature (or any feature of that part of the body) for it, never when excluded.
+  var hpoSel = document.getElementById("cond-hpo"), sysSel = document.getElementById("cond-hsys");
+  var featByGroup = {};
+  if (hpoSel && sysSel) {
+    hpoSel.querySelectorAll("optgroup").forEach(function (g) {
+      featByGroup[g.getAttribute("data-sys")] = Array.prototype.map.call(g.querySelectorAll("option"), function (o) { return [o.value, o.textContent]; });
+    });
+  }
+  function fillFeatures(sys) {
+    if (!hpoSel || !sysSel) return;
+    hpoSel.innerHTML = "";
+    var first = document.createElement("option");
+    first.value = ""; first.textContent = sys ? "Any feature of this part of the body" : "Choose the part of the body first";
+    hpoSel.appendChild(first);
+    (featByGroup[sys] || []).forEach(function (f) { var o = document.createElement("option"); o.value = f[0]; o.textContent = f[1]; hpoSel.appendChild(o); });
+    hpoSel.disabled = !sys;
+  }
 
   function apply() {
     var text = qBox ? qBox.value.trim().toLowerCase() : "";
-    var hpo = hpoSel ? hpoSel.value : "";
+    var hpo = hpoSel ? hpoSel.value : "", hsys = sysSel ? sysSel.value : "";
     var n = 0;
     cards.forEach(function (c) {
       var ok = true;
@@ -295,11 +311,12 @@
       });
       if (ok && text && (c.getAttribute("data-search") || "").indexOf(text) === -1) ok = false;
       if (ok && hpo && (c.getAttribute("data-hpo") || "").split(" ").indexOf(hpo) === -1) ok = false;
+      if (ok && hsys && (c.getAttribute("data-hsys") || "").split(" ").indexOf(hsys) === -1) ok = false;
       c.style.display = ok ? "" : "none";
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
-    if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hpo: hpo });
+    if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hsys: hsys, hpo: hpo });
   }
   if (qBox) {
     qBox.addEventListener("input", apply);
@@ -307,11 +324,16 @@
     var pre = typeof filterParams === "function" ? filterParams().get("q") : null;
     if (pre) { qBox.value = pre; }
   }
-  if (hpoSel) {
+  if (hpoSel && sysSel) {
+    sysSel.addEventListener("change", function () { fillFeatures(sysSel.value); apply(); });
     hpoSel.addEventListener("change", apply);
-    // a feature can be linked too: /knowledge/understanding-dysmelia/?hpo=HP:0001171
-    var preH = typeof filterParams === "function" ? filterParams().get("hpo") : null;
-    if (preH) { hpoSel.value = preH; }
+    // a part of the body or a feature can be linked: ?hsys=limbs, ?hpo=HP:0001171
+    var fp = typeof filterParams === "function" ? filterParams() : null;
+    var preH = fp && fp.get("hpo"), preS = fp && fp.get("hsys");
+    if (preH && !preS) Object.keys(featByGroup).forEach(function (g) { if (featByGroup[g].some(function (f) { return f[0] === preH; })) preS = g; });
+    if (preS && featByGroup[preS]) sysSel.value = preS;
+    fillFeatures(sysSel.value);
+    if (preH) hpoSel.value = preH;
   }
 
   finder.querySelectorAll(".finder-chips").forEach(function (group) {
@@ -329,7 +351,7 @@
   document.getElementById("finder-reset").addEventListener("click", function () {
     state = { limbs: "", type: "", other: "", genetic: "" };
     if (qBox) qBox.value = "";
-    if (hpoSel) hpoSel.value = "";
+    if (sysSel) { sysSel.value = ""; fillFeatures(""); }
     finder.querySelectorAll(".finder-chips").forEach(function (group) {
       group.querySelectorAll("button").forEach(function (x, i) { x.setAttribute("aria-pressed", i === 0 ? "true" : "false"); });
     });

@@ -4620,6 +4620,34 @@ REGISTRY_AUDIENCES = [
 ]
 
 
+# The registry's documents, offered on its page to download and pass on. The pilot brief is drawn by
+# build_pilot_pdf below; the poster and the members' brief by tools/build-member-pdfs.py (owner, 2026-10-23:
+# "publish the two pdf to be downloaded as resources on the registry page").
+REGISTRY_DOCS = [
+    ("dysnet-registry-explained.pdf", "The registry, explained", "3 pages", "acc-library",
+     "For families: what the registry is for, what taking part means, who sees what, and what it gives "
+     "the community and each person."),
+    ("dysnet-registry-poster.pdf", "Waiting-room poster", "1 page", "acc-research",
+     "For a doctor’s practice or a care centre to put up: the registry in four short blocks, with a QR code "
+     "to take part."),
+    ("dysnet-registry-pilot.pdf", "The pilot brief", "2 pages", "acc-studies",
+     "For an association’s board: what a pilot asks of you, what it gives you, what it costs, and the "
+     "questions a treasurer asks."),
+]
+
+
+def registry_docs_html():
+    cards = []
+    for name, title, pages, acc, text in REGISTRY_DOCS:
+        f = ROOT / "assets" / name
+        if not f.exists():
+            raise SystemExit(f"docs/assets/{name} is missing: run python3 tools/build-member-pdfs.py, or the registry page links to nothing")
+        kb = max(1, round(f.stat().st_size / 1024))
+        cards.append(f'<div class="card {acc}"><h3 class="h4"><a href="/assets/{name}" download>{title}</a></h3>'
+                     f'<p>{text}</p><p class="meta">PDF · {pages} · {kb} kB</p></div>')
+    return f'<div class="grid cols-3" style="margin-top:var(--space-3)">{"".join(cards)}</div>'
+
+
 def registry_audiences_html():
     pills = "".join(
         f'<button type="button" role="tab" data-aud="{key}" aria-selected="{"true" if i == 0 else "false"}" '
@@ -4729,6 +4757,14 @@ PAGES["/registry/"] = {
     {opener("05", "Progress", "The log.", toc="The log")}
     <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">Call for funding</h3><time datetime="2026-09">September 2026</time><p>EU rare-disease calls are being screened. The registry now seeks its first funders: research foundations, rare-disease prizes, and partners able to contribute hosting, development or translation in kind. <a href="mailto:info@dysnet.org?subject=Registry%20funding">Write to the board</a> or <a href="/donate/">support the registry directly</a>.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    {opener("06", "Resources", "Documents to download and pass on.", toc="Documents")}
+    <p>Print them, send them to your families, or give them to your doctor. They may be shared freely without asking us first.</p>
+    {registry_docs_html()}
   </div>
 </section>
 
@@ -6285,10 +6321,14 @@ for _s in (["copy-of-aussiehands", "copy-of-aussiehands-1", "copy-of-aussiehands
     REDIRECTS["/" + _s] = "/about/members/"
 for _s in _POSTS:
     REDIRECTS["/post/" + _s] = "/voice/reports/"
+# The address printed under the QR codes of the registry's poster and member brief
+# (tools/build-member-pdfs.py). Paper outlives a URL, so the print carries this one and only this
+# changes: the registry page until the app opens to families, then the app's own address.
+REDIRECTS["/app"] = "/registry/"
 
 
 def redirect_html(new_path):
-    url = SITE + new_path
+    url = new_path if new_path.startswith("https://") else SITE + new_path   # an absolute target, for /app on launch day
     return (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Page moved · DysNet</title>'
             f'<meta name="robots" content="noindex"><link rel="canonical" href="{url}">'
             f'<meta http-equiv="refresh" content="0; url={new_path}"><script>location.replace({json.dumps(new_path)});</script>'

@@ -111,6 +111,10 @@ GLOSSARY = [
     (r"[Ee]mbryo", "The developing child during the first eight weeks after conception, the period in which the limbs are built.", "NCI Dictionary of Cancer Terms", NCI_C + "embryo"),
 ]
 
+# A few words saying what each form in a card's Orphanet classification list is
+ORPHA_SHORT = {c: v["short"] for c, v in json.loads((pathlib.Path(__file__).parent / "tools" / "orphanet-short-descriptions.json").read_text(encoding="utf-8"))["forms"].items()}
+
+
 # Acronyms and hard words, on every page: tools/acronyms.json (acronym -> full form) and tools/glossary.json (plain-
 # language definitions), with the causes article's GLOSSARY above, become docs/assets/js/glossary.js. It turns each
 # of them in a page's text into an element that looks like the text around it and shows its meaning on hover or tap,
@@ -3223,11 +3227,15 @@ def condition_hierarchy_html(code):
             syn = next((x for x in (m.get("synonyms") or [])
                         if _key_word(x) != _key_word(m.get("term") or "")
                         and not x.isupper() and len(x) > 5), None)
+            # a few words saying what the form is, then the other name it goes by
+            if c in ORPHA_SHORT:
+                txt += f': <span class="orpha-desc">{ORPHA_SHORT[c]}</span>'
             if syn:
-                txt += f' <span class="orpha-syn">{syn.lower()}</span>'
+                txt += (f' · <span class="orpha-syn">also called {syn.lower()}</span>' if c in ORPHA_SHORT
+                        else f' <span class="orpha-syn">{syn.lower()}</span>')
             usual = usual_shown(code=c)[:3]
             if usual:
-                txt += f' <span class="orpha-usual">usually called {_quoted_or(usual)}</span>'
+                txt += f'{" ·" if c in ORPHA_SHORT else ""} <span class="orpha-usual">usually called {_quoted_or(usual)}</span>'
             txt += f' <span class="orpha-code">ORPHA:{c}</span>'
             if m.get("icd10"): txt += " " + _icd_codes_html(m)
             if c in ours: txt += f' <a class="on-page" href="#cond-{c}">on this page</a>'

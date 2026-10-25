@@ -1,0 +1,173 @@
+{
+ "_about": "A very short description shown before the ORPHAcode of a form in a card's Orphanet classification list, before any synonym. 'from' says what it condenses: Orphanet's own definition (Orphadata en_product1.xml, CC BY 4.0, read 2026-10-25), or, for a group Orphanet does not define, the forms it files under it.",
+ "forms": {
+  "931": {
+   "short": "both hands and both feet absent",
+   "from": "Orphanet definition"
+  },
+  "973": {
+   "short": "fingers 2 to 5 short or missing, one hand",
+   "from": "Orphanet definition"
+  },
+  "1987": {
+   "short": "short or absent thigh bone",
+   "from": "Orphanet definition"
+  },
+  "2130": {
+   "short": "one forearm or lower-leg bone absent or very short",
+   "from": "Orphanet definition"
+  },
+  "2498": {
+   "short": "4th and 5th palm bones fused",
+   "from": "Orphanet definition"
+  },
+  "93320": {
+   "short": "ulna partly or fully absent",
+   "from": "Orphanet definition"
+  },
+  "93321": {
+   "short": "radius partly or fully absent",
+   "from": "Orphanet definition"
+  },
+  "93322": {
+   "short": "shinbone (tibia) partly or fully absent",
+   "from": "Orphanet definition"
+  },
+  "93323": {
+   "short": "fibula partly or fully absent",
+   "from": "Orphanet definition"
+  },
+  "93334": {
+   "short": "well-formed extra little finger or toe",
+   "from": "Orphanet definition"
+  },
+  "93335": {
+   "short": "small, undeveloped extra little finger or toe",
+   "from": "Orphanet definition"
+  },
+  "93336": {
+   "short": "thumb with three bones, sometimes duplicated",
+   "from": "Orphanet definition"
+  },
+  "93337": {
+   "short": "index-like finger in place of the thumb",
+   "from": "Orphanet definition"
+  },
+  "93338": {
+   "short": "broad thumb, slightly duplicated",
+   "from": "Orphanet definition"
+  },
+  "93339": {
+   "short": "duplicated thumb or big toe",
+   "from": "Orphanet definition"
+  },
+  "93402": {
+   "short": "3rd and 4th fingers or 2nd and 3rd toes joined",
+   "from": "Orphanet definition"
+  },
+  "93403": {
+   "short": "fingers joined, extra digit inside the web",
+   "from": "Orphanet definition"
+  },
+  "93404": {
+   "short": "ring and little fingers joined, both hands",
+   "from": "Orphanet definition"
+  },
+  "93405": {
+   "short": "all fingers joined, often six digits",
+   "from": "Orphanet definition"
+  },
+  "93406": {
+   "short": "3rd and 4th fingers joined, palm bones fused",
+   "from": "Orphanet definition"
+  },
+  "157801": {
+   "short": "3rd and 4th fingers joined, middle fingers reduced",
+   "from": "Orphanet definition"
+  },
+  "294925": {
+   "short": "one or more whole limbs absent",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "294967": {
+   "short": "one or both arms absent",
+   "from": "Orphanet definition"
+  },
+  "294969": {
+   "short": "one or both legs absent",
+   "from": "Orphanet definition"
+  },
+  "294971": {
+   "short": "all four limbs partly or fully absent",
+   "from": "Orphanet definition"
+  },
+  "294973": {
+   "short": "short or absent upper-arm bone",
+   "from": "Orphanet definition"
+  },
+  "294975": {
+   "short": "upper arm and forearm missing, hand present",
+   "from": "Orphanet definition"
+  },
+  "294977": {
+   "short": "thigh and lower leg missing, foot present",
+   "from": "Orphanet definition"
+  },
+  "294979": {
+   "short": "forearm and hand absent",
+   "from": "Orphanet definition"
+  },
+  "294981": {
+   "short": "lower leg and foot absent",
+   "from": "Orphanet definition"
+  },
+  "294983": {
+   "short": "hand absent",
+   "from": "Orphanet definition"
+  },
+  "294986": {
+   "short": "foot absent",
+   "from": "Orphanet definition"
+  },
+  "294988": {
+   "short": "small or absent thumb",
+   "from": "Orphanet definition"
+  },
+  "295004": {
+   "short": "extra middle finger or toe",
+   "from": "Orphanet definition"
+  },
+  "295012": {
+   "short": "fingers 2 to 5 joined, one hand",
+   "from": "Orphanet definition"
+  },
+  "498464": {
+   "short": "extra digit on the thumb or big-toe side",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "498467": {
+   "short": "extra little finger or little toe",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "498470": {
+   "short": "extra digits in the middle, or in mirror image",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "498491": {
+   "short": "forearm and hand, or lower leg and foot, absent",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "498494": {
+   "short": "extra digits arranged in mirror image",
+   "from": "Orphanet definition"
+  },
+  "633228": {
+   "short": "top of the thigh bone, near the hip, not fully formed",
+   "from": "DysNet, from the forms Orphanet files under it"
+  },
+  "667589": {
+   "short": "thigh bone split in two at its lower end",
+   "from": "DysNet, from the forms Orphanet files under it"
+  }
+ }
+}

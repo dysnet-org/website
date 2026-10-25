@@ -1311,6 +1311,8 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 .cond-pheno dt { margin-top: 0.55rem; font-weight: 600; }
 .cond-pheno dt:first-child { margin-top: 0; }
 .card.cond { min-width: 0; }
+/* the finder leaves one or two cards: each spans the whole row, easier to read than a third of it */
+#cond-grid.few { grid-template-columns: minmax(0, 1fr); }
 .cond-pheno dt { color: var(--dys-muted); }
 .cond-pheno dd { margin: 0; }
 .cond-pheno ul { margin: var(--space-1) 0; padding-left: 1.1rem; }

@@ -337,7 +337,7 @@
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
-    grid.classList.toggle("few", n > 0 && n <= 2);   // one or two cards left: each takes the whole width
+    grid.classList.toggle("few", n === 1);   // a single card left: it takes the whole width
     if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hsys: hsys, hpo: hpo, freq: freqSel ? freqSel.value : "" });
   }
   if (qBox) {

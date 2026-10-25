@@ -338,6 +338,12 @@
     });
     document.getElementById("finder-n").textContent = n;
     grid.classList.toggle("few", n === 1);   // a single card left: it takes the whole width
+    // and its folded sections open, so it reads without a click; they fold again when other cards come back
+    grid.querySelectorAll("details[data-auto-open]").forEach(function (d) { d.open = false; d.removeAttribute("data-auto-open"); });
+    if (n === 1) cards.forEach(function (c) {
+      if (c.style.display === "none" || c.hidden) return;
+      c.querySelectorAll("details:not([open])").forEach(function (d) { d.open = true; d.setAttribute("data-auto-open", ""); });
+    });
     if (typeof writeFilterParams === "function") writeFilterParams({ q: text, hsys: hsys, hpo: hpo, freq: freqSel ? freqSel.value : "" });
   }
   if (qBox) {

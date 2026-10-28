@@ -369,6 +369,12 @@ tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 .aud-grid .card a.cover { position: absolute; inset: 0; border-radius: inherit; }
 .aud-grid .card:hover { box-shadow: 0 12px 30px -18px rgba(36, 26, 51, 0.35); }
 
+/* ── Document cards (registry resources): a click anywhere on the card downloads ── */
+.card.doc { position: relative; }
+.card.doc h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.card.doc:hover { box-shadow: 0 12px 30px -18px rgba(36, 26, 51, 0.35); }
+.card.doc:hover h3 a { color: var(--acc-text); }
+
 /* ── Flip person cards (HDS PersonCard) ────────────────────────── */
 .person-flip { perspective: 1200px; }
 .person-flip .faces { position: relative; transition: transform 0.5s; transform-style: preserve-3d; min-height: 15rem; }

@@ -4651,7 +4651,9 @@ def registry_docs_html():
         if not f.exists():
             raise SystemExit(f"docs/assets/{name} is missing: run python3 tools/build-member-pdfs.py, or the registry page links to nothing")
         kb = max(1, round(f.stat().st_size / 1024))
-        cards.append(f'<div class="card {acc}"><h3 class="h4"><a href="/assets/{name}" download>{title}</a></h3>'
+        # The title link stretches over the whole card (.card.doc in site.css), so a click anywhere on it
+        # downloads; data-no-gloss keeps hard-word buttons from catching that click (owner, 2026-10-28).
+        cards.append(f'<div class="card doc {acc}" data-no-gloss><h3 class="h4"><a href="/assets/{name}" download>{title}</a></h3>'
                      f'<p>{text}</p><p class="meta">PDF · {pages} · {kb} kB</p></div>')
     return f'<div class="grid cols-3" style="margin-top:var(--space-3)">{"".join(cards)}</div>'
 

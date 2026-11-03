@@ -4738,7 +4738,7 @@ PAGES["/registry/"] = {
     <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
     {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}
-    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Now that it is open, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
+    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. The registry has been declared to <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
 
     {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.", toc="Who decides what")}
     <div class="grid cols-3">
@@ -5118,7 +5118,7 @@ PILOT_STEPS = [
     ("A handful of families, not a launch", "You invite a small group. A pilot is meant to find what is wrong while it is still cheap to change."),
     ("Each family opens its own account", "They decide what goes in, and they consent, or they do not. You are not asked to vouch for anyone."),
     ("Your country's figures come back to you", "The first thing a pilot produces is a picture of your own membership that you did not have before."),
-    ("Then it becomes findable", "Once live, the registry is declared in Orphanet's European directory of rare-disease registries, where researchers already look."),
+    ("Then it becomes findable", "The registry has been declared to Orphanet's European directory of rare-disease registries, where researchers already look."),
 ]
 PILOT_CAREFUL = [
     "It is not exhaustive. A registry aims at every case in a defined population; ours gathers the families who choose to take part.",

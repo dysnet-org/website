@@ -484,7 +484,7 @@ SEO_TITLES = {
     "/about/statutes/": "Statutes of DysNet, the dysmelia network",
     "/contact/": "Contact the dysmelia network · DysNet",
     "/donate/": "Support DysNet, the dysmelia network",
-    "/privacy/": "Privacy notice: cookies, rights, registers · DysNet",
+    "/privacy/": "Privacy notice: site, registry, your rights · DysNet",
     "/accessibility/": "Accessibility of this site, measured · DysNet",
     "/404/": "Page not found · DysNet",
 }
@@ -6154,9 +6154,14 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 # organisation that collects things. This one collects almost nothing, so the page says that
 # and spends its length only where a reader gains something: the registers name professionals
 # (art. 14, the part such notices skip), and the registers are not behind a consent wall.
+# Section 05 is the registry's own notice since it opened (owner, 2026-11-03). It follows the order of
+# EURORDIS's Rare Barometer privacy statement (data, who handles it, who sees it, how long) and the roles
+# of Health Data Safe's compliance matrix (compliance.datasafe.dev): HDS controls the account, DysNet
+# independently controls what it reads, and HDS is nobody's Art. 28 processor. It describes only what the
+# production app does: the pregnancy place and the public map are off there (map flag, registry repo plan 14).
 PAGES["/privacy/"] = {
     "title": "Privacy",
-    "desc": "DysNet asks once whether it may count your visit, and collects nothing else through this site. What is processed, what the registers name, and your rights under the GDPR.",
+    "desc": "What DysNet processes on this site and in the registry, who answers for it alongside Health Data Safe, and your rights under the GDPR.",
     "crumbs": [("/privacy/", "Privacy")],
     "body": f"""
 <section>
@@ -6164,8 +6169,8 @@ PAGES["/privacy/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Privacy · Articles 13 and 14 GDPR</p>
     <h1 class="display">We collect nothing unless you say yes.</h1>
-    <p>No advertising, no tracker that follows you elsewhere, no account and no form. The one thing we ask is whether we may count your visit, and a banner asks you once. Say no and nothing changes: every page and every register stays open either way. This page says what is processed, what our registers name, and how to exercise your rights. Questions go to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>.</p>
-    <p class="annex-note">Version of 22 September 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. We have appointed no data protection officer, and we will name one before the registry begins processing health data.</p>
+    <p>This site has no advertising, no tracker that follows you elsewhere, no account and no form. The one thing it asks is whether we may count your visit, and a banner asks you once. Say no and nothing changes: every page and every register stays open either way. The registry runs as its own app, at registry.dysnet.org, and asks for each of its consents separately; section 05 is its notice. This page says what is processed, what our registers name, and how to exercise your rights. Questions go to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>.</p>
+    <p class="annex-note">Version of 3 November 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. DysNet has not appointed a data protection officer. Health Data Safe’s officer answers for your Health Data Safe account at <a href="mailto:dpo.contact@healthdatasafe.org">dpo.contact@healthdatasafe.org</a>.</p>
 
     {opener("01", "The site", "What happens when you read a page.", toc="Reading a page")}
     <ul>
@@ -6190,15 +6195,18 @@ PAGES["/privacy/"] = {
     <p><button type="button" class="btn btn-ghost btn-sm" data-consent-reset>Change your answer</button></p>
     <p class="annex-note">Why the wall is unlawful, for the reader who wants it: Swedish law allows an identifier to be stored on your device only with your consent, or where that is strictly necessary for the service you asked for (9 kap. 28 § lagen (2022:482) om elektronisk kommunikation). Consent extracted by withholding the content is not freely given (European Data Protection Board guidelines on consent of 4 May 2020, paragraphs 39 to 41). Our banner asks for that consent and takes no for an answer, leaving every page readable either way, which is the condition those guidelines set.</p>
 
-    {opener("05", "The registry", "Nothing is collected yet.", toc="The registry")}
-    <p>The limb-malformation registry does not exist, and no health data reaches us through this site. When it opens it will carry its own notice, published before the first family enters anything. Four things will hold.</p>
+    {opener("05", "The registry", "What the registry reads, and who answers for it.", toc="The registry")}
+    <p>The registry has been open since 3 November 2026, at registry.dysnet.org. This section is its privacy notice. It follows the roles that Health Data Safe sets out in its public <a href="https://compliance.datasafe.dev/">compliance matrix</a>, which describes how its accounts stand against the GDPR and Swiss data protection law.</p>
     <ul>
-      <li>Each person holds their own account and decides what goes into it.</li>
-      <li>Consent is explicit, given study by study, and withdrawable at any time (Article 9(2)(a)).</li>
-      <li>No association enrols anybody. Families are invited, and they enter their own information.</li>
-      <li>We do not sell the data, and we will not pass it to insurers or employers. Bulk access without the consent of the people described will not be possible.</li>
+      <li><strong>Two controllers, each for its own part.</strong> Health Data Safe, a Swiss non-profit foundation in Morges, is the controller of your account: it runs the account, you hold it, and you decide who may read it, under its own <a href="https://www.healthdatasafe.org/users/privacy/">privacy policy</a>. We are the controller of what we read from your account with your permission, and of what the registry’s server keeps. Health Data Safe is not our processor: it acts on your permissions, never on our instructions, and we cannot ask it to open, change or delete your account.</li>
+      <li><strong>What we read.</strong> Only what your agreement to be counted names: the condition, chosen from the Orphanet list or written in your own words; the date of birth, or the expected date before a birth; your answer to each consent; and the identifier of the account they come from. We never see your password, and we read nothing else in your account. The condition and the date are health data. If you agree to be contacted about research, we also read the email address of your Health Data Safe account.</li>
+      <li><strong>Why, and on what basis.</strong> We read these data to count the people who live with dysmelia and to look for clusters of cases that research can investigate. We use your address only to tell you about a study that the member associations and the board have agreed may be put to families. Each purpose rests on your explicit consent (Article 9(2)(a) GDPR; Article 6(7) of the Swiss Federal Act on Data Protection). Each consent is a separate decision, and you can withdraw any of them at any time. For a child, a parent or guardian gives the consents in an account in the child’s name and holds that account until the child turns 18.</li>
+      <li><strong>Where the data are, and who else handles them.</strong> Your answers stay in your Health Data Safe account, which Health Data Safe hosts in Switzerland. The registry app runs on a server at Gandi in France. Gandi acts as our processor, and the server keeps technical logs (your IP address, the time and the request) to run the service and protect it. To display the questions, your browser also fetches public files from Health Data Safe and from GitHub, which see your IP address as they would for any web page. The app sets one cookie on your device to keep you signed in. It uses no analytics and loads no advertising.</li>
+      <li><strong>Who sees what.</strong> Our registry team alone reads your record. Member associations do not see records. A researcher receives nothing unless you say yes to their study, and then only the data that study names, for that study alone. We sell nothing, we give nothing to insurers or employers, and we offer nobody bulk access.</li>
+      <li><strong>How long.</strong> We read your answers for as long as your permission lasts. Withdraw it in your Health Data Safe account and we can read nothing more; your answers stay in your account until you delete them yourself. We stop using your address the day you withdraw the research consent. Your account keeps a dated record of each consent you give. The server keeps its logs in rolling files of limited size, so the oldest entries are deleted as new ones arrive.</li>
+      <li><strong>What the registry does not do yet.</strong> It does not ask for the place where the mother lived at the start of the pregnancy, and it does not offer the public map. Each will come with its own consent, and this notice will say what it involves before it opens.</li>
     </ul>
-    <p>The technical partner is <a href="https://www.healthdatasafe.org/en/">Health Data Safe</a>. Its statutes rule out any sale of health data and limit its use to care and research, and they provide that personal data is never treated as an asset of the foundation.</p>
+    <p>Health Data Safe’s statutes rule out any sale of health data and limit its use to care and research, and they provide that personal data is never treated as an asset of the foundation.</p>
 
     {opener("06", "Your rights", "What you can ask, and whom to tell.", toc="Your rights")}
     <p>You may ask us to do any of this, and Article 15 to Article 21 GDPR give you the right:</p>
@@ -6208,10 +6216,10 @@ PAGES["/privacy/"] = {
       <li>hand it over in a form you can take elsewhere;</li>
       <li>stop processing that rests on our legitimate interest.</li>
     </ul>
-    <p><strong>In the registry, you will not have to ask us.</strong> These rights are part of how the registry is built rather than a procedure wrapped around it. Each person holds their own account at Health Data Safe, and from it they review, correct, export and delete their own data, and withdraw a consent to share, without writing to anybody. Health Data Safe already publishes a <a href="https://www.healthdatasafe.org/users/data-portability/">self-service download of everything in an account</a> and a <a href="https://www.healthdatasafe.org/users/data-deletion/">route to delete it</a>. Until the registry opens, the rights above are exercised by writing to us, and we carry them out by hand.</p>
+    <p><strong>In the registry, you do not have to ask us.</strong> These rights are part of how the registry is built rather than a procedure wrapped around it. From your Health Data Safe account you review, correct, export and delete your data, and withdraw a consent, without writing to anybody; the registry app also gives you a copy of everything you entered in it. Health Data Safe publishes a <a href="https://www.healthdatasafe.org/users/data-portability/">self-service download of everything in an account</a> and a <a href="https://www.healthdatasafe.org/users/data-deletion/">route to delete it</a>. You may still write to us, and we will carry out your request by hand.</p>
     <p>Consent, where we rely on it, can be withdrawn at any time. Write to <a href="mailto:info@dysnet.org?subject=Data%20protection%20request">info@dysnet.org</a>. We answer within one month, free of charge, and if a request is genuinely complex we say so inside that month (Article 12(3)). We take no automated decisions about anybody and we build no profiles.</p>
-    <p>Three others ever touch anything: <strong>GitHub</strong> hosts the site from the United States, and states that it complies with the EU-US Data Privacy Framework; <strong>Zoho</strong> carries our mail on its European service; and <strong>Google</strong> counts the visits of readers who accept the banner, from the United States, and states that it complies with the same framework. Nobody else. We use no advertising network, no data broker and no mailing-list service, and we have never sold or rented personal data.</p>
-    <p>If we get something wrong, tell us, because most of it we can simply fix. You may also complain to a supervisory authority, choosing the one where you live, where you work or where you think the problem happened (Article 77), and you may go to court (Article 79). Ours is <strong>Integritetsskyddsmyndigheten</strong>, the Swedish Authority for Privacy Protection: Box 8114, 104 20 Stockholm, <a href="mailto:imy@imy.se">imy@imy.se</a>, +46 8 657 61 00, which takes complaints through <a href="https://www.imy.se/en/individuals/forms-and-e-services/file-a-gdpr-complaint/">its own form</a>.</p>
+    <p>Four companies process data for us: <strong>GitHub</strong> hosts this site from the United States, and states that it complies with the EU-US Data Privacy Framework; <strong>Zoho</strong> carries our mail on its European service; <strong>Google</strong> counts the visits of readers who accept the banner, from the United States, and states that it complies with the same framework; and <strong>Gandi</strong> runs the registry’s server in France. Nobody else. Health Data Safe is not on this list, because it holds your account as a controller in its own right, under its own policy. We use no advertising network, no data broker and no mailing-list service, and we have never sold or rented personal data.</p>
+    <p>If we get something wrong, tell us, because most of it we can simply fix. You may also complain to a supervisory authority, choosing the one where you live, where you work or where you think the problem happened (Article 77), and you may go to court (Article 79). Ours is <strong>Integritetsskyddsmyndigheten</strong>, the Swedish Authority for Privacy Protection: Box 8114, 104 20 Stockholm, <a href="mailto:imy@imy.se">imy@imy.se</a>, +46 8 657 61 00, which takes complaints through <a href="https://www.imy.se/en/individuals/forms-and-e-services/file-a-gdpr-complaint/">its own form</a>. In Switzerland, you may turn to the Federal Data Protection and Information Commissioner.</p>
   </div>
 </section>
 """,

@@ -6170,26 +6170,20 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 # EURORDIS's Rare Barometer privacy statement (data, who handles it, who sees it, how long) and the roles
 # of Health Data Safe's compliance matrix (compliance.datasafe.dev): HDS controls the account, DysNet
 # independently controls what it reads, and HDS is nobody's Art. 28 processor. It describes what the
-# production app does: whether it offers the pregnancy place and the map is REGISTRY_MAP_OPEN, and the
-# bullet below has a text for each state. The open text follows the app's own answers (registry repo,
-# apps/registry/src/locales/en.json, faq.map and guide.details.answer) and the registration consent
-# (packages/dysnet-model/src/consents.ts), which already names the place and the map dot.
-REGISTRY_MAP_NOTICE = (
-    '<li><strong>The place of the pregnancy, and the map.</strong> If you give it, we read the precise place where the '
-    'mother lived at the start of the pregnancy, to look for clusters of cases; it is never published. The address you '
-    'type to find it goes to OpenStreetMap’s search and is not kept: only the point is saved. Appearing on the map is a '
-    'separate consent. If you give it, the registry publishes a dot widened to the area you chose (1 to 5 km, or wider), '
-    'with the words you chose: the condition, only which limbs, or only that you live with a limb difference. Anyone can '
-    'see the map, on the registry and on our home page. A dot never shows a name or an address, and yours can be the only '
-    'one in its area, so choose the area and the words with that in mind. You can leave the map at any time, and your '
-    'dot disappears at the next update.</li>'
+# production app does: the pregnancy place and the public map are explained in full below, and
+# REGISTRY_MAP_OPEN only switches the line that says whether the app offers them yet. The explanation
+# follows the map consent and the screens around it (registry repo: packages/dysnet-model/src/consents.ts,
+# MAP_VISIBILITY_CONSENT, version 0; apps/registry/src/locales/en.json, map.*, mapVisibility.* and faq.map),
+# the publisher (services/map-publisher: no minimum per dot since 2026-10-06, a dot carries the chosen
+# words and a count, republished every PUBLISH_INTERVAL_SECONDS, 900 in production) and the home map's
+# five-minute cache of the feed. The owner chose to explain the risks here rather than in the consent
+# itself (2026-11-03: "the FAQ is quite comprehensive and explicit for now").
+REGISTRY_MAP_STATUS = (
+    '<p>The registry asks for this place and offers the map, as described below.</p>'
     if REGISTRY_MAP_OPEN else
-    '<li><strong>Two things the registry does not use yet.</strong> Your agreement to be counted already names the place '
-    'where the mother lived at the start of the pregnancy and what you choose to show on the registry’s map, which our '
-    'home page map shows once people appear on it. The registry does not ask for that place yet and does not yet offer '
-    'the choice to appear on the map, so there is nothing of either for us to read or to show. Before either opens, this '
-    'notice will say what it involves. The place will stay optional, and appearing on the map will ask for its own '
-    'consent.</li>')
+    '<p><strong>The registry does not offer either yet.</strong> It does not ask for this place and does not offer '
+    'the choice to appear on the map, so there is nothing of either for us to read or to show. Your agreement to be '
+    'counted already names both, so we explain here how each will work, for you to read before it opens.</p>')
 PAGES["/privacy/"] = {
     "title": "Privacy",
     "desc": "What DysNet processes on this site and in the registry, who answers for it alongside Health Data Safe, and your rights under the GDPR.",
@@ -6236,9 +6230,21 @@ PAGES["/privacy/"] = {
       <li><strong>Where the data are, and who else handles them.</strong> Your answers stay in your Health Data Safe account, which Health Data Safe hosts in Switzerland. The registry app runs on a server at Gandi in France. Gandi acts as our processor, and the server keeps technical logs (your IP address, the time and the request) to run the service and protect it. To display the questions, your browser also fetches public files from Health Data Safe and from GitHub, which see your IP address as they would for any web page. The app sets one cookie on your device to keep you signed in. It uses no analytics and loads no advertising.</li>
       <li><strong>Who sees what.</strong> Our registry team alone reads your record. Member associations do not see records. A researcher receives nothing unless you say yes to their study, and then only the data that study names, for that study alone. We sell nothing, we give nothing to insurers or employers, and we offer nobody bulk access.</li>
       <li><strong>How long.</strong> We read your answers for as long as your permission lasts. Withdraw it in your Health Data Safe account and we can read nothing more; your answers stay in your account until you delete them yourself. We stop using your address the day you withdraw the research consent. Your account keeps a dated record of each consent you give. The server keeps its logs in rolling files of limited size, so the oldest entries are deleted as new ones arrive.</li>
-      {REGISTRY_MAP_NOTICE}
     </ul>
     <p>Health Data Safe’s statutes rule out any sale of health data and limit its use to care and research, and they provide that personal data is never treated as an asset of the foundation.</p>
+
+    <h3 id="registry-map">The place of the pregnancy, and the public map</h3>
+    {REGISTRY_MAP_STATUS}
+    <ul>
+      <li><strong>The place of the pregnancy stays optional.</strong> The registry may ask where the mother lived at the start of the pregnancy, as precisely as you can give it: an address, a click on a map, or coordinates. We read that point to look for clusters of cases. Only our registry team sees it, and it is never published. To find the point, the address you type goes to OpenStreetMap’s search service, which receives it together with your IP address; only the point is saved in your account, never the address.</li>
+      <li><strong>Appearing on the map is a separate choice.</strong> It has its own consent: “I agree to appear on the public DysNet map”, or, for a child, “I agree that my child appears on the public DysNet map”. Saying no changes nothing about being in the registry, and the place of the pregnancy stays unpublished either way.</li>
+      <li><strong>You choose two things before you agree.</strong> First, how widely your point is blurred: from 1 to 5 km, or wider. A circle shows you the area that would appear, centred away from your exact point. Second, what the map says about you: it names your condition, it says roughly which limbs, or it says only that you live with a limb difference. A condition written in your own words always gets the last of these. You see the exact words before you agree.</li>
+      <li><strong>The map shows a dot, never a place.</strong> The dot sits in the widened area, with the words you chose and the number of people who share that area and those words. It never shows a name, an address or the exact place. The service that draws the map receives the dot alone: not your point, and not your condition unless you chose the words that name it.</li>
+      <li><strong>Your dot can be the only one in its area.</strong> We set no minimum number of people per dot, so a dot may stand for you alone and say “1 person”. Someone who knows you, or knows the area well, may then recognise you. The wider the area and the vaguer the words you choose, the harder that becomes, so choose both with that in mind.</li>
+      <li><strong>What you show becomes public.</strong> Anyone can see the map: on the registry’s own page, on <a href="/">our home page</a>, and in an open file that anyone may read and reuse. If you choose the words that name your condition, the map makes that health information public, attached to an area.</li>
+      <li><strong>You can leave the map at any time.</strong> Use “Take me off the map” in the registry app, or withdraw the map access in your Health Data Safe account. The map is republished every 15 minutes, so your dot disappears at the next update rather than at once, and our home page may show it for up to five more minutes while browsers refresh their copy. Leaving does not undo what was lawful before you left (Article 7(3) GDPR). A copy that someone made of the map or of its file before you left stays with whoever made it, and we cannot recall it.</li>
+      <li><strong>Both rest on your explicit consent.</strong> The place rests on your agreement to be counted, the map on its own consent (Article 9(2)(a) GDPR; Article 6(7) of the Swiss Federal Act on Data Protection). For a child, a parent or guardian decides, in the child’s account, until the child turns 18.</li>
+    </ul>
 
     {opener("06", "Your rights", "What you can ask, and whom to tell.", toc="Your rights")}
     <p>You may ask us to do any of this, and Article 15 to Article 21 GDPR give you the right:</p>

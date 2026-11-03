@@ -2,7 +2,7 @@
 """Two PDFs that explain the DysNet registry, in the look of the five-demands brief (build-demo.py,
 build_brief_pdf): the waiting-room poster, one page a doctor can pin up, and the members' brief,
 three pages an association can send to its families. Both carry a QR code to www.dysnet.org/app,
-the address build-demo.py's REDIRECTS points at the registry page until the app opens to families.
+the address build-demo.py's REDIRECTS points at the registry app, registry.dysnet.org, since 3 November 2026.
 
 Sources for every statement: the registry app's questions and answers (apps/registry/src/locales,
 in the registry repository), the registry page of dysnet.org, and Health Data Safe's public

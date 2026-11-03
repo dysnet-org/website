@@ -4545,6 +4545,14 @@ REGISTRY_LD = {
     "areaServed": "Worldwide",
 }
 
+# The registry app, in production since 3 November 2026 (owner, 2026-11-03). Linked, never framed: the
+# Health Data Safe sign-in cannot complete inside a frame (registry repo, OQ-07). Every join button on
+# the site points at /app/, the address printed under the PDFs' QR codes, so one redirect sends paper
+# and screen to the same place, and a click to join stays out of the analytics' outbound-link events:
+# who clicks it is a health signal.
+REGISTRY_APP = "https://registry.dysnet.org/"
+REGISTRY_JOIN = "/app/"
+
 # ── Who is reading the registry page ─────────────────────────────────────────
 # The page opened on perinatal mortality and a DOI, which is the right evidence and the
 # wrong first sentence for a family whose child was born last week. Four people arrive here
@@ -4558,9 +4566,10 @@ REGISTRY_AUDIENCES = [
        "A place where what you or your child lives with is written down once, properly, and counted. "
        "Today those details sit in different hospitals in different countries, in systems that cannot "
        "talk to each other, so nobody can see the whole picture."),
-      ("What you would do",
-       "Nothing yet. The registry is being built. When it opens you enter your own information, through "
-       "your national association, and you decide who may see it."),
+      ("What you do",
+       "You register at registry.dysnet.org, from any country, in English, French or Italian. It takes "
+       "about ten minutes; your answers stay in your own Health Data Safe account, and DysNet reads only "
+       "what you agree to share."),
       ("What stays yours",
        "The data stays yours. You give consent study by study and you can withdraw it. DysNet does not "
        "sell data, and it does not go to insurers or employers."),
@@ -4568,7 +4577,7 @@ REGISTRY_AUDIENCES = [
        'Across large birth-defect cohorts a cause is found in about one case in five, and usually none '
        'for a single limb. That number moves only when enough cases are described well enough to study. '
        '<a href="/knowledge/causes-of-dysmelia/">What the evidence shows today</a>.')],
-     ("/about/members/", "Find your national association")),
+     (REGISTRY_JOIN, "Join the registry")),
 
     ("associations", "An association thinking of taking part",
      "Your families keep their data, and they keep their relationship with you.",
@@ -4687,7 +4696,9 @@ PAGES["/registry/"] = {
     <h1 class="display">The limb-malformation registry owned by the people it describes.</h1>
     <p class="lede">A registry is a list of cases described the same way, so they can be counted and studied. This one is being
     built by the associations that represent the families, and the data in it belongs to the people it describes, not to us.
-    It does not exist yet: this page says what it will be, who is building it, and where it has got to.</p>
+    Since 3 November 2026, anyone born with a limb difference, from any country, can take part at registry.dysnet.org.
+    This page says what it is for, who is building it, and where it has got to.</p>
+    <p><a class="btn btn-primary" href="{REGISTRY_JOIN}">Join the registry</a></p>
     <div id="toc-here"></div>
     {registry_audiences_html()}
     <p>Congenital anomalies remain a major cause of perinatal illness and death, accounting for up to 27% of infant deaths in developed countries, as <a href="https://www.santepubliquefrance.fr/sites/default/files/cadic_files/documents/spf00006640.pdf" target="_blank" rel="noopener external">Santé publique France</a> recalls in its 2026 surveillance report, citing Syngelaki et al. (<em>Prenat Diagn</em> 2011, <a href="https://doi.org/10.1002/pd.2642" target="_blank" rel="noopener external">doi:10.1002/pd.2642</a>). Yet we still do not understand what causes most of these anomalies, and understanding begins with counting and describing cases. Research on limb agenesis is starved of exactly that. Cases are not rare, but they are scattered across countries and recorded in incompatible systems, when they are recorded at all, so too few are described well enough to investigate the possible causes thoroughly. Families answer the same questions again and again, and science still cannot see the whole picture.</p>
@@ -4717,7 +4728,7 @@ PAGES["/registry/"] = {
     <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
     {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}
-    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Once live, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
+    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. Now that it is open, the registry will be declared in <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
 
     {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.", toc="Who decides what")}
     <div class="grid cols-3">
@@ -4767,6 +4778,7 @@ PAGES["/registry/"] = {
     {opener("05", "Progress", "The log.", toc="The log")}
     <div class="report"><p class="seat">Registry</p><h3 class="h4">The AGM votes to create the registry with Health Data Safe</h3><time datetime="2026-08-26">26 August 2026</time><p>The Annual General Meeting adopts the refocused strategy and mandates Health Data Safe as the registry’s technical and operational partner.</p></div>
     <div class="report"><p class="seat">Funding</p><h3 class="h4">Call for funding</h3><time datetime="2026-09">September 2026</time><p>EU rare-disease calls are being screened. The registry now seeks its first funders: research foundations, rare-disease prizes, and partners able to contribute hosting, development or translation in kind. <a href="mailto:info@dysnet.org?subject=Registry%20funding">Write to the board</a> or <a href="/donate/">support the registry directly</a>.</p></div>
+    <div class="report"><p class="seat">Registry</p><h3 class="h4">The registry opens to families</h3><time datetime="2026-11-03">3 November 2026</time><p>Anyone born with a limb difference, from any country, can now take part, in English, French or Italian. The answers stay in each person’s own Health Data Safe account. <a href="{REGISTRY_JOIN}">Join the registry</a>.</p></div>
   </div>
 </section>
 
@@ -4784,6 +4796,7 @@ PAGES["/registry/"] = {
     <p class="eyebrow">Take part</p>
     <h2 data-toc="Become a pilot" class="h2">Your association can be a pilot.</h2>
     <p>The registry grows association by association. Write to <a href="mailto:info@dysnet.org">info@dysnet.org</a> to join the first wave.</p>
+    <p>Born with a limb difference yourself? <a href="{REGISTRY_JOIN}">Join the registry</a> directly, in about ten minutes.</p>
   </div>
 </section>
 """,
@@ -5726,7 +5739,8 @@ MAP_HERO = """
       <li><strong data-count="candidate">__N_PILOTS__</strong>associations piloting the registry</li>
     </ul>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="/registry/">The registry project</a>
+      <a class="btn btn-primary" href="__REGISTRY_JOIN__">Join the registry</a>
+      <a class="btn btn-ghost" href="/registry/">The registry project</a>
       <a class="btn btn-ghost" href="/about/members/">Join the network</a>
     </div>
   </div>
@@ -5785,7 +5799,8 @@ MAP_HERO = MAP_HERO.replace("__ZONE_LEGEND__", "\n    ".join(f'<span class="{v["
 # counts the members. The scripts used to total the map data instead, and counted Canada's
 # "contact opened" placeholder as a thirtieth association.
 MAP_HERO = (MAP_HERO.replace("__N_COUNTRIES__", str(MEMBER_STATS["countries"])).replace("__N_ORGS__", str(MEMBER_STATS["orgs"]))
-            .replace("__N_PILOTS__", str(MEMBER_STATS["pilots"])).replace("__PILOTS__", ", ".join(PILOTS)))
+            .replace("__N_PILOTS__", str(MEMBER_STATS["pilots"])).replace("__PILOTS__", ", ".join(PILOTS))
+            .replace("__REGISTRY_JOIN__", REGISTRY_JOIN))
 
 
 # Notes printed under a country's list, where the list alone would mislead.
@@ -6333,8 +6348,8 @@ for _s in _POSTS:
     REDIRECTS["/post/" + _s] = "/voice/reports/"
 # The address printed under the QR codes of the registry's poster and member brief
 # (tools/build-member-pdfs.py). Paper outlives a URL, so the print carries this one and only this
-# changes: the registry page until the app opens to families, then the app's own address.
-REDIRECTS["/app"] = "/registry/"
+# changes: the registry page until the app opened to families, the app's own address since 3 November 2026.
+REDIRECTS["/app"] = REGISTRY_APP
 
 
 def redirect_html(new_path):

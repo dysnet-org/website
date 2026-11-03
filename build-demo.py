@@ -4552,6 +4552,16 @@ REGISTRY_LD = {
 # who clicks it is a health signal.
 REGISTRY_APP = "https://registry.dysnet.org/"
 REGISTRY_JOIN = "/app/"
+# The registry's public map: the dots people chose to show, already widened and suppressed by the
+# registry's publisher, with no identifier (registry repo, services/map-publisher, route /map.geojson).
+# The home map reads it in the visitor's browser rather than copying it at build time, so a person who
+# leaves the map is gone at the publisher's next update, as the app promises, not at our next rebuild.
+REGISTRY_MAP_FEED = REGISTRY_APP + "publisher/map.geojson"
+# Whether the registry app offers the map consent and the pregnancy-place question (one flag there,
+# VITE_FEATURE_MAP_OPT_IN, off in production since the opening, OQ-04). Only the privacy notice reads
+# this: set it to True, and publish, before the flag goes on in the app, so the notice says what the
+# map involves before anyone can join it.
+REGISTRY_MAP_OPEN = False
 
 # ── Who is reading the registry page ─────────────────────────────────────────
 # The page opened on perinatal mortality and a DOI, which is the right evidence and the
@@ -5720,7 +5730,7 @@ _drawn_statuses = ({a["status"] for a in REG_AREAS if a.get("map", True)}
 if _drawn_statuses - set(ZONE_LABELS):
     raise SystemExit(f"ZONE_LABELS has no words for the drawn status {_drawn_statuses - set(ZONE_LABELS)}")
 
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "registryUrl": REGISTRY_MAP_FEED, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
 
 # Injected into the home page at build time (placeholder __MAP_HERO__): it needs the map data
 # assembled below, which the home page body is written before.
@@ -5750,6 +5760,7 @@ MAP_HERO = """
   <div class="map-layers" id="map-layers" role="group" aria-label="Show on the map">
     <span class="map-layers-label">Show</span>
     <button type="button" data-layer="members" aria-pressed="true">Member countries</button>
+    <button type="button" data-layer="registry" aria-pressed="true" hidden>Joined the registry</button>
     <button type="button" data-layer="zones" aria-pressed="true">Registry coverage</button>
     <button type="button" data-layer="people" aria-pressed="true">Estimated people</button>
     <button type="button" data-layer="centres" aria-pressed="true">Care centres</button>
@@ -5780,6 +5791,7 @@ MAP_HERO = """
     __ZONE_LEGEND__
     <span class="l-centre" data-layer="centres">Care centre named by a member association or verified from its own institutional page (click for details)</span>
     <span class="l-team" data-layer="teams">Research team publishing on our conditions (click for details)</span>
+    <span class="l-registry" data-layer="registry" hidden>Pink dot: people in the DysNet registry who chose to appear, each dot widened to the area they chose and showing the words they chose (click for details)</span>
     <span class="l-dot" data-layer="people">Grey dot: one <strong>estimated</strong> person living with a limb difference (1 dot = 1 person at city zoom; 10, 100 or 1,000 people when zoomed out), computed from prevalence × population. This is the situation as statistics describe it; the registry exists to make it visible. Choose the condition above.</span>
     <span class="l-note">Every marker is also listed, in full, on the <a href="/knowledge/care-centres/">care centres</a>, <a href="/knowledge/researchers/">researchers</a> and <a href="/knowledge/registries/">registries</a> pages.</span>
     <span class="map-credit">Map data: Natural Earth (public domain), GeoNames (CC BY 4.0), GHSL population (EU JRC, CC BY 4.0), French départements from IGN Admin Express (Licence Ouverte) via france-geojson; registry coverage after Santé publique France 2026 · rendered with MapLibre, self-hosted</span>
@@ -6157,8 +6169,27 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 # Section 05 is the registry's own notice since it opened (owner, 2026-11-03). It follows the order of
 # EURORDIS's Rare Barometer privacy statement (data, who handles it, who sees it, how long) and the roles
 # of Health Data Safe's compliance matrix (compliance.datasafe.dev): HDS controls the account, DysNet
-# independently controls what it reads, and HDS is nobody's Art. 28 processor. It describes only what the
-# production app does: the pregnancy place and the public map are off there (map flag, registry repo plan 14).
+# independently controls what it reads, and HDS is nobody's Art. 28 processor. It describes what the
+# production app does: whether it offers the pregnancy place and the map is REGISTRY_MAP_OPEN, and the
+# bullet below has a text for each state. The open text follows the app's own answers (registry repo,
+# apps/registry/src/locales/en.json, faq.map and guide.details.answer) and the registration consent
+# (packages/dysnet-model/src/consents.ts), which already names the place and the map dot.
+REGISTRY_MAP_NOTICE = (
+    '<li><strong>The place of the pregnancy, and the map.</strong> If you give it, we read the precise place where the '
+    'mother lived at the start of the pregnancy, to look for clusters of cases; it is never published. The address you '
+    'type to find it goes to OpenStreetMap’s search and is not kept: only the point is saved. Appearing on the map is a '
+    'separate consent. If you give it, the registry publishes a dot widened to the area you chose (1 to 5 km, or wider), '
+    'with the words you chose: the condition, only which limbs, or only that you live with a limb difference. Anyone can '
+    'see the map, on the registry and on our home page. A dot never shows a name or an address, and yours can be the only '
+    'one in its area, so choose the area and the words with that in mind. You can leave the map at any time, and your '
+    'dot disappears at the next update.</li>'
+    if REGISTRY_MAP_OPEN else
+    '<li><strong>Two things the registry does not use yet.</strong> Your agreement to be counted already names the place '
+    'where the mother lived at the start of the pregnancy and what you choose to show on the registry’s map, which our '
+    'home page map shows once people appear on it. The registry does not ask for that place yet and does not yet offer '
+    'the choice to appear on the map, so there is nothing of either for us to read or to show. Before either opens, this '
+    'notice will say what it involves. The place will stay optional, and appearing on the map will ask for its own '
+    'consent.</li>')
 PAGES["/privacy/"] = {
     "title": "Privacy",
     "desc": "What DysNet processes on this site and in the registry, who answers for it alongside Health Data Safe, and your rights under the GDPR.",
@@ -6178,6 +6209,7 @@ PAGES["/privacy/"] = {
       <li><strong>We count visits only if you accept.</strong> A banner asks once. Accept, and Google Analytics records the page, the time, the country your address places you in, and your browser and device, and it gives your browser a random number so that a second page counts as the same visit rather than a new stranger. It tells us which registers people actually reach. It does not tell us who you are, and every advertising feature Google offers is switched off. Decline, and none of it loads and nothing is stored. Legal basis: your consent, Article 6(1)(a).</li>
       <li><strong>Your answer is remembered, and so is the map card.</strong> Your browser keeps your yes or no so the banner does not ask again, and on the pages with a map it keeps the word <em>open</em> or <em>closed</em> so the information card stays as you left it. Neither carries an identifier and neither reaches us. To change your answer, use the button in section 04.</li>
       <li><strong>Videos wait for you.</strong> Nothing loads from Google until you press play. Then Google receives your IP address and device information under its own policy.</li>
+      <li><strong>The home map asks the registry for its dots.</strong> On the home page, your browser fetches the registry’s public map from registry.dysnet.org, our own server at Gandi in France. That server receives what every web request carries (your IP address, the time and your browser) and keeps it only in its rolling technical logs. What it sends back names nobody: only the areas and the words that people in the registry chose to show. Legal basis: our legitimate interest in showing the registry on our map, Article 6(1)(f).</li>
     </ul>
 
     {opener("02", "Email", "If you write to us.", toc="If you write to us")}
@@ -6199,12 +6231,12 @@ PAGES["/privacy/"] = {
     <p>The registry has been open since 3 November 2026, at registry.dysnet.org. This section is its privacy notice. It follows the roles that Health Data Safe sets out in its public <a href="https://compliance.datasafe.dev/">compliance matrix</a>, which describes how its accounts stand against the GDPR and Swiss data protection law.</p>
     <ul>
       <li><strong>Two controllers, each for its own part.</strong> Health Data Safe, a Swiss non-profit foundation in Morges, is the controller of your account: it runs the account, you hold it, and you decide who may read it, under its own <a href="https://www.healthdatasafe.org/users/privacy/">privacy policy</a>. We are the controller of what we read from your account with your permission, and of what the registry’s server keeps. Health Data Safe is not our processor: it acts on your permissions, never on our instructions, and we cannot ask it to open, change or delete your account.</li>
-      <li><strong>What we read.</strong> Only what your agreement to be counted names: the condition, chosen from the Orphanet list or written in your own words; the date of birth, or the expected date before a birth; your answer to each consent; and the identifier of the account they come from. We never see your password, and we read nothing else in your account. The condition and the date are health data. If you agree to be contacted about research, we also read the email address of your Health Data Safe account.</li>
+      <li><strong>What we read.</strong> Your agreement to be counted lets us read the condition, chosen from the Orphanet list or written in your own words; the date of birth, or the expected date before a birth; your answer to each consent; the identifier of the account they come from; and, if you give them, the place where the mother lived at the start of the pregnancy and what you choose to show on the registry’s map. We never see your password, and we read nothing else in your account. These are health data. If you agree to be contacted about research, we also read the email address of your Health Data Safe account.</li>
       <li><strong>Why, and on what basis.</strong> We read these data to count the people who live with dysmelia and to look for clusters of cases that research can investigate. We use your address only to tell you about a study that the member associations and the board have agreed may be put to families. Each purpose rests on your explicit consent (Article 9(2)(a) GDPR; Article 6(7) of the Swiss Federal Act on Data Protection). Each consent is a separate decision, and you can withdraw any of them at any time. For a child, a parent or guardian gives the consents in an account in the child’s name and holds that account until the child turns 18.</li>
       <li><strong>Where the data are, and who else handles them.</strong> Your answers stay in your Health Data Safe account, which Health Data Safe hosts in Switzerland. The registry app runs on a server at Gandi in France. Gandi acts as our processor, and the server keeps technical logs (your IP address, the time and the request) to run the service and protect it. To display the questions, your browser also fetches public files from Health Data Safe and from GitHub, which see your IP address as they would for any web page. The app sets one cookie on your device to keep you signed in. It uses no analytics and loads no advertising.</li>
       <li><strong>Who sees what.</strong> Our registry team alone reads your record. Member associations do not see records. A researcher receives nothing unless you say yes to their study, and then only the data that study names, for that study alone. We sell nothing, we give nothing to insurers or employers, and we offer nobody bulk access.</li>
       <li><strong>How long.</strong> We read your answers for as long as your permission lasts. Withdraw it in your Health Data Safe account and we can read nothing more; your answers stay in your account until you delete them yourself. We stop using your address the day you withdraw the research consent. Your account keeps a dated record of each consent you give. The server keeps its logs in rolling files of limited size, so the oldest entries are deleted as new ones arrive.</li>
-      <li><strong>What the registry does not do yet.</strong> It does not ask for the place where the mother lived at the start of the pregnancy, and it does not offer the public map. Each will come with its own consent, and this notice will say what it involves before it opens.</li>
+      {REGISTRY_MAP_NOTICE}
     </ul>
     <p>Health Data Safe’s statutes rule out any sale of health data and limit its use to care and research, and they provide that personal data is never treated as an asset of the foundation.</p>
 

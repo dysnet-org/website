@@ -553,7 +553,29 @@
     });
     svg.appendChild(gt);
 
-    // layer filter (SVG edition): countries, centres, teams, offices; dots and city names need WebGL
+    // people in the DysNet registry who chose to appear (the registry's public map): pink markers,
+    // drawn once the registry answers; the chip and the legend line stay hidden while it publishes no dot
+    var gr = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    gr.setAttribute("class", "registry");
+    svg.appendChild(gr);
+    if (data.registryUrl && window.fetch) fetch(data.registryUrl, { credentials: "omit" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (fc) {
+      if (!fc || !Array.isArray(fc.features) || !fc.features.length) return;
+      fc.features.forEach(function (f) {
+        var c = f.geometry && f.geometry.coordinates;
+        if (!c) return;
+        var p = f.properties || {}, n = Number(p.count) || 1, pt = project(c[0], c[1]);
+        var a = document.createElementNS("http://www.w3.org/2000/svg", "a");
+        a.setAttribute("href", base + "/registry/");
+        var ci = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        ci.setAttribute("cx", pt[0]); ci.setAttribute("cy", pt[1]); ci.setAttribute("r", String(2.4 + Math.min(2, n / 3)));
+        var ti = document.createElementNS("http://www.w3.org/2000/svg", "title");
+        ti.textContent = ((p.titles && p.titles.en) || p.condition) + " · " + n + (n === 1 ? " person" : " people") + " in the DysNet registry, shown with their consent";
+        a.appendChild(ti); a.appendChild(ci); gr.appendChild(a);
+      });
+      document.querySelectorAll('#map-layers [data-layer="registry"], .map-legend [data-layer="registry"]').forEach(function (el) { el.hidden = false; });
+    }).catch(function () {});
+
+    // layer filter (SVG edition): countries, centres, teams, registry, offices; dots and city names need WebGL
     document.querySelectorAll("#map-layers button").forEach(function (b) {
       var key = b.getAttribute("data-layer");
       if (key === "people" || key === "cities") { b.disabled = true; b.title = "Needs WebGL"; return; }
@@ -561,7 +583,7 @@
         var on = b.getAttribute("aria-pressed") !== "true";
         b.setAttribute("aria-pressed", on ? "true" : "false");
         if (key === "members") host.classList.toggle("nofill", !on);
-        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", offices: "office", zones: "zones" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
+        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", registry: "registry", offices: "office", zones: "zones" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
         document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
       });
     });
@@ -586,12 +608,13 @@
     // cannot be reached, and this one carries the member associations as links.
     var tipFor = null;
     function hideSoon() { if (pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(function () { tip.style.display = "none"; tipFor = null; }, 600); }
-    // markers (care centres, research teams): hover shows the card, click pins it
+    // markers (care centres, research teams, people in the registry): hover shows the card, click pins it
     function markerTip(a, x, y) {
       var title = a.querySelector("title") ? a.querySelector("title").textContent : "";
-      var parts = title.split(" · "), href = a.getAttribute("href");
-      tip.innerHTML = "<strong>" + esc(parts[0]) + "</strong><span class=\"status\">" + (a.parentNode.classList.contains("team") ? "Research team" : "Care centre") + "</span><p style=\"margin:0.3rem 0 0\">" + esc(parts.slice(1).join(" · ")) + "</p>" +
-        (href ? "<p style=\"margin:0.3rem 0 0\"><a href=\"" + esc(href) + "\"" + (/^https?:/.test(href) ? " target=\"_blank\" rel=\"noopener external\"" : "") + ">" + (a.parentNode.classList.contains("team") ? "Researchers register" : "Website ↗") + "</a></p>" : "");
+      var parts = title.split(" · "), href = a.getAttribute("href"), kind = a.parentNode.getAttribute("class");
+      var KIND = { team: ["Research team", "Researchers register"], registry: ["In the registry", "The registry"] }[kind] || ["Care centre", "Website ↗"];
+      tip.innerHTML = "<strong>" + esc(parts[0]) + "</strong><span class=\"status\">" + KIND[0] + "</span><p style=\"margin:0.3rem 0 0\">" + esc(parts.slice(1).join(" · ")) + "</p>" +
+        (href ? "<p style=\"margin:0.3rem 0 0\"><a href=\"" + esc(href) + "\"" + (/^https?:/.test(href) ? " target=\"_blank\" rel=\"noopener external\"" : "") + ">" + KIND[1] + "</a></p>" : "");
       tip.style.display = "block";
       var r = host.getBoundingClientRect();
       var left = Math.min(x - r.left + 14, r.width - tip.offsetWidth - 12), top = Math.min(y - r.top + 14, r.height - tip.offsetHeight - 12);
@@ -599,7 +622,7 @@
     }
     svg.addEventListener("mousemove", function (e) {
       if (pinned) return;
-      var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
+      var a = e.target.closest ? e.target.closest("g.centre a, g.team a, g.registry a") : null;
       if (a) { clearTimeout(hideTimer); markerTip(a, e.clientX, e.clientY); return; }
       var zone = e.target.closest ? e.target.closest("path.zone") : null;
       if (zone) { clearTimeout(hideTimer); if (tipFor === zone && tip.style.display === "block") return; tipFor = zone; tip.innerHTML = "<strong>" + zone.getAttribute("data-label").split(" · ")[0] + "</strong><span class=\"status\">Registry coverage</span><p style=\"margin:0.3rem 0 0\">" + zone.getAttribute("data-label").split(" · ").slice(1).join(" · ") + "</p>"; tip.style.display = "block"; var rz = host.getBoundingClientRect(); tip.style.left = Math.max(12, Math.min(e.clientX - rz.left + 14, rz.width - tip.offsetWidth - 12)) + "px"; tip.style.top = Math.max(12, Math.min(e.clientY - rz.top + 14, rz.height - tip.offsetHeight - 12)) + "px"; return; }
@@ -610,7 +633,7 @@
       } else hideSoon();
     });
     svg.addEventListener("click", function (e) {
-      var a = e.target.closest ? e.target.closest("g.centre a, g.team a") : null;
+      var a = e.target.closest ? e.target.closest("g.centre a, g.team a, g.registry a") : null;
       if (a) { e.preventDefault(); clearTimeout(hideTimer); pinned = a; markerTip(a, e.clientX, e.clientY); return; }
       if (pinned) { pinned = null; tip.style.display = "none"; }
     });

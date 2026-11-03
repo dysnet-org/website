@@ -834,6 +834,12 @@ ol.objectives strong { color: var(--dys-green-text); }
 .map-legend .l-team::before { background: #60a5fa; border-radius: 50%; box-shadow: 0 0 0 2px #fff; }
 .map-legend [data-layer].off { opacity: 0.35; text-decoration: line-through; }
 #worldmap .team circle { fill: #60a5fa; stroke: #fff; stroke-width: 0.9; cursor: pointer; }
+/* people in the DysNet registry who chose to appear: the pink of the registry's own map */
+.map-legend .l-registry::before { background: #f472b6; border-radius: 50%; box-shadow: 0 0 0 2px #fff; }
+#worldmap .registry circle { fill: #f472b6; stroke: #fff; stroke-width: 0.9; cursor: pointer; }
+.registry-popup .dp-main strong { color: #be185d; }
+/* the registry chip and legend line wait, hidden, for the registry's first dot (a display rule would beat the attribute) */
+.map-layers [hidden], .map-legend [hidden] { display: none !important; }
 #worldmap.nofill path[class*="st-"] { fill: #5a2f86 !important; }
 .map-layers { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-bottom: var(--space-2); }
 .map-layers-label { font-size: var(--text-eyebrow); letter-spacing: 0.08em; text-transform: uppercase; color: var(--dys-muted); margin-right: 0.2rem; }

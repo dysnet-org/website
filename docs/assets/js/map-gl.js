@@ -1,8 +1,10 @@
 /* DysNet landing map, WebGL edition.
    MapLibre GL JS (BSD) + PMTiles: one self-hosted Natural Earth 10m tileset
    (public domain), zoom 0–9 (country → city, no streets). No tile provider,
-   no API key, no request leaves our domain. Falls back to the SVG map in
-   site.js when WebGL is unavailable. */
+   no API key, no request leaves our domain: the one request to another
+   address goes to registry.dysnet.org, DysNet's own registry server, for the
+   dots people chose to show. Falls back to the SVG map in site.js when WebGL
+   is unavailable. */
 (function () {
   "use strict";
   var host = document.getElementById("glmap");
@@ -83,7 +85,9 @@
       zones: { type: "geojson", data: base + data.zonesUrl },
       teams: { type: "geojson", data: { type: "FeatureCollection", features: (data.teams || []).filter(function (t) { return t.lat && t.lon; }).map(function (t) {
         return { type: "Feature", geometry: { type: "Point", coordinates: [t.lon, t.lat] }, properties: { name: t.name, country: t.country, papers: t.papers, years: (t.years && t.years[0] === t.years[1]) ? String(t.years[0]) : (t.years || []).join("–"), codes: (t.codes || []).join(", "), authors: (t.authors || []).join(", "), repTitle: t.rep && t.rep.title, repDoi: t.rep && t.rep.doi, repPmid: t.rep && t.rep.pmid, repYear: t.rep && t.rep.year, address: t.address || "", contact: t.contact || "" } };
-      }) } }
+      }) } },
+      // filled from the registry's public map once it answers (loadRegistry below)
+      registry: { type: "geojson", data: { type: "FeatureCollection", features: [] } }
     },
     layers: [
       { id: "bg", type: "background", paint: { "background-color": "#24093f" } },
@@ -156,7 +160,11 @@
         paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, ["+", 3, ["min", 3, ["/", ["get", "papers"], 3]]], 9, ["+", 7, ["min", 5, ["/", ["get", "papers"], 2]]]], "circle-color": "#60a5fa", "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.4 } },
       { id: "team-label", type: "symbol", source: "teams", minzoom: 4,
         layout: { "text-field": ["get", "name"], "text-font": ["Open_Sans_Regular"], "text-size": 11, "text-anchor": "left", "text-offset": [1.0, 0], "text-max-width": 12, "text-optional": true },
-        paint: { "text-color": "#dbeafe", "text-halo-color": "#24093f", "text-halo-width": 1.3 } }
+        paint: { "text-color": "#dbeafe", "text-halo-color": "#24093f", "text-halo-width": 1.3 } },
+      // People in the DysNet registry who chose to appear: pink dots sized by how many share the area,
+      // the colour and sizes of the registry's own map (registry repo, services/map-publisher/src/pages.ts)
+      { id: "registry-dot", type: "circle", source: "registry",
+        paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 1, ["+", 4, ["min", 6, ["get", "count"]]], 9, ["+", 8, ["min", 10, ["get", "count"]]]], "circle-color": "#f472b6", "circle-opacity": 0.9, "circle-stroke-color": "#ffffff", "circle-stroke-width": 1.6 } }
     ]
   };
 
@@ -195,6 +203,10 @@
       }, 0);
     });
   }
+
+  // A person's pink dot is drawn on top and speaks for itself: the estimate, centre, team and zone
+  // cards beneath it stay closed, so clicking it opens only its own card.
+  function notOnRegistryDot(e) { return !map.queryRenderedFeatures(e.point, { layers: ["registry-dot"] }).length; }
 
   var DOT_LAYERS = ["dots1000", "dots100", "dots10", "dots1"];
 
@@ -246,7 +258,7 @@
         "<p class=\"dp-sub\">1 dot = " + (per === 1 ? "1 person" : per.toLocaleString("en") + " people") + " at this zoom level." + zoomHint + "</p>" +
         "<p class=\"dp-foot\">Estimate: " + esc(r[1]) + " per 100,000 births (" + esc(r[2]) + ") × population living here (GHSL 2025)" + stepNote(r) + ". Not an observed case; the registry exists to make the real ones visible.</p>";
     }
-    LAYERS.forEach(function (id) { attachHover(id, dotHtml, function (e) { return e.lngLat; }, "people-popup"); });
+    LAYERS.forEach(function (id) { attachHover(id, dotHtml, function (e) { return e.lngLat; }, "people-popup", notOnRegistryDot); });
     map.on("zoom", function () { var per = band(); if (legend.getAttribute("data-per") !== String(per)) { legend.setAttribute("data-per", per); update(); } });
     map.on("load", function () { box.hidden = false; update(); });
   })();
@@ -287,8 +299,8 @@
   tip.addEventListener("mouseleave", hideSoon);
   // touch: tap a country to pin its tooltip
   map.on("click", "countries", function (e) {
-    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "zones-fill"]) })
-        .filter(function (f) { return f.properties.status !== "clinical"; }).length) return; // a dot, a centre, a team or a registry zone was clicked
+    if (map.queryRenderedFeatures(e.point, { layers: DOT_LAYERS.filter(function (l) { return map.getLayer(l); }).concat(["centre-dot", "team-dot", "registry-dot", "zones-fill"]) })
+        .filter(function (f) { return f.properties.status !== "clinical"; }).length) return; // a dot, a centre, a team, a registry member or a registry zone was clicked
     var c = byA3[e.features[0].properties.ADM0_A3];
     if (c) { clearTimeout(hideTimer); tipFor = c.a3 || e.features[0].properties.ADM0_A3; showTip(c, e.point.x, e.point.y); } else { tip.style.display = "none"; tipFor = null; }
   });
@@ -302,7 +314,7 @@
            '<p class="dp-sub">' + esc(c.type) + ' · ' + esc(c.city) + ', ' + esc(c.country) + '<br>' + esc(c.specialism) + '</p>' +
            '<p class="dp-foot">' + (c.url ? '<a href="' + esc(c.url) + '" target="_blank" rel="noopener external">' + esc(host) + ' ↗</a> · ' : '') + esc(c.via_verb || 'named by') + ' ' + esc(c.via) + '</p>';
   }
-  attachHover("centre-dot", centreHtml, function (e) { return e.features[0].geometry.coordinates; }, "centre-popup");
+  attachHover("centre-dot", centreHtml, function (e) { return e.features[0].geometry.coordinates; }, "centre-popup", notOnRegistryDot);
 
   // ── research teams: hover for details, click to pin ────────────────
   function teamHtml(e) {
@@ -315,7 +327,33 @@
            '<p class="dp-sub">' + esc(t.country) + ' · ' + esc(t.papers) + ' publications in our bibliography · ' + esc(t.years) + (t.codes ? '<br>' + esc(t.codes) : '') + '<br>Authors: ' + esc(t.authors) + (where.length ? '<br>' + where.join(' · ') : '') + '</p>' +
            '<p class="dp-foot">Most recent: <em>' + esc(t.repTitle) + '</em> (' + esc(t.repYear) + ') ' + link + ' · <a href="' + base + '/knowledge/researchers/">Researchers register</a></p>';
   }
-  attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup");
+  attachHover("team-dot", teamHtml, function (e) { return e.features[0].geometry.coordinates; }, "team-popup", notOnRegistryDot);
+
+  // ── people in the registry: the words they chose and how many share the area ──
+  // The popup leaves out the width of the area, as the registry's own map does (owner, 2026-10-23).
+  function registryTitle(p) {
+    var t = p.titles;
+    if (typeof t === "string") { try { t = JSON.parse(t); } catch (err) { t = null; } }  // maplibre hands nested properties back as JSON text
+    return (t && t.en) || p.condition;
+  }
+  function registryHtml(e) {
+    var p = e.features[0].properties, n = Number(p.count);
+    return '<p class="dp-main"><strong>' + esc(registryTitle(p)) + '</strong></p>' +
+           '<p class="dp-sub">' + esc(n) + (n === 1 ? ' person' : ' people') + ' in the DysNet registry, shown with their consent. The dot is widened to the area they chose and never shows the exact place.</p>' +
+           '<p class="dp-foot"><a href="' + base + '/registry/">The registry</a></p>';
+  }
+  attachHover("registry-dot", registryHtml, function (e) { return e.features[0].geometry.coordinates; }, "registry-popup");
+  // The chip and the legend line stay hidden until the registry publishes at least one dot, so the
+  // map never offers an empty layer; if the registry server does not answer, the map simply goes on.
+  function loadRegistry() {
+    if (!data.registryUrl || !window.fetch) return;
+    fetch(data.registryUrl, { credentials: "omit" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (fc) {
+      if (!fc || !Array.isArray(fc.features) || !fc.features.length) return;
+      map.getSource("registry").setData(fc);
+      document.querySelectorAll('#map-layers [data-layer="registry"], .map-legend [data-layer="registry"]').forEach(function (el) { el.hidden = false; });
+    }).catch(function () {});
+  }
+  map.once("load", loadRegistry);
 
   // ── registry coverage zones: hover for the registry, click to pin ───
   // Outlines overlap: CULA North's clinical outline covers the whole of Germany and is drawn over the
@@ -362,11 +400,12 @@
            '<p class="dp-foot">' + (z.website ? '<a href="' + esc(z.website) + '" target="_blank" rel="noopener external">' + esc(z.website.split("//").pop().split("/")[0].replace(/^www\./, "")) + ' ↗</a> · ' : '') + 'Source: ' + esc(z.source || "Santé publique France, 2026") + ' · <a href="' + base + '/knowledge/registries/">Registries</a></p>';
   }
   attachHover("zones-fill", zoneHtml, function (e) { return e.lngLat; }, "zone-popup", function (e) {
+    if (!notOnRegistryDot(e)) return false;
     return !!pickZone(e);  // a clinical outline alone: the country tooltip speaks for it
   });
 
   // ── layer filter: what the visitor wants to see ─────────────────────
-  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress", "zones-line-clinical", "zones-line-hospital"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
+  var LAYER_IDS = { zones: ["zones-fill", "zones-line-covered", "zones-line-progress", "zones-line-clinical", "zones-line-hospital"], people: DOT_LAYERS, centres: ["centre-dot", "centre-label"], teams: ["team-dot", "team-label"], registry: ["registry-dot"], offices: ["office-dot", "office-label"], cities: ["cities", "cities-dot"] };
   function setLayer(key, on) {
     if (key === "members") { map.setPaintProperty("countries", "fill-color", on ? fillMatch : "#5a2f86"); }
     else (LAYER_IDS[key] || []).forEach(function (id) { if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", on ? "visible" : "none"); });

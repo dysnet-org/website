@@ -845,6 +845,9 @@ ol.objectives strong { color: var(--dys-green-text); }
 .map-layers-label { font-size: var(--text-eyebrow); letter-spacing: 0.08em; text-transform: uppercase; color: var(--dys-muted); margin-right: 0.2rem; }
 .map-layers button { font: inherit; font-size: var(--text-small); padding: 0.3rem 0.75rem; border-radius: 999px; border: 1px solid var(--dys-line); background: #fff; color: var(--dys-ink); cursor: pointer; }
 .map-layers button[aria-pressed="true"] { background: var(--dys-purple-deep); border-color: var(--dys-purple-deep); color: #fff; }
+/* the DysNet registry's chip stands out in the Donate button's green, on or off */
+.map-layers button[data-layer="registry"] { border-color: var(--dys-green); color: var(--dys-green-text); font-weight: 700; }
+.map-layers button[data-layer="registry"][aria-pressed="true"] { background: var(--dys-green); border-color: var(--dys-green); color: #0c2a05; }
 .map-layers button[disabled] { opacity: 0.4; cursor: not-allowed; }
 .map-dots.is-off { opacity: 0.45; }
 .team-popup .dp-main strong { color: #1d4ed8; }

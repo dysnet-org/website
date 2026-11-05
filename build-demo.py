@@ -5765,7 +5765,11 @@ if _drawn_statuses - set(ZONE_LABELS):
 MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "registryUrl": REGISTRY_MAP_FEED, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
 
 # Injected into the home page at build time (placeholder __MAP_HERO__): it needs the map data
-# assembled below, which the home page body is written before.
+# assembled below, which the home page body is written before. The map opens on the registry, its
+# coverage, the estimated people and city names; member countries, care centres, research teams and
+# offices start switched off (owner, 2026-11-05), so a registry dot is not lost among the centres.
+# The registry's own chip is green, the Donate button's colours, so it stands out (owner, same day).
+# Each chip's aria-pressed is that default: both map scripts switch off whatever starts unpressed.
 MAP_HERO = """
 <section class="map-hero" id="map" aria-label="The DysNet network on the world map">
   <div id="worldmap"></div>
@@ -5791,13 +5795,13 @@ MAP_HERO = """
   <button type="button" class="map-options-toggle" id="map-options-toggle" aria-expanded="false" aria-controls="map-side">Map options</button>
   <div class="map-layers" id="map-layers" role="group" aria-label="Show on the map">
     <span class="map-layers-label">Show</span>
-    <button type="button" data-layer="members" aria-pressed="true">Member countries</button>
-    <button type="button" data-layer="registry" aria-pressed="true" hidden>Joined the registry</button>
+    <button type="button" data-layer="members" aria-pressed="false">Member countries</button>
+    <button type="button" data-layer="registry" aria-pressed="true" hidden>DysNet registry</button>
     <button type="button" data-layer="zones" aria-pressed="true">Registry coverage</button>
     <button type="button" data-layer="people" aria-pressed="true">Estimated people</button>
-    <button type="button" data-layer="centres" aria-pressed="true">Care centres</button>
-    <button type="button" data-layer="teams" aria-pressed="true">Research teams</button>
-    <button type="button" data-layer="offices" aria-pressed="true">DysNet offices</button>
+    <button type="button" data-layer="centres" aria-pressed="false">Care centres</button>
+    <button type="button" data-layer="teams" aria-pressed="false">Research teams</button>
+    <button type="button" data-layer="offices" aria-pressed="false">DysNet offices</button>
     <button type="button" data-layer="cities" aria-pressed="true">City names</button>
   </div>
   <div class="map-views" role="group" aria-label="Map view">

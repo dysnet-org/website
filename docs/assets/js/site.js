@@ -575,16 +575,21 @@
       document.querySelectorAll('#map-layers [data-layer="registry"], .map-legend [data-layer="registry"]').forEach(function (el) { el.hidden = false; });
     }).catch(function () {});
 
-    // layer filter (SVG edition): countries, centres, teams, registry, offices; dots and city names need WebGL
+    // layer filter (SVG edition): countries, centres, teams, registry, offices; dots and city names need WebGL.
+    // A chip that starts unpressed is a layer that starts off (build-demo.py, MAP_HERO), as in the WebGL edition.
+    function setSvgLayer(key, on) {
+      if (key === "members") host.classList.toggle("nofill", !on);
+      else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", registry: "registry", offices: "office", zones: "zones" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
+      document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
+    }
     document.querySelectorAll("#map-layers button").forEach(function (b) {
       var key = b.getAttribute("data-layer");
       if (key === "people" || key === "cities") { b.disabled = true; b.title = "Needs WebGL"; return; }
+      if (b.getAttribute("aria-pressed") !== "true") setSvgLayer(key, false);
       b.addEventListener("click", function () {
         var on = b.getAttribute("aria-pressed") !== "true";
         b.setAttribute("aria-pressed", on ? "true" : "false");
-        if (key === "members") host.classList.toggle("nofill", !on);
-        else { var grp = svg.querySelector("g." + { centres: "centre", teams: "team", registry: "registry", offices: "office", zones: "zones" }[key]); if (grp) grp.style.display = on ? "" : "none"; }
-        document.querySelectorAll('.map-legend [data-layer="' + key + '"]').forEach(function (el) { el.classList.toggle("off", !on); });
+        setSvgLayer(key, on);
       });
     });
 

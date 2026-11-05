@@ -46,6 +46,40 @@ SYSTEMS = {"HP:0040064": "Limbs", "HP:0000924": "Skeleton", "HP:0001626": "Heart
            "HP:0025142": "General", "HP:0033127": "Bones, joints and muscles", "HP:0002664": "Tumours", "HP:0025354": "Cells", "HP:0045027": "Chest", "HP:0040047": "Whole body"}
 SYSTEM_PRIORITY = ["HP:0040064", "HP:0033127", "HP:0000924"]   # a limb feature is filed under Limbs first
 
+# Revisions Orphanet has told us about before they reach Orphadata. Each says what changed and on whose word;
+# the build applies it only while the downloaded file still disagrees, says so when Orphadata has caught up,
+# and the entry must then go. A sign added without a frequency is filed under PENDING_FREQ; one whose name
+# matches no HPO term is kept, in Orphanet's own words, under "named".
+PENDING_FREQ = "Frequency to be published by Orphanet"
+PENDING = {
+    # Orphanet's clinical-signs team, email to Loïc Rigal received 5 November 2026 (working folder,
+    # correspondence/261105 Orphanet - ORPHA 2440 clinical signs revision.md), citing PMIDs 24163146,
+    # 24115638, 20556892, 21088720, 40964825 and 37628577.
+    "2440": {
+        "note": "Includes the revision Orphanet made in November 2026, ahead of its next data release: split hand is now frequent, aniridia (a sign of the syndromic forms) is removed, and four signs are added.",
+        "frequency": {"HP:0001171": "Frequent (79-30%)"},   # Split hand, was occasional
+        "remove": ["HP:0000526"],                            # Aniridia
+        "add": ["HP:0010760", "HP:0001770"],                 # Absent toe, Toe syndactyly
+        "named": ["Aplasia/hypoplasia of fingers and toes", "Thumb duplication"],   # no exact HPO term; codes asked of Orphanet
+    },
+}
+
+
+def apply_pending(code, rows):
+    """Orphanet's announced revision of a code, applied to its Orphadata rows while they still disagree."""
+    p = PENDING.get(code)
+    if not p:
+        return rows, None
+    have = {r[0]: r[1] for r in rows}
+    caught_up = (all(have.get(hp) == fr for hp, fr in p["frequency"].items())
+                 and not any(hp in have for hp in p["remove"]) and all(hp in have for hp in p["add"]))
+    if caught_up:
+        print(f"ORPHA:{code}: Orphadata now carries Orphanet's revision; remove its PENDING entry")
+        return rows, None
+    rows = [[hp, p["frequency"].get(hp, fr), dg] for hp, fr, dg in rows if hp not in p["remove"]]
+    rows += [[hp, PENDING_FREQ, 0] for hp in p["add"] if hp not in {r[0] for r in rows}]
+    return rows, {"note": p["note"], "named": p["named"]}
+
 
 def raw(name):
     p = RAW / FILES[name].rsplit("/", 1)[-1]
@@ -123,11 +157,14 @@ def main():
             hid = a.findtext("HPO/HPOId")
             hid = alt.get(hid, hid)
             rows.append([hid, a.findtext("HPOFrequency/Name") or "", 1 if a.find("DiagnosticCriteria") is not None and (a.findtext("DiagnosticCriteria/Name") or "") else 0])
-            used.add(hid)
+        rows, pending = apply_pending(code, rows)
+        used.update(r[0] for r in rows)
         rows.sort(key=lambda r: (FREQ_ORDER.index(r[1]) if r[1] in FREQ_ORDER else 9, terms.get(r[0], {}).get("name", r[0])))
         out_codes.setdefault(code, {})["name"] = d.findtext("Name")
         out_codes[code]["hpo"] = rows
         out_codes[code]["hpo_source"] = st.findtext("Source") or ""
+        if pending:
+            out_codes[code]["pending"] = pending
     root = ET.parse(raw("functional")).getroot()
     fdate = root.get("date", "")[:10]
     for st in root.iter("DisorderDisabilityRelevance"):
@@ -153,7 +190,7 @@ def main():
                    "licence": "CC BY 4.0", "phenotypes": FILES["product4"], "phenotypes_date": p4date,
                    "functional": FILES["functional"], "functional_date": fdate,
                    "hpo": "Human Phenotype Ontology, " + version, "hpo_url": "https://hpo.jax.org/"},
-        "fetched": datetime.date.today().isoformat(), "frequencies": FREQ_ORDER,
+        "fetched": datetime.date.today().isoformat(), "frequencies": FREQ_ORDER, "pending_frequency": PENDING_FREQ,
         "terms": term_out, "codes": dict(sorted(out_codes.items(), key=lambda kv: int(kv[0])))},
         ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"{sum(1 for v in out_codes.values() if v.get('hpo'))} codes with features ({len(term_out)} HPO terms), "

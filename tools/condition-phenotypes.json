@@ -10,7 +10,7 @@
   "hpo": "Human Phenotype Ontology, hp/releases/2026-09-01",
   "hpo_url": "https://hpo.jax.org/"
  },
- "fetched": "2026-10-22",
+ "fetched": "2026-11-05",
  "frequencies": [
   "Obligate (100%)",
   "Very frequent (99-80%)",
@@ -19,6 +19,7 @@
   "Very rare (<4-1%)",
   "Excluded (0%)"
  ],
+ "pending_frequency": "Frequency to be published by Orphanet",
  "terms": {
   "HP:0000003": {
    "name": "Multicystic kidney dysplasia",
@@ -422,13 +423,6 @@
   "HP:0000520": {
    "name": "Proptosis",
    "lay": "Bulging eye",
-   "systems": [
-    "Eyes"
-   ]
-  },
-  "HP:0000526": {
-   "name": "Aniridia",
-   "lay": "Absent iris",
    "systems": [
     "Eyes"
    ]
@@ -3848,12 +3842,12 @@
      0
     ],
     [
-     "HP:0004050",
-     "Occasional (29-5%)",
+     "HP:0001171",
+     "Frequent (79-30%)",
      0
     ],
     [
-     "HP:0000526",
+     "HP:0004050",
      "Occasional (29-5%)",
      0
     ],
@@ -3863,12 +3857,24 @@
      0
     ],
     [
-     "HP:0001171",
-     "Occasional (29-5%)",
+     "HP:0010760",
+     "Frequency to be published by Orphanet",
+     0
+    ],
+    [
+     "HP:0001770",
+     "Frequency to be published by Orphanet",
      0
     ]
    ],
-   "hpo_source": "24115638[PMID]"
+   "hpo_source": "24115638[PMID]",
+   "pending": {
+    "note": "Includes the revision Orphanet made in November 2026, ahead of its next data release: split hand is now frequent, aniridia (a sign of the syndromic forms) is removed, and four signs are added.",
+    "named": [
+     "Aplasia/hypoplasia of fingers and toes",
+     "Thumb duplication"
+    ]
+   }
   },
   "2538": {
    "name": "Microgastria-limb reduction defect syndrome",

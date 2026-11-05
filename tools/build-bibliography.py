@@ -13,7 +13,7 @@ Sources of references (trusted, machine-readable):
 Metadata (title, authors, journal, year, DOI) comes from NCBI E-utilities, never from memory.
 Run: python3 tools/build-bibliography.py   (needs network; E-utilities limit 3 req/s)
 """
-import json, pathlib, re, sys, time, urllib.request, urllib.parse
+import html, json, pathlib, re, sys, time, urllib.request, urllib.parse
 
 HERE = pathlib.Path(__file__).parent
 sys.path.insert(0, str(HERE))
@@ -130,6 +130,15 @@ CODE_SEED = {
 }
 for pmid, (code, why) in CODE_SEED.items():
     add(pmid, code, None, why, via="DysNet")
+
+# The publications Orphanet's clinical-signs team cites for a revision it told us about, before the
+# revision reaches Orphadata (Orphanet, email of November 2026, kept in the working folder's correspondence/).
+ORPHANET_SIGNS_SEED = {
+    "2440": ["24163146", "24115638", "20556892", "21088720", "40964825", "37628577"],
+}
+for code, pmids in ORPHANET_SIGNS_SEED.items():
+    for pmid in pmids:
+        add(pmid, code, None, f"cited by Orphanet for its revision of the clinical signs of ORPHA:{code} (November 2026)", via="Orphanet")
 
 for pmid, (topics, note, via) in WEBSITE_SEED.items():
     for topic in topics:
@@ -287,6 +296,20 @@ def crossref(doi):
     return {"pmid": "", "doi": doi, "title": re.sub(r"<[^>]+>", "", title).rstrip("."), "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
             "journal": " ".join(w.get("container-title") or []), "year": year, "volume": w.get("volume", ""), "pages": w.get("page", ""),
             "abstract": re.sub(r"<[^>]+>", " ", w.get("abstract", ""))}
+
+
+def book_chapter(pmid):
+    """A book chapter's first posting year and book title, from the full PubMed record.
+
+    PubMed's summary of a GeneReviews chapter dates it 1993, the series' first year, and names the
+    series' editors among its people (authtype "Editor"): the bibliography credited "ESCO2 Spectrum
+    Disorder" and "Tetra-Amelia Syndrome" to Adam MP, Bick S and Mirzaa GM, 1993, until 2026-11-05.
+    """
+    xml = eget(f"{E}/efetch.fcgi?db=pubmed&id={pmid}&retmode=xml").decode("utf-8", "replace")
+    year = re.search(r"<ContributionDate>\s*<Year>(\d{4})</Year>", xml)
+    book = re.search(r"<BookTitle[^>]*>(.*?)</BookTitle>", xml, re.S)
+    return {"year": year.group(1) if year else "",
+            "journal": re.sub(r"\(®\)|®|<[^>]+>", "", html.unescape(book.group(1))).strip() if book else ""}
 
 
 MEMBER_FILES = sorted(HERE.glob("member-dois*.json")) + sorted(HERE.glob("registry-dois*.json"))  # member associations + registries' official websites
@@ -577,8 +600,13 @@ for i in range(0, len(pmids), 100):
         d = res.get(pmid)
         if not d or "error" in d: print("missing", pmid); continue
         doi = next((a["value"] for a in d.get("articleids", []) if a["idtype"] == "doi"), "")
-        authors = [a["name"] for a in d.get("authors", [])]
+        # authors only: a book chapter's summary also names the book's editors (book_chapter)
+        authors = [a["name"] for a in d.get("authors", []) if a.get("authtype", "Author") == "Author"]
         year = (d.get("pubdate") or "")[:4]
+        journal = d.get("fulljournalname") or d.get("source", "")
+        if d.get("booktitle"):
+            ch = book_chapter(pmid)
+            year, journal = ch["year"] or year, ch["journal"] or d["booktitle"]
         s = seed[pmid]
         # publication type from the PubMed record itself: meta-analyses / systematic reviews and reviews
         pubtypes = set(d.get("pubtype", []))
@@ -587,7 +615,7 @@ for i in range(0, len(pmids), 100):
         if "Review" in pubtypes: s["topics"].add("review")
         if CAUSES_RX.search(title): s["topics"].add("causes")
         entries.append({"pmid": pmid, "doi": doi, "title": title, "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
-                        "journal": d.get("fulljournalname") or d.get("source", ""), "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
+                        "journal": journal, "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
                         "pubtypes": sorted(pubtypes - {"Journal Article"}),
                         "codes": sorted(s["codes"]), "topics": sorted(s["topics"]), "notes": sorted(s["notes"]), "via": sorted(s["via"])})
     time.sleep(0.4)

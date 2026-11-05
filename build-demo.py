@@ -3356,6 +3356,8 @@ def condition_search_text(name, desc, ref_code, orpha_name):
     return " ".join(filter(None, [
         name, desc, orpha_name or "", _node.get("term") or "",
         " ".join(_node.get("synonyms") or []), _kids, usual_words(name, ref_code),
+        # the lay names of its features the card never shows ("Lobster-claw foot deformity"), still searched
+        hidden_feature_words(ref_code) if ref_code else "",
         f"ORPHA:{ref_code} {ref_code}" if ref_code else "",
         " ".join(e["code"] for e in (_icd.get("icd10") or [])),
         " ".join(e["code"] for e in (_icd.get("icd11") or [])),
@@ -3423,6 +3425,15 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
 PHENO = json.loads((pathlib.Path(__file__).parent / "tools" / "condition-phenotypes.json").read_text(encoding="utf-8")) if (pathlib.Path(__file__).parent / "tools" / "condition-phenotypes.json").exists() else {"codes": {}, "terms": {}, "frequencies": []}
 _PHENO_HIER = json.loads((pathlib.Path(__file__).parent / "tools" / "orphanet-hierarchy.json").read_text(encoding="utf-8")).get("conditions", {})
 PHENO_FREQ = PHENO.get("frequencies", [])
+# A sign Orphanet has announced but not yet published with a frequency (tools/build-condition-phenotypes.py,
+# PENDING): shown after the published frequencies, never matched by the "how often" menu.
+PHENO_PENDING = PHENO.get("pending_frequency", "")
+PHENO_SHOWN_FREQ = PHENO_FREQ + ([PHENO_PENDING] if PHENO_PENDING else [])
+
+
+def freq_word(fq):
+    """A frequency in a few words, for the summary line and the feature menu."""
+    return "frequency to come" if fq == PHENO_PENDING else fq.split(" (")[0].lower()
 
 
 def pheno_codes(ref_code):
@@ -3453,8 +3464,22 @@ def card_features(ref_code):
 
 
 def pheno_label(hp):
+    # HPO's plain-language synonym, unless it stigmatises ("Lobster-claw foot deformity" for split foot):
+    # then the medical name, as for the cards' own names (USUAL_NOT_SHOWN). hidden_feature_words keeps it searchable.
     t = PHENO["terms"].get(hp, {})
-    return t.get("lay") or t.get("name", hp)
+    lay = t.get("lay") or ""
+    return lay if lay and not USUAL_NOT_SHOWN.search(lay) else t.get("name", hp)
+
+
+def hidden_feature_words(ref_code):
+    """The lay names of a card's features that the page never shows, so a reader who types one still lands on the card."""
+    return " ".join(lay for hp in card_features(ref_code)
+                    for lay in [PHENO["terms"].get(hp, {}).get("lay") or ""] if lay and USUAL_NOT_SHOWN.search(lay))
+
+
+def pending_revisions(ref_code):
+    """Orphanet's announced revisions behind a card's features: [(note, [signs named without an HPO code])]."""
+    return [(p["note"], p.get("named") or []) for c in pheno_codes(ref_code) for p in [(PHENO["codes"].get(c) or {}).get("pending")] if p]
 
 
 def condition_pheno_html(ref_code):
@@ -3465,15 +3490,21 @@ def condition_pheno_html(ref_code):
     out = ""
     if feats:
         rows = []
-        for freq in PHENO_FREQ:
+        pending = pending_revisions(ref_code)
+        named = [n for _note, ns in pending for n in ns]
+        for freq in PHENO_SHOWN_FREQ:
             items = sorted((hp for hp, v in feats.items() if v[0] == freq), key=lambda hp: pheno_label(hp).lower())
-            if items:
-                links = ", ".join(f'<a href="https://hpo.jax.org/browse/term/{hp}" target="_blank" rel="noopener external" title="HPO: {esc(PHENO["terms"].get(hp, {}).get("name", hp))} ({hp})">{esc(pheno_label(hp))}</a>'
-                                  + (' <span class="fine">(diagnostic criterion)</span>' if feats[hp][1] else "") for hp in items)
+            # signs Orphanet named without an HPO code: in its own words, unlinked, with the other signs still to be dated
+            extra = named if freq == PHENO_PENDING else []
+            if items or extra:
+                links = ", ".join([f'<a href="https://hpo.jax.org/browse/term/{hp}" target="_blank" rel="noopener external" title="HPO: {esc(PHENO["terms"].get(hp, {}).get("name", hp))} ({hp})">{esc(pheno_label(hp))}</a>'
+                                   + (' <span class="fine">(diagnostic criterion)</span>' if feats[hp][1] else "") for hp in items] + [esc(n) for n in extra])
                 rows.append(f"<dt>{freq}</dt><dd>{links}</dd>")
         forms = sorted({n for v in feats.values() for n in v[2]})
         note = (f'<p class="fine">Recorded by Orphanet for the forms it files here: {esc("; ".join(forms))}.</p>' if forms else "")
-        dist = ", ".join(f'{sum(1 for v in feats.values() if v[0] == fq)} {fq.split(" (")[0].lower()}' for fq in PHENO_FREQ if any(v[0] == fq for v in feats.values()))
+        note += "".join(f'<p class="fine">{esc(n)}</p>' for n, _ns in pending)
+        counts = {fq: sum(1 for v in feats.values() if v[0] == fq) + (len(named) if fq == PHENO_PENDING else 0) for fq in PHENO_SHOWN_FREQ}
+        dist = ", ".join(f"{counts[fq]} {'with ' if fq == PHENO_PENDING else ''}{freq_word(fq)}" for fq in PHENO_SHOWN_FREQ if counts[fq])
         out += (f'<details class="cond-pheno"><summary>Associated features <span class="fine">{dist} · from Orphanet</span></summary>'
                 f'<dl>{"".join(rows)}</dl>{note}</details>')
     if func:
@@ -3506,7 +3537,7 @@ def hpo_menu_html():
                 freqs.setdefault(hp, []).append(v[0])
     def spread(hp):
         # how the feature's frequency divides across the conditions that have it
-        parts = [f'{fq.split(" (")[0].lower()} in {freqs[hp].count(fq)}' for fq in PHENO_FREQ if freqs[hp].count(fq)]
+        parts = [f'{freq_word(fq)} in {freqs[hp].count(fq)}' for fq in PHENO_SHOWN_FREQ if freqs[hp].count(fq)]
         return ", ".join(parts)
     groups = {}
     for hp, names in cards.items():
@@ -4738,7 +4769,7 @@ PAGES["/registry/"] = {
     <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
     {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}
-    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. The registry has been declared to <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources.</p>
+    <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. The registry has been declared to <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources. Orphanet’s descriptions of the signs of each condition rest mainly on publications and occasionally on anonymised data from patient registries: once families agree and a research protocol allows it, the DysNet registry could become one of those sources.</p>
 
     {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.", toc="Who decides what")}
     <div class="grid cols-3">

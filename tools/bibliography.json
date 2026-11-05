@@ -1114,9 +1114,11 @@
     "review"
    ],
    "notes": [
-    "PubMed search for causes and risk factors of the site's conditions"
+    "PubMed search for causes and risk factors of the site's conditions",
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
    ],
    "via": [
+    "Orphanet",
     "PubMed search"
    ],
    "rests_on": []
@@ -5156,6 +5158,37 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "37628577",
+   "doi": "10.3390/genes14081526",
+   "title": "Split Hand-Foot and Deafness in a Patient with 7q21.13-q21.3 Deletion Not Including the DLX5/6 Genes",
+   "authors": [
+    "Ambrosetti I",
+    "Bernardini L",
+    "Pollazzon M",
+    "et al."
+   ],
+   "journal": "Genes",
+   "year": "2023",
+   "volume": "14",
+   "pages": "",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
+   ],
+   "via": [
+    "Orphanet"
    ],
    "rests_on": []
   },
@@ -18023,6 +18056,37 @@
    "rests_on": []
   },
   {
+   "pmid": "24163146",
+   "doi": "10.1007/s13353-013-0178-5",
+   "title": "Split-hand/foot malformation - molecular cause and implications in genetic counseling",
+   "authors": [
+    "Sowińska-Seidler A",
+    "Socha M",
+    "Jamsheer A"
+   ],
+   "journal": "Journal of applied genetics",
+   "year": "2014",
+   "volume": "55",
+   "pages": "105-15",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "24036887",
    "doi": "10.2340/16501977-1220",
    "title": "Stump sensibility in children with upper limb reduction deficiency",
@@ -18468,6 +18532,35 @@
    "rests_on": [
     "Finnish Register of Congenital Malformations"
    ]
+  },
+  {
+   "pmid": "24115638",
+   "doi": "10.1002/ajmg.a.36239",
+   "title": "Clinical, genetic, and molecular aspects of split-hand/foot malformation: an update",
+   "authors": [
+    "Gurrieri F",
+    "Everman DB"
+   ],
+   "journal": "American journal of medical genetics. Part A",
+   "year": "2013",
+   "volume": "161A",
+   "pages": "2860-72",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
   },
   {
    "pmid": "24080097",
@@ -22839,6 +22932,35 @@
    "rests_on": []
   },
   {
+   "pmid": "20556892",
+   "doi": "",
+   "title": "TP63-Related Disorders",
+   "authors": [
+    "Sutton VR",
+    "van Bokhoven H"
+   ],
+   "journal": "GeneReviews",
+   "year": "2010",
+   "volume": "",
+   "pages": "",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "20431566",
    "doi": "10.1038/nrd3164",
    "title": "Target identification: unravelling thalidomide teratogenicity",
@@ -23489,6 +23611,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "21088720",
+   "doi": "10.4103/0971-6866.60191",
+   "title": "Ectrodactyly/split hand feet malformation",
+   "authors": [
+    "Jindal G",
+    "Parmar VR",
+    "Gupta VK"
+   ],
+   "journal": "Indian journal of human genetics",
+   "year": "2009",
+   "volume": "15",
+   "pages": "140-2",
+   "pubtypes": [
+    "Case Reports"
+   ],
+   "codes": [
+    "2440"
+   ],
+   "topics": [],
+   "notes": [
+    "cited by Orphanet for its revision of the clinical signs of ORPHA:2440 (November 2026)"
+   ],
+   "via": [
+    "Orphanet"
    ],
    "rests_on": []
   },
@@ -26424,6 +26574,36 @@
    "rests_on": []
   },
   {
+   "pmid": "20301453",
+   "doi": "",
+   "title": "Tetra-Amelia Syndrome – RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY",
+   "authors": [
+    "Niemann S"
+   ],
+   "journal": "GeneReviews",
+   "year": "2007",
+   "volume": "",
+   "pages": "",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "3301"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for Tetra-amelia (cases or families described, Worldwide)",
+    "cited by Orphanet for Tetra-amelia (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "17283219",
    "doi": "10.1096/fj.06-7603com",
    "title": "Thalidomide induces limb deformities by perturbing the Bmp/Dkk1/Wnt signaling pathway",
@@ -26895,6 +27075,38 @@
    "via": [
     "DysNet",
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "20301332",
+   "doi": "",
+   "title": "ESCO2 Spectrum Disorder",
+   "authors": [
+    "Vega H",
+    "Gordillo M",
+    "Jabs EW"
+   ],
+   "journal": "GeneReviews",
+   "year": "2006",
+   "volume": "",
+   "pages": "",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [
+    "3103"
+   ],
+   "topics": [
+    "epidemiology",
+    "review"
+   ],
+   "notes": [
+    "cited by Orphanet for Roberts syndrome (cases or families described, Worldwide)",
+    "cited by Orphanet for Roberts syndrome (point prevalence, Worldwide)"
+   ],
+   "via": [
+    "Orphanet"
    ],
    "rests_on": []
   },
@@ -40274,39 +40486,6 @@
    "rests_on": []
   },
   {
-   "pmid": "20301332",
-   "doi": "",
-   "title": "ESCO2 Spectrum Disorder",
-   "authors": [
-    "Adam MP",
-    "Bick S",
-    "Mirzaa GM",
-    "et al."
-   ],
-   "journal": "",
-   "year": "1993",
-   "volume": "",
-   "pages": "",
-   "pubtypes": [
-    "Review"
-   ],
-   "codes": [
-    "3103"
-   ],
-   "topics": [
-    "epidemiology",
-    "review"
-   ],
-   "notes": [
-    "cited by Orphanet for Roberts syndrome (cases or families described, Worldwide)",
-    "cited by Orphanet for Roberts syndrome (point prevalence, Worldwide)"
-   ],
-   "via": [
-    "Orphanet"
-   ],
-   "rests_on": []
-  },
-  {
    "pmid": "8446926",
    "doi": "10.1002/tera.1420470205",
    "title": "Evaluation of congenital limb reduction defects in upstate New York",
@@ -40993,39 +41172,6 @@
    ],
    "via": [
     "PubMed search"
-   ],
-   "rests_on": []
-  },
-  {
-   "pmid": "20301453",
-   "doi": "",
-   "title": "Tetra-Amelia Syndrome – RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY",
-   "authors": [
-    "Adam MP",
-    "Bick S",
-    "Mirzaa GM",
-    "et al."
-   ],
-   "journal": "",
-   "year": "1993",
-   "volume": "",
-   "pages": "",
-   "pubtypes": [
-    "Review"
-   ],
-   "codes": [
-    "3301"
-   ],
-   "topics": [
-    "epidemiology",
-    "review"
-   ],
-   "notes": [
-    "cited by Orphanet for Tetra-amelia (cases or families described, Worldwide)",
-    "cited by Orphanet for Tetra-amelia (point prevalence, Worldwide)"
-   ],
-   "via": [
-    "Orphanet"
    ],
    "rests_on": []
   },
@@ -60163,5 +60309,5 @@
    "rests_on": []
   }
  ],
- "registries_joined": "2026-09-23"
+ "registries_joined": "2026-11-05"
 }

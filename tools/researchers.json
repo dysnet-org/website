@@ -1,7 +1,7 @@
 {
- "built": "2026-09-23",
+ "built": "2026-11-05",
  "method": "Institutions of first and last authors of the bibliography's PubMed records (NCBI E-utilities affiliations), aggregated; listed from 2 publications.",
- "bibliography_size": 1928,
+ "bibliography_size": 1933,
  "records_without_affiliation": 575,
  "teams": [
   {
@@ -1053,8 +1053,8 @@
    "codes": [
     "2913",
     "294925",
-    "294971",
-    "3301"
+    "3301",
+    "90025"
    ],
    "authors": [
     "Spielmann M",
@@ -1669,6 +1669,40 @@
    "geocode_display_name": "Orthopedic Alt-Erlaa, Anton-Baumgartner-Straße, Katastralgemeinde Inzersdorf, Liesing, Wien, 1230, Österreich"
   },
   {
+   "institution": "Poznan University of Medical Sciences",
+   "country": "Poland",
+   "papers": 3,
+   "years": [
+    2014,
+    2023
+   ],
+   "codes": [
+    "1987",
+    "157801",
+    "3258",
+    "90025"
+   ],
+   "authors": [
+    "Jamsheer A",
+    "Sowińska-Seidler A",
+    "Bukowska-Olech E"
+   ],
+   "representative": {
+    "pmid": "36586055",
+    "doi": "10.1007/s13353-022-00743-7",
+    "title": "A pure de novo 16p13.3 duplication and amplification in a patient with femoral hypoplasia, psychomotor retardation, heart defect, and facial dysmorphism-a case report and literature review of the partial 16p13.3 trisomy syndrome",
+    "year": "2023"
+   },
+   "pmids": [
+    "36586055",
+    "32286743",
+    "24163146"
+   ],
+   "lat": 52.4082409,
+   "lon": 16.8911238,
+   "geocode_display_name": "Uniwersytet Medyczny im. Karola Marcinkowskiego, Ułańska, Łazarz, Poznań, województwo wielkopolskie, 60-748, Polska"
+  },
+  {
    "institution": "University of São Paulo",
    "country": "Brazil",
    "papers": 3,
@@ -2017,6 +2051,39 @@
    "lat": 42.2834476,
    "lon": -83.733714,
    "geocode_display_name": "Buhl Research Center for Human Genetics, 1241, Catherine Street, Old Fourth Ward, Ann Arbor, Washtenaw County, Michigan, 48109, United State"
+  },
+  {
+   "institution": "Government Medical College",
+   "country": "India",
+   "papers": 3,
+   "years": [
+    2008,
+    2015
+   ],
+   "codes": [
+    "295000",
+    "2440",
+    "93321"
+   ],
+   "authors": [
+    "Lype M",
+    "Jindal G",
+    "Devi PL"
+   ],
+   "representative": {
+    "pmid": "26549084",
+    "doi": "10.4103/0377-4929.168876",
+    "title": "Significance of fibrotic bands in utero--Amniotic band sequence with limb body wall complex: A rare case of fetal autopsy",
+    "year": "2015"
+   },
+   "pmids": [
+    "26549084",
+    "21088720",
+    "19966981"
+   ],
+   "lat": 15.4860548,
+   "lon": 80.0461963,
+   "geocode_display_name": "Government Medical College, Trunk Road, Ongole Urban, Santapeta, Ongole, Prakasam, Andhra Pradesh, 523001, India"
   },
   {
    "institution": "Hôpital Jeanne de Flandre",
@@ -3312,6 +3379,37 @@
    "geocode_display_name": "Ankara, Türkiye"
   },
   {
+   "institution": "Azienda USL-IRCCS di Reggio Emilia",
+   "country": "Italy",
+   "papers": 2,
+   "years": [
+    2021,
+    2023
+   ],
+   "codes": [
+    "2440",
+    "2913",
+    "498464"
+   ],
+   "authors": [
+    "Garavelli L",
+    "Peluso F"
+   ],
+   "representative": {
+    "pmid": "37628577",
+    "doi": "10.3390/genes14081526",
+    "title": "Split Hand-Foot and Deafness in a Patient with 7q21.13-q21.3 Deletion Not Including the DLX5/6 Genes",
+    "year": "2023"
+   },
+   "pmids": [
+    "37628577",
+    "34202629"
+   ],
+   "lat": 40.8652386,
+   "lon": 14.2241337,
+   "geocode_display_name": "Ospedale Antonio Cardarelli, 9, Via Antonio Cardarelli, Rione Alto, Arenella, Municipalità 5, Napoli, Campania, 80131, Italia"
+  },
+  {
    "institution": "BG Unfallklinik Frankfurt am Main",
    "country": "Germany",
    "papers": 2,
@@ -3403,39 +3501,6 @@
    "lat": -37.7839745,
    "lon": 144.9586743,
    "geocode_display_name": "Monash University, Mile Lane, Parkville, Melbourne, Victoria, 3052, Australia"
-  },
-  {
-   "institution": "Poznan University of Medical Sciences",
-   "country": "Poland",
-   "papers": 2,
-   "years": [
-    2020,
-    2023
-   ],
-   "codes": [
-    "1987",
-    "157801",
-    "3258",
-    "90025"
-   ],
-   "authors": [
-    "Jamsheer A",
-    "Bukowska-Olech E",
-    "Socha M"
-   ],
-   "representative": {
-    "pmid": "36586055",
-    "doi": "10.1007/s13353-022-00743-7",
-    "title": "A pure de novo 16p13.3 duplication and amplification in a patient with femoral hypoplasia, psychomotor retardation, heart defect, and facial dysmorphism-a case report and literature review of the partial 16p13.3 trisomy syndrome",
-    "year": "2023"
-   },
-   "pmids": [
-    "36586055",
-    "32286743"
-   ],
-   "lat": 52.4082409,
-   "lon": 16.8911238,
-   "geocode_display_name": "Uniwersytet Medyczny im. Karola Marcinkowskiego, Ułańska, Łazarz, Poznań, województwo wielkopolskie, 60-748, Polska"
   },
   {
    "institution": "Stanford University School of Medicine",
@@ -4680,36 +4745,6 @@
    "lat": 45.8130967,
    "lon": 15.9772795,
    "geocode_display_name": "Grad Zagreb, Hrvatska"
-  },
-  {
-   "institution": "Government Medical College",
-   "country": "India",
-   "papers": 2,
-   "years": [
-    2008,
-    2015
-   ],
-   "codes": [
-    "295000",
-    "93321"
-   ],
-   "authors": [
-    "Lype M",
-    "Devi PL"
-   ],
-   "representative": {
-    "pmid": "26549084",
-    "doi": "10.4103/0377-4929.168876",
-    "title": "Significance of fibrotic bands in utero--Amniotic band sequence with limb body wall complex: A rare case of fetal autopsy",
-    "year": "2015"
-   },
-   "pmids": [
-    "26549084",
-    "19966981"
-   ],
-   "lat": 15.4860548,
-   "lon": 80.0461963,
-   "geocode_display_name": "Government Medical College, Trunk Road, Ongole Urban, Santapeta, Ongole, Prakasam, Andhra Pradesh, 523001, India"
   },
   {
    "institution": "Laboratoire de Genetique Medicale",
@@ -5966,9 +6001,9 @@
    ],
    "codes": [
     "294925",
-    "294971",
     "3301",
-    "2879"
+    "2879",
+    "3103"
    ],
    "authors": [
     "Williams AR",

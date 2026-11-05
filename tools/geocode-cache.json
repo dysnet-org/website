@@ -1259,5 +1259,11 @@
   "lon": 132.4517589,
   "display_name": "広島市, 広島県, 日本",
   "query": "Hiroshima, Japan"
+ },
+ "Azienda USL-IRCCS di Reggio Emilia|Italy": {
+  "lat": 40.8652386,
+  "lon": 14.2241337,
+  "display_name": "Ospedale Antonio Cardarelli, 9, Via Antonio Cardarelli, Rione Alto, Arenella, Municipalità 5, Napoli, Campania, 80131, Italia",
+  "query": "Azienda, Italy"
  }
 }

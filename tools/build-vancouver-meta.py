@@ -11,6 +11,8 @@ Crossref for a DOI PubMed does not index. Raw answers are cached in tools/terato
 Output: tools/vancouver-meta.json, keyed "pmid:<n>" and "doi:<lowercase doi>".
 Run: python3 tools/build-vancouver-meta.py
 """
+import hashlib
+import html
 import json
 import pathlib
 import re
@@ -38,11 +40,24 @@ def get(url, cache):
     return t
 
 
+def book_chapter(pmid):
+    """A book chapter's first posting year and book title. PubMed's summary dates every GeneReviews
+    chapter 1993, the series' first year, and gives it no source (found 2026-11-05)."""
+    xml = get(EUTILS + f"efetch.fcgi?db=pubmed&retmode=xml&id={pmid}", f"efetch-book-{pmid}.xml")
+    year = re.search(r"<ContributionDate>\s*<Year>(\d{4})</Year>", xml)
+    book = re.search(r"<BookTitle[^>]*>(.*?)</BookTitle>", xml, re.S)
+    return (year.group(1) if year else ""), (re.sub(r"\(®\)|®|<[^>]+>", "", html.unescape(book.group(1))).strip() if book else "")
+
+
 def from_pubmed(s):
     authors = [a["name"] for a in s.get("authors", []) if a.get("authtype") == "Author"]
     doi = next((x["value"] for x in s.get("articleids", []) if x["idtype"] == "doi"), "")
-    return {"authors": authors, "title": s.get("title", "").strip(), "journal": s.get("source", ""),
-            "year": (s.get("pubdate") or "")[:4], "volume": s.get("volume", ""), "issue": s.get("issue", ""),
+    year, journal = (s.get("pubdate") or "")[:4], s.get("source", "")
+    if s.get("booktitle"):
+        b_year, b_title = book_chapter(s.get("uid", ""))
+        year, journal = b_year or year, b_title or s["booktitle"]
+    return {"authors": authors, "title": s.get("title", "").strip(), "journal": journal,
+            "year": year, "volume": s.get("volume", ""), "issue": s.get("issue", ""),
             "pages": s.get("pages", "") or (re.search(r"pii: ?(\S+?)\.?(?:\s|$)", s.get("elocationid", "")) or [None, ""])[1],
             "doi": doi, "pmid": s.get("uid", ""), "from": "PubMed"}
 
@@ -52,7 +67,11 @@ def esummary(pmids):
     pmids = sorted(set(pmids))
     for i in range(0, len(pmids), 200):
         chunk = pmids[i:i + 200]
-        d = json.loads(get(EUTILS + "esummary.fcgi?db=pubmed&retmode=json&id=" + ",".join(chunk), f"esummary-{chunk[0]}-{len(chunk)}.json"))
+        # keyed by the chunk's ids, not its first id and length: once a PMID is inserted, a later chunk can start
+        # with the same id and have the same length but other members, and was answered from the stale file
+        # (2026-11-05: PMID 20556892 went missing that way)
+        key = hashlib.md5(",".join(chunk).encode()).hexdigest()[:10]
+        d = json.loads(get(EUTILS + "esummary.fcgi?db=pubmed&retmode=json&id=" + ",".join(chunk), f"esummary-{chunk[0]}-{len(chunk)}-{key}.json"))
         for u in d["result"].get("uids", []):
             out[u] = from_pubmed(d["result"][u])
     return out

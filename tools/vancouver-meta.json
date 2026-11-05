@@ -2538,6 +2538,21 @@
 "volume": "161A",
 "year": "2013"
 },
+"doi:10.1002/ajmg.a.36239": {
+"authors": [
+"Gurrieri F",
+"Everman DB"
+],
+"doi": "10.1002/ajmg.a.36239",
+"from": "PubMed",
+"issue": "11",
+"journal": "Am J Med Genet A",
+"pages": "2860-72",
+"pmid": "24115638",
+"title": "Clinical, genetic, and molecular aspects of split-hand/foot malformation: an update.",
+"volume": "161A",
+"year": "2013"
+},
 "doi:10.1002/ajmg.a.36367": {
 "authors": [
 "Girisha KM",
@@ -13365,6 +13380,22 @@
 "title": "Neonatal and Maternal Ichthyosiform Dermopathy in Association with Kava Use during Pregnancy.",
 "volume": "20",
 "year": "2024"
+},
+"doi:10.1007/s13353-013-0178-5": {
+"authors": [
+"Sowińska-Seidler A",
+"Socha M",
+"Jamsheer A"
+],
+"doi": "10.1007/s13353-013-0178-5",
+"from": "PubMed",
+"issue": "1",
+"journal": "J Appl Genet",
+"pages": "105-15",
+"pmid": "24163146",
+"title": "Split-hand/foot malformation - molecular cause and implications in genetic counseling.",
+"volume": "55",
+"year": "2014"
 },
 "doi:10.1007/s13353-022-00743-7": {
 "authors": [
@@ -30255,7 +30286,7 @@
 "pages": "",
 "pmid": "42432126",
 "title": "A robust, high-content NAM for repeatable and predictive developmental and reproductive toxicity assessment in C. elegans.",
-"volume": "",
+"volume": "16",
 "year": "2026"
 },
 "doi:10.1038/s44161-022-00080-2": {
@@ -38382,12 +38413,12 @@
 ],
 "doi": "10.1111/tmi.70201",
 "from": "PubMed",
-"issue": "",
+"issue": "11",
 "journal": "Trop Med Int Health",
-"pages": "tmi.70201",
+"pages": "1529-1536",
 "pmid": "42430166",
 "title": "Water Pollution and Perinatal or Neonatal Outcomes: A Scoping Review.",
-"volume": "",
+"volume": "31",
 "year": "2026"
 },
 "doi:10.1113/expphysiol.2013.073825": {
@@ -47802,6 +47833,36 @@
 "volume": "12",
 "year": "2021"
 },
+"doi:10.3390/genes14081526": {
+"authors": [
+"Ambrosetti I",
+"Bernardini L",
+"Pollazzon M",
+"Giuffrida MG",
+"Guida V",
+"Peluso F",
+"Baroni MC",
+"Polizzi V",
+"Napoli M",
+"Rosato S",
+"Trimarchi G",
+"Gelmini C",
+"Caraffi SG",
+"Wischmeijer A",
+"Frattini D",
+"Novelli A",
+"Garavelli L"
+],
+"doi": "10.3390/genes14081526",
+"from": "PubMed",
+"issue": "8",
+"journal": "Genes (Basel)",
+"pages": "1526",
+"pmid": "37628577",
+"title": "Split Hand-Foot and Deafness in a Patient with 7q21.13-q21.3 Deletion Not Including the DLX5/6 Genes.",
+"volume": "14",
+"year": "2023"
+},
 "doi:10.3390/genes17080958": {
 "authors": [
 "Samson TE",
@@ -48799,6 +48860,22 @@
 "title": "Significance of fibrotic bands in utero--Amniotic band sequence with limb body wall complex: A rare case of fetal autopsy.",
 "volume": "58",
 "year": "2015"
+},
+"doi:10.4103/0971-6866.60191": {
+"authors": [
+"Jindal G",
+"Parmar VR",
+"Gupta VK"
+],
+"doi": "10.4103/0971-6866.60191",
+"from": "PubMed",
+"issue": "3",
+"journal": "Indian J Hum Genet",
+"pages": "140-2",
+"pmid": "21088720",
+"title": "Ectrodactyly/split hand feet malformation.",
+"volume": "15",
+"year": "2009"
 },
 "doi:10.4103/0971-6866.82189": {
 "authors": [
@@ -62622,12 +62699,12 @@
 "doi": "",
 "from": "PubMed",
 "issue": "",
-"journal": "",
+"journal": "GeneReviews",
 "pages": "",
 "pmid": "20301332",
 "title": "ESCO2 Spectrum Disorder.",
 "volume": "",
-"year": "1993"
+"year": "2006"
 },
 "pmid:20301453": {
 "authors": [
@@ -62636,12 +62713,12 @@
 "doi": "",
 "from": "PubMed",
 "issue": "",
-"journal": "",
+"journal": "GeneReviews",
 "pages": "",
 "pmid": "20301453",
 "title": "Tetra-Amelia Syndrome – RETIRED CHAPTER, FOR HISTORICAL REFERENCE ONLY.",
 "volume": "",
-"year": "1993"
+"year": "2007"
 },
 "pmid:20308329": {
 "authors": [
@@ -62954,6 +63031,21 @@
 "pmid": "20544697",
 "title": "The Hemimelic extra toes mouse mutant: Historical perspective on unraveling mechanisms of dysmorphogenesis.",
 "volume": "90",
+"year": "2010"
+},
+"pmid:20556892": {
+"authors": [
+"Sutton VR",
+"van Bokhoven H"
+],
+"doi": "",
+"from": "PubMed",
+"issue": "",
+"journal": "GeneReviews",
+"pages": "",
+"pmid": "20556892",
+"title": "TP63-Related Disorders.",
+"volume": "",
 "year": "2010"
 },
 "pmid:20558369": {
@@ -63599,6 +63691,22 @@
 "title": "Induction of postaxial forelimb ectrodactyly with anticonvulsant agents in A/J mice.",
 "volume": "41",
 "year": "1990"
+},
+"pmid:21088720": {
+"authors": [
+"Jindal G",
+"Parmar VR",
+"Gupta VK"
+],
+"doi": "10.4103/0971-6866.60191",
+"from": "PubMed",
+"issue": "3",
+"journal": "Indian J Hum Genet",
+"pages": "140-2",
+"pmid": "21088720",
+"title": "Ectrodactyly/split hand feet malformation.",
+"volume": "15",
+"year": "2009"
 },
 "pmid:2109904": {
 "authors": [
@@ -67530,6 +67638,21 @@
 "volume": "99",
 "year": "2014"
 },
+"pmid:24115638": {
+"authors": [
+"Gurrieri F",
+"Everman DB"
+],
+"doi": "10.1002/ajmg.a.36239",
+"from": "PubMed",
+"issue": "11",
+"journal": "Am J Med Genet A",
+"pages": "2860-72",
+"pmid": "24115638",
+"title": "Clinical, genetic, and molecular aspects of split-hand/foot malformation: an update.",
+"volume": "161A",
+"year": "2013"
+},
 "pmid:24134526": {
 "authors": [
 "Caspers KM",
@@ -67548,6 +67671,22 @@
 "title": "Maternal periconceptional exposure to cigarette smoking and congenital limb deficiencies.",
 "volume": "27",
 "year": "2013"
+},
+"pmid:24163146": {
+"authors": [
+"Sowińska-Seidler A",
+"Socha M",
+"Jamsheer A"
+],
+"doi": "10.1007/s13353-013-0178-5",
+"from": "PubMed",
+"issue": "1",
+"journal": "J Appl Genet",
+"pages": "105-15",
+"pmid": "24163146",
+"title": "Split-hand/foot malformation - molecular cause and implications in genetic counseling.",
+"volume": "55",
+"year": "2014"
 },
 "pmid:24210691": {
 "authors": [
@@ -85746,6 +85885,36 @@
 "volume": "23",
 "year": "2024"
 },
+"pmid:37628577": {
+"authors": [
+"Ambrosetti I",
+"Bernardini L",
+"Pollazzon M",
+"Giuffrida MG",
+"Guida V",
+"Peluso F",
+"Baroni MC",
+"Polizzi V",
+"Napoli M",
+"Rosato S",
+"Trimarchi G",
+"Gelmini C",
+"Caraffi SG",
+"Wischmeijer A",
+"Frattini D",
+"Novelli A",
+"Garavelli L"
+],
+"doi": "10.3390/genes14081526",
+"from": "PubMed",
+"issue": "8",
+"journal": "Genes (Basel)",
+"pages": "1526",
+"pmid": "37628577",
+"title": "Split Hand-Foot and Deafness in a Patient with 7q21.13-q21.3 Deletion Not Including the DLX5/6 Genes.",
+"volume": "14",
+"year": "2023"
+},
 "pmid:37629676": {
 "authors": [
 "Hong SY",
@@ -96888,12 +97057,12 @@
 ],
 "doi": "10.1111/tmi.70201",
 "from": "PubMed",
-"issue": "",
+"issue": "11",
 "journal": "Trop Med Int Health",
-"pages": "tmi.70201",
+"pages": "1529-1536",
 "pmid": "42430166",
 "title": "Water Pollution and Perinatal or Neonatal Outcomes: A Scoping Review.",
-"volume": "",
+"volume": "31",
 "year": "2026"
 },
 "pmid:42432126": {
@@ -96916,7 +97085,7 @@
 "pages": "",
 "pmid": "42432126",
 "title": "A robust, high-content NAM for repeatable and predictive developmental and reproductive toxicity assessment in C. elegans.",
-"volume": "",
+"volume": "16",
 "year": "2026"
 },
 "pmid:42435975": {

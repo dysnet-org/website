@@ -917,7 +917,17 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   // the page ships the first 60 entries as HTML; the full set travels as JSON and is rendered here on demand
   var dataEl = document.getElementById("bib-data"), DATA = null, LABELS = { codes: {}, topics: {} };
   try { var parsed = dataEl && dataEl.textContent.trim() ? JSON.parse(dataEl.textContent) : null; if (parsed) { DATA = parsed.items; LABELS = parsed; } } catch (e) { DATA = null; }
-  function index(rows) { rows.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "")).toLowerCase().replace(/"/g, ""); }); }
+  // the PMID and the DOI are searched too, as "pmid:<n>" and "doi:<doi>", the same text the build writes
+  // into each item's data-text (bibliography_html)
+  function index(rows) { rows.forEach(function (r) { r.s = (r.t + " " + r.a + " " + r.j + " " + r.y + " " + (r.n || "") + (r.m ? " pmid:" + r.m : "") + (r.d ? " doi:" + r.d : "")).toLowerCase().replace(/"/g, ""); }); }
+  // what a reader pastes, reduced to that form: "PMID: 24163146", a PubMed link, "doi:10.…" or a doi.org link;
+  // bare digits or a bare DOI already match as they are
+  function needle(raw) {
+    var t = raw.trim().toLowerCase(), m;
+    if ((m = t.match(/pubmed\.ncbi\.nlm\.nih\.gov\/(\d+)/)) || (m = t.match(/^pmid\s*:?\s*(\d+)$/))) return "pmid:" + m[1];
+    if ((m = t.match(/(?:doi\.org\/|^doi\s*:?\s*)(10\.\S+)/))) return "doi:" + m[1].replace(/[.,;]$/, "");
+    return t;
+  }
   if (DATA) index(DATA);
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]; }); }
   function itemHtml(r) {
@@ -933,7 +943,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   }
   var items = DATA ? null : Array.prototype.slice.call(list.querySelectorAll(".bib-item"));
   function apply() {
-    var text = q.value.trim().toLowerCase(), code = sel.value, k = 0;
+    var text = needle(q.value), code = sel.value, k = 0;
     var from = yFrom && parseInt(yFrom.value, 10) || 0, to = yTo && parseInt(yTo.value, 10) || 9999;
     if (DATA) {
       var out = [];

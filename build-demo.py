@@ -1278,7 +1278,9 @@ def bibliography_html():
         why = e["notes"][0] if e["notes"] else ""
         vm = vmeta(e.get("pmid"), e.get("doi"))
         vcite = vancouver(vm, title=False) if vm else f'{esc(authors)}. <em>{esc(e["journal"])}</em>. {e["year"]}. {link}'
-        text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why).lower().replace('"', "")
+        # the PMID and the DOI are searchable, in the form site.js reduces a pasted one to (needle)
+        text = (e["title"] + " " + authors + " " + e["journal"] + " " + str(e["year"]) + " " + why
+                + (f' pmid:{e["pmid"]}' if e.get("pmid") else "") + (f' doi:{e["doi"]}' if e.get("doi") else "")).lower().replace('"', "")
         items.append(f'<li class="bib-item" data-codes="{" ".join(e["codes"])}" data-topics="{" ".join(t.replace(" ", "_") for t in e["topics"])}" data-year="{e["year"]}" data-registries="{" ".join(e.get("rests_on", []))}" data-text="{esc(text)}">'
                      f'<p class="bib-title">{esc(e["title"])}</p><p class="bib-meta">{vcite}</p>'
                      f'<p class="bib-tags">{tags}</p></li>')
@@ -1293,7 +1295,7 @@ def bibliography_html():
     <h2 class="h2">The literature, searchable.</h2>
     <p>Behind every condition described on this site lies a body of research: who is affected, how often, what is known and what is still missing. This bibliography gathers the peer-reviewed publications on those limb differences, and on thalidomide, the drug behind the largest cluster of them, so that families, associations and researchers can start from the same shelf. Each reference is checked against PubMed and links to its DOI. Filter by condition, theme or year, or search.</p>
     <div class="bib-controls" id="bib-controls">
-      <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals…" aria-label="Search the bibliography">
+      <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals, a PMID or a DOI…" aria-label="Search the bibliography by title, author, journal, PMID or DOI">
       <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
       <div class="finder-chips bib-focus" id="bib-focus"><button type="button" data-code="thal" aria-pressed="false">Thalidomide only</button><button type="button" data-exclude="thal" aria-pressed="false">Without thalidomide</button><span class="bib-focus-help">the drug, its embryopathy and its survivors: show only those papers, or leave them out</span></div>
       <div class="finder-chips" id="bib-topics">{topic_chips}</div>

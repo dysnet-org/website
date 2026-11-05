@@ -552,19 +552,16 @@ tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 
 .map-panel {
   position: absolute; left: 1.5rem; bottom: 1.5rem; z-index: 3;
-  width: min(30rem, calc(100% - 3rem)); max-height: calc(100% - 3rem); overflow: auto;
+  width: min(24rem, calc(100% - 3rem)); max-height: calc(100% - 3rem); overflow: auto;
   background: rgba(255,255,255,0.94); color: var(--dys-ink);
-  border-radius: var(--radius-sheet); padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sheet); padding: var(--space-3);
   box-shadow: 0 30px 70px -30px rgba(0,0,0,0.6); backdrop-filter: blur(8px);
 }
 .map-panel .kicker { color: var(--dys-green-text); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: var(--text-eyebrow); margin: 0 0 var(--space-1); }
-.map-panel h1 { font-size: var(--text-h2-lg); line-height: 1.1; margin-bottom: var(--space-1); }
+.map-panel h1 { font-size: var(--text-h2); line-height: 1.1; margin-bottom: var(--space-1); }
 .map-panel h1 em { font-style: normal; color: var(--dys-purple-text); }
 .map-panel p { font-size: var(--text-small); color: var(--dys-muted); margin-bottom: var(--space-2); }
-.map-stats { display: flex; gap: var(--space-3); margin: 0 0 var(--space-2); padding: 0; list-style: none; max-width: none; }
-.map-stats li { font-size: var(--text-eyebrow); text-transform: uppercase; letter-spacing: 0.06em; color: var(--dys-muted); }
-.map-stats strong { display: block; font-size: var(--text-h3); color: var(--dys-ink); letter-spacing: 0; text-transform: none; }
-.map-panel .hero-actions { margin-top: var(--space-1); }
+.map-panel .hero-actions { margin-top: var(--space-2); gap: var(--space-1); }
 
 .map-views {
   position: absolute; right: 1.5rem; top: 1.5rem; z-index: 3;
@@ -661,7 +658,8 @@ tr[id^="reg-"]:target > * { background: var(--dys-purple-soft); }
 }
 
 /* ── Map card: dismissible ─────────────────────────────────────────── */
-.map-panel { padding-right: var(--space-5); }
+/* only the kicker, at the top, runs under the close button; the title and buttons use the full width */
+.map-panel .kicker { padding-right: var(--space-4); }
 .map-panel-close {
   position: absolute; top: 0.9rem; right: 0.9rem; width: 2.2rem; height: 2.2rem;
   border: 0; border-radius: 50%; background: var(--dys-purple-soft); color: var(--dys-purple-text);
@@ -876,9 +874,7 @@ ol.objectives strong { color: var(--dys-green-text); }
 .zone-popup .dp-since { color: var(--dys-purple-text); }
 /* short or zoomed-in windows: keep the whole card visible */
 @media (min-width: 70rem) and (max-height: 60rem) {
-  .map-panel h1 { font-size: var(--text-h2); }
-  .map-panel { padding: var(--space-3); }
-  .map-panel .map-stats { margin: var(--space-2) 0 var(--space-1); }
+  .map-panel h1 { font-size: var(--text-h3); }
 }
 /* Voice: the five demands, collapsible */
 ol.demands { list-style: none; padding: 0; margin: var(--space-3) 0 0; display: grid; gap: var(--space-2); max-width: none; }

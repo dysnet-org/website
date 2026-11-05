@@ -5778,16 +5778,9 @@ MAP_HERO = """
     <button type="button" class="map-panel-close" aria-label="Close this card and explore the map">×</button>
     <p class="kicker">Mission 2 · The international associative registry</p>
     <h1>The registry of limb malformations, <em>owned by the families it describes.</em></h1>
-    <p>Each highlighted country is an association ready to bring its families’ knowledge into one shared, patient-governed registry. Hover a country to see who.</p>
-    <ul class="map-stats">
-      <li><strong data-count="countries">__N_COUNTRIES__</strong>countries</li>
-      <li><strong data-count="orgs">__N_ORGS__</strong>associations</li>
-      <li><strong data-count="candidate">__N_PILOTS__</strong>associations piloting the registry</li>
-    </ul>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="__REGISTRY_JOIN__">Join the registry</a>
-      <a class="btn btn-ghost" href="/registry/">The registry project</a>
-      <a class="btn btn-ghost" href="/about/members/">Join the network</a>
+      <a class="btn btn-primary btn-sm" href="__REGISTRY_JOIN__">Join the registry</a>
+      <a class="btn btn-ghost btn-sm" href="/registry/">The registry project</a>
     </div>
   </div>
   <button type="button" class="map-panel-reopen" id="map-panel-reopen" hidden>About this map</button>
@@ -5843,12 +5836,10 @@ MAP_HERO = """
 """.replace("__MAP_DATA__", MAP_DATA).replace("__MAPGL_V__", __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/js/map-gl.js").read_bytes()).hexdigest()[:8])
 # the legend's zone rows come from ZONE_LABELS, the same words the two maps use for a zone's status
 MAP_HERO = MAP_HERO.replace("__ZONE_LEGEND__", "\n    ".join(f'<span class="{v["css"]}" data-layer="zones">{v["legend"]}</span>' for v in ZONE_LABELS.values()))
-# The card's counts and the pilots' names come from MEMBERS, the same source as every sentence that
-# counts the members. The scripts used to total the map data instead, and counted Canada's
-# "contact opened" placeholder as a thirtieth association.
-MAP_HERO = (MAP_HERO.replace("__N_COUNTRIES__", str(MEMBER_STATS["countries"])).replace("__N_ORGS__", str(MEMBER_STATS["orgs"]))
-            .replace("__N_PILOTS__", str(MEMBER_STATS["pilots"])).replace("__PILOTS__", ", ".join(PILOTS))
-            .replace("__REGISTRY_JOIN__", REGISTRY_JOIN))
+# The pilots' names in the legend come from MEMBERS, the same source as every sentence that counts the
+# members. The card's three counts and its "Join the network" button were removed (owner, 2026-11-05)
+# to keep the card small over the map; the counts stay on the pages about the members.
+MAP_HERO = MAP_HERO.replace("__PILOTS__", ", ".join(PILOTS)).replace("__REGISTRY_JOIN__", REGISTRY_JOIN)
 
 
 # Notes printed under a country's list, where the list alone would mislead.

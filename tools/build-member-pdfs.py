@@ -381,8 +381,8 @@ def brief():
               "record and an Italian one mean the same thing. Once live, it will be listed in Orphanet’s European "
               "directory of rare-disease registries, where researchers look for data."),
             gap(),
-            P("The member associations also decide, together with the DysNet board, which studies may be put to "
-              "families at all. Research reaches the community on the community’s terms."),
+            P("A study reaches families only after regulatory approval and with the agreement of DysNet’s Chair. Each "
+              "family then decides for itself, so research reaches the community on the community’s terms."),
         ]),
         ("What it gives you", [
             P("With your doctor", "h3"),
@@ -391,7 +391,7 @@ def brief():
               "conditions and the register of care centres help you find a specialist and prepare your questions."),
             gap(1.6),
             P("In research", "h3"),
-            P("A researcher proposes a study, and DysNet’s member associations and board decide whether it may "
+            P("A researcher proposes a study. Once it has regulatory approval, DysNet’s Chair decides whether it may "
               "be put to families. If it is, you see the request in the registry, and by email if you agreed to be "
               "contacted: who asks, what for, and which data. You answer study by study. A yes opens that study’s "
               "data only, and you can withdraw it; a no changes nothing about your place in the registry."),

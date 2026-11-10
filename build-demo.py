@@ -4627,8 +4627,8 @@ REGISTRY_AUDIENCES = [
        "A point of contact, help translating the questions into your language, and families you invite "
        "rather than enrol. Nobody is entered by their association."),
       ("What you would get",
-       "The figures for your own country, which most associations have never had, and a seat in deciding "
-       "which research may be put to your families at all."),
+       "The figures for your own country, which most associations have never had. A study reaches your "
+       "families only after regulatory approval and with the agreement of DysNet’s Chair, and each family still decides for itself."),
       ("What it costs",
        'No licence fee and no charge per family: Health Data Safe contributes the infrastructure in kind. The cost is '
        'volunteer time. The <a href="/assets/dysnet-registry-pilot.pdf">two-page brief</a> answers the questions a board '
@@ -4663,7 +4663,7 @@ REGISTRY_AUDIENCES = [
     ("researchers", "A researcher wanting access",
      "There is no data to request yet. There is a route to propose a study, and five registers you can use today.",
      [("How access will work",
-       "You propose a study. The member associations and the board decide together whether it may be "
+       "You propose a study. Once it has regulatory approval, DysNet’s Chair decides whether it may be "
        "put to families. Each family then consents, or does not, one study at a time."),
       ("What will never be possible",
        "Buying the data, or receiving it in bulk without the consent of the people it describes. The "
@@ -4772,10 +4772,10 @@ PAGES["/registry/"] = {
     {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}
     <p>DysNet builds a data infrastructure that is international and interoperable by design, owned by the patient community itself, developed with member associations, and replicable for other rare conditions. We call it a registry for short; the section above says exactly how far that word applies today. It is the concrete answer to what DysNet membership returns to families: their data, working for their care. The registry has been declared to <a href="https://www.orpha.net/en/research-trials/registries" target="_blank" rel="noopener external">Orphanet’s European directory of rare-disease registries</a>, where researchers already look for data sources. Orphanet’s descriptions of the signs of each condition rest mainly on publications and occasionally on anonymised data from patient registries: once families agree and a research protocol allows it, the DysNet registry could become one of those sources.</p>
 
-    {opener("03", "How it works", "Patients hold the data; associations and the board steer the research.", toc="Who decides what")}
+    {opener("03", "How it works", "Patients hold the data, and DysNet’s Chair decides which studies may reach them.", toc="Who decides what")}
     <div class="grid cols-3">
       <div class="card acc-studies"><h3 class="h4">Families contribute</h3><p>Through their national association, on explicit consent, in their own language.</p></div>
-      <div class="card acc-studies"><h3 class="h4">Control stays with the patient</h3><p>Each person holds their own data and decides what enters the registry. Which research may be proposed to families is a shared responsibility of the member associations and the DysNet board.</p></div>
+      <div class="card acc-studies"><h3 class="h4">Control stays with the patient</h3><p>Each person holds their own data and decides what enters the registry. DysNet’s Chair decides which research may be proposed to families, only when a researcher asks and once the study has regulatory approval.</p></div>
       <div class="card acc-studies"><h3 class="h4">Research gets fuel</h3><p>Interoperable, comparable data across countries, at last.</p></div>
     </div>
 
@@ -4801,7 +4801,7 @@ PAGES["/registry/"] = {
       </div>
       <div class="card acc-studies">
         <h3 class="h4">The trust</h3>
-        <p>A non-profit with no commercial exit, whose purpose is written into its statutes, and a partner already in DysNet’s circle. Control of the data stays in the patient’s hands, and which research may be proposed to families is decided jointly by the member associations and the DysNet board.</p>
+        <p>A non-profit with no commercial exit, whose purpose is written into its statutes, and a partner already in DysNet’s circle. Control of the data stays in the patient’s hands, and DysNet’s Chair decides which research may be proposed to families.</p>
       </div>
     </div>
 
@@ -5120,7 +5120,7 @@ PILOT_GIVE = [
 ]
 PILOT_GET = [
     ("The figures for your own country", "Most associations have never had them. You would be able to say how many, where, and with what care, and say it with a source."),
-    ("A seat on the research question", "Which studies may be put to your families at all is decided by the member associations and the DysNet board together, not by whoever asks first."),
+    ("Research has one way in", "A researcher asks for a study, and the study needs regulatory approval. DysNet’s Chair then decides whether it may be put to your families, and each family still decides for itself."),
     ("Data your families own", "Each person holds their own account and decides what enters the registry. Your relationship with them is not mediated by us."),
     ("An infrastructure you do not run", "No servers, no hosting contract, no data protection officer to recruit. That burden sits with the technical partner."),
 ]
@@ -6170,7 +6170,7 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 
     <div class="tick"></div><p class="eyebrow">02 · What “patient-owned” changes</p>
     <h2 class="h2">The community holds the keys.</h2>
-    <p>In most registries, a hospital or a company decides what is collected and who may use it. In a patient-owned registry, each person keeps control of their own data, and the member associations and the DysNet board share the responsibility for which research may be proposed to families. Families contribute on explicit consent, can withdraw at any time, and the data serves care and research only; it is never bought or sold.</p>
+    <p>In most registries, a hospital or a company decides what is collected and who may use it. In a patient-owned registry, each person keeps control of their own data. DysNet’s Chair decides which research may be proposed to families, only when a researcher asks and once the study has regulatory approval. Families contribute on explicit consent, can withdraw at any time, and the data serves care and research only; it is never bought or sold.</p>
 
     <div class="tick"></div><p class="eyebrow">03 · For families</p>
     <h2 class="h2">Answer questions once, help every family after you.</h2>
@@ -6222,7 +6222,7 @@ PAGES["/privacy/"] = {
     <p class="eyebrow">Privacy · Articles 13 and 14 GDPR</p>
     <h1 class="display">We collect nothing unless you say yes.</h1>
     <p>This site has no advertising, no tracker that follows you elsewhere, no account and no form. The one thing it asks is whether we may count your visit, and a banner asks you once. Say no and nothing changes: every page and every register stays open either way. The registry runs as its own app, at registry.dysnet.org, and asks for each of its consents separately; section 05 is its notice. This page says what is processed, what our registers name, and how to exercise your rights. Questions go to <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>.</p>
-    <p class="annex-note">Version of 5 November 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. DysNet has not appointed a data protection officer. Health Data Safe’s officer answers for your Health Data Safe account at <a href="mailto:dpo.contact@healthdatasafe.org">dpo.contact@healthdatasafe.org</a>.</p>
+    <p class="annex-note">Version of 10 November 2026; earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>. The controller is DysNet Ideell Förening, organisation number 802444-3015, Nybodagatan 1, 171 42 Solna, Sweden, with an office at Rue du Chantier 2, B-1000 Brussels. DysNet’s data protection officer is Tobias Arndt, at <a href="mailto:tobias.arndt@dysnet.org">tobias.arndt@dysnet.org</a>. Health Data Safe’s officer answers for your Health Data Safe account at <a href="mailto:dpo.contact@healthdatasafe.org">dpo.contact@healthdatasafe.org</a>.</p>
 
     {opener("01", "The site", "What happens when you read a page.", toc="Reading a page")}
     <ul>
@@ -6253,7 +6253,7 @@ PAGES["/privacy/"] = {
     <ul>
       <li><strong>Two controllers, each for its own part.</strong> Health Data Safe, a Swiss non-profit foundation in Morges, is the controller of your account: it runs the account, you hold it, and you decide who may read it, under its own <a href="https://www.healthdatasafe.org/users/privacy/">privacy policy</a>. We are the controller of what we read from your account with your permission, and of what the registry’s server keeps. Health Data Safe is not our processor: it acts on your permissions, never on our instructions, and we cannot ask it to open, change or delete your account.</li>
       <li><strong>What we read.</strong> Your agreement to be counted lets us read the condition, chosen from the Orphanet list or written in your own words; the date of birth, or the expected date before a birth; your answer to each consent; the identifier of the account they come from; and, if you give them, the place where the mother lived at the start of the pregnancy and what you choose to show on the registry’s map. We never see your password, and we read nothing else in your account. These are health data. If you agree to be contacted about research, we also read the email address of your Health Data Safe account.</li>
-      <li><strong>Why, and on what basis.</strong> We read these data to count the people who live with dysmelia and to look for clusters of cases that research can investigate. We use your address only to ask you to sign back in, or to send you a new request such as a study asking for your consent, and we put a study to families only once the member associations and the board have agreed to it. Researchers never receive your address. Each purpose rests on your explicit consent (Article 9(2)(a) GDPR; Article 6(7) of the Swiss Federal Act on Data Protection). Each consent is a separate decision, and you can withdraw any of them at any time. For a child, a parent or guardian gives the consents in an account in the child’s name and holds that account until the child turns 18. Before birth, only the mother can register the child.</li>
+      <li><strong>Why, and on what basis.</strong> We read these data to count the people who live with dysmelia and to look for clusters of cases that research can investigate. We use your address only to ask you to sign back in, or to send you a new request such as a study asking for your consent, and we put a study to families only when a researcher has asked for it, the study has regulatory approval and DysNet’s Chair has agreed to it. Researchers never receive your address. Each purpose rests on your explicit consent (Article 9(2)(a) GDPR; Article 6(7) of the Swiss Federal Act on Data Protection). Each consent is a separate decision, and you can withdraw any of them at any time. For a child, a parent or guardian gives the consents in an account in the child’s name and holds that account until the child turns 18. Before birth, only the mother can register the child.</li>
       <li><strong>Where the data are, and who else handles them.</strong> Your answers stay in your Health Data Safe account, which Health Data Safe hosts in Switzerland. The registry app runs on a server at Gandi in France. Gandi acts as our processor, and the server keeps technical logs (your IP address, the time and the request) to run the service and protect it, which is our legitimate interest (Article 6(1)(f)). To display the questions, your browser also fetches public files from Health Data Safe and from GitHub, which see your IP address as they would for any web page. When you place the pregnancy point on a map, your browser also reaches two OpenStreetMap services, as explained below. The app keeps you signed in with two cookies on your device, which last up to a year and are deleted when you sign out. It uses no analytics and loads no advertising.</li>
       <li><strong>Who sees what.</strong> Our registry team alone reads your record. Member associations do not see records. A researcher receives nothing unless you say yes to their study, and then only the data that study names, for that study alone. We sell nothing, we give nothing to insurers or employers, and we offer nobody bulk access.</li>
       <li><strong>If you ask to be invited.</strong> If you ask us for an invitation to the registry, we use your email address to send it, because you asked (Article 6(1)(f)). The registry keeps how many invitations it sent, not your address; your request itself stays with our mail, as section 02 says. Member associations never give us their members’ addresses: an association that wants its members to join forwards our invitation itself.</li>

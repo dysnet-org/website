@@ -6205,6 +6205,7 @@ PAGES["/knowledge/guides/patient-owned-registry/"] = {
 #   services/map-publisher (no minimum per dot, republished every 900 s) and the home map's
 #   five-minute cache;
 # - the officer's address dpo@dysnet.org: compliance documents of 2026-11-11.
+# - the 14-month Analytics retention: the Google Analytics data retention setting (owner, 2026-11-11).
 # REGISTRY_MAP_OPEN only switches the line that says whether the app offers the place and the map.
 REGISTRY_MAP_STATUS = (
     "" if REGISTRY_MAP_OPEN else
@@ -6226,7 +6227,7 @@ PAGES["/privacy/"] = {
     {opener("01", "The site", "Reading a page reaches our host, and Google only if you accept.", toc="This site")}
     <ul>
       <li><strong>GitHub hosts the site.</strong> GitHub Pages serves every page from the United States. GitHub receives your IP address, the time, the page you ask for and your browser’s details, and uses them to deliver the page and protect the service. DysNet receives none of these data. This rests on our legitimate interest in running a website (Article 6(1)(f)).</li>
-      <li><strong>Google Analytics counts visits only if you accept.</strong> A banner asks once. If you accept, Google records the pages you view, the time, your approximate country, and your browser and device. It stores a random identifier in a cookie that lasts up to two years, so that several pages count as one visit. The site refuses Google’s advertising storage and ad personalisation. If you decline, Google’s script does not load and nothing is stored. This rests on your consent (Article 6(1)(a)).</li>
+      <li><strong>Google Analytics counts visits only if you accept.</strong> A banner asks once. If you accept, Google records the pages you view, the time, your approximate country, and your browser and device. It stores a random identifier in a cookie that lasts up to two years, so that several pages count as one visit. Google deletes the records linked to that identifier after 14 months, and only totals remain in our reports. The site refuses Google’s advertising storage and ad personalisation. If you decline, Google’s script does not load and nothing is stored. This rests on your consent (Article 6(1)(a)).</li>
       <li><strong>Your browser keeps two notes.</strong> It keeps your answer to the banner until you change it. On pages with a map, it keeps whether the information card is open or closed until you close the tab. Neither note holds an identifier, and neither reaches us.</li>
       <li><strong>Videos load only when you press play.</strong> YouTube then receives your IP address and device information under Google’s own privacy policy.</li>
       <li><strong>The home map asks the registry for its dots.</strong> On the home page, your browser fetches the registry’s public map from registry.dysnet.org, DysNet’s server at Gandi in France. The server keeps your IP address, the time and your browser in rolling technical logs. The map it returns names nobody. This rests on our legitimate interest in showing the registry on our map (Article 6(1)(f)).</li>

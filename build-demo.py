@@ -6221,8 +6221,8 @@ PAGES["/privacy/"] = {
     <div class="tick"></div>
     <p class="eyebrow">Privacy · Articles 13 and 14 GDPR</p>
     <h1 class="display">Privacy notice.</h1>
-    <p>The controller is DysNet Ideell Förening, organisation number 802444-3015, at Nybodagatan 1, 171 42 Solna, Sweden. DysNet also has an office at Rue du Chantier 2, B-1000 Brussels. You can write to us at <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>. Our data protection officer is Tobias Arndt, at <a href="mailto:dpo@dysnet.org">dpo@dysnet.org</a>. For your Health Data Safe account, Health Data Safe’s officer answers at <a href="mailto:dpo.contact@healthdatasafe.org">dpo.contact@healthdatasafe.org</a>.</p>
-    <p class="annex-note">Version of 11 November 2026. Earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>.</p>
+    <p>The controller is DysNet Ideell Förening, organisation number 802444-3015, at Nybodagatan 1, 171 42 Solna, Sweden. DysNet also has an office at Rue du Chantier 2, B-1000 Brussels. You can write to us at <a href="mailto:info@dysnet.org?subject=Data%20protection">info@dysnet.org</a>. Our data protection officer is Tobias Arndt, at <a href="mailto:dpo@dysnet.org">dpo@dysnet.org</a>. For your Health Data Safe account, Health Data Safe’s officer answers at <a href="mailto:dpo@healthdatasafe.org">dpo@healthdatasafe.org</a>.</p>
+    <p class="annex-note">Version of 12 November 2026. Earlier versions stay in <a href="https://github.com/dysnet-org/website">the public history of this site</a>.</p>
 
     {opener("01", "The site", "Reading a page reaches our host, and Google only if you accept.", toc="This site")}
     <ul>

@@ -2251,8 +2251,8 @@ def condition_coverage_html():
     Orphanet code by code, <strong>{direct_n} can be counted by name</strong>: {", ".join(by_name)}. {forms_n} more are
     reached through their specific forms, which is what Orphanet does with a group of disorders rather than a single disease.
     Every other one of those exists only inside a wider category, so the case is in the data and cannot be pulled back out of
-    it{unreachable}. The remaining {len(unchecked)} are the forms added to this page on 21 September 2026, and their lists
-    have not been read yet: the table says so rather than reporting a zero it has not earned. This is what
+    it{unreachable}. We have not read the lists of the remaining {len(unchecked)} yet, and the table
+    says so. This is what
     <a href="/voice/#demand-3">demand 3</a> is about, in one table.</p>
 """
 
@@ -4737,9 +4737,8 @@ PAGES["/registry/"] = {
     <p class="eyebrow" style="color:var(--dys-green-text)">Mission 2 · Flagship project</p>
     <h1 class="display">The limb-malformation registry owned by the people it describes.</h1>
     <p class="lede">A registry is a list of cases described the same way, so they can be counted and studied. This one is being
-    built by the associations that represent the families, and the data in it belongs to the people it describes, not to us.
-    Since 3 November 2026, anyone born with a limb difference, from any country, can take part at registry.dysnet.org.
-    This page says what it is for, who is building it, and where it has got to.</p>
+    built by the associations that represent the families, and the data in it belongs to the people it describes.
+    Now, anyone born with a limb difference, from any country, can take part.</p>
     <p><a class="btn btn-primary" href="{REGISTRY_JOIN}">Join the registry</a></p>
     <div id="toc-here"></div>
     {registry_audiences_html()}

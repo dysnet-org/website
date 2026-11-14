@@ -917,8 +917,8 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var list = document.getElementById("bib-list"), q = document.getElementById("bib-q"), sel = document.getElementById("bib-code"), chips = document.getElementById("bib-topics"), n = document.getElementById("bib-n");
   if (!list || !q) return;
   var topic = "", registry = "";   // registry: the register key a paper rests on, from ?registry=
-  var LIMIT = 60, expanded = false, more = document.getElementById("bib-more"), focus = document.getElementById("bib-focus");
-  var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to"), exclude = "";
+  var LIMIT = 60, expanded = false, more = document.getElementById("bib-more");
+  var yFrom = document.getElementById("bib-from"), yTo = document.getElementById("bib-to");
   // the page ships the first 60 entries as HTML; the full set travels as JSON and is rendered here on demand
   var dataEl = document.getElementById("bib-data"), DATA = null, LABELS = { codes: {}, topics: {} };
   try { var parsed = dataEl && dataEl.textContent.trim() ? JSON.parse(dataEl.textContent) : null; if (parsed) { DATA = parsed.items; LABELS = parsed; } } catch (e) { DATA = null; }
@@ -955,7 +955,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       DATA.forEach(function (r) {
         var y = parseInt(r.y, 10) || 0;
         var ok = (!text || r.s.indexOf(text) !== -1) && (!code || r.c.indexOf(code) !== -1) && (!topic || r.k.indexOf(topic) !== -1) &&
-                 (!exclude || r.c.indexOf(exclude) === -1) && (y >= from && y <= to) && (!registry || (r.r || []).indexOf(registry) !== -1);
+                 (y >= from && y <= to) && (!registry || (r.r || []).indexOf(registry) !== -1);
         if (ok) { k++; if (expanded || k <= LIMIT) out.push(itemHtml(r)); }
       });
       list.innerHTML = out.join("");
@@ -964,28 +964,16 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       var ok = (!text || it.getAttribute("data-text").indexOf(text) !== -1) &&
                (!code || it.getAttribute("data-codes").split(" ").indexOf(code) !== -1) &&
                (!topic || it.getAttribute("data-topics").split(" ").indexOf(topic) !== -1) &&
-               (!exclude || it.getAttribute("data-codes").split(" ").indexOf(exclude) === -1) &&
                (y >= from && y <= to) && (!registry || (it.getAttribute("data-registries") || "").split(" ").indexOf(registry) !== -1);
       if (ok) k++;
       it.hidden = !ok || (!expanded && k > LIMIT);
     });
     n.textContent = k;
-    writeFilterParams({ q: q.value.trim(), condition: code, topic: topic, exclude: exclude, registry: registry,
+    writeFilterParams({ q: q.value.trim(), condition: code, topic: topic, registry: registry,
                         from: yFrom && yFrom.value, to: yTo && yTo.value });
     if (more) { more.hidden = expanded || k <= LIMIT; more.textContent = "Show all " + k + " matching references"; }
-    if (focus) focus.querySelectorAll("button").forEach(function (b) {
-      var on = b.hasAttribute("data-exclude") ? b.getAttribute("data-exclude") === exclude : b.getAttribute("data-code") === code;
-      b.setAttribute("aria-pressed", on ? "true" : "false");
-    });
   }
   if (more) more.addEventListener("click", function () { expanded = true; apply(); });
-  if (focus) focus.querySelectorAll("button").forEach(function (b) {
-    b.addEventListener("click", function () {
-      if (b.hasAttribute("data-exclude")) { exclude = exclude === b.getAttribute("data-exclude") ? "" : b.getAttribute("data-exclude"); if (exclude && sel.value === exclude) sel.value = ""; }
-      else { sel.value = sel.value === b.getAttribute("data-code") ? "" : b.getAttribute("data-code"); if (sel.value && exclude === sel.value) exclude = ""; }
-      expanded = false; apply();
-    });
-  });
   q.addEventListener("input", function () { expanded = false; apply(); }); sel.addEventListener("change", function () { expanded = false; apply(); });
   [yFrom, yTo].forEach(function (el) { if (el) el.addEventListener("input", function () { expanded = false; apply(); }); });
   // a link can arrive with a condition, a theme, a search or a year range already chosen
@@ -994,7 +982,6 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
   var arrive = !!pre.get("q");
   if (pre.get("condition")) sel.value = pre.get("condition");
   if (pre.get("topic")) topic = pre.get("topic");
-  if (pre.get("exclude")) exclude = pre.get("exclude");
   if (pre.get("registry")) registry = pre.get("registry");
   if (pre.get("from") && yFrom) yFrom.value = pre.get("from");
   if (pre.get("to") && yTo) yTo.value = pre.get("to");
@@ -1006,7 +993,7 @@ function filterList(name) { var v = filterParams().get(name); return v ? v.split
       topic = on ? "" : b.getAttribute("data-topic"); if (!on) b.setAttribute("aria-pressed", "true"); expanded = false; apply();
     });
   });
-  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; exclude = ""; registry = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
+  document.getElementById("bib-reset").addEventListener("click", function () { q.value = ""; sel.value = ""; topic = ""; registry = ""; expanded = false; if (yFrom) yFrom.value = ""; if (yTo) yTo.value = ""; chips.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); apply(); });
   apply();
   // the full set travels as a file: until it lands, the 60 entries in the HTML are filtered in place
   var bibSrc = dataEl && dataEl.getAttribute("data-src");

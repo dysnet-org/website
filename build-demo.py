@@ -1263,7 +1263,7 @@ PAYLOADS = {}
 def bibliography_html():
     entries = BIB.get("entries", [])
     names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
-    # ORPHA:3312 carries the same papers as the thalidomide focus, which the menu already offers
+    # ORPHA:3312 carries the same papers as the "thal" condition, which the menu already offers
     codes_present = sorted({c for e in entries for c in e["codes"]} - {"3312"}, key=lambda c: names.get(c, c))
     topics = sorted({t for e in entries for t in e["topics"]}, key=lambda t: list(BIB_TOPIC_LABEL).index(t) if t in BIB_TOPIC_LABEL else 99)
     items, records = [], []
@@ -1293,11 +1293,9 @@ def bibliography_html():
     <div class="tick"></div>
     <p class="eyebrow">Bibliography · {len(entries)} references</p>
     <h2 class="h2">The literature, searchable.</h2>
-    <p>Behind every condition described on this site lies a body of research: who is affected, how often, what is known and what is still missing. This bibliography gathers the peer-reviewed publications on those limb differences, and on thalidomide, the drug behind the largest cluster of them, so that families, associations and researchers can start from the same shelf. Each reference is checked against PubMed and links to its DOI. Filter by condition, theme or year, or search.</p>
     <div class="bib-controls" id="bib-controls">
       <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals, a PMID or a DOI…" aria-label="Search the bibliography by title, author, journal, PMID or DOI">
       <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>
-      <div class="finder-chips bib-focus" id="bib-focus"><button type="button" data-code="thal" aria-pressed="false">Thalidomide only</button><button type="button" data-exclude="thal" aria-pressed="false">Without thalidomide</button><span class="bib-focus-help">the drug, its embryopathy and its survivors: show only those papers, or leave them out</span></div>
       <div class="finder-chips" id="bib-topics">{topic_chips}</div>
       <div class="bib-years"><label for="bib-from">Published from</label> <input type="number" id="bib-from" min="{years[0]}" max="{years[-1]}" placeholder="{years[0]}" inputmode="numeric" autocomplete="off" aria-label="From year"> <label for="bib-to">to</label> <input type="number" id="bib-to" min="{years[0]}" max="{years[-1]}" placeholder="{years[-1]}" inputmode="numeric" autocomplete="off" aria-label="To year"> <span class="bib-focus-help">{years[0]}–{years[-1]}</span></div>
       <p class="bib-count" role="status"><strong id="bib-n">{len(entries)}</strong> of {len(entries)} references · <button type="button" id="bib-reset">Reset</button></p>

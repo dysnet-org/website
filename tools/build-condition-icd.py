@@ -63,6 +63,13 @@ MANUAL_ICD10 = {
         {"code": "Q72.3", "title": "Congenital absence of foot and toe(s)", "relation": CLASSIFICATION, "source": CDC},
     ],
     "Polydactyly": [{"code": "Q69", "title": "Polydactyly", "relation": CLASSIFICATION, "source": WHO}],
+    "Amputation": [{"code": "Z89", "title": "Acquired absence of limb", "relation": CLASSIFICATION,
+                    "source": "WHO ICD-10, 2019 edition, chapter XXI block Z80-Z99"}],
+}
+# ICD-11 codes for a card Orphanet does not code, under the same rule
+MANUAL_ICD11 = {
+    "Amputation": [{"code": "QF00", "title": "Acquired absence of limb", "relation": CLASSIFICATION,
+                    "source": "WHO ICD-11 for Mortality and Morbidity Statistics, chapter 24"}],
 }
 MANUAL_NOTE = {
     "Brachydactyly": "ICD-10 has no code for brachydactyly as such; the shortened digit falls under other reduction deformities.",
@@ -100,10 +107,14 @@ def main():
         if name in rows and not rows[name].get("icd10"):
             rows[name]["icd10"] = codes
             print(f"  {name}: ICD-10 {', '.join(e['code'] for e in codes)} (from the classification, not Orphanet)")
+    for name, codes in MANUAL_ICD11.items():
+        if name in rows and not rows[name].get("icd11"):
+            rows[name]["icd11"] = codes
+            print(f"  {name}: ICD-11 {', '.join(e['code'] for e in codes)} (from the classification, not Orphanet)")
     for name, note in MANUAL_NOTE.items():
         if name in rows and not rows[name].get("icd10"):
             rows[name]["icd10_note"] = note
-    missing = [n for n in list(MANUAL_ICD10) + list(MANUAL_NOTE) if n not in rows]
+    missing = [n for n in list(MANUAL_ICD10) + list(MANUAL_ICD11) + list(MANUAL_NOTE) if n not in rows]
     if missing:
         raise SystemExit(f"a hand-curated ICD entry names a condition the site no longer has: {missing}")
 

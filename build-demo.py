@@ -979,9 +979,11 @@ def usual_names(name=None, code=None):
 # Searched but not shown (searchOnlyNames): a name that stigmatises ("lobster claw hand"), or one that
 # calls a congenital difference an amputation, which the page's own definition sets apart. A family who
 # types either still finds the card; the card does not repeat it. Left among the names shown, one stops
-# the build, here and not on a page a family reads.
+# the build, here and not on a page a family reads. The Amputation card is the one place where
+# "amputee" is the right name, so it alone may show it.
 USUAL_NOT_SHOWN = re.compile(r"amput|lobster|homard|aragosta", re.I)
-_NOT_SHOWN_LEFT = sorted({n for e in list(CARD_REF.values()) + list(FORM_REF.values())
+AMPUTATION = "Amputation"
+_NOT_SHOWN_LEFT = sorted({n for e in list(CARD_REF.values()) + list(FORM_REF.values()) if e.get("name") != AMPUTATION
                           for names in (e.get("usualNames") or {}).values() for n in names if USUAL_NOT_SHOWN.search(n)})
 if _NOT_SHOWN_LEFT:
     raise SystemExit(f"tools/conditions.json shows names it should only search; move them to searchOnlyNames: {_NOT_SHOWN_LEFT}")
@@ -1121,6 +1123,8 @@ def _one_in(rate):
 def condition_rate_html(name):
     """How common the condition is, in the words a family hears, with the figure behind it."""
     hit = CONDITION_RATE.get(name)
+    if name == AMPUTATION:   # a birth prevalence describes what is present at birth
+        return ""
     if not hit:
         return ('<p class="cond-rate cond-rate-none">No published birth prevalence'
                 '<span class="cc-rel" title="Neither our own table nor Orphanet publishes a figure for this '
@@ -1135,6 +1139,8 @@ def condition_rate_html(name):
 # because a missing figure is not a small one.
 CONDITIONS_BY_RATE = sorted(CONDITIONS, key=lambda c: (-CONDITION_RATE.get(c[0], (0,))[0], c[0]))
 RATED_N = sum(1 for c in CONDITIONS if c[0] in CONDITION_RATE)
+# the cards a birth prevalence can describe: everything present at birth, so every card but Amputation
+AT_BIRTH = [c for c in CONDITIONS_BY_RATE if c[0] != AMPUTATION]
 OMT = OMT_ALL.get("conditions", {})
 # A card whose registers were built for an older list is a card the page half-describes. The registers
 # a script fetches (classification, ICD) stop the build, because the fix is one command away and a card
@@ -3113,6 +3119,8 @@ def condition_omt_html(name):
     row = OMT.get(name) or {}
     group = row.get("group")
     if not group:
+        if name == AMPUTATION:
+            return '<p class="cond-omt">OMT <span class="omt-na">congenital anomalies only, so not classified here</span></p>'
         if row.get("confidence"):
             return f'<p class="cond-omt">OMT <span class="omt-na">upper limb only, so not classified here</span></p>'
         return ""
@@ -3299,6 +3307,8 @@ def _omt_row(name):
     """The Oberg-Manske-Tonkin position, or the reason there is none."""
     row = OMT.get(name) or {}
     if not row.get("group"):
+        if name == AMPUTATION:
+            return ("OMT", '<span class="cc-none">congenital anomalies only, so not classified here</span>', "", row["confidence"])
         return (("OMT", '<span class="cc-none">upper limb only, so not classified here</span>', "", row["confidence"])
                 if row.get("confidence") else None)
     bits = [row["group"]] + ([row["part"]] if row.get("part") else []) + ([row["axis"] + " axis"] if row.get("axis") else [])
@@ -3327,6 +3337,8 @@ def condition_codes_html(name, code, orpha_name):
     elif name == "Symbrachydactyly":
         rows.append(("Orphanet", f'<a href="{ORPHA_URL.format(1570)}" target="_blank" rel="noopener external">ORPHA:1570 &#8599;</a>',
                      "hands and feet only", "Orphanet has no entity for symbrachydactyly as such: 1570 is the rarer form affecting hands and feet together"))
+    elif name == AMPUTATION:
+        rows.append(("Orphanet", '<span class="cc-none">no code: Orphanet codes rare diseases, and an amputation happens after birth</span>', "", ""))
     else:
         rows.append(("Orphanet", '<span class="cc-none">no code: an umbrella term</span>', "", ""))
     rows += _icd_rows(name)
@@ -3702,8 +3714,8 @@ def site_figure_cell(name):
 def prevalence_html():
     rows = [f'<tr><th scope="row">{TOTAL_ROW[0]}</th><td><strong>{_rate_txt(DOT_RATES[0][1])}</strong>, about 1 in {_one_in(DOT_RATES[0][1])}<br>'
             f'<span class="cc-rel">{BASIS_LABEL["pooled"]}</span> <small>{DOT_RATES[0][2]}</small></td><td>{TOTAL_ROW[1]}</td><td>{TOTAL_ROW[2]}</td></tr>']
-    unrated = [c for c in CONDITIONS_BY_RATE if c[0] not in CONDITION_RATE]
-    for i, (name, desc, code, orpha_name, *_) in enumerate(CONDITIONS_BY_RATE):
+    unrated = [c for c in AT_BIRTH if c[0] not in CONDITION_RATE]
+    for i, (name, desc, code, orpha_name, *_) in enumerate(AT_BIRTH):
         if unrated and name == unrated[0][0]:
             rows.append(f'<tr class="annex-sep"><th scope="row" colspan="4">The {spell(len(unrated))} conditions below have no '
                         f'published birth prevalence from any source; they run in alphabetical order, and each blank row marks a gap in what has been counted.</th></tr>')
@@ -3737,7 +3749,7 @@ def prevalence_html():
     number of births and a 95% confidence interval wherever the paper states both, so that a rate resting on seven cases can be told
     from one resting on two thousand. Every figure in that column was checked against its original publication in September 2026.</p>
     <p>The rows run in the order of the condition cards, from the commonest to the rarest of the {RATED_N} conditions with a figure,
-    then the {len(CONDITIONS) - RATED_N} without one. Orphanet publishes a birth prevalence for {orphanet_n} of the {len(CONDITIONS)};
+    then the {len(AT_BIRTH) - RATED_N} without one. Orphanet publishes a birth prevalence for {orphanet_n} of the {len(AT_BIRTH)};
     our own table covers {sum(1 for c in CONDITIONS if c[0] in DOT_BASIS and DOT_BASIS[c[0]][0] != "none")}. <a href="/data/condition-prevalence.json">Download Orphanet&rsquo;s
     rows with their sources (JSON, CC BY 4.0)</a>.</p>
     <div class="annex-wrap">
@@ -4733,7 +4745,7 @@ PAGES["/registry/"] = {
     <h1 class="display">The limb-malformation registry owned by the people it describes.</h1>
     <p class="lede">A registry is a list of cases described the same way, so they can be counted and studied. This one is being
     built by the associations that represent the families, and the data in it belongs to the people it describes.
-    Now, anyone born with a limb difference, from any country, can take part.</p>
+    Now, anyone born with a limb difference, or who lost a limb after birth, can take part, from any country.</p>
     <p><a class="btn btn-primary" href="{REGISTRY_JOIN}">Join the registry</a></p>
     <div id="toc-here"></div>
     {registry_audiences_html()}
@@ -4832,7 +4844,7 @@ PAGES["/registry/"] = {
     <p class="eyebrow">Take part</p>
     <h2 data-toc="Become a pilot" class="h2">Your association can be a pilot.</h2>
     <p>The registry grows association by association. Write to <a href="mailto:info@dysnet.org">info@dysnet.org</a> to join the first wave.</p>
-    <p>Born with a limb difference yourself? <a href="{REGISTRY_JOIN}">Join the registry</a> directly, in about ten minutes.</p>
+    <p>Born with a limb difference, or living with an amputation? <a href="{REGISTRY_JOIN}">Join the registry</a> directly, in about ten minutes.</p>
   </div>
 </section>
 """,
@@ -6251,7 +6263,7 @@ PAGES["/privacy/"] = {
     <ul>
       <li><strong>Two controllers each answer for their own part.</strong> Health Data Safe, a Swiss non-profit foundation in Morges, controls your account under its own <a href="https://www.healthdatasafe.org/users/privacy/">privacy policy</a>. You hold the account and decide who may read it. DysNet controls what it reads from your account with your permission, and what the registry’s server keeps. Health Data Safe acts on your permissions and never on our instructions, so it is not our processor.</li>
       <li><strong>We read the answers you give the registry.</strong> These are your condition, chosen from the Orphanet list or written in your own words; the date of birth, or the expected date before a birth; your answer to each consent; and the identifier of your account. If you give them, we also read the place where the mother lived at the start of the pregnancy and your choices for the public map. If you agree to be contacted about research, we read the email address of your account. We never see your password, and we read nothing else. These are health data.</li>
-      <li><strong>We use them for research on dysmelia.</strong> We count the people who live with it and look for clusters of cases that research can investigate. With your research consent, we write to you to ask you to sign back in or to present a study. A study reaches families only when a researcher asks for it, the study has regulatory approval and DysNet’s Chair agrees. Researchers never receive your address.</li>
+      <li><strong>We use them for research on limb differences.</strong> We count the people born with one and the people who lost a limb after birth, and we look for clusters of cases of dysmelia that research can investigate. With your research consent, we write to you to ask you to sign back in or to present a study. A study reaches families only when a researcher asks for it, the study has regulatory approval and DysNet’s Chair agrees. Researchers never receive your address.</li>
       <li><strong>Each purpose rests on your explicit consent.</strong> This follows Article 9(2)(a) GDPR and Article 6(7) of the Swiss Federal Act on Data Protection. Each consent is a separate choice, and you can withdraw any of them at any time. For a child, a parent or guardian gives the consents in an account in the child’s name. Before birth, only the mother can register the child.</li>
       <li><strong>Your answers stay in your account.</strong> Health Data Safe hosts the account where you choose when you create it, in Switzerland or the United States. The registry app runs on a server at Gandi in France, which acts as our processor. The server keeps your IP address, the time and each request in rolling technical logs, to run and protect the service (Article 6(1)(f)). To show the questions, your browser fetches public files from Health Data Safe and from GitHub, which see your IP address. When you place the pregnancy point, your browser also reaches two OpenStreetMap services, described below.</li>
       <li><strong>The app keeps a few things on your device.</strong> Two cookies keep you signed in for up to a year and are deleted when you sign out. Your browser also keeps your language and your progress through the sign-up steps. The app uses no analytics and no advertising.</li>
@@ -6262,7 +6274,7 @@ PAGES["/privacy/"] = {
     <h3 id="registry-map">How the place of the pregnancy and the public map work</h3>
     {REGISTRY_MAP_STATUS}
     <ul>
-      <li><strong>The place of the pregnancy is optional.</strong> The registry asks where the mother lived at the start of the pregnancy, as an address, a click on a map or coordinates. We use the point to look for clusters of cases. Only our registry team sees it, and it is never published.</li>
+      <li><strong>The place of the pregnancy is optional.</strong> The registry asks where the mother lived at the start of the pregnancy, as an address, a click on a map or coordinates. We use the point to look for clusters of cases. Only our registry team sees it, and it is never published. The registry does not ask it, or offer the public map, to a person whose condition is an amputation.</li>
       <li><strong>Placing the point reaches OpenStreetMap.</strong> The map comes from OpenStreetMap’s tile server, which receives your IP address, the registry’s address and the area you look at. If you type an address, OpenStreetMap’s search service receives it with your IP address. Your account saves only the point. The OpenStreetMap Foundation runs both services under its own <a href="https://osmfoundation.org/wiki/Privacy_Policy">privacy policy</a>.</li>
       <li><strong>Appearing on the public map is a separate choice.</strong> It has its own consent: “I agree to appear on the public DysNet map”, or, for a child, “I agree that my child appears on the public DysNet map”. If you say no, you stay in the registry, and the place of the pregnancy stays unpublished either way.</li>
       <li><strong>You choose two settings before you agree.</strong> First, you choose how widely your point is blurred: from 1 to 5 km, or 10, 25 or 50 km. Second, you choose the title of your dot: your condition, roughly which limbs, or only that you live with a limb difference. A condition written in your own words always gets the last title. You see the exact words before you agree.</li>

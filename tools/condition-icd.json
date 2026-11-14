@@ -1,5 +1,5 @@
 {
- "built": "2026-10-19",
+ "built": "2026-11-14",
  "source": "Orphanet, Orphadata cross-referencing API (rd-cross-referencing), licence CC BY 4.0",
  "source_url": "https://api.orphadata.com/",
  "note": "ICD-10 and ICD-11 codes as Orphanet maps them, with the mapping relation. An exact mapping means the two concepts are the same thing; a narrower or broader mapping does not. Where Orphanet maps nothing, the code is taken from the classification itself or from the CDC surveillance manual, and each such entry carries its own source; those are held in tools/build-condition-icd.py so that a rebuild cannot drop them.",
@@ -462,6 +462,26 @@
     {
      "code": "LB77",
      "relation": "E (Exact mapping: the two concepts are equivalent)"
+    }
+   ]
+  },
+  "Amputation": {
+   "orphacode": null,
+   "note": "the site describes this condition without an ORPHAcode, so Orphanet has no mapping to give",
+   "icd10": [
+    {
+     "code": "Z89",
+     "title": "Acquired absence of limb",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-10, 2019 edition, chapter XXI block Z80-Z99"
+    }
+   ],
+   "icd11": [
+    {
+     "code": "QF00",
+     "title": "Acquired absence of limb",
+     "relation": "classification (not an Orphanet mapping)",
+     "source": "WHO ICD-11 for Mortality and Morbidity Statistics, chapter 24"
     }
    ]
   }

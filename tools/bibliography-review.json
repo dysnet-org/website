@@ -50079,6 +50079,33 @@
     "PubMed search"
    ],
    "status": "rejected: phantom limb query, Cochrane review replaced by its 2015 update (PMID 26284511)"
+  },
+  {
+   "id": "37705815",
+   "pmid": "37705815",
+   "title": "Outcomes of Composite Grafts for Pediatric Fingertip Amputations: A Systematic Review",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: amputation care query, a fingertip reattached by a graft, not a limb lost"
+  },
+  {
+   "id": "36998387",
+   "pmid": "36998387",
+   "title": "Prenatal radiographic evaluation of congenital transverse limb deficiencies: A scoping review",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: amputation care query, prenatal imaging of a limb difference, not amputation care"
+  },
+  {
+   "id": "33221184",
+   "pmid": "33221184",
+   "title": "Time to surgery and composite graft survival in paediatric fingertip amputations: A systematic literature review",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: amputation care query, a fingertip reattached by a graft, not a limb lost"
   }
  ]
 }

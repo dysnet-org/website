@@ -543,6 +543,31 @@
         "it": "Un piccolo osso in più in un dito della mano o del piede; il numero di dita è normale."
       },
       "_note": "One of the forms Orphanet files under syndactyly's group code (ORPHA:90025), given a card of its own."
+    },
+    {
+      "name": "Amputation",
+      "description": "a limb, or a part of one, lost after birth through an accident, an illness or an operation.",
+      "orphaCode": null,
+      "orphanetName": null,
+      "limbs": ["arms", "legs", "several"],
+      "type": ["reduction"],
+      "other": ["limbsonly"],
+      "genetic": ["nongenetic"],
+      "dysnetNames": {
+        "fr": "Amputation",
+        "it": "Amputazione"
+      },
+      "plain": {
+        "en": "An arm, a leg, a hand, a foot or fingers lost after birth, after an accident, an illness or an operation.",
+        "fr": "Un bras, une jambe, une main, un pied ou des doigts perdus après la naissance, à la suite d’un accident, d’une maladie ou d’une opération.",
+        "it": "Un braccio, una gamba, una mano, un piede o delle dita persi dopo la nascita, in seguito a un incidente, una malattia o un’operazione."
+      },
+      "usualNames": {
+        "en": ["limb loss", "amputee"],
+        "fr": ["perte d’un membre", "personne amputée"],
+        "it": ["perdita di un arto", "persona amputata"]
+      },
+      "_note": "Added on 14 November 2026 with the Chair's approval, so that people who lost a limb after birth can join the registry. No ORPHAcode: an acquired amputation is not a rare disease. The registry offers neither the pregnancy place nor the public map for it. build-demo.py lets this card, and only this one, show names containing 'amput'."
     }
   ],
   "registryOnly": [],

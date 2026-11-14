@@ -77,6 +77,10 @@
    "diagnosis": "cleft hand",
    "confidence": "named in the OMT literature at this position"
   },
+  "Amputation": {
+   "group": null,
+   "confidence": "OMT classifies congenital anomalies only, and an amputation happens after birth"
+  },
   "Fibular hemimelia": {
    "group": null,
    "confidence": "OMT classifies the upper limb only"

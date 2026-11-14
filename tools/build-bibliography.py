@@ -654,6 +654,46 @@ for pmid, topics in PHANTOM_SEED.items():
     for t in topics:
         add(pmid, None, t, None, via="DysNet")
 
+# ─── 8e. Amputation care for families ───────────────────────────────────────────────────────
+# What a family facing an amputation reads: children and young people with an amputation, acquired or
+# chosen for a congenital limb difference, the choice between amputation and reconstruction or limb
+# salvage, the surgery, the prosthesis and rehabilitation, and how children and parents adjust. Two
+# sources, as in 8d: a fixed title-level query on systematic reviews, meta-analyses and guidelines,
+# and landmark papers chosen by hand. Every entry is tagged "clinical"; a title may add a theme.
+# Every PMID below was checked in PubMed on 14 November 2026.
+AMP_CARE_QUERY = (
+    '((amputation[ti] OR amputations[ti] OR amputee[ti] OR amputees[ti] OR "limb loss"[ti] OR "limb salvage"[ti] '
+    'OR rotationplasty[ti] OR "limb deficiency"[ti] OR "limb deficiencies"[ti] OR "limb difference"[ti] OR "limb differences"[ti]) '
+    'OR (prosthe*[ti] AND (limb[ti] OR limbs[ti] OR extremity[ti] OR arm[ti] OR leg[ti] OR hand[ti] OR amput*[ti]))) '
+    'AND ((child*[ti] OR paediatric[ti] OR pediatric[ti] OR adolescen*[ti] OR youth[ti] OR "young people"[ti] OR juvenile[ti] OR infant*[ti]) '
+    'OR ("fibular hemimelia"[tiab] OR "fibula hemimelia"[tiab] OR "fibular deficiency"[tiab] OR "proximal femoral focal deficiency"[tiab] '
+    'OR "congenital femoral deficiency"[tiab] OR "tibial hemimelia"[tiab] OR "congenital limb deficiency"[tiab] OR "congenital limb deficiencies"[tiab] '
+    'OR "congenital upper limb"[tiab] OR "congenital lower limb"[tiab])) '
+    'AND (meta-analysis[pt] OR systematic review[pt] OR "systematic review"[ti] OR "meta-analysis"[ti] OR practice guideline[pt] '
+    'OR guideline[pt] OR "scoping review"[ti] OR "clinical practice guideline"[ti]) NOT protocol[ti] NOT "case reports"[pt]')
+AMP_CARE_REJECTED = {"33221184": "a fingertip reattached by a graft, not a limb lost",
+                     "37705815": "a fingertip reattached by a graft, not a limb lost",
+                     "36998387": "prenatal imaging of a limb difference, not amputation care"}
+AMP_CARE_SEED = ("9826419", "25479783", "10565642", "11130646", "19339563", "6643559", "10392651", "11860097",
+                 "17079391", "17979010", "8432874", "12477942", "16085622", "31419214")
+amp_ids = epost_ids(AMP_CARE_QUERY, retmax=500)
+print(f"amputation care query: {len(amp_ids)} PubMed records")
+amp_titles = {}
+amp_all = list(dict.fromkeys(amp_ids + list(AMP_CARE_SEED)))
+for i in range(0, len(amp_all), 100):
+    res = json.loads(eget(f"{E}/esummary.fcgi?db=pubmed&id={','.join(amp_all[i:i + 100])}&retmode=json"))["result"]
+    amp_titles.update({p: (res.get(p) or {}).get("title", "").rstrip(".") for p in amp_all[i:i + 100]})
+# papers no other section reached: these alone stay out of "causes" and out of the researcher register
+AMP_CARE_ONLY = set()
+for pmid in amp_all:
+    if pmid in AMP_CARE_REJECTED:
+        review.append({"id": pmid, "pmid": pmid, "title": amp_titles.get(pmid, ""), "members": ["PubMed search"],
+                       "status": f"rejected: amputation care query, {AMP_CARE_REJECTED[pmid]}"}); continue
+    if pmid not in seed:
+        AMP_CARE_ONLY.add(pmid)
+    for t in {"clinical"} | phantom_theme(amp_titles.get(pmid, "")):
+        add(pmid, None, t, None, via="DysNet" if pmid in AMP_CARE_SEED else "PubMed search")
+
 # metadata for all PMIDs (batched esummary)
 pmids = sorted(seed)
 entries = []
@@ -679,8 +719,9 @@ for i in range(0, len(pmids), 100):
         if pubtypes & {"Meta-Analysis", "Systematic Review"} or META_RX.search(title): s["topics"].add("meta")
         if "Review" in pubtypes: s["topics"].add("review")
         # "causes" on this site means the causes of a limb difference: the risk factors and
-        # mechanisms of phantom pain, which phantom-limb titles name, are not that
-        if CAUSES_RX.search(title) and "phantom" not in s["topics"]: s["topics"].add("causes")
+        # mechanisms of phantom pain, which phantom-limb titles name, are not that, nor are those of
+        # an amputation's outcome
+        if CAUSES_RX.search(title) and "phantom" not in s["topics"] and pmid not in AMP_CARE_ONLY: s["topics"].add("causes")
         entries.append({"pmid": pmid, "doi": doi, "title": title, "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
                         "journal": journal, "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
                         "pubtypes": sorted(pubtypes - {"Journal Article"}),
@@ -688,7 +729,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "phantom_query": PHANTOM_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "phantom_query": PHANTOM_QUERY, "amputation_care_query": AMP_CARE_QUERY, "amputation_care_only": sorted(AMP_CARE_ONLY), "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 # Which registry each paper rests on, matched against the register's phrases in title and abstract.

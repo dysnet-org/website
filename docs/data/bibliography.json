@@ -9,6 +9,33 @@
  "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))",
  "member_country_query": "(Australia[tiab] OR Austria[tiab] OR Austrian[tiab] OR Belgium[tiab] OR Belgian[tiab] OR Chile[tiab] OR Chilean[tiab] OR France[tiab] OR French[tiab] OR Germany[tiab] OR German[tiab] OR Ireland[tiab] OR Irish[tiab] OR Italy[tiab] OR Italian[tiab] OR Netherlands[tiab] OR Dutch[tiab] OR Norway[tiab] OR Norwegian[tiab] OR Spain[tiab] OR Spanish[tiab] OR Sweden[tiab] OR Swedish[tiab] OR \"United Kingdom\"[tiab] OR Britain[tiab] OR British[tiab] OR England[tiab] OR Scotland[tiab] OR Wales[tiab]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab])",
  "phantom_query": "(\"phantom limb\"[ti] OR \"phantom limbs\"[ti] OR \"phantom pain\"[ti] OR \"phantom limb pain\"[ti] OR \"phantom sensation\"[ti] OR \"phantom sensations\"[ti] OR \"residual limb pain\"[ti] OR \"stump pain\"[ti]) AND (meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) NOT protocol[ti] NOT \"case reports\"[pt]",
+ "registries_joined": "2026-11-05",
+ "amputation_care_query": "((amputation[ti] OR amputations[ti] OR amputee[ti] OR amputees[ti] OR \"limb loss\"[ti] OR \"limb salvage\"[ti] OR rotationplasty[ti] OR \"limb deficiency\"[ti] OR \"limb deficiencies\"[ti] OR \"limb difference\"[ti] OR \"limb differences\"[ti]) OR (prosthe*[ti] AND (limb[ti] OR limbs[ti] OR extremity[ti] OR arm[ti] OR leg[ti] OR hand[ti] OR amput*[ti]))) AND ((child*[ti] OR paediatric[ti] OR pediatric[ti] OR adolescen*[ti] OR youth[ti] OR \"young people\"[ti] OR juvenile[ti] OR infant*[ti]) OR (\"fibular hemimelia\"[tiab] OR \"fibula hemimelia\"[tiab] OR \"fibular deficiency\"[tiab] OR \"proximal femoral focal deficiency\"[tiab] OR \"congenital femoral deficiency\"[tiab] OR \"tibial hemimelia\"[tiab] OR \"congenital limb deficiency\"[tiab] OR \"congenital limb deficiencies\"[tiab] OR \"congenital upper limb\"[tiab] OR \"congenital lower limb\"[tiab])) AND (meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti] OR practice guideline[pt] OR guideline[pt] OR \"scoping review\"[ti] OR \"clinical practice guideline\"[ti]) NOT protocol[ti] NOT \"case reports\"[pt]",
+ "amputation_care_only": [
+  "10392651",
+  "10565642",
+  "11130646",
+  "12477942",
+  "16085622",
+  "17079391",
+  "17979010",
+  "19339563",
+  "26601876",
+  "28318419",
+  "30179062",
+  "31419214",
+  "36773469",
+  "37780543",
+  "37865851",
+  "38427511",
+  "40555419",
+  "41552051",
+  "42268432",
+  "42325495",
+  "6643559",
+  "8432874",
+  "9826419"
+ ],
  "entries": [
   {
    "pmid": "41918893",
@@ -552,8 +579,10 @@
    ],
    "codes": [],
    "topics": [
+    "clinical",
     "living",
     "meta",
+    "prosthetics",
     "review"
    ],
    "notes": [
@@ -626,6 +655,61 @@
    ],
    "via": [
     "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "42325495",
+   "doi": "10.1097/GOX.0000000000007567",
+   "title": "Outcomes Following Targeted Muscle Reinnervation in Pediatric Amputations: A Systematic Review",
+   "authors": [
+    "Giuffre MJ",
+    "Platt A",
+    "Kahl CK",
+    "et al."
+   ],
+   "journal": "Plastic and reconstructive surgery. Global open",
+   "year": "2026",
+   "volume": "14",
+   "pages": "e7567",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "42268432",
+   "doi": "10.1007/s00520-026-10695-x",
+   "title": "Patient-reported and caregiver-reported outcomes after limb salvage or amputation for pediatric bone and soft tissue sarcomas: a scoping review",
+   "authors": [
+    "Jibb L",
+    "Feliciano J",
+    "Zaffino I",
+    "et al."
+   ],
+   "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+   "year": "2026",
+   "volume": "34",
+   "pages": "",
+   "pubtypes": [
+    "Scoping Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living",
+    "meta"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -1431,6 +1515,35 @@
    "rests_on": []
   },
   {
+   "pmid": "41552051",
+   "doi": "10.7759/cureus.99434",
+   "title": "Age Matters: A Systematic Review of Limb-Salvage Surgery Outcomes in Pediatric Versus Adult Osteosarcoma",
+   "authors": [
+    "Alharbi MA",
+    "Aljeaid RF",
+    "Althebaity F",
+    "et al."
+   ],
+   "journal": "Cureus",
+   "year": "2025",
+   "volume": "17",
+   "pages": "e99434",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "40957485",
    "doi": "10.1016/j.neuroimage.2025.121463",
    "title": "An ALE meta-analysis of activation patterns in phantom limb pain: Novel insights into multisensory integration across movement tasks, facial stimulation, and pain-reducing interventions",
@@ -1743,6 +1856,33 @@
     "DysNet",
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40555419",
+   "doi": "10.1302/2046-3758.146.BJR-2024-0275.R3",
+   "title": "Development and clinical application of extendable prostheses in limb salvage surgery for primary malignant bone tumours in children : a systematic review of functional outcomes and complications",
+   "authors": [
+    "Tang N",
+    "Yang J",
+    "Huang S",
+    "et al."
+   ],
+   "journal": "Bone & joint research",
+   "year": "2025",
+   "volume": "14",
+   "pages": "578-588",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "prosthetics"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -2922,6 +3062,36 @@
    "rests_on": []
   },
   {
+   "pmid": "38427511",
+   "doi": "10.3233/PRM-230014",
+   "title": "Clinical outcomes measurement in pediatric lower limb prosthetics: A scoping review",
+   "authors": [
+    "Koenig KD",
+    "Hall MJ",
+    "Gormley C",
+    "et al."
+   ],
+   "journal": "Journal of pediatric rehabilitation medicine",
+   "year": "2024",
+   "volume": "17",
+   "pages": "147-165",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Scoping Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living",
+    "meta"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "39324160",
    "doi": "10.3389/fpubh.2024.1297426",
    "title": "Comparison of total prevalence, perinatal prevalence, and livebirth prevalence of birth defects in Hunan Province, China, 2016-2020",
@@ -4013,6 +4183,34 @@
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search for causes and risk factors of the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "37865851",
+   "doi": "10.1080/09638288.2023.2270908",
+   "title": "Quality of life in young people with limb loss: a systematic review",
+   "authors": [
+    "Maciver M",
+    "Dixon D",
+    "Powell D"
+   ],
+   "journal": "Disability and rehabilitation",
+   "year": "2024",
+   "volume": "46",
+   "pages": "4323-4334",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living",
+    "meta"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -5815,6 +6013,31 @@
    "rests_on": []
   },
   {
+   "pmid": "37780543",
+   "doi": "10.3892/ol.2023.14053",
+   "title": "Prognosis of limb‑salvage treatment of osteosarcoma in adolescent patients: a meta‑analysis",
+   "authors": [
+    "Wang L",
+    "Fan Y",
+    "Zhou Y",
+    "et al."
+   ],
+   "journal": "Oncology letters",
+   "year": "2023",
+   "volume": "26",
+   "pages": "466",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "38222129",
    "doi": "10.7759/cureus.50465",
    "title": "Review of Teratogenic Effects of Leflunomide, Accutane, Thalidomide, Warfarin, Tetracycline, and Angiotensin-Converting Enzyme Inhibitors",
@@ -5903,6 +6126,34 @@
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36773469",
+   "doi": "10.1016/j.ijotn.2023.100997",
+   "title": "Self-concept development in children with limb differences: A scoping review",
+   "authors": [
+    "Martens SA",
+    "Tuberty S",
+    "James MA"
+   ],
+   "journal": "International journal of orthopaedic and trauma nursing",
+   "year": "2023",
+   "volume": "49",
+   "pages": "100997",
+   "pubtypes": [
+    "Scoping Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living",
+    "meta"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -10059,6 +10310,7 @@
     "93323"
    ],
    "topics": [
+    "clinical",
     "meta"
    ],
    "notes": [
@@ -12032,6 +12284,33 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "31419214",
+   "doi": "10.1097/PHM.0000000000001213",
+   "title": "Clinical Practice Guidelines for the Rehabilitation of Lower Limb Amputation: An Update from the Department of Veterans Affairs and Department of Defense",
+   "authors": [
+    "Webster JB",
+    "Crunkhorn A",
+    "Sall J",
+    "et al."
+   ],
+   "journal": "American journal of physical medicine & rehabilitation",
+   "year": "2019",
+   "volume": "98",
+   "pages": "820-829",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, Non-P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -15060,6 +15339,34 @@
    "rests_on": []
   },
   {
+   "pmid": "28318419",
+   "doi": "10.1080/07347332.2017.1307894",
+   "title": "Preparing youth with cancer for amputation: A systematic review",
+   "authors": [
+    "Loucas CA",
+    "Brand SR",
+    "Bedoya SZ",
+    "et al."
+   ],
+   "journal": "Journal of psychosocial oncology",
+   "year": "2017",
+   "volume": "35",
+   "pages": "483-493",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "28736902",
    "doi": "10.1002/jum.14295",
    "title": "Pseudoamniotic Band Syndrome After Fetoscopic Laser Ablation of Placental Anastomoses for Twin-Twin Transfusion Syndrome: Two Case Reports and Systematic Review",
@@ -16566,6 +16873,33 @@
    "rests_on": []
   },
   {
+   "pmid": "26601876",
+   "doi": "10.1016/j.bjps.2015.08.035",
+   "title": "Pediatric lower extremity sarcoma reconstruction: A review of limb salvage procedures and outcomes",
+   "authors": [
+    "Piper M",
+    "Irwin C",
+    "Sbitany H"
+   ],
+   "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
+   "year": "2016",
+   "volume": "69",
+   "pages": "91-6",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "27100829",
    "doi": "10.1371/journal.pone.0152902",
    "title": "Peripheral Nerve Dysfunction in Middle-Aged Subjects Born with Thalidomide Embryopathy",
@@ -17132,6 +17466,32 @@
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "30179062",
+   "doi": "10.3109/2000656X.2015.1047781",
+   "title": "A systematic review of the applications of free tissue transfer for paediatric lower limb salvage following trauma",
+   "authors": [
+    "Jabir S",
+    "Sheikh F",
+    "Fitzgerald O'Connor E",
+    "et al."
+   ],
+   "journal": "Journal of plastic surgery and hand surgery",
+   "year": "2015",
+   "volume": "49",
+   "pages": "251-259",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -17809,6 +18169,7 @@
     "PubMed search on Canadian limb difference and child amputee care"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ],
    "rests_on": []
@@ -24979,6 +25340,33 @@
    "rests_on": []
   },
   {
+   "pmid": "19339563",
+   "doi": "10.2106/JBJS.G.01297",
+   "title": "Adult outcomes following amputation or lengthening for fibular deficiency",
+   "authors": [
+    "Walker JL",
+    "Knapp D",
+    "Minter C",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "2009",
+   "volume": "91",
+   "pages": "797-804",
+   "pubtypes": [
+    "Comparative Study"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "19938097",
    "doi": "10.1002/ajmg.a.32933",
    "title": "Amelia, cleft lip, and holoprosencephaly: a distinct entity",
@@ -28353,6 +28741,34 @@
    "rests_on": []
   },
   {
+   "pmid": "17979010",
+   "doi": "10.1080/03093640600994581",
+   "title": "Upper limb prosthesis use and abandonment: a survey of the last 25 years",
+   "authors": [
+    "Biddiss EA",
+    "Chau TT"
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2007",
+   "volume": "31",
+   "pages": "236-57",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "prosthetics",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "18173004",
    "doi": "",
    "title": "[Poland syndrome--clinical study]",
@@ -28916,6 +29332,35 @@
    "rests_on": []
   },
   {
+   "pmid": "17079391",
+   "doi": "10.2106/JBJS.E.01146",
+   "title": "Impact of prostheses on function and quality of life for children with unilateral congenital below-the-elbow deficiency",
+   "authors": [
+    "James MA",
+    "Bagley AM",
+    "Brasington K",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "2006",
+   "volume": "88",
+   "pages": "2356-65",
+   "pubtypes": [
+    "Multicenter Study",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "16308330",
    "doi": "10.1242/dev.02172",
    "title": "Increasing Fgf4 expression in the mouse limb bud causes polysyndactyly and rescues the skeletal defects that result from loss of Fgf8 function",
@@ -29299,7 +29744,9 @@
    ],
    "codes": [],
    "topics": [
-    "meta"
+    "clinical",
+    "meta",
+    "prosthetics"
    ],
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
@@ -29927,6 +30374,35 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "16085622",
+   "doi": "10.2106/JBJS.E.00032",
+   "title": "Long-term persistence of disability following severe lower-limb trauma. Results of a seven-year follow-up",
+   "authors": [
+    "MacKenzie EJ",
+    "Bosse MJ",
+    "Pollak AN",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "2005",
+   "volume": "87",
+   "pages": "1801-9",
+   "pubtypes": [
+    "Comparative Study",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -32354,6 +32830,35 @@
    "rests_on": []
   },
   {
+   "pmid": "12477942",
+   "doi": "10.1056/NEJMoa012604",
+   "title": "An analysis of outcomes of reconstruction or amputation after leg-threatening injuries",
+   "authors": [
+    "Bosse MJ",
+    "MacKenzie EJ",
+    "Kellam JF",
+    "et al."
+   ],
+   "journal": "The New England journal of medicine",
+   "year": "2002",
+   "volume": "347",
+   "pages": "1924-31",
+   "pubtypes": [
+    "Comparative Study",
+    "Evaluation Study",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "12099571",
    "doi": "10.7863/jum.2002.21.7.811",
    "title": "Antenatal sonographic diagnosis of isolated bilateral fibular hemimelia",
@@ -33787,12 +34292,14 @@
    "pubtypes": [],
    "codes": [],
    "topics": [
+    "clinical",
     "prosthetics"
    ],
    "notes": [
     "PubMed search on studies from the countries of our member associations"
    ],
    "via": [
+    "DysNet",
     "PubMed search"
    ],
    "rests_on": []
@@ -34678,6 +35185,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "11130646",
+   "doi": "10.2106/00004623-200012000-00006",
+   "title": "Fibular hemimelia: comparison of outcome measurments after amputation and lengthening",
+   "authors": [
+    "McCarthy JJ",
+    "Glancy GL",
+    "Chnag FM",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "2000",
+   "volume": "82",
+   "pages": "1732-5",
+   "pubtypes": [
+    "Comparative Study",
+    "Evaluation Study"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -36045,6 +36580,32 @@
    "rests_on": []
   },
   {
+   "pmid": "10392651",
+   "doi": "10.1177/026921559901300308",
+   "title": "Prosthesis rejection in children with a unilateral congenital arm defect",
+   "authors": [
+    "Postema K",
+    "van der Donk V",
+    "van Limbeek J",
+    "et al."
+   ],
+   "journal": "Clinical rehabilitation",
+   "year": "1999",
+   "volume": "13",
+   "pages": "243-9",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "prosthetics"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "9973085",
    "doi": "",
    "title": "Radiation-induced apoptosis and limb teratogenesis in embryonic mice",
@@ -36258,6 +36819,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "10565642",
+   "doi": "10.2106/00004623-199911000-00002",
+   "title": "Syme amputation for the treatment of fibular deficiency. An evaluation of long-term physical and psychological functional status",
+   "authors": [
+    "Birch JG",
+    "Walsh SJ",
+    "Small JM",
+    "et al."
+   ],
+   "journal": "The Journal of bone and joint surgery. American volume",
+   "year": "1999",
+   "volume": "81",
+   "pages": "1511-8",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "living"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -36867,6 +37456,31 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "9826419",
+   "doi": "10.5435/00124635-199811000-00004",
+   "title": "Lower-limb deficiencies and amputations in children",
+   "authors": [
+    "Krajbich JI"
+   ],
+   "journal": "The Journal of the American Academy of Orthopaedic Surgeons",
+   "year": "1998",
+   "volume": "6",
+   "pages": "358-67",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -42515,6 +43129,31 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "8432874",
+   "doi": "",
+   "title": "Effects of parental adjustment on the adaptation of children with congenital or acquired limb deficiencies",
+   "authors": [
+    "Varni JW",
+    "Setoguchi Y"
+   ],
+   "journal": "Journal of developmental and behavioral pediatrics : JDBP",
+   "year": "1993",
+   "volume": "14",
+   "pages": "13-20",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -51529,6 +52168,29 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "6643559",
+   "doi": "10.1302/0301-620X.65B5.6643559",
+   "title": "Rotationplasty of the lower limb for congenital defects of the femur",
+   "authors": [
+    "Torode IP",
+    "Gillespie R"
+   ],
+   "journal": "The Journal of bone and joint surgery. British volume",
+   "year": "1983",
+   "volume": "65",
+   "pages": "569-73",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -62440,6 +63102,5 @@
    ],
    "rests_on": []
   }
- ],
- "registries_joined": "2026-11-05"
+ ]
 }

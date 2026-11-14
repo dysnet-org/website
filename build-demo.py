@@ -5798,8 +5798,8 @@ MAP_HERO = """
     <button type="button" data-layer="registry" aria-pressed="true" hidden>DysNet registry</button>
     <button type="button" data-layer="zones" aria-pressed="true">Registry coverage</button>
     <button type="button" data-layer="people" aria-pressed="true">Estimated people</button>
-    <button type="button" data-layer="centres" aria-pressed="false">Care centres</button>
-    <button type="button" data-layer="teams" aria-pressed="false">Research teams</button>
+    <button type="button" data-layer="centres" aria-pressed="true">Care centres</button>
+    <button type="button" data-layer="teams" aria-pressed="true">Research teams</button>
     <button type="button" data-layer="offices" aria-pressed="false">DysNet offices</button>
     <button type="button" data-layer="cities" aria-pressed="true">City names</button>
   </div>

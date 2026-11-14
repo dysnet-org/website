@@ -1217,7 +1217,7 @@ for _e in BIB.get("entries", []):
         _card = CARD_FOR_CODE.get(str(_c))
         if _card and _card not in _e["codes"]:
             _e["codes"].append(_card)
-BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "teratogens": "Teratogens & exposures", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery"}
+BIB_TOPIC_LABEL = {"epidemiology": "Epidemiology", "causes": "Causes & risk factors", "teratogens": "Teratogens & exposures", "meta": "Meta-analyses & systematic reviews", "review": "Reviews & guidelines", "genetics": "Genetics", "living": "Living with a limb difference", "prosthetics": "Prosthetics & technology", "clinical": "Clinical care & surgery", "phantom": "Phantom limb"}
 
 
 def doi_html(doi):

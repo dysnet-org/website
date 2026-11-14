@@ -589,6 +589,71 @@ for i in range(0, len(cochrane_ids), 50):
         for c in codes: seed[pmid]["codes"].add(c)
 print(f"  kept after screening: {cochrane_kept}")
 
+# ─── 8d. Phantom limb ────────────────────────────────────────────────────────────────────────
+# Many people who lose a limb still feel it: phantom sensation, phantom limb pain, pain in the
+# residual limb. Some people born without a limb feel one too. These papers are about the absence
+# of a limb, whatever its cause, so they skip the condition screen and carry a tag of their own,
+# "phantom", which the bibliography page offers as a filter. Two sources: a fixed title-level query
+# on systematic reviews and meta-analyses (protocols and case reports left out), and the landmark
+# papers, chosen by hand, several of them on people born without a limb.
+# Every PMID below was checked in PubMed on 14 November 2026.
+PHANTOM_TERMS = ('"phantom limb"[ti] OR "phantom limbs"[ti] OR "phantom pain"[ti] OR "phantom limb pain"[ti] '
+                 'OR "phantom sensation"[ti] OR "phantom sensations"[ti] OR "residual limb pain"[ti] OR "stump pain"[ti]')
+PHANTOM_QUERY = (f'({PHANTOM_TERMS}) AND (meta-analysis[pt] OR systematic review[pt] OR "systematic review"[ti] OR "meta-analysis"[ti]) '
+                 'NOT protocol[ti] NOT "case reports"[pt]')
+# a Cochrane review replaced by its own update stays out, so the page shows the current version
+PHANTOM_SUPERSEDED = {"20464749": "Cochrane review replaced by its 2015 update (PMID 26284511)",
+                      "22161403": "Cochrane review replaced by its 2016 update (PMID 27737513)"}
+PHANTOM_SEED = {
+    # people born without a limb, or who lost one in childhood
+    "13783976": ("phantom",),
+    "13913053": ("phantom",),
+    "7805388": ("phantom",),
+    "7714344": ("phantom", "epidemiology"),
+    "9313643": ("phantom",),
+    "9822207": ("phantom", "epidemiology"),
+    "10801982": ("phantom",),
+    "16182566": ("phantom", "review"),
+    # how often, in adults after an amputation
+    "3991231": ("phantom", "epidemiology"),
+    "10863043": ("phantom", "epidemiology"),
+    "16213230": ("phantom", "epidemiology"),
+    # what happens in the brain
+    "1691874": ("phantom",),
+    "7777055": ("phantom",),
+    "17053811": ("phantom",),
+    "23463013": ("phantom",),
+    "10448212": ("phantom", "prosthetics"),
+    # treatment
+    "8637922": ("phantom", "clinical"),
+    "18032777": ("phantom", "clinical"),
+    "11460799": ("phantom", "clinical"),
+    "29856366": ("phantom", "clinical"),
+}
+
+
+def phantom_theme(title):
+    """The one main theme a phantom-limb review's title gives, in the screen's order of priority."""
+    hits = {t for t, rx in TOPIC_RX if rx.search(title)}
+    return next(({t} for t in ("epidemiology", "living", "prosthetics", "clinical") if t in hits), set())
+
+
+phantom_ids = epost_ids(PHANTOM_QUERY, retmax=500)
+print(f"phantom limb query: {len(phantom_ids)} PubMed records")
+for i in range(0, len(phantom_ids), 100):
+    batch = phantom_ids[i:i + 100]
+    res = json.loads(eget(f"{E}/esummary.fcgi?db=pubmed&id={','.join(batch)}&retmode=json"))["result"]
+    for pmid in batch:
+        title = (res.get(pmid) or {}).get("title", "").rstrip(".")
+        if pmid in PHANTOM_SUPERSEDED:
+            review.append({"id": pmid, "pmid": pmid, "title": title, "members": ["PubMed search"],
+                           "status": f"rejected: phantom limb query, {PHANTOM_SUPERSEDED[pmid]}"}); continue
+        for t in {"phantom"} | phantom_theme(title):
+            add(pmid, None, t, None, via="PubMed search")
+for pmid, topics in PHANTOM_SEED.items():
+    for t in topics:
+        add(pmid, None, t, None, via="DysNet")
+
 # metadata for all PMIDs (batched esummary)
 pmids = sorted(seed)
 entries = []
@@ -613,7 +678,9 @@ for i in range(0, len(pmids), 100):
         title = d.get("title", "").rstrip(".")
         if pubtypes & {"Meta-Analysis", "Systematic Review"} or META_RX.search(title): s["topics"].add("meta")
         if "Review" in pubtypes: s["topics"].add("review")
-        if CAUSES_RX.search(title): s["topics"].add("causes")
+        # "causes" on this site means the causes of a limb difference: the risk factors and
+        # mechanisms of phantom pain, which phantom-limb titles name, are not that
+        if CAUSES_RX.search(title) and "phantom" not in s["topics"]: s["topics"].add("causes")
         entries.append({"pmid": pmid, "doi": doi, "title": title, "authors": authors[:3] + (["et al."] if len(authors) > 3 else []),
                         "journal": journal, "year": year, "volume": d.get("volume", ""), "pages": d.get("pages", ""),
                         "pubtypes": sorted(pubtypes - {"Journal Article"}),
@@ -621,7 +688,7 @@ for i in range(0, len(pmids), 100):
     time.sleep(0.4)
 entries.extend(extra)
 entries.sort(key=lambda e: (-int(e["year"] or 0), e["title"]))
-out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "entries": entries}
+out = {"built": time.strftime("%Y-%m-%d"), "source": "PubMed IDs cited by Orphanet (Orphadata epidemiology) for the site's ORPHAcodes, publications verified on the site, DOIs published on member associations' websites, and a fixed title-level PubMed query on thalidomide embryopathy; metadata from NCBI E-utilities / Crossref", "thalidomide_query": THAL_QUERY, "systematic_review_query": META_QUERY, "causes_query": CAUSES_QUERY, "dart_query": "NLM DART filter AND limb terms", "cochrane_query": COCHRANE_QUERY, "canada_query": CANADA_QUERY, "member_country_query": COUNTRY_QUERY, "phantom_query": PHANTOM_QUERY, "entries": entries}
 (HERE / "bibliography.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
 # Which registry each paper rests on, matched against the register's phrases in title and abstract.

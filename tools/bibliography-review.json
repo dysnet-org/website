@@ -50061,6 +50061,24 @@
     "PubMed search"
    ],
    "status": "rejected: Cochrane query, not about the site's conditions"
+  },
+  {
+   "id": "22161403",
+   "pmid": "22161403",
+   "title": "Pharmacologic interventions for treating phantom limb pain",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: phantom limb query, Cochrane review replaced by its 2016 update (PMID 27737513)"
+  },
+  {
+   "id": "20464749",
+   "pmid": "20464749",
+   "title": "Transcutaneous electrical nerve stimulation (TENS) for phantom pain and stump pain following amputation in adults",
+   "members": [
+    "PubMed search"
+   ],
+   "status": "rejected: phantom limb query, Cochrane review replaced by its 2015 update (PMID 26284511)"
   }
  ]
 }

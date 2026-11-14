@@ -17,7 +17,8 @@ HERE = pathlib.Path(__file__).parent
 E = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 MIN_PAPERS = 2
 BIB = json.loads((HERE / "bibliography.json").read_text(encoding="utf-8"))
-ENTRIES = {e["pmid"]: e for e in BIB["entries"] if e.get("pmid")}
+# phantom-limb papers are on amputation in general, not on the conditions the register covers
+ENTRIES = {e["pmid"]: e for e in BIB["entries"] if e.get("pmid") and "phantom" not in e.get("topics", [])}
 
 INST_RX = re.compile(r"universit|hospital|h[oô]pital|hospices|klinik|clinic|institut|center|centre|\bCHU\b|\bCHRU\b|school of medicine|medical school|college|foundation|fondazione|ospedale|azienda|inserm|cnrs|\bnhs\b|children'?s|infirmary|policlinico|krankenhaus|akademi|academy|research council|\bMRC\b|karolinska|charit[eé]", re.I)
 DEPT_RX = re.compile(r"^(department|dept\.?|division|unit|service|laborator|lab\b|section|faculty|school|program|clinic for|klinik f[uü]r|abteilung|u\.?o\.?|servizio|unidad|servicio|équipe|team|group|graduate)", re.I)

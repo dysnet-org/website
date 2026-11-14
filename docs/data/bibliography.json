@@ -8,6 +8,7 @@
  "cochrane_query": "\"Cochrane Database Syst Rev\"[Journal] AND ((\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab]) OR (teratogen*[tiab] OR \"birth defect\"[tiab] OR \"birth defects\"[tiab] OR \"congenital malformation\"[tiab] OR \"congenital malformations\"[tiab] OR \"congenital anomaly\"[tiab] OR \"congenital anomalies\"[tiab]) AND (pregnan*[tiab] OR maternal[tiab] OR prenatal[tiab] OR fetal[tiab] OR foetal[tiab]))",
  "canada_query": "(\"Child Amputee Program\"[All Fields] OR \"Child Amputee Prosthetics Project\"[All Fields] OR (\"limb loss\"[tiab] AND \"limb difference\"[tiab])) OR ((Canada[tiab] OR Canadian[tiab] OR Alberta[tiab] OR Ontario[tiab] OR Quebec[tiab] OR \"British Columbia\"[tiab] OR Toronto[tiab] OR Montreal[tiab]) AND (\"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb reduction\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab] OR \"paediatric amputee\"[tiab] OR \"pediatric amputee\"[tiab] OR dysmelia[tiab]))",
  "member_country_query": "(Australia[tiab] OR Austria[tiab] OR Austrian[tiab] OR Belgium[tiab] OR Belgian[tiab] OR Chile[tiab] OR Chilean[tiab] OR France[tiab] OR French[tiab] OR Germany[tiab] OR German[tiab] OR Ireland[tiab] OR Irish[tiab] OR Italy[tiab] OR Italian[tiab] OR Netherlands[tiab] OR Dutch[tiab] OR Norway[tiab] OR Norwegian[tiab] OR Spain[tiab] OR Spanish[tiab] OR Sweden[tiab] OR Swedish[tiab] OR \"United Kingdom\"[tiab] OR Britain[tiab] OR British[tiab] OR England[tiab] OR Scotland[tiab] OR Wales[tiab]) AND (\"limb reduction\"[tiab] OR \"limb deficiency\"[tiab] OR \"limb deficiencies\"[tiab] OR \"limb difference\"[tiab] OR \"limb differences\"[tiab] OR \"limb defects\"[tiab] OR \"limb anomalies\"[tiab] OR \"limb malformations\"[tiab] OR dysmelia[tiab] OR amelia[tiab] OR phocomelia[tiab] OR hemimelia[tiab] OR ectrodactyly[tiab] OR symbrachydactyly[tiab] OR \"split hand\"[tiab] OR \"Poland syndrome\"[tiab] OR \"amniotic band\"[tiab] OR \"congenital hand\"[tiab] OR \"transverse limb\"[tiab] OR \"child amputee\"[tiab] OR \"child amputees\"[tiab])",
+ "phantom_query": "(\"phantom limb\"[ti] OR \"phantom limbs\"[ti] OR \"phantom pain\"[ti] OR \"phantom limb pain\"[ti] OR \"phantom sensation\"[ti] OR \"phantom sensations\"[ti] OR \"residual limb pain\"[ti] OR \"stump pain\"[ti]) AND (meta-analysis[pt] OR systematic review[pt] OR \"systematic review\"[ti] OR \"meta-analysis\"[ti]) NOT protocol[ti] NOT \"case reports\"[pt]",
  "entries": [
   {
    "pmid": "41918893",
@@ -347,6 +348,66 @@
    "notes": [
     "PubMed search on studies from the countries of our member associations"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "42390304",
+   "doi": "10.1080/09638288.2026.2694099",
+   "title": "Effects of non-invasive therapies for the treatment of phantom limb pain: a systematic review with meta-analysis and meta-regression of randomized controlled clinical trials",
+   "authors": [
+    "Bevacqua N",
+    "Navarro T",
+    "Rava E",
+    "et al."
+   ],
+   "journal": "Disability and rehabilitation",
+   "year": "2026",
+   "volume": "",
+   "pages": "1-28",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "41483283",
+   "doi": "10.1007/s11136-025-04149-w",
+   "title": "Effects of organized physical activity on quality of life and Phantom pain among adults with lower limb amputation: a systematic review and meta-analysis",
+   "authors": [
+    "Nahorna A",
+    "Baur H",
+    "Kyrychenko V",
+    "et al."
+   ],
+   "journal": "Quality of life research : an international journal of quality of life aspects of treatment, care and rehabilitation",
+   "year": "2026",
+   "volume": "35",
+   "pages": "19",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "living",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -998,6 +1059,64 @@
    "rests_on": []
   },
   {
+   "pmid": "42051602",
+   "doi": "10.3389/fresc.2026.1802455",
+   "title": "Treatment of residual and phantom limb pain using percutaneous ablation: a systematic review and meta-analysis",
+   "authors": [
+    "Murray KR",
+    "Pauli G",
+    "Catapano M"
+   ],
+   "journal": "Frontiers in rehabilitation sciences",
+   "year": "2026",
+   "volume": "7",
+   "pages": "1802455",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "43010871",
+   "doi": "10.2340/jrm.v58.46784",
+   "title": "XR serious games for phantom limb pain, neurofunctional recovery, and prosthetic adoption: a systematic review",
+   "authors": [
+    "Farhan M",
+    "Khan SJ",
+    "Yusuf KQ",
+    "et al."
+   ],
+   "journal": "Journal of rehabilitation medicine",
+   "year": "2026",
+   "volume": "58",
+   "pages": "jrm46784",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom",
+    "prosthetics"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "39660789",
    "doi": "10.1080/15513815.2024.2440465",
    "title": "A Case Report of 10q24.32 Microduplication Associated with Split Hand/Foot Malformation (SHFM) in Prenatal Diagnosis",
@@ -1024,6 +1143,35 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40862057",
+   "doi": "10.2147/IJGM.S526262",
+   "title": "A Dissociation Between Primary Motor Cortex Reorganization and Correlation with Pain Intensity in Phantom Limb Pain: A Systematic Review of fMRI Studies",
+   "authors": [
+    "Galvis I",
+    "Siepmann T",
+    "Tamayo A",
+    "et al."
+   ],
+   "journal": "International journal of general medicine",
+   "year": "2025",
+   "volume": "18",
+   "pages": "4601-4613",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -1224,6 +1372,35 @@
    "rests_on": []
   },
   {
+   "pmid": "41050313",
+   "doi": "10.3389/fresc.2025.1667659",
+   "title": "A systematic literature review to explore lived experiences with phantom limb phenomenon following a lower extremity amputation: a qualitative synthesis",
+   "authors": [
+    "Alabdullah AAH",
+    "Alyazidi SS",
+    "Asiri IA",
+    "et al."
+   ],
+   "journal": "Frontiers in rehabilitation sciences",
+   "year": "2025",
+   "volume": "6",
+   "pages": "1667659",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "living",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "39672801",
    "doi": "10.1002/pd.6709",
    "title": "Advances and Challenges in Prenatal Detection and Genetic Diagnosis of Upper Limb Anomalies: Analysis of a South London and Kent Cohort",
@@ -1248,6 +1425,35 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40957485",
+   "doi": "10.1016/j.neuroimage.2025.121463",
+   "title": "An ALE meta-analysis of activation patterns in phantom limb pain: Novel insights into multisensory integration across movement tasks, facial stimulation, and pain-reducing interventions",
+   "authors": [
+    "Loewenstein DSL",
+    "Özkan S",
+    "Vissers K",
+    "et al."
+   ],
+   "journal": "NeuroImage",
+   "year": "2025",
+   "volume": "320",
+   "pages": "121463",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -1311,6 +1517,66 @@
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search on studies from the countries of our member associations"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "38388020",
+   "doi": "10.1136/rapm-2023-105104",
+   "title": "Beyond traditional therapies: a network meta-analysis on the treatment efficacy for chronic phantom limb pain",
+   "authors": [
+    "Chung SM",
+    "Wang JC",
+    "Lin CR",
+    "et al."
+   ],
+   "journal": "Regional anesthesia and pain medicine",
+   "year": "2025",
+   "volume": "50",
+   "pages": "213-224",
+   "pubtypes": [
+    "Network Meta-Analysis",
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "38517393",
+   "doi": "10.1097/PXR.0000000000000344",
+   "title": "Botulinum toxin therapy for management of phantom and residual limb pain following amputation: A systematic review",
+   "authors": [
+    "Frengopoulos C",
+    "Neferu R",
+    "Pasquali M",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2025",
+   "volume": "49",
+   "pages": "38-46",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -1535,6 +1801,64 @@
    ],
    "via": [
     "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "41200450",
+   "doi": "10.3389/fneur.2025.1682650",
+   "title": "Effects of neuromodulation techniques on pain and depression in patients with phantom limb pain: a systematic review and meta-analysis",
+   "authors": [
+    "Tao XC",
+    "Ma S",
+    "Gong J",
+    "et al."
+   ],
+   "journal": "Frontiers in neurology",
+   "year": "2025",
+   "volume": "16",
+   "pages": "1682650",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "39849176",
+   "doi": "10.1007/s10072-025-08016-x",
+   "title": "Efficacy of repetitive transcranial magnetic stimulation for phantom limb pain- a meta analysis of randomized controlled trials",
+   "authors": [
+    "Chandni F",
+    "Savanti F",
+    "Kumar R",
+    "et al."
+   ],
+   "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology",
+   "year": "2025",
+   "volume": "46",
+   "pages": "2019-2026",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -1822,6 +2146,63 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "40439077",
+   "doi": "10.1177/17531934251345368",
+   "title": "Prevalence of residual limb pain and neuromas after upper extremity amputation: a systematic review and meta-analysis",
+   "authors": [
+    "List EB",
+    "Klieverik V",
+    "Martin E",
+    "et al."
+   ],
+   "journal": "The Journal of hand surgery, European volume",
+   "year": "2025",
+   "volume": "50",
+   "pages": "1440-1447",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "41041431",
+   "doi": "10.52965/001c.144735",
+   "title": "Preventive Approach to Phantom Limb Pain in Lower Limb Ablation Surgery: A Systematic Review",
+   "authors": [
+    "Johan MP",
+    "Singjie LC",
+    "Arifin J",
+    "et al."
+   ],
+   "journal": "Orthopedic reviews",
+   "year": "2025",
+   "volume": "17",
+   "pages": "144735",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -2170,6 +2551,35 @@
    "rests_on": []
   },
   {
+   "pmid": "41089633",
+   "doi": "10.47176/mjiri.39.92",
+   "title": "The Role of Preemptive Perioperative Analgesia in Prevention of Chronic Phantom Pain: A Systematic Review and Meta-analysis",
+   "authors": [
+    "Abrishami R",
+    "Azh N",
+    "Farhang Ranjbar M",
+    "et al."
+   ],
+   "journal": "Medical journal of the Islamic Republic of Iran",
+   "year": "2025",
+   "volume": "39",
+   "pages": "92",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "41274663",
    "doi": "10.1136/bmjpo-2025-003451",
    "title": "The aetiology distribution of birth defects based on the China Birth Cohort Study",
@@ -2287,6 +2697,37 @@
    "notes": [
     "PubMed search for causes and risk factors of the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "39992390",
+   "doi": "10.1007/s00101-025-01500-1",
+   "title": "[Systematic review of the effectiveness of local anaesthetics in the treatment of neuropathic pain or phantom pain]",
+   "authors": [
+    "Kastelik J",
+    "Schwerdtfeger K",
+    "Stolle A",
+    "et al."
+   ],
+   "journal": "Die Anaesthesiologie",
+   "year": "2025",
+   "volume": "74",
+   "pages": "128-135",
+   "pubtypes": [
+    "English Abstract",
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -2544,6 +2985,34 @@
    ]
   },
   {
+   "pmid": "39707720",
+   "doi": "10.1080/17581869.2024.2441650",
+   "title": "Cryoneurolysis for phantom limb pain: a systematic review",
+   "authors": [
+    "Brancaccio H",
+    "Goodwin B",
+    "DesRochers J",
+    "et al."
+   ],
+   "journal": "Pain management",
+   "year": "2024",
+   "volume": "14",
+   "pages": "673-680",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "38547384",
    "doi": "10.1002/uog.27649",
    "title": "Detection of non-cardiac fetal abnormalities on ultrasound at 11-14 weeks: systematic review and meta-analysis",
@@ -2607,6 +3076,34 @@
    "rests_on": [
     "AHDR"
    ]
+  },
+  {
+   "pmid": "37967831",
+   "doi": "10.1055/a-2188-3565",
+   "title": "Efficacy of Mirror Therapy in Patients with Phantom Pain after Amputation of a Lower Limb: A Systematic Literature Review",
+   "authors": [
+    "Scholl L",
+    "Schmidt A",
+    "Alfuth M"
+   ],
+   "journal": "Zeitschrift fur Orthopadie und Unfallchirurgie",
+   "year": "2024",
+   "volume": "162",
+   "pages": "566-577",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
   },
   {
    "pmid": "39822203",
@@ -3249,6 +3746,35 @@
    "rests_on": []
   },
   {
+   "pmid": "37616476",
+   "doi": "10.1177/15385744231197097",
+   "title": "Phantom Limb Pain and Painful Neuroma After Dysvascular Lower-Extremity Amputation: A Systematic Review and Meta-Analysis",
+   "authors": [
+    "Langeveld M",
+    "Bosman R",
+    "Hundepool CA",
+    "et al."
+   ],
+   "journal": "Vascular and endovascular surgery",
+   "year": "2024",
+   "volume": "58",
+   "pages": "142-150",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "38840299",
    "doi": "10.1002/pd.6619",
    "title": "Phenotypic and genotypic analysis of 11 fetal cases with Bardet-Biedl syndrome",
@@ -3274,6 +3800,32 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "38344263",
+   "doi": "10.1177/20494637231197002",
+   "title": "Physiotherapy: A potential and novel treatment approach for phantom limb pain in post-amputee patients - A systematic review",
+   "authors": [
+    "Gautam S",
+    "Srivastav AK",
+    "Sharma D"
+   ],
+   "journal": "British journal of pain",
+   "year": "2024",
+   "volume": "18",
+   "pages": "5-27",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -3747,6 +4299,63 @@
    "rests_on": []
   },
   {
+   "pmid": "37708332",
+   "doi": "10.1097/PXR.0000000000000288",
+   "title": "The effect of rehabilitation therapies on quality of life and function in individuals with phantom limb pain after lower-limb amputation: A systematic review",
+   "authors": [
+    "Gane E",
+    "Petersen P",
+    "Killalea T",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2024",
+   "volume": "48",
+   "pages": "431-440",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "living",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "37870365",
+   "doi": "10.1097/PXR.0000000000000293",
+   "title": "The effectiveness of graded motor imagery and its components on phantom limb pain in amputated patients: A systematic review",
+   "authors": [
+    "Rierola-Fochs S",
+    "Ochandorena-Acha M",
+    "Merchán-Baeza JA",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2024",
+   "volume": "48",
+   "pages": "158-169",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "38318695",
    "doi": "10.1080/09638288.2024.2307357",
    "title": "The impact of ageing on the health and wellbeing of people with thalidomide embryopathy: a comparison of the health impact with the general population",
@@ -3809,6 +4418,65 @@
    "rests_on": []
   },
   {
+   "pmid": "38321380",
+   "doi": "10.1186/s12883-024-03547-w",
+   "title": "The prevalence and risk factors for phantom limb pain: a cross-sectional survey",
+   "authors": [
+    "Limakatso K",
+    "Ndhlovu F",
+    "Usenbo A",
+    "et al."
+   ],
+   "journal": "BMC neurology",
+   "year": "2024",
+   "volume": "24",
+   "pages": "57",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "38286434",
+   "doi": "10.1055/s-0044-1779051",
+   "title": "Transcranial magnetic stimulation in the treatment of phantom limb pain: a systematic review",
+   "authors": [
+    "Knorst GRS",
+    "Souza PR",
+    "Araújo AGPD",
+    "et al."
+   ],
+   "journal": "Arquivos de neuro-psiquiatria",
+   "year": "2024",
+   "volume": "82",
+   "pages": "1-10",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "38834063",
    "doi": "10.1055/a-2285-8251",
    "title": "Transverse limb deficiency of the upper extremities",
@@ -3828,6 +4496,35 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36724203",
+   "doi": "10.1080/09638288.2023.2172222",
+   "title": "Use of virtual reality for the management of phantom limb pain: a systematic review",
+   "authors": [
+    "Hali K",
+    "Manzo MA",
+    "Koucheki R",
+    "et al."
+   ],
+   "journal": "Disability and rehabilitation",
+   "year": "2024",
+   "volume": "46",
+   "pages": "629-636",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -3859,6 +4556,36 @@
    "notes": [
     "PubMed search on studies from the countries of our member associations"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36341580",
+   "doi": "10.1177/15589447221130093",
+   "title": "Virtual and Augmented Reality in Management of Phantom Limb Pain: A Systematic Review",
+   "authors": [
+    "Eldaly AS",
+    "Avila FR",
+    "Torres-Guzman RA",
+    "et al."
+   ],
+   "journal": "Hand (New York, N.Y.)",
+   "year": "2024",
+   "volume": "19",
+   "pages": "545-554",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -4287,6 +5014,36 @@
    "rests_on": []
   },
   {
+   "pmid": "37261670",
+   "doi": "10.1007/s40263-023-01010-x",
+   "title": "Calcitonin in the Treatment of Phantom Limb Pain: A Systematic Review",
+   "authors": [
+    "Neumüller J",
+    "Lang-Illievich K",
+    "Brenna CTA",
+    "et al."
+   ],
+   "journal": "CNS drugs",
+   "year": "2023",
+   "volume": "37",
+   "pages": "513-521",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "37791865",
    "doi": "10.1177/1098612X231193557",
    "title": "Cardiomyopathy associated 5 (CMYA5) implicated as a genetic risk factor for radial hemimelia in Siamese cats",
@@ -4378,6 +5135,34 @@
    "notes": [
     "PubMed title search on thalidomide embryopathy"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36273725",
+   "doi": "10.1016/j.wneu.2022.10.060",
+   "title": "Comparative Effects of Interventions on Phantom Limb Pain: A Network Meta-Analysis",
+   "authors": [
+    "Wang J",
+    "Fan J",
+    "Gc R",
+    "et al."
+   ],
+   "journal": "World neurosurgery",
+   "year": "2023",
+   "volume": "170",
+   "pages": "e45-e56",
+   "pubtypes": [
+    "Network Meta-Analysis"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -4479,6 +5264,35 @@
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36094758",
+   "doi": "10.1002/ejp.2035",
+   "title": "Effect of mirror therapy in the treatment of phantom limb pain in amputees: A systematic review of randomized placebo-controlled trials does not find any evidence of efficacy",
+   "authors": [
+    "Guémann M",
+    "Olié E",
+    "Raquin L",
+    "et al."
+   ],
+   "journal": "European journal of pain (London, England)",
+   "year": "2023",
+   "volume": "27",
+   "pages": "3-13",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -5231,6 +6045,35 @@
    "rests_on": []
   },
   {
+   "pmid": "37214633",
+   "doi": "10.1080/24740527.2023.2188899",
+   "title": "The Efficacy of Graded Motor Imagery and Its Components on Phantom Limb Pain and Disability: A Systematic Review and Meta-Analysis",
+   "authors": [
+    "Limakatso K",
+    "Cashin AG",
+    "Williams S",
+    "et al."
+   ],
+   "journal": "Canadian journal of pain = Revue canadienne de la douleur",
+   "year": "2023",
+   "volume": "7",
+   "pages": "2188899",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "37165329",
    "doi": "10.1186/s12884-023-05660-z",
    "title": "The changing epidemiology of syndactyly in Chinese newborns: a nationwide surveillance-based study",
@@ -5841,6 +6684,32 @@
    "rests_on": []
   },
   {
+   "pmid": "34100428",
+   "doi": "10.4103/1673-5374.314288",
+   "title": "Central nervous system stimulation therapies in phantom limb pain: a systematic review of clinical trials",
+   "authors": [
+    "Garcia-Pallero MÁ",
+    "Cardona D",
+    "Rueda-Ruzafa L",
+    "et al."
+   ],
+   "journal": "Neural regeneration research",
+   "year": "2022",
+   "volume": "17",
+   "pages": "59-64",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "35633231",
    "doi": "10.31729/jnma.7486",
    "title": "Congenital Limb Deficiency: A Case Report",
@@ -5899,6 +6768,67 @@
    ],
    "via": [
     "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "34461084",
+   "doi": "10.1016/j.apmr.2021.07.810",
+   "title": "Effectiveness of Mirror Therapy for Phantom Limb Pain: A Systematic Review and Meta-analysis",
+   "authors": [
+    "Xie HM",
+    "Zhang KX",
+    "Wang S",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "2022",
+   "volume": "103",
+   "pages": "988-997",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "35042760",
+   "doi": "10.1136/bmjmilitary-2021-002018",
+   "title": "Efficacy of mirror therapy and virtual reality therapy in alleviating phantom limb pain: a meta-analysis and systematic review",
+   "authors": [
+    "Rajendram C",
+    "Ken-Dror G",
+    "Han T",
+    "et al."
+   ],
+   "journal": "BMJ military health",
+   "year": "2022",
+   "volume": "168",
+   "pages": "173-177",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -6485,6 +7415,34 @@
    "rests_on": []
   },
   {
+   "pmid": "32603198",
+   "doi": "10.1080/09638288.2020.1783377",
+   "title": "More than half of persons with lower limb amputation suffer from chronic back pain or residual limb pain: a systematic review with meta-analysis",
+   "authors": [
+    "Oosterhoff M",
+    "Geertzen JHB",
+    "Dijkstra PU"
+   ],
+   "journal": "Disability and rehabilitation",
+   "year": "2022",
+   "volume": "44",
+   "pages": "835-855",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "35650628",
    "doi": "10.1186/s13256-022-03418-3",
    "title": "Novel bilateral symmetrical congenital transverse upper and lower limb deficiencies in siblings in Ethiopia: two case reports",
@@ -6540,6 +7498,36 @@
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "35990396",
+   "doi": "10.1177/22925503211019646",
+   "title": "Postamputation Residual Limb Pain Severity and Prevalence: A Systematic Review and Meta-Analysis",
+   "authors": [
+    "Evans AG",
+    "Chaker SC",
+    "Curran GE",
+    "et al."
+   ],
+   "journal": "Plastic surgery (Oakville, Ont.)",
+   "year": "2022",
+   "volume": "30",
+   "pages": "254-268",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -6843,6 +7831,64 @@
    "notes": [
     "PubMed search for systematic reviews and meta-analyses on the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "35758072",
+   "doi": "10.23736/S1973-9087.22.07439-1",
+   "title": "Transcranial direct current stimulation in the management of phantom limb pain: a systematic review of randomized controlled trials",
+   "authors": [
+    "Navarro-López V",
+    "Del-Valle-Gratacós M",
+    "Fernández-Vázquez D",
+    "et al."
+   ],
+   "journal": "European journal of physical and rehabilitation medicine",
+   "year": "2022",
+   "volume": "58",
+   "pages": "738-748",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "36591552",
+   "doi": "",
+   "title": "Virtual and Augmented Reality-based Treatments for Phantom Limb Pain: A Systematic Review",
+   "authors": [
+    "Vassantachart AY",
+    "Yeo E",
+    "Chau B"
+   ],
+   "journal": "Innovations in clinical neuroscience",
+   "year": "2022",
+   "volume": "19",
+   "pages": "48-57",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -7319,6 +8365,36 @@
    ],
    "via": [
     "ERN [ITHACA] - ILIAD Rare Diseases patient registry: an International Library of Intellectual disability and Anomalies of Development (France)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "34308686",
+   "doi": "10.1177/02692155211027332",
+   "title": "Effects of mirror therapy on phantom limb sensation and phantom limb pain in amputees: A systematic review and meta-analysis of randomized controlled trials",
+   "authors": [
+    "Wang F",
+    "Zhang R",
+    "Zhang J",
+    "et al."
+   ],
+   "journal": "Clinical rehabilitation",
+   "year": "2021",
+   "volume": "35",
+   "pages": "1710-1721",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -7963,6 +9039,36 @@
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions",
     "PubMed search for causes and risk factors of the site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "33470746",
+   "doi": "10.1097/j.pain.0000000000002202",
+   "title": "Prevalence of residual limb pain and symptomatic neuromas after lower extremity amputation: a systematic review and meta-analysis",
+   "authors": [
+    "List EB",
+    "Krijgh DD",
+    "Martin E",
+    "et al."
+   ],
+   "journal": "Pain",
+   "year": "2021",
+   "volume": "162",
+   "pages": "1906-1913",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -9589,6 +10695,35 @@
    "rests_on": []
   },
   {
+   "pmid": "32176286",
+   "doi": "10.1093/pm/pnaa039",
+   "title": "Neuromodulation Techniques in Phantom Limb Pain: A Systematic Review and Meta-analysis",
+   "authors": [
+    "Pacheco-Barrios K",
+    "Meng X",
+    "Fregni F"
+   ],
+   "journal": "Pain medicine (Malden, Mass.)",
+   "year": "2020",
+   "volume": "21",
+   "pages": "2310-2322",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Research Support, N.I.H., Extramural",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "31931744",
    "doi": "10.1186/s12884-020-2720-x",
    "title": "Perinatal outcomes of infants with congenital limb malformations: an observational study from a tertiary referral center in Central Europe",
@@ -10194,6 +11329,37 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "33052924",
+   "doi": "10.1371/journal.pone.0240431",
+   "title": "The prevalence and risk factors for phantom limb pain in people with amputations: A systematic review and meta-analysis",
+   "authors": [
+    "Limakatso K",
+    "Bedwell GJ",
+    "Madden VJ",
+    "et al."
+   ],
+   "journal": "PloS one",
+   "year": "2020",
+   "volume": "15",
+   "pages": "e0240431",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -11390,6 +12556,33 @@
    ]
   },
   {
+   "pmid": "30222617",
+   "doi": "10.1097/MRR.0000000000000317",
+   "title": "Noninvasive neuromodulation techniques for the management of phantom limb pain: a systematic review of randomized controlled trials",
+   "authors": [
+    "Akyuz G",
+    "Giray E"
+   ],
+   "journal": "International journal of rehabilitation research. Internationale Zeitschrift fur Rehabilitationsforschung. Revue internationale de recherches de readaptation",
+   "year": "2019",
+   "volume": "42",
+   "pages": "1-10",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "31325247",
    "doi": "10.1002/mgg3.878",
    "title": "Novel GLI3 variant causes Greig cephalopolysyndactyly syndrome in three generations of a Lithuanian family",
@@ -11682,6 +12875,34 @@
    "rests_on": []
   },
   {
+   "pmid": "30862485",
+   "doi": "10.1016/j.brainresbull.2019.03.001",
+   "title": "Transcranial magnetic stimulation in subjects with phantom pain and non-painful phantom sensations: A systematic review",
+   "authors": [
+    "Nardone R",
+    "Versace V",
+    "Sebastianelli L",
+    "et al."
+   ],
+   "journal": "Brain research bulletin",
+   "year": "2019",
+   "volume": "148",
+   "pages": "1-9",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "31852110",
    "doi": "10.1097/MD.0000000000018302",
    "title": "Two case reports: Early detection of amniotic band syndrome by adhesion between hand and umbilical cord at 11 to 14 weeks' gestation",
@@ -11878,6 +13099,36 @@
    "rests_on": []
   },
   {
+   "pmid": "29856366",
+   "doi": "10.1172/JCI94003",
+   "title": "A review of current theories and treatments for phantom limb pain",
+   "authors": [
+    "Collins KL",
+    "Russell HG",
+    "Schumacher PJ",
+    "et al."
+   ],
+   "journal": "The Journal of clinical investigation",
+   "year": "2018",
+   "volume": "128",
+   "pages": "2168-2176",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "30419059",
    "doi": "10.1371/journal.pone.0207067",
    "title": "A systematic review on the impact of gestational Lyme disease in humans on the fetus and newborn",
@@ -11970,6 +13221,35 @@
    "notes": [
     "PubMed title search on thalidomide embryopathy"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "30407905",
+   "doi": "10.3310/hta22620",
+   "title": "Brain and spinal stimulation therapies for phantom limb pain: a systematic review",
+   "authors": [
+    "Corbett M",
+    "South E",
+    "Harden M",
+    "et al."
+   ],
+   "journal": "Health technology assessment (Winchester, England)",
+   "year": "2018",
+   "volume": "22",
+   "pages": "1-94",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -12252,6 +13532,36 @@
    "notes": [
     "PubMed search on studies from the countries of our member associations"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "29153043",
+   "doi": "10.1177/0309364617740230",
+   "title": "Effectiveness of mirror therapy, motor imagery, and virtual feedback on phantom limb pain following amputation: A systematic review",
+   "authors": [
+    "Herrador Colmenero L",
+    "Perez Marmol JM",
+    "Martí-García C",
+    "et al."
+   ],
+   "journal": "Prosthetics and orthotics international",
+   "year": "2018",
+   "volume": "42",
+   "pages": "288-298",
+   "pubtypes": [
+    "Comparative Study",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -13091,6 +14401,35 @@
    "rests_on": []
   },
   {
+   "pmid": "27780402",
+   "doi": "10.2217/pmt-2016-0041",
+   "title": "A systematic review on the treatment of phantom limb pain with spinal cord stimulation",
+   "authors": [
+    "Aiyer R",
+    "Barkin RL",
+    "Bhatia A",
+    "et al."
+   ],
+   "journal": "Pain management",
+   "year": "2017",
+   "volume": "7",
+   "pages": "59-69",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "28440356",
    "doi": "10.11152/mu-844",
    "title": "Abnormal ultrasound appearance of the amniotic membranes - diagnostic and significance: a pictorial essay",
@@ -13495,6 +14834,34 @@
    "notes": [
     "PubMed title search on thalidomide embryopathy"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "28339333",
+   "doi": "10.1080/09593985.2017.1288283",
+   "title": "Non-pharmacological conservative therapy for phantom limb pain: A systematic review of randomized controlled trials",
+   "authors": [
+    "Batsford S",
+    "Ryan CG",
+    "Martin DJ"
+   ],
+   "journal": "Physiotherapy theory and practice",
+   "year": "2017",
+   "volume": "33",
+   "pages": "173-183",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -14110,6 +15477,33 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "28728802",
+   "doi": "10.1016/j.rcp.2016.08.003",
+   "title": "[Psychotherapies for the Treatment of Phantom Limb Pain]",
+   "authors": [
+    "Cárdenas K",
+    "Aranda M"
+   ],
+   "journal": "Revista colombiana de psiquiatria",
+   "year": "2017",
+   "volume": "46",
+   "pages": "178-186",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -15007,6 +16401,34 @@
    "rests_on": []
   },
   {
+   "pmid": "27813692",
+   "doi": "10.1080/15360288.2016.1241334",
+   "title": "Memantine for the Treatment of Phantom Limb Pain: A Systematic Review",
+   "authors": [
+    "Loy BM",
+    "Britt RB",
+    "Brown JN"
+   ],
+   "journal": "Journal of pain & palliative care pharmacotherapy",
+   "year": "2016",
+   "volume": "30",
+   "pages": "276-283",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "27865944",
    "doi": "10.1016/j.ejogrb.2016.11.007",
    "title": "Misoprostol exposure during the first trimester of pregnancy: Is the malformation risk varying depending on the indication?",
@@ -15175,6 +16597,35 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "27737513",
+   "doi": "10.1002/14651858.CD006380.pub3",
+   "title": "Pharmacologic interventions for treating phantom limb pain",
+   "authors": [
+    "Alviar MJ",
+    "Hale T",
+    "Dungca M"
+   ],
+   "journal": "The Cochrane database of systematic reviews",
+   "year": "2016",
+   "volume": "10",
+   "pages": "CD006380",
+   "pubtypes": [
+    "Meta-Analysis",
+    "Research Support, Non-U.S. Gov't",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -15619,6 +17070,35 @@
    "notes": [
     "NLM's developmental and reproductive toxicology filter, screened for this site's conditions"
    ],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "27256539",
+   "doi": "10.1016/j.rehab.2016.04.001",
+   "title": "The effects of mirror therapy on pain and motor control of phantom limb in amputees: A systematic review",
+   "authors": [
+    "Barbin J",
+    "Seetha V",
+    "Casillas JM",
+    "et al."
+   ],
+   "journal": "Annals of physical and rehabilitation medicine",
+   "year": "2016",
+   "volume": "59",
+   "pages": "270-5",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
    "via": [
     "PubMed search"
    ],
@@ -16825,6 +18305,33 @@
    "rests_on": []
   },
   {
+   "pmid": "26284511",
+   "doi": "10.1002/14651858.CD007264.pub3",
+   "title": "Transcutaneous electrical nerve stimulation (TENS) for phantom pain and stump pain following amputation in adults",
+   "authors": [
+    "Johnson MI",
+    "Mulvey MR",
+    "Bagnall AM"
+   ],
+   "journal": "The Cochrane database of systematic reviews",
+   "year": "2015",
+   "volume": "8",
+   "pages": "CD007264",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "25626320",
    "doi": "",
    "title": "[Thalidomide teratogenicity and its direct target identification]",
@@ -17855,6 +19362,35 @@
    ],
    "via": [
     "Orphanet"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "24224475",
+   "doi": "10.1111/pme.12283",
+   "title": "Phantom limb pain: a systematic neuroanatomical-based review of pharmacologic treatment",
+   "authors": [
+    "McCormick Z",
+    "Chang-Chien G",
+    "Marshall B",
+    "et al."
+   ],
+   "journal": "Pain medicine (Malden, Mass.)",
+   "year": "2014",
+   "volume": "15",
+   "pages": "292-305",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -19041,6 +20577,33 @@
    "rests_on": []
   },
   {
+   "pmid": "23463013",
+   "doi": "10.1038/ncomms2571",
+   "title": "Phantom pain is associated with preserved structure and function in the former hand area",
+   "authors": [
+    "Makin TR",
+    "Scholz J",
+    "Filippini N",
+    "et al."
+   ],
+   "journal": "Nature communications",
+   "year": "2013",
+   "volume": "4",
+   "pages": "1570",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "24055736",
    "doi": "10.1016/j.niox.2013.09.002",
    "title": "Polymorphisms in the endothelial nitric oxide synthase gene in thalidomide embryopathy",
@@ -19177,6 +20740,37 @@
    "via": [
     "PubMed search",
     "Stichting NESOS (Netherlands)"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "23328317",
+   "doi": "10.1097/AJP.0b013e318261c9f9",
+   "title": "Residual limb pain is not a diagnosis: a proposed algorithm to classify postamputation pain",
+   "authors": [
+    "Clarke C",
+    "Lindsay DR",
+    "Pyati S",
+    "et al."
+   ],
+   "journal": "The Clinical journal of pain",
+   "year": "2013",
+   "volume": "29",
+   "pages": "551-62",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
    ],
    "rests_on": []
   },
@@ -24720,6 +26314,36 @@
    "rests_on": []
   },
   {
+   "pmid": "19657605",
+   "doi": "10.1007/s00508-009-1212-9",
+   "title": "[Mirror therapy for phantom limb pain--a systematic review]",
+   "authors": [
+    "Seidel S",
+    "Kasprian G",
+    "Sycha T",
+    "et al."
+   ],
+   "journal": "Wiener klinische Wochenschrift",
+   "year": "2009",
+   "volume": "121",
+   "pages": "440-4",
+   "pubtypes": [
+    "Comparative Study",
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "19497840",
    "doi": "10.1556/OH.2009.28641",
    "title": "[Thalidomide (Contergan) induced limb deficiency in Hungary?]",
@@ -26277,6 +27901,36 @@
    "rests_on": []
   },
   {
+   "pmid": "18032777",
+   "doi": "10.1056/NEJMc071927",
+   "title": "Mirror therapy for phantom limb pain",
+   "authors": [
+    "Chan BL",
+    "Witt R",
+    "Charrow AP",
+    "et al."
+   ],
+   "journal": "The New England journal of medicine",
+   "year": "2007",
+   "volume": "357",
+   "pages": "2206-7",
+   "pubtypes": [
+    "Comparative Study",
+    "Letter",
+    "Randomized Controlled Trial"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "17676592",
    "doi": "10.1002/bdra.20384",
    "title": "New cases of thalidomide embryopathy in Brazil",
@@ -26757,6 +28411,32 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "16182566",
+   "doi": "10.1016/j.concog.2005.07.003",
+   "title": "A critical review of congenital phantom limb cases and a developmental theory for the basis of body image",
+   "authors": [
+    "Price EH"
+   ],
+   "journal": "Consciousness and cognition",
+   "year": "2006",
+   "volume": "15",
+   "pages": "310-22",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -27395,6 +29075,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "17053811",
+   "doi": "10.1038/nrn1991",
+   "title": "Phantom limb pain: a case of maladaptive CNS plasticity?",
+   "authors": [
+    "Flor H",
+    "Nikolajsen L",
+    "Staehelin Jensen T"
+   ],
+   "journal": "Nature reviews. Neuroscience",
+   "year": "2006",
+   "volume": "7",
+   "pages": "873-81",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -28251,6 +29959,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "16213230",
+   "doi": "10.1016/j.apmr.2005.03.031",
+   "title": "Phantom pain, residual limb pain, and back pain in amputees: results of a national survey",
+   "authors": [
+    "Ephraim PL",
+    "Wegener ST",
+    "MacKenzie EJ",
+    "et al."
+   ],
+   "journal": "Archives of physical medicine and rehabilitation",
+   "year": "2005",
+   "volume": "86",
+   "pages": "1910-9",
+   "pubtypes": [
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -30744,6 +32480,34 @@
    "rests_on": []
   },
   {
+   "pmid": "11882771",
+   "doi": "10.1097/00002508-200203000-00003",
+   "title": "Evidence for the optimal management of acute and chronic phantom pain: a systematic review",
+   "authors": [
+    "Halbert J",
+    "Crotty M",
+    "Cameron ID"
+   ],
+   "journal": "The Clinical journal of pain",
+   "year": "2002",
+   "volume": "18",
+   "pages": "84-92",
+   "pubtypes": [
+    "Systematic Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "meta",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "11857622",
    "doi": "10.1002/pd.281",
    "title": "Fetal diaphragmatic hernia and upper limb anomalies suggest Brachmann-de Lange syndrome",
@@ -31949,6 +33713,33 @@
    "rests_on": []
   },
   {
+   "pmid": "11460799",
+   "doi": "10.1093/bja/87.1.107",
+   "title": "Phantom limb pain",
+   "authors": [
+    "Nikolajsen L",
+    "Jensen TS"
+   ],
+   "journal": "British journal of anaesthesia",
+   "year": "2001",
+   "volume": "87",
+   "pages": "107-16",
+   "pubtypes": [
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "11360287",
    "doi": "10.1002/pd.41",
    "title": "Prenatal diagnosis of limb-body wall complex with craniofacial defects, amniotic bands, adhesions and upper limb deficiency",
@@ -32606,6 +34397,34 @@
    "rests_on": []
   },
   {
+   "pmid": "10801982",
+   "doi": "10.1073/pnas.100510697",
+   "title": "Beyond re-membering: phantom sensations of congenitally absent limbs",
+   "authors": [
+    "Brugger P",
+    "Kollias SS",
+    "Müri RM",
+    "et al."
+   ],
+   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+   "year": "2000",
+   "volume": "97",
+   "pages": "6167-72",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "11021007",
    "doi": "",
    "title": "Bilateral ulnar hemimelia in Brachmann-de Lange syndrome: report of one case",
@@ -33211,6 +35030,32 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "10863043",
+   "doi": "10.1016/S0304-3959(00)00264-5",
+   "title": "Phantom pain and phantom sensations in upper limb amputees: an epidemiological study",
+   "authors": [
+    "Kooijman CM",
+    "Dijkstra PU",
+    "Geertzen JHB",
+    "et al."
+   ],
+   "journal": "Pain",
+   "year": "2000",
+   "volume": "87",
+   "pages": "33-41",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -33855,6 +35700,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "10448212",
+   "doi": "10.1038/9145",
+   "title": "Does use of a myoelectric prosthesis prevent cortical reorganization and phantom limb pain?",
+   "authors": [
+    "Lotze M",
+    "Grodd W",
+    "Birbaumer N",
+    "et al."
+   ],
+   "journal": "Nature neuroscience",
+   "year": "1999",
+   "volume": "2",
+   "pages": "501-2",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom",
+    "prosthetics"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -34998,6 +36871,34 @@
    "rests_on": []
   },
   {
+   "pmid": "9822207",
+   "doi": "10.1016/S0304-3959(98)00109-2",
+   "title": "Phantom limb sensations and phantom limb pain in child and adolescent amputees",
+   "authors": [
+    "Wilkins KL",
+    "McGrath PJ",
+    "Finley AG",
+    "et al."
+   ],
+   "journal": "Pain",
+   "year": "1998",
+   "volume": "78",
+   "pages": "7-12",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "9565073",
    "doi": "10.1002/jor.1100160109",
    "title": "Skeletal anomalies in the adriamycin-exposed prenatal rat: a model for VATER association",
@@ -36115,6 +38016,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "9313643",
+   "doi": "10.1093/brain/120.9.1603",
+   "title": "Phantom limbs in people with congenital limb deficiency or amputation in early childhood",
+   "authors": [
+    "Melzack R",
+    "Israel R",
+    "Lacroix R",
+    "et al."
+   ],
+   "journal": "Brain : a journal of neurology",
+   "year": "1997",
+   "volume": "120 ( Pt 9)",
+   "pages": "1603-20",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -37686,6 +39615,33 @@
    "rests_on": []
   },
   {
+   "pmid": "8637922",
+   "doi": "10.1098/rspb.1996.0058",
+   "title": "Synaesthesia in phantom limbs induced with mirrors",
+   "authors": [
+    "Ramachandran VS",
+    "Rogers-Ramachandran D"
+   ],
+   "journal": "Proceedings. Biological sciences",
+   "year": "1996",
+   "volume": "263",
+   "pages": "377-86",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, U.S. Gov't, P.H.S."
+   ],
+   "codes": [],
+   "topics": [
+    "clinical",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "8793311",
    "doi": "10.1016/0376-8716(96)01231-8",
    "title": "Teratogenic effects of ethanol in the Quackenbush special mouse",
@@ -38658,6 +40614,33 @@
    "rests_on": []
   },
   {
+   "pmid": "7777055",
+   "doi": "10.1038/375482a0",
+   "title": "Phantom-limb pain as a perceptual correlate of cortical reorganization following arm amputation",
+   "authors": [
+    "Flor H",
+    "Elbert T",
+    "Knecht S",
+    "et al."
+   ],
+   "journal": "Nature",
+   "year": "1995",
+   "volume": "375",
+   "pages": "482-4",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "8834150",
    "doi": "",
    "title": "Phocomelia",
@@ -38970,6 +40953,30 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "7714344",
+   "doi": "10.1016/0885-3924(94)00062-P",
+   "title": "The prevalence of phantom sensation and pain in pediatric amputees",
+   "authors": [
+    "Krane EJ",
+    "Heller LB"
+   ],
+   "journal": "Journal of pain and symptom management",
+   "year": "1995",
+   "volume": "10",
+   "pages": "21-9",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -39683,6 +41690,32 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "7805388",
+   "doi": "10.1016/s0010-9452(13)80343-7",
+   "title": "Phantom limb experiences in congenital limb-deficient adults",
+   "authors": [
+    "Saadah ES",
+    "Melzack R"
+   ],
+   "journal": "Cortex; a journal devoted to the study of the nervous system and behavior",
+   "year": "1994",
+   "volume": "30",
+   "pages": "479-85",
+   "pubtypes": [
+    "Case Reports",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -43679,6 +45712,32 @@
    "rests_on": []
   },
   {
+   "pmid": "1691874",
+   "doi": "10.1016/0166-2236(90)90179-e",
+   "title": "Phantom limbs and the concept of a neuromatrix",
+   "authors": [
+    "Melzack R"
+   ],
+   "journal": "Trends in neurosciences",
+   "year": "1990",
+   "volume": "13",
+   "pages": "88-92",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "codes": [],
+   "topics": [
+    "phantom",
+    "review"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "2338339",
    "doi": "10.1007/BF00210806",
    "title": "Phocomelia and additional anomalies in two sisters",
@@ -47406,6 +49465,34 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "3991231",
+   "doi": "10.1016/0304-3959(85)90090-9",
+   "title": "Immediate and long-term phantom limb pain in amputees: incidence, clinical characteristics and relationship to pre-amputation limb pain",
+   "authors": [
+    "Jensen TS",
+    "Krebs B",
+    "Nielsen J",
+    "et al."
+   ],
+   "journal": "Pain",
+   "year": "1985",
+   "volume": "21",
+   "pages": "267-278",
+   "pubtypes": [
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "codes": [],
+   "topics": [
+    "epidemiology",
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },
@@ -59218,6 +61305,28 @@
    "rests_on": []
   },
   {
+   "pmid": "13913053",
+   "doi": "10.1136/jnnp.25.1.69",
+   "title": "Phantom experiences following amputation in childhood",
+   "authors": [
+    "SIMMEL ML"
+   ],
+   "journal": "Journal of neurology, neurosurgery, and psychiatry",
+   "year": "1962",
+   "volume": "25",
+   "pages": "69-78",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
+   ],
+   "rests_on": []
+  },
+  {
    "pmid": "13929004",
    "doi": "10.1136/bmj.2.5317.1447",
    "title": "Phocomelia and internal defects due to thalidomide",
@@ -60194,6 +62303,29 @@
    ],
    "via": [
     "PubMed search"
+   ],
+   "rests_on": []
+  },
+  {
+   "pmid": "13783976",
+   "doi": "10.1212/wnl.11.10.905",
+   "title": "Phantoms in cases of congenital absence of limbs",
+   "authors": [
+    "WEINSTEIN S",
+    "SERSEN EA"
+   ],
+   "journal": "Neurology",
+   "year": "1961",
+   "volume": "11",
+   "pages": "905-11",
+   "pubtypes": [],
+   "codes": [],
+   "topics": [
+    "phantom"
+   ],
+   "notes": [],
+   "via": [
+    "DysNet"
    ],
    "rests_on": []
   },

@@ -1214,11 +1214,20 @@ BIB = json.loads(BIB_PATH.read_text(encoding="utf-8")) if BIB_PATH.exists() else
 # A paper tagged to one of the forms is a paper about the card that documents it, so the card's code
 # is added here rather than in the register: the tagging stays as the builder found it, and the site
 # decides what a card covers.
+# Amputation has no ORPHAcode, so its literature takes the code "amput", as thalidomide's takes "thal":
+# every paper whose title names a limb lost or removed, whatever the reason. A title that calls a
+# difference present at birth an amputation (amniotic band, "congenital hand amputation") describes
+# what the page's own definition sets apart, and stays out.
+AMPUTATION_TITLE = re.compile(r"\bamput|\blimb loss\b|\blimb salvage\b|rotationplasty|disarticulation|\bacquired limb", re.I)
+AMPUTATION_NOT = re.compile(r"congenital (\w+ )?amput|intra-?uterine|\bin utero\b|amniotic|constriction (ring|band)|pseudo-?amput|amputation-like", re.I)
+BIB_OWN_CODES = {"thal": "Thalidomide embryopathy", "amput": AMPUTATION}
 for _e in BIB.get("entries", []):
     # the thalidomide focus is the literature of the Thalidomide embryopathy card, ORPHA:3312
     if "thal" in _e.get("codes", []) and "3312" not in _e["codes"]:
         _e["codes"].append("3312")
-    _own = [c for c in _e.get("codes", []) if c != "thal"]
+    if AMPUTATION_TITLE.search(_e.get("title", "")) and not AMPUTATION_NOT.search(_e.get("title", "")) and "amput" not in _e["codes"]:
+        _e["codes"].append("amput")
+    _own = [c for c in _e.get("codes", []) if c not in BIB_OWN_CODES]
     for _c in _own:
         _card = CARD_FOR_CODE.get(str(_c))
         if _card and _card not in _e["codes"]:
@@ -1268,7 +1277,7 @@ PAYLOADS = {}
 
 def bibliography_html():
     entries = BIB.get("entries", [])
-    names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
+    names = dict(REG_CODE_NAMES, **BIB_OWN_CODES)
     # ORPHA:3312 carries the same papers as the "thal" condition, which the menu already offers
     codes_present = sorted({c for e in entries for c in e["codes"]} - {"3312"}, key=lambda c: names.get(c, c))
     topics = sorted({t for e in entries for t in e["topics"]}, key=lambda t: list(BIB_TOPIC_LABEL).index(t) if t in BIB_TOPIC_LABEL else 99)
@@ -1370,7 +1379,7 @@ REG_SPLIT["other"] = REG_SPLIT["total"] - REG_SPLIT["direct"]
 
 def researchers_html():
     teams = RESEARCHERS.get("teams", [])
-    names = dict(REG_CODE_NAMES, thal="Thalidomide embryopathy")
+    names = dict(REG_CODE_NAMES, **BIB_OWN_CODES)
     out, last = [], None
     for t in sorted(teams, key=lambda t: (t["country"] or "zz", -t["papers"], t["institution"])):
         c = t["country"] or "Country not stated"
@@ -3402,9 +3411,11 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     # gives its name: symbrachydactyly, under ORPHA:1570. Without this the thirteen papers tagged
     # 1570 were reachable from the bibliography's filter and from nowhere else.
     ref_code, anchor = card_anchor(name, code)
-    n_refs = sum(1 for e in BIB.get("entries", []) if str(ref_code) in e.get("codes", []))
-    refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={"thal" if str(ref_code) == "3312" else ref_code}">{n_refs} references &rarr;</a>'
-            if ref_code and n_refs >= 3 else "")
+    # Amputation has no ORPHAcode: its literature is under the bibliography's own code
+    bib_code = "amput" if name == AMPUTATION else ref_code
+    n_refs = sum(1 for e in BIB.get("entries", []) if str(bib_code) in e.get("codes", []))
+    refs = (f'<a class="cond-refs" href="/knowledge/bibliography/?condition={"thal" if str(bib_code) == "3312" else bib_code}">{n_refs} references &rarr;</a>'
+            if bib_code and n_refs >= 3 else "")
     # Three layers, in the order the two readers need them: what it is, how it is coded, what we hold
     # on it. The plain sentence stays at the top and in the page's own voice; the codes sit in a block
     # of their own that a family can skip in one glance; the footer is the reach of our own registers.
@@ -5768,7 +5779,7 @@ _drawn_statuses = ({a["status"] for a in REG_AREAS if a.get("map", True)}
 if _drawn_statuses - set(ZONE_LABELS):
     raise SystemExit(f"ZONE_LABELS has no words for the drawn status {_drawn_statuses - set(ZONE_LABELS)}")
 
-MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, thal="Thalidomide embryopathy").get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "registryUrl": REGISTRY_MAP_FEED, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
+MAP_DATA = json.dumps({"countries": MAP_COUNTRIES, "clinical": CLINICAL_BY_COUNTRY, "dotLadder": DOT_LADDER, "zoneLabels": ZONE_LABELS, "regBib": REG_BIB, "offices": MAP_OFFICES, "centres": [{k: c.get(k) for k in ("name", "name_local", "label", "city", "country", "type", "specialism", "url", "via", "via_verb", "lat", "lon")} for c in CARE_CENTRES], "teams": [{"name": t["institution"], "country": t["country"], "papers": t["papers"], "years": t["years"], "codes": [dict(REG_CODE_NAMES, **BIB_OWN_CODES).get(c, c) for c in t["codes"]], "authors": t["authors"], "rep": t["representative"], "address": t.get("address", ""), "contact": t.get("contact", ""), "lat": t["lat"], "lon": t["lon"]} for t in RESEARCHERS.get("teams", []) if t.get("lat")], "labels": MAP_LABELS, "rates": [[lab, r, src, _slug(lab), basis, note] for lab, r, src, basis, note in DOT_RATES], "registryUrl": REGISTRY_MAP_FEED, "zonesUrl": "/assets/map/registry-zones.geojson?v=" + __import__("hashlib").md5((pathlib.Path(__file__).parent / "docs/assets/map/registry-zones.geojson").read_bytes()).hexdigest()[:8]}, ensure_ascii=False).replace("</", "<\\/")
 
 # Injected into the home page at build time (placeholder __MAP_HERO__): it needs the map data
 # assembled below, which the home page body is written before. The map opens on the registry, its

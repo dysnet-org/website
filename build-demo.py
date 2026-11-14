@@ -1290,9 +1290,6 @@ def bibliography_html():
     topic_chips = "".join(f'<button type="button" data-topic="{t.replace(" ", "_")}" aria-pressed="false">{BIB_TOPIC_LABEL.get(t, t)}</button>' for t in topics)
     years = sorted({e["year"] for e in entries if e["year"]})
     return f"""
-    <div class="tick"></div>
-    <p class="eyebrow">Bibliography · {len(entries)} references</p>
-    <h2 class="h2">The literature, searchable.</h2>
     <div class="bib-controls" id="bib-controls">
       <input type="search" id="bib-q" autocomplete="off" placeholder="Search titles, authors, journals, a PMID or a DOI…" aria-label="Search the bibliography by title, author, journal, PMID or DOI">
       <select id="bib-code" autocomplete="off" aria-label="Filter by condition"><option value="">All conditions</option>{code_opts}</select>

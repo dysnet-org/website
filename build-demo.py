@@ -4794,6 +4794,12 @@ PAGES["/registry/"] = {
       <li><strong>No medical board, for now.</strong> Writing a research protocol and deciding which data are worth collecting are scientific acts. An association without a scientific committee is not equipped to perform them, and will not pretend to.</li>
       <li><strong>Declared data.</strong> What families report about themselves is precious and is not the same as clinician-verified data; the two must never be confused.</li>
     </ul>
+    <p>The precise word for what DysNet is building is <strong>cohort</strong>.</p>
+    <blockquote class="definition">
+      <p>“Cohorts are defined populations which, as a whole, are followed in an attempt to determine distinguishing subgroup characteristics.”</p>
+      <footer>Definition in Medical Subject Headings (MeSH), the vocabulary of the United States National Library of Medicine: scope note of the heading Cohort Studies, D015331. <a href="https://meshb.nlm.nih.gov/record/ui?ui=D015331" target="_blank" rel="noopener external">meshb.nlm.nih.gov</a></footer>
+    </blockquote>
+    <p>In plain words, a cohort is a group of people who share a condition and are followed over time. Ours gathers people born with a limb difference or living with an amputation, who chose to take part and can be contacted again, with their consent, when a study needs them.</p>
     <p><strong>What this initiative is</strong>: a lasting engagement between families, their associations and research initiatives, so that when a study needs the limb-difference community, the community is organised, consenting and reachable, and its data are held in a form research can use. That engagement is worth building only to the highest degree of scientific method and quality: predefined purposes, uniform data, documented quality controls and a long-term perspective, the very recommendations of the European experts cited above. Earning the word “registry” is the roadmap: a scientific committee, a written protocol, an agreed minimum data set, and a published quality plan.</p>
 
     {opener("02", "The answer", "An international, patient-owned data infrastructure: a registry in the making.", toc="Where it stands")}

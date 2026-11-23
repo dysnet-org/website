@@ -1,6 +1,6 @@
 {
- "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026, and each registry's stated scope; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing. \"label\" is the registry's official title and nothing else: no city, country or operating body appended, because the area, country and kind fields carry those. \"local\" holds the official title in the registry's own language where that is not English.",
+ "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026; the EUROCAT member list and the ICBDSR programme directory, read 22 November 2026; the National Birth Defects Prevention Network's state programme directory and data tables; each registry's own pages and publications, cited entry by entry; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing. \"label\" is the registry's official title and nothing else: no city, country or operating body appended, because the area, country and kind fields carry those. \"local\" holds the official title in the registry's own language where that is not English. An entry is listed when the registry shows data from 2022 or later, or appears in the current EUROCAT member list or ICBDSR programme directory. \"geounit\" draws a whole nation of the United Kingdom from Natural Earth's geonunit field. \"since\" holds a year only, because the map reads it as \"Collecting since\"; \"since_note\" keeps the detail behind that year.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -13,7 +13,8 @@
    ],
    "area": "Province of Antwerp",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179973"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179973",
+   "source_short": ""
   },
   {
    "registry": "Hainaut-Namur",
@@ -27,7 +28,8 @@
    ],
    "area": "Provinces of Hainaut and Namur",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179975"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/179975",
+   "source_short": ""
   },
   {
    "registry": "Finnish Register of Congenital Malformations",
@@ -84,7 +86,8 @@
    ],
    "area": "Counties Cork and Kerry",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175519"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175519",
+   "source_short": ""
   },
   {
    "registry": "Dublin",
@@ -100,7 +103,8 @@
    ],
    "area": "County Dublin",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175123"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175123",
+   "source_short": ""
   },
   {
    "registry": "South East of Ireland",
@@ -117,11 +121,12 @@
    ],
    "area": "South-East region",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175121"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/175121",
+   "source_short": ""
   },
   {
    "registry": "Campania",
-   "label": "Campania registry of congenital anomalies (EUROCAT)",
+   "label": "Campania registry of congenital anomalies",
    "orphanet_id": "53567",
    "country": "Italy",
    "iso3": "ITA",
@@ -137,7 +142,7 @@
   },
   {
    "registry": "ISMAC",
-   "label": "ISMAC, Sicilian registry of congenital anomalies (EUROCAT)",
+   "label": "ISMAC, Sicilian registry of congenital anomalies",
    "orphanet_id": "52840",
    "country": "Italy",
    "iso3": "ITA",
@@ -146,7 +151,8 @@
    ],
    "area": "Sicily",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/52840"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/52840",
+   "source_short": ""
   },
   {
    "registry": "Tuscan Registry",
@@ -194,7 +200,8 @@
    "orphanet_url": "https://www.orpha.net/en/research-trials/registry/181308",
    "match": [
     "Polish Registry of Congenital Malformation"
-   ]
+   ],
+   "source_short": ""
   },
   {
    "registry": "RENAC",
@@ -205,7 +212,8 @@
    "admin1": [],
    "area": "Portugal, national",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59379"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59379",
+   "source_short": ""
   },
   {
    "registry": "RACAV",
@@ -218,7 +226,8 @@
    ],
    "area": "Basque Country",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59706"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59706",
+   "source_short": ""
   },
   {
    "registry": "EUROCAT Vaud",
@@ -231,7 +240,8 @@
    ],
    "area": "Canton of Vaud",
    "status": "covered",
-   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/60053"
+   "orphanet_url": "https://www.orpha.net/en/research-trials/registry/60053",
+   "source_short": ""
   },
   {
    "registry": "ACASS",
@@ -263,7 +273,8 @@
    "match": [
     "Limb Loss and Preservation"
    ],
-   "since": "2022"
+   "since": "2022",
+   "source_short": ""
   },
   {
    "registry": "BDRI / BIND",
@@ -611,7 +622,8 @@
    "source": "Prevalence of congenital limb defects: data from birth defects registries in three provinces in Southern Thailand",
    "match": [
     "Southern Thailand"
-   ]
+   ],
+   "source_short": ""
   },
   {
    "registry": "HCAR",
@@ -793,7 +805,1812 @@
    ],
    "source_short": "Its member registries, listed here one by one from Orphanet",
    "since": "1979"
+  },
+  {
+   "registry": "WARDA",
+   "label": "Western Australian Register of Developmental Anomalies",
+   "country": "Australia",
+   "iso3": "AUS",
+   "admin1": [
+    "Western Australia"
+   ],
+   "area": "State of Western Australia, statewide; about 30,000 births a year",
+   "status": "covered",
+   "since": "1980",
+   "kind": "Statutory, statewide, population-based surveillance run by the Western Australian health system (Department of Health, hosted at King Edward Memorial Hospital). Cases up to age 6 are found actively and passively from birth, death and hospitalisation data, antenatal ultrasound, hospital unit logs and medical records, fetal medicine, cytogenetic laboratories, specialty clinics, paediatric surgery and pathology.",
+   "url_status": "000, checked 22 November 2026: no answer, link left out",
+   "source": "1) ICBDSR programme directory CSV: WARDA, Australia listed. 2) The Kids Research Institute page 'Evaluation of the Western Australian Register of Developmental Anomalies: thirty-five years of surveillance' https://www.thekids.org.au/our-research/reports-and-findings/2016/november/evaluation-of-the-western-australian-register-of-developmental-anomalies-thirty-five-years-of-surveillance/ (statutory, statewide, ~30,000 births/yr, since 1980, case finding sources). 3) a search engine listing for '2014 Annual Report of the WA Register of Developmental Abnormalities' https://fhhs.health.wa.gov.au/~/media/Files/Corporate/general-documents/WARDA/PDF/2014_Annual_Report_of_the_WA_Register_of_Developmental_Abnormalities.pdf (seen as a search engine listing only, not read).",
+   "source_short": "ICBDSR directory; The Kids Research Institute evaluation page (2016)"
+  },
+  {
+   "registry": "NSW Register of Congenital Conditions",
+   "label": "New South Wales Register of Congenital Conditions (formerly NSW Birth Defects Register)",
+   "country": "Australia",
+   "iso3": "AUS",
+   "admin1": [
+    "Lord Howe Island",
+    "New South Wales"
+   ],
+   "area": "State of New South Wales, statewide notification of congenital conditions detected in pregnancy or up to age 1",
+   "status": "covered",
+   "since": "1998",
+   "kind": "Mandatory notification register run by NSW Health: doctors, hospitals and laboratories notify congenital conditions in liveborn and stillborn babies, and in pregnancy, up to one year of age.",
+   "website": "https://www.health.nsw.gov.au/Reports/mothersbabies/2023/Pages/congenital-conditions.aspx",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) NSW Health, Mothers and Babies 2023, 'Congenital conditions' https://www.health.nsw.gov.au/Reports/mothersbabies/2023/Pages/congenital-conditions.aspx (read: 2022 data, category counts). 2) a search engine listing summaries on the register's origin (1998, formerly NSW Birth Defects Register) from AIHW 'State and territory congenital anomaly data sources' https://pp.aihw.gov.au/getmedia/e8a67407-a956-408e-877b-770d3aec4c1f/State-and-territory-congenital-anomaly-data-sources-3.pdf.aspx and the NSW Public Health Act regulation; those documents were not read.",
+   "source_short": "NSW Health, Mothers and Babies 2023, Congenital conditions",
+   "since_note": "1998 (as the NSW Birth Defects Register; notification duty from 1 January 1998)"
+  },
+  {
+   "registry": "NZCAR",
+   "label": "New Zealand Congenital Anomalies Registry (Te Tari Manaaki Haua)",
+   "country": "New Zealand",
+   "iso3": "NZL",
+   "area": "New Zealand, national: all births with a diagnosed anomaly born or treated in a public hospital",
+   "status": "covered",
+   "since": "1977",
+   "kind": "Registry operated by the Research Centre for Hauora and Health, Massey University, under contract with the health ministry (now stated as Health New Zealand | Te Whatu Ora). Cases come from the Ministry of Health hospital-events National Minimum Dataset, infant mortality and mortality systems, and anomalies reported in pregnancy terminations.",
+   "website": "https://www.healthnz.govt.nz/about-us/health-data/data-sets-and-collections/new-zealand-congenital-anomalies-registry-te-tari-manaaki-haua-nzcar",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) EHINZ NZCAR page https://www.ehinz.ac.nz/new-zealand-congenital-anomalies-registry/ (funding by Health NZ). 2) EHINZ FAQ https://www.ehinz.ac.nz/projects/new-zealand-congenital-anomalies-registry/faq/ (sources, coverage, 1977, ICBDSR member). 3) ICBDSR directory CSV (New Zealand listed with no programme name).",
+   "source_short": "EHINZ NZCAR page and FAQ; ICBDSR directory",
+   "since_note": "1977 (as the New Zealand Birth Defects Registry)"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "Bangladesh",
+   "iso3": "BGD",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "Bhutan",
+   "iso3": "BTN",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "India",
+   "iso3": "IND",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "Maldives",
+   "iso3": "MDV",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "Myanmar",
+   "iso3": "MMR",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "SEAR-NBBD",
+   "label": "WHO South-East Asia Region Newborn and Birth Defects Surveillance database",
+   "country": "Nepal",
+   "iso3": "NPL",
+   "area": "Tertiary hospitals in six countries; more than 4.6-4.7 million births recorded; about 50,000 infants with birth defects",
+   "status": "hospital",
+   "since": "2014",
+   "kind": "Hospital-based prospective surveillance entered into an online database developed by WHO SEARO with the US CDC; started 2014 with 44 hospitals in India, Bangladesh and Nepal, 221 hospitals by December 2016, now supported by six countries.",
+   "website": "https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) https://www.who.int/southeastasia/news/detail/02-03-2023-world-birth-defects-day-many-birth-defects-one-voice (six countries, 4.7 million births). 2) https://www.who.int/southeastasia/news/detail/02-03-2024-world-birth-defects-day-every-journey-matters (4.6 million births, four other countries have own systems). 3) https://www.who.int/publications/i/item/se-cah-29 (2014 start, 44 to 221 hospitals, Indonesia and Sri Lanka joined offline). 4) https://www.who.int/publications/i/item/sea-cah-37 (about 200 hospitals, 2019 Kathmandu meeting).",
+   "source_short": "WHO SEARO statements 2023-2024; SEA-CAH-29; SEA-CAH-37"
+  },
+  {
+   "registry": "Hunan BDSS",
+   "label": "Hunan Birth Defects Surveillance System",
+   "country": "China",
+   "iso3": "CHN",
+   "admin1": [
+    "Hunan"
+   ],
+   "area": "52 registered surveillance hospitals in Hunan; 847,755 births in 2016-2020",
+   "status": "hospital",
+   "kind": "Hospital-based surveillance run by the Hunan Provincial Health Commission; fetuses and births with birth defects are reported from registered hospitals.",
+   "source": "'Epidemiology of congenital polydactyly and syndactyly in Hunan Province, China', BMC Pregnancy Childbirth 2024 https://pmc.ncbi.nlm.nih.gov/articles/PMC10960469/ (read: system, 52 hospitals, 847,755 births). Scientific Reports 2023 article https://www.nature.com/articles/s41598-023-47741-1 (limb reduction; page needed login, not read).",
+   "source_short": "BMC Pregnancy Childbirth 2024 (PMC10960469)",
+   "since_note": "not established (data from 2010 in a 2010-2020 analysis)"
+  },
+  {
+   "registry": "JECS",
+   "label": "Japan Environment and Children's Study",
+   "country": "Japan",
+   "iso3": "JPN",
+   "area": "104,102 infants enrolled at 15 regional centres across Japan (pregnancies recruited January 2011 to March 2014)",
+   "status": "study",
+   "since": "2011",
+   "kind": "Nationwide birth cohort; congenital anomalies are transcribed from medical records at delivery and one month by trained staff on a list of 61 anomalies.",
+   "source": "Prevalence of Congenital Anomalies in the Japan Environment and Children's Study, J Epidemiol 2019 https://pmc.ncbi.nlm.nih.gov/articles/PMC6556438/ (read). 2024 follow-up seen in a search engine listing https://www.jstage.jst.go.jp/article/ehpm/29/0/29_23-00366/_article (not read).",
+   "source_short": "J Epidemiol 2019 (PMC6556438)",
+   "map": false
+  },
+  {
+   "registry": "CMVIS",
+   "label": "Cambodia Mine/ERW Victim Information System",
+   "country": "Cambodia",
+   "iso3": "KHM",
+   "area": "Cambodia, national: 65,125 explosive ordnance casualties recorded January 1979 to December 2025, of whom 9,101 amputated",
+   "status": "study",
+   "since": "1994",
+   "kind": "Casualty and victim database set up in 1994 by the Cambodian Red Cross with Handicap International Belgium and UNICEF, fully managed by the Cambodian Mine Action and Victim Assistance Authority since 2009; data gatherers interview local authorities, mine action agencies, families and casualties.",
+   "website": "https://www.cmaa.gov.kh/assets/cmvis/12-cmvis-monthly-report-for-dec-2025-(eng).pdf",
+   "url_status": "200, checked 22 November 2026",
+   "source": "CMVIS monthly report on explosive ordnance accidents, December 2025 https://www.cmaa.gov.kh/assets/cmvis/12-cmvis-monthly-report-for-dec-2025-(eng).pdf (read via pdftotext).",
+   "source_short": "CMAA CMVIS monthly report, December 2025",
+   "map": false,
+   "since_note": "1994 (cases back to 1979)"
+  },
+  {
+   "registry": "NCARDRS",
+   "label": "National Congenital Anomaly and Rare Disease Registration Service (England)",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "geounit": [
+    "England"
+   ],
+   "area": "England, all pregnancies with a congenital condition; the 2022 report describes babies born or delivered in 2022 (about 255 affected per 10,000 total births, one in 39)",
+   "status": "covered",
+   "since": "2015",
+   "kind": "National population-based registry of congenital anomalies and rare diseases, run within NHS England (National Disease Registration Service), which finds cases through hospital, laboratory and screening sources.",
+   "website": "https://digital.nhs.uk/data-and-information/publications/statistical/ncardrs-congenital-anomaly-statistics-annual-data",
+   "url_status": "403, checked 22 November 2026 (the site refuses automated checks)",
+   "source": "GOV.UK, NCARDRS congenital anomaly official statistics report 2022, https://www.gov.uk/government/statistics/ncardrs-congenital-anomaly-official-statistics-report-2022 (read: 2022 data, published 23 October 2025). EUROCAT member list, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en?page=2 (read: England NCARDRS is a full member). a search engine excerpt for the NHS Digital 2022 report page gave the 255.0 per 10,000 figure; that page returned HTTP 403 and was not read directly.",
+   "source_short": "GOV.UK NCARDRS 2022 statistics (23 Oct 2025); EUROCAT member list",
+   "since_note": "2015 as NCARDRS (continues the earlier regional BINOCAR registers)"
+  },
+  {
+   "registry": "CARIS",
+   "label": "Congenital Anomaly Register and Information Service for Wales",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "geounit": [
+    "Wales"
+   ],
+   "area": "All of Wales, about 35,000 births a year",
+   "status": "covered",
+   "since": "1998",
+   "kind": "Population-based register hosted by Public Health Wales, with multi-source case finding (antenatal clinics, delivery units, paediatric and orthopaedic services, cytogenetics, pathology, regional surgery centres).",
+   "website": "https://phw.nhs.wales/services-and-teams/caris/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT registry page for Wales, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/wales_en (area, births, start 1998, sources). gov.wales, CARIS annual report 1998-2025 release page, https://www.gov.wales/congenital-anomaly-register-and-information-service-caris-annual-report-1998-2024 (release 10 November 2026, data 1998-2025). CARIS annual report 2024 PDF, https://beta-phw.nhs.wales/app/uploads/sites/2/2026/04/CARIS-annual-report-2024.pdf (read as text: data 1998-2024, 745 cases registered for 2024, limb anomalies among main groups).",
+   "source_short": "EUROCAT Wales page; gov.wales CARIS 2025 release; CARIS annual report 2024"
+  },
+  {
+   "registry": "CARDRISS",
+   "label": "Congenital and Rare Conditions Registry Service for Scotland",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "geounit": [
+    "Scotland"
+   ],
+   "area": "All of Scotland: pregnancies ending in Scotland to resident mothers, about 1,100 affected babies a year (1,102 in 2024, 239.2 per 10,000 total births)",
+   "status": "covered",
+   "since": "2023",
+   "kind": "National register maintained by Public Health Scotland, with inclusion following EUROCAT criteria; it replaces the interim linked dataset SLiCCD from 2021.",
+   "website": "https://publichealthscotland.scot/publications/congenital-anomalies-in-scotland",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Public Health Scotland, Congenital conditions in Scotland, https://publichealthscotland.scot/publications/congenital-anomalies-in-scotland (read: release 27 October 2026, 2021-2024 data, 1,102 babies in 2024). EUROCAT member list, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en?page=3 (read: CARDRISS register full member). EUROCAT SLiCCD page, https://eu-rd-platform.jrc.ec.europa.eu/node/1204_pl (start 2000, 48,000-60,000 births a year, linked sources).",
+   "source_short": "Public Health Scotland CARDRISS release (27 Oct 2026); EUROCAT member list",
+   "since_note": "Register launched 2023; the SLiCCD linked dataset covers pregnancies from 2000"
+  },
+  {
+   "registry": "Funen",
+   "label": "EUROCAT Funen registry of congenital anomalies (Odense, Funen)",
+   "local": "Fyns Amts register over medfødte misdannelser",
+   "country": "Denmark",
+   "iso3": "DNK",
+   "admin1": [
+    "Syddanmark"
+   ],
+   "area": "Island of Funen and surrounding small islands, about 5,600 births a year in three hospitals",
+   "status": "covered",
+   "since": "1979",
+   "kind": "Population-based registry run from the paediatric department of Lillebaelt Hospital, Kolding; includes live births, fetal deaths from 20 weeks and terminations after prenatal diagnosis.",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT member list, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (read: Denmark Funen, full member). EUROCAT Funen history page, https://eu-rd-platform.jrc.ec.europa.eu/node/123_it (read: area, 1979, 5,600 births, update 1 March 2023). Frontiers in Pediatrics 2021 paper on multiple anomalies 1990-2014, https://www.frontiersin.org/articles/10.3389/fped.2021.614864 (named in a search engine listing, not read).",
+   "source_short": "EUROCAT member list and Funen history page",
+   "map": false
+  },
+  {
+   "registry": "EUROCAT Greenland",
+   "label": "Greenland congenital anomaly surveillance (EUROCAT affiliate)",
+   "country": "Greenland",
+   "iso3": "GRL",
+   "area": "All of Greenland, about 800 births a year (national hospital, 4 regional hospitals and 5 of 12 health care centres)",
+   "status": "covered",
+   "since": "1979",
+   "kind": "Population-based surveillance with compulsory case notification by hospitals and active case finding in discharge diagnoses, hospital records, birth notifications, death certificates and laboratory data.",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/greenland_en",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT member list page 4, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en?page=3 (read: Denmark, Greenland, affiliate member). EUROCAT Greenland page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/greenland_en (read: area, births, 1979 and 1983, sources).",
+   "source_short": "EUROCAT member list and Greenland registry page",
+   "since_note": "1979 (national registry); general anomaly surveillance including Greenland since 1983"
+  },
+  {
+   "registry": "Styria",
+   "label": "Styrian Malformation Registry (EUROCAT Styria)",
+   "local": "Steirisches Fehlbildungsregister",
+   "country": "Austria",
+   "iso3": "AUT",
+   "admin1": [
+    "Steiermark"
+   ],
+   "area": "Province of Styria (about 19.5 per cent of Austria), about 10,000 births a year, 13 per cent of Austrian births",
+   "status": "covered",
+   "since": "1986",
+   "kind": "Population-based registry at the Medical University of Graz, fed by hospital patient records, the human genetics institute and pathology charts; about half of the cases come from more than one source.",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/styria_en",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT member list page 1, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (read: Austria Styria, full member). EUROCAT Styria page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/styria_en (read: area, births, 1986, sources, update 17.04.2023).",
+   "source_short": "EUROCAT member list and Styria registry page",
+   "since_note": "1986 (births from 1 January 1985); EUROCAT member since 1995"
+  },
+  {
+   "registry": "Mainz",
+   "label": "Mainz Model, birth defects monitoring of Mainz and Rheinhessen (EUROCAT Mainz)",
+   "local": "Mainzer Modell",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [
+    "Rheinland-Pfalz"
+   ],
+   "area": "Mainz district and Rheinhessen, about 370,000 inhabitants and 3,300 births a year in three maternity hospitals; non-residents excluded",
+   "status": "covered",
+   "since": "1990",
+   "kind": "Population-based monitoring in which paediatricians examine each newborn in the first week, with pathology and prenatal diagnosis data for stillbirths and terminations.",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/mainz_en",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT member list page 5, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en?page=4 (read: Germany Mainz, affiliate member). EUROCAT Mainz page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/mainz_en (read: area, births, 1990, method). Bundesaerztekammer note on birth defect registers, https://www.bundesaerztekammer.de/fileadmin/user_upload/BAEK/Themen/Medizin_und_Ethik/Begleitartikel_SN_Fehlbildungen_FINAL.pdf (named in a search engine listing only).",
+   "source_short": "EUROCAT member list and Mainz registry page",
+   "map": false,
+   "since_note": "1990 (EUROCAT member since 1992)"
+  },
+  {
+   "registry": "SwedeAmp",
+   "label": "SwedeAmp, the Swedish Amputation and Prosthetics Registry",
+   "local": "Svenskt amputations- och protesregister",
+   "country": "Sweden",
+   "iso3": "SWE",
+   "area": "Sweden, national quality registry; 17 of 21 regions and 36 of 67 hospitals take part, covering 48.6 per cent of initial lower limb amputations in 2018-2023",
+   "status": "clinical",
+   "since": "2011",
+   "kind": "National quality registry for lower limb amputation and prosthetic care, funded by the Swedish Association of Local Authorities and Regions, with Region Skane as data controller; follows patients at 6, 12 and 24 months.",
+   "source": "Evaluation of the SwedeAmp database, Canadian Prosthetics and Orthotics Journal 7(2), November 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11844758/ (read: 2018-2023, 5,246 of 10,788 amputations, 17 of 21 regions, start 2011, lower limb only). Swedish Association of Local Authorities and Regions registry archive page, https://skr.se/en/kvalitetsregister/hittaregister/registerarkiv/amputationochprotes.44126.html (named in a search engine listing; returned 404 on 22 November 2026).",
+   "source_short": "Canadian Prosthetics and Orthotics Journal, Nov 2024 (SwedeAmp coverage)"
+  },
+  {
+   "registry": "DanAmp",
+   "label": "Danish Amputation Database (DanAmp)",
+   "local": "Dansk Amputationsdatabase",
+   "country": "Denmark",
+   "iso3": "DNK",
+   "area": "Denmark, national; 11 of 21 departments performing major lower-extremity amputations were entering data, seven more in talks",
+   "status": "clinical",
+   "since": "2022",
+   "kind": "Clinical quality database set up by a steering committee with all five Danish regions; surgeons enter data on surgery and later events, with patient questionnaires at 3, 6, 12, 24 and 36 months and written consent.",
+   "website": "https://ugeskriftet.dk/dmj/danish-amputation-database",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Danish Amputation Database article, Danish Medical Journal 2025, https://ugeskriftet.dk/dmj/danish-amputation-database (read: start 2022, 11 of 21 departments, outcome questionnaires, lower limb only, published 22 July 2025).",
+   "source_short": "Dan Med J 72(8), July 2025 (DanAmp validity study)"
+  },
+  {
+   "registry": "AMP-Registry",
+   "label": "Amputation Registry Germany (AMP-Registry), pilot in Baden-Wuerttemberg",
+   "local": "Amputationsregister Deutschland (AMP-Register)",
+   "country": "Germany",
+   "iso3": "DEU",
+   "admin1": [
+    "Baden-Württemberg"
+   ],
+   "area": "Pilot phase: Heidelberg study centre plus seven providers and centres in Baden-Wuerttemberg; 712 datasets collected, 498 in the first analysis",
+   "status": "in_progress",
+   "kind": "Registry run by the Medical-Technical Competence Centre for Orthopaedic Technology (Heidelberg university orthopaedic clinic with Fraunhofer IPA), funded by the state of Baden-Wuerttemberg from 2021.",
+   "source": "Update of the Amputation Registry Germany (AMP-Registry), Unfallchirurgie 2025, https://pmc.ncbi.nlm.nih.gov/articles/PMC11933216/ (read: MeTKo Heidelberg and Fraunhofer IPA, pilot sites, 712 datasets, legs only).",
+   "source_short": "Unfallchirurgie, 13 Feb 2025 (AMP-Registry update)",
+   "since_note": "Not stated (predecessor project AMP-Kompass; state funding 2021)"
+  },
+  {
+   "registry": "IMER",
+   "label": "Emilia-Romagna Registry of Birth Defects (IMER)",
+   "local": "Indagine sulle Malformazioni congenite in Emilia-Romagna",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Emilia-Romagna"
+   ],
+   "area": "Whole Emilia-Romagna region, all 22 delivery units, about 100% of births; about 30,000 births a year (30,321 in 2020; 30,406 in 2022).",
+   "status": "covered",
+   "since": "1978",
+   "kind": "Population-based regional registry run from the University of Ferrara with the Region; finds cases by linking the regional birth database (CeDAP) and hospital discharge records, and through a clinical network of neonatologists, paediatricians and obstetricians.",
+   "website": "https://regioneer.it/registro-imer",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) IMER five-year report 2018-2022, https://salute.regione.emilia-romagna.it/normativa-e-documentazione/rapporti/imer-registro-malformazioni-congenite/report_imer_2024.pdf (PDF text read: years, births 2018-2022, chapter on limb anomalies). (2) EUROCAT member page Emilia Romagna, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Emilia-Romagna_en (history from 1978, coverage, 30,321 births in 2020, last updated 18.04.2023). (3) ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/ITAE.html (coverage 100%, limb deficiency counts).",
+   "source_short": "IMER 5-year report 2018-2022 (May 2024); EUROCAT member page; ICBDSR 2024 report."
+  },
+  {
+   "registry": "Milan Metropolitan Area registry",
+   "label": "Congenital Anomalies Registry of the Metropolitan Area of Milan (ATS Milano)",
+   "local": "Registro delle Malformazioni Congenite dell'Area Metropolitana di Milano",
+   "country": "Italy",
+   "iso3": "ITA",
+   "admin1": [
+    "Milano",
+    "Lodi"
+   ],
+   "area": "Provinces of Milan and Lodi (195 municipalities, about 3.5 million inhabitants), about 30,000 births a year.",
+   "status": "covered",
+   "since": "2015",
+   "kind": "Population-based registry in the Epidemiology Unit of the Milan health protection agency; finds cases by linking administrative health flows (hospital discharges, birth certificates, deaths, pathology) and reviewing records.",
+   "source": "EUROCAT member page Metropolitan Area Milan, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Metropolitan-Area-Milan_en (history, coverage, 81,588 births in 2016, Milan and Lodi provinces); EUROCAT member list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (Full member).",
+   "source_short": "EUROCAT member page and list (2026).",
+   "since_note": "Collection began 2015, established 2016; first birth year 2012; joined EUROCAT 2018"
+  },
+  {
+   "registry": "RMCL",
+   "label": "Lombardy Congenital Malformations Registry (CMRL), north-west Lombardy",
+   "local": "Registro Malformazioni Congenite della Lombardia",
+   "country": "Italy",
+   "iso3": "ITA",
+   "admin1": [
+    "Milano",
+    "Sondrio",
+    "Varese"
+   ],
+   "area": "Provinces of Sondrio and Varese and the north of Milan; the programme says about 18.2% of Lombardy's births and 3.1% of Italy's, yet its 2015-2017 table counts only 12,114 births (about 4,040 a year).",
+   "status": "covered",
+   "kind": "Population-based programme; finds cases by algorithms over hospital discharges, death and birth certificates, pathology reports and social-security files, then manual review; includes spontaneous abortions and placental pathology.",
+   "source": "ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/ITAL.html (coverage, data sources, limb deficiency counts); ICBDSR programme directory CSV (programme name 'Italy Lombardy, RMCL').",
+   "source_short": "ICBDSR 2024 report, programme ITAL; ICBDSR directory.",
+   "map": false,
+   "since_note": "Not documented"
+  },
+  {
+   "registry": "Trento registry",
+   "label": "Congenital Anomalies Registry of the Autonomous Province of Trento",
+   "local": "Registro Anomalie Congenite della Provincia autonoma di Trento",
+   "country": "Italy",
+   "iso3": "ITA",
+   "admin1": [
+    "Trento"
+   ],
+   "area": "Province of Trento; 3,576 births in the province's hospitals in 2024, plus 20 more.",
+   "status": "covered",
+   "kind": "Population-based registry of the provincial health service (clinical epidemiology service, medical genetics, neonatology); finds cases from the birth certificate flow (CedAP), hospital records, prenatal diagnosis and terminations, validated and classified clinically.",
+   "website": "https://www.epicentro.iss.it/territorio/Trento/pdf/Report_Malformazioni%20congenite_2024.pdf",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) Rapporto annuale sulle anomalie congenite in provincia di Trento, anno 2024 (PDF read), https://www.epicentro.iss.it/territorio/Trento/pdf/Report_Malformazioni%20congenite_2024.pdf (142 cases, 39.3 per 1,000 births, accreditation to EUROCAT). (2) EUROCAT member list, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (Full member Trento).",
+   "source_short": "Trento annual report 2024 (July 2026); EUROCAT list.",
+   "since_note": "Not documented in sources read"
+  },
+  {
+   "registry": "Val Padana registry",
+   "label": "Congenital Anomalies Registry of ATS Val Padana (Mantova and Cremona)",
+   "local": "Registro Malformazioni Congenite ATS Val Padana",
+   "country": "Italy",
+   "iso3": "ITA",
+   "admin1": [
+    "Mantova",
+    "Cremona"
+   ],
+   "area": "Provinces of Mantova and Cremona (177 municipalities, 755,865 inhabitants), about 5,000 births a year.",
+   "status": "covered",
+   "since": "2008",
+   "kind": "Population-based registry in the epidemiology unit of the Val Padana health protection agency; active case search over hospital discharges, outpatient records, birth and death certificates, pathology, prescriptions and the rare diseases registry, with clinical record review.",
+   "source": "EUROCAT member page Val Padana, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Val-Padana_en (history, coverage, joined EUROCAT 2016, full member 2023); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en.",
+   "source_short": "EUROCAT member page and list (2026).",
+   "since_note": "2008 (Mantova; first birth year 2002); Cremona added 2021 (first birth year 2016)"
+  },
+  {
+   "registry": "Veneto registry",
+   "label": "Veneto Region congenital anomalies programme",
+   "local": "Registro regionale malformazioni congenite, Regione Veneto",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Veneto"
+   ],
+   "area": "Whole Veneto region (4.9 million inhabitants in 2018); about 36,930 births a year in 2015-2018.",
+   "status": "covered",
+   "kind": "Population-based regional programme that integrates hospital discharge records, the regional birth registry and the regional rare disease registry.",
+   "source": "ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/ITAV.html; EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (Veneto, Affiliate member; page https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/veneto_en last updated 8.8.2019).",
+   "source_short": "ICBDSR 2024 report, programme ITAV; EUROCAT list.",
+   "since_note": "Not documented"
+  },
+  {
+   "registry": "Puglia registry",
+   "label": "Apulia Regional Congenital Malformations Registry",
+   "local": "Registro Malformazioni Congenite della Regione Puglia",
+   "country": "Italy",
+   "iso3": "ITA",
+   "region": [
+    "Apulia"
+   ],
+   "area": "People born in Apulia and terminations of pregnancy of resident women; regional.",
+   "status": "covered",
+   "since": "2013",
+   "kind": "Regional registry set up by Regional Council resolution 1409 of 2013, run by the regional health agency AReSS Puglia (epidemiology and care intelligence).",
+   "website": "https://aress.regione.puglia.it/en/aree-tematiche/mappe-e-dati-per-la-salute/registro-malformazioni-congenite",
+   "url_status": "200, checked 22 November 2026",
+   "source": "AReSS Puglia page, https://aress.regione.puglia.it/en/aree-tematiche/mappe-e-dati-per-la-salute/registro-malformazioni-congenite (read: 2013 establishment, 2015-2018 data); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (Puglia, Affiliate member).",
+   "source_short": "AReSS Puglia registry page; EUROCAT list."
+  },
+  {
+   "registry": "RNMC",
+   "label": "National Registry of Congenital Malformations (RNMC), Italian National Institute of Health",
+   "local": "Registro Nazionale Malformazioni Congenite",
+   "country": "Italy",
+   "iso3": "ITA",
+   "area": "National; collects regional data through a web platform for the regions that asked for it. Participating regions are not named on the page.",
+   "status": "in_progress",
+   "since": "2017",
+   "kind": "Population-based national registry at the National Centre for Rare Diseases of the Istituto Superiore di Sanita, modelled on EUROCAT; regional registries upload cases diagnosed prenatally, at birth and up to one year.",
+   "website": "https://www.iss.it/malformazioni-congenite/-/asset_publisher/hQSlHEwC5XGJ/content/registro-nazionale-malformazioni-congenite",
+   "url_status": "200, checked 22 November 2026",
+   "source": "ISS page on the RNMC, https://www.iss.it/malformazioni-congenite/-/asset_publisher/hQSlHEwC5XGJ/content/registro-nazionale-malformazioni-congenite (read).",
+   "source_short": "ISS RNMC page (updated Jan 2022).",
+   "map": false,
+   "since_note": "Set up under a 2017 Ministry of Health project; page published Feb 2020"
+  },
+  {
+   "registry": "ECEMC",
+   "label": "Spanish Collaborative Study of Congenital Malformations (ECEMC)",
+   "local": "Estudio Colaborativo Espanol de Malformaciones Congenitas",
+   "country": "Spain",
+   "iso3": "ESP",
+   "area": "About 45 hospitals across Spain; about 50,000 births a year, around 15% of Spanish births.",
+   "status": "hospital",
+   "since": "1976",
+   "kind": "Hospital-based case-control surveillance programme at the Institute of Rare Diseases Research, Carlos III Health Institute; physicians record defects seen in the first 3 days of life and interview the mothers.",
+   "website": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Hospital%20Network%20%28ECEMC%29_en",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT member page ECEMC, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Hospital%20Network%20%28ECEMC%29_en (history, 45 hospitals, 50,000 births); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en; ICBDSR programme directory CSV ('Spain, ECEMC').",
+   "source_short": "EUROCAT member page; ICBDSR directory.",
+   "since_note": "1976 (data to EUROCAT from 1980)"
+  },
+  {
+   "registry": "RPAC-CV",
+   "label": "Population-based Registry of Congenital Anomalies of the Valencian Community",
+   "local": "Registro Poblacional de Anomalias Congenitas de la Comunitat Valenciana",
+   "country": "Spain",
+   "iso3": "ESP",
+   "region": [
+    "Valenciana"
+   ],
+   "area": "Whole Valencian Community, about 5 million people, about 40,000 births a year.",
+   "status": "covered",
+   "since": "2010",
+   "kind": "Population-based registry run by FISABIO and the regional public health directorate; all major anomalies in pregnancies of resident mothers, with stillbirths from 22 weeks.",
+   "website": "https://fisabio.san.gva.es/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) FISABIO report 2007-2023, https://fisabio.san.gva.es/media/upload/arxius/salud-publica/enfermedades-raras/informe-web-ac-2026.pdf (PDF read: title, Jan 2026, EUROCAT full member). (2) EUROCAT member page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Valencia-Region_en (population, births).",
+   "source_short": "FISABIO report 2007-2023 (Jan 2026); EUROCAT member page.",
+   "since_note": "Pilot 2010, data collected retrospectively from 2007; EUROCAT full member since 2011"
+  },
+  {
+   "registry": "RACEHNA",
+   "label": "Congenital Anomalies Registry of Navarra (RACEHNA)",
+   "local": "Registro de Anomalias Congenitas de Navarra",
+   "country": "Spain",
+   "iso3": "ESP",
+   "admin1": [
+    "Navarra"
+   ],
+   "area": "Navarre, about 600,000 inhabitants, about 6,000 births a year.",
+   "status": "covered",
+   "since": "2003",
+   "kind": "Population-based registry officially established by Foral Order 69/2013.",
+   "source": "EUROCAT member page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/navarra_en; EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en.",
+   "source_short": "EUROCAT member page and list.",
+   "since_note": "Collection since 2003; data from 1991; official 2013"
+  },
+  {
+   "registry": "ARACA",
+   "label": "Congenital Anomalies Registry of Aragon (ARACA)",
+   "local": "Registro de Anomalias Congenitas de Aragon",
+   "country": "Spain",
+   "iso3": "ESP",
+   "region": [
+    "Aragón"
+   ],
+   "area": "Aragon, about 1.3 million inhabitants; expanding from one hospital to the whole region.",
+   "status": "in_progress",
+   "since": "2019",
+   "kind": "Population-based registry funded by the regional health department; voluntary notification.",
+   "source": "EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en (Aragon, Affiliate member). Pilot and 2022 affiliation details come from the EUROCAT node page, https://eu-rd-platform.jrc.ec.europa.eu/node/1298_hu, seen only as a search engine excerpt, not read.",
+   "source_short": "EUROCAT list; EUROCAT node 1298.",
+   "since_note": "Pilot 2019 in one general hospital; EUROCAT affiliate January 2022"
+  },
+  {
+   "registry": "Czech National Registry of Congenital Anomalies",
+   "label": "National Registry of Congenital Anomalies of the Czech Republic (within the National Registry of Reproductive Health)",
+   "local": "Narodni registr vrozenych vad (soucast Narodniho registru reprodukcniho zdravi)",
+   "country": "Czechia",
+   "iso3": "CZE",
+   "area": "All births in Czechia, about 84,760 births a year (2015-2018); notification is compulsory by law.",
+   "status": "covered",
+   "since": "1964",
+   "kind": "National compulsory registry run by the Institute of Health Information and Statistics (UZIS); reports come from delivery units, neonatal, paediatric, surgery and pathology departments and cytogenetic labs.",
+   "website": "https://www.nzip.cz/data/2308-novorozenci-vrozene-vady-datovy-souhrn",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) UZIS data summary NR-13-01 methodological description, https://www.nzip.cz/data/nrrz/metodicke-popisy/Datovy-souhrn-NR-13-01-novorozenci-vrozene-vady-2026-01.pdf (PDF read). (2) EUROCAT member page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/Czech-Republic_en. (3) ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/CZEP.html.",
+   "source_short": "UZIS NR-13-01 (2026-01); EUROCAT page; ICBDSR 2024 report.",
+   "since_note": "1964 (Czechoslovak registration); EUROCAT 2009"
+  },
+  {
+   "registry": "Slovak National Register of Congenital Anomalies",
+   "label": "National Register of Congenital Anomalies, Slovakia",
+   "local": "Narodny register vrodenych chyb",
+   "country": "Slovakia",
+   "iso3": "SVK",
+   "area": "Country-wide, about 55,000 births a year.",
+   "status": "covered",
+   "kind": "Mandatory national register of the National Health Information Centre (NCZI); providers report a child with a congenital anomaly through the health indicators information system; terminations are not included.",
+   "website": "https://www.nczisk.sk",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) NCZI methodological guideline for the report of a child with a congenital anomaly, https://www.nczisk.sk/Documents/nzr/2026/MP_ZR_VCH.pdf (PDF read, in force 1 Jan 2026). (2) ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/SVKP.html.",
+   "source_short": "NCZI guideline (2026); ICBDSR 2024 report SVKP.",
+   "since_note": "Not documented"
+  },
+  {
+   "registry": "MCAR",
+   "label": "Malta Congenital Anomalies Registry",
+   "country": "Malta",
+   "iso3": "MLT",
+   "area": "All of Malta and Gozo, about 4,400 births a year, close to 100% of births.",
+   "status": "covered",
+   "since": "1985",
+   "kind": "National population-based register at the Department of Health Information and Research; active collection from obstetric and neonatal wards, pathology, echocardiography, activity and mortality registers and autopsies.",
+   "website": "https://dhir.gov.mt/en/?p=6375",
+   "url_status": "403, checked 22 November 2026 (the site refuses automated checks)",
+   "source": "EUROCAT member page, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/malta_en (history, coverage, updated 01.03.2023); ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/MLTM.html; Malta DHIR page https://dhir.gov.mt/en/?p=6375 (HTTP 403, not read; 1993-2022 statistics stated in a search engine excerpt).",
+   "source_short": "EUROCAT page; ICBDSR 2024 report MLTM.",
+   "since_note": "1985 (national since 1997)"
+  },
+  {
+   "registry": "OMNI-Net",
+   "label": "OMNI-Net Ukrainian birth defects surveillance programme (Rivne and Khmelnytskyi)",
+   "country": "Ukraine",
+   "iso3": "UKR",
+   "admin1": [
+    "Rivne",
+    "Khmel'nyts'kyy"
+   ],
+   "area": "Two oblasts of western Ukraine, about 25,000-28,000 births a year, roughly 5-6% of Ukrainian births.",
+   "status": "covered",
+   "since": "2000",
+   "kind": "Population-based surveillance by a Ukrainian not-for-profit programme (Ukrainian-American Birth Defects Programme origin), paid from regional budgets; records from birth, hospital, cardiology and cytogenetic sources.",
+   "website": "https://ukraineomni.org/en/openletter-eng/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "EUROCAT page https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/OMNI-Net_en; ICBDSR 2024 annual report (programme page, read 2026-11-22; hosted on a GitHub Pages mirror linked from icbdsr.org), https://ldbotto.github.io/test_icbd/progs/UKRO.html; OMNI-Net abstract https://ukraineomni.org/pdf/abstract20260420u.pdf (PDF read); OMNI-Net open letter page (read).",
+   "source_short": "EUROCAT page; ICBDSR 2024 report UKRO; OMNI-Net site.",
+   "since_note": "2000 (Rivne)"
+  },
+  {
+   "registry": "Zagreb registry",
+   "label": "Zagreb (north-west Croatia) congenital anomalies registry, Referral Centre of the Ministry of Health",
+   "local": "Referentni centar Ministarstva zdravstva za praćenje prirođenih anomalija",
+   "country": "Croatia",
+   "iso3": "HRV",
+   "admin1": [
+    "Istarska",
+    "Koprivničko-Križevačka",
+    "Primorsko-Goranska",
+    "Varaždinska",
+    "Vukovarsko-Srijemska"
+   ],
+   "area": "North-western Croatia: Pula, Rijeka, Varazdin, Koprivnica and Vinkovci maternity units; 9,181 births in 2009, about 20.8% of Croatian births.",
+   "status": "covered",
+   "since": "1983",
+   "kind": "Population-based registry at the Children's Hospital Zagreb, funded by a Ministry science project; neonatologists and gynaecologists in four to five maternity units record cases among live births, stillbirths and terminations.",
+   "source": "EUROCAT member page Zagreb, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/zagreb_en (read); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en.",
+   "source_short": "EUROCAT member page Zagreb (2023).",
+   "since_note": "1983 (pilot 1982)"
+  },
+  {
+   "registry": "Pleven registry",
+   "label": "Pleven congenital anomalies registry",
+   "country": "Bulgaria",
+   "iso3": "BGR",
+   "admin1": [
+    "Pleven"
+   ],
+   "area": "Pleven region (about 263,000 people): three delivery hospitals, about 2,300 births a year, 3.3% of Bulgarian births.",
+   "status": "covered",
+   "since": "1988",
+   "kind": "Registry of the Medical University of Pleven, Section of Medical Genetics, with active screening of all births in the covered hospitals by neonatologists, obstetricians and geneticists.",
+   "source": "EUROCAT member page Pleven, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/pleven_en (read); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en.",
+   "source_short": "EUROCAT member page Pleven (2023)."
+  },
+  {
+   "registry": "Latvia register",
+   "label": "Register of Patients with Particular Diseases, Patients with Congenital Anomalies (Latvia)",
+   "country": "Latvia",
+   "iso3": "LVA",
+   "area": "All of Latvia, about 19,250 births a year, considered 100% of births.",
+   "status": "covered",
+   "since": "1987",
+   "kind": "National register of patients with congenital anomalies; stillbirths included; birth data from the national newborn registry.",
+   "source": "EUROCAT member page Latvia, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/latvia_en (read); EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en.",
+   "source_short": "EUROCAT member page Latvia.",
+   "since_note": "1987 (data from birth year 1981)"
+  },
+  {
+   "registry": "Russian federal monitoring of congenital malformations",
+   "label": "Federal monitoring of congenital malformations, Russia",
+   "local": "Monitoring vrozhdennykh porokov razvitiya (VPR)",
+   "country": "Russia",
+   "iso3": "RUS",
+   "area": "Regional monitoring registers feeding a single federal base; 31 regions in an analysis of 2006-2012 data.",
+   "status": "covered",
+   "since": "1998",
+   "kind": "Regional monitoring groups keep registers that form a federal base under a Ministry of Health order of 10 September 1998; mandatory accounting of 21 isolated defects and Down syndrome.",
+   "source": "Tebieva et al., Results of epidemiological monitoring of congenital malformations in the Republic of North Ossetia-Alania, Medical Genetics 2024;23(5):41-50, https://www.medgen-journal.ru/jour/article/download/2478/1792 (PDF read: monitoring system, limb reduction defects, 2011-2022).",
+   "source_short": "Tebieva et al., Med Genet 2024.",
+   "map": false,
+   "since_note": "1998 (order no. 268)"
+  },
+  {
+   "registry": "North Ossetia-Alania monitoring",
+   "label": "Congenital malformations monitoring, Republic of North Ossetia-Alania",
+   "country": "Russia",
+   "iso3": "RUS",
+   "admin1": [
+    "North Ossetia"
+   ],
+   "area": "Republic of North Ossetia-Alania; 15.11 mandatory-accounting malformations per 1,000 newborns over 2011-2022.",
+   "status": "covered",
+   "kind": "Regional monitoring register of the republican children's hospital, part of the Russian federal monitoring.",
+   "source": "Tebieva et al., Medical Genetics 2024;23(5):41-50, https://www.medgen-journal.ru/jour/article/download/2478/1792 (PDF read).",
+   "source_short": "Tebieva et al., Med Genet 2024.",
+   "since_note": "Not documented (data from 2011)"
+  },
+  {
+   "registry": "RENAC Argentina",
+   "label": "National Network of Congenital Anomalies of Argentina",
+   "local": "Red Nacional de Anomalías Congénitas de Argentina (RENAC)",
+   "country": "Argentina",
+   "iso3": "ARG",
+   "area": "A network of public and private maternity hospitals in every province; 22 maternities in the City of Buenos Aires alone took part in a 2024 study. It covers part of the country's births.",
+   "status": "hospital",
+   "since": "2009",
+   "kind": "Hospital-based surveillance of newborns with major morphological anomalies, run by the national medical genetics centre of the Ministry of Health (ANLIS network); cases are found at birth in participating maternities.",
+   "website": "https://www.argentina.gob.ar/salud/anlis",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) Journal of Community Genetics 2024, RENAC data on Buenos Aires City maternities, 2013-2020, Table 3 limb reduction (https://pmc.ncbi.nlm.nih.gov/articles/PMC11411032/), read. (2) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: RENAC, hospital-based, start 2010. (3) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. (4) PAHO news 25 Jun 2025 (https://www.paho.org/en/news/25-6-2025-paho-strengthens-birth-defect-surveillance-interactive-regional-repository), read: Argentina presented at the launch seminar. (5) a search engine listing (not read): SAP RENAC 2016 report and a 2020 limb reduction paper.",
+   "source_short": "J Community Genet 2024 (PMC11411032); Rev Panam Salud Publica 2019 (PMC6526783)",
+   "since_note": "2009 (PAHO table gives 2010)"
+  },
+  {
+   "registry": "RENACH",
+   "label": "Chilean National Registry of Congenital Anomalies",
+   "local": "Registro Nacional de Anomalías Congénitas de Chile (RENACH)",
+   "country": "Chile",
+   "iso3": "CHL",
+   "area": "Chile, national: the registry is designed to record every live birth with a congenital anomaly, within the national perinatal information system.",
+   "status": "covered",
+   "since": "2016",
+   "kind": "National registry run by the Ministry of Health statistics department (DEIS), built on the perinatal information system; maternity services notify anomalies in live births.",
+   "website": "https://www.minsal.cl",
+   "url_status": "403, checked 22 November 2026 (the site refuses automated checks)",
+   "source": "(1) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country: RENACH listed for Chile. (2) a search engine listing (not read): BMC Pediatrics 2025 RENACH study (https://link.springer.com/article/10.1186/s12887-025-05999-6, needs login, not read), UC repository record, Andes Pediatrica 2025 editorial (https://andespediatrica.cl/index.php/rchped/article/download/5579/5350/45957, 403), Minsal page on World Birth Defects Day (403).",
+   "source_short": "ICBDSR directory; BMC Pediatrics 2025",
+   "since_note": "2016 (a Ministry page says 2016; another source says 2015; design began 2010)"
+  },
+  {
+   "registry": "RRMC-SSM",
+   "label": "Maule Registry of Congenital Malformations, Maule Health Service",
+   "local": "Registro Regional de Malformaciones Congénitas, Servicio de Salud del Maule (RRMC-SSM)",
+   "country": "Chile",
+   "iso3": "CHL",
+   "admin1": [
+    "Maule"
+   ],
+   "area": "Maule region, Chile (subnational).",
+   "status": "covered",
+   "kind": "Regional registry of the Maule Health Service, reporting to ICBDSR.",
+   "source": "ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. a search engine listing only (not read): GHDx records 'Chile - Maule Registry of Congenital Malformations, Maule Health Service Data' for 2002-2010.",
+   "source_short": "ICBDSR programme directory",
+   "since_note": "Unknown (ICBDSR data from 2002 in GHDx records)"
+  },
+  {
+   "registry": "BDRSP",
+   "label": "Bogotá Birth Defects Surveillance and Prevention programme",
+   "local": "Programa de Vigilancia y Seguimiento de Niños con Anomalías Congénitas, Bogotá (BCMSP / BDRSP)",
+   "country": "Colombia",
+   "iso3": "COL",
+   "admin1": [
+    "Bogota"
+   ],
+   "area": "City of Bogotá: 431,670 births monitored since 2006 (2016 article).",
+   "status": "hospital",
+   "since": "2006",
+   "kind": "District health secretariat programme working with a university genetics institute; cases come from the national SIVIGILA notification and from case and control logs of hospitals, using ECLAMC methodology.",
+   "source": "(1) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. (2) 'Description of Bogotá birth defects surveillance and follow-up programme', Sept 2016 (https://perfilesycapacidades.javeriana.edu.co/en/publications/description-of-bogot%C3%A1-birth-defects-surveillance-and-follow-up-pr/), read: 431,670 births, 9,724 malformations, SIVIGILA and hospital logs.",
+   "source_short": "ICBDSR directory; Javeriana 2016 programme description",
+   "since_note": "2006 (monitoring since the district secretariat's programme began; an earlier ECLAMC-based hospital programme ran 2001-2010 in 46 hospitals per a 2012 study seen in a search engine listing)"
+  },
+  {
+   "registry": "CBDSP",
+   "label": "Cali Birth Defects Surveillance Programme",
+   "local": "Programa de Vigilancia de Defectos Congénitos de Cali (CBDSP)",
+   "country": "Colombia",
+   "iso3": "COL",
+   "admin1": [
+    "Valle del Cauca"
+   ],
+   "area": "City of Cali; hospital births (two institutions in the 2020 follow-up study: 54,193 births 2011-2017).",
+   "status": "hospital",
+   "since": "2010",
+   "kind": "Hospital-based ECLAMC-method surveillance in Cali, run by university researchers with the city's hospitals; listed as a programme in the ICBDSR directory.",
+   "source": "(1) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. (2) Biomédica 2020;40:34-42, health status of children with defects born 2011-2017 in two Cali institutions (https://www.redalyc.org/journal/843/84362871006/84362871006.pdf), read.",
+   "source_short": "ICBDSR directory; Biomédica 2020 (Cali)",
+   "since_note": "2010 (ECLAMC in Cali since October 2010, per a search engine excerpt of a 2020 article)"
+  },
+  {
+   "registry": "SIVIGILA 215",
+   "label": "Colombia national surveillance of congenital defects (SIVIGILA event 215)",
+   "local": "Vigilancia de defectos congénitos, evento 215, Sistema de Vigilancia en Salud Pública (SIVIGILA), Instituto Nacional de Salud",
+   "country": "Colombia",
+   "iso3": "COL",
+   "area": "National; every primary data-generating unit notifies each case weekly.",
+   "status": "covered",
+   "since": "2010",
+   "kind": "Mandatory individual notification by health providers to the national public health surveillance system of the National Institute of Health.",
+   "url_status": "000, checked 22 November 2026: no answer, link left out",
+   "source": "(1) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: Colombia, Vigilancia de los Defectos Congénitos, 2010, population-based. (2) PAHO 2019 news (listed Colombia). (3) a search engine listing (not read): UIS journal analysis of event 215 (certificate error), INS circular 063 of 2015, INS coding annex 2026 (https://www.ins.gov.co/BibliotecaDigital/anexo-2-codificacion-sivigila-2026.pdf).",
+   "source_short": "Rev Panam Salud Publica 2019 (PMC6526783)",
+   "since_note": "2010 (PAHO survey table: 'population-based')"
+  },
+  {
+   "registry": "CREC",
+   "label": "Congenital Diseases Registry Centre, Costa Rica",
+   "local": "Centro de Registro de Enfermedades Congénitas (CREC), INCIENSA",
+   "country": "Costa Rica",
+   "iso3": "CRI",
+   "area": "National: a network of public and private maternity services covering about 98 per cent of births in the country.",
+   "status": "covered",
+   "since": "1985",
+   "kind": "National mandatory registry at the national nutrition and health research institute (INCIENSA), integrated with the social security fund's information system; maternities and later paediatric services notify cases found at birth and up to the first year of life (since 2008).",
+   "website": "https://www.inciensa.sa.cr",
+   "url_status": "403, checked 22 November 2026 (the site refuses automated checks)",
+   "source": "(1) Protocolo de Vigilancia de Anomalías Congénitas en Costa Rica, versión 2, 2023 (https://www.inciensa.sa.cr/wp-content/uploads/simple-file-list/Unidad-Enfermedades-Congenitas/protocolo_vigilancia_defectos_congenitos_version_2_2023.pdf), read in full text: origin, 98 per cent coverage, ICBDSR since 2003, list including Q69 and Q71-Q73. (2) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. (3) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: CREC population-based.",
+   "source_short": "INCIENSA protocol v2 2023; ICBDSR directory",
+   "since_note": "1985 (decree); regular information flow from 1987"
+  },
+  {
+   "registry": "RECUMAC",
+   "label": "Cuban Registry of Congenital Malformations",
+   "local": "Registro Cubano de Malformaciones Congénitas (RECUMAC)",
+   "country": "Cuba",
+   "iso3": "CUB",
+   "area": "National reach through hospitals, with a stated coverage of 97 per cent in the programme (93 per cent in Granma province).",
+   "status": "hospital",
+   "since": "1985",
+   "kind": "Clinical-epidemiological surveillance and care programme of the national medical genetics service; hospital-based, with a case-control design; also records products of voluntary termination of pregnancy.",
+   "source": "(1) Multimed 2023;27:e2087, epidemiological surveillance of congenital defects in Granma (https://revmultimed.sld.cu/index.php/mtm/article/download/2087/2627), read: RECUMAC since 1985, hospital-based, national scope, 97 per cent coverage. (2) ICBDSR programme directory CSV (https://docs.google.com/spreadsheets/d/e/2PACX-1vSC2fo3z8oOjKijCG_jjUQYsTQxDUJFJa_mYbjSc6VUvsciDLBrg7Dr8CvxFZfFI2uSgfBj6rOpfT0q/pub?gid=1626976275&single=true&output=csv), read 2026-11-22: lists the programme by name and country. (3) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: hospital-based, start 1985.",
+   "source_short": "Multimed 2023 (Granma); ICBDSR directory"
+  },
+  {
+   "registry": "RNDCER",
+   "label": "National Registry of Congenital Defects and Rare Diseases, Uruguay",
+   "local": "Registro Nacional de Defectos Congénitos y Enfermedades Raras (RNDCER)",
+   "country": "Uruguay",
+   "iso3": "URY",
+   "area": "National; notification is mandatory for every congenital defect, whatever the age, whether live birth, fetal death or abortion, for births over 500 g.",
+   "status": "covered",
+   "since": "2011",
+   "kind": "Ministry of Public Health registry; health professionals notify by an online form; also receives cases found by the national newborn screening programme.",
+   "website": "https://www.gub.uy/tramites/registro-nacional-defectos-congenitos-enfermedades-raras-rndcer",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) gub.uy procedure page for RNDCER, last updated 19 Nov 2020, read (https://www.gub.uy/tramites/registro-nacional-defectos-congenitos-enfermedades-raras-rndcer). (2) Ministry of Public Health reply to information request 3/2345/2023, 15 May 2023, PDF read in full text (https://www.gub.uy/ministerio-salud-publica/sites/ministerio-salud-publica/files/2023-05/respuesta%20y%20resoluci%C3%B3n%202345_removed%20%281%29.pdf): notification counts 2019-2022. (3) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: RNDCER, 2011, population-based.",
+   "source_short": "MSP Uruguay reply May 2023; gub.uy RNDCER page",
+   "since_note": "2011 (1 Jan 2011, under Ministerial Ordinance 447/2009)"
+  },
+  {
+   "registry": "Paraguay RNDC",
+   "label": "National Registry of Congenital Defects, Paraguay",
+   "local": "Registro Nacional de Defectos Congénitos, Programa Nacional de Prevención de los Defectos Congénitos",
+   "country": "Paraguay",
+   "iso3": "PRY",
+   "area": "68 health services in the 18 health regions (2023); 39 services in 17 regions in 2019.",
+   "status": "hospital",
+   "since": "2015",
+   "kind": "Registry of the national congenital defects prevention programme of the Ministry of Health, fed by hospitals in urban and rural areas; operating manual approved by Ministerial Resolution 144 of 18 March 2022.",
+   "source": "(1) PAHO story on helping children with congenital defects (https://www.paho.org/es/historias/ayudar-ninos-con-defectos-congenitos-prosperar), read: Paraguay programme 2015, registry in urban and rural hospitals. (2) La Nación, 3 Mar 2023 (https://www.lanacion.com.py/pais/2023/03/03/dia-mundial-de-los-defectos-congenitos-primera-causa-de-muerte-neonatal-en-paraguay/), read: 68 services, 18 regions, resolution 144/2022. (3) Medicina Clínica y Social, anomalies in Paraguay 2017-2021 (https://www.medicinaclinicaysocial.org/index.php/MCS/article/view/523), read. (4) Rev Panam Salud Publica 2019, 'Systems for surveillance of birth defects in Latin America and the Caribbean: present and future' (https://pmc.ncbi.nlm.nih.gov/articles/PMC6526783/), read: Table 2, national systems from a 2017 survey, with start year and coverage type: hospital-based, 2016.",
+   "source_short": "PAHO story; La Nación 2023; MCS 2017-2021",
+   "since_note": "2015 (programme) / 2016 (registry, PAHO table)"
+  },
+  {
+   "registry": "ReLAMC",
+   "label": "Latin American Network of Congenital Malformations (ECLAMC regional network)",
+   "local": "Red Latinoamericana de Malformaciones Congénitas (ReLAMC)",
+   "country": "Argentina",
+   "iso3": "ARG",
+   "area": "Regional network coordinated from Buenos Aires; Costa Rica and Paraguay are named as taking part or using it; ECLAMC itself analysed more than six million births in hospitals of Latin America over five decades.",
+   "status": "umbrella",
+   "since": "2016",
+   "kind": "Regional surveillance network created in 2016, coordinated at the CEMIC research unit, building on ECLAMC (founded 1967; Brazilian coordination at UFRJ and FIOCRUZ).",
+   "website": "https://investigacion.cemic.edu.ar/unidades/eclamc",
+   "url_status": "200, checked 22 November 2026",
+   "source": "(1) CEMIC ECLAMC unit page (https://investigacion.cemic.edu.ar/unidades/eclamc), read: 1967, 1989 WHO collaborating centre, 1992 Argentine base, ReLAMC 2016, more than six million births. (2) Costa Rica protocol v2 2023, read: Costa Rica part of ReLAMC. (3) Medicina Clínica y Social 2017-2021 Paraguay, read: ReLAMC data.",
+   "source_short": "CEMIC ECLAMC page; CREC protocol 2023",
+   "map": false,
+   "since_note": "2016 (CEMIC page; a Costa Rica protocol dates the start of the effort to 2017)"
+  },
+  {
+   "registry": "TRoCA",
+   "label": "Tabriz Registry of Congenital Anomalies",
+   "country": "Iran",
+   "iso3": "IRN",
+   "admin1": [
+    "East Azarbaijan"
+   ],
+   "area": "Three university hospitals in the city of Tabriz, north-west Iran, covering about 60 to 70 per cent of births in the area (about 15,000 births a year); 37,552 births in the 5 years 2015-2019 (about 7,510 a year in the programme data)",
+   "status": "hospital",
+   "since": "2003",
+   "kind": "Hospital-based registry run from Tabriz University of Medical Sciences; every infant born in the three participating hospitals is examined by a clinician and anomalies are coded in ICD; stillbirths and terminations in hospital are included in the ICBDSR submission.",
+   "url_status": "000, checked 22 November 2026: no answer, link left out",
+   "source": "ICBDSR Report 2024, programme page Iran TRoCA, https://ldbotto.github.io/test_icbd/progs/IRNT.html (births, hospital-based structure, coverage, limb deficiency counts 2015-2019); ICBDSR 2024 report programme index, https://ldbotto.github.io/test_icbd/progs/index_progs.html (31 member programmes, Iran TRoCA among them); ICBDSR Program Directors directory CSV (Google Sheets link supplied by DysNet, read 2026-11-22; lists Iran, TROCA); Tarighat F et al., Prevalence of Congenital Anomalies in the Northwest of Iran, Depiction of Health 2021;12(4):417-425, PDF read at https://doh.tbzmed.ac.ir/PDF/doh-12-417.pdf (297,734 births 2000-2020, limb defects 46.3 per 10,000); Uses, Limitations, and Validity of a Registry of Congenital Anomalies in Iran: A Critical Review, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5525091/ (start 2003, ICBDSR member 2006; seen through a search engine listing only)",
+   "source_short": "ICBDSR Report 2024 (Iran TRoCA page); Depiction of Health 2021",
+   "since_note": "2003 (programme started 2000)"
+  },
+  {
+   "registry": "IBDSP",
+   "label": "Israel Birth Defects Surveillance Program",
+   "country": "Israel",
+   "iso3": "ISR",
+   "admin1": [
+    "HaMerkaz"
+   ],
+   "area": "Three hospitals in the central region of Israel, about 20,000 births a year (about 15 per cent of births in Israel); 203,574 births in the 6 years 2015-2020 (about 33,930 a year in the ICBDSR table)",
+   "status": "hospital",
+   "kind": "Hospital-based voluntary reporting from delivery units and neonatal departments of the participating hospitals; stillbirths of 20 weeks or more and 500 g or more are included; terminations are not included in the data submitted to ICBDSR.",
+   "source": "ICBDSR Report 2024, programme page Israel IBDSP, https://ldbotto.github.io/test_icbd/progs/ISRI.html (coverage, births, voluntary reporting, hospital-based); ICBDSR 2024 report programme index, https://ldbotto.github.io/test_icbd/progs/index_progs.html; ICBDSR Program Directors directory CSV (read 2026-11-22; lists Israel, IBDSP); Global Health Data Exchange catalogue entries for IBDSP, e.g. https://ghdx.healthdata.org/print/373756 (seen through a search engine listing only)",
+   "source_short": "ICBDSR Report 2024 (Israel IBDSP page)",
+   "since_note": "Not stated on the pages read; the Global Health Data Exchange lists IBDSP data for 2003 onward and an earlier Israel Birth Defects Monitoring System for 1993-1998"
+  },
+  {
+   "registry": "MSD-BDR",
+   "label": "Saudi Arabia Medical Services Department Birth Defects Registry",
+   "country": "Saudi Arabia",
+   "iso3": "SAU",
+   "area": "Military hospitals of the Saudi Armed Forces Medical Services Department: sources speak of 16 to 17 hospitals; the planned nationwide version was expected to cover about 350,000 births a year",
+   "status": "hospital",
+   "since": "2010",
+   "kind": "Web-based hospital registry of the military health service; gestational age 16 weeks or more; diagnosis up to age 2 years.",
+   "source": "ICBDSR Program Directors directory CSV (read 2026-11-22; lists Saudi Arabia, MSD-BDR); Global Health Data Exchange, Saudi Arabia Medical Service Department Birth Defect Registry 2011 - ICBDSR, https://ghdx.healthdata.org/print/373767 and https://ghdx.healthdata.org/print/160182; JRC EU RD Platform page on the registry history, https://eu-rd-platform.jrc.ec.europa.eu/node/115_da; editorial Saudi Medical Journal 2015;36(2):143, https://smj.org.sa/content/36/2/143 (all seen through a search engine listing only)",
+   "source_short": "ICBDSR directory (2026 read); GHDx ICBDSR 2011 record",
+   "since_note": "2010 (data collection from 1 July 2010; web-based registration from 1 January 2013)"
+  },
+  {
+   "registry": "Gaza amputee registration",
+   "label": "Registration and evaluation of people with conflict-related limb amputations in the Gaza Strip",
+   "country": "Palestine",
+   "iso3": "PSE",
+   "area": "Gaza Strip: 2,277 amputees evaluated between September 2024 and May 2026 (WHO count); WHO estimates over 5,000 limb amputations since October 2023",
+   "status": "clinical",
+   "since": "2024",
+   "kind": "Registry-based counts of amputees evaluated, reported by WHO from the retrospective online registration of people with key injuries (Ministry of Health) and from rehabilitation service providers.",
+   "website": "https://www.emro.who.int/opt/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "WHO, Estimating Trauma Rehabilitation Needs in Gaza, May 2026 update, https://www.emro.who.int/images/stories/palestine/Estimating_Trauma_Rehabilitation_Needs_in_Gaza_2026.pdf (read in full: amputee counts, evaluation period, prosthetics); WHO, Estimating Trauma Rehabilitation Needs in Gaza, September 2025, https://cdn.who.int/media/docs/default-source/hq-whe/estimating-trauma-rehabilitation-needs-in-gaza-september-2025.pdf (describes the online injury registration initiative and its limits)",
+   "source_short": "WHO, Estimating Trauma Rehabilitation Needs in Gaza, May 2026",
+   "map": false,
+   "since_note": "2024 (evaluation count starts September 2024)"
+  },
+  {
+   "registry": "Ubomi Buhle",
+   "label": "Ubomi Buhle Pregnancy Exposure Registry, including the Western Cape Pregnancy Exposure Registry",
+   "country": "South Africa",
+   "iso3": "ZAF",
+   "admin1": [
+    "Western Cape"
+   ],
+   "area": "Western Cape: Gugulethu and Worcester midwife obstetric units (32,494 pregnancies with viable outcomes, 1 September 2016 to 16 December 2022); Wits RHI and Rahima Moosa Mother and Child Hospital are listed partners; the project describes sentinel sites in three provinces",
+   "status": "hospital",
+   "since": "2016",
+   "kind": "Pregnancy exposure registry with sentinel sites, run by the University of Cape Town and Wits RHI with provincial health departments, the US CDC and the Gates Foundation; newborn surface examination records major defects.",
+   "website": "https://wrhi.ac.za/projects/ubomi-buhle/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Population-based prevalence of congenital defects in a routine sentinel-site based surveillance system in the Western Cape, South Africa, Birth Defects Research 2024;116(8), https://pmc.ncbi.nlm.nih.gov/articles/PMC11733423/ (read: sites, dates, counts); Wits RHI page, https://wrhi.ac.za/projects/ubomi-buhle/ (read: three provinces, 18,000 women a year target, last update April 2024); Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments) (Table 1 and end-of-funding statement)",
+   "source_short": "Birth Defects Research 2024 (PMC11733423); Wits RHI page"
+  },
+  {
+   "registry": "sSCAN",
+   "label": "Sub-Saharan African Congenital Anomalies Network",
+   "country": "Sub-Saharan Africa (regional)",
+   "iso3": null,
+   "area": "16 surveillance and research projects in 12 countries of sub-Saharan Africa",
+   "status": "umbrella",
+   "since": "2021",
+   "kind": "Community of practice for congenital anomaly surveillance, research and care, run by volunteers; no data repository; website and webinars lost funding in 2025.",
+   "website": "https://sscan.tghn.org",
+   "url_status": "403, checked 22 November 2026 (the site refuses automated checks)",
+   "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); sSCAN General Assembly Report 2025, https://media.tghn.org/medialibrary/2026/02/SSCAN2025_GA_report.pdf (read in full); sSCAN General Assembly Report 2023, https://media.tghn.org/medialibrary/2024/02/sSCAN_General_Assembly_Report_2023.pdf (Table 2 lists 16 affiliated projects with population type and sites)",
+   "source_short": "sSCAN 2026 paper; sSCAN General Assembly reports 2023 and 2025",
+   "map": false,
+   "since_note": "2021 (seed funding 2020)"
+  },
+  {
+   "registry": "ABDR",
+   "label": "Alaska Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Alaska"
+   ],
+   "area": "Alaska, statewide birth cohort. The NBDPN 2018-2022 table counts 48,376 live births.",
+   "status": "covered",
+   "since": "2007",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive with limited case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "ABDMP",
+   "label": "Arizona Birth Defects Monitoring Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Arizona"
+   ],
+   "area": "Arizona, statewide birth cohort. The NBDPN 2018-2022 table counts 401,453 live births.",
+   "status": "covered",
+   "since": "1986",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active and passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "ARHMS",
+   "label": "Arkansas Reproductive Health Monitoring System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Arkansas"
+   ],
+   "area": "Arkansas, statewide birth cohort. The NBDPN 2018-2022 table counts 179,806 live births.",
+   "status": "covered",
+   "since": "1980",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "CBDMP",
+   "label": "California Birth Defects Monitoring Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "California"
+   ],
+   "area": "California, statewide birth cohort. The NBDPN 2018-2022 table counts 632,916 live births.",
+   "status": "covered",
+   "since": "1983",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "CRCSN",
+   "label": "Colorado Responds to Children with Special Needs",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Colorado"
+   ],
+   "area": "Colorado, statewide birth cohort. The NBDPN 2018-2022 table counts 312,733 live births.",
+   "status": "covered",
+   "since": "1989",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "DBDR",
+   "label": "Delaware Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Delaware"
+   ],
+   "area": "Delaware, statewide birth cohort. The NBDPN 2018-2022 table counts 52,059 live births.",
+   "status": "covered",
+   "since": "2007",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "FBDR",
+   "label": "Florida Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Florida"
+   ],
+   "area": "Florida, statewide birth cohort. The NBDPN 2018-2022 table counts 1,085,278 live births.",
+   "status": "covered",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: method not stated in the 2026 NBDPN directory.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "Georgia BDR",
+   "label": "Georgia Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Georgia"
+   ],
+   "area": "Georgia, statewide birth cohort. The NBDPN 2018-2022 table counts 624,652 live births.",
+   "status": "covered",
+   "since": "2016",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: method not stated on the NBDPN page.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "HBDP",
+   "label": "Hawaii Birth Defects Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Hawaii"
+   ],
+   "area": "Hawaii, statewide birth cohort. The NBDPN 2018-2022 table counts 29,509 live births.",
+   "status": "covered",
+   "since": "1986",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "APORS",
+   "label": "Adverse Pregnancy Outcomes Reporting System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Illinois"
+   ],
+   "area": "Illinois, statewide birth cohort. The NBDPN 2018-2022 table counts 678,991 live births.",
+   "status": "covered",
+   "since": "1989",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "Indiana BDPR",
+   "label": "Indiana Birth Defects and Problems Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Indiana"
+   ],
+   "area": "Indiana, statewide birth cohort. The NBDPN 2018-2022 table counts 393,256 live births.",
+   "status": "covered",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: method and start year blank on the NBDPN page.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "IRCID",
+   "label": "Iowa Registry for Congenital and Inherited Disorders",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Iowa"
+   ],
+   "area": "Iowa, statewide birth cohort. The NBDPN 2018-2022 table counts 148,174 live births.",
+   "status": "covered",
+   "since": "1983",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "KBDP",
+   "label": "Kansas Birth Defects Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Kansas"
+   ],
+   "area": "Kansas, statewide birth cohort. The NBDPN 2018-2022 table counts 167,900 live births.",
+   "status": "covered",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "KBSR",
+   "label": "Kentucky Birth Surveillance Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Kentucky"
+   ],
+   "area": "Kentucky, statewide birth cohort. The NBDPN 2018-2022 table counts 263,206 live births.",
+   "status": "covered",
+   "since": "1998",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "LBDMN",
+   "label": "Louisiana Birth Defects Monitoring Network",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Louisiana"
+   ],
+   "area": "Louisiana, statewide birth cohort. The NBDPN 2018-2022 table counts 280,181 live births.",
+   "status": "covered",
+   "since": "2005",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: combined active and passive, population-based.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "MBDP",
+   "label": "Maine Birth Defects Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Maine"
+   ],
+   "area": "Maine, statewide birth cohort. The NBDPN 2018-2022 table counts 58,226 live births.",
+   "status": "covered",
+   "since": "2003",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with active case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "BDRIS",
+   "label": "Maryland Birth Defects Reporting and Information System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Maryland"
+   ],
+   "area": "Maryland, statewide birth cohort. The NBDPN 2018-2022 table counts 346,744 live births.",
+   "status": "covered",
+   "since": "1983",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "MBDMP",
+   "label": "Massachusetts Birth Defects Monitoring Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Massachusetts"
+   ],
+   "area": "Massachusetts, statewide birth cohort. The NBDPN 2018-2022 table counts 342,374 live births.",
+   "status": "covered",
+   "since": "2000",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "MBDR",
+   "label": "Michigan Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Michigan"
+   ],
+   "area": "Michigan, statewide birth cohort. The NBDPN 2018-2022 table counts 524,873 live births.",
+   "status": "covered",
+   "since": "1998",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "BDMA",
+   "label": "Minnesota Birth Defects Monitoring and Analysis",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Minnesota"
+   ],
+   "area": "Minnesota, statewide birth cohort. The NBDPN 2018-2022 table counts 312,726 live births.",
+   "status": "covered",
+   "since": "2006",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "MSDH BD",
+   "label": "Mississippi Genetics Bureau birth defects surveillance",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Mississippi"
+   ],
+   "area": "Mississippi, statewide birth cohort. The NBDPN 2018-2022 table counts 178,967 live births.",
+   "status": "covered",
+   "since": "2018",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "MO BDSS",
+   "label": "Missouri birth defects surveillance (Department of Health and Senior Services)",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Missouri"
+   ],
+   "area": "Missouri, statewide birth cohort. The NBDPN 2018-2022 table counts 352,884 live births.",
+   "status": "covered",
+   "since": "2001",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation, population-based.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "NE BDR",
+   "label": "Nebraska Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Nebraska"
+   ],
+   "area": "Nebraska, statewide birth cohort. The NBDPN 2018-2022 table counts 123,488 live births.",
+   "status": "covered",
+   "since": "1995",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "NJBDR",
+   "label": "New Jersey Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "New Jersey"
+   ],
+   "area": "New Jersey, statewide birth cohort. The NBDPN 2018-2022 table counts 501,840 live births.",
+   "status": "covered",
+   "since": "1985",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: method not stated on the NBDPN page.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "NCBDMP",
+   "label": "North Carolina Birth Defects Monitoring Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "North Carolina"
+   ],
+   "area": "North Carolina, statewide birth cohort. The NBDPN 2018-2022 table counts 596,503 live births.",
+   "status": "covered",
+   "since": "1989",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "OBDR",
+   "label": "Oklahoma Birth Defects Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Oklahoma"
+   ],
+   "area": "Oklahoma, statewide birth cohort. The NBDPN 2018-2022 table counts 243,287 live births.",
+   "status": "covered",
+   "since": "1994",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "BASS",
+   "label": "Oregon Birth Anomalies Surveillance System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Oregon"
+   ],
+   "area": "Oregon, statewide birth cohort. The NBDPN 2018-2022 table counts 200,051 live births.",
+   "status": "covered",
+   "since": "2008",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "PR-BDSS",
+   "label": "Puerto Rico Birth Defects Surveillance System",
+   "country": "Puerto Rico",
+   "iso3": "PRI",
+   "area": "Puerto Rico, statewide birth cohort. The NBDPN 2018-2022 table counts 99,510 live births.",
+   "status": "covered",
+   "since": "1995",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "RIBDP",
+   "label": "Rhode Island Birth Defects Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Rhode Island"
+   ],
+   "area": "Rhode Island, statewide birth cohort. The NBDPN 2018-2022 table counts 51,476 live births.",
+   "status": "covered",
+   "since": "2002",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "SCBDP",
+   "label": "South Carolina Birth Defects Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "South Carolina"
+   ],
+   "area": "South Carolina, statewide birth cohort. The NBDPN 2018-2022 table counts 284,433 live births.",
+   "status": "covered",
+   "since": "2011",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: active.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "TNBDSS",
+   "label": "Tennessee Birth Defects Surveillance System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Tennessee"
+   ],
+   "area": "Tennessee, statewide birth cohort. The NBDPN 2018-2022 table counts 403,830 live births.",
+   "status": "covered",
+   "since": "1999",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with and without case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "UBDN",
+   "label": "Utah Birth Defect Network",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Utah"
+   ],
+   "area": "Utah, statewide birth cohort. The NBDPN 2018-2022 table counts 232,260 live births.",
+   "status": "covered",
+   "since": "1994",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: combined active and passive, population-based.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "BIN",
+   "label": "Vermont Birth Information Network",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Vermont"
+   ],
+   "area": "Vermont, statewide birth cohort. The NBDPN 2018-2022 table counts 26,610 live births.",
+   "status": "covered",
+   "since": "2006",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, with case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "VaCARES",
+   "label": "Virginia Congenital Anomalies Reporting and Education System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Virginia"
+   ],
+   "area": "Virginia, statewide birth cohort. The NBDPN 2018-2022 table counts 483,188 live births.",
+   "status": "covered",
+   "since": "1985",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "WA BDSS",
+   "label": "Washington State Birth Defects Surveillance System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Washington"
+   ],
+   "area": "Washington, statewide birth cohort. The NBDPN 2018-2022 table counts 421,442 live births.",
+   "status": "covered",
+   "since": "1997",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: passive, no case confirmation.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "WBDPSP",
+   "label": "Wisconsin Birth Defect Prevention and Surveillance Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Wisconsin"
+   ],
+   "area": "Wisconsin, statewide birth cohort. The NBDPN 2018-2022 table counts 317,309 live births.",
+   "status": "covered",
+   "since": "2005",
+   "kind": "State health department birth defects surveillance programme, in the NBDPN directory; case-finding: method not stated on the NBDPN page.",
+   "source": "NBDPN, 2026 Program Directory PDF (https://nbdpn.org/wp-content/uploads/2026/05/2026-State-Directory.pdf): programme name and start year. NBDPN, Birth Defects Data Tables and Directory page, updated September 2026 (https://nbdpn.org/birth-defects-data-tables-and-directory/): case-finding method per state. NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): 'Limb deficiencies (reduction defects)' count and total live births.",
+   "source_short": "NBDPN 2026 directory and All States 2018-2022 data tables"
+  },
+  {
+   "registry": "DoD BIHR",
+   "label": "U.S. Department of Defense Birth and Infant Health Registry",
+   "country": "United States",
+   "iso3": "USA",
+   "area": "Births to military health system beneficiaries worldwide, not a state. The NBDPN 2018-2022 table counts 523,081 live births.",
+   "status": "covered",
+   "kind": "Federal registry of military health system births, listed among the NBDPN data-contributing programmes; case-finding method not read.",
+   "source": "NBDPN, All States data tables 2018-2022 PDF (https://nbdpn.org/wp-content/uploads/2026/10/AllStates.pdf): DoD section with limb deficiencies row. NBDPN, State Birth Defects Surveillance Program Data 2012-2016 (Birth Defects Research 111, S1-S180), PDF read via https://nbdpn.org/wp-content/uploads/2024/09/Supplement.pdf: names the U.S. Department of Defense Birth and Infant Health Registry among 42 contributing programmes.",
+   "source_short": "NBDPN All States 2018-2022 tables, DoD section",
+   "map": false
+  },
+  {
+   "registry": "NH BCP",
+   "label": "New Hampshire Birth Conditions Program",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "New Hampshire"
+   ],
+   "area": "New Hampshire, statewide; parents may opt out; cross-border deliveries often missing.",
+   "status": "covered",
+   "since": "2003",
+   "kind": "State Maternal and Child Health Section programme described as a population-based, active surveillance system; funded by the MCH Block Grant since the CDC grant ended.",
+   "source": "NH DHHS and UNH, Birth Defects Registry presentation to the SB 85 Commission, 19 February 2021 (https://gc.nh.gov/statstudcomm/committees/1468/documents/Birth%20Defects%20Registry%20Presentation%20SB85%20Commission%20Meeting%202.19.21.pdf): history, active population-based design, 45 defects, restart 2018.",
+   "source_short": "NH BCP presentation to SB85 Commission, Feb 2021"
+  },
+  {
+   "registry": "AL BDSP",
+   "label": "Alabama Birth Defects Reporting (Alabama Department of Public Health)",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "Alabama"
+   ],
+   "area": "Alabama, statewide.",
+   "status": "covered",
+   "since": "2024",
+   "kind": "State health department mandatory reporting by facilities, providers and physicians within 30 days of diagnosis (passive provider reporting); run through the Newborn Screening Program.",
+   "website": "https://www.alabamapublichealth.gov/newbornscreening/birth-defects.html",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Alabama Department of Public Health, Birth Defects page (https://www.alabamapublichealth.gov/newbornscreening/birth-defects.html): effective date, list of 13 reportable defects including limb deficiencies, reporting duty.",
+   "source_short": "ADPH Birth Defects page, reporting since 14 Apr 2024"
+  },
+  {
+   "registry": "NMBDPASS",
+   "label": "New Mexico Birth Defects Prevention and Surveillance System",
+   "country": "United States",
+   "iso3": "USA",
+   "admin1": [
+    "New Mexico"
+   ],
+   "area": "New Mexico, all births to state-resident mothers, followed to age four.",
+   "status": "covered",
+   "since": "1995",
+   "kind": "State Department of Health surveillance: birth certificate file linked to death certificates, prenatal care files, monthly facility reports and the hospital inpatient discharge database, with ascertainment of selected diagnoses (hybrid).",
+   "url_status": "000, checked 22 November 2026: no answer, link left out",
+   "source": "NM Department of Health, Birth Defects Surveillance New Mexico 2015-2024 (PDF from https://www.nmhealth.org/data/view/maternal/3176): history, methods, limb reduction counts. NBDPN 2012-2016 data supplement (https://nbdpn.org/wp-content/uploads/2024/09/Supplement.pdf): New Mexico among 42 contributing programmes.",
+   "source_short": "NMDOH Birth Defects Surveillance NM 2015-2024"
+  },
+  {
+   "registry": "CCASS",
+   "label": "Canadian Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "area": "Canada (national), national",
+   "status": "covered",
+   "since": "2008",
+   "kind": "Public Health Agency of Canada surveillance tool built from hospital discharge data (CIHI Discharge Abstract Database, all provinces and territories except Quebec) and the Quebec congenital anomalies programme (MED-ECHO); passive administrative data with one-year follow-up.",
+   "website": "https://health-infobase.canada.ca/congenital-anomalies/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Public Health Agency of Canada, Congenital Anomalies in Canada data tool (https://health-infobase.canada.ca/congenital-anomalies/): years, 38 anomalies, limb deficiency rate, data sources.",
+   "source_short": "PHAC CCASS data tool, 2008-2023",
+   "map": false
+  },
+  {
+   "registry": "BCCASS",
+   "label": "Enhanced British Columbia Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "British Columbia"
+   ],
+   "area": "British Columbia, every birth",
+   "status": "covered",
+   "since": "1952",
+   "kind": "Hybrid case-finding: discharge abstracts, vital events, perinatal registry, clinical genetics, imaging and cardiology clinic data; reporting of anomalies is mandated in BC.",
+   "source": "PHAC, Provincial and territorial congenital anomalies surveillance summary (https://www.canada.ca/en/public-health/services/reports-publications/health-promotion-chronic-disease-prevention-canada-research-policy-practice/vol-44-no-5-2024/provincial-territorial-congenital-anomalies-surveillance-summary-surveillance-programs.html): programme, first data year, sources, case-finding.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "MCASS",
+   "label": "Manitoba Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Manitoba"
+   ],
+   "area": "Manitoba, every birth",
+   "status": "covered",
+   "since": "2010",
+   "kind": "Passive: discharge abstracts and physician billing; one-year age limit.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Manitoba row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "BORN Ontario",
+   "label": "BORN Ontario (Better Outcomes Registry & Network)",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Ontario"
+   ],
+   "area": "Ontario, every birth",
+   "status": "covered",
+   "since": "2012",
+   "kind": "Passive: perinatal database, clinical genetics and the BORN Information System; follows cases until NICU discharge.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Ontario row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "QC anomalies",
+   "label": "Quebec congenital anomalies surveillance system",
+   "local": "Système de surveillance des anomalies congénitales au Québec",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Québec"
+   ],
+   "area": "Quebec, every birth",
+   "status": "covered",
+   "since": "2008",
+   "kind": "Passive: MED-ECHO hospital discharge data and vital events; children followed to age 13.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Quebec row; PHAC CCASS data tool (https://health-infobase.canada.ca/congenital-anomalies/) for Quebec data to 2022.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "PerinatalNB",
+   "label": "PerinatalNB congenital anomalies surveillance",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "New Brunswick"
+   ],
+   "area": "New Brunswick, every birth",
+   "status": "covered",
+   "since": "2015",
+   "kind": "Hybrid: discharge abstracts, perinatal database, chart review including genetics and autopsy.",
+   "source": "PHAC 2024 review (same URL as BCCASS), New Brunswick row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "SCANS",
+   "label": "Surveillance of Congenital Anomalies in Nova Scotia",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Nova Scotia"
+   ],
+   "area": "Nova Scotia, every birth",
+   "status": "covered",
+   "since": "1988",
+   "kind": "Hybrid: discharge abstracts, vital events, perinatal database, physician billing, Fetal Anomaly Database, IWK cardiology database.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Nova Scotia row; PHAC systems page (https://www.canada.ca/en/public-health/services/health-promotion/what-is-ccasn/systems-data-sources-congenital-anomalies-surveillance-canada.html, dated 2009).",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "PEICANS",
+   "label": "Prince Edward Island Congenital Anomaly Surveillance",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Prince Edward Island"
+   ],
+   "area": "Prince Edward Island, every birth",
+   "status": "covered",
+   "since": "2016",
+   "kind": "Passive: discharge abstract, vital events, NACRS, radiology and clinical system data.",
+   "source": "PHAC 2024 review (same URL as BCCASS), PEI row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "NLCASS",
+   "label": "Newfoundland and Labrador Perinatal Program congenital anomalies surveillance (NLCASS)",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Newfoundland and Labrador"
+   ],
+   "area": "Newfoundland and Labrador, every birth",
+   "status": "covered",
+   "since": "2012",
+   "kind": "Hybrid: discharge abstract, vital events, perinatal database, clinical genetics, chart review, imaging and autopsy reports.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Newfoundland and Labrador row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "CASY",
+   "label": "Congenital Anomalies Support Yukon",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Yukon"
+   ],
+   "area": "Yukon, every birth",
+   "status": "covered",
+   "since": "2001",
+   "kind": "Passive: discharge abstract, physician billing, maternity and paediatric flags, NACRS ICD-10 codes; recorded at birth.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Yukon row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "NWT CAR",
+   "label": "Northwest Territories Congenital Anomalies Registry",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Northwest Territories"
+   ],
+   "area": "Northwest Territories, every birth",
+   "status": "covered",
+   "since": "2011",
+   "kind": "Hybrid with mandated reporting: discharge abstract, vital events, territorial reporting form, health insurance and chart review; followed to age 18.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Northwest Territories row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "Nunavut CASS",
+   "label": "Nunavut Congenital Anomalies Surveillance System",
+   "country": "Canada",
+   "iso3": "CAN",
+   "admin1": [
+    "Nunavut"
+   ],
+   "area": "Nunavut, every birth",
+   "status": "covered",
+   "since": "2010",
+   "kind": "Hybrid: discharge abstract, vital events, physician billing and chart review.",
+   "source": "PHAC 2024 review (same URL as BCCASS), Nunavut row.",
+   "source_short": "Public Health Agency of Canada, provincial and territorial congenital anomalies surveillance summary, 2024"
+  },
+  {
+   "registry": "NVR",
+   "label": "National Vascular Registry (UK), amputation component",
+   "country": "United Kingdom",
+   "iso3": "GBR",
+   "area": "NHS vascular units in the four nations. 3,877 major unilateral amputations recorded for 2024 (1,778 above knee, 2,099 below knee). Case ascertainment for amputations 84% overall (England 87%, Wales above 100%, Scotland 40%, Northern Ireland 100%).",
+   "status": "clinical",
+   "kind": "National clinical audit run through the Vascular Society's quality improvement programme; vascular units submit data on major vascular procedures including amputation, with 30-day outcomes.",
+   "website": "https://www.vsqip.org.uk",
+   "url_status": "200, checked 22 November 2026",
+   "source": "NVR 2025 State of the Nation report (HTML), https://www.vsqip.org.uk/reports-publications/2025-nvr-state-of-the-nation-report-html/ (read: 2024 amputation numbers, ascertainment by nation, data period). Search listing of the 2024 report (procedures of 2023) supports annual continuity.",
+   "source_short": "NVR 2025 State of the Nation report, VSQIP"
+  },
+  {
+   "registry": "ILDR",
+   "label": "International Limb Differences Registry",
+   "country": "International",
+   "iso3": null,
+   "area": "Hospitals worldwide. The Nemours listing (Delaware, United States) shows an enrolment goal of 110 participants at that site. A separate UK cohort protocol (lower limb differences) received a favourable ethics opinion on 21 May 2026.",
+   "status": "clinical",
+   "since": "2025",
+   "kind": "Observational registry and prospective cohort, sponsored by the University of British Columbia / BC Children's Hospital and linked to the International Limb Differences Network; hospital recruited, participants answer surveys about every six months; condition-specific REDCap projects.",
+   "website": "https://www.nemours.org/pediatric-research/clinical-trials/orthopedics/international-limb-differences-registry-109.html",
+   "url_status": "200, checked 22 November 2026",
+   "source": "1) Nemours listing, https://www.nemours.org/pediatric-research/clinical-trials/orthopedics/international-limb-differences-registry-109.html (read: sponsor, eligibility, start June 2025, goal 110, six-monthly surveys). 2) NHS HRA summary 'International Limb Differences Prospective Cohort Study', https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/international-limb-differences-prospective-cohort-study/ (read: sponsor BC Children's Hospital, multicentre prospective design, REC date 21 May 2026). 3) UBC Orthopaedics page on LIMB-Q Kids, https://orthopaedics.med.ubc.ca/limb-q-kids-is-here-a-global-tool-transforming-pediatric-orthopaedic-outcomes/ (read: network, registry scientific lead, 16 sites and 7 countries for the questionnaire field test).",
+   "source_short": "Nemours ILDR listing; NHS HRA summary; UBC Orthopaedics",
+   "map": false
+  },
+  {
+   "registry": "Norwegian Rare Bone Disorder Registry",
+   "label": "Norwegian Rare Bone Disorder Registry",
+   "local": "Norsk register for sjeldne skjelettlidelser",
+   "country": "Norway",
+   "iso3": "NOR",
+   "area": "National, consent-based: aims to identify and follow everyone in Norway with a rare congenital bone disorder (skeletal dysplasia). No participant count given.",
+   "status": "clinical",
+   "kind": "Research and quality registry at Oslo University Hospital, established by the paediatric orthopaedic and reconstructive surgery section, which is Norway's national unit for surgery of congenital lower limb deformities in children; digital consent, five-year follow-up contact.",
+   "website": "https://www.oslo-universitetssykehus.no/en/departments/ortopedisk-klinikk/ortopedisk-avdeling-rikshospitalet/seksjon-for-barneortopedi-og-rekonstruktiv-kirurgi/norwegian-rare-bone-disorder-registry/",
+   "url_status": "200, checked 22 November 2026",
+   "source": "Norwegian Rare Bone Disorder Registry, Oslo University Hospital, URL above (read: scope, operator, consent, last update). Orphanet section of DysNet's existing list names this registry.",
+   "source_short": "Oslo University Hospital registry page"
+  },
+  {
+   "registry": "AUMC CULA registry",
+   "label": "Amsterdam UMC registry of congenital upper limb anomalies",
+   "country": "Netherlands",
+   "iso3": "NLD",
+   "admin1": [
+    "Noord-Holland"
+   ],
+   "area": "One tertiary referral hospital (Amsterdam University Medical Center): 797 patients seen between April 2010 and April 2020.",
+   "status": "clinical",
+   "since": "2010",
+   "kind": "Hospital registry of congenital upper limb anomalies, classified by the Oberg-Manske-Tonkin system and reviewed retrospectively.",
+   "website": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12099754",
+   "url_status": "200, checked 22 November 2026",
+   "source": "JPRAS Open 2025;44:479-486, https://pmc.ncbi.nlm.nih.gov/articles/PMC12099754 (read: hospital, 797 patients, enrolment window, retrospective design).",
+   "source_short": "JPRAS Open 2025, AUMC upper limb anomaly registry",
+   "map": false
   }
  ],
- "source_short": "Orphanet registry records; boundaries from Natural Earth"
+ "source_short": "Orphanet, EUROCAT, ICBDSR and NBDPN; boundaries from Natural Earth"
 }

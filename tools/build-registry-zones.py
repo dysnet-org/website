@@ -23,6 +23,7 @@ FILES = {"metro": "departements-version-simplifiee.geojson", "971": "departement
          "972": "departements/972-martinique/departement-972-martinique.geojson", "974": "departements/974-la-reunion/departement-974-la-reunion.geojson"}
 TOL = 0.004  # degrees ≈ 300-400 m: enough for a country-to-city map
 TOL_WIDE = 0.05  # national polygons: coarser, they are only ever seen at low zoom
+MIN_EXTENT = 0.15  # degrees: islands smaller than this are left out of a wide outline
 
 
 def fetch(name):
@@ -103,10 +104,17 @@ def simplify_ring(ring, tol=TOL):
     return [[round(x, 4), round(y, 4)] for x, y in base] + [[round(base[0][0], 4), round(base[0][1], 4)]]
 
 
-def simplify_geom(g, tol=TOL):
+def simplify_geom(g, tol=TOL, min_extent=0.0):
+    """min_extent drops islands smaller than that many degrees across: at the zoom where a wide
+    outline is seen, the Arctic archipelagos of Nunavut or Alaska are thousands of specks that
+    weigh more than every other zone together."""
     polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
     out = []
     for poly in polys:
+        if min_extent:
+            xs, ys = [p[0] for p in poly[0]], [p[1] for p in poly[0]]
+            if max(max(xs) - min(xs), max(ys) - min(ys)) < min_extent:
+                continue
         rings = [r for r in (simplify_ring(ring, tol) for ring in poly) if r]
         if rings: out.append(rings)
     return {"type": "MultiPolygon", "coordinates": out}
@@ -147,10 +155,13 @@ A0 = json.loads(NE_A0.read_text(encoding="utf-8"))["features"]
 for a in AREAS["areas"]:
     if a.get("map") is False or not a.get("iso3"):
         continue  # listed on the page, with no territory of its own to draw
-    names, regions = set(a.get("admin1") or []), set(a.get("region") or [])
-    if names or regions:
+    # admin1: Natural Earth admin-1 names; region: its "region" field (an Italian or Spanish region);
+    # geounit: its "geonunit" field, which is how a United Kingdom nation is drawn whole.
+    names, regions, units = set(a.get("admin1") or []), set(a.get("region") or []), set(a.get("geounit") or [])
+    if names or regions or units:
         picked = [f for f in A1 if f["properties"].get("adm0_a3") == a["iso3"]
-                  and ((f["properties"].get("name") in names) or (f["properties"].get("region") in regions))]
+                  and ((f["properties"].get("name") in names) or (f["properties"].get("region") in regions)
+                       or (f["properties"].get("geonunit") in units))]
         tol = TOL
     else:
         picked = [f for f in A0 if f["properties"].get("ADM0_A3") == a["iso3"]]
@@ -158,11 +169,15 @@ for a in AREAS["areas"]:
     if not picked:
         print("no geometry for", a["registry"]); continue
     for f in picked:
-        g = simplify_geom(f["geometry"], tol)
+        # a province the size of a country (Nunavut, Alaska, Western Australia) is drawn like one
+        # (by extent: Natural Earth leaves area_sqkm at 0 for some, Nunavut among them)
+        xy = [p for poly in (f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" else [f["geometry"]["coordinates"]]) for p in poly[0]]
+        wide = tol == TOL_WIDE or max(max(p[0] for p in xy) - min(p[0] for p in xy), max(p[1] for p in xy) - min(p[1] for p in xy)) > 8
+        g = simplify_geom(f["geometry"], TOL_WIDE if wide else tol, MIN_EXTENT if wide else 0.0)
         features.append({"type": "Feature", "geometry": g,
                          "properties": {"registry": a["registry"], "label": a["label"], "country": a["country"], "status": a["status"],
                                         "area": a["area"], "website": a.get("website") or a.get("orphanet_url"),
-                                        "scope": "regional" if (a.get("admin1") or a.get("region")) else "national",
+                                        "scope": "regional" if (a.get("admin1") or a.get("region") or a.get("geounit")) else "national",
                                         "since": a.get("since"), "local": a.get("local"),
                                         "source": a.get("source_short") or a.get("source") or AREAS.get("source_short") or AREAS.get("source", "")}})
     print(f"  {a['registry']}: {len(picked)} polygon(s)")

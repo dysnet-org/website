@@ -2103,10 +2103,10 @@ def drawn_zones():
 
 ZONES = drawn_zones()
 ZONE_SENTENCE = (
-    f"{spell(ZONES['registries']).capitalize()} registries are drawn. Most are population registries, which cover a "
+    f"The map draws {spell(ZONES['registries'])} registries. Most are population registries, which cover a "
     f"territory and count the births in it. {spell(ZONES['clinical'] + ZONES['hospital']).capitalize()} outlines mark "
     f"something different: {spell(ZONES['clinical'])} a clinical registry that recruits through participating hospitals, "
-    f"{spell(ZONES['hospital'])} a national system that samples births through reporting hospitals rather than covering "
+    f"{spell(ZONES['hospital'])} a surveillance system that samples births through reporting hospitals rather than covering "
     "a territory. The section below says why neither can be added to the rest."
 )
 
@@ -2530,7 +2530,7 @@ PAGES["/knowledge/ongoing-studies/"] = {
 
 PAGES["/knowledge/registries/"] = {
     "title": "Registries",
-    "desc": "Every registry that records congenital limb differences: those listed on Orphanet, the EUROCAT network and the seven French population registries.",
+    "desc": "The registries, surveillance programmes and cohorts that record limb differences: those listed on Orphanet, the members of EUROCAT and ICBDSR, national and state birth defects programmes, the seven French population registries and registries of limb loss.",
     "crumbs": [("/knowledge/", "Knowledge"), ("/knowledge/registries/", "Registries")],
     "body": f"""
 <section>
@@ -2562,7 +2562,7 @@ PAGES["/knowledge/registries/"] = {
     <p>Beside the population registries that count births, a second family of registries follows the children themselves. Four of them record congenital upper limb differences, and two more are run by DysNet member associations for one condition. They are smaller than EUROCAT, and they hold exactly what a population registry does not: diagnosis by a standard classification, treatment, and outcomes over years.</p>
 
     <h3 class="h4" style="margin-top:var(--space-3)">They do not speak the language of this site</h3>
-    <p>Every register here is keyed to <strong>ORPHAcodes</strong>, Orphanet's identifier for a named rare disease, and the population registries above are indexed the same way. The four clinical registries classify instead by the <strong>Oberg-Manske-Tonkin</strong> system, which sorts a malformation by how the limb failed to form rather than by the name of a syndrome; CULA North records ICD-10 alongside it. The two answer different questions and neither maps cleanly onto the other. A child with a radial longitudinal deficiency appears under an ORPHAcode in a population registry and under an OMT category in a clinical one, so the two counts describe overlapping children and cannot be added. Agreeing that mapping is one of the things <a href="/voice/#demand-3">we ask for</a>.</p>
+    <p>Every register here is keyed to <strong>ORPHAcodes</strong>, Orphanet's identifier for a named rare disease, and the population registries above are indexed the same way. The four clinical registries of congenital upper limb difference classify instead by the <strong>Oberg-Manske-Tonkin</strong> system, which sorts a malformation by how the limb failed to form rather than by the name of a syndrome; CULA North records ICD-10 alongside it. The two answer different questions and neither maps cleanly onto the other. A child with a radial longitudinal deficiency appears under an ORPHAcode in a population registry and under an OMT category in a clinical one, so the two counts describe overlapping children and cannot be added. Agreeing that mapping is one of the things <a href="/voice/#demand-3">we ask for</a>.</p>
     <div class="annex-wrap">
       <table class="annex priv-table">
         <thead><tr><th scope="col">Registry</th><th scope="col">Where</th><th scope="col">Since</th><th scope="col">Run by</th><th scope="col">Classification</th></tr></thead>

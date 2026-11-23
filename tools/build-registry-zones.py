@@ -22,8 +22,16 @@ BASE = "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/"
 FILES = {"metro": "departements-version-simplifiee.geojson", "971": "departements/971-guadeloupe/departement-971-guadeloupe.geojson",
          "972": "departements/972-martinique/departement-972-martinique.geojson", "974": "departements/974-la-reunion/departement-974-la-reunion.geojson"}
 TOL = 0.004  # degrees ≈ 300-400 m: enough for a country-to-city map
+TOL_MID = 0.012  # an admin-1 area wider than MID_EXTENT degrees (a US state, England): ≈ 1 km
+MID_EXTENT = 3
 TOL_WIDE = 0.05  # national polygons: coarser, they are only ever seen at low zoom
-MIN_EXTENT = 0.15  # degrees: islands smaller than this are left out of a wide outline
+MIN_EXTENT = 0.3  # degrees: islands smaller than this are left out of a wide outline
+
+
+# Coordinate precision: 0.001 degree (≈ 100 m) is finer than any tolerance used here, so a fourth
+# digit is weight with nothing to show. Rounding can fold a narrow inlet, though, and a ring that
+# stays folded is tried again with the fourth digit before it is simplified less.
+DIGITS = (3, 4)
 
 
 def fetch(name):
@@ -93,13 +101,14 @@ def simplify_ring(ring, tol=TOL):
     far = max(range(len(base)), key=lambda i: (base[i][0] - base[0][0]) ** 2 + (base[i][1] - base[0][1]) ** 2)
     t = tol
     for _ in range(4):
-        pts = dp(base[:far + 1], t)[:-1] + dp(base[far:], t)[:-1] if far > 1 else list(base)
-        if len(pts) < 3: return None
-        pts = [[round(x, 4), round(y, 4)] for x, y in pts]
-        pts = [p for i, p in enumerate(pts) if i == 0 or p != pts[i - 1]]
-        if len(pts) < 3: return None
-        fixed = unfold(pts + [pts[0]])
-        if fixed and len(fixed) >= 4: return fixed
+        raw = dp(base[:far + 1], t)[:-1] + dp(base[far:], t)[:-1] if far > 1 else list(base)
+        if len(raw) < 3: return None
+        for nd in DIGITS:
+            pts = [[round(x, nd), round(y, nd)] for x, y in raw]
+            pts = [p for i, p in enumerate(pts) if i == 0 or p != pts[i - 1]]
+            if len(pts) < 3: return None
+            fixed = unfold(pts + [pts[0]])
+            if fixed and len(fixed) >= 4: return fixed
         t /= 2
     return [[round(x, 4), round(y, 4)] for x, y in base] + [[round(base[0][0], 4), round(base[0][1], 4)]]
 
@@ -118,6 +127,50 @@ def simplify_geom(g, tol=TOL, min_extent=0.0):
         rings = [r for r in (simplify_ring(ring, tol) for ring in poly) if r]
         if rings: out.append(rings)
     return {"type": "MultiPolygon", "coordinates": out}
+
+
+def signed_area(r):
+    return sum(r[i][0] * r[i + 1][1] - r[i + 1][0] * r[i][1] for i in range(len(r) - 1)) / 2
+
+
+def inside(pt, ring):
+    x, y, hit = pt[0], pt[1], False
+    for (x1, y1), (x2, y2) in zip(ring, ring[1:]):
+        if (y1 > y) != (y2 > y) and x < x1 + (y - y1) * (x2 - x1) / (y2 - y1): hit = not hit
+    return hit
+
+
+def dissolve(feats):
+    """One outline for several admin-1 areas of the same registry (England's 152 counties, the
+    districts of the south of Portugal). Natural Earth's areas share their border vertices, so an
+    edge met in both directions is an inner border and is dropped; what is left chains into the
+    outer rings. A ring that turns the other way is an area left out inside them (a hole)."""
+    edges = set()
+    for f in feats:
+        g = f["geometry"]
+        for poly in (g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]):
+            r = [tuple(q) for q in poly[0]]
+            if r[0] != r[-1]: r.append(r[0])
+            if signed_area(r) < 0: r = r[::-1]
+            edges.update((a, b) for a, b in zip(r, r[1:]) if a != b)
+    nxt = {}
+    for a, b in edges:
+        if (b, a) not in edges: nxt.setdefault(a, []).append(b)
+    rings = []
+    while nxt:
+        start = next(iter(nxt)); ring = [start]; cur = start
+        while cur in nxt:
+            b = nxt[cur].pop()
+            if not nxt[cur]: del nxt[cur]
+            ring.append(b); cur = b
+            if cur == start: break
+        if ring[0] == ring[-1] and len(ring) >= 4: rings.append([list(q) for q in ring])
+    outers = [[r] for r in rings if signed_area(r) > 0]
+    for r in rings:
+        if signed_area(r) < 0:
+            home = next((o for o in outers if inside(r[0], o[0])), None)
+            if home: home.append(r)
+    return {"type": "MultiPolygon", "coordinates": outers}
 
 
 def features_of(obj):  # a FeatureCollection or a single Feature
@@ -168,18 +221,22 @@ for a in AREAS["areas"]:
         tol = TOL_WIDE
     if not picked:
         print("no geometry for", a["registry"]); continue
+    if len(picked) > 1:  # one outline per registry, without the inner borders of its areas
+        picked = [{"geometry": dissolve(picked)}]
     for f in picked:
         # a province the size of a country (Nunavut, Alaska, Western Australia) is drawn like one
         # (by extent: Natural Earth leaves area_sqkm at 0 for some, Nunavut among them)
         xy = [p for poly in (f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" else [f["geometry"]["coordinates"]]) for p in poly[0]]
-        wide = tol == TOL_WIDE or max(max(p[0] for p in xy) - min(p[0] for p in xy), max(p[1] for p in xy) - min(p[1] for p in xy)) > 8
-        g = simplify_geom(f["geometry"], TOL_WIDE if wide else tol, MIN_EXTENT if wide else 0.0)
+        extent = max(max(p[0] for p in xy) - min(p[0] for p in xy), max(p[1] for p in xy) - min(p[1] for p in xy))
+        wide = tol == TOL_WIDE or extent > 8
+        ftol = TOL_WIDE if wide else (TOL_MID if extent > MID_EXTENT else tol)
+        g = simplify_geom(f["geometry"], ftol, MIN_EXTENT if wide else 0.0)
         features.append({"type": "Feature", "geometry": g,
                          "properties": {"registry": a["registry"], "label": a["label"], "country": a["country"], "status": a["status"],
                                         "area": a["area"], "website": a.get("website") or a.get("orphanet_url"),
                                         "scope": "regional" if (a.get("admin1") or a.get("region") or a.get("geounit")) else "national",
                                         "since": a.get("since"), "local": a.get("local"),
                                         "source": a.get("source_short") or a.get("source") or AREAS.get("source_short") or AREAS.get("source", "")}})
-    print(f"  {a['registry']}: {len(picked)} polygon(s)")
+    print(f"  {a['registry']}: {len(picked[0]['geometry']['coordinates']) if len(picked) == 1 and picked[0]['geometry']['type'] == 'MultiPolygon' else len(picked)} polygon(s)")
 OUT.write_text(json.dumps({"type": "FeatureCollection", "features": features}, separators=(",", ":")), encoding="utf-8")
 print(f"wrote {OUT.relative_to(HERE.parent)}: {len(features)} areas, {OUT.stat().st_size // 1024} KB")

@@ -1,6 +1,6 @@
 {
  "source": "Orphanet registry records (Research and trials, Patient registries), read 11 September 2026; the EUROCAT member list and the ICBDSR programme directory, read 22 November 2026; the National Birth Defects Prevention Network's state programme directory and data tables; each registry's own pages and publications, cited entry by entry; administrative boundaries from Natural Earth 10m admin-0 and admin-1 (public domain).",
- "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a national system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing. \"label\" is the registry's official title and nothing else: no city, country or operating body appended, because the area, country and kind fields carry those. \"local\" holds the official title in the registry's own language where that is not English. An entry is listed when the registry shows data from 2022 or later, or appears in the current EUROCAT member list or ICBDSR programme directory. \"geounit\" draws a whole nation of the United Kingdom from Natural Earth's geonunit field. \"since\" holds a year only, because the map reads it as \"Collecting since\"; \"since_note\" keeps the detail behind that year.",
+ "note": "Coverage of the registries that are coded for the conditions this site describes, outside France. The French registries are drawn département by département in registry-zones.json from the Santé publique France surveillance report. Registries with status \"clinical\" are not population-based: they recruit through participating hospitals rather than covering a territory, so their outline marks the country they work in and claims no coverage of the births in it. Status \"hospital\" marks a system that samples births through reporting hospitals rather than covering every birth in a territory. Entries with \"map\": false are registries this register lists without drawing: an umbrella with no territory of its own, a hospital network, a single centre, or a national register we cite without having mapped its coverage. Status \"study\" marks a population-based study built on registries, listed because papers in our bibliography rest on it; it covers no territory and is not drawn. Each entry's \"match\" phrases are what tools/enrich-bibliography-registries.py looks for in a paper's title and abstract to record that the paper rests on the registry. \"source\" carries the full provenance and \"source_short\" a one-line citation; the map popup shows the short one, because a popup that quotes four references is unreadable and the registries page carries them in full. \"since\" is the year the registry itself started collecting, not the year it joined a network, and each entry's source says where the year comes from. An entry without it is one whose start year we have not sourced; the card leaves the line out rather than guessing. \"label\" is the registry's official title and nothing else: no city, country or operating body appended, because the area, country and kind fields carry those. \"local\" holds the official title in the registry's own language where that is not English. An entry is listed when the registry shows data from 2022 or later, or appears in the current EUROCAT member list or ICBDSR programme directory. \"geounit\" draws a whole nation of the United Kingdom from Natural Earth's geonunit field. \"since\" holds a year only, because the map reads it as \"Collecting since\"; \"since_note\" keeps the detail behind that year.",
  "areas": [
   {
    "registry": "Antwerp",
@@ -142,17 +142,22 @@
   },
   {
    "registry": "ISMAC",
-   "label": "ISMAC, Sicilian registry of congenital anomalies",
+   "label": "Sicilian Registry of Congenital Malformations",
    "orphanet_id": "52840",
    "country": "Italy",
    "iso3": "ITA",
-   "region": [
-    "Sicily"
-   ],
-   "area": "Sicily",
-   "status": "covered",
+   "area": "Selected hospitals in four of the nine Sicilian provinces, in the south-east, taking every mother who gives birth there: about 17,000 births a year, about a third of births in Sicily",
+   "status": "hospital",
    "orphanet_url": "https://www.orpha.net/en/research-trials/registry/52840",
-   "source_short": ""
+   "source_short": "EUROCAT member pages, Sicily and Sicily (ISMAC)",
+   "admin1": [
+    "Catania",
+    "Siracusa",
+    "Ragusa"
+   ],
+   "since": "1991",
+   "since_note": "Started in 1991; EUROCAT member from 1997 (EUROCAT member page Sicily (ISMAC)).",
+   "source": "EUROCAT member page Sicily (ISMAC), https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/sicily-%28ISMAC%29_en, read 23 November 2026: hospital-based, all mothers delivering in selected hospitals of four south-eastern provinces of the nine, about 17,000 births a year, about a third of births in Sicily, started 1991. The EUROCAT member list read 22 November 2026 shows Sicily as an affiliate member and Sicily (ISMAC) as a past member; the affiliate page (last updated June 2018) describes no territory. The page does not name the four provinces: the three of the south-eastern corner are drawn, Catania (the registry's seat), Siracusa (whose residents' ISMAC data were studied for 1991-2000) and Ragusa; the fourth is not named in any source read. Orphanet registry record 52840, read 11 September 2026."
   },
   {
    "registry": "Tuscan Registry",
@@ -205,15 +210,24 @@
   },
   {
    "registry": "RENAC",
-   "label": "RENAC, Portuguese registry of congenital anomalies (EUROCAT)",
+   "label": "National Registry of Congenital Anomalies",
    "orphanet_id": "59379",
    "country": "Portugal",
    "iso3": "PRT",
-   "admin1": [],
-   "area": "Portugal, national",
+   "admin1": [
+    "Faro",
+    "Beja",
+    "Évora",
+    "Portalegre",
+    "Setúbal",
+    "Santarém"
+   ],
+   "area": "Algarve, Alentejo and the districts of Setúbal and part of Santarém, where the registry is population-based: about 18,000 births a year, 14 per cent of births in Portugal",
    "status": "covered",
    "orphanet_url": "https://www.orpha.net/en/research-trials/registry/59379",
-   "source_short": ""
+   "source_short": "EUROCAT member page South Portugal, 2023",
+   "local": "Registo Nacional de Anomalias Congénitas",
+   "source": "EUROCAT member page South Portugal (last updated 2 May 2023), https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/South-Portugal_en, read 23 November 2026: population-based registry of all mothers resident in the Algarve, Alentejo and part of Lisboa e Vale do Tejo (Setúbal and part of Santarém), about 18,000 births a year, 14 per cent of births in Portugal; full member in the EUROCAT member list read 22 November 2026. Orphanet registry record 59379, read 11 September 2026. The Santarém district is drawn whole, although the registry covers part of it."
   },
   {
    "registry": "RACAV",
@@ -2610,6 +2624,38 @@
    "source": "JPRAS Open 2025;44:479-486, https://pmc.ncbi.nlm.nih.gov/articles/PMC12099754 (read: hospital, 797 patients, enrolment window, retrospective design).",
    "source_short": "JPRAS Open 2025, AUMC upper limb anomaly registry",
    "map": false
+  },
+  {
+   "registry": "Moldova National Register of Congenital Malformations",
+   "label": "National Register of Congenital Malformations",
+   "local": "Registrul național al malformațiilor congenitale",
+   "country": "Moldova",
+   "iso3": "MDA",
+   "admin1": [],
+   "area": "Republic of Moldova, national, with congenital anomalies grouped on EUROCAT definitions",
+   "status": "covered",
+   "kind": "National register held by the Institute of Mother and Child, a public medical institution, with births from the National Bureau of Statistics as the denominator.",
+   "conditions": "Congenital anomalies by EUROCAT group. Register data for 2013 to 2022 give reduction anomalies at 0.37 per 1,000 births, against 0.36 per 1,000 in EUROCAT.",
+   "website": "https://repository.usmf.md/handle/20.500.12710/33210",
+   "url_status": "200, checked 23 November 2026",
+   "source": "Rare pathologies in the monitoring of congenital malformations in the Republic of Moldova, Buletin de Perinatologie 2025, no. 1(95), https://repository.usmf.md/handle/20.500.12710/33210?mode=full, read 23 November 2026: register data 2013-2022 grouped and compared with EUROCAT, reduction anomalies 0.37 per 1,000 births.",
+   "source_short": "Buletin de Perinatologie 2025, register data 2013-2022"
+  },
+  {
+   "registry": "ICRC PRP",
+   "label": "ICRC Physical Rehabilitation Programme patient database",
+   "country": "Afghanistan",
+   "iso3": "AFG",
+   "admin1": [],
+   "map": false,
+   "area": "Seven physical rehabilitation centres the ICRC supports in Afghanistan, which registered 19,269 new patients in 2024, 1,287 of them amputees",
+   "status": "clinical",
+   "kind": "The International Committee of the Red Cross registers every new patient of the centres it supports in an electronic database, with the cause of each amputation; it publishes yearly totals only.",
+   "conditions": "Amputees and other people who need a prosthesis, an orthosis or rehabilitation. Whether congenital limb deficiency has its own category is not stated.",
+   "website": "https://www.icrc.org/en/where-we-work/afghanistan",
+   "url_status": "200, checked 23 November 2026",
+   "source": "ICRC Afghanistan, Operational facts and figures, January-December 2024 (ICRC, 2025), https://www.icrc.org/sites/default/files/2025-02/English_ICRC_Afghanistan_Facts_and_Figures_2024.pdf, read 23 November 2026: 19,269 new patients, 1,287 amputees. Retrospective observational study of persons with amputations accessing ICRC rehabilitation centres in five conflict and post-conflict countries, BMJ Open 2021, https://pmc.ncbi.nlm.nih.gov/articles/PMC8638157/, read: the ICRC electronic patient database, Afghanistan among the five countries, 2009-2018.",
+   "source_short": "ICRC Afghanistan facts and figures 2024"
   }
  ],
  "source_short": "Orphanet, EUROCAT, ICBDSR and NBDPN; boundaries from Natural Earth"

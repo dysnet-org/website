@@ -1,6 +1,6 @@
 {
- "read_on": "2026-11-22",
- "note": "Registries, surveillance programmes and cohorts considered for tools/registry-areas.json and not entered, with the reason; the registries reported as closed or dormant; and, per region, the countries searched and what was looked at. Searched region by region on 22 November 2026; each finding was checked against the EUROCAT member list and the ICBDSR programme directory read the same day. A held entry comes back when a source shows data from 2022 or later and limb differences among what it records.",
+ "read_on": "2026-11-22; second pass 2026-11-23",
+ "note": "Registries, surveillance programmes and cohorts considered for tools/registry-areas.json and not entered, with the reason; the registries reported as closed or dormant; and, per region, the countries searched and what was looked at. Searched region by region on 22 November 2026, and on 23 November 2026 for the countries the first search left without a dedicated search; each finding was checked against the EUROCAT member list and the ICBDSR programme directory read the same day. A held entry comes back when a source shows data from 2022 or later and limb differences among what it records.",
  "held": [
   {
    "registry": "SABDR",
@@ -98,7 +98,7 @@
    "status_proposed": "covered",
    "why_held": "Overlaps the national RENAC already drawn. EUROCAT's member list names South Portugal as the member registry, so which territory RENAC covers is an open question, not a second outline.",
    "last_activity": "EUROCAT page updated 2 May 2023; current full member.",
-   "notes": "CORRECTION: the existing curated RENAC is drawn as national; EUROCAT's page shows the member registry covers the south only (14% of births). Check which territory RENAC really covers.",
+   "notes": "CORRECTION: the existing curated RENAC is drawn as national; EUROCAT's page shows the member registry covers the south only (14% of births). Check which territory RENAC really covers. Settled 23 November 2026: RENAC is now drawn on the territory this EUROCAT page describes, so this entry would duplicate it.",
    "source": "EUROCAT member page South Portugal, https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries/South-Portugal_en; EUROCAT list https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en."
   },
   {
@@ -263,7 +263,7 @@
    "status_proposed": "in_progress",
    "why_held": "No source read shows data from 2022 or later together with limb differences among what it records, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
    "last_activity": "Listed in the sSCAN 2026 network table; no data report found",
-   "notes": "Existence and activity not confirmed by any data report. A source for Enugu State states there is neither surveillance system nor registry.",
+   "notes": "Existence and activity not confirmed by any data report. A source for Enugu State states there is neither surveillance system nor registry. Second pass, 23 November 2026: an update at the sSCAN General Assembly of September 2023 (programme read); no paper or report with 2022+ data found.",
    "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); sSCAN General Assembly Report 2023, https://media.tghn.org/medialibrary/2024/02/sSCAN_General_Assembly_Report_2023.pdf (Table 2 lists 16 affiliated projects with population type and sites); scoping search for Nigerian studies returned only single-hospital papers (PMC6364330, PMC6446329) and a 2026 scoping review stating that data gaps persist"
   },
   {
@@ -274,7 +274,7 @@
    "status_proposed": "hospital",
    "why_held": "No source read shows data from 2022 or later together with limb differences among what it records, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
    "last_activity": "Listed in the sSCAN 2026 network table; no data report found",
-   "notes": "Not independently confirmed; no own page or paper found.",
+   "notes": "Not independently confirmed; no own page or paper found. Second pass, 23 November 2026: a talk at the sSCAN General Assembly of September 2023; the latest review found covers 2007-2017.",
    "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); sSCAN General Assembly Report 2023, https://media.tghn.org/medialibrary/2024/02/sSCAN_General_Assembly_Report_2023.pdf (Table 2 lists 16 affiliated projects with population type and sites)"
   },
   {
@@ -285,7 +285,7 @@
    "status_proposed": "hospital",
    "why_held": "No source read shows data from 2022 or later together with limb differences among what it records, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
    "last_activity": "Listed in the sSCAN 2026 network table; no data report found",
-   "notes": "Not independently confirmed; admin1 inferred from Buea; hospital names not given.",
+   "notes": "Not independently confirmed; admin1 inferred from Buea; hospital names not given. Second pass, 23 November 2026: a talk titled \"First steps\" at the sSCAN General Assembly of September 2023 (programme read); no data found.",
    "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); sSCAN General Assembly Report 2023, https://media.tghn.org/medialibrary/2024/02/sSCAN_General_Assembly_Report_2023.pdf (Table 2 lists 16 affiliated projects with population type and sites)"
   },
   {
@@ -296,7 +296,7 @@
    "status_proposed": "in_progress",
    "why_held": "Ended, curtailed or never established, on the sources read.",
    "last_activity": "Listed in the sSCAN 2026 network table (citing a 2018 paper); no later report found",
-   "notes": "The 2015 hospital study states Tanzania had no surveillance system; the current system's status is unconfirmed. A CDC-supported project, so possibly closed in 2025.",
+   "notes": "The 2015 hospital study states Tanzania had no surveillance system; the current system's status is unconfirmed. A CDC-supported project, so possibly closed in 2025. Second pass, 23 November 2026: named only in the sSCAN 2023 General Assembly programme table and among countries interested in the sSCAN app; no programme report or 2022+ output found.",
    "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); Kishimba et al. Dar es Salaam studies, https://pmc.ncbi.nlm.nih.gov/articles/PMC4562455 (2011-2012 hospital data, states no surveillance system then; a search engine listing only)"
   },
   {
@@ -307,7 +307,7 @@
    "status_proposed": "study",
    "why_held": "No source read shows data from 2022 or later together with limb differences among what it records, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
    "last_activity": "Listed in the sSCAN 2026 network table; no data report found",
-   "notes": "Not independently confirmed.",
+   "notes": "Not independently confirmed. Second pass, 23 November 2026: the sSCAN General Assembly programmes of 2023 and 2025 (read) show the programme gave an update in 2023; no paper, report or limb-defect statement with 2022+ data found.",
    "source": "Opportunities and Challenges for Surveillance of Congenital Anomalies in Sub-Saharan Africa, Birth Defects Research 2026;118(6):e70075, https://pmc.ncbi.nlm.nih.gov/articles/PMC13254227/ (Table 1 lists the affiliated projects; text states the 2025 closures and curtailments); sSCAN General Assembly Report 2023, https://media.tghn.org/medialibrary/2024/02/sSCAN_General_Assembly_Report_2023.pdf (Table 2 lists 16 affiliated projects with population type and sites)"
   },
   {
@@ -364,6 +364,72 @@
    "last_activity": "Unknown; seen as a crowdfunding project page in a search engine listing.",
    "notes": "Page could not be read. Activity after 2022 not verified; treat as a lead to check at the portal's own site.",
    "source": "a search engine listing for the GlobalGiving project page, https://www.globalgiving.org/projects/global-poland-syndrome-community-register-project/ (page returned 403; description comes from the search summary only)."
+  },
+  {
+   "registry": "Belarusian Registry of Congenital Malformations",
+   "label": "Belarusian Registry of Congenital Malformations (Belarusian monitoring of congenital malformations)",
+   "country": "Belarus",
+   "region": "Europe south, central and east",
+   "status_proposed": "covered",
+   "why_held": "The latest data year in the sources read is 2021: no source shows data from 2022 or later, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory. A 2025 paper still uses the register, so it is likely running.",
+   "last_activity": "Registry data for Minsk 2018-2021 analysed in a paper published in 2025; registry data for 2016 analysed in a 2022 paper.",
+   "notes": "The newest data year seen in a paper is 2021 (published 2025), so the strict 2022+ data rule is not met on the sources read; running status rests on a 2025 paper using registry data. A prenatal diagnosis abstract (mediexpo.ru, 2023) gives 2022 counts for one interdistrict centre only, not the registry. Editor to decide. Official ministry page not found.",
+   "source": "1. Congenital malformations of limbs in the population of the city of Minsk, Sakharov Readings 2025, https://elib.bsu.by/bitstream/123456789/336988/1/184-188.pdf (read; limb malformations from the Belarusian registry, Minsk, 2018-2021, 115 cases, limb defects among strictly recorded defects). 2. Monitoring of congenital malformations of strict accounting, Sakharov Readings 2022, https://elib.bsu.by/bitstream/123456789/285306/1/21-24.pdf (read; registry created in 1979, host institute, list of strictly recorded defects with Q71/Q73, 2016 data)."
+  },
+  {
+   "registry": "FBiH congenital malformations registry",
+   "label": "Congenital malformations registry of the Federation of Bosnia and Herzegovina",
+   "country": "Bosnia and Herzegovina",
+   "region": "Europe south, central and east",
+   "status_proposed": "covered",
+   "why_held": "The latest data year in the sources read is 2021: no source shows data from 2022 or later, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
+   "last_activity": "Data to end of 2021 reported in a 2023 abstract.",
+   "notes": "Data years end in 2021, so strict 2022+ rule not met on the source read; the institute's yearbook 2022 (zzjzfbih.ba, Godisnjak-2022_web.pdf) appeared in a search but was not opened and may show 2022 data. The Republika Srpska entity and the Brcko District were not found. Conference abstract only.",
+   "source": "1. Congenital malformations registered in the Federation of Bosnia and Herzegovina 2019-2021, European Journal of Public Health supplement 2023, https://pmc.ncbi.nlm.nih.gov/articles/PMC10597160/ (read; registry set up 2019, institute, 449 cases to end 2021, musculoskeletal named)."
+  },
+  {
+   "registry": "Icelandic Birth Register",
+   "label": "Icelandic Birth Register (Fæðingaskrá), Directorate of Health",
+   "country": "Iceland",
+   "region": "Europe south, central and east",
+   "status_proposed": "covered",
+   "why_held": "Rests on search results or a single abstract: no source read shows data from 2022 or later together with limb differences among what it records. The register's own pages refused automated reading.",
+   "last_activity": "Annual report for 2023 published October 2025.",
+   "notes": "All island.is, rafhladan.is and landspitali.is pages returned errors on fetch (403), so everything rests on search snippets. Whether limb anomalies are recorded, and whether 2022+ malformation data are published, still needs confirmation from the Directorate of Health. Iceland is not a EUROCAT member.",
+   "source": "1. Register description, island.is Directorate of Health, https://island.is/en/faedingar-tolur/skraning-faedinga (search result; responsibility, since 1972, all birth facilities, electronic flow). 2. Birth Register report 2023, https://rafhladan.is/bitstream/handle/10802/35833/Arsskyrsla2023.pdf?sequence=1 (search result; dated October 2025). 3. Birth Register reports 2016 and 2019, https://www.landspitali.is/library/Sameiginlegar-skrar/Rit-og-skyrslur/Faedingaskraningar/faedingarskraning_skyrsla_2019.pdf (search result; malformation tables)."
+  },
+  {
+   "registry": "Mongolia congenital anomalies notification database",
+   "label": "Congenital anomalies surveillance database of the National Center for Maternal and Child Health, Mongolia",
+   "country": "Mongolia",
+   "region": "Asia and the Pacific",
+   "status_proposed": "covered",
+   "why_held": "The latest data year in the sources read is 2021: no source shows data from 2022 or later, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory.",
+   "last_activity": "Data for 2017 to 2021, published in the Mongolian Population Journal, issue 33, 2023.",
+   "notes": "The authors warn the database may not represent every case in the country. Limb defects are not given as a separate group, only inside the musculoskeletal chapter. Not a member of ICBDSR or EUROCAT as far as the sources show. Status 'covered' rests on the paper's wording 'national-level numbers'; an editor may prefer 'hospital'.",
+   "source": "1. Congenital anomalies among newborns in Mongolia and its determinants (Mongolian Population Journal 33), Mongolian Population Association, 2023, https://journal.num.edu.mn/MJP/article/download/4869/4044/8656, read: shows the database, the notification form, ICD-10 Q00-Q99, 3,236 cases, 377,999 births, musculoskeletal 539 cases. 2. WHO Mongolia feature on congenital rubella syndrome surveillance, https://www.who.int/japan/news/feature-stories/detail/case-story--hidden-burden-of-congential-rubella-syndrome-in-mongolia, search result: says a hospital-based CRS system is planned for 2026-2027, not a general anomaly registry."
+  },
+  {
+   "registry": "QazGenis",
+   "label": "QazGenis register of congenital and hereditary pathology, Kazakhstan",
+   "country": "Kazakhstan",
+   "region": "Asia and the Pacific",
+   "status_proposed": "in_progress",
+   "why_held": "Announced in February 2026 and to be integrated during 2026; no source says it records limb differences.",
+   "last_activity": "Ministry of Health news of 23 February 2026.",
+   "notes": "Resolves last time's lead: the 'Umit' system exists (see inactive) but its last evidence is 2020; QazGenis may be its successor, but no source says so. No source says what QazGenis records beyond 'congenital and hereditary pathology', so limb differences are unconfirmed. Propose only as in_progress, or hold.",
+   "source": "1. Ministry of Health news item on fetal pathology detection, gov.kz, 23 February 2026, https://www.gov.kz/memleket/entities/dsm/press/news/details/1167656?lang=ru, read: says the QazGenis register has been created and will be integrated in 2026. 2. How an AI register detects congenital pathologies, inbusiness.kz, 24 February 2026, https://inbusiness.kz/ru/last/kak-registr-ii-vyyavlyaet-vrozhdennye-patologii, read: repeats the announcement, no date of creation or coverage."
+  },
+  {
+   "registry": "Morocco congenital malformation surveillance",
+   "label": "Moroccan Ministry of Health surveillance system for congenital malformations",
+   "country": "Morocco",
+   "region": "Middle East and Africa",
+   "status_proposed": "hospital",
+   "why_held": "The latest data year in the sources read is 2021: no source shows data from 2022 or later, and the registry is in neither the current EUROCAT member list nor the ICBDSR programme directory. The article read does not name limb defects among the groups it reports.",
+   "last_activity": "Data 2017-2021 published March 2024; the paper also cites 2022 public-sector births",
+   "notes": "The article does not name limb defects among the reported groups, so whether the data hold a limb category is unconfirmed. Latest data year in the paper is 2021, so the strict active rule (2022+ data) is only met through the 2024 present-tense description; the editor may prefer to hold it. Coverage is public sector only, so status 'hospital' rather than 'covered'.",
+   "source": "1. Congenital Malformations in the Moroccan Surveillance System: Contribution to Prevalence Estimation, Global Health, Epidemiology and Genomics, 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC10963113/ (read): proves system, method, coverage and 2017-2021 counts."
   }
  ],
  "inactive": [
@@ -483,13 +549,6 @@
    "registry": "North East Italy (EUROCAT past member)",
    "country": "Italy",
    "last_year": "not documented (past member)",
-   "source": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en",
-   "region": "Europe south, central and east"
-  },
-  {
-   "registry": "Sicily ISMAC and Campania (EUROCAT past members)",
-   "country": "Italy",
-   "last_year": "EUROCAT status past member; Campania still reported to ICBDSR for 2015-2017",
    "source": "https://eu-rd-platform.jrc.ec.europa.eu/eurocat/eurocat-members/registries_en",
    "region": "Europe south, central and east"
   },
@@ -632,6 +691,83 @@
    "last_year": "2013",
    "source": "a search engine listing for thalidomide.ca report page, https://thalidomide.ca/en/report-study-on-the-current-living-conditions-of-thalidomide-survivors/ (not read; date inconsistent between 2011 and 2013).",
    "region": "Specialised registries and cohorts, worldwide"
+  },
+  {
+   "registry": "Fiji congenital anomalies registers and NICU registers (review series)",
+   "country": "Fiji",
+   "last_year": "2010",
+   "source": "Retrospective review 1995-2010, search result snippet (PMC)",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "registry": "Mauritius Birth Defects Registry (MBDR)",
+   "country": "Mauritius",
+   "last_year": "2021",
+   "source": "Mauritius Institute of Health, MBDR page https://mih.govmu.org/mih/?page_id=2919 (read): active registration of births with defects to resident mothers; five reports for data years 2013-2017; the 2018 report was presented on 6 January 2021; no later report found. Needs a direct check with the Institute for 2019+ data before being treated as ended.",
+   "region": "Middle East and Africa"
+  },
+  {
+   "registry": "Albanian Congenital Malformations Surveillance System (Institute of Public Health)",
+   "country": "Albania",
+   "last_year": "2017",
+   "source": "Institute of Public Health reports: 2011-2015 national report and 2017 surveillance report (ishp.gov.al, search results); system set up 2009, mandatory passive reporting from public maternity wards. No 2022+ report found; a 2025 ISHP factsheet and the 2023 and 2025 bulletins read contain no surveillance data.",
+   "region": "Europe south, central and east"
+  },
+  {
+   "registry": "LIRECA, Lithuanian Registry of Congenital Developmental Defects and Hereditary Diseases",
+   "country": "Lithuania",
+   "last_year": "2004",
+   "source": "Vilnius University habilitation review (epublications.vu.lt/object/elaba:6230644, search result): set up 1992 by ministerial order, valid until 2004; a 2003 paper in Lithuanian Medical Research says questionnaire database since 1993 no longer reflects reality for lack of funding.",
+   "region": "Europe south, central and east"
+  },
+  {
+   "registry": "Lithuanian Neonatal (Neonatology) Registry, congenital anomalies",
+   "country": "Lithuania",
+   "last_year": "2020",
+   "source": "LSMU 2015 paper (data 2002-2011) and a 2025 Vilnius University study of 32,656 anomaly cases from the newborn register for births 1997-2020 (epublications.vu.lt/object/elaba:238855846, search result; PDF could not be read). Musculoskeletal anomalies are a major group, limb defects not confirmed, no 2022+ data seen; operator not confirmed.",
+   "region": "Europe south, central and east"
+  },
+  {
+   "registry": "Umit information-analytical system, genetic register of congenital malformations and hereditary diseases (National Research Center for Maternal and Child Health, Astana)",
+   "country": "Kazakhstan",
+   "last_year": "2020",
+   "source": "Conference abstract 2020, https://nur.nu.edu.kz/handle/123456789/5191 (read): 4,564 patients and fetuses, EUROCAT-style groups, musculoskeletal 175 cases; paper in Kazakhstan Clinical Medicine Journal 2017, https://www.doi.org/10.23950/1812-2892-JCMK-00482 (search result). A clinical genetic register, not population-based; no 2022+ publication found.",
+   "region": "Asia and the Pacific"
+  },
+  {
+   "registry": "Lebanon national birth defects surveillance programme (Ministry of Public Health with NCPNN and CDC; notification form to the Vital Data Observatory)",
+   "country": "Lebanon",
+   "last_year": "2013",
+   "source": "Birth Defects Manual version 2, February 2013, https://moph.gov.lb/userfiles/files/Programs%26Projects/Vital%20Data%20Observatory/BirthdefectsManual-EN.pdf (read). The Ministry's Vital Data Observatory page still lists the notification form and manuals but gives no dates, annual report or birth defects statistics, so 2022+ activity is not confirmed; worth a direct check.",
+   "region": "Asia and the Pacific"
+  },
+  {
+   "registry": "WHO and Ministry of Health household survey of congenital birth defects in 18 districts",
+   "country": "Iraq",
+   "last_year": "2012",
+   "source": "WHO EMRO Iraq congenital birth defects report, https://www.emro.who.int/images/stories/iraq/documents/Congenital_birth_defects_report.pdf (search result). One-off survey, not a registry; a 2015-2016 Erbil hospital study states no national organisation records anomalies.",
+   "region": "Asia and the Pacific"
+  },
+  {
+   "registry": "Monastir congenital anomalies surveillance",
+   "country": "Tunisia",
+   "last_year": "2008",
+   "source": "Conference abstract 2010 on 2003-2008 data (search result only), https://katalog.lib.cas.cz/KNAV/EdsRecord/edsair,edsair.doi...........621308b951ffc2a90a6df229a7967fc2",
+   "region": "Middle East and Africa"
+  },
+  {
+   "registry": "CNIDAH national survey of landmine and explosive remnants survivors (Angola)",
+   "country": "Angola",
+   "last_year": "2014 (9,165 survivors registered in nine provinces; survey suspended since 2014)",
+   "source": "Landmine Monitor and Mine Ban Convention victim assistance reports, search results only",
+   "region": "Middle East and Africa"
+  },
+  {
+   "registry": "Sierra Leone Truth and Reconciliation Commission amputation statements database, with Handicap International amputee registration report",
+   "country": "Sierra Leone",
+   "last_year": "2004 (final TRC report; one-off historical record of war amputations)",
+   "source": "Sierra Leone TRC final report, Appendix 5, search result only",
+   "region": "Middle East and Africa"
   }
  ],
  "countries_checked": {
@@ -663,8 +799,8 @@
    {
     "country": "Macau",
     "iso3": "MAC",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Search on 23 November 2026 for a congenital anomaly registry or birth defects surveillance: no source names one; the JoGH 2026 review of national registries and the WHO South-East Asia network pages do not list the territory."
    },
    {
     "country": "Taiwan",
@@ -687,14 +823,14 @@
    {
     "country": "North Korea",
     "iso3": "PRK",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: One search: no registry or surveillance system; only modelled estimates and a 2017 refugee interview study."
    },
    {
     "country": "Mongolia",
     "iso3": "MNG",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "1 found (medium)",
+    "checked": "Second pass, 23 November 2026: Searched in English; read the 2023 Mongolian Population Journal paper (Mongolian text) describing the national notification database and its 2017-2021 data."
    },
    {
     "country": "India",
@@ -741,8 +877,8 @@
    {
     "country": "Afghanistan",
     "iso3": "AFG",
-    "result": "none: JoGH 2026 reports no CAR",
-    "checked": "JoGH 2026 mapping; Landmine Monitor 2025 reports 624 casualties in 2024 (search summary); ICRC data not searched"
+    "result": "1 found (medium)",
+    "checked": "Second pass, 23 November 2026: Searched ICRC physical rehabilitation and mine victim data. Read the ICRC 2024 facts and figures (19,269 new patients, 1,287 amputees) and the BMJ Open 2021 paper on the ICRC database. No birth defects system: a 2026 Journal of Global Health survey of registries reports none. Landmine casualties are in the DMAC IMSMA database (upgrade pending), with no amputation data found."
    },
    {
     "country": "Thailand",
@@ -801,8 +937,8 @@
    {
     "country": "Brunei",
     "iso3": "BRN",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Search on 23 November 2026 for a congenital anomaly registry or birth defects surveillance: no source names one; the JoGH 2026 review of national registries and the WHO South-East Asia network pages do not list the territory."
    },
    {
     "country": "Timor-Leste",
@@ -813,44 +949,56 @@
    {
     "country": "Kazakhstan",
     "iso3": "KAZ",
-    "result": "lead only: national genetic register / 'Umit' information system recording congenital and hereditary disease, not confirmed as limb-recording",
-    "checked": "Search summaries of Kazakh abstracts, not read"
+    "result": "1 found (low confidence), 1 inactive",
+    "checked": "Second pass, 23 November 2026: Searched in English and Russian and read the Umit abstract and two February 2026 items on QazGenis. Umit is a clinical genetic register with last evidence in 2020; QazGenis is announced as created in 2026."
    },
    {
     "country": "Uzbekistan",
     "iso3": "UZB",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in English and Russian twice. Only presidential screening programmes and a July 2026 plan for a rare disease registry (search result); no congenital anomaly registry confirmed."
    },
    {
     "country": "Kyrgyzstan",
     "iso3": "KGZ",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in Russian. A 2019 overview called a congenital anomalies register 'under development'; a July 2025 article gives Ministry of Labour counts of new cases 2020-2023 without naming a register (read)."
    },
    {
     "country": "Tajikistan",
     "iso3": "TJK",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in Russian together with Kyrgyzstan and Turkmenistan; nothing about a register or monitoring system."
    },
    {
     "country": "Turkmenistan",
     "iso3": "TKM",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in Russian together with Kyrgyzstan and Tajikistan; nothing found."
    },
    {
     "country": "Papua New Guinea",
     "iso3": "PNG",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched Pacific birth defects surveillance; found only a 2024 single-province hospital study (East New Britain, 2018-2020), which is a case series and excluded. No national system. Amputee/ICRC/landmine search found nothing for PNG."
    },
    {
-    "country": "Fiji and other Pacific islands",
+    "country": "Fiji",
     "iso3": "FJI",
-    "result": "none found; Not individually searched: web search budget ran out. Covered only by the SEARO pages, the 2026 JoGH registry mapping and the ICBDSR directory",
-    "checked": "-"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Found only a retrospective review of 1995-2010 using hospital anomaly registers and NICU registers (last data 2010, not a standing system). Nothing 2022+."
+   },
+   {
+    "country": "Other Pacific island states (Samoa, Tonga, Vanuatu, Solomon Islands, Kiribati, etc.)",
+    "iso3": "",
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: A 2026 BMC Public Health scoping review snippet says Pacific data collection is limited and varied; no standing registry found. Not searched individually (quota kept low); SPC and WHO Western Pacific pages not opened."
+   },
+   {
+    "country": "Iraq (including the Kurdistan Region)",
+    "iso3": "IRQ",
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in English and Arabic. Only the 2012 WHO household survey and hospital studies (Erbil, Duhok, Sulaymaniyah, Najaf, Karbala); mine casualty data sit in the federal IMSMA database (upgrade stalled) and the IKMAA system launched June 2024 (Mine Action Review, read), with no sign that they record amputations. ICRC rehabilitation data noted under Afghanistan."
    }
   ],
   "Europe north and west": [
@@ -917,8 +1065,8 @@
    {
     "country": "Iceland",
     "iso3": "ISL",
-    "result": "none verified; a national Birth Register at Landspitali since 1972 records abnormalities, but both island.is pages returned 403, so it is not entered",
-    "checked": "a search engine listing only; island.is blocked"
+    "result": "1 found (low)",
+    "checked": "Second pass, 23 November 2026: Found the Birth Register and the 2023 report (October 2025) in search results; official pages blocked on fetch, so limb coverage unconfirmed."
    },
    {
     "country": "Norway",
@@ -978,7 +1126,7 @@
     "country": "Liechtenstein",
     "iso3": "LIE",
     "result": "none found",
-    "checked": "EUROCAT member list and searches"
+    "checked": "Second pass, 23 November 2026: Covered by the same combined search; nothing found."
    }
   ],
   "Europe south, central and east": [
@@ -1004,7 +1152,7 @@
     "country": "Greece",
     "iso3": "GRC",
     "result": "none found",
-    "checked": "Web search: no national registry; not in EUROCAT."
+    "checked": "Second pass, 23 November 2026: Searched English and Greek for a national congenital anomalies or amputation register; a 2025 northern Greece autopsy paper states Greece is not in EUROCAT and has no recent studies; no amputation register found."
    },
    {
     "country": "Malta",
@@ -1016,25 +1164,25 @@
     "country": "Cyprus",
     "iso3": "CYP",
     "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Searched English and Greek terms for a registry; only old EUROCAT reports (coverage 0%, 2004-2005) and a 2011-2013 clinical partner hospital in Nicosia; WHO Europe lists no data."
    },
    {
     "country": "Andorra",
     "iso3": "AND",
     "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: One combined search for the four microstates in French, Catalan, Italian and German found nothing; not in EUROCAT."
    },
    {
     "country": "San Marino",
     "iso3": "SMR",
     "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Covered by the same combined search; nothing found."
    },
    {
     "country": "Monaco",
     "iso3": "MCO",
     "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Covered by the same combined search; nothing found."
    },
    {
     "country": "Poland",
@@ -1063,8 +1211,8 @@
    {
     "country": "Slovenia",
     "iso3": "SVN",
-    "result": "none active; SRCA inactive",
-    "checked": "EUROCAT description 2019; not in current EUROCAT or ICBDSR lists."
+    "result": "0 active; 1 inactive",
+    "checked": "Second pass, 23 November 2026: SRCA description 2019 only; no 2022+ report or EUROCAT listing found."
    },
    {
     "country": "Croatia",
@@ -1075,38 +1223,38 @@
    {
     "country": "Bosnia and Herzegovina",
     "iso3": "BIH",
-    "result": "none found",
-    "checked": "One search; WHO indicator page only."
+    "result": "1 found",
+    "checked": "Second pass, 23 November 2026: Found the Federation of BiH registry (2019, Institute of Public Health, abstract read). Landmine Monitor 2022 profile (read) mentions a mine victim database held by BHMAC since 2005, last data 2019, no amputation field stated, so not listed."
    },
    {
     "country": "Serbia",
     "iso3": "SRB",
     "result": "none found",
-    "checked": "One search; a 2016 paper says no national registry."
+    "checked": "Second pass, 23 November 2026: Searched Serbian terms: a 2016 paper says there is no national registry; only a Batut registry of children with developmental disabilities (not anomalies). Landmine Monitor and a 2025 treaty observation mention a mine victim database owned by the ministry responsible for veterans (MOLEVS) but no amputation count or standing register page was read."
    },
    {
     "country": "Montenegro",
     "iso3": "MNE",
     "result": "none found",
-    "checked": "One search, nothing relevant."
+    "checked": "Second pass, 23 November 2026: Searched English and Montenegrin; nothing specific."
    },
    {
     "country": "North Macedonia",
     "iso3": "MKD",
     "result": "none found",
-    "checked": "One search, nothing relevant."
+    "checked": "Second pass, 23 November 2026: Searched English and Macedonian; nothing specific; not in the EUROCAT list."
    },
    {
     "country": "Albania",
     "iso3": "ALB",
-    "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "result": "0 active; 1 inactive",
+    "checked": "Second pass, 23 November 2026: Found the IPH Congenital Malformations Surveillance System (since 2009, reports to 2017); no 2022+ evidence in the bulletins and factsheet opened."
    },
    {
     "country": "Kosovo",
     "iso3": "XKX",
     "result": "none found",
-    "checked": "Not in EUROCAT or ICBDSR; no dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Searched English and Albanian terms; no results about Kosovo."
    },
    {
     "country": "Bulgaria",
@@ -1123,8 +1271,8 @@
    {
     "country": "Moldova",
     "iso3": "MDA",
-    "result": "none found",
-    "checked": "Moldova is a EUROCAT country filter option but no member showed; no dedicated search (search limit)."
+    "result": "1 found",
+    "checked": "Second pass, 23 November 2026: Searched Romanian; read the 2025 Mother and Child Institute abstract using the national register 2013-2022."
    },
    {
     "country": "Ukraine",
@@ -1135,8 +1283,8 @@
    {
     "country": "Belarus",
     "iso3": "BLR",
-    "result": "none found",
-    "checked": "No dedicated search (search limit)."
+    "result": "1 found",
+    "checked": "Second pass, 23 November 2026: Searched Russian; read two Sakharov Readings papers (2022, 2025) describing the registry since 1979 and its limb defect list."
    },
    {
     "country": "Russia",
@@ -1159,8 +1307,8 @@
    {
     "country": "Lithuania",
     "iso3": "LTU",
-    "result": "none confirmed",
-    "checked": "Search found a questionnaire database (LIRECA, since 1993) and a neonatal registry used in a 2002-2011 study; neither opened or shown active."
+    "result": "0 active; 2 inactive",
+    "checked": "Second pass, 23 November 2026: Searched English and Lithuanian: LIRECA ended 2004; the neonatal registry studies end with 2020 data; no national amputation register found (only hospital studies)."
    },
    {
     "country": "Turkey",
@@ -1172,19 +1320,25 @@
     "country": "Georgia",
     "iso3": "GEO",
     "result": "none found",
-    "checked": "No dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Searched in English, Russian and Georgian; results were almost all about the US state. WHO Europe lists the national public health centre as source of annual anomaly counts only."
    },
    {
     "country": "Armenia",
     "iso3": "ARM",
     "result": "none found",
-    "checked": "No dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Searched in English and Armenian. Only ministry annual statistics (WHO Europe health-for-all indicator) and local studies; no registry confirmed."
    },
    {
     "country": "Azerbaijan",
     "iso3": "AZE",
     "result": "none found",
-    "checked": "No dedicated search (search limit)."
+    "checked": "Second pass, 23 November 2026: Searched in English and Russian. Only regional and city studies (Baku, Nakhchivan, a 2022 thesis); no registry confirmed."
+   },
+   {
+    "country": "Türkiye",
+    "iso3": "TUR",
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched English and Turkish: papers up to 2020 state there is no national congenital anomaly surveillance system; earthquake amputee data are WHO and UNDP estimates and pilots, not a standing register."
    }
   ],
   "Latin America and the Caribbean": [
@@ -1233,8 +1387,8 @@
    {
     "country": "Dominican Republic",
     "iso3": "DOM",
-    "result": "system exists, limb recording unconfirmed; no entry",
-    "checked": "PAHO 2019 news list and RPSP 2019 survey table (both read): Sistema Nacional de Vigilancia Epidemiológica, hospital-based, 2016; one search found only zika and microcephaly material"
+    "result": "none found (unconfirmed)",
+    "checked": "Second pass, 23 November 2026: PAHO/CLAP pages (search snippets) list the Dominican Republic among countries with a birth defects surveillance system; a 2018 Dominican study cites 483 malformations reported since 2016, 64% microcephaly (Zika-related). No source found showing limb defects recorded or 2022+ data; the scielosp paper returned 403 and the PAHO repository dashboard was not readable. Needs a check of the dashboard or the Ministry of Health."
    },
    {
     "country": "Ecuador",
@@ -1306,19 +1460,19 @@
     "country": "Belize",
     "iso3": "BLZ",
     "result": "none found",
-    "checked": "No source mentions it; covered only by PAHO regional lists and one Caribbean search"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system."
    },
    {
     "country": "Guyana",
     "iso3": "GUY",
     "result": "none found",
-    "checked": "Same: regional PAHO lists and one Caribbean search only"
+    "checked": "Second pass, 23 November 2026: Searched Suriname/Guyana registries and ReLAMC; nothing country-specific found."
    },
    {
     "country": "Suriname",
     "iso3": "SUR",
     "result": "none found",
-    "checked": "Same"
+    "checked": "Second pass, 23 November 2026: Searched Suriname/Guyana registries and ReLAMC; nothing country-specific found."
    },
    {
     "country": "French Guiana",
@@ -1336,31 +1490,31 @@
     "country": "Haiti",
     "iso3": "HTI",
     "result": "none found",
-    "checked": "PAHO regional lists and one Caribbean search only"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system."
    },
    {
     "country": "Jamaica",
     "iso3": "JAM",
     "result": "none found",
-    "checked": "One search on Caribbean birth defect surveillance; nothing found; the PAHO RPSP 2019 paper says no English-speaking Caribbean state has a national system"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system. Only a 2018 proposal for a CARPHA Zika pregnancy registry turned up, with no evidence it ran."
    },
    {
     "country": "Trinidad and Tobago",
     "iso3": "TTO",
     "result": "none found",
-    "checked": "Same"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system."
    },
    {
     "country": "Barbados",
     "iso3": "BRB",
     "result": "none found",
-    "checked": "Same"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system."
    },
    {
     "country": "Bahamas",
     "iso3": "BHS",
     "result": "none found",
-    "checked": "Same"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system."
    },
    {
     "country": "Antigua and Barbuda; Dominica; Grenada; Saint Kitts and Nevis; Saint Lucia; Saint Vincent and the Grenadines",
@@ -1369,10 +1523,16 @@
     "checked": "Same: PAHO regional lists and one Caribbean search only; no country-level search"
    },
    {
-    "country": "Dutch, British and other Caribbean territories (Aruba, Curaçao, Sint Maarten, Cayman Islands, Turks and Caicos, British Virgin Islands, Anguilla, Montserrat)",
-    "iso3": "ABW/CUW/SXM/CYM/TCA/VGB/AIA/MSR",
+    "country": "Dutch and British Caribbean territories (Aruba, Curacao, Sint Maarten, Cayman Islands, Turks and Caicos, British Virgin Islands, Anguilla, Montserrat, Bermuda)",
+    "iso3": "",
+    "result": "none active found",
+    "checked": "Regional searches, then a combined search on 23 November 2026: a population-based surveillance study of Aruba, Bonaire and Curaçao (Birth Defects Research 2023) covers births 2008-2017, recorded as inactive; nothing on Bermuda, the Cayman Islands or the British territories."
+   },
+   {
+    "country": "OECS states (Antigua and Barbuda, Dominica, Grenada, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines)",
+    "iso3": "",
     "result": "none found",
-    "checked": "Not searched individually; PAHO regional lists only. The shared search budget ran out before targeted searches could be made"
+    "checked": "Second pass, 23 November 2026: Regional searches on PAHO/CARPHA birth defects surveillance; read the PAHO 2025 birth defects repository news page (names no country, no limb data); a 2019 PAHO journal paper snippet says no English-speaking Caribbean country has a national birth defects system. Not searched individually."
    }
   ],
   "Middle East and Africa": [
@@ -1404,19 +1564,19 @@
     "country": "Jordan",
     "iso3": "JOR",
     "result": "none found",
-    "checked": "Search: a 2009 proposal for a national registry and a hospital study; no operating registry found"
+    "checked": "Second pass, 23 November 2026: Searched in English and Arabic. Jordanian papers (University of Jordan 2024 upper limb review, Mutah University 2025) state there is no national registry; only hospital studies."
    },
    {
     "country": "Lebanon",
     "iso3": "LBN",
     "result": "none found",
-    "checked": "One combined search; no Lebanese registry surfaced"
+    "checked": "Second pass, 23 November 2026: Searched in Arabic and English; read the Ministry of Public Health manual (2013) and the Vital Data Observatory page. A national programme was launched but 2022+ activity is not confirmed; recorded as inactive pending a direct check."
    },
    {
     "country": "Syria",
     "iso3": "SYR",
     "result": "none found",
-    "checked": "No dedicated search possible (quota); not in ICBDSR directory"
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance (English) and ICRC/HI rehabilitation and landmine victim data. Landmine Monitor states there is no national victim assistance programme and total casualties are unknown; UNMAS keeps an IMSMA database (search result only, no amputation field shown); the SNHR database is a human-rights casualty list; ICRC reports about 4,000 rehabilitation patients in 2025 but no registry."
    },
    {
     "country": "Saudi Arabia",
@@ -1458,25 +1618,25 @@
     "country": "Yemen",
     "iso3": "YEM",
     "result": "none found",
-    "checked": "No dedicated search possible (quota); not in ICBDSR directory"
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance and mine/ERW and rehabilitation data. Landmine Monitor says the national mine action information system is outdated and unusable (search result); only hospital studies of anomalies (Sana'a; 14 governorates 2021-2023); ICRC and HI run rehabilitation centres but publish only service totals."
    },
    {
     "country": "Algeria",
     "iso3": "DZA",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: One French search on malformation registry across Maghreb; nothing on Algeria."
    },
    {
     "country": "Angola",
     "iso3": "AGO",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Landmine Monitor and Convention reports (search results): national census counted 88,716 people living with explosive-related disability; the CNIDAH survivor survey registered 9,165 survivors in nine provinces and has been suspended since 2014; IMSMA installed 2016 and reported outdated in 2022. ICRC supported centres in Luanda, Huambo and Kuito (old figures). No 2022+ victim record confirmed. The Landmine Monitor 2023 Angola page returned 404 so was not read."
    },
    {
     "country": "Benin",
     "iso3": "BEN",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched French with Cote d'Ivoire and Togo; no surveillance programme found."
    },
    {
     "country": "Botswana",
@@ -1487,86 +1647,86 @@
    {
     "country": "Burkina Faso",
     "iso3": "BFA",
-    "result": "1 found (low confidence)",
-    "checked": "sSCAN roster only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Held item re-checked. The Nouna Health Research Centre project (population-based, selected external anomalies visible on examination, Burkina Faso and Cote d'Ivoire) is on the sSCAN roster, and its clinician presented on Global Birth Defects App use at the September 2023 sSCAN assembly (programme PDF read). A Grand Challenges Africa grant page says the aim is baseline data on anomaly frequency in rural Africa. No paper, report, hospital list or limb-defect statement with 2022+ data found: nothing better than the roster and a 2023 conference programme line. Conflict data: Landmine Monitor 2025 findings (snippet) list Burkina Faso above 200 explosive ordnance casualties in 2024; UNMAS is building an IED incident database (snippet); no ICRC or HI rehabilitation data system found."
    },
    {
     "country": "Burundi",
     "iso3": "BDI",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched registry, limb loss and clubfoot terms in French and English; only a self-reported 2023 clubfoot coverage survey, no data system."
    },
    {
     "country": "Cabo Verde",
     "iso3": "CPV",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched Portuguese together with Angola, Guinea-Bissau and Sao Tome; nothing on congenital anomaly surveillance."
    },
    {
     "country": "Cameroon",
     "iso3": "CMR",
-    "result": "1 found (low confidence)",
-    "checked": "Search and sSCAN roster only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Held item re-checked. The Cameroon Registry for Congenital Anomaly Surveillance (CARECAS), Health Research Foundation, Buea, with the Ministry of Health, is hospital-based and records selected external anomalies (sSCAN roster, read); the September 2023 assembly programme titles the talk 'First steps'. No paper, hospital list or limb statement found; a 2019 Yaounde 10-maternity cohort and later hospital studies are one-off studies. Nothing better than the roster."
    },
    {
     "country": "Central African Republic",
     "iso3": "CAF",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Only an ICRC-supported rehabilitation centre in Bangui (photo caption); no data system or victim database found."
    },
    {
     "country": "Chad",
     "iso3": "TCD",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Niger, Mauritania and Djibouti in French (registre, surveillance des malformations congénitales)."
    },
    {
     "country": "Comoros",
     "iso3": "COM",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched in French; nothing relevant."
    },
    {
     "country": "Congo",
     "iso3": "COG",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched French with Central African Republic, Cameroon and Gabon; no programme found."
    },
    {
     "country": "Democratic Republic of the Congo",
     "iso3": "COD",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Found only hospital series (Lubumbashi 2009-2010, Goma 2002-2014) that call for a national registry. ICRC supports 5 rehabilitation centres (Kinshasa, Ituri, North and South Kivu) with 2023-2025 service counts (search result); the ICRC patient database exists (read: ICRC-developed electronic database, 17 centres in other countries, 2009-2018) but nothing shows DRC records or limb-defect fields. No landmine or ERW victim database found."
    },
    {
     "country": "Cote d'Ivoire",
     "iso3": "CIV",
-    "result": "1 found via Nouna platform (low confidence)",
-    "checked": "sSCAN roster only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Read an AIP news item of 27 April 2024: a national congenital malformations registry is announced, with a pilot planned at Aboisso regional hospital; no launch or later update found. Nouna platform (Burkina Faso and Cote d'Ivoire) is on the sSCAN roster only."
    },
    {
     "country": "Djibouti",
     "iso3": "DJI",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Chad, Niger and Mauritania in French."
    },
    {
     "country": "Egypt",
     "iso3": "EGY",
     "result": "none found",
-    "checked": "Search: only single-hospital studies (Fayoum, Zagazig, Sohag) and an Assiut upper-limb study record; no registry"
+    "checked": "Second pass, 23 November 2026: English and Arabic searches: only single-hospital and governorate (Fayoum) studies and a newborn genetic screening initiative; no national or governorate surveillance system found."
    },
    {
     "country": "Equatorial Guinea",
     "iso3": "GNQ",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Eritrea: a 2026 retrospective review of 25,271 deliveries in the Bata region is a one-off study, not a surveillance system."
    },
    {
     "country": "Eritrea",
     "iso3": "ERI",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Equatorial Guinea; the JoGH 2026 review of national registries names none."
    },
    {
     "country": "Eswatini",
@@ -1577,20 +1737,20 @@
    {
     "country": "Ethiopia",
     "iso3": "ETH",
-    "result": "none found as limb or birth defect registry",
-    "checked": "sSCAN roster lists CHAMPS (mortality surveillance, all major malformations in deaths) and an NTD-only study; no dedicated search possible (quota)"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searches on birth defects surveillance and on limb loss/prosthetics registry: only regional hospital studies; no national registry. Ethiopia has a project in sSCAN (already listed as umbrella)."
    },
    {
     "country": "Gabon",
     "iso3": "GAB",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched French with Central African Republic, Cameroon and Congo; no programme found."
    },
    {
     "country": "Gambia",
     "iso3": "GMB",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance for Gambia with Sierra Leone, Liberia and Guinea; found a 2025 preprint on a 2006 trial cohort only, not a standing system."
    },
    {
     "country": "Ghana",
@@ -1602,13 +1762,13 @@
     "country": "Guinea",
     "iso3": "GIN",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Covered by the combined West Africa surveillance search; no programme found; not in the sSCAN roster."
    },
    {
     "country": "Guinea-Bissau",
     "iso3": "GNB",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched Portuguese for a registo de malformacoes congenitas; only WHO AFRO news pages unrelated to anomalies came back."
    },
    {
     "country": "Kenya",
@@ -1620,115 +1780,115 @@
     "country": "Lesotho",
     "iso3": "LSO",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched surveillance and registry terms; nothing relevant."
    },
    {
     "country": "Liberia",
     "iso3": "LBR",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched with Gambia, Sierra Leone and Guinea, then searched amputee data; nothing relevant for Liberia."
    },
    {
     "country": "Libya",
     "iso3": "LBY",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched with the Maghreb birth-defect query and the ICRC query. ICRC programme in Libya reported as ended (search result, undated); no standing database found."
    },
    {
     "country": "Madagascar",
     "iso3": "MDG",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched in French and English; only participation in a past African surveillance training workshop, no system."
    },
    {
     "country": "Malawi",
     "iso3": "MWI",
-    "result": "1 found (closed 2025)",
-    "checked": "Searches on Malawi surveillance; I-TECH page; sSCAN 2026 paper"
+    "result": "no other programme",
+    "checked": "Second pass, 23 November 2026: Only the held I-TECH/CDC project; the 2026 sSCAN review (Birth Defects Research, PMC13254227, read) states CDC-supported initiatives in Malawi and Uganda closed in 2025, which supports its inactive status."
    },
    {
     "country": "Mali",
     "iso3": "MLI",
-    "result": "none found as a birth defects registry",
-    "checked": "sSCAN roster lists CHAMPS (mortality surveillance) only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: ICRC and Landmine Monitor searches; only delegation mentions, no data system found."
    },
    {
     "country": "Mauritania",
     "iso3": "MRT",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Chad, Niger and Djibouti in French."
    },
    {
     "country": "Mauritius",
     "iso3": "MUS",
-    "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "result": "0 active, 1 inactive",
+    "checked": "Second pass, 23 November 2026: Read the Mauritius Institute of Health MBDR page: reports for data years 2013-2017, 2018 report presented January 2021, nothing later found in two searches. Listed as inactive with last year 2021, pending a direct check."
    },
    {
     "country": "Morocco",
     "iso3": "MAR",
-    "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "result": "1 found",
+    "checked": "Second pass, 23 November 2026: Searched French; read the 2024 paper on the ministry surveillance system."
    },
    {
     "country": "Mozambique",
     "iso3": "MOZ",
-    "result": "none found as a birth defects registry",
-    "checked": "sSCAN roster lists CHAMPS (mortality surveillance) only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched in English and Portuguese. CHAMPS Manhiça is mortality surveillance only. Hospital studies in Beira (NICU 2015-2016) and Nampula (2014-2016) are case series. Mozambique declared itself mine-free in 2015; landmine victim records found are 1990s surveys and an undated Landmine Survivors Network database of unconfirmed status."
    },
    {
     "country": "Namibia",
     "iso3": "NAM",
     "result": "none found",
-    "checked": "A Ministry of Health and Social Services delegate attended sSCAN 2023; no system found; No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: sSCAN 2023 report lists the Ministry of Health and Social Services as a participant, with no programme named; searches show only the national obstetric surveillance system (maternal and perinatal audit) and civil registration."
    },
    {
     "country": "Niger",
     "iso3": "NER",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Regional searches, then a combined search on 23 November 2026: searched with Chad, Mauritania and Djibouti in French."
    },
    {
     "country": "Nigeria",
     "iso3": "NGA",
-    "result": "2 found (low confidence)",
-    "checked": "Searches; sSCAN roster; only single-hospital papers otherwise"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Held items re-checked. sSCAN rosters (2023 and 2025 assembly reports, read) list a Ministry of Health national hospital-based surveillance (University College Hospital Ibadan, selected external anomalies) and the Aminu Kano Teaching Hospital registry (all major malformations); both gave updates at the September 2023 assembly (programme read). No own paper or report with 2022+ data, no site list and no limb statement found; the AKTH 2007-2017 review is older. A UCH Ibadan 2009-2013 review calls for a prospective national protocol. Conflict north-east: ICRC runs a physical rehabilitation centre at Maiduguri (ICRC pages, search result); UNMAS and the protection sector report explosive ordnance casualty counts (2016 to Feb 2023: 2,468 injured; 2024: up to 386), but no standing victim database recording amputations was found."
    },
    {
     "country": "Rwanda",
     "iso3": "RWA",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance and registry; the 2019 minimum-data-set paper states there is no registry in Rwanda; a 2015 genetics review lists a registry only as a plan; Rwanda is absent from the 2023 sSCAN roster and the 2026 sSCAN review."
    },
    {
     "country": "Sao Tome and Principe",
     "iso3": "STP",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched Portuguese with Angola, Cabo Verde and Guinea-Bissau; nothing on anomalies."
    },
    {
     "country": "Senegal",
     "iso3": "SEN",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched French for a malformations registry and surveillance; found only hospital series in Dakar and a community alert system for pregnant women and newborns that does not record anomalies."
    },
    {
     "country": "Seychelles",
     "iso3": "SYC",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched; only a national cancer registry appeared."
    },
    {
     "country": "Sierra Leone",
     "iso3": "SLE",
-    "result": "none found as a birth defects registry",
-    "checked": "sSCAN roster lists CHAMPS (mortality surveillance) only"
+    "result": "none found",
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance and amputee registries. CHAMPS has a Sierra Leone site (mortality surveillance, all major malformations listed in the sSCAN roster) but no limb-defect evidence read. Historical war-amputee records (TRC database, Handicap International registration) are old; the AP piece says government holds no amputee data."
    },
    {
     "country": "Somalia",
     "iso3": "SOM",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: sSCAN and ICRC searches; ICRC-supported centres only, no public data system found."
    },
    {
     "country": "South Africa",
@@ -1740,49 +1900,49 @@
     "country": "South Sudan",
     "iso3": "SSD",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: sSCAN and ICRC searches; ICRC supports three centres (Juba, Wau, Rumbek) but no public data system found."
    },
    {
     "country": "Sudan",
     "iso3": "SDN",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: sSCAN and ICRC searches; no birth defects system found; ICRC rehabilitation centres exist but no public data system found. Landmine Monitor country chapters not read."
    },
    {
     "country": "Tanzania",
     "iso3": "TZA",
-    "result": "1 found (low confidence)",
-    "checked": "Search and sSCAN roster; 2015 hospital studies state no system existed"
+    "result": "none found better than the held entry",
+    "checked": "Second pass, 23 November 2026: Read the sSCAN 2023 General Assembly report: Tanzania Birth Defects Surveillance (Ministry of Health, US CDC, population-based by district) appears only in the programme table and the participant list, and Tanzania is named among countries interested in adopting the sSCAN app in future. The 2026 sSCAN review lists it with no status or data years and its citation (2018) looks mis-referenced. Searched for programme reports, sites and 2022+ outputs with no result. Muhimbili, Bugando and KCMC outputs found are single-hospital studies or the KCMC medical birth registry preprint (403 on fetch, snippet only). Nothing better than a roster mention exists, so it stays out of entries."
    },
    {
     "country": "Togo",
     "iso3": "TGO",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched French with Cote d'Ivoire and Benin; no surveillance programme found."
    },
    {
     "country": "Tunisia",
     "iso3": "TUN",
-    "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "result": "0 active found; 1 inactive",
+    "checked": "Second pass, 23 November 2026: French searches and Monastir search: Monastir surveillance 2003-2008 only; a 2024 paper says Tunisia has no national register."
    },
    {
     "country": "Uganda",
     "iso3": "UGA",
-    "result": "2 found (1 closed 2025, 1 planned)",
-    "checked": "Searches on the Kampala system; the BMC 2019 paper; sSCAN 2026 paper"
+    "result": "no new entry",
+    "checked": "Second pass, 23 November 2026: Held items unchanged. New evidence for the Kampala hospital system: a 2025 BMC Pregnancy and Childbirth paper reports data from 2015-2022 (search result only, publisher page blocked), but the 2026 sSCAN review says the CDC-supported programme closed in 2025. A Jinja neonatal surveillance platform (CONRIM, data collection from June 2025, medRxiv 2026) is a community cohort and does not clearly record limb anomalies, so it is not proposed."
    },
    {
     "country": "Zambia",
     "iso3": "ZMB",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched surveillance and amputation or clubfoot registries; a 2025 paper states there is no national registry or data for myelomeningocele; amputation and clubfoot items are single-hospital or one-off studies."
    },
    {
     "country": "Zimbabwe",
     "iso3": "ZWE",
     "result": "none found",
-    "checked": "No dedicated search possible (the shared web-search quota ran out); checked only through the ICBDSR directory CSV, the 2024 ICBDSR programme index, the sSCAN 2023 and 2026 rosters and the JoGH 2026 registry mapping."
+    "checked": "Second pass, 23 November 2026: Searched birth defects surveillance and landmine survivor data. Mine action: casualty figures run through the national mine action centre and the Mine Ban Treaty Article 7 reports (Monitor 2023 profile, read: 1,659 casualties 1964-2024, injury type not given); a 2023 Disability Affairs presentation (read) says a needs assessment is building a survivor database, work in progress, no biometric database exists. This does not show a standing data system that records amputations, so it stays out; recheck if ZIMAC publishes a victim survey."
    }
   ],
   "North America": [

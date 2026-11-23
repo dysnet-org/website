@@ -2661,7 +2661,7 @@ PAGES["/knowledge/registries/"] = {
     <div class="tick"></div>
     <p class="eyebrow">China</p>
     <h2 class="h2">China counts our conditions in the millions.</h2>
-    <p>The <strong>Chinese Birth Defects Monitoring Network</strong> has run since the Ministry of Health started it, and is held by the National Center for Birth Defects Monitoring at West China Second University Hospital, Sichuan University, in Chengdu. It is the largest source of data on our conditions that this register has found anywhere, and it does record them: syndactyly and polydactyly are counted by the million-birth cohort, year by year. It is not population-based. Births are reported by a sample of hospitals, so it describes the country without covering it, and the section below gives the numbers that sample reaches. DysNet has no member association in China, so each entry is verified from the source named with it.</p>
+    <p>The <strong>Chinese Birth Defects Monitoring Network</strong> has run since the Ministry of Health started it, and is held by the National Center for Birth Defects Monitoring at West China Second University Hospital, Sichuan University, in Chengdu. It records our conditions at scale: syndactyly and polydactyly are counted year by year across cohorts of millions of births. It is not population-based. Births are reported by a sample of hospitals, so it describes the country without covering it, and the section below gives the numbers that sample reaches. DysNet has no member association in China, so each entry is verified from the source named with it.</p>
     <div style="margin-top:var(--space-2)">
       <article class="entry">
         <h3>What the network is, and what it misses <span class="badge live">since the 1990s</span></h3>

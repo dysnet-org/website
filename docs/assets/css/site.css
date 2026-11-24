@@ -1322,6 +1322,21 @@ button.btn-ghost { background: transparent; border: 2px solid var(--dys-purple);
 .card.cond { min-width: 0; }
 /* the finder leaves a single card: it spans the whole row, easier to read than a third of it */
 #cond-grid.few { grid-template-columns: minmax(0, 1fr); }
+/* the cross that removes a card from the finder's list; the last card left keeps no cross */
+.card.cond { position: relative; }
+.card.cond > h3 { padding-right: 2.4rem; }
+.cond-remove {
+  position: absolute; top: 0.7rem; right: 0.7rem; width: 2.1rem; height: 2.1rem; padding: 0;
+  display: grid; place-items: center; border: 1px solid var(--dys-line); border-radius: 50%;
+  background: #fff; color: var(--dys-muted); font: inherit; font-size: 1.3rem; line-height: 1; cursor: pointer;
+}
+.cond-remove:hover, .cond-remove:focus-visible { border-color: var(--dys-purple); color: var(--dys-purple-text); }
+.cond-remove:focus-visible { outline: 2px solid var(--dys-purple); outline-offset: 2px; }
+#cond-grid.few .cond-remove { display: none; }
+#cond-grid.few .card.cond { padding: var(--space-4); }
+#cond-grid.few .card.cond > h3 { font-size: var(--text-h3); }
+.finder-cross-tip { margin: 0.35rem 0 0; }
+.finder-count #finder-removed button { border: 0; background: none; color: var(--dys-purple-text); font: inherit; font-size: var(--text-small); text-decoration: underline; cursor: pointer; padding: 0; }
 .cond-pheno dt { color: var(--dys-muted); }
 .cond-pheno dd { margin: 0; }
 .cond-pheno ul { margin: var(--space-1) 0; padding-left: 1.1rem; }

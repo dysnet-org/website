@@ -3437,6 +3437,8 @@ def condition_card(name, desc, code, orpha_name, limbs, ctype, other, genetic):
     hsys_attr = " ".join(sorted({hpo_sys_slug(hpo_system(hp)) for hp in hpo_attr.split()}))
     hfreq_attr = ";".join(f"{hp}={v[0]}" for hp, v in sorted(card_features(ref_code).items()) if v[0] != "Excluded (0%)")
     return (f'<div class="card cond" id="{anchor}" data-limbs="{limbs}" data-type="{ctype}" data-other="{other}" data-genetic="{genetic}" data-hpo="{hpo_attr}" data-hsys="{hsys_attr}" data-hfreq="{hfreq_attr}" data-search="{haystack}">'
+            # the cross sets a card aside, so a reader can narrow the list by hand down to the one card
+            f'<button type="button" class="cond-remove" aria-label="Not this one: remove {html.escape(name, quote=True)} from the list" title="Not this one">&times;</button>'
             f'<h3 class="h4">{name}</h3>'
             f'<p class="cond-desc">{desc}</p>{usual_line(name, ref_code)}'
             f'<p class="cond-chips">{chips}</p>'
@@ -3960,7 +3962,8 @@ PAGES["/knowledge/understanding-dysmelia/"] = {
         {hpo_menu_html()[0]}
         <p class="fine" style="margin:0.4rem 0 0">Features as Orphanet records them for each condition, in the Human Phenotype Ontology, grouped by body system; the number is how many cards it leaves. A condition does not always show every feature.</p>
       </fieldset>
-      <p class="finder-count" aria-live="polite"><strong id="finder-n">{len(CONDITIONS)}</strong> of {len(CONDITIONS)} conditions match · <button type="button" id="finder-reset">Reset</button></p>
+      <p class="finder-count" aria-live="polite"><strong id="finder-n">{len(CONDITIONS)}</strong> of {len(CONDITIONS)} conditions match · <button type="button" id="finder-reset">Reset</button><span id="finder-removed" hidden> · <span id="finder-removed-n"></span> removed with their cross · <button type="button" id="finder-bring-back">Bring them back</button></span></p>
+      <p class="finder-sub finder-cross-tip">Each card has a cross at its top: remove the ones that do not fit, and the last card left opens in full, with its forms and features.</p>
     </div>
 
     <p class="cond-order">Ordered from the commonest to the rarest, by birth prevalence: {RATED_N} of the

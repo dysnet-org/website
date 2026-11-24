@@ -307,12 +307,35 @@
     hpoSel.disabled = !sys;
   }
 
+  // A card removed with its cross stays out until "Bring them back" or Reset, whatever the other filters say.
+  var removed = {};
+  grid.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest(".cond-remove");
+    if (!b) return;
+    var c = b.closest(".card"), i = cards.indexOf(c);
+    var next = cards.slice(i + 1).concat(cards.slice(0, i)).filter(function (x) { return x.style.display !== "none" && !removed[x.id]; })[0];
+    removed[c.id] = true;
+    apply();
+    if (!next) return;
+    if (grid.classList.contains("few")) {
+      // the last card left opens in full: bring it into view and give it the focus
+      var h = next.querySelector("h3");
+      h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true });
+      next.scrollIntoView({ block: "start", behavior: "smooth" });
+    } else {
+      // the next card's cross takes the focus, so a keyboard reader can go on removing
+      next.querySelector(".cond-remove").focus({ preventScroll: true });
+    }
+  });
+  var bringBack = document.getElementById("finder-bring-back");
+  if (bringBack) bringBack.addEventListener("click", function () { removed = {}; apply(); });
+
   function apply() {
     var text = qBox ? qBox.value.trim().toLowerCase() : "";
     var hpo = hpoSel ? hpoSel.value : "", hsys = sysSel ? sysSel.value : "", fmax = freqSel && freqSel.value ? +freqSel.value : 9;
     var n = 0;
     cards.forEach(function (c) {
-      var ok = true;
+      var ok = !removed[c.id];
       Object.keys(state).forEach(function (q) {
         var v = state[q];
         if (v && (c.getAttribute("data-" + q) || "").split(" ").indexOf(v) === -1) ok = false;
@@ -337,6 +360,8 @@
       if (ok) n++;
     });
     document.getElementById("finder-n").textContent = n;
+    var nRemoved = Object.keys(removed).length, rm = document.getElementById("finder-removed");
+    if (rm) { rm.hidden = !nRemoved; document.getElementById("finder-removed-n").textContent = nRemoved; }
     grid.classList.toggle("few", n === 1);   // a single card left: it takes the whole width
     // and its folded sections open, so it reads without a click; they fold again when other cards come back
     grid.querySelectorAll("details[data-auto-open]").forEach(function (d) { d.open = false; d.removeAttribute("data-auto-open"); });
@@ -379,6 +404,7 @@
 
   document.getElementById("finder-reset").addEventListener("click", function () {
     state = { limbs: "", type: "", other: "", genetic: "" };
+    removed = {};
     if (qBox) qBox.value = "";
     if (sysSel) { sysSel.value = ""; fillFeatures(""); }
     if (freqSel) freqSel.value = "";
